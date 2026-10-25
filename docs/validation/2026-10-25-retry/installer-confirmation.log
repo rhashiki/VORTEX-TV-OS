@@ -1,0 +1,3 @@
+PASS: fixture not installed before user confirmation
+Pressed DPAD_RIGHT and DPAD_CENTER to select INSTALL
+PASS: fixture installed after explicit confirmation: package:/data/app/os.vortex.smoke-1/base.apk

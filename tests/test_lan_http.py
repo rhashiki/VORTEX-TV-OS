@@ -1,5 +1,6 @@
 """End-to-end HTTP transport test using only JDK + Python localhost."""
 import hashlib
+import http.client
 import selectors
 from pathlib import Path
 import shutil
@@ -8,6 +9,7 @@ import tempfile
 import unittest
 import urllib.request
 import urllib.error
+import urllib.parse
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -19,8 +21,9 @@ class LocalTransferTest(unittest.TestCase):
                    ROOT / "tests/LanApkServerHarness.java"]
             subprocess.run(["javac","-encoding","UTF-8","-d",tmp,*map(str,src)],
                            capture_output=True,text=True,check=True,timeout=30)
-            p = subprocess.Popen(["java","-cp",tmp,"os.vortex.tv.LanApkServerHarness"],
-                stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)
+            p = subprocess.Popen(["java","-cp",tmp,"os.vortex.tv.LanApkServerHarness",
+                                  "--hold-after-upload"],
+                stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)
             try:
                 with selectors.DefaultSelector() as ready:
                     ready.register(p.stdout, selectors.EVENT_READ)
@@ -35,6 +38,31 @@ class LocalTransferTest(unittest.TestCase):
                 upload=url.replace("/p/","/upload/")
                 payload=b"PK\x03\x04"+b"test-only-not-an-actual-apk"
                 headers={"Content-Type":"application/vnd.android.package-archive"}
+                target = urllib.parse.urlsplit(upload)
+                # Send headers only: invalid framing, MIME and oversized declarations
+                # must be rejected without waiting for or buffering an APK body.
+                invalid_headers = (
+                    ("wrong MIME", {"Content-Type": "text/plain",
+                                    "Content-Length": str(len(payload))}, 415),
+                    ("missing length", headers, 411),
+                    ("chunked upload", {**headers, "Transfer-Encoding": "chunked"}, 411),
+                    ("over 512 MiB", {**headers,
+                                     "Content-Length": str(512 * 1024 * 1024 + 1)}, 413),
+                )
+                for label, request_headers, expected in invalid_headers:
+                    with self.subTest(protocol=label):
+                        connection = http.client.HTTPConnection(target.netloc, timeout=4)
+                        try:
+                            connection.putrequest("POST", target.path)
+                            connection.putheader("Origin", origin)
+                            for name, value in request_headers.items():
+                                connection.putheader(name, value)
+                            connection.endheaders()
+                            response = connection.getresponse()
+                            self.assertEqual(response.status, expected)
+                            response.read()
+                        finally:
+                            connection.close()
                 bad=urllib.request.Request(upload,data=payload,method="POST",
                       headers={**headers,"Origin":"http://attacker.invalid"})
                 with self.assertRaises(urllib.error.HTTPError) as e:
@@ -58,7 +86,19 @@ class LocalTransferTest(unittest.TestCase):
                 with urllib.request.urlopen(valid,timeout=4) as r:
                     self.assertEqual(r.status,200)
                     self.assertIn("Confirme a instalação",r.read().decode("utf-8"))
-                output,err=p.communicate(timeout=7)
+                # The harness stays alive until stdin is released. Failure here
+                # must come from the one-shot server closing, not JVM shutdown.
+                self.assertIsNone(p.poll(), "Harness exited before one-shot check")
+                connection = http.client.HTTPConnection(target.netloc, timeout=4)
+                try:
+                    with self.assertRaises(OSError) as closed:
+                        connection.request("GET", urllib.parse.urlsplit(url).path)
+                        connection.getresponse()
+                    self.assertNotIsInstance(closed.exception, TimeoutError)
+                finally:
+                    connection.close()
+                self.assertIsNone(p.poll(), "Harness exited during one-shot check")
+                output,err=p.communicate(input="\n",timeout=7)
                 self.assertEqual(p.returncode,0,err)
                 self.assertIn("SHA256="+hashlib.sha256(payload).hexdigest(),output)
             finally:

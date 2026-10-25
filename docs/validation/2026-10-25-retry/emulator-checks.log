@@ -1,0 +1,12 @@
+PASS: Home title and initial focus
+PASS: Settings via DPAD
+PASS: Power menu via DPAD
+PASS: QR on Android
+PASS: Resume returns to landing
+PASS: Renewed pairing address
+PASS: Unknown sources block
+PASS: PackageInstaller asks confirmation
+PASS: Installed app listed
+PASS: Installed app launched
+PASS: System file picker opened
+Scope: captured UI and ADB input on Android7.1.1/API25 x86 software emulator. No phone LAN or physicalUSB/RK3229 validation.

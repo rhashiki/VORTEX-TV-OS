@@ -2,7 +2,9 @@
 
 Firmware experimental minimalista para **MXQ PRO 4K 5G / R329Q_V8.0** (Rockchip RK322x, ARMv7, ~1 GB DDR3).
 
-**Estado atual: código inicial Android/Launcher/Installer. Não é um APK testado nem uma ROM flashável.**
+**Estado atual: APK debug compilado e testes funcionais parciais no emulador Android API 25. Não é uma ROM flashável nem foi validado no RK3229 físico.**
+
+Resultados e limites: [validação da compilação e do emulador](docs/VALIDATION_2026-10-25_RETRY.md).
 
 ## Escopo do produto
 - Home 720p, gradiente roxo/azul neon, data/hora, D-pad e ações de energia.
@@ -35,7 +37,7 @@ Na ROM final, o aplicativo deve ser integrado à imagem AOSP e o permissionament
 ```sh
 python -m unittest discover -s tests -v
 ```
-O teste HTTP compila `LanApkServer.java` com JDK e testa o protocolo pela interface de loopback. **Ainda falta executar a compilação Android e validar emulador, celular e hardware físico.**
+O teste HTTP compila `LanApkServer.java` com JDK e testa o protocolo pela interface de loopback. A compilação Android e testes parciais em API 25 passaram; **ainda faltam celular em LAN real, USB físico e hardware RK3229**. Consulte o relatório para o escopo exato.
 
 ## Recriar a boot animation do vídeo do usuário
 ```sh

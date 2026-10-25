@@ -21,7 +21,22 @@ public final class LanApkServerHarness {
         transport.start();
         System.out.println(transport.getUrl());
         System.out.flush();
-        complete.await(12, TimeUnit.SECONDS);
+        if (!complete.await(12, TimeUnit.SECONDS))
+            throw new IllegalStateException("No successful upload before timeout");
+        if (args.length > 0 && "--hold-after-upload".equals(args[0])) {
+            // Keep the JVM alive so a second connection tests the transport's
+            // one-shot close rather than process teardown. Never wait indefinitely.
+            CountDownLatch release = new CountDownLatch(1);
+            Thread control = new Thread(() -> {
+                try { System.in.read(); }
+                catch (java.io.IOException ignored) {}
+                finally { release.countDown(); }
+            }, "Vortex-Test-Control");
+            control.setDaemon(true);
+            control.start();
+            if (!release.await(7, TimeUnit.SECONDS))
+                throw new IllegalStateException("Test did not release harness before timeout");
+        }
         transport.close();
         cache.delete();
     }

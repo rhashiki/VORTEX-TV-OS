@@ -1,0 +1,5 @@
+PASS: pairing HTTP page using device-side toybox nc (LAN-IP-bound socket)
+PASS: malformed APK rejected HTTP415
+PASS: real signed APK received HTTP200
+PASS: signed APK resubmitted after enabling unknown sources
+PASS: fresh confirmation session submitted with unknown sources enabled

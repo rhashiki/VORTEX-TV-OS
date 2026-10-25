@@ -24,13 +24,21 @@ public final class InstallerActivity extends Activity {
     private LanApkServer server;
     private TextView status;
     private volatile boolean copying;
+    private boolean pairingStopped;
 
     @Override public void onCreate(Bundle state) {
         super.onCreate(state);
         showLanding();
     }
 
+    @Override protected void onStart() {
+        super.onStart();
+        // A stopped pairing has no live server. Let the user request a new QR.
+        if (pairingStopped && !copying) showLanding();
+    }
+
     private void showLanding() {
+        pairingStopped = false;
         FrameLayout root = Ui.background(this);
         LinearLayout panel = Ui.centeredPanel(this, root, "Vortex App Installer",
             "Instale APKs pelo celular ou por pendrive");
@@ -178,6 +186,7 @@ public final class InstallerActivity extends Activity {
         if (server != null) {
             server.close();
             server = null;
+            pairingStopped = true;
         }
         super.onStop();
     }

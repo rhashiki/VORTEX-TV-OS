@@ -1,0 +1,15 @@
+test_pairing_token_origin_and_upload (test_lan_http.LocalTransferTest.test_pairing_token_origin_and_upload) ... ok
+test_bootanimation_generator (test_source_layout.ContractChecks.test_bootanimation_generator) ... ok
+test_home_and_remote (test_source_layout.ContractChecks.test_home_and_remote) ... ok
+test_home_tiles (test_source_layout.ContractChecks.test_home_tiles) ... ok
+test_lan_permission_and_nonexported_receiver (test_source_layout.ContractChecks.test_lan_permission_and_nonexported_receiver) ... ok
+test_lan_session_security (test_source_layout.ContractChecks.test_lan_session_security) ... ok
+test_legacy_android_api (test_source_layout.ContractChecks.test_legacy_android_api) ... ok
+test_no_firmware_loader_overwrite (test_source_layout.ContractChecks.test_no_firmware_loader_overwrite) ... ok
+test_no_google_or_bluetooth (test_source_layout.ContractChecks.test_no_google_or_bluetooth) ... ok
+test_qr_usb_and_package_installer (test_source_layout.ContractChecks.test_qr_usb_and_package_installer) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.268s
+
+OK
