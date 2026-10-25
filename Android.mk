@@ -9,4 +9,7 @@ LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/app/src/main/res
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_SDK_VERSION := 25
+# AOSP Nougat uses Jack for the Java 8 lambdas and method references in this app.
+LOCAL_JAVA_LANGUAGE_VERSION := 1.8
+LOCAL_JACK_ENABLED := true
 include $(BUILD_PACKAGE)

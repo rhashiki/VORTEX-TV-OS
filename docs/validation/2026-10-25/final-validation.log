@@ -1,0 +1,35 @@
+[1/3] Python source and JVM HTTP integration tests
+test_pairing_token_origin_and_upload (test_lan_http.LocalTransferTest.test_pairing_token_origin_and_upload) ... FAIL
+test_bootanimation_generator (test_source_layout.ContractChecks.test_bootanimation_generator) ... ok
+test_home_and_remote (test_source_layout.ContractChecks.test_home_and_remote) ... ok
+test_home_tiles (test_source_layout.ContractChecks.test_home_tiles) ... ok
+test_lan_permission_and_nonexported_receiver (test_source_layout.ContractChecks.test_lan_permission_and_nonexported_receiver) ... ok
+test_lan_session_security (test_source_layout.ContractChecks.test_lan_session_security) ... ok
+test_legacy_android_api (test_source_layout.ContractChecks.test_legacy_android_api) ... ok
+test_no_firmware_loader_overwrite (test_source_layout.ContractChecks.test_no_firmware_loader_overwrite) ... ok
+test_no_google_or_bluetooth (test_source_layout.ContractChecks.test_no_google_or_bluetooth) ... ok
+test_qr_usb_and_package_installer (test_source_layout.ContractChecks.test_qr_usb_and_package_installer) ... ok
+
+======================================================================
+FAIL: test_pairing_token_origin_and_upload (test_lan_http.LocalTransferTest.test_pairing_token_origin_and_upload)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/VORTEX-TV-OS/tests/test_lan_http.py", line 31, in test_pairing_token_origin_and_upload
+    self.fail(f"Java server failed to start: {url}\n{output}\n{err}")
+AssertionError: Java server failed to start: 
+
+Exception in thread "main" java.net.SocketException: Operation not permitted
+	at java.base/sun.nio.ch.Net.socket0(Native Method)
+	at java.base/sun.nio.ch.Net.serverSocket(Net.java:556)
+	at java.base/sun.nio.ch.Net.serverSocket(Net.java:550)
+	at java.base/sun.nio.ch.NioSocketImpl.create(NioSocketImpl.java:464)
+	at java.base/java.net.ServerSocket.getImpl(ServerSocket.java:311)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:390)
+	at os.vortex.tv.LanApkServer.<init>(LanApkServer.java:59)
+	at os.vortex.tv.LanApkServerHarness.main(LanApkServerHarness.java:12)
+
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.830s
+
+FAILED (failures=1)

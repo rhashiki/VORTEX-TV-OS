@@ -1,5 +1,6 @@
 """Source contract checks: Android build/device verification is separate."""
 from pathlib import Path
+import re
 import unittest
 import xml.etree.ElementTree as ET
 
@@ -27,8 +28,11 @@ class ContractChecks(unittest.TestCase):
     def test_no_google_or_bluetooth(self):
         main="\n".join(f.read_text(encoding="utf-8")
             for f in (ROOT/"app/src/main/java/os/vortex/tv").rglob("*.java"))
+        # Keep string literals intact while ignoring Java comments.
+        main = re.sub(r'"(?:\\.|[^"\\])*"|\'(?:\\.|[^\'\\])*\'|//[^\n]*|/\*[\s\S]*?\*/',
+                      lambda m: "" if m.group().startswith(("//", "/*")) else m.group(), main)
         for forbidden in ("BluetoothAdapter","WebView","GoogleApiClient","Firebase"):
-            self.assertNotIn(forbidden,main)
+            self.assertNotIn(forbidden,main, f"Forbidden dependency: {forbidden}")
 
     def test_lan_permission_and_nonexported_receiver(self):
         permissions=[v.get(ANDROID+"name") for v in self.manifest.findall("uses-permission")]

@@ -1,5 +1,6 @@
 """End-to-end HTTP transport test using only JDK + Python localhost."""
 import hashlib
+import selectors
 from pathlib import Path
 import shutil
 import subprocess
@@ -21,13 +22,18 @@ class LocalTransferTest(unittest.TestCase):
             p = subprocess.Popen(["java","-cp",tmp,"os.vortex.tv.LanApkServerHarness"],
                 stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)
             try:
-                url=p.stdout.readline().strip()
-                self.assertTrue(url.startswith("http://127.0.0.1:"),url)
+                with selectors.DefaultSelector() as ready:
+                    ready.register(p.stdout, selectors.EVENT_READ)
+                    self.assertTrue(ready.select(timeout=5), "Java server startup timed out")
+                    url=p.stdout.readline().strip()
+                if not url.startswith("http://127.0.0.1:"):
+                    output, err = p.communicate(timeout=5)
+                    self.fail(f"Java server failed to start: {url}\n{output}\n{err}")
                 with urllib.request.urlopen(url,timeout=4) as r:
                     self.assertIn("Vortex App Installer",r.read().decode("utf-8"))
                 origin=url.split("/p/")[0]
                 upload=url.replace("/p/","/upload/")
-                payload=b"PK\\x03\\x04"+b"test-only-not-an-actual-apk"
+                payload=b"PK\x03\x04"+b"test-only-not-an-actual-apk"
                 headers={"Content-Type":"application/vnd.android.package-archive"}
                 bad=urllib.request.Request(upload,data=payload,method="POST",
                       headers={**headers,"Origin":"http://attacker.invalid"})
@@ -57,6 +63,7 @@ class LocalTransferTest(unittest.TestCase):
                 self.assertIn("SHA256="+hashlib.sha256(payload).hexdigest(),output)
             finally:
                 if p.poll() is None:
-                    p.kill();p.communicate(timeout=5)
+                    p.kill()
+                p.communicate(timeout=5)
 
 if __name__=="__main__":unittest.main()
