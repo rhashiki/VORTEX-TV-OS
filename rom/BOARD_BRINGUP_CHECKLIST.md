@@ -1,5 +1,12 @@
 # R329Q_V8.0 / RK3229 — mandatory physical bring-up gates
 
+### Owner information is exhausted
+The owner has provided all available information and cannot obtain additional
+board details. Do not request these identifiers, photos, firmware or diagnostics
+again. The checks below describe validation we cannot currently establish;
+they are not another data-collection task for the owner. Continue cloud/app and
+public-source work using [HARDWARE.md](HARDWARE.md), preserving unknown values.
+
 ### Known from photographed device and AIDA64
 - PCB R329Q_V8.0; Rockchip RK322x family (reported RK3229), ARMv7.
 - 1 GiB-class DDR3 from four 2 Gbit Samsung components; kernel 3.10.104; Android API25.

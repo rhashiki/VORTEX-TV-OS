@@ -7,6 +7,20 @@
 **Default branch:** main
 **Strict restriction:** NEVER create, run, inspect, or depend on GitHub Actions. No deployment/flash/merge is permitted on the basis of source checks alone.
 
+## Owner constraint: no further board information is available
+
+The owner has already supplied everything available and cannot obtain further
+unit-specific information. Do not ask again for BSP/base firmware, FlashID,
+Wi-Fi chip identification, board photos or diagnostic output. Use the inventory
+and public-source investigation paths in [rom/HARDWARE.md](../rom/HARDWARE.md).
+The remaining unknowns stay unknown; obtaining candidate public sources is the
+developer's task, not a new prerequisite to assign to the owner.
+
+Continue app development, source/dependency audits and candidate builds where
+possible. Report APK validation, a candidate BSP and any compiled image as
+separate results. Physical compatibility and boot remain unverified until
+actually demonstrated; lack of extra information does not establish them.
+
 ## Working goal
 
 Use a cloud computer terminal (if available) to clone main and compile the native Vortex Android APK, run complete local automated checks and an Android emulator for functional tests. Investigate available AOSP 7.1.2 / Rockchip RK322x build dependencies and produce an honest report on whether a complete ROM is feasible on the available compute.

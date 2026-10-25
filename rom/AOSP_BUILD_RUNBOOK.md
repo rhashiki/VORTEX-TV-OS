@@ -9,6 +9,27 @@ As fontes públicas reunidas em [AOSP_SOURCE_MAP.md](AOSP_SOURCE_MAP.md) servem
 para investigar dependências. A presença de `rk322x_box`, de um DTS RK3229 ou de
 um kernel 3.10.104 não demonstra compatibilidade com a R329Q_V8.0.
 
+## Avançar com as informações já disponíveis
+
+O proprietário confirmou que não pode fornecer novos dados da placa.
+Não repetir pedidos de firmware-base, FlashID, identificação de Wi-Fi,
+fotos ou diagnósticos. A restrição e o inventário conhecido estão em
+[HARDWARE.md](HARDWARE.md).
+
+A investigação deve usar os identificadores já registrados para procurar e
+auditar bases públicas. Resolver as dependências de uma base candidata e, com
+fontes completas e ambiente adequado, compilar primeiro o módulo e depois
+uma imagem experimental continua sendo uma tarefa possível de desenvolvimento.
+O repositório atual ainda não contém esse BSP completo. Não exigir que o
+proprietário o encontre para retomar os trabalhos no aplicativo e nas fontes.
+
+Classificar cada entrega pela evidência: APK validado; base candidata auditada;
+imagem compilada sem validação física; ou ROM com boot físico demonstrado.
+Uma compilação genérica RK322x pode comprovar parte da cadeia de build, mas
+não resolve por si só os componentes desconhecidos desta unidade. Os critérios
+físicos ao fim deste documento continuam pendentes, sem virar novos pedidos de
+coleta de dados ao proprietário.
+
 ## Pré-verificação sem alterar o BSP
 
 Use Python 3.9 ou superior para o verificador. Em uma árvore BSP já disponível,
@@ -114,8 +135,10 @@ ROM flashável; uma imagem gerada não comprova boot.
 
 Seguir [BOARD_BRINGUP_CHECKLIST.md](BOARD_BRINGUP_CHECKLIST.md): confirmar flash,
 DDR/loader/trust, DTB, rede, IR e a recuperação Loader/MaskROM da unidade antes
-de qualquer escrita. O proprietário dispensou o backup original, mas não o
-diagnóstico nem o plano de recuperação. Escrita física exige autorização
+de qualquer escrita. O proprietário dispensou o backup original. Como não há
+novos dados físicos disponíveis, identificação e recuperação continuam sem
+comprovação; isso não deve gerar outro pedido de diagnóstico ao proprietário.
+Escrita física exige autorização
 explícita e não é uma etapa deste preflight.
 
 Após uma futura compilação, registrar o boot real e testar HDMI/áudio, GPU/VPU,

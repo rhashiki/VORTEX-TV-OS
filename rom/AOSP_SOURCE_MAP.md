@@ -25,6 +25,10 @@ compilada primeiro no BSP escolhido; só então se tenta gerar a imagem completa
 
 ## Verificações físicas obrigatórias
 
+O proprietário já forneceu todos os dados disponíveis e não consegue obter
+outros. Não solicitar novamente coleta física; seguir a restrição em
+[HARDWARE.md](HARDWARE.md). Os itens abaixo permanecem critérios não comprovados.
+
 FlashID, NAND/eMMC e geometria, capacidade e partições, revisão do SoC, DDR,
 Wi-Fi e IR precisam de diagnóstico na unidade ou de evidências identificadas.
 Confirmar recuperação Loader/MaskROM antes de qualquer escrita. Depois da
