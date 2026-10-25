@@ -22,7 +22,7 @@ final class NetworkAddress {
             Enumeration<InetAddress> addresses = iface.getInetAddresses();
             while (addresses.hasMoreElements()) {
                 InetAddress ip = addresses.nextElement();
-                if (!(ip instanceof Inet4Address) || ip.isLoopbackAddress() || ip.isLinkLocalAddress())
+                if (!(ip instanceof Inet4Address) || ip.isLoopbackAddress() || ip.isLinkLocalAddress() || !ip.isSiteLocalAddress())
                     continue;
                 if (name.startsWith("wlan") || name.startsWith("eth") || name.startsWith("en"))
                     return ip.getHostAddress();

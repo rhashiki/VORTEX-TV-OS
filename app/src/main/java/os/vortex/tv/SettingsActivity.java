@@ -19,7 +19,8 @@ public final class SettingsActivity extends Activity {
             {"Tela", Settings.ACTION_DISPLAY_SETTINGS},
             {"Som", Settings.ACTION_SOUND_SETTINGS},
             {"Data e hora", Settings.ACTION_DATE_SETTINGS},
-            {"Sistema", Settings.ACTION_SETTINGS}
+            {"Sistema", Settings.ACTION_SETTINGS},
+            {"Segurança / APKs", Settings.ACTION_SECURITY_SETTINGS}
         };
         LinearLayout grid = Ui.vertical(this);
         panel.addView(grid);

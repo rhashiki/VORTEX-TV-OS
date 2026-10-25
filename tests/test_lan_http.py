@@ -27,7 +27,7 @@ class LocalTransferTest(unittest.TestCase):
                     self.assertIn("Vortex App Installer",r.read().decode("utf-8"))
                 origin=url.split("/p/")[0]
                 upload=url.replace("/p/","/upload/")
-                payload=b"test-only-not-an-actual-apk"
+                payload=b"PK\\x03\\x04"+b"test-only-not-an-actual-apk"
                 headers={"Content-Type":"application/vnd.android.package-archive"}
                 bad=urllib.request.Request(upload,data=payload,method="POST",
                       headers={**headers,"Origin":"http://attacker.invalid"})
@@ -37,6 +37,16 @@ class LocalTransferTest(unittest.TestCase):
                 with self.assertRaises(urllib.error.HTTPError) as e:
                     urllib.request.urlopen(origin+"/p/wrong-token",timeout=4)
                 self.assertEqual(e.exception.code,404)
+                malformed=urllib.request.Request(upload,data=b"NOT_AN_APK",method="POST",
+                      headers={**headers,"Origin":origin})
+                with self.assertRaises(urllib.error.HTTPError) as e:
+                    urllib.request.urlopen(malformed,timeout=4)
+                self.assertEqual(e.exception.code,415)
+                missing_origin=urllib.request.Request(upload,data=payload,method="POST",
+                      headers=headers)
+                with self.assertRaises(urllib.error.HTTPError) as e:
+                    urllib.request.urlopen(missing_origin,timeout=4)
+                self.assertEqual(e.exception.code,403)
                 valid=urllib.request.Request(upload,data=payload,method="POST",
                       headers={**headers,"Origin":origin})
                 with urllib.request.urlopen(valid,timeout=4) as r:

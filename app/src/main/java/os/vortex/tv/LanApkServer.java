@@ -7,6 +7,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.net.InetAddress;
+import java.net.Inet4Address;
+import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketTimeoutException;
@@ -40,14 +43,20 @@ final class LanApkServer implements AutoCloseable {
     private Thread worker;
 
     LanApkServer(String ip, File cacheDir, Listener listener) throws IOException {
-        if (ip == null || ip.length() == 0 || ip.indexOf(':') >= 0)
+        if (ip == null || ip.length() == 0 || ip.indexOf(':') >= 0 || cacheDir == null || listener == null)
             throw new IllegalArgumentException("IPv4 local obrigatório");
+        InetAddress local = InetAddress.getByName(ip);
+        if (!(local instanceof Inet4Address) ||
+            (!local.isSiteLocalAddress() && !local.isLoopbackAddress()))
+            throw new IllegalArgumentException("Somente endereços IPv4 privados");
         this.ip = ip;
         this.directory = cacheDir;
         this.listener = listener;
         if (!directory.isDirectory() && !directory.mkdirs())
             throw new IOException("Não foi possível criar diretório de cache");
-        this.server = new ServerSocket(0);
+        this.server = new ServerSocket();
+        // Do not listen on wildcard 0.0.0.0; restrict uploads to the selected LAN address.
+        this.server.bind(new InetSocketAddress(local, 0), 2);
         this.server.setSoTimeout(1000);
         byte[] secret = new byte[16];
         new SecureRandom().nextBytes(secret);
@@ -71,7 +80,7 @@ final class LanApkServer implements AutoCloseable {
         try {
             while (!closed && System.currentTimeMillis() < expiresAt) {
                 try (Socket s = server.accept()) {
-                    s.setSoTimeout(180000);
+                    s.setSoTimeout(20000);
                     handle(s);
                 } catch (SocketTimeoutException ignored) {
                     // Poll to expire the pairing session and exit on activity close.
@@ -143,7 +152,7 @@ final class LanApkServer implements AutoCloseable {
     private void upload(InputStream input, OutputStream output, Map<String,String> headers) throws IOException {
         String expectedOrigin = "http://" + ip + ":" + server.getLocalPort();
         String origin = headers.get("origin");
-        if (origin != null && !expectedOrigin.equals(origin)) {
+        if (!expectedOrigin.equals(origin)) {
             respond(output, 403, "Forbidden", "text/plain; charset=utf-8", "Origem não autorizada");
             return;
         }
@@ -152,14 +161,14 @@ final class LanApkServer implements AutoCloseable {
             return;
         }
         String contentType = headers.get("content-type");
-        if (contentType == null || !contentType.startsWith("application/vnd.android.package-archive")) {
+        if (!"application/vnd.android.package-archive".equalsIgnoreCase(contentType)) {
             respond(output, 415, "Unsupported Media Type", "text/plain; charset=utf-8", "Somente APK");
             return;
         }
         long bytes;
         try { bytes = Long.parseLong(headers.get("content-length")); }
         catch (NumberFormatException error) { bytes = -1; }
-        if (bytes <= 0 || bytes > MAX_APK_BYTES) {
+        if (bytes < 4 || bytes > MAX_APK_BYTES) {
             respond(output, 413, "Payload Too Large", "text/plain; charset=utf-8", "Arquivo inválido ou acima de 512 MB");
             return;
         }
@@ -168,13 +177,29 @@ final class LanApkServer implements AutoCloseable {
             respond(output, 507, "Insufficient Storage", "text/plain; charset=utf-8", "Espaço insuficiente");
             return;
         }
+        byte[] signature = new byte[4];
+        int offset = 0;
+        while (offset < signature.length) {
+            int count = input.read(signature, offset, signature.length - offset);
+            if (count < 0) throw new IOException("Arquivo interrompido");
+            offset += count;
+        }
+        // APK must be a ZIP container; full signature validation belongs to PackageManager.
+        if (signature[0] != 0x50 || signature[1] != 0x4b ||
+            signature[2] != 0x03 || signature[3] != 0x04) {
+            respond(output, 415, "Unsupported Media Type", "text/plain; charset=utf-8",
+                "Arquivo não parece um APK");
+            return;
+        }
         File temp = File.createTempFile("vortex_transfer_", ".apk", directory);
         boolean completed = false;
         try {
             MessageDigest digest = MessageDigest.getInstance("SHA-256");
             try (OutputStream file = new FileOutputStream(temp)) {
+                file.write(signature);
+                digest.update(signature);
                 byte[] buffer = new byte[16384];
-                long remaining = bytes;
+                long remaining = bytes - 4;
                 while (remaining > 0 && !closed) {
                     int read = input.read(buffer, 0, (int)Math.min(buffer.length, remaining));
                     if (read < 0) throw new IOException("Upload interrompido");
@@ -185,11 +210,11 @@ final class LanApkServer implements AutoCloseable {
                 if (remaining != 0) throw new IOException("Transferência interrompida");
                 file.flush();
             }
-            completed = true;
             respond(output, 200, "OK", "text/plain; charset=utf-8",
                 "APK recebido. Confirme a instalação na televisão.");
             listener.onStatus("APK recebido, preparando instalação");
             listener.onComplete(temp, hex(digest.digest()));
+            completed = true;
             close(); // A QR session can be used once only.
         } catch (java.security.NoSuchAlgorithmException error) {
             throw new IOException("SHA-256 indisponível", error);
