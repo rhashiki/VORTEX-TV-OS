@@ -17,6 +17,16 @@ As quatro peças a seguir são oficiais e distintas:
 
 **Não confundir:** as imagens neon quadrada e horizontal são ícones do **aplicativo Launcher**; o logo branco completo com texto é a marca na **Home**. O vídeo MP4 é exclusivo do **boot da ROM**, não é o ícone do app.
 
+### Pré-visualizações já versionadas
+
+Os arquivos abaixo foram reduzidos somente para **prévia documental** (não usar como masters da marca nem publicar no APK final sem as fontes em resolução adequada):
+
+- [Ícone quadrado do Launcher](branding/previews/launcher-icon-square.webp) — 96×96
+- [Ícone horizontal para Android TV](branding/previews/launcher-banner-tv.webp) — 96×54
+- [Logo completo da Home](branding/previews/home-logo-complete.webp) — 96×40
+
+Os **originais** 1536px, identificados por hashes acima, são obrigatórios para gerar os recursos definitivos. O vídeo MP4 e `bootanimation.zip` oficial continuam disponíveis nos artefatos desta conversa e **não estão versionados no repositório**.
+
 ### Boot animation preparada a partir do MP4 oficial
 
 - Arquivo gerado no ambiente de artefatos: `Vortex_TV_OS_bootanimation_official.zip`
