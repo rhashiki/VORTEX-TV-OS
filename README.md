@@ -1,49 +1,58 @@
-# Vortex TV OS — Build 01 (starter técnico)
+# Vortex TV OS
 
-Sistema Android TV experimental para **MXQ PRO 4K 5G / R329Q_V8.0** (família Rockchip RK322x, ARMv7, 1 GB DDR3, Android 7.1.2, kernel 3.10.104).
+Firmware experimental minimalista para **MXQ PRO 4K 5G / R329Q_V8.0** (Rockchip RK322x, ARMv7, ~1 GB DDR3).
 
-> **Não é uma ROM flashável.** Nenhum APK foi compilado, emulado ou inicializado na TV Box até o momento. Este commit publica código inicial, não conclui a Build 01.
+**Estado atual: código inicial Android/Launcher/Installer. Não é um APK testado nem uma ROM flashável.**
 
-## O que há neste repositório
+## Escopo do produto
+- Home 720p, gradiente roxo/azul neon, data/hora, D-pad e ações de energia.
+- Uma aplicação de usuário de fábrica: Home + Vortex App Installer unificados.
+- Enviar APK do celular por QR Code e HTTP local temporário, ou selecionar de USB.
+- Android PackageInstaller instala com confirmação na TV. Apps ficam em Meus apps.
+- Boot animation baseada no vídeo fornecido pelo proprietário, sem nuvem.
+- Sem Bluetooth, Google Play Services ou Vortex App Store.
 
-- Launcher Java nativo (API 25) sem AndroidX, GMS, Kotlin runtime ou WebView.
-- Home escura com gradiente roxo/azul, relógio e foco via D-pad.
-- Atalhos para instalador (placeholder), Configurações e Energia.
-- Acesso discreto a aplicativos de usuário após a instalação.
-- Fragmentos AOSP 7.1.2 em `Android.mk` e `rom/vortex_product.mk` (não fornecem kernel, HALs, DTB ou loader).
-- Prévia navegável em `preview/index.html` (somente simulação visual).
-- Gerador de boot animation em `tools/make_bootanimation.py`; a logo oficial de duas ondas ainda não foi incorporada.
-- Testes estáticos em `tests/test_source_layout.py`.
+## Implementações no repositório
+- `app/`: Java nativo API25; sem WebView, AndroidX ou runtime Kotlin.
+- `app/src/main/java/os/vortex/tv/LanApkServer.java`: upload local em streaming, segredo temporário, SHA-256, restrições de tamanho, expiração e origem.
+- `app/src/main/java/os/vortex/tv/ApkInstaller.java`: instalação via PackageInstaller Session API25, confirmada na TV.
+- `app/src/main/java/io/nayuki/qrcodegen/`: gerador QR puro Java (MIT), licença preservada nos arquivos.
+- `tools/bootanimation_from_video.py`: converter MP4 oficial para `bootanimation.zip` compactado.
+- `rom/`: fragmentos AOSP e inventário do hardware. **Não contém drivers proprietários ou bootloader!**
+- `tests/`: testes estáticos e integração HTTP local independente.
 
-## Compilar apenas o aplicativo
-
-É necessário Android Studio / Android SDK (plataforma 33), Gradle compatível com Android Gradle Plugin 7.4.2 e JDK 11. Não há Gradle Wrapper incluído.
+## Compilar APK de desenvolvimento
+Android Studio/SDK 33, JDK 11, Android Gradle Plugin 7.4.2 e Gradle compatível (não há wrapper incluído):
 
 ```sh
 gradle :app:assembleDebug
 adb install app/build/outputs/apk/debug/app-debug.apk
 ```
 
-Depois, testar num emulador Android TV compatível. Reinício/desligamento privilegiado dependem de integração na ROM.
+Na ROM final, o aplicativo deve ser integrado à imagem AOSP e o permissionamento de energia validado. APK avulso não possui privilégios de reinicialização.
 
-## Testes locais, sem GitHub Actions
-
+## Testes independentes — sem GitHub Actions
 ```sh
 python -m unittest discover -s tests -v
 ```
+O teste HTTP compila `LanApkServer.java` com JDK e testa o protocolo pela interface de loopback. **Ainda falta executar a compilação Android e validar emulador, celular e hardware físico.**
 
-O teste estático **não** prova compilação Android, velocidade, funcionamento do D-pad ou compatibilidade da ROM com o MXQ.
+## Recriar a boot animation do vídeo do usuário
+```sh
+python tools/bootanimation_from_video.py /caminho/video-vortex.mp4
+```
+Requer `ffmpeg` e `Pillow`. Saída ignorada pelo Git: `assets/bootanimation.zip`. O arquivo gerado separadamente nesta conversa tem 720p/12 FPS e cerca de 5,8 MiB. A arte não é recriada nem substituída.
 
-## Alvo final
+## Metas ainda não medidas
+- Firmware compactado idealmente <= 600 MB
+- Sistema instalado idealmente <= 800 MB
+- RAM ociosa idealmente <= 450 MB
 
-Vortex TV OS (sem Lite), duas builds completas, interface 720p minimalista; Installer local por QR Code ou pendrive, nenhum Bluetooth, nenhum Google Play Services, nenhuma App Store.
+## Riscos e pendências
+A placa ainda requer confirmação do FlashID NAND/eMMC, controlador Wi-Fi, loader DDR, DTB, HALs e drivers. AOSP 7.1.2 e kernel 3.10.104 são obsoletos e não devem ser usados para operações sensíveis. O proprietário dispensou backup do Android antigo, mas **não** dispensou diagnóstico e plano de recuperação.
 
-Metas **não medidas**: firmware compactado até 600 MB, sistema instalado até 800 MB e consumo em repouso até 450 MB.
+A integração AOSP é experimental. Não flashear `app/` ou `rom/` diretamente.
 
-## Integrar ao AOSP
+Referências: [Hardware](rom/HARDWARE.md) · [Installer](rom/INSTALLER.md).
 
-Importar esta pasta numa árvore AOSP 7.1.2 verificada em `vendor/vortex/home`, integrar `rom/vortex_product.mk` e compilar. **Não tentar gravar** antes de identificar modelo/ID da flash, Wi-Fi, loader DDR, partições e procedimento de recuperação. O proprietário dispensou backup da ROM antiga.
-
-Status técnico e fontes: [rom/HARDWARE.md](rom/HARDWARE.md).
-
-**Não criar nem executar GitHub Actions.** Validar localmente ou em ambiente independente.
+**Nunca criar ou executar GitHub Actions.** Uma build consolidada por vez, sem merge até os testes locais e físicos.

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="os.vortex.tv">
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
     <uses-feature android:name="android.software.leanback" android:required="false" />
     <!-- Signature/privileged: system ROM must grant it; never assume ordinary app can reboot. -->
@@ -21,6 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".InstallerActivity" android:exported="false" android:screenOrientation="landscape" />
+        <receiver android:name=".InstallResultReceiver" android:exported="false" />
         <activity android:name=".SettingsActivity" android:exported="false" android:screenOrientation="landscape" />
         <activity android:name=".AppsActivity" android:exported="false" android:screenOrientation="landscape" />
     </application>
