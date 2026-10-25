@@ -1,5 +1,8 @@
 # Build 01 — reproducible validation in ChatGPT Work
 
+**READ FIRST:** [ROADMAP.md](../ROADMAP.md) and [docs/BRANDING.md](BRANDING.md) are authoritative for the official Launcher square and 16:9 TV icons, the white complete Home logo and the newly supplied 4-second boot animation MP4. Do not reuse obsolete 6-second animation or redraw the brand. Binary originals must be mounted/transferred into the workspace and verified by SHA-256 prior to integration.
+
+
 **Project:** https://github.com/rhashiki/VORTEX-TV-OS
 **Default branch:** main
 **Strict restriction:** NEVER create, run, inspect, or depend on GitHub Actions. No deployment/flash/merge is permitted on the basis of source checks alone.

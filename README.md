@@ -1,3 +1,7 @@
+# Identidade visual e roadmap oficial
+
+**[ROADMAP.md](ROADMAP.md)** define os dois ícones oficiais do Launcher (quadrado e TV 16:9), o logotipo branco completo da Home e a nova boot animation MP4 de 4 segundos. Codex deve ler antes de editar a UI. Detalhes em [docs/BRANDING.md](docs/BRANDING.md).
+
 # Vortex TV OS
 
 Firmware experimental minimalista para **MXQ PRO 4K 5G / R329Q_V8.0** (Rockchip RK322x, ARMv7, ~1 GB DDR3).
