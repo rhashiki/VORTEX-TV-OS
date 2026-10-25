@@ -1,0 +1,11 @@
+.gradle/
+.idea/
+*.iml
+local.properties
+**/build/
+**/__pycache__/
+*.pyc
+*.apk
+*.aab
+*.img
+assets/bootanimation.zip

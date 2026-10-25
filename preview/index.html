@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vortex TV OS · Prévia</title>
+<style>
+*{box-sizing:border-box}body{background:#090b18;margin:0;min-height:100vh;display:grid;place-items:center;font-family:Arial,sans-serif;color:#fff}
+#tv{width:min(96vw,1280px);aspect-ratio:16/9;position:relative;overflow:hidden;border-radius:16px;background:linear-gradient(126deg,#17032e 0%,#341267 38%,#17459b 79%,#002850 100%);box-shadow:0 25px 100px #000c}
+header{position:absolute;top:6%;left:5%;right:5%;display:flex;justify-content:space-between;align-items:start}.brand{font-size:clamp(12px,2vw,26px);letter-spacing:.18em;font-weight:800}
+.clock{text-align:right;font-size:clamp(22px,3vw,37px);font-weight:700}.date{color:#c7c7ee;font-size:clamp(10px,1.1vw,17px);margin-top:6px;text-align:right}
+#home{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:flex;gap:18px;width:90%;justify-content:center}
+.tile{display:flex;flex-direction:column;justify-content:center;align-items:center;width:190px;height:136px;background:#232450aa;border:1px solid #7075aa;border-radius:20px;color:#fff;cursor:pointer;transition:background .12s,transform .12s,border .12s}
+.tile:focus-visible,.tile.active{outline:none;border:3px solid #e2d7ff;background:#7046c8db;transform:scale(1.035)}
+.icon{font-size:43px;margin-bottom:14px}.lab{font-size:16px;font-weight:700}
+#modal{display:none;position:absolute;inset:0;background:#07051ac7;align-items:center;justify-content:center}#modal.open{display:flex}
+.panel{background:#18163c;max-width:75%;padding:32px;border:1px solid #8872db;border-radius:20px;text-align:center}.panel p{color:#cfcbea}.panel button{border:1px solid #d2c8ff;color:#fff;background:#5136a4;padding:11px 22px;border-radius:9px}
+footer{position:absolute;bottom:20px;left:24px;color:#c4bee8;font-size:12px}
+@media(max-width:650px){#home{gap:8px}.tile{height:90px;border-radius:12px}.icon{font-size:25px;margin-bottom:6px}.lab{font-size:11px}}
+</style></head><body>
+<main id="tv" role="application" aria-label="Prévia do Vortex TV OS">
+<header><div class="brand">VORTEX TV OS</div><div><div id="time" class="clock"></div><div id="date" class="date"></div></div></header>
+<section id="home" aria-label="Menu"><button class="tile active" data-action="installer"><span class="icon">⇧</span><span class="lab">Instalar APK</span></button>
+<button class="tile" data-action="settings"><span class="icon">⚙</span><span class="lab">Configurações</span></button>
+<button class="tile" data-action="power"><span class="icon">⏻</span><span class="lab">Energia</span></button></section>
+<footer>PRÉVIA · Não instala APKs nem substitui o Android</footer>
+<div id="modal" role="dialog" aria-modal="true"><div class="panel"><h2 id="heading"></h2><p id="body"></p><button id="back">Voltar (Esc)</button></div></div>
+</main><script>
+let idx=0;const tiles=[...document.querySelectorAll(".tile")];const modal=document.querySelector("#modal");
+function clock(){const d=new Date();document.querySelector("#time").textContent=d.toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"});document.querySelector("#date").textContent=d.toLocaleDateString("pt-BR",{weekday:"short",day:"numeric",month:"short",year:"numeric"}).toUpperCase()}
+clock();setInterval(clock,30000);
+function focus(i){idx=(i+tiles.length)%tiles.length;tiles.forEach((t,j)=>t.classList.toggle("active",i===j));tiles[idx].focus()}
+function act(a){const msgs={installer:["Vortex App Installer","Transferência por QR Code virá na Build 02."],settings:["Configurações","Wi-Fi · Rede · Tela · Som · Data e hora"],power:["Energia","Reiniciar ou Desligar (simulação)"]};const m=msgs[a];document.querySelector("#heading").textContent=m[0];document.querySelector("#body").textContent=m[1];modal.classList.add("open");document.querySelector("#back").focus()}
+tiles.forEach((t,i)=>{t.onclick=()=>act(t.dataset.action);t.onfocus=()=>{idx=i;tiles.forEach((x,j)=>x.classList.toggle("active",i===j))}});
+function close(){modal.classList.remove("open");focus(idx)}document.querySelector("#back").onclick=close;
+document.addEventListener("keydown",e=>{if(modal.classList.contains("open")){if(["Escape","Backspace"].includes(e.key)){e.preventDefault();close()}return}if(["ArrowLeft","ArrowUp"].includes(e.key)){e.preventDefault();focus(idx-1)}if(["ArrowRight","ArrowDown"].includes(e.key)){e.preventDefault();focus(idx+1)}if(e.key==="Enter"){e.preventDefault();act(tiles[idx].dataset.action)}});
+focus(0);
+</script></body></html>
