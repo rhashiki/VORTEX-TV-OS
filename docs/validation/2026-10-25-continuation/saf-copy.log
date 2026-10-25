@@ -1,0 +1,3 @@
+PASS: ACTION_OPEN_DOCUMENT selected APK from emulated storage; copied URI reached PackageInstaller
+PASS: after DPAD confirmation installed APK hash matches selected file
+Scope: emulated storage + document provider; physical USB not tested

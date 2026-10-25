@@ -62,8 +62,13 @@ class ContractChecks(unittest.TestCase):
 
     def test_home_tiles(self):
         home=read("app/src/main/java/os/vortex/tv/HomeActivity.java")
-        for label in ("Instalar APK","Configurações","Energia","Meus apps"):
+        for label in ("Instalar APK","Configurações","Energia"):
             self.assertIn(label,home)
+
+    def test_no_separate_app_drawer(self):
+        activities={v.get(ANDROID+"name") for v in self.manifest.findall(".//activity")}
+        self.assertNotIn(".AppsActivity",activities)
+        self.assertFalse((ROOT/"app/src/main/java/os/vortex/tv/AppsActivity.java").exists())
 
     def test_no_firmware_loader_overwrite(self):
         product=read("rom/vortex_product.mk")

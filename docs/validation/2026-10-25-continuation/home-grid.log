@@ -1,0 +1,4 @@
+PASS: all18 launchable user apps accessible directly on Home; no drawer tile
+PASS: four DPAD_DOWN inputs reach last row and scroll Home
+PASS: DPAD_CENTER launches installed app directly from Home
+PASS: returning preserves focus on Home app

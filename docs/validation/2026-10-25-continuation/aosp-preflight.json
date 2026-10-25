@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "profile": "community-rk322x_box / aosp-7.1.2_r6 reference layout",
+  "bsp_root": "/workspace/vortex-build",
+  "status": "blocked",
+  "checks": [
+    {
+      "check": "bsp_root",
+      "status": "pass",
+      "message": "Directory exists"
+    },
+    {
+      "check": ".repo/manifest.xml",
+      "status": "blocked",
+      "message": "Missing or unreadable file"
+    },
+    {
+      "check": "build/envsetup.sh",
+      "status": "blocked",
+      "message": "Missing or unreadable file"
+    },
+    {
+      "check": "build/core/main.mk",
+      "status": "blocked",
+      "message": "Missing or unreadable file"
+    },
+    {
+      "check": "build/core/version_defaults.mk",
+      "status": "blocked",
+      "message": "Missing or unreadable file"
+    },
+    {
+      "check": "device/rockchip/rk322x/AndroidProducts.mk",
+      "status": "blocked",
+      "message": "Missing or unreadable file"
+    },
+    {
+      "check": "device/rockchip/rk322x/BoardConfig.mk",
+      "status": "blocked",
+      "message": "Missing or unreadable file"
+    },
+    {
+      "check": "device/rockchip/rk322x/rk322x_box.mk",
+      "status": "blocked",
+      "message": "Missing or unreadable file"
+    },
+    {
+      "check": "device/rockchip/common/BoardConfig.mk",
+      "status": "blocked",
+      "message": "Missing or unreadable file"
+    },
+    {
+      "check": "device/rockchip/common/tv/tv_base.mk",
+      "status": "blocked",
+      "message": "Missing or unreadable file"
+    },
+    {
+      "check": "vendor/rockchip/rk322x/BoardConfigVendor.mk",
+      "status": "blocked",
+      "message": "Missing or unreadable file"
+    },
+    {
+      "check": "kernel/Makefile",
+      "status": "blocked",
+      "message": "Missing or unreadable file"
+    },
+    {
+      "check": "kernel/arch/arm/boot/Image",
+      "status": "blocked",
+      "message": "Missing or unreadable file"
+    },
+    {
+      "check": "jdk8",
+      "status": "pass",
+      "message": "Java and javac 8 detected"
+    },
+    {
+      "check": "resolved_manifest",
+      "status": "blocked",
+      "message": "Provide --manifest-lock FILE from repo manifest -r; .repo/manifest.xml alone is not a complete pinned-source inventory"
+    }
+  ],
+  "inventory": [],
+  "limits": [
+    "This is the documented community rk322x_box file-layout profile, not a universal Rockchip BSP validator.",
+    "File presence, version strings and hashes do not prove source rights, a complete dependency graph or reproducibility.",
+    "A manifest lock is checked for explicit project commit IDs, not repository availability or correspondence to this checkout.",
+    "No BSP scripts, builds, firmware commands or hardware probes are executed.",
+    "R329Q_V8.0 compatibility and physical boot remain unvalidated, even when the preflight exits 0."
+  ],
+  "rom_build_validation": "not_performed",
+  "hardware_validation": "not_performed",
+  "java_version": "1.8.0_504",
+  "javac_version": "1.8.0_504",
+  "disk_free_bytes": 24212566016
+}

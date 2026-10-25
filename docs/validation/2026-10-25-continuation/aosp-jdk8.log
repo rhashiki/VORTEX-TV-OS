@@ -1,0 +1,7 @@
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+openjdk version "1.8.0_504"
+OpenJDK Runtime Environment (Temurin)(build 1.8.0_504-b01)
+OpenJDK 64-Bit Server VM (Temurin)(build 25.504-b01, mixed mode)
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+javac 1.8.0_504
+Distribution archive SHA256 verified: 9c70e102f527ac674ac2fe9c7d47b9a04e2d19842ba5ab8e9b33f368bbadfaea

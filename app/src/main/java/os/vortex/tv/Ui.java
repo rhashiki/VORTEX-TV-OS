@@ -4,10 +4,13 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
+import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -52,6 +55,30 @@ final class Ui {
         return d;
     }
     static LinearLayout tile(Activity a, String symbol, String title, final Runnable click) {
+        TextView icon = text(a, symbol, 34, false);
+        icon.setGravity(Gravity.CENTER);
+        return tile(a, icon, title, click);
+    }
+    static LinearLayout tile(Activity a, int drawable, String title, final Runnable click) {
+        ImageView icon = new ImageView(a);
+        icon.setImageResource(drawable);
+        icon.setScaleType(ImageView.ScaleType.CENTER);
+        icon.setPadding(0, dp(a, 6), 0, dp(a, 7));
+        icon.setImportantForAccessibility(View.IMPORTANT_FOR_ACCESSIBILITY_NO);
+        return tile(a, icon, title, click);
+    }
+    static LinearLayout tile(Activity a, Drawable drawable, String title, final Runnable click) {
+        ImageView icon = new ImageView(a);
+        icon.setImageDrawable(drawable);
+        icon.setScaleType(ImageView.ScaleType.FIT_CENTER);
+        icon.setImportantForAccessibility(View.IMPORTANT_FOR_ACCESSIBILITY_NO);
+        return tile(a, icon, title, click, dp(a, 47));
+    }
+    private static LinearLayout tile(Activity a, View icon, String title, final Runnable click) {
+        return tile(a, icon, title, click, -2);
+    }
+    private static LinearLayout tile(Activity a, View icon, String title, final Runnable click,
+                                     int iconHeight) {
         LinearLayout t = vertical(a);
         t.setGravity(Gravity.CENTER);
         t.setPadding(dp(a, 16), dp(a, 12), dp(a, 16), dp(a, 12));
@@ -59,13 +86,13 @@ final class Ui {
         t.setFocusable(true);
         t.setClickable(true);
         t.setContentDescription(title);
-        TextView icon = text(a, symbol, 34, false);
-        icon.setGravity(Gravity.CENTER);
         TextView label = text(a, title, 16, true);
         label.setGravity(Gravity.CENTER);
+        label.setMaxLines(2);
+        label.setEllipsize(TextUtils.TruncateAt.END);
         LinearLayout.LayoutParams labelP = new LinearLayout.LayoutParams(-1, -2);
         labelP.topMargin = dp(a, 11);
-        t.addView(icon, new LinearLayout.LayoutParams(-1, -2));
+        t.addView(icon, new LinearLayout.LayoutParams(-1, iconHeight));
         t.addView(label, labelP);
         t.setOnFocusChangeListener((view, focused) -> {
             view.setBackground(tileBackground(focused));

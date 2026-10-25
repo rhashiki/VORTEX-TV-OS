@@ -1,0 +1,4 @@
+PASS: fixture uploaded to Android LAN-bound socket
+PASS: DPAD cancellation leaves no installed fixture and returns to landing without spent QR
+Picker texts: ['Recent', 'vortex-next-home.png', '12:42 PM', 'vortex-smoke.png', '12:23 PM', 'vortex-pairing.png', '12:15 PM', 'vortex-power.png', '12:14 PM', 'vortex-home.png', '12:13 PM']
+Picker descriptions: ['Show roots', 'Grid view', 'Sort by', 'More options']

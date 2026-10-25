@@ -1,0 +1,2 @@
+PASS: updated app label appears on Home after resume, with unchanged package count
+PASS: focused app remains visible after Home refresh

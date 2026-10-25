@@ -74,6 +74,13 @@ public final class InstallerActivity extends Activity {
                 @Override public void onStatus(String message) { runOnUiThread(() -> update(message)); }
                 @Override public void onComplete(File apk, String sha256) {
                     runOnUiThread(() -> {
+                        // Uploads consume the pairing once. PackageInstaller may be
+                        // translucent, so onStop/onStart alone cannot clear its QR.
+                        if (server != null) {
+                            server.close();
+                            server = null;
+                        }
+                        showLanding();
                         update("Arquivo recebido · SHA-256: " + sha256.substring(0, 12) + "…");
                         ApkInstaller.submit(InstallerActivity.this, apk, InstallerActivity.this::update);
                     });

@@ -4,13 +4,13 @@ Firmware experimental minimalista para **MXQ PRO 4K 5G / R329Q_V8.0** (Rockchip 
 
 **Estado atual: APK debug compilado e testes funcionais parciais no emulador Android API 25. Não é uma ROM flashável nem foi validado no RK3229 físico.**
 
-Resultados e limites: [validação da compilação e do emulador](docs/VALIDATION_2026-10-25_RETRY.md).
+Resultados e limites: [continuação e preparação AOSP](docs/VALIDATION_2026-10-25_CONTINUATION.md) · [primeira compilação e emulador](docs/VALIDATION_2026-10-25_RETRY.md).
 
 ## Escopo do produto
 - Home 720p, gradiente roxo/azul neon, data/hora, D-pad e ações de energia.
 - Uma aplicação de usuário de fábrica: Home + Vortex App Installer unificados.
 - Enviar APK do celular por QR Code e HTTP local temporário, ou selecionar de USB.
-- Android PackageInstaller instala com confirmação na TV. Apps ficam em Meus apps.
+- Android PackageInstaller instala com confirmação na TV. Todos os apps de usuário aparecem diretamente na Home, sem gaveta.
 - Boot animation baseada no vídeo fornecido pelo proprietário, sem nuvem.
 - Sem Bluetooth, Google Play Services ou Vortex App Store.
 

@@ -5,8 +5,9 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
     <uses-feature android:name="android.software.leanback" android:required="false" />
-    <!-- Signature/privileged: system ROM must grant it; never assume ordinary app can reboot. -->
+    <!-- Platform permissions: ROM must grant these; ordinary APKs cannot reboot/shut down. -->
     <uses-permission android:name="android.permission.REBOOT" />
+    <uses-permission android:name="android.permission.SHUTDOWN" />
     <application android:allowBackup="false" android:usesCleartextTraffic="false"
         android:label="Vortex TV OS" android:theme="@style/Theme.Vortex"
         android:hasCode="true" android:supportsRtl="true">
@@ -26,6 +27,5 @@
         <activity android:name=".InstallerActivity" android:exported="false" android:screenOrientation="landscape" />
         <receiver android:name=".InstallResultReceiver" android:exported="false" />
         <activity android:name=".SettingsActivity" android:exported="false" android:screenOrientation="landscape" />
-        <activity android:name=".AppsActivity" android:exported="false" android:screenOrientation="landscape" />
     </application>
 </manifest>

@@ -31,8 +31,42 @@ final class UserApps {
                 if (seen.add(app.packageName)) out.add(info);
             }
         }
-        Collections.sort(out, (a, b) -> String.valueOf(a.loadLabel(pm))
-            .compareToIgnoreCase(String.valueOf(b.loadLabel(pm))));
+        Collections.sort(out, (a, b) -> {
+            int byLabel = label(pm, a).compareToIgnoreCase(label(pm, b));
+            return byLabel != 0 ? byLabel : component(a).compareTo(component(b));
+        });
         return out;
+    }
+
+    static String label(PackageManager pm, ResolveInfo app) {
+        try {
+            CharSequence label = app.loadLabel(pm);
+            if (label != null && label.length() > 0) return label.toString();
+        } catch (RuntimeException ignored) {
+            // A package may have changed since the launcher query.
+        }
+        return app.activityInfo.packageName;
+    }
+
+    static String component(ResolveInfo app) {
+        return app.activityInfo.packageName + "/" + app.activityInfo.name;
+    }
+
+    static String signature(Context context, List<ResolveInfo> apps) {
+        PackageManager pm = context.getPackageManager();
+        StringBuilder signature = new StringBuilder();
+        for (ResolveInfo app : apps) {
+            String component = component(app), label = label(pm, app);
+            signature.append(component.length()).append(':').append(component)
+                .append(label.length()).append(':').append(label);
+            try {
+                signature.append(':').append(pm.getPackageInfo(
+                    app.activityInfo.packageName, 0).lastUpdateTime);
+            } catch (PackageManager.NameNotFoundException ignored) {
+                signature.append(":removed");
+            }
+            signature.append('\n');
+        }
+        return signature.toString();
     }
 }
