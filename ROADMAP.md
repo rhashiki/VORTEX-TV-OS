@@ -70,10 +70,18 @@ Os **originais** 1536px, identificados por hashes acima, são obrigatórios para
 
 ## Build 01 — Core / identidade / hardware
 
+**Estratégia de teste definida pelo proprietário:** priorizar boot por microSD,
+validar o Vortex na TV Box e só depois preparar a instalação definitiva.
+Pendrive é alternativa condicionada ao bootloader. Seguir
+[rom/EXTERNAL_BOOT_PLAN.md](rom/EXTERNAL_BOOT_PLAN.md); a imagem externa ainda
+não foi compilada nem testada. Preservar a memória interna durante essa etapa
+é um critério a demonstrar, não uma garantia já estabelecida.
+
 - [x] Código-fonte inicial da Home, controles, Installer e integração experimental AOSP consolidado na `main`.
 - [x] Compilação de APK debug e testes parciais em emulador reportados em `docs/VALIDATION_2026-10-25_CONTINUATION.md`.
 - [ ] Integração das quatro peças de marca oficiais e atualização visual.
 - [ ] Compilação e regressão completas, incluindo teste de QR/USB/PackageInstaller.
+- [ ] Compilar uma imagem de teste microSD e demonstrar boot externo com a instalação interna preservada.
 - [ ] Confirmar flash ID exato, NAND, Wi-Fi, DDR loader, DTB, áudio/HDMI, GPU/VPU e controle IR da **unidade R329Q_V8.0**.
 - [ ] AOSP/firmware flashável e **boot físico real** testados; não declarar ROM pronta antes disso.
 - [ ] Medir metas: firmware compactado ≤ 600MB, sistema ≤ 800MB e RAM em repouso ≤ 450MB (metas, não resultados garantidos).

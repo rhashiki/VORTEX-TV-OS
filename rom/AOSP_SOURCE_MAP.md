@@ -23,6 +23,15 @@ O fragmento `vortex_product.mk` adiciona VortexHome a um produto já existente.
 Não define produto de placa ou alvo lunch. A integração do aplicativo deve ser
 compilada primeiro no BSP escolhido; só então se tenta gerar a imagem completa.
 
+## Prioridade: teste externo antes da instalação
+
+O [plano de boot externo](EXTERNAL_BOOT_PLAN.md) registra a preferência do
+proprietário e as evidências examinadas: há um fstab SD na árvore Android
+comunitária, mas sua cópia não está habilitada no `device.mk` dessa revisão.
+Há também uma referência Linux/Multitool para a família. Esses fatos justificam
+investigar microSD primeiro; não comprovam uma imagem Vortex externa pronta.
+O plano separa a fase que deve preservar a flash interna da instalação definitiva.
+
 ## Verificações físicas obrigatórias
 
 O proprietário já forneceu todos os dados disponíveis e não consegue obter

@@ -23,6 +23,13 @@ actually demonstrated; lack of extra information does not establish them.
 
 ## Working goal
 
+Owner's preferred hardware validation sequence: build/audit a microSD test image,
+test externally on the TV Box, then prepare permanent internal installation.
+USB mass-storage boot is conditional on bootloader support. Follow
+[external boot plan](../rom/EXTERNAL_BOOT_PLAN.md); no external Android/Vortex
+image is currently built. Do not treat NAND Jump Start, loader installation or
+flash erasure as a non-invasive external test.
+
 Use a cloud computer terminal (if available) to clone main and compile the native Vortex Android APK, run complete local automated checks and an Android emulator for functional tests. Investigate available AOSP 7.1.2 / Rockchip RK322x build dependencies and produce an honest report on whether a complete ROM is feasible on the available compute.
 
 ## Required tooling
