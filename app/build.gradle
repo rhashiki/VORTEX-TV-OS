@@ -15,4 +15,9 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     buildTypes { release { minifyEnabled false } }
+    lint {
+        // This local Nougat firmware component is not distributed through Google Play.
+        // API 25 is deliberate; keep every unrelated lint error enabled.
+        disable 'ExpiredTargetSdkVersion'
+    }
 }

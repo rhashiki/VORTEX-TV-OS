@@ -8,6 +8,10 @@ echo "[1/3] Python source and JVM HTTP integration tests"
 command -v python3 >/dev/null || { echo "ERROR: python3 missing"; exit 2; }
 command -v javac >/dev/null || { echo "ERROR: javac missing"; exit 2; }
 command -v java >/dev/null || { echo "ERROR: Java missing"; exit 2; }
+python3 -c 'from PIL import Image' >/dev/null 2>&1 || {
+  echo "ERROR: Pillow missing. Install tools/requirements.txt before running asset checks."
+  exit 2
+}
 python3 -m unittest discover -s tests -v
 
 echo "[2/3] Android SDK and Gradle toolchain"
@@ -25,8 +29,8 @@ if [ ! -f "$SDK/platforms/android-33/android.jar" ]; then
   exit 3
 fi
 
-echo "[3/3] Android APK compilation"
-gradle --no-daemon :app:assembleDebug
+echo "[3/3] Android APK compilation and lint"
+gradle --no-daemon :app:assembleDebug :app:lintDebug
 APK="app/build/outputs/apk/debug/app-debug.apk"
 test -s "$APK" || { echo "ERROR: APK build completed but artifact missing"; exit 4; }
 command -v unzip >/dev/null && unzip -t "$APK" | tail -2

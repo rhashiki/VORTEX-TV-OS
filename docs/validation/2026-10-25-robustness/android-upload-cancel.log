@@ -1,0 +1,4 @@
+PASS: back closes active connection and removes partial APK; no HTTP200
+PASS: back returns to landing without late PackageInstaller launch
+PASS: pause closes active connection and removes partial APK; no HTTP200
+PASS: pause returns to landing without late PackageInstaller launch

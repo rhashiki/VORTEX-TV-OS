@@ -2,14 +2,18 @@ package os.vortex.tv;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.os.PowerManager;
 import android.view.Gravity;
 import android.view.View;
@@ -27,13 +31,49 @@ import java.util.List;
 public final class HomeActivity extends Activity {
     private ScrollView scroll;
     private String appsSignature;
+    private boolean packageReceiverRegistered;
+    private final Handler packageChanges = new Handler(Looper.getMainLooper());
+    private final Runnable refreshChangedApps = () -> {
+        if (packageReceiverRegistered) refreshApps();
+    };
+    private final BroadcastReceiver packageReceiver = new BroadcastReceiver() {
+        @Override public void onReceive(Context context, Intent intent) {
+            if (!packageReceiverRegistered) return;
+            // A replacement temporarily removes the old package before adding it
+            // again. Keep its tile/focus until the completed update is visible.
+            if (Intent.ACTION_PACKAGE_REMOVED.equals(intent.getAction()) &&
+                    intent.getBooleanExtra(Intent.EXTRA_REPLACING, false)) return;
+            // One package update may emit ADDED, CHANGED and REPLACED together.
+            packageChanges.removeCallbacks(refreshChangedApps);
+            packageChanges.postDelayed(refreshChangedApps, 150);
+        }
+    };
     @Override public void onCreate(Bundle state) {
         super.onCreate(state);
         refreshApps();
     }
+    @Override protected void onStart() {
+        super.onStart();
+        IntentFilter packages = new IntentFilter();
+        packages.addAction(Intent.ACTION_PACKAGE_ADDED);
+        packages.addAction(Intent.ACTION_PACKAGE_REMOVED);
+        packages.addAction(Intent.ACTION_PACKAGE_CHANGED);
+        packages.addAction(Intent.ACTION_PACKAGE_REPLACED);
+        packages.addDataScheme("package");
+        registerReceiver(packageReceiver, packages);
+        packageReceiverRegistered = true;
+    }
     @Override protected void onResume() {
         super.onResume();
         refreshApps();
+    }
+    @Override protected void onStop() {
+        packageChanges.removeCallbacks(refreshChangedApps);
+        if (packageReceiverRegistered) {
+            packageReceiverRegistered = false;
+            unregisterReceiver(packageReceiver);
+        }
+        super.onStop();
     }
     private void refreshApps() {
         List<ResolveInfo> apps = UserApps.list(this);
@@ -55,19 +95,19 @@ public final class HomeActivity extends Activity {
         brand.setLetterSpacing(0.15f);
         top.addView(brand, new LinearLayout.LayoutParams(0, -2, 1f));
         LinearLayout clockPanel = Ui.vertical(this);
-        clockPanel.setGravity(Gravity.RIGHT);
+        clockPanel.setGravity(Gravity.END);
         TextClock time = new TextClock(this);
         time.setFormat24Hour("HH:mm");
         time.setFormat12Hour("h:mm a");
         time.setTextSize(27);
         time.setTextColor(Ui.WHITE);
-        time.setGravity(Gravity.RIGHT);
+        time.setGravity(Gravity.END);
         TextClock date = new TextClock(this);
         date.setFormat24Hour("EEE, d MMM yyyy");
         date.setFormat12Hour("EEE, d MMM yyyy");
         date.setTextColor(Ui.MUTED);
         date.setTextSize(14);
-        date.setGravity(Gravity.RIGHT);
+        date.setGravity(Gravity.END);
         clockPanel.addView(time);
         clockPanel.addView(date);
         top.addView(clockPanel);

@@ -1,0 +1,62 @@
+API25 x86 software emulator; 1280x720; 18 launchable user test apps.
+Numbers are one APK/emulator observation, not RK3229 firmware targets.
+Cold process start via am start -W:
+Starting: Intent { cmp=os.vortex.tv/.HomeActivity }
+Status: ok
+Activity: os.vortex.tv/.HomeActivity
+ThisTime: 2309
+TotalTime: 6491
+WaitTime: 2447
+Complete
+
+After Home settled, dumpsys meminfo:
+Applications Memory Usage (in Kilobytes):
+Uptime: 307881 Realtime: 307881
+
+** MEMINFO in pid 3085 [os.vortex.tv] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap     4067     3996        0        0    14336    13076     1259
+  Dalvik Heap     1328     1216        0        0     2850     1710     1140
+ Dalvik Other      278      252        0        0                           
+        Stack      164      164        0        0                           
+       Ashmem        2        0        0        0                           
+    Other dev        4        0        4        0                           
+     .so mmap     1079      112      216        0                           
+    .apk mmap      274        0       32        0                           
+    .ttf mmap       83        0       44        0                           
+    .dex mmap       80        4       76        0                           
+    .oat mmap     1053        0       72        0                           
+    .art mmap      998      592        0        0                           
+   Other mmap        7        4        0        0                           
+      Unknown      198      192        0        0                           
+        TOTAL     9615     6532      444        0    17186    14786     2399
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:     1808
+         Native Heap:     3996
+                Code:      556
+               Stack:      164
+            Graphics:        0
+       Private Other:      452
+              System:     2639
+ 
+               TOTAL:     9615       TOTAL SWAP PSS:        0
+ 
+ Objects
+               Views:       83         ViewRootImpl:        1
+         AppContexts:        3           Activities:        1
+              Assets:        2        AssetManagers:        2
+       Local Binders:       14        Proxy Binders:       15
+       Parcel memory:        3         Parcel count:       12
+    Death Recipients:        0      OpenSSL Sockets:        0
+            WebViews:        0
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:        0
+ 
+

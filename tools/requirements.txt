@@ -1,0 +1,2 @@
+# Image decoding and proportional resizing for official asset tools and tests.
+Pillow>=9.1,<13

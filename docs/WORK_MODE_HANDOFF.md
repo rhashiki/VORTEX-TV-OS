@@ -14,6 +14,7 @@ Use a cloud computer terminal (if available) to clone main and compile the nativ
 ## Required tooling
 
 - Linux x86_64, Python 3, JDK 11, Gradle 7.6.x, Android SDK platform 33, build-tools 33.0.2+, ADB and Android Emulator.
+- Official asset tooling/tests additionally need Python 3.9+ and Pillow from `tools/requirements.txt`; video conversion needs ffmpeg. Follow [official asset import](OFFICIAL_ASSET_IMPORT.md), without using documentation previews as APK resources.
 - For optional AOSP ROM compilation: separate, substantially larger Linux environment with a compatible legacy JDK 8 toolchain, kernel and vendor binaries; do not claim a complete ROM from an APK build.
 - For QR network tests, run phone/browser on a reachable LAN to a test Android TV device. Emulator networking alone does not prove phone-to-device reachability.
 - User video for boot animation must be provided as source media in Work; do not substitute the image/animation with generated art.
@@ -24,6 +25,7 @@ Use a cloud computer terminal (if available) to clone main and compile the nativ
 git clone https://github.com/rhashiki/VORTEX-TV-OS.git
 cd VORTEX-TV-OS
 git rev-parse HEAD
+python3 -m pip install -r tools/requirements.txt
 bash tools/validate_build01.sh
 ```
 

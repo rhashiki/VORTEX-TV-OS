@@ -1,0 +1,54 @@
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+openjdk version "11.0.32.1" 2026-08-18
+OpenJDK Runtime Environment Temurin-11.0.32.1+1 (build 11.0.32.1+1)
+OpenJDK 64-Bit Server VM Temurin-11.0.32.1+1 (build 11.0.32.1+1, mixed mode)
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+------------------------------------------------------------
+Gradle 7.6.4
+------------------------------------------------------------
+
+Build time:   2024-02-05 14:29:18 UTC
+Revision:     e0bb3fc8cefad8432c9033cdfb12dc14facc9dd9
+
+Kotlin:       1.7.10
+Groovy:       3.0.13
+Ant:          Apache Ant(TM) version 1.10.13 compiled on January 4 2023
+JVM:          11.0.32.1 (Eclipse Adoptium 11.0.32.1+1)
+OS:           Linux 6.18.55 amd64
+
+bedc7e95321c533e650f198f14e737f611aa765de5aebc6c46f930725fa9074b  /workspace/build01-robustness/artifacts/vortex-tv-os-build01-debug.apk
+69098 /workspace/build01-robustness/artifacts/vortex-tv-os-build01-debug.apk
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+package: name='os.vortex.tv' versionCode='1' versionName='0.1.0-dev' platformBuildVersionName='13' platformBuildVersionCode='33' compileSdkVersion='33' compileSdkVersionCodename='13'
+sdkVersion:'25'
+targetSdkVersion:'25'
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.REBOOT'
+uses-permission: name='android.permission.SHUTDOWN'
+application-label:'Vortex TV OS'
+application: label='Vortex TV OS' icon=''
+application-debuggable
+launchable-activity: name='os.vortex.tv.HomeActivity'  label='' icon=''
+leanback-launchable-activity: name='os.vortex.tv.HomeActivity'  label='' icon='' banner=''
+feature-group: label=''
+  uses-feature-not-required: name='android.hardware.touchscreen'
+  uses-feature-not-required: name='android.software.leanback'
+  uses-feature: name='android.hardware.screen.landscape'
+  uses-implied-feature: name='android.hardware.screen.landscape' reason='one or more activities have specified a landscape orientation'
+provides-component:'launcher'
+main
+other-activities
+other-receivers
+supports-screens: 'small' 'normal' 'large' 'xlarge'
+supports-any-density: 'true'
+locales: '--_--'
+densities: '160'

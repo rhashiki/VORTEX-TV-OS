@@ -25,6 +25,10 @@ public final class InstallerActivity extends Activity {
     private TextView status;
     private volatile boolean copying;
     private boolean pairingStopped;
+    private boolean started;
+    private boolean resumed;
+    private long pairingGeneration;
+    private boolean showingPairing;
 
     @Override public void onCreate(Bundle state) {
         super.onCreate(state);
@@ -33,11 +37,28 @@ public final class InstallerActivity extends Activity {
 
     @Override protected void onStart() {
         super.onStart();
+        started = true;
         // A stopped pairing has no live server. Let the user request a new QR.
         if (pairingStopped && !copying) showLanding();
     }
 
+    @Override protected void onResume() {
+        super.onResume();
+        resumed = true;
+        if (pairingStopped && !copying) showLanding();
+    }
+
+    @Override protected void onPause() {
+        resumed = false;
+        if (server != null) {
+            pairingStopped = true;
+            closePairing();
+        }
+        super.onPause();
+    }
+
     private void showLanding() {
+        showingPairing = false;
         pairingStopped = false;
         FrameLayout root = Ui.background(this);
         LinearLayout panel = Ui.centeredPanel(this, root, "Vortex App Installer",
@@ -61,6 +82,10 @@ public final class InstallerActivity extends Activity {
     }
 
     private void showPairing() {
+        if (copying) {
+            update("Aguarde a cópia do APK terminar.");
+            return;
+        }
         String ip;
         try { ip = NetworkAddress.localIpv4(); }
         catch (Exception ignored) { ip = null; }
@@ -69,20 +94,28 @@ public final class InstallerActivity extends Activity {
             return;
         }
         try {
-            if (server != null) server.close();
+            closePairing();
+            final long generation = pairingGeneration;
             server = new LanApkServer(ip, getCacheDir(), new LanApkServer.Listener() {
-                @Override public void onStatus(String message) { runOnUiThread(() -> update(message)); }
+                @Override public void onStatus(String message) {
+                    runOnUiThread(() -> {
+                        if (started && generation == pairingGeneration) update(message);
+                    });
+                }
                 @Override public void onComplete(File apk, String sha256) {
                     runOnUiThread(() -> {
+                        // A callback queued before leaving must not install after
+                        // the Activity stopped or replace a newer pairing screen.
+                        if (!canShowInstaller() || generation != pairingGeneration) {
+                            apk.delete();
+                            return;
+                        }
                         // Uploads consume the pairing once. PackageInstaller may be
                         // translucent, so onStop/onStart alone cannot clear its QR.
-                        if (server != null) {
-                            server.close();
-                            server = null;
-                        }
+                        closePairing();
                         showLanding();
                         update("Arquivo recebido · SHA-256: " + sha256.substring(0, 12) + "…");
-                        ApkInstaller.submit(InstallerActivity.this, apk, InstallerActivity.this::update);
+                        submitApk(apk);
                     });
                 }
             });
@@ -106,9 +139,10 @@ public final class InstallerActivity extends Activity {
             LinearLayout.LayoutParams statusP = new LinearLayout.LayoutParams(-1, -2);
             statusP.topMargin = Ui.dp(this, 12);
             panel.addView(status, statusP);
+            showingPairing = true;
             server.start();
         } catch (Exception problem) {
-            if (server != null) server.close();
+            closePairing();
             Toast.makeText(this, "Não foi possível abrir o QR: " + problem.getMessage(), Toast.LENGTH_LONG).show();
             showLanding();
         }
@@ -136,7 +170,31 @@ public final class InstallerActivity extends Activity {
         if (status != null) status.setText(message);
     }
 
+    private boolean canShowInstaller() {
+        return started && resumed && !isFinishing() && !isDestroyed();
+    }
+
+    private void closePairing() {
+        pairingGeneration++;
+        if (server != null) {
+            server.close();
+            server = null;
+        }
+    }
+
+    private void submitApk(File apk) {
+        final long generation = pairingGeneration;
+        ApkInstaller.submit(this, apk, message -> {
+            if (canShowInstaller() && !showingPairing && generation == pairingGeneration)
+                update(message);
+        });
+    }
+
     private void pickUsb() {
+        if (copying) {
+            update("Aguarde a cópia do APK terminar.");
+            return;
+        }
         Intent select = new Intent(Intent.ACTION_OPEN_DOCUMENT);
         select.addCategory(Intent.CATEGORY_OPENABLE);
         select.setType("*/*");
@@ -152,6 +210,7 @@ public final class InstallerActivity extends Activity {
             return;
         if (copying) return;
         copying = true;
+        update("Copiando APK…");
         Uri uri = data.getData();
         new Thread(() -> {
             File cache = null;
@@ -173,15 +232,19 @@ public final class InstallerActivity extends Activity {
                 File ready = cache;
                 runOnUiThread(() -> {
                     copying = false;
+                    if (!canShowInstaller()) {
+                        ready.delete();
+                        return;
+                    }
                     showLanding();
-                    ApkInstaller.submit(this, ready, this::update);
+                    submitApk(ready);
                 });
                 cache = null;
             } catch (Exception error) {
                 String message = error.getMessage() == null ? "erro desconhecido" : error.getMessage();
                 runOnUiThread(() -> {
                     copying = false;
-                    Toast.makeText(this, "Erro ao abrir APK: " + message, Toast.LENGTH_LONG).show();
+                    if (canShowInstaller()) update("Erro ao abrir APK: " + message);
                 });
             } finally {
                 if (cache != null) cache.delete();
@@ -190,11 +253,20 @@ public final class InstallerActivity extends Activity {
     }
 
     @Override protected void onStop() {
+        started = false;
         if (server != null) {
-            server.close();
-            server = null;
             pairingStopped = true;
         }
+        closePairing();
         super.onStop();
+    }
+
+    @Override public void onBackPressed() {
+        if (showingPairing) {
+            closePairing();
+            showLanding();
+        } else {
+            super.onBackPressed();
+        }
     }
 }

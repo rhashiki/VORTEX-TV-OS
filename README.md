@@ -2,13 +2,15 @@
 
 **[ROADMAP.md](ROADMAP.md)** define os dois ícones oficiais do Launcher (quadrado e TV 16:9), o logotipo branco completo da Home e a nova boot animation MP4 de 4 segundos. Codex deve ler antes de editar a UI. Detalhes em [docs/BRANDING.md](docs/BRANDING.md).
 
+Preparação com verificação dos originais: [importação dos assets oficiais](docs/OFFICIAL_ASSET_IMPORT.md). As miniaturas não entram no APK; a integração visual aguarda os arquivos completos.
+
 # Vortex TV OS
 
 Firmware experimental minimalista para **MXQ PRO 4K 5G / R329Q_V8.0** (Rockchip RK322x, ARMv7, ~1 GB DDR3).
 
 **Estado atual: APK debug compilado e testes funcionais parciais no emulador Android API 25. Não é uma ROM flashável nem foi validado no RK3229 físico.**
 
-Resultados e limites: [continuação e preparação AOSP](docs/VALIDATION_2026-10-25_CONTINUATION.md) · [primeira compilação e emulador](docs/VALIDATION_2026-10-25_RETRY.md).
+Resultados e limites: [atualização ao vivo e cancelamento](docs/VALIDATION_2026-10-25_ROBUSTNESS.md) · [Home sem gaveta e preparação AOSP](docs/VALIDATION_2026-10-25_CONTINUATION.md).
 
 ## Escopo do produto
 - Home 720p, gradiente roxo/azul neon, data/hora, D-pad e ações de energia.
@@ -39,15 +41,16 @@ Na ROM final, o aplicativo deve ser integrado à imagem AOSP e o permissionament
 
 ## Testes independentes — sem GitHub Actions
 ```sh
+python3 -m pip install -r tools/requirements.txt
 python -m unittest discover -s tests -v
 ```
 O teste HTTP compila `LanApkServer.java` com JDK e testa o protocolo pela interface de loopback. A compilação Android e testes parciais em API 25 passaram; **ainda faltam celular em LAN real, USB físico e hardware RK3229**. Consulte o relatório para o escopo exato.
 
 ## Recriar a boot animation do vídeo do usuário
 ```sh
-python tools/bootanimation_from_video.py /caminho/video-vortex.mp4
+python tools/bootanimation_from_video.py /caminho/1000915952.mp4 --official
 ```
-Requer `ffmpeg` e `Pillow`. Saída ignorada pelo Git: `assets/bootanimation.zip`. O arquivo gerado separadamente nesta conversa tem 720p/12 FPS e cerca de 5,8 MiB. A arte não é recriada nem substituída.
+Requer `ffmpeg` e `Pillow`. O modo `--official` confere o SHA-256 do MP4 aprovado antes de processar. A referência atual é o vídeo de **4 segundos**, convertido em 48 quadros a 720p/12 FPS, com o último em loop. Saída ignorada pelo Git: `assets/bootanimation.zip`. Os originais e o ZIP oficial não estão neste workspace; a geração e o boot físico continuam pendentes. Consulte [ROADMAP.md](ROADMAP.md) e [docs/BRANDING.md](docs/BRANDING.md).
 
 ## Metas ainda não medidas
 - Firmware compactado idealmente <= 600 MB

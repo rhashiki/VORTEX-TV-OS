@@ -19,6 +19,7 @@ import java.security.SecureRandom;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 /**
  * One-shot local-only pairing transport. Does not require Android, root,
@@ -33,16 +34,26 @@ final class LanApkServer implements AutoCloseable {
     static final long MAX_APK_BYTES = 512L * 1024 * 1024;
     private static final long RESERVE_BYTES = 64L * 1024 * 1024;
     private static final long PAIR_TTL_MILLIS = 15L * 60 * 1000;
+    private static final int READ_TIMEOUT_MILLIS = 20000;
     private final ServerSocket server;
     private final File directory;
     private final String token;
     private final String ip;
     private final Listener listener;
-    private final long expiresAt;
+    private final long expiresAtNanos;
+    private final Object lifecycle = new Object();
+    private Socket activeSocket;
     private volatile boolean closed;
     private Thread worker;
 
     LanApkServer(String ip, File cacheDir, Listener listener) throws IOException {
+        this(ip, cacheDir, listener, PAIR_TTL_MILLIS);
+    }
+
+    // Package-private duration permits bounded socket tests without changing the clock.
+    LanApkServer(String ip, File cacheDir, Listener listener, long ttlMillis) throws IOException {
+        if (ttlMillis <= 0 || ttlMillis > PAIR_TTL_MILLIS)
+            throw new IllegalArgumentException("Validade de pareamento inválida");
         if (ip == null || ip.length() == 0 || ip.indexOf(':') >= 0 || cacheDir == null || listener == null)
             throw new IllegalArgumentException("IPv4 local obrigatório");
         InetAddress local = InetAddress.getByName(ip);
@@ -61,7 +72,7 @@ final class LanApkServer implements AutoCloseable {
         byte[] secret = new byte[16];
         new SecureRandom().nextBytes(secret);
         this.token = hex(secret);
-        this.expiresAt = System.currentTimeMillis() + PAIR_TTL_MILLIS;
+        this.expiresAtNanos = System.nanoTime() + TimeUnit.MILLISECONDS.toNanos(ttlMillis);
     }
 
     String getUrl() {
@@ -76,21 +87,77 @@ final class LanApkServer implements AutoCloseable {
     }
 
     private void runLoop() {
-        listener.onStatus("Aguardando celular na rede local");
         try {
-            while (!closed && System.currentTimeMillis() < expiresAt) {
+            notifyStatus("Aguardando celular na rede local");
+            while (!closed && !expired()) {
                 try (Socket s = server.accept()) {
-                    s.setSoTimeout(20000);
-                    handle(s);
+                    synchronized (lifecycle) {
+                        requireLive();
+                        activeSocket = s;
+                    }
+                    try { handle(s); }
+                    finally {
+                        synchronized (lifecycle) {
+                            if (activeSocket == s) activeSocket = null;
+                        }
+                    }
                 } catch (SocketTimeoutException ignored) {
                     // Poll to expire the pairing session and exit on activity close.
                 } catch (IOException problem) {
-                    if (!closed) listener.onStatus("Erro de comunicação: " + problem.getMessage());
+                    if (!expired()) notifyStatus("Erro de comunicação: " + problem.getMessage());
                 }
             }
-            if (!closed) listener.onStatus("QR expirou. Reabra o instalador para renovar.");
+            notifyStatus("QR expirou. Reabra o instalador para renovar.");
         } finally {
             close();
+        }
+    }
+
+    private boolean expired() { return expiresAtNanos - System.nanoTime() <= 0; }
+
+    private void requireLive() throws IOException {
+        if (closed) throw new IOException("Pareamento encerrado");
+        if (expired()) throw new SocketTimeoutException("Sessão expirada");
+    }
+
+    private void notifyStatus(String message) {
+        synchronized (lifecycle) {
+            if (!closed) listener.onStatus(message);
+        }
+    }
+
+    /** Checks the total pairing deadline even when the buffered stream has data.
+     * Socket timeout remains an idle limit and never extends the pairing lifetime. */
+    private final class DeadlineInput extends InputStream {
+        private final Socket socket;
+        private final InputStream source;
+        private int lastTimeout;
+        DeadlineInput(Socket socket) throws IOException {
+            this.socket = socket;
+            this.source = new BufferedInputStream(socket.getInputStream(), 16384);
+        }
+        private void prepare() throws IOException {
+            requireLive();
+            long remaining = expiresAtNanos - System.nanoTime();
+            if (remaining <= 0) throw new SocketTimeoutException("Sessão expirada");
+            int timeout = (int)Math.min(READ_TIMEOUT_MILLIS,
+                Math.max(1L, (remaining + 999999L) / 1000000L));
+            if (timeout != lastTimeout) {
+                socket.setSoTimeout(timeout);
+                lastTimeout = timeout;
+            }
+        }
+        @Override public int read() throws IOException {
+            prepare();
+            int value = source.read();
+            requireLive();
+            return value;
+        }
+        @Override public int read(byte[] bytes, int offset, int length) throws IOException {
+            prepare();
+            int count = source.read(bytes, offset, length);
+            requireLive();
+            return count;
         }
     }
 
@@ -108,7 +175,7 @@ final class LanApkServer implements AutoCloseable {
     }
 
     private void handle(Socket socket) throws IOException {
-        InputStream input = new BufferedInputStream(socket.getInputStream(), 16384);
+        InputStream input = new DeadlineInput(socket);
         OutputStream output = socket.getOutputStream();
         final String request;
         try { request = line(input); }
@@ -136,7 +203,7 @@ final class LanApkServer implements AutoCloseable {
             respond(output, 400, "Bad Request", "text/plain; charset=utf-8", "Cabeçalho inválido");
             return;
         }
-        if (closed || System.currentTimeMillis() > expiresAt) {
+        if (closed || expired()) {
             respond(output, 403, "Forbidden", "text/plain; charset=utf-8", "Sessão expirada");
             return;
         }
@@ -210,12 +277,18 @@ final class LanApkServer implements AutoCloseable {
                 if (remaining != 0) throw new IOException("Transferência interrompida");
                 file.flush();
             }
-            respond(output, 200, "OK", "text/plain; charset=utf-8",
-                "APK recebido. Confirme a instalação na televisão.");
-            listener.onStatus("APK recebido, preparando instalação");
-            listener.onComplete(temp, hex(digest.digest()));
-            completed = true;
-            close(); // A QR session can be used once only.
+            // Completion and close serialize here: close that wins first prevents
+            // delivery. A completion already in progress owns the file afterwards.
+            synchronized (lifecycle) {
+                requireLive();
+                respond(output, 200, "OK", "text/plain; charset=utf-8",
+                    "APK recebido. Confirme a instalação na televisão.");
+                listener.onStatus("APK recebido, preparando instalação");
+                requireLive();
+                listener.onComplete(temp, hex(digest.digest()));
+                completed = true;
+                close(); // A QR session can be used once only.
+            }
         } catch (java.security.NoSuchAlgorithmException error) {
             throw new IOException("SHA-256 indisponível", error);
         } finally {
@@ -269,7 +342,12 @@ final class LanApkServer implements AutoCloseable {
     }
 
     @Override public void close() {
-        closed = true;
-        try { server.close(); } catch (IOException ignored) {}
+        synchronized (lifecycle) {
+            closed = true;
+            try { server.close(); } catch (IOException ignored) {}
+            if (activeSocket != null) {
+                try { activeSocket.close(); } catch (IOException ignored) {}
+            }
+        }
     }
 }

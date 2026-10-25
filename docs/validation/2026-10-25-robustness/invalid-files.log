@@ -1,0 +1,2 @@
+PASS: 00-empty.apk rejected with persistent message; temporary USB cache removed; no PackageInstaller
+PASS: 01-invalid.apk rejected with persistent message; temporary USB cache removed; no PackageInstaller

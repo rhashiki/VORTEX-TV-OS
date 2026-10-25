@@ -1,0 +1,97 @@
+/workspace/vortex-build/app/src/main/java/io/nayuki/qrcodegen/QrCode.java:159: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+     msg = String.format("Data length = %d bits, Max capacity = %d bits", dataUsedBits, dataCapacityBits);
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "DefaultLocale":
+   Calling String#toLowerCase() or #toUpperCase() without specifying an
+   explicit locale is a common source of bugs. The reason for that is that
+   those methods will use the current locale on the user's device, and even
+   though the code appears to work correctly when you are developing the app,
+   it will fail in some locales. For example, in the Turkish locale, the
+   uppercase replacement for i is not I.
+
+   If you want the methods to just perform ASCII replacement, for example to
+   convert an enum name, call String#toUpperCase(Locale.US) instead. If you
+   really want to use the current locale, call
+   String#toUpperCase(Locale.getDefault()) instead.
+
+   https://developer.android.com/reference/java/util/Locale.html#default_locale
+
+/workspace/vortex-build/app/src/main/AndroidManifest.xml:5: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+    <uses-sdk android:minSdkVersion="25" android:targetSdkVersion="25" />
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application runs on a version of Android that is more recent than
+   your targetSdkVersion specifies that it has been tested with, various
+   compatibility modes kick in. This ensures that your application continues
+   to work, but it may look out of place. For example, if the targetSdkVersion
+   is less than 14, your app may get an option button in the UI.
+
+   To fix this issue, set the targetSdkVersion to the highest available value.
+   Then test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+/workspace/vortex-build/app/src/main/AndroidManifest.xml:5: Warning: This minSdkVersion value (25) is not used; it is always overridden by the value specified in the Gradle build script (25) [GradleOverrides]
+    <uses-sdk android:minSdkVersion="25" android:targetSdkVersion="25" />
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/vortex-build/app/src/main/AndroidManifest.xml:5: Warning: This targetSdkVersion value (25) is not used; it is always overridden by the value specified in the Gradle build script (25) [GradleOverrides]
+    <uses-sdk android:minSdkVersion="25" android:targetSdkVersion="25" />
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleOverrides":
+   The value of (for example) minSdkVersion is only used if it is not
+   specified in the build.gradle build scripts. When specified in the Gradle
+   build scripts, the manifest value is ignored and can be misleading, so
+   should be removed to avoid ambiguity.
+
+/workspace/vortex-build/app/src/main/java/os/vortex/tv/ApkInstaller.java:53: Warning: Missing PendingIntent mutability flag [UnspecifiedImmutableFlag]
+                        activity, sessionId, result, PendingIntent.FLAG_UPDATE_CURRENT);
+                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnspecifiedImmutableFlag":
+   Apps targeting Android 12 and higher must specify either FLAG_IMMUTABLE or
+   FLAG_MUTABLE when constructing a PendingIntent.
+
+   https://developer.android.com/about/versions/12/behavior-changes-12#pending-intent-mutability
+
+/workspace/vortex-build/app/src/main/java/os/vortex/tv/LanApkServer.java:243: Warning: Consider also using StorageManager#getAllocatableBytes and allocateBytes which will consider clearable cached data [UsableSpace]
+        if (directory.getUsableSpace() < (bytes * 2 + RESERVE_BYTES)) {
+                      ~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UsableSpace":
+   When you need to allocate disk space for large files, consider using the
+   new allocateBytes(FileDescriptor, long) API, which will automatically clear
+   cached files belonging to other apps (as needed) to meet your request.
+
+   When deciding if the device has enough disk space to hold your new data,
+   call getAllocatableBytes(UUID) instead of using getUsableSpace(), since the
+   former will consider any cached data that the system is willing to clear on
+   your behalf.
+
+   Note that these methods require API level 26. If your app is running on
+   older devices, you will probably need to use both APIs, conditionally
+   switching on Build.VERSION.SDK_INT. Lint only looks in the same compilation
+   unit to see if you are already using both APIs, so if it warns even though
+   you are already using the new API, consider moving the calls to the same
+   file or suppressing the warning.
+
+/workspace/vortex-build/app/src/main/AndroidManifest.xml:14: Warning: Should explicitly set android:icon, there is no default [MissingApplicationIcon]
+    <application android:allowBackup="false" android:usesCleartextTraffic="false"
+     ~~~~~~~~~~~
+
+   Explanation for issues of type "MissingApplicationIcon":
+   You should set an icon for the application as whole because there is no
+   default. This attribute must be set as a reference to a drawable resource
+   containing the image (for example @drawable/icon).
+
+   https://developer.android.com/studio/publish/preparing#publishing-configure
+
+0 errors, 7 warnings

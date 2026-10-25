@@ -1,0 +1,3 @@
+PASS: fixture uploaded to Android LAN-bound socket
+PASS: complete signed APK reaches explicit PackageInstaller update confirmation
+PASS: DPAD cancellation returns to landing without stale QR
