@@ -1,0 +1,18 @@
+{
+  "revision": "50c7170ecb4bd907059db37f09f4767b301f2d15",
+  "missing_copy_sources": [],
+  "anchors": {
+    "device-vendor.mk": true,
+    "Android.mk": true,
+    "BoardConfigVendor.mk": false
+  },
+  "limits": [
+    "This inventories literal PRODUCT_COPY_FILES sources in device-vendor.mk only.",
+    "It does not validate binary ABI, kernel module compatibility, dependencies, licenses or physical hardware."
+  ],
+  "copy_reference_occurrences": 302,
+  "unique_copy_source_count": 299,
+  "repeated_source_occurrences": {
+    "vendor/rockchip/rk322x/proprietary/etc/ppp/call-pppd": 4
+  }
+}

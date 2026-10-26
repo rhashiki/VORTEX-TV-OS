@@ -1,0 +1,27 @@
+diff --git a/device.mk b/device.mk
+index ebbb496..0b889dc 100755
+--- a/device.mk
++++ b/device.mk
+@@ -31,8 +31,7 @@ PRODUCT_PACKAGES += \
+ 
+ PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/init.${TARGET_BOARD_PLATFORM_PRODUCT}.rc:root/init.${TARGET_BOARD_PLATFORM_PRODUCT}.rc \
+-    $(LOCAL_PATH)/fstab.rk30board.bootmode.unknown:root/fstab.rk30board.bootmode.unknown \
+-    $(LOCAL_PATH)/fstab.rk30board.bootmode.emmc:root/fstab.rk30board.bootmode.emmc
++    $(LOCAL_PATH)/fstab.rk30board.bootmode.sd:root/fstab.rk30board.bootmode.sd
+ 
+ PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/fix_performance.sh:system/bin/fix_performance.sh
+diff --git a/fstab.rk30board.bootmode.sd b/fstab.rk30board.bootmode.sd
+index 9e887ed..708e6ab 100755
+--- a/fstab.rk30board.bootmode.sd
++++ b/fstab.rk30board.bootmode.sd
+@@ -11,7 +11,7 @@
+ /dev/block/platform/ff500000.rksdmmc/by-name/userdata       /data               ext4      noatime,nodiratime,nosuid,nodev,noauto_da_alloc,discard,errors=panic   wait,check,encryptable=/metadata/key_file
+ /dev/block/platform/ff500000.rksdmmc/by-name/misc           /misc               emmc      defaults      defaults
+ 
+-/devices/ff500000.rksdmmc/mmc_host*         auto  auto    defaults        voldmanaged=sdcard1:auto
++# Boot SD hosts /system and /data; do not expose it to vold as removable media.
+ 
+ # non box product,configuration to the first item, will filter out left
+ # ff580000:usb20_otg, ff5c0000:ehci, ff5d0000:ohci, ff600000:dwc3

@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "results": [
+    {
+      "repository": "rk322x",
+      "revision": "f33a129bfab6d9cc87184ee3bf032224801fa446",
+      "patch": "0001-rk322x-sd-only-fstab.patch",
+      "patch_sha256": "7b1251a3ee6b0beaf99fb198070b13e54efac47af3c650728b28d0c5b59b7b82",
+      "git_apply_check": "PASS",
+      "git_apply": "PASS",
+      "git_diff_check": "PASS",
+      "source_sha256": {
+        "device.mk": "12846b37a99728a52d80d4336c5cf772c5bbe465071cd63f2ffc26b31ef8921d",
+        "fstab.rk30board.bootmode.sd": "d9f4befeb3a769d65e269cbee51c50b0d41b5c32abff5b57c743097d4be0c9af"
+      },
+      "patched_sha256": {
+        "device.mk": "2f207278096096af2f13726a23385e1aa8c1fb4aed7fd17608a32a2309b69cb1",
+        "fstab.rk30board.bootmode.sd": "c5872870ef616c1b11e5ad2271f9f55a6f7aeb747047077abbffa52bfe78d2fb"
+      },
+      "original_checkout_unchanged": true
+    },
+    {
+      "repository": "common",
+      "revision": "3b1aa90ef43f9d34094739a211ad44bf9a2c0b74",
+      "patch": "0002-common-sd-only-init.patch",
+      "patch_sha256": "b8da51f8744f5a7cd2f2377d507a53ee87fe55fc9bd93785afa42227e7d4e0a4",
+      "git_apply_check": "PASS",
+      "git_apply": "PASS",
+      "git_diff_check": "PASS",
+      "source_sha256": {
+        "device.mk": "19796400b2affbaa74bf5d75aa2ae10bef845c7d691e079e7630d6a3d7609209",
+        "init.rockchip.rc": "90ef7927ba97e2df3db1d8461a9ed215c80252a1fcf0546e8f61dd96c3ecbfd7"
+      },
+      "patched_sha256": {
+        "device.mk": "246f5e00db38cc9de0331a52a3c6da00ddcbf19ff313d9d8b6485ccb057910c9",
+        "init.rockchip.rc": "78c23dae791467658b99301eaa16257faa56889b3792de85a5bac056971c472b"
+      },
+      "original_checkout_unchanged": true
+    },
+    {
+      "repository": "common",
+      "revision": "3b1aa90ef43f9d34094739a211ad44bf9a2c0b74",
+      "patch": "0003-common-disable-internal-provisioning.patch",
+      "base_patches": [
+        "0002-common-sd-only-init.patch"
+      ],
+      "patch_sha256": "51bfc8d4828cff32f4918c63da3b657007f7d733c7d11193f63a7ff6983b69c4",
+      "git_apply_check": "PASS",
+      "git_apply": "PASS",
+      "git_diff_check": "PASS",
+      "source_sha256": {
+        "init.rk30board.rc": "94bd3fc0827c6d55357925dcbca482efd1c5946d4cac250ae558799cb120aa81"
+      },
+      "patched_sha256": {
+        "init.rk30board.rc": "0e21ce2a5ca41379e194cbcbe0cf966e5bf369d41b8e62ca08df4b8116de771d"
+      },
+      "active_drmboot_load": false,
+      "active_rk_store_keybox_service": false,
+      "original_checkout_unchanged": true
+    }
+  ],
+  "scope": "Patch application to pinned upstream source only; no BSP scripts/build, image or physical boot performed."
+}

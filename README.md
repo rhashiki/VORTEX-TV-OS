@@ -10,7 +10,7 @@ Firmware experimental minimalista para **MXQ PRO 4K 5G / R329Q_V8.0** (Rockchip 
 
 **Estado atual: APK debug compilado e testes funcionais parciais no emulador Android API 25. Não é uma ROM flashável nem foi validado no RK3229 físico.**
 
-Resultados e limites: [atualização ao vivo e cancelamento](docs/VALIDATION_2026-10-25_ROBUSTNESS.md) · [Home sem gaveta e preparação AOSP](docs/VALIDATION_2026-10-25_CONTINUATION.md).
+Resultados e limites: [preparação do teste microSD](docs/VALIDATION_2026-10-25_SD.md) · [atualização ao vivo e cancelamento](docs/VALIDATION_2026-10-25_ROBUSTNESS.md) · [Home sem gaveta e preparação AOSP](docs/VALIDATION_2026-10-25_CONTINUATION.md).
 
 ## Escopo do produto
 - Home 720p, gradiente roxo/azul neon, data/hora, D-pad e ações de energia.
@@ -58,7 +58,7 @@ Requer `ffmpeg` e `Pillow`. O modo `--official` confere o SHA-256 do MP4 aprovad
 - RAM ociosa idealmente <= 450 MB
 
 ## Riscos e pendências
-A placa ainda requer confirmação do FlashID NAND/eMMC, controlador Wi-Fi, loader DDR, DTB, HALs e drivers. AOSP 7.1.2 e kernel 3.10.104 são obsoletos e não devem ser usados para operações sensíveis. O proprietário dispensou backup do Android antigo, mas **não** dispensou diagnóstico e plano de recuperação.
+A compatibilidade física da flash, Wi-Fi, loader DDR, DTB, HALs e drivers permanece sem comprovação. O proprietário já forneceu todos os dados disponíveis; a pesquisa continua com esse material, sem novos pedidos de diagnóstico. A prioridade é o [teste externo por microSD](rom/EXTERNAL_BOOT_PLAN.md). AOSP 7.1.2 e kernel 3.10.104 são obsoletos e não devem ser usados para operações sensíveis. A instalação interna continua dependendo de validação e recuperação próprias.
 
 A integração AOSP é experimental. Não flashear `app/` ou `rom/` diretamente.
 

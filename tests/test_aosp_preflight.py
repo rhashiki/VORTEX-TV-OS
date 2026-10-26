@@ -71,7 +71,8 @@ class PreflightChecks(unittest.TestCase):
         path.write_text("reference fixture\n")
         code, report = self.run_cli()
         self.assertEqual(code, 2)
-        self.assertIn("vendor/rockchip/rk322x/BoardConfigVendor.mk", self.blocked(report))
+        self.assertIn("vendor/rockchip/rk322x/device-vendor.mk", self.blocked(report))
+        self.assertIn("vendor/rockchip/rk322x/Android.mk", self.blocked(report))
         self.assertIn("kernel/arch/arm/boot/Image", self.blocked(report))
         self.assertEqual([item["path"] for item in report["inventory"]], ["build/envsetup.sh"])
 

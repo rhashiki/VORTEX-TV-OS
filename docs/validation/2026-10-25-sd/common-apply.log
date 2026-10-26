@@ -1,0 +1,24 @@
+repository=/workspace/rk322x-sd-candidate/device/rockchip/common
+pin=3b1aa90ef43f9d34094739a211ad44bf9a2c0b74
+check_worktree=/workspace/build01-sd/check-common
+patch=0002-common-sd-only-init.patch
+$ git apply --check /workspace/vortex-build/rom/sdcard/patches/0002-common-sd-only-init.patch
+exit=0
+
+
+$ git apply /workspace/vortex-build/rom/sdcard/patches/0002-common-sd-only-init.patch
+exit=0
+
+
+$ git diff --check
+exit=0
+
+
+$ git diff --stat
+exit=0
+ device.mk        |  8 ++------
+ init.rockchip.rc | 15 +--------------
+ 2 files changed, 3 insertions(+), 20 deletions(-)
+
+
+PASS: git apply --check and actual application on pinned real worktree; original checkout unchanged.

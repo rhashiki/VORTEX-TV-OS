@@ -1,0 +1,11 @@
+test_compiler_failure_code_is_preserved (test_legacy_kernel_gcc_wrapper.LegacyKernelGccWrapperTests.test_compiler_failure_code_is_preserved) ... ok
+test_forbidden_warning_fails_and_removes_object (test_legacy_kernel_gcc_wrapper.LegacyKernelGccWrapperTests.test_forbidden_warning_fails_and_removes_object) ... ok
+test_known_upstream_warning_keeps_success_and_object (test_legacy_kernel_gcc_wrapper.LegacyKernelGccWrapperTests.test_known_upstream_warning_keeps_success_and_object) ... ok
+test_late_object_is_removed_after_compiler_finishes (test_legacy_kernel_gcc_wrapper.LegacyKernelGccWrapperTests.test_late_object_is_removed_after_compiler_finishes) ... ok
+test_multiline_compiler_output_preserves_line_starts (test_legacy_kernel_gcc_wrapper.LegacyKernelGccWrapperTests.test_multiline_compiler_output_preserves_line_starts) ... ok
+test_silent_compiler_keeps_success_and_object (test_legacy_kernel_gcc_wrapper.LegacyKernelGccWrapperTests.test_silent_compiler_keeps_success_and_object) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.510s
+
+OK

@@ -1,0 +1,21 @@
+diff --git a/init.rk30board.rc b/init.rk30board.rc
+index 247563b..49058d7 100755
+--- a/init.rk30board.rc
++++ b/init.rk30board.rc
+@@ -13,7 +13,7 @@ on post-fs
+     insmod /system/lib/modules/rk30_mirroring.ko
+     insmod /system/lib/modules/rk29-ipp.ko
+     insmod /system/lib/modules/pvrsrvkm.ko
+-    insmod /drmboot.ko
++    # SD-only test: omit the NAND-related drmboot module.
+ 
+     # Turn on swap
+     swapon_all /fstab.rk30board
+@@ -281,6 +281,4 @@ service iso_operate /system/bin/iso
+     disabled
+     oneshot		
+ 
+-service rk_store_keybox /system/bin/rk_store_keybox
+-    class main
+-    oneshot		
++# SD-only test: omit automatic keybox provisioning.

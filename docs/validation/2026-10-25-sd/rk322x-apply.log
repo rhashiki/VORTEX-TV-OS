@@ -1,0 +1,24 @@
+repository=/workspace/rk322x-sd-candidate/device/rockchip/rk322x
+pin=f33a129bfab6d9cc87184ee3bf032224801fa446
+check_worktree=/workspace/build01-sd/check-rk322x
+patch=0001-rk322x-sd-only-fstab.patch
+$ git apply --check /workspace/vortex-build/rom/sdcard/patches/0001-rk322x-sd-only-fstab.patch
+exit=0
+
+
+$ git apply /workspace/vortex-build/rom/sdcard/patches/0001-rk322x-sd-only-fstab.patch
+exit=0
+
+
+$ git diff --check
+exit=0
+
+
+$ git diff --stat
+exit=0
+ device.mk                   | 3 +--
+ fstab.rk30board.bootmode.sd | 2 +-
+ 2 files changed, 2 insertions(+), 3 deletions(-)
+
+
+PASS: git apply --check and actual application on pinned real worktree; original checkout unchanged.

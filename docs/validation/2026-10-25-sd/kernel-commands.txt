@@ -1,0 +1,34 @@
+# Sources acquired with git init + git fetch --depth=1 + detached checkout:
+# kernel: https://github.com/rockchip-linux/kernel.git @ 6c04d006ae881944d32c19e68b992d0bd5ab4fde
+# toolchain: https://github.com/pstglia/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf.git @ dd4df7dff4f1df65d78939a958b760a79e3650a1
+# Working directory for all make commands:
+cd /workspace/build01-sd/kernel-work/kernel
+make O=/workspace/build01-sd/kernel-work/out ARCH=arm CROSS_COMPILE=/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf- HOSTCFLAGS='-O2 -fcommon' rockchip_defconfig
+# First Image+DTB attempt used the upstream Python2 wrapper and failed on Python3 syntax.
+# Host compatibility port is external and recorded in gcc-wrapper-py3.patch.
+export PATH=/workspace/build01-sd/kernel-work/host-deps/usr/bin:$PATH
+export KBUILD_BUILD_USER=vortex
+export KBUILD_BUILD_HOST=cloud
+export KBUILD_BUILD_TIMESTAMP='Sun Oct 25 16:15:00 UTC 2026'
+# Source change for the later Image attempt is recorded in kernel-gcc6-callback-braces.patch.
+make -j2 O=/workspace/build01-sd/kernel-work/out ARCH=arm CROSS_COMPILE=/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf- CC='python3 /workspace/build01-sd/kernel-candidate/gcc-wrapper-py3.py /workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-gcc' HOSTCFLAGS='-O2 -fcommon' Image
+# Separate DTB target succeeded against unmodified DTS:
+make -j2 O=/workspace/build01-sd/kernel-work/out ARCH=arm CROSS_COMPILE=/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf- CC='python3 /workspace/build01-sd/kernel-candidate/gcc-wrapper-py3.py /workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-gcc' HOSTCFLAGS='-O2 -fcommon' rk3229-sdk.dtb
+# Before the latest Image retry, also apply:
+# kernel-gcc6-remove-unused-cifs-table.patch
+# kernel-mali-source-paths.patch
+# All source changes are included in kernel-source.patch at final collection.
+
+# Resumed candidate build also applies these source patches, retaining GPU/PM/DMA and DTS:
+# kernel-ump-source-paths.patch
+# kernel-codec-unused-routes.patch
+# Align private host helper to tools/legacy_kernel_gcc_wrapper.py; previous helper is preserved.
+# Hashes and lifecycle difference: host-wrapper-resume.json.
+make -j2 O=/workspace/build01-sd/kernel-work/out ARCH=arm CROSS_COMPILE=/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf- CC='python3 /workspace/build01-sd/kernel-candidate/gcc-wrapper-py3.py /workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-gcc' HOSTCFLAGS='-O2 -fcommon' Image rk3229-sdk.dtb
+
+# Additional recorded no-behavior compatibility patches: inspect kernel-source.patch and source-file-inventory.json.
+# Final verified batch (all target dependencies succeeded, exit 0; -k did not ignore errors):
+make -k -j2 O=/workspace/build01-sd/kernel-work/out ARCH=arm CROSS_COMPILE=/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf- CC='python3 /workspace/build01-sd/kernel-candidate/gcc-wrapper-py3.py /workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-gcc' HOSTCFLAGS='-O2 -fcommon' Image rk3229-sdk.dtb
+
+# Final normal verification after exact output forwarding fix (host-wrapper-output-fix.json):
+make -j2 O=/workspace/build01-sd/kernel-work/out ARCH=arm CROSS_COMPILE=/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf- CC='python3 /workspace/build01-sd/kernel-candidate/gcc-wrapper-py3.py /workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-gcc' HOSTCFLAGS='-O2 -fcommon' Image rk3229-sdk.dtb

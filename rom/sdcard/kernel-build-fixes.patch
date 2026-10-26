@@ -1,0 +1,924 @@
+diff --git a/arch/arm/mach-rockchip/rk_camera.c b/arch/arm/mach-rockchip/rk_camera.c
+index a09a7b36..cae2bfb1 100644
+--- a/arch/arm/mach-rockchip/rk_camera.c
++++ b/arch/arm/mach-rockchip/rk_camera.c
+@@ -966,16 +966,21 @@ static int rk_sensor_io_init(void)
+ 		is_init = true;
+ 	}
+     
+-    if (sensor_ioctl_cb.sensor_power_cb == NULL)
+-        sensor_ioctl_cb.sensor_power_cb = sensor_power_default_cb;
+-    if (sensor_ioctl_cb.sensor_reset_cb == NULL)
+-        sensor_ioctl_cb.sensor_reset_cb = sensor_reset_default_cb;
+-    if (sensor_ioctl_cb.sensor_powerdown_cb == NULL)
+-        sensor_ioctl_cb.sensor_powerdown_cb = sensor_powerdown_default_cb;
+-    if (sensor_ioctl_cb.sensor_flash_cb == NULL)
+-        sensor_ioctl_cb.sensor_flash_cb = sensor_flash_default_cb;
+-    if (sensor_ioctl_cb.sensor_af_cb == NULL)
+-        sensor_ioctl_cb.sensor_af_cb = sensor_afpower_default_cb;	
++	if (sensor_ioctl_cb.sensor_power_cb == NULL) {
++		sensor_ioctl_cb.sensor_power_cb = sensor_power_default_cb;
++	}
++	if (sensor_ioctl_cb.sensor_reset_cb == NULL) {
++		sensor_ioctl_cb.sensor_reset_cb = sensor_reset_default_cb;
++	}
++	if (sensor_ioctl_cb.sensor_powerdown_cb == NULL) {
++		sensor_ioctl_cb.sensor_powerdown_cb = sensor_powerdown_default_cb;
++	}
++	if (sensor_ioctl_cb.sensor_flash_cb == NULL) {
++		sensor_ioctl_cb.sensor_flash_cb = sensor_flash_default_cb;
++	}
++	if (sensor_ioctl_cb.sensor_af_cb == NULL) {
++		sensor_ioctl_cb.sensor_af_cb = sensor_afpower_default_cb;
++	}
+ 
+ 	new_camera = new_camera_head;
+ 	while(new_camera != NULL)
+diff --git a/drivers/gpu/arm/mali400/mali/Kbuild b/drivers/gpu/arm/mali400/mali/Kbuild
+index f5ffd2d9..3d2c785e 100755
+--- a/drivers/gpu/arm/mali400/mali/Kbuild
++++ b/drivers/gpu/arm/mali400/mali/Kbuild
+@@ -10,6 +10,9 @@
+ 
+ # This file is called by the Linux build system.
+ 
++# Resolve read-only source inputs for both in-tree and O= builds.
++mali_src_dir := $(if $(filter /%,$(src)),$(src),$(srctree)/$(src))
++
+ # set up defaults if not defined by the user
+ TIMESTAMP ?= default
+ OS_MEMORY_KERNEL_BUFFER_SIZE_IN_MB ?= 16
+@@ -26,8 +29,8 @@ MALI_PLATFORM ?= rk30
+ # For customer releases the Linux Device Drivers will be provided as ARM proprietary and GPL releases:
+ # The ARM proprietary product will only include the license/proprietary directory
+ # The GPL product will only include the license/gpl directory
+-ifeq ($(wildcard $(src)/linux/license/gpl/*),)
+-    ccflags-y += -I$(src)/linux/license/proprietary
++ifeq ($(wildcard $(mali_src_dir)/linux/license/gpl/*),)
++    ccflags-y += -I$(mali_src_dir)/linux/license/proprietary
+     ifeq ($(CONFIG_MALI400_PROFILING),y)
+         $(error Profiling is incompatible with non-GPL license)
+     endif
+@@ -39,7 +42,7 @@ ifeq ($(wildcard $(src)/linux/license/gpl/*),)
+     endif
+     $(error Linux Device integration is incompatible with non-GPL license)
+ else
+-    ccflags-y += -I$(src)/linux/license/gpl
++    ccflags-y += -I$(mali_src_dir)/linux/license/gpl
+ endif
+ 
+ ifeq ($(USING_GPU_UTILIZATION), 1)
+@@ -61,7 +64,7 @@ ifeq ($(MALI_PLATFORM_FILES),)
+ ifeq ($(CONFIG_ARCH_EXYNOS4),y)
+ EXTRA_DEFINES += -DMALI_FAKE_PLATFORM_DEVICE=1
+ export MALI_PLATFORM=exynos4
+-export MALI_PLATFORM_FILES_BUILDIN = $(notdir $(wildcard $(src)/platform/$(MALI_PLATFORM)/*.c))
++export MALI_PLATFORM_FILES_BUILDIN = $(notdir $(wildcard $(mali_src_dir)/platform/$(MALI_PLATFORM)/*.c))
+ export MALI_PLATFORM_FILES_ADD_PREFIX = $(addprefix platform/$(MALI_PLATFORM)/,$(MALI_PLATFORM_FILES_BUILDIN)) 
+ endif
+ endif
+@@ -144,7 +147,7 @@ mali-y += \
+ 	linux/mali_pmu_power_up_down.o \
+ 	__malidrv_build_info.o
+ 
+-ifneq ($(wildcard $(src)/linux/mali_slp_global_lock.c),)
++ifneq ($(wildcard $(mali_src_dir)/linux/mali_slp_global_lock.c),)
+ 	mali-y += linux/mali_slp_global_lock.o
+ endif
+ 
+@@ -160,13 +163,13 @@ mali-$(CONFIG_MALI400_PROFILING) += linux/mali_ukk_profiling.o
+ mali-$(CONFIG_MALI400_PROFILING) += linux/mali_osk_profiling.o
+ 
+ mali-$(CONFIG_MALI400_INTERNAL_PROFILING) += linux/mali_profiling_internal.o timestamp-$(TIMESTAMP)/mali_timestamp.o
+-ccflags-$(CONFIG_MALI400_INTERNAL_PROFILING) += -I$(src)/timestamp-$(TIMESTAMP)
++ccflags-$(CONFIG_MALI400_INTERNAL_PROFILING) += -I$(mali_src_dir)/timestamp-$(TIMESTAMP)
+ 
+ mali-$(CONFIG_DMA_SHARED_BUFFER) += linux/mali_memory_dma_buf.o
+ mali-$(CONFIG_DMA_SHARED_BUFFER) += linux/mali_memory_secure.o
+ mali-$(CONFIG_SYNC) += linux/mali_sync.o
+ mali-$(CONFIG_MALI_DMA_BUF_FENCE) += linux/mali_dma_fence.o
+-ccflags-$(CONFIG_SYNC) += -Idrivers/staging/android
++ccflags-$(CONFIG_SYNC) += -I$(srctree)/drivers/staging/android
+ 
+ mali-$(CONFIG_MALI400_UMP) += linux/mali_memory_ump.o
+ 
+@@ -192,19 +195,19 @@ endif
+ 
+ #build-in include path is different
+ ifeq ($(MALI_PLATFORM_FILES),)
+-ccflags-$(CONFIG_MALI400_UMP) += -I$(src)/../ump/include/
++ccflags-$(CONFIG_MALI400_UMP) += -I$(mali_src_dir)/../ump/include/
+ else
+-ccflags-$(CONFIG_MALI400_UMP) += -I$(src)/../../ump/include/ump
++ccflags-$(CONFIG_MALI400_UMP) += -I$(mali_src_dir)/../../ump/include/ump
+ endif
+ ccflags-$(CONFIG_MALI400_DEBUG) += -DDEBUG
+ 
+ # Use our defines when compiling
+-ccflags-y += -I$(src) -I$(src)/include -I$(src)/common -I$(src)/linux -I$(src)/platform -Wno-date-time
++ccflags-y += -I$(mali_src_dir) -I$(mali_src_dir)/include -I$(mali_src_dir)/common -I$(mali_src_dir)/linux -I$(mali_src_dir)/platform -Wno-date-time
+ 
+ # Get subversion revision number, fall back to only ${MALI_RELEASE_NAME} if no svn info is available
+-MALI_RELEASE_NAME=$(shell cat $(src)/.version 2> /dev/null)
++MALI_RELEASE_NAME=$(shell cat $(mali_src_dir)/.version 2> /dev/null)
+ 
+-SVN_INFO = (cd $(src); svn info 2>/dev/null)
++SVN_INFO = (cd $(mali_src_dir); svn info 2>/dev/null)
+ 
+ ifneq ($(shell $(SVN_INFO) 2>/dev/null),)
+ # SVN detected
+@@ -215,13 +218,13 @@ CHANGED_REVISION := $(shell $(SVN_INFO) | grep '^Last Changed Rev: ' | cut -d: -
+ REPO_URL := $(shell $(SVN_INFO) | grep '^URL: ' | cut -d: -f2- | cut -b2-)
+ 
+ else # SVN
+-GIT_REV := $(shell cd $(src); git describe --always 2>/dev/null)
++GIT_REV := $(shell cd $(mali_src_dir); git describe --always 2>/dev/null)
+ ifneq ($(GIT_REV),)
+ # Git detected
+ DRIVER_REV := $(MALI_RELEASE_NAME)-$(GIT_REV)
+-CHANGE_DATE := $(shell cd $(src); git log -1 --format="%ci")
++CHANGE_DATE := $(shell cd $(mali_src_dir); git log -1 --format="%ci")
+ CHANGED_REVISION := $(GIT_REV)
+-REPO_URL := $(shell cd $(src); git describe --all --always 2>/dev/null)
++REPO_URL := $(shell cd $(mali_src_dir); git describe --all --always 2>/dev/null)
+ 
+ else # Git
+ # No Git or SVN detected
+@@ -234,7 +237,7 @@ endif
+ ccflags-y += -DSVN_REV_STRING=\"$(DRIVER_REV)\"
+ 
+ VERSION_STRINGS :=
+-VERSION_STRINGS += API_VERSION=$(shell cd $(src); grep "\#define _MALI_API_VERSION" $(FILES_PREFIX)include/linux/mali/mali_utgard_uk_types.h | cut -d' ' -f 3 )
++VERSION_STRINGS += API_VERSION=$(shell cd $(mali_src_dir); grep "\#define _MALI_API_VERSION" $(FILES_PREFIX)include/linux/mali/mali_utgard_uk_types.h | cut -d' ' -f 3 )
+ VERSION_STRINGS += REPO_URL=$(REPO_URL)
+ VERSION_STRINGS += REVISION=$(DRIVER_REV)
+ VERSION_STRINGS += CHANGED_REVISION=$(CHANGED_REVISION)
+diff --git a/drivers/gpu/arm/mali400/ump/Kbuild b/drivers/gpu/arm/mali400/ump/Kbuild
+index bac9cdc0..545c73d5 100755
+--- a/drivers/gpu/arm/mali400/ump/Kbuild
++++ b/drivers/gpu/arm/mali400/ump/Kbuild
+@@ -12,21 +12,27 @@
+ # Change this to use a different config.h
+ CONFIG ?= default
+ 
++# Resolve source inputs separately from generated O= build files.
++ump_src_dir := $(if $(filter /%,$(src)),$(src),$(srctree)/$(src))
++ump_config_dir := $(obj)/generated-config
++
+ # Validate selected config
+-ifneq ($(shell [ -d $(src)/arch-$(CONFIG) ] && [ -f  $(src)/arch-$(CONFIG)/config.h ] && echo "OK"), OK)
+-$(warning Current directory is $(src))
++ifneq ($(shell [ -d $(ump_src_dir)/arch-$(CONFIG) ] && [ -f  $(ump_src_dir)/arch-$(CONFIG)/config.h ] && echo "OK"), OK)
++$(warning Current directory is $(ump_src_dir))
+ $(error No configuration found for config $(CONFIG). Check that arch-$(CONFIG)/config.h exists)
+ else
+-# Link arch to the selected arch-config directory
+-$(shell [ -L $(src)/arch ] && rm $(src)/arch)
+-$(shell ln -sf arch-$(CONFIG) $(src)/arch)
+-$(shell touch $(src)/arch/config.h)
++# Keep the selected configuration in the output tree. Copy only on content
++# change so config switches rebuild dependants without touching source files.
++ump_config_ready := $(shell mkdir -p $(ump_config_dir)/arch && { cmp -s $(ump_src_dir)/arch-$(CONFIG)/config.h $(ump_config_dir)/arch/config.h || cp $(ump_src_dir)/arch-$(CONFIG)/config.h $(ump_config_dir)/arch/config.h; } && echo OK)
++ifneq ($(ump_config_ready),OK)
++$(error Failed to stage UMP configuration in $(ump_config_dir))
++endif
+ endif
+ 
+ UDD_FILE_PREFIX = ../mali/
+ 
+ # Get subversion revision number, fall back to 0000 if no svn info is available
+-SVN_INFO = (cd $(src); svn info 2>/dev/null)
++SVN_INFO = (cd $(ump_src_dir); svn info 2>/dev/null)
+ 
+ ifneq ($(shell $(SVN_INFO) 2>/dev/null),)
+ # SVN detected
+@@ -37,13 +43,13 @@ CHANGED_REVISION := $(shell $(SVN_INFO) | grep '^Last Changed Rev: ' | cut -d: -
+ REPO_URL := $(shell $(SVN_INFO) | grep '^URL: ' | cut -d: -f2- | cut -b2-)
+ 
+ else # SVN
+-GIT_REV := $(shell cd $(src); git describe --always 2>/dev/null)
++GIT_REV := $(shell cd $(ump_src_dir); git describe --always 2>/dev/null)
+ ifneq ($(GIT_REV),)
+ # Git detected
+ DRIVER_REV := $(MALI_RELEASE_NAME)-$(GIT_REV)
+-CHANGE_DATE := $(shell cd $(src); git log -1 --format="%ci")
++CHANGE_DATE := $(shell cd $(ump_src_dir); git log -1 --format="%ci")
+ CHANGED_REVISION := $(GIT_REV)
+-REPO_URL := $(shell cd $(src); git describe --all --always 2>/dev/null)
++REPO_URL := $(shell cd $(ump_src_dir); git describe --all --always 2>/dev/null)
+ 
+ else # Git
+ # No Git or SVN detected
+@@ -56,7 +62,7 @@ endif
+ ccflags-y += -DSVN_REV=$(SVN_REV)
+ ccflags-y += -DSVN_REV_STRING=\"$(DRIVER_REV)\"
+ 
+-ccflags-y += -I$(src) -I$(src)/common -I$(src)/linux -I$(src)/../mali/common -I$(src)/../mali/linux -I$(src)/include -I$(src)/../../ump/include/ump
++ccflags-y += -I$(ump_config_dir) -I$(ump_src_dir) -I$(ump_src_dir)/common -I$(ump_src_dir)/linux -I$(ump_src_dir)/../mali/common -I$(ump_src_dir)/../mali/linux -I$(ump_src_dir)/include -I$(ump_src_dir)/../../ump/include/ump
+ ccflags-y += -DMALI_STATE_TRACKING=0
+ ccflags-y += -DMALI_ENABLE_CPU_CYCLES=0
+ ccflags-$(CONFIG_UMP_DEBUG) += -DDEBUG
+@@ -65,10 +71,10 @@ ccflags-$(CONFIG_UMP_DEBUG) += -DDEBUG
+ # The ARM proprietary product will only include the license/proprietary directory
+ # The GPL product will only include the license/gpl directory
+ 
+-ifeq ($(wildcard $(src)/linux/license/gpl/*),)
+-ccflags-y += -I$(src)/linux/license/proprietary -I$(src)/../mali/linux/license/proprietary
++ifeq ($(wildcard $(ump_src_dir)/linux/license/gpl/*),)
++ccflags-y += -I$(ump_src_dir)/linux/license/proprietary -I$(ump_src_dir)/../mali/linux/license/proprietary
+ else
+-ccflags-y += -I$(src)/linux/license/gpl -I$(src)/../mali/linux/license/gpl
++ccflags-y += -I$(ump_src_dir)/linux/license/gpl -I$(ump_src_dir)/../mali/linux/license/gpl
+ endif
+ 
+ ump-y = common/ump_kernel_common.o \
+diff --git a/drivers/i2c/i2c-core.c b/drivers/i2c/i2c-core.c
+index 229c5145..a4081881 100644
+--- a/drivers/i2c/i2c-core.c
++++ b/drivers/i2c/i2c-core.c
+@@ -698,12 +698,13 @@ i2c_new_device(struct i2c_adapter *adap, struct i2c_board_info const *info)
+ 		     client->addr | ((client->flags & I2C_CLIENT_TEN)
+ 				     ? 0xa000 : 0));
+ 	#else
+-    if (status == 0)
+-    	dev_set_name(&client->dev, "%d-%04x", i2c_adapter_id(adap),
+-    		     client->addr);
+-    else 
+-        dev_set_name(&client->dev, "%d-%04x-%01x", i2c_adapter_id(adap),
+-    		     client->addr,status);
++	if (status == 0) {
++		dev_set_name(&client->dev, "%d-%04x", i2c_adapter_id(adap),
++			     client->addr);
++	} else {
++		dev_set_name(&client->dev, "%d-%04x-%01x", i2c_adapter_id(adap),
++			     client->addr,status);
++	}
+ 	#endif
+ 
+ 	status = device_register(&client->dev);
+diff --git a/drivers/media/v4l2-core/videobuf-core.c b/drivers/media/v4l2-core/videobuf-core.c
+index 1583e977..afe26467 100644
+--- a/drivers/media/v4l2-core/videobuf-core.c
++++ b/drivers/media/v4l2-core/videobuf-core.c
+@@ -649,8 +649,9 @@ checks:
+ 
+         	/* Release vdev lock to prevent this wait from blocking outside access to
+         	   the device. */
+-        	if (is_ext_locked)
+-        		mutex_unlock(q->ext_lock);
++			if (is_ext_locked) {
++				mutex_unlock(q->ext_lock);
++			}
+             
+             
+ 			/* Checking list_empty and streaming is safe without
+@@ -661,8 +662,9 @@ checks:
+ 
+             videobuf_queue_lock(q);
+             /*ddl@rock-chips.com */
+-            if (is_ext_locked)
+-        		mutex_lock(q->ext_lock);
++			if (is_ext_locked) {
++				mutex_lock(q->ext_lock);
++			}
+ 			if (retval)
+ 				goto done;
+ 
+diff --git a/drivers/media/video/generic_sensor.c b/drivers/media/video/generic_sensor.c
+index 8ea814f5..0bc561a8 100644
+--- a/drivers/media/video/generic_sensor.c
++++ b/drivers/media/video/generic_sensor.c
+@@ -853,12 +853,14 @@ int generic_sensor_init(struct v4l2_subdev *sd, u32 val)
+ 	
+     }
+     
+-    if (sensor->sensor_cb.sensor_activate_cb)
++    if (sensor->sensor_cb.sensor_activate_cb) {
+         sensor->sensor_cb.sensor_activate_cb(client);
++    }
+    
+ 
+-    if (sensor->flash_off_timer.timer.function==NULL)
++    if (sensor->flash_off_timer.timer.function==NULL) {
+         sensor->flash_off_timer.timer.function = generic_flash_off_func;
++    }
+     
+ 	sensor->info_priv.funmodule_state |= SENSOR_INIT_IS_OK;
+     
+diff --git a/drivers/mfd/rk808.c b/drivers/mfd/rk808.c
+index d9a9af4f..9ba439e9 100644
+--- a/drivers/mfd/rk808.c
++++ b/drivers/mfd/rk808.c
+@@ -68,7 +68,7 @@ const static int buck_set_vol_base_addr[] = {
+ 	RK808_BUCK3_CONFIG_REG,
+ 	RK808_BUCK4_ON_REG,
+ };
+-const static int buck_contr_base_addr[] = {
++const static int buck_contr_base_addr[] __maybe_unused = {
+ 	RK808_BUCK1_CONFIG_REG,
+  	RK808_BUCK2_CONFIG_REG,
+  	RK808_BUCK3_CONFIG_REG,
+diff --git a/drivers/mfd/rk818.c b/drivers/mfd/rk818.c
+index e914b125..77606a06 100644
+--- a/drivers/mfd/rk818.c
++++ b/drivers/mfd/rk818.c
+@@ -86,7 +86,7 @@ const static int buck_set_slp_vol_base_addr[] = {
+ 	RK818_BUCK3_CONFIG_REG,
+ 	RK818_BUCK4_SLP_VSEL_REG,
+ };
+-const static int buck_contr_base_addr[] = {
++const static int buck_contr_base_addr[] __maybe_unused = {
+ 	RK818_BUCK1_CONFIG_REG,
+  	RK818_BUCK2_CONFIG_REG,
+  	RK818_BUCK3_CONFIG_REG,
+@@ -151,7 +151,7 @@ const static int ldo6_voltage_map[] = {
+ 	 800, 900, 1000, 1100, 1200,  1300, 1400, 1500, 1600, 
+ 	 1700, 1800, 1900,  2000,2100,  2200,  2300,2400,2500,
+ };
+-const static int boost_voltage_map[] = {
++const static int boost_voltage_map[] __maybe_unused = {
+ 	 4700,4800,4900,5000,5100,5200,5300,5400,
+ };
+ 
+diff --git a/drivers/net/usb/dm9620.c b/drivers/net/usb/dm9620.c
+index 699bab62..28526756 100755
+--- a/drivers/net/usb/dm9620.c
++++ b/drivers/net/usb/dm9620.c
+@@ -708,10 +708,11 @@ static int dm9620_bind(struct usbnet *dev, struct usb_interface *intf)
+ 		printk("++++++[dm962]+++++ dm_read_reg() 0x2a fail-func-return %d\n", ret);
+ 		
+ //JJ3
+-	if ( (ret= dm_read_reg(dev, 0xF2, &tmp)) >=0)
++	if ( (ret= dm_read_reg(dev, 0xF2, &tmp)) >=0) {
+ 		printk("++++++[dm962]+++++ dm_read_reg() 0xF2 0x%02x\n",tmp);
+-	else
++	} else {
+ 		printk("++++++[dm962]+++++ dm_read_reg() 0xF2 fail-func-return %d\n", ret);
++	}
+ 		
+ 		printk("++++++[dm962]+++++  [Analysis.2] 0xF2, D[7] %d %s\n", tmp>>7, (tmp&(1<<7))? "Err: RX Unexpected condition": "OK" );
+ 		printk("++++++[dm962]+++++  [Analysis.2] 0xF2, D[6] %d %s\n", (tmp>>6)&1, (tmp&(1<<6))? "Err: Host Suspend condition": "OK" );
+diff --git a/drivers/net/usb/usbnet.c b/drivers/net/usb/usbnet.c
+index cd21441e..a066d3d6 100644
+--- a/drivers/net/usb/usbnet.c
++++ b/drivers/net/usb/usbnet.c
+@@ -84,7 +84,7 @@
+ // randomly generated ethernet address
+ static u8	node_id [ETH_ALEN];
+ 
+-static const char driver_name [] = "usbnet";
++static const char driver_name [] __maybe_unused = "usbnet";
+ 
+ /* use ethtool to change the level for any given device */
+ static int msg_level = -1;
+diff --git a/drivers/net/wireless/Makefile b/drivers/net/wireless/Makefile
+index 43349627..80b08086 100644
+--- a/drivers/net/wireless/Makefile
++++ b/drivers/net/wireless/Makefile
+@@ -1,3 +1,9 @@
++# Direct nested objects need their output directories in O= builds too.
++rkwifi_obj_dirs_ready := $(shell mkdir -p $(obj)/rockchip_wlan/wifi_sys $(obj)/rockchip_wlan/rkwifi && echo OK)
++ifneq ($(rkwifi_obj_dirs_ready),OK)
++$(error Failed to create RKWIFI object directories under $(obj))
++endif
++
+ #
+ # Makefile for the Linux Wireless network device drivers.
+ #
+diff --git a/drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/siutils.c b/drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/siutils.c
+index 7eabb320..bac4df87 100644
+--- a/drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/siutils.c
++++ b/drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/siutils.c
+@@ -467,11 +467,13 @@ si_doattach(si_info_t *sii, uint devid, osl_t *osh, void *regs,
+ 	}
+ 
+ 	sih->bustype = bustype;
++#ifdef BCMBUSTYPE
+ 	if (bustype != BUSTYPE(bustype)) {
+ 		SI_ERROR(("si_doattach: bus type %d does not match configured bus type %d\n",
+ 			bustype, BUSTYPE(bustype)));
+ 		return NULL;
+ 	}
++#endif
+ 
+ 	/* bus/core/clk setup for register access */
+ 	if (!si_buscore_prep(sii, bustype, devid, sdh)) {
+diff --git a/drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/wl_cfg80211.c b/drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/wl_cfg80211.c
+index 40edb1e2..4d218186 100644
+--- a/drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/wl_cfg80211.c
++++ b/drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/wl_cfg80211.c
+@@ -6351,9 +6351,10 @@ wl_cfg80211_mgmt_tx(struct wiphy *wiphy, bcm_struct_cfgdev *cfgdev,
+ 			if (dev == wl_to_p2p_bss_ndev(cfg, P2PAPI_BSSCFG_CONNECTION))
+ 				dev = bcmcfg_to_prmry_ndev(cfg);
+ #endif
+-			if ((dev == bcmcfg_to_prmry_ndev(cfg)) && cfg->p2p)
++			if ((dev == bcmcfg_to_prmry_ndev(cfg)) && cfg->p2p) {
+ 				bssidx = wl_to_p2p_bss_bssidx(cfg, P2PAPI_BSSCFG_DEVICE);
+-				wl_cfgp2p_set_management_ie(cfg, dev, bssidx,
++			}
++			wl_cfgp2p_set_management_ie(cfg, dev, bssidx,
+ 				VNDR_IE_PRBRSP_FLAG, (u8 *)(buf + ie_offset), ie_len);
+ 			cfg80211_mgmt_tx_status(cfgdev, *cookie, buf, len, true, GFP_KERNEL);
+ 			goto exit;
+diff --git a/drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/wl_iw.c b/drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/wl_iw.c
+index 7f661421..6ae45037 100644
+--- a/drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/wl_iw.c
++++ b/drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/wl_iw.c
+@@ -597,9 +597,10 @@ wl_iw_set_freq(
+ 			while (fwrq->e++ < 6)
+ 				fwrq->m /= 10;
+ 		}
+-	/* handle 4.9GHz frequencies as Japan 4 GHz based channelization */
+-	if (fwrq->m > 4000 && fwrq->m < 5000)
+-		sf = WF_CHAN_FACTOR_4_G; /* start factor for 4 GHz */
++		/* handle 4.9GHz frequencies as Japan 4 GHz based channelization */
++		if (fwrq->m > 4000 && fwrq->m < 5000) {
++			sf = WF_CHAN_FACTOR_4_G; /* start factor for 4 GHz */
++		}
+ 
+ 		chan = wf_mhz2channel(fwrq->m, sf);
+ 	}
+diff --git a/drivers/power/rk30_factory_adc_battery.c b/drivers/power/rk30_factory_adc_battery.c
+index 66feca30..6586e840 100755
+--- a/drivers/power/rk30_factory_adc_battery.c
++++ b/drivers/power/rk30_factory_adc_battery.c
+@@ -989,9 +989,11 @@ static int rk30_adc_battery_voltage_to_capacity(struct rk30_adc_battery_data *ba
+ 
+ 			DBG("start_voltage=%d,start_capacity =%d\n", bat->charge_start_voltage, bat->charge_start_capacity);
+ 			DBG("charge_down_proportion =%d,charge_up_proprotion=%d\n",bat ->charge_down_proportion,bat ->charge_up_proprotion);
+-			for(i = BATT_NUM +6; i <2*BATT_NUM +5; i++)
+-				if(((p[i]) <= bat->charge_start_voltage) && (bat->charge_start_voltage <  (p[i+1])))	
++			for(i = BATT_NUM +6; i <2*BATT_NUM +5; i++) {
++				if(((p[i]) <= bat->charge_start_voltage) && (bat->charge_start_voltage <  (p[i+1]))) {
+ 					bat->voltage_to_local = i;
++				}
++			}
+ 				if(BatVoltage >= (p[2*BATT_NUM +5])){
+ 					capacity = 100;
+ 				}else{	
+diff --git a/drivers/regulator/act8846.c b/drivers/regulator/act8846.c
+index 3042b000..1fc0d3a0 100755
+--- a/drivers/regulator/act8846.c
++++ b/drivers/regulator/act8846.c
+@@ -969,8 +969,9 @@ static int act8846_i2c_probe(struct i2c_client *i2c, const struct i2c_device_id
+ 		config.dev = act8846->dev;
+ 		config.driver_data = act8846;
+ 		config.regmap = act8846->regmap;
+-		if (act8846->dev->of_node)
++		if (act8846->dev->of_node) {
+ 			config.of_node = pdev->of_node[i];
++		}
+ 
+ 			if (reg_data && reg_data->constraints.name)
+ 				rail_name = reg_data->constraints.name;
+diff --git a/drivers/regulator/syr82x.c b/drivers/regulator/syr82x.c
+index 8b215132..1f5c55e5 100755
+--- a/drivers/regulator/syr82x.c
++++ b/drivers/regulator/syr82x.c
+@@ -530,8 +530,9 @@ static int syr82x_i2c_probe(struct i2c_client *i2c, const struct i2c_device_id *
+ 		reg_data = pdev->syr82x_init_data[0];
+ 		config.dev = syr82x->dev;
+ 		config.driver_data = syr82x;
+-		if (syr82x->dev->of_node)
++		if (syr82x->dev->of_node) {
+ 			config.of_node = pdev->of_node[0];
++		}
+ 			if (reg_data && reg_data->constraints.name)
+ 				rail_name = reg_data->constraints.name;
+ 			else
+diff --git a/drivers/usb/gadget/android.c b/drivers/usb/gadget/android.c
+index a7c8b625..f4a7eb3b 100644
+--- a/drivers/usb/gadget/android.c
++++ b/drivers/usb/gadget/android.c
+@@ -54,7 +54,7 @@ MODULE_DESCRIPTION("Android Composite USB Driver");
+ MODULE_LICENSE("GPL");
+ MODULE_VERSION("1.0");
+ 
+-static const char longname[] = "Gadget Android";
++static const char longname[] __maybe_unused = "Gadget Android";
+ 
+ /* Default vendor and product IDs, overridden by userspace */
+ #define VENDOR_ID		0x2207
+diff --git a/drivers/video/rockchip/lcdc/rk312x_lcdc.c b/drivers/video/rockchip/lcdc/rk312x_lcdc.c
+index 4751f741..11595279 100755
+--- a/drivers/video/rockchip/lcdc/rk312x_lcdc.c
++++ b/drivers/video/rockchip/lcdc/rk312x_lcdc.c
+@@ -1326,14 +1326,15 @@ static int rk312x_load_screen(struct rk_lcdc_driver *dev_drv, bool initscreen)
+ 				return -1;
+ 			}
+ 			if (lcdc_dev->soc_type == VOP_RK312X) {
+-				if (screen->type == SCREEN_TVOUT_TEST)
+-			/*for TVE index test,vop must ovarlay at yuv domain*/
++				if (screen->type == SCREEN_TVOUT_TEST) {
++					/*for TVE index test,vop must ovarlay at yuv domain*/
+ 					dev_drv->overlay_mode = VOP_YUV_DOMAIN;
+-					lcdc_msk_reg(lcdc_dev, DSP_CTRL0,
+-						     m_SW_UV_OFFSET_EN,
+-						     v_SW_UV_OFFSET_EN(1));
++				}
++				lcdc_msk_reg(lcdc_dev, DSP_CTRL0,
++					     m_SW_UV_OFFSET_EN,
++					     v_SW_UV_OFFSET_EN(1));
+ 
+-			rk312x_lcdc_select_bcsh(dev_drv, lcdc_dev);
++				rk312x_lcdc_select_bcsh(dev_drv, lcdc_dev);
+ 			}
+ 			break;
+ 		default:
+diff --git a/drivers/video/rockchip/lcdc/rk322x_lcdc.c b/drivers/video/rockchip/lcdc/rk322x_lcdc.c
+index b137f961..216ef74f 100755
+--- a/drivers/video/rockchip/lcdc/rk322x_lcdc.c
++++ b/drivers/video/rockchip/lcdc/rk322x_lcdc.c
+@@ -47,25 +47,25 @@ module_param(dbg_thresd, int, S_IRUGO | S_IWUSR);
+ 		pr_info(x);\
+ 	} while (0)
+ 
+-static const uint32_t csc_y2r_bt601_limit[12] = {
++static const uint32_t csc_y2r_bt601_limit[12] __maybe_unused = {
+ 	0x04a8,      0,  0x0662, 0xfffc8654,
+ 	0x04a8, 0xfe6f,  0xfcbf, 0x00022056,
+ 	0x04a8, 0x0812,       0, 0xfffbaeac,
+ };
+ 
+-static const uint32_t csc_y2r_bt709_limit[12] = {
++static const uint32_t csc_y2r_bt709_limit[12] __maybe_unused = {
+ 	0x04a8,      0,  0x072c, 0xfffc219e,
+ 	0x04a8, 0xff26,  0xfdde, 0x0001357b,
+ 	0x04a8, 0x0873,       0, 0xfffb7dee,
+ };
+ 
+-static const uint32_t csc_y2r_bt601_full[12] = {
++static const uint32_t csc_y2r_bt601_full[12] __maybe_unused = {
+ 	0x0400,      0,  0x059c, 0xfffd342d,
+ 	0x0400, 0xfea0,  0xfd25, 0x00021fcc,
+ 	0x0400, 0x0717,       0, 0xfffc76bc,
+ };
+ 
+-static const uint32_t csc_y2r_bt601_limit_10[12] = {
++static const uint32_t csc_y2r_bt601_limit_10[12] __maybe_unused = {
+ 	0x04a8,      0,  0x0662, 0xfff2134e,
+ 	0x04a8, 0xfe6f,  0xfcbf, 0x00087b58,
+ 	0x04a8, 0x0812,       0, 0xffeeb4b0,
+@@ -77,7 +77,7 @@ static const uint32_t csc_y2r_bt709_limit_10[12] = {
+ 	0x04a8, 0x0873,       0, 0xffedf1b8,
+ };
+ 
+-static const uint32_t csc_y2r_bt601_full_10[12] = {
++static const uint32_t csc_y2r_bt601_full_10[12] __maybe_unused = {
+ 	0x0400,      0,  0x059c, 0xfff4cab4,
+ 	0x0400, 0xfea0,  0xfd25, 0x00087932,
+ 	0x0400, 0x0717,       0, 0xfff1d4f2,
+@@ -89,25 +89,25 @@ static const uint32_t csc_y2r_bt2020[12] = {
+ 	0x04a8, 0x0890,      0, 0xffedb828,
+ };
+ 
+-static const uint32_t csc_r2y_bt601_limit[12] = {
++static const uint32_t csc_r2y_bt601_limit[12] __maybe_unused = {
+ 	0x0107, 0x0204, 0x0064, 0x04200,
+ 	0xff68, 0xfed6, 0x01c2, 0x20200,
+ 	0x01c2, 0xfe87, 0xffb7, 0x20200,
+ };
+ 
+-static const uint32_t csc_r2y_bt709_limit[12] = {
++static const uint32_t csc_r2y_bt709_limit[12] __maybe_unused = {
+ 	0x00bb, 0x0275, 0x003f, 0x04200,
+ 	0xff99, 0xfea5, 0x01c2, 0x20200,
+ 	0x01c2, 0xfe68, 0xffd7, 0x20200,
+ };
+ 
+-static const uint32_t csc_r2y_bt601_full[12] = {
++static const uint32_t csc_r2y_bt601_full[12] __maybe_unused = {
+ 	0x0132, 0x0259, 0x0075, 0x200,
+ 	0xff53, 0xfead, 0x0200, 0x20200,
+ 	0x0200, 0xfe53, 0xffad, 0x20200,
+ };
+ 
+-static const uint32_t csc_r2y_bt601_limit_10[12] = {
++static const uint32_t csc_r2y_bt601_limit_10[12] __maybe_unused = {
+ 	0x0107, 0x0204, 0x0064, 0x10200,
+ 	0xff68, 0xfed6, 0x01c2, 0x80200,
+ 	0x01c2, 0xfe87, 0xffb7, 0x80200,
+@@ -119,7 +119,7 @@ static const uint32_t csc_r2y_bt709_limit_10[12] = {
+ 	0x01c2, 0xfe68, 0xffd7, 0x80200,
+ };
+ 
+-static const uint32_t csc_r2y_bt601_full_10[12] = {
++static const uint32_t csc_r2y_bt601_full_10[12] __maybe_unused = {
+ 	0x0132, 0x0259, 0x0075, 0x200,
+ 	0xff53, 0xfead, 0x0200, 0x80200,
+ 	0x0200, 0xfe53, 0xffad, 0x80200,
+diff --git a/drivers/video/rockchip/lcdc/rk3288_lcdc.c b/drivers/video/rockchip/lcdc/rk3288_lcdc.c
+index c100b166..12ee918b 100644
+--- a/drivers/video/rockchip/lcdc/rk3288_lcdc.c
++++ b/drivers/video/rockchip/lcdc/rk3288_lcdc.c
+@@ -1693,21 +1693,22 @@ static int win2_display(struct lcdc_device *lcdc_dev,
+ 
+ 	spin_lock(&lcdc_dev->reg_lock);
+ 	if (likely(lcdc_dev->clk_on)){
+-		for(i=0;i<win->area_num;i++)
+-			win->area[i].y_addr = 
++		for (i = 0; i < win->area_num; i++) {
++			win->area[i].y_addr =
+ 				win->area[i].smem_start + win->area[i].y_offset;
+-			if (win->area[0].state)
+-				lcdc_writel(lcdc_dev, WIN2_MST0,
+-					    win->area[0].y_addr);
+-			if (win->area[1].state)
+-				lcdc_writel(lcdc_dev, WIN2_MST1,
+-					    win->area[1].y_addr);
+-			if (win->area[2].state)
+-				lcdc_writel(lcdc_dev, WIN2_MST2,
+-					    win->area[2].y_addr);
+-			if (win->area[3].state)
+-				lcdc_writel(lcdc_dev, WIN2_MST3,
+-					    win->area[3].y_addr);
++		}
++		if (win->area[0].state)
++			lcdc_writel(lcdc_dev, WIN2_MST0,
++				    win->area[0].y_addr);
++		if (win->area[1].state)
++			lcdc_writel(lcdc_dev, WIN2_MST1,
++				    win->area[1].y_addr);
++		if (win->area[2].state)
++			lcdc_writel(lcdc_dev, WIN2_MST2,
++				    win->area[2].y_addr);
++		if (win->area[3].state)
++			lcdc_writel(lcdc_dev, WIN2_MST3,
++				    win->area[3].y_addr);
+ 	}
+ 	spin_unlock(&lcdc_dev->reg_lock);
+ 	return 0;
+@@ -1723,22 +1724,23 @@ static int win3_display(struct lcdc_device *lcdc_dev,
+ 
+ 	spin_lock(&lcdc_dev->reg_lock);
+ 	if (likely(lcdc_dev->clk_on)){
+-		for(i=0;i<win->area_num;i++)
+-			win->area[i].y_addr = 
++		for (i = 0; i < win->area_num; i++) {
++			win->area[i].y_addr =
+ 				win->area[i].smem_start + win->area[i].y_offset;
+-			if (win->area[0].state)
+-				lcdc_writel(lcdc_dev, WIN3_MST0,
+-					    win->area[0].y_addr);
+-			if (win->area[1].state)
+-				lcdc_writel(lcdc_dev, WIN3_MST1,
+-					    win->area[1].y_addr);
+-			if (win->area[2].state)
+-				lcdc_writel(lcdc_dev, WIN3_MST2,
+-					    win->area[2].y_addr);
+-			if (win->area[3].state)
+-				lcdc_writel(lcdc_dev, WIN3_MST3,
+-					    win->area[3].y_addr);
+ 		}
++		if (win->area[0].state)
++			lcdc_writel(lcdc_dev, WIN3_MST0,
++				    win->area[0].y_addr);
++		if (win->area[1].state)
++			lcdc_writel(lcdc_dev, WIN3_MST1,
++				    win->area[1].y_addr);
++		if (win->area[2].state)
++			lcdc_writel(lcdc_dev, WIN3_MST2,
++				    win->area[2].y_addr);
++		if (win->area[3].state)
++			lcdc_writel(lcdc_dev, WIN3_MST3,
++				    win->area[3].y_addr);
++	}
+ 	spin_unlock(&lcdc_dev->reg_lock);
+ 	return 0;
+ }
+diff --git a/drivers/video/rockchip/rga/rga_drv.c b/drivers/video/rockchip/rga/rga_drv.c
+index a949da3b..2fa6b290 100755
+--- a/drivers/video/rockchip/rga/rga_drv.c
++++ b/drivers/video/rockchip/rga/rga_drv.c
+@@ -1464,10 +1464,11 @@ static void __exit rga_exit(void)
+     if (rga_mmu_buf.buf_virtual)
+         kfree(rga_mmu_buf.buf_virtual);
+ 
+-    if (rga_mmu_buf.pages)
+-        kfree(rga_mmu_buf.pages);
++    if (rga_mmu_buf.pages) {
++        kfree(rga_mmu_buf.pages);
++    }
+ 
+-	platform_driver_unregister(&rga_driver);
++    platform_driver_unregister(&rga_driver);
+ }
+ 
+ 
+diff --git a/drivers/video/rockchip/rk_fb.c b/drivers/video/rockchip/rk_fb.c
+index b5eeed5e..90b03538 100644
+--- a/drivers/video/rockchip/rk_fb.c
++++ b/drivers/video/rockchip/rk_fb.c
+@@ -4058,32 +4058,33 @@ static int rk_fb_alloc_buffer(struct fb_info *fbi)
+ 			win_id_prmry =
+ 				dev_drv_prmry->ops->fb_get_win_id(dev_drv_prmry,
+ 								 fbi->fix.id);
+-			if (win_id_prmry < 0)
++			if (win_id_prmry < 0) {
+ 				return -ENODEV;
+-			else
++			} else {
+ 				fb_par->ion_hdl =
+-				dev_drv_prmry->win[win_id_prmry]->area[0].ion_hdl;
+-				fbi->screen_base =
+-					ion_map_kernel(rk_fb->ion_client,
+-						       fb_par->ion_hdl);
+-				dev_drv->win[win_id]->area[0].ion_hdl =
+-					fb_par->ion_hdl;
+-				if (dev_drv->mmu_dev)
+-					ret = ion_map_iommu(dev_drv->dev,
+-							    rk_fb->ion_client,
+-							    fb_par->ion_hdl,
+-							    (unsigned long *)&phy_addr,
+-							    (unsigned long *)&len);
+-				else
+-					ret = ion_phys(rk_fb->ion_client,
+-						       fb_par->ion_hdl,
+-						       &phy_addr, &len);
+-				if (ret < 0) {
+-					dev_err(fbi->dev, "ion map to get phy addr failed\n");
+-					return -ENOMEM;
+-				}
+-				fbi->fix.smem_start = phy_addr;
+-				fbi->fix.smem_len = len;
++					dev_drv_prmry->win[win_id_prmry]->area[0].ion_hdl;
++			}
++			fbi->screen_base =
++				ion_map_kernel(rk_fb->ion_client,
++					       fb_par->ion_hdl);
++			dev_drv->win[win_id]->area[0].ion_hdl =
++				fb_par->ion_hdl;
++			if (dev_drv->mmu_dev)
++				ret = ion_map_iommu(dev_drv->dev,
++						    rk_fb->ion_client,
++						    fb_par->ion_hdl,
++						    (unsigned long *)&phy_addr,
++						    (unsigned long *)&len);
++			else
++				ret = ion_phys(rk_fb->ion_client,
++					       fb_par->ion_hdl,
++					       &phy_addr, &len);
++			if (ret < 0) {
++				dev_err(fbi->dev, "ion map to get phy addr failed\n");
++				return -ENOMEM;
++			}
++			fbi->fix.smem_start = phy_addr;
++			fbi->fix.smem_len = len;
+ #else
+ 			fb_mem_virt = dma_alloc_writecombine(fbi->dev,
+ 							     fb_mem_size,
+diff --git a/drivers/video/rockchip/transmitter/vga.c b/drivers/video/rockchip/transmitter/vga.c
+index f5a6fc81..bc2d4204 100644
+--- a/drivers/video/rockchip/transmitter/vga.c
++++ b/drivers/video/rockchip/transmitter/vga.c
+@@ -27,7 +27,7 @@
+ 
+ //static char *vgaenvent[] = {"INTERFACE=VGA", NULL}; 
+ 
+-static const struct fb_videomode rk29_mode[] = {
++static const struct fb_videomode rk29_mode[] __maybe_unused = {
+ 	//name			refresh		xres	yres	pixclock			h_bp	h_fp	v_bp	v_fp	h_pw	v_pw	polariry	PorI	flag(used for vic)
+ {	"1024x768p@60Hz",	60,		1024,	768,	KHZ2PICOS(65000),	160,	24,	29,	3,	136,	6,		FB_SYNC_HOR_HIGH_ACT | FB_SYNC_VERT_HIGH_ACT,			0,		0	},
+ {	"1280x720p@60Hz",	60,		1280,	720,	KHZ2PICOS(74250),	220,	110,	20,	5,	40,	5,		FB_SYNC_HOR_HIGH_ACT | FB_SYNC_VERT_HIGH_ACT,			0,		0	},	
+diff --git a/fs/cifs/netmisc.c b/fs/cifs/netmisc.c
+index af847e1c..98b6a5fa 100644
+--- a/fs/cifs/netmisc.c
++++ b/fs/cifs/netmisc.c
+@@ -130,10 +130,6 @@ static const struct smb_to_posix_error mapping_table_ERRSRV[] = {
+ 	{0, 0}
+ };
+ 
+-static const struct smb_to_posix_error mapping_table_ERRHRD[] = {
+-	{0, 0}
+-};
+-
+ /*
+  * Convert a string containing text IPv4 or IPv6 address to binary form.
+  *
+diff --git a/net/core/net-sysfs.c b/net/core/net-sysfs.c
+index 981fed39..0ab8c69e 100644
+--- a/net/core/net-sysfs.c
++++ b/net/core/net-sysfs.c
+@@ -27,7 +27,7 @@
+ 
+ #ifdef CONFIG_SYSFS
+ static const char fmt_hex[] = "%#x\n";
+-static const char fmt_long_hex[] = "%#lx\n";
++static const char fmt_long_hex[] __maybe_unused = "%#lx\n";
+ static const char fmt_dec[] = "%d\n";
+ static const char fmt_udec[] = "%u\n";
+ static const char fmt_ulong[] = "%lu\n";
+diff --git a/net/core/rtnetlink.c b/net/core/rtnetlink.c
+index 602c6d04..9c967631 100644
+--- a/net/core/rtnetlink.c
++++ b/net/core/rtnetlink.c
+@@ -1135,11 +1135,11 @@ static const struct nla_policy ifla_info_policy[IFLA_INFO_MAX+1] = {
+ 	[IFLA_INFO_DATA]	= { .type = NLA_NESTED },
+ };
+ 
+-static const struct nla_policy ifla_vfinfo_policy[IFLA_VF_INFO_MAX+1] = {
++static const struct nla_policy ifla_vfinfo_policy[IFLA_VF_INFO_MAX+1] __maybe_unused = {
+ 	[IFLA_VF_INFO]		= { .type = NLA_NESTED },
+ };
+ 
+-static const struct nla_policy ifla_vf_policy[IFLA_VF_MAX+1] = {
++static const struct nla_policy ifla_vf_policy[IFLA_VF_MAX+1] __maybe_unused = {
+ 	[IFLA_VF_MAC]		= { .len = sizeof(struct ifla_vf_mac) },
+ 	[IFLA_VF_VLAN]		= { .len = sizeof(struct ifla_vf_vlan) },
+ 	[IFLA_VF_TX_RATE]	= { .len = sizeof(struct ifla_vf_tx_rate) },
+diff --git a/net/ipv4/arp.c b/net/ipv4/arp.c
+index 247ec195..a997b6bf 100644
+--- a/net/ipv4/arp.c
++++ b/net/ipv4/arp.c
+@@ -149,7 +149,7 @@ static const struct neigh_ops arp_direct_ops = {
+ 	.connected_output =	neigh_direct_output,
+ };
+ 
+-static const struct neigh_ops arp_broken_ops = {
++static const struct neigh_ops arp_broken_ops __maybe_unused = {
+ 	.family =		AF_INET,
+ 	.solicit =		arp_solicit,
+ 	.error_report =		arp_error_report,
+diff --git a/net/packet/af_packet.c b/net/packet/af_packet.c
+index 2d454a23..aad6db7d 100644
+--- a/net/packet/af_packet.c
++++ b/net/packet/af_packet.c
+@@ -3669,9 +3669,10 @@ static int packet_set_ring(struct sock *sk, union tpacket_req_u *req_u,
+ 		/* Transmit path is not supported. We checked
+ 		 * it above but just being paranoid
+ 		 */
+-			if (!tx_ring)
++			if (!tx_ring) {
+ 				init_prb_bdqc(po, rb, pg_vec, req_u, tx_ring);
+-				break;
++			}
++			break;
+ 		default:
+ 			break;
+ 		}
+diff --git a/sound/soc/codecs/rk312x_codec.c b/sound/soc/codecs/rk312x_codec.c
+index d5fb93aa..6d823cea 100755
+--- a/sound/soc/codecs/rk312x_codec.c
++++ b/sound/soc/codecs/rk312x_codec.c
+@@ -659,7 +659,7 @@ static const struct soc_enum rk312x_agcr_enum[] = {
+ 			rk312x_dis_en_sel),/*14*/
+ };
+ 
+-static const struct snd_kcontrol_new rk312x_snd_controls[] = {
++static const struct snd_kcontrol_new rk312x_snd_controls[] __maybe_unused = {
+ 	/* Add for set voice volume */
+ 	SOC_DOUBLE_R_TLV("Speaker Playback Volume", RK312x_HPOUTL_GAIN,
+ 			 RK312x_HPOUTR_GAIN, RK312x_HPOUT_GAIN_SFT,
+@@ -1293,7 +1293,7 @@ static const struct snd_kcontrol_new lnr_sel_mux =
+ 	SOC_DAPM_ENUM("MUXIN_R select", lnr_sel_enum);
+ 
+ 
+-static const struct snd_soc_dapm_widget rk312x_dapm_widgets[] = {
++static const struct snd_soc_dapm_widget rk312x_dapm_widgets[] __maybe_unused = {
+ 	/* microphone bias */
+ 	SND_SOC_DAPM_MICBIAS("Mic Bias", RK312x_ADC_MIC_CTL,
+ 			     RK312x_MICBIAS_VOL_ENABLE, 0),
+@@ -1376,7 +1376,7 @@ static const struct snd_soc_dapm_widget rk312x_dapm_widgets[] = {
+ 
+ };
+ 
+-static const struct snd_soc_dapm_route rk312x_dapm_routes[] = {
++static const struct snd_soc_dapm_route rk312x_dapm_routes[] __maybe_unused = {
+ 	/* Input */
+ 	{"BSTR", NULL, "MICP"},
+ 	{"BSTL", NULL, "MICP"},
+diff --git a/sound/soc/codecs/rt3261.c b/sound/soc/codecs/rt3261.c
+index 1541f313..713f1ccd 100755
+--- a/sound/soc/codecs/rt3261.c
++++ b/sound/soc/codecs/rt3261.c
+@@ -1156,10 +1156,10 @@ static const SOC_ENUM_SINGLE_DECL(rt3261_if2_dac_enum, RT3261_DIG_INF_DATA,
+ static const SOC_ENUM_SINGLE_DECL(rt3261_if2_adc_enum, RT3261_DIG_INF_DATA,
+ 				RT3261_IF2_ADC_SEL_SFT, rt3261_data_select);
+ 
+-static const SOC_ENUM_SINGLE_DECL(rt3261_if3_dac_enum, RT3261_DIG_INF_DATA,
++static const SOC_ENUM_SINGLE_DECL(rt3261_if3_dac_enum __maybe_unused, RT3261_DIG_INF_DATA,
+ 				RT3261_IF3_DAC_SEL_SFT, rt3261_data_select);
+ 
+-static const SOC_ENUM_SINGLE_DECL(rt3261_if3_adc_enum, RT3261_DIG_INF_DATA,
++static const SOC_ENUM_SINGLE_DECL(rt3261_if3_adc_enum __maybe_unused, RT3261_DIG_INF_DATA,
+ 				RT3261_IF3_ADC_SEL_SFT, rt3261_data_select);
+ 
+ /* Class D speaker gain ratio */
+@@ -1700,7 +1700,7 @@ static const SOC_ENUM_SINGLE_DECL(
+ 	rt3261_inl_enum, RT3261_INL_INR_VOL,
+ 	RT3261_INL_SEL_SFT, rt3261_inl_src);
+ 
+-static const struct snd_kcontrol_new rt3261_inl_mux =
++static const struct snd_kcontrol_new rt3261_inl_mux __maybe_unused =
+ 	SOC_DAPM_ENUM("INL source", rt3261_inl_enum);
+ 
+ static const char *rt3261_inr_src[] = {"IN2N", "MonoN"};
+@@ -1709,7 +1709,7 @@ static const SOC_ENUM_SINGLE_DECL(
+ 	rt3261_inr_enum, RT3261_INL_INR_VOL,
+ 	RT3261_INR_SEL_SFT, rt3261_inr_src);
+ 
+-static const struct snd_kcontrol_new rt3261_inr_mux =
++static const struct snd_kcontrol_new rt3261_inr_mux __maybe_unused =
+ 	SOC_DAPM_ENUM("INR source", rt3261_inr_enum);
+ 
+ /* Stereo ADC source */

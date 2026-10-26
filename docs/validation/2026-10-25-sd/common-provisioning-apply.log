@@ -1,0 +1,34 @@
+repository=/workspace/rk322x-sd-candidate/device/rockchip/common
+pin=3b1aa90ef43f9d34094739a211ad44bf9a2c0b74
+check_worktree=/workspace/build01-sd/check-common-stack
+patch=0003-common-disable-internal-provisioning.patch
+base_patch=0002-common-sd-only-init.patch
+$ git apply --check /workspace/vortex-build/rom/sdcard/patches/0002-common-sd-only-init.patch
+exit=0
+
+
+$ git apply /workspace/vortex-build/rom/sdcard/patches/0002-common-sd-only-init.patch
+exit=0
+
+
+$ git apply --check /workspace/vortex-build/rom/sdcard/patches/0003-common-disable-internal-provisioning.patch
+exit=0
+
+
+$ git apply /workspace/vortex-build/rom/sdcard/patches/0003-common-disable-internal-provisioning.patch
+exit=0
+
+
+$ git diff --check
+exit=0
+
+
+$ git diff --stat
+exit=0
+ device.mk         |  8 ++------
+ init.rk30board.rc |  6 ++----
+ init.rockchip.rc  | 15 +--------------
+ 3 files changed, 5 insertions(+), 24 deletions(-)
+
+
+PASS: stack 0002 + 0003 applied to pinned real worktree; no active drmboot load or rk_store_keybox service; original unchanged.

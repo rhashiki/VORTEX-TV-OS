@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "scope": "candidate_components_only",
+  "complete_bsp": false,
+  "hardware_validation": "not_performed",
+  "projects": [
+    {
+      "path": "device/rockchip/rk322x",
+      "repository": "https://github.com/D042888-2/android_device_rockchip_rk322x.git",
+      "revision": "f33a129bfab6d9cc87184ee3bf032224801fa446",
+      "tree": "f9420def451afe920b99e7461434f8bf2fd7201d",
+      "branch_reference": "aosp-7.1.2_r6",
+      "checkout_verified": true,
+      "license_review": "No repository-wide license identified; per-file and blob rights require review before redistribution."
+    },
+    {
+      "path": "device/rockchip/common",
+      "repository": "https://github.com/D042888-2/android_device_rockchip_common.git",
+      "revision": "3b1aa90ef43f9d34094739a211ad44bf9a2c0b74",
+      "tree": "73169060d3a7166b815680dbcac190168f1f8ef5",
+      "branch_reference": "aosp-7.1.2_r6",
+      "checkout_verified": true,
+      "license_review": "No repository-wide license identified; per-file and blob rights require review before redistribution."
+    },
+    {
+      "path": "vendor/rockchip/rk322x",
+      "repository": "https://github.com/D042888-2/android_vendor_rockchip_rk322x.git",
+      "revision": "50c7170ecb4bd907059db37f09f4767b301f2d15",
+      "tree": "e19bdf8cca911e3b9b98de5f449961fd428deb21",
+      "branch_reference": "aosp-7.1.2_r6",
+      "checkout_verified": true,
+      "license_review": "No repository-wide license identified; per-file and blob rights require review before redistribution."
+    }
+  ],
+  "missing": [
+    "Complete compatible AOSP manifest and platform revisions",
+    "Matching kernel/configuration/DTB and compiled Image",
+    "Verified system/core bootmode selection and matching bootloader",
+    "SD boot packaging/partition layout",
+    "Physical boot and driver validation"
+  ],
+  "limits": [
+    "This JSON is not a resolved repo manifest or proof of a complete BSP.",
+    "Checkout verification records this session; it does not assert correspondence of a future checkout.",
+    "Vendor binaries are not included or redistributed in Vortex."
+  ]
+}

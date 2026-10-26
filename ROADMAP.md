@@ -79,6 +79,7 @@ não foi compilada nem testada. Preservar a memória interna durante essa etapa
 
 - [x] Código-fonte inicial da Home, controles, Installer e integração experimental AOSP consolidado na `main`.
 - [x] Compilação de APK debug e testes parciais em emulador reportados em `docs/VALIDATION_2026-10-25_CONTINUATION.md`.
+- [x] Adquirir candidatos device/common/vendor em revisões fixas e verificar os patches de montagem SD em fontes reais; [resultados](docs/VALIDATION_2026-10-25_SD.md). Isso não comprova uma imagem inicializável.
 - [ ] Integração das quatro peças de marca oficiais e atualização visual.
 - [ ] Compilação e regressão completas, incluindo teste de QR/USB/PackageInstaller.
 - [ ] Compilar uma imagem de teste microSD e demonstrar boot externo com a instalação interna preservada.

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "scope": "cross_board_platform_research_only",
+  "target_board_of_reference": "TinkerBoard / RK3288",
+  "compatible_rk3229_bsp_selected": false,
+  "complete_resolved_manifest": false,
+  "manifest": {
+    "repository": "https://github.com/TinkerBoard-Android/rockchip-android-manifest.git",
+    "revision": "e4faf840083f5c88b7d789007e6707f757368f0c",
+    "branch_reference": "n-mr1-rk3288-tb",
+    "file": "default.xml",
+    "project_count": 528,
+    "include": "android-7.1.2_r39.xml",
+    "included_project_count": 6
+  },
+  "observed_component_revisions": [
+    {
+      "path": "system/core",
+      "repository": "https://github.com/TinkerBoard-Android/rockchip-android-system-core.git",
+      "revision": "a54e58472fdeb45820fd215d45da6d8b55b27cde"
+    },
+    {
+      "path": "build",
+      "repository": "https://github.com/TinkerBoard-Android/rockchip-android-build.git",
+      "revision": "8c2940f3b2cb18d3fd57723eee5e7922f6c27a7b"
+    },
+    {
+      "path": "device/rockchip/common",
+      "repository": "https://github.com/TinkerBoard-Android/rockchip-android-rk-device-rockchip-rksdk.git",
+      "revision": "08a9c89bafa8e40c0ee63fbeb8975a26c962fbd2"
+    },
+    {
+      "path": "hardware/rockchip/libgralloc",
+      "repository": "https://github.com/TinkerBoard-Android/rockchip-android-rk-hardware-rk29-libgralloc_ump.git",
+      "revision": "211e7d62dcaa9acc2b7f1e424607b7eef40eb57f"
+    }
+  ],
+  "limits": [
+    "Only the listed component references were checked; this is not a lock of all 534 projects.",
+    "The source reference is for RK3288 and contains board-specific code; it was not merged with the RK322x r6 candidates.",
+    "Android version/API strings do not establish ABI, storage, graphics or physical compatibility.",
+    "No full BSP synchronization, Android build, boot image or hardware validation was performed for this platform reference."
+  ]
+}

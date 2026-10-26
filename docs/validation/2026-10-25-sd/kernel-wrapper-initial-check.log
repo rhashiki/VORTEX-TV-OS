@@ -1,0 +1,3 @@
+PASS: nonwhitelisted preserves exit/object policy
+PASS: whitelisted preserves exit/object policy
+PASS: silent preserves exit/object policy

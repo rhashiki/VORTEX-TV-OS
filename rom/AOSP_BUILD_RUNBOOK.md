@@ -65,7 +65,10 @@ fontes, não um perfil universal para qualquer BSP Rockchip. Procura:
   com versão Android 7.1.2 e API 25.
 - Device: `device/rockchip/rk322x/BoardConfig.mk`, `AndroidProducts.mk` e
   `rk322x_box.mk`; `device/rockchip/common/BoardConfig.mk` e `tv/tv_base.mk`.
-- Vendor: `vendor/rockchip/rk322x/BoardConfigVendor.mk`.
+- Vendor: `vendor/rockchip/rk322x/device-vendor.mk` e `Android.mk`, presentes
+  na revisão candidata `50c7170`. O `BoardConfigVendor.mk` aparece apenas como
+  `-include` opcional na device tree e não existe nesse vendor público; sua
+  ausência não é uma falha de pré-requisito desse perfil.
 - Kernel: `kernel/Makefile` e `kernel/arch/arm/boot/Image`.
 - Inventário de origem: `.repo/manifest.xml` e o lock fornecido explicitamente.
 

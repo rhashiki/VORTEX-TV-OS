@@ -4,11 +4,29 @@ Estratégia proposta pelo proprietário em 25/10/2026: iniciar o Vortex por
 cartão SD ou pendrive, testar na TV Box e só depois preparar a instalação
 definitiva. **Prioridade de investigação: microSD.** Pendrive fica condicionado
 ao suporte do bootloader. Não há imagem Vortex de boot externo pronta ou
-testada nesta etapa; o artefato compilado existente continua sendo o APK.
+testada nesta etapa. Foram compilados o APK e, em ensaio separado, um kernel
+ARM com DTB SDK genérico; esses componentes ainda não formam uma imagem SD.
 
 Usar os dados já enviados e as fontes públicas. O proprietário não consegue
 obter novas informações da placa; seguir [HARDWARE.md](HARDWARE.md), sem
 repetir pedidos de identificação ou diagnósticos.
+
+## Preparação implementada
+
+As três árvores candidatas device/common/vendor foram adquiridas em revisões
+fixas. O [patchset em sdcard/](sdcard/README.md) foi aplicado em worktrees reais:
+montagem SD, remoção dos fallbacks conhecidos nas listas alteradas e retirada
+dos caminhos charger/provisionamento identificados. O novo
+`tools/audit_sd_fstab.py` confere apenas as entradas de montagem; ele rejeita
+a exposição do próprio cartão ao vold na configuração original e aceita o
+fstab resultante. [Relatório da etapa](../docs/VALIDATION_2026-10-25_SD.md).
+
+Isso implementa preparação de fontes, sem demonstrar a imagem ou o boot.
+Também foram compilados [kernel ARM e DTB SDK genéricos](sdcard/KERNEL_BUILD.md)
+em ensaio separado, sem plataforma Android ou layout de mídia.
+Plataforma/kernel/loader e o ramdisk completo ainda exigem integração; recovery
+não deve fazer parte da primeira mídia enquanto seus caminhos não forem
+auditados. A coleta automática citada abaixo continua pendente.
 
 ## Evidência encontrada
 

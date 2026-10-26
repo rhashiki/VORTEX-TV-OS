@@ -1,0 +1,8 @@
+{
+  "before_sha256": "0040d2a12266eee016ee36c697e53b976e98f41714f98f641dc053a46ba157ab",
+  "final_sha256": "829e2335a645f2bbec9bdf5f0811eebdf567bdfd0563341f48182633a5bb3eb2",
+  "source": "/workspace/vortex-build/tools/legacy_kernel_gcc_wrapper.py",
+  "change": "Forward each compiler stderr line exactly using sys.stdout.write(line), without introducing whitespace that broke gcc -v compiler metadata. Whitelist, regex and fail decision remain unchanged.",
+  "previous_artifacts": "/workspace/build01-sd/kernel-before-output-fix",
+  "previous_image_sha256": "acd732ce5baafd901c1ef70ba91b55732d611b09c8acbd0d9a44c05b880da658"
+}

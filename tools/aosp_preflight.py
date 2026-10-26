@@ -27,7 +27,10 @@ REFERENCE_FILES = (
     "device/rockchip/rk322x/rk322x_box.mk",
     "device/rockchip/common/BoardConfig.mk",
     "device/rockchip/common/tv/tv_base.mk",
-    "vendor/rockchip/rk322x/BoardConfigVendor.mk",
+    # In pinned vendor revision 50c7170, BoardConfigVendor.mk is an optional
+    # -include and is absent. These are the actual public integration anchors.
+    "vendor/rockchip/rk322x/device-vendor.mk",
+    "vendor/rockchip/rk322x/Android.mk",
     "kernel/Makefile",
     "kernel/arch/arm/boot/Image",
 )

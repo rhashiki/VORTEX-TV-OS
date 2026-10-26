@@ -1,0 +1,6 @@
+# Unified diffs retain context indentation and the original source EOL bytes.
+# Check whitespace in the applied source trees, not in patch transport text.
+*.patch -text -whitespace
+# Raw tool output is evidence; retain spaces emitted by the original tools.
+docs/validation/2026-10-25-sd/*.log -whitespace
+docs/validation/2026-10-25-sd/kernel-vmlinux-header.txt -whitespace

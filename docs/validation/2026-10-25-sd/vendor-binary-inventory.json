@@ -1,0 +1,118 @@
+{
+  "repository_revision": "50c7170ecb4bd907059db37f09f4767b301f2d15",
+  "kernel_modules": [
+    {
+      "path": "proprietary/lib/modules/8188eu.ko",
+      "sha256": "595b4bbfc54f28474ea4a49f7bf2a98d53fffe055aef986b16df1998030d37f8",
+      "vermagic": [
+        "3.10.104 SMP preempt mod_unload ARMv7 p2v8 "
+      ]
+    },
+    {
+      "path": "proprietary/lib/modules/8188fu.ko",
+      "sha256": "70965ab9cfec552a54cb8a30b04b601f02ffc6e6f0a6119f811e40423f55e736",
+      "vermagic": [
+        "3.10.104 SMP preempt mod_unload ARMv7 p2v8 "
+      ]
+    },
+    {
+      "path": "proprietary/lib/modules/8189es.ko",
+      "sha256": "b09842f5becdb795e320f1875f1dd7e383d41a7cda6bdd27edcb7147c52a8b86",
+      "vermagic": [
+        "3.10.104 SMP preempt mod_unload ARMv7 p2v8 "
+      ]
+    },
+    {
+      "path": "proprietary/lib/modules/8723bs.ko",
+      "sha256": "6431f40e61b2c4fe52d521e21c883c489514357e1d82a491f246c7ac87f4b8bd",
+      "vermagic": [
+        "3.10.104 SMP preempt mod_unload ARMv7 p2v8 "
+      ]
+    },
+    {
+      "path": "proprietary/lib/modules/8723cs.ko",
+      "sha256": "258c06c32219b1d4630906279525450e4607e0348f6a72d43d3a295b7f7b2aa1",
+      "vermagic": [
+        "3.10.104 SMP preempt mod_unload ARMv7 p2v8 "
+      ]
+    },
+    {
+      "path": "proprietary/lib/modules/8822bs.ko",
+      "sha256": "05f35f9631e72077a472361db728d6b91fd85d30074fb7da459fdb3a33f213b1",
+      "vermagic": [
+        "3.10.104 SMP preempt mod_unload ARMv7 p2v8 "
+      ]
+    },
+    {
+      "path": "proprietary/lib/modules/8822bu.ko",
+      "sha256": "000c1f3e792c245aa8eab3b85c69d6288ad32f249cca45135eaddaf5624bbfcf",
+      "vermagic": [
+        "3.10.104 SMP preempt mod_unload ARMv7 p2v8 "
+      ]
+    },
+    {
+      "path": "proprietary/lib/modules/bcmdhd.ko",
+      "sha256": "4519b104a4d4e73f3cd3b57e6c894d59e656963814c95e463b5d022d78ce6e6a",
+      "vermagic": [
+        "3.10.104 SMP preempt mod_unload ARMv7 p2v8 "
+      ]
+    },
+    {
+      "path": "proprietary/lib/modules/esp8089.ko",
+      "sha256": "195213ec60b464b7bfd0765aca2730889cd9790746c8e97571c08e1d89c34ff1",
+      "vermagic": [
+        "3.10.104 SMP preempt mod_unload ARMv7 p2v8 "
+      ]
+    },
+    {
+      "path": "proprietary/lib/modules/rk29-ipp.ko",
+      "sha256": "763546eb3fbbe97c82707cc5af88600da8088cf5b029bb994bcebfb86c131deb",
+      "vermagic": [
+        "3.0.101+ SMP preempt mod_unload ARMv7 "
+      ]
+    },
+    {
+      "path": "proprietary/lib/modules/ssv6051.ko",
+      "sha256": "3433266c184ac706782064a3667cb017c56ae4721fbc78a013eceeeb115e6f2e",
+      "vermagic": [
+        "3.10.104 SMP preempt mod_unload ARMv7 p2v8 "
+      ]
+    },
+    {
+      "path": "proprietary/lib/modules/vcodec_service.ko",
+      "sha256": "e8903a3054e63c531a4ea9eb9c2f9bd598699bdbcaebbbf3586915be71a6933e",
+      "vermagic": [
+        "3.10.104 SMP preempt mod_unload ARMv7 p2v8 "
+      ]
+    },
+    {
+      "path": "proprietary/lib/modules/wlan.ko",
+      "sha256": "4621ebc225a4a451b3e87224d81a93cf5f7c7c4e0c4e0e1b3d21b2aca96424ef",
+      "vermagic": [
+        "3.10.104 SMP preempt mod_unload ARMv7 p2v8 "
+      ]
+    }
+  ],
+  "graphics_libraries": [
+    {
+      "path": "proprietary/lib/egl/libGLES_mali.so",
+      "format": "ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /system/bin/linker, for Android 25, BuildID[md5/uuid]=6467ab2b23ca9e1ead43c2d0e0b496f0, stripped",
+      "sha256": "82f5bc8742026be1ed67db15eb50be7361b3be926d6f90a2d1711163c00ace1c"
+    },
+    {
+      "path": "proprietary/lib/hw/hwcomposer.rk30board.so",
+      "format": "ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /system/bin/linker, for Android 25, BuildID[md5/uuid]=e95458fe44948641c1165d76d1115e5f, stripped",
+      "sha256": "f0fbdce6395a55f0352dd1629081bcafd2b6bc1b27f4916a7a63679b1e388feb"
+    },
+    {
+      "path": "proprietary/lib/hw/gralloc.rk30board.so",
+      "format": "ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /system/bin/linker, for Android 25, BuildID[md5/uuid]=82c24923b5d3b8cde1f4e741797838b3, stripped",
+      "sha256": "51789e88fabbc1b550a75e8dd783e79fb8f53c612eb7cdb91d5e579c8122286b"
+    }
+  ],
+  "limits": [
+    "No binary was executed or loaded.",
+    "Matching version text does not prove kernel symbol/configuration ABI or compatibility with this board.",
+    "Public SSV6051 firmware does not identify the owner's Wi-Fi chip."
+  ]
+}

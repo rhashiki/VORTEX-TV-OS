@@ -1,0 +1,160 @@
+{
+  "kernel_revision": "6c04d006ae881944d32c19e68b992d0bd5ab4fde",
+  "files": [
+    {
+      "file": "arch/arm/mach-rockchip/rk_camera.c",
+      "upstream_sha256": "01ed02040197ccd285df1cb910434191e0772b6776c0c06418686f9ffc8c507c",
+      "modified_sha256": "6adad8bd1e3227017c69db71ab473f3e5cb0e67e977dfedcdece2f04544825a0"
+    },
+    {
+      "file": "drivers/gpu/arm/mali400/mali/Kbuild",
+      "upstream_sha256": "63a2932622a0bdeb7bd6bb0a0a2c15e95caf1d7673fc41fbd055687e5f694719",
+      "modified_sha256": "535aba81e18eb4f714f7a8e26cf14baab12e629d80d56e0b19316637a85c114b"
+    },
+    {
+      "file": "drivers/gpu/arm/mali400/ump/Kbuild",
+      "upstream_sha256": "de40ea44f70f70ee13a4727922e4e28d0ddb83da51132d721173928a08c11fff",
+      "modified_sha256": "5e34baae233462679abee00aa871ea96a5e6ba6e2ca4614f4ba1609dbca8b4cc"
+    },
+    {
+      "file": "drivers/i2c/i2c-core.c",
+      "upstream_sha256": "01d5cb48b8330d21ba5c962df70694a95dbaf5cbf4e40de16a5d18ca671ad044",
+      "modified_sha256": "7436b100a84370179d59e73272f16d3831b342daebefff0e3e3ad1f72b43fae6"
+    },
+    {
+      "file": "drivers/media/v4l2-core/videobuf-core.c",
+      "upstream_sha256": "d7758b38d66420277306b1b3a8d60e708d177740ec91d5a87fc2354320ae4ce6",
+      "modified_sha256": "cc6444c863b0ff9db2584810ee0a91c0cdc84018f09adc9c390bc61e95f76246"
+    },
+    {
+      "file": "drivers/media/video/generic_sensor.c",
+      "upstream_sha256": "915fd03996c20001d8aa5fd6fb670e9b1c0b02e765f66f2430ebbaaae0680fa2",
+      "modified_sha256": "027e79af7f0c99eaecb7c08bcbdb34d13ecce7a81f1c118f0a416a8b6a2f3dd8"
+    },
+    {
+      "file": "drivers/mfd/rk808.c",
+      "upstream_sha256": "9b10a48dfd4a14a4b19a640d2e68e211a2970708180b2721a1e213f8d46098a8",
+      "modified_sha256": "6ab4bcabf089fde81c8eff54b5f206dd61427ed75a2c55c76c506383b36e9060"
+    },
+    {
+      "file": "drivers/mfd/rk818.c",
+      "upstream_sha256": "8c0ccc71bf8108efebf55b4362bddadddae09637728bf1089a1def5c5f23b47c",
+      "modified_sha256": "df283e29a01c218222ed758aebce7c4b5644bc3ace7c90dd328116c038e1c7c9"
+    },
+    {
+      "file": "drivers/net/usb/dm9620.c",
+      "upstream_sha256": "9c5b7c834a971238d763ffd776e8eb173e909504a4d36f8f28814946ba88615f",
+      "modified_sha256": "de9f21f38bd2e8e47225d9b7f3d3e5ff54b12d2bcc448555ca854af7372e6371"
+    },
+    {
+      "file": "drivers/net/usb/usbnet.c",
+      "upstream_sha256": "cd7c0eb0bcaedd3ded5aa51d59cd9631254f25b2f7917a4ab89d578b9da538f8",
+      "modified_sha256": "679cd1b845138acd76ecf46b8f7a76310e67f16b15e7b52086aedf41515c3131"
+    },
+    {
+      "file": "drivers/net/wireless/Makefile",
+      "upstream_sha256": "c74008ca2db82732ce2dc7dcf42631a64dd0fe5446688abb9556553391f012bb",
+      "modified_sha256": "66c6666fee81046de2d71e72738e1ff8082a939762bb375d94f7dfd785650c20"
+    },
+    {
+      "file": "drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/siutils.c",
+      "upstream_sha256": "502ea2379ece6f775a5ea1bdf16e5d1e48f6a274ffcd8b1a45c9bc80a9b0993b",
+      "modified_sha256": "bc303de0db13d3e26b2d4c91c162ab0a545b190b5c50e5f6205ac495d1d45b20"
+    },
+    {
+      "file": "drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/wl_cfg80211.c",
+      "upstream_sha256": "b20cf39dd34605929366c2b8c9bdb97a39be68ee29eb1979cd7176745a7d8c46",
+      "modified_sha256": "7dec4b56ba3f32528ea927286b431b43b6b132b7571cbeaec32575218d6d96a3"
+    },
+    {
+      "file": "drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/wl_iw.c",
+      "upstream_sha256": "2becadaae685aa8317bf61bd7fe8365104700083d31b6d0086b3d26cfb11e689",
+      "modified_sha256": "37627339ce1433a0a2a122027eba9c79faf233303af5f2d538749c3e30e42c4d"
+    },
+    {
+      "file": "drivers/power/rk30_factory_adc_battery.c",
+      "upstream_sha256": "a38efe01d3c61cd1ec93c876b7fcfedf68f409cd807c3aa1126f88dd81a433cf",
+      "modified_sha256": "d597182096274a670ed8463b8e06398d142d176b1c3a11cb3e612ec3b77101ac"
+    },
+    {
+      "file": "drivers/regulator/act8846.c",
+      "upstream_sha256": "fb92cd47f3a6bb1589b5bf6577f4f87697dd6bf170820b50eb5c2a53e569a598",
+      "modified_sha256": "8f8dcaeda1085dc2e1e31e50b1f545ccd40116b2e6ec711044e540d4edd5bfd7"
+    },
+    {
+      "file": "drivers/regulator/syr82x.c",
+      "upstream_sha256": "a76ef5702835774947264024a3eaeb8aa91ca384434f7f39ffb64cc4973d17dc",
+      "modified_sha256": "b7c0a0e7275f2b2695dd831ccf9ace0365252f28ac8429a794d8593e7380d733"
+    },
+    {
+      "file": "drivers/usb/gadget/android.c",
+      "upstream_sha256": "51eed7a2c289362edad0146aa7f6564e71f54d2ff08071aea2ec428dc67bfb5d",
+      "modified_sha256": "cd52d2ce969e8bceca6eff8adf600956ba730c8b49d996e1c11eefd39f5da45d"
+    },
+    {
+      "file": "drivers/video/rockchip/lcdc/rk312x_lcdc.c",
+      "upstream_sha256": "1f62987304142e7cb4599d7b5c5d5e82d6d5724f498b4729523a1ec08792538f",
+      "modified_sha256": "b90df07e0cd24790e63b0d3fc99a2a0649e91f7ae36645130ff9eef27bac23ab"
+    },
+    {
+      "file": "drivers/video/rockchip/lcdc/rk322x_lcdc.c",
+      "upstream_sha256": "85ec3f0cf85f3cd8faf14f5a7d1bb3f355772853476f3d511dfc5defb397001f",
+      "modified_sha256": "f94a000104c81904186a1db67effbfcab6c9555bc49d1e25fbc47d7091bea8ec"
+    },
+    {
+      "file": "drivers/video/rockchip/lcdc/rk3288_lcdc.c",
+      "upstream_sha256": "6e700785d33266d6b0925f0e7ad0e7c520f41a630ce005e1269d0303099331c1",
+      "modified_sha256": "0d6ac007b616b9ad39fd80c80df4d977b42d9df341ce8098a877f38f7f579468"
+    },
+    {
+      "file": "drivers/video/rockchip/rga/rga_drv.c",
+      "upstream_sha256": "44258a44ce463c00106aac4135d5e29aab0fc0f5d4378b7f9fda8a139376d07a",
+      "modified_sha256": "3bcc78a04cd8b6410f163562dff6d9a485690386e170661ba9ec1d23935c66b7"
+    },
+    {
+      "file": "drivers/video/rockchip/rk_fb.c",
+      "upstream_sha256": "cd61b79ea292fe6e6fd2c179ea23c6458074b188613a24b5a6361b6a8a004d94",
+      "modified_sha256": "841b5d09b02c7193540b2688c3c0b6b386427b4d4454aa34d94730758733e0dd"
+    },
+    {
+      "file": "drivers/video/rockchip/transmitter/vga.c",
+      "upstream_sha256": "b4b7eec15e0300566feb9bb328f24d3f1da85d4fe17dac06188b8d295e178c8b",
+      "modified_sha256": "e1459c6bbeec7b864187c6b61508f91762eb0cc73b658a36471bf79987bda5d6"
+    },
+    {
+      "file": "fs/cifs/netmisc.c",
+      "upstream_sha256": "8bd7808ec0e3b54c1366beec0b9d52c89cf9f7874d734b579576c5c8ff87c8f3",
+      "modified_sha256": "702169691ea3a17d568d723017baf0803ee53ad313760409962602311255d2c7"
+    },
+    {
+      "file": "net/core/net-sysfs.c",
+      "upstream_sha256": "71db75c91a3c8224916892f94275b331fb159811a2b68ab2cdb3bfc91decaabe",
+      "modified_sha256": "b9c841addad9d8a5a633ed901e20ee216647fa0855e8fb3f484943121545572c"
+    },
+    {
+      "file": "net/core/rtnetlink.c",
+      "upstream_sha256": "10ccc79b5c7b2cc0df57c13add29b744ee8ea68ab15b53313f668c67d4a5762b",
+      "modified_sha256": "c03a96ca2d3cabcfe33e03b4378b17eb4c1304c1b8f0bd543c29615acee076a2"
+    },
+    {
+      "file": "net/ipv4/arp.c",
+      "upstream_sha256": "fdc0cc0ef250d65b1a1d8e6e2dd303c35923993c052ba213263b5363f34f7fe5",
+      "modified_sha256": "f00a2e0e2cad54a2a38660137b222e59dbb12deb3d081d495be5e1a4a01c4a42"
+    },
+    {
+      "file": "net/packet/af_packet.c",
+      "upstream_sha256": "345921ac0ad14bf0b425e62c78fc9bc01979244b462473df6baaffd5c5eff35b",
+      "modified_sha256": "1451e6e68b387c24560feb57aa3619872cc071ab80befdaf7cd50e3788b31e2e"
+    },
+    {
+      "file": "sound/soc/codecs/rk312x_codec.c",
+      "upstream_sha256": "e4d440937f06501896a51384b11747ecd276aa97c357a5f6ec8069c43e2f693f",
+      "modified_sha256": "012b458f60b265e2a0fbb0ed04b45eea47cbf604af16c4c54876717bcc26c7b3"
+    },
+    {
+      "file": "sound/soc/codecs/rt3261.c",
+      "upstream_sha256": "83f136e0c850d5437685a0bed4df0813eb28dbfccce70e9a83170447241c5f1f",
+      "modified_sha256": "2d7dd76678e3f70a58865877cdd42c0ed76248278a10d14b59cca6426e19c56f"
+    }
+  ]
+}

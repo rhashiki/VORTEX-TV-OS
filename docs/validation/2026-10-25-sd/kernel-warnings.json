@@ -1,0 +1,39 @@
+{
+  "build_log": "build-output-fix.log",
+  "forbidden_warning_count": 0,
+  "warning_lines": [
+    "/workspace/build01-sd/kernel-work/kernel/arch/arm/kernel/return_address.c:63:2: warning: #warning \"TODO: return_address should use unwind tables\" [-Wcpp]",
+    "/workspace/build01-sd/kernel-work/kernel/drivers/hid/hid-appleir.c:347:22: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]",
+    "/workspace/build01-sd/kernel-work/kernel/drivers/hid/hid-magicmouse.c:590:22: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]",
+    "/workspace/build01-sd/kernel-work/kernel/drivers/hid/hid-ntrig.c:1026:22: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]",
+    "/workspace/build01-sd/kernel-work/kernel/net/core/sysctl_net_core.c:24:12: warning: ‘one’ defined but not used [-Wunused-variable]",
+    "/workspace/build01-sd/kernel-work/kernel/drivers/regulator/core.c:1334:13: warning: ‘devm_regulator_release’ defined but not used [-Wunused-function]"
+  ],
+  "warning_line_count": 6,
+  "previous_successful_build": {
+    "build_log": "build-batch.log",
+    "forbidden_warning_count": 0,
+    "warning_lines": [
+      "/workspace/build01-sd/kernel-work/kernel/arch/arm/kernel/return_address.c:63:2: warning: #warning \"TODO: return_address should use unwind tables\" [-Wcpp]",
+      "/workspace/build01-sd/kernel-work/kernel/drivers/hid/hid-appleir.c:347:22: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]",
+      "/workspace/build01-sd/kernel-work/kernel/drivers/hid/hid-magicmouse.c:590:22: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]",
+      "/workspace/build01-sd/kernel-work/kernel/drivers/hid/hid-ntrig.c:1026:22: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]",
+      "/workspace/build01-sd/kernel-work/kernel/net/core/sysctl_net_core.c:24:12: warning: ‘one’ defined but not used [-Wunused-variable]",
+      "/workspace/build01-sd/kernel-work/kernel/drivers/regulator/core.c:1334:13: warning: ‘devm_regulator_release’ defined but not used [-Wunused-function]"
+    ],
+    "warning_line_count": 6
+  },
+  "policy": "Upstream whitelist retained unchanged; no blanket suppression added.",
+  "helper_sha256": "829e2335a645f2bbec9bdf5f0811eebdf567bdfd0563341f48182633a5bb3eb2",
+  "repository_helper_sha256_at_snapshot": "829e2335a645f2bbec9bdf5f0811eebdf567bdfd0563341f48182633a5bb3eb2",
+  "scope": "warning_lines counts GCC diagnostics matched by the upstream compiler wrapper, not all build diagnostics.",
+  "other_build_warnings": [
+    {
+      "tool": "MODPOST",
+      "log": "build-output-fix.log",
+      "line": 2932,
+      "diagnostic": "Section mismatch: dvfs_temp_limit() references .cpuinit.text:cpu_up()",
+      "status": "Unresolved; requires analysis before hardware use. No runtime correctness inferred from build success."
+    }
+  ]
+}

@@ -1,0 +1,651 @@
+{
+  "schema_version": 1,
+  "scope": "generic RK322x kernel compilation candidate, not a Vortex boot image",
+  "kernel": {
+    "repository": "https://github.com/rockchip-linux/kernel.git",
+    "revision": "6c04d006ae881944d32c19e68b992d0bd5ab4fde",
+    "tree": "5b2fe9c846fa86a28b362b91f179e9d1c4b0e9fb",
+    "config": "arch/arm/configs/rockchip_defconfig",
+    "config_sha256": "10ecd70c7bf45ea9c0318544084d8ed8246186f458180c9024ce63c090fecf0d",
+    "generated_config_sha256": "83da5a3e819a5140d598ac586b9776b954dbadd30914c392594ae2f882e17a3f",
+    "source_changed_files": [
+      "arch/arm/mach-rockchip/rk_camera.c",
+      "drivers/gpu/arm/mali400/mali/Kbuild",
+      "drivers/gpu/arm/mali400/ump/Kbuild",
+      "drivers/i2c/i2c-core.c",
+      "drivers/media/v4l2-core/videobuf-core.c",
+      "drivers/media/video/generic_sensor.c",
+      "drivers/mfd/rk808.c",
+      "drivers/mfd/rk818.c",
+      "drivers/net/usb/dm9620.c",
+      "drivers/net/usb/usbnet.c",
+      "drivers/net/wireless/Makefile",
+      "drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/siutils.c",
+      "drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/wl_cfg80211.c",
+      "drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/wl_iw.c",
+      "drivers/power/rk30_factory_adc_battery.c",
+      "drivers/regulator/act8846.c",
+      "drivers/regulator/syr82x.c",
+      "drivers/usb/gadget/android.c",
+      "drivers/video/rockchip/lcdc/rk312x_lcdc.c",
+      "drivers/video/rockchip/lcdc/rk322x_lcdc.c",
+      "drivers/video/rockchip/lcdc/rk3288_lcdc.c",
+      "drivers/video/rockchip/rga/rga_drv.c",
+      "drivers/video/rockchip/rk_fb.c",
+      "drivers/video/rockchip/transmitter/vga.c",
+      "fs/cifs/netmisc.c",
+      "net/core/net-sysfs.c",
+      "net/core/rtnetlink.c",
+      "net/ipv4/arp.c",
+      "net/packet/af_packet.c",
+      "sound/soc/codecs/rk312x_codec.c",
+      "sound/soc/codecs/rt3261.c"
+    ],
+    "source_changes": [
+      {
+        "file": "drivers/regulator/act8846.c",
+        "before_sha256": "fb92cd47f3a6bb1589b5bf6577f4f87697dd6bf170820b50eb5c2a53e569a598",
+        "after_sha256": "8f8dcaeda1085dc2e1e31e50b1f545ccd40116b2e6ec711044e540d4edd5bfd7",
+        "patch": "kernel-act8846-node-braces.patch",
+        "scope": "Braces only around existing of_node assignment; constraints/registration stay outside conditional"
+      },
+      {
+        "file": "net/ipv4/arp.c",
+        "before_sha256": "fdc0cc0ef250d65b1a1d8e6e2dd303c35923993c052ba213263b5363f34f7fe5",
+        "after_sha256": "f00a2e0e2cad54a2a38660137b222e59dbb12deb3d081d495be5e1a4a01c4a42",
+        "patch": "kernel-arp-unused-ops.patch",
+        "scope": "Preserve existing unused const data with __maybe_unused; values unchanged"
+      },
+      {
+        "file": "drivers/power/rk30_factory_adc_battery.c",
+        "before_sha256": "a38efe01d3c61cd1ec93c876b7fcfedf68f409cd807c3aa1126f88dd81a433cf",
+        "after_sha256": "d597182096274a670ed8463b8e06398d142d176b1c3a11cb3e612ec3b77101ac",
+        "patch": "kernel-battery-loop-braces.patch",
+        "scope": "Braces only around existing loop/inner-if; capacity branch remains after loop; no voltage/capacity values changed"
+      },
+      {
+        "file": "drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/siutils.c",
+        "before_sha256": "502ea2379ece6f775a5ea1bdf16e5d1e48f6a274ffcd8b1a45c9bc80a9b0993b",
+        "after_sha256": "bc303de0db13d3e26b2d4c91c162ab0a545b190b5c50e5f6205ac495d1d45b20",
+        "patch": "kernel-broadcom-bustype-guard.patch",
+        "scope": "Preserve configured-bus mismatch guard when BCMBUSTYPE is defined; omit always-false identity comparison only when undefined"
+      },
+      {
+        "file": "drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/wl_iw.c",
+        "before_sha256": "2becadaae685aa8317bf61bd7fe8365104700083d31b6d0086b3d26cfb11e689",
+        "after_sha256": "37627339ce1433a0a2a122027eba9c79faf233303af5f2d538749c3e30e42c4d",
+        "patch": "kernel-broadcom-frequency-braces.patch",
+        "scope": "Braces/indentation only; channel conversion remains unconditional within outer frequency branch"
+      },
+      {
+        "file": "drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/wl_cfg80211.c",
+        "before_sha256": "b20cf39dd34605929366c2b8c9bdb97a39be68ee29eb1979cd7176745a7d8c46",
+        "after_sha256": "7dec4b56ba3f32528ea927286b431b43b6b132b7571cbeaec32575218d6d96a3",
+        "patch": "kernel-broadcom-management-braces.patch",
+        "scope": "Braces only around existing bssidx assignment; management IE call remains unconditional as in original C"
+      },
+      {
+        "path": "fs/cifs/netmisc.c",
+        "before_sha256": "8bd7808ec0e3b54c1366beec0b9d52c89cf9f7874d734b579576c5c8ff87c8f3",
+        "after_sha256": "702169691ea3a17d568d723017baf0803ee53ad313760409962602311255d2c7",
+        "change": "Remove the unreferenced static const mapping_table_ERRHRD array containing only {0,0}; no executable logic, ABI or driver selection changed.",
+        "parent_authorized": true
+      },
+      {
+        "file": "sound/soc/codecs/rk312x_codec.c",
+        "before_sha256": "e4d440937f06501896a51384b11747ecd276aa97c357a5f6ec8069c43e2f693f",
+        "after_sha256": "012b458f60b265e2a0fbb0ed04b45eea47cbf604af16c4c54876717bcc26c7b3",
+        "patch": "kernel-codec-unused-routes.patch",
+        "scope": "Retain unused rk312x codec tables with __maybe_unused; no routes or runtime logic changed"
+      },
+      {
+        "file": "drivers/net/usb/dm9620.c",
+        "before_sha256": "9c5b7c834a971238d763ffd776e8eb173e909504a4d36f8f28814946ba88615f",
+        "after_sha256": "de9f21f38bd2e8e47225d9b7f3d3e5ff54b12d2bcc448555ca854af7372e6371",
+        "patch": "kernel-dm9620-debug-braces.patch",
+        "scope": "Braces only around existing success/failure debug output; subsequent analysis output remains unconditional; source encoding preserved bytewise"
+      },
+      {
+        "file": "drivers/media/video/generic_sensor.c",
+        "before_sha256": "915fd03996c20001d8aa5fd6fb670e9b1c0b02e765f66f2430ebbaaae0680fa2",
+        "after_sha256": "027e79af7f0c99eaecb7c08bcbdb34d13ecce7a81f1c118f0a416a8b6a2f3dd8",
+        "patch": "kernel-generic-sensor-braces.patch",
+        "scope": "Braces/indentation only; activate callback and flash default keep prior conditions; INIT flag remains outside"
+      },
+      {
+        "file": "drivers/i2c/i2c-core.c",
+        "before_sha256": "01d5cb48b8330d21ba5c962df70694a95dbaf5cbf4e40de16a5d18ca671ad044",
+        "after_sha256": "7436b100a84370179d59e73272f16d3831b342daebefff0e3e3ad1f72b43fae6",
+        "patch": "kernel-i2c-client-name-braces.patch",
+        "scope": "Braces/indentation around existing client name branches only; device_register remains outside conditional"
+      },
+      {
+        "path": "drivers/gpu/arm/mali400/mali/Kbuild",
+        "before_sha256": "63a2932622a0bdeb7bd6bb0a0a2c15e95caf1d7673fc41fbd055687e5f694719",
+        "after_sha256": "535aba81e18eb4f714f7a8e26cf14baab12e629d80d56e0b19316637a85c114b",
+        "change": "Resolve read-only wildcard/include/metadata source inputs through srctree for relative src, preserving absolute src. Keep generated build_info output in obj/src output directory. GPL/proprietary decision and feature flags unchanged.",
+        "gpl_header_exists": true,
+        "gpl_header_sha256": "1f7ba1eabf0302fb2730718a149b3fb08d3181273953f40ddd444671f40d9f0e",
+        "parent_authorized": true
+      },
+      {
+        "file": "net/core/net-sysfs.c",
+        "before_sha256": "71db75c91a3c8224916892f94275b331fb159811a2b68ab2cdb3bfc91decaabe",
+        "after_sha256": "b9c841addad9d8a5a633ed901e20ee216647fa0855e8fb3f484943121545572c",
+        "patch": "kernel-net-sysfs-unused-format.patch",
+        "scope": "Keep unused format string with __maybe_unused"
+      },
+      {
+        "file": "net/core/rtnetlink.c",
+        "before_sha256": "10ccc79b5c7b2cc0df57c13add29b744ee8ea68ab15b53313f668c67d4a5762b",
+        "after_sha256": "c03a96ca2d3cabcfe33e03b4378b17eb4c1304c1b8f0bd543c29615acee076a2",
+        "patch": "kernel-netlink-unused-policies.patch",
+        "scope": "Preserve unused VF policy data with __maybe_unused; no policy value or networking logic changed"
+      },
+      {
+        "file": "net/packet/af_packet.c",
+        "before_sha256": "345921ac0ad14bf0b425e62c78fc9bc01979244b462473df6baaffd5c5eff35b",
+        "after_sha256": "1451e6e68b387c24560feb57aa3619872cc071ab80befdaf7cd50e3788b31e2e",
+        "patch": "kernel-packet-ring-braces.patch",
+        "scope": "Braces only; TPACKET_V3 switch break remains unconditional"
+      },
+      {
+        "file": "drivers/mfd/rk808.c",
+        "before_sha256": "9b10a48dfd4a14a4b19a640d2e68e211a2970708180b2721a1e213f8d46098a8",
+        "after_sha256": "6ab4bcabf089fde81c8eff54b5f206dd61427ed75a2c55c76c506383b36e9060",
+        "patch": "kernel-rk808-unused-table.patch",
+        "scope": "Preserve unused PMIC address table with __maybe_unused; no register/address value changed"
+      },
+      {
+        "file": "drivers/mfd/rk818.c",
+        "before_sha256": "8c0ccc71bf8108efebf55b4362bddadddae09637728bf1089a1def5c5f23b47c",
+        "after_sha256": "df283e29a01c218222ed758aebce7c4b5644bc3ace7c90dd328116c038e1c7c9",
+        "patch": "kernel-rk818-unused-tables.patch",
+        "scope": "Keep unused address/voltage tables and their values with __maybe_unused"
+      },
+      {
+        "file": "sound/soc/codecs/rt3261.c",
+        "before_sha256": "83f136e0c850d5437685a0bed4df0813eb28dbfccce70e9a83170447241c5f1f",
+        "after_sha256": "2d7dd76678e3f70a58865877cdd42c0ed76248278a10d14b59cca6426e19c56f",
+        "patch": "kernel-rt3261-unused-controls.patch",
+        "scope": "Preserve unused codec enums/controls with __maybe_unused; mux widget references remain commented as upstream"
+      },
+      {
+        "file": "drivers/regulator/syr82x.c",
+        "before_sha256": "a76ef5702835774947264024a3eaeb8aa91ca384434f7f39ffb64cc4973d17dc",
+        "after_sha256": "b7c0a0e7275f2b2695dd831ccf9ace0365252f28ac8429a794d8593e7380d733",
+        "patch": "kernel-syr82x-node-braces.patch",
+        "scope": "Braces only around existing of_node assignment; constraints/registration stay outside conditional"
+      },
+      {
+        "file": "drivers/gpu/arm/mali400/ump/Kbuild",
+        "before_sha256": "de40ea44f70f70ee13a4727922e4e28d0ddb83da51132d721173928a08c11fff",
+        "after_sha256": "5e34baae233462679abee00aa871ea96a5e6ba6e2ca4614f4ba1609dbca8b4cc",
+        "patch": "kernel-ump-source-paths.patch",
+        "scope": "Build-path/generated-header fix only; fail if selected config cannot be staged"
+      },
+      {
+        "file": "drivers/net/usb/usbnet.c",
+        "before_sha256": "cd7c0eb0bcaedd3ded5aa51d59cd9631254f25b2f7917a4ab89d578b9da538f8",
+        "after_sha256": "679cd1b845138acd76ecf46b8f7a76310e67f16b15e7b52086aedf41515c3131",
+        "patch": "kernel-usbnet-unused-name.patch",
+        "scope": "Preserve existing unused const data with __maybe_unused; values unchanged"
+      },
+      {
+        "file": "drivers/usb/gadget/android.c",
+        "before_sha256": "51eed7a2c289362edad0146aa7f6564e71f54d2ff08071aea2ec428dc67bfb5d",
+        "after_sha256": "cd52d2ce969e8bceca6eff8adf600956ba730c8b49d996e1c11eefd39f5da45d",
+        "patch": "kernel-video-android-name.patch",
+        "scope": "Retain unreferenced constant USB gadget description with __maybe_unused.",
+        "unchanged_tokens_except_braces_unused_attribute": true
+      },
+      {
+        "file": "drivers/video/rockchip/rk_fb.c",
+        "before_sha256": "cd61b79ea292fe6e6fd2c179ea23c6458074b188613a24b5a6361b6a8a004d94",
+        "after_sha256": "841b5d09b02c7193540b2688c3c0b6b386427b4d4454aa34d94730758733e0dd",
+        "patch": "kernel-video-fb-allocation.patch",
+        "scope": "Brace the original return/ion handle assignment only; preserve unconditional screen mapping and physical address operations outside else.",
+        "unchanged_tokens_except_braces_unused_attribute": true
+      },
+      {
+        "file": "drivers/video/rockchip/rga/rga_drv.c",
+        "before_sha256": "44258a44ce463c00106aac4135d5e29aab0fc0f5d4378b7f9fda8a139376d07a",
+        "after_sha256": "3bcc78a04cd8b6410f163562dff6d9a485690386e170661ba9ec1d23935c66b7",
+        "patch": "kernel-video-rga-exit.patch",
+        "scope": "Brace only the conditional pages free; retain unconditional platform unregister. Non-UTF8 bytes and mixed EOL elsewhere preserved.",
+        "unchanged_tokens_except_braces_unused_attribute": true
+      },
+      {
+        "file": "drivers/video/rockchip/lcdc/rk312x_lcdc.c",
+        "before_sha256": "1f62987304142e7cb4599d7b5c5d5e82d6d5724f498b4729523a1ec08792538f",
+        "after_sha256": "b90df07e0cd24790e63b0d3fc99a2a0649e91f7ae36645130ff9eef27bac23ab",
+        "patch": "kernel-video-rk312x-lcdc.patch",
+        "scope": "Guard only overlay assignment as before; keep register write and BCSH selection outside the inner if.",
+        "unchanged_tokens_except_braces_unused_attribute": true
+      },
+      {
+        "file": "drivers/video/rockchip/lcdc/rk322x_lcdc.c",
+        "before_sha256": "85ec3f0cf85f3cd8faf14f5a7d1bb3f355772853476f3d511dfc5defb397001f",
+        "after_sha256": "f94a000104c81904186a1db67effbfcab6c9555bc49d1e25fbc47d7091bea8ec",
+        "patch": "kernel-video-rk322x-csc.patch",
+        "scope": "Annotate exactly ten reported unreferenced const CSC tables; retain every matrix coefficient.",
+        "unchanged_tokens_except_braces_unused_attribute": true
+      },
+      {
+        "file": "drivers/video/rockchip/lcdc/rk3288_lcdc.c",
+        "before_sha256": "6e700785d33266d6b0925f0e7ad0e7c520f41a630ce005e1269d0303099331c1",
+        "after_sha256": "0d6ac007b616b9ad39fd80c80df4d977b42d9df341ce8098a877f38f7f579468",
+        "patch": "kernel-video-rk3288-lcdc.patch",
+        "scope": "Add loop braces around address assignment only; keep four conditional register writes outside each loop.",
+        "unchanged_tokens_except_braces_unused_attribute": true
+      },
+      {
+        "file": "drivers/video/rockchip/transmitter/vga.c",
+        "before_sha256": "b4b7eec15e0300566feb9bb328f24d3f1da85d4fe17dac06188b8d295e178c8b",
+        "after_sha256": "e1459c6bbeec7b864187c6b61508f91762eb0cc73b658a36471bf79987bda5d6",
+        "patch": "kernel-video-vga-mode.patch",
+        "scope": "Retain unreferenced video mode table with __maybe_unused; no timing values changed.",
+        "unchanged_tokens_except_braces_unused_attribute": true
+      },
+      {
+        "file": "drivers/media/v4l2-core/videobuf-core.c",
+        "before_sha256": "d7758b38d66420277306b1b3a8d60e708d177740ec91d5a87fc2354320ae4ce6",
+        "after_sha256": "cc6444c863b0ff9db2584810ee0a91c0cdc84018f09adc9c390bc61e95f76246",
+        "patch": "kernel-videobuf-lock-braces.patch",
+        "scope": "Braces/indentation only; wait_event, queue_lock and retval handling keep prior scopes"
+      },
+      {
+        "file": "drivers/net/wireless/Makefile",
+        "before_sha256": "c74008ca2db82732ce2dc7dcf42631a64dd0fe5446688abb9556553391f012bb",
+        "after_sha256": "66c6666fee81046de2d71e72738e1ff8082a939762bb375d94f7dfd785650c20",
+        "patch": "kernel-wifi-output-directories.patch",
+        "scope": "Create output directories for unchanged direct nested object targets; fail explicitly if creation fails; object list/order/flags unchanged"
+      },
+      {
+        "path": "arch/arm/mach-rockchip/rk_camera.c",
+        "before_sha256": "01ed02040197ccd285df1cb910434191e0772b6776c0c06418686f9ffc8c507c",
+        "after_sha256": "6adad8bd1e3227017c69db71ab473f3e5cb0e67e977dfedcdece2f04544825a0",
+        "change": "Add braces and consistent indentation around five callback default assignments; new_camera remains outside all if blocks. No logic/DTS/board changes.",
+        "parent_authorized": true
+      }
+    ],
+    "source_patch_bundle": "kernel-source.patch",
+    "source_patch_sha256": "3a01773132b723cc7544df3a7be055b92e751b51279cac2d6cca38b1734e56f8",
+    "license": "COPYING (GPLv2 with per-file exceptions)"
+  },
+  "toolchain": {
+    "repository": "https://github.com/pstglia/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf.git",
+    "revision": "dd4df7dff4f1df65d78939a958b760a79e3650a1",
+    "tree": "9f9b1e8d9797818d05df2da0b567c46eab7a856d",
+    "compiler_sha256": "5b0fb9369c3b6a4645765ba1e85db16426ea761b6aa0272157fa4b077c8576bf",
+    "compiler_version": "arm-linux-gnueabihf-gcc (Linaro GCC 6.3-2017.05) 6.3.1 20170404"
+  },
+  "attempts": [
+    {
+      "name": "initial-upstream-python2-wrapper",
+      "log": "build.log",
+      "exit_code": 2,
+      "started_utc": "2026-10-25T16:15:43+00:00",
+      "completed_utc": "2026-10-25T16:15:45.864497+00:00",
+      "elapsed_seconds": 2.864
+    },
+    {
+      "name": "python3-compatible-wrapper",
+      "log": "build-final.log",
+      "exit_code": 2,
+      "started_utc": "2026-10-25T16:18:33+00:00",
+      "completed_utc": "2026-10-25T16:19:07.504129+00:00",
+      "elapsed_seconds": 34.504
+    },
+    {
+      "name": "callback-braces-fix",
+      "log": "build-patched.log",
+      "exit_code": 2,
+      "started_utc": "2026-10-25T16:21:37+00:00",
+      "completed_utc": "2026-10-25T16:22:29+00:00",
+      "elapsed_seconds": 52.0
+    },
+    {
+      "name": "unused-CIFS-data-cleanup",
+      "log": "build-cifs-cleanup.log",
+      "exit_code": 2,
+      "started_utc": "2026-10-25T16:24:26+00:00",
+      "completed_utc": "2026-10-25T16:26:16+00:00",
+      "elapsed_seconds": 110.0
+    },
+    {
+      "name": "Mali-out-of-tree-path-fix",
+      "log": "build-mali-paths.log",
+      "exit_code": 2,
+      "started_utc": "2026-10-25T16:29:18+00:00",
+      "completed_utc": "2026-10-25T16:31:24+00:00",
+      "elapsed_seconds": 126.0
+    },
+    {
+      "name": "resumed-UMP-output-paths-and-unused-codec-annotation",
+      "log": "build-resume.log",
+      "exit_code": 2,
+      "started_utc": "2026-10-25T21:41:58+00:00",
+      "completed_utc": "2026-10-25T21:44:20+00:00",
+      "elapsed_seconds": 142.0
+    },
+    {
+      "name": "remaining-codec-unused-annotations-and-I2C-braces",
+      "log": "build-annotations.log",
+      "exit_code": 2,
+      "started_utc": "2026-10-25T21:45:59+00:00",
+      "completed_utc": "2026-10-25T21:48:59+00:00",
+      "elapsed_seconds": 180.0
+    },
+    {
+      "name": "keep-going-diagnostic-batch",
+      "log": "build-keep-going.log",
+      "exit_code": 2,
+      "started_utc": "2026-10-25T21:54:17+00:00",
+      "completed_utc": "2026-10-25T22:00:10+00:00",
+      "elapsed_seconds": 353.0
+    },
+    {
+      "name": "verified-cleanup-batch-Image-and-DTB",
+      "log": "build-batch.log",
+      "exit_code": 0,
+      "started_utc": "2026-10-25T22:07:05+00:00",
+      "completed_utc": "2026-10-25T22:13:26+00:00",
+      "elapsed_seconds": 381.0
+    },
+    {
+      "name": "final-normal-make-after-exact-compiler-output-fix",
+      "log": "build-output-fix.log",
+      "exit_code": 0,
+      "started_utc": "2026-10-25T22:18:36+00:00",
+      "completed_utc": "2026-10-25T22:25:02+00:00",
+      "elapsed_seconds": 386.0
+    },
+    {
+      "name": "separate-generic-DTB",
+      "log": "dtb-build.log",
+      "exit_code": 0,
+      "started_utc": "2026-10-25T16:19:56+00:00",
+      "completed_utc": "2026-10-25T16:19:58+00:00",
+      "elapsed_seconds": 2.0
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "artifacts/Image-reference",
+      "size_bytes": 15725592,
+      "sha256": "d91b62b9d7339824be27a7b9196b4ce35233490b3c87c4cdeac6205499ecf846",
+      "format": "data"
+    },
+    {
+      "path": "artifacts/rk3229-sdk-reference.dtb",
+      "size_bytes": 72308,
+      "sha256": "b379ff9545cd55a559cbeb3d6993653931da77a03fb2e2e3eeb7ae16118894c4",
+      "format": "Device Tree Blob version 17, size=72308, boot CPU=0, string block size=3552, DT structure block size=68700"
+    }
+  ],
+  "final_warnings": {
+    "build_log": "build-output-fix.log",
+    "forbidden_warning_count": 0,
+    "warning_lines": [
+      "/workspace/build01-sd/kernel-work/kernel/arch/arm/kernel/return_address.c:63:2: warning: #warning \"TODO: return_address should use unwind tables\" [-Wcpp]",
+      "/workspace/build01-sd/kernel-work/kernel/drivers/hid/hid-appleir.c:347:22: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]",
+      "/workspace/build01-sd/kernel-work/kernel/drivers/hid/hid-magicmouse.c:590:22: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]",
+      "/workspace/build01-sd/kernel-work/kernel/drivers/hid/hid-ntrig.c:1026:22: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]",
+      "/workspace/build01-sd/kernel-work/kernel/net/core/sysctl_net_core.c:24:12: warning: ‘one’ defined but not used [-Wunused-variable]",
+      "/workspace/build01-sd/kernel-work/kernel/drivers/regulator/core.c:1334:13: warning: ‘devm_regulator_release’ defined but not used [-Wunused-function]"
+    ],
+    "warning_line_count": 6,
+    "previous_successful_build": {
+      "build_log": "build-batch.log",
+      "forbidden_warning_count": 0,
+      "warning_lines": [
+        "/workspace/build01-sd/kernel-work/kernel/arch/arm/kernel/return_address.c:63:2: warning: #warning \"TODO: return_address should use unwind tables\" [-Wcpp]",
+        "/workspace/build01-sd/kernel-work/kernel/drivers/hid/hid-appleir.c:347:22: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]",
+        "/workspace/build01-sd/kernel-work/kernel/drivers/hid/hid-magicmouse.c:590:22: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]",
+        "/workspace/build01-sd/kernel-work/kernel/drivers/hid/hid-ntrig.c:1026:22: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]",
+        "/workspace/build01-sd/kernel-work/kernel/net/core/sysctl_net_core.c:24:12: warning: ‘one’ defined but not used [-Wunused-variable]",
+        "/workspace/build01-sd/kernel-work/kernel/drivers/regulator/core.c:1334:13: warning: ‘devm_regulator_release’ defined but not used [-Wunused-function]"
+      ],
+      "warning_line_count": 6
+    },
+    "policy": "Upstream whitelist retained unchanged; no blanket suppression added.",
+    "helper_sha256": "829e2335a645f2bbec9bdf5f0811eebdf567bdfd0563341f48182633a5bb3eb2",
+    "repository_helper_sha256_at_snapshot": "829e2335a645f2bbec9bdf5f0811eebdf567bdfd0563341f48182633a5bb3eb2",
+    "scope": "warning_lines counts GCC diagnostics matched by the upstream compiler wrapper, not all build diagnostics.",
+    "other_build_warnings": [
+      {
+        "tool": "MODPOST",
+        "log": "build-output-fix.log",
+        "line": 2932,
+        "diagnostic": "Section mismatch: dvfs_temp_limit() references .cpuinit.text:cpu_up()",
+        "status": "Unresolved; requires analysis before hardware use. No runtime correctness inferred from build success."
+      }
+    ]
+  },
+  "compile_header": "/* This file is auto generated, version 2 */\n/* SMP PREEMPT */\n#define UTS_MACHINE \"arm\"\n#define UTS_VERSION \"#2 SMP PREEMPT Sun Oct 25 16:15:00 UTC 2026\"\n#define LINUX_COMPILE_BY \"vortex\"\n#define LINUX_COMPILE_HOST \"cloud\"\n#define LINUX_COMPILER \"gcc version 6.3.1 20170404 (Linaro GCC 6.3-2017.05) \"\n",
+  "uts_release_header": "#define UTS_RELEASE \"3.10.104\"\n",
+  "vmlinux_header": "vmlinux-header.txt",
+  "image_present": true,
+  "final_build_exit_code": 0,
+  "compiler_label_present": true,
+  "generated_config_unchanged": true,
+  "ump_staged_config_equal": true,
+  "features": {
+    "CONFIG_RK_NAND": "y",
+    "CONFIG_BT": "y",
+    "CONFIG_MALI400": "y",
+    "CONFIG_PM_RUNTIME": "y",
+    "CONFIG_DMA_SHARED_BUFFER": "y"
+  },
+  "source_file_inventory": {
+    "kernel_revision": "6c04d006ae881944d32c19e68b992d0bd5ab4fde",
+    "files": [
+      {
+        "file": "arch/arm/mach-rockchip/rk_camera.c",
+        "upstream_sha256": "01ed02040197ccd285df1cb910434191e0772b6776c0c06418686f9ffc8c507c",
+        "modified_sha256": "6adad8bd1e3227017c69db71ab473f3e5cb0e67e977dfedcdece2f04544825a0"
+      },
+      {
+        "file": "drivers/gpu/arm/mali400/mali/Kbuild",
+        "upstream_sha256": "63a2932622a0bdeb7bd6bb0a0a2c15e95caf1d7673fc41fbd055687e5f694719",
+        "modified_sha256": "535aba81e18eb4f714f7a8e26cf14baab12e629d80d56e0b19316637a85c114b"
+      },
+      {
+        "file": "drivers/gpu/arm/mali400/ump/Kbuild",
+        "upstream_sha256": "de40ea44f70f70ee13a4727922e4e28d0ddb83da51132d721173928a08c11fff",
+        "modified_sha256": "5e34baae233462679abee00aa871ea96a5e6ba6e2ca4614f4ba1609dbca8b4cc"
+      },
+      {
+        "file": "drivers/i2c/i2c-core.c",
+        "upstream_sha256": "01d5cb48b8330d21ba5c962df70694a95dbaf5cbf4e40de16a5d18ca671ad044",
+        "modified_sha256": "7436b100a84370179d59e73272f16d3831b342daebefff0e3e3ad1f72b43fae6"
+      },
+      {
+        "file": "drivers/media/v4l2-core/videobuf-core.c",
+        "upstream_sha256": "d7758b38d66420277306b1b3a8d60e708d177740ec91d5a87fc2354320ae4ce6",
+        "modified_sha256": "cc6444c863b0ff9db2584810ee0a91c0cdc84018f09adc9c390bc61e95f76246"
+      },
+      {
+        "file": "drivers/media/video/generic_sensor.c",
+        "upstream_sha256": "915fd03996c20001d8aa5fd6fb670e9b1c0b02e765f66f2430ebbaaae0680fa2",
+        "modified_sha256": "027e79af7f0c99eaecb7c08bcbdb34d13ecce7a81f1c118f0a416a8b6a2f3dd8"
+      },
+      {
+        "file": "drivers/mfd/rk808.c",
+        "upstream_sha256": "9b10a48dfd4a14a4b19a640d2e68e211a2970708180b2721a1e213f8d46098a8",
+        "modified_sha256": "6ab4bcabf089fde81c8eff54b5f206dd61427ed75a2c55c76c506383b36e9060"
+      },
+      {
+        "file": "drivers/mfd/rk818.c",
+        "upstream_sha256": "8c0ccc71bf8108efebf55b4362bddadddae09637728bf1089a1def5c5f23b47c",
+        "modified_sha256": "df283e29a01c218222ed758aebce7c4b5644bc3ace7c90dd328116c038e1c7c9"
+      },
+      {
+        "file": "drivers/net/usb/dm9620.c",
+        "upstream_sha256": "9c5b7c834a971238d763ffd776e8eb173e909504a4d36f8f28814946ba88615f",
+        "modified_sha256": "de9f21f38bd2e8e47225d9b7f3d3e5ff54b12d2bcc448555ca854af7372e6371"
+      },
+      {
+        "file": "drivers/net/usb/usbnet.c",
+        "upstream_sha256": "cd7c0eb0bcaedd3ded5aa51d59cd9631254f25b2f7917a4ab89d578b9da538f8",
+        "modified_sha256": "679cd1b845138acd76ecf46b8f7a76310e67f16b15e7b52086aedf41515c3131"
+      },
+      {
+        "file": "drivers/net/wireless/Makefile",
+        "upstream_sha256": "c74008ca2db82732ce2dc7dcf42631a64dd0fe5446688abb9556553391f012bb",
+        "modified_sha256": "66c6666fee81046de2d71e72738e1ff8082a939762bb375d94f7dfd785650c20"
+      },
+      {
+        "file": "drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/siutils.c",
+        "upstream_sha256": "502ea2379ece6f775a5ea1bdf16e5d1e48f6a274ffcd8b1a45c9bc80a9b0993b",
+        "modified_sha256": "bc303de0db13d3e26b2d4c91c162ab0a545b190b5c50e5f6205ac495d1d45b20"
+      },
+      {
+        "file": "drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/wl_cfg80211.c",
+        "upstream_sha256": "b20cf39dd34605929366c2b8c9bdb97a39be68ee29eb1979cd7176745a7d8c46",
+        "modified_sha256": "7dec4b56ba3f32528ea927286b431b43b6b132b7571cbeaec32575218d6d96a3"
+      },
+      {
+        "file": "drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/wl_iw.c",
+        "upstream_sha256": "2becadaae685aa8317bf61bd7fe8365104700083d31b6d0086b3d26cfb11e689",
+        "modified_sha256": "37627339ce1433a0a2a122027eba9c79faf233303af5f2d538749c3e30e42c4d"
+      },
+      {
+        "file": "drivers/power/rk30_factory_adc_battery.c",
+        "upstream_sha256": "a38efe01d3c61cd1ec93c876b7fcfedf68f409cd807c3aa1126f88dd81a433cf",
+        "modified_sha256": "d597182096274a670ed8463b8e06398d142d176b1c3a11cb3e612ec3b77101ac"
+      },
+      {
+        "file": "drivers/regulator/act8846.c",
+        "upstream_sha256": "fb92cd47f3a6bb1589b5bf6577f4f87697dd6bf170820b50eb5c2a53e569a598",
+        "modified_sha256": "8f8dcaeda1085dc2e1e31e50b1f545ccd40116b2e6ec711044e540d4edd5bfd7"
+      },
+      {
+        "file": "drivers/regulator/syr82x.c",
+        "upstream_sha256": "a76ef5702835774947264024a3eaeb8aa91ca384434f7f39ffb64cc4973d17dc",
+        "modified_sha256": "b7c0a0e7275f2b2695dd831ccf9ace0365252f28ac8429a794d8593e7380d733"
+      },
+      {
+        "file": "drivers/usb/gadget/android.c",
+        "upstream_sha256": "51eed7a2c289362edad0146aa7f6564e71f54d2ff08071aea2ec428dc67bfb5d",
+        "modified_sha256": "cd52d2ce969e8bceca6eff8adf600956ba730c8b49d996e1c11eefd39f5da45d"
+      },
+      {
+        "file": "drivers/video/rockchip/lcdc/rk312x_lcdc.c",
+        "upstream_sha256": "1f62987304142e7cb4599d7b5c5d5e82d6d5724f498b4729523a1ec08792538f",
+        "modified_sha256": "b90df07e0cd24790e63b0d3fc99a2a0649e91f7ae36645130ff9eef27bac23ab"
+      },
+      {
+        "file": "drivers/video/rockchip/lcdc/rk322x_lcdc.c",
+        "upstream_sha256": "85ec3f0cf85f3cd8faf14f5a7d1bb3f355772853476f3d511dfc5defb397001f",
+        "modified_sha256": "f94a000104c81904186a1db67effbfcab6c9555bc49d1e25fbc47d7091bea8ec"
+      },
+      {
+        "file": "drivers/video/rockchip/lcdc/rk3288_lcdc.c",
+        "upstream_sha256": "6e700785d33266d6b0925f0e7ad0e7c520f41a630ce005e1269d0303099331c1",
+        "modified_sha256": "0d6ac007b616b9ad39fd80c80df4d977b42d9df341ce8098a877f38f7f579468"
+      },
+      {
+        "file": "drivers/video/rockchip/rga/rga_drv.c",
+        "upstream_sha256": "44258a44ce463c00106aac4135d5e29aab0fc0f5d4378b7f9fda8a139376d07a",
+        "modified_sha256": "3bcc78a04cd8b6410f163562dff6d9a485690386e170661ba9ec1d23935c66b7"
+      },
+      {
+        "file": "drivers/video/rockchip/rk_fb.c",
+        "upstream_sha256": "cd61b79ea292fe6e6fd2c179ea23c6458074b188613a24b5a6361b6a8a004d94",
+        "modified_sha256": "841b5d09b02c7193540b2688c3c0b6b386427b4d4454aa34d94730758733e0dd"
+      },
+      {
+        "file": "drivers/video/rockchip/transmitter/vga.c",
+        "upstream_sha256": "b4b7eec15e0300566feb9bb328f24d3f1da85d4fe17dac06188b8d295e178c8b",
+        "modified_sha256": "e1459c6bbeec7b864187c6b61508f91762eb0cc73b658a36471bf79987bda5d6"
+      },
+      {
+        "file": "fs/cifs/netmisc.c",
+        "upstream_sha256": "8bd7808ec0e3b54c1366beec0b9d52c89cf9f7874d734b579576c5c8ff87c8f3",
+        "modified_sha256": "702169691ea3a17d568d723017baf0803ee53ad313760409962602311255d2c7"
+      },
+      {
+        "file": "net/core/net-sysfs.c",
+        "upstream_sha256": "71db75c91a3c8224916892f94275b331fb159811a2b68ab2cdb3bfc91decaabe",
+        "modified_sha256": "b9c841addad9d8a5a633ed901e20ee216647fa0855e8fb3f484943121545572c"
+      },
+      {
+        "file": "net/core/rtnetlink.c",
+        "upstream_sha256": "10ccc79b5c7b2cc0df57c13add29b744ee8ea68ab15b53313f668c67d4a5762b",
+        "modified_sha256": "c03a96ca2d3cabcfe33e03b4378b17eb4c1304c1b8f0bd543c29615acee076a2"
+      },
+      {
+        "file": "net/ipv4/arp.c",
+        "upstream_sha256": "fdc0cc0ef250d65b1a1d8e6e2dd303c35923993c052ba213263b5363f34f7fe5",
+        "modified_sha256": "f00a2e0e2cad54a2a38660137b222e59dbb12deb3d081d495be5e1a4a01c4a42"
+      },
+      {
+        "file": "net/packet/af_packet.c",
+        "upstream_sha256": "345921ac0ad14bf0b425e62c78fc9bc01979244b462473df6baaffd5c5eff35b",
+        "modified_sha256": "1451e6e68b387c24560feb57aa3619872cc071ab80befdaf7cd50e3788b31e2e"
+      },
+      {
+        "file": "sound/soc/codecs/rk312x_codec.c",
+        "upstream_sha256": "e4d440937f06501896a51384b11747ecd276aa97c357a5f6ec8069c43e2f693f",
+        "modified_sha256": "012b458f60b265e2a0fbb0ed04b45eea47cbf604af16c4c54876717bcc26c7b3"
+      },
+      {
+        "file": "sound/soc/codecs/rt3261.c",
+        "upstream_sha256": "83f136e0c850d5437685a0bed4df0813eb28dbfccce70e9a83170447241c5f1f",
+        "modified_sha256": "2d7dd76678e3f70a58865877cdd42c0ed76248278a10d14b59cca6426e19c56f"
+      }
+    ]
+  },
+  "independent_review": {
+    "scope": [
+      "Display/USB cleanup in seven specified files",
+      "Network, Broadcom bus guard, regulator, battery and sensor brace/data cleanups",
+      "UMP input/output path separation and fatal staging failure"
+    ],
+    "result": "Independent read-only review found no changed values, calls or clause scopes beyond the declared no-behavior cleanups.",
+    "limits": [
+      "No runtime or hardware validation was performed.",
+      "This review does not establish complete SD boot safety or driver compatibility."
+    ],
+    "reviewed_source_file_hashes": "source-file-inventory.json"
+  },
+  "host_wrapper": {
+    "before_sha256": "0040d2a12266eee016ee36c697e53b976e98f41714f98f641dc053a46ba157ab",
+    "final_sha256": "829e2335a645f2bbec9bdf5f0811eebdf567bdfd0563341f48182633a5bb3eb2",
+    "source": "/workspace/vortex-build/tools/legacy_kernel_gcc_wrapper.py",
+    "change": "Forward each compiler stderr line exactly using sys.stdout.write(line), without introducing whitespace that broke gcc -v compiler metadata. Whitelist, regex and fail decision remain unchanged.",
+    "previous_artifacts": "/workspace/build01-sd/kernel-before-output-fix",
+    "previous_image_sha256": "acd732ce5baafd901c1ef70ba91b55732d611b09c8acbd0d9a44c05b880da658"
+  },
+  "host_wrapper_transitions": [
+    {
+      "previous_sha256": "632a25609bde80b6426d297ed0b7fb101070d5e1dd833c2e263ae97e44ca7ec4",
+      "resumed_sha256": "0040d2a12266eee016ee36c697e53b976e98f41714f98f641dc053a46ba157ab",
+      "source": "/workspace/vortex-build/tools/legacy_kernel_gcc_wrapper.py",
+      "change": "Same whitelist/regex, Python3 shebang, waits for compiler termination before object cleanup after forbidden diagnostic. Earlier logs used the original lifecycle port."
+    },
+    {
+      "before_sha256": "0040d2a12266eee016ee36c697e53b976e98f41714f98f641dc053a46ba157ab",
+      "final_sha256": "829e2335a645f2bbec9bdf5f0811eebdf567bdfd0563341f48182633a5bb3eb2",
+      "source": "/workspace/vortex-build/tools/legacy_kernel_gcc_wrapper.py",
+      "change": "Forward each compiler stderr line exactly using sys.stdout.write(line), without introducing whitespace that broke gcc -v compiler metadata. Whitelist, regex and fail decision remain unchanged.",
+      "previous_artifacts": "/workspace/build01-sd/kernel-before-output-fix",
+      "previous_image_sha256": "acd732ce5baafd901c1ef70ba91b55732d611b09c8acbd0d9a44c05b880da658"
+    }
+  ],
+  "hardware_validation": "not_performed",
+  "boot_image_validation": "not_performed",
+  "limits": [
+    "No board R329Q_V8.0 configuration, loader or SD media layout was selected.",
+    "rockchip_defconfig is a broad upstream reference and retains CONFIG_RK_NAND=y; it is not an internal-storage-preserving SD profile.",
+    "rk3229-sdk DTB is generic upstream reference; board wiring, regulators and driver compatibility remain unverified.",
+    "The source SD bootmode fixup remains unchanged and can append androidboot.mode=emmc.",
+    "GCC warning policy remains active. Earlier attempts used a Python3 syntax port; the resumed attempt uses the versioned Python3 helper that also waits for compiler termination before object cleanup.",
+    "The unused CIFS sentinel-only table was removed; other data/calls/scopes are preserved through braces and unused attributes. A proven always-false identity comparison is omitted only when BCMBUSTYPE is undefined. Kbuild changes resolve source inputs/generated output and create missing output directories; DTS and configuration settings are unchanged.",
+    "Earlier compile.h had a blank compiler label because of wrapper output spacing. Exact line forwarding fixed that metadata; the final normal make verifies the nonempty compiler label. Historical snapshots are preserved separately.",
+    "No ARM kernel was booted, no firmware installed and no hardware command or GitHub Actions was used.",
+    "MODPOST reports a section mismatch from dvfs_temp_limit() to .cpuinit.text:cpu_up(); this is outside the GCC whitelist count and remains unresolved before hardware use."
+  ]
+}

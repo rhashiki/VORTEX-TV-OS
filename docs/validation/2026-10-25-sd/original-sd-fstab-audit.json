@@ -1,0 +1,281 @@
+{
+  "schema_version": 1,
+  "profile": "community-rk322x / sd-fstab-static-v1",
+  "source_profile": {
+    "repository": "D042888-2/android_device_rockchip_rk322x",
+    "revision": "f33a129bfab6d9cc87184ee3bf032224801fa446",
+    "file": "fstab.rk30board.bootmode.sd"
+  },
+  "external_controller": "ff500000.rksdmmc",
+  "input": {
+    "path": "/workspace/rk322x-sd-candidate/device/rockchip/rk322x/fstab.rk30board.bootmode.sd",
+    "size_bytes": 2065,
+    "sha256": "d9f4befeb3a769d65e269cbee51c50b0d41b5c32abff5b57c743097d4be0c9af"
+  },
+  "status": "blocked",
+  "checks": [
+    {
+      "check": "input_file",
+      "status": "pass",
+      "message": "Bounded regular UTF-8 file read; no device path opened"
+    },
+    {
+      "check": "entry",
+      "status": "pass",
+      "message": "Entry matches the static SD profile",
+      "line": 6
+    },
+    {
+      "check": "entry",
+      "status": "pass",
+      "message": "Entry matches the static SD profile",
+      "line": 9
+    },
+    {
+      "check": "entry",
+      "status": "pass",
+      "message": "Entry matches the static SD profile",
+      "line": 10
+    },
+    {
+      "check": "entry",
+      "status": "pass",
+      "message": "Entry matches the static SD profile",
+      "line": 11
+    },
+    {
+      "check": "entry",
+      "status": "pass",
+      "message": "Entry matches the static SD profile",
+      "line": 12
+    },
+    {
+      "check": "entry",
+      "status": "blocked",
+      "message": "Do not expose the boot SD controller as removable/formattable storage",
+      "line": 14
+    },
+    {
+      "check": "entry",
+      "status": "pass",
+      "message": "Entry matches the static SD profile",
+      "line": 18
+    },
+    {
+      "check": "entry",
+      "status": "pass",
+      "message": "Entry matches the static SD profile",
+      "line": 19
+    },
+    {
+      "check": "entry",
+      "status": "pass",
+      "message": "Entry matches the static SD profile",
+      "line": 20
+    },
+    {
+      "check": "entry",
+      "status": "pass",
+      "message": "Entry matches the static SD profile",
+      "line": 21
+    },
+    {
+      "check": "entry",
+      "status": "pass",
+      "message": "Entry matches the static SD profile",
+      "line": 23
+    },
+    {
+      "check": "required:/system",
+      "status": "pass",
+      "message": "Exactly one entry found"
+    },
+    {
+      "check": "required:/cache",
+      "status": "pass",
+      "message": "Exactly one entry found"
+    },
+    {
+      "check": "required:/metadata",
+      "status": "pass",
+      "message": "Exactly one entry found"
+    },
+    {
+      "check": "required:/data",
+      "status": "pass",
+      "message": "Exactly one entry found"
+    },
+    {
+      "check": "required:/misc",
+      "status": "pass",
+      "message": "Exactly one entry found"
+    }
+  ],
+  "entries": [
+    {
+      "line": 6,
+      "source": "/dev/block/platform/ff500000.rksdmmc/by-name/system",
+      "mount_point": "/system",
+      "type": "ext4",
+      "mount_flags": [
+        "ro",
+        "noatime",
+        "nodiratime",
+        "noauto_da_alloc"
+      ],
+      "fs_mgr_flags": [
+        "wait",
+        "resize"
+      ]
+    },
+    {
+      "line": 9,
+      "source": "/dev/block/platform/ff500000.rksdmmc/by-name/cache",
+      "mount_point": "/cache",
+      "type": "ext4",
+      "mount_flags": [
+        "noatime",
+        "nodiratime",
+        "nosuid",
+        "nodev",
+        "noauto_da_alloc",
+        "discard"
+      ],
+      "fs_mgr_flags": [
+        "wait"
+      ]
+    },
+    {
+      "line": 10,
+      "source": "/dev/block/platform/ff500000.rksdmmc/by-name/metadata",
+      "mount_point": "/metadata",
+      "type": "ext4",
+      "mount_flags": [
+        "noatime",
+        "nodiratime",
+        "nosuid",
+        "nodev",
+        "noauto_da_alloc",
+        "discard"
+      ],
+      "fs_mgr_flags": [
+        "wait",
+        "check"
+      ]
+    },
+    {
+      "line": 11,
+      "source": "/dev/block/platform/ff500000.rksdmmc/by-name/userdata",
+      "mount_point": "/data",
+      "type": "ext4",
+      "mount_flags": [
+        "noatime",
+        "nodiratime",
+        "nosuid",
+        "nodev",
+        "noauto_da_alloc",
+        "discard",
+        "errors=panic"
+      ],
+      "fs_mgr_flags": [
+        "wait",
+        "check",
+        "encryptable=/metadata/key_file"
+      ]
+    },
+    {
+      "line": 12,
+      "source": "/dev/block/platform/ff500000.rksdmmc/by-name/misc",
+      "mount_point": "/misc",
+      "type": "emmc",
+      "mount_flags": [
+        "defaults"
+      ],
+      "fs_mgr_flags": [
+        "defaults"
+      ]
+    },
+    {
+      "line": 14,
+      "source": "/devices/ff500000.rksdmmc/mmc_host*",
+      "mount_point": "auto",
+      "type": "auto",
+      "mount_flags": [
+        "defaults"
+      ],
+      "fs_mgr_flags": [
+        "voldmanaged=sdcard1:auto"
+      ]
+    },
+    {
+      "line": 18,
+      "source": "/devices/ff580000.usb*",
+      "mount_point": "auto",
+      "type": "vfat",
+      "mount_flags": [
+        "defaults"
+      ],
+      "fs_mgr_flags": [
+        "voldmanaged=usb:auto"
+      ]
+    },
+    {
+      "line": 19,
+      "source": "/devices/ff5c0000.usb*",
+      "mount_point": "auto",
+      "type": "vfat",
+      "mount_flags": [
+        "defaults"
+      ],
+      "fs_mgr_flags": [
+        "voldmanaged=usb:auto"
+      ]
+    },
+    {
+      "line": 20,
+      "source": "/devices/ff5d0000.usb*",
+      "mount_point": "auto",
+      "type": "vfat",
+      "mount_flags": [
+        "defaults"
+      ],
+      "fs_mgr_flags": [
+        "voldmanaged=usb:auto"
+      ]
+    },
+    {
+      "line": 21,
+      "source": "/devices/usb*",
+      "mount_point": "auto",
+      "type": "vfat",
+      "mount_flags": [
+        "defaults"
+      ],
+      "fs_mgr_flags": [
+        "voldmanaged=usb:auto"
+      ]
+    },
+    {
+      "line": 23,
+      "source": "/dev/block/zram0",
+      "mount_point": "none",
+      "type": "swap",
+      "mount_flags": [
+        "defaults"
+      ],
+      "fs_mgr_flags": [
+        "zramsize=533413200"
+      ]
+    }
+  ],
+  "limits": [
+    "This is one community RK322x SD fstab profile, not universal Rockchip storage identification.",
+    "The ff500000.rksdmmc controller is taken from the reference source, not confirmed on this unit.",
+    "No /dev nodes are opened or resolved; runtime device links and partition contents are not checked.",
+    "No init/recovery/update scripts, boot-mode selection, bootloader, kernel, DTB or HALs are audited.",
+    "Passing this file check does not prove that internal storage will remain unchanged during boot.",
+    "No ROM is built, no image is mounted or written, and physical boot remains unvalidated."
+  ],
+  "rom_build_validation": "not_performed",
+  "hardware_validation": "not_performed"
+}
