@@ -1,0 +1,40 @@
+{
+  "scope": "Source review only; no kernel build or runtime test performed by reviewer.",
+  "NAND_y_branch_reconstruction": [
+    {
+      "path": "drivers/net/ethernet/rockchip/eth_mac.c",
+      "RK_NAND_y_branch_byte_identical_to_upstream": true,
+      "source_sha256": "b47ed648956674a7414c2ce95d2c1b4d2798104059d9d735696ba1f32da3fd18"
+    },
+    {
+      "path": "drivers/usb/gadget/f_mass_storage.c",
+      "RK_NAND_y_branch_byte_identical_to_upstream": true,
+      "source_sha256": "c559bd86e96efe552f4b815868cbad87b69f2bccfb0fac000107720facc2e5bc"
+    },
+    {
+      "path": "net/rfkill/rfkill-wlan.c",
+      "RK_NAND_y_branch_byte_identical_to_upstream": true,
+      "source_sha256": "855c85ce19c9b90dc60c755cf3e6c1dfa8ad122e50ea546e48b9413b12bb63ee"
+    }
+  ],
+  "NAND_n_paths": {
+    "ethernet": "eth_mac_read_from_IDB returns -EOPNOTSUPP; eth_mac_idb propagates error; existing stmmac invalid-MAC chain retains file/random fallbacks.",
+    "wifi": "Only vflash/IDB read omitted. Existing vendor-storage path and final is_valid_ether_addr check retained; invalid/zero MAC returns -1 without copying a fake MAC. Existing chip-driver fallback behavior remains unvalidated.",
+    "mass_storage": "get_param_tag returns NULL; existing callers retain their missing-tag handling. NAND parameter contents are not fabricated."
+  },
+  "limits": [
+    "CONFIG_RK_NAND=y original bugs and behavior remain unchanged; this patch is only for optional-NAND linkage.",
+    "Vendor-storage helpers remain in generic source and can read/write via their own paths; no physical preservation guarantee is inferred.",
+    "No networking, USB, hotplug or physical-board function has been validated."
+  ],
+  "patch_sha256": "864fe75a87e0999fa84eacd40cad60eec6d12ee361daaf72aecbedd05336c97d",
+  "patch_bytes": 2410,
+  "auditor_review": {
+    "updated_source_sha256": "86baf729b23a1bba7a277c040443f3583c7625204fd9bfd3fbd945e61faffc28",
+    "binding_compatible_omission_regression": "blocked by updated auditor",
+    "enabled_snps_dw_mshc_extra_controller_regression": "blocked by updated auditor",
+    "updated_valid_synthetic_fixture": "accepted as file consistency only",
+    "new_code_review": "No further material defect identified within the declared SDK-reference scope.",
+    "cross_file_kernel_binary_correspondence": "not checked by auditor, explicitly excluded"
+  }
+}

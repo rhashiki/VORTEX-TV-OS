@@ -1,0 +1,315 @@
+{
+  "schema_version": 1,
+  "scope": "Static source review of candidate Android device/common sources after patches 0001-0003; not a final ramdisk audit or proof of no internal writes.",
+  "read_only_review": true,
+  "build_performed": false,
+  "hardware_performed": false,
+  "github_actions_used": false,
+  "sources": {
+    "common": {
+      "upstream_revision": "3b1aa90ef43f9d34094739a211ad44bf9a2c0b74",
+      "local_worktree": "/workspace/build01-sd/check-common-stack",
+      "applied_patches": [
+        "0002-common-sd-only-init.patch",
+        "0003-common-disable-internal-provisioning.patch"
+      ]
+    },
+    "device": {
+      "upstream_revision": "f33a129bfab6d9cc87184ee3bf032224801fa446",
+      "local_worktree": "/workspace/build01-sd/check-rk322x",
+      "applied_patches": [
+        "0001-rk322x-sd-only-fstab.patch"
+      ]
+    }
+  },
+  "findings": [
+    {
+      "id": "normal-boot-drmservice",
+      "priority": "blocker",
+      "source_refs": [
+        "common/BoardConfig.mk:177",
+        "common/device.mk:398-402",
+        "common/init.rk30board.rc:237-239",
+        "common/sepolicy/drmservice.te:17",
+        "common/sepolicy/drmservice.te:22",
+        "common/sepolicy/file_contexts:33",
+        "common/sepolicy/file_contexts:139"
+      ],
+      "observed": "BUILD_WITH_DRMSERVICE :=true includes drmservice, whose init service has class main without disabled; the policy allows read/write on rknand_device and storage_device. Device labels include /dev/rknand_sys_storage and /dev/vendor_storage.",
+      "interpretation": "Removing rk_store_keybox and drmboot does not remove every automatic process permitted to access non-fstab vendor storage. Source/binary behavior of drmservice is still unreviewed; actual writes were not demonstrated.",
+      "recommended_next_change": "For an SD test candidate, remove this automatic service and package selection, then inspect the final product inventory and init graph for copies/reintroduction. Do not claim the APK/media DRM services as a whole are disabled merely by removing this separate vendor service."
+    },
+    {
+      "id": "connectivity-raw-storage-access",
+      "priority": "blocker",
+      "source_refs": [
+        "common/init.rk30board.rc:3",
+        "common/device.mk:135-138",
+        "common/init.connectivity.rc:24-27",
+        "common/ueventd.rockchip.rc:56",
+        "common/sepolicy/bluetooth.te:4",
+        "common/wifi_bt_common.mk:3-4",
+        "common/wifi_bt_common.mk:20-24",
+        "common/tv/tv_base.mk:86-87"
+      ],
+      "observed": "The default non-Sofia common config selects Broadcom/ap6xxx and Bluetooth; init.connectivity is copied under that selection, then chmod/chown grants Bluetooth ownership of /dev/vflash and /dev/vendor_storage. ueventd also grants Bluetooth /dev/vflash and Bluetooth policy allows rw. TV product directly lists Bluetooth.",
+      "interpretation": "The selection is a source default, not identification of the actual Wi-Fi chip. Removing only init chmod lines is incomplete because ueventd/policy and packages independently retain access.",
+      "recommended_next_change": "The final Vortex product requires no Bluetooth: remove BT package/feature, init grants and services, ueventd grant and matching policy in an explicit profile. Keep the unknown actual Wi-Fi identity separate; do not select a new Wi-Fi driver based on these defaults."
+    },
+    {
+      "id": "copied-whtest-script",
+      "priority": "blocker-before-media",
+      "source_refs": [
+        "common/device.mk:467-469",
+        "common/whtest.sh:3",
+        "common/whtest.sh:10"
+      ],
+      "observed": "whtest.sh is copied unconditionally to /system/bin; its active command remounts /dev/block/mtdblock8 over /system RW and removes system/app/*.nm.",
+      "interpretation": "No automatic init service invoking whtest was found in the examined source trees. This is an executable dangerous path remaining in the product, not a demonstrated boot-time write.",
+      "recommended_next_change": "Omit this factory test script from the first SD product and inspect final /system/bin rather than relying only on init triggers."
+    },
+    {
+      "id": "preinstall-system-remount",
+      "priority": "review-required",
+      "source_refs": [
+        "common/device.mk:471-473",
+        "common/preinstall_cleanup.sh:2-5"
+      ],
+      "observed": "preinstall_cleanup.sh is copied unconditionally; it remounts /system RW, deletes /system/preinstall_del entries and remounts RO.",
+      "interpretation": "This follows the mounted /system rather than an explicit internal block device, so a correct SD mount points it at the SD. It still violates a simple assumption that ro fstab implies no subsequent system mutation. No automatic caller was found in the trees reviewed; the corresponding framework/package implementation is outside this checkout.",
+      "recommended_next_change": "Omit this factory cleanup script for first SD media or establish and audit all callers before inclusion."
+    },
+    {
+      "id": "recovery-enabled-default",
+      "priority": "blocker",
+      "source_refs": [
+        "common/BoardConfig.mk:151-159",
+        "common/recovery/etc/init.rc:1-2",
+        "common/recovery/etc/init.rc:96-98",
+        "common/recovery/etc/init.bootmode.emmc.rc:3-5",
+        "common/recovery/etc/init.bootmode.unknown.rc:2-4",
+        "common/recovery.sd.fstab:3-21",
+        "device/recovery.sd.fstab:3-21",
+        "common/mkimage.sh:115-129"
+      ],
+      "observed": "Recovery defaults to TARGET_NO_RECOVERY ?= false and Rockchip recovery true. Its init imports mode-specific files and automatically starts recovery. Common recovery.sd.fstab actually uses ff0f0000.rksdmmc for critical and boot/loader partitions; the device recovery.sd.fstab uses ff500000.rksdmmc instead. Existing recovery mode files mount internal legacy paths and load NAND/drmboot modules. mkimage.sh packages recovery when a recovery/root exists.",
+      "interpretation": "The name recovery.sd.fstab alone proves no safe SD target. The final build rules choosing the fstab are absent; no selection was established. Setting TARGET_NO_RECOVERY in a product may not by itself remove inherited source/prebuilt artifacts or flashing routes.",
+      "recommended_next_change": "Exclude recovery from the first media and exclude recovery/OTA payloads from its packager; audit the resolved build target and final ramdisk/images. Do not copy or repair the common recovery fstab by guessing physical storage."
+    },
+    {
+      "id": "optee-import-and-raw-block-rights",
+      "priority": "conditional-blocker",
+      "source_refs": [
+        "common/init.rk30board.rc:8",
+        "common/init.optee.rc:1-3",
+        "common/sepolicy/tee.te:8-10",
+        "common/sepolicy/file_contexts:153-154",
+        "device/BoardConfig.mk:62"
+      ],
+      "observed": "The normal init has a literal import of init.optee.rc; that file defines a class core tee-supplicant and its policy permits rw of uboot and rpmb block devices with sys_rawio. Fixed labels identify mmcblk1 and mmcblk1rpmb by enumeration. The device BoardConfig sets PRODUCT_HAVE_OPTEE := false. No PRODUCT_COPY_FILES copying init.optee.rc was found in these examined device/common makefiles.",
+      "interpretation": "The service is not proven present in the final ramdisk; it must not be described as an active confirmed writer. Its import is a residual expansion point, and an inherited OP-TEE package could supply it independently.",
+      "recommended_next_change": "Explicitly exclude OP-TEE init/binaries for the first media when not required and verify the final ramdisk; never use mmc numbering as a board identity proof."
+    },
+    {
+      "id": "bootmode-selection-not-closed",
+      "priority": "blocker",
+      "source_refs": [
+        "common/init.rk30board.rc:1",
+        "common/init.rk30board.bootmode.sd.rc:7",
+        "device/device.mk:32-34"
+      ],
+      "observed": "The normal board init imports init.${ro.hardware}.bootmode.${ro.bootmode}.rc and SD init calls mount_all fstab.rk30board; the product packages only fstab.rk30board.bootmode.sd after patch.",
+      "interpretation": "Correct ro.bootmode and creation/selection of /fstab.rk30board depend on platform system/core and boot arguments. Removing fallback files does not prove a failed mount halts boot or prevent other services from starting.",
+      "recommended_next_change": "Resolve platform init implementation, reject mismatched/missing media claims for SD profile, and inspect actual mount sources before enabling any write-capable service or diagnostic collector."
+    },
+    {
+      "id": "vendor-updater-library",
+      "priority": "review-required",
+      "source_refs": [
+        "vendor/device-vendor.mk:300"
+      ],
+      "observed": "The vendor copy list includes librockchip_update_jni.so. No complete updater APK/service or caller graph was available in these source checkouts.",
+      "interpretation": "A copied library is not itself a running updater; the final product may include callers from unresolved platform/device/vendor projects.",
+      "recommended_next_change": "Audit the complete resolved package/library/service inventory, exclude update/install/flash routes from the first external-test product, and inspect the generated media manifest."
+    }
+  ],
+  "logging_design": {
+    "status": "Design only; not implemented or runtime validated.",
+    "existing_observations": [
+      "common/init.rk30board.rc:43 creates /data/logs as 0755 root:shell in post-fs-data.",
+      "common/sepolicy/file_contexts:141 labels /data/logs recursively as aplog_data_file.",
+      "common/init.rk30board.rc:227-235 defines vendor abc collector, disabled by default and toggled through persist.sys.abc_switch; source unavailable and overly broad permissions for this purpose.",
+      "common/sepolicy/abc.te grants sys_module/sys_admin, kernel syslog_mod and executable tool access; do not reuse the domain as a least-privilege Vortex collector.",
+      "common/sepolicy/apk_logfs.te:3-16 provides debug-only logging policy, but the service seen in init.sofiaboard.rc is a different hardware target, not proof it runs for rk30board."
+    ],
+    "recommended_flow": [
+      "Build an explicit userdebug-only Vortex collector domain and executable/script with fixed output paths and bounded rotation. Do not enable permissive SELinux or copy the broad abc/crashlogd policy.",
+      "Start only after post-fs-data and an affirmative verified SD mount identity for /data and /system. Use /proc/self/mountinfo and major/minor + sysfs/controller resolution rather than /dev/mmcblk enumeration alone. Check the expected read-only /system flag; fail closed for absent/ambiguous inputs.",
+      "Place a bounded boot snapshot (cmdline, mountinfo, dmesg, getprop limited to boot/hardware/build, exact source commit) and rotated logcat on /data/logs/vortex or another dedicated label. Data stays on SD only if mount identity was independently confirmed.",
+      "For failures before SD /data is mounted, keep diagnostics in RAM or use a separately prepared and verified log partition; do not fall back to internal /cache or /data. Existing recovery is not a collector.",
+      "Wait for system log service readiness or retry within bounded limits. Use standard Android logcat rotation and a fixed directory, sanitize filenames, prevent symlink-following, control ownership/mode, and avoid collecting all credentials/properties unnecessarily.",
+      "The operator should only need to start the resulting prepared media; no new manual FlashID, Wi-Fi, board photos or dumps are requested."
+    ],
+    "selinux_requirements": [
+      "Define executable + dedicated data type and init_daemon_domain; grant only logd socket access, necessary proc/sysfs/kernel log reads and writes under the dedicated output label.",
+      "No block_device:blk_file write, no rknand/storage/vflash access, no sys_rawio, no sys_module, no sys_admin, no broad domain/device permissive exemptions.",
+      "Compile the policy with the actual Android platform revision and run enforcing tests on the generated system before declaring automatic SD logging functional.",
+      "dmesg/kernel log access is privileged; granting read does not imply syslog_mod. If the platform only offers a combined wrapper, keep behavior read-only and verify."
+    ],
+    "limits": [
+      "A collector starting after data mount cannot diagnose every boot failure; a claimed always-available log capture would be false.",
+      "A correct fstab is only a static input and not sufficient proof that /data is mounted on the physical SD.",
+      "Raw access by kernel/vendor processes must be considered even if the logger itself writes only SD."
+    ]
+  },
+  "first_media_acceptance_gates": [
+    "Resolve a complete platform, generated product and init import graph.",
+    "Reject inconsistent boot media inputs; ensure mount sources match externally selected controller/partition mapping.",
+    "Exclude recovery, factory tools, automatic vendor provisioning, update/flash routes and Bluetooth from the explicit first test product.",
+    "Inspect actual boot ramdisk, system file list, service triggers, SELinux policy, kernel config and media layout; source patches alone do not pass this gate.",
+    "Only after an image exists and passes these checks supply exact SD preparation instructions; do not present a generic reference kernel/DTB as image.",
+    "Run physical boot tests later without writing internal memory; no hardware activity occurred in this review."
+  ],
+  "source_inventory": [
+    {
+      "tree": "common",
+      "path": "BoardConfig.mk",
+      "sha256": "977f62755a3459be1a3d67100af686b2cb1566afb2987e53476d6e10be7a1816"
+    },
+    {
+      "tree": "common",
+      "path": "device.mk",
+      "sha256": "246f5e00db38cc9de0331a52a3c6da00ddcbf19ff313d9d8b6485ccb057910c9"
+    },
+    {
+      "tree": "common",
+      "path": "init.rk30board.rc",
+      "sha256": "0e21ce2a5ca41379e194cbcbe0cf966e5bf369d41b8e62ca08df4b8116de771d"
+    },
+    {
+      "tree": "common",
+      "path": "init.rk30board.bootmode.sd.rc",
+      "sha256": "4758b5ed73900df6db9471c711a2a8b6e0bbe471b5f3f389f90113824c530f63"
+    },
+    {
+      "tree": "common",
+      "path": "init.rockchip.rc",
+      "sha256": "78c23dae791467658b99301eaa16257faa56889b3792de85a5bac056971c472b"
+    },
+    {
+      "tree": "common",
+      "path": "init.connectivity.rc",
+      "sha256": "a0e389d8898dc6345471bc51de864f05338947854a7d9013d9511ee57f28f18c"
+    },
+    {
+      "tree": "common",
+      "path": "init.optee.rc",
+      "sha256": "be96fa312215e40a7ab54f80c193e3472e938135286bf8df444d0c29c50de9ca"
+    },
+    {
+      "tree": "common",
+      "path": "ueventd.rockchip.rc",
+      "sha256": "19c690ee226e784011f3dcfd1da1ac7457ee4889b7aba8827492fa652977b9eb"
+    },
+    {
+      "tree": "common",
+      "path": "whtest.sh",
+      "sha256": "77eca5cdb6d162674e76f7b5906e7f944cb634f3e5501d5b2e90c0c2934982af"
+    },
+    {
+      "tree": "common",
+      "path": "preinstall_cleanup.sh",
+      "sha256": "ce9bd5f9e627dd9ed9e60bdf22887cce4eee25c81de5f67d8bfbfb5ca5d4e442"
+    },
+    {
+      "tree": "common",
+      "path": "recovery.sd.fstab",
+      "sha256": "53f64ce525dd43634a1d7a01a3a015ceb5f2a10cdafd263df8f5661141c33eb2"
+    },
+    {
+      "tree": "common",
+      "path": "recovery/etc/init.rc",
+      "sha256": "52b6db4e60db0a6b1ff1d843f36ae58232c322e13cf629f2e3a6a1ea18e9e015"
+    },
+    {
+      "tree": "common",
+      "path": "recovery/etc/init.bootmode.emmc.rc",
+      "sha256": "fa4db7d5d0a67956843fe3c876fd21c22e042ee3bc590883809f11f73845726c"
+    },
+    {
+      "tree": "common",
+      "path": "recovery/etc/init.bootmode.unknown.rc",
+      "sha256": "3f3de866954c0b766669d414b54e77b579f4ad5c53e9f99c43e8d97d408fdf39"
+    },
+    {
+      "tree": "common",
+      "path": "sepolicy/drmservice.te",
+      "sha256": "36b85b70fa72ebf0b69890393da83ba4abaf7ad80c7b426119993399960d3f7b"
+    },
+    {
+      "tree": "common",
+      "path": "sepolicy/drmserver.te",
+      "sha256": "70e8ad39807977205cadc473dada8e95ca59fcdbb36e4c5928c1fd29eba3bf37"
+    },
+    {
+      "tree": "common",
+      "path": "sepolicy/tee.te",
+      "sha256": "2458cfafd706d7c261325f59e1fdbe116a5ba04b9f5d5c01abb63da40d3e4702"
+    },
+    {
+      "tree": "common",
+      "path": "sepolicy/file_contexts",
+      "sha256": "03288ac1a84fa4b2755ec2c24089993cdcf0e5cf0fec4c1c76bebe79b056f66a"
+    },
+    {
+      "tree": "common",
+      "path": "sepolicy/abc.te",
+      "sha256": "01d0003d772dd3f72c5a6bd45a0f57a2052945e44091b565ed049e40d6eb232b"
+    },
+    {
+      "tree": "common",
+      "path": "sepolicy/apk_logfs.te",
+      "sha256": "eea20c8c6a23d7eb057f36d77bf705bbf01e0afc4e84208a93f20e54b30e19be"
+    },
+    {
+      "tree": "common",
+      "path": "wifi_bt_common.mk",
+      "sha256": "d94714a465f31aa5ad400889d73a455f2b5c94f620cdf411c48f23384a4a27c3"
+    },
+    {
+      "tree": "common",
+      "path": "tv/tv_base.mk",
+      "sha256": "e486de7d1dedad97e5089ea34c1463360b80d6f1f2e4e07d1eff25ae04197264"
+    },
+    {
+      "tree": "device",
+      "path": "BoardConfig.mk",
+      "sha256": "6648f0b9298e8111b1ee1dbb74dbb82cd348c2863bc9a559393541790c416b67"
+    },
+    {
+      "tree": "device",
+      "path": "device.mk",
+      "sha256": "2f207278096096af2f13726a23385e1aa8c1fb4aed7fd17608a32a2309b69cb1"
+    },
+    {
+      "tree": "device",
+      "path": "rk322x.mk",
+      "sha256": "d5c14385cd3f08c9fa4934a87a2c067d555cd51e0c3d650cf7a3b89e4ff00364"
+    },
+    {
+      "tree": "device",
+      "path": "rk322x_box.mk",
+      "sha256": "cec5910a16f8b44c9e98f9a072ffe2dc06fb3708b8347c423edb073f065c07c4"
+    },
+    {
+      "tree": "device",
+      "path": "recovery.sd.fstab",
+      "sha256": "05affbd2bdb1dc5ab9a693ffbe90c49d42107fee4b7bb6726b1b3c31e5bd7a78"
+    },
+    {
+      "tree": "device",
+      "path": "rk322x_box/BoardConfig.mk",
+      "sha256": "0aebd09c8a8709c59a159f0863e43f0dcf9a9d450fcea04375a1050873e9fdc9"
+    }
+  ]
+}

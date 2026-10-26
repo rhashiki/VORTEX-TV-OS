@@ -1,0 +1,49 @@
+There are 40 section headers, starting at offset 0xa1584f0:
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .head.text        PROGBITS        c0008000 008000 000268 00  AX  0   0 32
+  [ 2] .text             PROGBITS        c0008280 008280 92c3e0 00  AX  0   0 64
+  [ 3] .rodata           PROGBITS        c0935000 935000 36a484 00   A  0   0 64
+  [ 4] __bug_table       PROGBITS        c0c9f488 c9f488 0098f4 00   A  0   0  1
+  [ 5] .builtin_fw       PROGBITS        c0ca8d7c ca8d7c 000030 00   A  0   0  4
+  [ 6] __ksymtab         PROGBITS        c0ca8dac ca8dac 008048 00   A  0   0  4
+  [ 7] __ksymtab_gpl     PROGBITS        c0cb0df4 cb0df4 006840 00   A  0   0  4
+  [ 8] __ksymtab_strings PROGBITS        c0cb7634 cb7634 0227ed 00   A  0   0  1
+  [ 9] __param           PROGBITS        c0cd9e24 cd9e24 002580 00   A  0   0  4
+  [10] __modver          PROGBITS        c0cdc3a4 cdc3a4 000c5c 00   A  0   0  4
+  [11] __ex_table        PROGBITS        c0cdd000 cdd000 000e88 00   A  0   0  8
+  [12] .ARM.unwind_idx   ARM_EXIDX       c0cdde88 cdde88 0404a8 00  AL 17   0  4
+  [13] .ARM.unwind_tab   PROGBITS        c0d1e330 d1e330 0011ac 00   A  0   0  4
+  [14] .notes            NOTE            c0d1f4dc d1f4dc 000024 00  AX  0   0  4
+  [15] .vectors          PROGBITS        00000000 d20000 000020 00  AX  0   0  4
+  [16] .stubs            PROGBITS        00001000 d21000 000228 00  AX  0   0 32
+  [17] .init.text        PROGBITS        c0d20260 d30260 04bdc8 00  AX  0   0 32
+  [18] .exit.text        PROGBITS        c0d6c028 d7c028 004680 00  AX  0   0  4
+  [19] .init.arch.info   PROGBITS        c0d706a8 d806a8 000370 00   A  0   0  4
+  [20] .init.tagtable    PROGBITS        c0d70a18 d80a18 000038 00   A  0   0  4
+  [21] .init.smpalt      PROGBITS        c0d70a50 d80a50 000280 00   A  0   0  4
+  [22] .init.pv_table    PROGBITS        c0d70cd0 d80cd0 0004dc 00   A  0   0  1
+  [23] .init.data        PROGBITS        c0d711b0 d811b0 00b874 00  WA  0   0  8
+  [24] .data..percpu     PROGBITS        c0d7d000 d8d000 003400 00  WA  0   0 64
+  [25] .data             PROGBITS        c0d82000 d92000 1310d8 00  WA  0   0 64
+  [26] .bss              NOBITS          c0eb4000 ec30d8 12a848 00  WA  0   0 4096
+  [27] .comment          PROGBITS        00000000 ec30d8 00002d 01  MS  0   0  1
+  [28] .ARM.attributes   ARM_ATTRIBUTES  00000000 ec3105 000031 00      0   0  1
+  [29] .debug_line       PROGBITS        00000000 ec3136 8af4b5 00      0   0  1
+  [30] .debug_info       PROGBITS        00000000 17725eb 7782d6b 00      0   0  1
+  [31] .debug_abbrev     PROGBITS        00000000 8ef5356 325913 00      0   0  1
+  [32] .debug_aranges    PROGBITS        00000000 921ac70 018c20 00      0   0  8
+  [33] .debug_ranges     PROGBITS        00000000 9233890 1acc30 00      0   0  8
+  [34] .debug_frame      PROGBITS        00000000 93e04c0 18c9bc 00      0   0  4
+  [35] .debug_str        PROGBITS        00000000 956ce7c 2b0406 01  MS  0   0  1
+  [36] .debug_loc        PROGBITS        00000000 981d282 50accd 00      0   0  1
+  [37] .shstrtab         STRTAB          00000000 a15833c 0001b1 00      0   0  1
+  [38] .symtab           SYMTAB          00000000 9d27f50 29c3d0 10     39 148471  4
+  [39] .strtab           STRTAB          00000000 9fc4320 19401c 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  y (noread), p (processor specific)

@@ -36,6 +36,13 @@ a narrow read-only SD fstab auditor. See [the SD validation report](VALIDATION_2
 Passing those source/file checks is not permission to treat a card as bootable
 or internal storage as preserved.
 
+The [SDK SD reference profile](../rom/sdcard/SD_REFERENCE.md) adds explicit
+controller matching (`30000000.rksdmmc` for the examined RK3229 DTS), a separate
+kernel config/DTS with internal storage nodes disabled, further vendor/factory
+source exclusions and cross-checks of real DTB/fstab/config/cmdline files.
+An `inputs_only` result is not a boot, media or hardware approval. Preserve
+the original reference artifacts and distinguish every newly compiled profile.
+
 Use a cloud computer terminal (if available) to clone main and compile the native Vortex Android APK, run complete local automated checks and an Android emulator for functional tests. Investigate available AOSP 7.1.2 / Rockchip RK322x build dependencies and produce an honest report on whether a complete ROM is feasible on the available compute.
 
 ## Required tooling

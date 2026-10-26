@@ -5,6 +5,10 @@ O perfil é `rockchip_defconfig`, com o DTS **genérico** `rk3229-sdk.dts`.
 Ele não seleciona a pinagem da R329Q_V8.0, não herda automaticamente os patches
 de ramdisk SD e não é um perfil aprovado de preservação da flash.
 
+Este documento conserva o ensaio original. O
+[perfil SD posterior](SD_REFERENCE.md) usa outro DTS/config e outro diretório
+de saída; seus resultados não substituem os hashes desta referência.
+
 ## Fontes e ferramentas
 
 | Entrada | Revisão |

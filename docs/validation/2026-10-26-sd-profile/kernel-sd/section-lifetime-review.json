@@ -1,0 +1,41 @@
+{
+  "CONFIG_HOTPLUG_CPU": "y",
+  "symbols": {
+    "dvfs_temp_limit": {
+      "address": "0xc003825c",
+      "size": 948,
+      "section_index": "2"
+    },
+    "_cpu_up": {
+      "address": "0xc0923954",
+      "size": 500,
+      "section_index": "2"
+    },
+    "__cpu_up": {
+      "address": "0xc0923074",
+      "size": 336,
+      "section_index": "2"
+    },
+    "cpu_up": {
+      "address": "0xc0923b48",
+      "size": 128,
+      "section_index": "2"
+    },
+    "__init_begin": {
+      "address": "0xc0d20000",
+      "size": 0,
+      "section_index": "15"
+    },
+    "__init_end": {
+      "address": "0xc0d80400",
+      "size": 0,
+      "section_index": "24"
+    }
+  },
+  "freeable_init_range": [
+    "0xc0d20000",
+    "0xc0d80400"
+  ],
+  "all_runtime_symbols_outside_freeable_init": true,
+  "cpu_up_chain_in_dvfs_text_section": true
+}

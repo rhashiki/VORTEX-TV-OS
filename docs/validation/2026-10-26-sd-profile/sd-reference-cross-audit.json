@@ -1,0 +1,411 @@
+{
+  "schema_version": 1,
+  "profile": "rk3229-sdk-sd-reference-v1",
+  "status": "inputs_only",
+  "inputs": {
+    "fstab": {
+      "path": "/workspace/build01-sd-next/device-sd/fstab.rk30board.bootmode.sd",
+      "size_bytes": 2120,
+      "sha256": "d13a0c32b6f1e50c4a382691a166fea42f09277819fc4411c2ff6342539c9b4d"
+    },
+    "dtb": {
+      "path": "/workspace/build01-sd-next/kernel-sd/out/arch/arm/boot/dts/rk3229-sdk-sd-reference.dtb",
+      "size_bytes": 72372,
+      "sha256": "ffc55fd04b80ef2c49307d7428b6be8d7b6362410f235ad25be4c6c7f3109fb7"
+    },
+    "config": {
+      "path": "/workspace/build01-sd-next/kernel-sd/out/.config",
+      "size_bytes": 104753,
+      "sha256": "989995cfcf9395f51c7299ffd2fd3fad91e1fad216b54e9f6eb9ea8e457f8868"
+    },
+    "cmdline": {
+      "path": "/workspace/vortex-build/rom/sdcard/sd-reference.cmdline",
+      "size_bytes": 92,
+      "sha256": "fb1fa0820202140ae446007afe07e7e425c35f790e7f6d8e0d27322d90d648ea"
+    }
+  },
+  "checks": [
+    {
+      "check": "input:fstab",
+      "status": "pass",
+      "message": "Bounded regular file read; no device opened"
+    },
+    {
+      "check": "input:dtb",
+      "status": "pass",
+      "message": "Bounded regular file read; no device opened"
+    },
+    {
+      "check": "input:config",
+      "status": "pass",
+      "message": "Bounded regular file read; no device opened"
+    },
+    {
+      "check": "input:cmdline",
+      "status": "pass",
+      "message": "Bounded regular file read; no device opened"
+    },
+    {
+      "check": "fstab",
+      "status": "pass",
+      "message": "RK3229 SDK fstab entries match; input remained stable"
+    },
+    {
+      "check": "dtb",
+      "status": "pass",
+      "message": "Matches the explicit SDK SD reference profile"
+    },
+    {
+      "check": "config",
+      "status": "pass",
+      "message": "Matches the explicit SDK SD reference profile"
+    },
+    {
+      "check": "cmdline",
+      "status": "pass",
+      "message": "Matches the explicit SDK SD reference profile"
+    },
+    {
+      "check": "dtb_cmdline",
+      "status": "pass",
+      "message": "DTB bootargs and proposed cmdline selectors match"
+    }
+  ],
+  "limits": [
+    "This fixed SDK reference profile is not an identified R329Q_V8.0 board configuration.",
+    "DTB controller addresses and fstab paths are compared as files; runtime /dev links, partition labels and contents are not verified.",
+    "The command-line file is a proposed contract, not evidence of the actual bootloader or kernel command line.",
+    "No bootloader, DDR/trust, kernel binary/config correspondence, Android system, ramdisk, recovery, updater, HAL or proprietary module is approved.",
+    "Disabled reference storage nodes and kernel options do not prove preservation of internal storage on physical hardware.",
+    "No image is mounted or written, no device is opened, no ROM is built and no physical boot is performed."
+  ],
+  "rom_build_validation": "not_performed",
+  "hardware_validation": "not_performed",
+  "fstab_audit": {
+    "schema_version": 1,
+    "profile": "rk3229-sdk-sd-reference / sd-fstab-static-v1",
+    "source_profile": {
+      "repository": "D042888-2/android_device_rockchip_rk322x",
+      "revision": "f33a129bfab6d9cc87184ee3bf032224801fa446",
+      "file": "fstab.rk30board.bootmode.sd",
+      "adaptation": {
+        "patch": "rom/sdcard/patches/0004-rk3229-sdk-sd-controller.patch",
+        "kernel_revision": "6c04d006ae881944d32c19e68b992d0bd5ab4fde",
+        "kernel_source": "arch/arm/boot/dts/rk322x.dtsi"
+      }
+    },
+    "external_controller": "30000000.rksdmmc",
+    "input": {
+      "path": "/workspace/build01-sd-next/device-sd/fstab.rk30board.bootmode.sd",
+      "size_bytes": 2120,
+      "sha256": "d13a0c32b6f1e50c4a382691a166fea42f09277819fc4411c2ff6342539c9b4d"
+    },
+    "status": "fstab_only",
+    "checks": [
+      {
+        "check": "input_file",
+        "status": "pass",
+        "message": "Bounded regular UTF-8 file read; no device path opened"
+      },
+      {
+        "check": "entry",
+        "status": "pass",
+        "message": "Entry matches the static SD profile",
+        "line": 6
+      },
+      {
+        "check": "entry",
+        "status": "pass",
+        "message": "Entry matches the static SD profile",
+        "line": 9
+      },
+      {
+        "check": "entry",
+        "status": "pass",
+        "message": "Entry matches the static SD profile",
+        "line": 10
+      },
+      {
+        "check": "entry",
+        "status": "pass",
+        "message": "Entry matches the static SD profile",
+        "line": 11
+      },
+      {
+        "check": "entry",
+        "status": "pass",
+        "message": "Entry matches the static SD profile",
+        "line": 12
+      },
+      {
+        "check": "entry",
+        "status": "pass",
+        "message": "Entry matches the static SD profile",
+        "line": 19
+      },
+      {
+        "check": "entry",
+        "status": "pass",
+        "message": "Entry matches the static SD profile",
+        "line": 20
+      },
+      {
+        "check": "entry",
+        "status": "pass",
+        "message": "Entry matches the static SD profile",
+        "line": 21
+      },
+      {
+        "check": "entry",
+        "status": "pass",
+        "message": "Entry matches the static SD profile",
+        "line": 22
+      },
+      {
+        "check": "entry",
+        "status": "pass",
+        "message": "Entry matches the static SD profile",
+        "line": 24
+      },
+      {
+        "check": "required:/system",
+        "status": "pass",
+        "message": "Exactly one entry found"
+      },
+      {
+        "check": "required:/cache",
+        "status": "pass",
+        "message": "Exactly one entry found"
+      },
+      {
+        "check": "required:/metadata",
+        "status": "pass",
+        "message": "Exactly one entry found"
+      },
+      {
+        "check": "required:/data",
+        "status": "pass",
+        "message": "Exactly one entry found"
+      },
+      {
+        "check": "required:/misc",
+        "status": "pass",
+        "message": "Exactly one entry found"
+      }
+    ],
+    "entries": [
+      {
+        "line": 6,
+        "source": "/dev/block/platform/30000000.rksdmmc/by-name/system",
+        "mount_point": "/system",
+        "type": "ext4",
+        "mount_flags": [
+          "ro",
+          "noatime",
+          "nodiratime",
+          "noauto_da_alloc"
+        ],
+        "fs_mgr_flags": [
+          "wait",
+          "resize"
+        ]
+      },
+      {
+        "line": 9,
+        "source": "/dev/block/platform/30000000.rksdmmc/by-name/cache",
+        "mount_point": "/cache",
+        "type": "ext4",
+        "mount_flags": [
+          "noatime",
+          "nodiratime",
+          "nosuid",
+          "nodev",
+          "noauto_da_alloc",
+          "discard"
+        ],
+        "fs_mgr_flags": [
+          "wait"
+        ]
+      },
+      {
+        "line": 10,
+        "source": "/dev/block/platform/30000000.rksdmmc/by-name/metadata",
+        "mount_point": "/metadata",
+        "type": "ext4",
+        "mount_flags": [
+          "noatime",
+          "nodiratime",
+          "nosuid",
+          "nodev",
+          "noauto_da_alloc",
+          "discard"
+        ],
+        "fs_mgr_flags": [
+          "wait",
+          "check"
+        ]
+      },
+      {
+        "line": 11,
+        "source": "/dev/block/platform/30000000.rksdmmc/by-name/userdata",
+        "mount_point": "/data",
+        "type": "ext4",
+        "mount_flags": [
+          "noatime",
+          "nodiratime",
+          "nosuid",
+          "nodev",
+          "noauto_da_alloc",
+          "discard",
+          "errors=panic"
+        ],
+        "fs_mgr_flags": [
+          "wait",
+          "check",
+          "encryptable=/metadata/key_file"
+        ]
+      },
+      {
+        "line": 12,
+        "source": "/dev/block/platform/30000000.rksdmmc/by-name/misc",
+        "mount_point": "/misc",
+        "type": "emmc",
+        "mount_flags": [
+          "defaults"
+        ],
+        "fs_mgr_flags": [
+          "defaults"
+        ]
+      },
+      {
+        "line": 19,
+        "source": "/devices/ff580000.usb*",
+        "mount_point": "auto",
+        "type": "vfat",
+        "mount_flags": [
+          "defaults"
+        ],
+        "fs_mgr_flags": [
+          "voldmanaged=usb:auto"
+        ]
+      },
+      {
+        "line": 20,
+        "source": "/devices/ff5c0000.usb*",
+        "mount_point": "auto",
+        "type": "vfat",
+        "mount_flags": [
+          "defaults"
+        ],
+        "fs_mgr_flags": [
+          "voldmanaged=usb:auto"
+        ]
+      },
+      {
+        "line": 21,
+        "source": "/devices/ff5d0000.usb*",
+        "mount_point": "auto",
+        "type": "vfat",
+        "mount_flags": [
+          "defaults"
+        ],
+        "fs_mgr_flags": [
+          "voldmanaged=usb:auto"
+        ]
+      },
+      {
+        "line": 22,
+        "source": "/devices/usb*",
+        "mount_point": "auto",
+        "type": "vfat",
+        "mount_flags": [
+          "defaults"
+        ],
+        "fs_mgr_flags": [
+          "voldmanaged=usb:auto"
+        ]
+      },
+      {
+        "line": 24,
+        "source": "/dev/block/zram0",
+        "mount_point": "none",
+        "type": "swap",
+        "mount_flags": [
+          "defaults"
+        ],
+        "fs_mgr_flags": [
+          "zramsize=533413200"
+        ]
+      }
+    ],
+    "limits": [
+      "This is one community RK322x SD fstab profile, not universal Rockchip storage identification.",
+      "The selected controller belongs to a source reference, not confirmed on this unit.",
+      "No /dev nodes are opened or resolved; runtime device links and partition contents are not checked.",
+      "No init/recovery/update scripts, boot-mode selection, bootloader, kernel, DTB or HALs are audited.",
+      "Passing this file check does not prove that internal storage will remain unchanged during boot.",
+      "No ROM is built, no image is mounted or written, and physical boot remains unvalidated."
+    ],
+    "rom_build_validation": "not_performed",
+    "hardware_validation": "not_performed"
+  },
+  "dtb_audit": {
+    "controllers": [
+      {
+        "path": "/rksdmmc@30000000",
+        "status": "okay",
+        "address": "0x30000000",
+        "compatible": [
+          "rockchip,rk_mmc",
+          "rockchip,rk322x-sdmmc"
+        ]
+      },
+      {
+        "path": "/rksdmmc@30020000",
+        "status": "disabled",
+        "address": "0x30020000",
+        "compatible": [
+          "rockchip,rk_mmc",
+          "rockchip,rk322x-sdmmc"
+        ]
+      },
+      {
+        "path": "/nandc@30030000",
+        "status": "disabled",
+        "address": "0x30030000",
+        "compatible": [
+          "rockchip,rk-nandc"
+        ]
+      }
+    ],
+    "disabled_platform_devices": [
+      "/wireless-bluetooth"
+    ],
+    "chosen_command_line_selectors": {
+      "vmalloc": "496M",
+      "psci": "enable",
+      "storagemedia": "sd",
+      "androidboot.mode": "sd",
+      "androidboot.hardware": "rk30board"
+    }
+  },
+  "kernel_config": {
+    "CONFIG_MMC": "y",
+    "CONFIG_MMC_BLOCK": "y",
+    "CONFIG_MMC_DW": "y",
+    "CONFIG_MMC_DW_PLTFM": "y",
+    "CONFIG_MMC_DW_ROCKCHIP": "y",
+    "CONFIG_HOTPLUG_CPU": "y",
+    "CONFIG_EFI_PARTITION": "y",
+    "CONFIG_RK_NAND": "n",
+    "CONFIG_MTD": "n",
+    "CONFIG_BT": "n"
+  },
+  "command_line_selectors": {
+    "vmalloc": "496M",
+    "psci": "enable",
+    "storagemedia": "sd",
+    "androidboot.mode": "sd",
+    "androidboot.hardware": "rk30board"
+  }
+}

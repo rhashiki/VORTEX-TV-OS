@@ -1,0 +1,14 @@
+cd /workspace/build01-sd-next/kernel-sd/source
+make O=/workspace/build01-sd-next/kernel-sd/out ARCH=arm CROSS_COMPILE=/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf- 'HOSTCFLAGS=-O2 -fcommon' rockchip_defconfig
+sh scripts/kconfig/merge_config.sh -m -O /workspace/build01-sd-next/kernel-sd/out /workspace/build01-sd-next/kernel-sd/out/.config /workspace/vortex-build/rom/sdcard/rk3229-sdk-sd-reference.config
+make O=/workspace/build01-sd-next/kernel-sd/out ARCH=arm CROSS_COMPILE=/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf- 'HOSTCFLAGS=-O2 -fcommon' olddefconfig
+export KBUILD_BUILD_USER=vortex
+export KBUILD_BUILD_HOST=cloud
+export KBUILD_BUILD_TIMESTAMP='Mon Oct 26 12:00:00 UTC 2026'
+export PATH=/workspace/build01-sd/kernel-work/host-deps/usr/bin:$PATH
+make -j2 O=/workspace/build01-sd-next/kernel-sd/out ARCH=arm CROSS_COMPILE=/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf- 'CC=python3 /workspace/vortex-build/tools/legacy_kernel_gcc_wrapper.py /workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-gcc' 'HOSTCFLAGS=-O2 -fcommon' Image rk3229-sdk-sd-reference.dtb
+export KBUILD_BUILD_USER=vortex
+export KBUILD_BUILD_HOST=cloud
+export KBUILD_BUILD_TIMESTAMP='Mon Oct 26 12:00:00 UTC 2026'
+export PATH=/workspace/build01-sd/kernel-work/host-deps/usr/bin:$PATH
+make -j2 O=/workspace/build01-sd-next/kernel-sd/out ARCH=arm CROSS_COMPILE=/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf- 'CC=python3 /workspace/vortex-build/tools/legacy_kernel_gcc_wrapper.py /workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-gcc' 'HOSTCFLAGS=-O2 -fcommon' Image rk3229-sdk-sd-reference.dtb

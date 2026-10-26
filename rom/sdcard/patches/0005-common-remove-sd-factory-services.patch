@@ -1,0 +1,269 @@
+diff --git a/BoardConfig.mk b/BoardConfig.mk
+index e767ef2..d13b037 100755
+--- a/BoardConfig.mk
++++ b/BoardConfig.mk
+@@ -174,7 +174,8 @@ RECOVERY_BOARD_ID ?= false
+ BOARD_WIDEVINE_OEMCRYPTO_LEVEL := 3
+ 
+ # for drmservice
+-BUILD_WITH_DRMSERVICE :=true
++# SD-only test: omit the vendor raw-storage provisioning service.
++BUILD_WITH_DRMSERVICE := false
+ 
+ # for tablet encryption
+ BUILD_WITH_CRYPTO := false
+@@ -183,10 +184,10 @@ BUILD_WITH_CRYPTO := false
+ BOARD_USES_GENERIC_AUDIO ?= true
+ 
+ # Wifi&Bluetooth
+-BOARD_HAVE_BLUETOOTH ?= true
+-BLUETOOTH_USE_BPLUS ?= false
+-BOARD_HAVE_BLUETOOTH_BCM ?= false
+-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR ?= device/rockchip/$(TARGET_BOARD_PLATFORM)/bluetooth
++# The Vortex SD test product excludes Bluetooth.
++BOARD_HAVE_BLUETOOTH := false
++BLUETOOTH_USE_BPLUS := false
++BOARD_HAVE_BLUETOOTH_BCM := false
+ include device/rockchip/common/wifi_bt_common.mk
+ 
+ #Camera flash
+diff --git a/device.mk b/device.mk
+index cd0147c..ed04539 100755
+--- a/device.mk
++++ b/device.mk
+@@ -394,12 +394,7 @@ PRODUCT_PACKAGES += \
+     displayd
+ endif
+ 
+-########################################################
+-# build with drmservice
+-########################################################
+-ifeq ($(strip $(BUILD_WITH_DRMSERVICE)),true)
+-PRODUCT_PACKAGES += drmservice
+-endif
++# SD-only test: no vendor drmservice provisioning package.
+ 
+ ########################################################
+ # this product has GPS or not
+@@ -464,13 +459,7 @@ PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/proprietary/readahead/readahead_list.txt:root/readahead_list.txt
+ endif
+ 
+-#whtest for bin
+-PRODUCT_COPY_FILES += \
+-    $(LOCAL_PATH)/whtest.sh:system/bin/whtest.sh
+-
+-# for preinstall
+-PRODUCT_COPY_FILES += \
+-    $(LOCAL_PATH)/preinstall_cleanup.sh:system/bin/preinstall_cleanup.sh
++# SD-only test: omit factory remount/cleanup scripts.
+     
+ $(call inherit-product-if-exists, external/wlan_loader/wifi-firmware.mk)
+ 
+@@ -520,13 +509,7 @@ PRODUCT_COPY_FILES += \
+     $(call copyNfcFirmware, BCM43341NFCB0_002.001.009.0021.0000_Generic_PreI2C_NCD_Signed_configdata.ncd)
+ endif
+ 
+-# for realtek bluetooth
+-PRODUCT_PACKAGES += \
+-    bluetooth_rtk.default \
+-    libbt-vendor.so \
+-    libbt-vendor_uart.so \
+-    libbt-vendor_usb.so \
+-    bt_vendor.conf
++# SD-only test: no Bluetooth HAL/vendor packages.
+ #include hardware/realtek/rtkbt/rtkbt.mk
+ #$(call inherit-product, hardware/realtek/rtkbt/rtkbt.mk)
+ 
+diff --git a/init.connectivity.rc b/init.connectivity.rc
+index ddabcda..43af986 100755
+--- a/init.connectivity.rc
++++ b/init.connectivity.rc
+@@ -1,35 +1,7 @@
+ 
+ on boot
+ 
+-# for bluetooth
+-    # change back to bluetooth from system
+-    chown bluetooth net_bt_stack /data/misc/bluetooth
+-    mkdir /data/misc/bluedroid 0770 bluetooth net_bt_stack
+-    # bluetooth LPM
+-    chown bluetooth net_bt_stack /proc/bluetooth/sleep/lpm
+-    chown bluetooth net_bt_stack /proc/bluetooth/sleep/btwrite    
+-
+-#   insmod /system/lib/modules/rtk_btusb.ko
+-    chmod 0660 /dev/rtk_btusb
+-    chown bluetooth net_bt_stack /dev/rtk_btusb
+-
+-    # bluetooth MAC address programming
+-    chown bluetooth net_bt_stack ro.bt.bdaddr_path
+-    chown bluetooth net_bt_stack /system/etc/bluetooth
+-    chown bluetooth net_bt_stack /data/misc/bluetooth
+-    setprop ro.bt.bdaddr_path "/data/misc/bluetooth/bdaddr"
+-
+-    chmod 0660 /dev/ttyS0
+-    chmod 0660 /dev/ttyS1
+-    chmod 0660 /dev/vflash
+-    chmod 0664 /dev/vendor_storage
+-    chown bluetooth net_bt_stack /dev/vflash
+-    chown bluetooth net_bt_stack /dev/vendor_storage
+-    chown bluetooth net_bt_stack /dev/ttyS1
+-    chown bluetooth net_bt_stack /dev/ttyS0
+-    chown bluetooth net_bt_stack /sys/class/rfkill/rfkill0/type
+-    chown bluetooth net_bt_stack /sys/class/rfkill/rfkill0/state
+-    chmod 0664 /sys/class/rfkill/rfkill0/state
++    # The Vortex SD test product excludes Bluetooth initialization.
+ 
+ # for wifi
+ #   mt7601u
+@@ -170,8 +142,4 @@ service wifiservice /system/bin/wifiservice
+     disabled
+     oneshot
+ 
+-service btservice /system/bin/btservice
+-    class main
+-    user root
+-    disabled
+-    oneshot
++# SD-only test: no Bluetooth service.
+diff --git a/init.rk30board.rc b/init.rk30board.rc
+index 49058d7..2056b45 100755
+--- a/init.rk30board.rc
++++ b/init.rk30board.rc
+@@ -5,7 +5,7 @@ import init.box.samba.rc
+ import init.${ro.board.platform}.rc
+ import init.${ro.target.product}.rc
+ import init.car.rc
+-import init.optee.rc
++# SD-only test: do not import OP-TEE raw-storage services.
+ on post-fs
+     insmod /system/lib/modules/ump.ko
+     insmod /system/lib/modules/mali.ko
+@@ -234,9 +234,7 @@ on property:persist.sys.abc_switch=1
+ on property:persist.sys.abc_switch=0
+     stop abc
+ 
+-service drmservice /system/bin/drmservice
+-        class main
+-        oneshot
++# SD-only test: no automatic vendor drmservice provisioning.
+ 
+ ##$_rbox_$_modify_$_shenzhenyi_20160312
+ ##$_rbox_$_modify_$_begin
+@@ -255,9 +253,7 @@ service pppoe_start /system/bin/pppoe-start
+     disabled
+     oneshot
+ 
+-service bplus_helper  /system/bin/bplus_helper
+-    class main
+-    oneshot
++# SD-only test: no Bluetooth helper.
+ 
+ service pppoe_stop /system/bin/pppoe-stop
+     disabled
+diff --git a/init.rockchip.rc b/init.rockchip.rc
+index aa959bb..087ad04 100755
+--- a/init.rockchip.rc
++++ b/init.rockchip.rc
+@@ -56,10 +56,6 @@ on post-fs-data
+ on boot
+     setprop UserVolumeLabel "RockChips"
+ 
+-    # bluetooth
+-    # change back to bluetooth from system
+-    chown bluetooth net_bt_stack /data/misc/bluetooth
+-
+     # power down interface
+     # write /sys/class/rfkill/rfkill0/state 0
+ 
+diff --git a/sepolicy/bluetooth.te b/sepolicy/bluetooth.te
+index f4a1431..1180983 100644
+--- a/sepolicy/bluetooth.te
++++ b/sepolicy/bluetooth.te
+@@ -1,9 +1 @@
+-# /sys/class/rfkill/rfkill0/state
+-allow bluetooth sysfs:file write;
+-allow bluetooth serial_device:chr_file rw_file_perms;
+-allow bluetooth vflash_device:chr_file rw_file_perms;
+-allow bluetooth rtkbt_device:chr_file rw_file_perms;
+-allow bluetooth surfaceflinger:fifo_file rw_file_perms;
+-allow bluetooth storage_device:chr_file rw_file_perms;
+-allow bluetooth gpu_device:dir search;
+-allow bluetooth gpu_device:chr_file { rw_file_perms ioctl };
++# The Vortex SD test product excludes Bluetooth and its vendor grants.
+diff --git a/tv/tv_base.mk b/tv/tv_base.mk
+index fb50e18..e73db1d 100644
+--- a/tv/tv_base.mk
++++ b/tv/tv_base.mk
+@@ -84,7 +84,6 @@ PRODUCT_PACKAGES += \
+ 
+ # From build/target/product/generic_no_telephony.mk
+ PRODUCT_PACKAGES += \
+-    Bluetooth \
+     SystemUI \
+     librs_jni \
+     audio.primary.default \
+diff --git a/ueventd.rockchip.rc b/ueventd.rockchip.rc
+index 609fb54..629d903 100755
+--- a/ueventd.rockchip.rc
++++ b/ueventd.rockchip.rc
+@@ -52,12 +52,7 @@
+ #/dev/ttyS3                0600   gps        gps
+ /dev/gps                  0660   gps        gps
+ 
+-# for BT
+-/dev/vflash               0660   bluetooth  net_bt_stack
+-/dev/ttyS0                0660   bluetooth  net_bt_stack
+-/dev/ttyS1                0660   bluetooth  net_bt_stack
+-#/dev/ttyS2                0660   bluetooth  net_bt_stack
+-/dev/rtk_btusb            0660   bluetooth  net_bt_stack
++# SD-only test: no Bluetooth device ownership or vflash grant.
+ 
+ # for radio
+ /dev/ttyUSB0              0660   radio		radio
+@@ -104,7 +99,6 @@
+ /dev/vpu-enc    0600    media   media
+ /dev/vpu-dec    0660    media   graphics
+ /dev/mem    0600    media   media
+-/dev/ttyBT0 0660    bluetooth   bluetooth
+ /dev/ttyGNSS0   0600    gps gps
+ /dev/radio0     0660    audio   audio
+ /dev/tadi       0660    system  trace
+diff --git a/wifi_bt_common.mk b/wifi_bt_common.mk
+index e5fbda3..7cee149 100644
+--- a/wifi_bt_common.mk
++++ b/wifi_bt_common.mk
+@@ -17,26 +17,11 @@ WIFI_DRIVER_FW_PATH_P2P     := "/system/etc/firmware/fw_bcm4329_p2p.bin"
+ WIFI_DRIVER_FW_PATH_AP      := "/system/etc/firmware/fw_bcm4329_apsta.bin"
+ endif
+ 
+-# bluetooth support
+-ifeq ($(strip $(BOARD_CONNECTIVITY_VENDOR)), Broadcom)
+-BOARD_HAVE_BLUETOOTH := true
+-BOARD_HAVE_BLUETOOTH_BCM := true
+-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/rockchip/$(TARGET_BOARD_PLATFORM)/bluetooth
+-
+-ifeq ($(strip $(PRODUCT_BUILD_MODULE)), px5car)
+-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/rockchip/px5/bluetooth
+-endif
+-
+-ifeq ($(strip $(PRODUCT_BUILD_MODULE)), px3car)
+-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/rockchip/px3/bluetooth
+-endif
+-
+-ifeq ($(strip $(BOARD_CONNECTIVITY_MODULE)), ap6xxx_gps)
+-BLUETOOTH_USE_BPLUS := true
++# The Vortex SD test product excludes Bluetooth; Wi-Fi defaults above are unchanged.
++BOARD_HAVE_BLUETOOTH := false
++BOARD_HAVE_BLUETOOTH_BCM := false
++BOARD_HAVE_BLUETOOTH_RTK := false
++BOARD_HAVE_BLUETOOTH_RTK_COEX := false
++BLUETOOTH_USE_BPLUS := false
+ BLUETOOTH_ENABLE_FM := false
+-endif
+-endif
+-
+-BOARD_HAVE_BLUETOOTH_RTK := true
+-BOARD_HAVE_BLUETOOTH_RTK_COEX := true
+-
++MT6622_BT_SUPPORT := false

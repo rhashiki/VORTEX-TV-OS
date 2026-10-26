@@ -1,0 +1,6 @@
+50:  *	__init_begin = .;
+55:  *	__init_end = .;
+480:    . = ALIGN(8); *(.text.hot) *(.text) *(.ref.text) *(.devinit.text) *(.devexit.text) *(.cpuinit.text) *(.cpuexit.text) *(.text.unlikely)
+517:  __init_begin = .;
+534:  . = ALIGN(8); .init.text : AT(ADDR(.init.text) - 0) { _sinittext = .; *(.init.text) *(.meminit.text) _einittext = .; }
+573:  __init_end = .;

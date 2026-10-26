@@ -24,6 +24,9 @@ fstab resultante. [Relatório da etapa](../docs/VALIDATION_2026-10-25_SD.md).
 Isso implementa preparação de fontes, sem demonstrar a imagem ou o boot.
 Também foram compilados [kernel ARM e DTB SDK genéricos](sdcard/KERNEL_BUILD.md)
 em ensaio separado, sem plataforma Android ou layout de mídia.
+O [perfil SDK SD seguinte](sdcard/SD_REFERENCE.md) confere a correspondência
+do controlador e retira caminhos adicionais de provisionamento/fábrica nas
+fontes. Essas restrições ainda precisam ser verificadas na imagem completa.
 Plataforma/kernel/loader e o ramdisk completo ainda exigem integração; recovery
 não deve fazer parte da primeira mídia enquanto seus caminhos não forem
 auditados. A coleta automática citada abaixo continua pendente.

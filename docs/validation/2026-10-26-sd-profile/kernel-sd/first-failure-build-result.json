@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "make",
+    "-j2",
+    "O=/workspace/build01-sd-next/kernel-sd/out",
+    "ARCH=arm",
+    "CROSS_COMPILE=/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-",
+    "CC=python3 /workspace/vortex-build/tools/legacy_kernel_gcc_wrapper.py /workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-gcc",
+    "HOSTCFLAGS=-O2 -fcommon",
+    "Image",
+    "rk3229-sdk-sd-reference.dtb"
+  ],
+  "started_utc": "2026-10-26T10:06:53.691915+00:00",
+  "finished_utc": "2026-10-26T10:12:48.520539+00:00",
+  "exit_code": 2
+}

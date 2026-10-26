@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "scope": "static kernel source relationships; no hardware validation",
+  "source_commit": "6c04d006ae881944d32c19e68b992d0bd5ab4fde",
+  "files": [
+    {
+      "path": "drivers/soc/rockchip/Makefile",
+      "sha256": "7c219a535e6aaabb6a14ca727590735999c6354b675c5e5305f3b39dca7312eb",
+      "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/drivers/soc/rockchip/Makefile",
+      "unchanged_against_pinned_source": true
+    },
+    {
+      "path": "drivers/soc/rockchip/sdmmc_vendor_storage.c",
+      "sha256": "efb96da86193e35e3b32c9b53d77ba593f16871496fad7547f98ed67bd6984de",
+      "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/drivers/soc/rockchip/sdmmc_vendor_storage.c",
+      "unchanged_against_pinned_source": true
+    },
+    {
+      "path": "drivers/soc/rockchip/rk_vendor_storage.c",
+      "sha256": "a5992afd9f922d74e0530166d8831845860a6d91fd5e946fe3d9d6a3578ae4f6",
+      "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/drivers/soc/rockchip/rk_vendor_storage.c",
+      "unchanged_against_pinned_source": true
+    },
+    {
+      "path": "drivers/mmc/host/rk_sdmmc_ops.c",
+      "sha256": "eaa8561bb8c58c4194a3da470463ed8b122bb4c27b502f65d1287bef08bf72bb",
+      "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/drivers/mmc/host/rk_sdmmc_ops.c",
+      "unchanged_against_pinned_source": true
+    },
+    {
+      "path": "drivers/mmc/host/rk_sdmmc.c",
+      "sha256": "bf22ba04e0061e6df4572768bb8a1ee095f8939ef5a2f3b0828b98b2554ef820",
+      "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/drivers/mmc/host/rk_sdmmc.c",
+      "unchanged_against_pinned_source": true
+    },
+    {
+      "path": "drivers/mmc/card/block.c",
+      "sha256": "a49dc6cfd7f49428f713c77268c41bcbc5b1f73cbba048d7aa75560f5b6b9da3",
+      "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/drivers/mmc/card/block.c",
+      "unchanged_against_pinned_source": true
+    },
+    {
+      "path": "arch/arm/mach-rockchip/common.c",
+      "sha256": "e61e544982ad63557c8c0b89e19ec432de6b374435ab4b9ae345b83c9405b9b0",
+      "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/mach-rockchip/common.c",
+      "unchanged_against_pinned_source": true
+    },
+    {
+      "path": "arch/arm/mach-rockchip/rk322x.c",
+      "sha256": "b31c2b3677d54c446f7661dce050ae9b1e00855419b97d9d0c77ac14bc3244a4",
+      "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/mach-rockchip/rk322x.c",
+      "unchanged_against_pinned_source": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "vendor-backend-still-built",
+      "file": "drivers/soc/rockchip/Makefile",
+      "line": 4,
+      "detail": "sdmmc_vendor_storage.o is controlled by MMC_DW_ROCKCHIP, not ROCKCHIP_VENDOR_STORAGE. Disabling the latter does not remove the backend."
+    },
+    {
+      "id": "vendor-backend-write-interface",
+      "file": "drivers/soc/rockchip/sdmmc_vendor_storage.c",
+      "lines": [
+        398,
+        577,
+        595,
+        608
+      ],
+      "detail": "The device initcall starts a thread that reads eMMC vendor records. Successful initialization registers /dev/vendor_storage; ioctls support vendor data and IDB writes. Initialization itself was not found to write vendor records in this C path."
+    },
+    {
+      "id": "no-card-guard",
+      "file": "drivers/mmc/host/rk_sdmmc_ops.c",
+      "lines": [
+        28,
+        130,
+        143
+      ],
+      "detail": "this_card starts NULL. rk_emmc_transfer returns -EIO before requesting I/O if no card is registered."
+    },
+    {
+      "id": "emmc-card-registration",
+      "file": "drivers/mmc/card/block.c",
+      "lines": [
+        2887,
+        2888,
+        2889
+      ],
+      "detail": "mmc_blk_probe assigns this_card only if the host restrict_caps includes RESTRICT_CARD_TYPE_EMMC. Generic SD and SDIO hosts are not assigned by this branch."
+    },
+    {
+      "id": "host-capabilities-from-dtb",
+      "file": "drivers/mmc/host/rk_sdmmc.c",
+      "lines": [
+        3442,
+        3444,
+        3446
+      ],
+      "detail": "supports-sd, supports-sdio and supports-emmc DT properties determine these host restriction bits."
+    },
+    {
+      "id": "force-jtag-cleared-without-marker",
+      "file": "drivers/mmc/host/rk_sdmmc.c",
+      "lines": [
+        3457,
+        3458,
+        3468,
+        3469
+      ],
+      "detail": "Without rockchip_jtag_enabled, the RK322X branch clears force_jtag in RK322X_GRF_SOC_CON6. Keeping the inherited rockchip_jtag marker skips this branch."
+    }
+  ],
+  "assessment": "With the intended DTB disabling the eMMC node and no other EMMC-capable active node, this_card is expected to stay NULL and backend I/O to return -EIO. This is conditional static evidence, not proof of physical flash preservation. Unknown module/init/bootloader paths remain unaudited."
+}

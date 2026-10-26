@@ -1,0 +1,7 @@
+{
+  "workspace_capacity_bytes": 33770192896,
+  "workspace_available_bytes": 15262584832,
+  "aosp_complete_tree_present": false,
+  "full_android_build": "not_performed",
+  "note": "Shared host capacity at this check; not a validated requirement for Nougat. Compatible complete Android sources are still unresolved."
+}

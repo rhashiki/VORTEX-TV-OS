@@ -1,0 +1,18 @@
+{
+  "snapshot_manifest_files_verified": 44,
+  "all_artifact_sizes_and_hashes_verified": true,
+  "compiled_source_files_match_replay": 34,
+  "new_dts_matches": true,
+  "repository_profile_inputs_match_build_snapshot": true,
+  "config_and_dtb_match_cross_auditor": true,
+  "base_reference_Image_unchanged_sha256": "d91b62b9d7339824be27a7b9196b4ce35233490b3c87c4cdeac6205499ecf846",
+  "independent_ELF_symbols": {
+    "cpu_up": "0xc0923b48",
+    "_cpu_up": "0xc0923954",
+    "__cpu_up": "0xc0923074",
+    "dvfs_temp_limit": "0xc003825c",
+    "__init_begin": "0xc0d20000",
+    "__init_end": "0xc0d80400"
+  },
+  "independent_ELF_NAND_exports_absent": true
+}

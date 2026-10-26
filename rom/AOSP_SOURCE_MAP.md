@@ -44,6 +44,11 @@ Também foram compilados [kernel ARM e DTB SDK de referência](sdcard/KERNEL_BUI
 em ensaio separado. A configuração genérica não representa o perfil final SD
 ou a placa R329Q_V8.0; esses componentes não completam o BSP Android.
 
+O [perfil SDK SD posterior](sdcard/SD_REFERENCE.md) corrige a combinação de
+fontes: o fstab comunitário `ff500000` não corresponde ao nó SD `30000000`
+desse kernel. O perfil acrescenta restrições de configuração/DTB e conferência
+cruzada, sem selecionar uma base Android completa ou identificar a placa.
+
 ## Verificações físicas obrigatórias
 
 O proprietário já forneceu todos os dados disponíveis e não consegue obter

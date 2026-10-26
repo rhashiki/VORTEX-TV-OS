@@ -74,6 +74,35 @@ class SdFstabChecks(unittest.TestCase):
                                         if not line.startswith(("/devices/", "/dev/block/zram"))))
         self.assertEqual(self.run_cli()[0], 0)
 
+    def test_rk3229_sdk_reference_must_be_explicit_and_rejects_old_controller(self):
+        # This is a source combination check, not identification of a TV Box.
+        profile = "rk3229-sdk-sd-reference"
+        self.assertEqual(AUDIT.inspect(self.fstab, profile=profile)["status"], "blocked")
+        self.fstab.write_text(FSTAB.replace("ff500000.rksdmmc", "30000000.rksdmmc"))
+        self.assertEqual(self.run_cli()[0], 2)
+        report = AUDIT.inspect(self.fstab, profile=profile)
+        self.assertEqual(report["status"], "fstab_only")
+        self.assertEqual(report["external_controller"], "30000000.rksdmmc")
+        self.assertEqual(report["hardware_validation"], "not_performed")
+        result = subprocess.run([sys.executable, str(SCRIPT), str(self.fstab),
+                                 "--profile", profile, "--json"],
+                                capture_output=True, text=True, timeout=5)
+        self.assertEqual(result.returncode, 0)
+
+    def test_sdk_profile_still_rejects_emmc_and_boot_sd_automount(self):
+        for source in ("30020000.rksdmmc", "ff500000.rksdmmc"):
+            text = FSTAB.replace("ff500000.rksdmmc", "30000000.rksdmmc")
+            text = text.replace("30000000.rksdmmc/by-name/userdata", source + "/by-name/userdata")
+            self.fstab.write_text(text)
+            self.assertEqual(AUDIT.inspect(self.fstab, profile="rk3229-sdk-sd-reference")["status"], "blocked")
+        self.fstab.write_text(FSTAB.replace("ff500000.rksdmmc", "30000000.rksdmmc") +
+                             "/devices/30000000.rksdmmc/mmc_host* auto auto defaults voldmanaged=sdcard1:auto\n")
+        self.assertEqual(AUDIT.inspect(self.fstab, profile="rk3229-sdk-sd-reference")["status"], "blocked")
+
+    def test_unknown_profile_is_rejected_instead_of_accepting_arbitrary_controller(self):
+        with self.assertRaises(ValueError):
+            AUDIT.inspect(self.fstab, profile="whatever-device")
+
     def test_internal_data_sources_are_blocked(self):
         for replacement in ("/dev/block/platform/ff520000.rksdmmc/by-name/userdata",
                             "/dev/block/rknand_userdata", "/dev/block/mmcblk0p7"):

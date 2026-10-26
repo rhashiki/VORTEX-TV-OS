@@ -1,0 +1,87 @@
+diff --git a/drivers/net/ethernet/rockchip/eth_mac.c b/drivers/net/ethernet/rockchip/eth_mac.c
+index 51a9b325..2af996c0 100755
+--- a/drivers/net/ethernet/rockchip/eth_mac.c
++++ b/drivers/net/ethernet/rockchip/eth_mac.c
+@@ -32,10 +32,13 @@
+ 
+ #define WLAN_MAC_FILE "/data/misc/wifi/wlan_mac"
+ 
++#ifdef CONFIG_RK_NAND
+ extern char GetSNSectorInfo(char * pbuf);
++#endif
+ 
+ int eth_mac_read_from_IDB(u8 *mac)
+ {
++#ifdef CONFIG_RK_NAND
+ 	int i;
+ 	char *tempBuf = kmalloc(512, GFP_KERNEL);
+ 
+@@ -56,6 +59,9 @@ int eth_mac_read_from_IDB(u8 *mac)
+ 	kfree(tempBuf);
+ 
+ 	return 0;
++#else
++	return -EOPNOTSUPP;
++#endif
+ }
+ 
+ int eth_mac_idb(u8 *eth_mac)
+diff --git a/drivers/usb/gadget/f_mass_storage.c b/drivers/usb/gadget/f_mass_storage.c
+index 4bcca7ce..d82104bd 100644
+--- a/drivers/usb/gadget/f_mass_storage.c
++++ b/drivers/usb/gadget/f_mass_storage.c
+@@ -1957,11 +1957,14 @@ typedef struct tagLoaderParam {
+ } PARM_INFO;
+ #define PARM_TAG			0x4D524150
+ #define MSC_EXT_DBG			1
++#ifdef CONFIG_RK_NAND
+ extern int GetParamterInfo(char *pbuf, int len);
++#endif
+ 
+ /* the buf is bh->buf,it is large enough. */
+ static char *get_param_tag(char *buf, const char *tag)
+ {
++#ifdef CONFIG_RK_NAND
+ 	PARM_INFO *pi;
+ 	int i;
+ 	char *pp = buf + 256;
+@@ -1995,6 +1998,9 @@ error_out:
+ 	if (spp == pp)
+ 		return NULL;
+ 	return spp;
++#else
++	return NULL;
++#endif
+ }
+ 
+ static int do_get_product_name(int ret, char *buf)
+diff --git a/net/rfkill/rfkill-wlan.c b/net/rfkill/rfkill-wlan.c
+index 9d64d5c4..0589ae79 100755
+--- a/net/rfkill/rfkill-wlan.c
++++ b/net/rfkill/rfkill-wlan.c
+@@ -558,7 +558,9 @@ EXPORT_SYMBOL(rockchip_wifi_reset);
+ #include <linux/etherdevice.h>
+ #include <linux/errno.h>
+ u8 wifi_custom_mac_addr[6] = {0,0,0,0,0,0};
++#ifdef CONFIG_RK_NAND
+ extern char GetSNSectorInfo(char * pbuf);
++#endif
+ 
+ //#define ENABLE_WIFI_RAND_MAC
+ #ifdef ENABLE_WIFI_RAND_MAC
+@@ -641,6 +643,7 @@ int rockchip_wifi_mac_addr(unsigned char *buf)
+ 			return -1;
+ 	}
+ 
++#ifdef CONFIG_RK_NAND
+     // from vflash
+     if(is_zero_ether_addr(wifi_custom_mac_addr)) {
+         int i;
+@@ -655,6 +658,7 @@ int rockchip_wifi_mac_addr(unsigned char *buf)
+         }
+     }
+ 
++#endif
+     sprintf(mac_buf,"%02x:%02x:%02x:%02x:%02x:%02x",wifi_custom_mac_addr[0],wifi_custom_mac_addr[1],
+     wifi_custom_mac_addr[2],wifi_custom_mac_addr[3],wifi_custom_mac_addr[4],wifi_custom_mac_addr[5]);
+     LOG("falsh wifi_custom_mac_addr=[%s]\n", mac_buf);

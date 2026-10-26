@@ -1,0 +1,244 @@
+
+/workspace/build01-sd/kernel-work/out/vmlinux:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+c003825c <dvfs_temp_limit>:
+c003825c:	e5903054 	ldr	r3, [r0, #84]	; 0x54
+c0038260:	e1530001 	cmp	r3, r1
+c0038264:	c0433001 	subgt	r3, r3, r1
+c0038268:	d0413003 	suble	r3, r1, r3
+c003826c:	e3530001 	cmp	r3, #1
+c0038270:	d12fff1e 	bxle	lr
+c0038274:	e92d47f0 	push	{r4, r5, r6, r7, r8, r9, sl, lr}
+c0038278:	e1a05001 	mov	r5, r1
+c003827c:	e1a04000 	mov	r4, r0
+c0038280:	ebfff96a 	bl	c0036830 <rockchip_pm_get_policy>
+c0038284:	e3500000 	cmp	r0, #0
+c0038288:	1a000011 	bne	c00382d4 <dvfs_temp_limit+0x78>
+c003828c:	e59430d8 	ldr	r3, [r4, #216]	; 0xd8
+c0038290:	e3530000 	cmp	r3, #0
+c0038294:	15942024 	ldrne	r2, [r4, #36]	; 0x24
+c0038298:	15842040 	strne	r2, [r4, #64]	; 0x40
+c003829c:	1a000004 	bne	c00382b4 <dvfs_temp_limit+0x58>
+c00382a0:	e8bd87f0 	pop	{r4, r5, r6, r7, r8, r9, sl, pc}
+c00382a4:	e5931000 	ldr	r1, [r3]
+c00382a8:	e2833008 	add	r3, r3, #8
+c00382ac:	e1510005 	cmp	r1, r5
+c00382b0:	35842040 	strcc	r2, [r4, #64]	; 0x40
+c00382b4:	e5932004 	ldr	r2, [r3, #4]
+c00382b8:	e3720002 	cmn	r2, #2
+c00382bc:	1afffff8 	bne	c00382a4 <dvfs_temp_limit+0x48>
+c00382c0:	e5941030 	ldr	r1, [r4, #48]	; 0x30
+c00382c4:	e1a00004 	mov	r0, r4
+c00382c8:	ebffff6d 	bl	c0038084 <dvfs_clk_set_rate>
+c00382cc:	e5845054 	str	r5, [r4, #84]	; 0x54
+c00382d0:	e8bd87f0 	pop	{r4, r5, r6, r7, r8, r9, sl, pc}
+c00382d4:	ebfff955 	bl	c0036830 <rockchip_pm_get_policy>
+c00382d8:	e3500001 	cmp	r0, #1
+c00382dc:	1afffffa 	bne	c00382cc <dvfs_temp_limit+0x70>
+c00382e0:	e59430dc 	ldr	r3, [r4, #220]	; 0xdc
+c00382e4:	e3530000 	cmp	r3, #0
+c00382e8:	08bd87f0 	popeq	{r4, r5, r6, r7, r8, r9, sl, pc}
+c00382ec:	e5942044 	ldr	r2, [r4, #68]	; 0x44
+c00382f0:	e1550002 	cmp	r5, r2
+c00382f4:	da00006f 	ble	c00384b8 <dvfs_temp_limit+0x25c>
+c00382f8:	e5941054 	ldr	r1, [r4, #84]	; 0x54
+c00382fc:	e1550001 	cmp	r5, r1
+c0038300:	c0452002 	subgt	r2, r5, r2
+c0038304:	c3a01000 	movgt	r1, #0
+c0038308:	ca000028 	bgt	c00383b0 <dvfs_temp_limit+0x154>
+c003830c:	e594012c 	ldr	r0, [r4, #300]	; 0x12c
+c0038310:	e200000f 	and	r0, r0, #15
+c0038314:	eb09aa6f 	bl	c02a2cd8 <__sw_hweight32>
+c0038318:	e3500000 	cmp	r0, #0
+c003831c:	0affffea 	beq	c00382cc <dvfs_temp_limit+0x70>
+c0038320:	e5943128 	ldr	r3, [r4, #296]	; 0x128
+c0038324:	e3530000 	cmp	r3, #0
+c0038328:	0affffe7 	beq	c00382cc <dvfs_temp_limit+0x70>
+c003832c:	e1550003 	cmp	r5, r3
+c0038330:	ba00007c 	blt	c0038528 <dvfs_temp_limit+0x2cc>
+c0038334:	e5942040 	ldr	r2, [r4, #64]	; 0x40
+c0038338:	e594304c 	ldr	r3, [r4, #76]	; 0x4c
+c003833c:	e1520003 	cmp	r2, r3
+c0038340:	1a000078 	bne	c0038528 <dvfs_temp_limit+0x2cc>
+c0038344:	e59f7294 	ldr	r7, [pc, #660]	; c00385e0 <dvfs_temp_limit+0x384>
+c0038348:	e3e06000 	mvn	r6, #0
+c003834c:	e59f9290 	ldr	r9, [pc, #656]	; c00385e4 <dvfs_temp_limit+0x388>
+c0038350:	e2848f4b 	add	r8, r4, #300	; 0x12c
+c0038354:	e2862001 	add	r2, r6, #1
+c0038358:	e3a01004 	mov	r1, #4
+c003835c:	e1a00008 	mov	r0, r8
+c0038360:	eb0964f3 	bl	c0291734 <_find_next_bit_le>
+c0038364:	e5973000 	ldr	r3, [r7]
+c0038368:	e1a06000 	mov	r6, r0
+c003836c:	e1500003 	cmp	r0, r3
+c0038370:	2affffd5 	bcs	c00382cc <dvfs_temp_limit+0x70>
+c0038374:	e3560000 	cmp	r6, #0
+c0038378:	e286301f 	add	r3, r6, #31
+c003837c:	e5992000 	ldr	r2, [r9]
+c0038380:	a1a03006 	movge	r3, r6
+c0038384:	e1a032c3 	asr	r3, r3, #5
+c0038388:	e7923103 	ldr	r3, [r2, r3, lsl #2]
+c003838c:	e206201f 	and	r2, r6, #31
+c0038390:	e1a03233 	lsr	r3, r3, r2
+c0038394:	e3130001 	tst	r3, #1
+c0038398:	0affffed 	beq	c0038354 <dvfs_temp_limit+0xf8>
+c003839c:	eb24b370 	bl	c0965164 <cpu_down>
+c00383a0:	eaffffeb 	b	c0038354 <dvfs_temp_limit+0xf8>
+c00383a4:	e493c008 	ldr	ip, [r3], #8
+c00383a8:	e15c0002 	cmp	ip, r2
+c00383ac:	31a01000 	movcc	r1, r0
+c00383b0:	e5930004 	ldr	r0, [r3, #4]
+c00383b4:	e3700002 	cmn	r0, #2
+c00383b8:	1afffff9 	bne	c00383a4 <dvfs_temp_limit+0x148>
+c00383bc:	e3510000 	cmp	r1, #0
+c00383c0:	0affffd1 	beq	c003830c <dvfs_temp_limit+0xb0>
+c00383c4:	e5943040 	ldr	r3, [r4, #64]	; 0x40
+c00383c8:	e1510003 	cmp	r1, r3
+c00383cc:	2affffce 	bcs	c003830c <dvfs_temp_limit+0xb0>
+c00383d0:	e594204c 	ldr	r2, [r4, #76]	; 0x4c
+c00383d4:	e0433001 	sub	r3, r3, r1
+c00383d8:	e5843040 	str	r3, [r4, #64]	; 0x40
+c00383dc:	e1530002 	cmp	r3, r2
+c00383e0:	e5943050 	ldr	r3, [r4, #80]	; 0x50
+c00383e4:	35842040 	strcc	r2, [r4, #64]	; 0x40
+c00383e8:	e3530000 	cmp	r3, #0
+c00383ec:	0a000002 	beq	c00383fc <dvfs_temp_limit+0x1a0>
+c00383f0:	e5942040 	ldr	r2, [r4, #64]	; 0x40
+c00383f4:	e1530002 	cmp	r3, r2
+c00383f8:	35843040 	strcc	r3, [r4, #64]	; 0x40
+c00383fc:	e5941030 	ldr	r1, [r4, #48]	; 0x30
+c0038400:	e1a00004 	mov	r0, r4
+c0038404:	ebffff1e 	bl	c0038084 <dvfs_clk_set_rate>
+c0038408:	e59f01d8 	ldr	r0, [pc, #472]	; c00385e8 <dvfs_temp_limit+0x38c>
+c003840c:	ebfffc7d 	bl	c0037608 <clk_get_dvfs_node>
+c0038410:	e59f31d4 	ldr	r3, [pc, #468]	; c00385ec <dvfs_temp_limit+0x390>
+c0038414:	e1a06000 	mov	r6, r0
+c0038418:	e59f21d0 	ldr	r2, [pc, #464]	; c00385f0 <dvfs_temp_limit+0x394>
+c003841c:	e5933000 	ldr	r3, [r3]
+c0038420:	e1a03823 	lsr	r3, r3, #16
+c0038424:	e1a03803 	lsl	r3, r3, #16
+c0038428:	e1530002 	cmp	r3, r2
+c003842c:	1affffb6 	bne	c003830c <dvfs_temp_limit+0xb0>
+c0038430:	ebfff72b 	bl	c00360e4 <rockchip_get_system_status>
+c0038434:	e59f31b8 	ldr	r3, [pc, #440]	; c00385f4 <dvfs_temp_limit+0x398>
+c0038438:	e1100003 	tst	r0, r3
+c003843c:	0affffb2 	beq	c003830c <dvfs_temp_limit+0xb0>
+c0038440:	e59f11b0 	ldr	r1, [pc, #432]	; c00385f8 <dvfs_temp_limit+0x39c>
+c0038444:	e3a00000 	mov	r0, #0
+c0038448:	eb1b6249 	bl	c0710d74 <clk_get>
+c003844c:	e2507000 	subs	r7, r0, #0
+c0038450:	0a000001 	beq	c003845c <dvfs_temp_limit+0x200>
+c0038454:	e3770a01 	cmn	r7, #4096	; 0x1000
+c0038458:	9a000051 	bls	c00385a4 <dvfs_temp_limit+0x348>
+c003845c:	e59f1198 	ldr	r1, [pc, #408]	; c00385fc <dvfs_temp_limit+0x3a0>
+c0038460:	e3a00000 	mov	r0, #0
+c0038464:	eb1b6242 	bl	c0710d74 <clk_get>
+c0038468:	e2507000 	subs	r7, r0, #0
+c003846c:	0a000001 	beq	c0038478 <dvfs_temp_limit+0x21c>
+c0038470:	e3770a01 	cmn	r7, #4096	; 0x1000
+c0038474:	9a00004f 	bls	c00385b8 <dvfs_temp_limit+0x35c>
+c0038478:	e59f1180 	ldr	r1, [pc, #384]	; c0038600 <dvfs_temp_limit+0x3a4>
+c003847c:	e3a00000 	mov	r0, #0
+c0038480:	eb1b623b 	bl	c0710d74 <clk_get>
+c0038484:	e2507000 	subs	r7, r0, #0
+c0038488:	0a000001 	beq	c0038494 <dvfs_temp_limit+0x238>
+c003848c:	e3770a01 	cmn	r7, #4096	; 0x1000
+c0038490:	9a00004d 	bls	c00385cc <dvfs_temp_limit+0x370>
+c0038494:	e59f3168 	ldr	r3, [pc, #360]	; c0038604 <dvfs_temp_limit+0x3a8>
+c0038498:	e1a00006 	mov	r0, r6
+c003849c:	e5961030 	ldr	r1, [r6, #48]	; 0x30
+c00384a0:	e5863040 	str	r3, [r6, #64]	; 0x40
+c00384a4:	ebfffef6 	bl	c0038084 <dvfs_clk_set_rate>
+c00384a8:	e59f3158 	ldr	r3, [pc, #344]	; c0038608 <dvfs_temp_limit+0x3ac>
+c00384ac:	e3a02001 	mov	r2, #1
+c00384b0:	e5c32024 	strb	r2, [r3, #36]	; 0x24
+c00384b4:	eaffff94 	b	c003830c <dvfs_temp_limit+0xb0>
+c00384b8:	e5941040 	ldr	r1, [r4, #64]	; 0x40
+c00384bc:	e594c024 	ldr	ip, [r4, #36]	; 0x24
+c00384c0:	e151000c 	cmp	r1, ip
+c00384c4:	3a000003 	bcc	c00384d8 <dvfs_temp_limit+0x27c>
+c00384c8:	e59f0138 	ldr	r0, [pc, #312]	; c0038608 <dvfs_temp_limit+0x3ac>
+c00384cc:	e5d00024 	ldrb	r0, [r0, #36]	; 0x24
+c00384d0:	e3500000 	cmp	r0, #0
+c00384d4:	0affff8c 	beq	c003830c <dvfs_temp_limit+0xb0>
+c00384d8:	e0422005 	sub	r2, r2, r5
+c00384dc:	e3a00000 	mov	r0, #0
+c00384e0:	e593e004 	ldr	lr, [r3, #4]
+c00384e4:	e37e0002 	cmn	lr, #2
+c00384e8:	1a00000a 	bne	c0038518 <dvfs_temp_limit+0x2bc>
+c00384ec:	e3500000 	cmp	r0, #0
+c00384f0:	0affff85 	beq	c003830c <dvfs_temp_limit+0xb0>
+c00384f4:	e0811000 	add	r1, r1, r0
+c00384f8:	e1a00004 	mov	r0, r4
+c00384fc:	e151000c 	cmp	r1, ip
+c0038500:	95841040 	strls	r1, [r4, #64]	; 0x40
+c0038504:	8584c040 	strhi	ip, [r4, #64]	; 0x40
+c0038508:	e5941030 	ldr	r1, [r4, #48]	; 0x30
+c003850c:	ebfffedc 	bl	c0038084 <dvfs_clk_set_rate>
+c0038510:	ebffff09 	bl	c003813c <dvfs_temp_unlimit_4k>
+c0038514:	eaffff7c 	b	c003830c <dvfs_temp_limit+0xb0>
+c0038518:	e4936008 	ldr	r6, [r3], #8
+c003851c:	e1560002 	cmp	r6, r2
+c0038520:	31a0000e 	movcc	r0, lr
+c0038524:	eaffffed 	b	c00384e0 <dvfs_temp_limit+0x284>
+c0038528:	e5943044 	ldr	r3, [r4, #68]	; 0x44
+c003852c:	e1550003 	cmp	r5, r3
+c0038530:	aaffff65 	bge	c00382cc <dvfs_temp_limit+0x70>
+c0038534:	e5942040 	ldr	r2, [r4, #64]	; 0x40
+c0038538:	e594304c 	ldr	r3, [r4, #76]	; 0x4c
+c003853c:	e1520003 	cmp	r2, r3
+c0038540:	9affff61 	bls	c00382cc <dvfs_temp_limit+0x70>
+c0038544:	e59f7094 	ldr	r7, [pc, #148]	; c00385e0 <dvfs_temp_limit+0x384>
+c0038548:	e3e06000 	mvn	r6, #0
+c003854c:	e59f9090 	ldr	r9, [pc, #144]	; c00385e4 <dvfs_temp_limit+0x388>
+c0038550:	e2848f4b 	add	r8, r4, #300	; 0x12c
+c0038554:	e2862001 	add	r2, r6, #1
+c0038558:	e3a01004 	mov	r1, #4
+c003855c:	e1a00008 	mov	r0, r8
+c0038560:	eb096473 	bl	c0291734 <_find_next_bit_le>
+c0038564:	e5973000 	ldr	r3, [r7]
+c0038568:	e1a06000 	mov	r6, r0
+c003856c:	e1500003 	cmp	r0, r3
+c0038570:	2affff55 	bcs	c00382cc <dvfs_temp_limit+0x70>
+c0038574:	e3560000 	cmp	r6, #0
+c0038578:	e286301f 	add	r3, r6, #31
+c003857c:	e5992000 	ldr	r2, [r9]
+c0038580:	a1a03006 	movge	r3, r6
+c0038584:	e1a032c3 	asr	r3, r3, #5
+c0038588:	e7923103 	ldr	r3, [r2, r3, lsl #2]
+c003858c:	e206201f 	and	r2, r6, #31
+c0038590:	e1a03233 	lsr	r3, r3, r2
+c0038594:	e3130001 	tst	r3, #1
+c0038598:	1affffed 	bne	c0038554 <dvfs_temp_limit+0x2f8>
+c003859c:	eb24b9bf 	bl	c0966ca0 <cpu_up>
+c00385a0:	eaffffeb 	b	c0038554 <dvfs_temp_limit+0x2f8>
+c00385a4:	e59f1060 	ldr	r1, [pc, #96]	; c003860c <dvfs_temp_limit+0x3b0>
+c00385a8:	eb1b68c6 	bl	c07128c8 <clk_set_rate>
+c00385ac:	e1a00007 	mov	r0, r7
+c00385b0:	eb1b6146 	bl	c0710ad0 <clk_put>
+c00385b4:	eaffffa8 	b	c003845c <dvfs_temp_limit+0x200>
+c00385b8:	e59f104c 	ldr	r1, [pc, #76]	; c003860c <dvfs_temp_limit+0x3b0>
+c00385bc:	eb1b68c1 	bl	c07128c8 <clk_set_rate>
+c00385c0:	e1a00007 	mov	r0, r7
+c00385c4:	eb1b6141 	bl	c0710ad0 <clk_put>
+c00385c8:	eaffffaa 	b	c0038478 <dvfs_temp_limit+0x21c>
+c00385cc:	e59f1038 	ldr	r1, [pc, #56]	; c003860c <dvfs_temp_limit+0x3b0>
+c00385d0:	eb1b68bc 	bl	c07128c8 <clk_set_rate>
+c00385d4:	e1a00007 	mov	r0, r7
+c00385d8:	eb1b613c 	bl	c0710ad0 <clk_put>
+c00385dc:	eaffffac 	b	c0038494 <dvfs_temp_limit+0x238>
+c00385e0:	c0ddcd28 	.word	0xc0ddcd28
+c00385e4:	c097bb74 	.word	0xc097bb74
+c00385e8:	c0be342e 	.word	0xc0be342e
+c00385ec:	c0f0905c 	.word	0xc0f0905c
+c00385f0:	32280000 	.word	0x32280000
+c00385f4:	000d0010 	.word	0x000d0010
+c00385f8:	c0be48f9 	.word	0xc0be48f9
+c00385fc:	c0be4905 	.word	0xc0be4905
+c0038600:	c0be4913 	.word	0xc0be4913
+c0038604:	17d78400 	.word	0x17d78400
+c0038608:	c0f28378 	.word	0xc0f28378
+c003860c:	05f5e100 	.word	0x05f5e100

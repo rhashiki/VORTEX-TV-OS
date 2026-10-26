@@ -1,0 +1,112 @@
+[
+  {
+    "symbol": "CONFIG_BT",
+    "before": "y",
+    "after": "n"
+  },
+  {
+    "symbol": "CONFIG_BT_BNEP",
+    "before": "y",
+    "after": null
+  },
+  {
+    "symbol": "CONFIG_BT_BNEP_MC_FILTER",
+    "before": "y",
+    "after": null
+  },
+  {
+    "symbol": "CONFIG_BT_BNEP_PROTO_FILTER",
+    "before": "y",
+    "after": null
+  },
+  {
+    "symbol": "CONFIG_BT_HCIBCM203X",
+    "before": "n",
+    "after": null
+  },
+  {
+    "symbol": "CONFIG_BT_HCIBFUSB",
+    "before": "n",
+    "after": null
+  },
+  {
+    "symbol": "CONFIG_BT_HCIBPA10X",
+    "before": "n",
+    "after": null
+  },
+  {
+    "symbol": "CONFIG_BT_HCIBTSDIO",
+    "before": "n",
+    "after": null
+  },
+  {
+    "symbol": "CONFIG_BT_HCIBTUSB",
+    "before": "n",
+    "after": null
+  },
+  {
+    "symbol": "CONFIG_BT_HCIUART",
+    "before": "y",
+    "after": null
+  },
+  {
+    "symbol": "CONFIG_BT_HCIUART_3WIRE",
+    "before": "n",
+    "after": null
+  },
+  {
+    "symbol": "CONFIG_BT_HCIUART_ATH3K",
+    "before": "n",
+    "after": null
+  },
+  {
+    "symbol": "CONFIG_BT_HCIUART_BCSP",
+    "before": "n",
+    "after": null
+  },
+  {
+    "symbol": "CONFIG_BT_HCIUART_H4",
+    "before": "y",
+    "after": null
+  },
+  {
+    "symbol": "CONFIG_BT_HCIUART_LL",
+    "before": "y",
+    "after": null
+  },
+  {
+    "symbol": "CONFIG_BT_HCIVHCI",
+    "before": "n",
+    "after": null
+  },
+  {
+    "symbol": "CONFIG_BT_HIDP",
+    "before": "y",
+    "after": null
+  },
+  {
+    "symbol": "CONFIG_BT_MRVL",
+    "before": "n",
+    "after": null
+  },
+  {
+    "symbol": "CONFIG_BT_RFCOMM",
+    "before": "y",
+    "after": null
+  },
+  {
+    "symbol": "CONFIG_BT_RFCOMM_TTY",
+    "before": "y",
+    "after": null
+  },
+  {
+    "symbol": "CONFIG_BT_RTKBTUSB",
+    "before": "y",
+    "after": null
+  },
+  {
+    "symbol": "CONFIG_RK_NAND",
+    "before": "y",
+    "after": "n"
+  }
+]

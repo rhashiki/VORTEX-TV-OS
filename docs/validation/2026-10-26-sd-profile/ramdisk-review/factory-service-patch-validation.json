@@ -1,0 +1,304 @@
+{
+  "schema_version": 1,
+  "scope": "Opt-in source patches only; no complete Android build, generated product inventory, ramdisk audit, physical compatibility or internal-storage preservation demonstrated.",
+  "common": {
+    "upstream_revision": "3b1aa90ef43f9d34094739a211ad44bf9a2c0b74",
+    "local_patch_base": "651d363fd4484cedcb0d9c5032ed831c87b21f58",
+    "base_stack": [
+      "0002-common-sd-only-init.patch",
+      "0003-common-disable-internal-provisioning.patch"
+    ],
+    "patch": "/workspace/vortex-build/rom/sdcard/patches/0005-common-remove-sd-factory-services.patch",
+    "patch_sha256": "7918eb51fba32f060c1dfc69e719579ad2854342de0ad1182cc60aa2143956d5",
+    "patch_bytes": 8849,
+    "files": {
+      "BoardConfig.mk": {
+        "before_sha256": "977f62755a3459be1a3d67100af686b2cb1566afb2987e53476d6e10be7a1816",
+        "after_sha256": "81ba52349894107ce0810ef938119fa4da9a9a1112268f5ca2223ab09382acfd",
+        "replay_sha256": "81ba52349894107ce0810ef938119fa4da9a9a1112268f5ca2223ab09382acfd"
+      },
+      "device.mk": {
+        "before_sha256": "246f5e00db38cc9de0331a52a3c6da00ddcbf19ff313d9d8b6485ccb057910c9",
+        "after_sha256": "34d9927e065a44e3e4e71cad0a54b9023778b81164fd7f6203c3196c0f2f2fe4",
+        "replay_sha256": "34d9927e065a44e3e4e71cad0a54b9023778b81164fd7f6203c3196c0f2f2fe4"
+      },
+      "init.connectivity.rc": {
+        "before_sha256": "a0e389d8898dc6345471bc51de864f05338947854a7d9013d9511ee57f28f18c",
+        "after_sha256": "27b21c774519b877ccc16fdf4425c781238ae335bc8dd615a81898ffdea8e9cb",
+        "replay_sha256": "27b21c774519b877ccc16fdf4425c781238ae335bc8dd615a81898ffdea8e9cb"
+      },
+      "init.rk30board.rc": {
+        "before_sha256": "0e21ce2a5ca41379e194cbcbe0cf966e5bf369d41b8e62ca08df4b8116de771d",
+        "after_sha256": "01bb405dbdffe34b6ff0bc494dd36509504d71e2d434dd539be4af9c321f9973",
+        "replay_sha256": "01bb405dbdffe34b6ff0bc494dd36509504d71e2d434dd539be4af9c321f9973"
+      },
+      "init.rockchip.rc": {
+        "before_sha256": "78c23dae791467658b99301eaa16257faa56889b3792de85a5bac056971c472b",
+        "after_sha256": "cdc7b53a9bc001884ed75d94f942a0bf5b96cf5957eec66fbd45c88b24b98aa9",
+        "replay_sha256": "cdc7b53a9bc001884ed75d94f942a0bf5b96cf5957eec66fbd45c88b24b98aa9"
+      },
+      "sepolicy/bluetooth.te": {
+        "before_sha256": "c33d7a1d5c7fe7b60ff851961b0d82a61472c927c5b19e9f599141679f6b1f1e",
+        "after_sha256": "81c7354e226e8ff1f64530aa935eaee1756a89350cbc309370024bab57ce53fe",
+        "replay_sha256": "81c7354e226e8ff1f64530aa935eaee1756a89350cbc309370024bab57ce53fe"
+      },
+      "tv/tv_base.mk": {
+        "before_sha256": "e486de7d1dedad97e5089ea34c1463360b80d6f1f2e4e07d1eff25ae04197264",
+        "after_sha256": "57c20569918118be3d757ca7f6d8cc9d95cfdc7b39045b1c4a7dd7e2d71e736d",
+        "replay_sha256": "57c20569918118be3d757ca7f6d8cc9d95cfdc7b39045b1c4a7dd7e2d71e736d"
+      },
+      "ueventd.rockchip.rc": {
+        "before_sha256": "19c690ee226e784011f3dcfd1da1ac7457ee4889b7aba8827492fa652977b9eb",
+        "after_sha256": "ed6f14421dc2a5609dd5b7e279da999c62589c6f3008ce9f2074c060716fe9b0",
+        "replay_sha256": "ed6f14421dc2a5609dd5b7e279da999c62589c6f3008ce9f2074c060716fe9b0"
+      },
+      "wifi_bt_common.mk": {
+        "before_sha256": "d94714a465f31aa5ad400889d73a455f2b5c94f620cdf411c48f23384a4a27c3",
+        "after_sha256": "758303646726ab60a289715b02a47409f5e8691e3d32dfed1a567b53134bf430",
+        "replay_sha256": "758303646726ab60a289715b02a47409f5e8691e3d32dfed1a567b53134bf430"
+      }
+    },
+    "git_apply_check": "pass",
+    "git_apply": "pass",
+    "git_diff_check": "pass",
+    "byte_identical_replay": "pass"
+  },
+  "vendor": {
+    "upstream_revision": "50c7170ecb4bd907059db37f09f4767b301f2d15",
+    "patch": "/workspace/vortex-build/rom/sdcard/patches/0006-vendor-omit-bluetooth.patch",
+    "patch_bytes": 3351,
+    "patch_sha256": "97025b3ee255f7342c3b9c08b2eccbc02c4957b3429cc679e8888e1f2b3ba8a5",
+    "removed_copy_entries": [
+      {
+        "source": "proprietary/lib/hw/bluetooth.default.so",
+        "copy_line": "    vendor/rockchip/rk322x/proprietary/lib/hw/bluetooth.default.so:system/lib/hw/bluetooth.default.so \\"
+      },
+      {
+        "source": "proprietary/lib/hw/bluetooth_rtk.default.so",
+        "copy_line": "    vendor/rockchip/rk322x/proprietary/lib/hw/bluetooth_rtk.default.so:system/lib/hw/bluetooth_rtk.default.so \\"
+      },
+      {
+        "source": "proprietary/lib/libbluetooth_jni.so",
+        "copy_line": "    vendor/rockchip/rk322x/proprietary/lib/libbluetooth_jni.so:system/lib/libbluetooth_jni.so \\"
+      },
+      {
+        "source": "proprietary/vendor/lib/libbt-vendor.so",
+        "copy_line": "    vendor/rockchip/rk322x/proprietary/vendor/lib/libbt-vendor.so:system/vendor/lib/libbt-vendor.so \\"
+      },
+      {
+        "source": "proprietary/lib/libbt-vendor_uart.so",
+        "copy_line": "    vendor/rockchip/rk322x/proprietary/lib/libbt-vendor_uart.so:system/lib/libbt-vendor_uart.so \\"
+      },
+      {
+        "source": "proprietary/lib/libbt-vendor_usb.so",
+        "copy_line": "    vendor/rockchip/rk322x/proprietary/lib/libbt-vendor_usb.so:system/lib/libbt-vendor_usb.so \\"
+      }
+    ],
+    "files": {
+      "device-vendor.mk": {
+        "before_sha256": "51db3ee5550f97459334e4c916ac2c38e6894bbf639a10356a43f9b9cc16f396",
+        "after_sha256": "5f7bb7fd79c20135188af0a3319a3ca261abf5aeec114e799ede2c19ec30b2be",
+        "replay_sha256": "5f7bb7fd79c20135188af0a3319a3ca261abf5aeec114e799ede2c19ec30b2be"
+      }
+    },
+    "git_apply_check": "pass",
+    "git_apply": "pass",
+    "git_diff_check": "pass",
+    "byte_identical_replay": "pass"
+  },
+  "scope_checks": {
+    "wifi_make_defaults_byte_identical": "pass",
+    "wifi_init_services_byte_identical": "pass",
+    "media_drmserver_policy_unchanged": "pass",
+    "recovery_sources_and_flags_unchanged": "pass",
+    "shared_older_worktrees_sources_unchanged": "pass",
+    "pristine_upstream_checkouts_clean": "pass",
+    "exactly_six_vendor_BT_copy_lines_removed": "pass",
+    "factory_script_copies_omitted": "pass",
+    "enumerated_BT_services_packages_grants_omitted_from_changed_sources": "pass"
+  },
+  "residuals": [
+    "Recovery defaults remain enabled in common and recovery fstab selection unresolved; the first SD media still must exclude it through verified platform build and packaging rules.",
+    "drmserver (Android media DRM), drmservice policy definitions and /dev/rknand_sys_storage generic ownership remain unchanged; removing the separate automatic vendor drmservice is not a statement that all DRM is disabled or raw storage inaccessible.",
+    "OP-TEE import removed from changed board init only; other inherited init imports/packages may reintroduce it.",
+    "Vendor BT blobs remain in upstream sources but their six copy entries are omitted. Final image Bluetooth absence cannot be asserted until full product and generated file inventory are inspected.",
+    "Platform core_minimal and other unresolved inheritance may supply Bluetooth packages, feature XML, init services or update/install/recovery routes. No BT feature XML copy was found in the examined common TV permissions or wifi_bt_common; none was fabricated or removed by guess.",
+    "Wi-Fi selection and source settings remain Broadcom/ap6xxx defaults as before; these are not an identification of the actual unit and no wireless compatibility is implied.",
+    "The generic kernel reference still has Bluetooth/NAND enabled; this source patchset does not create a hardware-safe SD kernel profile.",
+    "No SELinux policy was compiled and no runtime behavior was validated; source-level omission and replay only.",
+    "Disabled dhcpcd_bt-pan and iprenew_bt-pan services remain in init.rockchip.rc, as do unrelated net_bt_stack group references. Enumerated service/package/grant exclusions are not removal of every Bluetooth-related string or proof of a Bluetooth-free generated product."
+  ],
+  "actions": {
+    "bsp_script_executed": false,
+    "build_performed": false,
+    "hardware_operations": false,
+    "github_actions_used": false,
+    "new_owner_diagnostics_requested": false
+  },
+  "validation_commands": [
+    {
+      "command": [
+        "git",
+        "worktree",
+        "add",
+        "--detach",
+        "/workspace/build01-sd-next/common-sd-replay",
+        "3b1aa90ef43f9d34094739a211ad44bf9a2c0b74"
+      ],
+      "cwd": "/workspace/rk322x-sd-candidate/device/rockchip/common",
+      "exit_code": 0,
+      "stdout": "HEAD is now at 3b1aa90 20230702\n",
+      "stderr": "Preparing worktree (detached HEAD 3b1aa90)\n"
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "/workspace/vortex-build/rom/sdcard/patches/0002-common-sd-only-init.patch"
+      ],
+      "cwd": "/workspace/build01-sd-next/common-sd-replay",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "/workspace/vortex-build/rom/sdcard/patches/0002-common-sd-only-init.patch"
+      ],
+      "cwd": "/workspace/build01-sd-next/common-sd-replay",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "/workspace/vortex-build/rom/sdcard/patches/0003-common-disable-internal-provisioning.patch"
+      ],
+      "cwd": "/workspace/build01-sd-next/common-sd-replay",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "/workspace/vortex-build/rom/sdcard/patches/0003-common-disable-internal-provisioning.patch"
+      ],
+      "cwd": "/workspace/build01-sd-next/common-sd-replay",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "/workspace/vortex-build/rom/sdcard/patches/0005-common-remove-sd-factory-services.patch"
+      ],
+      "cwd": "/workspace/build01-sd-next/common-sd-replay",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "/workspace/vortex-build/rom/sdcard/patches/0005-common-remove-sd-factory-services.patch"
+      ],
+      "cwd": "/workspace/build01-sd-next/common-sd-replay",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "cwd": "/workspace/build01-sd-next/common-sd-replay",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "worktree",
+        "add",
+        "--detach",
+        "/workspace/build01-sd-next/vendor-sd-replay",
+        "50c7170ecb4bd907059db37f09f4767b301f2d15"
+      ],
+      "cwd": "/workspace/rk322x-sd-candidate/vendor/rockchip/rk322x",
+      "exit_code": 0,
+      "stdout": "HEAD is now at 50c7170 20230702\n",
+      "stderr": "Preparing worktree (detached HEAD 50c7170)\n"
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "/workspace/vortex-build/rom/sdcard/patches/0006-vendor-omit-bluetooth.patch"
+      ],
+      "cwd": "/workspace/build01-sd-next/vendor-sd-replay",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "/workspace/vortex-build/rom/sdcard/patches/0006-vendor-omit-bluetooth.patch"
+      ],
+      "cwd": "/workspace/build01-sd-next/vendor-sd-replay",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "cwd": "/workspace/build01-sd-next/vendor-sd-replay",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "cwd": "/workspace/rk322x-sd-candidate/device/rockchip/common",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "cwd": "/workspace/rk322x-sd-candidate/vendor/rockchip/rk322x",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

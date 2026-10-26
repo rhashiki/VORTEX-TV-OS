@@ -1,0 +1,143 @@
+
+/workspace/build01-sd-next/kernel-sd/out/vmlinux:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+c03c3e58 <eth_mac_read_from_IDB>:
+c03c3e58:	e3e0005e 	mvn	r0, #94	; 0x5e
+c03c3e5c:	e12fff1e 	bx	lr
+
+
+/workspace/build01-sd-next/kernel-sd/out/vmlinux:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+c03c3e60 <eth_mac_idb>:
+c03c3e60:	e92d4010 	push	{r4, lr}
+c03c3e64:	e3a01006 	mov	r1, #6
+c03c3e68:	ebfb3aac 	bl	c0292920 <__memzero>
+c03c3e6c:	e3e00000 	mvn	r0, #0
+c03c3e70:	e8bd8010 	pop	{r4, pc}
+
+
+/workspace/build01-sd-next/kernel-sd/out/vmlinux:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+c091dd68 <rockchip_wifi_mac_addr>:
+c091dd68:	e92d40f0 	push	{r4, r5, r6, r7, lr}
+c091dd6c:	e3a02014 	mov	r2, #20
+c091dd70:	e59f4184 	ldr	r4, [pc, #388]	; c091defc <rockchip_wifi_mac_addr+0x194>
+c091dd74:	e24dd02c 	sub	sp, sp, #44	; 0x2c
+c091dd78:	e3a01000 	mov	r1, #0
+c091dd7c:	e1a05000 	mov	r5, r0
+c091dd80:	e08d0002 	add	r0, sp, r2
+c091dd84:	ebe5d2ad 	bl	c0292840 <memset>
+c091dd88:	e59f1170 	ldr	r1, [pc, #368]	; c091df00 <rockchip_wifi_mac_addr+0x198>
+c091dd8c:	e59f0170 	ldr	r0, [pc, #368]	; c091df04 <rockchip_wifi_mac_addr+0x19c>
+c091dd90:	eb00256f 	bl	c0927354 <printk>
+c091dd94:	e5d42050 	ldrb	r2, [r4, #80]	; 0x50
+c091dd98:	e5d43051 	ldrb	r3, [r4, #81]	; 0x51
+c091dd9c:	e1833002 	orr	r3, r3, r2
+c091dda0:	e5d42052 	ldrb	r2, [r4, #82]	; 0x52
+c091dda4:	e1833002 	orr	r3, r3, r2
+c091dda8:	e5d42053 	ldrb	r2, [r4, #83]	; 0x53
+c091ddac:	e1833002 	orr	r3, r3, r2
+c091ddb0:	e5d42054 	ldrb	r2, [r4, #84]	; 0x54
+c091ddb4:	e1833002 	orr	r3, r3, r2
+c091ddb8:	e5d42055 	ldrb	r2, [r4, #85]	; 0x55
+c091ddbc:	e1933002 	orrs	r3, r3, r2
+c091ddc0:	1a000015 	bne	c091de1c <rockchip_wifi_mac_addr+0xb4>
+c091ddc4:	e3a02006 	mov	r2, #6
+c091ddc8:	e2841050 	add	r1, r4, #80	; 0x50
+c091ddcc:	e3a00002 	mov	r0, #2
+c091ddd0:	ebe7e34a 	bl	c0316b00 <rk_vendor_read>
+c091ddd4:	e3500006 	cmp	r0, #6
+c091ddd8:	1a00000b 	bne	c091de0c <rockchip_wifi_mac_addr+0xa4>
+c091dddc:	e5d42050 	ldrb	r2, [r4, #80]	; 0x50
+c091dde0:	e5d43051 	ldrb	r3, [r4, #81]	; 0x51
+c091dde4:	e5d4c052 	ldrb	ip, [r4, #82]	; 0x52
+c091dde8:	e5d4e053 	ldrb	lr, [r4, #83]	; 0x53
+c091ddec:	e5d46054 	ldrb	r6, [r4, #84]	; 0x54
+c091ddf0:	e1821003 	orr	r1, r2, r3
+c091ddf4:	e5d47055 	ldrb	r7, [r4, #85]	; 0x55
+c091ddf8:	e18c1001 	orr	r1, ip, r1
+c091ddfc:	e18e1001 	orr	r1, lr, r1
+c091de00:	e1861001 	orr	r1, r6, r1
+c091de04:	e1971001 	orrs	r1, r7, r1
+c091de08:	1a000030 	bne	c091ded0 <rockchip_wifi_mac_addr+0x168>
+c091de0c:	e1a02000 	mov	r2, r0
+c091de10:	e59f10f0 	ldr	r1, [pc, #240]	; c091df08 <rockchip_wifi_mac_addr+0x1a0>
+c091de14:	e59f00f0 	ldr	r0, [pc, #240]	; c091df0c <rockchip_wifi_mac_addr+0x1a4>
+c091de18:	eb00254d 	bl	c0927354 <printk>
+c091de1c:	e5d41055 	ldrb	r1, [r4, #85]	; 0x55
+c091de20:	e28d0014 	add	r0, sp, #20
+c091de24:	e5d43051 	ldrb	r3, [r4, #81]	; 0x51
+c091de28:	e5d42050 	ldrb	r2, [r4, #80]	; 0x50
+c091de2c:	e58d100c 	str	r1, [sp, #12]
+c091de30:	e5d41054 	ldrb	r1, [r4, #84]	; 0x54
+c091de34:	e58d1008 	str	r1, [sp, #8]
+c091de38:	e5d41053 	ldrb	r1, [r4, #83]	; 0x53
+c091de3c:	e58d1004 	str	r1, [sp, #4]
+c091de40:	e5d41052 	ldrb	r1, [r4, #82]	; 0x52
+c091de44:	e58d1000 	str	r1, [sp]
+c091de48:	e59f10c0 	ldr	r1, [pc, #192]	; c091df10 <rockchip_wifi_mac_addr+0x1a8>
+c091de4c:	ebe5fd37 	bl	c029d330 <sprintf>
+c091de50:	e28d1014 	add	r1, sp, #20
+c091de54:	e59f00b8 	ldr	r0, [pc, #184]	; c091df14 <rockchip_wifi_mac_addr+0x1ac>
+c091de58:	eb00253d 	bl	c0927354 <printk>
+c091de5c:	e5d46050 	ldrb	r6, [r4, #80]	; 0x50
+c091de60:	e3160001 	tst	r6, #1
+c091de64:	1a000020 	bne	c091deec <rockchip_wifi_mac_addr+0x184>
+c091de68:	e5d43051 	ldrb	r3, [r4, #81]	; 0x51
+c091de6c:	e5d42052 	ldrb	r2, [r4, #82]	; 0x52
+c091de70:	e1863003 	orr	r3, r6, r3
+c091de74:	e1833002 	orr	r3, r3, r2
+c091de78:	e5d42053 	ldrb	r2, [r4, #83]	; 0x53
+c091de7c:	e1833002 	orr	r3, r3, r2
+c091de80:	e5d42054 	ldrb	r2, [r4, #84]	; 0x54
+c091de84:	e1833002 	orr	r3, r3, r2
+c091de88:	e5d42055 	ldrb	r2, [r4, #85]	; 0x55
+c091de8c:	e1933002 	orrs	r3, r3, r2
+c091de90:	0a000015 	beq	c091deec <rockchip_wifi_mac_addr+0x184>
+c091de94:	e3a02003 	mov	r2, #3
+c091de98:	e59f1078 	ldr	r1, [pc, #120]	; c091df18 <rockchip_wifi_mac_addr+0x1b0>
+c091de9c:	e59f0078 	ldr	r0, [pc, #120]	; c091df1c <rockchip_wifi_mac_addr+0x1b4>
+c091dea0:	ebe5f1d1 	bl	c029a5ec <strncmp>
+c091dea4:	e59f3074 	ldr	r3, [pc, #116]	; c091df20 <rockchip_wifi_mac_addr+0x1b8>
+c091dea8:	e3500000 	cmp	r0, #0
+c091deac:	03c66002 	biceq	r6, r6, #2
+c091deb0:	e3a00000 	mov	r0, #0
+c091deb4:	05c46050 	strbeq	r6, [r4, #80]	; 0x50
+c091deb8:	e5932000 	ldr	r2, [r3]
+c091debc:	e5852000 	str	r2, [r5]
+c091dec0:	e1d330b4 	ldrh	r3, [r3, #4]
+c091dec4:	e1c530b4 	strh	r3, [r5, #4]
+c091dec8:	e28dd02c 	add	sp, sp, #44	; 0x2c
+c091decc:	e8bd80f0 	pop	{r4, r5, r6, r7, pc}
+c091ded0:	e58d700c 	str	r7, [sp, #12]
+c091ded4:	e58d6008 	str	r6, [sp, #8]
+c091ded8:	e88d5000 	stm	sp, {ip, lr}
+c091dedc:	e59f1024 	ldr	r1, [pc, #36]	; c091df08 <rockchip_wifi_mac_addr+0x1a0>
+c091dee0:	e59f003c 	ldr	r0, [pc, #60]	; c091df24 <rockchip_wifi_mac_addr+0x1bc>
+c091dee4:	eb00251a 	bl	c0927354 <printk>
+c091dee8:	eaffffcb 	b	c091de1c <rockchip_wifi_mac_addr+0xb4>
+c091deec:	e59f0034 	ldr	r0, [pc, #52]	; c091df28 <rockchip_wifi_mac_addr+0x1c0>
+c091def0:	eb002517 	bl	c0927354 <printk>
+c091def4:	e3e00000 	mvn	r0, #0
+c091def8:	eafffff2 	b	c091dec8 <rockchip_wifi_mac_addr+0x160>
+c091defc:	c0fde770 	.word	0xc0fde770
+c091df00:	c0a35eee 	.word	0xc0a35eee
+c091df04:	c0c9a14a 	.word	0xc0c9a14a
+c091df08:	c0a35f05 	.word	0xc0a35f05
+c091df0c:	c0c9a167 	.word	0xc0c9a167
+c091df10:	c0bff5c8 	.word	0xc0bff5c8
+c091df14:	c0c9a1ec 	.word	0xc0c9a1ec
+c091df18:	c0c9a21e 	.word	0xc0c9a21e
+c091df1c:	c0fde780 	.word	0xc0fde780
+c091df20:	c0fde7c0 	.word	0xc0fde7c0
+c091df24:	c0c9a1a9 	.word	0xc0c9a1a9
+c091df28:	c0c9a222 	.word	0xc0c9a222

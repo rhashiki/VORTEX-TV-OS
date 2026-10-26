@@ -1,0 +1,38 @@
+diff --git a/device-vendor.mk b/device-vendor.mk
+index 1fa4507..125b688 100644
+--- a/device-vendor.mk
++++ b/device-vendor.mk
+@@ -13,8 +13,6 @@ PRODUCT_COPY_FILES += \
+     vendor/rockchip/rk322x/proprietary/lib/hw/audio.usb.default.so:system/lib/hw/audio.usb.default.so \
+     vendor/rockchip/rk322x/proprietary/lib/hw/audio.vr_bee_hidraw.default.so:system/lib/hw/audio.vr_bee_hidraw.default.so \
+     vendor/rockchip/rk322x/proprietary/lib/hw/audio_policy.default.so:system/lib/hw/audio_policy.default.so \
+-    vendor/rockchip/rk322x/proprietary/lib/hw/bluetooth.default.so:system/lib/hw/bluetooth.default.so \
+-    vendor/rockchip/rk322x/proprietary/lib/hw/bluetooth_rtk.default.so:system/lib/hw/bluetooth_rtk.default.so \
+     vendor/rockchip/rk322x/proprietary/lib/hw/camera.rk30board.so:system/lib/hw/camera.rk30board.so \
+     vendor/rockchip/rk322x/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
+     vendor/rockchip/rk322x/proprietary/lib/hw/gralloc.rk30board.so:system/lib/hw/gralloc.rk30board.so \
+@@ -65,7 +63,6 @@ PRODUCT_COPY_FILES += \
+     vendor/rockchip/rk322x/proprietary/bin/busybox:system/bin/busybox \
+     vendor/rockchip/rk322x/proprietary/bin/resize2fs:system/bin/resize2fs \
+     vendor/rockchip/rk322x/proprietary/bin/sh:system/bin/sh \
+-    vendor/rockchip/rk322x/proprietary/lib/libbluetooth_jni.so:system/lib/libbluetooth_jni.so \
+     vendor/rockchip/rk322x/proprietary/lib/libext4_utils.so:system/lib/libext4_utils.so \
+     vendor/rockchip/rk322x/proprietary/etc/firmware/4343A0.hcd:system/etc/firmware/4343A0.hcd \
+     vendor/rockchip/rk322x/proprietary/etc/firmware/awnb108.hcd:system/etc/firmware/awnb108.hcd \
+@@ -221,7 +218,6 @@ PRODUCT_COPY_FILES += \
+     vendor/rockchip/rk322x/proprietary/etc/firmware/wifi_efuse_8723ds.map:system/etc/firmware/wifi_efuse_8723ds.map \
+     vendor/rockchip/rk322x/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
+     vendor/rockchip/rk322x/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
+-    vendor/rockchip/rk322x/proprietary/vendor/lib/libbt-vendor.so:system/vendor/lib/libbt-vendor.so \
+     vendor/rockchip/rk322x/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
+     vendor/rockchip/rk322x/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+     vendor/rockchip/rk322x/proprietary/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
+@@ -275,8 +271,6 @@ PRODUCT_COPY_FILES += \
+     vendor/rockchip/rk322x/proprietary/lib/libRkOMX_Resourcemanager.so:system/lib/libRkOMX_Resourcemanager.so \
+     vendor/rockchip/rk322x/proprietary/lib/libhardware_legacy.so:system/lib/libhardware_legacy.so \
+     vendor/rockchip/rk322x/proprietary/lib/libapedec.so:system/lib/libapedec.so \
+-    vendor/rockchip/rk322x/proprietary/lib/libbt-vendor_uart.so:system/lib/libbt-vendor_uart.so \
+-    vendor/rockchip/rk322x/proprietary/lib/libbt-vendor_usb.so:system/lib/libbt-vendor_usb.so \
+     vendor/rockchip/rk322x/proprietary/lib/libcameragl.so:system/lib/libcameragl.so \
+     vendor/rockchip/rk322x/proprietary/lib/libcam_facedetection.so:system/lib/libcam_facedetection.so \
+     vendor/rockchip/rk322x/proprietary/lib/libcsiconv.so:system/lib/libcsiconv.so \

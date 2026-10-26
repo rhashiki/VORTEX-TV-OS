@@ -4,3 +4,5 @@
 # Raw tool output is evidence; retain spaces emitted by the original tools.
 docs/validation/2026-10-25-sd/*.log -whitespace
 docs/validation/2026-10-25-sd/kernel-vmlinux-header.txt -whitespace
+docs/validation/2026-10-26-sd-profile/**/*.log -whitespace
+docs/validation/2026-10-26-sd-profile/kernel-sd/*.txt -whitespace

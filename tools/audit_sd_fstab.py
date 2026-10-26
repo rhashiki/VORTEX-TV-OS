@@ -15,7 +15,10 @@ import sys
 
 MAX_INPUT_BYTES = 1024 * 1024
 EXTERNAL_CONTROLLER = "ff500000.rksdmmc"
-SD_BY_NAME = "/dev/block/platform/" + EXTERNAL_CONTROLLER + "/by-name/"
+PROFILES = {
+    "community-rk322x": EXTERNAL_CONTROLLER,
+    "rk3229-sdk-sd-reference": "30000000.rksdmmc",
+}
 SOURCE_PROFILE = {
     "repository": "D042888-2/android_device_rockchip_rk322x",
     "revision": "f33a129bfab6d9cc87184ee3bf032224801fa446",
@@ -40,7 +43,7 @@ MOUNT_FLAGS = {
 FS_FLAGS = {"defaults", "wait", "check", "resize", "verify", "encryptable=/metadata/key_file"}
 LIMITS = (
     "This is one community RK322x SD fstab profile, not universal Rockchip storage identification.",
-    "The ff500000.rksdmmc controller is taken from the reference source, not confirmed on this unit.",
+    "The selected controller belongs to a source reference, not confirmed on this unit.",
     "No /dev nodes are opened or resolved; runtime device links and partition contents are not checked.",
     "No init/recovery/update scripts, boot-mode selection, bootloader, kernel, DTB or HALs are audited.",
     "Passing this file check does not prove that internal storage will remain unchanged during boot.",
@@ -78,12 +81,16 @@ def read_regular_file(path):
     return path, data
 
 
-def inspect(path):
+def inspect(path, profile="community-rk322x"):
+    if profile not in PROFILES:
+        raise ValueError("Unknown SD fstab reference profile: " + str(profile))
+    controller = PROFILES[profile]
+    sd_by_name = "/dev/block/platform/" + controller + "/by-name/"
     report = {
         "schema_version": 1,
-        "profile": "community-rk322x / sd-fstab-static-v1",
+        "profile": profile + " / sd-fstab-static-v1",
         "source_profile": dict(SOURCE_PROFILE),
-        "external_controller": EXTERNAL_CONTROLLER,
+        "external_controller": controller,
         "input": {"path": str(Path(path).expanduser().absolute()),
                   "size_bytes": None, "sha256": None},
         "status": "blocked",
@@ -93,6 +100,12 @@ def inspect(path):
         "rom_build_validation": "not_performed",
         "hardware_validation": "not_performed",
     }
+    if profile == "rk3229-sdk-sd-reference":
+        report["source_profile"]["adaptation"] = {
+            "patch": "rom/sdcard/patches/0004-rk3229-sdk-sd-controller.patch",
+            "kernel_revision": "6c04d006ae881944d32c19e68b992d0bd5ab4fde",
+            "kernel_source": "arch/arm/boot/dts/rk322x.dtsi",
+        }
 
     def check(name, ok, message, line=None):
         item = {"check": name, "status": "pass" if ok else "blocked", "message": message}
@@ -141,7 +154,7 @@ def inspect(path):
         if mount in REQUIRED:
             counts[mount] += 1
             partition, expected_kind = REQUIRED[mount]
-            if source != SD_BY_NAME + partition:
+            if source != sd_by_name + partition:
                 errors.append("Expected the reference SD source for " + mount)
             if kind != expected_kind:
                 errors.append("Expected " + expected_kind + " for " + mount)
@@ -171,7 +184,7 @@ def inspect(path):
                 errors.append("Duplicate optional source")
             optional_sources.add(source)
         else:
-            if EXTERNAL_CONTROLLER in source and any(flag.startswith("voldmanaged=") for flag in fs_flags):
+            if controller in source and any(flag.startswith("voldmanaged=") for flag in fs_flags):
                 errors.append("Do not expose the boot SD controller as removable/formattable storage")
             else:
                 errors.append("Source or mount point is outside the explicit SD/USB/zram profile")
@@ -188,9 +201,11 @@ def inspect(path):
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("fstab", type=Path, help="Explicit regular fstab file; no device is accessed")
+    parser.add_argument("--profile", choices=sorted(PROFILES), default="community-rk322x",
+                        help="Explicit source reference, never automatic hardware detection")
     parser.add_argument("--json", action="store_true", help="Print the structured static-inspection report")
     args = parser.parse_args(argv)
-    report = inspect(args.fstab)
+    report = inspect(args.fstab, profile=args.profile)
     if args.json:
         print(json.dumps(report, indent=2, ensure_ascii=False))
     else:

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "source_commit": "f33a129bfab6d9cc87184ee3bf032224801fa446",
+  "worktree": "/workspace/build01-sd-next/device-sd",
+  "prerequisite_patch": "0001-rk322x-sd-only-fstab.patch",
+  "patch": "0004-rk3229-sdk-sd-controller.patch",
+  "patch_sha256": "b45019dd690914c25b3959a2e155a48156e4b10eff155aac720c98a06c400e4c",
+  "source_before_patch4_sha256": "c5872870ef616c1b11e5ad2271f9f55a6f7aeb747047077abbffa52bfe78d2fb",
+  "source_after_patch4_sha256": "d13a0c32b6f1e50c4a382691a166fea42f09277819fc4411c2ff6342539c9b4d",
+  "git_apply_check": "pass",
+  "git_apply": "pass",
+  "git_diff_check": "pass",
+  "controller_before": "ff500000.rksdmmc",
+  "controller_after": "30000000.rksdmmc",
+  "basis": "rk322x.dtsi at kernel 6c04d006ae881944d32c19e68b992d0bd5ab4fde, sdmmc reg 0x30000000",
+  "limits": [
+    "Source-reference consistency only, not confirmed R329Q_V8.0 wiring or runtime /dev links.",
+    "Optional USB entries remain source references, not validated on this board.",
+    "No Android platform or SD image built and no hardware operation performed."
+  ]
+}

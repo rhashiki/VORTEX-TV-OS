@@ -1,0 +1,28 @@
+{
+  "source_commit": "6c04d006ae881944d32c19e68b992d0bd5ab4fde",
+  "patch_sha256": "864fe75a87e0999fa84eacd40cad60eec6d12ee361daaf72aecbedd05336c97d",
+  "patch_bytes": 2410,
+  "git_apply_check": "pass",
+  "git_apply": "pass",
+  "byte_identical_replay": "pass",
+  "files": [
+    {
+      "path": "drivers/net/ethernet/rockchip/eth_mac.c",
+      "original_sha256": "74fb8800bbfa2901fa12343d2012602b37556acc63ac30b367c5638efd077ecc",
+      "patched_sha256": "b47ed648956674a7414c2ce95d2c1b4d2798104059d9d735696ba1f32da3fd18"
+    },
+    {
+      "path": "drivers/usb/gadget/f_mass_storage.c",
+      "original_sha256": "ee5e7808a1c1f2948abbf79fe5b5404bfe3de4ed54b5006c27a05092bbbb6373",
+      "patched_sha256": "c559bd86e96efe552f4b815868cbad87b69f2bccfb0fac000107720facc2e5bc"
+    },
+    {
+      "path": "net/rfkill/rfkill-wlan.c",
+      "original_sha256": "574ae0fe677d44a79cac228999dc6b570a7af1394d20b78858c93c19f1b8a153",
+      "patched_sha256": "855c85ce19c9b90dc60c755cf3e6c1dfa8ad122e50ea546e48b9413b12bb63ee"
+    }
+  ],
+  "limits": [
+    "This verifies source reconstruction only, not hardware or runtime behavior."
+  ]
+}

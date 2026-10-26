@@ -1,0 +1,30 @@
+/*
+ * Experimental SD-only build reference derived from rk3229-sdk.dts.
+ * This is not a hardware description validated for R329Q_V8.0.
+ * Pin assignments, supplies, timings and non-storage peripherals remain SDK
+ * defaults. No bootloader, DDR initialization or Android ramdisk is supplied.
+ */
+#include "rk3229-sdk.dts"
+
+/ {
+	chosen {
+		/* Do not inherit rockchip_jtag on the shared SD pin interface. */
+		bootargs = "vmalloc=496M psci=enable storagemedia=sd androidboot.mode=sd androidboot.hardware=rk30board";
+	};
+
+	wireless-bluetooth {
+		status = "disabled";
+	};
+};
+
+&nandc {
+	status = "disabled";
+};
+
+&emmc {
+	status = "disabled";
+};
+
+&sdmmc {
+	status = "okay";
+};

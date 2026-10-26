@@ -1,0 +1,42 @@
+{
+  "scope": "research_only",
+  "checkouts": [
+    {
+      "directory": "/workspace/build01-sd-next/platform-reference/manifest",
+      "revision": "e4faf840083f5c88b7d789007e6707f757368f0c",
+      "tree": "3ee83f8518a747c6e8e591e8b597bdcedc49ae9b",
+      "status_clean": true
+    },
+    {
+      "directory": "/workspace/build01-sd-next/platform-reference/system-core",
+      "revision": "a54e58472fdeb45820fd215d45da6d8b55b27cde",
+      "tree": "522e4cdb7ad9cfaaa0dd367571d4dc56653059d1",
+      "status_clean": true
+    },
+    {
+      "directory": "/workspace/build01-sd-next/platform-reference/common",
+      "revision": "08a9c89bafa8e40c0ee63fbeb8975a26c962fbd2",
+      "tree": "bd1a1c31ae174c3a2f75f406135cdbd4db40ae3a",
+      "status_clean": true
+    },
+    {
+      "directory": "/workspace/build01-sd-next/platform-reference/audio",
+      "revision": "997bbe87ff092f54fd0e271bb8fe75fd39833237",
+      "tree": "c00c75f1b2b3c6f886e9a0b657b3c81dfc011f0e",
+      "status_clean": true
+    },
+    {
+      "directory": "/workspace/build01-sd-next/platform-reference/hwcomposer",
+      "revision": "67d0889db26196e5194b9a117408e684a8839c98",
+      "tree": "4043e7b0ef6754dd38182574c928eaa42fccefa1",
+      "status_clean": true
+    },
+    {
+      "directory": "/workspace/build01-sd-next/platform-reference/libgralloc",
+      "revision": "211e7d62dcaa9acc2b7f1e424607b7eef40eb57f",
+      "tree": "00743a98b11dd9516098c2547507048ff4ae8a10",
+      "status_clean": true
+    }
+  ],
+  "total_disk_bytes": 55222312
+}

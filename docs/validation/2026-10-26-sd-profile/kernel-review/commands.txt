@@ -1,0 +1,5 @@
+Read-only commands used:
+/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-readelf -W -s /workspace/build01-sd/kernel-work/out/vmlinux
+/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-readelf -W -S /workspace/build01-sd/kernel-work/out/vmlinux
+/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-objdump -d --start-address=0xc003825c --stop-address=0xc0038610 /workspace/build01-sd/kernel-work/out/vmlinux
+Read config, source and expanded linker script; compare relevant sources with git diff against HEAD.

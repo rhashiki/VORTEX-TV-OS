@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "source_commit": "6c04d006ae881944d32c19e68b992d0bd5ab4fde",
+  "patches": [
+    {
+      "path": "rom/sdcard/kernel-build-fixes.patch",
+      "size_bytes": 36911,
+      "sha256": "3a01773132b723cc7544df3a7be055b92e751b51279cac2d6cca38b1734e56f8",
+      "CR_bytes": 10
+    },
+    {
+      "path": "rom/sdcard/kernel-sd-no-nand.patch",
+      "size_bytes": 2410,
+      "sha256": "864fe75a87e0999fa84eacd40cad60eec6d12ee361daaf72aecbedd05336c97d",
+      "CR_bytes": 0
+    }
+  ],
+  "git_apply_check": "pass",
+  "git_apply": "pass",
+  "byte_identical_replay": "pass",
+  "source_files": 34,
+  "files": [
+    {
+      "path": "arch/arm/mach-rockchip/rk_camera.c",
+      "patched_sha256": "6adad8bd1e3227017c69db71ab473f3e5cb0e67e977dfedcdece2f04544825a0"
+    },
+    {
+      "path": "drivers/gpu/arm/mali400/mali/Kbuild",
+      "patched_sha256": "535aba81e18eb4f714f7a8e26cf14baab12e629d80d56e0b19316637a85c114b"
+    },
+    {
+      "path": "drivers/gpu/arm/mali400/ump/Kbuild",
+      "patched_sha256": "5e34baae233462679abee00aa871ea96a5e6ba6e2ca4614f4ba1609dbca8b4cc"
+    },
+    {
+      "path": "drivers/i2c/i2c-core.c",
+      "patched_sha256": "7436b100a84370179d59e73272f16d3831b342daebefff0e3e3ad1f72b43fae6"
+    },
+    {
+      "path": "drivers/media/v4l2-core/videobuf-core.c",
+      "patched_sha256": "cc6444c863b0ff9db2584810ee0a91c0cdc84018f09adc9c390bc61e95f76246"
+    },
+    {
+      "path": "drivers/media/video/generic_sensor.c",
+      "patched_sha256": "027e79af7f0c99eaecb7c08bcbdb34d13ecce7a81f1c118f0a416a8b6a2f3dd8"
+    },
+    {
+      "path": "drivers/mfd/rk808.c",
+      "patched_sha256": "6ab4bcabf089fde81c8eff54b5f206dd61427ed75a2c55c76c506383b36e9060"
+    },
+    {
+      "path": "drivers/mfd/rk818.c",
+      "patched_sha256": "df283e29a01c218222ed758aebce7c4b5644bc3ace7c90dd328116c038e1c7c9"
+    },
+    {
+      "path": "drivers/net/ethernet/rockchip/eth_mac.c",
+      "patched_sha256": "b47ed648956674a7414c2ce95d2c1b4d2798104059d9d735696ba1f32da3fd18"
+    },
+    {
+      "path": "drivers/net/usb/dm9620.c",
+      "patched_sha256": "de9f21f38bd2e8e47225d9b7f3d3e5ff54b12d2bcc448555ca854af7372e6371"
+    },
+    {
+      "path": "drivers/net/usb/usbnet.c",
+      "patched_sha256": "679cd1b845138acd76ecf46b8f7a76310e67f16b15e7b52086aedf41515c3131"
+    },
+    {
+      "path": "drivers/net/wireless/Makefile",
+      "patched_sha256": "66c6666fee81046de2d71e72738e1ff8082a939762bb375d94f7dfd785650c20"
+    },
+    {
+      "path": "drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/siutils.c",
+      "patched_sha256": "bc303de0db13d3e26b2d4c91c162ab0a545b190b5c50e5f6205ac495d1d45b20"
+    },
+    {
+      "path": "drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/wl_cfg80211.c",
+      "patched_sha256": "7dec4b56ba3f32528ea927286b431b43b6b132b7571cbeaec32575218d6d96a3"
+    },
+    {
+      "path": "drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/wl_iw.c",
+      "patched_sha256": "37627339ce1433a0a2a122027eba9c79faf233303af5f2d538749c3e30e42c4d"
+    },
+    {
+      "path": "drivers/power/rk30_factory_adc_battery.c",
+      "patched_sha256": "d597182096274a670ed8463b8e06398d142d176b1c3a11cb3e612ec3b77101ac"
+    },
+    {
+      "path": "drivers/regulator/act8846.c",
+      "patched_sha256": "8f8dcaeda1085dc2e1e31e50b1f545ccd40116b2e6ec711044e540d4edd5bfd7"
+    },
+    {
+      "path": "drivers/regulator/syr82x.c",
+      "patched_sha256": "b7c0a0e7275f2b2695dd831ccf9ace0365252f28ac8429a794d8593e7380d733"
+    },
+    {
+      "path": "drivers/usb/gadget/android.c",
+      "patched_sha256": "cd52d2ce969e8bceca6eff8adf600956ba730c8b49d996e1c11eefd39f5da45d"
+    },
+    {
+      "path": "drivers/usb/gadget/f_mass_storage.c",
+      "patched_sha256": "c559bd86e96efe552f4b815868cbad87b69f2bccfb0fac000107720facc2e5bc"
+    },
+    {
+      "path": "drivers/video/rockchip/lcdc/rk312x_lcdc.c",
+      "patched_sha256": "b90df07e0cd24790e63b0d3fc99a2a0649e91f7ae36645130ff9eef27bac23ab"
+    },
+    {
+      "path": "drivers/video/rockchip/lcdc/rk322x_lcdc.c",
+      "patched_sha256": "f94a000104c81904186a1db67effbfcab6c9555bc49d1e25fbc47d7091bea8ec"
+    },
+    {
+      "path": "drivers/video/rockchip/lcdc/rk3288_lcdc.c",
+      "patched_sha256": "0d6ac007b616b9ad39fd80c80df4d977b42d9df341ce8098a877f38f7f579468"
+    },
+    {
+      "path": "drivers/video/rockchip/rga/rga_drv.c",
+      "patched_sha256": "3bcc78a04cd8b6410f163562dff6d9a485690386e170661ba9ec1d23935c66b7"
+    },
+    {
+      "path": "drivers/video/rockchip/rk_fb.c",
+      "patched_sha256": "841b5d09b02c7193540b2688c3c0b6b386427b4d4454aa34d94730758733e0dd"
+    },
+    {
+      "path": "drivers/video/rockchip/transmitter/vga.c",
+      "patched_sha256": "e1459c6bbeec7b864187c6b61508f91762eb0cc73b658a36471bf79987bda5d6"
+    },
+    {
+      "path": "fs/cifs/netmisc.c",
+      "patched_sha256": "702169691ea3a17d568d723017baf0803ee53ad313760409962602311255d2c7"
+    },
+    {
+      "path": "net/core/net-sysfs.c",
+      "patched_sha256": "b9c841addad9d8a5a633ed901e20ee216647fa0855e8fb3f484943121545572c"
+    },
+    {
+      "path": "net/core/rtnetlink.c",
+      "patched_sha256": "c03a96ca2d3cabcfe33e03b4378b17eb4c1304c1b8f0bd543c29615acee076a2"
+    },
+    {
+      "path": "net/ipv4/arp.c",
+      "patched_sha256": "f00a2e0e2cad54a2a38660137b222e59dbb12deb3d081d495be5e1a4a01c4a42"
+    },
+    {
+      "path": "net/packet/af_packet.c",
+      "patched_sha256": "1451e6e68b387c24560feb57aa3619872cc071ab80befdaf7cd50e3788b31e2e"
+    },
+    {
+      "path": "net/rfkill/rfkill-wlan.c",
+      "patched_sha256": "855c85ce19c9b90dc60c755cf3e6c1dfa8ad122e50ea546e48b9413b12bb63ee"
+    },
+    {
+      "path": "sound/soc/codecs/rk312x_codec.c",
+      "patched_sha256": "012b458f60b265e2a0fbb0ed04b45eea47cbf604af16c4c54876717bcc26c7b3"
+    },
+    {
+      "path": "sound/soc/codecs/rt3261.c",
+      "patched_sha256": "2d7dd76678e3f70a58865877cdd42c0ed76248278a10d14b59cca6426e19c56f"
+    }
+  ],
+  "new_dts": {
+    "path": "arch/arm/boot/dts/rk3229-sdk-sd-reference.dts",
+    "sha256": "74635cde08b8201400bc6938e42ce736cf286e5813047e84a1f9ba180302ee75"
+  },
+  "limits": [
+    "Source reconstruction only; not runtime or board compatibility validation."
+  ]
+}

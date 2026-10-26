@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "scope": "Static lifetime analysis of the existing generic reference kernel; no source changes or rebuild.",
+  "source_commit": "6c04d006ae881944d32c19e68b992d0bd5ab4fde",
+  "artifact_image_sha256": "d91b62b9d7339824be27a7b9196b4ce35233490b3c87c4cdeac6205499ecf846",
+  "kernel_config_sha256": "83da5a3e819a5140d598ac586b9776b954dbadd30914c392594ae2f882e17a3f",
+  "warning": "MODPOST: dvfs_temp_limit() references .cpuinit.text:cpu_up()",
+  "config": {
+    "CONFIG_HOTPLUG_CPU": "y",
+    "CONFIG_SMP": "y",
+    "CONFIG_CPU_FREQ": "y",
+    "CONFIG_RK_NAND": "y",
+    "CONFIG_BT": "y"
+  },
+  "elf_symbols": {
+    "dvfs_temp_limit": {
+      "address": "0xc003825c",
+      "size": 948,
+      "type": "FUNC",
+      "section_index": "2"
+    },
+    "_cpu_up": {
+      "address": "0xc0966aac",
+      "size": 500,
+      "type": "FUNC",
+      "section_index": "2"
+    },
+    "__cpu_up": {
+      "address": "0xc09661cc",
+      "size": 336,
+      "type": "FUNC",
+      "section_index": "2"
+    },
+    "_stext": {
+      "address": "0xc0008280",
+      "size": 0,
+      "type": "NOTYPE",
+      "section_index": "2"
+    },
+    "_etext": {
+      "address": "0xc0d70240",
+      "size": 0,
+      "type": "NOTYPE",
+      "section_index": "14"
+    },
+    "cpu_up": {
+      "address": "0xc0966ca0",
+      "size": 128,
+      "type": "FUNC",
+      "section_index": "2"
+    },
+    "__init_begin": {
+      "address": "0xc0d71000",
+      "size": 0,
+      "type": "NOTYPE",
+      "section_index": "15"
+    },
+    "__init_end": {
+      "address": "0xc0dd2400",
+      "size": 0,
+      "type": "NOTYPE",
+      "section_index": "24"
+    }
+  },
+  "checks": {
+    "hotplug_cpu_enabled": true,
+    "preprocessed_linker_keeps_cpuinit_text_in_permanent_text": true,
+    "cpuinit_text_absent_from_freeable_init_text_output": true,
+    "dvfs_and_cpu_up_chain_in_permanent_text_section": true,
+    "cpu_up_chain_outside_free_initmem_range": true,
+    "compiled_dvfs_calls_cpu_up": true,
+    "relevant_sources_unmodified_against_pin": true
+  },
+  "assessment": "For this exact CONFIG_HOTPLUG_CPU=y build, the named cpu_up/_cpu_up/__cpu_up functions are retained outside the freeable init range. The warning alone does not demonstrate a use-after-free in this configuration. This does not validate runtime hotplug, thermal or board behavior.",
+  "recommendation": {
+    "source_patch_applied": false,
+    "reason": "Keep the diagnostic visible and preserve source semantics. dvfs_temp_limit is called by a recurring thermal workqueue and must remain callable after init. Do not annotate it __cpuinit simply to silence MODPOST; do not disable hotplug or thermal logic.",
+    "future_profile_invariant": "Keep CONFIG_HOTPLUG_CPU=y and repeat the final ELF lifetime inspection when generating the SD-specific kernel configuration.",
+    "possible_annotation": "A narrowly documented __ref runtime bridge guarded by CONFIG_HOTPLUG_CPU can express a retained cpuinit reference (the existing drivers/base/cpu.c store_online uses __ref). This is optional annotation handling, not a runtime bug fix, and was deliberately not applied or tested here."
+  },
+  "source_evidence": [
+    {
+      "path": "include/linux/init.h",
+      "sha256": "44e6b8ca8a7b121ee8b8e71863b976a9da682053e6babb366bac7aa91756c99d",
+      "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/include/linux/init.h"
+    },
+    {
+      "path": "include/asm-generic/vmlinux.lds.h",
+      "sha256": "60f2ca839a81994890a2c35bc7edb8c5d21555ee314840bd822fe7f1d912f716",
+      "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/include/asm-generic/vmlinux.lds.h"
+    },
+    {
+      "path": "arch/arm/kernel/vmlinux.lds.S",
+      "sha256": "868b022dd07138bfe2221f3ddb20b6595a006975941cf2c509416a01b3646c02",
+      "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/kernel/vmlinux.lds.S"
+    },
+    {
+      "path": "arch/arm/mach-rockchip/dvfs.c",
+      "sha256": "106843b1928737ffc4f172ba902fe2d5f2d4cd263dfebc1b169dfadbcc701a5b",
+      "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/mach-rockchip/dvfs.c"
+    },
+    {
+      "path": "kernel/cpu.c",
+      "sha256": "5e362a04c1e0f21543197fa5e93747ca57bc909ceba3210137ec2fd95555aad3",
+      "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/kernel/cpu.c"
+    },
+    {
+      "path": "arch/arm/kernel/smp.c",
+      "sha256": "ff5284839a6e802aeef888af10a2543eba869c137a0f5af049766165a1dcd72e",
+      "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/kernel/smp.c"
+    },
+    {
+      "path": "drivers/base/cpu.c",
+      "sha256": "5838f072dc071fcfb9958537384379cb7658ad220b518ab2aff1dcc29e4204bd",
+      "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/drivers/base/cpu.c"
+    },
+    {
+      "path": "arch/arm/mm/init.c",
+      "sha256": "f21723a936dd787449c8c80e5f96e98d326722ab735227a4fb54a175b979c76b",
+      "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/mm/init.c"
+    },
+    {
+      "path": "init/main.c",
+      "sha256": "a005f14e49637a216d01f342ebb1bf0424a0fb66ad5d7f965e374eed3728d8c8",
+      "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/init/main.c"
+    },
+    {
+      "path": "scripts/mod/modpost.c",
+      "sha256": "a6d10a6df82f4b94a7b6a99699103d3160c248c9699323cc4ca9f35722c57296",
+      "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/scripts/mod/modpost.c"
+    }
+  ],
+  "limits": [
+    "Static configuration/linker/ELF evidence only. No hardware or emulator run.",
+    "No blanket suppression, annotation change or compiler-warning whitelist modification.",
+    "Turning off CONFIG_HOTPLUG_CPU changes CPU_KEEP/CPU_DISCARD behavior and invalidates this assessment."
+  ]
+}

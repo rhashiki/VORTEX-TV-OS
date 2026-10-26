@@ -1,0 +1,53 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "make",
+        "O=/workspace/build01-sd-next/kernel-sd/out",
+        "ARCH=arm",
+        "CROSS_COMPILE=/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-",
+        "HOSTCFLAGS=-O2 -fcommon",
+        "rockchip_defconfig"
+      ],
+      "log": "configure-retry-0.log",
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "sh",
+        "scripts/kconfig/merge_config.sh",
+        "-m",
+        "-O",
+        "/workspace/build01-sd-next/kernel-sd/out",
+        "/workspace/build01-sd-next/kernel-sd/out/.config",
+        "/workspace/vortex-build/rom/sdcard/rk3229-sdk-sd-reference.config"
+      ],
+      "log": "configure-retry-1.log",
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "make",
+        "O=/workspace/build01-sd-next/kernel-sd/out",
+        "ARCH=arm",
+        "CROSS_COMPILE=/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-",
+        "HOSTCFLAGS=-O2 -fcommon",
+        "olddefconfig"
+      ],
+      "log": "configure-retry-2.log",
+      "exit_code": 0
+    }
+  ],
+  "required_symbols": {
+    "CONFIG_RK_NAND": "n",
+    "CONFIG_MTD": "n",
+    "CONFIG_BT": "n",
+    "CONFIG_HOTPLUG_CPU": "y",
+    "CONFIG_MMC": "y",
+    "CONFIG_MMC_BLOCK": "y",
+    "CONFIG_MMC_DW": "y",
+    "CONFIG_MMC_DW_ROCKCHIP": "y",
+    "CONFIG_EFI_PARTITION": "y"
+  },
+  "all_required_values_retained": true
+}

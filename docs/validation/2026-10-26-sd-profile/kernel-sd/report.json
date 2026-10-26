@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "scope": "SD-restricted generic SDK kernel components; not an Android ROM or bootable SD image",
+  "source": {
+    "repository": "https://github.com/rockchip-linux/kernel.git",
+    "revision": "6c04d006ae881944d32c19e68b992d0bd5ab4fde",
+    "tree_sha": "5b2fe9c846fa86a28b362b91f179e9d1c4b0e9fb",
+    "compilation_patch_sha256": "3a01773132b723cc7544df3a7be055b92e751b51279cac2d6cca38b1734e56f8",
+    "sd_no_nand_patch_sha256": "864fe75a87e0999fa84eacd40cad60eec6d12ee361daaf72aecbedd05336c97d",
+    "new_dts_sha256": "74635cde08b8201400bc6938e42ce736cf286e5813047e84a1f9ba180302ee75"
+  },
+  "toolchain": {
+    "repository": "https://github.com/pstglia/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf.git",
+    "revision": "dd4df7dff4f1df65d78939a958b760a79e3650a1",
+    "compiler_sha256": "5b0fb9369c3b6a4645765ba1e85db16426ea761b6aa0272157fa4b077c8576bf",
+    "wrapper_path": "tools/legacy_kernel_gcc_wrapper.py",
+    "wrapper_sha256": "829e2335a645f2bbec9bdf5f0811eebdf567bdfd0563341f48182633a5bb3eb2"
+  },
+  "build": {
+    "argv": [
+      "make",
+      "-j2",
+      "O=/workspace/build01-sd-next/kernel-sd/out",
+      "ARCH=arm",
+      "CROSS_COMPILE=/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-",
+      "CC=python3 /workspace/vortex-build/tools/legacy_kernel_gcc_wrapper.py /workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-gcc",
+      "HOSTCFLAGS=-O2 -fcommon",
+      "Image",
+      "rk3229-sdk-sd-reference.dtb"
+    ],
+    "started_utc": "2026-10-26T10:15:21.062430+00:00",
+    "finished_utc": "2026-10-26T10:21:59.547904+00:00",
+    "exit_code": 0
+  },
+  "artifacts": {
+    "Image-sd-reference": {
+      "size_bytes": 15380696,
+      "sha256": "00ab9ab1393ac76c96ec984b73a680fc586e861d22f1c404485b6d043a6a9f52"
+    },
+    "rk3229-sdk-sd-reference.dtb": {
+      "size_bytes": 72372,
+      "sha256": "ffc55fd04b80ef2c49307d7428b6be8d7b6362410f235ad25be4c6c7f3109fb7"
+    }
+  },
+  "config_sha256": "989995cfcf9395f51c7299ffd2fd3fad91e1fad216b54e9f6eb9ea8e457f8868",
+  "required_config": {
+    "CONFIG_RK_NAND": "n",
+    "CONFIG_MTD": "n",
+    "CONFIG_BT": "n",
+    "CONFIG_HOTPLUG_CPU": "y",
+    "CONFIG_MMC": "y",
+    "CONFIG_MMC_BLOCK": "y",
+    "CONFIG_MMC_DW": "y",
+    "CONFIG_MMC_DW_ROCKCHIP": "y",
+    "CONFIG_EFI_PARTITION": "y"
+  },
+  "config_changes": [
+    {
+      "symbol": "CONFIG_BT",
+      "before": "y",
+      "after": "n"
+    },
+    {
+      "symbol": "CONFIG_BT_BNEP",
+      "before": "y",
+      "after": null
+    },
+    {
+      "symbol": "CONFIG_BT_BNEP_MC_FILTER",
+      "before": "y",
+      "after": null
+    },
+    {
+      "symbol": "CONFIG_BT_BNEP_PROTO_FILTER",
+      "before": "y",
+      "after": null
+    },
+    {
+      "symbol": "CONFIG_BT_HCIBCM203X",
+      "before": "n",
+      "after": null
+    },
+    {
+      "symbol": "CONFIG_BT_HCIBFUSB",
+      "before": "n",
+      "after": null
+    },
+    {
+      "symbol": "CONFIG_BT_HCIBPA10X",
+      "before": "n",
+      "after": null
+    },
+    {
+      "symbol": "CONFIG_BT_HCIBTSDIO",
+      "before": "n",
+      "after": null
+    },
+    {
+      "symbol": "CONFIG_BT_HCIBTUSB",
+      "before": "n",
+      "after": null
+    },
+    {
+      "symbol": "CONFIG_BT_HCIUART",
+      "before": "y",
+      "after": null
+    },
+    {
+      "symbol": "CONFIG_BT_HCIUART_3WIRE",
+      "before": "n",
+      "after": null
+    },
+    {
+      "symbol": "CONFIG_BT_HCIUART_ATH3K",
+      "before": "n",
+      "after": null
+    },
+    {
+      "symbol": "CONFIG_BT_HCIUART_BCSP",
+      "before": "n",
+      "after": null
+    },
+    {
+      "symbol": "CONFIG_BT_HCIUART_H4",
+      "before": "y",
+      "after": null
+    },
+    {
+      "symbol": "CONFIG_BT_HCIUART_LL",
+      "before": "y",
+      "after": null
+    },
+    {
+      "symbol": "CONFIG_BT_HCIVHCI",
+      "before": "n",
+      "after": null
+    },
+    {
+      "symbol": "CONFIG_BT_HIDP",
+      "before": "y",
+      "after": null
+    },
+    {
+      "symbol": "CONFIG_BT_MRVL",
+      "before": "n",
+      "after": null
+    },
+    {
+      "symbol": "CONFIG_BT_RFCOMM",
+      "before": "y",
+      "after": null
+    },
+    {
+      "symbol": "CONFIG_BT_RFCOMM_TTY",
+      "before": "y",
+      "after": null
+    },
+    {
+      "symbol": "CONFIG_BT_RTKBTUSB",
+      "before": "y",
+      "after": null
+    },
+    {
+      "symbol": "CONFIG_RK_NAND",
+      "before": "y",
+      "after": "n"
+    }
+  ],
+  "gcc_warning_lines": [
+    "/workspace/build01-sd-next/kernel-sd/source/arch/arm/kernel/return_address.c:63:2: warning: #warning \"TODO: return_address should use unwind tables\" [-Wcpp]",
+    "/workspace/build01-sd-next/kernel-sd/source/net/core/sysctl_net_core.c:24:12: warning: ‘one’ defined but not used [-Wunused-variable]",
+    "/workspace/build01-sd-next/kernel-sd/source/drivers/hid/hid-appleir.c:347:22: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]",
+    "/workspace/build01-sd-next/kernel-sd/source/drivers/hid/hid-magicmouse.c:590:22: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]",
+    "/workspace/build01-sd-next/kernel-sd/source/drivers/hid/hid-ntrig.c:1026:22: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]",
+    "/workspace/build01-sd-next/kernel-sd/source/drivers/regulator/core.c:1334:13: warning: ‘devm_regulator_release’ defined but not used [-Wunused-function]"
+  ],
+  "first_attempt": {
+    "argv": [
+      "make",
+      "-j2",
+      "O=/workspace/build01-sd-next/kernel-sd/out",
+      "ARCH=arm",
+      "CROSS_COMPILE=/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-",
+      "CC=python3 /workspace/vortex-build/tools/legacy_kernel_gcc_wrapper.py /workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-gcc",
+      "HOSTCFLAGS=-O2 -fcommon",
+      "Image",
+      "rk3229-sdk-sd-reference.dtb"
+    ],
+    "started_utc": "2026-10-26T10:06:53.691915+00:00",
+    "finished_utc": "2026-10-26T10:12:48.520539+00:00",
+    "exit_code": 2
+  },
+  "first_attempt_gcc_warning_lines": [
+    "/workspace/build01-sd-next/kernel-sd/source/arch/arm/kernel/return_address.c:63:2: warning: #warning \"TODO: return_address should use unwind tables\" [-Wcpp]",
+    "/workspace/build01-sd-next/kernel-sd/source/drivers/hid/hid-appleir.c:347:22: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]",
+    "/workspace/build01-sd-next/kernel-sd/source/drivers/hid/hid-magicmouse.c:590:22: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]",
+    "/workspace/build01-sd-next/kernel-sd/source/drivers/hid/hid-ntrig.c:1026:22: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]",
+    "/workspace/build01-sd-next/kernel-sd/source/net/core/sysctl_net_core.c:24:12: warning: ‘one’ defined but not used [-Wunused-variable]",
+    "/workspace/build01-sd-next/kernel-sd/source/drivers/regulator/core.c:1334:13: warning: ‘devm_regulator_release’ defined but not used [-Wunused-function]"
+  ],
+  "gcc_warning_scope": "The initial full compile emitted the listed GCC diagnostics and failed at final linkage because NAND-only functions were referenced while RK_NAND=n. The successful subsequent normal make rebuilt its requested dependencies using corrected callers and linked all objects; the logs enumerate the actual work. No GCC warning whitelist was changed.",
+  "other_build_warning_lines": [
+    "WARNING: vmlinux.o(.text+0x3001c): Section mismatch in reference from the function dvfs_temp_limit() to the function .cpuinit.text:cpu_up()"
+  ],
+  "forbidden_warning_count": 0,
+  "nand_only_export_symbols_absent": true,
+  "section_lifetime": {
+    "CONFIG_HOTPLUG_CPU": "y",
+    "symbols": {
+      "dvfs_temp_limit": {
+        "address": "0xc003825c",
+        "size": 948,
+        "section_index": "2"
+      },
+      "_cpu_up": {
+        "address": "0xc0923954",
+        "size": 500,
+        "section_index": "2"
+      },
+      "__cpu_up": {
+        "address": "0xc0923074",
+        "size": 336,
+        "section_index": "2"
+      },
+      "cpu_up": {
+        "address": "0xc0923b48",
+        "size": 128,
+        "section_index": "2"
+      },
+      "__init_begin": {
+        "address": "0xc0d20000",
+        "size": 0,
+        "section_index": "15"
+      },
+      "__init_end": {
+        "address": "0xc0d80400",
+        "size": 0,
+        "section_index": "24"
+      }
+    },
+    "freeable_init_range": [
+      "0xc0d20000",
+      "0xc0d80400"
+    ],
+    "all_runtime_symbols_outside_freeable_init": true,
+    "cpu_up_chain_in_dvfs_text_section": true
+  },
+  "compiler_label_present": true,
+  "previous_reference_Image_unchanged_sha256": "d91b62b9d7339824be27a7b9196b4ce35233490b3c87c4cdeac6205499ecf846",
+  "hardware_validation": "not_performed",
+  "boot_image_validation": "not_performed",
+  "limits": [
+    "DTS keeps generic SDK pins, power, timings, Wi-Fi selection and other peripherals; it is not a R329Q_V8.0 hardware description.",
+    "NAND/eMMC controller nodes and Bluetooth platform node are disabled, and RK_NAND/MTD/BT are disabled in the generated configuration. This constrains these inputs but does not prove that physical internal flash is preserved.",
+    "Bootloader can replace the DTB or command line. The final Android ramdisk, modules, update/provisioning paths and storage links remain unvalidated.",
+    "sdmmc_vendor_storage.o remains compiled via CONFIG_MMC_DW_ROCKCHIP even if CONFIG_ROCKCHIP_VENDOR_STORAGE were disabled. Its backend includes eMMC/IDB write ioctls. The this_card pointer is assigned only for an EMMC-restricted host; with the eMMC node disabled, a missing card makes rk_emmc_transfer return -EIO. This is a source relationship, not physical validation.",
+    "The MODPOST section mismatch remains visible. For this exact HOTPLUG_CPU=y ELF, cpu_up and its call chain remain outside the freeable init range; runtime hotplug/thermal behavior is not tested.",
+    "No full Android system, ramdisk, bootloader/DDR/trust, SD layout or installation package was built.",
+    "No hardware command, physical boot, flash operation or GitHub Actions was used."
+  ]
+}

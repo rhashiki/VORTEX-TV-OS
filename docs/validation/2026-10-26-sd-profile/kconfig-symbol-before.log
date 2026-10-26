@@ -1,0 +1,40 @@
+test_active_nand_mtd_bluetooth_and_modular_mmc_are_rejected (test_sd_boot_inputs.SdBootInputChecks.test_active_nand_mtd_bluetooth_and_modular_mmc_are_rejected) ... ok
+test_bluetooth_platform_node_must_exist_and_be_explicitly_disabled (test_sd_boot_inputs.SdBootInputChecks.test_bluetooth_platform_node_must_exist_and_be_explicitly_disabled) ... ok
+test_cli_runs_from_another_directory_and_returns_structured_status (test_sd_boot_inputs.SdBootInputChecks.test_cli_runs_from_another_directory_and_returns_structured_status) ... ok
+test_cmdline_and_chosen_must_contain_the_same_contract (test_sd_boot_inputs.SdBootInputChecks.test_cmdline_and_chosen_must_contain_the_same_contract) ... ok
+test_consistent_inputs_are_read_only_and_do_not_approve_boot (test_sd_boot_inputs.SdBootInputChecks.test_consistent_inputs_are_read_only_and_do_not_approve_boot) ... ok
+test_duplicate_conflicting_or_identical_command_line_selectors_are_rejected (test_sd_boot_inputs.SdBootInputChecks.test_duplicate_conflicting_or_identical_command_line_selectors_are_rejected) ... ok
+test_duplicate_nodes_and_properties_are_rejected (test_sd_boot_inputs.SdBootInputChecks.test_duplicate_nodes_and_properties_are_rejected) ... ok
+test_enabled_generic_platform_mmc_is_rejected_but_disabled_node_is_allowed (test_sd_boot_inputs.SdBootInputChecks.test_enabled_generic_platform_mmc_is_rejected_but_disabled_node_is_allowed) ... ok
+test_enabled_internal_storage_nodes_are_rejected (test_sd_boot_inputs.SdBootInputChecks.test_enabled_internal_storage_nodes_are_rejected) ... ok
+test_enabled_sdio_cannot_declare_sd_or_emmc_capabilities (test_sd_boot_inputs.SdBootInputChecks.test_enabled_sdio_cannot_declare_sd_or_emmc_capabilities) ... ok
+test_matching_node_name_cannot_hide_wrong_reg_address (test_sd_boot_inputs.SdBootInputChecks.test_matching_node_name_cannot_hide_wrong_reg_address) ... ok
+test_missing_dtb_bootargs_and_stale_dtb_selectors_are_rejected (test_sd_boot_inputs.SdBootInputChecks.test_missing_dtb_bootargs_and_stale_dtb_selectors_are_rejected) ... ok
+test_missing_or_disabled_sd_and_missing_internal_nodes_are_rejected (test_sd_boot_inputs.SdBootInputChecks.test_missing_or_disabled_sd_and_missing_internal_nodes_are_rejected) ... ok
+test_missing_or_duplicate_config_values_are_rejected (test_sd_boot_inputs.SdBootInputChecks.test_missing_or_duplicate_config_values_are_rejected) ... ok
+test_missing_symlink_or_fifo_inputs_are_not_opened_as_devices (test_sd_boot_inputs.SdBootInputChecks.test_missing_symlink_or_fifo_inputs_are_not_opened_as_devices) ... ok
+test_mmc_nodes_require_driver_binding_and_controller_type_compatibles (test_sd_boot_inputs.SdBootInputChecks.test_mmc_nodes_require_driver_binding_and_controller_type_compatibles) ... ok
+test_non_ascii_and_control_bytes_are_rejected_in_text_inputs (test_sd_boot_inputs.SdBootInputChecks.test_non_ascii_and_control_bytes_are_rejected_in_text_inputs) ... ok
+test_real_legacy_kconfig_symbols_may_contain_lowercase_letters (test_sd_boot_inputs.SdBootInputChecks.test_real_legacy_kconfig_symbols_may_contain_lowercase_letters) ... FAIL
+test_sd_capabilities_must_exclude_emmc_and_explicitly_enable_sd (test_sd_boot_inputs.SdBootInputChecks.test_sd_capabilities_must_exclude_emmc_and_explicitly_enable_sd) ... ok
+test_substring_tricks_missing_selectors_and_unknown_tokens_are_rejected (test_sd_boot_inputs.SdBootInputChecks.test_substring_tricks_missing_selectors_and_unknown_tokens_are_rejected) ... ok
+test_truncated_wrong_version_overlapping_and_oversized_fdt_are_rejected (test_sd_boot_inputs.SdBootInputChecks.test_truncated_wrong_version_overlapping_and_oversized_fdt_are_rejected) ... ok
+test_unbalanced_or_unterminated_structure_is_rejected (test_sd_boot_inputs.SdBootInputChecks.test_unbalanced_or_unterminated_structure_is_rejected) ... ok
+test_upstream_fstab_controller_and_internal_data_are_rejected (test_sd_boot_inputs.SdBootInputChecks.test_upstream_fstab_controller_and_internal_data_are_rejected) ... ok
+test_wrong_soc_and_extra_enabled_storage_controller_are_rejected (test_sd_boot_inputs.SdBootInputChecks.test_wrong_soc_and_extra_enabled_storage_controller_are_rejected) ... ok
+
+======================================================================
+FAIL: test_real_legacy_kconfig_symbols_may_contain_lowercase_letters (test_sd_boot_inputs.SdBootInputChecks.test_real_legacy_kconfig_symbols_may_contain_lowercase_letters)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/vortex-build/tests/test_sd_boot_inputs.py", line 208, in test_real_legacy_kconfig_symbols_may_contain_lowercase_letters
+    self.assertEqual(self.inspect()["status"], "inputs_only")
+AssertionError: 'blocked' != 'inputs_only'
+- blocked
++ inputs_only
+
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.204s
+
+FAILED (failures=1)
