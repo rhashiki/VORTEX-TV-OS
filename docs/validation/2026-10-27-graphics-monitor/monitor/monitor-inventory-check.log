@@ -1,0 +1,25 @@
+{
+  "source_files_verified_against_pins": 32,
+  "examined_service_calls": 9,
+  "kernel_config": {
+    "CONFIG_ARM_PSCI": "y",
+    "CONFIG_SMP": "y",
+    "CONFIG_CPU_RK322X": "y",
+    "CONFIG_HOTPLUG_CPU": "y",
+    "CONFIG_ARM_TRUSTZONE": "n",
+    "CONFIG_CPU_IDLE": "y",
+    "CONFIG_CPU_FREQ": "y",
+    "CONFIG_SUSPEND": "y",
+    "CONFIG_PM": "y",
+    "CONFIG_PM_AUTOSLEEP": "y",
+    "CONFIG_PM_DEVFREQ": "n",
+    "CONFIG_DVFS": "y",
+    "CONFIG_FIQ_DEBUGGER": "y",
+    "CONFIG_SERIAL_ROCKCHIP": "y",
+    "CONFIG_SERIAL_ROCKCHIP_CONSOLE": "n",
+    "CONFIG_CMDLINE": "\"\"",
+    "CONFIG_RK_VCODEC": "y",
+    "CONFIG_ROCKCHIP_REMOTECTL_PWM": "y"
+  },
+  "optee_elf_sha256": "2fa06fecbd427be663ebe8adbd5dcf42861bcc6adbdeaa6006b0eeca9c40806d"
+}

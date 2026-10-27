@@ -1,0 +1,6 @@
+
+RESULT_CFLAGS= -Wall -Wextra -DLOG_TAG=\"hwcomposer\" -DTARGET_BOARD_PLATFORM_RK322X -DRK322X_BOX -DRK_BOX -DUSE_DMA_BUF -DPLATFORM_SDK_VERSION=25
+RESULT_INCLUDES=/sdk/inc /hal/inc hardware/rockchip/libgralloc_ump hardware/rockchip/libgralloc hardware/intel/libgralloc hardware/rockchip/librkvpu system/core/include/system
+RESULT_MODULE=hwcomposer.rk30board
+RESULT_SHARED=libhardware liblog libui libEGL libcutils libion libhardware_legacy libsync
+make: Nothing to be done for 'diagnostic'.

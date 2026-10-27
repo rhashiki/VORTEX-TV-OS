@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "scope": "Diagnostic GNUmake selection and exact source-patch replay only; no HAL compilation, linking or hardware claims. Shell calls and module registration disabled in harness.",
+  "checks": {
+    "upstream_residual_directory_selects_MALI600": true,
+    "patched_rk322x_legacy_selection_residual_False": true,
+    "patched_rk322x_legacy_selection_residual_True": true,
+    "patched_rk322x_wrong_GPU_rejected": true,
+    "non_rk322x_gralloc_fields_preserved_residual_False": true,
+    "non_rk322x_gralloc_fields_preserved_residual_True": true,
+    "upstream_HWC_UMP_include_before_selected_gralloc": true,
+    "rk322x_HWC_uses_selected_gralloc_only": true,
+    "non_rk322x_HWC_fields_preserved": true,
+    "vendor_exactly_three_removals": true
+  },
+  "case_results": [
+    {
+      "case": "gralloc-before-rk322x-mali400-clean",
+      "source_file": "/workspace/build01-graphics-next/selection/cases/gralloc-before-rk322x-mali400-clean/Android.mk",
+      "field_paths_normalized_to_module_source": true,
+      "exit_code": 0,
+      "fields": {
+        "CFLAGS": "-DLOG_TAG=\\\"gralloc\\\" -DGRALLOC_32_BITS -DSTANDARD_LINUX_SCREEN -DPLATFORM_SDK_VERSION=25",
+        "INCLUDES": "system/core/include/ hardware/arm/mali/include  hardware/arm/mali/src/ump/include",
+        "MODULE": "gralloc.rk30board",
+        "SHARED": "liblog libcutils libGLESv1_CM libion libhardware"
+      },
+      "log": "gralloc-before-rk322x-mali400-clean.log"
+    },
+    {
+      "case": "gralloc-before-rk322x-mali400-residual",
+      "source_file": "/workspace/build01-graphics-next/selection/cases/gralloc-before-rk322x-mali400-residual/Android.mk",
+      "field_paths_normalized_to_module_source": true,
+      "exit_code": 0,
+      "fields": {
+        "CFLAGS": "-DLOG_TAG=\\\"gralloc\\\" -DSTANDARD_LINUX_SCREEN -DMALI_600",
+        "INCLUDES": "<MODULE_SOURCE>/../../.. <MODULE_SOURCE>/../../../kernel/include",
+        "MODULE": "gralloc.rk30board",
+        "SHARED": "liblog libcutils libGLESv1_CM libGLES_mali libion"
+      },
+      "log": "gralloc-before-rk322x-mali400-residual.log"
+    },
+    {
+      "case": "gralloc-patched-rk322x-mali400-clean",
+      "source_file": "/workspace/build01-graphics-next/selection/gralloc/Android.mk",
+      "field_paths_normalized_to_module_source": true,
+      "exit_code": 0,
+      "fields": {
+        "CFLAGS": "-DLOG_TAG=\\\"gralloc\\\" -DGRALLOC_32_BITS -DSTANDARD_LINUX_SCREEN -DPLATFORM_SDK_VERSION=25",
+        "INCLUDES": "system/core/include/ hardware/arm/mali/include  hardware/arm/mali/src/ump/include",
+        "MODULE": "gralloc.rk30board",
+        "SHARED": "liblog libcutils libGLESv1_CM libion libhardware"
+      },
+      "log": "gralloc-patched-rk322x-mali400-clean.log"
+    },
+    {
+      "case": "gralloc-patched-rk322x-mali400-residual",
+      "source_file": "/workspace/build01-graphics-next/selection/gralloc/Android.mk",
+      "field_paths_normalized_to_module_source": true,
+      "exit_code": 0,
+      "fields": {
+        "CFLAGS": "-DLOG_TAG=\\\"gralloc\\\" -DGRALLOC_32_BITS -DSTANDARD_LINUX_SCREEN -DPLATFORM_SDK_VERSION=25",
+        "INCLUDES": "system/core/include/ hardware/arm/mali/include  hardware/arm/mali/src/ump/include",
+        "MODULE": "gralloc.rk30board",
+        "SHARED": "liblog libcutils libGLESv1_CM libion libhardware"
+      },
+      "log": "gralloc-patched-rk322x-mali400-residual.log"
+    },
+    {
+      "case": "gralloc-patched-rk322x-mali-t760-clean",
+      "source_file": "/workspace/build01-graphics-next/selection/gralloc/Android.mk",
+      "field_paths_normalized_to_module_source": true,
+      "exit_code": 2,
+      "fields": {},
+      "log": "gralloc-patched-rk322x-mali-t760-clean.log"
+    },
+    {
+      "case": "gralloc-before-rk3288-mali-t760-clean",
+      "source_file": "/workspace/build01-graphics-next/selection/cases/gralloc-before-rk3288-mali-t760-clean/Android.mk",
+      "field_paths_normalized_to_module_source": true,
+      "exit_code": 0,
+      "fields": {
+        "CFLAGS": "-DLOG_TAG=\\\"gralloc\\\" -DGRALLOC_32_BITS -DSTANDARD_LINUX_SCREEN -DPLATFORM_SDK_VERSION=25",
+        "INCLUDES": "system/core/include/ hardware/arm/mali/include  hardware/arm/mali/src/ump/include",
+        "MODULE": "gralloc.rk30board",
+        "SHARED": "liblog libcutils libGLESv1_CM libion libhardware"
+      },
+      "log": "gralloc-before-rk3288-mali-t760-clean.log"
+    },
+    {
+      "case": "gralloc-before-rk3288-mali-t760-residual",
+      "source_file": "/workspace/build01-graphics-next/selection/cases/gralloc-before-rk3288-mali-t760-residual/Android.mk",
+      "field_paths_normalized_to_module_source": true,
+      "exit_code": 0,
+      "fields": {
+        "CFLAGS": "-DLOG_TAG=\\\"gralloc\\\" -DSTANDARD_LINUX_SCREEN -DMALI_600",
+        "INCLUDES": "<MODULE_SOURCE>/../../.. <MODULE_SOURCE>/../../../kernel/include",
+        "MODULE": "gralloc.rk30board",
+        "SHARED": "liblog libcutils libGLESv1_CM libGLES_mali libion"
+      },
+      "log": "gralloc-before-rk3288-mali-t760-residual.log"
+    },
+    {
+      "case": "gralloc-patched-rk3288-mali-t760-clean",
+      "source_file": "/workspace/build01-graphics-next/selection/gralloc/Android.mk",
+      "field_paths_normalized_to_module_source": true,
+      "exit_code": 0,
+      "fields": {
+        "CFLAGS": "-DLOG_TAG=\\\"gralloc\\\" -DGRALLOC_32_BITS -DSTANDARD_LINUX_SCREEN -DPLATFORM_SDK_VERSION=25",
+        "INCLUDES": "system/core/include/ hardware/arm/mali/include  hardware/arm/mali/src/ump/include",
+        "MODULE": "gralloc.rk30board",
+        "SHARED": "liblog libcutils libGLESv1_CM libion libhardware"
+      },
+      "log": "gralloc-patched-rk3288-mali-t760-clean.log"
+    },
+    {
+      "case": "gralloc-patched-rk3288-mali-t760-residual",
+      "source_file": "/workspace/build01-graphics-next/selection/gralloc/Android.mk",
+      "field_paths_normalized_to_module_source": true,
+      "exit_code": 0,
+      "fields": {
+        "CFLAGS": "-DLOG_TAG=\\\"gralloc\\\" -DSTANDARD_LINUX_SCREEN -DMALI_600",
+        "INCLUDES": "<MODULE_SOURCE>/../../.. <MODULE_SOURCE>/../../../kernel/include",
+        "MODULE": "gralloc.rk30board",
+        "SHARED": "liblog libcutils libGLESv1_CM libGLES_mali libion"
+      },
+      "log": "gralloc-patched-rk3288-mali-t760-residual.log"
+    },
+    {
+      "case": "hwcomposer-before-rk322x-mali400-residual",
+      "source_file": "/workspace/build01-graphics-next/selection/cases/hwcomposer-before-rk322x-mali400-residual/Android.mk",
+      "field_paths_normalized_to_module_source": true,
+      "exit_code": 0,
+      "fields": {
+        "CFLAGS": " -Wall -Wextra -DLOG_TAG=\\\"hwcomposer\\\" -DTARGET_BOARD_PLATFORM_RK322X -DRK322X_BOX -DRK_BOX -DUSE_DMA_BUF -DPLATFORM_SDK_VERSION=25",
+        "INCLUDES": "/sdk/inc /hal/inc hardware/rockchip/libgralloc_ump hardware/rockchip/libgralloc hardware/intel/libgralloc hardware/rockchip/librkvpu system/core/include/system",
+        "MODULE": "hwcomposer.rk30board",
+        "SHARED": "libhardware liblog libui libEGL libcutils libion libhardware_legacy libsync"
+      },
+      "log": "hwcomposer-before-rk322x-mali400-residual.log"
+    },
+    {
+      "case": "hwcomposer-patched-rk322x-mali400-residual",
+      "source_file": "/workspace/build01-graphics-next/selection/hwcomposer/Android.mk",
+      "field_paths_normalized_to_module_source": true,
+      "exit_code": 0,
+      "fields": {
+        "CFLAGS": " -Wall -Wextra -DLOG_TAG=\\\"hwcomposer\\\" -DTARGET_BOARD_PLATFORM_RK322X -DRK322X_BOX -DRK_BOX -DUSE_DMA_BUF -DPLATFORM_SDK_VERSION=25",
+        "INCLUDES": "/sdk/inc /hal/inc hardware/rockchip/libgralloc hardware/rockchip/librkvpu system/core/include/system",
+        "MODULE": "hwcomposer.rk30board",
+        "SHARED": "libhardware liblog libui libEGL libcutils libion libhardware_legacy libsync"
+      },
+      "log": "hwcomposer-patched-rk322x-mali400-residual.log"
+    },
+    {
+      "case": "hwcomposer-before-rk3288-mali-t760-residual",
+      "source_file": "/workspace/build01-graphics-next/selection/cases/hwcomposer-before-rk3288-mali-t760-residual/Android.mk",
+      "field_paths_normalized_to_module_source": true,
+      "exit_code": 0,
+      "fields": {
+        "CFLAGS": " -Wall -Wextra -DLOG_TAG=\\\"hwcomposer\\\" -DRK_BOX -DUSE_DMA_BUF -DPLATFORM_SDK_VERSION=25",
+        "INCLUDES": "/sdk/inc /hal/inc hardware/rockchip/libgralloc_ump hardware/rockchip/libgralloc hardware/intel/libgralloc hardware/rockchip/librkvpu system/core/include/system",
+        "MODULE": "hwcomposer.rk30board",
+        "SHARED": "libhardware liblog libui libEGL libcutils libion libhardware_legacy libsync"
+      },
+      "log": "hwcomposer-before-rk3288-mali-t760-residual.log"
+    },
+    {
+      "case": "hwcomposer-patched-rk3288-mali-t760-residual",
+      "source_file": "/workspace/build01-graphics-next/selection/hwcomposer/Android.mk",
+      "field_paths_normalized_to_module_source": true,
+      "exit_code": 0,
+      "fields": {
+        "CFLAGS": " -Wall -Wextra -DLOG_TAG=\\\"hwcomposer\\\" -DRK_BOX -DUSE_DMA_BUF -DPLATFORM_SDK_VERSION=25",
+        "INCLUDES": "/sdk/inc /hal/inc hardware/rockchip/libgralloc_ump hardware/rockchip/libgralloc hardware/intel/libgralloc hardware/rockchip/librkvpu system/core/include/system",
+        "MODULE": "hwcomposer.rk30board",
+        "SHARED": "libhardware liblog libui libEGL libcutils libion libhardware_legacy libsync"
+      },
+      "log": "hwcomposer-patched-rk3288-mali-t760-residual.log"
+    }
+  ],
+  "patch_replay": {
+    "gralloc": {
+      "revision": "c92fb8cd8becd57b025149f2861a2072b092ddea",
+      "patches": [
+        {
+          "name": "gralloc-rk322x-source-selection.patch",
+          "sha256": "4405334b0a86071f253c59fab40f35896fd055f95fe8c91758336bdf74bee968"
+        }
+      ],
+      "byte_identical_replay": true,
+      "result_sha256": "21992e6da2e4aa8f5e0844111523bf0136dc783c7c1f8e0a099029aa6256f56e"
+    },
+    "hwcomposer": {
+      "revision": "d3ec43f2f751123ca5e7bda2d07eded4c6352a35",
+      "patches": [
+        {
+          "name": "hwcomposer-rk322x-source-selection.patch",
+          "sha256": "0a06468422b3e41f3beea6d4f29aa1b906d8df92fb7da969626819d3b817aa6d"
+        }
+      ],
+      "byte_identical_replay": true,
+      "result_sha256": "6b6a2014dc476b5bd2dce5326bf140336e248f2bf95eb88be578a1c98e5285af"
+    },
+    "vendor": {
+      "revision": "50c7170ecb4bd907059db37f09f4767b301f2d15",
+      "patches": [
+        {
+          "name": "0006-vendor-omit-bluetooth.patch",
+          "sha256": "97025b3ee255f7342c3b9c08b2eccbc02c4957b3429cc679e8888e1f2b3ba8a5"
+        },
+        {
+          "name": "vendor-rk322x-source-hals.patch",
+          "sha256": "577fd1046ef854e407bcb44354e0f84669ea0404a71ba9314aa2071ee48ec398"
+        }
+      ],
+      "byte_identical_replay": true,
+      "result_sha256": "956b95a1ef65ff8dbbfc78dd7e8c52a0252460482791544a1b14595378026983"
+    }
+  },
+  "vendor_removed_lines": [
+    "    vendor/rockchip/rk322x/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \\",
+    "    vendor/rockchip/rk322x/proprietary/lib/hw/gralloc.rk30board.so:system/lib/hw/gralloc.rk30board.so \\",
+    "    vendor/rockchip/rk322x/proprietary/lib/hw/hwcomposer.rk30board.so:system/lib/hw/hwcomposer.rk30board.so \\"
+  ],
+  "limits": [
+    "Mali/OMX private buffer ABI and other ioctl interfaces remain unverified.",
+    "Only the pinned candidates are patched. This does not prove the final system file inventory.",
+    "A complete Android build must provide the rebuilt HAL modules; no prebuilts are substituted."
+  ]
+}

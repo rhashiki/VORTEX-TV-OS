@@ -1,0 +1,6 @@
+
+RESULT_CFLAGS=-DLOG_TAG=\"gralloc\" -DSTANDARD_LINUX_SCREEN -DMALI_600
+RESULT_INCLUDES=/workspace/build01-graphics-next/selection/gralloc/../../.. /workspace/build01-graphics-next/selection/gralloc/../../../kernel/include
+RESULT_MODULE=gralloc.rk30board
+RESULT_SHARED=liblog libcutils libGLESv1_CM libGLES_mali libion
+make: Nothing to be done for 'diagnostic'.

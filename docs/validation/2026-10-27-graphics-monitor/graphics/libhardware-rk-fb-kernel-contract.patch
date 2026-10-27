@@ -1,0 +1,34 @@
+diff --git a/include/hardware/rk_fh.h b/include/hardware/rk_fh.h
+index 4e450a8..91fd60b 100755
+--- a/include/hardware/rk_fh.h
++++ b/include/hardware/rk_fh.h
+@@ -37,6 +37,20 @@ struct rk_lcdc_post_cfg{
+ 	u32 ysize;
+ };
+ 
++/* RK_FBIOSET_CONFIG_DONE ABI of kernel 6c04d006 (include/linux/rk_fb.h).
++ * Keep zero-initialized unless writeback is explicitly implemented: the
++ * kernel disables writeback only when both ion_fd and phy_addr are zero.
++ */
++struct rk_fb_wb_cfg {
++	u8  data_format;
++	short ion_fd;
++	u32 phy_addr;
++	u16 xsize;
++	u16 ysize;
++	u8 reserved0;
++	u32 reversed1;
++};
++
+ struct rk_fb_area_par {
+ 	u8  data_format;        /*layer data fmt*/
+ 	short ion_fd;
+@@ -74,7 +88,7 @@ struct rk_fb_win_cfg_data {
+ 	short ret_fence_fd;
+ 	short rel_fence_fd[RK_MAX_BUF_NUM];
+ 	struct  rk_fb_win_par win_par[RK30_MAX_LAYER_SUPPORT];
+-	struct  rk_lcdc_post_cfg post_cfg;
++	struct  rk_fb_wb_cfg wb_cfg;
+ };
+ 
+ #endif /* __RK_FH_H___ */

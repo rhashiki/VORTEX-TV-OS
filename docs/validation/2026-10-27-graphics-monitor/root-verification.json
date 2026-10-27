@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "scope": "Final metadata/artifact integrity check, no additional compilation or hardware test.",
+  "base_commit": "d523837a473a464313e5709c3cdab441702ca8f3",
+  "frozen_snapshots": {
+    "graphics": {
+      "sha256": "8f732c2f7e9ee27384c7b64dfb65a73180840a45d3b8ed5dafd2dee5ba6f8f7c",
+      "verified_files": 70
+    },
+    "gralloc_objects": {
+      "sha256": "801ebe0a6161c0723774c546bc0d86752a5283b5d1700d1a74f9e0d7ef104fc8",
+      "verified_files": 45
+    },
+    "licenses": {
+      "sha256": "52f0617e1501b12ef4c1d7543a986b6447dd58cdc476684bd55a7d45747a240f",
+      "verified_files": 6
+    },
+    "monitor": {
+      "sha256": "6445849217258ffddcbbcffeb0c1691b372f5ee14eefe5fd677be5b2ae0e982a",
+      "verified_files": 26
+    },
+    "installer": {
+      "sha256": "3a1db97bc4b5acef92899f0a26080cec5fd7eb6eb68801d6441adf354aca72c0",
+      "verified_files": 77
+    }
+  },
+  "patches_and_profile_match_experiment_inputs": {
+    "rom/platform-reference/graphics/patches/0001-libhardware-match-kernel-fb-contract.patch": "bd3a2e95546844cae005bd6ce385324b6ef06f99837f6c58f8f49bf84035e599",
+    "rom/platform-reference/graphics/patches/0002-gralloc-select-mali400-for-rk322x.patch": "4405334b0a86071f253c59fab40f35896fd055f95fe8c91758336bdf74bee968",
+    "rom/platform-reference/graphics/patches/0003-hwc-use-selected-gralloc-header.patch": "0a06468422b3e41f3beea6d4f29aa1b906d8df92fb7da969626819d3b817aa6d",
+    "rom/platform-reference/graphics/patches/0004-vendor-use-source-graphics-hals.patch": "577fd1046ef854e407bcb44354e0f84669ea0404a71ba9314aa2071ee48ec398",
+    "rom/sdcard/kernel-propagate-psci-suspend-error.patch": "1014597d6a89fa50b976b019075babd58ea7b10acc1c8c797e36cd4f031c8ed8",
+    "rom/sdcard/rk3229-sdk-sd-monitor-gated.dts": "c707bc6aa0a7e9af1273355faa906f528b2e120df65b661aaaaa1e9f3aacd337"
+  },
+  "actual_gralloc_objects": [
+    {
+      "object": "framebuffer_device.o",
+      "bytes": 11376,
+      "sha256": "97325a22a87e0617eb768e107b00f8ceefd3b06edac54f68ed866f8d3d98d603"
+    },
+    {
+      "object": "gralloc_module.o",
+      "bytes": 11616,
+      "sha256": "00602ce77a1b6dd5eb48424bf269b973d0a3868ad1d73d3f68d55f0b71ae2fad"
+    },
+    {
+      "object": "alloc_device.o",
+      "bytes": 26840,
+      "sha256": "88c86e2d5abdf4fc22552a1dffeca363196ada7cf1b911d94f448992ea6d90b3"
+    },
+    {
+      "object": "rockchip_alloc_device.o",
+      "bytes": 4880,
+      "sha256": "1679b92b2f1b48510722c319d327fdae27086b7c2be6a26abe0bf80c9276b80e"
+    }
+  ],
+  "installer_functional_checks_passed": 14,
+  "unit_regression_tests_passed": 96,
+  "selection_make_cases": 13,
+  "DTB_node_count": 468,
+  "DTB_changed_status_properties": 2,
+  "cross_audit_status": "inputs_only",
+  "app_source_unchanged": true,
+  "Android_HAL_link": "not_performed",
+  "full_Android_or_SD_image": "not_produced",
+  "physical_boot": "not_performed"
+}

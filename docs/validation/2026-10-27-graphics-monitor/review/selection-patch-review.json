@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "scope": "Independent read-only patch review; no GNU make expansion, HAL build, link or runtime test by this reviewer.",
+  "patches": {
+    "gralloc-rk322x-source-selection.patch": "4405334b0a86071f253c59fab40f35896fd055f95fe8c91758336bdf74bee968",
+    "hwcomposer-rk322x-source-selection.patch": "0a06468422b3e41f3beea6d4f29aa1b906d8df92fb7da969626819d3b817aa6d",
+    "vendor-rk322x-source-hals.patch": "577fd1046ef854e407bcb44354e0f84669ea0404a71ba9314aa2071ee48ec398"
+  },
+  "application_checks": {
+    "gralloc_against_pinned_original": "pass",
+    "hwcomposer_against_pinned_original": "pass",
+    "vendor_against_prior_after0006_worktree": "pass",
+    "vendor_reverse_on_patched_worktree": "pass",
+    "vendor_exact_three_line_removal_from_after0006_bytes": "pass"
+  },
+  "findings": [],
+  "assessment": [
+    "Gralloc keeps prior wildcard behavior outside TARGET_BOARD_PLATFORM=rk322x and forces the legacy branch for rk322x/mali400; wrong or missing GPU is a deliberate hard error.",
+    "HWC removes UMP and Intel search fallbacks only for rk322x while preserving libgralloc, librkvpu, system includes and all paths for other boards.",
+    "Vendor patch removes exactly three conflicting/fallback HAL copies, with other vendor entries unchanged relative to after0006.",
+    "These fixes establish deterministic intended source selection in the patched recipes but still require build graph/include and final system-image checks."
+  ],
+  "remaining_limits": [
+    "Mali400 branch still references its existing hardware/arm/mali include paths; necessary contents and native dependencies must exist for a real compile.",
+    "Private-handle expectations of remaining libGLES_mali/libgralloc_priv_omx blobs remain unresolved.",
+    "No inference of hardware compatibility from patch application or make diagnostics."
+  ]
+}

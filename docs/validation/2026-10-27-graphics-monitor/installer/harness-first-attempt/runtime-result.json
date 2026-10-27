@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "scope": "Real final AOSP APK Android API25 end-to-end installer regression; not a ROM or hardware test.",
+  "status": "failed",
+  "device": {
+    "serial": "emulator-5586",
+    "ro.build.version.release": "7.1.1",
+    "ro.build.version.sdk": "25",
+    "ro.product.cpu.abi": "x86"
+  },
+  "apk": {
+    "sha256": "81fc16aa89e523088ac8c7a6e334a2c670745d6a4e673a30a986ba6af04867d4",
+    "size_bytes": 44366
+  },
+  "fixture": {
+    "path": "/workspace/build01-retry/fixture/smoke.apk",
+    "package": "os.vortex.smoke",
+    "sha256": "5461107bd1f4ae9064823cfa3699abc02be71053cd3c5751434000ed591eabbf",
+    "size_bytes": 8535
+  },
+  "checks": [
+    {
+      "check": "fixture_initially_absent",
+      "status": "pass",
+      "detail": "PackageManager reports no fixture package"
+    },
+    {
+      "check": "wrong_token_rejected",
+      "status": "pass",
+      "detail": "HTTP404, no PackageInstaller/session consumption"
+    },
+    {
+      "check": "wrong_origin_rejected",
+      "status": "pass",
+      "detail": "HTTP403"
+    },
+    {
+      "check": "invalid_apk_signature_rejected",
+      "status": "pass",
+      "detail": "Non-ZIP body HTTP415, fixture remains absent"
+    },
+    {
+      "check": "zip_without_manifest_rejected_by_package_parser",
+      "status": "pass",
+      "detail": "HTTP transport accepted ZIP; app rejected PackageManager archive metadata, no installation"
+    },
+    {
+      "check": "confirmation_before_install",
+      "status": "pass",
+      "detail": "Android PackageInstaller foreground; fixture absent until explicit decision"
+    },
+    {
+      "check": "cancel_keeps_package_absent",
+      "status": "pass",
+      "detail": "Pressed Android PackageInstaller Cancel; fixture still not installed"
+    },
+    {
+      "check": "explicit_confirmation_installs_fixture",
+      "status": "pass",
+      "detail": "Fixture installed only after pressing Android Install confirmation"
+    },
+    {
+      "check": "accepted_upload_consumes_pairing",
+      "status": "pass",
+      "detail": "No tcp/tcp6 listening socket on accepted upload port"
+    },
+    {
+      "check": "installed_app_visible_directly_on_home",
+      "status": "pass",
+      "detail": "Vortex Smoke App tile is on the same Home as Install/Settings/Power, without drawer"
+    }
+  ],
+  "limits": [
+    "Android7.1.1/API25/x86 software AVD; not Android7.1.2/Rockchip firmware boot.",
+    "HTTP requests are sent inside the emulator to the selected private emulator interface; no physical phone/LAN/USB media exercised.",
+    "Unknown-sources setting is explicitly enabled in this disposable AVD for PackageInstaller testing.",
+    "Disposable fixture APK is an Activity-only test app, not part of the Vortex product."
+  ],
+  "unknown_sources_setting": {
+    "before": "0",
+    "during_test": "1"
+  },
+  "failed_step": "return Home and launch directly",
+  "error": "AssertionError('Could not reach fixture using D-pad')",
+  "ended_at_unix": 1793081353.318654
+}

@@ -1,0 +1,1579 @@
+
+/workspace/build01-graphics-next/graphics/hal-build/framebuffer_device.o:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <gralloc_open>:
+   0:	b580      	push	{r7, lr}
+   2:	b082      	sub	sp, #8
+   4:	af00      	add	r7, sp, #0
+   6:	6078      	str	r0, [r7, #4]
+   8:	6039      	str	r1, [r7, #0]
+   a:	687b      	ldr	r3, [r7, #4]
+   c:	695b      	ldr	r3, [r3, #20]
+   e:	681b      	ldr	r3, [r3, #0]
+  10:	683a      	ldr	r2, [r7, #0]
+  12:	4904      	ldr	r1, [pc, #16]	; (24 <gralloc_open+0x24>)
+  14:	4479      	add	r1, pc
+  16:	6878      	ldr	r0, [r7, #4]
+  18:	4798      	blx	r3
+  1a:	4603      	mov	r3, r0
+  1c:	4618      	mov	r0, r3
+  1e:	3708      	adds	r7, #8
+  20:	46bd      	mov	sp, r7
+  22:	bd80      	pop	{r7, pc}
+  24:	00000014 	.word	0x00000014
+			24: R_ARM_REL32	.rodata
+
+00000028 <gralloc_close>:
+  28:	b580      	push	{r7, lr}
+  2a:	b082      	sub	sp, #8
+  2c:	af00      	add	r7, sp, #0
+  2e:	6078      	str	r0, [r7, #4]
+  30:	687b      	ldr	r3, [r7, #4]
+  32:	6bdb      	ldr	r3, [r3, #60]	; 0x3c
+  34:	687a      	ldr	r2, [r7, #4]
+  36:	4610      	mov	r0, r2
+  38:	4798      	blx	r3
+  3a:	4603      	mov	r3, r0
+  3c:	4618      	mov	r0, r3
+  3e:	3708      	adds	r7, #8
+  40:	46bd      	mov	sp, r7
+  42:	bd80      	pop	{r7, pc}
+
+00000044 <_ZL20fb_set_swap_intervalP20framebuffer_device_ti>:
+  44:	b480      	push	{r7}
+  46:	b083      	sub	sp, #12
+  48:	af00      	add	r7, sp, #0
+  4a:	6078      	str	r0, [r7, #4]
+  4c:	6039      	str	r1, [r7, #0]
+  4e:	687b      	ldr	r3, [r7, #4]
+  50:	6e1a      	ldr	r2, [r3, #96]	; 0x60
+  52:	683b      	ldr	r3, [r7, #0]
+  54:	429a      	cmp	r2, r3
+  56:	dd03      	ble.n	60 <_ZL20fb_set_swap_intervalP20framebuffer_device_ti+0x1c>
+  58:	687b      	ldr	r3, [r7, #4]
+  5a:	6e1b      	ldr	r3, [r3, #96]	; 0x60
+  5c:	603b      	str	r3, [r7, #0]
+  5e:	e007      	b.n	70 <_ZL20fb_set_swap_intervalP20framebuffer_device_ti+0x2c>
+  60:	687b      	ldr	r3, [r7, #4]
+  62:	6e5a      	ldr	r2, [r3, #100]	; 0x64
+  64:	683b      	ldr	r3, [r7, #0]
+  66:	429a      	cmp	r2, r3
+  68:	da02      	bge.n	70 <_ZL20fb_set_swap_intervalP20framebuffer_device_ti+0x2c>
+  6a:	687b      	ldr	r3, [r7, #4]
+  6c:	6e5b      	ldr	r3, [r3, #100]	; 0x64
+  6e:	603b      	str	r3, [r7, #0]
+  70:	4b05      	ldr	r3, [pc, #20]	; (88 <_ZL20fb_set_swap_intervalP20framebuffer_device_ti+0x44>)
+  72:	447b      	add	r3, pc
+  74:	461a      	mov	r2, r3
+  76:	683b      	ldr	r3, [r7, #0]
+  78:	6013      	str	r3, [r2, #0]
+  7a:	2300      	movs	r3, #0
+  7c:	4618      	mov	r0, r3
+  7e:	370c      	adds	r7, #12
+  80:	46bd      	mov	sp, r7
+  82:	f85d 7b04 	ldr.w	r7, [sp], #4
+  86:	4770      	bx	lr
+  88:	00000012 	.word	0x00000012
+			88: R_ARM_REL32	.data
+
+0000008c <_ZL7fb_postP20framebuffer_device_tPK13native_handle>:
+  8c:	b5b0      	push	{r4, r5, r7, lr}
+  8e:	f5ad 7d72 	sub.w	sp, sp, #968	; 0x3c8
+  92:	af04      	add	r7, sp, #16
+  94:	1d3b      	adds	r3, r7, #4
+  96:	6018      	str	r0, [r3, #0]
+  98:	463b      	mov	r3, r7
+  9a:	6019      	str	r1, [r3, #0]
+  9c:	463b      	mov	r3, r7
+  9e:	6818      	ldr	r0, [r3, #0]
+  a0:	f7ff fffe 	bl	0 <gralloc_open>
+			a0: R_ARM_THM_CALL	_ZN16private_handle_t8validateEPK13native_handle
+  a4:	4603      	mov	r3, r0
+  a6:	0fdb      	lsrs	r3, r3, #31
+  a8:	b2db      	uxtb	r3, r3
+  aa:	2b00      	cmp	r3, #0
+  ac:	d002      	beq.n	b4 <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x28>
+  ae:	f06f 0315 	mvn.w	r3, #21
+  b2:	e20e      	b.n	4d2 <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x446>
+  b4:	463b      	mov	r3, r7
+  b6:	681b      	ldr	r3, [r3, #0]
+  b8:	f8c7 33b0 	str.w	r3, [r7, #944]	; 0x3b0
+  bc:	1d3b      	adds	r3, r7, #4
+  be:	681b      	ldr	r3, [r3, #0]
+  c0:	689b      	ldr	r3, [r3, #8]
+  c2:	f8c7 33ac 	str.w	r3, [r7, #940]	; 0x3ac
+  c6:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+  ca:	f8d3 30c4 	ldr.w	r3, [r3, #196]	; 0xc4
+  ce:	2b00      	cmp	r3, #0
+  d0:	d010      	beq.n	f4 <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x68>
+  d2:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+  d6:	f8d3 308c 	ldr.w	r3, [r3, #140]	; 0x8c
+  da:	f8d7 03ac 	ldr.w	r0, [r7, #940]	; 0x3ac
+  de:	f8d7 23ac 	ldr.w	r2, [r7, #940]	; 0x3ac
+  e2:	f8d2 20c4 	ldr.w	r2, [r2, #196]	; 0xc4
+  e6:	4611      	mov	r1, r2
+  e8:	4798      	blx	r3
+  ea:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+  ee:	2200      	movs	r2, #0
+  f0:	f8c3 20c4 	str.w	r2, [r3, #196]	; 0xc4
+  f4:	f8d7 33b0 	ldr.w	r3, [r7, #944]	; 0x3b0
+  f8:	695b      	ldr	r3, [r3, #20]
+  fa:	f003 0301 	and.w	r3, r3, #1
+  fe:	2b00      	cmp	r3, #0
+ 100:	f000 8186 	beq.w	410 <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x384>
+ 104:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 108:	f8d3 4088 	ldr.w	r4, [r3, #136]	; 0x88
+ 10c:	f8d7 03ac 	ldr.w	r0, [r7, #940]	; 0x3ac
+ 110:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 114:	f8d3 30d0 	ldr.w	r3, [r3, #208]	; 0xd0
+ 118:	461a      	mov	r2, r3
+ 11a:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 11e:	f8d3 30d4 	ldr.w	r3, [r3, #212]	; 0xd4
+ 122:	461d      	mov	r5, r3
+ 124:	4639      	mov	r1, r7
+ 126:	2300      	movs	r3, #0
+ 128:	9303      	str	r3, [sp, #12]
+ 12a:	9502      	str	r5, [sp, #8]
+ 12c:	9201      	str	r2, [sp, #4]
+ 12e:	2300      	movs	r3, #0
+ 130:	9300      	str	r3, [sp, #0]
+ 132:	2300      	movs	r3, #0
+ 134:	f04f 4200 	mov.w	r2, #2147483648	; 0x80000000
+ 138:	6809      	ldr	r1, [r1, #0]
+ 13a:	47a0      	blx	r4
+ 13c:	f8d7 33b0 	ldr.w	r3, [r7, #944]	; 0x3b0
+ 140:	6b9b      	ldr	r3, [r3, #56]	; 0x38
+ 142:	461a      	mov	r2, r3
+ 144:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 148:	f8d3 30b0 	ldr.w	r3, [r3, #176]	; 0xb0
+ 14c:	6b9b      	ldr	r3, [r3, #56]	; 0x38
+ 14e:	1ad3      	subs	r3, r2, r3
+ 150:	f8c7 33a8 	str.w	r3, [r7, #936]	; 0x3a8
+ 154:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 158:	2210      	movs	r2, #16
+ 15a:	f8c3 2124 	str.w	r2, [r3, #292]	; 0x124
+ 15e:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 162:	f8d3 319c 	ldr.w	r3, [r3, #412]	; 0x19c
+ 166:	4619      	mov	r1, r3
+ 168:	f8d7 03a8 	ldr.w	r0, [r7, #936]	; 0x3a8
+ 16c:	f7ff fffe 	bl	0 <__aeabi_uidiv>
+			16c: R_ARM_THM_CALL	__aeabi_uidiv
+ 170:	4603      	mov	r3, r0
+ 172:	461a      	mov	r2, r3
+ 174:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 178:	f8c3 20e4 	str.w	r2, [r3, #228]	; 0xe4
+ 17c:	f107 0308 	add.w	r3, r7, #8
+ 180:	f44f 7263 	mov.w	r2, #908	; 0x38c
+ 184:	2100      	movs	r1, #0
+ 186:	4618      	mov	r0, r3
+ 188:	f7ff fffe 	bl	0 <memset>
+			188: R_ARM_THM_CALL	memset
+ 18c:	f8d7 33b0 	ldr.w	r3, [r7, #944]	; 0x3b0
+ 190:	6ddb      	ldr	r3, [r3, #92]	; 0x5c
+ 192:	f8c7 33a4 	str.w	r3, [r7, #932]	; 0x3a4
+ 196:	f107 0308 	add.w	r3, r7, #8
+ 19a:	2200      	movs	r2, #0
+ 19c:	771a      	strb	r2, [r3, #28]
+ 19e:	f107 0308 	add.w	r3, r7, #8
+ 1a2:	2200      	movs	r2, #0
+ 1a4:	775a      	strb	r2, [r3, #29]
+ 1a6:	f8d7 33b0 	ldr.w	r3, [r7, #944]	; 0x3b0
+ 1aa:	6a9b      	ldr	r3, [r3, #40]	; 0x28
+ 1ac:	b2da      	uxtb	r2, r3
+ 1ae:	f107 0308 	add.w	r3, r7, #8
+ 1b2:	f883 2024 	strb.w	r2, [r3, #36]	; 0x24
+ 1b6:	f8d7 33b0 	ldr.w	r3, [r7, #944]	; 0x3b0
+ 1ba:	68db      	ldr	r3, [r3, #12]
+ 1bc:	b21a      	sxth	r2, r3
+ 1be:	f107 0308 	add.w	r3, r7, #8
+ 1c2:	84da      	strh	r2, [r3, #38]	; 0x26
+ 1c4:	f107 0308 	add.w	r3, r7, #8
+ 1c8:	f64f 72ff 	movw	r2, #65535	; 0xffff
+ 1cc:	859a      	strh	r2, [r3, #44]	; 0x2c
+ 1ce:	f107 0308 	add.w	r3, r7, #8
+ 1d2:	2200      	movs	r2, #0
+ 1d4:	85da      	strh	r2, [r3, #46]	; 0x2e
+ 1d6:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 1da:	f8d3 319c 	ldr.w	r3, [r3, #412]	; 0x19c
+ 1de:	4619      	mov	r1, r3
+ 1e0:	f8d7 03a4 	ldr.w	r0, [r7, #932]	; 0x3a4
+ 1e4:	f7ff fffe 	bl	0 <__aeabi_uidiv>
+			1e4: R_ARM_THM_CALL	__aeabi_uidiv
+ 1e8:	4603      	mov	r3, r0
+ 1ea:	b29a      	uxth	r2, r3
+ 1ec:	f107 0308 	add.w	r3, r7, #8
+ 1f0:	861a      	strh	r2, [r3, #48]	; 0x30
+ 1f2:	f107 0308 	add.w	r3, r7, #8
+ 1f6:	2200      	movs	r2, #0
+ 1f8:	865a      	strh	r2, [r3, #50]	; 0x32
+ 1fa:	f107 0308 	add.w	r3, r7, #8
+ 1fe:	2200      	movs	r2, #0
+ 200:	869a      	strh	r2, [r3, #52]	; 0x34
+ 202:	f8d7 33b0 	ldr.w	r3, [r7, #944]	; 0x3b0
+ 206:	6a1b      	ldr	r3, [r3, #32]
+ 208:	b29a      	uxth	r2, r3
+ 20a:	f107 0308 	add.w	r3, r7, #8
+ 20e:	86da      	strh	r2, [r3, #54]	; 0x36
+ 210:	f8d7 33b0 	ldr.w	r3, [r7, #944]	; 0x3b0
+ 214:	6a5b      	ldr	r3, [r3, #36]	; 0x24
+ 216:	b29a      	uxth	r2, r3
+ 218:	f107 0308 	add.w	r3, r7, #8
+ 21c:	871a      	strh	r2, [r3, #56]	; 0x38
+ 21e:	f8d7 33b0 	ldr.w	r3, [r7, #944]	; 0x3b0
+ 222:	6a1b      	ldr	r3, [r3, #32]
+ 224:	b29a      	uxth	r2, r3
+ 226:	f107 0308 	add.w	r3, r7, #8
+ 22a:	875a      	strh	r2, [r3, #58]	; 0x3a
+ 22c:	f8d7 33b0 	ldr.w	r3, [r7, #944]	; 0x3b0
+ 230:	6a5b      	ldr	r3, [r3, #36]	; 0x24
+ 232:	b29a      	uxth	r2, r3
+ 234:	f107 0308 	add.w	r3, r7, #8
+ 238:	879a      	strh	r2, [r3, #60]	; 0x3c
+ 23a:	f8d7 33b0 	ldr.w	r3, [r7, #944]	; 0x3b0
+ 23e:	6adb      	ldr	r3, [r3, #44]	; 0x2c
+ 240:	b29a      	uxth	r2, r3
+ 242:	f107 0308 	add.w	r3, r7, #8
+ 246:	87da      	strh	r2, [r3, #62]	; 0x3e
+ 248:	f8d7 33b0 	ldr.w	r3, [r7, #944]	; 0x3b0
+ 24c:	6a5b      	ldr	r3, [r3, #36]	; 0x24
+ 24e:	b29a      	uxth	r2, r3
+ 250:	f107 0308 	add.w	r3, r7, #8
+ 254:	f8a3 2040 	strh.w	r2, [r3, #64]	; 0x40
+ 258:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 25c:	f8d3 30b0 	ldr.w	r3, [r3, #176]	; 0xb0
+ 260:	6d9b      	ldr	r3, [r3, #88]	; 0x58
+ 262:	f107 0208 	add.w	r2, r7, #8
+ 266:	f244 6128 	movw	r1, #17960	; 0x4628
+ 26a:	4618      	mov	r0, r3
+ 26c:	f7ff fffe 	bl	0 <ioctl>
+			26c: R_ARM_THM_CALL	ioctl
+ 270:	4603      	mov	r3, r0
+ 272:	f1b3 3fff 	cmp.w	r3, #4294967295	; 0xffffffff
+ 276:	bf0c      	ite	eq
+ 278:	2301      	moveq	r3, #1
+ 27a:	2300      	movne	r3, #0
+ 27c:	b2db      	uxtb	r3, r3
+ 27e:	2b00      	cmp	r3, #0
+ 280:	d01f      	beq.n	2c2 <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x236>
+ 282:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 286:	f8d3 30b0 	ldr.w	r3, [r3, #176]	; 0xb0
+ 28a:	6d9b      	ldr	r3, [r3, #88]	; 0x58
+ 28c:	9301      	str	r3, [sp, #4]
+ 28e:	2382      	movs	r3, #130	; 0x82
+ 290:	9300      	str	r3, [sp, #0]
+ 292:	4b92      	ldr	r3, [pc, #584]	; (4dc <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x450>)
+ 294:	447b      	add	r3, pc
+ 296:	4a92      	ldr	r2, [pc, #584]	; (4e0 <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x454>)
+ 298:	447a      	add	r2, pc
+ 29a:	4992      	ldr	r1, [pc, #584]	; (4e4 <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x458>)
+ 29c:	4479      	add	r1, pc
+ 29e:	2006      	movs	r0, #6
+ 2a0:	f7ff fffe 	bl	0 <__android_log_print>
+			2a0: R_ARM_THM_CALL	__android_log_print
+ 2a4:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 2a8:	f8d3 308c 	ldr.w	r3, [r3, #140]	; 0x8c
+ 2ac:	f8d7 03ac 	ldr.w	r0, [r7, #940]	; 0x3ac
+ 2b0:	463a      	mov	r2, r7
+ 2b2:	6811      	ldr	r1, [r2, #0]
+ 2b4:	4798      	blx	r3
+ 2b6:	f7ff fffe 	bl	0 <__errno>
+			2b6: R_ARM_THM_CALL	__errno
+ 2ba:	4603      	mov	r3, r0
+ 2bc:	681b      	ldr	r3, [r3, #0]
+ 2be:	425b      	negs	r3, r3
+ 2c0:	e107      	b.n	4d2 <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x446>
+ 2c2:	2300      	movs	r3, #0
+ 2c4:	f8c7 33b4 	str.w	r3, [r7, #948]	; 0x3b4
+ 2c8:	f8d7 33b4 	ldr.w	r3, [r7, #948]	; 0x3b4
+ 2cc:	2b0a      	cmp	r3, #10
+ 2ce:	dc1b      	bgt.n	308 <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x27c>
+ 2d0:	f107 0208 	add.w	r2, r7, #8
+ 2d4:	f8d7 33b4 	ldr.w	r3, [r7, #948]	; 0x3b4
+ 2d8:	005b      	lsls	r3, r3, #1
+ 2da:	4413      	add	r3, r2
+ 2dc:	f9b3 3004 	ldrsh.w	r3, [r3, #4]
+ 2e0:	f1b3 3fff 	cmp.w	r3, #4294967295	; 0xffffffff
+ 2e4:	d00a      	beq.n	2fc <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x270>
+ 2e6:	f107 0208 	add.w	r2, r7, #8
+ 2ea:	f8d7 33b4 	ldr.w	r3, [r7, #948]	; 0x3b4
+ 2ee:	005b      	lsls	r3, r3, #1
+ 2f0:	4413      	add	r3, r2
+ 2f2:	f9b3 3004 	ldrsh.w	r3, [r3, #4]
+ 2f6:	4618      	mov	r0, r3
+ 2f8:	f7ff fffe 	bl	0 <close>
+			2f8: R_ARM_THM_CALL	close
+ 2fc:	f8d7 33b4 	ldr.w	r3, [r7, #948]	; 0x3b4
+ 300:	3301      	adds	r3, #1
+ 302:	f8c7 33b4 	str.w	r3, [r7, #948]	; 0x3b4
+ 306:	e7df      	b.n	2c8 <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x23c>
+ 308:	f107 0308 	add.w	r3, r7, #8
+ 30c:	f9b3 3002 	ldrsh.w	r3, [r3, #2]
+ 310:	f1b3 3fff 	cmp.w	r3, #4294967295	; 0xffffffff
+ 314:	d006      	beq.n	324 <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x298>
+ 316:	f107 0308 	add.w	r3, r7, #8
+ 31a:	f9b3 3002 	ldrsh.w	r3, [r3, #2]
+ 31e:	4618      	mov	r0, r3
+ 320:	f7ff fffe 	bl	0 <close>
+			320: R_ARM_THM_CALL	close
+ 324:	4b70      	ldr	r3, [pc, #448]	; (4e8 <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x45c>)
+ 326:	447b      	add	r3, pc
+ 328:	681b      	ldr	r3, [r3, #0]
+ 32a:	2b01      	cmp	r3, #1
+ 32c:	d169      	bne.n	402 <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x376>
+ 32e:	2301      	movs	r3, #1
+ 330:	f8c7 33a0 	str.w	r3, [r7, #928]	; 0x3a0
+ 334:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 338:	f8d3 30b0 	ldr.w	r3, [r3, #176]	; 0xb0
+ 33c:	6d9b      	ldr	r3, [r3, #88]	; 0x58
+ 33e:	f507 7268 	add.w	r2, r7, #928	; 0x3a0
+ 342:	f244 61ce 	movw	r1, #18126	; 0x46ce
+ 346:	f2c4 0104 	movt	r1, #16388	; 0x4004
+ 34a:	4618      	mov	r0, r3
+ 34c:	f7ff fffe 	bl	0 <ioctl>
+			34c: R_ARM_THM_CALL	ioctl
+ 350:	4603      	mov	r3, r0
+ 352:	0fdb      	lsrs	r3, r3, #31
+ 354:	b2db      	uxtb	r3, r3
+ 356:	2b00      	cmp	r3, #0
+ 358:	d001      	beq.n	35e <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x2d2>
+ 35a:	2300      	movs	r3, #0
+ 35c:	e0b9      	b.n	4d2 <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x446>
+ 35e:	2300      	movs	r3, #0
+ 360:	f8c7 339c 	str.w	r3, [r7, #924]	; 0x39c
+ 364:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 368:	f8d3 30b0 	ldr.w	r3, [r3, #176]	; 0xb0
+ 36c:	6d9b      	ldr	r3, [r3, #88]	; 0x58
+ 36e:	f507 7267 	add.w	r2, r7, #924	; 0x39c
+ 372:	f244 6120 	movw	r1, #17952	; 0x4620
+ 376:	f2c4 0104 	movt	r1, #16388	; 0x4004
+ 37a:	4618      	mov	r0, r3
+ 37c:	f7ff fffe 	bl	0 <ioctl>
+			37c: R_ARM_THM_CALL	ioctl
+ 380:	4603      	mov	r3, r0
+ 382:	0fdb      	lsrs	r3, r3, #31
+ 384:	b2db      	uxtb	r3, r3
+ 386:	2b00      	cmp	r3, #0
+ 388:	d012      	beq.n	3b0 <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x324>
+ 38a:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 38e:	f8d3 30b0 	ldr.w	r3, [r3, #176]	; 0xb0
+ 392:	6d9b      	ldr	r3, [r3, #88]	; 0x58
+ 394:	9301      	str	r3, [sp, #4]
+ 396:	23c0      	movs	r3, #192	; 0xc0
+ 398:	9300      	str	r3, [sp, #0]
+ 39a:	4b54      	ldr	r3, [pc, #336]	; (4ec <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x460>)
+ 39c:	447b      	add	r3, pc
+ 39e:	4a54      	ldr	r2, [pc, #336]	; (4f0 <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x464>)
+ 3a0:	447a      	add	r2, pc
+ 3a2:	4954      	ldr	r1, [pc, #336]	; (4f4 <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x468>)
+ 3a4:	4479      	add	r1, pc
+ 3a6:	2006      	movs	r0, #6
+ 3a8:	f7ff fffe 	bl	0 <__android_log_print>
+			3a8: R_ARM_THM_CALL	__android_log_print
+ 3ac:	2300      	movs	r3, #0
+ 3ae:	e027      	b.n	400 <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x374>
+ 3b0:	2300      	movs	r3, #0
+ 3b2:	f8c7 33a0 	str.w	r3, [r7, #928]	; 0x3a0
+ 3b6:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 3ba:	f8d3 30b0 	ldr.w	r3, [r3, #176]	; 0xb0
+ 3be:	6d9b      	ldr	r3, [r3, #88]	; 0x58
+ 3c0:	f507 7268 	add.w	r2, r7, #928	; 0x3a0
+ 3c4:	f244 61ce 	movw	r1, #18126	; 0x46ce
+ 3c8:	f2c4 0104 	movt	r1, #16388	; 0x4004
+ 3cc:	4618      	mov	r0, r3
+ 3ce:	f7ff fffe 	bl	0 <ioctl>
+			3ce: R_ARM_THM_CALL	ioctl
+ 3d2:	4603      	mov	r3, r0
+ 3d4:	0fdb      	lsrs	r3, r3, #31
+ 3d6:	b2db      	uxtb	r3, r3
+ 3d8:	2b00      	cmp	r3, #0
+ 3da:	d012      	beq.n	402 <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x376>
+ 3dc:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 3e0:	f8d3 30b0 	ldr.w	r3, [r3, #176]	; 0xb0
+ 3e4:	6d9b      	ldr	r3, [r3, #88]	; 0x58
+ 3e6:	9301      	str	r3, [sp, #4]
+ 3e8:	23cf      	movs	r3, #207	; 0xcf
+ 3ea:	9300      	str	r3, [sp, #0]
+ 3ec:	4b42      	ldr	r3, [pc, #264]	; (4f8 <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x46c>)
+ 3ee:	447b      	add	r3, pc
+ 3f0:	4a42      	ldr	r2, [pc, #264]	; (4fc <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x470>)
+ 3f2:	447a      	add	r2, pc
+ 3f4:	4942      	ldr	r1, [pc, #264]	; (500 <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x474>)
+ 3f6:	4479      	add	r1, pc
+ 3f8:	2006      	movs	r0, #6
+ 3fa:	f7ff fffe 	bl	0 <__android_log_print>
+			3fa: R_ARM_THM_CALL	__android_log_print
+ 3fe:	2300      	movs	r3, #0
+ 400:	e067      	b.n	4d2 <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x446>
+ 402:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 406:	463a      	mov	r2, r7
+ 408:	6812      	ldr	r2, [r2, #0]
+ 40a:	f8c3 20c4 	str.w	r2, [r3, #196]	; 0xc4
+ 40e:	e05f      	b.n	4d0 <_ZL7fb_postP20framebuffer_device_tPK13native_handle+0x444>
+ 410:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 414:	f8d3 4088 	ldr.w	r4, [r3, #136]	; 0x88
+ 418:	f8d7 03ac 	ldr.w	r0, [r7, #940]	; 0x3ac
+ 41c:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 420:	f8d3 10b0 	ldr.w	r1, [r3, #176]	; 0xb0
+ 424:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 428:	f8d3 30d0 	ldr.w	r3, [r3, #208]	; 0xd0
+ 42c:	461a      	mov	r2, r3
+ 42e:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 432:	f8d3 30d4 	ldr.w	r3, [r3, #212]	; 0xd4
+ 436:	461d      	mov	r5, r3
+ 438:	f507 7366 	add.w	r3, r7, #920	; 0x398
+ 43c:	9303      	str	r3, [sp, #12]
+ 43e:	9502      	str	r5, [sp, #8]
+ 440:	9201      	str	r2, [sp, #4]
+ 442:	2300      	movs	r3, #0
+ 444:	9300      	str	r3, [sp, #0]
+ 446:	2300      	movs	r3, #0
+ 448:	2220      	movs	r2, #32
+ 44a:	47a0      	blx	r4
+ 44c:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 450:	f8d3 4088 	ldr.w	r4, [r3, #136]	; 0x88
+ 454:	f8d7 03ac 	ldr.w	r0, [r7, #940]	; 0x3ac
+ 458:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 45c:	f8d3 30d0 	ldr.w	r3, [r3, #208]	; 0xd0
+ 460:	461a      	mov	r2, r3
+ 462:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 466:	f8d3 30d4 	ldr.w	r3, [r3, #212]	; 0xd4
+ 46a:	461d      	mov	r5, r3
+ 46c:	4639      	mov	r1, r7
+ 46e:	f507 7365 	add.w	r3, r7, #916	; 0x394
+ 472:	9303      	str	r3, [sp, #12]
+ 474:	9502      	str	r5, [sp, #8]
+ 476:	9201      	str	r2, [sp, #4]
+ 478:	2300      	movs	r3, #0
+ 47a:	9300      	str	r3, [sp, #0]
+ 47c:	2300      	movs	r3, #0
+ 47e:	2202      	movs	r2, #2
+ 480:	6809      	ldr	r1, [r1, #0]
+ 482:	47a0      	blx	r4
+ 484:	f8d7 0398 	ldr.w	r0, [r7, #920]	; 0x398
+ 488:	f8d7 1394 	ldr.w	r1, [r7, #916]	; 0x394
+ 48c:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 490:	f8d3 319c 	ldr.w	r3, [r3, #412]	; 0x19c
+ 494:	f8d7 23ac 	ldr.w	r2, [r7, #940]	; 0x3ac
+ 498:	f8d2 20d4 	ldr.w	r2, [r2, #212]	; 0xd4
+ 49c:	fb02 f303 	mul.w	r3, r2, r3
+ 4a0:	461a      	mov	r2, r3
+ 4a2:	f7ff fffe 	bl	0 <memcpy>
+			4a2: R_ARM_THM_CALL	memcpy
+ 4a6:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 4aa:	f8d3 308c 	ldr.w	r3, [r3, #140]	; 0x8c
+ 4ae:	f8d7 03ac 	ldr.w	r0, [r7, #940]	; 0x3ac
+ 4b2:	463a      	mov	r2, r7
+ 4b4:	6811      	ldr	r1, [r2, #0]
+ 4b6:	4798      	blx	r3
+ 4b8:	f8d7 33ac 	ldr.w	r3, [r7, #940]	; 0x3ac
+ 4bc:	f8d3 308c 	ldr.w	r3, [r3, #140]	; 0x8c
+ 4c0:	f8d7 03ac 	ldr.w	r0, [r7, #940]	; 0x3ac
+ 4c4:	f8d7 23ac 	ldr.w	r2, [r7, #940]	; 0x3ac
+ 4c8:	f8d2 20b0 	ldr.w	r2, [r2, #176]	; 0xb0
+ 4cc:	4611      	mov	r1, r2
+ 4ce:	4798      	blx	r3
+ 4d0:	2300      	movs	r3, #0
+ 4d2:	4618      	mov	r0, r3
+ 4d4:	f507 776e 	add.w	r7, r7, #952	; 0x3b8
+ 4d8:	46bd      	mov	sp, r7
+ 4da:	bdb0      	pop	{r4, r5, r7, pc}
+ 4dc:	0000057c 	.word	0x0000057c
+			4dc: R_ARM_REL32	.rodata
+ 4e0:	00000284 	.word	0x00000284
+			4e0: R_ARM_REL32	.rodata
+ 4e4:	000002b0 	.word	0x000002b0
+			4e4: R_ARM_REL32	.rodata
+ 4e8:	000001be 	.word	0x000001be
+			4e8: R_ARM_REL32	.data
+ 4ec:	00000484 	.word	0x00000484
+			4ec: R_ARM_REL32	.rodata
+ 4f0:	000001c8 	.word	0x000001c8
+			4f0: R_ARM_REL32	.rodata
+ 4f4:	000001b8 	.word	0x000001b8
+			4f4: R_ARM_REL32	.rodata
+ 4f8:	0000043e 	.word	0x0000043e
+			4f8: R_ARM_REL32	.rodata
+ 4fc:	000001ae 	.word	0x000001ae
+			4fc: R_ARM_REL32	.rodata
+ 500:	00000172 	.word	0x00000172
+			500: R_ARM_REL32	.rodata
+
+00000504 <_Z24init_frame_buffer_lockedP16private_module_t>:
+ 504:	b5f0      	push	{r4, r5, r6, r7, lr}
+ 506:	b0e9      	sub	sp, #420	; 0x1a4
+ 508:	af0c      	add	r7, sp, #48	; 0x30
+ 50a:	f107 0314 	add.w	r3, r7, #20
+ 50e:	6018      	str	r0, [r3, #0]
+ 510:	f107 0314 	add.w	r3, r7, #20
+ 514:	681b      	ldr	r3, [r3, #0]
+ 516:	f8d3 30b0 	ldr.w	r3, [r3, #176]	; 0xb0
+ 51a:	2b00      	cmp	r3, #0
+ 51c:	d001      	beq.n	522 <_Z24init_frame_buffer_lockedP16private_module_t+0x1e>
+ 51e:	2300      	movs	r3, #0
+ 520:	e378      	b.n	c14 <_Z24init_frame_buffer_lockedP16private_module_t+0x710>
+ 522:	f8df 3710 	ldr.w	r3, [pc, #1808]	; c34 <_Z24init_frame_buffer_lockedP16private_module_t+0x730>
+ 526:	447b      	add	r3, pc
+ 528:	461a      	mov	r2, r3
+ 52a:	f507 73a0 	add.w	r3, r7, #320	; 0x140
+ 52e:	ca07      	ldmia	r2, {r0, r1, r2}
+ 530:	e883 0007 	stmia.w	r3, {r0, r1, r2}
+ 534:	f04f 33ff 	mov.w	r3, #4294967295	; 0xffffffff
+ 538:	f8c7 316c 	str.w	r3, [r7, #364]	; 0x16c
+ 53c:	2300      	movs	r3, #0
+ 53e:	f8c7 3168 	str.w	r3, [r7, #360]	; 0x168
+ 542:	f8d7 316c 	ldr.w	r3, [r7, #364]	; 0x16c
+ 546:	f1b3 3fff 	cmp.w	r3, #4294967295	; 0xffffffff
+ 54a:	d127      	bne.n	59c <_Z24init_frame_buffer_lockedP16private_module_t+0x98>
+ 54c:	f8d7 3168 	ldr.w	r3, [r7, #360]	; 0x168
+ 550:	009b      	lsls	r3, r3, #2
+ 552:	f507 72b8 	add.w	r2, r7, #368	; 0x170
+ 556:	4413      	add	r3, r2
+ 558:	f853 3c30 	ldr.w	r3, [r3, #-48]
+ 55c:	2b00      	cmp	r3, #0
+ 55e:	d01d      	beq.n	59c <_Z24init_frame_buffer_lockedP16private_module_t+0x98>
+ 560:	f8d7 3168 	ldr.w	r3, [r7, #360]	; 0x168
+ 564:	009b      	lsls	r3, r3, #2
+ 566:	f507 72b8 	add.w	r2, r7, #368	; 0x170
+ 56a:	4413      	add	r3, r2
+ 56c:	f853 2c30 	ldr.w	r2, [r3, #-48]
+ 570:	f507 7080 	add.w	r0, r7, #256	; 0x100
+ 574:	2300      	movs	r3, #0
+ 576:	2140      	movs	r1, #64	; 0x40
+ 578:	f7ff fffe 	bl	0 <snprintf>
+			578: R_ARM_THM_CALL	snprintf
+ 57c:	f507 7380 	add.w	r3, r7, #256	; 0x100
+ 580:	2200      	movs	r2, #0
+ 582:	2102      	movs	r1, #2
+ 584:	4618      	mov	r0, r3
+ 586:	f7ff fffe 	bl	0 <open>
+			586: R_ARM_THM_CALL	open
+ 58a:	4603      	mov	r3, r0
+ 58c:	f8c7 316c 	str.w	r3, [r7, #364]	; 0x16c
+ 590:	f8d7 3168 	ldr.w	r3, [r7, #360]	; 0x168
+ 594:	3301      	adds	r3, #1
+ 596:	f8c7 3168 	str.w	r3, [r7, #360]	; 0x168
+ 59a:	e7d2      	b.n	542 <_Z24init_frame_buffer_lockedP16private_module_t+0x3e>
+ 59c:	f8d7 316c 	ldr.w	r3, [r7, #364]	; 0x16c
+ 5a0:	2b00      	cmp	r3, #0
+ 5a2:	da05      	bge.n	5b0 <_Z24init_frame_buffer_lockedP16private_module_t+0xac>
+ 5a4:	f7ff fffe 	bl	0 <__errno>
+			5a4: R_ARM_THM_CALL	__errno
+ 5a8:	4603      	mov	r3, r0
+ 5aa:	681b      	ldr	r3, [r3, #0]
+ 5ac:	425b      	negs	r3, r3
+ 5ae:	e331      	b.n	c14 <_Z24init_frame_buffer_lockedP16private_module_t+0x710>
+ 5b0:	f107 03bc 	add.w	r3, r7, #188	; 0xbc
+ 5b4:	461a      	mov	r2, r3
+ 5b6:	f244 6102 	movw	r1, #17922	; 0x4602
+ 5ba:	f8d7 016c 	ldr.w	r0, [r7, #364]	; 0x16c
+ 5be:	f7ff fffe 	bl	0 <ioctl>
+			5be: R_ARM_THM_CALL	ioctl
+ 5c2:	4603      	mov	r3, r0
+ 5c4:	f1b3 3fff 	cmp.w	r3, #4294967295	; 0xffffffff
+ 5c8:	bf0c      	ite	eq
+ 5ca:	2301      	moveq	r3, #1
+ 5cc:	2300      	movne	r3, #0
+ 5ce:	b2db      	uxtb	r3, r3
+ 5d0:	2b00      	cmp	r3, #0
+ 5d2:	d005      	beq.n	5e0 <_Z24init_frame_buffer_lockedP16private_module_t+0xdc>
+ 5d4:	f7ff fffe 	bl	0 <__errno>
+			5d4: R_ARM_THM_CALL	__errno
+ 5d8:	4603      	mov	r3, r0
+ 5da:	681b      	ldr	r3, [r3, #0]
+ 5dc:	425b      	negs	r3, r3
+ 5de:	e319      	b.n	c14 <_Z24init_frame_buffer_lockedP16private_module_t+0x710>
+ 5e0:	f107 031c 	add.w	r3, r7, #28
+ 5e4:	461a      	mov	r2, r3
+ 5e6:	f44f 418c 	mov.w	r1, #17920	; 0x4600
+ 5ea:	f8d7 016c 	ldr.w	r0, [r7, #364]	; 0x16c
+ 5ee:	f7ff fffe 	bl	0 <ioctl>
+			5ee: R_ARM_THM_CALL	ioctl
+ 5f2:	4603      	mov	r3, r0
+ 5f4:	f1b3 3fff 	cmp.w	r3, #4294967295	; 0xffffffff
+ 5f8:	bf0c      	ite	eq
+ 5fa:	2301      	moveq	r3, #1
+ 5fc:	2300      	movne	r3, #0
+ 5fe:	b2db      	uxtb	r3, r3
+ 600:	2b00      	cmp	r3, #0
+ 602:	d005      	beq.n	610 <_Z24init_frame_buffer_lockedP16private_module_t+0x10c>
+ 604:	f7ff fffe 	bl	0 <__errno>
+			604: R_ARM_THM_CALL	__errno
+ 608:	4603      	mov	r3, r0
+ 60a:	681b      	ldr	r3, [r3, #0]
+ 60c:	425b      	negs	r3, r3
+ 60e:	e301      	b.n	c14 <_Z24init_frame_buffer_lockedP16private_module_t+0x710>
+ 610:	f107 031c 	add.w	r3, r7, #28
+ 614:	2200      	movs	r2, #0
+ 616:	f8c3 2090 	str.w	r2, [r3, #144]	; 0x90
+ 61a:	f107 031c 	add.w	r3, r7, #28
+ 61e:	2200      	movs	r2, #0
+ 620:	f8c3 2094 	str.w	r2, [r3, #148]	; 0x94
+ 624:	f107 031c 	add.w	r3, r7, #28
+ 628:	2200      	movs	r2, #0
+ 62a:	f8c3 2098 	str.w	r2, [r3, #152]	; 0x98
+ 62e:	f107 031c 	add.w	r3, r7, #28
+ 632:	2201      	movs	r2, #1
+ 634:	f8c3 209c 	str.w	r2, [r3, #156]	; 0x9c
+ 638:	f107 031c 	add.w	r3, r7, #28
+ 63c:	2200      	movs	r2, #0
+ 63e:	611a      	str	r2, [r3, #16]
+ 640:	f107 031c 	add.w	r3, r7, #28
+ 644:	2200      	movs	r2, #0
+ 646:	615a      	str	r2, [r3, #20]
+ 648:	f107 031c 	add.w	r3, r7, #28
+ 64c:	2200      	movs	r2, #0
+ 64e:	655a      	str	r2, [r3, #84]	; 0x54
+ 650:	f107 031c 	add.w	r3, r7, #28
+ 654:	2220      	movs	r2, #32
+ 656:	619a      	str	r2, [r3, #24]
+ 658:	f107 031c 	add.w	r3, r7, #28
+ 65c:	2210      	movs	r2, #16
+ 65e:	621a      	str	r2, [r3, #32]
+ 660:	f107 031c 	add.w	r3, r7, #28
+ 664:	2208      	movs	r2, #8
+ 666:	625a      	str	r2, [r3, #36]	; 0x24
+ 668:	f107 031c 	add.w	r3, r7, #28
+ 66c:	2208      	movs	r2, #8
+ 66e:	62da      	str	r2, [r3, #44]	; 0x2c
+ 670:	f107 031c 	add.w	r3, r7, #28
+ 674:	2208      	movs	r2, #8
+ 676:	631a      	str	r2, [r3, #48]	; 0x30
+ 678:	f107 031c 	add.w	r3, r7, #28
+ 67c:	2200      	movs	r2, #0
+ 67e:	639a      	str	r2, [r3, #56]	; 0x38
+ 680:	f107 031c 	add.w	r3, r7, #28
+ 684:	2208      	movs	r2, #8
+ 686:	63da      	str	r2, [r3, #60]	; 0x3c
+ 688:	f107 031c 	add.w	r3, r7, #28
+ 68c:	2200      	movs	r2, #0
+ 68e:	645a      	str	r2, [r3, #68]	; 0x44
+ 690:	f107 031c 	add.w	r3, r7, #28
+ 694:	2200      	movs	r2, #0
+ 696:	649a      	str	r2, [r3, #72]	; 0x48
+ 698:	f107 031c 	add.w	r3, r7, #28
+ 69c:	69db      	ldr	r3, [r3, #28]
+ 69e:	b2da      	uxtb	r2, r3
+ 6a0:	f107 031c 	add.w	r3, r7, #28
+ 6a4:	61da      	str	r2, [r3, #28]
+ 6a6:	f107 031c 	add.w	r3, r7, #28
+ 6aa:	69da      	ldr	r2, [r3, #28]
+ 6ac:	f107 031c 	add.w	r3, r7, #28
+ 6b0:	681b      	ldr	r3, [r3, #0]
+ 6b2:	0219      	lsls	r1, r3, #8
+ 6b4:	f107 031c 	add.w	r3, r7, #28
+ 6b8:	685b      	ldr	r3, [r3, #4]
+ 6ba:	051b      	lsls	r3, r3, #20
+ 6bc:	440b      	add	r3, r1
+ 6be:	431a      	orrs	r2, r3
+ 6c0:	f107 031c 	add.w	r3, r7, #28
+ 6c4:	61da      	str	r2, [r3, #28]
+ 6c6:	f107 031c 	add.w	r3, r7, #28
+ 6ca:	6d1b      	ldr	r3, [r3, #80]	; 0x50
+ 6cc:	f023 02ff 	bic.w	r2, r3, #255	; 0xff
+ 6d0:	f107 031c 	add.w	r3, r7, #28
+ 6d4:	651a      	str	r2, [r3, #80]	; 0x50
+ 6d6:	f107 031c 	add.w	r3, r7, #28
+ 6da:	6d1b      	ldr	r3, [r3, #80]	; 0x50
+ 6dc:	f043 0205 	orr.w	r2, r3, #5
+ 6e0:	f107 031c 	add.w	r3, r7, #28
+ 6e4:	651a      	str	r2, [r3, #80]	; 0x50
+ 6e6:	f107 031c 	add.w	r3, r7, #28
+ 6ea:	685a      	ldr	r2, [r3, #4]
+ 6ec:	4613      	mov	r3, r2
+ 6ee:	005b      	lsls	r3, r3, #1
+ 6f0:	441a      	add	r2, r3
+ 6f2:	f107 031c 	add.w	r3, r7, #28
+ 6f6:	60da      	str	r2, [r3, #12]
+ 6f8:	2301      	movs	r3, #1
+ 6fa:	f8c7 3164 	str.w	r3, [r7, #356]	; 0x164
+ 6fe:	f107 031c 	add.w	r3, r7, #28
+ 702:	461a      	mov	r2, r3
+ 704:	f244 6101 	movw	r1, #17921	; 0x4601
+ 708:	f8d7 016c 	ldr.w	r0, [r7, #364]	; 0x16c
+ 70c:	f7ff fffe 	bl	0 <ioctl>
+			70c: R_ARM_THM_CALL	ioctl
+ 710:	4603      	mov	r3, r0
+ 712:	f1b3 3fff 	cmp.w	r3, #4294967295	; 0xffffffff
+ 716:	bf0c      	ite	eq
+ 718:	2301      	moveq	r3, #1
+ 71a:	2300      	movne	r3, #0
+ 71c:	b2db      	uxtb	r3, r3
+ 71e:	2b00      	cmp	r3, #0
+ 720:	d01d      	beq.n	75e <_Z24init_frame_buffer_lockedP16private_module_t+0x25a>
+ 722:	f107 031c 	add.w	r3, r7, #28
+ 726:	685a      	ldr	r2, [r3, #4]
+ 728:	f107 031c 	add.w	r3, r7, #28
+ 72c:	60da      	str	r2, [r3, #12]
+ 72e:	f8d7 3164 	ldr.w	r3, [r7, #356]	; 0x164
+ 732:	f023 0301 	bic.w	r3, r3, #1
+ 736:	f8c7 3164 	str.w	r3, [r7, #356]	; 0x164
+ 73a:	f8d7 316c 	ldr.w	r3, [r7, #364]	; 0x16c
+ 73e:	9301      	str	r3, [sp, #4]
+ 740:	f44f 73b5 	mov.w	r3, #362	; 0x16a
+ 744:	9300      	str	r3, [sp, #0]
+ 746:	f8df 34f0 	ldr.w	r3, [pc, #1264]	; c38 <_Z24init_frame_buffer_lockedP16private_module_t+0x734>
+ 74a:	447b      	add	r3, pc
+ 74c:	f8df 24ec 	ldr.w	r2, [pc, #1260]	; c3c <_Z24init_frame_buffer_lockedP16private_module_t+0x738>
+ 750:	447a      	add	r2, pc
+ 752:	f8df 14ec 	ldr.w	r1, [pc, #1260]	; c40 <_Z24init_frame_buffer_lockedP16private_module_t+0x73c>
+ 756:	4479      	add	r1, pc
+ 758:	2005      	movs	r0, #5
+ 75a:	f7ff fffe 	bl	0 <__android_log_print>
+			75a: R_ARM_THM_CALL	__android_log_print
+ 75e:	f107 031c 	add.w	r3, r7, #28
+ 762:	68da      	ldr	r2, [r3, #12]
+ 764:	f107 031c 	add.w	r3, r7, #28
+ 768:	685b      	ldr	r3, [r3, #4]
+ 76a:	005b      	lsls	r3, r3, #1
+ 76c:	429a      	cmp	r2, r3
+ 76e:	d223      	bcs.n	7b8 <_Z24init_frame_buffer_lockedP16private_module_t+0x2b4>
+ 770:	f107 031c 	add.w	r3, r7, #28
+ 774:	685a      	ldr	r2, [r3, #4]
+ 776:	f107 031c 	add.w	r3, r7, #28
+ 77a:	60da      	str	r2, [r3, #12]
+ 77c:	f8d7 3164 	ldr.w	r3, [r7, #356]	; 0x164
+ 780:	f023 0301 	bic.w	r3, r3, #1
+ 784:	f8c7 3164 	str.w	r3, [r7, #356]	; 0x164
+ 788:	f107 031c 	add.w	r3, r7, #28
+ 78c:	68db      	ldr	r3, [r3, #12]
+ 78e:	f107 021c 	add.w	r2, r7, #28
+ 792:	6852      	ldr	r2, [r2, #4]
+ 794:	0052      	lsls	r2, r2, #1
+ 796:	9202      	str	r2, [sp, #8]
+ 798:	9301      	str	r3, [sp, #4]
+ 79a:	f44f 73b9 	mov.w	r3, #370	; 0x172
+ 79e:	9300      	str	r3, [sp, #0]
+ 7a0:	f8df 34a0 	ldr.w	r3, [pc, #1184]	; c44 <_Z24init_frame_buffer_lockedP16private_module_t+0x740>
+ 7a4:	447b      	add	r3, pc
+ 7a6:	f8df 24a0 	ldr.w	r2, [pc, #1184]	; c48 <_Z24init_frame_buffer_lockedP16private_module_t+0x744>
+ 7aa:	447a      	add	r2, pc
+ 7ac:	f8df 149c 	ldr.w	r1, [pc, #1180]	; c4c <_Z24init_frame_buffer_lockedP16private_module_t+0x748>
+ 7b0:	4479      	add	r1, pc
+ 7b2:	2005      	movs	r0, #5
+ 7b4:	f7ff fffe 	bl	0 <__android_log_print>
+			7b4: R_ARM_THM_CALL	__android_log_print
+ 7b8:	f107 031c 	add.w	r3, r7, #28
+ 7bc:	461a      	mov	r2, r3
+ 7be:	f44f 418c 	mov.w	r1, #17920	; 0x4600
+ 7c2:	f8d7 016c 	ldr.w	r0, [r7, #364]	; 0x16c
+ 7c6:	f7ff fffe 	bl	0 <ioctl>
+			7c6: R_ARM_THM_CALL	ioctl
+ 7ca:	4603      	mov	r3, r0
+ 7cc:	f1b3 3fff 	cmp.w	r3, #4294967295	; 0xffffffff
+ 7d0:	bf0c      	ite	eq
+ 7d2:	2301      	moveq	r3, #1
+ 7d4:	2300      	movne	r3, #0
+ 7d6:	b2db      	uxtb	r3, r3
+ 7d8:	2b00      	cmp	r3, #0
+ 7da:	d005      	beq.n	7e8 <_Z24init_frame_buffer_lockedP16private_module_t+0x2e4>
+ 7dc:	f7ff fffe 	bl	0 <__errno>
+			7dc: R_ARM_THM_CALL	__errno
+ 7e0:	4603      	mov	r3, r0
+ 7e2:	681b      	ldr	r3, [r3, #0]
+ 7e4:	425b      	negs	r3, r3
+ 7e6:	e215      	b.n	c14 <_Z24init_frame_buffer_lockedP16private_module_t+0x710>
+ 7e8:	2300      	movs	r3, #0
+ 7ea:	f8c7 3160 	str.w	r3, [r7, #352]	; 0x160
+ 7ee:	f107 031c 	add.w	r3, r7, #28
+ 7f2:	6e5b      	ldr	r3, [r3, #100]	; 0x64
+ 7f4:	2b00      	cmp	r3, #0
+ 7f6:	d046      	beq.n	886 <_Z24init_frame_buffer_lockedP16private_module_t+0x382>
+ 7f8:	f107 031c 	add.w	r3, r7, #28
+ 7fc:	6f1a      	ldr	r2, [r3, #112]	; 0x70
+ 7fe:	f107 031c 	add.w	r3, r7, #28
+ 802:	6f5b      	ldr	r3, [r3, #116]	; 0x74
+ 804:	441a      	add	r2, r3
+ 806:	f107 031c 	add.w	r3, r7, #28
+ 80a:	685b      	ldr	r3, [r3, #4]
+ 80c:	441a      	add	r2, r3
+ 80e:	f107 031c 	add.w	r3, r7, #28
+ 812:	6f9b      	ldr	r3, [r3, #120]	; 0x78
+ 814:	4413      	add	r3, r2
+ 816:	4619      	mov	r1, r3
+ 818:	f04f 0200 	mov.w	r2, #0
+ 81c:	f107 031c 	add.w	r3, r7, #28
+ 820:	6e98      	ldr	r0, [r3, #104]	; 0x68
+ 822:	f107 031c 	add.w	r3, r7, #28
+ 826:	6edb      	ldr	r3, [r3, #108]	; 0x6c
+ 828:	4418      	add	r0, r3
+ 82a:	f107 031c 	add.w	r3, r7, #28
+ 82e:	681b      	ldr	r3, [r3, #0]
+ 830:	4418      	add	r0, r3
+ 832:	f107 031c 	add.w	r3, r7, #28
+ 836:	6fdb      	ldr	r3, [r3, #124]	; 0x7c
+ 838:	4403      	add	r3, r0
+ 83a:	f04f 0400 	mov.w	r4, #0
+ 83e:	fb03 f502 	mul.w	r5, r3, r2
+ 842:	fb01 f004 	mul.w	r0, r1, r4
+ 846:	4428      	add	r0, r5
+ 848:	fba1 3403 	umull	r3, r4, r1, r3
+ 84c:	1902      	adds	r2, r0, r4
+ 84e:	4614      	mov	r4, r2
+ 850:	f107 021c 	add.w	r2, r7, #28
+ 854:	6e52      	ldr	r2, [r2, #100]	; 0x64
+ 856:	4611      	mov	r1, r2
+ 858:	f04f 0200 	mov.w	r2, #0
+ 85c:	fb01 f504 	mul.w	r5, r1, r4
+ 860:	fb03 f002 	mul.w	r0, r3, r2
+ 864:	4428      	add	r0, r5
+ 866:	fba3 3401 	umull	r3, r4, r3, r1
+ 86a:	1902      	adds	r2, r0, r4
+ 86c:	4614      	mov	r4, r2
+ 86e:	461a      	mov	r2, r3
+ 870:	4623      	mov	r3, r4
+ 872:	a1ee      	add	r1, pc, #952	; (adr r1, c2c <_Z24init_frame_buffer_lockedP16private_module_t+0x728>)
+ 874:	e9d1 0100 	ldrd	r0, r1, [r1]
+ 878:	f7ff fffe 	bl	0 <__aeabi_uldivmod>
+			878: R_ARM_THM_CALL	__aeabi_uldivmod
+ 87c:	4603      	mov	r3, r0
+ 87e:	460c      	mov	r4, r1
+ 880:	f8c7 3160 	str.w	r3, [r7, #352]	; 0x160
+ 884:	e00e      	b.n	8a4 <_Z24init_frame_buffer_lockedP16private_module_t+0x3a0>
+ 886:	f8d7 316c 	ldr.w	r3, [r7, #364]	; 0x16c
+ 88a:	9301      	str	r3, [sp, #4]
+ 88c:	f240 1387 	movw	r3, #391	; 0x187
+ 890:	9300      	str	r3, [sp, #0]
+ 892:	4bef      	ldr	r3, [pc, #956]	; (c50 <_Z24init_frame_buffer_lockedP16private_module_t+0x74c>)
+ 894:	447b      	add	r3, pc
+ 896:	4aef      	ldr	r2, [pc, #956]	; (c54 <_Z24init_frame_buffer_lockedP16private_module_t+0x750>)
+ 898:	447a      	add	r2, pc
+ 89a:	49ef      	ldr	r1, [pc, #956]	; (c58 <_Z24init_frame_buffer_lockedP16private_module_t+0x754>)
+ 89c:	4479      	add	r1, pc
+ 89e:	2005      	movs	r0, #5
+ 8a0:	f7ff fffe 	bl	0 <__android_log_print>
+			8a0: R_ARM_THM_CALL	__android_log_print
+ 8a4:	f8d7 3160 	ldr.w	r3, [r7, #352]	; 0x160
+ 8a8:	2b00      	cmp	r3, #0
+ 8aa:	d103      	bne.n	8b4 <_Z24init_frame_buffer_lockedP16private_module_t+0x3b0>
+ 8ac:	f64e 2360 	movw	r3, #60000	; 0xea60
+ 8b0:	f8c7 3160 	str.w	r3, [r7, #352]	; 0x160
+ 8b4:	f107 031c 	add.w	r3, r7, #28
+ 8b8:	6ddb      	ldr	r3, [r3, #92]	; 0x5c
+ 8ba:	2b00      	cmp	r3, #0
+ 8bc:	dd04      	ble.n	8c8 <_Z24init_frame_buffer_lockedP16private_module_t+0x3c4>
+ 8be:	f107 031c 	add.w	r3, r7, #28
+ 8c2:	6d9b      	ldr	r3, [r3, #88]	; 0x58
+ 8c4:	2b00      	cmp	r3, #0
+ 8c6:	dc33      	bgt.n	930 <_Z24init_frame_buffer_lockedP16private_module_t+0x42c>
+ 8c8:	f107 031c 	add.w	r3, r7, #28
+ 8cc:	681b      	ldr	r3, [r3, #0]
+ 8ce:	ee07 3a90 	vmov	s15, r3
+ 8d2:	eef8 7a67 	vcvt.f32.u32	s15, s15
+ 8d6:	ed9f 7ad2 	vldr	s14, [pc, #840]	; c20 <_Z24init_frame_buffer_lockedP16private_module_t+0x71c>
+ 8da:	ee27 7a87 	vmul.f32	s14, s15, s14
+ 8de:	eddf 6ad1 	vldr	s13, [pc, #836]	; c24 <_Z24init_frame_buffer_lockedP16private_module_t+0x720>
+ 8e2:	eec7 7a26 	vdiv.f32	s15, s14, s13
+ 8e6:	eeb6 7a00 	vmov.f32	s14, #96	; 0x3f000000  0.5
+ 8ea:	ee77 7a87 	vadd.f32	s15, s15, s14
+ 8ee:	eefc 7ae7 	vcvt.u32.f32	s15, s15
+ 8f2:	ee17 2a90 	vmov	r2, s15
+ 8f6:	f107 031c 	add.w	r3, r7, #28
+ 8fa:	65da      	str	r2, [r3, #92]	; 0x5c
+ 8fc:	f107 031c 	add.w	r3, r7, #28
+ 900:	685b      	ldr	r3, [r3, #4]
+ 902:	ee07 3a90 	vmov	s15, r3
+ 906:	eef8 7a67 	vcvt.f32.u32	s15, s15
+ 90a:	ed9f 7ac5 	vldr	s14, [pc, #788]	; c20 <_Z24init_frame_buffer_lockedP16private_module_t+0x71c>
+ 90e:	ee27 7a87 	vmul.f32	s14, s15, s14
+ 912:	eddf 6ac4 	vldr	s13, [pc, #784]	; c24 <_Z24init_frame_buffer_lockedP16private_module_t+0x720>
+ 916:	eec7 7a26 	vdiv.f32	s15, s14, s13
+ 91a:	eeb6 7a00 	vmov.f32	s14, #96	; 0x3f000000  0.5
+ 91e:	ee77 7a87 	vadd.f32	s15, s15, s14
+ 922:	eefc 7ae7 	vcvt.u32.f32	s15, s15
+ 926:	ee17 2a90 	vmov	r2, s15
+ 92a:	f107 031c 	add.w	r3, r7, #28
+ 92e:	659a      	str	r2, [r3, #88]	; 0x58
+ 930:	f107 031c 	add.w	r3, r7, #28
+ 934:	681b      	ldr	r3, [r3, #0]
+ 936:	ee07 3a90 	vmov	s15, r3
+ 93a:	eef8 7a67 	vcvt.f32.u32	s15, s15
+ 93e:	ed9f 7ab8 	vldr	s14, [pc, #736]	; c20 <_Z24init_frame_buffer_lockedP16private_module_t+0x71c>
+ 942:	ee67 6a87 	vmul.f32	s13, s15, s14
+ 946:	f107 031c 	add.w	r3, r7, #28
+ 94a:	6ddb      	ldr	r3, [r3, #92]	; 0x5c
+ 94c:	ee07 3a90 	vmov	s15, r3
+ 950:	eeb8 7a67 	vcvt.f32.u32	s14, s15
+ 954:	eec6 7a87 	vdiv.f32	s15, s13, s14
+ 958:	edc7 7a57 	vstr	s15, [r7, #348]	; 0x15c
+ 95c:	f107 031c 	add.w	r3, r7, #28
+ 960:	685b      	ldr	r3, [r3, #4]
+ 962:	ee07 3a90 	vmov	s15, r3
+ 966:	eef8 7a67 	vcvt.f32.u32	s15, s15
+ 96a:	ed9f 7aad 	vldr	s14, [pc, #692]	; c20 <_Z24init_frame_buffer_lockedP16private_module_t+0x71c>
+ 96e:	ee67 6a87 	vmul.f32	s13, s15, s14
+ 972:	f107 031c 	add.w	r3, r7, #28
+ 976:	6d9b      	ldr	r3, [r3, #88]	; 0x58
+ 978:	ee07 3a90 	vmov	s15, r3
+ 97c:	eeb8 7a67 	vcvt.f32.u32	s14, s15
+ 980:	eec6 7a87 	vdiv.f32	s15, s13, s14
+ 984:	edc7 7a56 	vstr	s15, [r7, #344]	; 0x158
+ 988:	f8d7 3160 	ldr.w	r3, [r7, #352]	; 0x160
+ 98c:	ee07 3a90 	vmov	s15, r3
+ 990:	eeb8 7ae7 	vcvt.f32.s32	s14, s15
+ 994:	eddf 6aa4 	vldr	s13, [pc, #656]	; c28 <_Z24init_frame_buffer_lockedP16private_module_t+0x724>
+ 998:	eec7 7a26 	vdiv.f32	s15, s14, s13
+ 99c:	edc7 7a55 	vstr	s15, [r7, #340]	; 0x154
+ 9a0:	f107 031c 	add.w	r3, r7, #28
+ 9a4:	681b      	ldr	r3, [r3, #0]
+ 9a6:	613b      	str	r3, [r7, #16]
+ 9a8:	f107 021c 	add.w	r2, r7, #28
+ 9ac:	6853      	ldr	r3, [r2, #4]
+ 9ae:	60fb      	str	r3, [r7, #12]
+ 9b0:	f107 011c 	add.w	r1, r7, #28
+ 9b4:	688b      	ldr	r3, [r1, #8]
+ 9b6:	60bb      	str	r3, [r7, #8]
+ 9b8:	f107 001c 	add.w	r0, r7, #28
+ 9bc:	68c3      	ldr	r3, [r0, #12]
+ 9be:	607b      	str	r3, [r7, #4]
+ 9c0:	f107 041c 	add.w	r4, r7, #28
+ 9c4:	69a4      	ldr	r4, [r4, #24]
+ 9c6:	f107 051c 	add.w	r5, r7, #28
+ 9ca:	6a2d      	ldr	r5, [r5, #32]
+ 9cc:	f107 061c 	add.w	r6, r7, #28
+ 9d0:	6a76      	ldr	r6, [r6, #36]	; 0x24
+ 9d2:	f107 0c1c 	add.w	ip, r7, #28
+ 9d6:	f8dc 302c 	ldr.w	r3, [ip, #44]	; 0x2c
+ 9da:	f107 0c1c 	add.w	ip, r7, #28
+ 9de:	f8dc 2030 	ldr.w	r2, [ip, #48]	; 0x30
+ 9e2:	f107 0c1c 	add.w	ip, r7, #28
+ 9e6:	f8dc 1038 	ldr.w	r1, [ip, #56]	; 0x38
+ 9ea:	f107 0c1c 	add.w	ip, r7, #28
+ 9ee:	f8dc 003c 	ldr.w	r0, [ip, #60]	; 0x3c
+ 9f2:	900b      	str	r0, [sp, #44]	; 0x2c
+ 9f4:	910a      	str	r1, [sp, #40]	; 0x28
+ 9f6:	9209      	str	r2, [sp, #36]	; 0x24
+ 9f8:	9308      	str	r3, [sp, #32]
+ 9fa:	9607      	str	r6, [sp, #28]
+ 9fc:	9506      	str	r5, [sp, #24]
+ 9fe:	9405      	str	r4, [sp, #20]
+ a00:	687b      	ldr	r3, [r7, #4]
+ a02:	9304      	str	r3, [sp, #16]
+ a04:	68bb      	ldr	r3, [r7, #8]
+ a06:	9303      	str	r3, [sp, #12]
+ a08:	68fb      	ldr	r3, [r7, #12]
+ a0a:	9302      	str	r3, [sp, #8]
+ a0c:	693b      	ldr	r3, [r7, #16]
+ a0e:	9301      	str	r3, [sp, #4]
+ a10:	f107 03bc 	add.w	r3, r7, #188	; 0xbc
+ a14:	9300      	str	r3, [sp, #0]
+ a16:	f8d7 316c 	ldr.w	r3, [r7, #364]	; 0x16c
+ a1a:	4a90      	ldr	r2, [pc, #576]	; (c5c <_Z24init_frame_buffer_lockedP16private_module_t+0x758>)
+ a1c:	447a      	add	r2, pc
+ a1e:	4990      	ldr	r1, [pc, #576]	; (c60 <_Z24init_frame_buffer_lockedP16private_module_t+0x75c>)
+ a20:	4479      	add	r1, pc
+ a22:	2004      	movs	r0, #4
+ a24:	f7ff fffe 	bl	0 <__android_log_print>
+			a24: R_ARM_THM_CALL	__android_log_print
+ a28:	f107 031c 	add.w	r3, r7, #28
+ a2c:	6dda      	ldr	r2, [r3, #92]	; 0x5c
+ a2e:	edd7 7a57 	vldr	s15, [r7, #348]	; 0x15c
+ a32:	eef7 0ae7 	vcvt.f64.f32	d16, s15
+ a36:	f107 031c 	add.w	r3, r7, #28
+ a3a:	6d9b      	ldr	r3, [r3, #88]	; 0x58
+ a3c:	edd7 7a56 	vldr	s15, [r7, #344]	; 0x158
+ a40:	eef7 1ae7 	vcvt.f64.f32	d17, s15
+ a44:	edd7 7a55 	vldr	s15, [r7, #340]	; 0x154
+ a48:	eef7 2ae7 	vcvt.f64.f32	d18, s15
+ a4c:	edcd 2b06 	vstr	d18, [sp, #24]
+ a50:	edcd 1b04 	vstr	d17, [sp, #16]
+ a54:	9302      	str	r3, [sp, #8]
+ a56:	edcd 0b00 	vstr	d16, [sp]
+ a5a:	4613      	mov	r3, r2
+ a5c:	4a81      	ldr	r2, [pc, #516]	; (c64 <_Z24init_frame_buffer_lockedP16private_module_t+0x760>)
+ a5e:	447a      	add	r2, pc
+ a60:	4981      	ldr	r1, [pc, #516]	; (c68 <_Z24init_frame_buffer_lockedP16private_module_t+0x764>)
+ a62:	4479      	add	r1, pc
+ a64:	2004      	movs	r0, #4
+ a66:	f7ff fffe 	bl	0 <__android_log_print>
+			a66: R_ARM_THM_CALL	__android_log_print
+ a6a:	f107 03bc 	add.w	r3, r7, #188	; 0xbc
+ a6e:	461a      	mov	r2, r3
+ a70:	f244 6102 	movw	r1, #17922	; 0x4602
+ a74:	f8d7 016c 	ldr.w	r0, [r7, #364]	; 0x16c
+ a78:	f7ff fffe 	bl	0 <ioctl>
+			a78: R_ARM_THM_CALL	ioctl
+ a7c:	4603      	mov	r3, r0
+ a7e:	f1b3 3fff 	cmp.w	r3, #4294967295	; 0xffffffff
+ a82:	bf0c      	ite	eq
+ a84:	2301      	moveq	r3, #1
+ a86:	2300      	movne	r3, #0
+ a88:	b2db      	uxtb	r3, r3
+ a8a:	2b00      	cmp	r3, #0
+ a8c:	d005      	beq.n	a9a <_Z24init_frame_buffer_lockedP16private_module_t+0x596>
+ a8e:	f7ff fffe 	bl	0 <__errno>
+			a8e: R_ARM_THM_CALL	__errno
+ a92:	4603      	mov	r3, r0
+ a94:	681b      	ldr	r3, [r3, #0]
+ a96:	425b      	negs	r3, r3
+ a98:	e0bc      	b.n	c14 <_Z24init_frame_buffer_lockedP16private_module_t+0x710>
+ a9a:	f8d7 30e8 	ldr.w	r3, [r7, #232]	; 0xe8
+ a9e:	4a73      	ldr	r2, [pc, #460]	; (c6c <_Z24init_frame_buffer_lockedP16private_module_t+0x768>)
+ aa0:	447a      	add	r2, pc
+ aa2:	4973      	ldr	r1, [pc, #460]	; (c70 <_Z24init_frame_buffer_lockedP16private_module_t+0x76c>)
+ aa4:	4479      	add	r1, pc
+ aa6:	2004      	movs	r0, #4
+ aa8:	f7ff fffe 	bl	0 <__android_log_print>
+			aa8: R_ARM_THM_CALL	__android_log_print
+ aac:	f8d7 30d0 	ldr.w	r3, [r7, #208]	; 0xd0
+ ab0:	2b00      	cmp	r3, #0
+ ab2:	d105      	bne.n	ac0 <_Z24init_frame_buffer_lockedP16private_module_t+0x5bc>
+ ab4:	f7ff fffe 	bl	0 <__errno>
+			ab4: R_ARM_THM_CALL	__errno
+ ab8:	4603      	mov	r3, r0
+ aba:	681b      	ldr	r3, [r3, #0]
+ abc:	425b      	negs	r3, r3
+ abe:	e0a9      	b.n	c14 <_Z24init_frame_buffer_lockedP16private_module_t+0x710>
+ ac0:	f107 0314 	add.w	r3, r7, #20
+ ac4:	681b      	ldr	r3, [r3, #0]
+ ac6:	f8d7 2164 	ldr.w	r2, [r7, #356]	; 0x164
+ aca:	f8c3 20b4 	str.w	r2, [r3, #180]	; 0xb4
+ ace:	f107 0314 	add.w	r3, r7, #20
+ ad2:	681b      	ldr	r3, [r3, #0]
+ ad4:	f107 021c 	add.w	r2, r7, #28
+ ad8:	33d0      	adds	r3, #208	; 0xd0
+ ada:	4611      	mov	r1, r2
+ adc:	22a0      	movs	r2, #160	; 0xa0
+ ade:	4618      	mov	r0, r3
+ ae0:	f7ff fffe 	bl	0 <memcpy>
+			ae0: R_ARM_THM_CALL	memcpy
+ ae4:	f107 0314 	add.w	r3, r7, #20
+ ae8:	681b      	ldr	r3, [r3, #0]
+ aea:	f503 73b8 	add.w	r3, r3, #368	; 0x170
+ aee:	f107 01bc 	add.w	r1, r7, #188	; 0xbc
+ af2:	2244      	movs	r2, #68	; 0x44
+ af4:	4618      	mov	r0, r3
+ af6:	f7ff fffe 	bl	0 <memcpy>
+			af6: R_ARM_THM_CALL	memcpy
+ afa:	f107 0314 	add.w	r3, r7, #20
+ afe:	681b      	ldr	r3, [r3, #0]
+ b00:	f8d7 215c 	ldr.w	r2, [r7, #348]	; 0x15c
+ b04:	f8c3 21b4 	str.w	r2, [r3, #436]	; 0x1b4
+ b08:	f107 0314 	add.w	r3, r7, #20
+ b0c:	681b      	ldr	r3, [r3, #0]
+ b0e:	f8d7 2158 	ldr.w	r2, [r7, #344]	; 0x158
+ b12:	f8c3 21b8 	str.w	r2, [r3, #440]	; 0x1b8
+ b16:	f107 0314 	add.w	r3, r7, #20
+ b1a:	681b      	ldr	r3, [r3, #0]
+ b1c:	f8d7 2154 	ldr.w	r2, [r7, #340]	; 0x154
+ b20:	f8c3 21bc 	str.w	r2, [r3, #444]	; 0x1bc
+ b24:	f8d7 30e8 	ldr.w	r3, [r7, #232]	; 0xe8
+ b28:	f107 021c 	add.w	r2, r7, #28
+ b2c:	68d2      	ldr	r2, [r2, #12]
+ b2e:	fb02 f303 	mul.w	r3, r2, r3
+ b32:	4618      	mov	r0, r3
+ b34:	f7ff fffe 	bl	0 <gralloc_open>
+			b34: R_ARM_THM_CALL	_Z21round_up_to_page_sizej
+ b38:	f8c7 0150 	str.w	r0, [r7, #336]	; 0x150
+ b3c:	2300      	movs	r3, #0
+ b3e:	9301      	str	r3, [sp, #4]
+ b40:	f8d7 316c 	ldr.w	r3, [r7, #364]	; 0x16c
+ b44:	9300      	str	r3, [sp, #0]
+ b46:	2301      	movs	r3, #1
+ b48:	2203      	movs	r2, #3
+ b4a:	f8d7 1150 	ldr.w	r1, [r7, #336]	; 0x150
+ b4e:	2000      	movs	r0, #0
+ b50:	f7ff fffe 	bl	0 <mmap>
+			b50: R_ARM_THM_CALL	mmap
+ b54:	4603      	mov	r3, r0
+ b56:	f8c7 314c 	str.w	r3, [r7, #332]	; 0x14c
+ b5a:	f8d7 314c 	ldr.w	r3, [r7, #332]	; 0x14c
+ b5e:	f1b3 3fff 	cmp.w	r3, #4294967295	; 0xffffffff
+ b62:	d11a      	bne.n	38 <__errno+0x38>
+ b64:	f7ff fffe 	bl	0 <__errno>
+			b64: R_ARM_THM_CALL	__errno
+ b68:	4603      	mov	r3, r0
+ b6a:	681b      	ldr	r3, [r3, #0]
+ b6c:	4618      	mov	r0, r3
+ b6e:	f7ff fffe 	bl	0 <strerror>
+			b6e: R_ARM_THM_CALL	strerror
+ b72:	4603      	mov	r3, r0
+ b74:	9301      	str	r3, [sp, #4]
+ b76:	f44f 73e9 	mov.w	r3, #466	; 0x1d2
+ b7a:	9300      	str	r3, [sp, #0]
+ b7c:	4b3d      	ldr	r3, [pc, #244]	; (c74 <_Z24init_frame_buffer_lockedP16private_module_t+0x770>)
+ b7e:	447b      	add	r3, pc
+ b80:	4a3d      	ldr	r2, [pc, #244]	; (c78 <_Z24init_frame_buffer_lockedP16private_module_t+0x774>)
+ b82:	447a      	add	r2, pc
+ b84:	493d      	ldr	r1, [pc, #244]	; (c7c <_Z24init_frame_buffer_lockedP16private_module_t+0x778>)
+ b86:	4479      	add	r1, pc
+ b88:	2006      	movs	r0, #6
+ b8a:	f7ff fffe 	bl	0 <__android_log_print>
+			b8a: R_ARM_THM_CALL	__android_log_print
+ b8e:	f7ff fffe 	bl	0 <__errno>
+			b8e: R_ARM_THM_CALL	__errno
+ b92:	4603      	mov	r3, r0
+ b94:	681b      	ldr	r3, [r3, #0]
+ b96:	425b      	negs	r3, r3
+ b98:	e03c      	b.n	c14 <_Z24init_frame_buffer_lockedP16private_module_t+0x710>
+ b9a:	f8d7 016c 	ldr.w	r0, [r7, #364]	; 0x16c
+ b9e:	f7ff fffe 	bl	0 <dup>
+			b9e: R_ARM_THM_CALL	dup
+ ba2:	4605      	mov	r5, r0
+ ba4:	2068      	movs	r0, #104	; 0x68
+ ba6:	f7ff fffe 	bl	0 <_Znwj>
+			ba6: R_ARM_THM_CALL	_Znwj
+ baa:	4603      	mov	r3, r0
+ bac:	461c      	mov	r4, r3
+ bae:	f8d7 2150 	ldr.w	r2, [r7, #336]	; 0x150
+ bb2:	2300      	movs	r3, #0
+ bb4:	9303      	str	r3, [sp, #12]
+ bb6:	9502      	str	r5, [sp, #8]
+ bb8:	2300      	movs	r3, #0
+ bba:	9301      	str	r3, [sp, #4]
+ bbc:	f8d7 314c 	ldr.w	r3, [r7, #332]	; 0x14c
+ bc0:	9300      	str	r3, [sp, #0]
+ bc2:	4613      	mov	r3, r2
+ bc4:	2200      	movs	r2, #0
+ bc6:	2101      	movs	r1, #1
+ bc8:	4620      	mov	r0, r4
+ bca:	f7ff fffe 	bl	0 <gralloc_open>
+			bca: R_ARM_THM_CALL	_ZN16private_handle_tC1EiiiPviii
+ bce:	f107 0314 	add.w	r3, r7, #20
+ bd2:	681b      	ldr	r3, [r3, #0]
+ bd4:	f8c3 40b0 	str.w	r4, [r3, #176]	; 0xb0
+ bd8:	f107 031c 	add.w	r3, r7, #28
+ bdc:	68da      	ldr	r2, [r3, #12]
+ bde:	f107 031c 	add.w	r3, r7, #28
+ be2:	685b      	ldr	r3, [r3, #4]
+ be4:	4619      	mov	r1, r3
+ be6:	4610      	mov	r0, r2
+ be8:	f7ff fffe 	bl	0 <__aeabi_uidiv>
+			be8: R_ARM_THM_CALL	__aeabi_uidiv
+ bec:	4603      	mov	r3, r0
+ bee:	461a      	mov	r2, r3
+ bf0:	f107 0314 	add.w	r3, r7, #20
+ bf4:	681b      	ldr	r3, [r3, #0]
+ bf6:	f8c3 20b8 	str.w	r2, [r3, #184]	; 0xb8
+ bfa:	f107 0314 	add.w	r3, r7, #20
+ bfe:	681b      	ldr	r3, [r3, #0]
+ c00:	2200      	movs	r2, #0
+ c02:	f8c3 20bc 	str.w	r2, [r3, #188]	; 0xbc
+ c06:	2300      	movs	r3, #0
+ c08:	e004      	b.n	c14 <_Z24init_frame_buffer_lockedP16private_module_t+0x710>
+ c0a:	4620      	mov	r0, r4
+ c0c:	f7ff fffe 	bl	0 <_ZdlPv>
+			c0c: R_ARM_THM_CALL	_ZdlPv
+ c10:	f7ff fffe 	bl	0 <__cxa_end_cleanup>
+			c10: R_ARM_THM_CALL	__cxa_end_cleanup
+ c14:	4618      	mov	r0, r3
+ c16:	f507 77ba 	add.w	r7, r7, #372	; 0x174
+ c1a:	46bd      	mov	sp, r7
+ c1c:	bdf0      	pop	{r4, r5, r6, r7, pc}
+ c1e:	bf00      	nop
+ c20:	41cb3333 	.word	0x41cb3333
+ c24:	43200000 	.word	0x43200000
+ c28:	447a0000 	.word	0x447a0000
+ c2c:	a4c68000 	.word	0xa4c68000
+ c30:	00038d7e 	.word	0x00038d7e
+ c34:	0000070e 	.word	0x0000070e
+			c34: R_ARM_REL32	.data
+ c38:	00000856 	.word	0x00000856
+			c38: R_ARM_REL32	.rodata
+ c3c:	000005c4 	.word	0x000005c4
+			c3c: R_ARM_REL32	.rodata
+ c40:	0000060a 	.word	0x0000060a
+			c40: R_ARM_REL32	.rodata
+ c44:	00000808 	.word	0x00000808
+			c44: R_ARM_REL32	.rodata
+ c48:	000005d2 	.word	0x000005d2
+			c48: R_ARM_REL32	.rodata
+ c4c:	000005bc 	.word	0x000005bc
+			c4c: R_ARM_REL32	.rodata
+ c50:	00000724 	.word	0x00000724
+			c50: R_ARM_REL32	.rodata
+ c54:	00000534 	.word	0x00000534
+			c54: R_ARM_REL32	.rodata
+ c58:	000004dc 	.word	0x000004dc
+			c58: R_ARM_REL32	.rodata
+ c5c:	000003e0 	.word	0x000003e0
+			c5c: R_ARM_REL32	.rodata
+ c60:	000004ac 	.word	0x000004ac
+			c60: R_ARM_REL32	.rodata
+ c64:	0000047e 	.word	0x0000047e
+			c64: R_ARM_REL32	.rodata
+ c68:	00000472 	.word	0x00000472
+			c68: R_ARM_REL32	.rodata
+ c6c:	00000498 	.word	0x00000498
+			c6c: R_ARM_REL32	.rodata
+ c70:	00000438 	.word	0x00000438
+			c70: R_ARM_REL32	.rodata
+ c74:	0000045e 	.word	0x0000045e
+			c74: R_ARM_REL32	.rodata
+ c78:	000003de 	.word	0x000003de
+			c78: R_ARM_REL32	.rodata
+ c7c:	0000015e 	.word	0x0000015e
+			c7c: R_ARM_REL32	.rodata
+
+00000c80 <_ZL17init_frame_bufferP16private_module_t>:
+ c80:	b580      	push	{r7, lr}
+ c82:	b084      	sub	sp, #16
+ c84:	af00      	add	r7, sp, #0
+ c86:	6078      	str	r0, [r7, #4]
+ c88:	687b      	ldr	r3, [r7, #4]
+ c8a:	33c0      	adds	r3, #192	; 0xc0
+ c8c:	4618      	mov	r0, r3
+ c8e:	f7ff fffe 	bl	0 <pthread_mutex_lock>
+			c8e: R_ARM_THM_CALL	pthread_mutex_lock
+ c92:	6878      	ldr	r0, [r7, #4]
+ c94:	f7ff fffe 	bl	504 <_Z24init_frame_buffer_lockedP16private_module_t>
+			c94: R_ARM_THM_CALL	_Z24init_frame_buffer_lockedP16private_module_t
+ c98:	4603      	mov	r3, r0
+ c9a:	60fb      	str	r3, [r7, #12]
+ c9c:	687b      	ldr	r3, [r7, #4]
+ c9e:	33c0      	adds	r3, #192	; 0xc0
+ ca0:	4618      	mov	r0, r3
+ ca2:	f7ff fffe 	bl	0 <pthread_mutex_unlock>
+			ca2: R_ARM_THM_CALL	pthread_mutex_unlock
+ ca6:	68fb      	ldr	r3, [r7, #12]
+ ca8:	4618      	mov	r0, r3
+ caa:	3710      	adds	r7, #16
+ cac:	46bd      	mov	sp, r7
+ cae:	bd80      	pop	{r7, pc}
+
+00000cb0 <_ZL8fb_closeP11hw_device_t>:
+ cb0:	b580      	push	{r7, lr}
+ cb2:	b084      	sub	sp, #16
+ cb4:	af00      	add	r7, sp, #0
+ cb6:	6078      	str	r0, [r7, #4]
+ cb8:	687b      	ldr	r3, [r7, #4]
+ cba:	60fb      	str	r3, [r7, #12]
+ cbc:	68fb      	ldr	r3, [r7, #12]
+ cbe:	2b00      	cmp	r3, #0
+ cc0:	d002      	beq.n	cc8 <_ZL8fb_closeP11hw_device_t+0x18>
+ cc2:	68f8      	ldr	r0, [r7, #12]
+ cc4:	f7ff fffe 	bl	0 <free>
+			cc4: R_ARM_THM_CALL	free
+ cc8:	2300      	movs	r3, #0
+ cca:	4618      	mov	r0, r3
+ ccc:	3710      	adds	r7, #16
+ cce:	46bd      	mov	sp, r7
+ cd0:	bd80      	pop	{r7, pc}
+
+00000cd2 <_Z19compositionCompleteP20framebuffer_device_t>:
+ cd2:	b580      	push	{r7, lr}
+ cd4:	b082      	sub	sp, #8
+ cd6:	af00      	add	r7, sp, #0
+ cd8:	6078      	str	r0, [r7, #4]
+ cda:	f7ff fffe 	bl	0 <glFinish>
+			cda: R_ARM_THM_CALL	glFinish
+ cde:	2300      	movs	r3, #0
+ ce0:	4618      	mov	r0, r3
+ ce2:	3708      	adds	r7, #8
+ ce4:	46bd      	mov	sp, r7
+ ce6:	bd80      	pop	{r7, pc}
+
+00000ce8 <_Z23framebuffer_device_openPK11hw_module_tPKcPP11hw_device_t>:
+ ce8:	b590      	push	{r4, r7, lr}
+ cea:	b08b      	sub	sp, #44	; 0x2c
+ cec:	af00      	add	r7, sp, #0
+ cee:	60f8      	str	r0, [r7, #12]
+ cf0:	60b9      	str	r1, [r7, #8]
+ cf2:	607a      	str	r2, [r7, #4]
+ cf4:	4c46      	ldr	r4, [pc, #280]	; (e10 <_Z23framebuffer_device_openPK11hw_module_tPKcPP11hw_device_t+0x128>)
+ cf6:	447c      	add	r4, pc
+ cf8:	f06f 0315 	mvn.w	r3, #21
+ cfc:	627b      	str	r3, [r7, #36]	; 0x24
+ cfe:	f107 0314 	add.w	r3, r7, #20
+ d02:	4619      	mov	r1, r3
+ d04:	68f8      	ldr	r0, [r7, #12]
+ d06:	f7ff f97b 	bl	0 <gralloc_open>
+ d0a:	4603      	mov	r3, r0
+ d0c:	627b      	str	r3, [r7, #36]	; 0x24
+ d0e:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+ d10:	2b00      	cmp	r3, #0
+ d12:	da01      	bge.n	d18 <_Z23framebuffer_device_openPK11hw_module_tPKcPP11hw_device_t+0x30>
+ d14:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+ d16:	e077      	b.n	e08 <_Z23framebuffer_device_openPK11hw_module_tPKcPP11hw_device_t+0x120>
+ d18:	68fb      	ldr	r3, [r7, #12]
+ d1a:	623b      	str	r3, [r7, #32]
+ d1c:	6a38      	ldr	r0, [r7, #32]
+ d1e:	f7ff ffaf 	bl	c80 <_ZL17init_frame_bufferP16private_module_t>
+ d22:	4603      	mov	r3, r0
+ d24:	627b      	str	r3, [r7, #36]	; 0x24
+ d26:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+ d28:	2b00      	cmp	r3, #0
+ d2a:	da05      	bge.n	d38 <_Z23framebuffer_device_openPK11hw_module_tPKcPP11hw_device_t+0x50>
+ d2c:	697b      	ldr	r3, [r7, #20]
+ d2e:	4618      	mov	r0, r3
+ d30:	f7ff f97a 	bl	28 <gralloc_close>
+ d34:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+ d36:	e067      	b.n	e08 <_Z23framebuffer_device_openPK11hw_module_tPKcPP11hw_device_t+0x120>
+ d38:	20b8      	movs	r0, #184	; 0xb8
+ d3a:	f7ff fffe 	bl	0 <malloc>
+			d3a: R_ARM_THM_CALL	malloc
+ d3e:	4603      	mov	r3, r0
+ d40:	61fb      	str	r3, [r7, #28]
+ d42:	22b8      	movs	r2, #184	; 0xb8
+ d44:	2100      	movs	r1, #0
+ d46:	69f8      	ldr	r0, [r7, #28]
+ d48:	f7ff fffe 	bl	0 <memset>
+			d48: R_ARM_THM_CALL	memset
+ d4c:	69fa      	ldr	r2, [r7, #28]
+ d4e:	f244 4354 	movw	r3, #17492	; 0x4454
+ d52:	f6c4 0357 	movt	r3, #18519	; 0x4857
+ d56:	6013      	str	r3, [r2, #0]
+ d58:	69fb      	ldr	r3, [r7, #28]
+ d5a:	2200      	movs	r2, #0
+ d5c:	605a      	str	r2, [r3, #4]
+ d5e:	69fb      	ldr	r3, [r7, #28]
+ d60:	68fa      	ldr	r2, [r7, #12]
+ d62:	609a      	str	r2, [r3, #8]
+ d64:	69fb      	ldr	r3, [r7, #28]
+ d66:	4a2b      	ldr	r2, [pc, #172]	; (e14 <_Z23framebuffer_device_openPK11hw_module_tPKcPP11hw_device_t+0x12c>)
+ d68:	447a      	add	r2, pc
+ d6a:	63da      	str	r2, [r3, #60]	; 0x3c
+ d6c:	69fb      	ldr	r3, [r7, #28]
+ d6e:	4a2a      	ldr	r2, [pc, #168]	; (e18 <_Z23framebuffer_device_openPK11hw_module_tPKcPP11hw_device_t+0x130>)
+ d70:	447a      	add	r2, pc
+ d72:	f8c3 2088 	str.w	r2, [r3, #136]	; 0x88
+ d76:	69fb      	ldr	r3, [r7, #28]
+ d78:	4a28      	ldr	r2, [pc, #160]	; (e1c <_Z23framebuffer_device_openPK11hw_module_tPKcPP11hw_device_t+0x134>)
+ d7a:	447a      	add	r2, pc
+ d7c:	f8c3 2090 	str.w	r2, [r3, #144]	; 0x90
+ d80:	69fb      	ldr	r3, [r7, #28]
+ d82:	2200      	movs	r2, #0
+ d84:	f8c3 208c 	str.w	r2, [r3, #140]	; 0x8c
+ d88:	69fb      	ldr	r3, [r7, #28]
+ d8a:	4a25      	ldr	r2, [pc, #148]	; (e20 <_Z23framebuffer_device_openPK11hw_module_tPKcPP11hw_device_t+0x138>)
+ d8c:	58a2      	ldr	r2, [r4, r2]
+ d8e:	f8c3 2094 	str.w	r2, [r3, #148]	; 0x94
+ d92:	6a3b      	ldr	r3, [r7, #32]
+ d94:	f8d3 219c 	ldr.w	r2, [r3, #412]	; 0x19c
+ d98:	6a3b      	ldr	r3, [r7, #32]
+ d9a:	f8d3 30e8 	ldr.w	r3, [r3, #232]	; 0xe8
+ d9e:	08db      	lsrs	r3, r3, #3
+ da0:	4619      	mov	r1, r3
+ da2:	4610      	mov	r0, r2
+ da4:	f7ff fffe 	bl	0 <__aeabi_uidiv>
+			da4: R_ARM_THM_CALL	__aeabi_uidiv
+ da8:	4603      	mov	r3, r0
+ daa:	61bb      	str	r3, [r7, #24]
+ dac:	69fb      	ldr	r3, [r7, #28]
+ dae:	2200      	movs	r2, #0
+ db0:	641a      	str	r2, [r3, #64]	; 0x40
+ db2:	6a3b      	ldr	r3, [r7, #32]
+ db4:	f8d3 20d0 	ldr.w	r2, [r3, #208]	; 0xd0
+ db8:	69fb      	ldr	r3, [r7, #28]
+ dba:	645a      	str	r2, [r3, #68]	; 0x44
+ dbc:	6a3b      	ldr	r3, [r7, #32]
+ dbe:	f8d3 20d4 	ldr.w	r2, [r3, #212]	; 0xd4
+ dc2:	69fb      	ldr	r3, [r7, #28]
+ dc4:	649a      	str	r2, [r3, #72]	; 0x48
+ dc6:	69fb      	ldr	r3, [r7, #28]
+ dc8:	69ba      	ldr	r2, [r7, #24]
+ dca:	64da      	str	r2, [r3, #76]	; 0x4c
+ dcc:	69fb      	ldr	r3, [r7, #28]
+ dce:	2205      	movs	r2, #5
+ dd0:	651a      	str	r2, [r3, #80]	; 0x50
+ dd2:	6a3b      	ldr	r3, [r7, #32]
+ dd4:	f8d3 21b4 	ldr.w	r2, [r3, #436]	; 0x1b4
+ dd8:	69fb      	ldr	r3, [r7, #28]
+ dda:	655a      	str	r2, [r3, #84]	; 0x54
+ ddc:	6a3b      	ldr	r3, [r7, #32]
+ dde:	f8d3 21b8 	ldr.w	r2, [r3, #440]	; 0x1b8
+ de2:	69fb      	ldr	r3, [r7, #28]
+ de4:	659a      	str	r2, [r3, #88]	; 0x58
+ de6:	6a3b      	ldr	r3, [r7, #32]
+ de8:	f8d3 21bc 	ldr.w	r2, [r3, #444]	; 0x1bc
+ dec:	69fb      	ldr	r3, [r7, #28]
+ dee:	65da      	str	r2, [r3, #92]	; 0x5c
+ df0:	69fb      	ldr	r3, [r7, #28]
+ df2:	2200      	movs	r2, #0
+ df4:	661a      	str	r2, [r3, #96]	; 0x60
+ df6:	69fb      	ldr	r3, [r7, #28]
+ df8:	2201      	movs	r2, #1
+ dfa:	665a      	str	r2, [r3, #100]	; 0x64
+ dfc:	69fa      	ldr	r2, [r7, #28]
+ dfe:	687b      	ldr	r3, [r7, #4]
+ e00:	601a      	str	r2, [r3, #0]
+ e02:	2300      	movs	r3, #0
+ e04:	627b      	str	r3, [r7, #36]	; 0x24
+ e06:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+ e08:	4618      	mov	r0, r3
+ e0a:	372c      	adds	r7, #44	; 0x2c
+ e0c:	46bd      	mov	sp, r7
+ e0e:	bd90      	pop	{r4, r7, pc}
+ e10:	00000116 	.word	0x00000116
+			e10: R_ARM_GOTPC	_GLOBAL_OFFSET_TABLE_
+ e14:	000000a8 	.word	0x000000a8
+			e14: R_ARM_REL32	_ZL8fb_closeP11hw_device_t
+ e18:	000000a4 	.word	0x000000a4
+			e18: R_ARM_REL32	_ZL20fb_set_swap_intervalP20framebuffer_device_ti
+ e1c:	0000009e 	.word	0x0000009e
+			e1c: R_ARM_REL32	_ZL7fb_postP20framebuffer_device_tPK13native_handle
+ e20:	00000000 	.word	0x00000000
+			e20: R_ARM_GOT32	_Z19compositionCompleteP20framebuffer_device_t
+
+Disassembly of section .text._ZN13native_handleC2Ev:
+
+00000000 <_ZN13native_handleC1Ev>:
+   0:	b480      	push	{r7}
+   2:	b083      	sub	sp, #12
+   4:	af00      	add	r7, sp, #0
+   6:	6078      	str	r0, [r7, #4]
+   8:	687b      	ldr	r3, [r7, #4]
+   a:	4618      	mov	r0, r3
+   c:	370c      	adds	r7, #12
+   e:	46bd      	mov	sp, r7
+  10:	f85d 7b04 	ldr.w	r7, [sp], #4
+  14:	4770      	bx	lr
+
+Disassembly of section .text._ZN16private_handle_tC2EiiiPviii:
+
+00000000 <_ZN16private_handle_tC1EiiiPviii>:
+   0:	b580      	push	{r7, lr}
+   2:	b084      	sub	sp, #16
+   4:	af00      	add	r7, sp, #0
+   6:	60f8      	str	r0, [r7, #12]
+   8:	60b9      	str	r1, [r7, #8]
+   a:	607a      	str	r2, [r7, #4]
+   c:	603b      	str	r3, [r7, #0]
+   e:	68fb      	ldr	r3, [r7, #12]
+  10:	4618      	mov	r0, r3
+  12:	f7ff fffe 	bl	0 <_ZN16private_handle_tC1EiiiPviii>
+			12: R_ARM_THM_CALL	_ZN13native_handleC2Ev
+  16:	68fb      	ldr	r3, [r7, #12]
+  18:	f04f 32ff 	mov.w	r2, #4294967295	; 0xffffffff
+  1c:	60da      	str	r2, [r3, #12]
+  1e:	68fa      	ldr	r2, [r7, #12]
+  20:	f241 5392 	movw	r3, #5522	; 0x1592
+  24:	f2c0 3314 	movt	r3, #788	; 0x314
+  28:	6113      	str	r3, [r2, #16]
+  2a:	68fb      	ldr	r3, [r7, #12]
+  2c:	68ba      	ldr	r2, [r7, #8]
+  2e:	615a      	str	r2, [r3, #20]
+  30:	68fb      	ldr	r3, [r7, #12]
+  32:	687a      	ldr	r2, [r7, #4]
+  34:	619a      	str	r2, [r3, #24]
+  36:	68fb      	ldr	r3, [r7, #12]
+  38:	683a      	ldr	r2, [r7, #0]
+  3a:	61da      	str	r2, [r3, #28]
+  3c:	68fb      	ldr	r3, [r7, #12]
+  3e:	2200      	movs	r2, #0
+  40:	621a      	str	r2, [r3, #32]
+  42:	68fb      	ldr	r3, [r7, #12]
+  44:	2200      	movs	r2, #0
+  46:	625a      	str	r2, [r3, #36]	; 0x24
+  48:	68fb      	ldr	r3, [r7, #12]
+  4a:	2200      	movs	r2, #0
+  4c:	629a      	str	r2, [r3, #40]	; 0x28
+  4e:	68fb      	ldr	r3, [r7, #12]
+  50:	2200      	movs	r2, #0
+  52:	62da      	str	r2, [r3, #44]	; 0x2c
+  54:	68fb      	ldr	r3, [r7, #12]
+  56:	2200      	movs	r2, #0
+  58:	631a      	str	r2, [r3, #48]	; 0x30
+  5a:	68fb      	ldr	r3, [r7, #12]
+  5c:	69ba      	ldr	r2, [r7, #24]
+  5e:	639a      	str	r2, [r3, #56]	; 0x38
+  60:	68fb      	ldr	r3, [r7, #12]
+  62:	2200      	movs	r2, #0
+  64:	641a      	str	r2, [r3, #64]	; 0x40
+  66:	68fb      	ldr	r3, [r7, #12]
+  68:	69fa      	ldr	r2, [r7, #28]
+  6a:	649a      	str	r2, [r3, #72]	; 0x48
+  6c:	68fb      	ldr	r3, [r7, #12]
+  6e:	2200      	movs	r2, #0
+  70:	64da      	str	r2, [r3, #76]	; 0x4c
+  72:	f7ff fffe 	bl	0 <getpid>
+			72: R_ARM_THM_CALL	getpid
+  76:	4602      	mov	r2, r0
+  78:	68fb      	ldr	r3, [r7, #12]
+  7a:	651a      	str	r2, [r3, #80]	; 0x50
+  7c:	68fb      	ldr	r3, [r7, #12]
+  7e:	2200      	movs	r2, #0
+  80:	655a      	str	r2, [r3, #84]	; 0x54
+  82:	68fb      	ldr	r3, [r7, #12]
+  84:	6a3a      	ldr	r2, [r7, #32]
+  86:	659a      	str	r2, [r3, #88]	; 0x58
+  88:	68fb      	ldr	r3, [r7, #12]
+  8a:	6a7a      	ldr	r2, [r7, #36]	; 0x24
+  8c:	65da      	str	r2, [r3, #92]	; 0x5c
+  8e:	68fb      	ldr	r3, [r7, #12]
+  90:	2200      	movs	r2, #0
+  92:	661a      	str	r2, [r3, #96]	; 0x60
+  94:	68fb      	ldr	r3, [r7, #12]
+  96:	220c      	movs	r2, #12
+  98:	601a      	str	r2, [r3, #0]
+  9a:	68fb      	ldr	r3, [r7, #12]
+  9c:	2201      	movs	r2, #1
+  9e:	605a      	str	r2, [r3, #4]
+  a0:	68fb      	ldr	r3, [r7, #12]
+  a2:	2216      	movs	r2, #22
+  a4:	609a      	str	r2, [r3, #8]
+  a6:	68fb      	ldr	r3, [r7, #12]
+  a8:	4618      	mov	r0, r3
+  aa:	3710      	adds	r7, #16
+  ac:	46bd      	mov	sp, r7
+  ae:	bd80      	pop	{r7, pc}
+
+Disassembly of section .text._ZN16private_handle_t8validateEPK13native_handle:
+
+00000000 <_ZN16private_handle_t8validateEPK13native_handle>:
+   0:	b580      	push	{r7, lr}
+   2:	b084      	sub	sp, #16
+   4:	af00      	add	r7, sp, #0
+   6:	6078      	str	r0, [r7, #4]
+   8:	687b      	ldr	r3, [r7, #4]
+   a:	60fb      	str	r3, [r7, #12]
+   c:	687b      	ldr	r3, [r7, #4]
+   e:	2b00      	cmp	r3, #0
+  10:	d013      	beq.n	3a <_ZN16private_handle_t8validateEPK13native_handle+0x3a>
+  12:	687b      	ldr	r3, [r7, #4]
+  14:	681b      	ldr	r3, [r3, #0]
+  16:	2b0c      	cmp	r3, #12
+  18:	d10f      	bne.n	3a <_ZN16private_handle_t8validateEPK13native_handle+0x3a>
+  1a:	687b      	ldr	r3, [r7, #4]
+  1c:	685b      	ldr	r3, [r3, #4]
+  1e:	2b01      	cmp	r3, #1
+  20:	d10b      	bne.n	3a <_ZN16private_handle_t8validateEPK13native_handle+0x3a>
+  22:	687b      	ldr	r3, [r7, #4]
+  24:	689b      	ldr	r3, [r3, #8]
+  26:	2b16      	cmp	r3, #22
+  28:	d107      	bne.n	3a <_ZN16private_handle_t8validateEPK13native_handle+0x3a>
+  2a:	68fb      	ldr	r3, [r7, #12]
+  2c:	691a      	ldr	r2, [r3, #16]
+  2e:	f241 5392 	movw	r3, #5522	; 0x1592
+  32:	f2c0 3314 	movt	r3, #788	; 0x314
+  36:	429a      	cmp	r2, r3
+  38:	d00b      	beq.n	52 <_ZN16private_handle_t8validateEPK13native_handle+0x52>
+  3a:	4b08      	ldr	r3, [pc, #32]	; (5c <_ZN16private_handle_t8validateEPK13native_handle+0x5c>)
+  3c:	447b      	add	r3, pc
+  3e:	461a      	mov	r2, r3
+  40:	4b07      	ldr	r3, [pc, #28]	; (60 <_ZN16private_handle_t8validateEPK13native_handle+0x60>)
+  42:	447b      	add	r3, pc
+  44:	4619      	mov	r1, r3
+  46:	2006      	movs	r0, #6
+  48:	f7ff fffe 	bl	0 <__android_log_print>
+			48: R_ARM_THM_CALL	__android_log_print
+  4c:	f06f 0315 	mvn.w	r3, #21
+  50:	e000      	b.n	54 <_ZN16private_handle_t8validateEPK13native_handle+0x54>
+  52:	2300      	movs	r3, #0
+  54:	4618      	mov	r0, r3
+  56:	3710      	adds	r7, #16
+  58:	46bd      	mov	sp, r7
+  5a:	bd80      	pop	{r7, pc}
+  5c:	00000038 	.word	0x00000038
+			5c: R_ARM_REL32	.rodata
+  60:	00000052 	.word	0x00000052
+			60: R_ARM_REL32	.rodata
+
+Disassembly of section .text._Z21round_up_to_page_sizej:
+
+00000000 <_Z21round_up_to_page_sizej>:
+   0:	b480      	push	{r7}
+   2:	b083      	sub	sp, #12
+   4:	af00      	add	r7, sp, #0
+   6:	6078      	str	r0, [r7, #4]
+   8:	687b      	ldr	r3, [r7, #4]
+   a:	f603 73ff 	addw	r3, r3, #4095	; 0xfff
+   e:	f423 637f 	bic.w	r3, r3, #4080	; 0xff0
+  12:	f023 030f 	bic.w	r3, r3, #15
+  16:	4618      	mov	r0, r3
+  18:	370c      	adds	r7, #12
+  1a:	46bd      	mov	sp, r7
+  1c:	f85d 7b04 	ldr.w	r7, [sp], #4
+  20:	4770      	bx	lr

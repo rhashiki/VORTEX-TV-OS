@@ -1,0 +1,11 @@
+{
+  "scope": "Final artifact/hash integrity check only, no runtime or physical test.",
+  "header_quantities_compared": 94,
+  "header_contract_assertion_before": "expected_failure",
+  "header_contract_assertion_after": "pass",
+  "all_four_actual_gralloc_objects_match_frozen_hashes": true,
+  "hal_evidence_manifest_sha256": "801ebe0a6161c0723774c546bc0d86752a5283b5d1700d1a74f9e0d7ef104fc8",
+  "patch_sha256": "bd3a2e95546844cae005bd6ce385324b6ef06f99837f6c58f8f49bf84035e599",
+  "physical_boot": "not_performed",
+  "Android_image": "not_built"
+}

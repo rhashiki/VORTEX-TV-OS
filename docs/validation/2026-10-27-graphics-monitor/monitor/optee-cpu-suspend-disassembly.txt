@@ -1,0 +1,9 @@
+
+/workspace/build01-platform-next/optee-build/out/core/tee.elf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+6843208e <psci_cpu_suspend>:
+6843208e:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
+68432092:	4770      	bx	lr

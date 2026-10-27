@@ -1,0 +1,1568 @@
+
+/workspace/build01-graphics-next/graphics/hal-build/gralloc_module.o:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <_ZL19gralloc_device_openPK11hw_module_tPKcPP11hw_device_t>:
+   0:	b580      	push	{r7, lr}
+   2:	b086      	sub	sp, #24
+   4:	af00      	add	r7, sp, #0
+   6:	60f8      	str	r0, [r7, #12]
+   8:	60b9      	str	r1, [r7, #8]
+   a:	607a      	str	r2, [r7, #4]
+   c:	f06f 0315 	mvn.w	r3, #21
+  10:	617b      	str	r3, [r7, #20]
+  12:	2208      	movs	r2, #8
+  14:	4b14      	ldr	r3, [pc, #80]	; (68 <_ZL19gralloc_device_openPK11hw_module_tPKcPP11hw_device_t+0x68>)
+  16:	447b      	add	r3, pc
+  18:	4619      	mov	r1, r3
+  1a:	68b8      	ldr	r0, [r7, #8]
+  1c:	f7ff fffe 	bl	0 <strncmp>
+			1c: R_ARM_THM_CALL	strncmp
+  20:	4603      	mov	r3, r0
+  22:	2b00      	cmp	r3, #0
+  24:	d107      	bne.n	36 <_ZL19gralloc_device_openPK11hw_module_tPKcPP11hw_device_t+0x36>
+  26:	687a      	ldr	r2, [r7, #4]
+  28:	68b9      	ldr	r1, [r7, #8]
+  2a:	68f8      	ldr	r0, [r7, #12]
+  2c:	f7ff fffe 	bl	0 <_Z17alloc_device_openPK11hw_module_tPKcPP11hw_device_t>
+			2c: R_ARM_THM_CALL	_Z17alloc_device_openPK11hw_module_tPKcPP11hw_device_t
+  30:	4603      	mov	r3, r0
+  32:	617b      	str	r3, [r7, #20]
+  34:	e012      	b.n	5c <_ZL19gralloc_device_openPK11hw_module_tPKcPP11hw_device_t+0x5c>
+  36:	2208      	movs	r2, #8
+  38:	4b0c      	ldr	r3, [pc, #48]	; (6c <_ZL19gralloc_device_openPK11hw_module_tPKcPP11hw_device_t+0x6c>)
+  3a:	447b      	add	r3, pc
+  3c:	4619      	mov	r1, r3
+  3e:	68b8      	ldr	r0, [r7, #8]
+  40:	f7ff fffe 	bl	0 <strncmp>
+			40: R_ARM_THM_CALL	strncmp
+  44:	4603      	mov	r3, r0
+  46:	2b00      	cmp	r3, #0
+  48:	d108      	bne.n	5c <_ZL19gralloc_device_openPK11hw_module_tPKcPP11hw_device_t+0x5c>
+  4a:	f7ff fffe 	bl	0 <_Z20rockchip_set_versionv>
+			4a: R_ARM_THM_CALL	_Z20rockchip_set_versionv
+  4e:	687a      	ldr	r2, [r7, #4]
+  50:	68b9      	ldr	r1, [r7, #8]
+  52:	68f8      	ldr	r0, [r7, #12]
+  54:	f7ff fffe 	bl	0 <_Z23framebuffer_device_openPK11hw_module_tPKcPP11hw_device_t>
+			54: R_ARM_THM_CALL	_Z23framebuffer_device_openPK11hw_module_tPKcPP11hw_device_t
+  58:	4603      	mov	r3, r0
+  5a:	617b      	str	r3, [r7, #20]
+  5c:	697b      	ldr	r3, [r7, #20]
+  5e:	4618      	mov	r0, r3
+  60:	3718      	adds	r7, #24
+  62:	46bd      	mov	sp, r7
+  64:	bd80      	pop	{r7, pc}
+  66:	bf00      	nop
+  68:	00000086 	.word	0x00000086
+			68: R_ARM_REL32	.rodata
+  6c:	0000006e 	.word	0x0000006e
+			6c: R_ARM_REL32	.rodata
+
+00000070 <_ZL15gralloc_performPK16gralloc_module_tiz>:
+  70:	b40e      	push	{r1, r2, r3}
+  72:	b580      	push	{r7, lr}
+  74:	b08b      	sub	sp, #44	; 0x2c
+  76:	af00      	add	r7, sp, #0
+  78:	6078      	str	r0, [r7, #4]
+  7a:	f107 0338 	add.w	r3, r7, #56	; 0x38
+  7e:	60bb      	str	r3, [r7, #8]
+  80:	6b7a      	ldr	r2, [r7, #52]	; 0x34
+  82:	2302      	movs	r3, #2
+  84:	f6c0 0310 	movt	r3, #2064	; 0x810
+  88:	429a      	cmp	r2, r3
+  8a:	d005      	beq.n	98 <_ZL15gralloc_performPK16gralloc_module_tiz+0x28>
+  8c:	2304      	movs	r3, #4
+  8e:	f6c0 0310 	movt	r3, #2064	; 0x810
+  92:	429a      	cmp	r2, r3
+  94:	d021      	beq.n	da <_ZL15gralloc_performPK16gralloc_module_tiz+0x6a>
+  96:	e041      	b.n	11c <_ZL15gralloc_performPK16gralloc_module_tiz+0xac>
+  98:	68bb      	ldr	r3, [r7, #8]
+  9a:	1d1a      	adds	r2, r3, #4
+  9c:	60ba      	str	r2, [r7, #8]
+  9e:	681b      	ldr	r3, [r3, #0]
+  a0:	623b      	str	r3, [r7, #32]
+  a2:	68bb      	ldr	r3, [r7, #8]
+  a4:	1d1a      	adds	r2, r3, #4
+  a6:	60ba      	str	r2, [r7, #8]
+  a8:	681b      	ldr	r3, [r3, #0]
+  aa:	61fb      	str	r3, [r7, #28]
+  ac:	6a38      	ldr	r0, [r7, #32]
+  ae:	f7ff fffe 	bl	0 <_ZL19gralloc_device_openPK11hw_module_tPKcPP11hw_device_t>
+			ae: R_ARM_THM_CALL	_ZN16private_handle_t8validateEPK13native_handle
+  b2:	4603      	mov	r3, r0
+  b4:	627b      	str	r3, [r7, #36]	; 0x24
+  b6:	69fb      	ldr	r3, [r7, #28]
+  b8:	2b00      	cmp	r3, #0
+  ba:	d102      	bne.n	c2 <_ZL15gralloc_performPK16gralloc_module_tiz+0x52>
+  bc:	f06f 0315 	mvn.w	r3, #21
+  c0:	627b      	str	r3, [r7, #36]	; 0x24
+  c2:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+  c4:	2b00      	cmp	r3, #0
+  c6:	d135      	bne.n	134 <_ZL15gralloc_performPK16gralloc_module_tiz+0xc4>
+  c8:	6a3b      	ldr	r3, [r7, #32]
+  ca:	61bb      	str	r3, [r7, #24]
+  cc:	69f9      	ldr	r1, [r7, #28]
+  ce:	69b8      	ldr	r0, [r7, #24]
+  d0:	f7ff fffe 	bl	0 <_Z22gralloc_backend_get_fdP16private_handle_tPi>
+			d0: R_ARM_THM_CALL	_Z22gralloc_backend_get_fdP16private_handle_tPi
+  d4:	4603      	mov	r3, r0
+  d6:	627b      	str	r3, [r7, #36]	; 0x24
+  d8:	e02f      	b.n	13a <_ZL15gralloc_performPK16gralloc_module_tiz+0xca>
+  da:	68bb      	ldr	r3, [r7, #8]
+  dc:	1d1a      	adds	r2, r3, #4
+  de:	60ba      	str	r2, [r7, #8]
+  e0:	681b      	ldr	r3, [r3, #0]
+  e2:	617b      	str	r3, [r7, #20]
+  e4:	68bb      	ldr	r3, [r7, #8]
+  e6:	1d1a      	adds	r2, r3, #4
+  e8:	60ba      	str	r2, [r7, #8]
+  ea:	681b      	ldr	r3, [r3, #0]
+  ec:	613b      	str	r3, [r7, #16]
+  ee:	6978      	ldr	r0, [r7, #20]
+  f0:	f7ff fffe 	bl	0 <_ZL19gralloc_device_openPK11hw_module_tPKcPP11hw_device_t>
+			f0: R_ARM_THM_CALL	_ZN16private_handle_t8validateEPK13native_handle
+  f4:	4603      	mov	r3, r0
+  f6:	627b      	str	r3, [r7, #36]	; 0x24
+  f8:	693b      	ldr	r3, [r7, #16]
+  fa:	2b00      	cmp	r3, #0
+  fc:	d102      	bne.n	104 <_ZL15gralloc_performPK16gralloc_module_tiz+0x94>
+  fe:	f06f 0315 	mvn.w	r3, #21
+ 102:	627b      	str	r3, [r7, #36]	; 0x24
+ 104:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+ 106:	2b00      	cmp	r3, #0
+ 108:	d116      	bne.n	138 <_ZL15gralloc_performPK16gralloc_module_tiz+0xc8>
+ 10a:	697b      	ldr	r3, [r7, #20]
+ 10c:	60fb      	str	r3, [r7, #12]
+ 10e:	6939      	ldr	r1, [r7, #16]
+ 110:	68f8      	ldr	r0, [r7, #12]
+ 112:	f7ff fffe 	bl	0 <_Z25gralloc_backend_get_attrsP16private_handle_tPv>
+			112: R_ARM_THM_CALL	_Z25gralloc_backend_get_attrsP16private_handle_tPv
+ 116:	4603      	mov	r3, r0
+ 118:	627b      	str	r3, [r7, #36]	; 0x24
+ 11a:	e00e      	b.n	13a <_ZL15gralloc_performPK16gralloc_module_tiz+0xca>
+ 11c:	6b7b      	ldr	r3, [r7, #52]	; 0x34
+ 11e:	4a0b      	ldr	r2, [pc, #44]	; (14c <_ZL15gralloc_performPK16gralloc_module_tiz+0xdc>)
+ 120:	447a      	add	r2, pc
+ 122:	490b      	ldr	r1, [pc, #44]	; (150 <_ZL15gralloc_performPK16gralloc_module_tiz+0xe0>)
+ 124:	4479      	add	r1, pc
+ 126:	2006      	movs	r0, #6
+ 128:	f7ff fffe 	bl	0 <__android_log_print>
+			128: R_ARM_THM_CALL	__android_log_print
+ 12c:	f06f 0315 	mvn.w	r3, #21
+ 130:	627b      	str	r3, [r7, #36]	; 0x24
+ 132:	e002      	b.n	13a <_ZL15gralloc_performPK16gralloc_module_tiz+0xca>
+ 134:	bf00      	nop
+ 136:	e000      	b.n	13a <_ZL15gralloc_performPK16gralloc_module_tiz+0xca>
+ 138:	bf00      	nop
+ 13a:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+ 13c:	4618      	mov	r0, r3
+ 13e:	372c      	adds	r7, #44	; 0x2c
+ 140:	46bd      	mov	sp, r7
+ 142:	e8bd 4080 	ldmia.w	sp!, {r7, lr}
+ 146:	b003      	add	sp, #12
+ 148:	4770      	bx	lr
+ 14a:	bf00      	nop
+ 14c:	0000006c 	.word	0x0000006c
+			14c: R_ARM_REL32	.rodata
+ 150:	00000058 	.word	0x00000058
+			150: R_ARM_REL32	.rodata
+
+00000154 <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle>:
+ 154:	b590      	push	{r4, r7, lr}
+ 156:	b08f      	sub	sp, #60	; 0x3c
+ 158:	af04      	add	r7, sp, #16
+ 15a:	6078      	str	r0, [r7, #4]
+ 15c:	6039      	str	r1, [r7, #0]
+ 15e:	6838      	ldr	r0, [r7, #0]
+ 160:	f7ff fffe 	bl	0 <_ZL19gralloc_device_openPK11hw_module_tPKcPP11hw_device_t>
+			160: R_ARM_THM_CALL	_ZN16private_handle_t8validateEPK13native_handle
+ 164:	4603      	mov	r3, r0
+ 166:	0fdb      	lsrs	r3, r3, #31
+ 168:	b2db      	uxtb	r3, r3
+ 16a:	2b00      	cmp	r3, #0
+ 16c:	d00f      	beq.n	18e <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x3a>
+ 16e:	683b      	ldr	r3, [r7, #0]
+ 170:	9301      	str	r3, [sp, #4]
+ 172:	237b      	movs	r3, #123	; 0x7b
+ 174:	9300      	str	r3, [sp, #0]
+ 176:	4b77      	ldr	r3, [pc, #476]	; (354 <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x200>)
+ 178:	447b      	add	r3, pc
+ 17a:	4a77      	ldr	r2, [pc, #476]	; (358 <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x204>)
+ 17c:	447a      	add	r2, pc
+ 17e:	4977      	ldr	r1, [pc, #476]	; (35c <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x208>)
+ 180:	4479      	add	r1, pc
+ 182:	2006      	movs	r0, #6
+ 184:	f7ff fffe 	bl	0 <__android_log_print>
+			184: R_ARM_THM_CALL	__android_log_print
+ 188:	f06f 0315 	mvn.w	r3, #21
+ 18c:	e0dd      	b.n	34a <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x1f6>
+ 18e:	683b      	ldr	r3, [r7, #0]
+ 190:	623b      	str	r3, [r7, #32]
+ 192:	f06f 0315 	mvn.w	r3, #21
+ 196:	627b      	str	r3, [r7, #36]	; 0x24
+ 198:	4b71      	ldr	r3, [pc, #452]	; (360 <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x20c>)
+ 19a:	447b      	add	r3, pc
+ 19c:	4618      	mov	r0, r3
+ 19e:	f7ff fffe 	bl	0 <pthread_mutex_lock>
+			19e: R_ARM_THM_CALL	pthread_mutex_lock
+ 1a2:	f7ff fffe 	bl	0 <getpid>
+			1a2: R_ARM_THM_CALL	getpid
+ 1a6:	4602      	mov	r2, r0
+ 1a8:	6a3b      	ldr	r3, [r7, #32]
+ 1aa:	651a      	str	r2, [r3, #80]	; 0x50
+ 1ac:	6a3b      	ldr	r3, [r7, #32]
+ 1ae:	695b      	ldr	r3, [r3, #20]
+ 1b0:	f003 0301 	and.w	r3, r3, #1
+ 1b4:	2b00      	cmp	r3, #0
+ 1b6:	d00d      	beq.n	1d4 <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x80>
+ 1b8:	683b      	ldr	r3, [r7, #0]
+ 1ba:	9301      	str	r3, [sp, #4]
+ 1bc:	239c      	movs	r3, #156	; 0x9c
+ 1be:	9300      	str	r3, [sp, #0]
+ 1c0:	4b68      	ldr	r3, [pc, #416]	; (364 <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x210>)
+ 1c2:	447b      	add	r3, pc
+ 1c4:	4a68      	ldr	r2, [pc, #416]	; (368 <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x214>)
+ 1c6:	447a      	add	r2, pc
+ 1c8:	4968      	ldr	r1, [pc, #416]	; (36c <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x218>)
+ 1ca:	4479      	add	r1, pc
+ 1cc:	2006      	movs	r0, #6
+ 1ce:	f7ff fffe 	bl	0 <__android_log_print>
+			1ce: R_ARM_THM_CALL	__android_log_print
+ 1d2:	e0b4      	b.n	33e <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x1ea>
+ 1d4:	6a3b      	ldr	r3, [r7, #32]
+ 1d6:	695b      	ldr	r3, [r3, #20]
+ 1d8:	f003 0302 	and.w	r3, r3, #2
+ 1dc:	2b00      	cmp	r3, #0
+ 1de:	d00d      	beq.n	1fc <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0xa8>
+ 1e0:	6a3b      	ldr	r3, [r7, #32]
+ 1e2:	9301      	str	r3, [sp, #4]
+ 1e4:	23bc      	movs	r3, #188	; 0xbc
+ 1e6:	9300      	str	r3, [sp, #0]
+ 1e8:	4b61      	ldr	r3, [pc, #388]	; (370 <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x21c>)
+ 1ea:	447b      	add	r3, pc
+ 1ec:	4a61      	ldr	r2, [pc, #388]	; (374 <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x220>)
+ 1ee:	447a      	add	r2, pc
+ 1f0:	4961      	ldr	r1, [pc, #388]	; (378 <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x224>)
+ 1f2:	4479      	add	r1, pc
+ 1f4:	2006      	movs	r0, #6
+ 1f6:	f7ff fffe 	bl	0 <__android_log_print>
+			1f6: R_ARM_THM_CALL	__android_log_print
+ 1fa:	e0a0      	b.n	33e <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x1ea>
+ 1fc:	6a3b      	ldr	r3, [r7, #32]
+ 1fe:	695b      	ldr	r3, [r3, #20]
+ 200:	f003 0304 	and.w	r3, r3, #4
+ 204:	2b00      	cmp	r3, #0
+ 206:	f000 8089 	beq.w	31c <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x1c8>
+ 20a:	6a3b      	ldr	r3, [r7, #32]
+ 20c:	69db      	ldr	r3, [r3, #28]
+ 20e:	61fb      	str	r3, [r7, #28]
+ 210:	2300      	movs	r3, #0
+ 212:	60fb      	str	r3, [r7, #12]
+ 214:	2300      	movs	r3, #0
+ 216:	61bb      	str	r3, [r7, #24]
+ 218:	f107 030c 	add.w	r3, r7, #12
+ 21c:	4619      	mov	r1, r3
+ 21e:	4b57      	ldr	r3, [pc, #348]	; (37c <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x228>)
+ 220:	447b      	add	r3, pc
+ 222:	4618      	mov	r0, r3
+ 224:	f7ff fffe 	bl	0 <hw_get_module>
+			224: R_ARM_THM_CALL	hw_get_module
+ 228:	4603      	mov	r3, r0
+ 22a:	2b00      	cmp	r3, #0
+ 22c:	bf0c      	ite	eq
+ 22e:	2301      	moveq	r3, #1
+ 230:	2300      	movne	r3, #0
+ 232:	b2db      	uxtb	r3, r3
+ 234:	2b00      	cmp	r3, #0
+ 236:	d007      	beq.n	248 <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0xf4>
+ 238:	68fb      	ldr	r3, [r7, #12]
+ 23a:	61bb      	str	r3, [r7, #24]
+ 23c:	69bb      	ldr	r3, [r7, #24]
+ 23e:	f8d3 30c8 	ldr.w	r3, [r3, #200]	; 0xc8
+ 242:	2b00      	cmp	r3, #0
+ 244:	dc26      	bgt.n	294 <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x140>
+ 246:	e013      	b.n	270 <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x11c>
+ 248:	6a3b      	ldr	r3, [r7, #32]
+ 24a:	9301      	str	r3, [sp, #4]
+ 24c:	23ce      	movs	r3, #206	; 0xce
+ 24e:	9300      	str	r3, [sp, #0]
+ 250:	4b4b      	ldr	r3, [pc, #300]	; (380 <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x22c>)
+ 252:	447b      	add	r3, pc
+ 254:	4a4b      	ldr	r2, [pc, #300]	; (384 <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x230>)
+ 256:	447a      	add	r2, pc
+ 258:	494b      	ldr	r1, [pc, #300]	; (388 <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x234>)
+ 25a:	4479      	add	r1, pc
+ 25c:	2006      	movs	r0, #6
+ 25e:	f7ff fffe 	bl	0 <__android_log_print>
+			25e: R_ARM_THM_CALL	__android_log_print
+ 262:	f7ff fffe 	bl	0 <__errno>
+			262: R_ARM_THM_CALL	__errno
+ 266:	4603      	mov	r3, r0
+ 268:	681b      	ldr	r3, [r3, #0]
+ 26a:	425b      	negs	r3, r3
+ 26c:	627b      	str	r3, [r7, #36]	; 0x24
+ 26e:	e066      	b.n	33e <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x1ea>
+ 270:	69bb      	ldr	r3, [r7, #24]
+ 272:	33c0      	adds	r3, #192	; 0xc0
+ 274:	4618      	mov	r0, r3
+ 276:	f7ff fffe 	bl	0 <pthread_mutex_lock>
+			276: R_ARM_THM_CALL	pthread_mutex_lock
+ 27a:	69b8      	ldr	r0, [r7, #24]
+ 27c:	f7ff fffe 	bl	0 <_Z23rockchip_alloc_ion_openP16private_module_t>
+			27c: R_ARM_THM_CALL	_Z23rockchip_alloc_ion_openP16private_module_t
+ 280:	4603      	mov	r3, r0
+ 282:	617b      	str	r3, [r7, #20]
+ 284:	69bb      	ldr	r3, [r7, #24]
+ 286:	33c0      	adds	r3, #192	; 0xc0
+ 288:	4618      	mov	r0, r3
+ 28a:	f7ff fffe 	bl	0 <pthread_mutex_unlock>
+			28a: R_ARM_THM_CALL	pthread_mutex_unlock
+ 28e:	697b      	ldr	r3, [r7, #20]
+ 290:	2b00      	cmp	r3, #0
+ 292:	d153      	bne.n	33c <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x1e8>
+ 294:	6a3b      	ldr	r3, [r7, #32]
+ 296:	68db      	ldr	r3, [r3, #12]
+ 298:	2200      	movs	r2, #0
+ 29a:	9201      	str	r2, [sp, #4]
+ 29c:	9300      	str	r3, [sp, #0]
+ 29e:	2301      	movs	r3, #1
+ 2a0:	2203      	movs	r2, #3
+ 2a2:	69f9      	ldr	r1, [r7, #28]
+ 2a4:	2000      	movs	r0, #0
+ 2a6:	f7ff fffe 	bl	0 <mmap>
+			2a6: R_ARM_THM_CALL	mmap
+ 2aa:	4603      	mov	r3, r0
+ 2ac:	613b      	str	r3, [r7, #16]
+ 2ae:	693b      	ldr	r3, [r7, #16]
+ 2b0:	f1b3 3fff 	cmp.w	r3, #4294967295	; 0xffffffff
+ 2b4:	d11e      	bne.n	2f4 <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x1a0>
+ 2b6:	6a3b      	ldr	r3, [r7, #32]
+ 2b8:	68dc      	ldr	r4, [r3, #12]
+ 2ba:	f7ff fffe 	bl	0 <__errno>
+			2ba: R_ARM_THM_CALL	__errno
+ 2be:	4603      	mov	r3, r0
+ 2c0:	681b      	ldr	r3, [r3, #0]
+ 2c2:	4618      	mov	r0, r3
+ 2c4:	f7ff fffe 	bl	0 <strerror>
+			2c4: R_ARM_THM_CALL	strerror
+ 2c8:	4603      	mov	r3, r0
+ 2ca:	9302      	str	r3, [sp, #8]
+ 2cc:	9401      	str	r4, [sp, #4]
+ 2ce:	23f3      	movs	r3, #243	; 0xf3
+ 2d0:	9300      	str	r3, [sp, #0]
+ 2d2:	4b2e      	ldr	r3, [pc, #184]	; (38c <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x238>)
+ 2d4:	447b      	add	r3, pc
+ 2d6:	4a2e      	ldr	r2, [pc, #184]	; (390 <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x23c>)
+ 2d8:	447a      	add	r2, pc
+ 2da:	492e      	ldr	r1, [pc, #184]	; (394 <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x240>)
+ 2dc:	4479      	add	r1, pc
+ 2de:	2006      	movs	r0, #6
+ 2e0:	f7ff fffe 	bl	0 <__android_log_print>
+			2e0: R_ARM_THM_CALL	__android_log_print
+ 2e4:	f7ff fffe 	bl	0 <__errno>
+			2e4: R_ARM_THM_CALL	__errno
+ 2e8:	4603      	mov	r3, r0
+ 2ea:	681b      	ldr	r3, [r3, #0]
+ 2ec:	425b      	negs	r3, r3
+ 2ee:	627b      	str	r3, [r7, #36]	; 0x24
+ 2f0:	bf00      	nop
+ 2f2:	e024      	b.n	33e <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x1ea>
+ 2f4:	6a3b      	ldr	r3, [r7, #32]
+ 2f6:	6ddb      	ldr	r3, [r3, #92]	; 0x5c
+ 2f8:	461a      	mov	r2, r3
+ 2fa:	693b      	ldr	r3, [r7, #16]
+ 2fc:	441a      	add	r2, r3
+ 2fe:	6a3b      	ldr	r3, [r7, #32]
+ 300:	639a      	str	r2, [r3, #56]	; 0x38
+ 302:	6a3b      	ldr	r3, [r7, #32]
+ 304:	6c9b      	ldr	r3, [r3, #72]	; 0x48
+ 306:	f023 5200 	bic.w	r2, r3, #536870912	; 0x20000000
+ 30a:	6a3b      	ldr	r3, [r7, #32]
+ 30c:	649a      	str	r2, [r3, #72]	; 0x48
+ 30e:	4b22      	ldr	r3, [pc, #136]	; (398 <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x244>)
+ 310:	447b      	add	r3, pc
+ 312:	4618      	mov	r0, r3
+ 314:	f7ff fffe 	bl	0 <pthread_mutex_unlock>
+			314: R_ARM_THM_CALL	pthread_mutex_unlock
+ 318:	2300      	movs	r3, #0
+ 31a:	e016      	b.n	34a <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x1f6>
+ 31c:	6a3b      	ldr	r3, [r7, #32]
+ 31e:	695b      	ldr	r3, [r3, #20]
+ 320:	9301      	str	r3, [sp, #4]
+ 322:	f44f 7381 	mov.w	r3, #258	; 0x102
+ 326:	9300      	str	r3, [sp, #0]
+ 328:	4b1c      	ldr	r3, [pc, #112]	; (39c <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x248>)
+ 32a:	447b      	add	r3, pc
+ 32c:	4a1c      	ldr	r2, [pc, #112]	; (3a0 <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x24c>)
+ 32e:	447a      	add	r2, pc
+ 330:	491c      	ldr	r1, [pc, #112]	; (3a4 <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x250>)
+ 332:	4479      	add	r1, pc
+ 334:	2006      	movs	r0, #6
+ 336:	f7ff fffe 	bl	0 <__android_log_print>
+			336: R_ARM_THM_CALL	__android_log_print
+ 33a:	e000      	b.n	33e <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x1ea>
+ 33c:	bf00      	nop
+ 33e:	4b1a      	ldr	r3, [pc, #104]	; (3a8 <_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle+0x254>)
+ 340:	447b      	add	r3, pc
+ 342:	4618      	mov	r0, r3
+ 344:	f7ff fffe 	bl	0 <pthread_mutex_unlock>
+			344: R_ARM_THM_CALL	pthread_mutex_unlock
+ 348:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+ 34a:	4618      	mov	r0, r3
+ 34c:	372c      	adds	r7, #44	; 0x2c
+ 34e:	46bd      	mov	sp, r7
+ 350:	bd90      	pop	{r4, r7, pc}
+ 352:	bf00      	nop
+ 354:	000006f0 	.word	0x000006f0
+			354: R_ARM_REL32	.rodata
+ 358:	00000234 	.word	0x00000234
+			358: R_ARM_REL32	.rodata
+ 35c:	0000026c 	.word	0x0000026c
+			35c: R_ARM_REL32	.rodata
+ 360:	00000382 	.word	0x00000382
+			360: R_ARM_REL32	.bss
+ 364:	000006b6 	.word	0x000006b6
+			364: R_ARM_REL32	.rodata
+ 368:	00000242 	.word	0x00000242
+			368: R_ARM_REL32	.rodata
+ 36c:	00000232 	.word	0x00000232
+			36c: R_ARM_REL32	.rodata
+ 370:	0000069a 	.word	0x0000069a
+			370: R_ARM_REL32	.rodata
+ 374:	0000025e 	.word	0x0000025e
+			374: R_ARM_REL32	.rodata
+ 378:	00000216 	.word	0x00000216
+			378: R_ARM_REL32	.rodata
+ 37c:	00000188 	.word	0x00000188
+			37c: R_ARM_REL32	.rodata
+ 380:	00000642 	.word	0x00000642
+			380: R_ARM_REL32	.rodata
+ 384:	0000025a 	.word	0x0000025a
+			384: R_ARM_REL32	.rodata
+ 388:	000001be 	.word	0x000001be
+			388: R_ARM_REL32	.rodata
+ 38c:	000005cc 	.word	0x000005cc
+			38c: R_ARM_REL32	.rodata
+ 390:	00000218 	.word	0x00000218
+			390: R_ARM_REL32	.rodata
+ 394:	00000148 	.word	0x00000148
+			394: R_ARM_REL32	.rodata
+ 398:	00000244 	.word	0x00000244
+			398: R_ARM_REL32	.bss
+ 39c:	00000586 	.word	0x00000586
+			39c: R_ARM_REL32	.rodata
+ 3a0:	000001fe 	.word	0x000001fe
+			3a0: R_ARM_REL32	.rodata
+ 3a4:	00000102 	.word	0x00000102
+			3a4: R_ARM_REL32	.rodata
+ 3a8:	00000224 	.word	0x00000224
+			3a8: R_ARM_REL32	.bss
+
+000003ac <_ZL12unmap_bufferP16private_handle_t>:
+ 3ac:	b580      	push	{r7, lr}
+ 3ae:	b088      	sub	sp, #32
+ 3b0:	af04      	add	r7, sp, #16
+ 3b2:	6078      	str	r0, [r7, #4]
+ 3b4:	687b      	ldr	r3, [r7, #4]
+ 3b6:	695b      	ldr	r3, [r3, #20]
+ 3b8:	f003 0302 	and.w	r3, r3, #2
+ 3bc:	2b00      	cmp	r3, #0
+ 3be:	d00e      	beq.n	3de <_ZL12unmap_bufferP16private_handle_t+0x32>
+ 3c0:	687b      	ldr	r3, [r7, #4]
+ 3c2:	9301      	str	r3, [sp, #4]
+ 3c4:	f240 1315 	movw	r3, #277	; 0x115
+ 3c8:	9300      	str	r3, [sp, #0]
+ 3ca:	4b2a      	ldr	r3, [pc, #168]	; (474 <_ZL12unmap_bufferP16private_handle_t+0xc8>)
+ 3cc:	447b      	add	r3, pc
+ 3ce:	4a2a      	ldr	r2, [pc, #168]	; (478 <_ZL12unmap_bufferP16private_handle_t+0xcc>)
+ 3d0:	447a      	add	r2, pc
+ 3d2:	492a      	ldr	r1, [pc, #168]	; (47c <_ZL12unmap_bufferP16private_handle_t+0xd0>)
+ 3d4:	4479      	add	r1, pc
+ 3d6:	2006      	movs	r0, #6
+ 3d8:	f7ff fffe 	bl	0 <__android_log_print>
+			3d8: R_ARM_THM_CALL	__android_log_print
+ 3dc:	e03d      	b.n	45a <_ZL12unmap_bufferP16private_handle_t+0xae>
+ 3de:	687b      	ldr	r3, [r7, #4]
+ 3e0:	695b      	ldr	r3, [r3, #20]
+ 3e2:	f003 0304 	and.w	r3, r3, #4
+ 3e6:	2b00      	cmp	r3, #0
+ 3e8:	d028      	beq.n	43c <_ZL12unmap_bufferP16private_handle_t+0x90>
+ 3ea:	687b      	ldr	r3, [r7, #4]
+ 3ec:	6b9b      	ldr	r3, [r3, #56]	; 0x38
+ 3ee:	60fb      	str	r3, [r7, #12]
+ 3f0:	687b      	ldr	r3, [r7, #4]
+ 3f2:	69db      	ldr	r3, [r3, #28]
+ 3f4:	60bb      	str	r3, [r7, #8]
+ 3f6:	68b9      	ldr	r1, [r7, #8]
+ 3f8:	68f8      	ldr	r0, [r7, #12]
+ 3fa:	f7ff fffe 	bl	0 <munmap>
+			3fa: R_ARM_THM_CALL	munmap
+ 3fe:	4603      	mov	r3, r0
+ 400:	0fdb      	lsrs	r3, r3, #31
+ 402:	b2db      	uxtb	r3, r3
+ 404:	2b00      	cmp	r3, #0
+ 406:	d028      	beq.n	45a <_ZL12unmap_bufferP16private_handle_t+0xae>
+ 408:	f7ff fffe 	bl	0 <__errno>
+			408: R_ARM_THM_CALL	__errno
+ 40c:	4603      	mov	r3, r0
+ 40e:	681b      	ldr	r3, [r3, #0]
+ 410:	4618      	mov	r0, r3
+ 412:	f7ff fffe 	bl	0 <strerror>
+			412: R_ARM_THM_CALL	strerror
+ 416:	4603      	mov	r3, r0
+ 418:	9303      	str	r3, [sp, #12]
+ 41a:	68bb      	ldr	r3, [r7, #8]
+ 41c:	9302      	str	r3, [sp, #8]
+ 41e:	68fb      	ldr	r3, [r7, #12]
+ 420:	9301      	str	r3, [sp, #4]
+ 422:	f44f 7390 	mov.w	r3, #288	; 0x120
+ 426:	9300      	str	r3, [sp, #0]
+ 428:	4b15      	ldr	r3, [pc, #84]	; (480 <_ZL12unmap_bufferP16private_handle_t+0xd4>)
+ 42a:	447b      	add	r3, pc
+ 42c:	4a15      	ldr	r2, [pc, #84]	; (484 <_ZL12unmap_bufferP16private_handle_t+0xd8>)
+ 42e:	447a      	add	r2, pc
+ 430:	4915      	ldr	r1, [pc, #84]	; (488 <_ZL12unmap_bufferP16private_handle_t+0xdc>)
+ 432:	4479      	add	r1, pc
+ 434:	2006      	movs	r0, #6
+ 436:	f7ff fffe 	bl	0 <__android_log_print>
+			436: R_ARM_THM_CALL	__android_log_print
+ 43a:	e00e      	b.n	45a <_ZL12unmap_bufferP16private_handle_t+0xae>
+ 43c:	687b      	ldr	r3, [r7, #4]
+ 43e:	695b      	ldr	r3, [r3, #20]
+ 440:	9301      	str	r3, [sp, #4]
+ 442:	f44f 7395 	mov.w	r3, #298	; 0x12a
+ 446:	9300      	str	r3, [sp, #0]
+ 448:	4b10      	ldr	r3, [pc, #64]	; (48c <_ZL12unmap_bufferP16private_handle_t+0xe0>)
+ 44a:	447b      	add	r3, pc
+ 44c:	4a10      	ldr	r2, [pc, #64]	; (490 <_ZL12unmap_bufferP16private_handle_t+0xe4>)
+ 44e:	447a      	add	r2, pc
+ 450:	4910      	ldr	r1, [pc, #64]	; (494 <_ZL12unmap_bufferP16private_handle_t+0xe8>)
+ 452:	4479      	add	r1, pc
+ 454:	2006      	movs	r0, #6
+ 456:	f7ff fffe 	bl	0 <__android_log_print>
+			456: R_ARM_THM_CALL	__android_log_print
+ 45a:	687b      	ldr	r3, [r7, #4]
+ 45c:	2200      	movs	r2, #0
+ 45e:	639a      	str	r2, [r3, #56]	; 0x38
+ 460:	687b      	ldr	r3, [r7, #4]
+ 462:	2200      	movs	r2, #0
+ 464:	649a      	str	r2, [r3, #72]	; 0x48
+ 466:	687b      	ldr	r3, [r7, #4]
+ 468:	2200      	movs	r2, #0
+ 46a:	64da      	str	r2, [r3, #76]	; 0x4c
+ 46c:	bf00      	nop
+ 46e:	3710      	adds	r7, #16
+ 470:	46bd      	mov	sp, r7
+ 472:	bd80      	pop	{r7, pc}
+ 474:	00000604 	.word	0x00000604
+			474: R_ARM_REL32	.rodata
+ 478:	00000270 	.word	0x00000270
+			478: R_ARM_REL32	.rodata
+ 47c:	00000138 	.word	0x00000138
+			47c: R_ARM_REL32	.rodata
+ 480:	000005b2 	.word	0x000005b2
+			480: R_ARM_REL32	.rodata
+ 484:	00000262 	.word	0x00000262
+			484: R_ARM_REL32	.rodata
+ 488:	000000e6 	.word	0x000000e6
+			488: R_ARM_REL32	.rodata
+ 48c:	0000059e 	.word	0x0000059e
+			48c: R_ARM_REL32	.rodata
+ 490:	0000027e 	.word	0x0000027e
+			490: R_ARM_REL32	.rodata
+ 494:	000000d2 	.word	0x000000d2
+			494: R_ARM_REL32	.rodata
+
+00000498 <_ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle>:
+ 498:	b590      	push	{r4, r7, lr}
+ 49a:	b089      	sub	sp, #36	; 0x24
+ 49c:	af04      	add	r7, sp, #16
+ 49e:	6078      	str	r0, [r7, #4]
+ 4a0:	6039      	str	r1, [r7, #0]
+ 4a2:	6838      	ldr	r0, [r7, #0]
+ 4a4:	f7ff fffe 	bl	0 <_ZL19gralloc_device_openPK11hw_module_tPKcPP11hw_device_t>
+			4a4: R_ARM_THM_CALL	_ZN16private_handle_t8validateEPK13native_handle
+ 4a8:	4603      	mov	r3, r0
+ 4aa:	0fdb      	lsrs	r3, r3, #31
+ 4ac:	b2db      	uxtb	r3, r3
+ 4ae:	2b00      	cmp	r3, #0
+ 4b0:	d010      	beq.n	4d4 <_ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle+0x3c>
+ 4b2:	683b      	ldr	r3, [r7, #0]
+ 4b4:	9301      	str	r3, [sp, #4]
+ 4b6:	f44f 739c 	mov.w	r3, #312	; 0x138
+ 4ba:	9300      	str	r3, [sp, #0]
+ 4bc:	4b3e      	ldr	r3, [pc, #248]	; (5b8 <_ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle+0x120>)
+ 4be:	447b      	add	r3, pc
+ 4c0:	4a3e      	ldr	r2, [pc, #248]	; (5bc <_ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle+0x124>)
+ 4c2:	447a      	add	r2, pc
+ 4c4:	493e      	ldr	r1, [pc, #248]	; (5c0 <_ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle+0x128>)
+ 4c6:	4479      	add	r1, pc
+ 4c8:	2006      	movs	r0, #6
+ 4ca:	f7ff fffe 	bl	0 <__android_log_print>
+			4ca: R_ARM_THM_CALL	__android_log_print
+ 4ce:	f06f 0315 	mvn.w	r3, #21
+ 4d2:	e06d      	b.n	5b0 <_ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle+0x118>
+ 4d4:	683b      	ldr	r3, [r7, #0]
+ 4d6:	60fb      	str	r3, [r7, #12]
+ 4d8:	68fb      	ldr	r3, [r7, #12]
+ 4da:	6c9b      	ldr	r3, [r3, #72]	; 0x48
+ 4dc:	f023 4340 	bic.w	r3, r3, #3221225472	; 0xc0000000
+ 4e0:	2b00      	cmp	r3, #0
+ 4e2:	d010      	beq.n	506 <_ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle+0x6e>
+ 4e4:	68fb      	ldr	r3, [r7, #12]
+ 4e6:	6c9b      	ldr	r3, [r3, #72]	; 0x48
+ 4e8:	9302      	str	r3, [sp, #8]
+ 4ea:	68fb      	ldr	r3, [r7, #12]
+ 4ec:	9301      	str	r3, [sp, #4]
+ 4ee:	f44f 739f 	mov.w	r3, #318	; 0x13e
+ 4f2:	9300      	str	r3, [sp, #0]
+ 4f4:	4b33      	ldr	r3, [pc, #204]	; (5c4 <_ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle+0x12c>)
+ 4f6:	447b      	add	r3, pc
+ 4f8:	4a33      	ldr	r2, [pc, #204]	; (5c8 <_ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle+0x130>)
+ 4fa:	447a      	add	r2, pc
+ 4fc:	4933      	ldr	r1, [pc, #204]	; (5cc <_ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle+0x134>)
+ 4fe:	4479      	add	r1, pc
+ 500:	2006      	movs	r0, #6
+ 502:	f7ff fffe 	bl	0 <__android_log_print>
+			502: R_ARM_THM_CALL	__android_log_print
+ 506:	68fb      	ldr	r3, [r7, #12]
+ 508:	695b      	ldr	r3, [r3, #20]
+ 50a:	f003 0301 	and.w	r3, r3, #1
+ 50e:	2b00      	cmp	r3, #0
+ 510:	d00e      	beq.n	530 <_ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle+0x98>
+ 512:	683b      	ldr	r3, [r7, #0]
+ 514:	9301      	str	r3, [sp, #4]
+ 516:	f44f 73a1 	mov.w	r3, #322	; 0x142
+ 51a:	9300      	str	r3, [sp, #0]
+ 51c:	4b2c      	ldr	r3, [pc, #176]	; (5d0 <_ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle+0x138>)
+ 51e:	447b      	add	r3, pc
+ 520:	4a2c      	ldr	r2, [pc, #176]	; (5d4 <_ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle+0x13c>)
+ 522:	447a      	add	r2, pc
+ 524:	492c      	ldr	r1, [pc, #176]	; (5d8 <_ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle+0x140>)
+ 526:	4479      	add	r1, pc
+ 528:	2006      	movs	r0, #6
+ 52a:	f7ff fffe 	bl	0 <__android_log_print>
+			52a: R_ARM_THM_CALL	__android_log_print
+ 52e:	e03e      	b.n	5ae <_ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle+0x116>
+ 530:	68fb      	ldr	r3, [r7, #12]
+ 532:	6d1c      	ldr	r4, [r3, #80]	; 0x50
+ 534:	f7ff fffe 	bl	0 <getpid>
+			534: R_ARM_THM_CALL	getpid
+ 538:	4603      	mov	r3, r0
+ 53a:	429c      	cmp	r4, r3
+ 53c:	bf0c      	ite	eq
+ 53e:	2301      	moveq	r3, #1
+ 540:	2300      	movne	r3, #0
+ 542:	b2db      	uxtb	r3, r3
+ 544:	2b00      	cmp	r3, #0
+ 546:	d01d      	beq.n	584 <_ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle+0xec>
+ 548:	4b24      	ldr	r3, [pc, #144]	; (5dc <_ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle+0x144>)
+ 54a:	447b      	add	r3, pc
+ 54c:	4618      	mov	r0, r3
+ 54e:	f7ff fffe 	bl	0 <pthread_mutex_lock>
+			54e: R_ARM_THM_CALL	pthread_mutex_lock
+ 552:	68fb      	ldr	r3, [r7, #12]
+ 554:	6c9b      	ldr	r3, [r3, #72]	; 0x48
+ 556:	f023 4280 	bic.w	r2, r3, #1073741824	; 0x40000000
+ 55a:	68fb      	ldr	r3, [r7, #12]
+ 55c:	649a      	str	r2, [r3, #72]	; 0x48
+ 55e:	68fb      	ldr	r3, [r7, #12]
+ 560:	6c9b      	ldr	r3, [r3, #72]	; 0x48
+ 562:	2b00      	cmp	r3, #0
+ 564:	db02      	blt.n	56c <_ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle+0xd4>
+ 566:	68f8      	ldr	r0, [r7, #12]
+ 568:	f7ff ff20 	bl	3ac <_ZL12unmap_bufferP16private_handle_t>
+ 56c:	68fb      	ldr	r3, [r7, #12]
+ 56e:	6c9b      	ldr	r3, [r3, #72]	; 0x48
+ 570:	f043 5200 	orr.w	r2, r3, #536870912	; 0x20000000
+ 574:	68fb      	ldr	r3, [r7, #12]
+ 576:	649a      	str	r2, [r3, #72]	; 0x48
+ 578:	4b19      	ldr	r3, [pc, #100]	; (5e0 <_ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle+0x148>)
+ 57a:	447b      	add	r3, pc
+ 57c:	4618      	mov	r0, r3
+ 57e:	f7ff fffe 	bl	0 <pthread_mutex_unlock>
+			57e: R_ARM_THM_CALL	pthread_mutex_unlock
+ 582:	e014      	b.n	5ae <_ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle+0x116>
+ 584:	68fb      	ldr	r3, [r7, #12]
+ 586:	6d1c      	ldr	r4, [r3, #80]	; 0x50
+ 588:	f7ff fffe 	bl	0 <getpid>
+			588: R_ARM_THM_CALL	getpid
+ 58c:	4603      	mov	r3, r0
+ 58e:	9303      	str	r3, [sp, #12]
+ 590:	9402      	str	r4, [sp, #8]
+ 592:	68fb      	ldr	r3, [r7, #12]
+ 594:	9301      	str	r3, [sp, #4]
+ 596:	f44f 73ab 	mov.w	r3, #342	; 0x156
+ 59a:	9300      	str	r3, [sp, #0]
+ 59c:	4b11      	ldr	r3, [pc, #68]	; (5e4 <_ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle+0x14c>)
+ 59e:	447b      	add	r3, pc
+ 5a0:	4a11      	ldr	r2, [pc, #68]	; (5e8 <_ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle+0x150>)
+ 5a2:	447a      	add	r2, pc
+ 5a4:	4911      	ldr	r1, [pc, #68]	; (5ec <_ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle+0x154>)
+ 5a6:	4479      	add	r1, pc
+ 5a8:	2006      	movs	r0, #6
+ 5aa:	f7ff fffe 	bl	0 <__android_log_print>
+			5aa: R_ARM_THM_CALL	__android_log_print
+ 5ae:	2300      	movs	r3, #0
+ 5b0:	4618      	mov	r0, r3
+ 5b2:	3714      	adds	r7, #20
+ 5b4:	46bd      	mov	sp, r7
+ 5b6:	bd90      	pop	{r4, r7, pc}
+ 5b8:	0000067e 	.word	0x0000067e
+			5b8: R_ARM_REL32	.rodata
+ 5bc:	00000376 	.word	0x00000376
+			5bc: R_ARM_REL32	.rodata
+ 5c0:	0000018a 	.word	0x0000018a
+			5c0: R_ARM_REL32	.rodata
+ 5c4:	00000652 	.word	0x00000652
+			5c4: R_ARM_REL32	.rodata
+ 5c8:	00000386 	.word	0x00000386
+			5c8: R_ARM_REL32	.rodata
+ 5cc:	0000015e 	.word	0x0000015e
+			5cc: R_ARM_REL32	.rodata
+ 5d0:	00000636 	.word	0x00000636
+			5d0: R_ARM_REL32	.rodata
+ 5d4:	000003a2 	.word	0x000003a2
+			5d4: R_ARM_REL32	.rodata
+ 5d8:	00000142 	.word	0x00000142
+			5d8: R_ARM_REL32	.rodata
+ 5dc:	0000024e 	.word	0x0000024e
+			5dc: R_ARM_REL32	.bss
+ 5e0:	00000222 	.word	0x00000222
+			5e0: R_ARM_REL32	.bss
+ 5e4:	000005ca 	.word	0x000005ca
+			5e4: R_ARM_REL32	.rodata
+ 5e8:	00000372 	.word	0x00000372
+			5e8: R_ARM_REL32	.rodata
+ 5ec:	000000d6 	.word	0x000000d6
+			5ec: R_ARM_REL32	.rodata
+
+000005f0 <_ZL12gralloc_lockPK16gralloc_module_tPK13native_handleiiiiiPPv>:
+ 5f0:	b590      	push	{r4, r7, lr}
+ 5f2:	b089      	sub	sp, #36	; 0x24
+ 5f4:	af02      	add	r7, sp, #8
+ 5f6:	60f8      	str	r0, [r7, #12]
+ 5f8:	60b9      	str	r1, [r7, #8]
+ 5fa:	607a      	str	r2, [r7, #4]
+ 5fc:	603b      	str	r3, [r7, #0]
+ 5fe:	68b8      	ldr	r0, [r7, #8]
+ 600:	f7ff fffe 	bl	0 <_ZL19gralloc_device_openPK11hw_module_tPKcPP11hw_device_t>
+			600: R_ARM_THM_CALL	_ZN16private_handle_t8validateEPK13native_handle
+ 604:	4603      	mov	r3, r0
+ 606:	0fdb      	lsrs	r3, r3, #31
+ 608:	b2db      	uxtb	r3, r3
+ 60a:	2b00      	cmp	r3, #0
+ 60c:	d010      	beq.n	630 <_ZL12gralloc_lockPK16gralloc_module_tPK13native_handleiiiiiPPv+0x40>
+ 60e:	68bb      	ldr	r3, [r7, #8]
+ 610:	9301      	str	r3, [sp, #4]
+ 612:	f44f 73b1 	mov.w	r3, #354	; 0x162
+ 616:	9300      	str	r3, [sp, #0]
+ 618:	4b30      	ldr	r3, [pc, #192]	; (6dc <_ZL12gralloc_lockPK16gralloc_module_tPK13native_handleiiiiiPPv+0xec>)
+ 61a:	447b      	add	r3, pc
+ 61c:	4a30      	ldr	r2, [pc, #192]	; (6e0 <_ZL12gralloc_lockPK16gralloc_module_tPK13native_handleiiiiiPPv+0xf0>)
+ 61e:	447a      	add	r2, pc
+ 620:	4930      	ldr	r1, [pc, #192]	; (6e4 <_ZL12gralloc_lockPK16gralloc_module_tPK13native_handleiiiiiPPv+0xf4>)
+ 622:	4479      	add	r1, pc
+ 624:	2006      	movs	r0, #6
+ 626:	f7ff fffe 	bl	0 <__android_log_print>
+			626: R_ARM_THM_CALL	__android_log_print
+ 62a:	f06f 0315 	mvn.w	r3, #21
+ 62e:	e050      	b.n	6d2 <_ZL12gralloc_lockPK16gralloc_module_tPK13native_handleiiiiiPPv+0xe2>
+ 630:	68bb      	ldr	r3, [r7, #8]
+ 632:	617b      	str	r3, [r7, #20]
+ 634:	4b2c      	ldr	r3, [pc, #176]	; (6e8 <_ZL12gralloc_lockPK16gralloc_module_tPK13native_handleiiiiiPPv+0xf8>)
+ 636:	447b      	add	r3, pc
+ 638:	4618      	mov	r0, r3
+ 63a:	f7ff fffe 	bl	0 <pthread_mutex_lock>
+			63a: R_ARM_THM_CALL	pthread_mutex_lock
+ 63e:	697b      	ldr	r3, [r7, #20]
+ 640:	6c9b      	ldr	r3, [r3, #72]	; 0x48
+ 642:	f003 5300 	and.w	r3, r3, #536870912	; 0x20000000
+ 646:	2b00      	cmp	r3, #0
+ 648:	d015      	beq.n	676 <_ZL12gralloc_lockPK16gralloc_module_tPK13native_handleiiiiiPPv+0x86>
+ 64a:	697b      	ldr	r3, [r7, #20]
+ 64c:	9301      	str	r3, [sp, #4]
+ 64e:	f44f 73b6 	mov.w	r3, #364	; 0x16c
+ 652:	9300      	str	r3, [sp, #0]
+ 654:	4b25      	ldr	r3, [pc, #148]	; (6ec <_ZL12gralloc_lockPK16gralloc_module_tPK13native_handleiiiiiPPv+0xfc>)
+ 656:	447b      	add	r3, pc
+ 658:	4a25      	ldr	r2, [pc, #148]	; (6f0 <_ZL12gralloc_lockPK16gralloc_module_tPK13native_handleiiiiiPPv+0x100>)
+ 65a:	447a      	add	r2, pc
+ 65c:	4925      	ldr	r1, [pc, #148]	; (6f4 <_ZL12gralloc_lockPK16gralloc_module_tPK13native_handleiiiiiPPv+0x104>)
+ 65e:	4479      	add	r1, pc
+ 660:	2006      	movs	r0, #6
+ 662:	f7ff fffe 	bl	0 <__android_log_print>
+			662: R_ARM_THM_CALL	__android_log_print
+ 666:	4b24      	ldr	r3, [pc, #144]	; (6f8 <_ZL12gralloc_lockPK16gralloc_module_tPK13native_handleiiiiiPPv+0x108>)
+ 668:	447b      	add	r3, pc
+ 66a:	4618      	mov	r0, r3
+ 66c:	f7ff fffe 	bl	0 <pthread_mutex_unlock>
+			66c: R_ARM_THM_CALL	pthread_mutex_unlock
+ 670:	f06f 0315 	mvn.w	r3, #21
+ 674:	e02d      	b.n	6d2 <_ZL12gralloc_lockPK16gralloc_module_tPK13native_handleiiiiiPPv+0xe2>
+ 676:	697b      	ldr	r3, [r7, #20]
+ 678:	695b      	ldr	r3, [r3, #20]
+ 67a:	f003 0302 	and.w	r3, r3, #2
+ 67e:	2b00      	cmp	r3, #0
+ 680:	d105      	bne.n	68e <_ZL12gralloc_lockPK16gralloc_module_tPK13native_handleiiiiiPPv+0x9e>
+ 682:	697b      	ldr	r3, [r7, #20]
+ 684:	695b      	ldr	r3, [r3, #20]
+ 686:	f003 0304 	and.w	r3, r3, #4
+ 68a:	2b00      	cmp	r3, #0
+ 68c:	d004      	beq.n	698 <_ZL12gralloc_lockPK16gralloc_module_tPK13native_handleiiiiiPPv+0xa8>
+ 68e:	687b      	ldr	r3, [r7, #4]
+ 690:	f003 02f0 	and.w	r2, r3, #240	; 0xf0
+ 694:	697b      	ldr	r3, [r7, #20]
+ 696:	64da      	str	r2, [r3, #76]	; 0x4c
+ 698:	697b      	ldr	r3, [r7, #20]
+ 69a:	6c9b      	ldr	r3, [r3, #72]	; 0x48
+ 69c:	f043 4200 	orr.w	r2, r3, #2147483648	; 0x80000000
+ 6a0:	697b      	ldr	r3, [r7, #20]
+ 6a2:	649a      	str	r2, [r3, #72]	; 0x48
+ 6a4:	4b15      	ldr	r3, [pc, #84]	; (6fc <_ZL12gralloc_lockPK16gralloc_module_tPK13native_handleiiiiiPPv+0x10c>)
+ 6a6:	447b      	add	r3, pc
+ 6a8:	4618      	mov	r0, r3
+ 6aa:	f7ff fffe 	bl	0 <pthread_mutex_unlock>
+			6aa: R_ARM_THM_CALL	pthread_mutex_unlock
+ 6ae:	687b      	ldr	r3, [r7, #4]
+ 6b0:	ea4f 74e3 	mov.w	r4, r3, asr #31
+ 6b4:	f04f 01ff 	mov.w	r1, #255	; 0xff
+ 6b8:	f04f 0200 	mov.w	r2, #0
+ 6bc:	ea03 0301 	and.w	r3, r3, r1
+ 6c0:	ea04 0402 	and.w	r4, r4, r2
+ 6c4:	4323      	orrs	r3, r4
+ 6c6:	d003      	beq.n	6d0 <_ZL12gralloc_lockPK16gralloc_module_tPK13native_handleiiiiiPPv+0xe0>
+ 6c8:	697b      	ldr	r3, [r7, #20]
+ 6ca:	6b9a      	ldr	r2, [r3, #56]	; 0x38
+ 6cc:	6b7b      	ldr	r3, [r7, #52]	; 0x34
+ 6ce:	601a      	str	r2, [r3, #0]
+ 6d0:	2300      	movs	r3, #0
+ 6d2:	4618      	mov	r0, r3
+ 6d4:	371c      	adds	r7, #28
+ 6d6:	46bd      	mov	sp, r7
+ 6d8:	bd90      	pop	{r4, r7, pc}
+ 6da:	bf00      	nop
+ 6dc:	0000068e 	.word	0x0000068e
+			6dc: R_ARM_REL32	.rodata
+ 6e0:	00000452 	.word	0x00000452
+			6e0: R_ARM_REL32	.rodata
+ 6e4:	00000152 	.word	0x00000152
+			6e4: R_ARM_REL32	.rodata
+ 6e8:	0000026e 	.word	0x0000026e
+			6e8: R_ARM_REL32	.bss
+ 6ec:	00000662 	.word	0x00000662
+			6ec: R_ARM_REL32	.rodata
+ 6f0:	0000045a 	.word	0x0000045a
+			6f0: R_ARM_REL32	.rodata
+ 6f4:	00000126 	.word	0x00000126
+			6f4: R_ARM_REL32	.rodata
+ 6f8:	0000024c 	.word	0x0000024c
+			6f8: R_ARM_REL32	.bss
+ 6fc:	00000212 	.word	0x00000212
+			6fc: R_ARM_REL32	.bss
+
+00000700 <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle>:
+ 700:	b580      	push	{r7, lr}
+ 702:	b088      	sub	sp, #32
+ 704:	af02      	add	r7, sp, #8
+ 706:	6078      	str	r0, [r7, #4]
+ 708:	6039      	str	r1, [r7, #0]
+ 70a:	2300      	movs	r3, #0
+ 70c:	617b      	str	r3, [r7, #20]
+ 70e:	6838      	ldr	r0, [r7, #0]
+ 710:	f7ff fffe 	bl	0 <_ZL19gralloc_device_openPK11hw_module_tPKcPP11hw_device_t>
+			710: R_ARM_THM_CALL	_ZN16private_handle_t8validateEPK13native_handle
+ 714:	4603      	mov	r3, r0
+ 716:	0fdb      	lsrs	r3, r3, #31
+ 718:	b2db      	uxtb	r3, r3
+ 71a:	2b00      	cmp	r3, #0
+ 71c:	d010      	beq.n	740 <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle+0x40>
+ 71e:	683b      	ldr	r3, [r7, #0]
+ 720:	9301      	str	r3, [sp, #4]
+ 722:	f44f 73c7 	mov.w	r3, #398	; 0x18e
+ 726:	9300      	str	r3, [sp, #0]
+ 728:	4b49      	ldr	r3, [pc, #292]	; (850 <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle+0x150>)
+ 72a:	447b      	add	r3, pc
+ 72c:	4a49      	ldr	r2, [pc, #292]	; (854 <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle+0x154>)
+ 72e:	447a      	add	r2, pc
+ 730:	4949      	ldr	r1, [pc, #292]	; (858 <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle+0x158>)
+ 732:	4479      	add	r1, pc
+ 734:	2006      	movs	r0, #6
+ 736:	f7ff fffe 	bl	0 <__android_log_print>
+			736: R_ARM_THM_CALL	__android_log_print
+ 73a:	f06f 0315 	mvn.w	r3, #21
+ 73e:	e083      	b.n	848 <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle+0x148>
+ 740:	683b      	ldr	r3, [r7, #0]
+ 742:	613b      	str	r3, [r7, #16]
+ 744:	693b      	ldr	r3, [r7, #16]
+ 746:	695b      	ldr	r3, [r3, #20]
+ 748:	f003 0302 	and.w	r3, r3, #2
+ 74c:	2b00      	cmp	r3, #0
+ 74e:	d012      	beq.n	776 <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle+0x76>
+ 750:	693b      	ldr	r3, [r7, #16]
+ 752:	6cdb      	ldr	r3, [r3, #76]	; 0x4c
+ 754:	2b00      	cmp	r3, #0
+ 756:	d00e      	beq.n	776 <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle+0x76>
+ 758:	693b      	ldr	r3, [r7, #16]
+ 75a:	9301      	str	r3, [sp, #4]
+ 75c:	f240 1399 	movw	r3, #409	; 0x199
+ 760:	9300      	str	r3, [sp, #0]
+ 762:	4b3e      	ldr	r3, [pc, #248]	; (85c <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle+0x15c>)
+ 764:	447b      	add	r3, pc
+ 766:	4a3e      	ldr	r2, [pc, #248]	; (860 <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle+0x160>)
+ 768:	447a      	add	r2, pc
+ 76a:	493e      	ldr	r1, [pc, #248]	; (864 <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle+0x164>)
+ 76c:	4479      	add	r1, pc
+ 76e:	2006      	movs	r0, #6
+ 770:	f7ff fffe 	bl	0 <__android_log_print>
+			770: R_ARM_THM_CALL	__android_log_print
+ 774:	e04e      	b.n	814 <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle+0x114>
+ 776:	693b      	ldr	r3, [r7, #16]
+ 778:	695b      	ldr	r3, [r3, #20]
+ 77a:	f003 0304 	and.w	r3, r3, #4
+ 77e:	2b00      	cmp	r3, #0
+ 780:	d048      	beq.n	814 <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle+0x114>
+ 782:	693b      	ldr	r3, [r7, #16]
+ 784:	6cdb      	ldr	r3, [r3, #76]	; 0x4c
+ 786:	2b00      	cmp	r3, #0
+ 788:	d044      	beq.n	814 <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle+0x114>
+ 78a:	2300      	movs	r3, #0
+ 78c:	60bb      	str	r3, [r7, #8]
+ 78e:	2300      	movs	r3, #0
+ 790:	60fb      	str	r3, [r7, #12]
+ 792:	f107 0308 	add.w	r3, r7, #8
+ 796:	4619      	mov	r1, r3
+ 798:	4b33      	ldr	r3, [pc, #204]	; (868 <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle+0x168>)
+ 79a:	447b      	add	r3, pc
+ 79c:	4618      	mov	r0, r3
+ 79e:	f7ff fffe 	bl	0 <hw_get_module>
+			79e: R_ARM_THM_CALL	hw_get_module
+ 7a2:	4603      	mov	r3, r0
+ 7a4:	2b00      	cmp	r3, #0
+ 7a6:	bf0c      	ite	eq
+ 7a8:	2301      	moveq	r3, #1
+ 7aa:	2300      	movne	r3, #0
+ 7ac:	b2db      	uxtb	r3, r3
+ 7ae:	2b00      	cmp	r3, #0
+ 7b0:	d022      	beq.n	7f8 <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle+0xf8>
+ 7b2:	68bb      	ldr	r3, [r7, #8]
+ 7b4:	60fb      	str	r3, [r7, #12]
+ 7b6:	68fb      	ldr	r3, [r7, #12]
+ 7b8:	f8d3 30c8 	ldr.w	r3, [r3, #200]	; 0xc8
+ 7bc:	2b00      	cmp	r3, #0
+ 7be:	dc0e      	bgt.n	7de <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle+0xde>
+ 7c0:	68fb      	ldr	r3, [r7, #12]
+ 7c2:	33c0      	adds	r3, #192	; 0xc0
+ 7c4:	4618      	mov	r0, r3
+ 7c6:	f7ff fffe 	bl	0 <pthread_mutex_lock>
+			7c6: R_ARM_THM_CALL	pthread_mutex_lock
+ 7ca:	68f8      	ldr	r0, [r7, #12]
+ 7cc:	f7ff fffe 	bl	0 <_Z23rockchip_alloc_ion_openP16private_module_t>
+			7cc: R_ARM_THM_CALL	_Z23rockchip_alloc_ion_openP16private_module_t
+ 7d0:	4603      	mov	r3, r0
+ 7d2:	617b      	str	r3, [r7, #20]
+ 7d4:	68fb      	ldr	r3, [r7, #12]
+ 7d6:	33c0      	adds	r3, #192	; 0xc0
+ 7d8:	4618      	mov	r0, r3
+ 7da:	f7ff fffe 	bl	0 <pthread_mutex_unlock>
+			7da: R_ARM_THM_CALL	pthread_mutex_unlock
+ 7de:	697b      	ldr	r3, [r7, #20]
+ 7e0:	2b00      	cmp	r3, #0
+ 7e2:	d117      	bne.n	814 <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle+0x114>
+ 7e4:	68fb      	ldr	r3, [r7, #12]
+ 7e6:	f8d3 20c8 	ldr.w	r2, [r3, #200]	; 0xc8
+ 7ea:	693b      	ldr	r3, [r7, #16]
+ 7ec:	68db      	ldr	r3, [r3, #12]
+ 7ee:	4619      	mov	r1, r3
+ 7f0:	4610      	mov	r0, r2
+ 7f2:	f7ff fffe 	bl	0 <ion_sync_fd>
+			7f2: R_ARM_THM_CALL	ion_sync_fd
+ 7f6:	e00d      	b.n	814 <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle+0x114>
+ 7f8:	683b      	ldr	r3, [r7, #0]
+ 7fa:	9301      	str	r3, [sp, #4]
+ 7fc:	f44f 73d8 	mov.w	r3, #432	; 0x1b0
+ 800:	9300      	str	r3, [sp, #0]
+ 802:	4b1a      	ldr	r3, [pc, #104]	; (86c <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle+0x16c>)
+ 804:	447b      	add	r3, pc
+ 806:	4a1a      	ldr	r2, [pc, #104]	; (870 <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle+0x170>)
+ 808:	447a      	add	r2, pc
+ 80a:	491a      	ldr	r1, [pc, #104]	; (874 <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle+0x174>)
+ 80c:	4479      	add	r1, pc
+ 80e:	2006      	movs	r0, #6
+ 810:	f7ff fffe 	bl	0 <__android_log_print>
+			810: R_ARM_THM_CALL	__android_log_print
+ 814:	4b18      	ldr	r3, [pc, #96]	; (878 <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle+0x178>)
+ 816:	447b      	add	r3, pc
+ 818:	4618      	mov	r0, r3
+ 81a:	f7ff fffe 	bl	0 <pthread_mutex_lock>
+			81a: R_ARM_THM_CALL	pthread_mutex_lock
+ 81e:	693b      	ldr	r3, [r7, #16]
+ 820:	6c9b      	ldr	r3, [r3, #72]	; 0x48
+ 822:	f023 4200 	bic.w	r2, r3, #2147483648	; 0x80000000
+ 826:	693b      	ldr	r3, [r7, #16]
+ 828:	649a      	str	r2, [r3, #72]	; 0x48
+ 82a:	693b      	ldr	r3, [r7, #16]
+ 82c:	6c9b      	ldr	r3, [r3, #72]	; 0x48
+ 82e:	f003 5300 	and.w	r3, r3, #536870912	; 0x20000000
+ 832:	2b00      	cmp	r3, #0
+ 834:	d002      	beq.n	83c <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle+0x13c>
+ 836:	6938      	ldr	r0, [r7, #16]
+ 838:	f7ff fdb8 	bl	3ac <_ZL12unmap_bufferP16private_handle_t>
+ 83c:	4b0f      	ldr	r3, [pc, #60]	; (87c <_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle+0x17c>)
+ 83e:	447b      	add	r3, pc
+ 840:	4618      	mov	r0, r3
+ 842:	f7ff fffe 	bl	0 <pthread_mutex_unlock>
+			842: R_ARM_THM_CALL	pthread_mutex_unlock
+ 846:	2300      	movs	r3, #0
+ 848:	4618      	mov	r0, r3
+ 84a:	3718      	adds	r7, #24
+ 84c:	46bd      	mov	sp, r7
+ 84e:	bd80      	pop	{r7, pc}
+ 850:	0000074e 	.word	0x0000074e
+			850: R_ARM_REL32	.rodata
+ 854:	0000052a 	.word	0x0000052a
+			854: R_ARM_REL32	.rodata
+ 858:	000001b6 	.word	0x000001b6
+			858: R_ARM_REL32	.rodata
+ 85c:	00000720 	.word	0x00000720
+			85c: R_ARM_REL32	.rodata
+ 860:	00000534 	.word	0x00000534
+			860: R_ARM_REL32	.rodata
+ 864:	00000188 	.word	0x00000188
+			864: R_ARM_REL32	.rodata
+ 868:	000000fa 	.word	0x000000fa
+			868: R_ARM_REL32	.rodata
+ 86c:	00000690 	.word	0x00000690
+			86c: R_ARM_REL32	.rodata
+ 870:	000004dc 	.word	0x000004dc
+			870: R_ARM_REL32	.rodata
+ 874:	000000f8 	.word	0x000000f8
+			874: R_ARM_REL32	.rodata
+ 878:	0000021e 	.word	0x0000021e
+			878: R_ARM_REL32	.bss
+ 87c:	000001fa 	.word	0x000001fa
+			87c: R_ARM_REL32	.bss
+
+00000880 <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr>:
+ 880:	b580      	push	{r7, lr}
+ 882:	b088      	sub	sp, #32
+ 884:	af02      	add	r7, sp, #8
+ 886:	60f8      	str	r0, [r7, #12]
+ 888:	60b9      	str	r1, [r7, #8]
+ 88a:	607a      	str	r2, [r7, #4]
+ 88c:	603b      	str	r3, [r7, #0]
+ 88e:	68b8      	ldr	r0, [r7, #8]
+ 890:	f7ff fffe 	bl	0 <_ZL19gralloc_device_openPK11hw_module_tPKcPP11hw_device_t>
+			890: R_ARM_THM_CALL	_ZN16private_handle_t8validateEPK13native_handle
+ 894:	4603      	mov	r3, r0
+ 896:	0fdb      	lsrs	r3, r3, #31
+ 898:	b2db      	uxtb	r3, r3
+ 89a:	2b00      	cmp	r3, #0
+ 89c:	d00b      	beq.n	8b6 <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr+0x36>
+ 89e:	4b84      	ldr	r3, [pc, #528]	; (ab0 <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr+0x230>)
+ 8a0:	447b      	add	r3, pc
+ 8a2:	461a      	mov	r2, r3
+ 8a4:	4b83      	ldr	r3, [pc, #524]	; (ab4 <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr+0x234>)
+ 8a6:	447b      	add	r3, pc
+ 8a8:	4619      	mov	r1, r3
+ 8aa:	2006      	movs	r0, #6
+ 8ac:	f7ff fffe 	bl	0 <__android_log_print>
+			8ac: R_ARM_THM_CALL	__android_log_print
+ 8b0:	f06f 0315 	mvn.w	r3, #21
+ 8b4:	e0f8      	b.n	aa8 <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr+0x228>
+ 8b6:	68bb      	ldr	r3, [r7, #8]
+ 8b8:	617b      	str	r3, [r7, #20]
+ 8ba:	697b      	ldr	r3, [r7, #20]
+ 8bc:	6b9b      	ldr	r3, [r3, #56]	; 0x38
+ 8be:	2b00      	cmp	r3, #0
+ 8c0:	d10b      	bne.n	8da <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr+0x5a>
+ 8c2:	4b7d      	ldr	r3, [pc, #500]	; (ab8 <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr+0x238>)
+ 8c4:	447b      	add	r3, pc
+ 8c6:	461a      	mov	r2, r3
+ 8c8:	4b7c      	ldr	r3, [pc, #496]	; (abc <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr+0x23c>)
+ 8ca:	447b      	add	r3, pc
+ 8cc:	4619      	mov	r1, r3
+ 8ce:	2006      	movs	r0, #6
+ 8d0:	f7ff fffe 	bl	0 <__android_log_print>
+			8d0: R_ARM_THM_CALL	__android_log_print
+ 8d4:	f06f 0315 	mvn.w	r3, #21
+ 8d8:	e0e6      	b.n	aa8 <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr+0x228>
+ 8da:	697b      	ldr	r3, [r7, #20]
+ 8dc:	6a9b      	ldr	r3, [r3, #40]	; 0x28
+ 8de:	2b15      	cmp	r3, #21
+ 8e0:	d03d      	beq.n	95e <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr+0xde>
+ 8e2:	2b15      	cmp	r3, #21
+ 8e4:	dc05      	bgt.n	8f2 <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr+0x72>
+ 8e6:	2b10      	cmp	r3, #16
+ 8e8:	f000 80a1 	beq.w	a2e <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr+0x1ae>
+ 8ec:	2b11      	cmp	r3, #17
+ 8ee:	d009      	beq.n	904 <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr+0x84>
+ 8f0:	e0ca      	b.n	a88 <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr+0x208>
+ 8f2:	2b23      	cmp	r3, #35	; 0x23
+ 8f4:	d006      	beq.n	904 <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr+0x84>
+ 8f6:	f245 6259 	movw	r2, #22105	; 0x5659
+ 8fa:	f2c3 2231 	movt	r2, #12849	; 0x3231
+ 8fe:	4293      	cmp	r3, r2
+ 900:	d05a      	beq.n	9b8 <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr+0x138>
+ 902:	e0c1      	b.n	a88 <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr+0x208>
+ 904:	697b      	ldr	r3, [r7, #20]
+ 906:	6adb      	ldr	r3, [r3, #44]	; 0x2c
+ 908:	613b      	str	r3, [r7, #16]
+ 90a:	697b      	ldr	r3, [r7, #20]
+ 90c:	6b9a      	ldr	r2, [r3, #56]	; 0x38
+ 90e:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ 910:	601a      	str	r2, [r3, #0]
+ 912:	697b      	ldr	r3, [r7, #20]
+ 914:	6b9b      	ldr	r3, [r3, #56]	; 0x38
+ 916:	697a      	ldr	r2, [r7, #20]
+ 918:	6a52      	ldr	r2, [r2, #36]	; 0x24
+ 91a:	6939      	ldr	r1, [r7, #16]
+ 91c:	fb01 f202 	mul.w	r2, r1, r2
+ 920:	441a      	add	r2, r3
+ 922:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ 924:	609a      	str	r2, [r3, #8]
+ 926:	697b      	ldr	r3, [r7, #20]
+ 928:	6b9a      	ldr	r2, [r3, #56]	; 0x38
+ 92a:	697b      	ldr	r3, [r7, #20]
+ 92c:	6a5b      	ldr	r3, [r3, #36]	; 0x24
+ 92e:	6939      	ldr	r1, [r7, #16]
+ 930:	fb01 f303 	mul.w	r3, r1, r3
+ 934:	3301      	adds	r3, #1
+ 936:	441a      	add	r2, r3
+ 938:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ 93a:	605a      	str	r2, [r3, #4]
+ 93c:	693a      	ldr	r2, [r7, #16]
+ 93e:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ 940:	60da      	str	r2, [r3, #12]
+ 942:	693a      	ldr	r2, [r7, #16]
+ 944:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ 946:	611a      	str	r2, [r3, #16]
+ 948:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ 94a:	2202      	movs	r2, #2
+ 94c:	615a      	str	r2, [r3, #20]
+ 94e:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ 950:	3318      	adds	r3, #24
+ 952:	2220      	movs	r2, #32
+ 954:	2100      	movs	r1, #0
+ 956:	4618      	mov	r0, r3
+ 958:	f7ff fffe 	bl	0 <memset>
+			958: R_ARM_THM_CALL	memset
+ 95c:	e0a3      	b.n	aa6 <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr+0x226>
+ 95e:	697b      	ldr	r3, [r7, #20]
+ 960:	6adb      	ldr	r3, [r3, #44]	; 0x2c
+ 962:	613b      	str	r3, [r7, #16]
+ 964:	697b      	ldr	r3, [r7, #20]
+ 966:	6b9a      	ldr	r2, [r3, #56]	; 0x38
+ 968:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ 96a:	601a      	str	r2, [r3, #0]
+ 96c:	697b      	ldr	r3, [r7, #20]
+ 96e:	6b9a      	ldr	r2, [r3, #56]	; 0x38
+ 970:	697b      	ldr	r3, [r7, #20]
+ 972:	6a5b      	ldr	r3, [r3, #36]	; 0x24
+ 974:	6939      	ldr	r1, [r7, #16]
+ 976:	fb01 f303 	mul.w	r3, r1, r3
+ 97a:	3301      	adds	r3, #1
+ 97c:	441a      	add	r2, r3
+ 97e:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ 980:	609a      	str	r2, [r3, #8]
+ 982:	697b      	ldr	r3, [r7, #20]
+ 984:	6b9b      	ldr	r3, [r3, #56]	; 0x38
+ 986:	697a      	ldr	r2, [r7, #20]
+ 988:	6a52      	ldr	r2, [r2, #36]	; 0x24
+ 98a:	6939      	ldr	r1, [r7, #16]
+ 98c:	fb01 f202 	mul.w	r2, r1, r2
+ 990:	441a      	add	r2, r3
+ 992:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ 994:	605a      	str	r2, [r3, #4]
+ 996:	693a      	ldr	r2, [r7, #16]
+ 998:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ 99a:	60da      	str	r2, [r3, #12]
+ 99c:	693a      	ldr	r2, [r7, #16]
+ 99e:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ 9a0:	611a      	str	r2, [r3, #16]
+ 9a2:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ 9a4:	2202      	movs	r2, #2
+ 9a6:	615a      	str	r2, [r3, #20]
+ 9a8:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ 9aa:	3318      	adds	r3, #24
+ 9ac:	2220      	movs	r2, #32
+ 9ae:	2100      	movs	r1, #0
+ 9b0:	4618      	mov	r0, r3
+ 9b2:	f7ff fffe 	bl	0 <memset>
+			9b2: R_ARM_THM_CALL	memset
+ 9b6:	e076      	b.n	aa6 <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr+0x226>
+ 9b8:	697b      	ldr	r3, [r7, #20]
+ 9ba:	6adb      	ldr	r3, [r3, #44]	; 0x2c
+ 9bc:	613b      	str	r3, [r7, #16]
+ 9be:	693a      	ldr	r2, [r7, #16]
+ 9c0:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ 9c2:	60da      	str	r2, [r3, #12]
+ 9c4:	693b      	ldr	r3, [r7, #16]
+ 9c6:	0fda      	lsrs	r2, r3, #31
+ 9c8:	4413      	add	r3, r2
+ 9ca:	105b      	asrs	r3, r3, #1
+ 9cc:	330f      	adds	r3, #15
+ 9ce:	f023 020f 	bic.w	r2, r3, #15
+ 9d2:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ 9d4:	611a      	str	r2, [r3, #16]
+ 9d6:	697b      	ldr	r3, [r7, #20]
+ 9d8:	6b9a      	ldr	r2, [r3, #56]	; 0x38
+ 9da:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ 9dc:	601a      	str	r2, [r3, #0]
+ 9de:	697b      	ldr	r3, [r7, #20]
+ 9e0:	6b9b      	ldr	r3, [r3, #56]	; 0x38
+ 9e2:	697a      	ldr	r2, [r7, #20]
+ 9e4:	6a52      	ldr	r2, [r2, #36]	; 0x24
+ 9e6:	6939      	ldr	r1, [r7, #16]
+ 9e8:	fb01 f202 	mul.w	r2, r1, r2
+ 9ec:	441a      	add	r2, r3
+ 9ee:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ 9f0:	609a      	str	r2, [r3, #8]
+ 9f2:	697b      	ldr	r3, [r7, #20]
+ 9f4:	6b9a      	ldr	r2, [r3, #56]	; 0x38
+ 9f6:	697b      	ldr	r3, [r7, #20]
+ 9f8:	6a5b      	ldr	r3, [r3, #36]	; 0x24
+ 9fa:	6939      	ldr	r1, [r7, #16]
+ 9fc:	fb01 f303 	mul.w	r3, r1, r3
+ a00:	4618      	mov	r0, r3
+ a02:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ a04:	691b      	ldr	r3, [r3, #16]
+ a06:	6979      	ldr	r1, [r7, #20]
+ a08:	6a49      	ldr	r1, [r1, #36]	; 0x24
+ a0a:	fb01 f303 	mul.w	r3, r1, r3
+ a0e:	085b      	lsrs	r3, r3, #1
+ a10:	4403      	add	r3, r0
+ a12:	441a      	add	r2, r3
+ a14:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ a16:	605a      	str	r2, [r3, #4]
+ a18:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ a1a:	2201      	movs	r2, #1
+ a1c:	615a      	str	r2, [r3, #20]
+ a1e:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ a20:	3318      	adds	r3, #24
+ a22:	2220      	movs	r2, #32
+ a24:	2100      	movs	r1, #0
+ a26:	4618      	mov	r0, r3
+ a28:	f7ff fffe 	bl	0 <memset>
+			a28: R_ARM_THM_CALL	memset
+ a2c:	e03b      	b.n	aa6 <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr+0x226>
+ a2e:	697b      	ldr	r3, [r7, #20]
+ a30:	6adb      	ldr	r3, [r3, #44]	; 0x2c
+ a32:	613b      	str	r3, [r7, #16]
+ a34:	697b      	ldr	r3, [r7, #20]
+ a36:	6b9a      	ldr	r2, [r3, #56]	; 0x38
+ a38:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ a3a:	601a      	str	r2, [r3, #0]
+ a3c:	697b      	ldr	r3, [r7, #20]
+ a3e:	6b9b      	ldr	r3, [r3, #56]	; 0x38
+ a40:	697a      	ldr	r2, [r7, #20]
+ a42:	6a52      	ldr	r2, [r2, #36]	; 0x24
+ a44:	6939      	ldr	r1, [r7, #16]
+ a46:	fb01 f202 	mul.w	r2, r1, r2
+ a4a:	441a      	add	r2, r3
+ a4c:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ a4e:	605a      	str	r2, [r3, #4]
+ a50:	697b      	ldr	r3, [r7, #20]
+ a52:	6b9a      	ldr	r2, [r3, #56]	; 0x38
+ a54:	697b      	ldr	r3, [r7, #20]
+ a56:	6a5b      	ldr	r3, [r3, #36]	; 0x24
+ a58:	6939      	ldr	r1, [r7, #16]
+ a5a:	fb01 f303 	mul.w	r3, r1, r3
+ a5e:	3301      	adds	r3, #1
+ a60:	441a      	add	r2, r3
+ a62:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ a64:	609a      	str	r2, [r3, #8]
+ a66:	693a      	ldr	r2, [r7, #16]
+ a68:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ a6a:	60da      	str	r2, [r3, #12]
+ a6c:	693a      	ldr	r2, [r7, #16]
+ a6e:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ a70:	611a      	str	r2, [r3, #16]
+ a72:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ a74:	2202      	movs	r2, #2
+ a76:	615a      	str	r2, [r3, #20]
+ a78:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ a7a:	3318      	adds	r3, #24
+ a7c:	2220      	movs	r2, #32
+ a7e:	2100      	movs	r1, #0
+ a80:	4618      	mov	r0, r3
+ a82:	f7ff fffe 	bl	0 <memset>
+			a82: R_ARM_THM_CALL	memset
+ a86:	e00e      	b.n	aa6 <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr+0x226>
+ a88:	697b      	ldr	r3, [r7, #20]
+ a8a:	6a9b      	ldr	r3, [r3, #40]	; 0x28
+ a8c:	9300      	str	r3, [sp, #0]
+ a8e:	4b0c      	ldr	r3, [pc, #48]	; (ac0 <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr+0x240>)
+ a90:	447b      	add	r3, pc
+ a92:	4a0c      	ldr	r2, [pc, #48]	; (ac4 <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr+0x244>)
+ a94:	447a      	add	r2, pc
+ a96:	490c      	ldr	r1, [pc, #48]	; (ac8 <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr+0x248>)
+ a98:	4479      	add	r1, pc
+ a9a:	2006      	movs	r0, #6
+ a9c:	f7ff fffe 	bl	0 <__android_log_print>
+			a9c: R_ARM_THM_CALL	__android_log_print
+ aa0:	f06f 0315 	mvn.w	r3, #21
+ aa4:	e000      	b.n	aa8 <_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr+0x228>
+ aa6:	2300      	movs	r3, #0
+ aa8:	4618      	mov	r0, r3
+ aaa:	3718      	adds	r7, #24
+ aac:	46bd      	mov	sp, r7
+ aae:	bd80      	pop	{r7, pc}
+ ab0:	000006b8 	.word	0x000006b8
+			ab0: R_ARM_REL32	.rodata
+ ab4:	0000023a 	.word	0x0000023a
+			ab4: R_ARM_REL32	.rodata
+ ab8:	000006ac 	.word	0x000006ac
+			ab8: R_ARM_REL32	.rodata
+ abc:	0000021e 	.word	0x0000021e
+			abc: R_ARM_REL32	.rodata
+ ac0:	00000698 	.word	0x00000698
+			ac0: R_ARM_REL32	.rodata
+ ac4:	000004f4 	.word	0x000004f4
+			ac4: R_ARM_REL32	.rodata
+ ac8:	0000005c 	.word	0x0000005c
+			ac8: R_ARM_REL32	.rodata
+
+00000acc <_ZN16private_module_tC1Ev>:
+ acc:	b590      	push	{r4, r7, lr}
+ ace:	b083      	sub	sp, #12
+ ad0:	af00      	add	r7, sp, #0
+ ad2:	6078      	str	r0, [r7, #4]
+ ad4:	4c49      	ldr	r4, [pc, #292]	; (bfc <_ZN16private_module_tC1Ev+0x130>)
+ ad6:	447c      	add	r4, pc
+ ad8:	687a      	ldr	r2, [r7, #4]
+ ada:	f644 5354 	movw	r3, #19796	; 0x4d54
+ ade:	f6c4 0357 	movt	r3, #18519	; 0x4857
+ ae2:	6013      	str	r3, [r2, #0]
+ ae4:	687b      	ldr	r3, [r7, #4]
+ ae6:	2201      	movs	r2, #1
+ ae8:	809a      	strh	r2, [r3, #4]
+ aea:	687b      	ldr	r3, [r7, #4]
+ aec:	2200      	movs	r2, #0
+ aee:	80da      	strh	r2, [r3, #6]
+ af0:	687b      	ldr	r3, [r7, #4]
+ af2:	4a43      	ldr	r2, [pc, #268]	; (c00 <_ZN16private_module_tC1Ev+0x134>)
+ af4:	447a      	add	r2, pc
+ af6:	609a      	str	r2, [r3, #8]
+ af8:	687b      	ldr	r3, [r7, #4]
+ afa:	4a42      	ldr	r2, [pc, #264]	; (c04 <_ZN16private_module_tC1Ev+0x138>)
+ afc:	447a      	add	r2, pc
+ afe:	60da      	str	r2, [r3, #12]
+ b00:	687b      	ldr	r3, [r7, #4]
+ b02:	4a41      	ldr	r2, [pc, #260]	; (c08 <_ZN16private_module_tC1Ev+0x13c>)
+ b04:	447a      	add	r2, pc
+ b06:	611a      	str	r2, [r3, #16]
+ b08:	687b      	ldr	r3, [r7, #4]
+ b0a:	4a40      	ldr	r2, [pc, #256]	; (c0c <_ZN16private_module_tC1Ev+0x140>)
+ b0c:	447a      	add	r2, pc
+ b0e:	615a      	str	r2, [r3, #20]
+ b10:	687b      	ldr	r3, [r7, #4]
+ b12:	2200      	movs	r2, #0
+ b14:	619a      	str	r2, [r3, #24]
+ b16:	687b      	ldr	r3, [r7, #4]
+ b18:	331c      	adds	r3, #28
+ b1a:	2264      	movs	r2, #100	; 0x64
+ b1c:	2100      	movs	r1, #0
+ b1e:	4618      	mov	r0, r3
+ b20:	f7ff fffe 	bl	0 <memset>
+			b20: R_ARM_THM_CALL	memset
+ b24:	687b      	ldr	r3, [r7, #4]
+ b26:	4a3a      	ldr	r2, [pc, #232]	; (c10 <_ZN16private_module_tC1Ev+0x144>)
+ b28:	447a      	add	r2, pc
+ b2a:	f8c3 2080 	str.w	r2, [r3, #128]	; 0x80
+ b2e:	687b      	ldr	r3, [r7, #4]
+ b30:	4a38      	ldr	r2, [pc, #224]	; (c14 <_ZN16private_module_tC1Ev+0x148>)
+ b32:	447a      	add	r2, pc
+ b34:	f8c3 2084 	str.w	r2, [r3, #132]	; 0x84
+ b38:	687b      	ldr	r3, [r7, #4]
+ b3a:	4a37      	ldr	r2, [pc, #220]	; (c18 <_ZN16private_module_tC1Ev+0x14c>)
+ b3c:	447a      	add	r2, pc
+ b3e:	f8c3 2088 	str.w	r2, [r3, #136]	; 0x88
+ b42:	687b      	ldr	r3, [r7, #4]
+ b44:	4a35      	ldr	r2, [pc, #212]	; (c1c <_ZN16private_module_tC1Ev+0x150>)
+ b46:	447a      	add	r2, pc
+ b48:	f8c3 208c 	str.w	r2, [r3, #140]	; 0x8c
+ b4c:	687b      	ldr	r3, [r7, #4]
+ b4e:	4a34      	ldr	r2, [pc, #208]	; (c20 <_ZN16private_module_tC1Ev+0x154>)
+ b50:	58a2      	ldr	r2, [r4, r2]
+ b52:	f8c3 2094 	str.w	r2, [r3, #148]	; 0x94
+ b56:	687b      	ldr	r3, [r7, #4]
+ b58:	4a32      	ldr	r2, [pc, #200]	; (c24 <_ZN16private_module_tC1Ev+0x158>)
+ b5a:	447a      	add	r2, pc
+ b5c:	f8c3 2090 	str.w	r2, [r3, #144]	; 0x90
+ b60:	687b      	ldr	r3, [r7, #4]
+ b62:	33a4      	adds	r3, #164	; 0xa4
+ b64:	220c      	movs	r2, #12
+ b66:	2100      	movs	r1, #0
+ b68:	4618      	mov	r0, r3
+ b6a:	f7ff fffe 	bl	0 <memset>
+			b6a: R_ARM_THM_CALL	memset
+ b6e:	687b      	ldr	r3, [r7, #4]
+ b70:	2200      	movs	r2, #0
+ b72:	f8c3 20b0 	str.w	r2, [r3, #176]	; 0xb0
+ b76:	687b      	ldr	r3, [r7, #4]
+ b78:	2200      	movs	r2, #0
+ b7a:	f8c3 20b4 	str.w	r2, [r3, #180]	; 0xb4
+ b7e:	687b      	ldr	r3, [r7, #4]
+ b80:	2200      	movs	r2, #0
+ b82:	f8c3 20b8 	str.w	r2, [r3, #184]	; 0xb8
+ b86:	687b      	ldr	r3, [r7, #4]
+ b88:	2200      	movs	r2, #0
+ b8a:	f8c3 20bc 	str.w	r2, [r3, #188]	; 0xbc
+ b8e:	687b      	ldr	r3, [r7, #4]
+ b90:	33c0      	adds	r3, #192	; 0xc0
+ b92:	2100      	movs	r1, #0
+ b94:	4618      	mov	r0, r3
+ b96:	f7ff fffe 	bl	0 <pthread_mutex_init>
+			b96: R_ARM_THM_CALL	pthread_mutex_init
+ b9a:	687b      	ldr	r3, [r7, #4]
+ b9c:	2200      	movs	r2, #0
+ b9e:	f8c3 20c4 	str.w	r2, [r3, #196]	; 0xc4
+ ba2:	687b      	ldr	r3, [r7, #4]
+ ba4:	f04f 32ff 	mov.w	r2, #4294967295	; 0xffffffff
+ ba8:	f8c3 20c8 	str.w	r2, [r3, #200]	; 0xc8
+ bac:	687b      	ldr	r3, [r7, #4]
+ bae:	2200      	movs	r2, #0
+ bb0:	f8c3 20cc 	str.w	r2, [r3, #204]	; 0xcc
+ bb4:	687b      	ldr	r3, [r7, #4]
+ bb6:	33d0      	adds	r3, #208	; 0xd0
+ bb8:	22a0      	movs	r2, #160	; 0xa0
+ bba:	2100      	movs	r1, #0
+ bbc:	4618      	mov	r0, r3
+ bbe:	f7ff fffe 	bl	0 <memset>
+			bbe: R_ARM_THM_CALL	memset
+ bc2:	687b      	ldr	r3, [r7, #4]
+ bc4:	f503 73b8 	add.w	r3, r3, #368	; 0x170
+ bc8:	2244      	movs	r2, #68	; 0x44
+ bca:	2100      	movs	r1, #0
+ bcc:	4618      	mov	r0, r3
+ bce:	f7ff fffe 	bl	0 <memset>
+			bce: R_ARM_THM_CALL	memset
+ bd2:	687b      	ldr	r3, [r7, #4]
+ bd4:	f04f 0200 	mov.w	r2, #0
+ bd8:	f8c3 21b4 	str.w	r2, [r3, #436]	; 0x1b4
+ bdc:	687b      	ldr	r3, [r7, #4]
+ bde:	f04f 0200 	mov.w	r2, #0
+ be2:	f8c3 21b8 	str.w	r2, [r3, #440]	; 0x1b8
+ be6:	687b      	ldr	r3, [r7, #4]
+ be8:	f04f 0200 	mov.w	r2, #0
+ bec:	f8c3 21bc 	str.w	r2, [r3, #444]	; 0x1bc
+ bf0:	687b      	ldr	r3, [r7, #4]
+ bf2:	4618      	mov	r0, r3
+ bf4:	370c      	adds	r7, #12
+ bf6:	46bd      	mov	sp, r7
+ bf8:	bd90      	pop	{r4, r7, pc}
+ bfa:	bf00      	nop
+ bfc:	00000122 	.word	0x00000122
+			bfc: R_ARM_GOTPC	_GLOBAL_OFFSET_TABLE_
+ c00:	00000138 	.word	0x00000138
+			c00: R_ARM_REL32	.rodata
+ c04:	000005ec 	.word	0x000005ec
+			c04: R_ARM_REL32	.rodata
+ c08:	0000060c 	.word	0x0000060c
+			c08: R_ARM_REL32	.rodata
+ c0c:	000000fc 	.word	0x000000fc
+			c0c: R_ARM_REL32	.data.rel.local
+ c10:	000000e4 	.word	0x000000e4
+			c10: R_ARM_REL32	_ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle
+ c14:	000000de 	.word	0x000000de
+			c14: R_ARM_REL32	_ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle
+ c18:	000000d8 	.word	0x000000d8
+			c18: R_ARM_REL32	_ZL12gralloc_lockPK16gralloc_module_tPK13native_handleiiiiiPPv
+ c1c:	000000d2 	.word	0x000000d2
+			c1c: R_ARM_REL32	_ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle
+ c20:	00000000 	.word	0x00000000
+			c20: R_ARM_GOT32	_Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr
+ c24:	000000c6 	.word	0x000000c6
+			c24: R_ARM_REL32	_ZL15gralloc_performPK16gralloc_module_tiz
+
+00000c28 <_Z41__static_initialization_and_destruction_0ii>:
+ c28:	b580      	push	{r7, lr}
+ c2a:	b082      	sub	sp, #8
+ c2c:	af00      	add	r7, sp, #0
+ c2e:	6078      	str	r0, [r7, #4]
+ c30:	6039      	str	r1, [r7, #0]
+ c32:	4a09      	ldr	r2, [pc, #36]	; (c58 <_Z41__static_initialization_and_destruction_0ii+0x30>)
+ c34:	447a      	add	r2, pc
+ c36:	687b      	ldr	r3, [r7, #4]
+ c38:	2b01      	cmp	r3, #1
+ c3a:	d109      	bne.n	c50 <_Z41__static_initialization_and_destruction_0ii+0x28>
+ c3c:	683b      	ldr	r3, [r7, #0]
+ c3e:	f64f 71ff 	movw	r1, #65535	; 0xffff
+ c42:	428b      	cmp	r3, r1
+ c44:	d104      	bne.n	c50 <_Z41__static_initialization_and_destruction_0ii+0x28>
+ c46:	4b05      	ldr	r3, [pc, #20]	; (c5c <_Z41__static_initialization_and_destruction_0ii+0x34>)
+ c48:	58d3      	ldr	r3, [r2, r3]
+ c4a:	4618      	mov	r0, r3
+ c4c:	f7ff fffe 	bl	acc <_ZN16private_module_tC1Ev>
+			c4c: R_ARM_THM_CALL	_ZN16private_module_tC1Ev
+ c50:	bf00      	nop
+ c52:	3708      	adds	r7, #8
+ c54:	46bd      	mov	sp, r7
+ c56:	bd80      	pop	{r7, pc}
+ c58:	00000020 	.word	0x00000020
+			c58: R_ARM_GOTPC	_GLOBAL_OFFSET_TABLE_
+ c5c:	00000000 	.word	0x00000000
+			c5c: R_ARM_GOT32	HMI
+
+00000c60 <_GLOBAL__sub_I_gralloc_module.cpp>:
+ c60:	b580      	push	{r7, lr}
+ c62:	af00      	add	r7, sp, #0
+ c64:	f64f 71ff 	movw	r1, #65535	; 0xffff
+ c68:	2001      	movs	r0, #1
+ c6a:	f7ff ffdd 	bl	c28 <_Z41__static_initialization_and_destruction_0ii>
+ c6e:	bd80      	pop	{r7, pc}
+
+Disassembly of section .text._ZN16private_handle_t8validateEPK13native_handle:
+
+00000000 <_ZN16private_handle_t8validateEPK13native_handle>:
+   0:	b580      	push	{r7, lr}
+   2:	b084      	sub	sp, #16
+   4:	af00      	add	r7, sp, #0
+   6:	6078      	str	r0, [r7, #4]
+   8:	687b      	ldr	r3, [r7, #4]
+   a:	60fb      	str	r3, [r7, #12]
+   c:	687b      	ldr	r3, [r7, #4]
+   e:	2b00      	cmp	r3, #0
+  10:	d013      	beq.n	3a <_ZN16private_handle_t8validateEPK13native_handle+0x3a>
+  12:	687b      	ldr	r3, [r7, #4]
+  14:	681b      	ldr	r3, [r3, #0]
+  16:	2b0c      	cmp	r3, #12
+  18:	d10f      	bne.n	3a <_ZN16private_handle_t8validateEPK13native_handle+0x3a>
+  1a:	687b      	ldr	r3, [r7, #4]
+  1c:	685b      	ldr	r3, [r3, #4]
+  1e:	2b01      	cmp	r3, #1
+  20:	d10b      	bne.n	3a <_ZN16private_handle_t8validateEPK13native_handle+0x3a>
+  22:	687b      	ldr	r3, [r7, #4]
+  24:	689b      	ldr	r3, [r3, #8]
+  26:	2b16      	cmp	r3, #22
+  28:	d107      	bne.n	3a <_ZN16private_handle_t8validateEPK13native_handle+0x3a>
+  2a:	68fb      	ldr	r3, [r7, #12]
+  2c:	691a      	ldr	r2, [r3, #16]
+  2e:	f241 5392 	movw	r3, #5522	; 0x1592
+  32:	f2c0 3314 	movt	r3, #788	; 0x314
+  36:	429a      	cmp	r2, r3
+  38:	d00b      	beq.n	52 <_ZN16private_handle_t8validateEPK13native_handle+0x52>
+  3a:	4b08      	ldr	r3, [pc, #32]	; (5c <_ZN16private_handle_t8validateEPK13native_handle+0x5c>)
+  3c:	447b      	add	r3, pc
+  3e:	461a      	mov	r2, r3
+  40:	4b07      	ldr	r3, [pc, #28]	; (60 <_ZN16private_handle_t8validateEPK13native_handle+0x60>)
+  42:	447b      	add	r3, pc
+  44:	4619      	mov	r1, r3
+  46:	2006      	movs	r0, #6
+  48:	f7ff fffe 	bl	0 <__android_log_print>
+			48: R_ARM_THM_CALL	__android_log_print
+  4c:	f06f 0315 	mvn.w	r3, #21
+  50:	e000      	b.n	54 <_ZN16private_handle_t8validateEPK13native_handle+0x54>
+  52:	2300      	movs	r3, #0
+  54:	4618      	mov	r0, r3
+  56:	3710      	adds	r7, #16
+  58:	46bd      	mov	sp, r7
+  5a:	bd80      	pop	{r7, pc}
+  5c:	00000030 	.word	0x00000030
+			5c: R_ARM_REL32	.rodata
+  60:	0000004a 	.word	0x0000004a
+			60: R_ARM_REL32	.rodata

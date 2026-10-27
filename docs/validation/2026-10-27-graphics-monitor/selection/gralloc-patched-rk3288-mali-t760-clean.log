@@ -1,0 +1,6 @@
+
+RESULT_CFLAGS=-DLOG_TAG=\"gralloc\" -DGRALLOC_32_BITS -DSTANDARD_LINUX_SCREEN -DPLATFORM_SDK_VERSION=25
+RESULT_INCLUDES=system/core/include/ hardware/arm/mali/include  hardware/arm/mali/src/ump/include
+RESULT_MODULE=gralloc.rk30board
+RESULT_SHARED=liblog libcutils libGLESv1_CM libion libhardware
+make: Nothing to be done for 'diagnostic'.

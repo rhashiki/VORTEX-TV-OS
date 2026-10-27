@@ -1,0 +1,6 @@
+bd3a2e95546844cae005bd6ce385324b6ef06f99837f6c58f8f49bf84035e599  rom/platform-reference/graphics/patches/0001-libhardware-match-kernel-fb-contract.patch
+4405334b0a86071f253c59fab40f35896fd055f95fe8c91758336bdf74bee968  rom/platform-reference/graphics/patches/0002-gralloc-select-mali400-for-rk322x.patch
+0a06468422b3e41f3beea6d4f29aa1b906d8df92fb7da969626819d3b817aa6d  rom/platform-reference/graphics/patches/0003-hwc-use-selected-gralloc-header.patch
+577fd1046ef854e407bcb44354e0f84669ea0404a71ba9314aa2071ee48ec398  rom/platform-reference/graphics/patches/0004-vendor-use-source-graphics-hals.patch
+1014597d6a89fa50b976b019075babd58ea7b10acc1c8c797e36cd4f031c8ed8  rom/sdcard/kernel-propagate-psci-suspend-error.patch
+c707bc6aa0a7e9af1273355faa906f528b2e120df65b661aaaaa1e9f3aacd337  rom/sdcard/rk3229-sdk-sd-monitor-gated.dts

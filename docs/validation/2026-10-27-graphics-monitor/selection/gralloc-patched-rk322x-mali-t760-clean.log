@@ -1,0 +1,2 @@
+
+/workspace/build01-graphics-next/selection/gralloc/Android.mk:46: *** RK322x reference gralloc requires TARGET_BOARD_PLATFORM_GPU=mali400.  Stop.

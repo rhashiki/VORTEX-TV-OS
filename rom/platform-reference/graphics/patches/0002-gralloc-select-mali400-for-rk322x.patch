@@ -1,0 +1,22 @@
+diff --git a/Android.mk b/Android.mk
+index 955c825..e897e9f 100644
+--- a/Android.mk
++++ b/Android.mk
+@@ -38,7 +38,16 @@ LOCAL_MODULE := gralloc.$(TARGET_BOARD_HARDWARE)
+ #LOCAL_MODULE_TAGS := optional
+ 
+ # Which DDK are we building for?
+-ifneq (,$(wildcard $(MALI_DDK_TEST_PATH)))
++# The RK322x reference uses Mali-400 even if another DDK tree is present.
++# Select by the board GPU; a residual hardware/arm directory is not a GPU ID.
++rk_gralloc_mali600_path := $(wildcard $(MALI_DDK_TEST_PATH))
++ifeq ($(strip $(TARGET_BOARD_PLATFORM)),rk322x)
++ifneq ($(strip $(TARGET_BOARD_PLATFORM_GPU)),mali400)
++$(error RK322x reference gralloc requires TARGET_BOARD_PLATFORM_GPU=mali400)
++endif
++rk_gralloc_mali600_path :=
++endif
++ifneq (,$(rk_gralloc_mali600_path))
+ # Mali-T6xx DDK
+ MALI_DDK_PATH := vendor/arm/mali6xx
+ LOCAL_SHARED_LIBRARIES := liblog libcutils libGLESv1_CM libGLES_mali libion

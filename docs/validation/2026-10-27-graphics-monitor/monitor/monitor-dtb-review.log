@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "scope": "Actual DTB structural comparison and source-gating review only, no physical execution or proof that every vendor SMC path is absent.",
+  "profile": {
+    "file": "rk3229-sdk-sd-monitor-gated.dts",
+    "sha256": "c707bc6aa0a7e9af1273355faa906f528b2e120df65b661aaaaa1e9f3aacd337"
+  },
+  "base_DTB": {
+    "size_bytes": 72372,
+    "sha256": "ffc55fd04b80ef2c49307d7428b6be8d7b6362410f235ad25be4c6c7f3109fb7",
+    "byte_identical_to_prior_compiled_DTB": true
+  },
+  "new_DTB": {
+    "file": "sd-monitor-gated.dtb",
+    "size_bytes": 72380,
+    "sha256": "cfa9110af88ad776fd2cd528152920acdbef9a1d32a9a124fdd0381695b1e167"
+  },
+  "node_count": 468,
+  "differences": [
+    {
+      "path": "/dvfs/vd_logic/pd_ddr/clk_ddr",
+      "property": "status",
+      "before_hex": "6f6b617900",
+      "after_hex": "64697361626c656400"
+    },
+    {
+      "path": "/fiq-debugger",
+      "property": "status",
+      "before_hex": "6f6b617900",
+      "after_hex": "64697361626c656400"
+    }
+  ],
+  "checks": {
+    "only_two_properties_changed": true,
+    "fiq_debugger_disabled": true,
+    "legacy_DDR_DVFS_disabled": true,
+    "PSCI_node_unchanged": true,
+    "suspend_node_unchanged": true,
+    "SD_controller_unchanged": true,
+    "internal_controllers_unchanged": true
+  },
+  "registration_effect_in_examined_sources": {
+    "fiq": "rk_fiq_debugger.c checks of_device_is_available(np) before register/init, returns -ENODEV for disabled node.",
+    "DDR": "of_dvfs_init uses for_each_available_child_of_node for clock nodes; disabled clk_ddr omitted. ddrfreq_init then gets no clk_ddr DVFS node and returns -EINVAL before callbacks, registrations, worker creation."
+  },
+  "limits": [
+    "No full kernel recompile; same prior kernel binary/config, source-proven DT filtering only.",
+    "Vendor SIP version negotiation and suspend control boot calls remain compiled/reachable and return unknown under this monitor.",
+    "PSCI CPU_SUSPEND unsupported and kernel suspend error handling remain unresolved.",
+    "DDR callbacks remain in binary; paths outside the disabled legacy worker need separate review.",
+    "No monitor RAM reservations added; delivered Linux DTB must still reserve OP-TEE core/SHM.",
+    "No alternate UART console is enabled by this two-change profile.",
+    "No physical boot or R329Q hardware approval."
+  ],
+  "console_observability": {
+    "kernel_CONFIG_CMDLINE": "empty",
+    "kernel_CONFIG_SERIAL_ROCKCHIP": "y",
+    "kernel_CONFIG_SERIAL_ROCKCHIP_CONSOLE": "n",
+    "chosen_bootargs": "vmalloc=496M psci=enable storagemedia=sd androidboot.mode=sd androidboot.hardware=rk30board",
+    "UART_status": {
+      "/serial@11010000": "disabled",
+      "/serial@11020000": "okay",
+      "/serial@11030000": "disabled"
+    },
+    "UART2_pinctrl_0_hex": "0000005b",
+    "assessment": "Disabling FIQ removes the selected serial console path. UART1 exists as an enabled serial device but ordinary Rockchip console support is not compiled; UART2 is disabled. No ordinary UART console is established by this profile. UART2 DTS already references UART21 PB1/PB2, but enabling a usable console also requires config and bootarg review; physical wiring remains unknown."
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "scope": "Independent read-only final source, documentation and artifact-integrity review; no build or runtime test performed by reviewer.",
+  "findings": [],
+  "graphics_manifest": {
+    "path": "/workspace/build01-graphics-next/graphics/graphics-evidence.sha256",
+    "sha256": "8f732c2f7e9ee27384c7b64dfb65a73180840a45d3b8ed5dafd2dee5ba6f8f7c",
+    "all_entries_verified": 70
+  },
+  "HAL_manifest": {
+    "path": "/workspace/build01-graphics-next/graphics/hal-build/hal-build-evidence.sha256",
+    "sha256": "801ebe0a6161c0723774c546bc0d86752a5283b5d1700d1a74f9e0d7ef104fc8",
+    "all_entries_verified": 45
+  },
+  "header_contract": {
+    "reported_quantities": 94,
+    "kernel_and_after_maps_equal": true,
+    "negative_before_and_positive_after_compile_recorded": true
+  },
+  "suspend_return_path": {
+    "patch_sha256": "1014597d6a89fa50b976b019075babd58ea7b10acc1c8c797e36cd4f031c8ed8",
+    "git_apply_check": "pass",
+    "finish_callback_retained": true,
+    "callback_macro_does_not_assign_local_ret": true,
+    "PSCI_RET_EOPNOTSUPP_mapping": "-1 becomes Linux -EOPNOTSUPP in arch/arm/kernel/psci.c",
+    "assembly_abort_path": "Nonzero callback return preserved; only zero callback return is forced to1.",
+    "cpu_suspend_wrapper": "Returns __cpu_suspend result, or -EINVAL when idmap_pgd absent.",
+    "rkpm_enter_after": "Calls prepare, stores cpu_suspend return, calls finish, returns stored value.",
+    "assessment": "Valid propagation correction; does not add monitor support or alter already delivered kernel Image."
+  },
+  "monitor_DTB": {
+    "independently_parsed_node_count": 468,
+    "only_changed_properties": [
+      "/fiq-debugger/status:okay->disabled",
+      "/dvfs/vd_logic/pd_ddr/clk_ddr/status:okay->disabled"
+    ],
+    "hashes_match_recorded_artifacts": true,
+    "source_registration_gates_match_documentation": true
+  },
+  "docs_reviewed": [
+    "rom/platform-reference/graphics/README.md",
+    "rom/sdcard/MONITOR_REFERENCE.md"
+  ],
+  "limits": [
+    "No complete Android image or HAL link verified.",
+    "No physical boot, actual SMC, framebuffer ioctl or suspend/resume execution.",
+    "Central 2026-10-27 report not present yet at review time; linked report target remains a root work item."
+  ]
+}

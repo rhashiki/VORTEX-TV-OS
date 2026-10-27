@@ -1,0 +1,439 @@
+{
+  "schema_version": 1,
+  "scope": "Bounded source, final ELF symbol/config, and DTB audit of named Linux3.10 RK322x monitor consumers; not exhaustive ABI approval or hardware execution.",
+  "sources": {
+    "kernel_revision": "6c04d006ae881944d32c19e68b992d0bd5ab4fde",
+    "optee_revision": "2a5b1d1232f582056184367fb58a425ac7478ec6",
+    "files": [
+      {
+        "component": "kernel",
+        "path": "include/linux/rockchip/psci.h",
+        "sha256": "7f1192303885ff44f57272b381ec1b9ca2da6d89635a55249fe4be78ad555978",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/include/linux/rockchip/psci.h"
+      },
+      {
+        "component": "kernel",
+        "path": "include/linux/rockchip/psci_ddr.h",
+        "sha256": "39019cbc508dbd4500dd74a7159071e53a770bb6fd4f28b0250e21990f223c14",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/include/linux/rockchip/psci_ddr.h"
+      },
+      {
+        "component": "kernel",
+        "path": "arch/arm/mach-rockchip/psci.c",
+        "sha256": "1949fe134bc4e9b24026a93da37f2c0f56e799e1742e0c11edcc5bfcbbfc1860",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/mach-rockchip/psci.c"
+      },
+      {
+        "component": "kernel",
+        "path": "arch/arm/mach-rockchip/psci_ddr.c",
+        "sha256": "be4af5fe6c4e38f1d582660ee112777f1efe6394384fee07dbe416d3e4af75f5",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/mach-rockchip/psci_ddr.c"
+      },
+      {
+        "component": "kernel",
+        "path": "arch/arm/mach-rockchip/rk322x.c",
+        "sha256": "b31c2b3677d54c446f7661dce050ae9b1e00855419b97d9d0c77ac14bc3244a4",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/mach-rockchip/rk322x.c"
+      },
+      {
+        "component": "kernel",
+        "path": "arch/arm/mach-rockchip/rockchip_pm.c",
+        "sha256": "3f23c21e12c422f2189a7d0c1c7bd2524c4d566994e02570ded2b4c88d1a73ef",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/mach-rockchip/rockchip_pm.c"
+      },
+      {
+        "component": "kernel",
+        "path": "arch/arm/mach-rockchip/ddr_freq.c",
+        "sha256": "628e3a6868e9d5284cbee9cca8ce5b24958870a3375ff4bd20220573d1aa109b",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/mach-rockchip/ddr_freq.c"
+      },
+      {
+        "component": "kernel",
+        "path": "arch/arm/mach-rockchip/ddr_rk312x.c",
+        "sha256": "22637d4e68461d4e18c3f266111fdf6eb145465c24ce6b270a51b3b7a6ecd572",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/mach-rockchip/ddr_rk312x.c"
+      },
+      {
+        "component": "kernel",
+        "path": "arch/arm/mach-rockchip/cpuidle.c",
+        "sha256": "3dd89337fcc6f3153ef855fff3e8615077a29787efadfc25a7b9a640f16d13c0",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/mach-rockchip/cpuidle.c"
+      },
+      {
+        "component": "kernel",
+        "path": "arch/arm/mach-rockchip/rk_fiq_debugger.c",
+        "sha256": "366b66004b5918f9e846dcec6ae0a2c896cafaf7bff862dd89889f6c878f4972",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/mach-rockchip/rk_fiq_debugger.c"
+      },
+      {
+        "component": "kernel",
+        "path": "arch/arm/mach-rockchip/Makefile",
+        "sha256": "c2277abcfcff5c49bbdea9a5aeeb320dcbd75e52dea715f364d0e5df177faf67",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/mach-rockchip/Makefile"
+      },
+      {
+        "component": "kernel",
+        "path": "drivers/clk/rockchip/clk-ops.c",
+        "sha256": "5e6c23998deb45fd4b371bc474c9e3fc8a305df91b519f08de0f98114d5af09f",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/drivers/clk/rockchip/clk-ops.c"
+      },
+      {
+        "component": "kernel",
+        "path": "arch/arm/mach-rockchip/dvfs.c",
+        "sha256": "106843b1928737ffc4f172ba902fe2d5f2d4cd263dfebc1b169dfadbcc701a5b",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/mach-rockchip/dvfs.c"
+      },
+      {
+        "component": "kernel",
+        "path": "arch/arm/kernel/psci.c",
+        "sha256": "1e08f05fadd0c18f510a9dd3b234e595010ea24fb7e7cc77a22631403a925f74",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/kernel/psci.c"
+      },
+      {
+        "component": "kernel",
+        "path": "arch/arm/kernel/psci_smp.c",
+        "sha256": "eab87e99fbc08b0149bcdeae2f30bb92bb7cdc666c92a67d04b953536446097c",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/kernel/psci_smp.c"
+      },
+      {
+        "component": "kernel",
+        "path": "arch/arm/kernel/setup.c",
+        "sha256": "3d86f2542ff9d9bcb3277270ae1447ab121d537db98759b2ddebe053af5a1077",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/kernel/setup.c"
+      },
+      {
+        "component": "kernel",
+        "path": "arch/arm/kernel/suspend.c",
+        "sha256": "39361cb142cfc33cc0de8b3654c2cb2878e7ac1310922ab040365eae8853ae82",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/kernel/suspend.c"
+      },
+      {
+        "component": "kernel",
+        "path": "arch/arm/boot/dts/rk322x.dtsi",
+        "sha256": "0d4389156fc47e164387434efb796718e163c2749058f78705b71cdf27fa00e2",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/boot/dts/rk322x.dtsi"
+      },
+      {
+        "component": "kernel",
+        "path": "arch/arm/boot/dts/rk322x-sdk.dtsi",
+        "sha256": "242cccdb25e4aea8f9992a0ba252ce4e9676504fc6084d885040f7eb2da89836",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/boot/dts/rk322x-sdk.dtsi"
+      },
+      {
+        "component": "kernel",
+        "path": "drivers/input/remotectl/rockchip_pwm_remotectl.c",
+        "sha256": "4aef45648579af643125a70b662d2cef88f90505f67f2d74902182a764346c8d",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/drivers/input/remotectl/rockchip_pwm_remotectl.c"
+      },
+      {
+        "component": "kernel",
+        "path": "arch/arm/mach-rockchip/vcodec_service.c",
+        "sha256": "f0ba51259de88b901e9501e39bbec38e3ea621cb70e69d8727e3b3ed9c641006",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/mach-rockchip/vcodec_service.c"
+      },
+      {
+        "component": "optee",
+        "path": "core/arch/arm/plat-rockchip/psci_rk322x.c",
+        "sha256": "0a44cb501fab9ef95968f261618a62ec12fb41c835f7497a261ae2174f49aa57",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/OP-TEE/optee_os/blob/2a5b1d1232f582056184367fb58a425ac7478ec6/core/arch/arm/plat-rockchip/psci_rk322x.c"
+      },
+      {
+        "component": "optee",
+        "path": "core/arch/arm/plat-rockchip/platform_rk322x.c",
+        "sha256": "12774fd6ca7472b67fd3a91cbdefdc0e6a6e3a90daa7b2f96fde66ae675e44ba",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/OP-TEE/optee_os/blob/2a5b1d1232f582056184367fb58a425ac7478ec6/core/arch/arm/plat-rockchip/platform_rk322x.c"
+      },
+      {
+        "component": "optee",
+        "path": "core/arch/arm/plat-rockchip/conf.mk",
+        "sha256": "bbfb0693812a63815357d4fe8d62a6a86d846ec70a5508c11a76bdeba1e3b618",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/OP-TEE/optee_os/blob/2a5b1d1232f582056184367fb58a425ac7478ec6/core/arch/arm/plat-rockchip/conf.mk"
+      },
+      {
+        "component": "optee",
+        "path": "core/arch/arm/plat-rockchip/sub.mk",
+        "sha256": "dc0e8171990e24bf3f47c031a97e6cea09b09d4bb0ef128fff16338c72871799",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/OP-TEE/optee_os/blob/2a5b1d1232f582056184367fb58a425ac7478ec6/core/arch/arm/plat-rockchip/sub.mk"
+      },
+      {
+        "component": "optee",
+        "path": "core/arch/arm/sm/sm.c",
+        "sha256": "27c38656f34bbd3755ae79bc94d5315edabdb011c00e0aba090351ac1d08eb39",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/OP-TEE/optee_os/blob/2a5b1d1232f582056184367fb58a425ac7478ec6/core/arch/arm/sm/sm.c"
+      },
+      {
+        "component": "optee",
+        "path": "core/arch/arm/sm/psci.c",
+        "sha256": "5c5add8ed829a2ceaba27c7969a93c757c00b961818130aac8dfe80416cba3a9",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/OP-TEE/optee_os/blob/2a5b1d1232f582056184367fb58a425ac7478ec6/core/arch/arm/sm/psci.c"
+      },
+      {
+        "component": "optee",
+        "path": "core/arch/arm/sm/std_smc.c",
+        "sha256": "a891570a1c4b3841d344d8ff18ce3feee2324273932884db8b9d285bef4339ff",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/OP-TEE/optee_os/blob/2a5b1d1232f582056184367fb58a425ac7478ec6/core/arch/arm/sm/std_smc.c"
+      },
+      {
+        "component": "optee",
+        "path": "core/arch/arm/include/sm/optee_smc.h",
+        "sha256": "d259a426629ac09f1f93ef739df56d22ae2f3a7996c30c640746d3e8e7c0bb27",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/OP-TEE/optee_os/blob/2a5b1d1232f582056184367fb58a425ac7478ec6/core/arch/arm/include/sm/optee_smc.h"
+      },
+      {
+        "component": "optee",
+        "path": "core/arch/arm/include/sm/psci.h",
+        "sha256": "7d7cb8e26047d19cc112b4554e9435d4bda4910ec873580b676d4b69faf523b5",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/OP-TEE/optee_os/blob/2a5b1d1232f582056184367fb58a425ac7478ec6/core/arch/arm/include/sm/psci.h"
+      },
+      {
+        "component": "optee",
+        "path": "core/arch/arm/tee/entry_fast.c",
+        "sha256": "1bf8aabee7b0acd82f382b961891abcf02a59e0d384ac5b8c13aac66be2b1e8b",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/OP-TEE/optee_os/blob/2a5b1d1232f582056184367fb58a425ac7478ec6/core/arch/arm/tee/entry_fast.c"
+      },
+      {
+        "component": "optee",
+        "path": "core/arch/arm/kernel/thread_optee_smc.c",
+        "sha256": "a16e21629e993e93f1b282519e57bcbe3d124b000779cf426b1195a29902710d",
+        "matches_pinned_git_blob": true,
+        "url": "https://github.com/OP-TEE/optee_os/blob/2a5b1d1232f582056184367fb58a425ac7478ec6/core/arch/arm/kernel/thread_optee_smc.c"
+      }
+    ]
+  },
+  "compiled_inputs": {
+    "kernel_vmlinux_sha256": "cf77b56786cc905bbf20c344f65f94ebd88c6e3724767fb1c674e239786e4390",
+    "kernel_config_sha256": "989995cfcf9395f51c7299ffd2fd3fad91e1fad216b54e9f6eb9ea8e457f8868",
+    "optee_elf_sha256": "2fa06fecbd427be663ebe8adbd5dcf42861bcc6adbdeaa6006b0eeca9c40806d",
+    "optee_config_sha256": "f79b76efeede123a04ce81811aa628f6edfbb08dffdd525577c0de1a8a56cfcd",
+    "kernel_config": {
+      "CONFIG_ARM_PSCI": "y",
+      "CONFIG_SMP": "y",
+      "CONFIG_CPU_RK322X": "y",
+      "CONFIG_HOTPLUG_CPU": "y",
+      "CONFIG_ARM_TRUSTZONE": "n",
+      "CONFIG_CPU_IDLE": "y",
+      "CONFIG_CPU_FREQ": "y",
+      "CONFIG_SUSPEND": "y",
+      "CONFIG_PM": "y",
+      "CONFIG_PM_AUTOSLEEP": "y",
+      "CONFIG_PM_DEVFREQ": "n",
+      "CONFIG_DVFS": "y",
+      "CONFIG_FIQ_DEBUGGER": "y",
+      "CONFIG_SERIAL_ROCKCHIP": "y",
+      "CONFIG_SERIAL_ROCKCHIP_CONSOLE": "n",
+      "CONFIG_CMDLINE": "\"\"",
+      "CONFIG_RK_VCODEC": "y",
+      "CONFIG_ROCKCHIP_REMOTECTL_PWM": "y"
+    }
+  },
+  "vendor_service_definitions": {
+    "PSCI_SIP_RKTF_VER": "0x82000001",
+    "PSCI_SIP_ACCESS_REG": "0x82000002",
+    "PSCI_SIP_ACCESS_REG64": "0xc2000002",
+    "PSCI_SIP_SUSPEND_WR_CTRBITS": "0x82000003",
+    "PSCI_SIP_PENDING_CPUS": "0x82000004",
+    "PSCI_SIP_UARTDBG_CFG": "0x82000005",
+    "PSCI_SIP_UARTDBG_CFG64": "0xc2000005",
+    "PSCI_SIP_EL3FIQ_CFG": "0x82000006",
+    "PSCI_SIP_ACCESS_CHIP_STATE64": "0xc2000006",
+    "PSCI_SIP_SMEM_CONFIG": "0x82000007",
+    "PSCI_SIP_ACCESS_CHIP_EXTRA_STATE64": "0xc2000007",
+    "PSCI_SIP_DRAM_FREQ_CONFIG": "0x82000008",
+    "PSCI_SIP_SHARE_MEM": "0x82000009",
+    "PSCI_SIP_IMPLEMENT_CALL_VER": "0x8200000a",
+    "PSCI_SIP_REMOTECTL_CFG": "0x8200000b",
+    "PSCI_SIP_VPU_RESET": "0x8200000c"
+  },
+  "monitor_dispatch": {
+    "SM_PLATFORM_HANDLER": "not enabled in generated config; symbol omitted from final ELF",
+    "WDT_SM_HANDLER": "n",
+    "path": "sm_from_nsec only handles standard-owner PSCI and arch-owner calls directly. Other fast IDs enter generic tee_entry_fast/__tee_entry_fast. Named SIP IDs0x82000001..0x0c do not match its switch and default a0=0xffffffff.",
+    "unknown_return": "0xffffffff; no vendor function implemented by a matching PSCI ID"
+  },
+  "calls": [
+    {
+      "service": "SIP_IMPLEMENT_CALL_VER",
+      "id": "0x8200000a",
+      "arguments": [
+        "0",
+        "0",
+        "0"
+      ],
+      "phase": "arch_initcall after PSCI ops selected",
+      "kernel_site": "arch/arm/mach-rockchip/psci.c:423-443",
+      "compiled_evidence": "__initcall_sip_implement_version_init3 and sip_implement_version_init in vmlinux",
+      "original_DTB_reachability": "psci_smp_available true if cpu_on property parsed; does not probe monitor",
+      "monitor": "No vendor handler; OP-TEE fast dispatcher unknown-function a0=0xffffffff",
+      "kernel_result_handling": "Any nonzero a0 selects SIP v1 and returns success; not an early panic in this call site",
+      "after_gated_DTB": "unchanged"
+    },
+    {
+      "service": "SUSPEND_WR_CTRBITS",
+      "id": "0x82000003",
+      "arguments": [
+        "rockchip,ctrbits from rockchip_suspend node",
+        "0",
+        "SEC_REG_WR=1"
+      ],
+      "phase": "machine init_late",
+      "kernel_site": "arch/arm/mach-rockchip/rk322x.c:147-173,222-230",
+      "compiled_evidence": "rk322x_init_late in vmlinux, rk322x.o contains call",
+      "original_DTB_reachability": "Node and ctrbits present; code does not check DT status",
+      "monitor": "No vendor handler, a0=0xffffffff",
+      "kernel_result_handling": "Return discarded; logs configured ctrbits, which does not prove monitor accepted them",
+      "after_gated_DTB": "unchanged; suspend control remains unsupported"
+    },
+    {
+      "service": "DRAM_FREQ_CONFIG",
+      "id": "0x82000008",
+      "arguments": [
+        "frequency MHz or auto-self-refresh boolean",
+        "0",
+        "1(change frequency) or3(auto self refresh)"
+      ],
+      "phase": "legacy late-init DDR DVFS worker and subsequent status/input/display changes",
+      "kernel_site": "arch/arm/mach-rockchip/rk322x.c:169-173; psci_ddr.c:29-44; ddr_freq.c:175-205,1044-1153; drivers/clk/rockchip/clk-ops.c:450-476",
+      "compiled_evidence": "ddr_freq.o present; __initcall_ddrfreq_init7, ddrfreq_task, clk_ddr_set_rate in vmlinux",
+      "original_DTB_reachability": "clk_ddr DVFS table enabled; CONFIG_PM_DEVFREQ=n does not gate this legacy worker because ARM_TRUSTZONE=n includes ddr_freq.o",
+      "monitor": "No DDR SIP handler; a0=0xffffffff",
+      "kernel_result_handling": "psci_ddr_change_freq returns rawu32; clk_ddr_set_rate interprets as MHz, updates software clock fields and returns0. No negative errno conversion. DDR physical rate/voltage effects are not measured.",
+      "after_gated_DTB": "DT disables clk_ddr DVFS registration; ddrfreq_init returns-EINVAL before worker creation. Callbacks remain installed in binary; no claim all possible DDR callers removed."
+    },
+    {
+      "service": "UARTDBG_CFG",
+      "id": "0x82000005",
+      "arguments": [
+        "IRQ or physical shared-memory address or serial-id",
+        "callback address or baudrate",
+        "0xf0 INIT,0xf6 SET_SHARE_MEM,0xf7 SET_PRINT_PORT; runtime0xf1/0xf3/0xf4/0xf5"
+      ],
+      "phase": "FIQ debugger probe/console plus later callbacks",
+      "kernel_site": "arch/arm/mach-rockchip/rk_fiq_debugger.c:520-529,605-635; psci.c:350-419",
+      "compiled_evidence": "psci_fiq_debugger_uart_irq_tf_init et al in vmlinux",
+      "original_DTB_reachability": "FIQ debugger enabled with signal IRQ159 and IRQ mode0. ARM_PSCI+SMP branch attempts vendor calls.",
+      "monitor": "No FIQ callback/shared-memory ABI handler; a0=0xffffffff",
+      "kernel_result_handling": "ARM helper checks unknown return and returns error, but rk_fiq_debugger ARM_PSCI setup ignores its return then sets print port; unsupported console path must not be assumed usable.",
+      "after_gated_DTB": "Disabled DT node causes rk_fiq_debugger_init return-ENODEV before register or vendor calls; removes selected serial console path."
+    },
+    {
+      "service": "PSCI_CPU_ON",
+      "id": "0x84000003",
+      "arguments": [
+        "cpu_logical_map(cpu)",
+        "physical secondary_startup entry",
+        "0 context"
+      ],
+      "phase": "secondary CPU boot",
+      "kernel_site": "arch/arm/kernel/setup.c:850-858; psci_smp.c:49-56; psci.c:150-157",
+      "compiled_evidence": "psci_boot_secondary, psci_cpu_on in vmlinux; psci_cpu_on strong T in tee.elf",
+      "original_DTB_reachability": "PSCI cpu_on property parsed without firmware feature query, selects psci_smp_ops",
+      "monitor": "Strong RK322x implementation for cores1..3; returns PSCI success/invalidparameters/denied after reset/entry setup",
+      "kernel_result_handling": "PSCI error converted to Linux errno; actual hardware secondary boot untested",
+      "after_gated_DTB": "unchanged"
+    },
+    {
+      "service": "PSCI_CPU_OFF",
+      "id": "0x84000002",
+      "arguments": [
+        "power_state=0x10000 in legacy kernel wrapper",
+        "0",
+        "0"
+      ],
+      "phase": "CPU hotplug/offline and suspend preparation",
+      "kernel_site": "arch/arm/kernel/psci_smp.c:60-71; arch/arm/kernel/psci.c:139-147",
+      "compiled_evidence": "CONFIG_HOTPLUG_CPU=y; psci_cpu_die in vmlinux, psci_cpu_off strong T in tee.elf",
+      "original_DTB_reachability": "PSCI cpu_off property present",
+      "monitor": "Strong RK322x implementation ignores unused register args and parks nonboot core; core0 invalid; firmware success path does not return",
+      "kernel_result_handling": "Returning from cpu_off panics target CPU; no runtime test",
+      "after_gated_DTB": "unchanged"
+    },
+    {
+      "service": "PSCI_CPU_SUSPEND",
+      "id": "0x84000001",
+      "arguments": [
+        "packed powerdown state0x10000",
+        "physical cpu_resume",
+        "0 context"
+      ],
+      "phase": "system mem suspend, not the CortexA9 WFI idle driver",
+      "kernel_site": "arch/arm/mach-rockchip/rockchip_pm.c:404-440,477-494; arch/arm/kernel/psci.c:127-136",
+      "compiled_evidence": "rkpm_enter and psci_cpu_suspend in vmlinux; weak W psci_cpu_suspend in tee.elf, actual disassembly movr0,0xffffffff/bxlr",
+      "original_DTB_reachability": "cpu_suspend property creates a non-null psci_ops pointer without checking support; CONFIG_SUSPEND/PM_AUTOSLEEP=y",
+      "monitor": "Weak NotSupported -1; RK322x psci_features excludes CPU_SUSPEND",
+      "kernel_result_handling": "Wrapper maps-1 to-EOPNOTSUPP; rkpm_enter then discards cpu_suspend return and reports0. Supplemental source patch propagates result after finish callback; actual TU compiles but no full new kernel link.",
+      "after_gated_DTB": "unchanged, still unsupported; kernel error-propagation patch does not implement service"
+    },
+    {
+      "service": "REMOTECTL_CFG",
+      "id": "0x8200000b",
+      "arguments": [
+        "0xf0 IRQ,0xf1 PWM,0xf2 powerkey,0xf4 enable or0xf3 wakequery",
+        "IRQ/channel/key/value",
+        "0"
+      ],
+      "phase": "remote-control probe / resume",
+      "kernel_site": "drivers/input/remotectl/rockchip_pwm_remotectl.c:528-570,612-620",
+      "compiled_evidence": "CONFIG_ROCKCHIP_REMOTECTL_PWM=y",
+      "original_DTB_reachability": "Current PWM node lacks remote_support_psci, so source exits before SIP calls. If enabled by later DTS, driver checks initial IRQ call error and falls back to kernel PWM parser.",
+      "monitor": "No vendor remote handler",
+      "kernel_result_handling": "Initial vendor error clears support_psci and retains kernel PWM parsing; not proof IR mapping/physical support",
+      "after_gated_DTB": "unchanged"
+    },
+    {
+      "service": "VPU_RESET",
+      "id": "0x8200000c",
+      "arguments": [
+        "0",
+        "0",
+        "0"
+      ],
+      "phase": "video-codec reset recovery",
+      "kernel_site": "arch/arm/mach-rockchip/vcodec_service.c:875-909",
+      "compiled_evidence": "CONFIG_RK_VCODEC=y; source call guarded CONFIG_RESET_CONTROLLER",
+      "original_DTB_reachability": "Conditional after active vcodec reset and failed PMU idle request, not unconditional init path",
+      "monitor": "No vendor VPU reset handler",
+      "kernel_result_handling": "SIP result ignored; hardware decode/error recovery remains unverified",
+      "after_gated_DTB": "unchanged; media drivers need separate integration review"
+    }
+  ],
+  "CPU_IDLE_clarification": "CONFIG_CPU_IDLE=y includes local CortexA9-only WFI driver, which returns-ENODEV for CortexA7. This is not evidence that PSCI CPU_SUSPEND is exercised in idle.",
+  "unexamined_definitions": "ACCESS_REG,SMEM,etc wrappers/IDs exist in headers, but this bounded audit does not assert all possible vendor consumers in the whole kernel are absent.",
+  "limits": [
+    "No monitor or kernel execution; compiled symbol existence alone is not runtime reachability.",
+    "DT filtering removes two known consumers but not all vendor service paths.",
+    "No production secure-monitor ABI compatibility, full kernel relink, Android boot or physical board approval.",
+    "No new board details or proprietary loader were assumed.",
+    "No GitHub Actions queried or executed."
+  ]
+}

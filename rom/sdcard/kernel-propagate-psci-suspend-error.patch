@@ -1,0 +1,17 @@
+--- a/arch/arm/mach-rockchip/rockchip_pm.c
++++ b/arch/arm/mach-rockchip/rockchip_pm.c
+@@ -484,10 +484,12 @@
+ 
+ #ifdef CONFIG_ARM_PSCI
+ 	if (psci_suspend_available()) {
++		int ret;
++
+ 		RKPM_DDR_FUN(prepare);
+-		cpu_suspend(0, rk_lpmode_enter);
++		ret = cpu_suspend(0, rk_lpmode_enter);
+ 		RKPM_DDR_FUN(finish);
+-		return 0;
++		return ret;
+ 	}
+ #endif
+         RKPM_DDR_FUN(prepare);   

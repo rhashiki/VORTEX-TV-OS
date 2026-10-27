@@ -32,6 +32,11 @@ Não integrar esse par sem corrigir e validar a interface. A ausência de
 `hardware/arm` no layout proposto também importa: um checkout residual desse
 path altera o ramo gráfico escolhido por wildcard.
 
+O [patchset gráfico posterior](graphics/README.md) corrige o layout medido
+no header, torna a seleção Mali400 explícita para RK322x e retira três
+cópias vendor conflitantes. Seus quatro objetos gralloc foram compilados,
+mas o link Android, a ABI dos blobs e a execução continuam pendentes.
+
 [Pesquisa e provas de layout ARM](../../docs/validation/2026-10-26-aosp-bootloader/platform/PLATFORM_R6_FINDINGS.md)
 detalham os pins, includes, alternativas excluídas e bloqueios. A composição
 foi feita nas fontes disponíveis, sem novos pedidos de diagnóstico ao dono.

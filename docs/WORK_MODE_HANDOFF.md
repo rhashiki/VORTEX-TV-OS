@@ -51,6 +51,15 @@ are not SD media. The [experimental platform overlay](../rom/platform-reference/
 has a measured framebuffer ABI mismatch and is not an approved BSP.
 See [the combined report](VALIDATION_2026-10-26_AOSP_BOOTLOADER.md) before continuing.
 
+The [27/10 continuation](VALIDATION_2026-10-27_GRAPHICS_MONITOR.md) adds opt-in
+graphics patches matching the measured framebuffer declaration to the kernel,
+four manually compiled ARM gralloc objects, deterministic source selection and
+removal of three conflicting vendor HAL copies. It is not an Android HAL link.
+The unchanged AOSP APK also passed the full upload/confirmation/Home-launch
+flow in API25. A supplemental DTB disables two incompatible legacy SIP consumers;
+it leaves console, monitor reservations and suspend integration open. The
+suspend errno patch was compiled as an object only, absent from the old Image.
+
 Use a cloud computer terminal (if available) to clone main and compile the native Vortex Android APK, run complete local automated checks and an Android emulator for functional tests. Investigate available AOSP 7.1.2 / Rockchip RK322x build dependencies and produce an honest report on whether a complete ROM is feasible on the available compute.
 
 ## Required tooling

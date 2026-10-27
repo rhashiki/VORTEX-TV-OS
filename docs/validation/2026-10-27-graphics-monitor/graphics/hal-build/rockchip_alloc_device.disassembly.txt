@@ -1,0 +1,516 @@
+
+/workspace/build01-graphics-next/graphics/hal-build/rockchip_alloc_device.o:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <_ZL18android_atomic_incPVi>:
+   0:	b480      	push	{r7}
+   2:	b085      	sub	sp, #20
+   4:	af00      	add	r7, sp, #0
+   6:	6078      	str	r0, [r7, #4]
+   8:	687b      	ldr	r3, [r7, #4]
+   a:	60fb      	str	r3, [r7, #12]
+   c:	68fb      	ldr	r3, [r7, #12]
+   e:	f3bf 8f5b 	dmb	ish
+  12:	e853 2f00 	ldrex	r2, [r3]
+  16:	f102 0101 	add.w	r1, r2, #1
+  1a:	e843 1000 	strex	r0, r1, [r3]
+  1e:	2800      	cmp	r0, #0
+  20:	d1f7      	bne.n	12 <_ZL18android_atomic_incPVi+0x12>
+  22:	4613      	mov	r3, r2
+  24:	4618      	mov	r0, r3
+  26:	3714      	adds	r7, #20
+  28:	46bd      	mov	sp, r7
+  2a:	f85d 7b04 	ldr.w	r7, [sp], #4
+  2e:	4770      	bx	lr
+
+00000030 <_ZL18android_atomic_decPVi>:
+  30:	b480      	push	{r7}
+  32:	b085      	sub	sp, #20
+  34:	af00      	add	r7, sp, #0
+  36:	6078      	str	r0, [r7, #4]
+  38:	687b      	ldr	r3, [r7, #4]
+  3a:	60fb      	str	r3, [r7, #12]
+  3c:	68fb      	ldr	r3, [r7, #12]
+  3e:	f3bf 8f5b 	dmb	ish
+  42:	e853 2f00 	ldrex	r2, [r3]
+  46:	f102 31ff 	add.w	r1, r2, #4294967295	; 0xffffffff
+  4a:	e843 1000 	strex	r0, r1, [r3]
+  4e:	2800      	cmp	r0, #0
+  50:	d1f7      	bne.n	42 <_ZL18android_atomic_decPVi+0x12>
+  52:	4613      	mov	r3, r2
+  54:	4618      	mov	r0, r3
+  56:	3714      	adds	r7, #20
+  58:	46bd      	mov	sp, r7
+  5a:	f85d 7b04 	ldr.w	r7, [sp], #4
+  5e:	4770      	bx	lr
+
+00000060 <_Z37rockchip_get_handle_type_by_heap_maskj>:
+  60:	b580      	push	{r7, lr}
+  62:	b086      	sub	sp, #24
+  64:	af02      	add	r7, sp, #8
+  66:	6078      	str	r0, [r7, #4]
+  68:	2300      	movs	r3, #0
+  6a:	60fb      	str	r3, [r7, #12]
+  6c:	687b      	ldr	r3, [r7, #4]
+  6e:	3b01      	subs	r3, #1
+  70:	2b0f      	cmp	r3, #15
+  72:	d831      	bhi.n	d8 <_Z37rockchip_get_handle_type_by_heap_maskj+0x78>
+  74:	a202      	add	r2, pc, #8	; (adr r2, 80 <_Z37rockchip_get_handle_type_by_heap_maskj+0x20>)
+  76:	f852 3023 	ldr.w	r3, [r2, r3, lsl #2]
+  7a:	441a      	add	r2, r3
+  7c:	4710      	bx	r2
+  7e:	bf00      	nop
+  80:	00000041 	.word	0x00000041
+  84:	00000047 	.word	0x00000047
+  88:	00000059 	.word	0x00000059
+  8c:	0000004d 	.word	0x0000004d
+  90:	00000059 	.word	0x00000059
+  94:	00000059 	.word	0x00000059
+  98:	00000059 	.word	0x00000059
+  9c:	00000059 	.word	0x00000059
+  a0:	00000059 	.word	0x00000059
+  a4:	00000059 	.word	0x00000059
+  a8:	00000059 	.word	0x00000059
+  ac:	00000059 	.word	0x00000059
+  b0:	00000059 	.word	0x00000059
+  b4:	00000059 	.word	0x00000059
+  b8:	00000059 	.word	0x00000059
+  bc:	00000053 	.word	0x00000053
+  c0:	2301      	movs	r3, #1
+  c2:	60fb      	str	r3, [r7, #12]
+  c4:	e018      	b.n	f8 <_Z37rockchip_get_handle_type_by_heap_maskj+0x98>
+  c6:	2301      	movs	r3, #1
+  c8:	60fb      	str	r3, [r7, #12]
+  ca:	e015      	b.n	f8 <_Z37rockchip_get_handle_type_by_heap_maskj+0x98>
+  cc:	2300      	movs	r3, #0
+  ce:	60fb      	str	r3, [r7, #12]
+  d0:	e012      	b.n	f8 <_Z37rockchip_get_handle_type_by_heap_maskj+0x98>
+  d2:	2300      	movs	r3, #0
+  d4:	60fb      	str	r3, [r7, #12]
+  d6:	e00f      	b.n	f8 <_Z37rockchip_get_handle_type_by_heap_maskj+0x98>
+  d8:	687b      	ldr	r3, [r7, #4]
+  da:	9301      	str	r3, [sp, #4]
+  dc:	2352      	movs	r3, #82	; 0x52
+  de:	9300      	str	r3, [sp, #0]
+  e0:	4b08      	ldr	r3, [pc, #32]	; (104 <_Z37rockchip_get_handle_type_by_heap_maskj+0xa4>)
+  e2:	447b      	add	r3, pc
+  e4:	4a08      	ldr	r2, [pc, #32]	; (108 <_Z37rockchip_get_handle_type_by_heap_maskj+0xa8>)
+  e6:	447a      	add	r2, pc
+  e8:	4908      	ldr	r1, [pc, #32]	; (10c <_Z37rockchip_get_handle_type_by_heap_maskj+0xac>)
+  ea:	4479      	add	r1, pc
+  ec:	2006      	movs	r0, #6
+  ee:	f7ff fffe 	bl	0 <__android_log_print>
+			ee: R_ARM_THM_CALL	__android_log_print
+  f2:	2300      	movs	r3, #0
+  f4:	60fb      	str	r3, [r7, #12]
+  f6:	bf00      	nop
+  f8:	68fb      	ldr	r3, [r7, #12]
+  fa:	4618      	mov	r0, r3
+  fc:	3710      	adds	r7, #16
+  fe:	46bd      	mov	sp, r7
+ 100:	bd80      	pop	{r7, pc}
+ 102:	bf00      	nop
+ 104:	0000018e 	.word	0x0000018e
+			104: R_ARM_REL32	.rodata
+ 108:	00000032 	.word	0x00000032
+			108: R_ARM_REL32	.rodata
+ 10c:	0000004a 	.word	0x0000004a
+			10c: R_ARM_REL32	.rodata
+
+00000110 <_Z25rockchip_get_int_propertyPKcS0_>:
+ 110:	b580      	push	{r7, lr}
+ 112:	b09a      	sub	sp, #104	; 0x68
+ 114:	af00      	add	r7, sp, #0
+ 116:	6078      	str	r0, [r7, #4]
+ 118:	6039      	str	r1, [r7, #0]
+ 11a:	2300      	movs	r3, #0
+ 11c:	667b      	str	r3, [r7, #100]	; 0x64
+ 11e:	687b      	ldr	r3, [r7, #4]
+ 120:	2b00      	cmp	r3, #0
+ 122:	d002      	beq.n	12a <_Z25rockchip_get_int_propertyPKcS0_+0x1a>
+ 124:	683b      	ldr	r3, [r7, #0]
+ 126:	2b00      	cmp	r3, #0
+ 128:	d102      	bne.n	130 <_Z25rockchip_get_int_propertyPKcS0_+0x20>
+ 12a:	f04f 33ff 	mov.w	r3, #4294967295	; 0xffffffff
+ 12e:	e00d      	b.n	14c <_Z25rockchip_get_int_propertyPKcS0_+0x3c>
+ 130:	f107 0308 	add.w	r3, r7, #8
+ 134:	683a      	ldr	r2, [r7, #0]
+ 136:	4619      	mov	r1, r3
+ 138:	6878      	ldr	r0, [r7, #4]
+ 13a:	f7ff fffe 	bl	0 <property_get>
+			13a: R_ARM_THM_CALL	property_get
+ 13e:	f107 0308 	add.w	r3, r7, #8
+ 142:	4618      	mov	r0, r3
+ 144:	f7ff fffe 	bl	0 <atoi>
+			144: R_ARM_THM_CALL	atoi
+ 148:	6678      	str	r0, [r7, #100]	; 0x64
+ 14a:	6e7b      	ldr	r3, [r7, #100]	; 0x64
+ 14c:	4618      	mov	r0, r3
+ 14e:	3768      	adds	r7, #104	; 0x68
+ 150:	46bd      	mov	sp, r7
+ 152:	bd80      	pop	{r7, pc}
+
+00000154 <_Z12rockchip_logi>:
+ 154:	b580      	push	{r7, lr}
+ 156:	b082      	sub	sp, #8
+ 158:	af00      	add	r7, sp, #0
+ 15a:	6078      	str	r0, [r7, #4]
+ 15c:	687b      	ldr	r3, [r7, #4]
+ 15e:	2b00      	cmp	r3, #0
+ 160:	d00b      	beq.n	17a <_Z12rockchip_logi+0x26>
+ 162:	4b09      	ldr	r3, [pc, #36]	; (188 <_Z12rockchip_logi+0x34>)
+ 164:	447b      	add	r3, pc
+ 166:	4619      	mov	r1, r3
+ 168:	4b08      	ldr	r3, [pc, #32]	; (18c <_Z12rockchip_logi+0x38>)
+ 16a:	447b      	add	r3, pc
+ 16c:	4618      	mov	r0, r3
+ 16e:	f7ff fffe 	bl	110 <_Z25rockchip_get_int_propertyPKcS0_>
+			16e: R_ARM_THM_CALL	_Z25rockchip_get_int_propertyPKcS0_
+ 172:	4602      	mov	r2, r0
+ 174:	4b06      	ldr	r3, [pc, #24]	; (190 <_Z12rockchip_logi+0x3c>)
+ 176:	447b      	add	r3, pc
+ 178:	601a      	str	r2, [r3, #0]
+ 17a:	4b06      	ldr	r3, [pc, #24]	; (194 <_Z12rockchip_logi+0x40>)
+ 17c:	447b      	add	r3, pc
+ 17e:	681b      	ldr	r3, [r3, #0]
+ 180:	4618      	mov	r0, r3
+ 182:	3708      	adds	r7, #8
+ 184:	46bd      	mov	sp, r7
+ 186:	bd80      	pop	{r7, pc}
+ 188:	00000054 	.word	0x00000054
+			188: R_ARM_REL32	.rodata
+ 18c:	00000056 	.word	0x00000056
+			18c: R_ARM_REL32	.rodata
+ 190:	00000016 	.word	0x00000016
+			190: R_ARM_REL32	.bss
+ 194:	00000014 	.word	0x00000014
+			194: R_ARM_REL32	.bss
+
+00000198 <_Z20rockchip_set_versionv>:
+ 198:	b5f0      	push	{r4, r5, r6, r7, lr}
+ 19a:	b09b      	sub	sp, #108	; 0x6c
+ 19c:	af00      	add	r7, sp, #0
+ 19e:	1d3b      	adds	r3, r7, #4
+ 1a0:	2264      	movs	r2, #100	; 0x64
+ 1a2:	2100      	movs	r1, #0
+ 1a4:	4618      	mov	r0, r3
+ 1a6:	f7ff fffe 	bl	0 <memset>
+			1a6: R_ARM_THM_CALL	memset
+ 1aa:	1d3b      	adds	r3, r7, #4
+ 1ac:	4618      	mov	r0, r3
+ 1ae:	f7ff fffe 	bl	0 <strlen>
+			1ae: R_ARM_THM_CALL	strlen
+ 1b2:	4603      	mov	r3, r0
+ 1b4:	461a      	mov	r2, r3
+ 1b6:	1d3b      	adds	r3, r7, #4
+ 1b8:	4413      	add	r3, r2
+ 1ba:	4a11      	ldr	r2, [pc, #68]	; (200 <_Z20rockchip_set_versionv+0x68>)
+ 1bc:	447a      	add	r2, pc
+ 1be:	4614      	mov	r4, r2
+ 1c0:	469c      	mov	ip, r3
+ 1c2:	f104 0e20 	add.w	lr, r4, #32
+ 1c6:	4665      	mov	r5, ip
+ 1c8:	4626      	mov	r6, r4
+ 1ca:	ce0f      	ldmia	r6!, {r0, r1, r2, r3}
+ 1cc:	6028      	str	r0, [r5, #0]
+ 1ce:	6069      	str	r1, [r5, #4]
+ 1d0:	60aa      	str	r2, [r5, #8]
+ 1d2:	60eb      	str	r3, [r5, #12]
+ 1d4:	3410      	adds	r4, #16
+ 1d6:	f10c 0c10 	add.w	ip, ip, #16
+ 1da:	4574      	cmp	r4, lr
+ 1dc:	d1f3      	bne.n	1c6 <_Z20rockchip_set_versionv+0x2e>
+ 1de:	4663      	mov	r3, ip
+ 1e0:	4622      	mov	r2, r4
+ 1e2:	6810      	ldr	r0, [r2, #0]
+ 1e4:	6018      	str	r0, [r3, #0]
+ 1e6:	1d3b      	adds	r3, r7, #4
+ 1e8:	4619      	mov	r1, r3
+ 1ea:	4b06      	ldr	r3, [pc, #24]	; (204 <_Z20rockchip_set_versionv+0x6c>)
+ 1ec:	447b      	add	r3, pc
+ 1ee:	4618      	mov	r0, r3
+ 1f0:	f7ff fffe 	bl	0 <property_set>
+			1f0: R_ARM_THM_CALL	property_set
+ 1f4:	2300      	movs	r3, #0
+ 1f6:	4618      	mov	r0, r3
+ 1f8:	376c      	adds	r7, #108	; 0x6c
+ 1fa:	46bd      	mov	sp, r7
+ 1fc:	bdf0      	pop	{r4, r5, r6, r7, pc}
+ 1fe:	bf00      	nop
+ 200:	00000088 	.word	0x00000088
+			200: R_ARM_REL32	.rodata
+ 204:	00000080 	.word	0x00000080
+			204: R_ARM_REL32	.rodata
+
+00000208 <_Z23rockchip_alloc_ion_openP16private_module_t>:
+ 208:	b580      	push	{r7, lr}
+ 20a:	b086      	sub	sp, #24
+ 20c:	af02      	add	r7, sp, #8
+ 20e:	6078      	str	r0, [r7, #4]
+ 210:	2300      	movs	r3, #0
+ 212:	60fb      	str	r3, [r7, #12]
+ 214:	687b      	ldr	r3, [r7, #4]
+ 216:	2b00      	cmp	r3, #0
+ 218:	d10f      	bne.n	23a <_Z23rockchip_alloc_ion_openP16private_module_t+0x32>
+ 21a:	687b      	ldr	r3, [r7, #4]
+ 21c:	9301      	str	r3, [sp, #4]
+ 21e:	2380      	movs	r3, #128	; 0x80
+ 220:	9300      	str	r3, [sp, #0]
+ 222:	4b28      	ldr	r3, [pc, #160]	; (2c4 <_Z23rockchip_alloc_ion_openP16private_module_t+0xbc>)
+ 224:	447b      	add	r3, pc
+ 226:	4a28      	ldr	r2, [pc, #160]	; (2c8 <_Z23rockchip_alloc_ion_openP16private_module_t+0xc0>)
+ 228:	447a      	add	r2, pc
+ 22a:	4928      	ldr	r1, [pc, #160]	; (2cc <_Z23rockchip_alloc_ion_openP16private_module_t+0xc4>)
+ 22c:	4479      	add	r1, pc
+ 22e:	2006      	movs	r0, #6
+ 230:	f7ff fffe 	bl	0 <__android_log_print>
+			230: R_ARM_THM_CALL	__android_log_print
+ 234:	f06f 0315 	mvn.w	r3, #21
+ 238:	e040      	b.n	2bc <_Z23rockchip_alloc_ion_openP16private_module_t+0xb4>
+ 23a:	687b      	ldr	r3, [r7, #4]
+ 23c:	f8d3 30c8 	ldr.w	r3, [r3, #200]	; 0xc8
+ 240:	2b00      	cmp	r3, #0
+ 242:	dc33      	bgt.n	2ac <_Z23rockchip_alloc_ion_openP16private_module_t+0xa4>
+ 244:	f7ff fffe 	bl	0 <ion_open>
+			244: R_ARM_THM_CALL	ion_open
+ 248:	4602      	mov	r2, r0
+ 24a:	687b      	ldr	r3, [r7, #4]
+ 24c:	f8c3 20c8 	str.w	r2, [r3, #200]	; 0xc8
+ 250:	687b      	ldr	r3, [r7, #4]
+ 252:	f8d3 30c8 	ldr.w	r3, [r3, #200]	; 0xc8
+ 256:	2b00      	cmp	r3, #0
+ 258:	da18      	bge.n	28c <_Z23rockchip_alloc_ion_openP16private_module_t+0x84>
+ 25a:	f7ff fffe 	bl	0 <__errno>
+			25a: R_ARM_THM_CALL	__errno
+ 25e:	4603      	mov	r3, r0
+ 260:	681b      	ldr	r3, [r3, #0]
+ 262:	4618      	mov	r0, r3
+ 264:	f7ff fffe 	bl	0 <strerror>
+			264: R_ARM_THM_CALL	strerror
+ 268:	4603      	mov	r3, r0
+ 26a:	9301      	str	r3, [sp, #4]
+ 26c:	2388      	movs	r3, #136	; 0x88
+ 26e:	9300      	str	r3, [sp, #0]
+ 270:	4b17      	ldr	r3, [pc, #92]	; (2d0 <_Z23rockchip_alloc_ion_openP16private_module_t+0xc8>)
+ 272:	447b      	add	r3, pc
+ 274:	4a17      	ldr	r2, [pc, #92]	; (2d4 <_Z23rockchip_alloc_ion_openP16private_module_t+0xcc>)
+ 276:	447a      	add	r2, pc
+ 278:	4917      	ldr	r1, [pc, #92]	; (2d8 <_Z23rockchip_alloc_ion_openP16private_module_t+0xd0>)
+ 27a:	4479      	add	r1, pc
+ 27c:	2006      	movs	r0, #6
+ 27e:	f7ff fffe 	bl	0 <__android_log_print>
+			27e: R_ARM_THM_CALL	__android_log_print
+ 282:	687b      	ldr	r3, [r7, #4]
+ 284:	f8d3 30c8 	ldr.w	r3, [r3, #200]	; 0xc8
+ 288:	60fb      	str	r3, [r7, #12]
+ 28a:	e016      	b.n	2ba <_Z23rockchip_alloc_ion_openP16private_module_t+0xb2>
+ 28c:	687b      	ldr	r3, [r7, #4]
+ 28e:	33cc      	adds	r3, #204	; 0xcc
+ 290:	4618      	mov	r0, r3
+ 292:	f7ff feb5 	bl	0 <_ZL18android_atomic_incPVi>
+ 296:	687b      	ldr	r3, [r7, #4]
+ 298:	f8d3 30c8 	ldr.w	r3, [r3, #200]	; 0xc8
+ 29c:	4a0f      	ldr	r2, [pc, #60]	; (2dc <_Z23rockchip_alloc_ion_openP16private_module_t+0xd4>)
+ 29e:	447a      	add	r2, pc
+ 2a0:	490f      	ldr	r1, [pc, #60]	; (2e0 <_Z23rockchip_alloc_ion_openP16private_module_t+0xd8>)
+ 2a2:	4479      	add	r1, pc
+ 2a4:	2004      	movs	r0, #4
+ 2a6:	f7ff fffe 	bl	0 <__android_log_print>
+			2a6: R_ARM_THM_CALL	__android_log_print
+ 2aa:	e006      	b.n	2ba <_Z23rockchip_alloc_ion_openP16private_module_t+0xb2>
+ 2ac:	2300      	movs	r3, #0
+ 2ae:	60fb      	str	r3, [r7, #12]
+ 2b0:	687b      	ldr	r3, [r7, #4]
+ 2b2:	33cc      	adds	r3, #204	; 0xcc
+ 2b4:	4618      	mov	r0, r3
+ 2b6:	f7ff fea3 	bl	0 <_ZL18android_atomic_incPVi>
+ 2ba:	68fb      	ldr	r3, [r7, #12]
+ 2bc:	4618      	mov	r0, r3
+ 2be:	3710      	adds	r7, #16
+ 2c0:	46bd      	mov	sp, r7
+ 2c2:	bd80      	pop	{r7, pc}
+ 2c4:	00000244 	.word	0x00000244
+			2c4: R_ARM_REL32	.rodata
+ 2c8:	0000011c 	.word	0x0000011c
+			2c8: R_ARM_REL32	.rodata
+ 2cc:	00000148 	.word	0x00000148
+			2cc: R_ARM_REL32	.rodata
+ 2d0:	00000202 	.word	0x00000202
+			2d0: R_ARM_REL32	.rodata
+ 2d4:	00000116 	.word	0x00000116
+			2d4: R_ARM_REL32	.rodata
+ 2d8:	00000106 	.word	0x00000106
+			2d8: R_ARM_REL32	.rodata
+ 2dc:	00000116 	.word	0x00000116
+			2dc: R_ARM_REL32	.rodata
+ 2e0:	0000013a 	.word	0x0000013a
+			2e0: R_ARM_REL32	.rodata
+
+000002e4 <_Z24rockchip_alloc_ion_closeP16private_module_t>:
+ 2e4:	b580      	push	{r7, lr}
+ 2e6:	b086      	sub	sp, #24
+ 2e8:	af02      	add	r7, sp, #8
+ 2ea:	6078      	str	r0, [r7, #4]
+ 2ec:	2300      	movs	r3, #0
+ 2ee:	60fb      	str	r3, [r7, #12]
+ 2f0:	687b      	ldr	r3, [r7, #4]
+ 2f2:	2b00      	cmp	r3, #0
+ 2f4:	d111      	bne.n	31a <_Z24rockchip_alloc_ion_closeP16private_module_t+0x36>
+ 2f6:	f06f 0315 	mvn.w	r3, #21
+ 2fa:	60fb      	str	r3, [r7, #12]
+ 2fc:	687b      	ldr	r3, [r7, #4]
+ 2fe:	9301      	str	r3, [sp, #4]
+ 300:	239c      	movs	r3, #156	; 0x9c
+ 302:	9300      	str	r3, [sp, #0]
+ 304:	4b3c      	ldr	r3, [pc, #240]	; (3f8 <_Z24rockchip_alloc_ion_closeP16private_module_t+0x114>)
+ 306:	447b      	add	r3, pc
+ 308:	4a3c      	ldr	r2, [pc, #240]	; (3fc <_Z24rockchip_alloc_ion_closeP16private_module_t+0x118>)
+ 30a:	447a      	add	r2, pc
+ 30c:	493c      	ldr	r1, [pc, #240]	; (400 <_Z24rockchip_alloc_ion_closeP16private_module_t+0x11c>)
+ 30e:	4479      	add	r1, pc
+ 310:	2006      	movs	r0, #6
+ 312:	f7ff fffe 	bl	0 <__android_log_print>
+			312: R_ARM_THM_CALL	__android_log_print
+ 316:	68fb      	ldr	r3, [r7, #12]
+ 318:	e06a      	b.n	3f0 <_Z24rockchip_alloc_ion_closeP16private_module_t+0x10c>
+ 31a:	687b      	ldr	r3, [r7, #4]
+ 31c:	f8d3 30cc 	ldr.w	r3, [r3, #204]	; 0xcc
+ 320:	2b00      	cmp	r3, #0
+ 322:	dd09      	ble.n	338 <_Z24rockchip_alloc_ion_closeP16private_module_t+0x54>
+ 324:	687b      	ldr	r3, [r7, #4]
+ 326:	33cc      	adds	r3, #204	; 0xcc
+ 328:	4618      	mov	r0, r3
+ 32a:	f7ff fe81 	bl	30 <_ZL18android_atomic_decPVi>
+ 32e:	4603      	mov	r3, r0
+ 330:	2b01      	cmp	r3, #1
+ 332:	d101      	bne.n	338 <_Z24rockchip_alloc_ion_closeP16private_module_t+0x54>
+ 334:	2301      	movs	r3, #1
+ 336:	e000      	b.n	33a <_Z24rockchip_alloc_ion_closeP16private_module_t+0x56>
+ 338:	2300      	movs	r3, #0
+ 33a:	2b00      	cmp	r3, #0
+ 33c:	d037      	beq.n	3ae <_Z24rockchip_alloc_ion_closeP16private_module_t+0xca>
+ 33e:	687b      	ldr	r3, [r7, #4]
+ 340:	f8d3 30c8 	ldr.w	r3, [r3, #200]	; 0xc8
+ 344:	2b00      	cmp	r3, #0
+ 346:	dd0a      	ble.n	35e <_Z24rockchip_alloc_ion_closeP16private_module_t+0x7a>
+ 348:	687b      	ldr	r3, [r7, #4]
+ 34a:	f8d3 30c8 	ldr.w	r3, [r3, #200]	; 0xc8
+ 34e:	4618      	mov	r0, r3
+ 350:	f7ff fffe 	bl	0 <ion_close>
+			350: R_ARM_THM_CALL	ion_close
+ 354:	4603      	mov	r3, r0
+ 356:	2b00      	cmp	r3, #0
+ 358:	d001      	beq.n	35e <_Z24rockchip_alloc_ion_closeP16private_module_t+0x7a>
+ 35a:	2301      	movs	r3, #1
+ 35c:	e000      	b.n	360 <_Z24rockchip_alloc_ion_closeP16private_module_t+0x7c>
+ 35e:	2300      	movs	r3, #0
+ 360:	2b00      	cmp	r3, #0
+ 362:	d012      	beq.n	38a <_Z24rockchip_alloc_ion_closeP16private_module_t+0xa6>
+ 364:	f04f 33ff 	mov.w	r3, #4294967295	; 0xffffffff
+ 368:	60fb      	str	r3, [r7, #12]
+ 36a:	687b      	ldr	r3, [r7, #4]
+ 36c:	f8d3 30c8 	ldr.w	r3, [r3, #200]	; 0xc8
+ 370:	9301      	str	r3, [sp, #4]
+ 372:	23a3      	movs	r3, #163	; 0xa3
+ 374:	9300      	str	r3, [sp, #0]
+ 376:	4b23      	ldr	r3, [pc, #140]	; (404 <_Z24rockchip_alloc_ion_closeP16private_module_t+0x120>)
+ 378:	447b      	add	r3, pc
+ 37a:	4a23      	ldr	r2, [pc, #140]	; (408 <_Z24rockchip_alloc_ion_closeP16private_module_t+0x124>)
+ 37c:	447a      	add	r2, pc
+ 37e:	4923      	ldr	r1, [pc, #140]	; (40c <_Z24rockchip_alloc_ion_closeP16private_module_t+0x128>)
+ 380:	4479      	add	r1, pc
+ 382:	2006      	movs	r0, #6
+ 384:	f7ff fffe 	bl	0 <__android_log_print>
+			384: R_ARM_THM_CALL	__android_log_print
+ 388:	e001      	b.n	38e <_Z24rockchip_alloc_ion_closeP16private_module_t+0xaa>
+ 38a:	2300      	movs	r3, #0
+ 38c:	60fb      	str	r3, [r7, #12]
+ 38e:	687b      	ldr	r3, [r7, #4]
+ 390:	f8d3 30c8 	ldr.w	r3, [r3, #200]	; 0xc8
+ 394:	4a1e      	ldr	r2, [pc, #120]	; (410 <_Z24rockchip_alloc_ion_closeP16private_module_t+0x12c>)
+ 396:	447a      	add	r2, pc
+ 398:	491e      	ldr	r1, [pc, #120]	; (414 <_Z24rockchip_alloc_ion_closeP16private_module_t+0x130>)
+ 39a:	4479      	add	r1, pc
+ 39c:	2004      	movs	r0, #4
+ 39e:	f7ff fffe 	bl	0 <__android_log_print>
+			39e: R_ARM_THM_CALL	__android_log_print
+ 3a2:	687b      	ldr	r3, [r7, #4]
+ 3a4:	f04f 32ff 	mov.w	r2, #4294967295	; 0xffffffff
+ 3a8:	f8c3 20c8 	str.w	r2, [r3, #200]	; 0xc8
+ 3ac:	e01f      	b.n	3ee <_Z24rockchip_alloc_ion_closeP16private_module_t+0x10a>
+ 3ae:	687b      	ldr	r3, [r7, #4]
+ 3b0:	f8d3 30cc 	ldr.w	r3, [r3, #204]	; 0xcc
+ 3b4:	0fdb      	lsrs	r3, r3, #31
+ 3b6:	b2db      	uxtb	r3, r3
+ 3b8:	2b00      	cmp	r3, #0
+ 3ba:	d016      	beq.n	3ea <_Z24rockchip_alloc_ion_closeP16private_module_t+0x106>
+ 3bc:	687b      	ldr	r3, [r7, #4]
+ 3be:	f8d3 30cc 	ldr.w	r3, [r3, #204]	; 0xcc
+ 3c2:	9301      	str	r3, [sp, #4]
+ 3c4:	23ad      	movs	r3, #173	; 0xad
+ 3c6:	9300      	str	r3, [sp, #0]
+ 3c8:	4b13      	ldr	r3, [pc, #76]	; (418 <_Z24rockchip_alloc_ion_closeP16private_module_t+0x134>)
+ 3ca:	447b      	add	r3, pc
+ 3cc:	4a13      	ldr	r2, [pc, #76]	; (41c <_Z24rockchip_alloc_ion_closeP16private_module_t+0x138>)
+ 3ce:	447a      	add	r2, pc
+ 3d0:	4913      	ldr	r1, [pc, #76]	; (420 <_Z24rockchip_alloc_ion_closeP16private_module_t+0x13c>)
+ 3d2:	4479      	add	r1, pc
+ 3d4:	2006      	movs	r0, #6
+ 3d6:	f7ff fffe 	bl	0 <__android_log_print>
+			3d6: R_ARM_THM_CALL	__android_log_print
+ 3da:	687b      	ldr	r3, [r7, #4]
+ 3dc:	2200      	movs	r2, #0
+ 3de:	f8c3 20cc 	str.w	r2, [r3, #204]	; 0xcc
+ 3e2:	f04f 33ff 	mov.w	r3, #4294967295	; 0xffffffff
+ 3e6:	60fb      	str	r3, [r7, #12]
+ 3e8:	e001      	b.n	3ee <_Z24rockchip_alloc_ion_closeP16private_module_t+0x10a>
+ 3ea:	2300      	movs	r3, #0
+ 3ec:	60fb      	str	r3, [r7, #12]
+ 3ee:	68fb      	ldr	r3, [r7, #12]
+ 3f0:	4618      	mov	r0, r3
+ 3f2:	3710      	adds	r7, #16
+ 3f4:	46bd      	mov	sp, r7
+ 3f6:	bd80      	pop	{r7, pc}
+ 3f8:	000002c6 	.word	0x000002c6
+			3f8: R_ARM_REL32	.rodata
+ 3fc:	0000016e 	.word	0x0000016e
+			3fc: R_ARM_REL32	.rodata
+ 400:	0000019a 	.word	0x0000019a
+			400: R_ARM_REL32	.rodata
+ 404:	00000260 	.word	0x00000260
+			404: R_ARM_REL32	.rodata
+ 408:	00000194 	.word	0x00000194
+			408: R_ARM_REL32	.rodata
+ 40c:	00000134 	.word	0x00000134
+			40c: R_ARM_REL32	.rodata
+ 410:	000001aa 	.word	0x000001aa
+			410: R_ARM_REL32	.rodata
+ 414:	00000176 	.word	0x00000176
+			414: R_ARM_REL32	.rodata
+ 418:	00000222 	.word	0x00000222
+			418: R_ARM_REL32	.rodata
+ 41c:	0000019a 	.word	0x0000019a
+			41c: R_ARM_REL32	.rodata
+ 420:	000000f6 	.word	0x000000f6
+			420: R_ARM_REL32	.rodata
+
+00000424 <_Z29rockchip_heap_fix_by_platformPj>:
+ 424:	b480      	push	{r7}
+ 426:	b085      	sub	sp, #20
+ 428:	af00      	add	r7, sp, #0
+ 42a:	6078      	str	r0, [r7, #4]
+ 42c:	687b      	ldr	r3, [r7, #4]
+ 42e:	681b      	ldr	r3, [r3, #0]
+ 430:	60fb      	str	r3, [r7, #12]
+ 432:	687b      	ldr	r3, [r7, #4]
+ 434:	68fa      	ldr	r2, [r7, #12]
+ 436:	601a      	str	r2, [r3, #0]
+ 438:	2300      	movs	r3, #0
+ 43a:	4618      	mov	r0, r3
+ 43c:	3714      	adds	r7, #20
+ 43e:	46bd      	mov	sp, r7
+ 440:	f85d 7b04 	ldr.w	r7, [sp], #4
+ 444:	4770      	bx	lr
+ 446:	bf00      	nop

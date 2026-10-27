@@ -1,0 +1,40 @@
+In file included from /workspace/build01-graphics-next/graphics/contract_assert.c:2:0:
+/workspace/build01-graphics-next/graphics/expected-kernel-contract.h:58:14: error: size of array ‘require__rk_fb_win_cfg_data__size’ is negative
+ typedef char require__rk_fb_win_cfg_data__size[(sizeof(struct rk_fb_win_cfg_data)) == 908 ? 1 : -1];
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/build01-graphics-next/graphics/expected-kernel-contract.h:78:59: error: ‘struct rk_fb_win_cfg_data’ has no member named ‘wb_cfg’; did you mean ‘post_cfg’?
+ typedef char require__rk_fb_win_cfg_data__wb_cfg__offset[(__builtin_offsetof(struct rk_fb_win_cfg_data, wb_cfg)) == 888 ? 1 : -1];
+                                                           ^~~~~~~~~~~~~~~~~~
+/workspace/build01-graphics-next/graphics/expected-kernel-contract.h:79:96: error: ‘struct rk_fb_win_cfg_data’ has no member named ‘wb_cfg’; did you mean ‘post_cfg’?
+ typedef char require__rk_fb_win_cfg_data__wb_cfg__size[(sizeof(((struct rk_fb_win_cfg_data *)0)->wb_cfg)) == 20 ? 1 : -1];
+                                                                                                ^~
+/workspace/build01-graphics-next/graphics/expected-kernel-contract.h:80:50: error: invalid application of ‘sizeof’ to incomplete type ‘struct rk_fb_wb_cfg’
+ typedef char require__rk_fb_wb_cfg__size[(sizeof(struct rk_fb_wb_cfg)) == 20 ? 1 : -1];
+                                                  ^~~~~~
+/workspace/build01-graphics-next/graphics/expected-kernel-contract.h:81:56: error: invalid application of ‘__alignof__’ to incomplete type ‘struct rk_fb_wb_cfg’
+ typedef char require__rk_fb_wb_cfg__align[(__alignof__(struct rk_fb_wb_cfg)) == 4 ? 1 : -1];
+                                                        ^~~~~~
+/workspace/build01-graphics-next/graphics/expected-kernel-contract.h:82:84: error: invalid use of undefined type ‘struct rk_fb_wb_cfg’
+ typedef char require__rk_fb_wb_cfg__data_format__offset[(__builtin_offsetof(struct rk_fb_wb_cfg, data_format)) == 0 ? 1 : -1];
+                                                                                    ^~~~~~~~~~~~
+/workspace/build01-graphics-next/graphics/expected-kernel-contract.h:83:89: error: dereferencing pointer to incomplete type ‘struct rk_fb_wb_cfg’
+ typedef char require__rk_fb_wb_cfg__data_format__size[(sizeof(((struct rk_fb_wb_cfg *)0)->data_format)) == 1 ? 1 : -1];
+                                                                                         ^~
+/workspace/build01-graphics-next/graphics/expected-kernel-contract.h:84:79: error: invalid use of undefined type ‘struct rk_fb_wb_cfg’
+ typedef char require__rk_fb_wb_cfg__ion_fd__offset[(__builtin_offsetof(struct rk_fb_wb_cfg, ion_fd)) == 2 ? 1 : -1];
+                                                                               ^~~~~~~~~~~~
+/workspace/build01-graphics-next/graphics/expected-kernel-contract.h:86:81: error: invalid use of undefined type ‘struct rk_fb_wb_cfg’
+ typedef char require__rk_fb_wb_cfg__phy_addr__offset[(__builtin_offsetof(struct rk_fb_wb_cfg, phy_addr)) == 4 ? 1 : -1];
+                                                                                 ^~~~~~~~~~~~
+/workspace/build01-graphics-next/graphics/expected-kernel-contract.h:88:78: error: invalid use of undefined type ‘struct rk_fb_wb_cfg’
+ typedef char require__rk_fb_wb_cfg__xsize__offset[(__builtin_offsetof(struct rk_fb_wb_cfg, xsize)) == 8 ? 1 : -1];
+                                                                              ^~~~~~~~~~~~
+/workspace/build01-graphics-next/graphics/expected-kernel-contract.h:90:78: error: invalid use of undefined type ‘struct rk_fb_wb_cfg’
+ typedef char require__rk_fb_wb_cfg__ysize__offset[(__builtin_offsetof(struct rk_fb_wb_cfg, ysize)) == 10 ? 1 : -1];
+                                                                              ^~~~~~~~~~~~
+/workspace/build01-graphics-next/graphics/expected-kernel-contract.h:92:82: error: invalid use of undefined type ‘struct rk_fb_wb_cfg’
+ typedef char require__rk_fb_wb_cfg__reserved0__offset[(__builtin_offsetof(struct rk_fb_wb_cfg, reserved0)) == 12 ? 1 : -1];
+                                                                                  ^~~~~~~~~~~~
+/workspace/build01-graphics-next/graphics/expected-kernel-contract.h:94:82: error: invalid use of undefined type ‘struct rk_fb_wb_cfg’
+ typedef char require__rk_fb_wb_cfg__reversed1__offset[(__builtin_offsetof(struct rk_fb_wb_cfg, reversed1)) == 16 ? 1 : -1];
+                                                                                  ^~~~~~~~~~~~

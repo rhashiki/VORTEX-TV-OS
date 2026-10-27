@@ -1,0 +1,68 @@
+{
+  "scope": "Independent read-only source semantics review of explicitly pinned acquired graphics consumers only; no whole BSP or runtime approval.",
+  "source_files": [
+    {
+      "path": "/workspace/build01-sd-next/kernel-sd/source/include/linux/rk_fb.h",
+      "sha256": "6968d7098fef41f61bb41326cb05d2bc607f1888e726ae86f43fef9a4ada2e88",
+      "bytes": 25450
+    },
+    {
+      "path": "/workspace/build01-sd-next/kernel-sd/source/drivers/video/rockchip/rk_fb.c",
+      "sha256": "841b5d09b02c7193540b2688c3c0b6b386427b4d4454aa34d94730758733e0dd",
+      "bytes": 129458
+    },
+    {
+      "path": "/workspace/build01-sd-next/kernel-sd/source/drivers/video/rockchip/lcdc/rk322x_lcdc.c",
+      "sha256": "f94a000104c81904186a1db67effbfcab6c9555bc49d1e25fbc47d7091bea8ec",
+      "bytes": 102941
+    },
+    {
+      "path": "/workspace/build01-sd-next/kernel-sd/source/drivers/video/rockchip/lcdc/rk3368_lcdc.c",
+      "sha256": "3ac248457053fb9cb8e324c3ad44f2e18c7b926a0b5ed562318603159c1dc3ed",
+      "bytes": 153188
+    },
+    {
+      "path": "/workspace/build01-platform-next/research/rockchip-libhardware/include/hardware/rk_fh.h",
+      "sha256": "e3d3629b706628ab3d46423551e25f7c2dfacc6f8b10e8100ed1253bb7e3de6e",
+      "bytes": 1883
+    },
+    {
+      "path": "/workspace/build01-platform-next/research/mali-legacy/gralloc-rk3328/framebuffer_device.cpp",
+      "sha256": "8e625578b79ebc785f172b793bf426aa1c48a90d1c7f5de047e3fdc6e0c89d0f",
+      "bytes": 15637
+    },
+    {
+      "path": "/workspace/build01-platform-next/research/mali-legacy/hwcomposer-rk3328/rk_hwcomposer.cpp",
+      "sha256": "8b5fa54ac9235023f33aa72ce9e87d543feba2a1b845fd511151a7776cd01c03",
+      "bytes": 204513
+    },
+    {
+      "path": "/workspace/build01-platform-next/research/mali-legacy/hwcomposer-rk3328/rk_hwcomposer.h",
+      "sha256": "a89f13f02c6cacb05dcb6cf8d6e3c1ed139efee67907e611d9052be80acedba4",
+      "bytes": 16321
+    }
+  ],
+  "submission_sites": [
+    {
+      "repository": "rockchip-android/hardware-rockchip-libgralloc",
+      "revision": "c92fb8cd8becd57b025149f2861a2072b092ddea",
+      "path": "framebuffer_device.cpp",
+      "object_line": 109,
+      "full_zeroing_line": 110,
+      "ioctl_line": 128
+    },
+    {
+      "repository": "rockchip-android/hardware-rockchip-hwcomposer",
+      "revision": "d3ec43f2f751123ca5e7bda2d07eded4c6352a35",
+      "path": "rk_hwcomposer.cpp",
+      "object_line": 3194,
+      "full_zeroing_line": 3211,
+      "ioctl_line": 3715
+    }
+  ],
+  "old_tail_used_in_selected_consumers": false,
+  "selected_callers_initialize_whole_object": true,
+  "zero_tail_disables_kernel_writeback": true,
+  "minus_one_ion_fd_does_not_disable_writeback": true,
+  "requires_rebuilding_all_consumers": true
+}

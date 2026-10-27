@@ -1,0 +1,36 @@
+{
+  "base_commit": "d0c81ba009240cb9ab38d75d7e88190055349c2a",
+  "patch_sha256": "bd3a2e95546844cae005bd6ce385324b6ef06f99837f6c58f8f49bf84035e599",
+  "applied_header_sha256": "7f67fb4cd57aa0e2ff15a9f0ada81680e6e1b9ee01e83bb07476c338dfe67115",
+  "byte_identical_replay": true,
+  "commands": [
+    {
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "/workspace/build01-graphics-next/graphics/libhardware-rk-fb-kernel-contract.patch"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "/workspace/build01-graphics-next/graphics/libhardware-rk-fb-kernel-contract.patch"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ]
+}

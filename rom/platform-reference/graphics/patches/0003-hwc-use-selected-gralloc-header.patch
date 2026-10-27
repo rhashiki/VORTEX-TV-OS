@@ -1,0 +1,19 @@
+diff --git a/Android.mk b/Android.mk
+index 3baf66e..c5586c1 100755
+--- a/Android.mk
++++ b/Android.mk
+@@ -50,9 +50,14 @@ LOCAL_C_INCLUDES := \
+ 	$(AQROOT)/sdk/inc \
+ 	$(AQROOT)/hal/inc
+ 
++ifeq ($(strip $(TARGET_BOARD_PLATFORM)),rk322x)
++# Match the source gralloc selected for this profile, without UMP/Intel fallbacks.
++LOCAL_C_INCLUDES += hardware/rockchip/libgralloc
++else
+ LOCAL_C_INCLUDES += hardware/rockchip/libgralloc_ump
+ LOCAL_C_INCLUDES += hardware/rockchip/libgralloc
+ LOCAL_C_INCLUDES += hardware/intel/libgralloc
++endif
+ LOCAL_C_INCLUDES += hardware/rockchip/librkvpu
+ LOCAL_C_INCLUDES += system/core/include/system
+ LOCAL_LDFLAGS := \

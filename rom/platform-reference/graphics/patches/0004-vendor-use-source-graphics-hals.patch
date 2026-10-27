@@ -1,0 +1,15 @@
+diff --git a/device-vendor.mk b/device-vendor.mk
+index 125b688..b4e4b7a 100644
+--- a/device-vendor.mk
++++ b/device-vendor.mk
+@@ -14,10 +14,7 @@ PRODUCT_COPY_FILES += \
+     vendor/rockchip/rk322x/proprietary/lib/hw/audio.vr_bee_hidraw.default.so:system/lib/hw/audio.vr_bee_hidraw.default.so \
+     vendor/rockchip/rk322x/proprietary/lib/hw/audio_policy.default.so:system/lib/hw/audio_policy.default.so \
+     vendor/rockchip/rk322x/proprietary/lib/hw/camera.rk30board.so:system/lib/hw/camera.rk30board.so \
+-    vendor/rockchip/rk322x/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
+-    vendor/rockchip/rk322x/proprietary/lib/hw/gralloc.rk30board.so:system/lib/hw/gralloc.rk30board.so \
+     vendor/rockchip/rk322x/proprietary/lib/hw/hdmi_cec.rk30board.so:system/lib/hw/hdmi_cec.rk30board.so \
+-    vendor/rockchip/rk322x/proprietary/lib/hw/hwcomposer.rk30board.so:system/lib/hw/hwcomposer.rk30board.so \
+     vendor/rockchip/rk322x/proprietary/lib/hw/keystore.default.so:system/lib/hw/keystore.default.so \
+     vendor/rockchip/rk322x/proprietary/lib/hw/lights.rk322x.so:system/lib/hw/lights.rk322x.so \
+     vendor/rockchip/rk322x/proprietary/lib/hw/local_time.default.so:system/lib/hw/local_time.default.so \

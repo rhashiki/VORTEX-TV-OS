@@ -1,0 +1,93 @@
+{
+  "scope": "Standalone DT preprocessing/compilation using the prior recorded kernel command, no kernel rebuild. All new outputs are outside old source/out trees.",
+  "prior_command_file": "/workspace/build01-sd-next/kernel-sd/out/arch/arm/boot/dts/.rk3229-sdk-sd-reference.dtb.cmd",
+  "base_DTB_byte_identical_to_prior": true,
+  "commands": [
+    {
+      "label": "sd-original-cpp",
+      "command": [
+        "python3",
+        "/workspace/vortex-build/tools/legacy_kernel_gcc_wrapper.py",
+        "/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-gcc",
+        "-E",
+        "-Wp,-MD,/workspace/build01-graphics-next/monitor/sd-original.cpp.d",
+        "-nostdinc",
+        "-I/workspace/build01-sd-next/kernel-sd/source/arch/arm/boot/dts",
+        "-I/workspace/build01-sd-next/kernel-sd/source/arch/arm/boot/dts/include",
+        "-I/workspace/build01-sd-next/kernel-sd/source/include",
+        "-I/workspace/build01-sd-next/kernel-sd/out/include",
+        "-undef",
+        "-D__DTS__",
+        "-x",
+        "assembler-with-cpp",
+        "-o",
+        "/workspace/build01-graphics-next/monitor/sd-original.preprocessed.dts",
+        "/workspace/build01-sd-next/kernel-sd/source/arch/arm/boot/dts/rk3229-sdk-sd-reference.dts"
+      ],
+      "exit_code": 0,
+      "log": "sd-original.cpp.log"
+    },
+    {
+      "label": "sd-original-dtc",
+      "command": [
+        "/workspace/build01-sd-next/kernel-sd/out/scripts/dtc/dtc",
+        "-O",
+        "dtb",
+        "-o",
+        "/workspace/build01-graphics-next/monitor/sd-original.dtb",
+        "-b",
+        "0",
+        "-i",
+        "/workspace/build01-sd-next/kernel-sd/source/arch/arm/boot/dts",
+        "-d",
+        "/workspace/build01-graphics-next/monitor/sd-original.dtc.d",
+        "/workspace/build01-graphics-next/monitor/sd-original.preprocessed.dts"
+      ],
+      "exit_code": 0,
+      "log": "sd-original.dtc.log"
+    },
+    {
+      "label": "sd-monitor-gated-cpp",
+      "command": [
+        "python3",
+        "/workspace/vortex-build/tools/legacy_kernel_gcc_wrapper.py",
+        "/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-gcc",
+        "-E",
+        "-Wp,-MD,/workspace/build01-graphics-next/monitor/sd-monitor-gated.cpp.d",
+        "-nostdinc",
+        "-I/workspace/build01-sd-next/kernel-sd/source/arch/arm/boot/dts",
+        "-I/workspace/build01-sd-next/kernel-sd/source/arch/arm/boot/dts/include",
+        "-I/workspace/build01-sd-next/kernel-sd/source/include",
+        "-I/workspace/build01-sd-next/kernel-sd/out/include",
+        "-undef",
+        "-D__DTS__",
+        "-x",
+        "assembler-with-cpp",
+        "-o",
+        "/workspace/build01-graphics-next/monitor/sd-monitor-gated.preprocessed.dts",
+        "/workspace/build01-graphics-next/monitor/rk3229-sdk-sd-monitor-gated.dts"
+      ],
+      "exit_code": 0,
+      "log": "sd-monitor-gated.cpp.log"
+    },
+    {
+      "label": "sd-monitor-gated-dtc",
+      "command": [
+        "/workspace/build01-sd-next/kernel-sd/out/scripts/dtc/dtc",
+        "-O",
+        "dtb",
+        "-o",
+        "/workspace/build01-graphics-next/monitor/sd-monitor-gated.dtb",
+        "-b",
+        "0",
+        "-i",
+        "/workspace/build01-sd-next/kernel-sd/source/arch/arm/boot/dts",
+        "-d",
+        "/workspace/build01-graphics-next/monitor/sd-monitor-gated.dtc.d",
+        "/workspace/build01-graphics-next/monitor/sd-monitor-gated.preprocessed.dts"
+      ],
+      "exit_code": 0,
+      "log": "sd-monitor-gated.dtc.log"
+    }
+  ]
+}

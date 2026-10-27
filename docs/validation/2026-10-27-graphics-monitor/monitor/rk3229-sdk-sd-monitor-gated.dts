@@ -1,0 +1,19 @@
+/*
+ * Supplemental source-only gating for the open OP-TEE RK322x experiment.
+ * Layer on the existing constrained SD reference, preserving that artifact.
+ * The open monitor does not implement the legacy Rockchip FIQ/DDR SIP ABI.
+ * This only disables those two DT-selected consumers; it does not establish
+ * monitor/kernel compatibility, reserve monitor RAM or solve system suspend.
+ * It is not a verified R329Q_V8.0 description or a bootable Android image.
+ */
+#include "rk3229-sdk-sd-reference.dts"
+
+/ {
+	fiq-debugger {
+		status = "disabled";
+	};
+};
+
+&clk_ddr_dvfs_table {
+	status = "disabled";
+};

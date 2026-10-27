@@ -1,0 +1,5 @@
+/workspace/build01-platform-next/research/mali-legacy/gralloc-rk3328/framebuffer_device.cpp:128:		if (ioctl(m->framebuffer->fd, RK_FBIOSET_CONFIG_DONE, &fb_info) == -1)
+/workspace/build01-platform-next/research/rockchip-libhardware/include/hardware/hardware.h:28:#define RK_FBIOSET_CONFIG_DONE         0x4628
+/workspace/build01-platform-next/research/rockchip-libhardware/include/hardware/rk_fh.h:33:struct rk_lcdc_post_cfg{
+/workspace/build01-platform-next/research/rockchip-libhardware/include/hardware/rk_fh.h:77:	struct  rk_lcdc_post_cfg post_cfg;
+/workspace/build01-platform-next/research/mali-legacy/hwcomposer-rk3328/rk_hwcomposer.cpp:3715:        if(ioctl(context->fbFd, RK_FBIOSET_CONFIG_DONE, &fb_info))

@@ -1,0 +1,8 @@
+{
+  "url": "https://android.googlesource.com/platform/external/libcxx/+archive/d8170174bf66c98fca967b7133783c0c95292993/include.tar.gz",
+  "revision": "d8170174bf66c98fca967b7133783c0c95292993",
+  "tag": "android-7.1.2_r6",
+  "scope": "Official include subdirectory regular files only. The archive symlink __cxxabi_config.h to libcxxabi was skipped rather than followed or replaced; none of the compiled TUs required it.",
+  "archive_bytes": 432584,
+  "archive_sha256": "e682d354ecdae4b54420de3c849408119778f72bb6dfd9a9953fc6ecf129c93a"
+}

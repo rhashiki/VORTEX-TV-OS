@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "scope": "Four real gralloc source translation units compiled independently to ARM relocatable objects with genuine Android headers. This is not an AOSP make build, linked HAL, ioctl execution, Android system or hardware test.",
+  "source_refs": {
+    "gralloc": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/gralloc-source",
+      "revision": "c92fb8cd8becd57b025149f2861a2072b092ddea",
+      "tracked_diff": []
+    },
+    "bionic": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic",
+      "revision": "8b2e5b977118ebb8447cdf429c4a6be534c4fd1b",
+      "tracked_diff": []
+    },
+    "system_core": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core",
+      "revision": "ab5f1d24b072e36ddcf02439303050c501d9dc5b",
+      "tracked_diff": []
+    },
+    "libhardware_patched": {
+      "path": "/workspace/build01-graphics-next/graphics/libhardware",
+      "revision": "d0c81ba009240cb9ab38d75d7e88190055349c2a",
+      "tracked_diff": [
+        "include/hardware/rk_fh.h"
+      ]
+    }
+  },
+  "compiler": {
+    "path": "/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-g++",
+    "version": "arm-linux-gnueabihf-g++ (Linaro GCC 6.3-2017.05) 6.3.1 20170404",
+    "toolchain_revision": "dd4df7dff4f1df65d78939a958b760a79e3650a1"
+  },
+  "headers": {
+    "C_library": "Pinned Rockchip bionic actual includes and generated kernel UAPI headers. -nostdinc and -nostdinc++ prevent automatic host/glibc includes.",
+    "Cxx_library": {
+      "url": "https://android.googlesource.com/platform/external/libcxx/+archive/d8170174bf66c98fca967b7133783c0c95292993/include.tar.gz",
+      "revision": "d8170174bf66c98fca967b7133783c0c95292993",
+      "tag": "android-7.1.2_r6",
+      "scope": "Official include subdirectory regular files only. The archive symlink __cxxabi_config.h to libcxxabi was skipped rather than followed or replaced; none of the compiled TUs required it.",
+      "archive_bytes": 432584,
+      "archive_sha256": "e682d354ecdae4b54420de3c849408119778f72bb6dfd9a9953fc6ecf129c93a"
+    },
+    "GLES_KHR": [
+      {
+        "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-native/00c3ec97785c0d42f801083c8fc2fc26d3ce4e2d/opengl/include/GLES/gl.h",
+        "path": "native-opengl-include/GLES/gl.h",
+        "bytes": 34332,
+        "sha256": "db17471cc869dfdc7243b44d3acbc574d5088d89988c328426a34a3c5388d5ea"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-native/00c3ec97785c0d42f801083c8fc2fc26d3ce4e2d/opengl/include/GLES/glext.h",
+        "path": "native-opengl-include/GLES/glext.h",
+        "bytes": 64032,
+        "sha256": "8512d1715c6939d64d1e9e9ba56aff1f1c5ad13205b19c1199f437cfa1429c62"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-native/00c3ec97785c0d42f801083c8fc2fc26d3ce4e2d/opengl/include/GLES/glplatform.h",
+        "path": "native-opengl-include/GLES/glplatform.h",
+        "bytes": 901,
+        "sha256": "03552610f3dd821c020264745d7aa37d760ca68ab44d3c7314b0959a0a24ae8e"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-native/00c3ec97785c0d42f801083c8fc2fc26d3ce4e2d/opengl/include/KHR/khrplatform.h",
+        "path": "native-opengl-include/KHR/khrplatform.h",
+        "bytes": 9688,
+        "sha256": "c0c4d12cbb14161c88509b3d7a853730da6ea5a68592ca613668428dd2381129"
+      }
+    ],
+    "no_fake_headers": true,
+    "no_system_glibc_headers_in_dependencies": true
+  },
+  "configuration": {
+    "architecture": "ARMv7, softfp calling convention, NEON enabled",
+    "language": "GNU++11",
+    "defines": [
+      "ANDROID",
+      "__ANDROID__",
+      "__ANDROID_API__=25",
+      "GRALLOC_32_BITS",
+      "STANDARD_LINUX_SCREEN",
+      "PLATFORM_SDK_VERSION=25",
+      "LOG_TAG=\"gralloc\""
+    ],
+    "MALI_600": false,
+    "GRALLOC_ARM_UMP_MODULE": 0,
+    "GRALLOC_ARM_DMA_BUF_MODULE": 1,
+    "warnings": "No diagnostic suppression or -fpermissive flags were used. No extra -Werror was imposed; raw compiler stdout/stderr were empty for these standalone commands."
+  },
+  "all_four_source_objects_compiled": true,
+  "objects": [
+    {
+      "source_file": "framebuffer_device.cpp",
+      "object": "framebuffer_device.o",
+      "bytes": 11376,
+      "sha256": "97325a22a87e0617eb768e107b00f8ceefd3b06edac54f68ed866f8d3d98d603",
+      "dependency_count": 138,
+      "readelf": "framebuffer_device.elf.txt",
+      "disassembly": "framebuffer_device.disassembly.txt",
+      "fb_post_memset_size_bytes": 908
+    },
+    {
+      "source_file": "gralloc_module.cpp",
+      "object": "gralloc_module.o",
+      "bytes": 11616,
+      "sha256": "00602ce77a1b6dd5eb48424bf269b973d0a3868ad1d73d3f68d55f0b71ae2fad",
+      "dependency_count": 117,
+      "readelf": "gralloc_module.elf.txt",
+      "disassembly": "gralloc_module.disassembly.txt"
+    },
+    {
+      "source_file": "alloc_device.cpp",
+      "object": "alloc_device.o",
+      "bytes": 26840,
+      "sha256": "88c86e2d5abdf4fc22552a1dffeca363196ada7cf1b911d94f448992ea6d90b3",
+      "dependency_count": 134,
+      "readelf": "alloc_device.elf.txt",
+      "disassembly": "alloc_device.disassembly.txt"
+    },
+    {
+      "source_file": "rockchip_alloc_device.cpp",
+      "object": "rockchip_alloc_device.o",
+      "bytes": 4880,
+      "sha256": "1679b92b2f1b48510722c319d327fdae27086b7c2be6a26abe0bf80c9276b80e",
+      "dependency_count": 133,
+      "readelf": "rockchip_alloc_device.elf.txt",
+      "disassembly": "rockchip_alloc_device.disassembly.txt"
+    },
+    {
+      "source_file": "framebuffer_device.cpp (originalheaderbaseline)",
+      "object": "framebuffer_device-before.o",
+      "bytes": 11376,
+      "sha256": "51ee17abc7b85df46580127f61c9f213600b6c71a1cfb8ead66d5e24d95b9100",
+      "dependency_count": 138,
+      "readelf": "framebuffer_device-before.elf.txt",
+      "disassembly": "framebuffer_device-before.disassembly.txt",
+      "fb_post_memset_size_bytes": 904
+    }
+  ],
+  "unique_dependencies": 155,
+  "dependency_manifest_sha256": "65b16fa59cde55f744766591b9c5b543c4faebf34f091b61cfd0c705c1e2fff3",
+  "source_changes": "No .cpp file or local gralloc header was modified. version.sh generated the normal version.h only in a new disposable clone. The separate libhardware header patch is the only interface source mutation.",
+  "version_generation": {
+    "command": [
+      "bash",
+      "version.sh"
+    ],
+    "working_directory": "/workspace/build01-graphics-next/graphics/hal-build/gralloc-source",
+    "script_sha256": "92cc61fa56a09ec05d545c7ae5f9b1ccfaf0f016540d33e047035a3b25028700",
+    "template_sha256": "57f685e4f0c5c17d40c958fa8e817a1b3e79b9f6dadab26ae448215ba4cadbbd",
+    "generated_header_sha256": "54ef7a36829b47bcb8226511909b570e7f7af82ea1c6c8e90e4b5b439187b2c3",
+    "exit_code": 0,
+    "failure_note": "The first harness invocation used the parent directory and exited127 (version.sh not found). Preserved as version-generation-attempt-01.log; corrected invocation ran the unmodified source script."
+  },
+  "baseline": "The same original framebuffer TU also compiles against the old libhardware header. Compiler success alone did not detect the ABI defect. Its actual memset size is904; the patched object passes908.",
+  "limits": [
+    "No linking against libion/GLES/bionic or Android HAL installation.",
+    "No claim that a GNU/Linux-targeted compiler plus Android headers reproduces the final Android toolchain code generation or runtime ABI.",
+    "No hwcomposer TU build or prebuilt Mali private-handle interface validation.",
+    "No runtime display, ioctl, DMA-BUF, RGA, fences, writeback or hardware behavior test.",
+    "Header archive safety check initially rejected a real libcxxabi symlink; regular files were extracted without following it. That unused symlink was not replaced by a stub."
+  ],
+  "GitHub_Actions": "not_used"
+}

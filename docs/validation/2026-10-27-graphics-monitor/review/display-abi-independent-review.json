@@ -1,0 +1,353 @@
+{
+  "schema_version": 1,
+  "scope": "Independent read-only source review, no new builds or runtime tests.",
+  "sources": {
+    "libhardware": {
+      "checkout": "/workspace/build01-platform-next/research/rockchip-libhardware",
+      "revision": "d0c81ba009240cb9ab38d75d7e88190055349c2a",
+      "files": {
+        "include/hardware/rk_fh.h": "e3d3629b706628ab3d46423551e25f7c2dfacc6f8b10e8100ed1253bb7e3de6e",
+        "include/hardware/hardware.h": "30b0467c4fd2512a0774456d3676c180c98ce81934f34489b0b37b2e046f09c6",
+        "hardware.c": "51f55e90bc381102c58ef05ff2596ab5506ca08ec770bdccf89b5dfc8c68e0c9"
+      }
+    },
+    "gralloc": {
+      "checkout": "/workspace/build01-platform-next/research/mali-legacy/gralloc-rk3328",
+      "revision": "c92fb8cd8becd57b025149f2861a2072b092ddea",
+      "files": {
+        "framebuffer_device.cpp": "8e625578b79ebc785f172b793bf426aa1c48a90d1c7f5de047e3fdc6e0c89d0f",
+        "alloc_device.cpp": "ad2427dbb90c69069de886a0eee62ebcf6b10d48a1ac8f8088652174ccca3185",
+        "gralloc_priv.h": "19bcf14f3d560d918b4707b19cb706ba6aa0b502a3d6f237147fe1d9d6319957",
+        "Android.mk": "91f5bdd8ea3fc7d896fddc7274de0adb88d5de4079f23a4955169e7877f6364b"
+      }
+    },
+    "hwcomposer": {
+      "checkout": "/workspace/build01-platform-next/research/mali-legacy/hwcomposer-rk3328",
+      "revision": "d3ec43f2f751123ca5e7bda2d07eded4c6352a35",
+      "files": {
+        "rk_hwcomposer.cpp": "8b5fa54ac9235023f33aa72ce9e87d543feba2a1b845fd511151a7776cd01c03",
+        "rk_hwcomposer.h": "a89f13f02c6cacb05dcb6cf8d6e3c1ed139efee67907e611d9052be80acedba4",
+        "Android.mk": "510b6fd35ccfee91bc56728ee065cedefb3d8c48773314fc4dd7a51576f4067e"
+      }
+    },
+    "kernel": {
+      "checkout": "/workspace/build01-sd-next/kernel-sd/source",
+      "revision": "6c04d006ae881944d32c19e68b992d0bd5ab4fde",
+      "files": {
+        "include/linux/rk_fb.h": "6968d7098fef41f61bb41326cb05d2bc607f1888e726ae86f43fef9a4ada2e88",
+        "drivers/video/rockchip/rk_fb.c": "841b5d09b02c7193540b2688c3c0b6b386427b4d4454aa34d94730758733e0dd",
+        "drivers/video/rockchip/lcdc/rk322x_lcdc.c": "f94a000104c81904186a1db67effbfcab6c9555bc49d1e25fbc47d7091bea8ec",
+        "drivers/video/rockchip/lcdc/rk3368_lcdc.c": "3ac248457053fb9cb8e324c3ad44f2e18c7b926a0b5ed562318603159c1dc3ed"
+      }
+    },
+    "common": {
+      "checkout": "/workspace/build01-sd-next/common-sd",
+      "revision": "651d363fd4484cedcb0d9c5032ed831c87b21f58",
+      "files": {
+        "device.mk": "34d9927e065a44e3e4e71cad0a54b9023778b81164fd7f6203c3196c0f2f2fe4",
+        "BoardConfig.mk": "81ba52349894107ce0810ef938119fa4da9a9a1112268f5ca2223ab09382acfd"
+      }
+    },
+    "vendor": {
+      "checkout": "/workspace/build01-sd-next/vendor-sd",
+      "revision": "50c7170ecb4bd907059db37f09f4767b301f2d15",
+      "files": {
+        "device-vendor.mk": "5f7bb7fd79c20135188af0a3319a3ca261abf5aeec114e799ede2c19ec30b2be"
+      }
+    }
+  },
+  "active_CONFIG_DONE_callers": [
+    {
+      "project": "gralloc",
+      "path": "framebuffer_device.cpp",
+      "line": 128,
+      "object_initialized_by_memset": true,
+      "returns_on_ioctl_failure": true
+    },
+    {
+      "project": "hwcomposer",
+      "path": "rk_hwcomposer.cpp",
+      "line": 3715,
+      "object_initialized_by_memset": true,
+      "returns_on_ioctl_failure": false
+    }
+  ],
+  "tail_member_references_in_selected_gralloc_and_HWC_source": [],
+  "kernel_config_done": {
+    "path": "drivers/video/rockchip/rk_fb.c",
+    "copy_from_user_line": 3048,
+    "copy_to_user_line": 3059,
+    "copy_extent": "sizeof(struct rk_fb_win_cfg_data), including tail regardless of writeback flag"
+  },
+  "prior_ARM_layout_evidence": {
+    "path": "/workspace/build01-platform-next/research/framebuffer-abi-review/layout-review.json",
+    "userspace_size_bytes": 904,
+    "kernel_size_bytes": 908,
+    "common_prefix_bytes": 888,
+    "tail_semantics_differ": true,
+    "new_measurement_performed": false
+  },
+  "writeback": {
+    "kernel_tail_type": "struct rk_fb_wb_cfg",
+    "user_tail_type": "struct rk_lcdc_post_cfg",
+    "set_wb_guard": "dev_drv->property.feature & SUPPORT_WRITE_BACK",
+    "rk322x_driver_sets_SUPPORT_WRITE_BACK": false,
+    "examined_driver_setting_flag": "rk3368_lcdc.c:5113",
+    "rk_fb_set_wb_buffer_zero_phy_and_ion_disables": true
+  },
+  "other_matching_FB_scalar_contracts": [
+    {
+      "ioctl": "0x5003",
+      "role": "export DMA-BUF fd",
+      "userspace": "int share_fd",
+      "kernel": "int fd"
+    },
+    {
+      "ioctl": "0x4629",
+      "role": "vsync enable",
+      "userspace": "int val",
+      "kernel": "int enable"
+    },
+    {
+      "ioctl": "0x4632",
+      "role": "IOMMU enabled",
+      "userspace": "int iommuEn",
+      "kernel": "int iommu_enabled"
+    }
+  ],
+  "conflicting_vendor_copies": [
+    "system/lib/hw/gralloc.default.so",
+    "system/lib/hw/gralloc.rk30board.so",
+    "system/lib/hw/hwcomposer.rk30board.so"
+  ],
+  "source_selection_risks": [
+    "HWC gralloc_priv.h include can resolve hardware/rockchip/libgralloc_ump before hardware/rockchip/libgralloc",
+    "gralloc Android.mk selects MALI_600 when hardware/arm exists regardless of TARGET_BOARD_PLATFORM_GPU",
+    "prebuilt libGLES_mali.so and libgralloc_priv_omx.so private-handle ABI is not established by source header equality"
+  ],
+  "candidate_minimal_fix": "Replace userspace CONFIG_DONE tail with exact pinned kernel rk_fb_wb_cfg declaration, rebuild all source consumers, retain zero initialization; remove conflicting prebuilt HAL copies for this opt-in source profile.",
+  "required_verification": [
+    "ARM compile actual headers and compare all shared field offsets, sizes, array counts, alignments, ioctl value and tail members",
+    "C and C++ consumer compilation with actual target macros",
+    "prove include/module source selection and generated image contents",
+    "validate ION/RGA/private_handle/EGL contracts separately",
+    "real framebuffer submission and returned fence lifecycle under target kernel"
+  ],
+  "limits": [
+    "No full HAL compile or Android platform build here",
+    "No framebuffer ioctl execution, EGL/ION/RGA runtime or hardware/driver approval",
+    "Signed-short file-descriptor range and existing error paths are unchanged by a struct-tail fix"
+  ],
+  "ioctl_source_inventory": [
+    {
+      "project": "gralloc",
+      "file": "alloc_device.cpp",
+      "line": 404,
+      "text": "if (ioctl(m->framebuffer->fd, FBIOGET_DMABUF, &fb_dma_buf) == 0)"
+    },
+    {
+      "project": "gralloc",
+      "file": "alloc_device.cpp",
+      "line": 411,
+      "text": "if (ioctl(m->framebuffer->fd, /*FBIOGET_DMABUF*/0x5003, &share_fd) == 0)"
+    },
+    {
+      "project": "gralloc",
+      "file": "framebuffer_device.cpp",
+      "line": 101,
+      "text": "if (ioctl(m->framebuffer->fd, FBIOPAN_DISPLAY, &m->info) == -1)"
+    },
+    {
+      "project": "gralloc",
+      "file": "framebuffer_device.cpp",
+      "line": 128,
+      "text": "if (ioctl(m->framebuffer->fd, RK_FBIOSET_CONFIG_DONE, &fb_info) == -1)"
+    },
+    {
+      "project": "gralloc",
+      "file": "framebuffer_device.cpp",
+      "line": 178,
+      "text": "if (ioctl(m->framebuffer->fd, S3CFB_SET_VSYNC_INT, &interrupt) < 0)"
+    },
+    {
+      "project": "gralloc",
+      "file": "framebuffer_device.cpp",
+      "line": 190,
+      "text": "if (ioctl(m->framebuffer->fd, FBIO_WAITFORVSYNC, &crtc) < 0)"
+    },
+    {
+      "project": "gralloc",
+      "file": "framebuffer_device.cpp",
+      "line": 205,
+      "text": "if (ioctl(m->framebuffer->fd, S3CFB_SET_VSYNC_INT, &interrupt) < 0)"
+    },
+    {
+      "project": "gralloc",
+      "file": "framebuffer_device.cpp",
+      "line": 218,
+      "text": "if (ioctl(m->framebuffer->fd, FBIOPUT_VSCREENINFO, &m->info) == -1)"
+    },
+    {
+      "project": "gralloc",
+      "file": "framebuffer_device.cpp",
+      "line": 287,
+      "text": "if (ioctl(fd, FBIOGET_FSCREENINFO, &finfo) == -1)"
+    },
+    {
+      "project": "gralloc",
+      "file": "framebuffer_device.cpp",
+      "line": 294,
+      "text": "if (ioctl(fd, FBIOGET_VSCREENINFO, &info) == -1)"
+    },
+    {
+      "project": "gralloc",
+      "file": "framebuffer_device.cpp",
+      "line": 358,
+      "text": "if (ioctl(fd, FBIOPUT_VSCREENINFO, &info) == -1)"
+    },
+    {
+      "project": "gralloc",
+      "file": "framebuffer_device.cpp",
+      "line": 373,
+      "text": "if (ioctl(fd, FBIOGET_VSCREENINFO, &info) == -1)"
+    },
+    {
+      "project": "gralloc",
+      "file": "framebuffer_device.cpp",
+      "line": 439,
+      "text": "if (ioctl(fd, FBIOGET_FSCREENINFO, &finfo) == -1)"
+    },
+    {
+      "project": "gralloc",
+      "file": "framebuffer_device.cpp",
+      "line": 481,
+      "text": "ioctl(fd, IOCTL_GET_FB_UMP_SECURE_ID, &module->framebuffer->ump_id);"
+    },
+    {
+      "project": "hwcomposer",
+      "file": "hwc_ipp.cpp",
+      "line": 219,
+      "text": "int ret = ioctl(ipp_buffer.ipp_fd, IPP_BLIT_SYNC, &ipp_req);"
+    },
+    {
+      "project": "hwcomposer",
+      "file": "rk_hwcomposer_blit.cpp",
+      "line": 1009,
+      "text": "retv = ioctl(Context->engine_fd, RGA_BLIT_ASYNC, &Rga_Request);"
+    },
+    {
+      "project": "hwcomposer",
+      "file": "rk_hwcomposer_blit.cpp",
+      "line": 1279,
+      "text": "if (ioctl(Context->engine_fd, RGA_BLIT_ASYNC, &Rga_Request) != 0)"
+    },
+    {
+      "project": "hwcomposer",
+      "file": "rk_hwcomposer_blit.cpp",
+      "line": 1480,
+      "text": "if (ioctl(Context->engine_fd, RGA_BLIT_ASYNC, &Rga_Request) != 0)"
+    },
+    {
+      "project": "hwcomposer",
+      "file": "rk_hwc_com.cpp",
+      "line": 76,
+      "text": "int rel = ioctl(Handle->fd, FBIOGET_FSCREENINFO, &fixInfo);"
+    },
+    {
+      "project": "hwcomposer",
+      "file": "rk_hwc_com.cpp",
+      "line": 87,
+      "text": "int rel = ioctl(iFbFd, FBIOGET_FSCREENINFO, &fixInfo);"
+    },
+    {
+      "project": "hwcomposer",
+      "file": "rk_hwc_com.cpp",
+      "line": 93,
+      "text": "LOGE(\"ioctl(fd, FBIOGET_FSCREENINFO) failed\""
+    },
+    {
+      "project": "hwcomposer",
+      "file": "rk_hwc_com.cpp",
+      "line": 142,
+      "text": "if (ioctl(Handle->fd, PMEM_GET_PHYS, &region) != 0)"
+    },
+    {
+      "project": "hwcomposer",
+      "file": "hwc_rga.cpp",
+      "line": 492,
+      "text": "if(ioctl(g_rga_cfg.rga_fd, RGA_BLIT_SYNC, &g_rga_cfg.rga_cfg) != 0)"
+    },
+    {
+      "project": "hwcomposer",
+      "file": "rk_hwcomposer.cpp",
+      "line": 2850,
+      "text": "int err = ioctl(context->fbFd, FBIOBLANK, fb_blank);"
+    },
+    {
+      "project": "hwcomposer",
+      "file": "rk_hwcomposer.cpp",
+      "line": 2874,
+      "text": "int err = ioctl(context->fbFd, FBIOBLANK, fb_blank);"
+    },
+    {
+      "project": "hwcomposer",
+      "file": "rk_hwcomposer.cpp",
+      "line": 3715,
+      "text": "if(ioctl(context->fbFd, RK_FBIOSET_CONFIG_DONE, &fb_info))"
+    },
+    {
+      "project": "hwcomposer",
+      "file": "rk_hwcomposer.cpp",
+      "line": 4267,
+      "text": "if (ioctl(context->engine_fd, RGA_FLUSH, NULL) != 0)"
+    },
+    {
+      "project": "hwcomposer",
+      "file": "rk_hwcomposer.cpp",
+      "line": 4540,
+      "text": "err = ioctl(context->fbFd, RK_FBIOSET_VSYNC_ENABLE, &val);"
+    },
+    {
+      "project": "hwcomposer",
+      "file": "rk_hwcomposer.cpp",
+      "line": 5042,
+      "text": "rel = ioctl(context->fbFd, FBIOGET_FSCREENINFO, &fixInfo);"
+    },
+    {
+      "project": "hwcomposer",
+      "file": "rk_hwcomposer.cpp",
+      "line": 5050,
+      "text": "if (ioctl(context->fbFd, FBIOGET_VSCREENINFO, &info) == -1)"
+    },
+    {
+      "project": "hwcomposer",
+      "file": "rk_hwcomposer.cpp",
+      "line": 5283,
+      "text": "rel = ioctl(context->fbFd, RK_FBIOGET_IOMMU_STA, &context->iommuEn);"
+    },
+    {
+      "project": "hwcomposer",
+      "file": "rk_hwcomposer.cpp",
+      "line": 5346,
+      "text": "if (ioctl(context->engine_fd, RGA_GET_VERSION, Version) == 0)"
+    },
+    {
+      "project": "hwcomposer",
+      "file": "rk_hwcomposer.cpp",
+      "line": 5628,
+      "text": "rel = ioctl(context->fbFd, FBIOGET_FSCREENINFO, &fixInfo);"
+    },
+    {
+      "project": "hwcomposer",
+      "file": "rk_hwcomposer.cpp",
+      "line": 5633,
+      "text": "if (ioctl(context->fbFd, FBIOGET_VSCREENINFO, &info) == -1){"
+    },
+    {
+      "project": "hwcomposer",
+      "file": "rk_hwcomposer.cpp",
+      "line": 5850,
+      "text": "rel = ioctl(context->fbFd, RK_FBIOGET_IOMMU_STA, &context->iommuEn);"
+    }
+  ]
+}

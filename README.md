@@ -12,7 +12,7 @@ Firmware experimental minimalista para **MXQ PRO 4K 5G / R329Q_V8.0** (Rockchip 
 
 Resultados e limites: [preparação do teste microSD](docs/VALIDATION_2026-10-25_SD.md) · [atualização ao vivo e cancelamento](docs/VALIDATION_2026-10-25_ROBUSTNESS.md) · [Home sem gaveta e preparação AOSP](docs/VALIDATION_2026-10-25_CONTINUATION.md).
 
-Continuação: [módulo AOSP e componentes de boot compilados](docs/VALIDATION_2026-10-26_AOSP_BOOTLOADER.md) · [perfil SDK SD e conferência cruzada](rom/sdcard/SD_REFERENCE.md).
+Continuação: [correção do contrato gráfico e Installer completo no emulador](docs/VALIDATION_2026-10-27_GRAPHICS_MONITOR.md) · [módulo AOSP e componentes de boot](docs/VALIDATION_2026-10-26_AOSP_BOOTLOADER.md) · [perfil SDK SD](rom/sdcard/SD_REFERENCE.md).
 
 ## Escopo do produto
 - Home 720p, gradiente roxo/azul neon, data/hora, D-pad e ações de energia.
@@ -28,7 +28,7 @@ Continuação: [módulo AOSP e componentes de boot compilados](docs/VALIDATION_2
 - `app/src/main/java/os/vortex/tv/ApkInstaller.java`: instalação via PackageInstaller Session API25, confirmada na TV.
 - `app/src/main/java/io/nayuki/qrcodegen/`: gerador QR puro Java (MIT), licença preservada nos arquivos.
 - `tools/bootanimation_from_video.py`: converter MP4 oficial para `bootanimation.zip` compactado.
-- `rom/`: fragmentos AOSP e inventário do hardware. **Não contém drivers proprietários ou bootloader!**
+- `rom/`: fragmentos AOSP, perfis de kernel/bootloader e patches sobre fontes fixadas. Não contém drivers proprietários ou firmware instalável.
 - `tests/`: testes estáticos e integração HTTP local independente.
 
 ## Compilar APK de desenvolvimento

@@ -50,6 +50,11 @@ pendentes. O backend genérico `sdmmc_vendor_storage` ainda é compilado por
 MMC: a guarda de ausência de cartão eMMC foi examinada em fontes, mas a
 inacessibilidade física do armazenamento interno não foi demonstrada.
 
+O [complemento para o monitor aberto](MONITOR_REFERENCE.md) desabilita no
+DTB dois consumidores de SIP incompatíveis e registra uma correção da
+propagação de erro PSCI. Ele conserva o perfil e os binários anteriores;
+não estabelece compatibilidade completa do monitor nem habilita console.
+
 O aviso MODPOST de `dvfs_temp_limit()` para `cpu_up()` continua visível.
 A análise estática do ELF anterior mostrou que, com `HOTPLUG_CPU=y`, as
 seções `.cpuinit` são mantidas na região permanente e os símbolos examinados

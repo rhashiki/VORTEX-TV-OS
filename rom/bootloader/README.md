@@ -87,6 +87,12 @@ CPU_SUSPEND cai num retorno não suportado nessa plataforma OP-TEE. As
 chamadas Rockchip SIP do kernel legado ainda não têm ABI estabelecida com
 esse monitor. Compilar OP-TEE não resolve esses serviços automaticamente.
 
+A [auditoria posterior do kernel](../sdcard/MONITOR_REFERENCE.md) identificou
+os consumidores FIQ/DDR legados e compilou um DTB complementar que os
+desabilita. A negociação SIP e a suspensão ainda exigem integração; esse
+complemento também deixa explícita a ausência de console serial comum no
+kernel atual.
+
 [Relatório dos componentes](../../docs/VALIDATION_2026-10-26_AOSP_BOOTLOADER.md)
 e [revisão da cadeia](../../docs/validation/2026-10-26-aosp-bootloader/boot-chain/BOOT_CHAIN_REVIEW.md)
 registram hashes, falhas de host e provas. O próximo artefato de sistema
