@@ -1,0 +1,377 @@
+{
+  "schema_version": 1,
+  "scope": "Static upstream source review only, not a build or executable chain validation. Root is independently building components; this report does not certify those outputs.",
+  "pins": {
+    "u-boot": "866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e",
+    "optee-os": "2a5b1d1232f582056184367fb58a425ac7478ec6",
+    "kernel": "6c04d006ae881944d32c19e68b992d0bd5ab4fde"
+  },
+  "memory_contract": [
+    {
+      "name": "optee_core",
+      "start": "0x68400000",
+      "end_exclusive": "0x68600000",
+      "size_bytes": 2097152,
+      "no_map_required": true
+    },
+    {
+      "name": "optee_shm",
+      "start": "0x68600000",
+      "end_exclusive": "0x68700000",
+      "size_bytes": 1048576,
+      "no_map_required": true
+    }
+  ],
+  "source_checks": {
+    "open_rk322x_ddr_tpl_source_present": true,
+    "stock_evb_is_not_sd_only": true,
+    "stock_spl_fit_selects_optee_image": true,
+    "arm32_rk322x_requires_no_aarch64_bl31": true,
+    "generic_uboot_psci_is_not_rk322x_monitor_implementation": true,
+    "optee_exports_standard_arm32_psci_cpu_on_off_ids_matching_linux_dt": true,
+    "optee_rk322x_cpu_suspend_weak_not_supported": true,
+    "uboot_memory_fixup_requires_OPTEE_LIB": true,
+    "uboot_fixup_skips_when_target_firmware_optee_already_present": true,
+    "linux_3_10_source_understands_reserved_memory_no_map": true,
+    "physical_internal_storage_preservation_proven": false
+  },
+  "limits": [
+    "BootROM behavior and priority are not implemented by this open-source checkout; TPL returns to BROM for the next stage. SD-only later-stage policy cannot prove ROM never examines or falls back to internal storage.",
+    "DDR timings, regulator controls and UART/SD pin routing are EVB references, not verified R329Q_V8.0 settings.",
+    "A compile-time OPTEE_LIB path does not prove the control FDT was mutated by OP-TEE or that the actual Linux FDT contains all memory reservations.",
+    "Kernel standard PSCI IDs can match while Rockchip vendor SIP calls for FIQ/UART/suspend/DRAM remain incompatible. Runtime behavior is untested.",
+    "Generated U-Boot loader components are not Android, a full SD disk layout or a test-ready image. No media or hardware commands were executed by this agent."
+  ],
+  "source_inventory": [
+    {
+      "component": "u-boot",
+      "path": "configs/evb-rk3229_defconfig",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/configs/evb-rk3229_defconfig",
+      "observed_sha256": "8e4b66ac07cccbc848bdafede679b727dc0d5c51fe1a56830b413fc6fc091331",
+      "pinned_sha256": "8e4b66ac07cccbc848bdafede679b727dc0d5c51fe1a56830b413fc6fc091331",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "u-boot",
+      "path": "arch/arm/dts/rk3229-evb.dts",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/arch/arm/dts/rk3229-evb.dts",
+      "observed_sha256": "091987e02d376438f44ea4e57631810c3ad6661cda5a77ddd1811d223f7dbba3",
+      "pinned_sha256": "091987e02d376438f44ea4e57631810c3ad6661cda5a77ddd1811d223f7dbba3",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "u-boot",
+      "path": "arch/arm/dts/rk3229-evb-u-boot.dtsi",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/arch/arm/dts/rk3229-evb-u-boot.dtsi",
+      "observed_sha256": "2510d7ed4224cefc9c981ae5f8654dbf6cfce36d2e6d18901f17b38bf4c0a1ec",
+      "pinned_sha256": "2510d7ed4224cefc9c981ae5f8654dbf6cfce36d2e6d18901f17b38bf4c0a1ec",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "u-boot",
+      "path": "arch/arm/dts/rk322x-u-boot.dtsi",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/arch/arm/dts/rk322x-u-boot.dtsi",
+      "observed_sha256": "2f3bc49e57e570382c682df064e34495394c99b9b63430a29115b729908ec6cc",
+      "pinned_sha256": "2f3bc49e57e570382c682df064e34495394c99b9b63430a29115b729908ec6cc",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "u-boot",
+      "path": "arch/arm/dts/rockchip-u-boot.dtsi",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/arch/arm/dts/rockchip-u-boot.dtsi",
+      "observed_sha256": "8523f6561f32e0f2e3fc5adc7fdb3e137e55a5a4c45f234e52d219473c95ab11",
+      "pinned_sha256": "8523f6561f32e0f2e3fc5adc7fdb3e137e55a5a4c45f234e52d219473c95ab11",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "u-boot",
+      "path": "arch/arm/mach-rockchip/Kconfig",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/arch/arm/mach-rockchip/Kconfig",
+      "observed_sha256": "24fdf2ba692e4a23b51fa8b96b96d49b993d45ee673d76ade5f12a9b2a76b037",
+      "pinned_sha256": "24fdf2ba692e4a23b51fa8b96b96d49b993d45ee673d76ade5f12a9b2a76b037",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "u-boot",
+      "path": "arch/arm/mach-rockchip/tpl.c",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/arch/arm/mach-rockchip/tpl.c",
+      "observed_sha256": "484b1363a8a97a3cda680ef1d47dc7abcfcc036c16ce818fed8a6515859d084f",
+      "pinned_sha256": "484b1363a8a97a3cda680ef1d47dc7abcfcc036c16ce818fed8a6515859d084f",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "u-boot",
+      "path": "arch/arm/mach-rockchip/bootrom.c",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/arch/arm/mach-rockchip/bootrom.c",
+      "observed_sha256": "fe8678186608953fa571c1b5763bce6af2b11ff3f5b1ca66555fbaf7c8643470",
+      "pinned_sha256": "fe8678186608953fa571c1b5763bce6af2b11ff3f5b1ca66555fbaf7c8643470",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "u-boot",
+      "path": "arch/arm/mach-rockchip/spl.c",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/arch/arm/mach-rockchip/spl.c",
+      "observed_sha256": "7c91598e34e1d8b82ee5ce5c712d9ad872b314c66016bce48605190c4f95131f",
+      "pinned_sha256": "7c91598e34e1d8b82ee5ce5c712d9ad872b314c66016bce48605190c4f95131f",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "u-boot",
+      "path": "arch/arm/mach-rockchip/spl-boot-order.c",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/arch/arm/mach-rockchip/spl-boot-order.c",
+      "observed_sha256": "65bb0fb8daedc88c3a85c815dbf26b83c7913269de9c66c5c44bba2a9ec202fd",
+      "pinned_sha256": "65bb0fb8daedc88c3a85c815dbf26b83c7913269de9c66c5c44bba2a9ec202fd",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "u-boot",
+      "path": "arch/arm/mach-rockchip/rk322x/rk322x.c",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/arch/arm/mach-rockchip/rk322x/rk322x.c",
+      "observed_sha256": "4d835d3f293bee3f624830f277a48c8640d8b80e4588a0bc6abfe4e2b31ae18b",
+      "pinned_sha256": "4d835d3f293bee3f624830f277a48c8640d8b80e4588a0bc6abfe4e2b31ae18b",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "u-boot",
+      "path": "drivers/ram/rockchip/sdram_rk322x.c",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/drivers/ram/rockchip/sdram_rk322x.c",
+      "observed_sha256": "703e6b9f8e58c2ad1e194de45aba4f76ff2f89f4b903e51c120710b96d33672a",
+      "pinned_sha256": "703e6b9f8e58c2ad1e194de45aba4f76ff2f89f4b903e51c120710b96d33672a",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "u-boot",
+      "path": "include/tee/optee.h",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/include/tee/optee.h",
+      "observed_sha256": "a71ab46eff851f7dd67760a007fbba433226bceb0106953c129e4eaf567e9911",
+      "pinned_sha256": "a71ab46eff851f7dd67760a007fbba433226bceb0106953c129e4eaf567e9911",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "u-boot",
+      "path": "lib/optee/optee.c",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/lib/optee/optee.c",
+      "observed_sha256": "a6725006313167ab0f46cb0f32261b06aa05adb65bd85294e9197927072f72fa",
+      "pinned_sha256": "a6725006313167ab0f46cb0f32261b06aa05adb65bd85294e9197927072f72fa",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "u-boot",
+      "path": "boot/image-fdt.c",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/boot/image-fdt.c",
+      "observed_sha256": "feaecf1fab19dbb0cd272b01b01f5fd40c9bcbb49277b2457151b9fd8c48ae46",
+      "pinned_sha256": "feaecf1fab19dbb0cd272b01b01f5fd40c9bcbb49277b2457151b9fd8c48ae46",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "u-boot",
+      "path": "lib/fdtdec.c",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/lib/fdtdec.c",
+      "observed_sha256": "8207340f42f70e3f0e13d1e738a18cc33b657b96dc722bf95c625d785496535f",
+      "pinned_sha256": "8207340f42f70e3f0e13d1e738a18cc33b657b96dc722bf95c625d785496535f",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "u-boot",
+      "path": "arch/arm/cpu/armv7/Kconfig",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/arch/arm/cpu/armv7/Kconfig",
+      "observed_sha256": "fa742fb83b78695a56adc1f6dd9e6d3717292fa895582d020e62f854b7c6357b",
+      "pinned_sha256": "fa742fb83b78695a56adc1f6dd9e6d3717292fa895582d020e62f854b7c6357b",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "u-boot",
+      "path": "arch/arm/cpu/armv7/psci.S",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/arch/arm/cpu/armv7/psci.S",
+      "observed_sha256": "dab924ccfd70b48d256e548e2127720a00005ef8d1028a221eeb5a27216f9ab3",
+      "pinned_sha256": "dab924ccfd70b48d256e548e2127720a00005ef8d1028a221eeb5a27216f9ab3",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "u-boot",
+      "path": "drivers/mmc/Kconfig",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/drivers/mmc/Kconfig",
+      "observed_sha256": "0f6c2e830d5a2d878afe4cc2269cc50fcb1b8d4ec0dc115d42e2829ec5daab30",
+      "pinned_sha256": "0f6c2e830d5a2d878afe4cc2269cc50fcb1b8d4ec0dc115d42e2829ec5daab30",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "u-boot",
+      "path": "common/spl/Kconfig",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/common/spl/Kconfig",
+      "observed_sha256": "0ae7ffbd30ac421d2b47640c23615f56fea036e9b2534100c88bf12ca475fa43",
+      "pinned_sha256": "0ae7ffbd30ac421d2b47640c23615f56fea036e9b2534100c88bf12ca475fa43",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "u-boot",
+      "path": "include/configs/rockchip-common.h",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/include/configs/rockchip-common.h",
+      "observed_sha256": "60840cc290bab3c9dc722d6887e9faee1d895b4d68171c87a3c556081c5cdbdc",
+      "pinned_sha256": "60840cc290bab3c9dc722d6887e9faee1d895b4d68171c87a3c556081c5cdbdc",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "u-boot",
+      "path": "tools/rkcommon.c",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/tools/rkcommon.c",
+      "observed_sha256": "698858ca107249f33d3fe6d7e2c71cccfcfc1777e7a28586c4e852cc02b01e0b",
+      "pinned_sha256": "698858ca107249f33d3fe6d7e2c71cccfcfc1777e7a28586c4e852cc02b01e0b",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "optee-os",
+      "path": "core/arch/arm/plat-rockchip/conf.mk",
+      "url": "https://github.com/OP-TEE/optee_os/blob/2a5b1d1232f582056184367fb58a425ac7478ec6/core/arch/arm/plat-rockchip/conf.mk",
+      "observed_sha256": "bbfb0693812a63815357d4fe8d62a6a86d846ec70a5508c11a76bdeba1e3b618",
+      "pinned_sha256": "bbfb0693812a63815357d4fe8d62a6a86d846ec70a5508c11a76bdeba1e3b618",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "optee-os",
+      "path": "core/arch/arm/plat-rockchip/psci_rk322x.c",
+      "url": "https://github.com/OP-TEE/optee_os/blob/2a5b1d1232f582056184367fb58a425ac7478ec6/core/arch/arm/plat-rockchip/psci_rk322x.c",
+      "observed_sha256": "0a44cb501fab9ef95968f261618a62ec12fb41c835f7497a261ae2174f49aa57",
+      "pinned_sha256": "0a44cb501fab9ef95968f261618a62ec12fb41c835f7497a261ae2174f49aa57",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "optee-os",
+      "path": "core/arch/arm/kernel/boot.c",
+      "url": "https://github.com/OP-TEE/optee_os/blob/2a5b1d1232f582056184367fb58a425ac7478ec6/core/arch/arm/kernel/boot.c",
+      "observed_sha256": "4ae5ee072a5f1d1f019f0af31d33a0e352113ab98a89814c00e208b1d63e5ed4",
+      "pinned_sha256": "4ae5ee072a5f1d1f019f0af31d33a0e352113ab98a89814c00e208b1d63e5ed4",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "optee-os",
+      "path": "core/kernel/dt.c",
+      "url": "https://github.com/OP-TEE/optee_os/blob/2a5b1d1232f582056184367fb58a425ac7478ec6/core/kernel/dt.c",
+      "observed_sha256": "4375181234beaf207a124adb9da5898946844d256f22547cb8c09c59e6a41695",
+      "pinned_sha256": "4375181234beaf207a124adb9da5898946844d256f22547cb8c09c59e6a41695",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "optee-os",
+      "path": "core/arch/arm/sm/psci.c",
+      "url": "https://github.com/OP-TEE/optee_os/blob/2a5b1d1232f582056184367fb58a425ac7478ec6/core/arch/arm/sm/psci.c",
+      "observed_sha256": "5c5add8ed829a2ceaba27c7969a93c757c00b961818130aac8dfe80416cba3a9",
+      "pinned_sha256": "5c5add8ed829a2ceaba27c7969a93c757c00b961818130aac8dfe80416cba3a9",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "optee-os",
+      "path": "core/arch/arm/include/sm/psci.h",
+      "url": "https://github.com/OP-TEE/optee_os/blob/2a5b1d1232f582056184367fb58a425ac7478ec6/core/arch/arm/include/sm/psci.h",
+      "observed_sha256": "7d7cb8e26047d19cc112b4554e9435d4bda4910ec873580b676d4b69faf523b5",
+      "pinned_sha256": "7d7cb8e26047d19cc112b4554e9435d4bda4910ec873580b676d4b69faf523b5",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "optee-os",
+      "path": "mk/config.mk",
+      "url": "https://github.com/OP-TEE/optee_os/blob/2a5b1d1232f582056184367fb58a425ac7478ec6/mk/config.mk",
+      "observed_sha256": "ab5f1cdf6ea80ca820cf596df2f1d95efd80b4a3c43fb4f36eea7b7ddef6e631",
+      "pinned_sha256": "ab5f1cdf6ea80ca820cf596df2f1d95efd80b4a3c43fb4f36eea7b7ddef6e631",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "kernel",
+      "path": "arch/arm/boot/dts/rk322x.dtsi",
+      "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/boot/dts/rk322x.dtsi",
+      "observed_sha256": "0d4389156fc47e164387434efb796718e163c2749058f78705b71cdf27fa00e2",
+      "pinned_sha256": "0d4389156fc47e164387434efb796718e163c2749058f78705b71cdf27fa00e2",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "kernel",
+      "path": "arch/arm/kernel/psci.c",
+      "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/kernel/psci.c",
+      "observed_sha256": "1e08f05fadd0c18f510a9dd3b234e595010ea24fb7e7cc77a22631403a925f74",
+      "pinned_sha256": "1e08f05fadd0c18f510a9dd3b234e595010ea24fb7e7cc77a22631403a925f74",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "kernel",
+      "path": "arch/arm/kernel/setup.c",
+      "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/kernel/setup.c",
+      "observed_sha256": "3d86f2542ff9d9bcb3277270ae1447ab121d537db98759b2ddebe053af5a1077",
+      "pinned_sha256": "3d86f2542ff9d9bcb3277270ae1447ab121d537db98759b2ddebe053af5a1077",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "kernel",
+      "path": "arch/arm/mach-rockchip/psci.c",
+      "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/mach-rockchip/psci.c",
+      "observed_sha256": "1949fe134bc4e9b24026a93da37f2c0f56e799e1742e0c11edcc5bfcbbfc1860",
+      "pinned_sha256": "1949fe134bc4e9b24026a93da37f2c0f56e799e1742e0c11edcc5bfcbbfc1860",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "kernel",
+      "path": "drivers/of/fdt.c",
+      "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/drivers/of/fdt.c",
+      "observed_sha256": "cf0a730bf897238e9af0c6252b3013d4f51af1037223e8da11b6b9d7ccf8c4e4",
+      "pinned_sha256": "cf0a730bf897238e9af0c6252b3013d4f51af1037223e8da11b6b9d7ccf8c4e4",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "kernel",
+      "path": "arch/arm/mm/init.c",
+      "url": "https://github.com/rockchip-linux/kernel/blob/6c04d006ae881944d32c19e68b992d0bd5ab4fde/arch/arm/mm/init.c",
+      "observed_sha256": "f21723a936dd787449c8c80e5f96e98d326722ab735227a4fb54a175b979c76b",
+      "pinned_sha256": "f21723a936dd787449c8c80e5f96e98d326722ab735227a4fb54a175b979c76b",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "u-boot",
+      "path": "arch/arm/dts/rk322x.dtsi",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/arch/arm/dts/rk322x.dtsi",
+      "observed_sha256": "ddb1367e5cd3d7e12034c34db33b97b7de3d81ce1e4e9f0321dcfb4bd5129881",
+      "pinned_sha256": "ddb1367e5cd3d7e12034c34db33b97b7de3d81ce1e4e9f0321dcfb4bd5129881",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "u-boot",
+      "path": "drivers/pinctrl/rockchip/pinctrl-rk322x.c",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/drivers/pinctrl/rockchip/pinctrl-rk322x.c",
+      "observed_sha256": "5030d7366b88285aaa4e7d0b51b6f2aff762c267ca2e8916d9f56ac13e95ef22",
+      "pinned_sha256": "5030d7366b88285aaa4e7d0b51b6f2aff762c267ca2e8916d9f56ac13e95ef22",
+      "observed_matches_pin": true
+    },
+    {
+      "component": "u-boot",
+      "path": "drivers/pinctrl/rockchip/pinctrl-rockchip-core.c",
+      "url": "https://github.com/u-boot/u-boot/blob/866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e/drivers/pinctrl/rockchip/pinctrl-rockchip-core.c",
+      "observed_sha256": "94466676ae4af48d5ac60bb8137207a7ba2d8872e2b0bfffe791c5619f4250b5",
+      "pinned_sha256": "94466676ae4af48d5ac60bb8137207a7ba2d8872e2b0bfffe791c5619f4250b5",
+      "observed_matches_pin": true
+    }
+  ],
+  "uart_sd_source_consistency": {
+    "default_uart2_pins": [
+      "GPIO1_PC2 mux2",
+      "GPIO1_PC3 mux2"
+    ],
+    "sdmmc_bus4_pins": [
+      "GPIO1_PC2 mux1",
+      "GPIO1_PC3 mux1",
+      "GPIO1_PC4 mux1",
+      "GPIO1_PC5 mux1"
+    ],
+    "alternate_uart21_pins": [
+      "GPIO1_PB2 mux2 RX",
+      "GPIO1_PB1 mux2 TX"
+    ],
+    "pinctrl_route": {
+      "bank": 1,
+      "pin": 10,
+      "function": 2,
+      "grf_offset": "0x50",
+      "value": "BIT(24) | BIT(8)",
+      "meaning": "Select UART2 route1 from GPIO1_PB2 input; full pinctrl route processing applies this independently of early debug UART setup."
+    },
+    "runtime_not_verified": true,
+    "physical_board_uart_identity_not_inferred": true
+  }
+}

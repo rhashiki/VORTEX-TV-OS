@@ -1,0 +1,38 @@
+[
+  {
+    "path": "build/core/root.mk",
+    "sha256": "c4093f39d041957f4711ccab829155afac95cbaeb309bd1bc610faa6a6cc866a"
+  },
+  {
+    "path": "build/core/configure_local_jack.mk",
+    "sha256": "84e73d92435e75a31555994f74e97f7e00c7269c7cc3c65f3d615695e873ddaf"
+  },
+  {
+    "path": "build/core/config.mk",
+    "sha256": "9a68acbdcc39f7ced63c52b32efd0568668a1b7e4d2bb2feff319cfa142fc7f9"
+  },
+  {
+    "path": "build/core/java_common.mk",
+    "sha256": "d117c88d9fc4a703c0fbad1706f048b0e62a6e71791080915a689bc7c9966285"
+  },
+  {
+    "path": "build/core/package_internal.mk",
+    "sha256": "f47a2b42f608bd6ad51baca35f9d6b4b524bc2854129b514fbc931d501b76d66"
+  },
+  {
+    "path": "build/tools/acp/acp.c",
+    "sha256": "5d1c2dede44bd635bd2813cc099a6959347d4447af06610ee78cfae209c8c189"
+  },
+  {
+    "path": "build/libs/host/CopyFile.c",
+    "sha256": "bb39826fa9c26c0dce2bee7149f0668ac599731e6853c56e7cacf765c37cdacc"
+  },
+  {
+    "path": "build/libs/host/include/host/CopyFile.h",
+    "sha256": "10633dee95d15746351990dddda6eae5a0a5c60965f998063c9583aad993e13e"
+  },
+  {
+    "path": "build/target/product/security/platform.x509.pem",
+    "sha256": "9837de028f460c35cc8d3fa45f14eecce30f6fbfe4b93d399aef1acb80c20d14"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/rhashiki/VORTEX-TV-OS",
+  "revision": "45d626a4bc508b49b8863bd67e2ce9f2f17554d5",
+  "archive_sha256": "9fa675815626e24d137533f82bbdfc065da8647b33f64e1a1ec5b1b78a572a45",
+  "android_mk_sha256": "f4a2c6b7fe7f180758ebbbc6574964b1d910f0084105e8cb28e9047cee9768fc",
+  "source_modified": true,
+  "applied_patch": "vortex-aosp-integration.patch",
+  "patch_sha256": "ec12d0f7e50dd9eb3c9423d48f40b92d5690ef23194ed123e77d5281d8d7b9d7",
+  "patched_android_mk_sha256": "0ccbaf103edf02a46fad6615b435df4cf2e0813a163c0d0355cd403299be680f"
+}

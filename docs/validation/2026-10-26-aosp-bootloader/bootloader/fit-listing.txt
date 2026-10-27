@@ -1,0 +1,31 @@
+FIT description: FIT image with OP-TEE
+Created:         Mon Oct 26 15:19:21 2026
+ Image 0 (u-boot)
+  Description:  U-Boot
+  Created:      Mon Oct 26 15:19:21 2026
+  Type:         Standalone Program
+  Compression:  uncompressed
+  Data Size:    237824 Bytes = 232.25 KiB = 0.23 MiB
+  Architecture: ARM
+  Load Address: 0x61000000
+  Entry Point:  0x61000000
+ Image 1 (op-tee)
+  Description:  OP-TEE
+  Created:      Mon Oct 26 15:19:21 2026
+  Type:         Trusted Execution Environment Image
+  Compression:  uncompressed
+  Data Size:    329840 Bytes = 322.11 KiB = 0.31 MiB
+ Image 2 (fdt-1)
+  Description:  fdt-rk3229-vortex-sd-reference
+  Created:      Mon Oct 26 15:19:21 2026
+  Type:         Flat Device Tree
+  Compression:  uncompressed
+  Data Size:    28280 Bytes = 27.62 KiB = 0.03 MiB
+  Architecture: Unknown Architecture
+ Default Configuration: 'config-1'
+ Configuration 0 (config-1)
+  Description:  rk3229-vortex-sd-reference.dtb
+  Kernel:       unavailable
+  Firmware:     op-tee
+  FDT:          fdt-1
+  Loadables:    u-boot

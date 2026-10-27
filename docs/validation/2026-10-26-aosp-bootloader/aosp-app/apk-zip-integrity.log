@@ -1,0 +1,9 @@
+Archive:  /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/priv-app/VortexHome/VortexHome.apk
+    testing: resources.arsc           OK
+    testing: AndroidManifest.xml      OK
+    testing: classes.dex              OK
+    testing: res/drawable/ic_power.xml   OK
+    testing: META-INF/MANIFEST.MF     OK
+    testing: META-INF/CERT.SF         OK
+    testing: META-INF/CERT.RSA        OK
+No errors detected in compressed data of /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/priv-app/VortexHome/VortexHome.apk.

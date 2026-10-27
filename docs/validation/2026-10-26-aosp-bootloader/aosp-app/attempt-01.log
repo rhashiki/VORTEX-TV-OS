@@ -1,0 +1,6 @@
+build/envsetup.sh: line 688: TOP: unbound variable
+cat: /build/envsetup.sh: No such file or directory
+cat: /build/envsetup.sh: No such file or directory
+make: build/core/config.mk: No such file or directory
+make: *** No rule to make target 'build/core/config.mk'.  Stop.
+build/envsetup.sh: line 298: STAY_OFF_MY_LAWN: unbound variable

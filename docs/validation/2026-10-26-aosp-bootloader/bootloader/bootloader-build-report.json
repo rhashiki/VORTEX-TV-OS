@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "scope": "Compiled reference boot components and static container checks only, no full Android/SD image or physical boot.",
+  "u_boot_source": {
+    "repository": "https://github.com/u-boot/u-boot.git",
+    "revision": "866ca972d6c3cabeaf6dbac431e8e08bb30b3c8e"
+  },
+  "optee_source": {
+    "repository": "https://github.com/OP-TEE/optee_os.git",
+    "revision": "2a5b1d1232f582056184367fb58a425ac7478ec6",
+    "platform": "rockchip/rk322x",
+    "checkout_clean": true
+  },
+  "u_boot_make_exit_code": 0,
+  "optee_make_exit_code": 0,
+  "artifacts": {
+    "tee-rk322x-reference.bin": {
+      "size_bytes": 329840,
+      "sha256": "1af5d3db3df39fae6dc977c00c4f21f47108e278ec2e4a282255060d16f8460a",
+      "original": "/workspace/build01-platform-next/optee-build/out/core/tee-raw.bin"
+    },
+    "idbloader-sd-reference.img": {
+      "size_bytes": 75776,
+      "sha256": "0485409c9f936c58a6b78e3fdd5aeb1d2d279c7686d5806a92c8fe98d2ba8f8e",
+      "original": "/workspace/build01-platform-next/uboot-sd/out/idbloader.img"
+    },
+    "u-boot-sd-reference.itb": {
+      "size_bytes": 598528,
+      "sha256": "35275d1e5b644b3ed2b0f87ddca395c87ae0521d93261e591c61d65ab067a63e",
+      "original": "/workspace/build01-platform-next/uboot-sd/out/u-boot.itb"
+    },
+    "u-boot-rockchip-reference.bin": {
+      "size_bytes": 8954368,
+      "sha256": "58e9f9d99f41803f4329646c15e9d7b89156a24fd3285a3a78482cf6a466817e",
+      "original": "/workspace/build01-platform-next/uboot-sd/out/u-boot-rockchip.bin"
+    }
+  },
+  "compiled_environment": {
+    "source": "default_environment symbol in final ARM ELF",
+    "values": {
+      "bootcmd": "echo Vortex SD reference components only",
+      "bootdelay": "-1",
+      "baudrate": "1500000",
+      "stdin": "serial",
+      "stdout": "serial",
+      "stderr": "serial",
+      "boot_targets": "mmc0"
+    },
+    "sha256": "dab8d84b2ddf3696d960cf462976bb3fe73ae8172fd1df551bc028db3d97173d"
+  },
+  "FIT_images": {
+    "u-boot": {
+      "size_bytes": 237824,
+      "offset": 1536,
+      "sha256": "70928fcdca0114d20a1d44c0964a59821ad0eae9a00319412ebe50a6e0dddf1c",
+      "load": "0x61000000",
+      "entry": "0x61000000"
+    },
+    "op-tee": {
+      "size_bytes": 329840,
+      "offset": 239616,
+      "sha256": "1af5d3db3df39fae6dc977c00c4f21f47108e278ec2e4a282255060d16f8460a",
+      "load": "0x68400000",
+      "entry": "0x68400000"
+    },
+    "fdt-1": {
+      "size_bytes": 28280,
+      "offset": 569856,
+      "sha256": "a55d17a7e63c289cc24eceba12811dc99229875e10d2152df861f01803050b61",
+      "load": "0x0",
+      "entry": "0x0"
+    }
+  },
+  "config_sha256": "538c59b49465feefcef3a5c60fea8a89fbf65abd4e603fe1af176b9aa5e710fe",
+  "optee_config_sha256": "f79b76efeede123a04ce81811aa628f6edfbb08dffdd525577c0de1a8a56cfcd",
+  "limits": [
+    "EVB DDR timing, voltage and pin assignments are not verified for R329Q_V8.0.",
+    "No Android payload or automatic boot is configured; bootdelay is -1.",
+    "Open-stage SD restrictions do not control BootROM fallback.",
+    "PSCI does not establish the Rockchip SIP ABI expected by Linux3.10.",
+    "Runtime OPTEE memory fixups and physical drivers are untested.",
+    "These are generic source-built bootloader components, not installable Vortex media."
+  ],
+  "profile_files": {
+    "rk3229-vortex-sd-reference-u-boot.dtsi": "6ab875d3d31a25617ae315736843cdc1135767ec4bcfbd4058b9bb9e892c5671",
+    "rk3229-vortex-sd-reference.dts": "5c46861558c8a4cebdb8869b3fc155cc412e2da8a2e0d21bab22b5740836c970",
+    "uboot-sd-reference.config": "5149b8426235278b8b3ce014d03f6d9592b265b90c45da13fdaabf951fe8a545",
+    "vortex-sd-reference.env": "2f7d6ad9cb965ac9c960b1537e629e4a94dc80a14f21a33c7dbccdc7c1aa0804"
+  },
+  "control_DTBs": {
+    "u-boot.dtb": {
+      "size_bytes": 28280,
+      "sha256": "a55d17a7e63c289cc24eceba12811dc99229875e10d2152df861f01803050b61"
+    },
+    "spl/u-boot-spl.dtb": {
+      "size_bytes": 3232,
+      "sha256": "b9c0297f97ed80364a0ee54d81400d2b17ee0ee744a5cb8a924d89fb1b740368"
+    },
+    "tpl/u-boot-tpl.dtb": {
+      "size_bytes": 3232,
+      "sha256": "b9c0297f97ed80364a0ee54d81400d2b17ee0ee744a5cb8a924d89fb1b740368"
+    }
+  },
+  "pinconf_fix": "Retain pcfg_pull_none_drv_12ma, pcfg_pull_up and pcfg_pull_none in filtered SPL/TPL DTBs; all references rechecked after rebuild.",
+  "source_changes": {
+    "tracked_upstream_changes": [],
+    "new_source_files": [
+      "arch/arm/dts/rk3229-vortex-sd-reference.dts",
+      "arch/arm/dts/rk3229-vortex-sd-reference-u-boot.dtsi",
+      "board/rockchip/evb_rk3229/vortex-sd-reference.env"
+    ]
+  },
+  "toolchain": {
+    "repository": "https://github.com/pstglia/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf.git",
+    "revision": "dd4df7dff4f1df65d78939a958b760a79e3650a1",
+    "gcc_version": "6.3.1 20170404",
+    "host_gcc": "Debian14.2.0"
+  },
+  "host_tools": {
+    "bison": "3.8.2",
+    "flex": "2.6.4",
+    "m4": "1.4.19",
+    "SWIG_final": "4.2.1",
+    "SWIG_4.3": "failed due to changed Python AppendOutput API, retained log",
+    "setuptools": "75.8.0 required for legacy pkg_resources import",
+    "pyelftools": "0.32",
+    "pycryptodome": "3.23.0",
+    "source_changes_for_host_tools": false
+  },
+  "warnings": "Warnings remain visible in the raw logs, including the upstream host-tool sunxi_toc0 nonnull warning; no blanket suppression added. No zero-warning claim."
+}

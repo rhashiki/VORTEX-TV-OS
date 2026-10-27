@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "scope": "Isolated ARM EABI declaration-layout measurement only; not an Android HAL compile, whole-kernel build, link, runtime test or complete ABI approval.",
+  "kernel_revision": "6c04d006ae881944d32c19e68b992d0bd5ab4fde",
+  "userspace_repository": "https://github.com/rockchip-android/hardware-libhardware.git",
+  "userspace_revision": "d0c81ba009240cb9ab38d75d7e88190055349c2a",
+  "compiler_repository": "https://github.com/pstglia/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf.git",
+  "compiler_revision": "dd4df7dff4f1df65d78939a958b760a79e3650a1",
+  "records": [
+    {
+      "label": "userspace",
+      "source_header": "/workspace/build01-platform-next/research/rockchip-libhardware/include/hardware/rk_fh.h",
+      "source_header_sha256": "e3d3629b706628ab3d46423551e25f7c2dfacc6f8b10e8100ed1253bb7e3de6e",
+      "declaration_excerpt_sha256": "794709f09e2291e597aa44b7558510f4bcbd4376d582eabc6e7f2bbaeb7e4f1c",
+      "compile_command": [
+        "/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-gcc",
+        "-march=armv7-a",
+        "-mabi=aapcs-linux",
+        "-mfloat-abi=hard",
+        "-fno-common",
+        "-Wall",
+        "-Werror",
+        "-c",
+        "/workspace/build01-platform-next/research/framebuffer-abi-review/userspace.c",
+        "-o",
+        "/workspace/build01-platform-next/research/framebuffer-abi-review/userspace.o"
+      ],
+      "compile_exit_code": 0,
+      "object_sha256": "9fa67872d5f17559d50282ebda6a6d62e559a0fa4714294ad7167785d0328f75",
+      "sizes_bytes": {
+        "measure_area": 40,
+        "measure_cfg": 904,
+        "measure_tail": 16,
+        "measure_tail_offset": 888,
+        "measure_win": 172
+      }
+    },
+    {
+      "label": "kernel",
+      "source_header": "/workspace/build01-sd-next/kernel-sd/source/include/linux/rk_fb.h",
+      "source_header_sha256": "6968d7098fef41f61bb41326cb05d2bc607f1888e726ae86f43fef9a4ada2e88",
+      "declaration_excerpt_sha256": "90638a1686ab9d0193eede264a80a6d7e0c9d96410a28e41f816c15e0b7152d1",
+      "compile_command": [
+        "/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-gcc",
+        "-march=armv7-a",
+        "-mabi=aapcs-linux",
+        "-mfloat-abi=hard",
+        "-fno-common",
+        "-Wall",
+        "-Werror",
+        "-c",
+        "/workspace/build01-platform-next/research/framebuffer-abi-review/kernel.c",
+        "-o",
+        "/workspace/build01-platform-next/research/framebuffer-abi-review/kernel.o"
+      ],
+      "compile_exit_code": 0,
+      "object_sha256": "544d725d358f3790a04164d2fe7f18840864596fab4fb9366bd2090479d9e947",
+      "sizes_bytes": {
+        "measure_area": 40,
+        "measure_cfg": 908,
+        "measure_tail": 20,
+        "measure_tail_offset": 888,
+        "measure_win": 172
+      }
+    }
+  ],
+  "trailing_member_differs": true,
+  "cfg_size_equal": false,
+  "assessment": "The userspace framebuffer config declaration is smaller and has a different trailing member than the examined kernel config declaration. Equal ioctl numbers and shared prefixes do not establish safe caller/kernel ABI compatibility. Do not use this HAL/kernel pair as an approved display stack without matching the full interface and behavior."
+}

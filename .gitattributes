@@ -6,3 +6,6 @@ docs/validation/2026-10-25-sd/*.log -whitespace
 docs/validation/2026-10-25-sd/kernel-vmlinux-header.txt -whitespace
 docs/validation/2026-10-26-sd-profile/**/*.log -whitespace
 docs/validation/2026-10-26-sd-profile/kernel-sd/*.txt -whitespace
+docs/validation/2026-10-26-aosp-bootloader/**/*.log -whitespace
+docs/validation/2026-10-26-aosp-bootloader/**/*.txt -whitespace
+docs/validation/2026-10-26-aosp-bootloader/bootloader/optee.generated.mk -whitespace

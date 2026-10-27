@@ -1,0 +1,5 @@
+00000000 00000028 B measure_area
+000000d4 0000038c B measure_cfg
+00000460 00000014 B measure_tail
+00000474 00000378 B measure_tail_offset
+00000028 000000ac B measure_win

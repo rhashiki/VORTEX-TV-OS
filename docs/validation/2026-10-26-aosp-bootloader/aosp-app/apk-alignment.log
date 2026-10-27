@@ -1,0 +1,9 @@
+Verifying alignment of /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/priv-app/VortexHome/VortexHome.apk (4)...
+      48 resources.arsc (OK)
+     913 AndroidManifest.xml (OK - compressed)
+    2230 classes.dex (OK - compressed)
+   39498 res/drawable/ic_power.xml (OK - compressed)
+   40059 META-INF/MANIFEST.MF (OK - compressed)
+   40419 META-INF/CERT.SF (OK - compressed)
+   40837 META-INF/CERT.RSA (OK - compressed)
+Verification succesful

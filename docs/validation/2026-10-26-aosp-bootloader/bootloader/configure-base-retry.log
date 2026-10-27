@@ -1,0 +1,10 @@
+make[1]: Entering directory '/workspace/build01-platform-next/uboot-sd/out'
+  GEN     Makefile
+  YACC    scripts/kconfig/zconf.tab.c
+  LEX     scripts/kconfig/zconf.lex.c
+  HOSTCC  scripts/kconfig/zconf.tab.o
+  HOSTLD  scripts/kconfig/conf
+#
+# configuration written to .config
+#
+make[1]: Leaving directory '/workspace/build01-platform-next/uboot-sd/out'

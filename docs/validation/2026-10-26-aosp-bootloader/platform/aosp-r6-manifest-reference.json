@@ -1,0 +1,20 @@
+{
+  "url": "https://android.googlesource.com/platform/manifest/+/android-7.1.2_r6/default.xml?format=TEXT",
+  "tag": "android-7.1.2_r6",
+  "sha256": "9a0ef14c94804bbdf5c90c25f24a52f6435035a54e90827ca7626ca7e696363f",
+  "size_bytes": 52889,
+  "project_count": 541,
+  "include_names": [],
+  "default": {
+    "revision": "refs/tags/android-7.1.2_r6",
+    "remote": "aosp",
+    "sync-j": "4"
+  },
+  "remote": [
+    {
+      "name": "aosp",
+      "fetch": "..",
+      "review": "https://android-review.googlesource.com/"
+    }
+  ]
+}

@@ -1,0 +1,562 @@
+{
+  "scope": "Read-only inspection of real built artifacts; not a boot test or physical compatibility approval.",
+  "trees": {
+    "u-boot.dtb": {
+      "size_bytes": 28280,
+      "sha256": "a55d17a7e63c289cc24eceba12811dc99229875e10d2152df861f01803050b61",
+      "version": 17,
+      "last_compatible_version": 16,
+      "alias_mmc0": "/mmc@30000000",
+      "spl_order": "mmc0",
+      "nodes": {
+        "/mmc@30000000": {
+          "present": true,
+          "status": "okay",
+          "reg": [
+            805306368,
+            16384
+          ],
+          "groups": [
+            "sdmmc-clk",
+            "sdmmc-cmd",
+            "sdmmc-bus4"
+          ]
+        },
+        "/mmc@30010000": {
+          "present": true,
+          "status": "disabled",
+          "reg": [
+            805371904,
+            16384
+          ],
+          "groups": []
+        },
+        "/mmc@30020000": {
+          "present": true,
+          "status": "disabled",
+          "reg": [
+            805437440,
+            16384
+          ],
+          "groups": []
+        },
+        "/serial@11030000": {
+          "present": true,
+          "status": "okay",
+          "reg": [
+            285409280,
+            256
+          ],
+          "groups": [
+            "uart21-xfer"
+          ]
+        }
+      },
+      "active_pinconf_references": [
+        {
+          "consumer": "/mmc@30000000",
+          "group": "sdmmc-clk",
+          "bank": 1,
+          "pin": 16,
+          "function": 1,
+          "pinconf_phandle": 79,
+          "pinconf_node": "pcfg-pull-none-drv-12ma",
+          "resolved": true
+        },
+        {
+          "consumer": "/mmc@30000000",
+          "group": "sdmmc-cmd",
+          "bank": 1,
+          "pin": 15,
+          "function": 1,
+          "pinconf_phandle": 79,
+          "pinconf_node": "pcfg-pull-none-drv-12ma",
+          "resolved": true
+        },
+        {
+          "consumer": "/mmc@30000000",
+          "group": "sdmmc-bus4",
+          "bank": 1,
+          "pin": 18,
+          "function": 1,
+          "pinconf_phandle": 79,
+          "pinconf_node": "pcfg-pull-none-drv-12ma",
+          "resolved": true
+        },
+        {
+          "consumer": "/mmc@30000000",
+          "group": "sdmmc-bus4",
+          "bank": 1,
+          "pin": 19,
+          "function": 1,
+          "pinconf_phandle": 79,
+          "pinconf_node": "pcfg-pull-none-drv-12ma",
+          "resolved": true
+        },
+        {
+          "consumer": "/mmc@30000000",
+          "group": "sdmmc-bus4",
+          "bank": 1,
+          "pin": 20,
+          "function": 1,
+          "pinconf_phandle": 79,
+          "pinconf_node": "pcfg-pull-none-drv-12ma",
+          "resolved": true
+        },
+        {
+          "consumer": "/mmc@30000000",
+          "group": "sdmmc-bus4",
+          "bank": 1,
+          "pin": 21,
+          "function": 1,
+          "pinconf_phandle": 79,
+          "pinconf_node": "pcfg-pull-none-drv-12ma",
+          "resolved": true
+        },
+        {
+          "consumer": "/serial@11030000",
+          "group": "uart21-xfer",
+          "bank": 1,
+          "pin": 10,
+          "function": 2,
+          "pinconf_phandle": 82,
+          "pinconf_node": "pcfg-pull-up",
+          "resolved": true
+        },
+        {
+          "consumer": "/serial@11030000",
+          "group": "uart21-xfer",
+          "bank": 1,
+          "pin": 9,
+          "function": 2,
+          "pinconf_phandle": 80,
+          "pinconf_node": "pcfg-pull-none",
+          "resolved": true
+        }
+      ],
+      "checks": {
+        "mmc0_is_sd_controller": true,
+        "spl_order_only_mmc0": true,
+        "sd_enabled": true,
+        "emmc_disabled_or_absent": true,
+        "sdio_disabled_or_absent": true,
+        "all_active_pinconf_targets_resolve": true,
+        "sd_bus4_pc2_pc5_mux1": true,
+        "uart21_pb1_pb2_mux2": true
+      }
+    },
+    "spl/u-boot-spl.dtb": {
+      "size_bytes": 3232,
+      "sha256": "b9c0297f97ed80364a0ee54d81400d2b17ee0ee744a5cb8a924d89fb1b740368",
+      "version": 17,
+      "last_compatible_version": 2,
+      "alias_mmc0": "/mmc@30000000",
+      "spl_order": "mmc0",
+      "nodes": {
+        "/mmc@30000000": {
+          "present": true,
+          "status": "okay",
+          "reg": [
+            805306368,
+            16384
+          ],
+          "groups": [
+            "sdmmc-clk",
+            "sdmmc-cmd",
+            "sdmmc-bus4"
+          ]
+        },
+        "/mmc@30010000": {
+          "present": false
+        },
+        "/mmc@30020000": {
+          "present": true,
+          "status": "disabled",
+          "reg": [
+            805437440,
+            16384
+          ],
+          "groups": []
+        },
+        "/serial@11030000": {
+          "present": true,
+          "status": "okay",
+          "reg": [
+            285409280,
+            256
+          ],
+          "groups": [
+            "uart21-xfer"
+          ]
+        }
+      },
+      "active_pinconf_references": [
+        {
+          "consumer": "/mmc@30000000",
+          "group": "sdmmc-clk",
+          "bank": 1,
+          "pin": 16,
+          "function": 1,
+          "pinconf_phandle": 79,
+          "pinconf_node": "pcfg-pull-none-drv-12ma",
+          "resolved": true
+        },
+        {
+          "consumer": "/mmc@30000000",
+          "group": "sdmmc-cmd",
+          "bank": 1,
+          "pin": 15,
+          "function": 1,
+          "pinconf_phandle": 79,
+          "pinconf_node": "pcfg-pull-none-drv-12ma",
+          "resolved": true
+        },
+        {
+          "consumer": "/mmc@30000000",
+          "group": "sdmmc-bus4",
+          "bank": 1,
+          "pin": 18,
+          "function": 1,
+          "pinconf_phandle": 79,
+          "pinconf_node": "pcfg-pull-none-drv-12ma",
+          "resolved": true
+        },
+        {
+          "consumer": "/mmc@30000000",
+          "group": "sdmmc-bus4",
+          "bank": 1,
+          "pin": 19,
+          "function": 1,
+          "pinconf_phandle": 79,
+          "pinconf_node": "pcfg-pull-none-drv-12ma",
+          "resolved": true
+        },
+        {
+          "consumer": "/mmc@30000000",
+          "group": "sdmmc-bus4",
+          "bank": 1,
+          "pin": 20,
+          "function": 1,
+          "pinconf_phandle": 79,
+          "pinconf_node": "pcfg-pull-none-drv-12ma",
+          "resolved": true
+        },
+        {
+          "consumer": "/mmc@30000000",
+          "group": "sdmmc-bus4",
+          "bank": 1,
+          "pin": 21,
+          "function": 1,
+          "pinconf_phandle": 79,
+          "pinconf_node": "pcfg-pull-none-drv-12ma",
+          "resolved": true
+        },
+        {
+          "consumer": "/serial@11030000",
+          "group": "uart21-xfer",
+          "bank": 1,
+          "pin": 10,
+          "function": 2,
+          "pinconf_phandle": 82,
+          "pinconf_node": "pcfg-pull-up",
+          "resolved": true
+        },
+        {
+          "consumer": "/serial@11030000",
+          "group": "uart21-xfer",
+          "bank": 1,
+          "pin": 9,
+          "function": 2,
+          "pinconf_phandle": 80,
+          "pinconf_node": "pcfg-pull-none",
+          "resolved": true
+        }
+      ],
+      "checks": {
+        "mmc0_is_sd_controller": true,
+        "spl_order_only_mmc0": true,
+        "sd_enabled": true,
+        "emmc_disabled_or_absent": true,
+        "sdio_disabled_or_absent": true,
+        "all_active_pinconf_targets_resolve": true,
+        "sd_bus4_pc2_pc5_mux1": true,
+        "uart21_pb1_pb2_mux2": true
+      }
+    },
+    "tpl/u-boot-tpl.dtb": {
+      "size_bytes": 3232,
+      "sha256": "b9c0297f97ed80364a0ee54d81400d2b17ee0ee744a5cb8a924d89fb1b740368",
+      "version": 17,
+      "last_compatible_version": 2,
+      "alias_mmc0": "/mmc@30000000",
+      "spl_order": "mmc0",
+      "nodes": {
+        "/mmc@30000000": {
+          "present": true,
+          "status": "okay",
+          "reg": [
+            805306368,
+            16384
+          ],
+          "groups": [
+            "sdmmc-clk",
+            "sdmmc-cmd",
+            "sdmmc-bus4"
+          ]
+        },
+        "/mmc@30010000": {
+          "present": false
+        },
+        "/mmc@30020000": {
+          "present": true,
+          "status": "disabled",
+          "reg": [
+            805437440,
+            16384
+          ],
+          "groups": []
+        },
+        "/serial@11030000": {
+          "present": true,
+          "status": "okay",
+          "reg": [
+            285409280,
+            256
+          ],
+          "groups": [
+            "uart21-xfer"
+          ]
+        }
+      },
+      "active_pinconf_references": [
+        {
+          "consumer": "/mmc@30000000",
+          "group": "sdmmc-clk",
+          "bank": 1,
+          "pin": 16,
+          "function": 1,
+          "pinconf_phandle": 79,
+          "pinconf_node": "pcfg-pull-none-drv-12ma",
+          "resolved": true
+        },
+        {
+          "consumer": "/mmc@30000000",
+          "group": "sdmmc-cmd",
+          "bank": 1,
+          "pin": 15,
+          "function": 1,
+          "pinconf_phandle": 79,
+          "pinconf_node": "pcfg-pull-none-drv-12ma",
+          "resolved": true
+        },
+        {
+          "consumer": "/mmc@30000000",
+          "group": "sdmmc-bus4",
+          "bank": 1,
+          "pin": 18,
+          "function": 1,
+          "pinconf_phandle": 79,
+          "pinconf_node": "pcfg-pull-none-drv-12ma",
+          "resolved": true
+        },
+        {
+          "consumer": "/mmc@30000000",
+          "group": "sdmmc-bus4",
+          "bank": 1,
+          "pin": 19,
+          "function": 1,
+          "pinconf_phandle": 79,
+          "pinconf_node": "pcfg-pull-none-drv-12ma",
+          "resolved": true
+        },
+        {
+          "consumer": "/mmc@30000000",
+          "group": "sdmmc-bus4",
+          "bank": 1,
+          "pin": 20,
+          "function": 1,
+          "pinconf_phandle": 79,
+          "pinconf_node": "pcfg-pull-none-drv-12ma",
+          "resolved": true
+        },
+        {
+          "consumer": "/mmc@30000000",
+          "group": "sdmmc-bus4",
+          "bank": 1,
+          "pin": 21,
+          "function": 1,
+          "pinconf_phandle": 79,
+          "pinconf_node": "pcfg-pull-none-drv-12ma",
+          "resolved": true
+        },
+        {
+          "consumer": "/serial@11030000",
+          "group": "uart21-xfer",
+          "bank": 1,
+          "pin": 10,
+          "function": 2,
+          "pinconf_phandle": 82,
+          "pinconf_node": "pcfg-pull-up",
+          "resolved": true
+        },
+        {
+          "consumer": "/serial@11030000",
+          "group": "uart21-xfer",
+          "bank": 1,
+          "pin": 9,
+          "function": 2,
+          "pinconf_phandle": 80,
+          "pinconf_node": "pcfg-pull-none",
+          "resolved": true
+        }
+      ],
+      "checks": {
+        "mmc0_is_sd_controller": true,
+        "spl_order_only_mmc0": true,
+        "sd_enabled": true,
+        "emmc_disabled_or_absent": true,
+        "sdio_disabled_or_absent": true,
+        "all_active_pinconf_targets_resolve": true,
+        "sd_bus4_pc2_pc5_mux1": true,
+        "uart21_pb1_pb2_mux2": true
+      }
+    }
+  },
+  "config": {
+    "sha256": "538c59b49465feefcef3a5c60fea8a89fbf65abd4e603fe1af176b9aa5e710fe",
+    "resolved_values": {
+      "OPTEE_LIB": "y",
+      "ENV_IS_NOWHERE": "y",
+      "USE_DEFAULT_ENV_FILE": "y",
+      "PINCTRL_FULL": "y",
+      "SPL_PINCTRL": "y",
+      "SPL_PINCTRL_FULL": "y",
+      "MMC_WRITE": "n",
+      "SPL_MMC_WRITE": "n",
+      "CMD_SAVEENV": "n",
+      "CMD_ERASEENV": "n (not generated/dependency disabled)",
+      "CMD_FASTBOOT": "n (not generated/dependency disabled)",
+      "FASTBOOT": "n (not generated/dependency disabled)",
+      "CMD_USB_MASS_STORAGE": "n (not generated/dependency disabled)",
+      "USB": "n",
+      "NET": "n",
+      "MTD": "n",
+      "CMD_MMC": "n"
+    },
+    "checks": {
+      "OPTEE_LIB": true,
+      "ENV_IS_NOWHERE": true,
+      "USE_DEFAULT_ENV_FILE": true,
+      "PINCTRL_FULL": true,
+      "SPL_PINCTRL": true,
+      "SPL_PINCTRL_FULL": true,
+      "MMC_WRITE": true,
+      "SPL_MMC_WRITE": true,
+      "CMD_SAVEENV": true,
+      "CMD_ERASEENV": true,
+      "CMD_FASTBOOT": true,
+      "FASTBOOT": true,
+      "CMD_USB_MASS_STORAGE": true,
+      "USB": true,
+      "NET": true,
+      "MTD": true,
+      "CMD_MMC": true
+    },
+    "bootdelay": "-1",
+    "default_env_file": "\"board/rockchip/evb_rk3229/vortex-sd-reference.env\""
+  },
+  "elf": {
+    "sha256": "6b23ace513d53fbd9785e516e4337d9f442a2bbcd009bef6e9bc9239dcd75728",
+    "default_environment_size": 139,
+    "default_environment_sha256": "dab8d84b2ddf3696d960cf462976bb3fe73ae8172fd1df551bc028db3d97173d",
+    "default_environment_entries": [
+      "bootcmd=echo Vortex SD reference components only",
+      "bootdelay=-1",
+      "baudrate=1500000",
+      "stdin=serial",
+      "stdout=serial",
+      "stderr=serial",
+      "boot_targets=mmc0"
+    ],
+    "default_environment_exactly_expected": true,
+    "known_write_command_or_backend_symbols": [],
+    "compiled_commands": [
+      "bdinfo",
+      "blkcache",
+      "boot",
+      "bootd",
+      "bootelf",
+      "bootm",
+      "bootvx",
+      "bootz",
+      "coninfo",
+      "dm",
+      "echo",
+      "editenv",
+      "env",
+      "exit",
+      "ext2load",
+      "ext2ls",
+      "ext4load",
+      "ext4ls",
+      "ext4size",
+      "false",
+      "fdt",
+      "go",
+      "help",
+      "iminfo",
+      "imxtract",
+      "itest",
+      "loadb",
+      "loads",
+      "loadx",
+      "loady",
+      "panic",
+      "part",
+      "pinmux",
+      "printenv",
+      "question_mark",
+      "reset",
+      "run",
+      "setenv",
+      "showvar",
+      "sleep",
+      "source",
+      "test",
+      "time",
+      "true",
+      "version"
+    ],
+    "optee_copy_fdt_nodes_symbol_present": true,
+    "limits": [
+      "Symbol absence covers enumerated command/backend names only, not proof that arbitrary manual code execution or hardware can never write storage."
+    ]
+  },
+  "fit": {
+    "sha256": "35275d1e5b644b3ed2b0f87ddca395c87ae0521d93261e591c61d65ab067a63e",
+    "fdt_totalsize": 1536,
+    "optee_load": "0x68400000",
+    "optee_entry": "0x68400000",
+    "optee_data_offset_after_fit_header": 238080,
+    "optee_size": 329840,
+    "optee_sha256": "1af5d3db3df39fae6dc977c00c4f21f47108e278ec2e4a282255060d16f8460a",
+    "compiled_optee_sha256": "1af5d3db3df39fae6dc977c00c4f21f47108e278ec2e4a282255060d16f8460a",
+    "optee_payload_byte_identical_to_compiled_raw": true,
+    "firmware": "op-tee",
+    "loadables": "u-boot"
+  },
+  "all_tree_checks_pass": true,
+  "review_checks": {
+    "all_tree_checks_pass": true,
+    "all_config_checks_pass": true,
+    "environment_exact": true,
+    "enumerated_write_symbols_absent": true,
+    "optee_copy_fdt_nodes_compiled": true,
+    "optee_payload_matches_compiled": true,
+    "optee_load_entry_expected": true,
+    "fit_roles_match": true,
+    "autoboot_disabled": true
+  },
+  "all_static_artifact_checks_pass": true,
+  "hardware_validation": "not_performed"
+}

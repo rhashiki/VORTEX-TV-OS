@@ -1,0 +1,316 @@
+{
+  "schema_version": 1,
+  "scope": "Experimental local manifest composition; source/dependency/ABI/build/hardware validity not established.",
+  "base": {
+    "file": "aosp-r6-default.xml",
+    "sha256": "9a0ef14c94804bbdf5c90c25f24a52f6435035a54e90827ca7626ca7e696363f",
+    "release_tag": "android-7.1.2_r6",
+    "project_count": 541,
+    "remaining_AOSP_revisions_are_tags_not_a_resolved_lock": true
+  },
+  "overlay": {
+    "file": "vortex-r6-rockchip-experimental.xml",
+    "sha256": "12911892777019e11ad10b2aa44b4d027697689b6417982f09566c1e4256f571",
+    "project_count": 28,
+    "rockchip_platform_subset_count": 23,
+    "additional_known_candidates_and_Vortex_count": 5,
+    "projects": [
+      {
+        "name": "rockchip-android/bionic",
+        "path": "bionic",
+        "revision": "8b2e5b977118ebb8447cdf429c4a6be534c4fd1b",
+        "kind": "rockchip_platform_subset"
+      },
+      {
+        "name": "rockchip-android/build",
+        "path": "build",
+        "revision": "d2721c65c9282b31df7b79f85289ee6c4e636716",
+        "kind": "rockchip_platform_subset"
+      },
+      {
+        "name": "rockchip-android/build-blueprint",
+        "path": "build/blueprint",
+        "revision": "3a89d1ce9fe7a5160ee87ee11f99edbf540020fc",
+        "kind": "rockchip_platform_subset"
+      },
+      {
+        "name": "rockchip-android/build-kati",
+        "path": "build/kati",
+        "revision": "0d8f6ef0c3652de4a4b18dfa8f9b012781140ba4",
+        "kind": "rockchip_platform_subset"
+      },
+      {
+        "name": "rockchip-android/build-soong",
+        "path": "build/soong",
+        "revision": "ff019aa4cff6f8636102003ac14de5442ea6758f",
+        "kind": "rockchip_platform_subset"
+      },
+      {
+        "name": "rockchip-android/system-core",
+        "path": "system/core",
+        "revision": "ab5f1d24b072e36ddcf02439303050c501d9dc5b",
+        "kind": "rockchip_platform_subset"
+      },
+      {
+        "name": "rockchip-android/system-sepolicy",
+        "path": "system/sepolicy",
+        "revision": "38ee595100c26946fd918a4b3bbdea97d6aa8e9c",
+        "kind": "rockchip_platform_subset"
+      },
+      {
+        "name": "rockchip-android/frameworks-base",
+        "path": "frameworks/base",
+        "revision": "edd171fec429b9d51d9cb2da961a673ec51fcc4d",
+        "kind": "rockchip_platform_subset"
+      },
+      {
+        "name": "rockchip-android/frameworks-native",
+        "path": "frameworks/native",
+        "revision": "00c3ec97785c0d42f801083c8fc2fc26d3ce4e2d",
+        "kind": "rockchip_platform_subset"
+      },
+      {
+        "name": "rockchip-android/frameworks-av",
+        "path": "frameworks/av",
+        "revision": "ac031469f276a02febe6874d1445413b148c6cb7",
+        "kind": "rockchip_platform_subset"
+      },
+      {
+        "name": "rockchip-android/hardware-libhardware",
+        "path": "hardware/libhardware",
+        "revision": "d0c81ba009240cb9ab38d75d7e88190055349c2a",
+        "kind": "rockchip_platform_subset"
+      },
+      {
+        "name": "rockchip-android/hardware-libhardware_legacy",
+        "path": "hardware/libhardware_legacy",
+        "revision": "c04c4261b203c2015b379602a7fdc1137d80e48c",
+        "kind": "rockchip_platform_subset"
+      },
+      {
+        "name": "rockchip-android/hardware-rockchip-libgralloc",
+        "path": "hardware/rockchip/libgralloc",
+        "revision": "c92fb8cd8becd57b025149f2861a2072b092ddea",
+        "kind": "rockchip_platform_subset"
+      },
+      {
+        "name": "rockchip-android/hardware-rockchip-hwcomposer",
+        "path": "hardware/rockchip/hwcomposer",
+        "revision": "d3ec43f2f751123ca5e7bda2d07eded4c6352a35",
+        "kind": "rockchip_platform_subset"
+      },
+      {
+        "name": "rockchip-android/hardware-rockchip-audio",
+        "path": "hardware/rockchip/audio",
+        "revision": "03b111b6736b48ec17ffee4906caecf59323d8c1",
+        "kind": "rockchip_platform_subset"
+      },
+      {
+        "name": "rockchip-android/hardware-rockchip-librga",
+        "path": "hardware/rockchip/librga",
+        "revision": "4ab6c69933a6a1f509bd6891898766cbae9ff433",
+        "kind": "rockchip_platform_subset"
+      },
+      {
+        "name": "rockchip-android/hardware-rockchip-librkvpu",
+        "path": "hardware/rockchip/librkvpu",
+        "revision": "aa92e18a517967623a8bc0f1bc0752c9807d0743",
+        "kind": "rockchip_platform_subset"
+      },
+      {
+        "name": "rockchip-android/hardware-rockchip-libiep",
+        "path": "hardware/rockchip/libiep",
+        "revision": "aec928e51175616eaa658d20b66d3dc1d63a6b04",
+        "kind": "rockchip_platform_subset"
+      },
+      {
+        "name": "rockchip-android/hardware-rockchip-jpeghw",
+        "path": "hardware/rockchip/jpeghw",
+        "revision": "d9a9a6e0971aa63a1ab66e1360bb74dd33b99275",
+        "kind": "rockchip_platform_subset"
+      },
+      {
+        "name": "rockchip-android/hardware-rockchip-omx_il",
+        "path": "hardware/rockchip/omx_il",
+        "revision": "8055e4917a60af62954bc82cba6a6694f3dc6f74",
+        "kind": "rockchip_platform_subset"
+      },
+      {
+        "name": "rockchip-android/hardware-rockchip-hdmicec",
+        "path": "hardware/rockchip/hdmicec",
+        "revision": "ca7b5c87d321b682688db1c217a60bbdb9e14223",
+        "kind": "rockchip_platform_subset"
+      },
+      {
+        "name": "rockchip-android/external-wlan_loader",
+        "path": "external/wlan_loader",
+        "revision": "bbebed5248b615fddd1ca62a9f507ac2eb30088e",
+        "kind": "rockchip_platform_subset"
+      },
+      {
+        "name": "rockchip-android/hardware-broadcom-wlan",
+        "path": "hardware/broadcom/wlan",
+        "revision": "bd36b66640e8d71074ea5ea9c3d772d2689a2545",
+        "kind": "rockchip_platform_subset"
+      },
+      {
+        "name": "D042888-2/android_device_rockchip_rk322x",
+        "path": "device/rockchip/rk322x",
+        "revision": "f33a129bfab6d9cc87184ee3bf032224801fa446",
+        "kind": "known_device_candidate"
+      },
+      {
+        "name": "D042888-2/android_device_rockchip_common",
+        "path": "device/rockchip/common",
+        "revision": "3b1aa90ef43f9d34094739a211ad44bf9a2c0b74",
+        "kind": "known_common_candidate"
+      },
+      {
+        "name": "D042888-2/android_vendor_rockchip_rk322x",
+        "path": "vendor/rockchip/rk322x",
+        "revision": "50c7170ecb4bd907059db37f09f4767b301f2d15",
+        "kind": "known_vendor_candidate"
+      },
+      {
+        "name": "rockchip-linux/kernel",
+        "path": "kernel",
+        "revision": "6c04d006ae881944d32c19e68b992d0bd5ab4fde",
+        "kind": "known_kernel_source_candidate"
+      },
+      {
+        "name": "rhashiki/VORTEX-TV-OS",
+        "path": "vendor/vortex/home",
+        "revision": "45d626a4bc508b49b8863bd67e2ce9f2f17554d5",
+        "kind": "Vortex_source_pin"
+      }
+    ]
+  },
+  "excluded_observed_projects": [
+    {
+      "name": "rockchip-android/device-rockchip-common",
+      "reason": "Keep the D042 common revision targeted by SD patches; the new common differs and lacks init.rk30board.bootmode.sd.rc."
+    },
+    {
+      "name": "rockchip-android/device-rockchip-rk3328",
+      "reason": "RK3328 product is not the requested RK322x target."
+    }
+  ],
+  "base_replacements": [
+    {
+      "path": "bionic",
+      "removed_project": "platform/bionic",
+      "replacement": "rockchip-android/bionic"
+    },
+    {
+      "path": "build",
+      "removed_project": "platform/build",
+      "replacement": "rockchip-android/build"
+    },
+    {
+      "path": "build/blueprint",
+      "removed_project": "platform/build/blueprint",
+      "replacement": "rockchip-android/build-blueprint"
+    },
+    {
+      "path": "build/kati",
+      "removed_project": "platform/build/kati",
+      "replacement": "rockchip-android/build-kati"
+    },
+    {
+      "path": "build/soong",
+      "removed_project": "platform/build/soong",
+      "replacement": "rockchip-android/build-soong"
+    },
+    {
+      "path": "system/core",
+      "removed_project": "platform/system/core",
+      "replacement": "rockchip-android/system-core"
+    },
+    {
+      "path": "system/sepolicy",
+      "removed_project": "platform/system/sepolicy",
+      "replacement": "rockchip-android/system-sepolicy"
+    },
+    {
+      "path": "frameworks/base",
+      "removed_project": "platform/frameworks/base",
+      "replacement": "rockchip-android/frameworks-base"
+    },
+    {
+      "path": "frameworks/native",
+      "removed_project": "platform/frameworks/native",
+      "replacement": "rockchip-android/frameworks-native"
+    },
+    {
+      "path": "frameworks/av",
+      "removed_project": "platform/frameworks/av",
+      "replacement": "rockchip-android/frameworks-av"
+    },
+    {
+      "path": "hardware/libhardware",
+      "removed_project": "platform/hardware/libhardware",
+      "replacement": "rockchip-android/hardware-libhardware"
+    },
+    {
+      "path": "hardware/libhardware_legacy",
+      "removed_project": "platform/hardware/libhardware_legacy",
+      "replacement": "rockchip-android/hardware-libhardware_legacy"
+    },
+    {
+      "path": "hardware/broadcom/wlan",
+      "removed_project": "platform/hardware/broadcom/wlan",
+      "replacement": "rockchip-android/hardware-broadcom-wlan"
+    }
+  ],
+  "replaced_project_count": 13,
+  "effective_project_count": 556,
+  "duplicate_effective_paths": [],
+  "duplicate_effective_project_names": [],
+  "preserved_build_copyfiles_and_soong_linkfiles": true,
+  "hardware_arm_paths_in_effective_manifest": [],
+  "gralloc_directory_observation": "No hardware/arm project is introduced by the inspected base+overlay; legacy Mali branch is expected for this proposed source layout. Untracked/preexisting checkout directories can still change wildcard selection.",
+  "source_patches_auto_applied": false,
+  "Vortex_product_inheritance_auto_added": false,
+  "repo_sync_performed": false,
+  "android_build_performed": false,
+  "hardware_validation": "not_performed",
+  "limits": [
+    "The 28 GitHub projects have pins, but 528 remaining official AOSP projects retain release tags rather than individual resolved commit IDs.",
+    "No duplicate names/paths in XML composition does not prove module or dependency closure.",
+    "The D042 common/vendor/device and RK3328 branch platform subset have not been built together; ABI and package-level conflicts remain unverified.",
+    "Apply existing Vortex opt-in source patches and kernel profile only after checkout revision checks; the XML does not apply them.",
+    "No loader, trust, RAM initialization or SD partition/image package is selected by this overlay."
+  ],
+  "selected_GitHub_nonempty_verification": {
+    "rockchip_subset": 23,
+    "known_candidates_and_Vortex": 5,
+    "files": [
+      "selected-branch-nonempty-review.json",
+      "known-candidate-nonempty-review.json"
+    ]
+  },
+  "material_blockers": [
+    {
+      "id": "framebuffer-ABI-size-mismatch",
+      "evidence": "framebuffer-abi-review/layout-review.json",
+      "observed": "rk_fb_win_cfg_data is904bytes in selected userspace header vs908bytes in the selected kernel declarations under ARM EABI. Tail member differs, while RK_FBIOSET_CONFIG_DONE uses0x4628 and kernel copies sizeof(win_data) in both directions.",
+      "status": "unresolved; do not use this unmodified HAL/kernel pair as an approved display stack"
+    },
+    {
+      "id": "common-alternative-not-equivalent",
+      "evidence": "rockchip-common-files-comparison.json",
+      "observed": "New common63ab187 differs from D042 and lacks init.rk30board.bootmode.sd.rc. Overlay explicitly retains D042 common targeted by existing patches.",
+      "status": "composition choice only, cross-tree platform/package compatibility unresolved"
+    },
+    {
+      "id": "vendor-platform-module-closure",
+      "observed": "D042 common references additional external/vendor packages beyond the selected23Rockchip source subset. Existing AOSP projects without selected replacements remain r6 tags.",
+      "status": "no full dependency/module closure or Android image build"
+    },
+    {
+      "id": "raw-source-not-SD-profile",
+      "observed": "Overlay pins raw sources and Vortex45d626a; it does not automatically apply existing SD kernel/config/source patches, inherit Vortex product, remove stock launchers, exclude recovery/updaters or produce an enforcing policy.",
+      "status": "explicit integration still required"
+    }
+  ]
+}

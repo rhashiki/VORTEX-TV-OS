@@ -44,6 +44,13 @@ Também foram compilados [kernel ARM e DTB SDK de referência](sdcard/KERNEL_BUI
 em ensaio separado. A configuração genérica não representa o perfil final SD
 ou a placa R329Q_V8.0; esses componentes não completam o BSP Android.
 
+Uma [composição experimental AOSP r6/Rockchip](platform-reference/README.md)
+foi registrada depois, com fontes framebuffer/DMA-BUF mais próximas e um
+bloqueio ABI medido (estrutura userspace 904 bytes / kernel 908 bytes).
+Ela não foi sincronizada ou aprovada como BSP. Há também
+[componentes U-Boot/OP-TEE compilados de fontes](bootloader/README.md), com
+limites de DDR, BootROM, reservas e chamadas SIP ainda abertos.
+
 O [perfil SDK SD posterior](sdcard/SD_REFERENCE.md) corrige a combinação de
 fontes: o fstab comunitário `ff500000` não corresponde ao nó SD `30000000`
 desse kernel. O perfil acrescenta restrições de configuração/DTB e conferência

@@ -5,6 +5,12 @@ ROM, ainda é necessário um BSP Android completo e identificado para a placa.
 O repositório Vortex contém um módulo de aplicativo e um fragmento de produto;
 não fornece um alvo de placa, kernel, DTB, loader ou HALs validados.
 
+O [módulo VortexHome já foi compilado isoladamente pelo AOSP r6](AOSP_MODULE_BUILD.md),
+com correção do valor Jack e dos metadados de versão no Android.mk. Essa
+validação não compila a plataforma Rockchip. Os [componentes abertos de boot](bootloader/README.md)
+também foram compilados separadamente; sua adequação à unidade e à ABI SIP
+legada permanece sem comprovação.
+
 As fontes públicas reunidas em [AOSP_SOURCE_MAP.md](AOSP_SOURCE_MAP.md) servem
 para investigar dependências. A presença de `rk322x_box`, de um DTS RK3229 ou de
 um kernel 3.10.104 não demonstra compatibilidade com a R329Q_V8.0.

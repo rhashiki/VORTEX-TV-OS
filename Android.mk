@@ -11,5 +11,7 @@ LOCAL_PRIVILEGED_MODULE := true
 LOCAL_SDK_VERSION := 25
 # AOSP Nougat uses Jack for the Java 8 lambdas and method references in this app.
 LOCAL_JAVA_LANGUAGE_VERSION := 1.8
-LOCAL_JACK_ENABLED := true
+LOCAL_JACK_ENABLED := full
+# Keep the app version identical in the Gradle and AOSP builds.
+LOCAL_AAPT_FLAGS += --version-code 1 --version-name 0.1.0-dev
 include $(BUILD_PACKAGE)

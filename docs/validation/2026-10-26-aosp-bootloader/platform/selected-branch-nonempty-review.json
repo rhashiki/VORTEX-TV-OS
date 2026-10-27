@@ -1,0 +1,212 @@
+{
+  "scope": "Root Git tree entries for the exact selected commit/treeish requests; source existence only, not full dependency/build validation. response_sha is recorded as returned and is not treated as a separately resolved Git tree ID.",
+  "selected_projects": [
+    {
+      "name": "rockchip-android/bionic",
+      "revision": "8b2e5b977118ebb8447cdf429c4a6be534c4fd1b",
+      "root_entry_count": 15,
+      "truncated": false,
+      "nonempty": true,
+      "url": "https://api.github.com/repos/rockchip-android/bionic/git/trees/8b2e5b977118ebb8447cdf429c4a6be534c4fd1b",
+      "response_sha": "8b2e5b977118ebb8447cdf429c4a6be534c4fd1b"
+    },
+    {
+      "name": "rockchip-android/build",
+      "revision": "d2721c65c9282b31df7b79f85289ee6c4e636716",
+      "root_entry_count": 8,
+      "truncated": false,
+      "nonempty": true,
+      "url": "https://api.github.com/repos/rockchip-android/build/git/trees/d2721c65c9282b31df7b79f85289ee6c4e636716",
+      "response_sha": "d2721c65c9282b31df7b79f85289ee6c4e636716"
+    },
+    {
+      "name": "rockchip-android/build-blueprint",
+      "revision": "3a89d1ce9fe7a5160ee87ee11f99edbf540020fc",
+      "root_entry_count": 41,
+      "truncated": false,
+      "nonempty": true,
+      "url": "https://api.github.com/repos/rockchip-android/build-blueprint/git/trees/3a89d1ce9fe7a5160ee87ee11f99edbf540020fc",
+      "response_sha": "3a89d1ce9fe7a5160ee87ee11f99edbf540020fc"
+    },
+    {
+      "name": "rockchip-android/build-kati",
+      "revision": "0d8f6ef0c3652de4a4b18dfa8f9b012781140ba4",
+      "root_entry_count": 119,
+      "truncated": false,
+      "nonempty": true,
+      "url": "https://api.github.com/repos/rockchip-android/build-kati/git/trees/0d8f6ef0c3652de4a4b18dfa8f9b012781140ba4",
+      "response_sha": "0d8f6ef0c3652de4a4b18dfa8f9b012781140ba4"
+    },
+    {
+      "name": "rockchip-android/build-soong",
+      "revision": "ff019aa4cff6f8636102003ac14de5442ea6758f",
+      "root_entry_count": 19,
+      "truncated": false,
+      "nonempty": true,
+      "url": "https://api.github.com/repos/rockchip-android/build-soong/git/trees/ff019aa4cff6f8636102003ac14de5442ea6758f",
+      "response_sha": "ff019aa4cff6f8636102003ac14de5442ea6758f"
+    },
+    {
+      "name": "rockchip-android/system-core",
+      "revision": "ab5f1d24b072e36ddcf02439303050c501d9dc5b",
+      "root_entry_count": 55,
+      "truncated": false,
+      "nonempty": true,
+      "url": "https://api.github.com/repos/rockchip-android/system-core/git/trees/ab5f1d24b072e36ddcf02439303050c501d9dc5b",
+      "response_sha": "ab5f1d24b072e36ddcf02439303050c501d9dc5b"
+    },
+    {
+      "name": "rockchip-android/system-sepolicy",
+      "revision": "38ee595100c26946fd918a4b3bbdea97d6aa8e9c",
+      "root_entry_count": 127,
+      "truncated": false,
+      "nonempty": true,
+      "url": "https://api.github.com/repos/rockchip-android/system-sepolicy/git/trees/38ee595100c26946fd918a4b3bbdea97d6aa8e9c",
+      "response_sha": "38ee595100c26946fd918a4b3bbdea97d6aa8e9c"
+    },
+    {
+      "name": "rockchip-android/frameworks-base",
+      "revision": "edd171fec429b9d51d9cb2da961a673ec51fcc4d",
+      "root_entry_count": 34,
+      "truncated": false,
+      "nonempty": true,
+      "url": "https://api.github.com/repos/rockchip-android/frameworks-base/git/trees/edd171fec429b9d51d9cb2da961a673ec51fcc4d",
+      "response_sha": "edd171fec429b9d51d9cb2da961a673ec51fcc4d"
+    },
+    {
+      "name": "rockchip-android/frameworks-native",
+      "revision": "00c3ec97785c0d42f801083c8fc2fc26d3ce4e2d",
+      "root_entry_count": 12,
+      "truncated": false,
+      "nonempty": true,
+      "url": "https://api.github.com/repos/rockchip-android/frameworks-native/git/trees/00c3ec97785c0d42f801083c8fc2fc26d3ce4e2d",
+      "response_sha": "00c3ec97785c0d42f801083c8fc2fc26d3ce4e2d"
+    },
+    {
+      "name": "rockchip-android/frameworks-av",
+      "revision": "ac031469f276a02febe6874d1445413b148c6cb7",
+      "root_entry_count": 12,
+      "truncated": false,
+      "nonempty": true,
+      "url": "https://api.github.com/repos/rockchip-android/frameworks-av/git/trees/ac031469f276a02febe6874d1445413b148c6cb7",
+      "response_sha": "ac031469f276a02febe6874d1445413b148c6cb7"
+    },
+    {
+      "name": "rockchip-android/hardware-libhardware",
+      "revision": "d0c81ba009240cb9ab38d75d7e88190055349c2a",
+      "root_entry_count": 8,
+      "truncated": false,
+      "nonempty": true,
+      "url": "https://api.github.com/repos/rockchip-android/hardware-libhardware/git/trees/d0c81ba009240cb9ab38d75d7e88190055349c2a",
+      "response_sha": "d0c81ba009240cb9ab38d75d7e88190055349c2a"
+    },
+    {
+      "name": "rockchip-android/hardware-libhardware_legacy",
+      "revision": "c04c4261b203c2015b379602a7fdc1137d80e48c",
+      "root_entry_count": 12,
+      "truncated": false,
+      "nonempty": true,
+      "url": "https://api.github.com/repos/rockchip-android/hardware-libhardware_legacy/git/trees/c04c4261b203c2015b379602a7fdc1137d80e48c",
+      "response_sha": "c04c4261b203c2015b379602a7fdc1137d80e48c"
+    },
+    {
+      "name": "rockchip-android/hardware-rockchip-libgralloc",
+      "revision": "c92fb8cd8becd57b025149f2861a2072b092ddea",
+      "root_entry_count": 13,
+      "truncated": false,
+      "nonempty": true,
+      "url": "https://api.github.com/repos/rockchip-android/hardware-rockchip-libgralloc/git/trees/c92fb8cd8becd57b025149f2861a2072b092ddea",
+      "response_sha": "c92fb8cd8becd57b025149f2861a2072b092ddea"
+    },
+    {
+      "name": "rockchip-android/hardware-rockchip-hwcomposer",
+      "revision": "d3ec43f2f751123ca5e7bda2d07eded4c6352a35",
+      "root_entry_count": 20,
+      "truncated": false,
+      "nonempty": true,
+      "url": "https://api.github.com/repos/rockchip-android/hardware-rockchip-hwcomposer/git/trees/d3ec43f2f751123ca5e7bda2d07eded4c6352a35",
+      "response_sha": "d3ec43f2f751123ca5e7bda2d07eded4c6352a35"
+    },
+    {
+      "name": "rockchip-android/hardware-rockchip-audio",
+      "revision": "03b111b6736b48ec17ffee4906caecf59323d8c1",
+      "root_entry_count": 3,
+      "truncated": false,
+      "nonempty": true,
+      "url": "https://api.github.com/repos/rockchip-android/hardware-rockchip-audio/git/trees/03b111b6736b48ec17ffee4906caecf59323d8c1",
+      "response_sha": "03b111b6736b48ec17ffee4906caecf59323d8c1"
+    },
+    {
+      "name": "rockchip-android/hardware-rockchip-librga",
+      "revision": "4ab6c69933a6a1f509bd6891898766cbae9ff433",
+      "root_entry_count": 14,
+      "truncated": false,
+      "nonempty": true,
+      "url": "https://api.github.com/repos/rockchip-android/hardware-rockchip-librga/git/trees/4ab6c69933a6a1f509bd6891898766cbae9ff433",
+      "response_sha": "4ab6c69933a6a1f509bd6891898766cbae9ff433"
+    },
+    {
+      "name": "rockchip-android/hardware-rockchip-librkvpu",
+      "revision": "aa92e18a517967623a8bc0f1bc0752c9807d0743",
+      "root_entry_count": 11,
+      "truncated": false,
+      "nonempty": true,
+      "url": "https://api.github.com/repos/rockchip-android/hardware-rockchip-librkvpu/git/trees/aa92e18a517967623a8bc0f1bc0752c9807d0743",
+      "response_sha": "aa92e18a517967623a8bc0f1bc0752c9807d0743"
+    },
+    {
+      "name": "rockchip-android/hardware-rockchip-libiep",
+      "revision": "aec928e51175616eaa658d20b66d3dc1d63a6b04",
+      "root_entry_count": 5,
+      "truncated": false,
+      "nonempty": true,
+      "url": "https://api.github.com/repos/rockchip-android/hardware-rockchip-libiep/git/trees/aec928e51175616eaa658d20b66d3dc1d63a6b04",
+      "response_sha": "aec928e51175616eaa658d20b66d3dc1d63a6b04"
+    },
+    {
+      "name": "rockchip-android/hardware-rockchip-jpeghw",
+      "revision": "d9a9a6e0971aa63a1ab66e1360bb74dd33b99275",
+      "root_entry_count": 2,
+      "truncated": false,
+      "nonempty": true,
+      "url": "https://api.github.com/repos/rockchip-android/hardware-rockchip-jpeghw/git/trees/d9a9a6e0971aa63a1ab66e1360bb74dd33b99275",
+      "response_sha": "d9a9a6e0971aa63a1ab66e1360bb74dd33b99275"
+    },
+    {
+      "name": "rockchip-android/hardware-rockchip-omx_il",
+      "revision": "8055e4917a60af62954bc82cba6a6694f3dc6f74",
+      "root_entry_count": 6,
+      "truncated": false,
+      "nonempty": true,
+      "url": "https://api.github.com/repos/rockchip-android/hardware-rockchip-omx_il/git/trees/8055e4917a60af62954bc82cba6a6694f3dc6f74",
+      "response_sha": "8055e4917a60af62954bc82cba6a6694f3dc6f74"
+    },
+    {
+      "name": "rockchip-android/hardware-rockchip-hdmicec",
+      "revision": "ca7b5c87d321b682688db1c217a60bbdb9e14223",
+      "root_entry_count": 4,
+      "truncated": false,
+      "nonempty": true,
+      "url": "https://api.github.com/repos/rockchip-android/hardware-rockchip-hdmicec/git/trees/ca7b5c87d321b682688db1c217a60bbdb9e14223",
+      "response_sha": "ca7b5c87d321b682688db1c217a60bbdb9e14223"
+    },
+    {
+      "name": "rockchip-android/external-wlan_loader",
+      "revision": "bbebed5248b615fddd1ca62a9f507ac2eb30088e",
+      "root_entry_count": 5,
+      "truncated": false,
+      "nonempty": true,
+      "url": "https://api.github.com/repos/rockchip-android/external-wlan_loader/git/trees/bbebed5248b615fddd1ca62a9f507ac2eb30088e",
+      "response_sha": "bbebed5248b615fddd1ca62a9f507ac2eb30088e"
+    },
+    {
+      "name": "rockchip-android/hardware-broadcom-wlan",
+      "revision": "bd36b66640e8d71074ea5ea9c3d772d2689a2545",
+      "root_entry_count": 3,
+      "truncated": false,
+      "nonempty": true,
+      "url": "https://api.github.com/repos/rockchip-android/hardware-broadcom-wlan/git/trees/bd36b66640e8d71074ea5ea9c3d772d2689a2545",
+      "response_sha": "bd36b66640e8d71074ea5ea9c3d772d2689a2545"
+    }
+  ]
+}

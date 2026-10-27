@@ -1,0 +1,269 @@
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=VortexHome
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-platform-next/aosp-app/out
+============================================
+TAPAS_STATUS=0
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=VortexHome
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-platform-next/aosp-app/out
+============================================
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/common/obj/APPS
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/SHARED_LIBRARIES/libmediaplayerservice_intermediates
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/SHARED_LIBRARIES/libmedia_jni_intermediates
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/SHARED_LIBRARIES/libstagefright_omx_intermediates
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/root/default.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/recovery/root/default.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/vendor
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/android-info.txt
+Clean step: find /workspace/build01-platform-next/aosp-app/out/target/product/generic -name "*.apk" | xargs rm
+rm: missing operand
+Try 'rm --help' for more information.
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/data/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/SHARED_LIBRARIES/*/LINKED
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/lib/*.so
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/lib/*.so
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/symbols/system/lib/*.so
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/host/linux-x86/bin/iself
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/host/linux-x86/bin/lsd
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/host/linux-x86/bin/apriori
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/host/linux-x86/bin/isprelinked
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/host/linux-x86/bin/soslim
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/lib/*.so
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/lib/*.so
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/symbols/system/lib/*.so
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/YouTube*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/SHARED_LIBRARIES/libstagefright_intermediates
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/SHARED_LIBRARIES/libstagefright_omx_intermediates
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/SHARED_LIBRARIES/librtp_jni_intermediates
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/android-info.txt
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/data/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/JAVA_LIBRARIES/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/framework/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/SHARED_LIBRARIES/libbcinfo_intermediates
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/SHARED_LIBRARIES/libbcinfo_intermediates
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/data/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/host/darwin-x86/obj
+Clean step: rm -f /workspace/build01-platform-next/aosp-app/out/versions_checked.mk
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/STATIC_LIBRARIES
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/SHARED_LIBRARIES
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/EXECUTABLES
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/lib/*.o
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/STATIC_LIBRARIES
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/SHARED_LIBRARIES
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/EXECUTABLES
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/lib/*.o
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/STATIC_LIBRARIES
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/SHARED_LIBRARIES
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/EXECUTABLES
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/lib/*.o
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/common/obj/APPS/ApplicationsProvider_intermediates
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/priv-app/ApplicationsProvider.apk
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/common/obj/JAVA_LIBRARIES/com.android.omadm.plugin.dev_intermediates
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/common/obj/JAVA_LIBRARIES/com.android.omadm.plugin.diagmon_intermediates
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/common/obj/JAVA_LIBRARIES/com.android.omadm.pluginhelper_intermediates
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/common/obj/JAVA_LIBRARIES/com.android.omadm.plugin_intermediates
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/common/obj/JAVA_LIBRARIES/com.android.omadm.service.api_intermediates
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/common/obj/APPS/DMService_intermediates
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/common/obj/APPS/SprintDM_intermediates
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/priv-app/DMService.apk
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/SprintDM.apk
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/etc/omadm
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/STATIC_LIBRARIES
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/SHARED_LIBRARIES
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/EXECUTABLES
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/lib/*.o
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/root/default.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/host/linux-x86/obj
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/ETC/init.environ.rc_intermediates
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/root/default.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/recovery/root/default.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/root/default.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/recovery/root/default.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/host
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/root/default.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/recovery/root/default.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/root/default.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/recovery/root/default.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/root/default.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/recovery/root/default.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/root/default.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/recovery/root/default.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/root/default.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/recovery/root/default.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/root/default.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/recovery/root/default.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/build.prop
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/obj/APPS/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/recovery/root/sdcard
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/app/*
+Clean step: rm -rf /workspace/build01-platform-next/aosp-app/out/target/product/generic/system/priv-app/*
+Checking build tools versions...
+including ./build/libs/host/Android.mk ...
+including ./build/target/board/Android.mk ...
+including ./build/target/product/security/Android.mk ...
+including ./build/tools/Android.mk ...
+including ./prebuilts/sdk/Android.mk ...
+including ./vendor/vortex/home/Android.mk ...
+build/core/configure_local_jack.mk:28: *** vendor/vortex/home: invalid LOCAL_JACK_ENABLED "true" for VortexHome.  Stop.
+
+#### make failed to build some targets (1 seconds) ####
+

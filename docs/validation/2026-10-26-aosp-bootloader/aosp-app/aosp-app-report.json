@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "scope": "Real AOSP7.1.2_r6 unbundled VortexHome APK build only; no BSP/system/ramdisk/boot image or hardware validation.",
+  "sources": {
+    "build": {
+      "repository": "https://android.googlesource.com/platform/build",
+      "revision": "5bcb8ef25cbb92b0f6ee9a40fb05bb47b5173774",
+      "tree": "36864f11d5306164197a40cdd27a2225ae1a00cc",
+      "checkout_clean": true
+    },
+    "sdk": {
+      "repository": "https://android.googlesource.com/platform/prebuilts/sdk",
+      "revision": "23f7de5ba433fc82269ba63c203fe0a3eaf4a680",
+      "scope": "22 individually fetched files, exact Git blob IDs verified, not a complete repository checkout",
+      "decoded_selected_bytes": 70061046
+    },
+    "vortex": {
+      "repository": "https://github.com/rhashiki/VORTEX-TV-OS",
+      "revision": "45d626a4bc508b49b8863bd67e2ce9f2f17554d5",
+      "archive_sha256": "9fa675815626e24d137533f82bbdfc065da8647b33f64e1a1ec5b1b78a572a45",
+      "android_mk_sha256": "f4a2c6b7fe7f180758ebbbc6574964b1d910f0084105e8cb28e9047cee9768fc",
+      "source_modified": true,
+      "applied_patch": "vortex-aosp-integration.patch",
+      "patch_sha256": "ec12d0f7e50dd9eb3c9423d48f40b92d5690ef23194ed123e77d5281d8d7b9d7",
+      "patched_android_mk_sha256": "0ccbaf103edf02a46fad6615b435df4cf2e0813a163c0d0355cd403299be680f"
+    }
+  },
+  "build": {
+    "configuration": "tapas arm eng VortexHome",
+    "target": "VortexHome",
+    "USE_NINJA": "false",
+    "USE_SOONG": "false",
+    "JACK_SERVER": "false",
+    "Jack_version": "3.36.CANDIDATE",
+    "LOCAL_JACK_ENABLED": "full",
+    "final_make_command": "make -j2 ACP=/workspace/build01-platform-next/aosp-app/host-bin/acp ZIPALIGN=/workspace/android-toolchain/sdk/build-tools/33.0.2/zipalign VortexHome",
+    "final_log": "attempt-06-final.log",
+    "exit_code": 0,
+    "initial_success_log": "attempt-05.log",
+    "initial_failure_logs": [
+      "attempt-01.log",
+      "attempt-02.log",
+      "attempt-03.log",
+      "attempt-04.log"
+    ],
+    "root_makefile": "Exact copy of build/core/root.mk as required by the official r6 manifest copyfile rule."
+  },
+  "host_compatibility": {
+    "python2": "Debian archive2.7.18 packages extracted task-locally; only wrapper selects it; no system package state changed.",
+    "acp": {
+      "reason": "Official r6 prebuilt i386 executable failed Exec format error on this host.",
+      "source": "Unmodified build r6 tools/acp/acp.c and libs/host/CopyFile.c",
+      "binary": "/workspace/build01-platform-next/aosp-app/host-bin/acp",
+      "sha256": "498b109e18998fc4b7ee21b41b3c13b1f2417b03f0653f0fc43e32ef4bd0c13c",
+      "compiler": "gcc (Debian 14.2.0-19) 14.2.0",
+      "copyfile_flags": "-O2 -Wall -Werror",
+      "acp_flags": "-O2 -Wall",
+      "warnings": "Two pre-existing unused-variable warnings in acp.c remain visible; no source or diagnostic suppression applied.",
+      "copy_check": "Actual acp -fp copies official root.mk byte-identically."
+    },
+    "zipalign": {
+      "reason": "Official r6 zipalign prebuilt is i386; use already installed real x86_64 Android SDK tool through a make variable override.",
+      "package": "Android SDK build-tools33.0.2",
+      "path": "/workspace/android-toolchain/sdk/build-tools/33.0.2/zipalign",
+      "sha256": "da52681849c6bb8656775674b56b14bb9ff00ecf2ec8524389adc6acfe46b34f"
+    },
+    "jack_configuration": "Final recipe directs CLIENT_SETTING and JACK_HOME to task-local paths. The first successful run initialized the default ~/.jack-settings; Jack server was disabled in every build."
+  },
+  "artifact": {
+    "path": "/workspace/build01-platform-next/aosp-app/artifacts/VortexHome-aosp-7.1.2-r6.apk",
+    "size_bytes": 44366,
+    "sha256": "81fc16aa89e523088ac8c7a6e334a2c670745d6a4e673a30a986ba6af04867d4",
+    "package": "os.vortex.tv",
+    "version_code": 1,
+    "version_name": "0.1.0-dev",
+    "min_sdk": 25,
+    "target_sdk": 25,
+    "zip_integrity": "pass",
+    "alignment_4byte": "pass",
+    "signature_verification": "pass",
+    "signature_scheme_v2": true,
+    "signer_certificate_sha256": "c8a2e9bccf597c2fb6dc66bee293fc13f2fc47ec77bc6b2b0d52c11f51192ab8",
+    "signing_identity": "Public AOSP platform TEST certificate from the pinned build tree, not a production key or the TVBox platform identity.",
+    "installed_path_in_build_tree": "out/target/product/generic/system/priv-app/VortexHome/VortexHome.apk",
+    "installed_on_device": false
+  },
+  "capacity": {
+    "final_available_bytes": 12445241344,
+    "budget_bytes": 2147483648,
+    "reserve_bytes": 8589934592,
+    "measured_du": "129M",
+    "no_full_repo_sync": true,
+    "no_prior_artifact_cleanup": true
+  },
+  "limits": [
+    "The generic AOSP ARM product selects app build rules only. It does not establish Rockchip platform, kernel/HAL compatibility, mount layout, loader/DDR/trust, ramdisk, Android system image or boot.",
+    "The native legacy AOSP build rules and Jack/API25 were used. acp was compiled natively from unchanged r6 sources and zipalign33.0.2 was an explicit host compatibility override; this is not a pristine all-r6 host-prebuilt build.",
+    "No Android.mk source outside the Vortex module was changed, and no generated stub or dependency anchor was fabricated.",
+    "APK optimization/signing differs from the Gradle debug build; no emulator or physical runtime validation was performed for this AOSP-built artifact.",
+    "Public platform test signing does not grant this APK the production device platform identity.",
+    "No GitHub Actions, hardware operation, flash, environment configuration change or new board-information request was used."
+  ]
+}

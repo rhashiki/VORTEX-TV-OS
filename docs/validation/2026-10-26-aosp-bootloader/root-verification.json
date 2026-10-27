@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "scope": "Final export integrity cross-check only; no additional compilation, runtime or hardware claims.",
+  "base_commit": "45d626a4bc508b49b8863bd67e2ce9f2f17554d5",
+  "frozen_snapshots": {
+    "aosp_app": {
+      "file": "/workspace/build01-platform-next/aosp-app/evidence.sha256",
+      "sha256": "6cb174840738a976cfc49d42d79346ed128b793bf45873f2fc63e508df10e566",
+      "verified_files": 36
+    },
+    "runtime": {
+      "file": "/workspace/build01-platform-next/aosp-app-runtime/evidence/evidence.sha256",
+      "sha256": "4999300e4e17fc2426c56be693a24394cd9738a92e2cb7934febbc76e5e422e4",
+      "verified_files": 39
+    },
+    "boot_chain": {
+      "file": "/workspace/build01-platform-next/uboot-research/chain-review/review-evidence.sha256",
+      "sha256": "38716f64fcf89e552c3b66f478566c3de8873365d3cf8e173da0d5f7f45a5338",
+      "verified_files": 11
+    }
+  },
+  "input_manifest_sha256": "39407004afe87ebb935c5d5cfbb0de6d7c23a485d1f8d5ebdbf16b3f0e56df71",
+  "aosp_android_mk_matches_compiled_file": true,
+  "aosp_apk_matches_runtime_artifact": true,
+  "aosp_sdk_git_objects_verified": 22,
+  "runtime_checks_passed": 11,
+  "boot_static_review_checks_passed": 9,
+  "boot_profiles_match_compiled_inputs": true,
+  "boot_DTBS_and_resolved_configs_match_final_records": true,
+  "boot_artifacts_match_original_build_outputs": {
+    "tee-rk322x-reference.bin": {
+      "size_bytes": 329840,
+      "sha256": "1af5d3db3df39fae6dc977c00c4f21f47108e278ec2e4a282255060d16f8460a"
+    },
+    "idbloader-sd-reference.img": {
+      "size_bytes": 75776,
+      "sha256": "0485409c9f936c58a6b78e3fdd5aeb1d2d279c7686d5806a92c8fe98d2ba8f8e"
+    },
+    "u-boot-sd-reference.itb": {
+      "size_bytes": 598528,
+      "sha256": "35275d1e5b644b3ed2b0f87ddca395c87ae0521d93261e591c61d65ab067a63e"
+    },
+    "u-boot-rockchip-reference.bin": {
+      "size_bytes": 8954368,
+      "sha256": "58e9f9d99f41803f4329646c15e9d7b89156a24fd3285a3a78482cf6a466817e"
+    }
+  },
+  "regression_tests_recorded": 96,
+  "gradle_apk_unchanged": true,
+  "physical_boot": "not_performed",
+  "full_Android_SD_image": "not_produced"
+}

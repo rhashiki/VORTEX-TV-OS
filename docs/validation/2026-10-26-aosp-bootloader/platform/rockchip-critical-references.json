@@ -1,0 +1,304 @@
+{
+  "schema_version": 1,
+  "scope": "partial_source_research_not_a_complete_manifest",
+  "recorded_date": "2026-10-26",
+  "organization_repository_count": 504,
+  "reported_nonempty_count": 140,
+  "critical_projects": [
+    {
+      "name": "rockchip-android/bionic",
+      "repository": "https://github.com/rockchip-android/bionic.git",
+      "path_from_description": "bionic",
+      "reported_size_kib": 18874,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "8b2e5b977118ebb8447cdf429c4a6be534c4fd1b",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/build",
+      "repository": "https://github.com/rockchip-android/build.git",
+      "path_from_description": "build",
+      "reported_size_kib": 32881,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "d2721c65c9282b31df7b79f85289ee6c4e636716",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/build-blueprint",
+      "repository": "https://github.com/rockchip-android/build-blueprint.git",
+      "path_from_description": "build/blueprint",
+      "reported_size_kib": 592,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "3a89d1ce9fe7a5160ee87ee11f99edbf540020fc",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/build-kati",
+      "repository": "https://github.com/rockchip-android/build-kati.git",
+      "path_from_description": "build/kati",
+      "reported_size_kib": 1190,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "0d8f6ef0c3652de4a4b18dfa8f9b012781140ba4",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/build-soong",
+      "repository": "https://github.com/rockchip-android/build-soong.git",
+      "path_from_description": "build/soong",
+      "reported_size_kib": 674,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "ff019aa4cff6f8636102003ac14de5442ea6758f",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/system-core",
+      "repository": "https://github.com/rockchip-android/system-core.git",
+      "path_from_description": "system/core",
+      "reported_size_kib": 17539,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "ab5f1d24b072e36ddcf02439303050c501d9dc5b",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/system-sepolicy",
+      "repository": "https://github.com/rockchip-android/system-sepolicy.git",
+      "path_from_description": "system/sepolicy",
+      "reported_size_kib": 3698,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "38ee595100c26946fd918a4b3bbdea97d6aa8e9c",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/system-extras",
+      "repository": "https://github.com/rockchip-android/system-extras.git",
+      "path_from_description": "system/extras",
+      "reported_size_kib": 80249,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": null,
+      "status": "branch_not_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/frameworks-base",
+      "repository": "https://github.com/rockchip-android/frameworks-base.git",
+      "path_from_description": "framework/base",
+      "reported_size_kib": 2575841,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "edd171fec429b9d51d9cb2da961a673ec51fcc4d",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/frameworks-native",
+      "repository": "https://github.com/rockchip-android/frameworks-native.git",
+      "path_from_description": "frameworks/native",
+      "reported_size_kib": 28552,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "00c3ec97785c0d42f801083c8fc2fc26d3ce4e2d",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/frameworks-av",
+      "repository": "https://github.com/rockchip-android/frameworks-av.git",
+      "path_from_description": "frameworks/av",
+      "reported_size_kib": 32218,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "ac031469f276a02febe6874d1445413b148c6cb7",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/hardware-libhardware",
+      "repository": "https://github.com/rockchip-android/hardware-libhardware.git",
+      "path_from_description": "hardware/libhardware",
+      "reported_size_kib": 2850,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "d0c81ba009240cb9ab38d75d7e88190055349c2a",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/hardware-libhardware_legacy",
+      "repository": "https://github.com/rockchip-android/hardware-libhardware_legacy.git",
+      "path_from_description": "hardware/libhardware_legacy",
+      "reported_size_kib": 1060,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "c04c4261b203c2015b379602a7fdc1137d80e48c",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/device-rockchip-common",
+      "repository": "https://github.com/rockchip-android/device-rockchip-common.git",
+      "path_from_description": "device/rockchip/common",
+      "reported_size_kib": 474211,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "63ab18755e227df17790024e6f0857df88acc638",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/device-rockchip-rk3328",
+      "repository": "https://github.com/rockchip-android/device-rockchip-rk3328.git",
+      "path_from_description": "device/rockchip/rk3328",
+      "reported_size_kib": 109,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "a6237f512dd71a9bb3d21b3b49700b2223316674",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/hardware-rockchip-libgralloc",
+      "repository": "https://github.com/rockchip-android/hardware-rockchip-libgralloc.git",
+      "path_from_description": "hardware/rockchip/libgralloc",
+      "reported_size_kib": 277,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "c92fb8cd8becd57b025149f2861a2072b092ddea",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/hardware-rockchip-hwcomposer",
+      "repository": "https://github.com/rockchip-android/hardware-rockchip-hwcomposer.git",
+      "path_from_description": "hardware/rockchip/hwcomposer",
+      "reported_size_kib": 1093,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "d3ec43f2f751123ca5e7bda2d07eded4c6352a35",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/hardware-rockchip-audio",
+      "repository": "https://github.com/rockchip-android/hardware-rockchip-audio.git",
+      "path_from_description": "hardware/rockchip/audio",
+      "reported_size_kib": 428,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "03b111b6736b48ec17ffee4906caecf59323d8c1",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/hardware-rockchip-librga",
+      "repository": "https://github.com/rockchip-android/hardware-rockchip-librga.git",
+      "path_from_description": "hardware/rockchip/librga",
+      "reported_size_kib": 154,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "4ab6c69933a6a1f509bd6891898766cbae9ff433",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/hardware-rockchip-librkvpu",
+      "repository": "https://github.com/rockchip-android/hardware-rockchip-librkvpu.git",
+      "path_from_description": "hardware/rockchip/librkvpu",
+      "reported_size_kib": 141,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "aa92e18a517967623a8bc0f1bc0752c9807d0743",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/hardware-rockchip-libiep",
+      "repository": "https://github.com/rockchip-android/hardware-rockchip-libiep.git",
+      "path_from_description": "hardware/rockchip/libiep",
+      "reported_size_kib": 33,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "aec928e51175616eaa658d20b66d3dc1d63a6b04",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/hardware-rockchip-jpeghw",
+      "repository": "https://github.com/rockchip-android/hardware-rockchip-jpeghw.git",
+      "path_from_description": "hardware/rockchip/jpeghw",
+      "reported_size_kib": 19,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "d9a9a6e0971aa63a1ab66e1360bb74dd33b99275",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/hardware-rockchip-omx_il",
+      "repository": "https://github.com/rockchip-android/hardware-rockchip-omx_il.git",
+      "path_from_description": "hardware/rockchip/omx_il",
+      "reported_size_kib": 320,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "8055e4917a60af62954bc82cba6a6694f3dc6f74",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/hardware-rockchip-hdmicec",
+      "repository": "https://github.com/rockchip-android/hardware-rockchip-hdmicec.git",
+      "path_from_description": "hardware/rockchip/hdmicec",
+      "reported_size_kib": 7,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "ca7b5c87d321b682688db1c217a60bbdb9e14223",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/external-wlan_loader",
+      "repository": "https://github.com/rockchip-android/external-wlan_loader.git",
+      "path_from_description": "external/wlan_loader",
+      "reported_size_kib": 8986,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "bbebed5248b615fddd1ca62a9f507ac2eb30088e",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/hardware-broadcom-wlan",
+      "repository": "https://github.com/rockchip-android/hardware-broadcom-wlan.git",
+      "path_from_description": "hardware/broadcom/wlan",
+      "reported_size_kib": 47509,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": "bd36b66640e8d71074ea5ea9c3d772d2689a2545",
+      "status": "branch_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/hardware-realtek-wlan",
+      "status": "not_in_504_repository_inventory"
+    },
+    {
+      "name": "rockchip-android/hardware-ril",
+      "repository": "https://github.com/rockchip-android/hardware-ril.git",
+      "path_from_description": "hardware/ril",
+      "reported_size_kib": 1142,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": null,
+      "status": "branch_not_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/external-libdrm",
+      "repository": "https://github.com/rockchip-android/external-libdrm.git",
+      "path_from_description": "external/libdrm",
+      "reported_size_kib": 9747,
+      "requested_revision": "rk3328-box-7.1",
+      "observed_revision": null,
+      "status": "branch_not_resolved",
+      "exit_code": 0
+    },
+    {
+      "name": "rockchip-android/external-libion",
+      "status": "not_in_504_repository_inventory"
+    },
+    {
+      "name": "rockchip-android/hardware-arm",
+      "status": "not_in_504_repository_inventory"
+    }
+  ],
+  "no_manifest_named_repository_found": true,
+  "complete_resolved_manifest": false,
+  "compatible_rk3229_bsp_selected": false
+}

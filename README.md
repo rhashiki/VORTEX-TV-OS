@@ -12,7 +12,7 @@ Firmware experimental minimalista para **MXQ PRO 4K 5G / R329Q_V8.0** (Rockchip 
 
 Resultados e limites: [preparação do teste microSD](docs/VALIDATION_2026-10-25_SD.md) · [atualização ao vivo e cancelamento](docs/VALIDATION_2026-10-25_ROBUSTNESS.md) · [Home sem gaveta e preparação AOSP](docs/VALIDATION_2026-10-25_CONTINUATION.md).
 
-Continuação: [perfil SDK SD e conferência cruzada dos componentes](rom/sdcard/SD_REFERENCE.md) · [resultados de 26/10](docs/VALIDATION_2026-10-26_SD_PROFILE.md).
+Continuação: [módulo AOSP e componentes de boot compilados](docs/VALIDATION_2026-10-26_AOSP_BOOTLOADER.md) · [perfil SDK SD e conferência cruzada](rom/sdcard/SD_REFERENCE.md).
 
 ## Escopo do produto
 - Home 720p, gradiente roxo/azul neon, data/hora, D-pad e ações de energia.

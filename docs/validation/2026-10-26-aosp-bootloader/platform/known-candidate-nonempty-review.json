@@ -1,0 +1,39 @@
+{
+  "projects": [
+    {
+      "name": "D042888-2/android_device_rockchip_rk322x",
+      "revision": "f33a129bfab6d9cc87184ee3bf032224801fa446",
+      "root_entry_count": 29,
+      "nonempty": true,
+      "verification": "git ls-tree --name-only revision; working-tree mutations not relevant"
+    },
+    {
+      "name": "D042888-2/android_device_rockchip_common",
+      "revision": "3b1aa90ef43f9d34094739a211ad44bf9a2c0b74",
+      "root_entry_count": 81,
+      "nonempty": true,
+      "verification": "git ls-tree --name-only revision; working-tree mutations not relevant"
+    },
+    {
+      "name": "D042888-2/android_vendor_rockchip_rk322x",
+      "revision": "50c7170ecb4bd907059db37f09f4767b301f2d15",
+      "root_entry_count": 3,
+      "nonempty": true,
+      "verification": "git ls-tree --name-only revision; working-tree mutations not relevant"
+    },
+    {
+      "name": "rockchip-linux/kernel",
+      "revision": "6c04d006ae881944d32c19e68b992d0bd5ab4fde",
+      "root_entry_count": 40,
+      "nonempty": true,
+      "verification": "git ls-tree --name-only revision; working-tree mutations not relevant"
+    },
+    {
+      "name": "rhashiki/VORTEX-TV-OS",
+      "revision": "45d626a4bc508b49b8863bd67e2ce9f2f17554d5",
+      "root_entry_count": 15,
+      "nonempty": true,
+      "verification": "git ls-tree --name-only revision; working-tree mutations not relevant"
+    }
+  ]
+}

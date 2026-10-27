@@ -43,6 +43,14 @@ source exclusions and cross-checks of real DTB/fstab/config/cmdline files.
 An `inputs_only` result is not a boot, media or hardware approval. Preserve
 the original reference artifacts and distinguish every newly compiled profile.
 
+The [AOSP module experiment](../rom/AOSP_MODULE_BUILD.md) now builds VortexHome
+through real Nougat make/Jack and has an API25 smoke result. Its APK uses the
+AOSP platform test identity. The [open boot components](../rom/bootloader/README.md)
+also compile separately; they have no Android payload/autoboot configured and
+are not SD media. The [experimental platform overlay](../rom/platform-reference/README.md)
+has a measured framebuffer ABI mismatch and is not an approved BSP.
+See [the combined report](VALIDATION_2026-10-26_AOSP_BOOTLOADER.md) before continuing.
+
 Use a cloud computer terminal (if available) to clone main and compile the native Vortex Android APK, run complete local automated checks and an Android emulator for functional tests. Investigate available AOSP 7.1.2 / Rockchip RK322x build dependencies and produce an honest report on whether a complete ROM is feasible on the available compute.
 
 ## Required tooling

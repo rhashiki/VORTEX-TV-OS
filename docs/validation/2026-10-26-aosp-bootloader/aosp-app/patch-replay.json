@@ -1,0 +1,10 @@
+{
+  "base_commit": "45d626a4bc508b49b8863bd67e2ce9f2f17554d5",
+  "file": "Android.mk",
+  "original_sha256": "f4a2c6b7fe7f180758ebbbc6574964b1d910f0084105e8cb28e9047cee9768fc",
+  "patched_sha256": "0ccbaf103edf02a46fad6615b435df4cf2e0813a163c0d0355cd403299be680f",
+  "patch_sha256": "ec12d0f7e50dd9eb3c9423d48f40b92d5690ef23194ed123e77d5281d8d7b9d7",
+  "git_apply_check": "pass",
+  "git_apply": "pass",
+  "byte_identical_replay": "pass"
+}

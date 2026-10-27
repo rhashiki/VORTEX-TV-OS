@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest>
+  <!--EXPERIMENTAL: base must be the official AOSP android-7.1.2_r6 manifest. Not a vendor manifest, resolved lock, complete BSP or approved hardware image.-->
+  <remote name="vortex-research-github" fetch="https://github.com/" />
+  <remove-project name="platform/bionic" />
+  <remove-project name="platform/build" />
+  <remove-project name="platform/build/blueprint" />
+  <remove-project name="platform/build/kati" />
+  <remove-project name="platform/build/soong" />
+  <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/sepolicy" />
+  <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/native" />
+  <remove-project name="platform/frameworks/av" />
+  <remove-project name="platform/hardware/libhardware" />
+  <remove-project name="platform/hardware/libhardware_legacy" />
+  <remove-project name="platform/hardware/broadcom/wlan" />
+  <project name="rockchip-android/bionic" path="bionic" revision="8b2e5b977118ebb8447cdf429c4a6be534c4fd1b" remote="vortex-research-github" groups="pdk" />
+  <project name="rockchip-android/build" path="build" revision="d2721c65c9282b31df7b79f85289ee6c4e636716" remote="vortex-research-github" groups="pdk">
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project name="rockchip-android/build-blueprint" path="build/blueprint" revision="3a89d1ce9fe7a5160ee87ee11f99edbf540020fc" remote="vortex-research-github" groups="pdk,tradefed" />
+  <project name="rockchip-android/build-kati" path="build/kati" revision="0d8f6ef0c3652de4a4b18dfa8f9b012781140ba4" remote="vortex-research-github" groups="pdk,tradefed" />
+  <project name="rockchip-android/build-soong" path="build/soong" revision="ff019aa4cff6f8636102003ac14de5442ea6758f" remote="vortex-research-github" groups="pdk,tradefed">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project name="rockchip-android/system-core" path="system/core" revision="ab5f1d24b072e36ddcf02439303050c501d9dc5b" remote="vortex-research-github" groups="pdk" />
+  <project name="rockchip-android/system-sepolicy" path="system/sepolicy" revision="38ee595100c26946fd918a4b3bbdea97d6aa8e9c" remote="vortex-research-github" groups="pdk" />
+  <project name="rockchip-android/frameworks-base" path="frameworks/base" revision="edd171fec429b9d51d9cb2da961a673ec51fcc4d" remote="vortex-research-github" groups="pdk-cw-fs,pdk-fs" />
+  <project name="rockchip-android/frameworks-native" path="frameworks/native" revision="00c3ec97785c0d42f801083c8fc2fc26d3ce4e2d" remote="vortex-research-github" groups="pdk" />
+  <project name="rockchip-android/frameworks-av" path="frameworks/av" revision="ac031469f276a02febe6874d1445413b148c6cb7" remote="vortex-research-github" groups="pdk" />
+  <project name="rockchip-android/hardware-libhardware" path="hardware/libhardware" revision="d0c81ba009240cb9ab38d75d7e88190055349c2a" remote="vortex-research-github" groups="pdk" />
+  <project name="rockchip-android/hardware-libhardware_legacy" path="hardware/libhardware_legacy" revision="c04c4261b203c2015b379602a7fdc1137d80e48c" remote="vortex-research-github" groups="pdk" />
+  <project name="rockchip-android/hardware-rockchip-libgralloc" path="hardware/rockchip/libgralloc" revision="c92fb8cd8becd57b025149f2861a2072b092ddea" remote="vortex-research-github" />
+  <project name="rockchip-android/hardware-rockchip-hwcomposer" path="hardware/rockchip/hwcomposer" revision="d3ec43f2f751123ca5e7bda2d07eded4c6352a35" remote="vortex-research-github" />
+  <project name="rockchip-android/hardware-rockchip-audio" path="hardware/rockchip/audio" revision="03b111b6736b48ec17ffee4906caecf59323d8c1" remote="vortex-research-github" />
+  <project name="rockchip-android/hardware-rockchip-librga" path="hardware/rockchip/librga" revision="4ab6c69933a6a1f509bd6891898766cbae9ff433" remote="vortex-research-github" />
+  <project name="rockchip-android/hardware-rockchip-librkvpu" path="hardware/rockchip/librkvpu" revision="aa92e18a517967623a8bc0f1bc0752c9807d0743" remote="vortex-research-github" />
+  <project name="rockchip-android/hardware-rockchip-libiep" path="hardware/rockchip/libiep" revision="aec928e51175616eaa658d20b66d3dc1d63a6b04" remote="vortex-research-github" />
+  <project name="rockchip-android/hardware-rockchip-jpeghw" path="hardware/rockchip/jpeghw" revision="d9a9a6e0971aa63a1ab66e1360bb74dd33b99275" remote="vortex-research-github" />
+  <project name="rockchip-android/hardware-rockchip-omx_il" path="hardware/rockchip/omx_il" revision="8055e4917a60af62954bc82cba6a6694f3dc6f74" remote="vortex-research-github" />
+  <project name="rockchip-android/hardware-rockchip-hdmicec" path="hardware/rockchip/hdmicec" revision="ca7b5c87d321b682688db1c217a60bbdb9e14223" remote="vortex-research-github" />
+  <project name="rockchip-android/external-wlan_loader" path="external/wlan_loader" revision="bbebed5248b615fddd1ca62a9f507ac2eb30088e" remote="vortex-research-github" />
+  <project name="rockchip-android/hardware-broadcom-wlan" path="hardware/broadcom/wlan" revision="bd36b66640e8d71074ea5ea9c3d772d2689a2545" remote="vortex-research-github" groups="pdk,broadcom_wlan" />
+  <project name="D042888-2/android_device_rockchip_rk322x" path="device/rockchip/rk322x" revision="f33a129bfab6d9cc87184ee3bf032224801fa446" remote="vortex-research-github" />
+  <project name="D042888-2/android_device_rockchip_common" path="device/rockchip/common" revision="3b1aa90ef43f9d34094739a211ad44bf9a2c0b74" remote="vortex-research-github" />
+  <project name="D042888-2/android_vendor_rockchip_rk322x" path="vendor/rockchip/rk322x" revision="50c7170ecb4bd907059db37f09f4767b301f2d15" remote="vortex-research-github" />
+  <project name="rockchip-linux/kernel" path="kernel" revision="6c04d006ae881944d32c19e68b992d0bd5ab4fde" remote="vortex-research-github" />
+  <project name="rhashiki/VORTEX-TV-OS" path="vendor/vortex/home" revision="45d626a4bc508b49b8863bd67e2ce9f2f17554d5" remote="vortex-research-github" />
+</manifest>

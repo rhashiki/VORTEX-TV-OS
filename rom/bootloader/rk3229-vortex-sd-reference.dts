@@ -1,0 +1,33 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+/* Generic EVB-derived build reference, not a verified R329Q_V8.0 board. */
+#include "rk3229-evb.dts"
+
+/ {
+    model = "RK3229 SD-only source reference";
+    aliases {
+        mmc0 = &sdmmc;
+    };
+    chosen {
+        u-boot,spl-boot-order = "mmc0";
+    };
+};
+
+&emmc {
+    status = "disabled";
+};
+
+&sdmmc {
+    bus-width = <4>;
+    cap-sd-highspeed;
+    disable-wp;
+    status = "okay";
+};
+
+&sdio {
+    status = "disabled";
+};
+
+&uart2 {
+    /* uart2_xfer uses PC2/PC3 shared with SD; use SoC UART21 reference. */
+    pinctrl-0 = <&uart21_xfer>;
+};

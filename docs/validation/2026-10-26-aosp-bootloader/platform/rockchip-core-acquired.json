@@ -1,0 +1,20 @@
+[
+  {
+    "repo": "rockchip-android/build",
+    "branch": "rk3328-box-7.1",
+    "revision": "d2721c65c9282b31df7b79f85289ee6c4e636716",
+    "path": "/workspace/build01-platform-next/research/rockchip-build"
+  },
+  {
+    "repo": "rockchip-android/system-core",
+    "branch": "rk3328-box-7.1",
+    "revision": "ab5f1d24b072e36ddcf02439303050c501d9dc5b",
+    "path": "/workspace/build01-platform-next/research/rockchip-system-core"
+  },
+  {
+    "repo": "rockchip-android/bionic",
+    "branch": "rk3328-box-7.1",
+    "revision": "8b2e5b977118ebb8447cdf429c4a6be534c4fd1b",
+    "path": "/workspace/build01-platform-next/research/rockchip-bionic"
+  }
+]

@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "apk": {
+    "path": "/workspace/build01-platform-next/aosp-app/out/target/product/generic/system/priv-app/VortexHome/VortexHome.apk",
+    "sha256": "81fc16aa89e523088ac8c7a6e334a2c670745d6a4e673a30a986ba6af04867d4",
+    "size_bytes": 44366
+  },
+  "device": {
+    "serial": "emulator-5584",
+    "ro.build.version.release": "7.1.1",
+    "ro.build.version.sdk": "25",
+    "ro.product.cpu.abi": "x86",
+    "sys.boot_completed": "1",
+    "display_pixels": "1280x720",
+    "display_density_dpi": 160,
+    "emulator_version": "37.2.12.0",
+    "acceleration": "software, /dev/kvm absent",
+    "memory_mb": 1024,
+    "cores": 2
+  },
+  "checks": [
+    {
+      "check": "package_install",
+      "status": "pass",
+      "detail": "PackageManager accepted the final AOSP-built APK in a fresh isolated AVD"
+    },
+    {
+      "check": "package_metadata",
+      "status": "pass",
+      "detail": "versionCode=1, versionName=0.1.0-dev"
+    },
+    {
+      "check": "home_dpad_right",
+      "status": "pass",
+      "detail": {
+        "before": [
+          {
+            "bounds": "[126,263][322,395]",
+            "labels": [
+              "⇧",
+              "Instalar APK"
+            ]
+          }
+        ],
+        "after": [
+          {
+            "bounds": "[334,263][530,395]",
+            "labels": [
+              "⚙",
+              "Configurações"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "check": "home_dpad_left",
+      "status": "pass",
+      "detail": [
+        {
+          "bounds": "[126,263][322,395]",
+          "labels": [
+            "⇧",
+            "Instalar APK"
+          ]
+        }
+      ]
+    },
+    {
+      "check": "installer_opens",
+      "status": "pass",
+      "detail": "Opened using DPAD_CENTER on Home install tile"
+    },
+    {
+      "check": "qr_rendered",
+      "status": "pass",
+      "detail": {
+        "address": "192.168.232.2",
+        "port": 44145,
+        "token_sha256": "42ab19e17c0388ebc56bbf1cc42b86f377f8d3e7fcb5577b07607992fbfacbaa"
+      }
+    },
+    {
+      "check": "http_pairing_page",
+      "status": "pass",
+      "detail": "HTTP200 from selected private emulator interface"
+    },
+    {
+      "check": "server_closed_on_back",
+      "status": "pass",
+      "detail": "Pairing screen closed and listening socket absent"
+    },
+    {
+      "check": "return_home",
+      "status": "pass",
+      "detail": "Back returned to Home without drawer"
+    },
+    {
+      "check": "no_app_fatal_exception",
+      "status": "pass",
+      "detail": "No Vortex fatal exception in cleared smoke log"
+    },
+    {
+      "check": "socket_closed_ipv4_ipv6",
+      "status": "pass",
+      "detail": "No listener for pairing port in either /proc/net/tcp or /proc/net/tcp6 after Back"
+    }
+  ],
+  "status": "pass",
+  "limits": [
+    "Smoke test of an AOSP-built APK on the installed Android 7.1.1 API25 x86 emulator image; not a built Android ROM.",
+    "No Rockchip ARM drivers, physical TV Box, firmware boot or storage writes were exercised.",
+    "HTTP was requested from within the emulator to its private interface; a real phone/LAN and USB media were not tested.",
+    "No full PackageInstaller upload/install regression or power privileges were tested in this smoke run."
+  ],
+  "harness_note": "Initial harness assumed focus before the first D-pad event. The fresh AVD started in touch mode; evidence of that harness-only failure is preserved under harness-first-attempt. No app change was needed.",
+  "emulator_shutdown": {
+    "serial": "emulator-5584",
+    "own_emulator_only": true,
+    "get_state_exit_code_after_kill": 1,
+    "process_exit_code": 138,
+    "note": "Requested adb emu kill terminates this emulator with SIGUSR1; not an observed app crash."
+  }
+}
