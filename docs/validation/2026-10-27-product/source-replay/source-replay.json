@@ -1,0 +1,360 @@
+{
+  "scope": "source_patch_replay_only",
+  "projects": [
+    {
+      "path": "build",
+      "upstream_base": "d2721c65c9282b31df7b79f85289ee6c4e636716",
+      "source_repository": "/workspace/build01-platform-next/research/rockchip-build",
+      "archive_sha256": "f5455c1fd868c5423cd9fd5b1f720d394455c3b520531553e7b795a0db415c6a",
+      "patches": [
+        {
+          "path": "/workspace/build01-product-next/product-graph/build-vortex-sd-package-scope.patch",
+          "sha256": "8ed2d269d42f89c2202de56c0057ada939a1eb8ed53a8df7acf44eca00d2f320",
+          "check": {
+            "argv": [
+              "git",
+              "apply",
+              "--check",
+              "/workspace/build01-product-next/product-graph/build-vortex-sd-package-scope.patch"
+            ],
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "apply": {
+            "argv": [
+              "git",
+              "apply",
+              "/workspace/build01-product-next/product-graph/build-vortex-sd-package-scope.patch"
+            ],
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        }
+      ],
+      "mismatches": [],
+      "changed_files": [
+        {
+          "path": "target/product/base.mk",
+          "sha256": "c94266512399edb18f798d4f1c4a0fe1a312dffe5322033c79d3409e7aa7ab46",
+          "size": 3211
+        },
+        {
+          "path": "target/product/core_minimal.mk",
+          "sha256": "49b7aa37acf6d495ab792a52c042ade44049b3eeeb1ae8ab3d1b23df626db188",
+          "size": 4182
+        },
+        {
+          "path": "target/product/embedded.mk",
+          "sha256": "5b92bba963afaf0d58ef820f0b26cb340991be5a8d70c2d7cf58a2e4675bbb57",
+          "size": 2379
+        }
+      ],
+      "files_compared": 1034,
+      "file_manifest_sha256": "bea4b2bc149fd045f200043e5c600b9b55a60b903bb8bea507bcc858ae22d712",
+      "pass": true
+    },
+    {
+      "path": "device/rockchip/rk322x",
+      "upstream_base": "f33a129bfab6d9cc87184ee3bf032224801fa446",
+      "source_repository": "/workspace/build01-sd-next/device-sd",
+      "archive_sha256": "f221adbfd5399321d2e0d5eb9df7ab7ad4cca944b6bdd26abd066e7fbd9ddecb",
+      "patches": [
+        {
+          "path": "/workspace/vortex-build/rom/sdcard/patches/0001-rk322x-sd-only-fstab.patch",
+          "sha256": "7b1251a3ee6b0beaf99fb198070b13e54efac47af3c650728b28d0c5b59b7b82",
+          "check": {
+            "argv": [
+              "git",
+              "apply",
+              "--check",
+              "/workspace/vortex-build/rom/sdcard/patches/0001-rk322x-sd-only-fstab.patch"
+            ],
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "apply": {
+            "argv": [
+              "git",
+              "apply",
+              "/workspace/vortex-build/rom/sdcard/patches/0001-rk322x-sd-only-fstab.patch"
+            ],
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        },
+        {
+          "path": "/workspace/vortex-build/rom/sdcard/patches/0004-rk3229-sdk-sd-controller.patch",
+          "sha256": "b45019dd690914c25b3959a2e155a48156e4b10eff155aac720c98a06c400e4c",
+          "check": {
+            "argv": [
+              "git",
+              "apply",
+              "--check",
+              "/workspace/vortex-build/rom/sdcard/patches/0004-rk3229-sdk-sd-controller.patch"
+            ],
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "apply": {
+            "argv": [
+              "git",
+              "apply",
+              "/workspace/vortex-build/rom/sdcard/patches/0004-rk3229-sdk-sd-controller.patch"
+            ],
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        }
+      ],
+      "mismatches": [],
+      "changed_files": [
+        {
+          "path": "device.mk",
+          "sha256": "2f207278096096af2f13726a23385e1aa8c1fb4aed7fd17608a32a2309b69cb1",
+          "size": 1857
+        },
+        {
+          "path": "fstab.rk30board.bootmode.sd",
+          "sha256": "d13a0c32b6f1e50c4a382691a166fea42f09277819fc4411c2ff6342539c9b4d",
+          "size": 2120
+        }
+      ],
+      "files_compared": 32,
+      "file_manifest_sha256": "2f402048ade961261522191810e09df5f46fc8da7a874088bc5413537b7e1f74",
+      "pass": true
+    },
+    {
+      "path": "device/rockchip/common",
+      "upstream_base": "3b1aa90ef43f9d34094739a211ad44bf9a2c0b74",
+      "source_repository": "/workspace/build01-sd-next/common-sd",
+      "archive_sha256": "ab2dc7e2e9e76f04abb2e44073306ac8d66fa7c4c465ee0621c612ba678f7d87",
+      "patches": [
+        {
+          "path": "/workspace/vortex-build/rom/sdcard/patches/0002-common-sd-only-init.patch",
+          "sha256": "b8da51f8744f5a7cd2f2377d507a53ee87fe55fc9bd93785afa42227e7d4e0a4",
+          "check": {
+            "argv": [
+              "git",
+              "apply",
+              "--check",
+              "/workspace/vortex-build/rom/sdcard/patches/0002-common-sd-only-init.patch"
+            ],
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "apply": {
+            "argv": [
+              "git",
+              "apply",
+              "/workspace/vortex-build/rom/sdcard/patches/0002-common-sd-only-init.patch"
+            ],
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        },
+        {
+          "path": "/workspace/vortex-build/rom/sdcard/patches/0003-common-disable-internal-provisioning.patch",
+          "sha256": "51bfc8d4828cff32f4918c63da3b657007f7d733c7d11193f63a7ff6983b69c4",
+          "check": {
+            "argv": [
+              "git",
+              "apply",
+              "--check",
+              "/workspace/vortex-build/rom/sdcard/patches/0003-common-disable-internal-provisioning.patch"
+            ],
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "apply": {
+            "argv": [
+              "git",
+              "apply",
+              "/workspace/vortex-build/rom/sdcard/patches/0003-common-disable-internal-provisioning.patch"
+            ],
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        },
+        {
+          "path": "/workspace/vortex-build/rom/sdcard/patches/0005-common-remove-sd-factory-services.patch",
+          "sha256": "7918eb51fba32f060c1dfc69e719579ad2854342de0ad1182cc60aa2143956d5",
+          "check": {
+            "argv": [
+              "git",
+              "apply",
+              "--check",
+              "/workspace/vortex-build/rom/sdcard/patches/0005-common-remove-sd-factory-services.patch"
+            ],
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "apply": {
+            "argv": [
+              "git",
+              "apply",
+              "/workspace/vortex-build/rom/sdcard/patches/0005-common-remove-sd-factory-services.patch"
+            ],
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        }
+      ],
+      "mismatches": [],
+      "changed_files": [
+        {
+          "path": "BoardConfig.mk",
+          "sha256": "81ba52349894107ce0810ef938119fa4da9a9a1112268f5ca2223ab09382acfd",
+          "size": 8423
+        },
+        {
+          "path": "device.mk",
+          "sha256": "34d9927e065a44e3e4e71cad0a54b9023778b81164fd7f6203c3196c0f2f2fe4",
+          "size": 23087
+        },
+        {
+          "path": "init.connectivity.rc",
+          "sha256": "27b21c774519b877ccc16fdf4425c781238ae335bc8dd615a81898ffdea8e9cb",
+          "size": 4849
+        },
+        {
+          "path": "init.rk30board.rc",
+          "sha256": "01bb405dbdffe34b6ff0bc494dd36509504d71e2d434dd539be4af9c321f9973",
+          "size": 10439
+        },
+        {
+          "path": "init.rockchip.rc",
+          "sha256": "cdc7b53a9bc001884ed75d94f942a0bf5b96cf5957eec66fbd45c88b24b98aa9",
+          "size": 5117
+        },
+        {
+          "path": "sepolicy/bluetooth.te",
+          "sha256": "81c7354e226e8ff1f64530aa935eaee1756a89350cbc309370024bab57ce53fe",
+          "size": 71
+        },
+        {
+          "path": "tv/tv_base.mk",
+          "sha256": "57c20569918118be3d757ca7f6d8cc9d95cfdc7b39045b1c4a7dd7e2d71e736d",
+          "size": 3821
+        },
+        {
+          "path": "ueventd.rockchip.rc",
+          "sha256": "ed6f14421dc2a5609dd5b7e279da999c62589c6f3008ce9f2074c060716fe9b0",
+          "size": 28132
+        },
+        {
+          "path": "wifi_bt_common.mk",
+          "sha256": "758303646726ab60a289715b02a47409f5e8691e3d32dfed1a567b53134bf430",
+          "size": 1065
+        }
+      ],
+      "files_compared": 245,
+      "file_manifest_sha256": "1bb06c52559d93dfedbf377908d4a84aed9df9853bd8a8a43409fa0fb365046a",
+      "pass": true
+    },
+    {
+      "path": "vendor/rockchip/rk322x",
+      "upstream_base": "50c7170ecb4bd907059db37f09f4767b301f2d15",
+      "source_repository": "/workspace/build01-sd-next/vendor-sd",
+      "archive_sha256": "5d1681c8993fb3123ba5d0ec04f1f2ba8afe4f1470bc711913530201898d0ab6",
+      "patches": [
+        {
+          "path": "/workspace/vortex-build/rom/sdcard/patches/0006-vendor-omit-bluetooth.patch",
+          "sha256": "97025b3ee255f7342c3b9c08b2eccbc02c4957b3429cc679e8888e1f2b3ba8a5",
+          "check": {
+            "argv": [
+              "git",
+              "apply",
+              "--check",
+              "/workspace/vortex-build/rom/sdcard/patches/0006-vendor-omit-bluetooth.patch"
+            ],
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "apply": {
+            "argv": [
+              "git",
+              "apply",
+              "/workspace/vortex-build/rom/sdcard/patches/0006-vendor-omit-bluetooth.patch"
+            ],
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        },
+        {
+          "path": "/workspace/vortex-build/rom/platform-reference/graphics/patches/0004-vendor-use-source-graphics-hals.patch",
+          "sha256": "577fd1046ef854e407bcb44354e0f84669ea0404a71ba9314aa2071ee48ec398",
+          "check": {
+            "argv": [
+              "git",
+              "apply",
+              "--check",
+              "/workspace/vortex-build/rom/platform-reference/graphics/patches/0004-vendor-use-source-graphics-hals.patch"
+            ],
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "apply": {
+            "argv": [
+              "git",
+              "apply",
+              "/workspace/vortex-build/rom/platform-reference/graphics/patches/0004-vendor-use-source-graphics-hals.patch"
+            ],
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        }
+      ],
+      "mismatches": [],
+      "changed_files": [
+        {
+          "path": "device-vendor.mk",
+          "sha256": "956b95a1ef65ff8dbbfc78dd7e8c52a0252460482791544a1b14595378026983",
+          "size": 30733
+        }
+      ],
+      "files_compared": 304,
+      "file_manifest_sha256": "51531f1438d6ca5321214ee1f1d3eb6cbb611e5987e5bb08153cc4da938be247",
+      "pass": true
+    }
+  ],
+  "stock_product_comparison": {
+    "packages": {
+      "before": "/workspace/build01-product-next/product-graph/evidence/baseline-05-packages.list",
+      "after": "/workspace/build01-product-next/product-graph/evidence/rk322x_box/packages.list",
+      "before_sha256": "36ca59c466b65913f31892c544dc2e9c42666caefd9c1b484d9db0988d679939",
+      "after_sha256": "36ca59c466b65913f31892c544dc2e9c42666caefd9c1b484d9db0988d679939",
+      "byte_identical": true
+    },
+    "copy-files": {
+      "before": "/workspace/build01-product-next/product-graph/evidence/baseline-05-copy-files.list",
+      "after": "/workspace/build01-product-next/product-graph/evidence/rk322x_box/copy-files.list",
+      "before_sha256": "21d6e88f264747ed63e27390abb28649db775cd318561ec28507e3a1275454b1",
+      "after_sha256": "21d6e88f264747ed63e27390abb28649db775cd318561ec28507e3a1275454b1",
+      "byte_identical": true
+    },
+    "properties": {
+      "before": "/workspace/build01-product-next/product-graph/evidence/baseline-05-properties.list",
+      "after": "/workspace/build01-product-next/product-graph/evidence/rk322x_box/properties.list",
+      "before_sha256": "727a67ae916cbcbf671c4c2828b877f32d35f39be763d2a4d99ecdf9011d94a4",
+      "after_sha256": "727a67ae916cbcbf671c4c2828b877f32d35f39be763d2a4d99ecdf9011d94a4",
+      "byte_identical": true
+    }
+  },
+  "pass": true
+}

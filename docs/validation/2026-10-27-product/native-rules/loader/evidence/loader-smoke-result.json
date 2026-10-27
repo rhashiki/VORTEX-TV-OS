@@ -1,0 +1,124 @@
+{
+  "scope": "Actual Android ARM32 dynamic linker resolves new Android.mk-built HALs with RTLD_NOW under QEMU Linux user mode. Tag/id/method pointers checked; version/name printed only. HAL open never invoked, DSO constructors/destructors may execute. No rendering, full Android boot, SD media or physical-board validation.",
+  "status": "pass",
+  "checks": [
+    {
+      "case": "missing-file",
+      "command": [
+        "/workspace/build01-hal-next/loader/bin/qemu-arm-static",
+        "-L",
+        "/workspace/build01-hal-next/gralloc-link/reference",
+        "-E",
+        "LD_LIBRARY_PATH=/system/lib",
+        "/workspace/build01-hal-next/loader/hal_metadata_probe",
+        "/nonexistent-vortex-hal.so",
+        "gralloc"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "status": "pass",
+      "log": "missing-file.runtime.log"
+    },
+    {
+      "case": "missing-HMI",
+      "command": [
+        "/workspace/build01-hal-next/loader/bin/qemu-arm-static",
+        "-L",
+        "/workspace/build01-hal-next/gralloc-link/reference",
+        "-E",
+        "LD_LIBRARY_PATH=/system/lib",
+        "/workspace/build01-hal-next/loader/hal_metadata_probe",
+        "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libm.so",
+        "gralloc"
+      ],
+      "exit_code": 3,
+      "expected_exit_code": 3,
+      "status": "pass",
+      "log": "missing-HMI.runtime.log"
+    },
+    {
+      "case": "gralloc",
+      "command": [
+        "/workspace/build01-hal-next/loader/bin/qemu-arm-static",
+        "-L",
+        "/workspace/build01-hal-next/gralloc-link/reference",
+        "-E",
+        "LD_LIBRARY_PATH=/system/lib",
+        "/workspace/build01-hal-next/loader/hal_metadata_probe",
+        "/workspace/build01-product-next/native-rules/artifacts/gralloc.rk30board.so",
+        "gralloc"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "pass",
+      "log": "gralloc.runtime.log"
+    },
+    {
+      "case": "hwcomposer",
+      "command": [
+        "/workspace/build01-hal-next/loader/bin/qemu-arm-static",
+        "-L",
+        "/workspace/build01-hal-next/gralloc-link/reference",
+        "-E",
+        "LD_LIBRARY_PATH=/system/lib",
+        "/workspace/build01-hal-next/loader/hal_metadata_probe",
+        "/workspace/build01-product-next/native-rules/artifacts/hwcomposer.rk30board.so",
+        "hwcomposer"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "pass",
+      "log": "hwcomposer.runtime.log"
+    },
+    {
+      "case": "wrong-id",
+      "command": [
+        "/workspace/build01-hal-next/loader/bin/qemu-arm-static",
+        "-L",
+        "/workspace/build01-hal-next/gralloc-link/reference",
+        "-E",
+        "LD_LIBRARY_PATH=/system/lib",
+        "/workspace/build01-hal-next/loader/hal_metadata_probe",
+        "/workspace/build01-product-next/native-rules/artifacts/gralloc.rk30board.so",
+        "not-gralloc"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "status": "pass",
+      "log": "wrong-id.runtime.log"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/workspace/build01-hal-next/loader/bin/qemu-arm-static",
+      "size_bytes": 11284016,
+      "sha256": "4707fc8fee4660dba6d150d930152d995f2aa784e3b52b4deb8be282533d1f87"
+    },
+    {
+      "path": "/workspace/build01-hal-next/loader/hal_metadata_probe",
+      "size_bytes": 7192,
+      "sha256": "3b04317fa4259c73346b2afffa71ef0905306b1679eeff39df1606c63b68a0bc"
+    },
+    {
+      "path": "/workspace/build01-hal-next/loader/evidence/qemu-provision.json",
+      "size_bytes": 826,
+      "sha256": "bbea3d3cc863dda8e537b384bb01254052ef5f29143ddd866cfc4150caec7bf0"
+    },
+    {
+      "path": "/workspace/build01-hal-next/gralloc-link/reference/system/bin/linker",
+      "size_bytes": 626424,
+      "sha256": "5ca617a5371ca22a8f455950dd154aa2075e420bb2a4d3c997f440b6912af380"
+    }
+  ],
+  "tested_modules": {
+    "gralloc.rk30board.so": {
+      "size_bytes": 30368,
+      "sha256": "ad9df6102d59dc1e0f91fabff5dd6a0357a5b531285842e4a7ec351a1492c9ed"
+    },
+    "hwcomposer.rk30board.so": {
+      "size_bytes": 83736,
+      "sha256": "f6c6651d4b31a1400289117c017a1e45cee389bb6a060375783817e726f32fbf"
+    }
+  },
+  "runtime_warning": "Legacy Android linker reports unsupported DF_1_PIE/NOW flags of existing GNU-linked probe; warning preserved, no suppression."
+}

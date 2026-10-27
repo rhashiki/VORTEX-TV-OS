@@ -1,0 +1,11 @@
+{
+  "README.md": "eba7b860409ff000226d72f418bfaca1428b177e7eaf713f7b930e0c37d9f744",
+  "build-dereferenced-symlinks.json": "201468ceb7a3c89662e28db3377bcd7b57d1c5b1f69915e03f5e79324a2283a1",
+  "build-files.json": "4750df7103761d80cfe86546b2b6c294f026eda2c1e8b92d45bb1a3a9ed4658e",
+  "common-local-base.patch": "2aa60847d397e6f3c00e1aaffc80266b8d9b95af21eb5a1233ec07a67a1a1c6c",
+  "device_rockchip_common-files.json": "a75fcab0c563fbbafddb1a72afcd30a02a214a6e6843e2a1f711841d3ef7f6ad",
+  "device_rockchip_rk322x-files.json": "2ec048f453cb30a045d3e17f7db604ca2847da89aa9e1db45495c67998a3f1a6",
+  "replay.py": "764120908ad3d8dc91836e0fd53e8509ab6b141cca05b40923fe1c482b84e1d5",
+  "source-replay.json": "d7dec9b84905779027e9477e03ab469d4384186c2edeefd2eaa38be96558bd45",
+  "vendor_rockchip_rk322x-files.json": "cdf3a2e01f43b1d2fd7b59c365437a0065fd09e4f5135de781214a60c8fe4d5d"
+}

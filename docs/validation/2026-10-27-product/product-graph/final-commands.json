@@ -1,0 +1,24 @@
+{
+  "commands": [
+    [
+      "make",
+      "-f",
+      "inspect.mk",
+      "TARGET_PRODUCT=vortex_rk322x_sd_box",
+      "VORTEX_INSPECT_BOARD=true",
+      "inspect"
+    ],
+    [
+      "make",
+      "-f",
+      "inspect.mk",
+      "TARGET_PRODUCT=rk322x_box",
+      "inspect"
+    ]
+  ],
+  "cwd": "/workspace/build01-product-next/product-graph/tree",
+  "environment_override": {
+    "PATH_prefix": "/workspace/build01-platform-next/aosp-app/host-bin"
+  },
+  "scope": "real product_config import/inheritance; diagnostic prelude; no whole platform build"
+}

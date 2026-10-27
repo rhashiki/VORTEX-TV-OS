@@ -1,0 +1,1522 @@
+[
+  {
+    "path": "Android.mk",
+    "sha256": "86707856cb08745b5d544ac219d49609dbb02e6d88921137a5bb7c1b4b6251ce",
+    "size": 977
+  },
+  {
+    "path": "device-vendor.mk",
+    "sha256": "956b95a1ef65ff8dbbfc78dd7e8c52a0252460482791544a1b14595378026983",
+    "size": 30733
+  },
+  {
+    "path": "proprietary/bin/busybox",
+    "sha256": "bf663a6ece662cf387c071950016f9c7a87949510441add4c335e1e08d4703c7",
+    "size": 887456
+  },
+  {
+    "path": "proprietary/bin/e2fsck",
+    "sha256": "153779ffec25bbd6b2b16c26f9ae3c2ab2f1f12667e3c12cd0e6f03dbe84f4ed",
+    "size": 163036
+  },
+  {
+    "path": "proprietary/bin/pppoe-connect",
+    "sha256": "009b707002ea9c7fc1491d1c56df6f601449fea68b1919a742bf3749d1316122",
+    "size": 9286
+  },
+  {
+    "path": "proprietary/bin/pppoe-setup",
+    "sha256": "c2786454fe50ba418c07ac799ebd868f9b67c404b7be23ea9a582bbea5b2c020",
+    "size": 5127
+  },
+  {
+    "path": "proprietary/bin/pppoe-start",
+    "sha256": "39f904c2a9a31a6ccd5747fd54881209ed301999a0e8c6e7f4289f4913f83cbf",
+    "size": 7133
+  },
+  {
+    "path": "proprietary/bin/pppoe-status",
+    "sha256": "7856dab8e7f1fe1cf16dd9cf35214aaf9e4fafa80adfb43ab327b5c47f3063a0",
+    "size": 2399
+  },
+  {
+    "path": "proprietary/bin/pppoe-stop",
+    "sha256": "1aab838fb4fa0894aabdf84b5daedb85839bc0b71b3486b1b3ba452078a1190b",
+    "size": 3757
+  },
+  {
+    "path": "proprietary/bin/resize2fs",
+    "sha256": "e55100043deaaa3078c29b306738d64dcec7532af0644590c418162be34a0737",
+    "size": 50780
+  },
+  {
+    "path": "proprietary/bin/rksmbd",
+    "sha256": "e5026f8df976cf8d410504ac957c1b8db96038e254544dfd90987a7e3515e858",
+    "size": 17914396
+  },
+  {
+    "path": "proprietary/bin/sh",
+    "sha256": "51220519e58dc97ea992c750fe28d954b0f3d8b67dd64f6301f24c8057a90d9e",
+    "size": 186336
+  },
+  {
+    "path": "proprietary/etc/firmware/4343A0.hcd",
+    "sha256": "f5386a48b2540ac8959befb970e75a10b1a3799bd2bef3eda8ba88275431e97b",
+    "size": 29773
+  },
+  {
+    "path": "proprietary/etc/firmware/BCM4330B1.hcd",
+    "sha256": "fc6f835836ee46642d3cb477422a7d374e8dfaccfe3e2242073d84eef320df7f",
+    "size": 54593
+  },
+  {
+    "path": "proprietary/etc/firmware/BCM4343B0.hcd",
+    "sha256": "e159b32db08af7f19387591e28091d896f6a382a679922d18ec3c35ecde82055",
+    "size": 39653
+  },
+  {
+    "path": "proprietary/etc/firmware/BCM4345C0.hcd",
+    "sha256": "8bbf245399e66f68304ba0f9185159dd1d557c48b534f2e7be75e2e0f4cb4a9a",
+    "size": 65570
+  },
+  {
+    "path": "proprietary/etc/firmware/BCM4354A2.hcd",
+    "sha256": "f1daa6ab28699b72c8e47a34f43c095941c9aa542d0a5f4b55baebc5fd1aae99",
+    "size": 60602
+  },
+  {
+    "path": "proprietary/etc/firmware/BCM4356A2.hcd",
+    "sha256": "f1daa6ab28699b72c8e47a34f43c095941c9aa542d0a5f4b55baebc5fd1aae99",
+    "size": 60602
+  },
+  {
+    "path": "proprietary/etc/firmware/RT2870AP.dat",
+    "sha256": "1a26150c5b61a554226c69fa6dde38e74be7f9a91a41ccd9f9667ce68f0b135a",
+    "size": 1806
+  },
+  {
+    "path": "proprietary/etc/firmware/RT2870APCard.dat",
+    "sha256": "0e6fcb16475301ff475553204becfb35c9197560e19fbf8fce3e3cdd591107e3",
+    "size": 595
+  },
+  {
+    "path": "proprietary/etc/firmware/RT2870STA.dat",
+    "sha256": "3f32692e88497b6e8d3fa33d00649f7db5b1ef4536da8790efd852a9ef80d03e",
+    "size": 1222
+  },
+  {
+    "path": "proprietary/etc/firmware/RT2870STACard.dat",
+    "sha256": "62fe00ad714f760ca0c4aa51b80e6d6ec65cdb09c7893ee2f0f8f8efd8898df6",
+    "size": 613
+  },
+  {
+    "path": "proprietary/etc/firmware/awnb108.hcd",
+    "sha256": "6a02c77af785864f76dd513a3726e62e4612737fa4bcaf721c0a8d1d11b554f4",
+    "size": 37955
+  },
+  {
+    "path": "proprietary/etc/firmware/bcm20710a1.hcd",
+    "sha256": "d08f7a30b9412e2336d3de4be2bf73b680c561f095632eef897c04626e1d35c1",
+    "size": 26621
+  },
+  {
+    "path": "proprietary/etc/firmware/bcm20710a1_24M.hcd",
+    "sha256": "e7856e86c59230a75ff8925bf54a3193c2ae186651ff2c72729ffb0524a105e0",
+    "size": 26634
+  },
+  {
+    "path": "proprietary/etc/firmware/bcm20710a1_26M.hcd",
+    "sha256": "d08f7a30b9412e2336d3de4be2bf73b680c561f095632eef897c04626e1d35c1",
+    "size": 26621
+  },
+  {
+    "path": "proprietary/etc/firmware/bcm2076b1.hcd",
+    "sha256": "a66ce97d9feee72f0e6f7f1fb4a87227bf7ca367fa98bae38d49d013716cec79",
+    "size": 32802
+  },
+  {
+    "path": "proprietary/etc/firmware/bcm40183b2.hcd",
+    "sha256": "fc6f835836ee46642d3cb477422a7d374e8dfaccfe3e2242073d84eef320df7f",
+    "size": 54593
+  },
+  {
+    "path": "proprietary/etc/firmware/bcm43241b4.hcd",
+    "sha256": "2038472d15eb5002ca64ba29ab2f141aaacbf8bf8f0b7dd1f76101c6da56737b",
+    "size": 14344
+  },
+  {
+    "path": "proprietary/etc/firmware/bcm4329.hcd",
+    "sha256": "566a5bab31f4ab3f511f2f54abc670e262d1e4f28c94aa81d02e9104000d8bcc",
+    "size": 16608
+  },
+  {
+    "path": "proprietary/etc/firmware/bcm43341b0.hcd",
+    "sha256": "2a488289b06c429662c9e111c5727d2d2b67e67b441260e13c1fcd234e8b0c62",
+    "size": 41413
+  },
+  {
+    "path": "proprietary/etc/firmware/bcm4339a0.hcd",
+    "sha256": "020f532b7a327321a4955101c6f358f6187f01e25e3ff5e3b8c72c6f55a8d125",
+    "size": 57291
+  },
+  {
+    "path": "proprietary/etc/firmware/bcm43438a0.hcd",
+    "sha256": "58b8142caddda4559fbc400d923ee44e7dc021dc92c3cacfb4464c6a729d6d2d",
+    "size": 40568
+  },
+  {
+    "path": "proprietary/etc/firmware/bcm43438a1.hcd",
+    "sha256": "a5ba3a8a0b8c589db88ebc65f59a813ecfb1ca20a47dfae59dfad63f08c5c21c",
+    "size": 36774
+  },
+  {
+    "path": "proprietary/etc/firmware/bcm4354a1.hcd",
+    "sha256": "1aabd92e2c4db12d58a69fc16682208b3762864e56f64a2e04b2fa141602fd36",
+    "size": 66879
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_RK901.bin",
+    "sha256": "22722a15770bae9b047a79cfe8ee4c4772ce2684c023f0925b8f3cdfd8776766",
+    "size": 201472
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_RK901a0.bin",
+    "sha256": "22722a15770bae9b047a79cfe8ee4c4772ce2684c023f0925b8f3cdfd8776766",
+    "size": 201472
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_RK901a0_apsta.bin",
+    "sha256": "22722a15770bae9b047a79cfe8ee4c4772ce2684c023f0925b8f3cdfd8776766",
+    "size": 201472
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_RK901a2.bin",
+    "sha256": "1ef6b0a75d894721c12456e79af2700e939691183aad4de8aed4f77245fa2eb3",
+    "size": 212536
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_RK901a2_apsta.bin",
+    "sha256": "38bb15aca036009d5d98930d617bd81142a157d2f516003e332d6396f223f982",
+    "size": 204070
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_RK901a2_p2p.bin",
+    "sha256": "4c5e9acc45ed1a9cfc980647e3e13001378d16598b077fe243e8aa98160cd905",
+    "size": 212850
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_RK903.bin",
+    "sha256": "89867b12661b973ce732fcfd3aacad6b4db0b1e2760e7a7e9a532d07ef3d1026",
+    "size": 239947
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_RK903_ag.bin",
+    "sha256": "169a3dbb068cf4841b48c821f33fe5a6c69d99f3974c247d3424569453d2786c",
+    "size": 239507
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_RK903_ag_apsta.bin",
+    "sha256": "714e1a683fbf9722f813b3c6408319bae34fb631119485d4e11e752c810a9861",
+    "size": 226405
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_RK903_ag_p2p.bin",
+    "sha256": "169a3dbb068cf4841b48c821f33fe5a6c69d99f3974c247d3424569453d2786c",
+    "size": 239507
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_RK903_p2p.bin",
+    "sha256": "89867b12661b973ce732fcfd3aacad6b4db0b1e2760e7a7e9a532d07ef3d1026",
+    "size": 239947
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_RK903b2.bin",
+    "sha256": "11d3064ffe2e6adb865cc1661ef4258529a06c93cb310617635d48c65dd18173",
+    "size": 229802
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_RK903b2_apsta.bin",
+    "sha256": "20afc584a73305ece6b700a21be3de0a29dc75aa67552b17f927778c02e7b055",
+    "size": 210920
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_RK903b2_p2p.bin",
+    "sha256": "a3eeeb429620d0bacb8bb25d324e79d17984e48e03d7a19877552bdb788d1eb8",
+    "size": 226455
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_awnb108.bin",
+    "sha256": "8ec0c4548383c1bc4a8876bb485340578eb75831da7545a24ec3db1523c29f1d",
+    "size": 206231
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_awnb108_ap.bin",
+    "sha256": "838318328324deb9a6b278917807d5b640aa018ff4c5f3b1a2ab006b4e7b0536",
+    "size": 191709
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm40181a2.bin",
+    "sha256": "a030d32603bab843f3098f361370f76449502eaf0620bc7b5c8f58280f1ff22b",
+    "size": 223060
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm40181a2_apsta.bin",
+    "sha256": "a030d32603bab843f3098f361370f76449502eaf0620bc7b5c8f58280f1ff22b",
+    "size": 223060
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm40183b2.bin",
+    "sha256": "156901eb0af5f833c874921f81efd215c475265bf8fbcaf3b3176e7272c4ac5d",
+    "size": 226606
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm40183b2_ag.bin",
+    "sha256": "169a3dbb068cf4841b48c821f33fe5a6c69d99f3974c247d3424569453d2786c",
+    "size": 239507
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm40183b2_ag_apsta.bin",
+    "sha256": "714e1a683fbf9722f813b3c6408319bae34fb631119485d4e11e752c810a9861",
+    "size": 226405
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm40183b2_ag_p2p.bin",
+    "sha256": "169a3dbb068cf4841b48c821f33fe5a6c69d99f3974c247d3424569453d2786c",
+    "size": 239507
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm40183b2_apsta.bin",
+    "sha256": "20afc584a73305ece6b700a21be3de0a29dc75aa67552b17f927778c02e7b055",
+    "size": 210920
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm40183b2_p2p.bin",
+    "sha256": "169a3dbb068cf4841b48c821f33fe5a6c69d99f3974c247d3424569453d2786c",
+    "size": 239507
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm43241b4_ag.bin",
+    "sha256": "cbcb1899c18a9838854ee811a019e0c364dc1c01eedb2cb5f63af3d61430df56",
+    "size": 392320
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm43241b4_ag_apsta.bin",
+    "sha256": "2c89b33ce1b5a24be382956ecfb30603c34f2770ea798af86e706e9f95ebfe58",
+    "size": 400662
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm43241b4_ag_p2p.bin",
+    "sha256": "2c89b33ce1b5a24be382956ecfb30603c34f2770ea798af86e706e9f95ebfe58",
+    "size": 400662
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm4330.bin",
+    "sha256": "aaa36ae6bde5b6eeb8c6e39866b69b761e3086bcef604ab01337c5d4948fd813",
+    "size": 218460
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm4330_apsta.bin",
+    "sha256": "72cb09a64cab2c053969b0a754a803f7c0a00c57ced4a131d3e2bd9255db48b2",
+    "size": 237848
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm43341b0_ag.bin",
+    "sha256": "3cc9d282ece87ef78863016395821fe179313b393fd2504af63cc2b7ca8d09ab",
+    "size": 399488
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm43341b0_ag_apsta.bin",
+    "sha256": "3cc9d282ece87ef78863016395821fe179313b393fd2504af63cc2b7ca8d09ab",
+    "size": 399488
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm43341b0_ag_p2p.bin",
+    "sha256": "3ee6bbfd7b82f36886579a83f115988c845d0eaf342d77ab493e8895f751e08e",
+    "size": 366498
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm4334b1_ag.bin",
+    "sha256": "af8c726df4fccdd3fba68e8ce232cc515c6188ee24b4d45f56aae5bccfcc3f59",
+    "size": 457249
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm4334b1_ag_apsta.bin",
+    "sha256": "c2f314b995eeb3175de4adc277825299d6c5788638701fd5f10c8d33b0478244",
+    "size": 413342
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm4334b1_ag_p2p.bin",
+    "sha256": "af8c726df4fccdd3fba68e8ce232cc515c6188ee24b4d45f56aae5bccfcc3f59",
+    "size": 457249
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm4339a0_ag.bin",
+    "sha256": "16cbdac88d49c2f76eea461cf6c81e3866572f850fe29be726555549ac1c8f55",
+    "size": 541314
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm4339a0_ag_apsta.bin",
+    "sha256": "16cbdac88d49c2f76eea461cf6c81e3866572f850fe29be726555549ac1c8f55",
+    "size": 541314
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm4339a0_ag_p2p.bin",
+    "sha256": "16cbdac88d49c2f76eea461cf6c81e3866572f850fe29be726555549ac1c8f55",
+    "size": 541314
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm43436b0.bin",
+    "sha256": "42349a4e3277af34b4fe887b25051a5b1288f2c9933bfdd0bead1aa0b9f45e32",
+    "size": 421001
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm43436b0_apsta.bin",
+    "sha256": "42349a4e3277af34b4fe887b25051a5b1288f2c9933bfdd0bead1aa0b9f45e32",
+    "size": 421001
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm43438a0.bin",
+    "sha256": "29eca76f734a79c764269930a65bf5d7965900b51c204699bc8ee1943b2cc520",
+    "size": 405428
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm43438a0_apsta.bin",
+    "sha256": "29eca76f734a79c764269930a65bf5d7965900b51c204699bc8ee1943b2cc520",
+    "size": 405428
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm43438a0_p2p.bin",
+    "sha256": "0c7c8aaf153455130cec58c9a2df01783517d207675bca3c13f64b17eaa2d214",
+    "size": 389380
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm43438a1.bin",
+    "sha256": "e831de2226fe77fe028e155560dc5af0b9658f8d06c992ebb28b40717b541967",
+    "size": 375348
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm43438a1_apsta.bin",
+    "sha256": "e831de2226fe77fe028e155560dc5af0b9658f8d06c992ebb28b40717b541967",
+    "size": 375348
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm43438a1_p2p.bin",
+    "sha256": "10be231737a7e2f6badd3bc0034f8ec91dc9d8c747276db059747a2f52b25468",
+    "size": 374608
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm43455c0_ag.bin",
+    "sha256": "606fedd14ce0f8fbd76e6d6bf480318ab3d90a5a9aabaff21fcf2c168bf2118e",
+    "size": 499185
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm43455c0_ag_apsta.bin",
+    "sha256": "606fedd14ce0f8fbd76e6d6bf480318ab3d90a5a9aabaff21fcf2c168bf2118e",
+    "size": 499185
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm43455c0_ag_p2p.bin",
+    "sha256": "5ecb7355e530fb06ebdc9991ceb6a697e0132499bdcac3e4fda55f5039a79a6a",
+    "size": 483181
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm4354a1_ag.bin",
+    "sha256": "e2293d17f009824ba21817bb67a9ef6f6ed9cc97773b7b227fec838d5c779972",
+    "size": 590352
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm4354a1_ag_apsta.bin",
+    "sha256": "e2293d17f009824ba21817bb67a9ef6f6ed9cc97773b7b227fec838d5c779972",
+    "size": 590352
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm4354a1_ag_p2p.bin",
+    "sha256": "28c0445cca9a3449993d06644275233e3584a877a64020663d3e1d3f42822d24",
+    "size": 590300
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm4356a2_ag.bin",
+    "sha256": "e6a53dc1c5e9ec426cea4362aab9a48b768edaade9acd9209b70e5c30fd8bc0f",
+    "size": 558327
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm4356a2_ag_apsta.bin",
+    "sha256": "e6a53dc1c5e9ec426cea4362aab9a48b768edaade9acd9209b70e5c30fd8bc0f",
+    "size": 558327
+  },
+  {
+    "path": "proprietary/etc/firmware/fw_bcm4356a2_ag_p2p.bin",
+    "sha256": "42e603aacc1c25b9f797cab44a192a647f9a5527871954d2eb910f508edbd8c7",
+    "size": 555412
+  },
+  {
+    "path": "proprietary/etc/firmware/nh660.hcd",
+    "sha256": "0ee759443cfa7398a72c230802da868053b2c1b536a0388872f176e0df63cc97",
+    "size": 37949
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_4330.txt",
+    "sha256": "03c0a9085a59b21f1973924c354e33d156e9f2aacc836d0103e2c543735169f1",
+    "size": 741
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_4330_oob.txt",
+    "sha256": "43290f84c7e5eef595406886ba3ac29e27d221f46710365c54e22ca0011c1198",
+    "size": 753
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_AP6181.txt",
+    "sha256": "48432fadd5efa13ccbb752e4555a83c32b82b028440713ead97470140d801948",
+    "size": 1123
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_AP6210.txt",
+    "sha256": "78a05b3b98388b589f07d8f765a54fe7e807b07ca409ea239be6b32be1ada866",
+    "size": 1178
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_AP6210_24M.txt",
+    "sha256": "f7fb2cd1f78fb5bbc9661e9847b83159a914d3d8b145918c1a2e0fe98bf6700b",
+    "size": 1178
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_AP6234.txt",
+    "sha256": "4c7195cbe5239fd11d9ff482b7935715d9871ec4475e723f4527e999f1aac7cd",
+    "size": 2613
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_AP6330.txt",
+    "sha256": "68952ca377ea4f629c7d01042ba6d95e2c74f347a893c4d49a4d3c3f38a5bf1b",
+    "size": 1522
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_AP6335.txt",
+    "sha256": "3c4d7058803bd54d0443de0c272b6abd67e5f28f5ba11ecaf790331758f24cf4",
+    "size": 2366
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_AP6441.txt",
+    "sha256": "75568e5d1a0c801fbec6eb5f06da38a81817f945bb2252018158c610b947a860",
+    "size": 2628
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_AP6476.txt",
+    "sha256": "299d1941e8abdbe597baa4619099da2c76fb6ac68711faa2e73729d7996400ff",
+    "size": 712
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_AP6493.txt",
+    "sha256": "43f6a12af3b5da12009f754de3670afcd5e7bcd11e5593ae8d55a94eefb06216",
+    "size": 1035
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_B23.txt",
+    "sha256": "7c010eb2bb7f5df8145883c6250c45740eef7bf3dd89915d9793863a63ac923d",
+    "size": 1187
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_GB86302I.txt",
+    "sha256": "d1681af360ccadfc2afd1031f014f668bdc3b1c0676352f03954263c9973f950",
+    "size": 1536
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_RK901.txt",
+    "sha256": "6c9c31265075c71738243e42a222f5f26e81a409d6e484a14c3665c19f7a1d4d",
+    "size": 698
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_RK903.cal",
+    "sha256": "3ad1391fcb87f4e63ea6a79c5d4874b18f3f7647774e8046065970bc4e738f6b",
+    "size": 1647
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_RK903.txt",
+    "sha256": "c11faa884b8bb7fc7b8e523a7f71e633ee3c066dd043c34cbd2348316cc5bd2e",
+    "size": 1003
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_RK903_26M.cal",
+    "sha256": "f87ee6a90e2061944e3bc7a870cde3ba21ca5776d849c51f64d9715d672e7bbf",
+    "size": 1663
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_WL211.txt",
+    "sha256": "6c9c31265075c71738243e42a222f5f26e81a409d6e484a14c3665c19f7a1d4d",
+    "size": 698
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_ap6212.txt",
+    "sha256": "5f977a2a3916ef795ceb184cf928231d587249606d1750dacecb5f16ed941ae6",
+    "size": 979
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_ap6212a.txt",
+    "sha256": "a636a0001316bb3fe8cd47d70f16cff1c2dca1128e96bf537ad351841dcd1fee",
+    "size": 1003
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_ap6233f.txt",
+    "sha256": "36784e4e41947932cafbae3eb9ed34e5357a9e65803859d1e3026ff8e5f2d044",
+    "size": 2659
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_ap6236.txt",
+    "sha256": "8acd44ca03528ab350b5221ef33a0dd50de2aafaadc85886ea6b6f0317eddcff",
+    "size": 1165
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_ap6255.txt",
+    "sha256": "f434c3d64ceea0261459774c05093c374c4289e8c9be5f7013d4f9d1e47fd0cb",
+    "size": 1644
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_ap62x2.txt",
+    "sha256": "9db2e9ab17fa72ccdc71c380c67100b723a6db0e8423f93ee08581a741e3de33",
+    "size": 2669
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_ap6354.txt",
+    "sha256": "ff16a70b056274b12215f0fe674232ffdbb89118525fc03fce10a669e382c14a",
+    "size": 3341
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_ap6356.txt",
+    "sha256": "fa23dcba44074022314e9ac2eafb5993cf47f0a5b75df27f770f3e542f991560",
+    "size": 2840
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_ap6356s.txt",
+    "sha256": "fa23dcba44074022314e9ac2eafb5993cf47f0a5b75df27f770f3e542f991560",
+    "size": 2840
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_ap6452.txt",
+    "sha256": "a97f4b4be1c1dfc6aa198c2e0f75b8e02183635e90bab1873ef68001659f2ac0",
+    "size": 1002
+  },
+  {
+    "path": "proprietary/etc/firmware/nvram_awnb108.txt",
+    "sha256": "e6a9e1381f32d42cfa1a38464301c82682f65f78cc5ec4c4e27aa65b25a84928",
+    "size": 861
+  },
+  {
+    "path": "proprietary/etc/firmware/otp.bin.z77",
+    "sha256": "2554b4033f1046254b8ec019283b531c5580e56411dc63e74d79a46a23cb9a33",
+    "size": 4058
+  },
+  {
+    "path": "proprietary/etc/firmware/rk903.hcd",
+    "sha256": "fdb7b60fff356df47d0774b0aa642938db698c9d5d1e213e8ba8f6cba4defbef",
+    "size": 36156
+  },
+  {
+    "path": "proprietary/etc/firmware/rk903_26M.hcd",
+    "sha256": "fc6f835836ee46642d3cb477422a7d374e8dfaccfe3e2242073d84eef320df7f",
+    "size": 54593
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8703bs_config",
+    "sha256": "492531d5a0a44ed5d0e174476543735eafe2cacc5ff5ce9e8e10092d303b563c",
+    "size": 63
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8703bs_fw",
+    "sha256": "fd853d11e20290b4122328ea6dedef221598912082616bc12b6e17897455d3c8",
+    "size": 28368
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8723b_config",
+    "sha256": "646bf2b635cb6ba3bda46d9b27f7928ebb13a064ff806f2cd3451b5fec1092ff",
+    "size": 48
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8723b_fw",
+    "sha256": "3eaf6765ec4967440376d1e716db1ce3e32e30321a51b0618742b0ea622d9f07",
+    "size": 46964
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8723bs_VQ0_config",
+    "sha256": "e759d04af57892fa1b7eb44a57d05bb213a70209f764853460edb448f86519cd",
+    "size": 121
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8723bs_VQ0_fw",
+    "sha256": "20dd9e162d48099906579c5e1bd3c7b65a7e8cbf79954bba59ef0ce985e93827",
+    "size": 46236
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8723bs_config",
+    "sha256": "5441352878d6ff5a14d97cb11472cd4b8714e6a73114ecf89bda682e43645207",
+    "size": 109
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8723bs_fw",
+    "sha256": "f4d03a2966b1b9e07ef03c5fc2a093375e0c3fea824f2a47ee76adec611514c1",
+    "size": 45928
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8723bu_config",
+    "sha256": "46c82e94624add059e23ba46bd7be460aee589e996beeec450cfa1e0f005aba0",
+    "size": 82
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8723cs_xx_config",
+    "sha256": "492531d5a0a44ed5d0e174476543735eafe2cacc5ff5ce9e8e10092d303b563c",
+    "size": 63
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8723cs_xx_fw",
+    "sha256": "2756b883187c0c7396bd05fbd87a86acf4614898877f18c476e9eb89f39d0743",
+    "size": 28892
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8723d_config",
+    "sha256": "7ebd46e7bf7da64bd0ae5a4f1c70f686df66171c143f0e73de7b31c6ec95808d",
+    "size": 56
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8723d_fw",
+    "sha256": "9257ffcd1209845072df35dd6cf2e787e7781c33a6d4c7ef937a7508f2f8e9c9",
+    "size": 49964
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8723ds_config",
+    "sha256": "bd63cbfa98f524fdfc511cbe233c210d9671ab07b73f3c1a7c932016771cd0e9",
+    "size": 48
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8723ds_fw",
+    "sha256": "6af4be6c151ee7f4bfed3058da239679c4edc726b7b0ffbb65c64cdb44c00220",
+    "size": 48632
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8761a_config",
+    "sha256": "88a5ae6c625860fc592f0c79fc09c7eaba105a28c50db06d5746959888875650",
+    "size": 105
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8761a_fw",
+    "sha256": "29a6cfc268fe73c8713c20d5a760d8aec2382e409330ba385acf7cdbf19948ee",
+    "size": 66740
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8761at_config",
+    "sha256": "97e598b6ff35d91dee9c92d712dd1938d206c4f6983ec3ebeb183d97dd720f7a",
+    "size": 109
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8761at_fw",
+    "sha256": "99f6d3138c31f0c2103fede0619ebbc3d52ba86e4297e88977b88d3eb85dd97f",
+    "size": 66436
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8761au8192ee_fw",
+    "sha256": "5caa8550c35cf998f092bf2e339ce80de3d1c51c6e31fb646000b00690e9dec6",
+    "size": 68620
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8761au8812ae_fw",
+    "sha256": "536556687b37e2e7316340cc3553feee3df2c79ffa8dd8d331894557bbcd1670",
+    "size": 72100
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8761au_fw",
+    "sha256": "00c53d4e5e3f85e97bd5f0e3f70dd8710705ac608eb88be050d2afc5620e1c07",
+    "size": 67956
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8761aw8192eu_config",
+    "sha256": "cb2094cfcaa4ab63eabee9f2200b3a9e1a097d96c2703103b4e54793de0e1bd7",
+    "size": 81
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8761aw8192eu_fw",
+    "sha256": "4c9115c9b8ab401c9409411c87606774466cd4454089df8bdeecaef5cefcbd7f",
+    "size": 71164
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8821a_config",
+    "sha256": "cd68b43fbac6b49dca15c5d2a6a371eb540183330a6e123fb5d2ed820c0b6f63",
+    "size": 82
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8821a_fw",
+    "sha256": "f0f0e91bfef6a4e80576ac6641fb34bf339134bd8aec755f72716be87971baac",
+    "size": 41536
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8821as_config",
+    "sha256": "74c985ca157e53486acc738532bfe690681611aa74fcf71d99ffe7c01edb938a",
+    "size": 105
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8821as_fw",
+    "sha256": "02cc34c5a00a3e50882911e27280721218960b20c87e427090b862a590e8f8bb",
+    "size": 40804
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8821c_config",
+    "sha256": "aeb57918a73ea9a98a9ab47adc74654614830270b471245f01cceb1d7c25970d",
+    "size": 64
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8821c_fw",
+    "sha256": "c38dd0056c85bba7f987dd585df79c8fe0916cda475a8ced985a7e7c0cf2600b",
+    "size": 38892
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8821cs_config",
+    "sha256": "57fa85d2f26d90b17d74db182a51055b31524b74157af38b700711f1c0a41a09",
+    "size": 117
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8821cs_fw",
+    "sha256": "cb682c00e4cacf43f712ca74e46466817ca07e239bc752bb26beb5a5851b3b99",
+    "size": 39540
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8822b_config",
+    "sha256": "52224069c7fe1c1000875af8d77a1bebba41b94d15ba1b0dcbda1dcfffd0d49f",
+    "size": 60
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8822b_fw",
+    "sha256": "9738498a3994edd87a4e5adbfb7f254a3409285e4c1e9d1e8459dfc47fdc8c0c",
+    "size": 53320
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8822bs_config",
+    "sha256": "c1c47d481bbe50991f79ead79e1f080e67f862cd10d20182023676b5fb24b20f",
+    "size": 117
+  },
+  {
+    "path": "proprietary/etc/firmware/rtl8822bs_fw",
+    "sha256": "6df919c6fdb67813383b25132aae61cde1c8f38a82e0000caffea08587294679",
+    "size": 44704
+  },
+  {
+    "path": "proprietary/etc/firmware/ssv6051-sw.bin",
+    "sha256": "67c78466586a523197c80cfebbd3c8b1e3ae78acc4fc4f34301537a00c2b2cef",
+    "size": 80208
+  },
+  {
+    "path": "proprietary/etc/firmware/ssv6051-wifi.cfg",
+    "sha256": "b5d40e93a7261423c29ca621c37e0ef3c39e0f2fe585c92ea46314c1de1a549e",
+    "size": 2364
+  },
+  {
+    "path": "proprietary/etc/firmware/wifi_efuse_8189e.map",
+    "sha256": "971d0f0ca5d1190fb510bc4f797b9a14ce5c3c9441154f29efabc7317402aadb",
+    "size": 1566
+  },
+  {
+    "path": "proprietary/etc/firmware/wifi_efuse_8723bs-vq0.map",
+    "sha256": "e624877c1784ff3c441bc21537f44128393cab42218894563ceba5844f9a7ef7",
+    "size": 1421
+  },
+  {
+    "path": "proprietary/etc/firmware/wifi_efuse_8723ds.map",
+    "sha256": "f410753cccf0ba916c1db88cd9b96ea78170f8f215ef491542ff377365362f55",
+    "size": 1567
+  },
+  {
+    "path": "proprietary/etc/permissions/android.hardware.hdmi.cec.xml",
+    "sha256": "7b0140e4d6bdc24496cb560e2540c4dd2bb426247339a20e0d1d3336ed990032",
+    "size": 834
+  },
+  {
+    "path": "proprietary/etc/permissions/android.hardware.usb.accessory.xml",
+    "sha256": "67049dcdf068875bb6525966b854764c2c539965768fb02007ca9339c29ebf19",
+    "size": 975
+  },
+  {
+    "path": "proprietary/etc/permissions/android.software.app_widgets.xml",
+    "sha256": "69aed08347767f009fe5aef9ed239ad91000e5ed56f7bd06d0e83391eb7d7578",
+    "size": 752
+  },
+  {
+    "path": "proprietary/etc/permissions/android.software.live_wallpaper.xml",
+    "sha256": "055df9cecfb48a0d39dd572f695db812d032d81f68c83e76a8bab16b274caf7a",
+    "size": 1050
+  },
+  {
+    "path": "proprietary/etc/permissions/android.software.webview.xml",
+    "sha256": "2e293ff6ea02063ea3835e42e7a5c17fc5a15a46fff0af486c19dcb5b92fe821",
+    "size": 748
+  },
+  {
+    "path": "proprietary/etc/permissions/box_core_hardware.xml",
+    "sha256": "d8da1393edb80edc9c135e98134345ced7d8d6357c40826e745530e481f56069",
+    "size": 3381
+  },
+  {
+    "path": "proprietary/etc/permissions/com.android.location.provider.xml",
+    "sha256": "9ccb80158de3aa3d3b0385d320b537526328530cf62522564ab1c56c97f67e74",
+    "size": 828
+  },
+  {
+    "path": "proprietary/etc/permissions/com.android.media.remotedisplay.xml",
+    "sha256": "4aab4f7a0d722018682d71e0696715b00648433dcfdd4174cb10245ee8302d80",
+    "size": 828
+  },
+  {
+    "path": "proprietary/etc/permissions/com.android.media.tv.remoteprovider.xml",
+    "sha256": "4658ce8f5193340014f65155c0e20a84d9294c2a46dcfe7b650b41e017499784",
+    "size": 831
+  },
+  {
+    "path": "proprietary/etc/permissions/com.android.mediadrm.signer.xml",
+    "sha256": "d1f05b025acc4a39e8139a3f71a277e13edc05f4dbc3e14b5c2197b1651b0d93",
+    "size": 820
+  },
+  {
+    "path": "proprietary/etc/permissions/com.google.android.maps.xml",
+    "sha256": "51110dd5c9b92983c5d36684fb0539642bc27e1d67f81d36e4698eddd5405eef",
+    "size": 816
+  },
+  {
+    "path": "proprietary/etc/permissions/com.google.android.media.effects.xml",
+    "sha256": "06ca9066d58da30bcf9b3570a801a6a24a256c213581b0c7633396715420b281",
+    "size": 835
+  },
+  {
+    "path": "proprietary/etc/permissions/com.google.widevine.software.drm.xml",
+    "sha256": "f2b61f6130513d484db2d0a2ef25861f7b46a6b2396a853b7cc9ffb5b4ee41a0",
+    "size": 261
+  },
+  {
+    "path": "proprietary/etc/permissions/features.xml",
+    "sha256": "83074245f33e5cc9a6f94316f85664a1a6556d0c97aa795008aaaedaae4e1cb4",
+    "size": 4689
+  },
+  {
+    "path": "proprietary/etc/permissions/platform.xml",
+    "sha256": "3a4f914c3eb64f924a05098764b50f5666256b4eff392ef9f746c55c2980cfe4",
+    "size": 8467
+  },
+  {
+    "path": "proprietary/etc/permissions/tv_core_hardware.xml",
+    "sha256": "ac5f48931443ceacad0e4ef0febe5a5118cb729b2c86dce07f6960803e1b26fb",
+    "size": 1482
+  },
+  {
+    "path": "proprietary/etc/ppp/call-pppd",
+    "sha256": "a2a58d9ac824696b85ed7e4b12098f0f6ac49b867592a49e07f1fb09c9f229c3",
+    "size": 941
+  },
+  {
+    "path": "proprietary/etc/ppp/ip-down",
+    "sha256": "e815c515d85bd8391e1d404d6aae0a3cc014de8438fc4f25bfe761a5ba585d07",
+    "size": 409
+  },
+  {
+    "path": "proprietary/etc/ppp/ip-up",
+    "sha256": "58ab7430b32375b6b92291fc0450241e09aaba614be5f1bfe7c1b6011625b516",
+    "size": 862
+  },
+  {
+    "path": "proprietary/etc/ppp/ip-up-vpn",
+    "sha256": "94d4d65f886d157274744f78f701c2b937e0b83646a437b1cb19ead5c4a5e62d",
+    "size": 13916
+  },
+  {
+    "path": "proprietary/etc/ppp/pppoe-secrets",
+    "sha256": "dc45fdcdf181cf6df59db979419ed994503e4e246aeac637a6a2cdb8f0694b02",
+    "size": 278
+  },
+  {
+    "path": "proprietary/etc/ppp/pppoe.conf",
+    "sha256": "3ca5dc8e12f37d65d109825a63f4081c47b93e0cdce6e01d3011f1a47f59ed3d",
+    "size": 4605
+  },
+  {
+    "path": "proprietary/etc/smb.conf",
+    "sha256": "caff62a4c5c868832074c2ef9a6bae99818d9b89b3eb5063c923468ce67a62b9",
+    "size": 986
+  },
+  {
+    "path": "proprietary/etc/smbpasswd",
+    "sha256": "1089fbac31a3d301527630f6ce39c4b3496a6ff393f11a8c8724ebf1acef0eaf",
+    "size": 104
+  },
+  {
+    "path": "proprietary/etc/smbusers",
+    "sha256": "02152a6f67e2961b112ec048c5aabababc1f071c2154ae87bbeb4ebf27a59de8",
+    "size": 42
+  },
+  {
+    "path": "proprietary/framework/oat/arm/pppoe-service.odex",
+    "sha256": "eb75189a4bdc0d4edea92f3527a345eda896f8269d0853d78f394abe427168a2",
+    "size": 57824
+  },
+  {
+    "path": "proprietary/framework/pppoe-service.jar",
+    "sha256": "8fb4f077a97ff96f62414666a02c8df0f13b739777744ecc2a8ed80d7ec2b096",
+    "size": 315
+  },
+  {
+    "path": "proprietary/lib/egl/egl.cfg",
+    "sha256": "89e124ecc5da28514b4f7f3a5986b6e09bbf00d5ea32beb4204e08761876b53b",
+    "size": 21
+  },
+  {
+    "path": "proprietary/lib/egl/libGLES_mali.so",
+    "sha256": "82f5bc8742026be1ed67db15eb50be7361b3be926d6f90a2d1711163c00ace1c",
+    "size": 1279276
+  },
+  {
+    "path": "proprietary/lib/hw/audio.a2dp.default.so",
+    "sha256": "98d10e7d30f3454f4f46ccf02707b1918e2b3b38a65754f217d80f78bd396118",
+    "size": 30440
+  },
+  {
+    "path": "proprietary/lib/hw/audio.primary.default.so",
+    "sha256": "25509018e9a552acf1e755cca799b9222e2de4b06126a673fb5c7f8bdf23bd6b",
+    "size": 18156
+  },
+  {
+    "path": "proprietary/lib/hw/audio.primary.rk30board.so",
+    "sha256": "e1e41f71f8c2e5aad6888b255f294ed876d2b2bb47daa18e8f4e84d719e8dda1",
+    "size": 186600
+  },
+  {
+    "path": "proprietary/lib/hw/audio.r_submix.default.so",
+    "sha256": "62c72f5972d284096a96c8edd9b5c6f4be4caa83418297c82e0dd10426f17e89",
+    "size": 34540
+  },
+  {
+    "path": "proprietary/lib/hw/audio.usb.default.so",
+    "sha256": "52a4caab30bc2441c3f0b28c43334d5705e79a55839bfa2de41a7d9c5196cf78",
+    "size": 22248
+  },
+  {
+    "path": "proprietary/lib/hw/audio.vr_bee_hidraw.default.so",
+    "sha256": "403b1d5fd21154422a05bf79f5e9cb0ad9b7a1be90f94d42516a272d9e65bc30",
+    "size": 22260
+  },
+  {
+    "path": "proprietary/lib/hw/audio_policy.default.so",
+    "sha256": "b2da473f035b76ef4270fedee83b656890d5ae8f200a822fa661fcf611e0ceed",
+    "size": 96096
+  },
+  {
+    "path": "proprietary/lib/hw/bluetooth.default.so",
+    "sha256": "7cd54a5fc8db5c92bcddc6437d779e9860e0a5d902c267306b7975a82ccd4d2d",
+    "size": 1272568
+  },
+  {
+    "path": "proprietary/lib/hw/bluetooth_rtk.default.so",
+    "sha256": "e92380851a90f6a39fcf690e84e1b052057685ba1833bee8939750f11846c5b5",
+    "size": 1334308
+  },
+  {
+    "path": "proprietary/lib/hw/camera.rk30board.so",
+    "sha256": "a866b72cb4d41f8d4bfe4bf63428d50bd4824c45e087a73a090e44ba1d03779d",
+    "size": 318216
+  },
+  {
+    "path": "proprietary/lib/hw/gralloc.default.so",
+    "sha256": "f9399b9a78ca90a5e751d3a9b799ef5ad9ecc8b4368fd1a0888946ddbba9bad3",
+    "size": 22564
+  },
+  {
+    "path": "proprietary/lib/hw/gralloc.rk30board.so",
+    "sha256": "51789e88fabbc1b550a75e8dd783e79fb8f53c612eb7cdb91d5e579c8122286b",
+    "size": 30372
+  },
+  {
+    "path": "proprietary/lib/hw/hdmi_cec.rk30board.so",
+    "sha256": "439298a1244eca8263b839afd31037f5c7e78e31370558cf9d8599edf4637de4",
+    "size": 18152
+  },
+  {
+    "path": "proprietary/lib/hw/hwcomposer.rk30board.so",
+    "sha256": "f0fbdce6395a55f0352dd1629081bcafd2b6bc1b27f4916a7a63679b1e388feb",
+    "size": 83688
+  },
+  {
+    "path": "proprietary/lib/hw/keystore.default.so",
+    "sha256": "7dc3e1cc3fe037b90514ac2d4c49b45be3da4ed4fa8b2b7735e9c5a3aee907bd",
+    "size": 13976
+  },
+  {
+    "path": "proprietary/lib/hw/lights.rk322x.so",
+    "sha256": "8205987360a3eef23663f8e1ee38a1d582758e8245a30c416c07de59d34daff9",
+    "size": 18148
+  },
+  {
+    "path": "proprietary/lib/hw/local_time.default.so",
+    "sha256": "e894320ef97afb52515f18daca3af19d69caf2bbab1fc616976c28693152ec9d",
+    "size": 14056
+  },
+  {
+    "path": "proprietary/lib/hw/power.rk322x.so",
+    "sha256": "2d0e88193f5c6abc68a8a2de2a212e5ed01de95466db71653a61a41f634a5d3d",
+    "size": 18168
+  },
+  {
+    "path": "proprietary/lib/hw/sensors.rk30board.so",
+    "sha256": "c4180975fdbe3e335d30130472197d833b0e9dda16a743d8f0f92f95854db89b",
+    "size": 100716
+  },
+  {
+    "path": "proprietary/lib/hw/tv_input.default.so",
+    "sha256": "a3dc28334f01aa0d4d7e3838c747262d39232c52a0115b6a257f151d372b3329",
+    "size": 14052
+  },
+  {
+    "path": "proprietary/lib/libEGL.so",
+    "sha256": "f7583ee30db58fc4d9e1cda483b43fa8df31fabcc59fd59f18567ec66b1b8a13",
+    "size": 108176
+  },
+  {
+    "path": "proprietary/lib/libGLESv1_CM.so",
+    "sha256": "2e4c74a5486129ac7c9316aaec0e82925309472fc6676d1741640d266fc55986",
+    "size": 34440
+  },
+  {
+    "path": "proprietary/lib/libGLESv2.so",
+    "sha256": "eb7d1d26da8ee71eba5496bf0169f42b70f1085be5b351361ecc4f9a9d8df0ab",
+    "size": 67208
+  },
+  {
+    "path": "proprietary/lib/libMFDenoise.so",
+    "sha256": "07abbb6b12c0237abbd0d43bca8c14a96e2bf8f42bda827e9511b8dd7ea4e9c2",
+    "size": 513720
+  },
+  {
+    "path": "proprietary/lib/libOMX_Core.so",
+    "sha256": "da23f714dc07af155ad3c0ea1a7372256606b0a72c6dadb76f96156c01b36d55",
+    "size": 26204
+  },
+  {
+    "path": "proprietary/lib/libRkOMX_Resourcemanager.so",
+    "sha256": "f0479a3946c3c274d8f41164515d020032f18bbf8e4184accba44a846809252c",
+    "size": 18024
+  },
+  {
+    "path": "proprietary/lib/libapedec.so",
+    "sha256": "04f76bbae66975b97efd554437bc56fb0852751a7dd2f74f0020d47b5c8abac4",
+    "size": 87312
+  },
+  {
+    "path": "proprietary/lib/libbluetooth_jni.so",
+    "sha256": "c2f0d038ae87f86d08c86f79ba5e6792a8ef857bb6c65b71e96ede9eb9049c7c",
+    "size": 114968
+  },
+  {
+    "path": "proprietary/lib/libbt-vendor_uart.so",
+    "sha256": "ac915fd7db71b1178d2bfdfb8e92df665feb71b3cb071af2c802d9ef6eb7c6b5",
+    "size": 35016
+  },
+  {
+    "path": "proprietary/lib/libbt-vendor_usb.so",
+    "sha256": "e6ea91d425189d53ba399907e1e497b8d39b749bb694562a65e80a93e23affc9",
+    "size": 13920
+  },
+  {
+    "path": "proprietary/lib/libcam_facedetection.so",
+    "sha256": "6f979b0de47a8b6d51960d642a87ec7ef39d40e58552376917a08a2073ace12d",
+    "size": 2427500
+  },
+  {
+    "path": "proprietary/lib/libcameragl.so",
+    "sha256": "81f67f4524051416ba7c9ad8bbff0ecf2ccb2fcc04aaaccafe7913da7f715d01",
+    "size": 263708
+  },
+  {
+    "path": "proprietary/lib/libcsiconv.so",
+    "sha256": "652cf3bdd60eb1fac15da711c2b0d0921cc6b66fa346b52c72ad09bddf85bf52",
+    "size": 988464
+  },
+  {
+    "path": "proprietary/lib/libdrm.so",
+    "sha256": "97bc63bd4e3ca07cc6aef1bea50e406829648444730d7c02b13acdc6d8a5738c",
+    "size": 50776
+  },
+  {
+    "path": "proprietary/lib/libdrmframework.so",
+    "sha256": "c92cefeac3029d0b9058f6f33ce5c24a8276f6fa4d7723999fde3a716fd919e5",
+    "size": 108180
+  },
+  {
+    "path": "proprietary/lib/libdrmframework_jni.so",
+    "sha256": "7a9c37eeaa2c61b9bc909f63e7331c84c7d4b5bb6e53c47a3813b9722c25e782",
+    "size": 34460
+  },
+  {
+    "path": "proprietary/lib/libext4_utils.so",
+    "sha256": "49be1027a09ffe05d6fcaa2371caa69b6859609fd9ab27a4fcd61dcaf573a0cf",
+    "size": 71272
+  },
+  {
+    "path": "proprietary/lib/libffmpeg.so",
+    "sha256": "c07f8df98fd22d1f2e8ae4ae776e74d47724c55d85eb804452cd69b50b47cbe7",
+    "size": 7127784
+  },
+  {
+    "path": "proprietary/lib/libfilterpack_facedetect.so",
+    "sha256": "430a82ec62ce5337e115eaaea42477439a18fd84348f30aafb9d8023a03c0ff8",
+    "size": 620744
+  },
+  {
+    "path": "proprietary/lib/libgralloc_priv_omx.so",
+    "sha256": "d3b5d6c61c8c2599329242020559e02e8b7e6c978341f6ecee141da6247ce82c",
+    "size": 13924
+  },
+  {
+    "path": "proprietary/lib/libhardware_legacy.so",
+    "sha256": "76a11253ab25759745848d94da8e7f612ca47b29853ca9ec8d2d7d7d0bf7cc10",
+    "size": 44164
+  },
+  {
+    "path": "proprietary/lib/libhevcdec.so",
+    "sha256": "3e49a47774f753ca88979e15e7a18ba82e6abaf5eed73e29385b417906246e1e",
+    "size": 961968
+  },
+  {
+    "path": "proprietary/lib/libiconv.so",
+    "sha256": "3f638a9f619398adec3a4d0e00fe9aeaaae9e44c209cce96d6bb47754b0abcc6",
+    "size": 898652
+  },
+  {
+    "path": "proprietary/lib/libiep.so",
+    "sha256": "e198fba66d7b355dadd3665b956b1352901e2d5e93a041895f836cbd339f99e4",
+    "size": 34392
+  },
+  {
+    "path": "proprietary/lib/libion.so",
+    "sha256": "2e19ed3a2e51fe8055be131e259e6e205e7482f98645ce2e37dae36557a5ecc9",
+    "size": 13912
+  },
+  {
+    "path": "proprietary/lib/libisp_silicomimageisp_api.so",
+    "sha256": "1d4c3d320abb3e8fb15e44732145662adc3af09f4e6bb87368b17863029527d8",
+    "size": 1238564
+  },
+  {
+    "path": "proprietary/lib/libjesancache.so",
+    "sha256": "2ee2ec17f6cf0df10295288e1e3b5b99b6b7698048fad7d7be99b66a89544a76",
+    "size": 494160
+  },
+  {
+    "path": "proprietary/lib/libjpeghwdec.so",
+    "sha256": "a4d0bdc05a3a8eebfa94be8c2a814394cd501f999fdb2c9402fb2f2cbf290f50",
+    "size": 62600
+  },
+  {
+    "path": "proprietary/lib/libjpeghwenc.so",
+    "sha256": "dda0840ed0b77ec6c076a4641f20fcfb485981e7e7d3c578cc956777d702bc8b",
+    "size": 50780
+  },
+  {
+    "path": "proprietary/lib/libmpp.so",
+    "sha256": "352f7dc70ec669c415eb5724bbf2136155f60246ff3a8a719bcab96f8b92270c",
+    "size": 1108468
+  },
+  {
+    "path": "proprietary/lib/libmultiwindow.so",
+    "sha256": "6640131126e142aecb3ea96be88796f3c31a2ee3b1965443bd82d38d0e31f13f",
+    "size": 5224
+  },
+  {
+    "path": "proprietary/lib/libomxvpu_dec.so",
+    "sha256": "97339e22bd35a5b551c6688a63ed624083cbed095eea2c71e18763df00cdb4cf",
+    "size": 87652
+  },
+  {
+    "path": "proprietary/lib/libomxvpu_enc.so",
+    "sha256": "f31787a9ae27bf3e258d07927f845753032c9421f1d07e4371d3a7416f652def",
+    "size": 87652
+  },
+  {
+    "path": "proprietary/lib/libopencv_java3.so",
+    "sha256": "fe71630879b4ca6e97475adc450713ff5eca0e94784b84c64a008c09e7defcc5",
+    "size": 8620732
+  },
+  {
+    "path": "proprietary/lib/libpppoe-jni.so",
+    "sha256": "b9aa53b9f567a74d6ad0b7eccefdfc9f184658909f3f90862113d72bc37a6498",
+    "size": 18064
+  },
+  {
+    "path": "proprietary/lib/librga.so",
+    "sha256": "b6c9fefe40a60b963b2248bafaf2eb9c41aae7ba9756bf05e981217735448a4b",
+    "size": 42640
+  },
+  {
+    "path": "proprietary/lib/librk_audio.so",
+    "sha256": "8f3a00b3912b47eef149d8184760a50ccaa1b529a9e9cf26eb1e2f4c1086000b",
+    "size": 878080
+  },
+  {
+    "path": "proprietary/lib/librk_demux.so",
+    "sha256": "faf0ca74d62c31db9f5fdd01041a7bf156ccb3422128e83c9f61b021a4f4dd4d",
+    "size": 317660
+  },
+  {
+    "path": "proprietary/lib/librk_hevcdec.so",
+    "sha256": "5c04d09560e148c8be6f26db00311ae540b6461ff51e74e79928e06a9c417ceb",
+    "size": 579152
+  },
+  {
+    "path": "proprietary/lib/librk_vpuapi.so",
+    "sha256": "e0903e074bb046f7c0ef9d40ddfbff34fde827bb2daddb51c7e17a2bbd5d5d9f",
+    "size": 571044
+  },
+  {
+    "path": "proprietary/lib/librkbm.so",
+    "sha256": "d6749f085b251041abc33f0cffdf62582a3d2a736b3ad1ea51a836137e30f9f7",
+    "size": 58668
+  },
+  {
+    "path": "proprietary/lib/librkffplayer.so",
+    "sha256": "d7f1c10532e5d1c36c83ecb3067ceac5226fa864e594999d5d48fde16c12d901",
+    "size": 1189844
+  },
+  {
+    "path": "proprietary/lib/librkswscale.so",
+    "sha256": "1f711d4cb25f42373c487409c64ca82cd94e2e374e220df8f7f7c0c35349ffd6",
+    "size": 144720
+  },
+  {
+    "path": "proprietary/lib/librkwmapro.so",
+    "sha256": "6b9d7c5c840acab4ea48c346085f3525e8e4415d7fab9f9969d9b55394e4ecd2",
+    "size": 486436
+  },
+  {
+    "path": "proprietary/lib/librockchip_pip_jni.so",
+    "sha256": "cd2812d5ee1875c7a83a5b339fcaf1aa59a9ded1500eae1fba2fdfda5ad2c9b3",
+    "size": 13940
+  },
+  {
+    "path": "proprietary/lib/librockchip_update_jni.so",
+    "sha256": "768d80e5c29541617c060887c59e867a680e1a7c1cb3519fa4c380686889c9bc",
+    "size": 5244
+  },
+  {
+    "path": "proprietary/lib/librockcv_java.so",
+    "sha256": "676434cb686af7196bf43f29bf2f4b9c22e4a96adf1429577d1c50654412a55a",
+    "size": 9974080
+  },
+  {
+    "path": "proprietary/lib/librp-pppoe.so",
+    "sha256": "f7b184149508d3b31cbc28dc7518ffbd8628e2ec65b55832d49e36bf57849e8a",
+    "size": 30640
+  },
+  {
+    "path": "proprietary/lib/libstagefright_omx.so",
+    "sha256": "64818b48aa8544d5b813ad8d795a9101233cb10e33d53dad7bada62a00be7a3f",
+    "size": 202356
+  },
+  {
+    "path": "proprietary/lib/libstagefrighthw.so",
+    "sha256": "a640bf55b74dd09cc6e88eba1b961d4dea6fed5a134345b42dcbb34cde11c1ce",
+    "size": 22112
+  },
+  {
+    "path": "proprietary/lib/libsupol.so",
+    "sha256": "3aff9306f10b60e35a9253785cde739ad4a07015e4a639c122a8593ccfe6b328",
+    "size": 203236
+  },
+  {
+    "path": "proprietary/lib/libtinyalsa.so",
+    "sha256": "b067d297d29c37755f5f3769f317f5123fecfa886cf815a3b75d4b6c75d51c79",
+    "size": 30524
+  },
+  {
+    "path": "proprietary/lib/libtvsettings-jni.so",
+    "sha256": "e1b2a7e0fb0795eb28fe0cc3651fa8f23300cc15771ae9db9dca2732715dfd0f",
+    "size": 22200
+  },
+  {
+    "path": "proprietary/lib/libvpu.so",
+    "sha256": "ad5c962ba395e5fb1b42cd4aaa2e0744ad9f121ac0aa651d4c29738d0b393bff",
+    "size": 56488
+  },
+  {
+    "path": "proprietary/lib/modules/8188eu.ko",
+    "sha256": "595b4bbfc54f28474ea4a49f7bf2a98d53fffe055aef986b16df1998030d37f8",
+    "size": 2060439
+  },
+  {
+    "path": "proprietary/lib/modules/8188fu.ko",
+    "sha256": "70965ab9cfec552a54cb8a30b04b601f02ffc6e6f0a6119f811e40423f55e736",
+    "size": 1719537
+  },
+  {
+    "path": "proprietary/lib/modules/8189es.ko",
+    "sha256": "b09842f5becdb795e320f1875f1dd7e383d41a7cda6bdd27edcb7147c52a8b86",
+    "size": 1718129
+  },
+  {
+    "path": "proprietary/lib/modules/8723bs.ko",
+    "sha256": "6431f40e61b2c4fe52d521e21c883c489514357e1d82a491f246c7ac87f4b8bd",
+    "size": 2026962
+  },
+  {
+    "path": "proprietary/lib/modules/8723cs.ko",
+    "sha256": "258c06c32219b1d4630906279525450e4607e0348f6a72d43d3a295b7f7b2aa1",
+    "size": 1350838
+  },
+  {
+    "path": "proprietary/lib/modules/8822bs.ko",
+    "sha256": "05f35f9631e72077a472361db728d6b91fd85d30074fb7da459fdb3a33f213b1",
+    "size": 2750860
+  },
+  {
+    "path": "proprietary/lib/modules/8822bu.ko",
+    "sha256": "000c1f3e792c245aa8eab3b85c69d6288ad32f249cca45135eaddaf5624bbfcf",
+    "size": 2661052
+  },
+  {
+    "path": "proprietary/lib/modules/bcmdhd.ko",
+    "sha256": "4519b104a4d4e73f3cd3b57e6c894d59e656963814c95e463b5d022d78ce6e6a",
+    "size": 7649821
+  },
+  {
+    "path": "proprietary/lib/modules/esp8089.ko",
+    "sha256": "195213ec60b464b7bfd0765aca2730889cd9790746c8e97571c08e1d89c34ff1",
+    "size": 2397482
+  },
+  {
+    "path": "proprietary/lib/modules/readme.txt",
+    "sha256": "1b9b289e5b0a64ae25706b0e769f269f88ac0e86d326c01de9cc0f6396887bf3",
+    "size": 26
+  },
+  {
+    "path": "proprietary/lib/modules/rk29-ipp.ko",
+    "sha256": "763546eb3fbbe97c82707cc5af88600da8088cf5b029bb994bcebfb86c131deb",
+    "size": 17358
+  },
+  {
+    "path": "proprietary/lib/modules/rk29-ipp.ko.3.0.101+",
+    "sha256": "763546eb3fbbe97c82707cc5af88600da8088cf5b029bb994bcebfb86c131deb",
+    "size": 17358
+  },
+  {
+    "path": "proprietary/lib/modules/rk29-ipp.ko.3.0.36+",
+    "sha256": "eec255459174a6243a982021b9e1698eaf7c708933635cb678d0c9c592f5eaad",
+    "size": 17387
+  },
+  {
+    "path": "proprietary/lib/modules/ssv6051.ko",
+    "sha256": "3433266c184ac706782064a3667cb017c56ae4721fbc78a013eceeeb115e6f2e",
+    "size": 3397580
+  },
+  {
+    "path": "proprietary/lib/modules/vcodec_service.ko",
+    "sha256": "e8903a3054e63c531a4ea9eb9c2f9bd598699bdbcaebbbf3586915be71a6933e",
+    "size": 273823
+  },
+  {
+    "path": "proprietary/lib/modules/wlan.ko",
+    "sha256": "4621ebc225a4a451b3e87224d81a93cf5f7c7c4e0c4e0e1b3d21b2aca96424ef",
+    "size": 2493833
+  },
+  {
+    "path": "proprietary/lib/rtkbt/3dd_service.so",
+    "sha256": "0c3ee4d9e7d034687a49611aca0705e76d4fb086ab5b55dc8605a359aaf1fd2d",
+    "size": 18104
+  },
+  {
+    "path": "proprietary/lib/rtkbt/autopair.so",
+    "sha256": "7b3b3402e73e07b41ec95bf275f9bbed3c6295deae65cb7f1fab6f62f0b389b6",
+    "size": 13920
+  },
+  {
+    "path": "proprietary/lib/rtkbt/autopair_huawei.so",
+    "sha256": "c56e3da6781eb242a6d6c0cccc21a1cecb8dbf6ab1ebb9a615c3908c3a687b9f",
+    "size": 13928
+  },
+  {
+    "path": "proprietary/lib/rtkbt/autopair_stack.so",
+    "sha256": "46eeb557720309c4c90151d4057d9f5255bcdc7f345080ea71180114b82f3970",
+    "size": 18024
+  },
+  {
+    "path": "proprietary/lib/rtkbt/heartbeat.so",
+    "sha256": "287e7c2b70f508577d648e8da49a39d8d62d61b33e2a6adea1ec16095b67f92d",
+    "size": 18024
+  },
+  {
+    "path": "proprietary/lib/rtkbt/vr_bee1_hidraw.so",
+    "sha256": "e50d06ff6dea18dd8bc32d080ab53d1f07ee6cee8ded795fe91af08de9939414",
+    "size": 13928
+  },
+  {
+    "path": "proprietary/lib/rtkbt/vr_bee2_hidraw.so",
+    "sha256": "4863554d242a1811632ed3e2dd8f9b0532882464d7245124718e6ecc92d3860a",
+    "size": 13928
+  },
+  {
+    "path": "proprietary/lib/soundfx/libaudiopreprocessing.so",
+    "sha256": "b214ac53d2e8e5ffa5defeef641dca18143c440f109221dce00a8bf3d9a73d85",
+    "size": 26244
+  },
+  {
+    "path": "proprietary/lib/soundfx/libbundlewrapper.so",
+    "sha256": "a24bce3229df0e4ae3326763b19288d81a5537c81ad94d872ab922d1c869f1c6",
+    "size": 71892
+  },
+  {
+    "path": "proprietary/lib/soundfx/libdownmix.so",
+    "sha256": "c301710d619c5d0cd1c328bcdf24d4386e4ec04d6ceeec94fad047355ed3bca6",
+    "size": 18040
+  },
+  {
+    "path": "proprietary/lib/soundfx/libeffectproxy.so",
+    "sha256": "b8279e1a5cb717ad7e9d7429a5cf10268d191cba65912722ea943b0f64e34d7e",
+    "size": 13948
+  },
+  {
+    "path": "proprietary/lib/soundfx/libldnhncr.so",
+    "sha256": "33bccf76c6bbf85bd6221544765cc2c745b580c235719b36e70df3578f8b290d",
+    "size": 18040
+  },
+  {
+    "path": "proprietary/lib/soundfx/libreverbwrapper.so",
+    "sha256": "943b648cf12f25802d74d7e9e73f02ad6be739c35995b693c5c66b20175e8de4",
+    "size": 38524
+  },
+  {
+    "path": "proprietary/lib/soundfx/libvisualizer.so",
+    "sha256": "01cf1d141ab7256d799ad363f98200748685cd9815ef30b98ec59bfc5865355f",
+    "size": 18044
+  },
+  {
+    "path": "proprietary/vendor/lib/libWVStreamControlAPI_L3.so",
+    "sha256": "4edfbedba1880f8dd6c101a83112ee5ef38adca1a91d26f499ffef1f60ccc6ff",
+    "size": 2467364
+  },
+  {
+    "path": "proprietary/vendor/lib/libbt-vendor.so",
+    "sha256": "909d04ce3280caeaca59e7a7ef7377dd6b0bae9adb856f17e697dca66513c166",
+    "size": 34720
+  },
+  {
+    "path": "proprietary/vendor/lib/libwvdrm_L3.so",
+    "sha256": "201ecbfb31594454b1bf1be7a65f66335947b11346f02abc2804fd6524c2133e",
+    "size": 87600
+  },
+  {
+    "path": "proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so",
+    "sha256": "1a567e5599eecc06e2f79e2d42d8b8da37431a1048a5486a679ada5b514e0fc9",
+    "size": 42652
+  },
+  {
+    "path": "proprietary/vendor/lib/mediadrm/libwvdrmengine.so",
+    "sha256": "30648d191e4333459ea33903323068fd412145f04b8b321337a5840b5de2fd71",
+    "size": 1532728
+  },
+  {
+    "path": "proprietary/vendor/media/LMspeed_508.emd",
+    "sha256": "cc67f640b988ff2c7418fbc038628b6ff78daf1f6e87ec93949972fc67f8fedf",
+    "size": 415875
+  },
+  {
+    "path": "proprietary/vendor/media/PFFprec_600.emd",
+    "sha256": "d43458f691ea1e1f5559acb7c227d164be56ec78ab92a23c580ec9fb3483dce2",
+    "size": 637001
+  }
+]

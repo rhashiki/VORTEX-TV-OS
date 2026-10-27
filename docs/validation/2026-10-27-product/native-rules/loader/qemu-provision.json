@@ -1,0 +1,20 @@
+{
+  "source_url": "https://deb.debian.org/debian/pool/main/q/qemu/qemu-user-static_7.2+dfsg-7+deb12u18+b3_amd64.deb",
+  "download_size_bytes": 62603724,
+  "download_sha256": "c3e3ba2bd87f8c5b9a5da5ef21b5a3b82d7c63b89dd448d9ddaa4eabc5b6e402",
+  "selected_files": [
+    {
+      "archive_path": "./usr/bin/qemu-arm-static",
+      "path": "/workspace/build01-hal-next/loader/bin/qemu-arm-static",
+      "size_bytes": 11284016,
+      "sha256": "4707fc8fee4660dba6d150d930152d995f2aa784e3b52b4deb8be282533d1f87"
+    },
+    {
+      "archive_path": "./usr/share/doc/qemu-user-static/copyright",
+      "path": "/workspace/build01-hal-next/loader/evidence/qemu-copyright",
+      "size_bytes": 31136,
+      "sha256": "0bdb9dd77149a6283f99fca200c49296349738fa9c5ad48e7f92c0816aeda8fc"
+    }
+  ],
+  "system_package_state_changed": false
+}

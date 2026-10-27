@@ -1,0 +1,6 @@
+{
+  "path": "/workspace/build01-product-next/native-rules/tree/prebuilts/clang/host/linux-x86/clang-2690385/lib64/clang/3.8.256229",
+  "target": "3.8",
+  "official_git_blob": "98fccd6d0256e8ee1a922260381bb8bd4a1cf839",
+  "verified": true
+}

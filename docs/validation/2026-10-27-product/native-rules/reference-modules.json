@@ -1,0 +1,115 @@
+{
+  "scope": "Genuine BUILD_PREBUILT modules with real reference ELF inputs only; not a source-built platform.",
+  "modules": [
+    {
+      "module": "libEGL",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libEGL.so",
+      "sha256": "9d9d4359727bc2684205e090c7d6c4ceacddda8b58defebb0d656915c2a95da9"
+    },
+    {
+      "module": "libGLESv1_CM",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libGLESv1_CM.so",
+      "sha256": "a1f4ad70aaaf128353aa856df487e39180a68e57ce00d1f5fbda71e4d9448af1"
+    },
+    {
+      "module": "libbacktrace",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libbacktrace.so",
+      "sha256": "a1d49c7e6c60f8ae033655167117225143cfe2e063436a3e889328d9ba29e046"
+    },
+    {
+      "module": "libbase",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libbase.so",
+      "sha256": "1b1d1702460fc9b2e068259742b7acab05d4c000609af780ec9bf4a6863a183b"
+    },
+    {
+      "module": "libbinder",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libbinder.so",
+      "sha256": "2450518cd7d651a8ab45a2dc77c80be61928c2e22cb56e3f4ab22dd17f031c7b"
+    },
+    {
+      "module": "libc++",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libc++.so",
+      "sha256": "ff4503006faf60cd5d20017a38d007dd9451ff35d15ce4b35fcb34e3d4c6e223"
+    },
+    {
+      "module": "libc",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libc.so",
+      "sha256": "4d40a9aee7fddf17a377d548c0c324e32f35320896b7babee144fe326df2c433"
+    },
+    {
+      "module": "libcutils",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libcutils.so",
+      "sha256": "4cb6c95b64a06ce449db9736e3bc64802ba7bca012a7b72d78ac913b6bc67f70"
+    },
+    {
+      "module": "libdl",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libdl.so",
+      "sha256": "02aa0cd72ba7554266c3b0162ac35df24daf011efc60d109ca0538c871a1c696"
+    },
+    {
+      "module": "libhardware",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libhardware.so",
+      "sha256": "1ea3a05b21526a6ece66dbc7953d360a72e6302aaf7c4235afa1d457204de725"
+    },
+    {
+      "module": "libhardware_legacy",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libhardware_legacy.so",
+      "sha256": "46fb0c2bd8566f4433d78c847b9d178c9b6d961c312ec2e99525a35094e8bde0"
+    },
+    {
+      "module": "libion",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libion.so",
+      "sha256": "2e19ed3a2e51fe8055be131e259e6e205e7482f98645ce2e37dae36557a5ecc9"
+    },
+    {
+      "module": "liblog",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/liblog.so",
+      "sha256": "5efd0db22151bfd2afe76f31a361bfd303a7908e026217063917271ec60da877"
+    },
+    {
+      "module": "liblzma",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/liblzma.so",
+      "sha256": "703bb6186c0b6c6fae3cb0c96082663bb5214530dc993a0360bfd5402f9a73d1"
+    },
+    {
+      "module": "libm",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libm.so",
+      "sha256": "95dfc3ada1b8642be1520822bf60b802156e98c20e9155490d536e89c639eb09"
+    },
+    {
+      "module": "libnetutils",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libnetutils.so",
+      "sha256": "a3351fc2d0b170d44f207989c5f0b02f16803f3d3536615403fa998f32247209"
+    },
+    {
+      "module": "libstdc++",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libstdc++.so",
+      "sha256": "d040ca808209862d26f6e74db342e8b7f04f84f365cb6f2d472b872eb54e49ab"
+    },
+    {
+      "module": "libsync",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libsync.so",
+      "sha256": "5c4595bb1513f66a46bb63c72e6d013999c6f088e931e1a0c3a391ea3489a54e"
+    },
+    {
+      "module": "libui",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libui.so",
+      "sha256": "52d1732cc12610d3cf2ec9ad506c815bec8ab07df947bbf6549a08732424acc4"
+    },
+    {
+      "module": "libunwind",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libunwind.so",
+      "sha256": "cbe114f9d067997d1ca05d8bce16a3090eb6ec646aa1af3d40edb6a83d09732e"
+    },
+    {
+      "module": "libutils",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libutils.so",
+      "sha256": "4372ce06f03f58fecdef8351e2f73c49e9f7a42ff9a625baf1563cb9df377cb9"
+    },
+    {
+      "module": "libwpa_client",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libwpa_client.so",
+      "sha256": "f1a476c39c9b54f584bff724c0909663de74a08ea25c833b601e289d2431b66f"
+    }
+  ]
+}

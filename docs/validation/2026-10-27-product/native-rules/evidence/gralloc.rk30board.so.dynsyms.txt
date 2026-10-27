@@ -1,0 +1,84 @@
+
+Symbol table '.dynsym' contains 81 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_finalize@LIBC (2)
+     2: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_atexit@LIBC (2)
+     3: 00000000     0 FUNC    GLOBAL DEFAULT  UND __register_atfork@LIBC (2)
+     4: 00000000     0 FUNC    GLOBAL DEFAULT  UND munmap@LIBC (2)
+     5: 00000000     0 FUNC    GLOBAL DEFAULT  UND __errno@LIBC (2)
+     6: 00000000     0 FUNC    GLOBAL DEFAULT  UND strerror@LIBC (2)
+     7: 00000000     0 FUNC    GLOBAL DEFAULT  UND __android_log_print
+     8: 00000000     0 FUNC    GLOBAL DEFAULT  UND strncmp@LIBC (2)
+     9: 00000000     0 FUNC    GLOBAL DEFAULT  UND memset@LIBC (2)
+    10: 00000000     0 FUNC    GLOBAL DEFAULT  UND __snprintf_chk@LIBC (2)
+    11: 00000000     0 FUNC    GLOBAL DEFAULT  UND dladdr@LIBC (4)
+    12: 00000000     0 FUNC    GLOBAL DEFAULT  UND raise@LIBC (2)
+    13: 00000000     0 FUNC    GLOBAL DEFAULT  UND __stack_chk_fail@LIBC (2)
+    14: 00000000     0 OBJECT  GLOBAL DEFAULT  UND __stack_chk_guard@LIBC (2)
+    15: 00000000     0 FUNC    GLOBAL DEFAULT  UND __gnu_Unwind_Find_exidx@LIBC_N (3)
+    16: 00000000     0 FUNC    GLOBAL DEFAULT  UND hw_get_module
+    17: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memcpy@LIBC_N (3)
+    18: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_sync_fd
+    19: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_lock@LIBC (2)
+    20: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_unlock@LIBC (2)
+    21: 00000000     0 FUNC    GLOBAL DEFAULT  UND getpid@LIBC (2)
+    22: 00000000     0 FUNC    GLOBAL DEFAULT  UND mmap@LIBC (2)
+    23: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_init@LIBC (2)
+    24: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZdlPv
+    25: 00000000     0 FUNC    GLOBAL DEFAULT  UND close@LIBC (2)
+    26: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_free
+    27: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_alloc
+    28: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_share
+    29: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Znwj
+    30: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_get_phys
+    31: 00000000     0 FUNC    GLOBAL DEFAULT  UND dup@LIBC (2)
+    32: 00000000     0 FUNC    GLOBAL DEFAULT  UND ioctl@LIBC (2)
+    33: 00000000     0 FUNC    GLOBAL DEFAULT  UND memcpy@LIBC (2)
+    34: 00000000     0 FUNC    GLOBAL DEFAULT  UND glFinish
+    35: 00000000     0 FUNC    GLOBAL DEFAULT  UND free@LIBC (2)
+    36: 00000000     0 FUNC    GLOBAL DEFAULT  UND snprintf@LIBC (2)
+    37: 00000000     0 FUNC    GLOBAL DEFAULT  UND open@LIBC (2)
+    38: 00000000     0 FUNC    GLOBAL DEFAULT  UND malloc@LIBC (2)
+    39: 00000000     0 FUNC    GLOBAL DEFAULT  UND property_get
+    40: 00000000     0 FUNC    GLOBAL DEFAULT  UND atoi@LIBC (2)
+    41: 00000000     0 FUNC    GLOBAL DEFAULT  UND __strcat_chk@LIBC (2)
+    42: 00000000     0 FUNC    GLOBAL DEFAULT  UND property_set
+    43: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_open
+    44: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_close
+    45: 00000000     0 FUNC    GLOBAL DEFAULT  UND abort@LIBC (2)
+    46: 00000000     0 FUNC    GLOBAL DEFAULT  UND fprintf@LIBC (2)
+    47: 00000000     0 OBJECT  GLOBAL DEFAULT  UND stderr@LIBC (2)
+    48: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memclr8@LIBC_N (3)
+    49: 00002e91    14 FUNC    GLOBAL DEFAULT   12 _Z24init_frame_buffer_lockedP16private_module_t
+    50: 00004bc8    28 FUNC    GLOBAL DEFAULT   12 __aeabi_llsr
+    51: 000026a1   214 FUNC    GLOBAL DEFAULT   12 _Z25gralloc_backend_get_attrsP16private_handle_tPv
+    52: 00002fcd    60 FUNC    GLOBAL DEFAULT   12 _Z25rockchip_get_int_propertyPKcS0_
+    53: 00004900    60 FUNC    GLOBAL DEFAULT   12 __gnu_uldivmod_helper
+    54: 00004bc8    28 FUNC    GLOBAL DEFAULT   12 __lshrdi3
+    55: 000025d1    96 FUNC    GLOBAL DEFAULT   12 _Z17alloc_device_openPK11hw_module_tPKcPP11hw_device_t
+    56: 00002ea1   232 FUNC    GLOBAL DEFAULT   12 _Z23framebuffer_device_openPK11hw_module_tPKcPP11hw_device_t
+    57: 00004abc   268 FUNC    GLOBAL DEFAULT   12 __udivdi3
+    58: 00008018     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
+    59: 000016fd   296 FUNC    GLOBAL DEFAULT   12 _Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr
+    60: 00004878     0 FUNC    GLOBAL DEFAULT   12 __aeabi_uldivmod
+    61: 000081e1     0 NOTYPE  GLOBAL DEFAULT  ABS _end
+    62: 00003009    48 FUNC    GLOBAL DEFAULT   12 _Z12rockchip_logi
+    63: 0000493c   384 FUNC    GLOBAL DEFAULT   12 __divdi3
+    64: 000048b4    16 FUNC    WEAK   DEFAULT   12 __aeabi_idiv0
+    65: 00008018     0 NOTYPE  GLOBAL DEFAULT  ABS _edata
+    66: 00001d85   244 FUNC    GLOBAL DEFAULT   12 _ZN16private_module_tC1Ev
+    67: 0000801c   448 OBJECT  GLOBAL DEFAULT   22 HMI
+    68: 00003245     4 FUNC    GLOBAL DEFAULT   12 _Z29rockchip_heap_fix_by_platformPj
+    69: 000048c4    60 FUNC    GLOBAL DEFAULT   12 __gnu_ldivmod_helper
+    70: 00003085   196 FUNC    GLOBAL DEFAULT   12 _Z23rockchip_alloc_ion_openP16private_module_t
+    71: 00001d85   244 FUNC    GLOBAL DEFAULT   12 _ZN16private_module_tC2Ev
+    72: 00002631   112 FUNC    WEAK   DEFAULT   12 _ZNSt3__16vectorIiNS_9allocatorIiEEE21__push_back_slow_pathIRKiEEvOT_
+    73: 000048b4    16 FUNC    WEAK   DEFAULT   12 __aeabi_ldiv0
+    74: 00002f89    68 FUNC    GLOBAL DEFAULT   12 _Z37rockchip_get_handle_type_by_heap_maskj
+    75: 00004be4    28 FUNC    GLOBAL DEFAULT   12 __aeabi_llsl
+    76: 00003039    76 FUNC    GLOBAL DEFAULT   12 _Z20rockchip_set_versionv
+    77: 000025c9     8 FUNC    GLOBAL DEFAULT   12 _Z22gralloc_backend_get_fdP16private_handle_tPi
+    78: 00003149   252 FUNC    GLOBAL DEFAULT   12 _Z24rockchip_alloc_ion_closeP16private_module_t
+    79: 00002795    10 FUNC    GLOBAL DEFAULT   12 _Z19compositionCompleteP20framebuffer_device_t
+    80: 00004be4    28 FUNC    GLOBAL DEFAULT   12 __ashldi3

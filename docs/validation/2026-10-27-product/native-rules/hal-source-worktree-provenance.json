@@ -1,0 +1,22 @@
+[
+  {
+    "source": "/workspace/build01-product-next/native-rules/tree/hardware/rockchip/libgralloc",
+    "revision": "c92fb8cd8becd57b025149f2861a2072b092ddea",
+    "patches": [
+      "0002-gralloc-select-mali400-for-rk322x.patch"
+    ],
+    "cpp_bytes_match_previous_staged_copy": true,
+    "upstream_tracked_status": []
+  },
+  {
+    "source": "/workspace/build01-product-next/native-rules/tree/hardware/rockchip/hwcomposer",
+    "revision": "d3ec43f2f751123ca5e7bda2d07eded4c6352a35",
+    "patches": [
+      "0003-hwc-use-selected-gralloc-header.patch",
+      "0005-hwc-fix-format-policy-and-hdmi-strings.patch",
+      "0006-hwc-fix-diagnostic-formats.patch"
+    ],
+    "cpp_bytes_match_previous_staged_copy": true,
+    "upstream_tracked_status": []
+  }
+]

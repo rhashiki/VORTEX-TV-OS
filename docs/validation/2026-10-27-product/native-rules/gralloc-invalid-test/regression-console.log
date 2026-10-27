@@ -1,0 +1,32 @@
+baseline 1 FAIL unsupported-NV12-video-buffer ret=-5 buffer_calls=1 fb_calls=0
+FAIL unsupported-NV12-video-framebuffer ret=-5 buffer_calls=0 fb_calls=1
+FAIL unsupported-NV12-video-external ret=-5 buffer_calls=1 fb_calls=0
+PASS unknown-format ret=-22 buffer_calls=0 fb_calls=0
+PASS null-output-handle ret=-22 buffer_calls=0 fb_calls=0
+PASS null-output-stride ret=-22 buffer_calls=0 fb_calls=0
+PASS RGBA-buffer ret=0 buffer_calls=1 fb_calls=0
+PASS RGB888-row-alignment ret=0 buffer_calls=1 fb_calls=0
+PASS NV12-neighbor ret=0 buffer_calls=1 fb_calls=0
+PASS NV12-10-neighbor ret=0 buffer_calls=1 fb_calls=0
+PASS YV12-row-height-alignment ret=0 buffer_calls=1 fb_calls=0
+PASS RGBA-framebuffer-route ret=0 buffer_calls=0 fb_calls=1
+PASS implementation-defined-RGBX ret=0 buffer_calls=1 fb_calls=0
+PASS implementation-defined-encoder-NV12 ret=0 buffer_calls=1 fb_calls=0
+RESULT passed=11 failed=3
+
+patched 0 PASS unsupported-NV12-video-buffer ret=-22 buffer_calls=0 fb_calls=0
+PASS unsupported-NV12-video-framebuffer ret=-22 buffer_calls=0 fb_calls=0
+PASS unsupported-NV12-video-external ret=-22 buffer_calls=0 fb_calls=0
+PASS unknown-format ret=-22 buffer_calls=0 fb_calls=0
+PASS null-output-handle ret=-22 buffer_calls=0 fb_calls=0
+PASS null-output-stride ret=-22 buffer_calls=0 fb_calls=0
+PASS RGBA-buffer ret=0 buffer_calls=1 fb_calls=0
+PASS RGB888-row-alignment ret=0 buffer_calls=1 fb_calls=0
+PASS NV12-neighbor ret=0 buffer_calls=1 fb_calls=0
+PASS NV12-10-neighbor ret=0 buffer_calls=1 fb_calls=0
+PASS YV12-row-height-alignment ret=0 buffer_calls=1 fb_calls=0
+PASS RGBA-framebuffer-route ret=0 buffer_calls=0 fb_calls=1
+PASS implementation-defined-RGBX ret=0 buffer_calls=1 fb_calls=0
+PASS implementation-defined-encoder-NV12 ret=0 buffer_calls=1 fb_calls=0
+RESULT passed=14 failed=0
+

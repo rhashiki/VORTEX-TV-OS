@@ -1,0 +1,65 @@
+{
+  "id": "407269d0d781b78c787915132481dedfc93df981",
+  "entries": [
+    {
+      "mode": 40960,
+      "type": "blob",
+      "id": "8c48646c2844b896f48a425d4d8e6dd18ca64c4e",
+      "name": "ar"
+    },
+    {
+      "mode": 40960,
+      "type": "blob",
+      "id": "5378e97693c7d206bc46c286645162cc9417f2ce",
+      "name": "as"
+    },
+    {
+      "mode": 40960,
+      "type": "blob",
+      "id": "dddda831bfd92b60be9206cc772b842234b74e45",
+      "name": "ld"
+    },
+    {
+      "mode": 40960,
+      "type": "blob",
+      "id": "57728a0589141cf80c7249e5566fed639a850217",
+      "name": "ld.bfd"
+    },
+    {
+      "mode": 40960,
+      "type": "blob",
+      "id": "266c47251ca2db313f874b4010ff4c2be2eab0a4",
+      "name": "ld.gold"
+    },
+    {
+      "mode": 40960,
+      "type": "blob",
+      "id": "03e24b649fdcd71ef1c89f837c9aaa70fb5af7a2",
+      "name": "nm"
+    },
+    {
+      "mode": 40960,
+      "type": "blob",
+      "id": "2ec109ffe999aab49b38e1bc999b8a1dcc58bef8",
+      "name": "objcopy"
+    },
+    {
+      "mode": 40960,
+      "type": "blob",
+      "id": "230368021cc3e49f449f4410696c53c674e07f29",
+      "name": "objdump"
+    },
+    {
+      "mode": 40960,
+      "type": "blob",
+      "id": "7cf5d4f3eea1bf94f0389492d5d95ce1822ae492",
+      "name": "ranlib"
+    },
+    {
+      "mode": 40960,
+      "type": "blob",
+      "id": "3daf7a6bce22f24d237cccf0335c530fc801fe08",
+      "name": "strip"
+    }
+  ]
+}

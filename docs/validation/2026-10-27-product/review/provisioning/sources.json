@@ -1,0 +1,30 @@
+[
+  {
+    "revision": "edd171fec429b9d51d9cb2da961a673ec51fcc4d",
+    "path": "packages/SettingsProvider/res/values/defaults.xml",
+    "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-base/edd171fec429b9d51d9cb2da961a673ec51fcc4d/packages/SettingsProvider/res/values/defaults.xml",
+    "bytes": 11691,
+    "sha256": "c99f52b044774015621fea3f9b0dd8f5aa8f3a4093e5129392541fdd4c5bd83e"
+  },
+  {
+    "revision": "edd171fec429b9d51d9cb2da961a673ec51fcc4d",
+    "path": "packages/SettingsProvider/src/com/android/providers/settings/DatabaseHelper.java",
+    "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-base/edd171fec429b9d51d9cb2da961a673ec51fcc4d/packages/SettingsProvider/src/com/android/providers/settings/DatabaseHelper.java",
+    "bytes": 118240,
+    "sha256": "4472aa1554cf103f9327236eba23bc77db2dec9a1e555f37ed1b3d8d15fa0c84"
+  },
+  {
+    "revision": "edd171fec429b9d51d9cb2da961a673ec51fcc4d",
+    "path": "packages/SettingsProvider/Android.mk",
+    "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-base/edd171fec429b9d51d9cb2da961a673ec51fcc4d/packages/SettingsProvider/Android.mk",
+    "bytes": 450,
+    "sha256": "a323fd9166b8e87ba13c3f9021990318c9159353b5126be002c85bab0d68b173"
+  },
+  {
+    "revision": "edd171fec429b9d51d9cb2da961a673ec51fcc4d",
+    "path": "packages/SettingsProvider/src/com/android/providers/settings/SettingsProvider.java",
+    "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-base/edd171fec429b9d51d9cb2da961a673ec51fcc4d/packages/SettingsProvider/src/com/android/providers/settings/SettingsProvider.java",
+    "bytes": 104477,
+    "sha256": "e319d69a9545106232e61d50f0f702ff46724402508ba021e08cd51e888f510e"
+  }
+]

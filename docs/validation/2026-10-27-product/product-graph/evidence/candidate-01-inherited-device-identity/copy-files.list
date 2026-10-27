@@ -1,0 +1,12 @@
+frameworks/native/data/etc/android.software.webview.xml:system/etc/permissions/android.software.webview.xml
+system/core/rootdir/init.zygote32.rc:root/init.zygote32.rc
+system/core/rootdir/etc/public.libraries.android.txt:system/etc/public.libraries.txt
+system/core/rootdir/init.usb.rc:root/init.usb.rc
+system/core/rootdir/init.usb.configfs.rc:root/init.usb.configfs.rc
+system/core/rootdir/ueventd.rc:root/ueventd.rc
+system/core/rootdir/etc/hosts:system/etc/hosts
+frameworks/base/data/fonts/fonts.xml:/etc/fonts.xml
+device/vortex/rk322x_sd_box/init.vortex-sd-reference.rc:root/init.rk30board.rc
+device/rockchip/rk322x/fstab.rk30board.bootmode.sd:root/fstab.rk30board.bootmode.sd
+vendor/rockchip/rk322x/proprietary/lib/egl/libGLES_mali.so:system/lib/egl/libGLES_mali.so
+vendor/rockchip/rk322x/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg

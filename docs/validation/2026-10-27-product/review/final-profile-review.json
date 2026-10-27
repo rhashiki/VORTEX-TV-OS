@@ -1,0 +1,268 @@
+{
+  "scope": "Independent final resolved product-input review only. Not complete Android module graph, image, runtime or physical-board approval.",
+  "inputs": {
+    "packages": {
+      "path": "/workspace/build01-product-next/product-graph/evidence/vortex_rk322x_sd_box/packages.list",
+      "bytes": 6903,
+      "sha256": "20c59a457b83cecc355c87c0442771b263a34352b1bfe1965a2e16a7e4f7b203"
+    },
+    "copy-files": {
+      "path": "/workspace/build01-product-next/product-graph/evidence/vortex_rk322x_sd_box/copy-files.list",
+      "bytes": 942,
+      "sha256": "f455b146b1d6923c567904db1410cb41cf83fed8a3c0ef9915015a85719d07bc"
+    },
+    "properties": {
+      "path": "/workspace/build01-product-next/product-graph/evidence/vortex_rk322x_sd_box/properties.list",
+      "bytes": 242,
+      "sha256": "8475e9729a264f99d77ad5c801d3ae0462a9faae12d81a32159d80cd72d3b51e"
+    },
+    "config-values": {
+      "path": "/workspace/build01-product-next/product-graph/evidence/vortex_rk322x_sd_box/config-values.list",
+      "bytes": 964,
+      "sha256": "65eca66dbb63dc2c00ea8be5e829c16b66e94577fba01717f7198a56570ff8e3"
+    },
+    "overlays": {
+      "path": "/workspace/build01-product-next/product-graph/evidence/vortex_rk322x_sd_box/overlays.list",
+      "bytes": 36,
+      "sha256": "4fb1410f3c2b4f86302579367e7d9edeb304dd54cb3f0c7eae3bb6b3da456708"
+    }
+  },
+  "counts": {
+    "package_entries": 416,
+    "unique_packages": 412,
+    "font_package_entries": 134,
+    "copy_entries": 13,
+    "unique_copy_destinations": 13,
+    "profile_files_recursive": 6,
+    "config_values": 32
+  },
+  "required_packages": {
+    "VortexHome": 1,
+    "DefaultContainerService": 1,
+    "Settings": 1,
+    "SystemUI": 1,
+    "InputDevices": 1,
+    "LatinIME": 1,
+    "DocumentsUI": 1,
+    "ExternalStorageProvider": 1,
+    "PackageInstaller": 1,
+    "SettingsProvider": 1,
+    "framework-res": 1,
+    "ethernet-service": 1,
+    "wifi-service": 1,
+    "gralloc.rk30board": 1,
+    "hwcomposer.rk30board": 1,
+    "libion": 1,
+    "audio.primary.rk30board": 1,
+    "audio.usb.default": 1,
+    "audio.r_submix.default": 1,
+    "power.default": 1
+  },
+  "forbidden_exact_packages_selected": [],
+  "copies": [
+    {
+      "entry": "frameworks/native/data/etc/android.software.webview.xml:system/etc/permissions/android.software.webview.xml",
+      "resolved_source": "/workspace/build01-product-next/product-graph/tree/frameworks/native/data/etc/android.software.webview.xml",
+      "source_sha256": "2e293ff6ea02063ea3835e42e7a5c17fc5a15a46fff0af486c19dcb5b92fe821",
+      "source_bytes": 748
+    },
+    {
+      "entry": "system/core/rootdir/init.zygote32.rc:root/init.zygote32.rc",
+      "resolved_source": "/workspace/build01-platform-next/research/rockchip-system-core/rootdir/init.zygote32.rc",
+      "source_sha256": "2ec64960ce95bc35de4aab3073d4f25dacd0641d156f781642d093c27c3da7f9",
+      "source_bytes": 411
+    },
+    {
+      "entry": "system/core/rootdir/etc/public.libraries.android.txt:system/etc/public.libraries.txt",
+      "resolved_source": "/workspace/build01-platform-next/research/rockchip-system-core/rootdir/etc/public.libraries.android.txt",
+      "source_sha256": "938e997adae69f5969fc64312737a78a5dbc7de4e2ed62208064c5e90429c2c0",
+      "source_bytes": 286
+    },
+    {
+      "entry": "system/core/rootdir/init.usb.rc:root/init.usb.rc",
+      "resolved_source": "/workspace/build01-platform-next/research/rockchip-system-core/rootdir/init.usb.rc",
+      "source_sha256": "477c933077c6be4b851e8664da88f0529157ddeda6eed6f48ced6b2b8315092e",
+      "source_bytes": 5715
+    },
+    {
+      "entry": "system/core/rootdir/init.usb.configfs.rc:root/init.usb.configfs.rc",
+      "resolved_source": "/workspace/build01-platform-next/research/rockchip-system-core/rootdir/init.usb.configfs.rc",
+      "source_sha256": "9a062bc6095a26188831814a9509fbdff1f37c05426849bd24cae15ca7d40923",
+      "source_bytes": 9283
+    },
+    {
+      "entry": "system/core/rootdir/ueventd.rc:root/ueventd.rc",
+      "resolved_source": "/workspace/build01-platform-next/research/rockchip-system-core/rootdir/ueventd.rc",
+      "source_sha256": "1fb28b94ef8496969179f79f3e1ba510c17913f02f5b59a977aa845c4031c800",
+      "source_bytes": 4853
+    },
+    {
+      "entry": "system/core/rootdir/etc/hosts:system/etc/hosts",
+      "resolved_source": "/workspace/build01-platform-next/research/rockchip-system-core/rootdir/etc/hosts",
+      "source_sha256": "425c3e713d5bae19b031bc8639c20c6a23e311a54647ba1824cbf45969a11ff4",
+      "source_bytes": 56
+    },
+    {
+      "entry": "frameworks/base/data/fonts/fonts.xml:system/etc/fonts.xml",
+      "resolved_source": "/workspace/build01-product-next/product-graph/tree/frameworks/base/data/fonts/fonts.xml",
+      "source_sha256": "46cc13a3fcd249793b5bdeec469b3818bf65440adf66fb01bd8e1a40ddfa51d3",
+      "source_bytes": 16984
+    },
+    {
+      "entry": "device/vortex/rk322x_sd_box/init.vortex-sd-reference.rc:root/init.rk30board.rc",
+      "resolved_source": "/workspace/build01-product-next/product-graph/tree/device/vortex/rk322x_sd_box/init.vortex-sd-reference.rc",
+      "source_sha256": "4258cc2722fbba6c0720fdf13fdd70adc8d4aa0326e00a163d657e152a195a04",
+      "source_bytes": 233
+    },
+    {
+      "entry": "device/rockchip/rk322x/fstab.rk30board.bootmode.sd:root/fstab.rk30board.bootmode.sd",
+      "resolved_source": "/workspace/build01-product-next/product-graph/tree/device/rockchip/rk322x/fstab.rk30board.bootmode.sd",
+      "source_sha256": "d13a0c32b6f1e50c4a382691a166fea42f09277819fc4411c2ff6342539c9b4d",
+      "source_bytes": 2120
+    },
+    {
+      "entry": "device/vortex/rk322x_sd_box/audio_policy.vortex-sd-reference.conf:system/etc/audio_policy.conf",
+      "resolved_source": "/workspace/build01-product-next/product-graph/tree/device/vortex/rk322x_sd_box/audio_policy.vortex-sd-reference.conf",
+      "source_sha256": "7ae47c4936c37c5f702b8ce75e038a7a9d6eef7a5f328e1b15551b95af82b4d0",
+      "source_bytes": 3600
+    },
+    {
+      "entry": "vendor/rockchip/rk322x/proprietary/lib/egl/libGLES_mali.so:system/lib/egl/libGLES_mali.so",
+      "resolved_source": "/workspace/build01-product-next/product-graph/tree/vendor/rockchip/rk322x/proprietary/lib/egl/libGLES_mali.so",
+      "source_sha256": "82f5bc8742026be1ed67db15eb50be7361b3be926d6f90a2d1711163c00ace1c",
+      "source_bytes": 1279276
+    },
+    {
+      "entry": "vendor/rockchip/rk322x/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg",
+      "resolved_source": "/workspace/build01-product-next/product-graph/tree/vendor/rockchip/rk322x/proprietary/lib/egl/egl.cfg",
+      "source_sha256": "89e124ecc5da28514b4f7f3a5986b6e09bbf00d5ea32beb4204e08761876b53b",
+      "source_bytes": 21
+    }
+  ],
+  "profile_files": [
+    {
+      "relative_path": "AndroidProducts.mk",
+      "sha256": "67cc2b9625f0e848d825979dd6d794da5dc02f0352ce3f6c5661027492918005",
+      "bytes": 132,
+      "materialized_tree_matches": true
+    },
+    {
+      "relative_path": "BoardConfig.mk",
+      "sha256": "983b3996eea06c554ae474aea3cad5afca5118e6ac4a25c69ae7b941e8bdf268",
+      "bytes": 1343,
+      "materialized_tree_matches": true
+    },
+    {
+      "relative_path": "audio_policy.vortex-sd-reference.conf",
+      "sha256": "7ae47c4936c37c5f702b8ce75e038a7a9d6eef7a5f328e1b15551b95af82b4d0",
+      "bytes": 3600,
+      "materialized_tree_matches": true
+    },
+    {
+      "relative_path": "init.vortex-sd-reference.rc",
+      "sha256": "4258cc2722fbba6c0720fdf13fdd70adc8d4aa0326e00a163d657e152a195a04",
+      "bytes": 233,
+      "materialized_tree_matches": true
+    },
+    {
+      "relative_path": "overlay/frameworks/base/packages/SettingsProvider/res/values/defaults.xml",
+      "sha256": "168e6e0134d369bceff1d60f0994821dc7f45e091a281aac88bb75738dabcc1e",
+      "bytes": 390,
+      "materialized_tree_matches": true
+    },
+    {
+      "relative_path": "vortex_rk322x_sd_box.mk",
+      "sha256": "d14c8f37c7c725320b67aa72dff8a5b262f89716f630be7c30693f3d59adbd72",
+      "bytes": 2455,
+      "materialized_tree_matches": true
+    }
+  ],
+  "overlays": [
+    "device/vortex/rk322x_sd_box/overlay"
+  ],
+  "config_values": {
+    "TARGET_PRODUCT": "vortex_rk322x_sd_box",
+    "TARGET_DEVICE": "vortex_rk322x_sd_box",
+    "TARGET_BOARD_PLATFORM": "rk322x",
+    "TARGET_BOARD_PLATFORM_GPU": "mali400",
+    "TARGET_BOARD_HARDWARE": "rk30board",
+    "TARGET_ARCH": "arm",
+    "TARGET_ARCH_VARIANT": "armv7-a-neon",
+    "TARGET_CPU_VARIANT": "cortex-a7",
+    "TARGET_BOARD_PLATFORM_PRODUCT": "box",
+    "TARGET_NO_RECOVERY": "true",
+    "TARGET_RELEASETOOLS_EXTENSIONS": "",
+    "TARGET_ROCHCHIP_RECOVERY": "false",
+    "TARGET_ROCKCHIP_PCBATEST": "false",
+    "RECOVERY_AUTO_USB_UPDATE": "false",
+    "ENABLE_KEYBOX_PROVISION": "false",
+    "BLUETOOTH_USE_BPLUS": "false",
+    "BOARD_HAVE_BLUETOOTH_BCM": "false",
+    "BOARD_HAVE_BLUETOOTH": "false",
+    "BUILD_WITH_DRMSERVICE": "false",
+    "BOARD_CONNECTIVITY_VENDOR": "",
+    "BOARD_CONNECTIVITY_MODULE": "",
+    "BOARD_WLAN_DEVICE": "",
+    "BOARD_WPA_SUPPLICANT_PRIVATE_LIB": "",
+    "BOARD_HOSTAPD_PRIVATE_LIB": "",
+    "WIFI_DRIVER_FW_PATH_PARAM": "",
+    "WIFI_DRIVER_FW_PATH_STA": "",
+    "WIFI_DRIVER_FW_PATH_P2P": "",
+    "WIFI_DRIVER_FW_PATH_AP": "",
+    "BUILD_WITH_GOOGLE_MARKET": "false",
+    "BUILD_BOX_WITH_GOOGLE_MARKET": "false",
+    "BUILD_WITH_GOOGLE_MARKET_ALL": "false",
+    "BUILD_WITH_GOOGLE_FRP": "false"
+  },
+  "stock_baseline_05_regression": [
+    {
+      "list": "packages",
+      "bytes_identical": true,
+      "sha256": "36ca59c466b65913f31892c544dc2e9c42666caefd9c1b484d9db0988d679939"
+    },
+    {
+      "list": "copy-files",
+      "bytes_identical": true,
+      "sha256": "21d6e88f264747ed63e27390abb28649db775cd318561ec28507e3a1275454b1"
+    },
+    {
+      "list": "properties",
+      "bytes_identical": true,
+      "sha256": "727a67ae916cbcbf671c4c2828b877f32d35f39be763d2a4d99ecdf9011d94a4"
+    }
+  ],
+  "confirmed_changes": [
+    "Only VortexHome selected as HOME launcher package; no stock Launcher/Provision/SetupWizard selected.",
+    "13 copy sources are regular files and all destinations are unique relative paths.",
+    "SettingsProvider overlay has only two verified bools true; pinned-source reader correspondence in provisioning/.",
+    "Audio policy has no active A2DP/SCO/Bluetooth routes.",
+    "No inherited Broadcom selector remains populated; this is not Wi-Fi driver identification.",
+    "Stock rk322x_box three raw resolved lists remain byte-identical to unpatched baseline-05."
+  ],
+  "open_before_image_or_boot": [
+    {
+      "id": "mount_failure_recovery_bcb",
+      "fact": "Actual init/builtins.cpp can call wipe_data_via_recovery for FS_MGR_MNTALL_DEV_NEEDS_RECOVERY; it constructs --wipe_data, writes BCB and requests reboot. Removing recovery/uncrypt/applypatch packages does not remove this compiled init path. Current SD fstab still contains check/encryptable. Exact BCB device resolution, malformed-media behavior and internal-storage preservation need integration review/tests. No assertion that this branch was executed or wrote the physical device."
+    },
+    {
+      "id": "usb_vold_paths",
+      "fact": "SD fstab retains /devices/ff580000.usb*, ff5c0000, ff5d0000 and /devices/usb*, while pinned RK322x DTS USB controllers use addresses30040000,30080000,300a0000,300c0000,300e0000,30100000,30120000. Actual kernel uevent/vold matching must be traced before claiming USB media discovery; DocumentsUI packages alone do not prove it."
+    },
+    {
+      "id": "device_permissions_selinux",
+      "fact": "Minimal board init only mounts the SD fstab when ro.bootmode=sd; vendor graphics device-node ownership, ueventd/SELinux, services and full mount ordering are not integrated."
+    },
+    {
+      "id": "full_source_module_graph",
+      "fact": "Diagnostic tree supplies actual font product fragments, not all font payload/module sources; parsed lists do not prove framework/audio/HAL/application dependencies or image closure."
+    },
+    {
+      "id": "firstboot_runtime",
+      "fact": "Pinned resource/reader checks support the dedicated SettingsProvider overlay, but no SettingsProvider build or fresh Android boot has exercised it."
+    },
+    {
+      "id": "board_kernel_monitor",
+      "fact": "R329Q_V8.0 Wi-Fi, board wiring/DDR and monitor/kernel/DTB interfaces remain unvalidated on physical hardware."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "scope": "Final host tool/runtime acquisition integrity only; no HAL or platform build.",
+  "source_revision": "0390252b6bcc6217966ade31d07f8b12f6f78f89",
+  "official_selected_entries_verified": 69,
+  "decoded_selected_bytes": 78309788,
+  "tool_prefix": "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-",
+  "runtime_probe_summary": {
+    "libgcc": {
+      "path": "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/lib/gcc/arm-linux-androideabi/4.9/armv7-a/thumb/libgcc.a",
+      "sha256": "db007b83081aa7d189f2b1d16d2bac4d0ae4bdcdd90b9d3f0be03eb03fb7a1ad",
+      "bytes": 6376696,
+      "ARM_members": 1751,
+      "hard_VFP_calling_convention_diagnostics": 0
+    },
+    "libatomic": {
+      "path": "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/arm-linux-androideabi/lib/armv7-a/thumb/libatomic.a",
+      "sha256": "2eb1dcbe97456dc9c62c37d0464e6b8072084e07d270f7718b5a34b86211cc45",
+      "bytes": 399776,
+      "ARM_members": 107,
+      "hard_VFP_calling_convention_diagnostics": 0
+    }
+  },
+  "genuine_plugin_and_minimal_shared_link_pass": true,
+  "genuine_Clang_resource_alias_independently_checked": true,
+  "system_packages_changed": false
+}

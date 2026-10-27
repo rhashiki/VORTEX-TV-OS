@@ -17,3 +17,11 @@ docs/validation/2026-10-27-native-hal/**/*.map -whitespace
 # Preserve upstream metadata and byte-extracted function bodies as evidence.
 docs/validation/2026-10-27-native-hal/gralloc-link/evidence/*.properties -whitespace
 docs/validation/2026-10-27-native-hal/hwc/evidence/behavior/*.cpp -whitespace
+docs/validation/2026-10-27-product/**/*.log -whitespace
+docs/validation/2026-10-27-product/**/*.txt -whitespace
+docs/validation/2026-10-27-product/**/*.list -whitespace
+# Preserve the upstream source excerpts used by the allocator regression.
+docs/validation/2026-10-27-product/native-rules/gralloc-invalid-test/*.cpp -whitespace
+# Exact upstream module definitions and license notices retain their bytes.
+docs/validation/2026-10-27-product/native-rules/actual-module-definitions/** -whitespace
+docs/validation/2026-10-27-product/native-rules/licenses/** -whitespace

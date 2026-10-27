@@ -1,0 +1,247 @@
+/workspace/build01-product-next/native-rules/out-android-clean/target/product/generic/obj/SHARED_LIBRARIES/hwcomposer.rk30board_intermediates/rk_hwcomposer.o: \
+ hardware/rockchip/hwcomposer/rk_hwcomposer.cpp \
+ frameworks/native/opengl/include/EGL/egl.h \
+ frameworks/native/opengl/include/EGL/eglplatform.h \
+ frameworks/native/opengl/include/KHR/khrplatform.h \
+ bionic/libc/include/stdint.h bionic/libc/include/bits/wchar_limits.h \
+ prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/../lib/gcc/arm-linux-androideabi/4.9/include/stddef.h \
+ frameworks/native/opengl/include/EGL/eglext.h \
+ hardware/rockchip/hwcomposer/rk_hwcomposer.h \
+ system/core/include/cutils/log.h system/core/include/log/log.h \
+ prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/../lib/gcc/arm-linux-androideabi/4.9/include/stdarg.h \
+ bionic/libc/include/stdio.h bionic/libc/include/sys/cdefs.h \
+ bionic/libc/include/android/api-level.h bionic/libc/include/sys/types.h \
+ bionic/libc/kernel/uapi/linux/types.h \
+ bionic/libc/kernel/uapi/asm-arm/asm/types.h \
+ bionic/libc/kernel/uapi/asm-generic/types.h \
+ bionic/libc/kernel/uapi/asm-generic/int-ll64.h \
+ bionic/libc/kernel/uapi/asm-arm/asm/bitsperlong.h \
+ bionic/libc/kernel/uapi/asm-generic/bitsperlong.h \
+ bionic/libc/kernel/uapi/linux/posix_types.h \
+ bionic/libc/kernel/uapi/linux/stddef.h \
+ bionic/libc/kernel/uapi/linux/compiler.h \
+ bionic/libc/kernel/uapi/asm-arm/asm/posix_types.h \
+ bionic/libc/kernel/uapi/asm-generic/posix_types.h \
+ bionic/libc/include/sys/sysmacros.h bionic/libc/include/time.h \
+ bionic/libc/include/sys/time.h bionic/libc/kernel/uapi/linux/time.h \
+ bionic/libc/include/sys/select.h bionic/libc/include/signal.h \
+ bionic/libc/kernel/uapi/asm-arm/asm/sigcontext.h \
+ bionic/libc/include/bits/pthread_types.h \
+ bionic/libc/include/bits/timespec.h bionic/libc/include/limits.h \
+ bionic/libc/include/sys/limits.h bionic/libc/kernel/uapi/linux/limits.h \
+ bionic/libc/include/sys/syslimits.h \
+ bionic/libc/include/bits/posix_limits.h \
+ bionic/libc/kernel/uapi/linux/signal.h \
+ bionic/libc/kernel/uapi/asm-arm/asm/signal.h \
+ bionic/libc/kernel/uapi/asm-generic/signal-defs.h \
+ bionic/libc/kernel/uapi/asm-arm/asm/siginfo.h \
+ bionic/libc/kernel/uapi/asm-generic/siginfo.h \
+ bionic/libc/include/sys/ucontext.h bionic/libc/include/sys/user.h \
+ bionic/libc/include/xlocale.h bionic/libc/include/unistd.h \
+ bionic/libc/include/sys/sysconf.h bionic/libc/include/bits/lockf.h \
+ system/core/include/log/logd.h system/core/include/android/log.h \
+ bionic/libc/include/pthread.h bionic/libc/include/sched.h \
+ bionic/libc/kernel/uapi/linux/sched.h system/core/include/log/uio.h \
+ bionic/libc/include/sys/uio.h bionic/libc/kernel/uapi/linux/uio.h \
+ hardware/libhardware/include/hardware/hwcomposer.h \
+ hardware/libhardware/include/hardware/gralloc.h \
+ system/core/include/system/window.h \
+ system/core/include/cutils/native_handle.h bionic/libc/include/errno.h \
+ bionic/libc/kernel/uapi/linux/errno.h \
+ bionic/libc/kernel/uapi/asm-arm/asm/errno.h \
+ bionic/libc/kernel/uapi/asm-generic/errno.h \
+ bionic/libc/kernel/uapi/asm-generic/errno-base.h \
+ bionic/libc/include/string.h bionic/libc/include/strings.h \
+ system/core/include/system/graphics.h \
+ prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/../lib/gcc/arm-linux-androideabi/4.9/include/stdbool.h \
+ hardware/libhardware/include/hardware/hardware.h \
+ hardware/libhardware/include/hardware/fb.h \
+ hardware/libhardware/include/hardware/hwcomposer_defs.h \
+ hardware/libhardware/include/hardware/rga.h \
+ system/core/include/utils/Thread.h system/core/include/utils/Condition.h \
+ system/core/include/utils/Errors.h system/core/include/utils/Mutex.h \
+ system/core/include/utils/Timers.h system/core/include/utils/Compat.h \
+ system/core/include/utils/RefBase.h external/libcxx/include/atomic \
+ external/libcxx/include/__config bionic/libc/include/endian.h \
+ bionic/libc/include/sys/endian.h external/libcxx/include/cstddef \
+ external/libcxx/include/cstdint external/libcxx/include/type_traits \
+ bionic/libc/include/stdlib.h bionic/libc/include/alloca.h \
+ bionic/libc/include/malloc.h system/core/include/utils/StrongPointer.h \
+ system/core/include/cutils/atomic.h bionic/libc/include/stdatomic.h \
+ system/core/include/utils/TypeHelpers.h external/libcxx/include/new \
+ external/libcxx/include/exception \
+ external/libcxx/include/__undef___deallocate \
+ system/core/include/utils/ThreadDefs.h \
+ system/core/include/system/thread_defs.h \
+ system/core/include/system/graphics.h bionic/libc/kernel/uapi/linux/fb.h \
+ bionic/libc/kernel/uapi/linux/i2c.h \
+ hardware/libhardware/include/hardware/rk_fh.h \
+ hardware/rockchip/hwcomposer/hwc_ipp.h bionic/libc/include/sys/stat.h \
+ bionic/libc/kernel/uapi/linux/stat.h bionic/libc/include/fcntl.h \
+ bionic/libc/kernel/uapi/linux/fadvise.h \
+ bionic/libc/kernel/uapi/linux/fcntl.h \
+ bionic/libc/kernel/uapi/asm-arm/asm/fcntl.h \
+ bionic/libc/kernel/uapi/asm-generic/fcntl.h \
+ hardware/rockchip/hwcomposer/rk29-ipp.h \
+ hardware/rockchip/libgralloc/gralloc_priv.h \
+ hardware/rockchip/libgralloc/alloc_device.h \
+ hardware/rockchip/libgralloc/gralloc_priv.h \
+ external/libcxx/include/vector external/libcxx/include/__bit_reference \
+ external/libcxx/include/algorithm \
+ external/libcxx/include/initializer_list external/libcxx/include/cstring \
+ external/libcxx/include/utility external/libcxx/include/__tuple \
+ external/libcxx/include/memory external/libcxx/include/typeinfo \
+ external/libcxx/include/limits external/libcxx/include/__undef_min_max \
+ external/libcxx/include/iterator \
+ external/libcxx/include/__functional_base external/libcxx/include/iosfwd \
+ bionic/libc/include/wchar.h external/libcxx/include/__debug \
+ external/libcxx/include/tuple external/libcxx/include/cassert \
+ bionic/libc/include/assert.h external/libcxx/include/climits \
+ external/libcxx/include/stdexcept external/libcxx/include/__split_buffer \
+ system/core/include/utils/Log.h \
+ system/core/libion/kernel-headers/linux/ion.h \
+ bionic/libc/kernel/uapi/linux/ioctl.h \
+ bionic/libc/kernel/uapi/asm-arm/asm/ioctl.h \
+ bionic/libc/kernel/uapi/asm-generic/ioctl.h \
+ system/core/libion/include/ion/ion.h \
+ system/core/libion/kernel-headers/linux/rockchip_ion.h \
+ hardware/rockchip/hwcomposer/../librkvpu/vpu_global.h \
+ hardware/rockchip/hwcomposer/../librkvpu/vpu_macro.h \
+ hardware/rockchip/hwcomposer/../librkvpu/vpu_type.h \
+ hardware/rockchip/hwcomposer/../librkvpu/vpu_mem.h \
+ hardware/rockchip/hwcomposer/version.h bionic/libc/include/sys/prctl.h \
+ bionic/libc/kernel/uapi/linux/prctl.h \
+ system/core/include/cutils/properties.h \
+ bionic/libc/include/sys/system_properties.h \
+ system/core/libsync/include/sync/sync.h bionic/libc/include/poll.h \
+ bionic/libc/kernel/uapi/linux/poll.h \
+ bionic/libc/kernel/uapi/asm-arm/asm/poll.h \
+ bionic/libc/kernel/uapi/asm-generic/poll.h \
+ hardware/rockchip/hwcomposer/rk_hwcomposer_hdmi.h \
+ frameworks/native/include/ui/PixelFormat.h \
+ hardware/rockchip/hwcomposer/hwc_rga.h \
+ hardware/rockchip/hwcomposer/rga_angle.h \
+ hardware/rockchip/hwcomposer/TVInfo.h
+ hardware/rockchip/hwcomposer/rk_hwcomposer.cpp :
+ frameworks/native/opengl/include/EGL/egl.h :
+ frameworks/native/opengl/include/EGL/eglplatform.h :
+ frameworks/native/opengl/include/KHR/khrplatform.h :
+ bionic/libc/include/stdint.h bionic/libc/include/bits/wchar_limits.h :
+ prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/../lib/gcc/arm-linux-androideabi/4.9/include/stddef.h :
+ frameworks/native/opengl/include/EGL/eglext.h :
+ hardware/rockchip/hwcomposer/rk_hwcomposer.h :
+ system/core/include/cutils/log.h system/core/include/log/log.h :
+ prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/../lib/gcc/arm-linux-androideabi/4.9/include/stdarg.h :
+ bionic/libc/include/stdio.h bionic/libc/include/sys/cdefs.h :
+ bionic/libc/include/android/api-level.h bionic/libc/include/sys/types.h :
+ bionic/libc/kernel/uapi/linux/types.h :
+ bionic/libc/kernel/uapi/asm-arm/asm/types.h :
+ bionic/libc/kernel/uapi/asm-generic/types.h :
+ bionic/libc/kernel/uapi/asm-generic/int-ll64.h :
+ bionic/libc/kernel/uapi/asm-arm/asm/bitsperlong.h :
+ bionic/libc/kernel/uapi/asm-generic/bitsperlong.h :
+ bionic/libc/kernel/uapi/linux/posix_types.h :
+ bionic/libc/kernel/uapi/linux/stddef.h :
+ bionic/libc/kernel/uapi/linux/compiler.h :
+ bionic/libc/kernel/uapi/asm-arm/asm/posix_types.h :
+ bionic/libc/kernel/uapi/asm-generic/posix_types.h :
+ bionic/libc/include/sys/sysmacros.h bionic/libc/include/time.h :
+ bionic/libc/include/sys/time.h bionic/libc/kernel/uapi/linux/time.h :
+ bionic/libc/include/sys/select.h bionic/libc/include/signal.h :
+ bionic/libc/kernel/uapi/asm-arm/asm/sigcontext.h :
+ bionic/libc/include/bits/pthread_types.h :
+ bionic/libc/include/bits/timespec.h bionic/libc/include/limits.h :
+ bionic/libc/include/sys/limits.h bionic/libc/kernel/uapi/linux/limits.h :
+ bionic/libc/include/sys/syslimits.h :
+ bionic/libc/include/bits/posix_limits.h :
+ bionic/libc/kernel/uapi/linux/signal.h :
+ bionic/libc/kernel/uapi/asm-arm/asm/signal.h :
+ bionic/libc/kernel/uapi/asm-generic/signal-defs.h :
+ bionic/libc/kernel/uapi/asm-arm/asm/siginfo.h :
+ bionic/libc/kernel/uapi/asm-generic/siginfo.h :
+ bionic/libc/include/sys/ucontext.h bionic/libc/include/sys/user.h :
+ bionic/libc/include/xlocale.h bionic/libc/include/unistd.h :
+ bionic/libc/include/sys/sysconf.h bionic/libc/include/bits/lockf.h :
+ system/core/include/log/logd.h system/core/include/android/log.h :
+ bionic/libc/include/pthread.h bionic/libc/include/sched.h :
+ bionic/libc/kernel/uapi/linux/sched.h system/core/include/log/uio.h :
+ bionic/libc/include/sys/uio.h bionic/libc/kernel/uapi/linux/uio.h :
+ hardware/libhardware/include/hardware/hwcomposer.h :
+ hardware/libhardware/include/hardware/gralloc.h :
+ system/core/include/system/window.h :
+ system/core/include/cutils/native_handle.h bionic/libc/include/errno.h :
+ bionic/libc/kernel/uapi/linux/errno.h :
+ bionic/libc/kernel/uapi/asm-arm/asm/errno.h :
+ bionic/libc/kernel/uapi/asm-generic/errno.h :
+ bionic/libc/kernel/uapi/asm-generic/errno-base.h :
+ bionic/libc/include/string.h bionic/libc/include/strings.h :
+ system/core/include/system/graphics.h :
+ prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/../lib/gcc/arm-linux-androideabi/4.9/include/stdbool.h :
+ hardware/libhardware/include/hardware/hardware.h :
+ hardware/libhardware/include/hardware/fb.h :
+ hardware/libhardware/include/hardware/hwcomposer_defs.h :
+ hardware/libhardware/include/hardware/rga.h :
+ system/core/include/utils/Thread.h system/core/include/utils/Condition.h :
+ system/core/include/utils/Errors.h system/core/include/utils/Mutex.h :
+ system/core/include/utils/Timers.h system/core/include/utils/Compat.h :
+ system/core/include/utils/RefBase.h external/libcxx/include/atomic :
+ external/libcxx/include/__config bionic/libc/include/endian.h :
+ bionic/libc/include/sys/endian.h external/libcxx/include/cstddef :
+ external/libcxx/include/cstdint external/libcxx/include/type_traits :
+ bionic/libc/include/stdlib.h bionic/libc/include/alloca.h :
+ bionic/libc/include/malloc.h system/core/include/utils/StrongPointer.h :
+ system/core/include/cutils/atomic.h bionic/libc/include/stdatomic.h :
+ system/core/include/utils/TypeHelpers.h external/libcxx/include/new :
+ external/libcxx/include/exception :
+ external/libcxx/include/__undef___deallocate :
+ system/core/include/utils/ThreadDefs.h :
+ system/core/include/system/thread_defs.h :
+ system/core/include/system/graphics.h bionic/libc/kernel/uapi/linux/fb.h :
+ bionic/libc/kernel/uapi/linux/i2c.h :
+ hardware/libhardware/include/hardware/rk_fh.h :
+ hardware/rockchip/hwcomposer/hwc_ipp.h bionic/libc/include/sys/stat.h :
+ bionic/libc/kernel/uapi/linux/stat.h bionic/libc/include/fcntl.h :
+ bionic/libc/kernel/uapi/linux/fadvise.h :
+ bionic/libc/kernel/uapi/linux/fcntl.h :
+ bionic/libc/kernel/uapi/asm-arm/asm/fcntl.h :
+ bionic/libc/kernel/uapi/asm-generic/fcntl.h :
+ hardware/rockchip/hwcomposer/rk29-ipp.h :
+ hardware/rockchip/libgralloc/gralloc_priv.h :
+ hardware/rockchip/libgralloc/alloc_device.h :
+ hardware/rockchip/libgralloc/gralloc_priv.h :
+ external/libcxx/include/vector external/libcxx/include/__bit_reference :
+ external/libcxx/include/algorithm :
+ external/libcxx/include/initializer_list external/libcxx/include/cstring :
+ external/libcxx/include/utility external/libcxx/include/__tuple :
+ external/libcxx/include/memory external/libcxx/include/typeinfo :
+ external/libcxx/include/limits external/libcxx/include/__undef_min_max :
+ external/libcxx/include/iterator :
+ external/libcxx/include/__functional_base external/libcxx/include/iosfwd :
+ bionic/libc/include/wchar.h external/libcxx/include/__debug :
+ external/libcxx/include/tuple external/libcxx/include/cassert :
+ bionic/libc/include/assert.h external/libcxx/include/climits :
+ external/libcxx/include/stdexcept external/libcxx/include/__split_buffer :
+ system/core/include/utils/Log.h :
+ system/core/libion/kernel-headers/linux/ion.h :
+ bionic/libc/kernel/uapi/linux/ioctl.h :
+ bionic/libc/kernel/uapi/asm-arm/asm/ioctl.h :
+ bionic/libc/kernel/uapi/asm-generic/ioctl.h :
+ system/core/libion/include/ion/ion.h :
+ system/core/libion/kernel-headers/linux/rockchip_ion.h :
+ hardware/rockchip/hwcomposer/../librkvpu/vpu_global.h :
+ hardware/rockchip/hwcomposer/../librkvpu/vpu_macro.h :
+ hardware/rockchip/hwcomposer/../librkvpu/vpu_type.h :
+ hardware/rockchip/hwcomposer/../librkvpu/vpu_mem.h :
+ hardware/rockchip/hwcomposer/version.h bionic/libc/include/sys/prctl.h :
+ bionic/libc/kernel/uapi/linux/prctl.h :
+ system/core/include/cutils/properties.h :
+ bionic/libc/include/sys/system_properties.h :
+ system/core/libsync/include/sync/sync.h bionic/libc/include/poll.h :
+ bionic/libc/kernel/uapi/linux/poll.h :
+ bionic/libc/kernel/uapi/asm-arm/asm/poll.h :
+ bionic/libc/kernel/uapi/asm-generic/poll.h :
+ hardware/rockchip/hwcomposer/rk_hwcomposer_hdmi.h :
+ frameworks/native/include/ui/PixelFormat.h :
+ hardware/rockchip/hwcomposer/hwc_rga.h :
+ hardware/rockchip/hwcomposer/rga_angle.h :
+ hardware/rockchip/hwcomposer/TVInfo.h :

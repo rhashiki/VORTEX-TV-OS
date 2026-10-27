@@ -1,0 +1,162 @@
+[
+  {
+    "path": "110b0030_pwm.kl",
+    "sha256": "e2ba1c4a90a512d17ac7235b517dc94289e1cc034f92e6ec3534553517fdad8c",
+    "size": 2088
+  },
+  {
+    "path": "20050030_pwm.kl",
+    "sha256": "53bb5068063e1ed31cfc413d8cca29b557893e661f2a861fb974224e029dbcd3",
+    "size": 805
+  },
+  {
+    "path": "AndroidProducts.mk",
+    "sha256": "5cbf0390f21f41a3e0ea59c522e1c48aadf64e9c175e123e9a0c566d1774cbf2",
+    "size": 686
+  },
+  {
+    "path": "BoardConfig.mk",
+    "sha256": "6648f0b9298e8111b1ee1dbb74dbb82cd348c2863bc9a559393541790c416b67",
+    "size": 1757
+  },
+  {
+    "path": "audio_policy_rk322x.conf",
+    "sha256": "a6a7890b1069f8d03e95c5e29fe15c87e31f450f2460bdcc192b8f96b41d5436",
+    "size": 3735
+  },
+  {
+    "path": "bluetooth/bdroid_buildcfg.h",
+    "sha256": "e37ae390dd34013a1b229574696c3a1a43774b537e856fbca6601dc98363a756",
+    "size": 759
+  },
+  {
+    "path": "build.sh",
+    "sha256": "cf4618b01c23a0c55f77112e182454b924e94b6e1874668cef8c6105fbf94446",
+    "size": 830
+  },
+  {
+    "path": "buildspec-rk322x_box.mk",
+    "sha256": "68d2682c48adbe140ccb2918f4d4d39ce2028955297e7236ff3bfeceffbb394a",
+    "size": 4165
+  },
+  {
+    "path": "buildspec.mk",
+    "sha256": "1497ec390b8b1d4e6583d82a5cc5736c31b5bfa2adb95370e7925842596b2b78",
+    "size": 4161
+  },
+  {
+    "path": "device.mk",
+    "sha256": "2f207278096096af2f13726a23385e1aa8c1fb4aed7fd17608a32a2309b69cb1",
+    "size": 1857
+  },
+  {
+    "path": "ff680030_pwm.kl",
+    "sha256": "40775a152a927a66db97a005b5f0ad488c410561e3ad1a01d03b9230d5b1fdbb",
+    "size": 2086
+  },
+  {
+    "path": "fix_performance.sh",
+    "sha256": "2fdb4ddb5862ead3342e60ac0f53b7e48e98c4dcafc93365ae76559da7ff9d5a",
+    "size": 308
+  },
+  {
+    "path": "fstab.rk30board.bootmode.emmc",
+    "sha256": "56545eb490222d885279c27d258554c609585404c1a476a0f9b6701adc7cd56f",
+    "size": 2065
+  },
+  {
+    "path": "fstab.rk30board.bootmode.sd",
+    "sha256": "d13a0c32b6f1e50c4a382691a166fea42f09277819fc4411c2ff6342539c9b4d",
+    "size": 2120
+  },
+  {
+    "path": "fstab.rk30board.bootmode.unknown",
+    "sha256": "556d90777c10de5e401c6ef6cc4bfda943799ce956608ceb2cb5bb1929657f05",
+    "size": 1779
+  },
+  {
+    "path": "init.box.rc",
+    "sha256": "24ee0819e5626c1c08acc3071d1acbefc068cfa3273969d53f002e7c6c2f55a4",
+    "size": 1296
+  },
+  {
+    "path": "init.tablet.rc",
+    "sha256": "3d8d8400848b4132dd8f02785111e9d1c6c70dbb13533c92c88305e45c3862b0",
+    "size": 836
+  },
+  {
+    "path": "nand/drmboot.ko",
+    "sha256": "2fdb367f07915c2d8e2c11ec2de8728e1b85c8051de8b2cae4d48e1cd9a0bb95",
+    "size": 711
+  },
+  {
+    "path": "nand/rk30xxnand_ko.ko.3.10.0",
+    "sha256": "b71d5ddb725b33ed69cda5f259200062654f5c0b29f8c7fbc1b48c016206d847",
+    "size": 219119
+  },
+  {
+    "path": "overlay/frameworks/base/core/res/res/values/config.xml",
+    "sha256": "7a8b5bb167b236a1d5b011a9270c670221729638052b3080900edccf17d7a0be",
+    "size": 2035
+  },
+  {
+    "path": "parameter.txt",
+    "sha256": "c6d001ac61ad72845068f3deb65af248f94b54ac21762dde8890fec72b694571",
+    "size": 792
+  },
+  {
+    "path": "product.mk",
+    "sha256": "d50d92dc9340242a41095e5ed4c5abe05fe0c54e5aad688582ef86273fead6a2",
+    "size": 875
+  },
+  {
+    "path": "product_32_only.mk",
+    "sha256": "edfa261ed68dbd8864e7d4005446f9e5bd0c08cfcad8b3a2fb956303879ea8ef",
+    "size": 954
+  },
+  {
+    "path": "recovery.sd.fstab",
+    "sha256": "05affbd2bdb1dc5ab9a693ffbe90c49d42107fee4b7bb6726b1b3c31e5bd7a78",
+    "size": 2778
+  },
+  {
+    "path": "rk322x.mk",
+    "sha256": "d5c14385cd3f08c9fa4934a87a2c067d555cd51e0c3d650cf7a3b89e4ff00364",
+    "size": 1632
+  },
+  {
+    "path": "rk322x_box/BoardConfig.mk",
+    "sha256": "0aebd09c8a8709c59a159f0863e43f0dcf9a9d450fcea04375a1050873e9fdc9",
+    "size": 438
+  },
+  {
+    "path": "rk322x_box/recovery.emmc.fstab",
+    "sha256": "5c88fec67681745aee40582016f472d8bc46f9f787cb208cd91bcee373373d9b",
+    "size": 2778
+  },
+  {
+    "path": "rk322x_box/system.prop",
+    "sha256": "6f8f5710b050e183bf8c2ef0ba9640affe365316cbeccea52db3377574fa352d",
+    "size": 1337
+  },
+  {
+    "path": "rk322x_box.mk",
+    "sha256": "cec5910a16f8b44c9e98f9a072ffe2dc06fb3708b8347c423edb073f065c07c4",
+    "size": 932
+  },
+  {
+    "path": "system.prop",
+    "sha256": "21e84b418e1789a598c981be51c70440a1f824a5c05a8ac9d9ef67376a1b7f76",
+    "size": 1162
+  },
+  {
+    "path": "vendorsetup.sh",
+    "sha256": "bd393405448b74385a3607c5b226a6f9c5b4272d57ae623aef38b977f3cb4ea1",
+    "size": 100
+  },
+  {
+    "path": "wifi_bt.mk",
+    "sha256": "8d85d1d7282a8f398e8c8100c2425e75a201c167c355864aa1af286344bfa128",
+    "size": 1180
+  }
+]

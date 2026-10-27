@@ -1,0 +1,138 @@
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=gralloc.rk30board hwcomposer.rk30board
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-product-next/native-rules/out
+============================================
+TAPAS_STATUS=0
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=gralloc.rk30board hwcomposer.rk30board
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-product-next/native-rules/out
+============================================
+Generated version.h
+Generated version.h
+target thumb C++: gralloc.rk30board <= hardware/rockchip/libgralloc/gralloc_module.cpp
+target thumb C++: gralloc.rk30board <= hardware/rockchip/libgralloc/alloc_device.cpp
+hardware/rockchip/libgralloc/alloc_device.cpp: In function ‘int alloc_device_alloc(alloc_device_t*, int, int, int, int, const native_handle_t**, int*)’:
+hardware/rockchip/libgralloc/alloc_device.cpp:613:22: warning: ‘stride’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  hnd->stride = stride;
+                      ^
+hardware/rockchip/libgralloc/alloc_device.cpp:377:49: warning: ‘size’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  vaddr = (void *)((uintptr_t)vaddr + bufferSize * found_index);
+                                      ~~~~~~~~~~~^~~~~~~~~~~~~
+hardware/rockchip/libgralloc/alloc_device.cpp:442:9: note: ‘size’ was declared here
+  size_t size;
+         ^~~~
+target thumb C++: gralloc.rk30board <= hardware/rockchip/libgralloc/framebuffer_device.cpp
+target thumb C++: gralloc.rk30board <= hardware/rockchip/libgralloc/rockchip_alloc_device.cpp
+target Symbolic: liblog (/workspace/build01-product-next/native-rules/out/target/product/generic/symbols/system/lib/liblog.so)
+target Symbolic: libcutils (/workspace/build01-product-next/native-rules/out/target/product/generic/symbols/system/lib/libcutils.so)
+target Symbolic: libGLESv1_CM (/workspace/build01-product-next/native-rules/out/target/product/generic/symbols/system/lib/libGLESv1_CM.so)
+target Symbolic: libion (/workspace/build01-product-next/native-rules/out/target/product/generic/symbols/system/lib/libion.so)
+target Symbolic: libhardware (/workspace/build01-product-next/native-rules/out/target/product/generic/symbols/system/lib/libhardware.so)
+target Symbolic: libc++ (/workspace/build01-product-next/native-rules/out/target/product/generic/symbols/system/lib/libc++.so)
+target Symbolic: libdl (/workspace/build01-product-next/native-rules/out/target/product/generic/symbols/system/lib/libdl.so)
+target Symbolic: libc (/workspace/build01-product-next/native-rules/out/target/product/generic/symbols/system/lib/libc.so)
+target Symbolic: libm (/workspace/build01-product-next/native-rules/out/target/product/generic/symbols/system/lib/libm.so)
+target thumb C++: libunwind_llvm <= external/libunwind_llvm/src/libunwind.cpp
+target thumb C++: libunwind_llvm <= external/libunwind_llvm/src/Unwind-EHABI.cpp
+target thumb C: libunwind_llvm <= external/libunwind_llvm/src/Unwind-sjlj.c
+target thumb C: libunwind_llvm <= external/libunwind_llvm/src/UnwindLevel1-gcc-ext.c
+target thumb C: libunwind_llvm <= external/libunwind_llvm/src/UnwindLevel1.c
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc++.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc++.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc++.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libdl.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libdl.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc++.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libdl.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libdl.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libm.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libm.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc++.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libm.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libdl.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libm.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libm.so dependency dropped.
+target thumb C: libcompiler_rt-extras <= external/compiler-rt/lib/builtins/mulodi4.c
+Import includes file: /workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/hwcomposer.rk30board_intermediates/import_includes
+target Unpacked: libui (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libui_intermediates/PACKED/libui.so)
+target Unpacked: libEGL (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libEGL_intermediates/PACKED/libEGL.so)
+target Unpacked: libhardware_legacy (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libhardware_legacy_intermediates/PACKED/libhardware_legacy.so)
+target Unpacked: libsync (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libsync_intermediates/PACKED/libsync.so)
+target Strip: liblog (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/lib/liblog.so)
+target Strip: libcutils (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/lib/libcutils.so)
+target Strip: libGLESv1_CM (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/lib/libGLESv1_CM.so)
+target Strip: libion (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/lib/libion.so)
+target Strip: libhardware (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/lib/libhardware.so)
+target Strip: libc++ (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/lib/libc++.so)
+target Strip: libdl (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/lib/libdl.so)
+target Strip: libc (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/lib/libc.so)
+target Strip: libm (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/lib/libm.so)
+target StaticLib: libunwind_llvm (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/STATIC_LIBRARIES/libunwind_llvm_intermediates/libunwind_llvm.a)
+target StaticLib: libcompiler_rt-extras (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/libcompiler_rt-extras.a)
+Install: /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libm.so
+target thumb C++: hwcomposer.rk30board <= hardware/rockchip/hwcomposer/rk_hwcomposer.cpp
+target thumb C++: hwcomposer.rk30board <= hardware/rockchip/hwcomposer/rk_hwcomposer_blit.cpp
+target thumb C++: hwcomposer.rk30board <= hardware/rockchip/hwcomposer/rk_hwc_com.cpp
+target thumb C++: hwcomposer.rk30board <= hardware/rockchip/hwcomposer/rga_api.cpp
+target thumb C++: hwcomposer.rk30board <= hardware/rockchip/hwcomposer/rk_hwcomposer_htg.cpp
+target thumb C++: hwcomposer.rk30board <= hardware/rockchip/hwcomposer/hwc_ipp.cpp
+target thumb C++: hwcomposer.rk30board <= hardware/rockchip/hwcomposer/hwc_rga.cpp
+target thumb C++: hwcomposer.rk30board <= hardware/rockchip/hwcomposer/TVInfo.cpp
+hardware/rockchip/hwcomposer/TVInfo.cpp:7:0: warning: "LOG_TAG" redefined
+ #define LOG_TAG "RKTVINFO"
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+target Symbolic: libui (/workspace/build01-product-next/native-rules/out/target/product/generic/symbols/system/lib/libui.so)
+target Symbolic: libEGL (/workspace/build01-product-next/native-rules/out/target/product/generic/symbols/system/lib/libEGL.so)
+target Symbolic: libhardware_legacy (/workspace/build01-product-next/native-rules/out/target/product/generic/symbols/system/lib/libhardware_legacy.so)
+target Symbolic: libsync (/workspace/build01-product-next/native-rules/out/target/product/generic/symbols/system/lib/libsync.so)
+Install: /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libdl.so
+target Strip: libui (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/lib/libui.so)
+target Strip: libEGL (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/lib/libEGL.so)
+target Strip: libhardware_legacy (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/lib/libhardware_legacy.so)
+target Strip: libsync (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/lib/libsync.so)
+target SharedLib: gralloc.rk30board (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/LINKED/gralloc.rk30board.so)
+Install: /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc++.so
+/workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/../../../../arm-linux-gnueabihf/bin/ld: unrecognized option '--icf=safe'
+/workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/../../../../arm-linux-gnueabihf/bin/ld: use the --help option for usage information
+collect2: error: ld returned 1 exit status
+make: *** [build/core/shared_library_internal.mk:81: /workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/LINKED/gralloc.rk30board.so] Error 1
+make: *** Waiting for unfinished jobs....
+
+#### make failed to build some targets (3 seconds) ####
+

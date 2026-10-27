@@ -1,0 +1,14 @@
+[
+  {
+    "path": "frameworks/native/data/etc/android.software.webview.xml",
+    "revision": "00c3ec97785c0d42f801083c8fc2fc26d3ce4e2d",
+    "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-native/00c3ec97785c0d42f801083c8fc2fc26d3ce4e2d/data/etc/android.software.webview.xml",
+    "sha256": "2e293ff6ea02063ea3835e42e7a5c17fc5a15a46fff0af486c19dcb5b92fe821"
+  },
+  {
+    "path": "frameworks/base/data/fonts/fonts.xml",
+    "revision": "edd171fec429b9d51d9cb2da961a673ec51fcc4d",
+    "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-base/edd171fec429b9d51d9cb2da961a673ec51fcc4d/data/fonts/fonts.xml",
+    "sha256": "46cc13a3fcd249793b5bdeec469b3818bf65440adf66fb01bd8e1a40ddfa51d3"
+  }
+]

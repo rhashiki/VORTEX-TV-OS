@@ -1,0 +1,19 @@
+Cloning into '/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm'...
+warning: refs/tags/android-7.1.2_r6 78650356b3bc75728f7abd6e367dad3cc80903b7 is not a commit!
+Note: switching to 'f171e7279d7fa8977bbe25e19019380ee493e885'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+

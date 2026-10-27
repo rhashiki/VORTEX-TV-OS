@@ -1,0 +1,81 @@
+[
+  {
+    "path": "bionic",
+    "resolved_path": "/workspace/build01-platform-next/research/rockchip-bionic",
+    "revision": "8b2e5b977118ebb8447cdf429c4a6be534c4fd1b",
+    "remote": null,
+    "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "status": []
+  },
+  {
+    "path": "system/core",
+    "resolved_path": "/workspace/build01-platform-next/research/rockchip-system-core",
+    "revision": "ab5f1d24b072e36ddcf02439303050c501d9dc5b",
+    "remote": null,
+    "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "status": []
+  },
+  {
+    "path": "hardware/libhardware",
+    "resolved_path": "/workspace/build01-graphics-next/graphics/libhardware",
+    "revision": "d0c81ba009240cb9ab38d75d7e88190055349c2a",
+    "remote": "/workspace/build01-platform-next/research/rockchip-libhardware",
+    "tracked_diff_sha256": "bd3a2e95546844cae005bd6ce385324b6ef06f99837f6c58f8f49bf84035e599",
+    "status": [
+      " M include/hardware/rk_fh.h"
+    ]
+  },
+  {
+    "path": "hardware/rockchip/librkvpu",
+    "resolved_path": "/workspace/build01-platform-next/research/rockchip-librkvpu",
+    "revision": "aa92e18a517967623a8bc0f1bc0752c9807d0743",
+    "remote": null,
+    "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "status": []
+  },
+  {
+    "path": "hardware/rockchip/libgralloc",
+    "resolved_path": "/workspace/build01-product-next/native-rules/tree/hardware/rockchip/libgralloc",
+    "revision": "c92fb8cd8becd57b025149f2861a2072b092ddea",
+    "remote": "https://github.com/rockchip-android/hardware-rockchip-libgralloc.git",
+    "tracked_diff_sha256": "fb8766b8eaf9d488f00ab848a5d8c55ef398500dff3297aba99d8232dbfa2d21",
+    "status": [
+      " M Android.mk",
+      " M alloc_device.cpp",
+      "?? version.h"
+    ]
+  },
+  {
+    "path": "hardware/rockchip/hwcomposer",
+    "resolved_path": "/workspace/build01-product-next/native-rules/tree/hardware/rockchip/hwcomposer",
+    "revision": "d3ec43f2f751123ca5e7bda2d07eded4c6352a35",
+    "remote": "https://github.com/rockchip-android/hardware-rockchip-hwcomposer.git",
+    "tracked_diff_sha256": "2af5222fb1544f5bad842614709a20133d1284fba5d97db7343c88428f79240d",
+    "status": [
+      " M Android.mk",
+      " M TVInfo.cpp",
+      " M hwc_rga.cpp",
+      " M rk_hwc_com.cpp",
+      " M rk_hwcomposer.cpp",
+      " M rk_hwcomposer_blit.cpp",
+      " M rk_hwcomposer_htg.cpp",
+      "?? version.h"
+    ]
+  },
+  {
+    "path": "external/libunwind_llvm",
+    "resolved_path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm",
+    "revision": "f171e7279d7fa8977bbe25e19019380ee493e885",
+    "remote": "https://android.googlesource.com/platform/external/libunwind_llvm",
+    "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "status": []
+  },
+  {
+    "path": "external/compiler-rt",
+    "resolved_path": "/workspace/build01-product-next/native-rules/tree/external/compiler-rt",
+    "revision": "fa6e8d21528c9d085d1565cef2cea204fe9d6a2d",
+    "remote": "https://android.googlesource.com/platform/external/compiler-rt",
+    "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "status": []
+  }
+]

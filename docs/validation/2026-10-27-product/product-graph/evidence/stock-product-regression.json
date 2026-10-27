@@ -1,0 +1,19 @@
+{
+  "scope": "genuine_product_config_only",
+  "baseline": "baseline-05, same fragments and output-prefix prelude, original build files",
+  "patched": "rk322x_box, same inputs with four product-scoped list substitutions",
+  "comparisons": {
+    "packages": {
+      "bytes_identical": true,
+      "sha256": "36ca59c466b65913f31892c544dc2e9c42666caefd9c1b484d9db0988d679939"
+    },
+    "copy-files": {
+      "bytes_identical": true,
+      "sha256": "21d6e88f264747ed63e27390abb28649db775cd318561ec28507e3a1275454b1"
+    },
+    "properties": {
+      "bytes_identical": true,
+      "sha256": "727a67ae916cbcbf671c4c2828b877f32d35f39be763d2a4d99ecdf9011d94a4"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+build/core/definitions.mk:2691: *** HOST_OS must define get-file-size.  Stop.

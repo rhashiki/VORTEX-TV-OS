@@ -1,0 +1,48 @@
+{
+  "scope": "Genuine GCC driver plugin and header-free minimal ARM shared-link tool-readiness check, not a HAL or platform build.",
+  "plugin_sha256": "501e678372e57696e1149cc70d5f816722065505492d39731c19f3c2a91d7582",
+  "minimal_ARM_DSO_sha256": "4a99779c0af6f5d4d9d0fd48719c96d47a8009d7c14ca0951fb6a612cc8b9142",
+  "checks": [
+    {
+      "label": "lto-plugin-ldd",
+      "command": [
+        "ldd",
+        "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/libexec/gcc/arm-linux-androideabi/4.9/liblto_plugin.so"
+      ],
+      "exit_code": 0,
+      "log": "lto-plugin-ldd.log"
+    },
+    {
+      "label": "driver-minimal-shared-link",
+      "command": [
+        "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-gcc",
+        "-shared",
+        "-nostdlib",
+        "-march=armv7-a",
+        "-mthumb",
+        "-mfpu=neon",
+        "-mfloat-abi=softfp",
+        "-Wl,--no-undefined",
+        "-Wl,-soname,vortex_tool_probe.so",
+        "/workspace/build01-product-next/native-rules/acquisition/android-gcc-runtime/empty-arm.o",
+        "-o",
+        "/workspace/build01-product-next/native-rules/acquisition/android-gcc-runtime/minimal-arm.so"
+      ],
+      "exit_code": 0,
+      "log": "driver-minimal-shared-link.log"
+    },
+    {
+      "label": "driver-minimal-ELF",
+      "command": [
+        "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-readelf",
+        "-h",
+        "-d",
+        "-A",
+        "/workspace/build01-product-next/native-rules/acquisition/android-gcc-runtime/minimal-arm.so"
+      ],
+      "exit_code": 0,
+      "log": "driver-minimal-ELF.log"
+    }
+  ],
+  "no_fno_use_linker_plugin_workaround": true
+}

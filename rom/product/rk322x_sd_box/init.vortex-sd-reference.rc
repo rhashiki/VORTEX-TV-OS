@@ -1,0 +1,4 @@
+# Minimal mount input reference, not a complete board init/permission policy.
+# An absent/wrong boot selector deliberately has no internal-storage fallback.
+on fs && property:ro.bootmode=sd
+    mount_all /fstab.rk30board.bootmode.sd

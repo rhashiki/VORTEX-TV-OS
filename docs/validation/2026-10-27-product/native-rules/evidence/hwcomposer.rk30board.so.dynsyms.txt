@@ -1,0 +1,222 @@
+
+Symbol table '.dynsym' contains 219 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_finalize@LIBC (2)
+     2: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_atexit@LIBC (2)
+     3: 00000000     0 FUNC    GLOBAL DEFAULT  UND raise@LIBC (2)
+     4: 00000000     0 FUNC    GLOBAL DEFAULT  UND __register_atfork@LIBC (2)
+     5: 00000000     0 FUNC    GLOBAL DEFAULT  UND __snprintf_chk@LIBC (2)
+     6: 00000000     0 FUNC    GLOBAL DEFAULT  UND __android_log_print
+     7: 00000000     0 FUNC    GLOBAL DEFAULT  UND dladdr@LIBC (4)
+     8: 00000000     0 FUNC    GLOBAL DEFAULT  UND ioctl@LIBC (2)
+     9: 00000000     0 FUNC    GLOBAL DEFAULT  UND __gnu_Unwind_Find_exidx@LIBC_N (3)
+    10: 00000000     0 FUNC    GLOBAL DEFAULT  UND __stack_chk_fail@LIBC (2)
+    11: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memcpy@LIBC_N (3)
+    12: 00000000     0 OBJECT  GLOBAL DEFAULT  UND __stack_chk_guard@LIBC (2)
+    13: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memclr8@LIBC_N (3)
+    14: 00000000     0 FUNC    GLOBAL DEFAULT  UND __errno@LIBC (2)
+    15: 00000000     0 FUNC    GLOBAL DEFAULT  UND strerror@LIBC (2)
+    16: 00000000     0 FUNC    GLOBAL DEFAULT  UND prctl@LIBC (2)
+    17: 00000000     0 FUNC    GLOBAL DEFAULT  UND read@LIBC (2)
+    18: 00000000     0 FUNC    GLOBAL DEFAULT  UND poll@LIBC (2)
+    19: 00000000     0 FUNC    GLOBAL DEFAULT  UND lseek@LIBC (2)
+    20: 00000000     0 FUNC    GLOBAL DEFAULT  UND strtoull@LIBC (2)
+    21: 00000000     0 FUNC    GLOBAL DEFAULT  UND close@LIBC (2)
+    22: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_destroy@LIBC (2)
+    23: 00000000     0 FUNC    GLOBAL DEFAULT  UND free@LIBC (2)
+    24: 00000000     0 FUNC    GLOBAL DEFAULT  UND property_get
+    25: 00000000     0 FUNC    GLOBAL DEFAULT  UND atoi@LIBC (2)
+    26: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_wait@LIBC (2)
+    27: 00000000     0 FUNC    GLOBAL DEFAULT  UND usleep@LIBC (2)
+    28: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_lock@LIBC (2)
+    29: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_unlock@LIBC (2)
+    30: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_init@LIBC (2)
+    31: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_init@LIBC (2)
+    32: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_destroy@LIBC (2)
+    33: 00000000     0 FUNC    GLOBAL DEFAULT  UND memcpy@LIBC (2)
+    34: 00000000     0 FUNC    GLOBAL DEFAULT  UND sync_wait
+    35: 00000000     0 FUNC    GLOBAL DEFAULT  UND __sprintf_chk@LIBC (2)
+    36: 00000000     0 FUNC    GLOBAL DEFAULT  UND __strcat_chk@LIBC (2)
+    37: 00000000     0 FUNC    GLOBAL DEFAULT  UND memset@LIBC (2)
+    38: 00000000     0 FUNC    GLOBAL DEFAULT  UND snprintf@LIBC (2)
+    39: 00000000     0 FUNC    GLOBAL DEFAULT  UND open@LIBC (2)
+    40: 00000000     0 FUNC    GLOBAL DEFAULT  UND sscanf@LIBC (2)
+    41: 00000000     0 FUNC    GLOBAL DEFAULT  UND strstr@LIBC (2)
+    42: 00000000     0 FUNC    GLOBAL DEFAULT  UND gettimeofday@LIBC (2)
+    43: 00000000     0 FUNC    GLOBAL DEFAULT  UND strcmp@LIBC (2)
+    44: 00000000     0 FUNC    GLOBAL DEFAULT  UND __strlen_chk@LIBC (2)
+    45: 00000000     0 FUNC    GLOBAL DEFAULT  UND malloc@LIBC (2)
+    46: 00000000     0 FUNC    GLOBAL DEFAULT  UND property_set
+    47: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_signal@LIBC (2)
+    48: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_exit@LIBC (2)
+    49: 00000000     0 FUNC    GLOBAL DEFAULT  UND hw_get_module
+    50: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_create@LIBC (2)
+    51: 00000000     0 FUNC    GLOBAL DEFAULT  UND strcpy@LIBC (2)
+    52: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Znwj
+    53: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZdlPv
+    54: 00000000     0 FUNC    GLOBAL DEFAULT  UND gettid@LIBC (2)
+    55: 00000000     0 FUNC    GLOBAL DEFAULT  UND write@LIBC (2)
+    56: 00000000     0 FUNC    GLOBAL DEFAULT  UND dup@LIBC (2)
+    57: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android13bytesPerPixelEi
+    58: 00000000     0 FUNC    GLOBAL DEFAULT  UND strlen@LIBC (2)
+    59: 00000000     0 FUNC    GLOBAL DEFAULT  UND uevent_init
+    60: 00000000     0 FUNC    GLOBAL DEFAULT  UND uevent_get_fd
+    61: 00000000     0 FUNC    GLOBAL DEFAULT  UND uevent_next_event
+    62: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_open
+    63: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_alloc
+    64: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_share
+    65: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_free
+    66: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_get_phys
+    67: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_close
+    68: 00000000     0 FUNC    GLOBAL DEFAULT  UND fopen@LIBC (2)
+    69: 00000000     0 FUNC    GLOBAL DEFAULT  UND fgets@LIBC (2)
+    70: 00000000     0 FUNC    GLOBAL DEFAULT  UND fclose@LIBC (2)
+    71: 00000000     0 FUNC    GLOBAL DEFAULT  UND memcmp@LIBC (2)
+    72: 00000000     0 FUNC    GLOBAL DEFAULT  UND sqrt@LIBC (5)
+    73: 00000000     0 FUNC    GLOBAL DEFAULT  UND __fwrite_chk@LIBC_N (3)
+    74: 00000000     0 FUNC    GLOBAL DEFAULT  UND abort@LIBC (2)
+    75: 00000000     0 FUNC    GLOBAL DEFAULT  UND fprintf@LIBC (2)
+    76: 00000000     0 OBJECT  GLOBAL DEFAULT  UND stderr@LIBC (2)
+    77: 00004ea9   376 FUNC    GLOBAL DEFAULT   12 _Z17hwc_reset_fb_infoP18rk_fb_win_cfg_dataP11_hwcContext
+    78: 00004e3d   104 FUNC    GLOBAL DEFAULT   12 _Z17sync_fbinfo_fenceP18rk_fb_win_cfg_data
+    79: 000150a0     4 OBJECT  GLOBAL DEFAULT   22 mUsedVopNum
+    80: 000094b5   296 FUNC    GLOBAL DEFAULT   12 _Z21hotpulg_did_hdr_videoP11_hwcContextP13rk_fb_win_parP16private_handle_t
+    81: 000056bd   588 FUNC    GLOBAL DEFAULT   12 _Z22try_hwc_vop_gpu_policyPvP22hwc_display_contents_1
+    82: 0000f088    60 FUNC    GLOBAL DEFAULT   12 __gnu_uldivmod_helper
+    83: 0000457d   548 FUNC    GLOBAL DEFAULT   12 _Z18try_hwc_rga_policyPvP22hwc_display_contents_1
+    84: 00004a51    72 FUNC    GLOBAL DEFAULT   12 _Z20free_thread_pamatersP15_threadPamaters
+    85: 0000c779   168 FUNC    GLOBAL DEFAULT   12 _Z21rk_check_hdmi_ueventsPKci
+    86: 0000c021    10 FUNC    GLOBAL DEFAULT   12 RGA_set_rop_mask_info
+    87: 0000495d   104 FUNC    GLOBAL DEFAULT   12 _Z25is_displayframe_intersectP11hwc_layer_1S0_
+    88: 00004a99   148 FUNC    GLOBAL DEFAULT   12 _Z18dump_platform_infov
+    89: 0000c5cf    12 FUNC    GLOBAL DEFAULT   12 RGA_set_src_fence_flag
+    90: 0000c5c9     6 FUNC    GLOBAL DEFAULT   12 RGA_get_dst_fence
+    91: 0000c43d   196 FUNC    GLOBAL DEFAULT   12 _Z10rga_test_0v
+    92: 0000f36c    28 FUNC    GLOBAL DEFAULT   12 __ashldi3
+    93: 00004d25    94 FUNC    GLOBAL DEFAULT   12 _Z14is_need_stereoP11_hwcContextP22hwc_display_contents_1
+    94: 00004d83    48 FUNC    GLOBAL DEFAULT   12 _Z17is_screen_changedP11_hwcContexti
+    95: 00005db9   204 FUNC    GLOBAL DEFAULT   12 _Z19Get_layer_disp_areaP11hwc_layer_1P8_hwcRECT
+    96: 0000a569    22 FUNC    GLOBAL DEFAULT   12 _HasAlpha
+    97: 0000c111   184 FUNC    GLOBAL DEFAULT   12 RGA_set_bitblt_mode
+    98: 000073a9   316 FUNC    GLOBAL DEFAULT   12 _Z18hotplug_parse_modePiS_
+    99: 0000c0bb    86 FUNC    GLOBAL DEFAULT   12 RGA_set_src_trans_mode_info
+   100: 00004db3    34 FUNC    GLOBAL DEFAULT   12 _Z21is_boot_skip_platformP11_hwcContext
+   101: 0000a5ad  3524 FUNC    GLOBAL DEFAULT   12 hwcBlit
+   102: 0000c02b    66 FUNC    GLOBAL DEFAULT   12 RGA_set_alpha_en_info
+   103: 0000bf8b    38 FUNC    GLOBAL DEFAULT   12 RGA_set_src_vir_info
+   104: 0000f03c    16 FUNC    WEAK   DEFAULT   12 __aeabi_ldiv0
+   105: 0000f244   268 FUNC    GLOBAL DEFAULT   12 __udivdi3
+   106: 00005d71    72 FUNC    GLOBAL DEFAULT   12 _Z9getFbInfoPvS_P22hwc_display_contents_1
+   107: 0000bba1    52 FUNC    GLOBAL DEFAULT   12 ZoneFree
+   108: 000062cd    16 FUNC    GLOBAL DEFAULT   12 getHdmiMode
+   109: 00004839    52 FUNC    GLOBAL DEFAULT   12 _Z14is_suit_nodrawP11hwc_layer_1P11_hwcContext
+   110: 00007219   180 FUNC    GLOBAL DEFAULT   12 init_hdmi_mode
+   111: 0000baf1    72 FUNC    GLOBAL DEFAULT   12 hwcGetBufFormat
+   112: 000074e9  1716 FUNC    GLOBAL DEFAULT   12 _Z18hotplug_get_configi
+   113: 0000cd35    72 FUNC    GLOBAL DEFAULT   12 _Z17is_scrop_by_widthiiii
+   114: 000080f1  1636 FUNC    GLOBAL DEFAULT   12 _Z20hotplug_reset_dstposP18rk_fb_win_cfg_datai
+   115: 0000cd21    20 FUNC    GLOBAL DEFAULT   12 rga_set_fds_offsets
+   116: 000056b9     4 FUNC    GLOBAL DEFAULT   12 _Z24is_need_skip_this_policyPv
+   117: 00007ba1   152 FUNC    GLOBAL DEFAULT   12 _Z18hotplug_set_configv
+   118: 00008755   320 FUNC    GLOBAL DEFAULT   12 _Z28hotplug_change_screen_configiii
+   119: 0000cfc5   132 FUNC    GLOBAL DEFAULT   12 _Z17set_transform_cfgi
+   120: 00004bb1   232 FUNC    GLOBAL DEFAULT   12 _Z16dump_config_infoP11_hwcContext18rk_fb_win_cfg_data
+   121: 00009401   180 FUNC    GLOBAL DEFAULT   12 _Z20hotplug_set_overscani
+   122: 00004c99   140 FUNC    GLOBAL DEFAULT   12 _Z30handle_gpu_nodraw_optimazationP11_hwcContextP22hwc_display_contents_1ii
+   123: 0000c1c9    28 FUNC    GLOBAL DEFAULT   12 RGA_set_color_palette_mode
+   124: 000062dd   612 FUNC    GLOBAL DEFAULT   12 _Z18try_hwc_vop_policyPvP22hwc_display_contents_1
+   125: 0000ccad    80 FUNC    GLOBAL DEFAULT   12 _Z12init_rga_cfgi
+   126: 00004e01    58 FUNC    GLOBAL DEFAULT   12 _Z16hwc_sync_releaseP22hwc_display_contents_1
+   127: 000049d5    44 FUNC    GLOBAL DEFAULT   12 _Z22type_of_android_formati
+   128: 0000486d    36 FUNC    GLOBAL DEFAULT   12 _Z22is_not_suit_mix_policyP22hwc_display_contents_1
+   129: 0000b6a1   844 FUNC    GLOBAL DEFAULT   12 hwcClear
+   130: 0000d061   148 FUNC    GLOBAL DEFAULT   12 _Z14set_rga_offset8hwc_rectS_i
+   131: 0000521d   204 FUNC    GLOBAL DEFAULT   12 _Z23hwc_get_layer_area_infoP11hwc_layer_1P8_hwcRECTS2_
+   132: 0000c331    90 FUNC    GLOBAL DEFAULT   12 RGA_set_line_point_drawing_mode
+   133: 00007f81   368 FUNC    GLOBAL DEFAULT   12 _Z19hotplug_parse_scalePjS_
+   134: 0000bfbf    72 FUNC    GLOBAL DEFAULT   12 RGA_set_dst_vir_info
+   135: 0000d0f5   172 FUNC    GLOBAL DEFAULT   12 _Z14set_scale_mode8hwc_rectS_i
+   136: 000095dd  3232 FUNC    GLOBAL DEFAULT   12 _Z14hwc_vop_configP11_hwcContextP22hwc_display_contents_1
+   137: 0000c3d3    14 FUNC    GLOBAL DEFAULT   12 RGA_update_palette_table_mode
+   138: 00003bb1     6 FUNC    GLOBAL DEFAULT   12 _Z20try_hwc_cp_fb_policyPvP22hwc_display_contents_1
+   139: 00003bb7     6 FUNC    GLOBAL DEFAULT   12 _Z19try_hwc_skip_policyPvP22hwc_display_contents_1
+   140: 0000d46d    96 FUNC    GLOBAL DEFAULT   12 _Z26do_rga_transform_and_scalev
+   141: 00004891    66 FUNC    GLOBAL DEFAULT   12 _Z12is_same_rect8hwc_rectS_
+   142: 000041f5    16 FUNC    GLOBAL DEFAULT   12 _Z16init_tv_hdr_infoP11_hwcContext
+   143: 0000c825   152 FUNC    GLOBAL DEFAULT   12 _Z18rk_hwc_hdmi_threadPv
+   144: 0000c06d    48 FUNC    GLOBAL DEFAULT   12 RGA_set_rop_en_info
+   145: 00006279    84 FUNC    GLOBAL DEFAULT   12 _Z23is_surport_wfd_optimizev
+   146: 0000a27d    88 FUNC    GLOBAL DEFAULT   12 _Z14hwc_policy_setP11_hwcContextP22hwc_display_contents_1
+   147: 0001509c     4 OBJECT  GLOBAL DEFAULT   22 g_hdmi_mode
+   148: 00015088     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
+   149: 00003b99     6 FUNC    GLOBAL DEFAULT   12 _Z22try_hwc_vop_rga_policyPvP22hwc_display_contents_1
+   150: 0000cbe9   196 FUNC    GLOBAL DEFAULT   12 _Z9ipp_closeP12ipp_device_t
+   151: 0000d919   184 FUNC    GLOBAL DEFAULT   12 _Z18HdmiSetColorimetry17android_dataspace
+   152: 0000cdcd   502 FUNC    GLOBAL DEFAULT   12 _Z29calculate_wfd_dst_crop_center8hwc_rectS_i
+   153: 0000c1e9   328 FUNC    GLOBAL DEFAULT   12 RGA_set_color_fill_mode
+   154: 0000c5e5   204 FUNC    GLOBAL DEFAULT   12 _Z19rk_parse_uevent_bufPKcPiS1_S1_S1_i
+   155: 0000a57f    44 FUNC    GLOBAL DEFAULT   12 _Z16_ComputeUVOffset16_Rga_SURF_FORMATjjjPjS0_S0_S0_
+   156: 00004241    84 FUNC    GLOBAL DEFAULT   12 hwc_get_int_property
+   157: 0000c3e1    30 FUNC    GLOBAL DEFAULT   12 RGA_set_update_patten_buff_mode
+   158: 0000bf7d    14 FUNC    GLOBAL DEFAULT   12 RGA_set_src_act_info
+   159: 0000d851   200 FUNC    GLOBAL DEFAULT   12 _Z10HdmiSetHDRi
+   160: 0000c5db     8 FUNC    GLOBAL DEFAULT   12 RGA_set_dst_fence_flag
+   161: 0000c3bb    24 FUNC    GLOBAL DEFAULT   12 RGA_set_pre_scaling_mode
+   162: 00005e85  1012 FUNC    GLOBAL DEFAULT   12 _Z12hwc_rga_blitP11_hwcContextP22hwc_display_contents_1
+   163: 0000c501   200 FUNC    GLOBAL DEFAULT   12 _Z15rga_test_rotatev
+   164: 0000f36c    28 FUNC    GLOBAL DEFAULT   12 __aeabi_llsl
+   165: 0000bbd5   936 FUNC    GLOBAL DEFAULT   12 DivArea
+   166: 0000d739   280 FUNC    GLOBAL DEFAULT   12 _Z22HdmiSupportedDataSpacev
+   167: 000042d5    16 FUNC    GLOBAL DEFAULT   12 _Z10is_out_logv
+   168: 00006b35   628 FUNC    GLOBAL DEFAULT   12 _Z31try_hwc_rga_trfm_gpu_vop_policyPvP22hwc_display_contents_1
+   169: 00007c39   652 FUNC    GLOBAL DEFAULT   12 _Z20handle_hotplug_eventii
+   170: 0000f350    28 FUNC    GLOBAL DEFAULT   12 __lshrdi3
+   171: 0000c3ff    60 FUNC    GLOBAL DEFAULT   12 RGA_set_mmu_info
+   172: 0000f03c    16 FUNC    WEAK   DEFAULT   12 __aeabi_idiv0
+   173: 000049c5    16 FUNC    GLOBAL DEFAULT   12 _Z10is_vop_yuvi
+   174: 0000f04c    60 FUNC    GLOBAL DEFAULT   12 __gnu_ldivmod_helper
+   175: 0000f350    28 FUNC    GLOBAL DEFAULT   12 __aeabi_llsr
+   176: 00004b2d   132 FUNC    GLOBAL DEFAULT   12 _Z20sort_fbinfo_by_winidP18rk_fb_win_cfg_data
+   177: 00005115   264 FUNC    GLOBAL DEFAULT   12 _Z32hwc_get_vsync_period_from_fb_fpsi
+   178: 00003bbd    32 FUNC    GLOBAL DEFAULT   12 _Z18try_hwc_gpu_policyPvP22hwc_display_contents_1
+   179: 00004dd5    44 FUNC    GLOBAL DEFAULT   12 _Z8hwc_syncP22hwc_display_contents_1
+   180: 000161ad     0 NOTYPE  GLOBAL DEFAULT  ABS _end
+   181: 00004295    64 FUNC    GLOBAL DEFAULT   12 _Z12is_debug_logv
+   182: 00004a01    80 FUNC    GLOBAL DEFAULT   12 _Z20init_thread_pamatersP15_threadPamaters
+   183: 00007ec5   188 FUNC    GLOBAL DEFAULT   12 _Z19hotplug_init_threadPv
+   184: 0000cd7d    80 FUNC    GLOBAL DEFAULT   12 _Z25calculate_src_crop_center8hwc_rectS_i
+   185: 0000bb39   104 FUNC    GLOBAL DEFAULT   12 zone_alloc
+   186: 0000684d   744 FUNC    GLOBAL DEFAULT   12 _Z27try_hwc_rga_trfm_vop_policyPvP22hwc_display_contents_1
+   187: 0000c821     4 FUNC    GLOBAL DEFAULT   12 _Z17rk_handle_ueventsPKci
+   188: 00015088     0 NOTYPE  GLOBAL DEFAULT  ABS _edata
+   189: 00003bab     6 FUNC    GLOBAL DEFAULT   12 _Z22try_hwc_gpu_vop_policyPvP22hwc_display_contents_1
+   190: 00015004   128 OBJECT  GLOBAL DEFAULT   21 HMI
+   191: 00003b9f     6 FUNC    GLOBAL DEFAULT   12 _Z29try_hwc_nodraw_gpu_vop_policyPvP22hwc_display_contents_1
+   192: 00004205    28 FUNC    GLOBAL DEFAULT   12 _Z18deinit_tv_hdr_infoP11_hwcContext
+   193: 00006541   780 FUNC    GLOBAL DEFAULT   12 _Z22try_hwc_rga_vop_policyPvP22hwc_display_contents_1
+   194: 0000f0c4   384 FUNC    GLOBAL DEFAULT   12 __divdi3
+   195: 0000bfb1    14 FUNC    GLOBAL DEFAULT   12 RGA_set_dst_act_info
+   196: 00003ba5     6 FUNC    GLOBAL DEFAULT   12 _Z26try_hwc_rga_gpu_vop_policyPvP22hwc_display_contents_1
+   197: 000072cd   220 FUNC    GLOBAL DEFAULT   12 _Z20hotplug_parse_screenPiS_
+   198: 0000b9ed   260 FUNC    GLOBAL DEFAULT   12 hwcGetBufferInfo
+   199: 00006da9  1136 FUNC    GLOBAL DEFAULT   12 _Z29try_hwc_gpu_nodraw_vop_policyPvP22hwc_display_contents_1
+   200: 000052e9   976 FUNC    GLOBAL DEFAULT   12 _Z17try_prepare_firstP11_hwcContextP22hwc_display_contents_1
+   201: 0000b371   816 FUNC    GLOBAL DEFAULT   12 hwcDim
+   202: 000048d3   138 FUNC    GLOBAL DEFAULT   12 _Z12is_need_drawP11_hwcContextP22hwc_display_contents_1ii
+   203: 00005c91   224 FUNC    GLOBAL DEFAULT   12 _Z15hwc_set_virtualP21hwc_composer_device_1PP22hwc_display_contents_1
+   204: 0000d529   528 FUNC    GLOBAL DEFAULT   12 _Z18PortingOutputIoctl18HMW_HDMIRK_Ioctl_EPv
+   205: 0000c09d    30 FUNC    GLOBAL DEFAULT   12 RGA_set_fading_en_info
+   206: 0000c007    26 FUNC    GLOBAL DEFAULT   12 RGA_set_pat_info
+   207: 0000d049    24 FUNC    GLOBAL DEFAULT   12 _Z17get_wfd_transformi
+   208: 00004221    32 FUNC    GLOBAL DEFAULT   12 _Z15hwc_list_nodrawP22hwc_display_contents_1
+   209: 000047a1   152 FUNC    GLOBAL DEFAULT   12 _Z26hotplug_invalidate_refreshPv
+   210: 00005021   244 FUNC    GLOBAL DEFAULT   12 _Z11hwcDumpAreaP7hwcArea
+   211: 00005909   120 FUNC    GLOBAL DEFAULT   12 _Z19hwc_prepare_virtualP21hwc_composer_device_1P22hwc_display_contents_1S2_
+   212: 0000ca51   408 FUNC    GLOBAL DEFAULT   12 _Z8ipp_openP12ipp_device_t
+   213: 0000ccfd    36 FUNC    GLOBAL DEFAULT   12 _Z14is_land_screen8hwc_rect
+   214: 00003bed     4 FUNC    GLOBAL DEFAULT   12 _Z11hwc_copybitP21hwc_composer_device_1PK13native_handleS3_i
+   215: 0000f000     0 FUNC    GLOBAL DEFAULT   12 __aeabi_uldivmod
+   216: 0000c6b1   200 FUNC    GLOBAL DEFAULT   12 _Z19rk_check_hdmi_statev
+   217: 0000d1a1   716 FUNC    GLOBAL DEFAULT   12 _Z11set_rga_cfgP7hwc_cfg
+   218: 0000c38b    48 FUNC    GLOBAL DEFAULT   12 RGA_set_blur_sharp_filter_mode

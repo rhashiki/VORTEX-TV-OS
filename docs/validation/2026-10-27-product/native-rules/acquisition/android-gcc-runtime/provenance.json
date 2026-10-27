@@ -1,0 +1,574 @@
+{
+  "scope": "Selected genuine official Android GCC4.9 frontends/binutils, compiler headers and soft-float ARM runtime archives only; not a complete toolchain repository or a platform build.",
+  "repository": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9",
+  "revision": "0390252b6bcc6217966ade31d07f8b12f6f78f89",
+  "files": [
+    {
+      "path": "bin/arm-linux-androideabi-ar",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/bin/arm-linux-androideabi-ar?format=TEXT",
+      "mode": "0o100755",
+      "git_blob_sha1": "a6c76ba4d6c000a21eece4e77877160382df3f97",
+      "bytes": 763136,
+      "sha256": "15918f8c6ca55013a7cf4267206220f64a7b0c1d534b296386377eb0ae5898c7"
+    },
+    {
+      "path": "bin/arm-linux-androideabi-as",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/bin/arm-linux-androideabi-as?format=TEXT",
+      "mode": "0o100755",
+      "git_blob_sha1": "436b4fe2eba9fcf15e02601fb23feb91cacdf492",
+      "bytes": 1328192,
+      "sha256": "32d9348187e4f2ea0058499956d06f2706b1ab0cade34f52f00e3bcd8b335aaf"
+    },
+    {
+      "path": "bin/arm-linux-androideabi-cpp",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/bin/arm-linux-androideabi-cpp?format=TEXT",
+      "mode": "0o100755",
+      "git_blob_sha1": "1976fcacc602a20e0c0506bd724fbf2066429d0d",
+      "bytes": 785288,
+      "sha256": "c98e193e43f0d373c0d0fcfe277ad71031fe919aea9683d7d6f78ea776d7efae"
+    },
+    {
+      "path": "bin/arm-linux-androideabi-g++",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/bin/arm-linux-androideabi-g++?format=TEXT",
+      "mode": "0o100755",
+      "git_blob_sha1": "41ac23c8bee57d2453a10c4dd3d01abd484fea64",
+      "bytes": 789000,
+      "sha256": "d1d5651d49c95ba47f5621d862584e6ecc67e151c921398c9a68375b5a944bf2"
+    },
+    {
+      "path": "bin/arm-linux-androideabi-gcc",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/bin/arm-linux-androideabi-gcc?format=TEXT",
+      "mode": "0o100755",
+      "git_blob_sha1": "877ff793e4b5b8da68a05043669ac000ab593bdc",
+      "bytes": 784904,
+      "sha256": "a08c760971bdeea27757dc507359ac3822bcab96f1f4d4dcaed41a6d1d9c1651"
+    },
+    {
+      "path": "bin/arm-linux-androideabi-ld",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/bin/arm-linux-androideabi-ld?format=TEXT",
+      "mode": "0o120000",
+      "git_blob_sha1": "4194d24c4b5c4980aff699380426bc7177eb3d18",
+      "bytes": 29,
+      "sha256": "0a66d6d5e9ba0702dd2a5fc85050431bb436fc62e65ae3ab64761c46515f24d8",
+      "target": "arm-linux-androideabi-ld.gold"
+    },
+    {
+      "path": "bin/arm-linux-androideabi-ld.bfd",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/bin/arm-linux-androideabi-ld.bfd?format=TEXT",
+      "mode": "0o100755",
+      "git_blob_sha1": "64ca3b332ace03cb655ab62da0242afe92209146",
+      "bytes": 1223392,
+      "sha256": "8c679d931483906978442e7922d914b32bd422d33b5a64eb3f65d866ed86a93b"
+    },
+    {
+      "path": "bin/arm-linux-androideabi-ld.gold",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/bin/arm-linux-androideabi-ld.gold?format=TEXT",
+      "mode": "0o100755",
+      "git_blob_sha1": "7faa5a5218a0ab8940317269dee2d0e712007163",
+      "bytes": 4679688,
+      "sha256": "d50223bee10b1ff8c420eb07b70fc5beebcae3f1149186efb5365de593700cb7"
+    },
+    {
+      "path": "bin/arm-linux-androideabi-nm",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/bin/arm-linux-androideabi-nm?format=TEXT",
+      "mode": "0o100755",
+      "git_blob_sha1": "63e9b964101107a6ab54f609acb54da71faf11c0",
+      "bytes": 745496,
+      "sha256": "383639e1215781cb081fdb39646930160fc23d930f3e6c5a171df81f721a6df4"
+    },
+    {
+      "path": "bin/arm-linux-androideabi-objcopy",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/bin/arm-linux-androideabi-objcopy?format=TEXT",
+      "mode": "0o100755",
+      "git_blob_sha1": "fb1e0028ed459ead4052ac1a2086e64ff3b31a7d",
+      "bytes": 920536,
+      "sha256": "94d3746c39983108ac6103b90c0a4932decb96d6e8cc8a619dc1ef7551312dc6"
+    },
+    {
+      "path": "bin/arm-linux-androideabi-objdump",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/bin/arm-linux-androideabi-objdump?format=TEXT",
+      "mode": "0o100755",
+      "git_blob_sha1": "dc79dd1016717cb5fbcb6a47b14762ce4154c798",
+      "bytes": 1164760,
+      "sha256": "41c43e1add5d7bd673052c049821081df25bbce3c3df16af2b3948b9794dd51e"
+    },
+    {
+      "path": "bin/arm-linux-androideabi-ranlib",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/bin/arm-linux-androideabi-ranlib?format=TEXT",
+      "mode": "0o100755",
+      "git_blob_sha1": "12f2c2fa521961e097bf744b1e384a538e8d4c52",
+      "bytes": 763136,
+      "sha256": "43c00e004fa3ea02aa3455dad701e099e5805b18d51dfd3cb3ae7fb8f9b408e2"
+    },
+    {
+      "path": "bin/arm-linux-androideabi-readelf",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/bin/arm-linux-androideabi-readelf?format=TEXT",
+      "mode": "0o100755",
+      "git_blob_sha1": "1aa9f8e6f4acf4af6ed873a302e81db36f1e429d",
+      "bytes": 441976,
+      "sha256": "c3d8566de0115e0cc7d390c6d9b51fa732535406c05e2d380b4df93e2657b1df"
+    },
+    {
+      "path": "bin/arm-linux-androideabi-strip",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/bin/arm-linux-androideabi-strip?format=TEXT",
+      "mode": "0o100755",
+      "git_blob_sha1": "0ac9be06c2ea67d56752b4ea1a2eca9e35e749c0",
+      "bytes": 920568,
+      "sha256": "9f00ec7556e098cd42278138ac04afb06ae22c0b3778ada38df8ff91c081f821"
+    },
+    {
+      "path": "arm-linux-androideabi/bin/ar",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/arm-linux-androideabi/bin/ar?format=TEXT",
+      "mode": "0o120000",
+      "git_blob_sha1": "8c48646c2844b896f48a425d4d8e6dd18ca64c4e",
+      "bytes": 34,
+      "sha256": "c2b7ecebc9835487a3b4882de6e45433a17698669e7b944d331542ab6af92b62",
+      "target": "../../bin/arm-linux-androideabi-ar"
+    },
+    {
+      "path": "arm-linux-androideabi/bin/as",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/arm-linux-androideabi/bin/as?format=TEXT",
+      "mode": "0o120000",
+      "git_blob_sha1": "5378e97693c7d206bc46c286645162cc9417f2ce",
+      "bytes": 34,
+      "sha256": "ecfd270f6b7c5f5e9458d5e45eff0edf0e2f00f039c4b5361edb7771c1a56fea",
+      "target": "../../bin/arm-linux-androideabi-as"
+    },
+    {
+      "path": "arm-linux-androideabi/bin/ld",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/arm-linux-androideabi/bin/ld?format=TEXT",
+      "mode": "0o120000",
+      "git_blob_sha1": "dddda831bfd92b60be9206cc772b842234b74e45",
+      "bytes": 34,
+      "sha256": "ba3bbdd4cb5f837cebb625c250b493ef4becf5d633d40d888e95fd9a198f69ad",
+      "target": "../../bin/arm-linux-androideabi-ld"
+    },
+    {
+      "path": "arm-linux-androideabi/bin/ld.bfd",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/arm-linux-androideabi/bin/ld.bfd?format=TEXT",
+      "mode": "0o120000",
+      "git_blob_sha1": "57728a0589141cf80c7249e5566fed639a850217",
+      "bytes": 38,
+      "sha256": "d0e66b3d6ccf4c890966e10a853853d3003e88b8145fb27efe6286ca0f0b6f26",
+      "target": "../../bin/arm-linux-androideabi-ld.bfd"
+    },
+    {
+      "path": "arm-linux-androideabi/bin/ld.gold",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/arm-linux-androideabi/bin/ld.gold?format=TEXT",
+      "mode": "0o120000",
+      "git_blob_sha1": "266c47251ca2db313f874b4010ff4c2be2eab0a4",
+      "bytes": 39,
+      "sha256": "e8015f78b6a6a881e557013dc5aece34ad98be976cc974c6348f7e4495dc828c",
+      "target": "../../bin/arm-linux-androideabi-ld.gold"
+    },
+    {
+      "path": "arm-linux-androideabi/bin/nm",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/arm-linux-androideabi/bin/nm?format=TEXT",
+      "mode": "0o120000",
+      "git_blob_sha1": "03e24b649fdcd71ef1c89f837c9aaa70fb5af7a2",
+      "bytes": 34,
+      "sha256": "cf5a710c7245ed02056c8b087b1b3cbd76ecf9b1da5396351e00593283db3fb6",
+      "target": "../../bin/arm-linux-androideabi-nm"
+    },
+    {
+      "path": "arm-linux-androideabi/bin/objcopy",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/arm-linux-androideabi/bin/objcopy?format=TEXT",
+      "mode": "0o120000",
+      "git_blob_sha1": "2ec109ffe999aab49b38e1bc999b8a1dcc58bef8",
+      "bytes": 39,
+      "sha256": "a86d8c058f390dfb5d1fceec1d629f89ca4f69496b31d5a5092d58f161150bcf",
+      "target": "../../bin/arm-linux-androideabi-objcopy"
+    },
+    {
+      "path": "arm-linux-androideabi/bin/objdump",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/arm-linux-androideabi/bin/objdump?format=TEXT",
+      "mode": "0o120000",
+      "git_blob_sha1": "230368021cc3e49f449f4410696c53c674e07f29",
+      "bytes": 39,
+      "sha256": "3015a23001c3fe50cf7985545b56ebc537d47e13274c456bc47fb46fab255836",
+      "target": "../../bin/arm-linux-androideabi-objdump"
+    },
+    {
+      "path": "arm-linux-androideabi/bin/ranlib",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/arm-linux-androideabi/bin/ranlib?format=TEXT",
+      "mode": "0o120000",
+      "git_blob_sha1": "7cf5d4f3eea1bf94f0389492d5d95ce1822ae492",
+      "bytes": 38,
+      "sha256": "c22f31c26df0be39d509e2291e4b4d6d5c4538714b20a6f1be0fdcff124522aa",
+      "target": "../../bin/arm-linux-androideabi-ranlib"
+    },
+    {
+      "path": "arm-linux-androideabi/bin/strip",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/arm-linux-androideabi/bin/strip?format=TEXT",
+      "mode": "0o120000",
+      "git_blob_sha1": "3daf7a6bce22f24d237cccf0335c530fc801fe08",
+      "bytes": 37,
+      "sha256": "3cc182750054b565a2b8b2aff71ae8692f4710587d7ba564edd8f58ffe7f80bf",
+      "target": "../../bin/arm-linux-androideabi-strip"
+    },
+    {
+      "path": "libexec/gcc/arm-linux-androideabi/4.9/cc1",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/libexec/gcc/arm-linux-androideabi/4.9/cc1?format=TEXT",
+      "mode": "0o100755",
+      "git_blob_sha1": "79316eac535354a51d8cb1905037dc73d932de2f",
+      "bytes": 16369800,
+      "sha256": "97e605afc1d527d54cf2a7be2866360860758641141a86e5bb2fb186f05cf7de"
+    },
+    {
+      "path": "libexec/gcc/arm-linux-androideabi/4.9/cc1plus",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/libexec/gcc/arm-linux-androideabi/4.9/cc1plus?format=TEXT",
+      "mode": "0o100755",
+      "git_blob_sha1": "624f1442010803b420e76fa107b26ac36466045b",
+      "bytes": 17504440,
+      "sha256": "fa425166a1eaaf29be2262aededef6e9c3fea9a5b7ec9e7b05a5366ee3040acd"
+    },
+    {
+      "path": "libexec/gcc/arm-linux-androideabi/4.9/collect2",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/libexec/gcc/arm-linux-androideabi/4.9/collect2?format=TEXT",
+      "mode": "0o100755",
+      "git_blob_sha1": "672165002c031bddff7e43b9d95a5efcc3cb37e7",
+      "bytes": 442632,
+      "sha256": "6906c331c2530108640ffddc3df0758a05c8a9567931bbdc931b31590dee0eb2"
+    },
+    {
+      "path": "libexec/gcc/arm-linux-androideabi/4.9/liblto_plugin.so",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/libexec/gcc/arm-linux-androideabi/4.9/liblto_plugin.so?format=TEXT",
+      "mode": "0o120000",
+      "git_blob_sha1": "f25ba88987bba39bc355c18aaff6b7db8738ee5d",
+      "bytes": 22,
+      "sha256": "f43f7905ee90fa995ab2a95f3ace2069051fc09bb8a33502fd47270f77c8adb4",
+      "target": "liblto_plugin.so.0.0.0"
+    },
+    {
+      "path": "libexec/gcc/arm-linux-androideabi/4.9/liblto_plugin.so.0",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/libexec/gcc/arm-linux-androideabi/4.9/liblto_plugin.so.0?format=TEXT",
+      "mode": "0o120000",
+      "git_blob_sha1": "f25ba88987bba39bc355c18aaff6b7db8738ee5d",
+      "bytes": 22,
+      "sha256": "f43f7905ee90fa995ab2a95f3ace2069051fc09bb8a33502fd47270f77c8adb4",
+      "target": "liblto_plugin.so.0.0.0"
+    },
+    {
+      "path": "libexec/gcc/arm-linux-androideabi/4.9/liblto_plugin.so.0.0.0",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/libexec/gcc/arm-linux-androideabi/4.9/liblto_plugin.so.0.0.0?format=TEXT",
+      "mode": "0o100755",
+      "git_blob_sha1": "94b74eb27fecae67b376c47bbd67b1b1d1b836e1",
+      "bytes": 87712,
+      "sha256": "501e678372e57696e1149cc70d5f816722065505492d39731c19f3c2a91d7582"
+    },
+    {
+      "path": "libexec/gcc/arm-linux-androideabi/4.9/lto-wrapper",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/libexec/gcc/arm-linux-androideabi/4.9/lto-wrapper?format=TEXT",
+      "mode": "0o100755",
+      "git_blob_sha1": "4885553b23bca86462639bc910640346b9a23599",
+      "bytes": 639144,
+      "sha256": "7e6b016d3e7b2dbd366e3f75c5bceacb72766e9da731f8fd9083b0f2795b367d"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/include/arm_acle.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/include/arm_acle.h?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "aaa7affeeb71f41ea2a5a6f7f7beff5040e48f94",
+      "bytes": 2721,
+      "sha256": "24177d5c23aed55a1e50c3ffa9c3285602977951185d93d3963da66ba3efd5e7"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/include/arm_neon.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/include/arm_neon.h?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "95735433df73f46b6877f035850e95d785414abd",
+      "bytes": 455197,
+      "sha256": "a80f6a840409d8eac32d01a10cb2925acec77408cfd69e36b3bc2bed4f011037"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/include/float.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/include/float.h?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "a8e05bfcdf71dfbe850c28d7ce273bd2f34922b9",
+      "bytes": 8877,
+      "sha256": "a5d35c990915d6dbf809f5cde327c8061ae314ff7f86d5feb6225a6164376d6e"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/include/iso646.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/include/iso646.h?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "89bc8f4f311ad1ccd3b234f560739f1fbffbb335",
+      "bytes": 1272,
+      "sha256": "8d1aec0ed141b9b6c18b3c581e0926bfb2f39e75f2e445c39f5919f0f926add8"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/include/mmintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/include/mmintrin.h?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "b906faca447e63226342edea26236b2a8e6bc282",
+      "bytes": 48219,
+      "sha256": "ac33f85b51efcc4205171f33bb474b66e4350a56cfb10c761968cbd26ac34bc1"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/include/omp.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/include/omp.h?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "b1824b5481faed99ffc57ed6b01921bb99e51dfc",
+      "bytes": 4327,
+      "sha256": "a56788f412d8f71e806dc0c7fe4b63782da74e3e57467e42bdc44d91b5d84a9c"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/include/stdalign.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/include/stdalign.h?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "ee2d81fd817271c5bbbbfd1c592306d27fd916bf",
+      "bytes": 1210,
+      "sha256": "12ca61265b75700a721fcf3da684def693f11f310f8f026bba37b4ac670735f0"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/include/stdarg.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/include/stdarg.h?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "1d4418b019cca744df855ecb96a35dc30c6083e9",
+      "bytes": 4075,
+      "sha256": "ce02d3f9d61edffc29d16bbfb6c9e0167c62e07cb68fe16176c30931ac196901"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/include/stdatomic.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/include/stdatomic.h?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "108259b4eaba779d19740557609bbbabfe0af242",
+      "bytes": 9197,
+      "sha256": "d1c80b77fc59808e852d5c246d45564da07fd25177de295b72ea3a19858a3cff"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/include/stdbool.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/include/stdbool.h?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "f4e802fe4d62e611614d0eef6832345086c5388d",
+      "bytes": 1438,
+      "sha256": "202406d4c03a4b168e2dc4acaeb31a63af6d307072bf63c71e2e6c1bedb4f7e5"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/include/stddef.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/include/stddef.h?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "cfa8df3097c12fce3c59e72ba89c8f8bbde329db",
+      "bytes": 13619,
+      "sha256": "d77410611d028424c15bc554aa8d839d1abedb415aceb674942d9d5375090978"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/include/stdfix.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/include/stdfix.h?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "93e759ab21072d1c23b3939fd5b7885e7a21af10",
+      "bytes": 6000,
+      "sha256": "c974394406fdbd5da54d1566e5794480107f4c0d880903c8a245c795cc1640b8"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/include/stdint-gcc.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/include/stdint-gcc.h?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "1470cead5e160c059fc0918e3835873ead94fb76",
+      "bytes": 7029,
+      "sha256": "4dadc3762cc9f6fbd6ca19f1024818bd58f4719f4ea8b81b71a255bdff926fae"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/include/stdint.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/include/stdint.h?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "83b6f70c83795dca60b1a6355fbc643af81637d1",
+      "bytes": 328,
+      "sha256": "86a7914ab7d6a18465a6fb9a7b54f945cad604fdbf3ca0d10e4e0254e0037911"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/include/stdnoreturn.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/include/stdnoreturn.h?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "0134137646a879889c699c3007132b57dc35cbf7",
+      "bytes": 1136,
+      "sha256": "eed4e9d93d306cc0daf2a59c27f9fcc8a9a857dbe7227fcaf3d2f2e8cd17d849"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/include/unwind-arm-common.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/include/unwind-arm-common.h?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "65b50bce728831dc4e1da1fe7ae4b942cb0d847e",
+      "bytes": 8196,
+      "sha256": "ed5cfae416c063c76e6d3bb91139e00d99a24d5b8603b5bf399ea353588518d1"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/include/unwind.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/include/unwind.h?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "782d1753d287300daa95cd4f6c0a72ee3020282b",
+      "bytes": 2923,
+      "sha256": "2b37fc3f78c3b0e5edfce9bf285dc3c6baf6a68ef66a343b2168f2f3d5c38ea7"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/include/varargs.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/include/varargs.h?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "4b9803e71ac664e5ca43c8b2f20c7de2e49f5bdc",
+      "bytes": 139,
+      "sha256": "f9acb21973be5764aa2fd689c941ad963c1ecdd133f3a6529f279803135f8268"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/include-fixed/README",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/include-fixed/README?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "7086a7782d4acb74a13ac20a6d17dd7d517ec2d1",
+      "bytes": 750,
+      "sha256": "32baa94efdf4fb418c20321f14a1b66982a6cd3c2b5bc8fbfbe438f687c528d6"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/include-fixed/limits.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/include-fixed/limits.h?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "8c6a4d370a5ceb08ccdfdb8a668e0ebb0e67ea93",
+      "bytes": 5382,
+      "sha256": "36acd34f494508d20ff100b7b0dc35e9af92f5ef214391c52f1ee07f3e267d1f"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/include-fixed/linux/a.out.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/include-fixed/linux/a.out.h?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "5c848411af87290bc837ab4e949b34f2dc9cdc5c",
+      "bytes": 4801,
+      "sha256": "16665e0b56b824fb19f6ff07e956d7f237f43e9034c3e3c79f55e18677e5ce10"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/include-fixed/syslimits.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/include-fixed/syslimits.h?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "a3628025e8a16ffb6670225cf696f0e956f2fab4",
+      "bytes": 330,
+      "sha256": "22dd0ab81baadd5a8d455b445855f341d419c7b0267beca235de00b7ec78e529"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/libgcc.a",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/libgcc.a?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "44e53825be8e9f1d203c62efc65f8c5924c8efd3",
+      "bytes": 6356034,
+      "sha256": "d41c1a90a943bcf4d0e037311fae3c25644cc4762550e815949f80447c217ea9"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/thumb/libgcc.a",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/thumb/libgcc.a?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "3eae11fb78d85f2756cc7a725260317cba5950cd",
+      "bytes": 6369434,
+      "sha256": "6b8ff7eac927b30bc9151564ddd99db2e7cfc667f93abc4ab86e5d2a07278c19"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/armv7-a/libgcc.a",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/armv7-a/libgcc.a?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "01edc575958103f02cd8596d94b81ff20167eb66",
+      "bytes": 6375606,
+      "sha256": "3011510c8b3078f9f39ba6ba87afa5422c9c605fc0e75f39f6352bd94718ab17"
+    },
+    {
+      "path": "lib/gcc/arm-linux-androideabi/4.9/armv7-a/thumb/libgcc.a",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/lib/gcc/arm-linux-androideabi/4.9/armv7-a/thumb/libgcc.a?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "7a2be55ea8f539ad8eec23f0c2199fa1100bc575",
+      "bytes": 6376696,
+      "sha256": "db007b83081aa7d189f2b1d16d2bac4d0ae4bdcdd90b9d3f0be03eb03fb7a1ad"
+    },
+    {
+      "path": "arm-linux-androideabi/lib/libatomic.a",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/arm-linux-androideabi/lib/libatomic.a?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "216b9c51b0dbf21e41e475ba2c82fc15e5867c8c",
+      "bytes": 488468,
+      "sha256": "3dbf19f46d6a6bb9feafe72e1b12a4b2ad12a381bf92a489bd513937c873ac5b"
+    },
+    {
+      "path": "arm-linux-androideabi/lib/thumb/libatomic.a",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/arm-linux-androideabi/lib/thumb/libatomic.a?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "8fdd45b81b7006e418d6f0c8be11697a99fcaaa4",
+      "bytes": 490512,
+      "sha256": "2f00837668cc9a58f9d4d07cf76fd832955e61093a363cfe09e2c6aa5f576258"
+    },
+    {
+      "path": "arm-linux-androideabi/lib/armv7-a/libatomic.a",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/arm-linux-androideabi/lib/armv7-a/libatomic.a?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "a9e58fbeaba34f1cbaa51c77be089a6547f0ab53",
+      "bytes": 402124,
+      "sha256": "f5016051e23a5585ee230ad6a9861fcb043627aaf8eb2693437010d383b9a556"
+    },
+    {
+      "path": "arm-linux-androideabi/lib/armv7-a/thumb/libatomic.a",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/arm-linux-androideabi/lib/armv7-a/thumb/libatomic.a?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "6ab707c3062def7ad3307a63ee22215aa82a25b1",
+      "bytes": 399776,
+      "sha256": "2eb1dcbe97456dc9c62c37d0464e6b8072084e07d270f7718b5a34b86211cc45"
+    },
+    {
+      "path": "COPYING",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/COPYING?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "623b6258a134210f0b0ada106fdaab7f0370d9c5",
+      "bytes": 18002,
+      "sha256": "231f7edcc7352d7734a96eef0b8030f77982678c516876fcb81e25b32d68564c"
+    },
+    {
+      "path": "COPYING.LIB",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/COPYING.LIB?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "2d2d780e6014b850ca3b8437452e24eba5f96508",
+      "bytes": 26527,
+      "sha256": "a9bdde5616ecdd1e980b44f360600ee8783b1f99b8cc83a2beb163a0a390e861"
+    },
+    {
+      "path": "COPYING.RUNTIME",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/COPYING.RUNTIME?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "e1b3c69c179dfaff5744ea4bf853e6b0d90c9ef9",
+      "bytes": 3324,
+      "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74"
+    },
+    {
+      "path": "COPYING3",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/COPYING3?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "94a9ed024d3859793618152ea559a168bbcbb5e2",
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "COPYING3.LIB",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/COPYING3.LIB?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "fc8a5de7edf437cdc98a216370faf7c757279bcb",
+      "bytes": 7639,
+      "sha256": "a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c"
+    },
+    {
+      "path": "MODULE_LICENSE_GPL",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/MODULE_LICENSE_GPL?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "NOTICE",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/NOTICE?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "623b6258a134210f0b0ada106fdaab7f0370d9c5",
+      "bytes": 18002,
+      "sha256": "231f7edcc7352d7734a96eef0b8030f77982678c516876fcb81e25b32d68564c"
+    },
+    {
+      "path": "repo.prop",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+/0390252b6bcc6217966ade31d07f8b12f6f78f89/repo.prop?format=TEXT",
+      "mode": "0o100644",
+      "git_blob_sha1": "31892d4e3f8971ae2436e32dab0885215d59e117",
+      "bytes": 1092,
+      "sha256": "ad197d0187bd34aac586ca4ec6d4af7443aca61a813b11e8634da7fcb490f528"
+    }
+  ],
+  "decoded_total_bytes": 78309788,
+  "system_packages_changed": false
+}

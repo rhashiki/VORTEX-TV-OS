@@ -1,0 +1,16 @@
+{
+  "repository": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9",
+  "revision": "0390252b6bcc6217966ade31d07f8b12f6f78f89",
+  "tag": "android-7.1.2_r6",
+  "gcc_versions": {
+    "id": "579934f8d40dd379a9fa626914a6a8db9ecae8da",
+    "entries": [
+      {
+        "mode": 16384,
+        "type": "tree",
+        "id": "65eeea24a81abf18d21e81170a3c0259b2bec826",
+        "name": "4.9"
+      }
+    ]
+  }
+}

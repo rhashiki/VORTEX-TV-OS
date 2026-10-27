@@ -1,0 +1,19 @@
+{
+  "scope": "evidence_and_local_artifacts_only",
+  "checks": {
+    "native_manifest_files": 199,
+    "product_input_audit": "product_inputs_only",
+    "stock_lists_byte_identical": 3,
+    "replayed_files": 1615,
+    "regression_tests_without_skips": 130,
+    "auditor_reviewed_bytes": true,
+    "local_final_hal_artifacts": 2,
+    "profile_matches_examined_tree": true,
+    "app_unchanged": true,
+    "git_diff_check": "pass",
+    "new_file_local_links": "pass"
+  },
+  "status": "pass",
+  "rom_build_validation": "not_performed",
+  "physical_boot_validation": "not_performed"
+}

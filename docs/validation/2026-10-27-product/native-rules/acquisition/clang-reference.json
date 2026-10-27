@@ -1,0 +1,39 @@
+{
+  "repository": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
+  "revision": "45562a53b2a5eb7c6e8f400413d19a12c660d7b1",
+  "tree": {
+    "id": "542dfa5ec53325a12383e9ea8e46cab3a5f7738c",
+    "entries": [
+      {
+        "mode": 16384,
+        "type": "tree",
+        "id": "ac233c4232573ca4bc2b86710f68812f467623c6",
+        "name": "3.8"
+      },
+      {
+        "mode": 33188,
+        "type": "blob",
+        "id": "125edbee98aae06948eb372077e9385fd125aa08",
+        "name": "Android.mk"
+      },
+      {
+        "mode": 16384,
+        "type": "tree",
+        "id": "3426de542491b9889d7ef99c9d06efce2ce91330",
+        "name": "clang-2629532"
+      },
+      {
+        "mode": 16384,
+        "type": "tree",
+        "id": "993d524ba8732f7b9524f8766307d0b97aa47831",
+        "name": "clang-2658975"
+      },
+      {
+        "mode": 16384,
+        "type": "tree",
+        "id": "fe1f40b915dc5610953bf0557011e040076f1454",
+        "name": "clang-2690385"
+      }
+    ]
+  }
+}

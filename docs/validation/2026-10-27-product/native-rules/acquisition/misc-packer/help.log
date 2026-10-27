@@ -1,0 +1,10 @@
+Usage: relocation_packer [-u] [-v] [-p] file
+
+Pack or unpack relative relocations in a shared library.
+
+  -u, --unpack   unpack previously packed relative relocations
+  -v, --verbose  trace object file modifications (for debugging)
+  -p, --pad      do not shrink relocations, but pad (for debugging)
+
+Debug sections are not handled, so packing should not be used on
+shared libraries compiled for debugging or otherwise unstripped.

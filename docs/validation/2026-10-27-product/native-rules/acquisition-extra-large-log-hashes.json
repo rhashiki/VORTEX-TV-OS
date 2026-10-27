@@ -1,0 +1,14 @@
+[
+  {
+    "path": "/workspace/build01-product-next/native-rules/acquisition/android-gcc-runtime/libgcc-archive-attributes.log",
+    "bytes": 2803110,
+    "sha256": "332d5791674275f5888c582fafd41e1d3638491c5a4697245c477be6b86f9005",
+    "reason": "Verbose per-member attribute listing retained locally, excluded from compact text stage; summary/readiness and real file provenance retained."
+  },
+  {
+    "path": "/workspace/build01-product-next/native-rules/acquisition/android-gcc-runtime/libatomic-archive-attributes.log",
+    "bytes": 170971,
+    "sha256": "2ce2bbbecddf5fb447d09698bf625aa5048dc9a92e00cbf1b82d79c128f74566",
+    "reason": "Verbose per-member attribute listing retained locally, excluded from compact text stage; summary/readiness and real file provenance retained."
+  }
+]

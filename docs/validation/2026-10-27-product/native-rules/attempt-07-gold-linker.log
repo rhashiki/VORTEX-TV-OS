@@ -1,0 +1,76 @@
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=gralloc.rk30board hwcomposer.rk30board
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-product-next/native-rules/out
+============================================
+TAPAS_STATUS=0
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=gralloc.rk30board hwcomposer.rk30board
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-product-next/native-rules/out
+============================================
+Generated version.h
+Generated version.h
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc++.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc++.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc++.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libdl.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libdl.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc++.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libdl.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libdl.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libm.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libm.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc++.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libm.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libdl.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libm.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libm.so dependency dropped.
+target thumb C++: gralloc.rk30board <= hardware/rockchip/libgralloc/rockchip_alloc_device.cpp
+Install: /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc.so
+target thumb C++: hwcomposer.rk30board <= hardware/rockchip/hwcomposer/rk_hwcomposer.cpp
+Install: /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libEGL.so
+Install: /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libhardware_legacy.so
+Install: /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libsync.so
+Install: /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libui.so
+target SharedLib: gralloc.rk30board (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/LINKED/gralloc.rk30board.so)
+/workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/../../../../arm-linux-gnueabihf/bin/ld.gold: error: /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivmoddi4.o) uses VFP register arguments, output does not
+collect2: error: ld returned 1 exit status
+make: *** [build/core/shared_library_internal.mk:81: /workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/LINKED/gralloc.rk30board.so] Error 1
+make: *** Waiting for unfinished jobs....
+
+#### make failed to build some targets (2 seconds) ####
+

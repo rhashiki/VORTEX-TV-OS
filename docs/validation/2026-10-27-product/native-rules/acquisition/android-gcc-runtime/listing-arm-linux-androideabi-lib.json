@@ -1,0 +1,41 @@
+{
+  "id": "dd801744b93fe25b9ca38d33932a05e92199fa7e",
+  "entries": [
+    {
+      "mode": 16384,
+      "type": "tree",
+      "id": "ba717805621746411046d60751b07bb6e3d61324",
+      "name": "armv7-a"
+    },
+    {
+      "mode": 16384,
+      "type": "tree",
+      "id": "8ad5f64a7197369f84caab9051f8e777584c1938",
+      "name": "ldscripts"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "216b9c51b0dbf21e41e475ba2c82fc15e5867c8c",
+      "name": "libatomic.a"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "7e491a1dfa46595c06057c9682f148f25ccfd138",
+      "name": "libgomp.a"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "2fd7721059629fd64b313f66d84b0530ca6eb8ec",
+      "name": "libgomp.spec"
+    },
+    {
+      "mode": 16384,
+      "type": "tree",
+      "id": "4ca6e4fbed56f9f6cff104d81d916002a806ac2b",
+      "name": "thumb"
+    }
+  ]
+}

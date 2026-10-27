@@ -1,0 +1,34 @@
+{
+  "scope": "read_only_independent_auditor_contract_review",
+  "conclusion": "no_additional_material_findings_after_focused_fixes",
+  "rechecked": [
+    "entity-decoded GOOGLE_BUILD XML attribute",
+    "UTF-16 GOOGLE_BUILD XML attribute",
+    "source bt.hcd renamed neutral.bin",
+    "source GmsCore.apk renamed Neutral.apk",
+    "source libbt-vendor.so renamed neutral.so",
+    "unknown XML encoding rejected without uncaught LookupError"
+  ],
+  "all_five_previously_accepted_examples_now_rejected": true,
+  "limits": [
+    "This review is of the list auditor only; it does not prove complete package allowlisting, BSP module closure, image boot, hardware compatibility or storage preservation."
+  ],
+  "reviewed_files": {
+    "tools/audit_product_inputs.py": {
+      "size_bytes": 15766,
+      "sha256": "d257a32932e32cb053ba8bd50ff675729cdc2a2ad16ad866bbe8df23e713c3c9"
+    },
+    "tests/test_product_inputs.py": {
+      "size_bytes": 15529,
+      "sha256": "3729027c1d878e16a1fb8f5e65a96c9f060e6f83069b61b91936f36420ecbb75"
+    },
+    "fixture-tests.log": {
+      "size_bytes": 5139,
+      "sha256": "2bbef4e1d0f7f6fd0f600c5f9818a3eabaedb13c4805e6bd45678cb2dfbd038c"
+    },
+    "product-input-audit.json": {
+      "size_bytes": 30613,
+      "sha256": "21a48be56571dd949cee44b3adc33be72033b4d5e5a8be42947ff10cc9d2d1fb"
+    }
+  }
+}

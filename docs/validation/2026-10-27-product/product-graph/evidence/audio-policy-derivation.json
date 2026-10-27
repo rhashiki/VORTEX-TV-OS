@@ -1,0 +1,7 @@
+{
+  "source_revision": "f33a129bfab6d9cc87184ee3bf032224801fa446",
+  "original_sha256": "a6a7890b1069f8d03e95c5e29fe15c87e31f450f2460bdcc192b8f96b41d5436",
+  "derived_sha256": "7ae47c4936c37c5f702b8ce75e038a7a9d6eef7a5f328e1b15551b95af82b4d0",
+  "removed": "a2dp module and two SCO device tokens only; comments added, other routes preserved.",
+  "hardware_validation": "not_performed"
+}

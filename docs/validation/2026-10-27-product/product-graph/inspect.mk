@@ -1,0 +1,31 @@
+# Diagnostic prelude only: genuine Rockchip product rules below.
+empty :=
+space := $(empty) $(empty)
+comma := ,
+define newline
+
+
+endef
+BUILD_SYSTEM := build/core
+SRC_TARGET_DIR := build/target
+OUT_DIR := out
+HOST_OS := linux
+HOST_BUILD_TYPE := release
+TARGET_BUILD_VARIANT := eng
+TARGET_COPY_OUT_VENDOR := system/vendor
+TARGET_COPY_OUT_SYSTEM := system
+USE_SOONG := false
+include $(BUILD_SYSTEM)/combo/HOST_linux-x86.mk
+include $(BUILD_SYSTEM)/definitions.mk
+include $(BUILD_SYSTEM)/product_config.mk
+ifeq ($(VORTEX_INSPECT_BOARD),true)
+include device/vortex/rk322x_sd_box/BoardConfig.mk
+endif
+$(file >out/packages.list,$(subst $(space),$(newline),$(strip $(PRODUCTS.$(INTERNAL_PRODUCT).PRODUCT_PACKAGES))))
+$(file >out/copy-files.list,$(subst $(space),$(newline),$(strip $(PRODUCT_COPY_FILES))))
+$(file >out/properties.list,$(subst $(space),$(newline),$(strip $(PRODUCT_PROPERTY_OVERRIDES))))
+$(file >out/config-values.list,$(foreach k,TARGET_PRODUCT TARGET_DEVICE TARGET_BOARD_PLATFORM TARGET_BOARD_PLATFORM_GPU TARGET_BOARD_HARDWARE TARGET_ARCH TARGET_ARCH_VARIANT TARGET_CPU_VARIANT TARGET_BOARD_PLATFORM_PRODUCT TARGET_NO_RECOVERY TARGET_RELEASETOOLS_EXTENSIONS TARGET_ROCHCHIP_RECOVERY TARGET_ROCKCHIP_PCBATEST RECOVERY_AUTO_USB_UPDATE ENABLE_KEYBOX_PROVISION BLUETOOTH_USE_BPLUS BOARD_HAVE_BLUETOOTH_BCM BOARD_HAVE_BLUETOOTH BUILD_WITH_DRMSERVICE BOARD_CONNECTIVITY_VENDOR BOARD_CONNECTIVITY_MODULE BOARD_WLAN_DEVICE BOARD_WPA_SUPPLICANT_PRIVATE_LIB BOARD_HOSTAPD_PRIVATE_LIB WIFI_DRIVER_FW_PATH_PARAM WIFI_DRIVER_FW_PATH_STA WIFI_DRIVER_FW_PATH_P2P WIFI_DRIVER_FW_PATH_AP BUILD_WITH_GOOGLE_MARKET BUILD_BOX_WITH_GOOGLE_MARKET BUILD_WITH_GOOGLE_MARKET_ALL BUILD_WITH_GOOGLE_FRP,$(k)=$(strip $($(k)))$(newline)))
+$(file >out/overlays.list,$(subst $(space),$(newline),$(strip $(PRODUCT_PACKAGE_OVERLAYS))))
+$(info PRODUCT=$(TARGET_PRODUCT) DEVICE=$(TARGET_DEVICE) INTERNAL=$(INTERNAL_PRODUCT))
+.PHONY: inspect
+inspect:

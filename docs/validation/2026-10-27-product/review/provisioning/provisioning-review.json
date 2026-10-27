@@ -1,0 +1,50 @@
+{
+  "scope": "Pinned source/resource correspondence only; no SettingsProvider APK build or first-boot runtime validation.",
+  "revision": "edd171fec429b9d51d9cb2da961a673ec51fcc4d",
+  "overlay_path": "overlay/frameworks/base/packages/SettingsProvider/res/values/defaults.xml",
+  "product_setting": "PRODUCT_PACKAGE_OVERLAYS += device/vortex/rk322x_sd_box/overlay",
+  "source_checks": [
+    {
+      "name": "def_device_provisioned",
+      "base_type": "bool",
+      "base_value": "false",
+      "override_value": "true"
+    },
+    {
+      "name": "def_user_setup_complete",
+      "base_type": "bool",
+      "base_value": "false",
+      "override_value": "true"
+    }
+  ],
+  "readers": [
+    {
+      "path": "packages/SettingsProvider/src/com/android/providers/settings/DatabaseHelper.java",
+      "line": 2519,
+      "setting": "Settings.Secure.USER_SETUP_COMPLETE",
+      "resource": "R.bool.def_user_setup_complete"
+    },
+    {
+      "path": "packages/SettingsProvider/src/com/android/providers/settings/DatabaseHelper.java",
+      "line": 2622,
+      "setting": "Settings.Global.DEVICE_PROVISIONED",
+      "resource": "R.bool.def_device_provisioned"
+    },
+    {
+      "path": "packages/SettingsProvider/src/com/android/providers/settings/DatabaseHelper.java",
+      "line": 2743,
+      "fact": "loadBooleanSetting reads the resource and stores string 1 for true."
+    },
+    {
+      "path": "packages/SettingsProvider/src/com/android/providers/settings/SettingsProvider.java",
+      "line": 1838,
+      "fact": "When settings XML is absent, SettingsRegistry creates DatabaseHelper and migrates actual secure/global defaults."
+    }
+  ],
+  "overlay_sha256": "168e6e0134d369bceff1d60f0994821dc7f45e091a281aac88bb75738dabcc1e",
+  "limitations": [
+    "Only new settings database defaults change; existing configured data is not overwritten.",
+    "No real Android image was compiled or booted to validate these defaults.",
+    "This skips a setup wizard for the dedicated test product; it does not approve storage, permissions, USB or graphics bring-up."
+  ]
+}

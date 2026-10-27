@@ -1,0 +1,23 @@
+{
+  "id": "4ca6e4fbed56f9f6cff104d81d916002a806ac2b",
+  "entries": [
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "8fdd45b81b7006e418d6f0c8be11697a99fcaaa4",
+      "name": "libatomic.a"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "29190d0c0f26f6e8885528064a4bd0cb08d8c547",
+      "name": "libgomp.a"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "2fd7721059629fd64b313f66d84b0530ca6eb8ec",
+      "name": "libgomp.spec"
+    }
+  ]
+}

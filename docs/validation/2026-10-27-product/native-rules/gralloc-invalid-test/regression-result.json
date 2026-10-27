@@ -1,0 +1,79 @@
+{
+  "scope": "Host-only function-boundary regression executing the exact extracted alloc_device_alloc function with recording allocation/log/type fixtures. No real Android HAL loading, GPU, allocation, rendering, or physical-board validation. Stub/type shape differs from full Android ABI and size_t is host-native.",
+  "constants": {
+    "HAL_PIXEL_FORMAT_IMPLEMENTATION_DEFINED": 34,
+    "HAL_PIXEL_FORMAT_YCrCb_420_SP": 17,
+    "HAL_PIXEL_FORMAT_YV12": 842094169,
+    "HAL_PIXEL_FORMAT_YCrCb_NV12": 21,
+    "HAL_PIXEL_FORMAT_YCrCb_NV12_10": 23,
+    "HAL_PIXEL_FORMAT_YCrCb_NV12_VIDEO": 22,
+    "HAL_PIXEL_FORMAT_YCbCr_420_888": 35,
+    "HAL_PIXEL_FORMAT_RGBA_8888": 1,
+    "HAL_PIXEL_FORMAT_RGBX_8888": 2,
+    "HAL_PIXEL_FORMAT_BGRA_8888": 5,
+    "HAL_PIXEL_FORMAT_RGB_888": 3,
+    "HAL_PIXEL_FORMAT_RGB_565": 4,
+    "GRALLOC_USAGE_HW_VIDEO_ENCODER": 65536,
+    "GRALLOC_USAGE_HW_FB": 4096,
+    "GRALLOC_USAGE_EXTERNAL_DISP": 8192,
+    "GRALLOC_USAGE_PRIVATE_0": 268435456,
+    "GRALLOC_USAGE_PRIVATE_1": 536870912
+  },
+  "header_sources": [
+    {
+      "path": "/workspace/build01-product-next/native-rules/tree/system/core/include/system/graphics.h",
+      "sha256": "1b0d79d456bc989a6c0f0731c626c09c52f669012c2d2f3babfdccd8360b77cf"
+    },
+    {
+      "path": "/workspace/build01-product-next/native-rules/tree/hardware/libhardware/include/hardware/gralloc.h",
+      "sha256": "45b294f8582272d41d04e84459f5ac47e7955658bdf494109c2b66d05842ae68"
+    }
+  ],
+  "checks": [
+    {
+      "label": "baseline",
+      "source": "/workspace/build01-product-next/native-rules/source-copies-attempt01/libgralloc/alloc_device.cpp",
+      "source_sha256": "ad2427dbb90c69069de886a0eee62ebcf6b10d48a1ac8f8088652174ccca3185",
+      "extracted_function_sha256": "d15a393480eac40421f08c0794ccd3550ee7df91f4fa59ac2a40d19a54208934",
+      "compile_command": [
+        "g++",
+        "-std=c++11",
+        "-O0",
+        "-Wall",
+        "-Wextra",
+        "/workspace/build01-product-next/native-rules/gralloc-invalid-test/baseline-harness.cpp",
+        "-o",
+        "/workspace/build01-product-next/native-rules/gralloc-invalid-test/baseline-test"
+      ],
+      "exit_code": 1,
+      "passed": 11,
+      "failed": 3,
+      "expected_result_met": true,
+      "runtime_log": "baseline-runtime.log",
+      "compile_log": "baseline-compile.log"
+    },
+    {
+      "label": "patched",
+      "source": "/workspace/build01-product-next/native-rules/tree/hardware/rockchip/libgralloc/alloc_device.cpp",
+      "source_sha256": "fea99635ec550061a2082404ca6cddeff58874be9312832ed5c106f61441d07f",
+      "extracted_function_sha256": "b358a6a1679dcb0bf00cb73a1b0f9a8c7618a4697bbfcbd34fdbdbea00affb51",
+      "compile_command": [
+        "g++",
+        "-std=c++11",
+        "-O0",
+        "-Wall",
+        "-Wextra",
+        "/workspace/build01-product-next/native-rules/gralloc-invalid-test/patched-harness.cpp",
+        "-o",
+        "/workspace/build01-product-next/native-rules/gralloc-invalid-test/patched-test"
+      ],
+      "exit_code": 0,
+      "passed": 14,
+      "failed": 0,
+      "expected_result_met": true,
+      "runtime_log": "patched-runtime.log",
+      "compile_log": "patched-compile.log"
+    }
+  ],
+  "status": "pass"
+}

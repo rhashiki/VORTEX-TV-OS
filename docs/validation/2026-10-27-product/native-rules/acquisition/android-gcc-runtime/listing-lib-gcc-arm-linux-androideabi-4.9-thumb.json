@@ -1,0 +1,47 @@
+{
+  "id": "8de24793251305bf8ca8c04a5b660d78904f8e76",
+  "entries": [
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "1366864d0c53478e2ae9bc27ba2c370160f14f38",
+      "name": "crtbegin.o"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "132c4771d60f784cf7af988af0dafd6443614403",
+      "name": "crtbeginS.o"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "1366864d0c53478e2ae9bc27ba2c370160f14f38",
+      "name": "crtbeginT.o"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "386edb9ecd30fc46a9882bdaddcb86e684905776",
+      "name": "crtend.o"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "386edb9ecd30fc46a9882bdaddcb86e684905776",
+      "name": "crtendS.o"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "3eae11fb78d85f2756cc7a725260317cba5950cd",
+      "name": "libgcc.a"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "d1aa880ae2166025c0ebab1658d0464c9197e98e",
+      "name": "libgcov.a"
+    }
+  ]
+}

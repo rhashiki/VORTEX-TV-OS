@@ -1,0 +1,6 @@
+{
+  "scope": "Disposable real-make native rule investigation; not complete platform source tree.",
+  "rockchip_build_revision": "d2721c65c9282b31df7b79f85289ee6c4e636716",
+  "root_makefile_sha256": "c4093f39d041957f4711ccab829155afac95cbaeb309bd1bc610faa6a6cc866a",
+  "no_existing_sources_modified": true
+}

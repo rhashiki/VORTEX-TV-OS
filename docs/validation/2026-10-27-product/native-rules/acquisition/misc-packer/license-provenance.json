@@ -1,0 +1,16 @@
+[
+  {
+    "path": "MODULE_LICENSE_BSD_LIKE",
+    "url": "https://android.googlesource.com/platform/prebuilts/misc/+/6287eb468c5772f5da2c468396bdf0068a4fa2d5/linux-x86/relocation_packer/MODULE_LICENSE_BSD_LIKE?format=TEXT",
+    "bytes": 0,
+    "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "PREBUILT",
+    "url": "https://android.googlesource.com/platform/prebuilts/misc/+/6287eb468c5772f5da2c468396bdf0068a4fa2d5/linux-x86/relocation_packer/PREBUILT?format=TEXT",
+    "bytes": 107,
+    "git_blob_sha1": "929df620db263fd3d22dcd729f81d276ec2399c2",
+    "sha256": "dcc6f8d26b346dee5f6bc945de1227e731c9b1edae96ed5a9ba4003d14c8b0bf"
+  }
+]

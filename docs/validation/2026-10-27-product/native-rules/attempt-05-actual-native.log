@@ -1,0 +1,126 @@
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=gralloc.rk30board hwcomposer.rk30board
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-product-next/native-rules/out
+============================================
+TAPAS_STATUS=0
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=gralloc.rk30board hwcomposer.rk30board
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-product-next/native-rules/out
+============================================
+Generated version.h
+Generated version.h
+Export includes file: -- /workspace/build01-product-next/native-rules/out/target/product/generic/obj/STATIC_LIBRARIES/libunwind_llvm_intermediates/export_includes
+Export includes file: -- /workspace/build01-product-next/native-rules/out/target/product/generic/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/export_includes
+mv /workspace/build01-product-next/native-rules/out/target/product/generic/obj/STATIC_LIBRARIES/libunwind_llvm_intermediates/export_includes.tmp /workspace/build01-product-next/native-rules/out/target/product/generic/obj/STATIC_LIBRARIES/libunwind_llvm_intermediates/export_includes ;
+mv /workspace/build01-product-next/native-rules/out/target/product/generic/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/export_includes.tmp /workspace/build01-product-next/native-rules/out/target/product/generic/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/export_includes ;
+target Prebuilt: liblog (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/liblog_intermediates/LINKED/liblog.so)
+target Prebuilt: libcutils (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libcutils_intermediates/LINKED/libcutils.so)
+target Prebuilt: libGLESv1_CM (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libGLESv1_CM_intermediates/LINKED/libGLESv1_CM.so)
+target Prebuilt: libion (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libion_intermediates/LINKED/libion.so)
+target Prebuilt: libhardware (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libhardware_intermediates/LINKED/libhardware.so)
+target Prebuilt: libc++ (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libc++_intermediates/LINKED/libc++.so)
+target Prebuilt: libdl (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libdl_intermediates/LINKED/libdl.so)
+target Prebuilt: libc (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libc_intermediates/LINKED/libc.so)
+target Prebuilt: libm (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libm_intermediates/LINKED/libm.so)
+Import includes file: /workspace/build01-product-next/native-rules/out/target/product/generic/obj/STATIC_LIBRARIES/libunwind_llvm_intermediates/import_includes
+Notice file: external/libunwind_llvm/NOTICE -- /workspace/build01-product-next/native-rules/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libunwind_llvm.a.txt
+Import includes file: /workspace/build01-product-next/native-rules/out/target/product/generic/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/import_includes
+Notice file: external/compiler-rt/NOTICE -- /workspace/build01-product-next/native-rules/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libcompiler_rt-extras.a.txt
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc++.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc++.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc++.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libdl.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libdl.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc++.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libdl.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libdl.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libm.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libm.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libc++.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libm.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libdl.so dependency dropped.
+make: Circular /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libm.so <- /workspace/build01-product-next/native-rules/out/target/product/generic/system/lib/libm.so dependency dropped.
+Export includes file: -- /workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/export_includes
+Export includes file: -- /workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libui_intermediates/export_includes
+mv /workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/export_includes.tmp /workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/export_includes ;
+mv /workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libui_intermediates/export_includes.tmp /workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libui_intermediates/export_includes ;
+Export includes file: -- /workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libEGL_intermediates/export_includes
+Export includes file: -- /workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libhardware_legacy_intermediates/export_includes
+mv /workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libEGL_intermediates/export_includes.tmp /workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libEGL_intermediates/export_includes ;
+mv /workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libhardware_legacy_intermediates/export_includes.tmp /workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libhardware_legacy_intermediates/export_includes ;
+Export includes file: -- /workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libsync_intermediates/export_includes
+target Prebuilt: libui (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libui_intermediates/LINKED/libui.so)
+mv /workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libsync_intermediates/export_includes.tmp /workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libsync_intermediates/export_includes ;
+target Prebuilt: libEGL (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libEGL_intermediates/LINKED/libEGL.so)
+target Prebuilt: libhardware_legacy (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libhardware_legacy_intermediates/LINKED/libhardware_legacy.so)
+target Prebuilt: libsync (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libsync_intermediates/LINKED/libsync.so)
+Export includes file: -- /workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/hwcomposer.rk30board_intermediates/export_includes
+Import includes file: /workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/import_includes
+mv /workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/hwcomposer.rk30board_intermediates/export_includes.tmp /workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/hwcomposer.rk30board_intermediates/export_includes ;
+target Unpacked: liblog (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/liblog_intermediates/PACKED/liblog.so)
+target Unpacked: libcutils (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libcutils_intermediates/PACKED/libcutils.so)
+target Unpacked: libGLESv1_CM (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libGLESv1_CM_intermediates/PACKED/libGLESv1_CM.so)
+target Unpacked: libion (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libion_intermediates/PACKED/libion.so)
+target Unpacked: libhardware (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libhardware_intermediates/PACKED/libhardware.so)
+target Unpacked: libc++ (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libc++_intermediates/PACKED/libc++.so)
+target Unpacked: libdl (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libdl_intermediates/PACKED/libdl.so)
+target Unpacked: libc (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libc_intermediates/PACKED/libc.so)
+target Unpacked: libm (/workspace/build01-product-next/native-rules/out/target/product/generic/obj/SHARED_LIBRARIES/libm_intermediates/PACKED/libm.so)
+target asm: libunwind_llvm <= external/libunwind_llvm/src/UnwindRegistersSave.S
+target asm: libunwind_llvm <= external/libunwind_llvm/src/UnwindRegistersRestore.S
+target thumb C++: libunwind_llvm <= external/libunwind_llvm/src/libunwind.cpp
+target thumb C++: libunwind_llvm <= external/libunwind_llvm/src/Unwind-EHABI.cpp
+In file included from external/libunwind_llvm/src/libunwind.cpp:13:
+In file included from external/libunwind_llvm/include/libunwind.h:19:
+bionic/libc/include/stdint.h:33:10: fatal error: 'stddef.h' file not found
+#include <stddef.h>
+         ^
+In file included from external/libunwind_llvm/src/Unwind-EHABI.cpp:13:
+In file included from external/libunwind_llvm/src/Unwind-EHABI.h:18:
+bionic/libc/include/stdint.h:33:10: fatal error: 'stddef.h' file not found
+#include <stddef.h>
+         ^
+1 error generated.
+make: *** [build/core/binary.mk:925: /workspace/build01-product-next/native-rules/out/target/product/generic/obj/STATIC_LIBRARIES/libunwind_llvm_intermediates/src/Unwind-EHABI.o] Error 1
+make: *** Waiting for unfinished jobs....
+1 error generated.
+make: *** [build/core/binary.mk:925: /workspace/build01-product-next/native-rules/out/target/product/generic/obj/STATIC_LIBRARIES/libunwind_llvm_intermediates/src/libunwind.o] Error 1
+
+#### make failed to build some targets (2 seconds) ####
+

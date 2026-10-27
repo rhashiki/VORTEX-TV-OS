@@ -1,0 +1,69 @@
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=gralloc.rk30board hwcomposer.rk30board
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-product-next/native-rules/out-android
+============================================
+TAPAS_STATUS=0
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=gralloc.rk30board hwcomposer.rk30board
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-product-next/native-rules/out-android
+============================================
+Generated version.h
+Generated version.h
+target thumb C++: gralloc.rk30board <= hardware/rockchip/libgralloc/rockchip_alloc_device.cpp
+target thumb C++: hwcomposer.rk30board <= hardware/rockchip/hwcomposer/rk_hwcomposer.cpp
+PWD=/proc/self/cwd  prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-g++ -I system/core/include/ -I hardware/arm/mali/include -I hardware/arm/mali/src/ump/include -I hardware/rockchip/libgralloc -I /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates -I /workspace/build01-product-next/native-rules/out-android/target/product/generic/gen/SHARED_LIBRARIES/gralloc.rk30board_intermediates -I libnativehelper/include/nativehelper -I system/core/include -I system/core/include -I frameworks/native/opengl/include -I system/core/libion/include -I system/core/libion/kernel-headers -I hardware/libhardware/include -I external/libcxx/include -I bionic/libc/include -I bionic/libc/arch-arm/include -I bionic/libc/kernel/uapi -I bionic/libc/kernel/uapi/asm-arm -I bionic/libm/include -I bionic/libm/include/arm -isystem system/core/include -isystem system/media/audio/include -isystem hardware/libhardware/include -isystem hardware/libhardware_legacy/include -isystem hardware/ril/include -isystem libnativehelper/include -isystem frameworks/native/include -isystem frameworks/native/opengl/include -isystem frameworks/av/include -isystem frameworks/base/include -isystem /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/include -isystem bionic/libc/arch-arm/include -isystem bionic/libc/include -isystem bionic/libc/kernel/uapi -isystem bionic/libc/kernel/common -isystem bionic/libc/kernel/uapi/asm-arm -isystem bionic/libm/include -isystem bionic/libm/include/arm -c  -fno-exceptions -Wno-multichar -msoft-float -ffunction-sections -fdata-sections -funwind-tables -fstack-protector-strong -Wa,--noexecstack -Werror=format-security -D_FORTIFY_SOURCE=2 -fno-short-enums -no-canonical-prefixes -fno-canonical-system-headers -mcpu=cortex-a7 -D__ARM_FEATURE_LPAE=1 -mfloat-abi=softfp -mfpu=neon  -fno-builtin-sin -fno-strict-volatile-bitfields -Wno-psabi -mthumb-interwork -DANDROID -fmessage-length=0 -W -Wall -Wno-unused -Winit-self -Wpointer-arith -fdebug-prefix-map=/proc/self/cwd= -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Werror=date-time -DNDEBUG -g -Wstrict-aliasing=2 -fgcse-after-reload -frerun-cse-after-loop -frename-registers -DNDEBUG -UDEBUG -fvisibility-inlines-hidden -Wsign-promo -mthumb -Os -fomit-frame-pointer -fno-strict-aliasing  -fno-rtti -DLOG_TAG=\"gralloc\" -DGRALLOC_32_BITS -DSTANDARD_LINUX_SCREEN -DPLATFORM_SDK_VERSION=25 -fPIC -D_USING_LIBCXX -std=gnu++11    -MD -MF /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/rockchip_alloc_device.d -o /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/rockchip_alloc_device.o hardware/rockchip/libgralloc/rockchip_alloc_device.cpp
+PWD=/proc/self/cwd  prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-g++ -I /sdk/inc -I /hal/inc -I hardware/rockchip/libgralloc -I hardware/rockchip/librkvpu -I system/core/include/system -I hardware/rockchip/hwcomposer -I /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/hwcomposer.rk30board_intermediates -I /workspace/build01-product-next/native-rules/out-android/target/product/generic/gen/SHARED_LIBRARIES/hwcomposer.rk30board_intermediates -I libnativehelper/include/nativehelper -I hardware/libhardware/include -I system/core/include -I frameworks/native/include -I frameworks/native/opengl/include -I system/core/include -I system/core/libion/include -I system/core/libion/kernel-headers -I /workspace/build01-hal-next/hwc/legacy-headers/include -I system/core/libsync/include -I external/libcxx/include -I bionic/libc/include -I bionic/libc/arch-arm/include -I bionic/libc/kernel/uapi -I bionic/libc/kernel/uapi/asm-arm -I bionic/libm/include -I bionic/libm/include/arm -isystem system/core/include -isystem system/media/audio/include -isystem hardware/libhardware/include -isystem hardware/libhardware_legacy/include -isystem hardware/ril/include -isystem libnativehelper/include -isystem frameworks/native/include -isystem frameworks/native/opengl/include -isystem frameworks/av/include -isystem frameworks/base/include -isystem /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/include -isystem bionic/libc/arch-arm/include -isystem bionic/libc/include -isystem bionic/libc/kernel/uapi -isystem bionic/libc/kernel/common -isystem bionic/libc/kernel/uapi/asm-arm -isystem bionic/libm/include -isystem bionic/libm/include/arm -c  -fno-exceptions -Wno-multichar -msoft-float -ffunction-sections -fdata-sections -funwind-tables -fstack-protector-strong -Wa,--noexecstack -Werror=format-security -D_FORTIFY_SOURCE=2 -fno-short-enums -no-canonical-prefixes -fno-canonical-system-headers -mcpu=cortex-a7 -D__ARM_FEATURE_LPAE=1 -mfloat-abi=softfp -mfpu=neon  -fno-builtin-sin -fno-strict-volatile-bitfields -Wno-psabi -mthumb-interwork -DANDROID -fmessage-length=0 -W -Wall -Wno-unused -Winit-self -Wpointer-arith -fdebug-prefix-map=/proc/self/cwd= -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Werror=date-time -DNDEBUG -g -Wstrict-aliasing=2 -fgcse-after-reload -frerun-cse-after-loop -frename-registers -DNDEBUG -UDEBUG -fvisibility-inlines-hidden -Wsign-promo -mthumb -Os -fomit-frame-pointer -fno-strict-aliasing  -fno-rtti -Wall -Wextra -DLOG_TAG=\"hwcomposer\" -DTARGET_BOARD_PLATFORM_RK322X -DRK322X_BOX -DRK_BOX -DUSE_DMA_BUF -DPLATFORM_SDK_VERSION=25 -fPIC -D_USING_LIBCXX -std=gnu++11    -MD -MF /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/hwcomposer.rk30board_intermediates/rk_hwcomposer.d -o /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/hwcomposer.rk30board_intermediates/rk_hwcomposer.o hardware/rockchip/hwcomposer/rk_hwcomposer.cpp
+cp /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/rockchip_alloc_device.d /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/rockchip_alloc_device.P; sed -e 's/#.*//' -e 's/^[^:]*: *//' -e 's/ *\\$//' -e '/^$/ d' -e 's/$/ :/' < /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/rockchip_alloc_device.d >> /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/rockchip_alloc_device.P; rm -f /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/rockchip_alloc_device.d
+target SharedLib: gralloc.rk30board (/workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/LINKED/gralloc.rk30board.so)
+prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-g++ -nostdlib -Wl,-soname,gralloc.rk30board.so -Wl,--gc-sections -Wl,-shared -L/workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/lib /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o      /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/gralloc_module.o /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/alloc_device.o /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/framebuffer_device.o /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/rockchip_alloc_device.o              -Wl,--whole-archive   -Wl,--no-whole-archive   /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/STATIC_LIBRARIES/libunwind_llvm_intermediates/libunwind_llvm.a /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/libcompiler_rt-extras.a   prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/lib/libatomic.a prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/../lib/gcc/arm-linux-androideabi/4.9/libgcc.a -llog -lcutils -lGLESv1_CM -lion -lhardware -lc++ -ldl -lc -lm  -o /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/LINKED/gralloc.rk30board.so -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,--build-id=md5 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--icf=safe -Wl,--hash-style=gnu -Wl,--no-undefined-version -Wl,--no-fix-cortex-a8   -Wl,--exclude-libs,libunwind_llvm.a -Wl,--no-undefined /workspace/build01-hal-next/gralloc-link/crt/crtend_so.o 
+target Pack Relocations: gralloc.rk30board (/workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/PACKED/gralloc.rk30board.so)
+/workspace/build01-platform-next/aosp-app/host-bin/acp -fp /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/LINKED/gralloc.rk30board.so /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/PACKED/gralloc.rk30board.so
+prebuilts/misc/linux-x86/relocation_packer/relocation_packer /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/PACKED/gralloc.rk30board.so
+/bin/bash: line 1: prebuilts/misc/linux-x86/relocation_packer/relocation_packer: No such file or directory
+make: *** [build/core/dynamic_binary.mk:73: /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/PACKED/gralloc.rk30board.so] Error 127
+make: *** Deleting file '/workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/gralloc.rk30board_intermediates/PACKED/gralloc.rk30board.so'
+make: *** Waiting for unfinished jobs....
+cp /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/hwcomposer.rk30board_intermediates/rk_hwcomposer.d /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/hwcomposer.rk30board_intermediates/rk_hwcomposer.P; sed -e 's/#.*//' -e 's/^[^:]*: *//' -e 's/ *\\$//' -e '/^$/ d' -e 's/$/ :/' < /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/hwcomposer.rk30board_intermediates/rk_hwcomposer.d >> /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/hwcomposer.rk30board_intermediates/rk_hwcomposer.P; rm -f /workspace/build01-product-next/native-rules/out-android/target/product/generic/obj/SHARED_LIBRARIES/hwcomposer.rk30board_intermediates/rk_hwcomposer.d
+
+#### make failed to build some targets (2 seconds) ####
+

@@ -1,0 +1,187 @@
+{
+  "scope": "Genuine official Android GCC4.9 host tools and selected runtime archive readiness; no HAL/platform build in this task.",
+  "tool_prefix": "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-",
+  "commands": [
+    {
+      "label": "gcc-version",
+      "command": [
+        "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-gcc",
+        "--version"
+      ],
+      "exit_code": 0,
+      "log": "gcc-version.log"
+    },
+    {
+      "label": "g++-version",
+      "command": [
+        "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-g++",
+        "--version"
+      ],
+      "exit_code": 0,
+      "log": "g++-version.log"
+    },
+    {
+      "label": "ld-version",
+      "command": [
+        "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-ld",
+        "--version"
+      ],
+      "exit_code": 0,
+      "log": "ld-version.log"
+    },
+    {
+      "label": "gcc-ldd",
+      "command": [
+        "ldd",
+        "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-gcc"
+      ],
+      "exit_code": 0,
+      "log": "gcc-ldd.log"
+    },
+    {
+      "label": "g++-ldd",
+      "command": [
+        "ldd",
+        "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-g++"
+      ],
+      "exit_code": 0,
+      "log": "g++-ldd.log"
+    },
+    {
+      "label": "as-ldd",
+      "command": [
+        "ldd",
+        "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-as"
+      ],
+      "exit_code": 0,
+      "log": "as-ldd.log"
+    },
+    {
+      "label": "ld-ldd",
+      "command": [
+        "ldd",
+        "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-ld"
+      ],
+      "exit_code": 0,
+      "log": "ld-ldd.log"
+    },
+    {
+      "label": "empty-arm-compile",
+      "command": [
+        "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-gcc",
+        "-c",
+        "-x",
+        "c",
+        "-fPIC",
+        "-march=armv7-a",
+        "-mfpu=neon",
+        "-mfloat-abi=softfp",
+        "-o",
+        "/workspace/build01-product-next/native-rules/acquisition/android-gcc-runtime/empty-arm.o",
+        "-"
+      ],
+      "exit_code": 0,
+      "log": "empty-arm-compile.log"
+    },
+    {
+      "label": "empty-arm-readelf",
+      "command": [
+        "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-readelf",
+        "-h",
+        "-A",
+        "/workspace/build01-product-next/native-rules/acquisition/android-gcc-runtime/empty-arm.o"
+      ],
+      "exit_code": 0,
+      "log": "empty-arm-readelf.log"
+    },
+    {
+      "label": "libgcc-selected",
+      "command": [
+        "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-gcc",
+        "-march=armv7-a",
+        "-mthumb",
+        "-mfpu=neon",
+        "-mfloat-abi=softfp",
+        "-print-libgcc-file-name"
+      ],
+      "exit_code": 0,
+      "log": "libgcc-selected.log"
+    },
+    {
+      "label": "libgcc-archive-attributes",
+      "command": [
+        "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-readelf",
+        "-h",
+        "-A",
+        "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/lib/gcc/arm-linux-androideabi/4.9/armv7-a/thumb/libgcc.a"
+      ],
+      "exit_code": 0,
+      "log": "libgcc-archive-attributes.log"
+    },
+    {
+      "label": "libgcc-archive-symbols",
+      "command": [
+        "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-nm",
+        "-g",
+        "--defined-only",
+        "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/lib/gcc/arm-linux-androideabi/4.9/armv7-a/thumb/libgcc.a"
+      ],
+      "exit_code": 0,
+      "log": "libgcc-archive-symbols.log"
+    },
+    {
+      "label": "libatomic-selected",
+      "command": [
+        "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-gcc",
+        "-march=armv7-a",
+        "-mthumb",
+        "-mfpu=neon",
+        "-mfloat-abi=softfp",
+        "-print-file-name=libatomic.a"
+      ],
+      "exit_code": 0,
+      "log": "libatomic-selected.log"
+    },
+    {
+      "label": "libatomic-archive-attributes",
+      "command": [
+        "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-readelf",
+        "-h",
+        "-A",
+        "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/arm-linux-androideabi/lib/armv7-a/thumb/libatomic.a"
+      ],
+      "exit_code": 0,
+      "log": "libatomic-archive-attributes.log"
+    },
+    {
+      "label": "libatomic-archive-symbols",
+      "command": [
+        "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-nm",
+        "-g",
+        "--defined-only",
+        "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/arm-linux-androideabi/lib/armv7-a/thumb/libatomic.a"
+      ],
+      "exit_code": 0,
+      "log": "libatomic-archive-symbols.log"
+    }
+  ],
+  "selected_runtime_archives": {
+    "libgcc": {
+      "path": "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/lib/gcc/arm-linux-androideabi/4.9/armv7-a/thumb/libgcc.a",
+      "sha256": "db007b83081aa7d189f2b1d16d2bac4d0ae4bdcdd90b9d3f0be03eb03fb7a1ad",
+      "bytes": 6376696,
+      "ARM_members": 1751,
+      "hard_VFP_calling_convention_diagnostics": 0
+    },
+    "libatomic": {
+      "path": "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/arm-linux-androideabi/lib/armv7-a/thumb/libatomic.a",
+      "sha256": "2eb1dcbe97456dc9c62c37d0464e6b8072084e07d270f7718b5a34b86211cc45",
+      "bytes": 399776,
+      "ARM_members": 107,
+      "hard_VFP_calling_convention_diagnostics": 0
+    }
+  },
+  "empty_ARM_softfp_object_sha256": "2717247036dd96e22ad518e05aeb54fe8f1e794d8a4589c638637365dca69ef0",
+  "source_revision": "0390252b6bcc6217966ade31d07f8b12f6f78f89",
+  "system_packages_changed": false
+}

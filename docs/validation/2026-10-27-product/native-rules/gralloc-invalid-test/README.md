@@ -1,0 +1,11 @@
+# Isolated allocator rejection regression
+
+`python3 run_regression.py` executes the exact `alloc_device_alloc` function extracted from both the prior source and the corrected source. It asserts that the only function change is replacing `break` with `return -EINVAL` for the unsupported `HAL_PIXEL_FORMAT_YCrCb_NV12_VIDEO` case. Enum values are read from the pinned BSP's real `graphics.h` and `gralloc.h`; their hashes are in the result JSON.
+
+The baseline has a genuine uninitialized-value path. Format `0x16` enters the YUV branch but only logs an error, then reaches a buffer/framebuffer allocator with unset `size`, and would publish unset `stride` after successful allocation. The boundary fixtures return `-EIO` before inspecting that undefined argument. Three negative baseline checks therefore fail deterministically in this recorded host build by observing an unwanted allocator call and wrong return code; this is evidence for the path, not a sanitizer measurement or a language-level guarantee about arbitrary executions of undefined behavior.
+
+The corrected source passes 14 checks: rejection before allocation for buffer/framebuffer/external usages, unknown format, null outputs, neighboring NV12 formats, YV12 and RGB row alignment, framebuffer routing, and implementation-defined RGB/encoder selection. The baseline passes the other 11 checks.
+
+The test substitutes lightweight type declarations, log functions, and recording allocation boundaries. It uses host `size_t`, `PLATFORM_SDK_VERSION=25`, and the Mali-400 preprocessor path (`MALI_600`, `SUPPORT_LEGACY_FORMAT`, and `GRALLOC_16_BITS` unset). It does not validate the real Android struct ABI, 32-bit overflow, real allocation sizes accepted by a device, memory mapping, synchronization, rendering, or hardware behavior. Full HAL compilation/linking and Android linker loading are covered separately.
+
+The extracted function originates from ARM Limited/AOSP's Apache-2.0 gralloc source (original file copyright ARM Limited 2010 and Android Open Source Project 2008). The complete source/license reference is in the stage's native source provenance and third-party notices. Generated executables are local test products, excluded from text evidence staging.

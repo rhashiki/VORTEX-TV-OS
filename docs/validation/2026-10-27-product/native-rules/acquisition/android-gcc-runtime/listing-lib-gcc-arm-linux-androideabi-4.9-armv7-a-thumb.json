@@ -1,0 +1,53 @@
+{
+  "id": "38f16b9d411fce4d49d69279d705736223ab2771",
+  "entries": [
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "e8f675ea800d52f6e7377304775995fe441db662",
+      "name": "crtbegin.o"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "41c2ec2a926c99dc6c387bb3160eee038247d5ec",
+      "name": "crtbeginS.o"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "e8f675ea800d52f6e7377304775995fe441db662",
+      "name": "crtbeginT.o"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "a0001d5965e8a1eb273f04365e81d01536a7ac6a",
+      "name": "crtend.o"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "a0001d5965e8a1eb273f04365e81d01536a7ac6a",
+      "name": "crtendS.o"
+    },
+    {
+      "mode": 16384,
+      "type": "tree",
+      "id": "088e8b5d234e6d23cd7c0222fc52972e9c387f30",
+      "name": "hard"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "7a2be55ea8f539ad8eec23f0c2199fa1100bc575",
+      "name": "libgcc.a"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "90515225cc66955ac7fcba81486091477b3fff61",
+      "name": "libgcov.a"
+    }
+  ]
+}

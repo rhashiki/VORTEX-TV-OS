@@ -1,0 +1,50 @@
+{
+  "artifacts": [
+    {
+      "path": "/workspace/build01-product-next/native-rules/artifacts/gralloc.rk30board.so",
+      "bytes": 30368,
+      "sha256": "ad9df6102d59dc1e0f91fabff5dd6a0357a5b531285842e4a7ec351a1492c9ed",
+      "installed_path": "/workspace/build01-product-next/native-rules/out-android-clean/target/product/generic/system/lib/hw/gralloc.rk30board.so",
+      "needed": [
+        "liblog.so",
+        "libcutils.so",
+        "libGLESv1_CM.so",
+        "libion.so",
+        "libhardware.so",
+        "libc++.so",
+        "libdl.so",
+        "libc.so",
+        "libm.so"
+      ],
+      "has_HMI": true,
+      "ELF32_ARM": true,
+      "TEXTREL": false
+    },
+    {
+      "path": "/workspace/build01-product-next/native-rules/artifacts/hwcomposer.rk30board.so",
+      "bytes": 83736,
+      "sha256": "f6c6651d4b31a1400289117c017a1e45cee389bb6a060375783817e726f32fbf",
+      "installed_path": "/workspace/build01-product-next/native-rules/out-android-clean/target/product/generic/system/lib/hw/hwcomposer.rk30board.so",
+      "needed": [
+        "libhardware.so",
+        "liblog.so",
+        "libui.so",
+        "libEGL.so",
+        "libcutils.so",
+        "libion.so",
+        "libhardware_legacy.so",
+        "libsync.so",
+        "libc++.so",
+        "libdl.so",
+        "libc.so",
+        "libm.so"
+      ],
+      "has_HMI": true,
+      "ELF32_ARM": true,
+      "TEXTREL": false
+    }
+  ],
+  "compiler_dependency_rules": 20,
+  "observed_inputs": 243,
+  "unmodified_build_files": 1034
+}

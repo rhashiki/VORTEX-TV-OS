@@ -1,0 +1,77 @@
+{
+  "id": "16d405c10f4c62b6b7d368640e89d6740ea7fcc2",
+  "entries": [
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "623b6258a134210f0b0ada106fdaab7f0370d9c5",
+      "name": "COPYING"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "2d2d780e6014b850ca3b8437452e24eba5f96508",
+      "name": "COPYING.LIB"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "e1b3c69c179dfaff5744ea4bf853e6b0d90c9ef9",
+      "name": "COPYING.RUNTIME"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "94a9ed024d3859793618152ea559a168bbcbb5e2",
+      "name": "COPYING3"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "fc8a5de7edf437cdc98a216370faf7c757279bcb",
+      "name": "COPYING3.LIB"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "name": "MODULE_LICENSE_GPL"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "623b6258a134210f0b0ada106fdaab7f0370d9c5",
+      "name": "NOTICE"
+    },
+    {
+      "mode": 16384,
+      "type": "tree",
+      "id": "b0b00c24098f6d2e42289eea915ab79b07429c97",
+      "name": "arm-linux-androideabi"
+    },
+    {
+      "mode": 16384,
+      "type": "tree",
+      "id": "25565a6e858657682485e5965210392cd0250a7b",
+      "name": "bin"
+    },
+    {
+      "mode": 16384,
+      "type": "tree",
+      "id": "c34220eed82e07d4ea30c6b19f1b017dec8cfd3a",
+      "name": "lib"
+    },
+    {
+      "mode": 16384,
+      "type": "tree",
+      "id": "b4bc885278f26e573f60046243a33a9a6e1bf2ad",
+      "name": "libexec"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "31892d4e3f8971ae2436e32dab0885215d59e117",
+      "name": "repo.prop"
+    }
+  ]
+}

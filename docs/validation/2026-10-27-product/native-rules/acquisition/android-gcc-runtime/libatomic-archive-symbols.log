@@ -1,0 +1,451 @@
+
+gload.o:
+00000000 T __atomic_load
+00000000 T libat_load
+
+gstore.o:
+00000000 T __atomic_store
+00000000 T libat_store
+
+gcas.o:
+00000000 T __atomic_compare_exchange
+00000000 T libat_compare_exchange
+
+gexch.o:
+00000086 T __atomic_exchange
+00000086 T libat_exchange
+
+glfree.o:
+00000000 T __atomic_is_lock_free
+00000000 T libat_is_lock_free
+
+lock.o:
+00000000 T libat_lock_1
+00000028 T libat_lock_n
+00000014 T libat_unlock_1
+0000005c T libat_unlock_n
+
+init.o:
+00000001 C libat_have_strexbhd
+
+fenv.o:
+00000000 T __atomic_feraiseexcept
+
+load_1_.o:
+0000000c i __atomic_load_1
+00000000 T libat_load_1
+
+store_1_.o:
+0000000c i __atomic_store_1
+00000000 T libat_store_1
+
+cas_1_.o:
+0000002e i __atomic_compare_exchange_1
+00000000 T libat_compare_exchange_1
+
+exch_1_.o:
+00000034 i __atomic_exchange_1
+00000000 T libat_exchange_1
+
+fadd_1_.o:
+0000005c i __atomic_add_fetch_1
+0000003a i __atomic_fetch_add_1
+00000020 T libat_add_fetch_1
+00000000 T libat_fetch_add_1
+
+fsub_1_.o:
+0000003a i __atomic_fetch_sub_1
+0000005c i __atomic_sub_fetch_1
+00000000 T libat_fetch_sub_1
+00000020 T libat_sub_fetch_1
+
+fand_1_.o:
+0000005c i __atomic_and_fetch_1
+0000003c i __atomic_fetch_and_1
+00000022 T libat_and_fetch_1
+00000000 T libat_fetch_and_1
+
+fior_1_.o:
+0000003c i __atomic_fetch_or_1
+0000005c i __atomic_or_fetch_1
+00000000 T libat_fetch_or_1
+00000022 T libat_or_fetch_1
+
+fxor_1_.o:
+0000003c i __atomic_fetch_xor_1
+0000005c i __atomic_xor_fetch_1
+00000000 T libat_fetch_xor_1
+00000022 T libat_xor_fetch_1
+
+fnand_1_.o:
+00000040 i __atomic_fetch_nand_1
+00000060 i __atomic_nand_fetch_1
+00000000 T libat_fetch_nand_1
+00000024 T libat_nand_fetch_1
+
+tas_1_.o:
+0000001c i __atomic_test_and_set_1
+00000000 T libat_test_and_set_1
+
+load_2_.o:
+0000000e i __atomic_load_2
+00000000 T libat_load_2
+
+store_2_.o:
+0000000c i __atomic_store_2
+00000000 T libat_store_2
+
+cas_2_.o:
+0000002e i __atomic_compare_exchange_2
+00000000 T libat_compare_exchange_2
+
+exch_2_.o:
+0000003a i __atomic_exchange_2
+00000000 T libat_exchange_2
+
+fadd_2_.o:
+0000005c i __atomic_add_fetch_2
+0000003a i __atomic_fetch_add_2
+00000020 T libat_add_fetch_2
+00000000 T libat_fetch_add_2
+
+fsub_2_.o:
+0000003a i __atomic_fetch_sub_2
+0000005c i __atomic_sub_fetch_2
+00000000 T libat_fetch_sub_2
+00000020 T libat_sub_fetch_2
+
+fand_2_.o:
+0000005c i __atomic_and_fetch_2
+0000003c i __atomic_fetch_and_2
+00000022 T libat_and_fetch_2
+00000000 T libat_fetch_and_2
+
+fior_2_.o:
+0000003c i __atomic_fetch_or_2
+0000005c i __atomic_or_fetch_2
+00000000 T libat_fetch_or_2
+00000022 T libat_or_fetch_2
+
+fxor_2_.o:
+0000003c i __atomic_fetch_xor_2
+0000005c i __atomic_xor_fetch_2
+00000000 T libat_fetch_xor_2
+00000022 T libat_xor_fetch_2
+
+fnand_2_.o:
+00000040 i __atomic_fetch_nand_2
+00000060 i __atomic_nand_fetch_2
+00000000 T libat_fetch_nand_2
+00000024 T libat_nand_fetch_2
+
+tas_2_.o:
+0000001c i __atomic_test_and_set_2
+00000000 T libat_test_and_set_2
+
+load_4_.o:
+0000000c i __atomic_load_4
+00000000 T libat_load_4
+
+store_4_.o:
+0000000c i __atomic_store_4
+00000000 T libat_store_4
+
+cas_4_.o:
+0000002e i __atomic_compare_exchange_4
+00000000 T libat_compare_exchange_4
+
+exch_4_.o:
+00000018 i __atomic_exchange_4
+00000000 T libat_exchange_4
+
+fadd_4_.o:
+0000005c i __atomic_add_fetch_4
+0000003a i __atomic_fetch_add_4
+00000020 T libat_add_fetch_4
+00000000 T libat_fetch_add_4
+
+fsub_4_.o:
+0000003a i __atomic_fetch_sub_4
+0000005c i __atomic_sub_fetch_4
+00000000 T libat_fetch_sub_4
+00000020 T libat_sub_fetch_4
+
+fand_4_.o:
+0000005c i __atomic_and_fetch_4
+0000003c i __atomic_fetch_and_4
+00000022 T libat_and_fetch_4
+00000000 T libat_fetch_and_4
+
+fior_4_.o:
+0000003c i __atomic_fetch_or_4
+0000005c i __atomic_or_fetch_4
+00000000 T libat_fetch_or_4
+00000022 T libat_or_fetch_4
+
+fxor_4_.o:
+0000003c i __atomic_fetch_xor_4
+0000005c i __atomic_xor_fetch_4
+00000000 T libat_fetch_xor_4
+00000022 T libat_xor_fetch_4
+
+fnand_4_.o:
+00000040 i __atomic_fetch_nand_4
+00000060 i __atomic_nand_fetch_4
+00000000 T libat_fetch_nand_4
+00000024 T libat_nand_fetch_4
+
+tas_4_.o:
+0000001c i __atomic_test_and_set_4
+00000000 T libat_test_and_set_4
+
+load_8_.o:
+0000000e i __atomic_load_8
+00000000 T libat_load_8
+
+store_8_.o:
+00000018 i __atomic_store_8
+00000000 T libat_store_8
+
+cas_8_.o:
+00000036 i __atomic_compare_exchange_8
+00000000 T libat_compare_exchange_8
+
+exch_8_.o:
+0000001c i __atomic_exchange_8
+00000000 T libat_exchange_8
+
+fadd_8_.o:
+00000078 i __atomic_add_fetch_8
+00000042 i __atomic_fetch_add_8
+00000022 T libat_add_fetch_8
+00000000 T libat_fetch_add_8
+
+fsub_8_.o:
+00000044 i __atomic_fetch_sub_8
+0000007c i __atomic_sub_fetch_8
+00000000 T libat_fetch_sub_8
+00000022 T libat_sub_fetch_8
+
+fand_8_.o:
+0000007c i __atomic_and_fetch_8
+00000044 i __atomic_fetch_and_8
+00000024 T libat_and_fetch_8
+00000000 T libat_fetch_and_8
+
+fior_8_.o:
+00000044 i __atomic_fetch_or_8
+0000007c i __atomic_or_fetch_8
+00000000 T libat_fetch_or_8
+00000024 T libat_or_fetch_8
+
+fxor_8_.o:
+00000044 i __atomic_fetch_xor_8
+0000007c i __atomic_xor_fetch_8
+00000000 T libat_fetch_xor_8
+00000024 T libat_xor_fetch_8
+
+fnand_8_.o:
+0000004c i __atomic_fetch_nand_8
+00000084 i __atomic_nand_fetch_8
+00000000 T libat_fetch_nand_8
+00000028 T libat_nand_fetch_8
+
+tas_8_.o:
+0000001c i __atomic_test_and_set_8
+00000000 T libat_test_and_set_8
+
+load_1_1_.o:
+00000000 T libat_load_1_i1
+
+store_1_1_.o:
+00000000 T libat_store_1_i1
+
+cas_1_1_.o:
+00000000 T libat_compare_exchange_1_i1
+
+exch_1_1_.o:
+00000000 T libat_exchange_1_i1
+
+fadd_1_1_.o:
+00000020 T libat_add_fetch_1_i1
+00000000 T libat_fetch_add_1_i1
+
+fsub_1_1_.o:
+00000000 T libat_fetch_sub_1_i1
+00000020 T libat_sub_fetch_1_i1
+
+fand_1_1_.o:
+00000022 T libat_and_fetch_1_i1
+00000000 T libat_fetch_and_1_i1
+
+fior_1_1_.o:
+00000000 T libat_fetch_or_1_i1
+00000022 T libat_or_fetch_1_i1
+
+fxor_1_1_.o:
+00000000 T libat_fetch_xor_1_i1
+00000022 T libat_xor_fetch_1_i1
+
+fnand_1_1_.o:
+00000000 T libat_fetch_nand_1_i1
+00000024 T libat_nand_fetch_1_i1
+
+tas_1_1_.o:
+00000000 T libat_test_and_set_1_i1
+
+load_2_1_.o:
+00000000 T libat_load_2_i1
+
+store_2_1_.o:
+00000000 T libat_store_2_i1
+
+cas_2_1_.o:
+00000000 T libat_compare_exchange_2_i1
+
+exch_2_1_.o:
+00000000 T libat_exchange_2_i1
+
+fadd_2_1_.o:
+00000020 T libat_add_fetch_2_i1
+00000000 T libat_fetch_add_2_i1
+
+fsub_2_1_.o:
+00000000 T libat_fetch_sub_2_i1
+00000020 T libat_sub_fetch_2_i1
+
+fand_2_1_.o:
+00000022 T libat_and_fetch_2_i1
+00000000 T libat_fetch_and_2_i1
+
+fior_2_1_.o:
+00000000 T libat_fetch_or_2_i1
+00000022 T libat_or_fetch_2_i1
+
+fxor_2_1_.o:
+00000000 T libat_fetch_xor_2_i1
+00000022 T libat_xor_fetch_2_i1
+
+fnand_2_1_.o:
+00000000 T libat_fetch_nand_2_i1
+00000024 T libat_nand_fetch_2_i1
+
+tas_2_1_.o:
+00000000 T libat_test_and_set_2_i1
+
+load_4_1_.o:
+00000000 T libat_load_4_i1
+
+store_4_1_.o:
+00000000 T libat_store_4_i1
+
+cas_4_1_.o:
+00000000 T libat_compare_exchange_4_i1
+
+exch_4_1_.o:
+00000000 T libat_exchange_4_i1
+
+fadd_4_1_.o:
+00000020 T libat_add_fetch_4_i1
+00000000 T libat_fetch_add_4_i1
+
+fsub_4_1_.o:
+00000000 T libat_fetch_sub_4_i1
+00000020 T libat_sub_fetch_4_i1
+
+fand_4_1_.o:
+00000022 T libat_and_fetch_4_i1
+00000000 T libat_fetch_and_4_i1
+
+fior_4_1_.o:
+00000000 T libat_fetch_or_4_i1
+00000022 T libat_or_fetch_4_i1
+
+fxor_4_1_.o:
+00000000 T libat_fetch_xor_4_i1
+00000022 T libat_xor_fetch_4_i1
+
+fnand_4_1_.o:
+00000000 T libat_fetch_nand_4_i1
+00000024 T libat_nand_fetch_4_i1
+
+tas_4_1_.o:
+00000000 T libat_test_and_set_4_i1
+
+load_8_1_.o:
+00000000 T libat_load_8_i1
+
+store_8_1_.o:
+00000000 T libat_store_8_i1
+
+cas_8_1_.o:
+00000000 T libat_compare_exchange_8_i1
+
+exch_8_1_.o:
+00000000 T libat_exchange_8_i1
+
+fadd_8_1_.o:
+00000022 T libat_add_fetch_8_i1
+00000000 T libat_fetch_add_8_i1
+
+fsub_8_1_.o:
+00000000 T libat_fetch_sub_8_i1
+00000022 T libat_sub_fetch_8_i1
+
+fand_8_1_.o:
+00000024 T libat_and_fetch_8_i1
+00000000 T libat_fetch_and_8_i1
+
+fior_8_1_.o:
+00000000 T libat_fetch_or_8_i1
+00000024 T libat_or_fetch_8_i1
+
+fxor_8_1_.o:
+00000000 T libat_fetch_xor_8_i1
+00000024 T libat_xor_fetch_8_i1
+
+fnand_8_1_.o:
+00000000 T libat_fetch_nand_8_i1
+00000028 T libat_nand_fetch_8_i1
+
+tas_8_1_.o:
+00000000 T libat_test_and_set_8_i1
+
+load_8_2_.o:
+00000000 T libat_load_8_i2
+
+store_8_2_.o:
+00000000 T libat_store_8_i2
+
+cas_8_2_.o:
+00000000 T libat_compare_exchange_8_i2
+
+exch_8_2_.o:
+00000000 T libat_exchange_8_i2
+
+fadd_8_2_.o:
+00000022 T libat_add_fetch_8_i2
+00000000 T libat_fetch_add_8_i2
+
+fsub_8_2_.o:
+00000000 T libat_fetch_sub_8_i2
+00000022 T libat_sub_fetch_8_i2
+
+fand_8_2_.o:
+00000024 T libat_and_fetch_8_i2
+00000000 T libat_fetch_and_8_i2
+
+fior_8_2_.o:
+00000000 T libat_fetch_or_8_i2
+00000024 T libat_or_fetch_8_i2
+
+fxor_8_2_.o:
+00000000 T libat_fetch_xor_8_i2
+00000024 T libat_xor_fetch_8_i2
+
+fnand_8_2_.o:
+00000000 T libat_fetch_nand_8_i2
+00000028 T libat_nand_fetch_8_i2
+
+tas_8_2_.o:
+00000000 T libat_test_and_set_8_i2

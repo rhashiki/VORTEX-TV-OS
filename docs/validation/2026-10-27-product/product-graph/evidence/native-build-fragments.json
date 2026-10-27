@@ -1,0 +1,30 @@
+[
+  {
+    "path": "frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk",
+    "revision": "00c3ec97785c0d42f801083c8fc2fc26d3ce4e2d",
+    "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-native/00c3ec97785c0d42f801083c8fc2fc26d3ce4e2d/build/tablet-10in-xhdpi-2048-dalvik-heap.mk",
+    "bytes": 924,
+    "sha256": "65a8e5e51ca2b66c99744965879a8c9f3f536171f6621e1d6058a7f66c2d2c2e"
+  },
+  {
+    "path": "frameworks/native/build/tablet-dalvik-heap.mk",
+    "revision": "00c3ec97785c0d42f801083c8fc2fc26d3ce4e2d",
+    "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-native/00c3ec97785c0d42f801083c8fc2fc26d3ce4e2d/build/tablet-dalvik-heap.mk",
+    "bytes": 922,
+    "sha256": "c6054805f61d8dd3d6882de1156149f9e4aba05b1cb2fd2e6465dd06b450502e"
+  },
+  {
+    "path": "frameworks/native/build/tablet-7in-hdpi-1024-dalvik-heap.mk",
+    "revision": "00c3ec97785c0d42f801083c8fc2fc26d3ce4e2d",
+    "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-native/00c3ec97785c0d42f801083c8fc2fc26d3ce4e2d/build/tablet-7in-hdpi-1024-dalvik-heap.mk",
+    "bytes": 922,
+    "sha256": "1599bd6b1565184d78105fd8e86fdf00c28a96cedd098e282a76f7d793bca427"
+  },
+  {
+    "path": "frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk",
+    "revision": "00c3ec97785c0d42f801083c8fc2fc26d3ce4e2d",
+    "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-native/00c3ec97785c0d42f801083c8fc2fc26d3ce4e2d/build/phone-xhdpi-1024-dalvik-heap.mk",
+    "bytes": 910,
+    "sha256": "a9df80e72962456720707bf90bc9165ebc5fec6bbdc7dc1db55bdf12171e4bf3"
+  }
+]

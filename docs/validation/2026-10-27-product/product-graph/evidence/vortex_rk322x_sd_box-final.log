@@ -1,0 +1,2 @@
+PRODUCT=vortex_rk322x_sd_box DEVICE=vortex_rk322x_sd_box INTERNAL=device/vortex/rk322x_sd_box/vortex_rk322x_sd_box.mk
+make: Nothing to be done for 'inspect'.

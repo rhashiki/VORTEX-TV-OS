@@ -1,0 +1,28 @@
+{
+  "repository": "https://android.googlesource.com/platform/prebuilts/misc",
+  "tag": "android-7.1.2_r6",
+  "revision": "6287eb468c5772f5da2c468396bdf0068a4fa2d5",
+  "tree": {
+    "id": "e837e80d955f0e882e9378674f788adf8f47525e",
+    "entries": [
+      {
+        "mode": 33188,
+        "type": "blob",
+        "id": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+        "name": "MODULE_LICENSE_BSD_LIKE"
+      },
+      {
+        "mode": 33188,
+        "type": "blob",
+        "id": "929df620db263fd3d22dcd729f81d276ec2399c2",
+        "name": "PREBUILT"
+      },
+      {
+        "mode": 33261,
+        "type": "blob",
+        "id": "bd549b1ff6d7b2dd6a4c9e54323a88b28eee12ea",
+        "name": "relocation_packer"
+      }
+    ]
+  }
+}

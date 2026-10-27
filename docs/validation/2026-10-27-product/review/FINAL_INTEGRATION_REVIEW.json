@@ -1,0 +1,277 @@
+{
+  "scope": "Independent read-only final integration review of repository changes, delivered evidence and locally retained compiled artifacts. No rebuilding/reexecution or physical validation performed by this pass.",
+  "status": "pass_with_explicit_open_platform_blockers",
+  "material_findings": [],
+  "resolved_before_freeze": [
+    {
+      "issue": "Raw upstream Android.mk/license whitespace triggered diffcheck.",
+      "resolution": "Exact-byte evidence preserved; narrowly scoped gitattributes exceptions added. Root and reviewer observed git diff --check pass."
+    }
+  ],
+  "reviewed_files": [
+    {
+      "path": "docs/VALIDATION_2026-10-27_PRODUCT.md",
+      "sha256": "a4ca2f1ab34ce723e56ee59b233ca4d7a11a5204239430e01d50e3be3e6196f6",
+      "bytes": 8735
+    },
+    {
+      "path": "rom/product/README.md",
+      "sha256": "724eb524be2f9b64262aee69ad8eedb583a8aac20b61ed1e1b608670cbbee4ba",
+      "bytes": 5197
+    },
+    {
+      "path": "tools/audit_product_inputs.py",
+      "sha256": "d257a32932e32cb053ba8bd50ff675729cdc2a2ad16ad866bbe8df23e713c3c9",
+      "bytes": 15766
+    },
+    {
+      "path": "tests/test_product_inputs.py",
+      "sha256": "3729027c1d878e16a1fb8f5e65a96c9f060e6f83069b61b91936f36420ecbb75",
+      "bytes": 15529
+    },
+    {
+      "path": "README.md",
+      "sha256": "7465397df0201a2894d4ce497ec102f5e5541409a668e6e5bfef40bb629d4915",
+      "bytes": 5386
+    },
+    {
+      "path": "docs/WORK_MODE_HANDOFF.md",
+      "sha256": "32a836fd77351a61d21a4f665f9f9196a2c13c3385572fc5a19dced2ff99088e",
+      "bytes": 8058
+    },
+    {
+      "path": "rom/platform-reference/graphics/README.md",
+      "sha256": "e522f4f00a08eabf4b7f5a6d37ae69fd43b4119f97ff7937738393079b587d36",
+      "bytes": 5202
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "5fcb1592d765516d0a61c5b920b3672869de0c8e64bb58759a5842ba3397545b",
+      "bytes": 1825
+    },
+    {
+      "path": "docs/validation/2026-10-27-product/README.md",
+      "sha256": "5131199c75fe34a74db73d7a0738112411d5a17897df4fc0ae157975643c07ab",
+      "bytes": 2172
+    },
+    {
+      "path": "docs/validation/2026-10-27-product/native-rules/NATIVE_RULES_RESULT.md",
+      "sha256": "55f674ffaf3af64bc9b24b9050f92ebcf907c6349d2615eea682b541c442490b",
+      "bytes": 4046
+    },
+    {
+      "path": "docs/validation/2026-10-27-product/native-rules/evidence/native-build-result.json",
+      "sha256": "cc465a88293265e6d2e18e7be55a834e9715f50fff96fb6043817a2e0a8a06f0",
+      "bytes": 4173
+    },
+    {
+      "path": "docs/validation/2026-10-27-product/native-rules/loader/evidence/loader-smoke-result.json",
+      "sha256": "4a1bd2b146d995c9067fb733263f68215e8f1e352b47ddff39f7264ffb0042ae",
+      "bytes": 4355
+    },
+    {
+      "path": "docs/validation/2026-10-27-product/native-rules/gralloc-invalid-test/regression-result.json",
+      "sha256": "2a30a3c2a87bd293f921d6e56afb4fd42ca04774ad4069293de589aa3111546d",
+      "bytes": 3216
+    },
+    {
+      "path": "docs/validation/2026-10-27-product/regression-tests.log",
+      "sha256": "dd61254fe6f771f30562d34f448ec907382ffc6f21bf361135867671aaccf56f",
+      "bytes": 19730
+    },
+    {
+      "path": "rom/product/rk322x_sd_box/AndroidProducts.mk",
+      "sha256": "67cc2b9625f0e848d825979dd6d794da5dc02f0352ce3f6c5661027492918005",
+      "bytes": 132
+    },
+    {
+      "path": "rom/product/rk322x_sd_box/BoardConfig.mk",
+      "sha256": "983b3996eea06c554ae474aea3cad5afca5118e6ac4a25c69ae7b941e8bdf268",
+      "bytes": 1343
+    },
+    {
+      "path": "rom/product/rk322x_sd_box/audio_policy.vortex-sd-reference.conf",
+      "sha256": "7ae47c4936c37c5f702b8ce75e038a7a9d6eef7a5f328e1b15551b95af82b4d0",
+      "bytes": 3600
+    },
+    {
+      "path": "rom/product/rk322x_sd_box/init.vortex-sd-reference.rc",
+      "sha256": "4258cc2722fbba6c0720fdf13fdd70adc8d4aa0326e00a163d657e152a195a04",
+      "bytes": 233
+    },
+    {
+      "path": "rom/product/rk322x_sd_box/overlay/frameworks/base/packages/SettingsProvider/res/values/defaults.xml",
+      "sha256": "168e6e0134d369bceff1d60f0994821dc7f45e091a281aac88bb75738dabcc1e",
+      "bytes": 390
+    },
+    {
+      "path": "rom/product/rk322x_sd_box/vortex_rk322x_sd_box.mk",
+      "sha256": "d14c8f37c7c725320b67aa72dff8a5b262f89716f630be7c30693f3d59adbd72",
+      "bytes": 2455
+    }
+  ],
+  "artifact_checks": [
+    {
+      "name": "gralloc.rk30board.so",
+      "bytes": 30368,
+      "sha256": "ad9df6102d59dc1e0f91fabff5dd6a0357a5b531285842e4a7ec351a1492c9ed",
+      "matches_result": true
+    },
+    {
+      "name": "hwcomposer.rk30board.so",
+      "bytes": 83736,
+      "sha256": "f6c6651d4b31a1400289117c017a1e45cee389bb6a060375783817e726f32fbf",
+      "matches_result": true
+    }
+  ],
+  "local_markdown_links": [
+    {
+      "document": "docs/VALIDATION_2026-10-27_PRODUCT.md",
+      "target": "../rom/platform-reference/graphics/patches/0007-gralloc-reject-unsupported-nv12-video.patch",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION_2026-10-27_PRODUCT.md",
+      "target": "../rom/product/README.md",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION_2026-10-27_PRODUCT.md",
+      "target": "VALIDATION_2026-10-26_AOSP_BOOTLOADER.md",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION_2026-10-27_PRODUCT.md",
+      "target": "VALIDATION_2026-10-27_GRAPHICS_MONITOR.md",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION_2026-10-27_PRODUCT.md",
+      "target": "validation/2026-10-27-product/README.md",
+      "exists": true
+    },
+    {
+      "document": "rom/product/README.md",
+      "target": "patches/0001-scope-minimal-packages-to-vortex-sd.patch",
+      "exists": true
+    },
+    {
+      "document": "rom/product/README.md",
+      "target": "../platform-reference/README.md",
+      "exists": true
+    },
+    {
+      "document": "rom/product/README.md",
+      "target": "../sdcard/README.md",
+      "exists": true
+    },
+    {
+      "document": "rom/product/README.md",
+      "target": "../platform-reference/graphics/README.md",
+      "exists": true
+    },
+    {
+      "document": "rom/product/README.md",
+      "target": "../../docs/VALIDATION_2026-10-27_PRODUCT.md",
+      "exists": true
+    },
+    {
+      "document": "rom/platform-reference/graphics/README.md",
+      "target": "NATIVE_HAL_BUILD.md",
+      "exists": true
+    },
+    {
+      "document": "rom/platform-reference/graphics/README.md",
+      "target": "../../../docs/VALIDATION_2026-10-27_PRODUCT.md",
+      "exists": true
+    },
+    {
+      "document": "rom/platform-reference/graphics/README.md",
+      "target": "../vortex-r6-rockchip-experimental.xml",
+      "exists": true
+    },
+    {
+      "document": "rom/platform-reference/graphics/README.md",
+      "target": "patches/0001-libhardware-match-kernel-fb-contract.patch",
+      "exists": true
+    },
+    {
+      "document": "rom/platform-reference/graphics/README.md",
+      "target": "patches/0002-gralloc-select-mali400-for-rk322x.patch",
+      "exists": true
+    },
+    {
+      "document": "rom/platform-reference/graphics/README.md",
+      "target": "patches/0003-hwc-use-selected-gralloc-header.patch",
+      "exists": true
+    },
+    {
+      "document": "rom/platform-reference/graphics/README.md",
+      "target": "patches/0004-vendor-use-source-graphics-hals.patch",
+      "exists": true
+    },
+    {
+      "document": "rom/platform-reference/graphics/README.md",
+      "target": "../../sdcard/patches/0006-vendor-omit-bluetooth.patch",
+      "exists": true
+    },
+    {
+      "document": "rom/platform-reference/graphics/README.md",
+      "target": "patches/0005-hwc-fix-format-policy-and-hdmi-strings.patch",
+      "exists": true
+    },
+    {
+      "document": "rom/platform-reference/graphics/README.md",
+      "target": "patches/0006-hwc-fix-diagnostic-formats.patch",
+      "exists": true
+    },
+    {
+      "document": "rom/platform-reference/graphics/README.md",
+      "target": "patches/0007-gralloc-reject-unsupported-nv12-video.patch",
+      "exists": true
+    },
+    {
+      "document": "rom/platform-reference/graphics/README.md",
+      "target": "../../../docs/VALIDATION_2026-10-27_GRAPHICS_MONITOR.md",
+      "exists": true
+    },
+    {
+      "document": "docs/validation/2026-10-27-product/README.md",
+      "target": "../../VALIDATION_2026-10-27_PRODUCT.md",
+      "exists": true
+    },
+    {
+      "document": "docs/validation/2026-10-27-product/README.md",
+      "target": "native-rules/NATIVE_RULES_RESULT.md",
+      "exists": true
+    }
+  ],
+  "observed_results": {
+    "native_rule_log": "actual compile/link/pack/strip/install evidence for2HALs, complete-platform claims expressly excluded",
+    "final_native_artifacts": "Artifact sizes/SHA256 directly verified against native-build-result and central report",
+    "native_text_file_count": 200,
+    "auditor_test_methods": 34,
+    "full_test_log": "Ran130tests,OK,noskips; logs include JVMHTTPtests",
+    "gralloc_function_regression": "Expected baseline3negative failures and final14passes; host-only types/allocation fixtures explicit",
+    "android_linker_smoke": "5cases with final artifact hashes; metadata-only, HALopennotcalled",
+    "product_profile": "416packageentries/412unique,134fontentries,13copydestinations,6recursiveprofilefiles,32explicitconfigvalues; earlier independent final-profile review retained"
+  },
+  "claims_review": {
+    "native_vs_product_experiments_separate": true,
+    "reference_DSO_and_CRT_reuse_disclosed": true,
+    "no_ROM_SD_boot_ready_claim": true,
+    "no_full_Android_build_claim": true,
+    "no_unidentified_WiFi_driver_assumption": true,
+    "no_app_drawer_added": true,
+    "provisioning_overlay_uncompiled_unbooted_disclosed": true,
+    "BCB_recovery_error_path_disclosed": true,
+    "USB_vold_mismatch_disclosed": true,
+    "device_permissions_selinux_blocker_disclosed": true,
+    "physical_validation_pending_disclosed": true
+  },
+  "limits": [
+    "The auditor verifies a fixed names/paths/config contract and stable copied bytes, not arbitrary blob identity or authenticated list production.",
+    "This pass did not repeat completed builds/tests or execute any GitHub Actions.",
+    "No full source module dependency closure, generated-image inspection, boot, GPU operation, storage-preservation test or board-driver compatibility is approved."
+  ]
+}

@@ -1,0 +1,5 @@
+/workspace/build01-product-next/native-rules/out-android-clean/target/product/generic/obj/STATIC_LIBRARIES/libunwind_llvm_intermediates/src/UnwindRegistersSave.o: \
+  external/libunwind_llvm/src/UnwindRegistersSave.S \
+  external/libunwind_llvm/src/assembly.h
+  external/libunwind_llvm/src/UnwindRegistersSave.S :
+  external/libunwind_llvm/src/assembly.h :

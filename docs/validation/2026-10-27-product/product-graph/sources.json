@@ -1,0 +1,22 @@
+{
+  "build": {
+    "source": "/workspace/build01-platform-next/research/rockchip-build",
+    "revision": "d2721c65c9282b31df7b79f85289ee6c4e636716",
+    "local_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "device/rockchip/rk322x": {
+    "source": "/workspace/build01-sd-next/device-sd",
+    "revision": "f33a129bfab6d9cc87184ee3bf032224801fa446",
+    "local_diff_sha256": "19463362207b3580074c0bf73896ef59479c4612139922e5c4291e199c5b1067"
+  },
+  "device/rockchip/common": {
+    "source": "/workspace/build01-sd-next/common-sd",
+    "revision": "651d363fd4484cedcb0d9c5032ed831c87b21f58",
+    "local_diff_sha256": "7918eb51fba32f060c1dfc69e719579ad2854342de0ad1182cc60aa2143956d5"
+  },
+  "vendor/rockchip/rk322x": {
+    "source": "/workspace/build01-sd-next/vendor-sd",
+    "revision": "50c7170ecb4bd907059db37f09f4767b301f2d15",
+    "local_diff_sha256": "97025b3ee255f7342c3b9c08b2eccbc02c4957b3429cc679e8888e1f2b3ba8a5"
+  }
+}

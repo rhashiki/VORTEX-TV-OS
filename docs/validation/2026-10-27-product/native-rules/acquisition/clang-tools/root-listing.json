@@ -1,0 +1,53 @@
+{
+  "id": "fe1f40b915dc5610953bf0557011e040076f1454",
+  "entries": [
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "7026a5fb631988b8846dc2dd1f30bd44bd5abdb0",
+      "name": "AndroidVersion.txt"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "name": "MODULE_LICENSE_BSD_LIKE"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "name": "MODULE_LICENSE_MIT"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "83addef208feb95ea05dcee9966a93ca5b7462bc",
+      "name": "NOTICE"
+    },
+    {
+      "mode": 16384,
+      "type": "tree",
+      "id": "6eb7abf3dd86c03e5c42adb2ac0bf5a61d321377",
+      "name": "bin"
+    },
+    {
+      "mode": 16384,
+      "type": "tree",
+      "id": "6007a7598db54aab65212993d0530348546be535",
+      "name": "lib64"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "f6ed60d13357365eca67eb7d5cd9a919d180a746",
+      "name": "repo.prop"
+    },
+    {
+      "mode": 16384,
+      "type": "tree",
+      "id": "3ee6556bf58a1cf93001d8e64fc253158ccc7b92",
+      "name": "tools"
+    }
+  ]
+}

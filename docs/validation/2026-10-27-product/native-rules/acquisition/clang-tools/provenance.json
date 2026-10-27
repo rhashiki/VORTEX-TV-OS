@@ -1,0 +1,634 @@
+{
+  "scope": "Narrow official AOSP r6 Clang host-tool/header acquisition only, not a platform build.",
+  "repository": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
+  "revision": "45562a53b2a5eb7c6e8f400413d19a12c660d7b1",
+  "files": [
+    {
+      "path": "bin/clang",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/bin/clang?format=TEXT",
+      "git_blob_sha1": "01c6dcd49958be98997a3b1ceb42b8c83686fd26",
+      "mode": "0o100755",
+      "bytes": 40402336,
+      "sha256": "b914c14b3112e506e27e5311767ff5d854270992029f8bd5d72465a0531a5b3b"
+    },
+    {
+      "path": "bin/clang++",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/bin/clang++?format=TEXT",
+      "git_blob_sha1": "01c6dcd49958be98997a3b1ceb42b8c83686fd26",
+      "mode": "0o100755",
+      "bytes": 40402336,
+      "sha256": "b914c14b3112e506e27e5311767ff5d854270992029f8bd5d72465a0531a5b3b",
+      "same_upstream_blob_as": "bin/clang"
+    },
+    {
+      "path": "lib64/libLLVM.so",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/libLLVM.so?format=TEXT",
+      "git_blob_sha1": "bc039a839dff2340f7097712993bf8ed3edfe177",
+      "mode": "0o100755",
+      "bytes": 30712616,
+      "sha256": "94dc63b8d6539cbd65cd552649794fd9238c33fcbf7eaaa5287297926bdc2d92"
+    },
+    {
+      "path": "lib64/libc++.so",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/libc++.so?format=TEXT",
+      "git_blob_sha1": "e04b9bbb41e2bcde5c7deca5d394fdb9e216c6f4",
+      "mode": "0o100755",
+      "bytes": 1047016,
+      "sha256": "8aa497d13eacc0da436ca56cff4cd4f4d3e10c496e29510e9c12f75e49dffc4d"
+    },
+    {
+      "path": "lib64/clang/3.8/include/Intrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/Intrin.h?format=TEXT",
+      "git_blob_sha1": "6c1d0d16eabf078ededa47b0683bbedacf28a6ad",
+      "mode": "0o100644",
+      "bytes": 38741,
+      "sha256": "4208ac885481859fdacd2495b772dbb7ca7619423d36cc39f8565c6c31eac9b0"
+    },
+    {
+      "path": "lib64/clang/3.8/include/__clang_cuda_runtime_wrapper.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/__clang_cuda_runtime_wrapper.h?format=TEXT",
+      "git_blob_sha1": "8e5f0331cb38272664f25cdc97b3e0b3567d5920",
+      "mode": "0o100644",
+      "bytes": 8168,
+      "sha256": "b59e277c805334881e8cee1cc262f2a4cfc413209cde3139b1991841f40ef76c"
+    },
+    {
+      "path": "lib64/clang/3.8/include/__stddef_max_align_t.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/__stddef_max_align_t.h?format=TEXT",
+      "git_blob_sha1": "1e10ca9865c0437449521860dc5d6ace1dc3c593",
+      "mode": "0o100644",
+      "bytes": 1770,
+      "sha256": "5d26aeae66fc6f9cb969df50a2382536208f94dec476dd17239924e34550f33d"
+    },
+    {
+      "path": "lib64/clang/3.8/include/__wmmintrin_aes.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/__wmmintrin_aes.h?format=TEXT",
+      "git_blob_sha1": "100799ebfdb838955b6070bf4d0226a4428715ef",
+      "mode": "0o100644",
+      "bytes": 2391,
+      "sha256": "a4461535da247ced758ca578502f204ed53bf427781aedc14a50a1f5b47c6e8d"
+    },
+    {
+      "path": "lib64/clang/3.8/include/__wmmintrin_pclmul.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/__wmmintrin_pclmul.h?format=TEXT",
+      "git_blob_sha1": "68e944e92198f2aca1228e344366dca9b0fa8009",
+      "mode": "0o100644",
+      "bytes": 1524,
+      "sha256": "8d71bfafd3fe583c0c8cb3259bbe07c78a7bb2e15745048e164395811d4c1761"
+    },
+    {
+      "path": "lib64/clang/3.8/include/adxintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/adxintrin.h?format=TEXT",
+      "git_blob_sha1": "ee347284178e70fae0387af5e1c9b22894bcf487",
+      "mode": "0o100644",
+      "bytes": 3247,
+      "sha256": "3898d9126f6c77f6c66ceefc078e0c425fa597ecc3552f9c072c127cbb243527"
+    },
+    {
+      "path": "lib64/clang/3.8/include/altivec.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/altivec.h?format=TEXT",
+      "git_blob_sha1": "c39156eff8e5c21788feb368bf12352b7da841bf",
+      "mode": "0o100644",
+      "bytes": 506242,
+      "sha256": "3e541add4ab2f0444b7e4da245380a91babd121166ea44c2faf3dbc38c355224"
+    },
+    {
+      "path": "lib64/clang/3.8/include/ammintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/ammintrin.h?format=TEXT",
+      "git_blob_sha1": "4880fd7ebad1daed1ca2ff0932677f1edf0584c1",
+      "mode": "0o100644",
+      "bytes": 8520,
+      "sha256": "f108862a6fa4277a9c55ccac89e1269e1ed4aae3392ceec4aa10e02cf6849910"
+    },
+    {
+      "path": "lib64/clang/3.8/include/arm_acle.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/arm_acle.h?format=TEXT",
+      "git_blob_sha1": "4be1d097dc5e9f814d5d9ba34645dce0e5b8a0e6",
+      "mode": "0o100644",
+      "bytes": 8794,
+      "sha256": "7d8d215b0a72d0a5b5318e6939495ccd0f374759c5543607999e0e7d9399050d"
+    },
+    {
+      "path": "lib64/clang/3.8/include/arm_neon.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/arm_neon.h?format=TEXT",
+      "git_blob_sha1": "df94cd0efcff9942116320d434032e1ed02bb180",
+      "mode": "0o100644",
+      "bytes": 2278391,
+      "sha256": "9cc4ec02331321befddb1d5154e772ee85ce81efb9dcc465c12f66a44d1db01e"
+    },
+    {
+      "path": "lib64/clang/3.8/include/avx2intrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/avx2intrin.h?format=TEXT",
+      "git_blob_sha1": "f786572dae7d2800a0dbd573bd5ee3986558f926",
+      "mode": "0o100644",
+      "bytes": 42907,
+      "sha256": "260c593d8e2af431321d74b1b07b3987437bf477ec8fd3e915e008aa993b0cf5"
+    },
+    {
+      "path": "lib64/clang/3.8/include/avx512bwintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/avx512bwintrin.h?format=TEXT",
+      "git_blob_sha1": "f289ed71a332e2410776fcf057f4608a24b3d8af",
+      "mode": "0o100644",
+      "bytes": 52739,
+      "sha256": "6513af9bbe0986cb250308cbab8e473734af101ead01989c65d0ff447f810a60"
+    },
+    {
+      "path": "lib64/clang/3.8/include/avx512cdintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/avx512cdintrin.h?format=TEXT",
+      "git_blob_sha1": "3894b29f5725fecfe5e6732ebcfd260015184922",
+      "mode": "0o100644",
+      "bytes": 4578,
+      "sha256": "eb3c121a8b20522af83a3532375a65aa09d67cf9a4adbed351f283891660179f"
+    },
+    {
+      "path": "lib64/clang/3.8/include/avx512dqintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/avx512dqintrin.h?format=TEXT",
+      "git_blob_sha1": "afee4903ba77e97f29db20871472c5950fcbec0c",
+      "mode": "0o100644",
+      "bytes": 31856,
+      "sha256": "f8a11fa6eb3991f12cd01d0e76f04759668068a5b4aa1c31fe0645fb8092054f"
+    },
+    {
+      "path": "lib64/clang/3.8/include/avx512erintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/avx512erintrin.h?format=TEXT",
+      "git_blob_sha1": "40a912189e5d7afa49e04304ff10d677dbe46c23",
+      "mode": "0o100644",
+      "bytes": 13048,
+      "sha256": "08967d36aef2ad419f52b9b0c231bddab846cae0e7de3e60835772cc3807c689"
+    },
+    {
+      "path": "lib64/clang/3.8/include/avx512fintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/avx512fintrin.h?format=TEXT",
+      "git_blob_sha1": "8dcdc710d5c33d45a46e11c3e214306265b82e4f",
+      "mode": "0o100644",
+      "bytes": 118674,
+      "sha256": "d8bf5a78a0a24780ebf56139ab3ffe0727d8870cc48c46dcda7f20e189cb5617"
+    },
+    {
+      "path": "lib64/clang/3.8/include/avx512vlbwintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/avx512vlbwintrin.h?format=TEXT",
+      "git_blob_sha1": "b4542d69ab089dfc8d19da1eaea790443b18fd84",
+      "mode": "0o100644",
+      "bytes": 81968,
+      "sha256": "5cbc54cea6fb5b1ff7ec56ed8d23d0dc1b5204641129d9c27792684c394c5c15"
+    },
+    {
+      "path": "lib64/clang/3.8/include/avx512vldqintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/avx512vldqintrin.h?format=TEXT",
+      "git_blob_sha1": "dfd858e013da3fd49b536006073bb7ec3fe792de",
+      "mode": "0o100644",
+      "bytes": 34074,
+      "sha256": "b18c60df630d884f732d393b12d99f5993c7c15f131b770667839a83f716f7e7"
+    },
+    {
+      "path": "lib64/clang/3.8/include/avx512vlintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/avx512vlintrin.h?format=TEXT",
+      "git_blob_sha1": "8f13536fbb0e660b964fecfefb8a7525aa7aa805",
+      "mode": "0o100644",
+      "bytes": 165860,
+      "sha256": "5fc7268c3df8f921e701dd9b37c5e6eb29001c05938a1efbf5f565e6cc751013"
+    },
+    {
+      "path": "lib64/clang/3.8/include/avxintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/avxintrin.h?format=TEXT",
+      "git_blob_sha1": "6d1ca5473dcf320d0013e7d3df574e83103469f4",
+      "mode": "0o100644",
+      "bytes": 39424,
+      "sha256": "7f1c7da02c6cffd116d84cec9995ccac13908427e7998d405c0bc2e60d94f406"
+    },
+    {
+      "path": "lib64/clang/3.8/include/bmi2intrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/bmi2intrin.h?format=TEXT",
+      "git_blob_sha1": "fdae82cf2ba7130a870a5ea880f81d43b077d35d",
+      "mode": "0o100644",
+      "bytes": 3177,
+      "sha256": "a0140406a28587796ddfda5184ffd20ad6d58aeef2727757604f6b0e66f1e2ae"
+    },
+    {
+      "path": "lib64/clang/3.8/include/bmiintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/bmiintrin.h?format=TEXT",
+      "git_blob_sha1": "da98792d830752c9675ade961ea105b40b9e78de",
+      "mode": "0o100644",
+      "bytes": 4897,
+      "sha256": "dec38d377246ae0d75351774490f1db4429165ec12d578acd3b27d251f223476"
+    },
+    {
+      "path": "lib64/clang/3.8/include/cpuid.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/cpuid.h?format=TEXT",
+      "git_blob_sha1": "5da02e0e515211642d28fda06f010578f87fff88",
+      "mode": "0o100644",
+      "bytes": 7494,
+      "sha256": "5fd20b58584ce02800d20df194bf8e132c52de336f6a97595d2a3f554ae77c04"
+    },
+    {
+      "path": "lib64/clang/3.8/include/cuda_builtin_vars.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/cuda_builtin_vars.h?format=TEXT",
+      "git_blob_sha1": "901356b3d5ce1039e26fc543924845938e5081be",
+      "mode": "0o100644",
+      "bytes": 4668,
+      "sha256": "d90b73178c80dd585834fceda60d5f779f992cb02569da3afa63d9838b95c10d"
+    },
+    {
+      "path": "lib64/clang/3.8/include/emmintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/emmintrin.h?format=TEXT",
+      "git_blob_sha1": "cfc2c7161460849ad139b67d3d9ee74d1a96d06d",
+      "mode": "0o100644",
+      "bytes": 38512,
+      "sha256": "f0b322b1199348d4852247880b2e8c7a54a22f8ec65cc66bb1e4075705d1ceb8"
+    },
+    {
+      "path": "lib64/clang/3.8/include/f16cintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/f16cintrin.h?format=TEXT",
+      "git_blob_sha1": "c655d98ee9ab77c22dc877475096816c91abea5a",
+      "mode": "0o100644",
+      "bytes": 1916,
+      "sha256": "5f1dedfad766b6e07b8c2eb31bf8ca016df2908d61032708fdd1beaa330b0f27"
+    },
+    {
+      "path": "lib64/clang/3.8/include/float.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/float.h?format=TEXT",
+      "git_blob_sha1": "238cf76b053c3c29544bb89ba50394d2a2ff0f6a",
+      "mode": "0o100644",
+      "bytes": 3881,
+      "sha256": "0595430e91337c9f5560e33fa5b0b5733a4167bc2357d7fde9813e51de14daed"
+    },
+    {
+      "path": "lib64/clang/3.8/include/fma4intrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/fma4intrin.h?format=TEXT",
+      "git_blob_sha1": "f1178877b252bab4ea9f4c3a8630591ea6374d9a",
+      "mode": "0o100644",
+      "bytes": 6790,
+      "sha256": "c7ce72a31da35264d7fa7b2fdeda415011414554ab5151b95dc218c568687b90"
+    },
+    {
+      "path": "lib64/clang/3.8/include/fmaintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/fmaintrin.h?format=TEXT",
+      "git_blob_sha1": "114a14380ea012e5e388ebd1731232ab1b689454",
+      "mode": "0o100644",
+      "bytes": 6793,
+      "sha256": "25ae5f5e70dd8027f60daf97ccfcbfd0758f02d8a75468d41c6b95df64941b49"
+    },
+    {
+      "path": "lib64/clang/3.8/include/fxsrintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/fxsrintrin.h?format=TEXT",
+      "git_blob_sha1": "ac6026aa5ba275324f6eb058c4347af6bef43e5a",
+      "mode": "0o100644",
+      "bytes": 1950,
+      "sha256": "340e0d6f00197f2153554e423a85330c45158fbdbaaad59bacc63da672dee22e"
+    },
+    {
+      "path": "lib64/clang/3.8/include/htmintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/htmintrin.h?format=TEXT",
+      "git_blob_sha1": "0088c7ccab93825fd26d0bc3f8ce1bb99fe9adb3",
+      "mode": "0o100644",
+      "bytes": 7130,
+      "sha256": "0cb9dfeebfe0ea3a3afca0b633b3956ced3f9387c71635627cf878dd6266aa0f"
+    },
+    {
+      "path": "lib64/clang/3.8/include/htmxlintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/htmxlintrin.h?format=TEXT",
+      "git_blob_sha1": "c7571ecd0661ac756442062b7b5149e5076666f9",
+      "mode": "0o100644",
+      "bytes": 9954,
+      "sha256": "ba4117a9735ad83f50aed36b313ed7c07a83d49418749235fdf48e1ff94506d5"
+    },
+    {
+      "path": "lib64/clang/3.8/include/ia32intrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/ia32intrin.h?format=TEXT",
+      "git_blob_sha1": "5adf3f1f5d83abc462913fff768e5882a7dff0df",
+      "mode": "0o100644",
+      "bytes": 3265,
+      "sha256": "b6d6222a5314eb7c8edcc2aa97ffdccef9885ce3c0b09d72d177807eb950f830"
+    },
+    {
+      "path": "lib64/clang/3.8/include/immintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/immintrin.h?format=TEXT",
+      "git_blob_sha1": "f3c6d1914d61b1aa75a3fe127e8577f562a46579",
+      "mode": "0o100644",
+      "bytes": 4675,
+      "sha256": "60bc6475edf50a2e68eaf888a2ec8a44fff218f9aa08053a463f431288aba4ea"
+    },
+    {
+      "path": "lib64/clang/3.8/include/inttypes.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/inttypes.h?format=TEXT",
+      "git_blob_sha1": "3d59d141deb2c23c344c6266b49b48fca757f4c9",
+      "mode": "0o100644",
+      "bytes": 2825,
+      "sha256": "90179f485acaa140b4735efa34646621b8c14c19c3d4b7bd4d57996a40654077"
+    },
+    {
+      "path": "lib64/clang/3.8/include/iso646.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/iso646.h?format=TEXT",
+      "git_blob_sha1": "dca13c5babe5a93f178550bcf0f65401b8f5e3ce",
+      "mode": "0o100644",
+      "bytes": 1565,
+      "sha256": "938a87314be1c6c07afe46d8d4df38484c4f4c153e7d0a820ab10ecec880749a"
+    },
+    {
+      "path": "lib64/clang/3.8/include/limits.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/limits.h?format=TEXT",
+      "git_blob_sha1": "f04187ced26d14b90e42b13af6dadd25dbaefe9e",
+      "mode": "0o100644",
+      "bytes": 3734,
+      "sha256": "bf25c7d82a41beee3f258c44664eeb179366222baa9dd2402d04b9d06620347f"
+    },
+    {
+      "path": "lib64/clang/3.8/include/lzcntintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/lzcntintrin.h?format=TEXT",
+      "git_blob_sha1": "4c00e42ac3a90dfbc5de368429f8c43fbf147ca8",
+      "mode": "0o100644",
+      "bytes": 2325,
+      "sha256": "1eaa2d708c2d3cdcd10f6a0d0b1085b21989922c8afa8ded3fa7e168b303aa5e"
+    },
+    {
+      "path": "lib64/clang/3.8/include/mm3dnow.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/mm3dnow.h?format=TEXT",
+      "git_blob_sha1": "cb93faf2b6a4969a34822b1889adaa4986ce17be",
+      "mode": "0o100644",
+      "bytes": 5373,
+      "sha256": "e06369b43548cb67edf6f828552dd2643009608bb6ba58f1e8c3c084fa78ae90"
+    },
+    {
+      "path": "lib64/clang/3.8/include/mm_malloc.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/mm_malloc.h?format=TEXT",
+      "git_blob_sha1": "305afd31addaa5d2f05f3bb1ddb8911be26d73fd",
+      "mode": "0o100644",
+      "bytes": 2611,
+      "sha256": "be7ba89d11bfc333aa42242fd2f81a2391bb90349f501f3385b4860ec085e5e6"
+    },
+    {
+      "path": "lib64/clang/3.8/include/mmintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/mmintrin.h?format=TEXT",
+      "git_blob_sha1": "162cb1aa1711d639599c20dd5c1e84f6a8e3ec43",
+      "mode": "0o100644",
+      "bytes": 13660,
+      "sha256": "2077f484105df313c15d3e99a590d555d23e82f5b312b9a7f0d80f4a50e0463c"
+    },
+    {
+      "path": "lib64/clang/3.8/include/module.modulemap",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/module.modulemap?format=TEXT",
+      "git_blob_sha1": "b147e891dceb3000f0b5c5f419d069220956a1e7",
+      "mode": "0o100644",
+      "bytes": 2849,
+      "sha256": "9a77fe1ea74b1ac39c1e81ce179f71fb63210edfe854301018a2c75ff4bbf0ee"
+    },
+    {
+      "path": "lib64/clang/3.8/include/nmmintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/nmmintrin.h?format=TEXT",
+      "git_blob_sha1": "57fec15963d11b9960f8e4f0a9d43eba5a784d41",
+      "mode": "0o100644",
+      "bytes": 1448,
+      "sha256": "bdbafc4ad380cc0e53d08dbf9adaba4b4a7e6e3cdc65f9da7eda4905cc6b790c"
+    },
+    {
+      "path": "lib64/clang/3.8/include/pmmintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/pmmintrin.h?format=TEXT",
+      "git_blob_sha1": "0ff940912483aa4f7466930ad795b4a93a2619be",
+      "mode": "0o100644",
+      "bytes": 3537,
+      "sha256": "6d5eea860ed051655bfafeb2cc64a72485e83dac494ef82f6ab3728a333d6d67"
+    },
+    {
+      "path": "lib64/clang/3.8/include/popcntintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/popcntintrin.h?format=TEXT",
+      "git_blob_sha1": "6fcda65c7807d40566031d088c0a4a1c89403a43",
+      "mode": "0o100644",
+      "bytes": 2008,
+      "sha256": "6f41d045cc03da650057170ee690c70c91e4abbf6f6d10009f351f5423be50a6"
+    },
+    {
+      "path": "lib64/clang/3.8/include/prfchwintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/prfchwintrin.h?format=TEXT",
+      "git_blob_sha1": "ba02857518234ca38b1d8ea31e43a5f4e5703a8a",
+      "mode": "0o100644",
+      "bytes": 1841,
+      "sha256": "089d677df62005f4a2217c431590da72e64e12a52894c051172f43c8aa086269"
+    },
+    {
+      "path": "lib64/clang/3.8/include/rdseedintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/rdseedintrin.h?format=TEXT",
+      "git_blob_sha1": "421f4ea48702ca1406af51f8b43a46fb414ec311",
+      "mode": "0o100644",
+      "bytes": 2029,
+      "sha256": "79ee08dd2bb46eaea403b852b0639e4c4e056815585f565107e85d957cf336a2"
+    },
+    {
+      "path": "lib64/clang/3.8/include/rtmintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/rtmintrin.h?format=TEXT",
+      "git_blob_sha1": "e6a58d743bc95c24a63b84745bb0361a055002d5",
+      "mode": "0o100644",
+      "bytes": 2137,
+      "sha256": "f0b75f05e433a8f52e9ff7724b89dcb7b83ad5b0b17c9bd5fe3899fb25583892"
+    },
+    {
+      "path": "lib64/clang/3.8/include/s390intrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/s390intrin.h?format=TEXT",
+      "git_blob_sha1": "d51274c07df5fd2bdb3c50854dd58e05192ce7cb",
+      "mode": "0o100644",
+      "bytes": 1475,
+      "sha256": "b013d14d5bb225a32d60af7642274c0e5626f314fdcf285f0ac0824fbf5e7f42"
+    },
+    {
+      "path": "lib64/clang/3.8/include/shaintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/shaintrin.h?format=TEXT",
+      "git_blob_sha1": "9b5d21800819eb3e2d46d361e5a1f3a644736cef",
+      "mode": "0o100644",
+      "bytes": 2776,
+      "sha256": "9cfa7c7550b906ed9ba55f7e08ff4c83bf47c9d44d7ca2add53dfb8f5a0b641b"
+    },
+    {
+      "path": "lib64/clang/3.8/include/smmintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/smmintrin.h?format=TEXT",
+      "git_blob_sha1": "69ad07f42ad6b8652a5067a6525105af0fa48600",
+      "mode": "0o100644",
+      "bytes": 19928,
+      "sha256": "61f04decabfee83d5730a2b343c2597d87d60642b6e98686afce69eca2df0c95"
+    },
+    {
+      "path": "lib64/clang/3.8/include/stdalign.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/stdalign.h?format=TEXT",
+      "git_blob_sha1": "3738d1284f95dac0983b39d0cf904358b2dd8e08",
+      "mode": "0o100644",
+      "bytes": 1454,
+      "sha256": "9ec83bf3e2c0fb570496d782b78ae897e2044dcc93359315dadb9fd281d04e13"
+    },
+    {
+      "path": "lib64/clang/3.8/include/stdarg.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/stdarg.h?format=TEXT",
+      "git_blob_sha1": "a57e183648718d80ae69b8974795449841199b78",
+      "mode": "0o100644",
+      "bytes": 2094,
+      "sha256": "d259e763f1945f136c161ca033da9e2e75093f9f4d66a26f46e8ee5157dd5c62"
+    },
+    {
+      "path": "lib64/clang/3.8/include/stdatomic.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/stdatomic.h?format=TEXT",
+      "git_blob_sha1": "2c4f1ce30f012ad84363cc2d2e7bc00c4de92d01",
+      "mode": "0o100644",
+      "bytes": 19660,
+      "sha256": "b036ea3ee4d1b6512645f2666f651f85bf82e80a5ab34061e6f40592dea7f002"
+    },
+    {
+      "path": "lib64/clang/3.8/include/stdbool.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/stdbool.h?format=TEXT",
+      "git_blob_sha1": "0467893f3403f10f99fa83e998a313c6ab356b2a",
+      "mode": "0o100644",
+      "bytes": 1730,
+      "sha256": "a8b8b524c68f7241d2c3def2547a52dd0dd56dcbba33b2a1af0b70d75e2da8e3"
+    },
+    {
+      "path": "lib64/clang/3.8/include/stddef.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/stddef.h?format=TEXT",
+      "git_blob_sha1": "7354996711562306fa77f3c7a95655f40df8d183",
+      "mode": "0o100644",
+      "bytes": 4498,
+      "sha256": "4fe29f8d1e821017f3cfc5dd56ba39160d7629a49f049e39aef8ffeeec008a60"
+    },
+    {
+      "path": "lib64/clang/3.8/include/stdint.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/stdint.h?format=TEXT",
+      "git_blob_sha1": "3f2fcbc57023e9724b5a5db417fa8263aa60acc8",
+      "mode": "0o100644",
+      "bytes": 23608,
+      "sha256": "021dc659a6bfd1c0bcaa99549946e628b523847a680fd43e5804523c8f5a0103"
+    },
+    {
+      "path": "lib64/clang/3.8/include/stdnoreturn.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/stdnoreturn.h?format=TEXT",
+      "git_blob_sha1": "a7a301d7e0bdb7655f67a0ebfe0f358895b2f55b",
+      "mode": "0o100644",
+      "bytes": 1381,
+      "sha256": "4919ed8a963bfe90fd830333718223bc3d30f24c370d70c10ef022832519f7a4"
+    },
+    {
+      "path": "lib64/clang/3.8/include/tbmintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/tbmintrin.h?format=TEXT",
+      "git_blob_sha1": "785961c6ab86892dbfe5a8fbb42a60f8e4400275",
+      "mode": "0o100644",
+      "bytes": 3988,
+      "sha256": "a246a9656fd7dced78d71e53de7583457369cdd757cfc0ca2595706ded1c130b"
+    },
+    {
+      "path": "lib64/clang/3.8/include/tgmath.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/tgmath.h?format=TEXT",
+      "git_blob_sha1": "318e1185feee72db8a5bfa3eca64ef41b3ea06ce",
+      "mode": "0o100644",
+      "bytes": 30927,
+      "sha256": "f77bb715ed59913571f681364c421b41daa85fbac4f3dee5ea7a0d8fcffae284"
+    },
+    {
+      "path": "lib64/clang/3.8/include/tmmintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/tmmintrin.h?format=TEXT",
+      "git_blob_sha1": "0002890c13938003dcd480a254f90761395a09eb",
+      "mode": "0o100644",
+      "bytes": 6431,
+      "sha256": "686e162af010f3621c8dbf008b1e4251b4b69a4395294b676a82cc31793aecff"
+    },
+    {
+      "path": "lib64/clang/3.8/include/unwind.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/unwind.h?format=TEXT",
+      "git_blob_sha1": "303d79288aeeda367a0709b39469325c5983168f",
+      "mode": "0o100644",
+      "bytes": 9582,
+      "sha256": "421af2f346f8bbeca139bb9b83b32f68c7c009af0499c3fe490bbe0e053d7b18"
+    },
+    {
+      "path": "lib64/clang/3.8/include/vadefs.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/vadefs.h?format=TEXT",
+      "git_blob_sha1": "7fe9a74e3f694779d715777f60b35184645eab87",
+      "mode": "0o100644",
+      "bytes": 2291,
+      "sha256": "596e6acf7a19399e9a936003fd4d4bb4000f4be9afd79c1df982de2382586494"
+    },
+    {
+      "path": "lib64/clang/3.8/include/varargs.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/varargs.h?format=TEXT",
+      "git_blob_sha1": "b5477d0a6a48aa84058ddb0613ecf7bb59e7d1a3",
+      "mode": "0o100644",
+      "bytes": 1334,
+      "sha256": "0b0258d0553a64e8501c02aaf73685891784596e27f25c3a754333c28f83ff62"
+    },
+    {
+      "path": "lib64/clang/3.8/include/vecintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/vecintrin.h?format=TEXT",
+      "git_blob_sha1": "ca7acb4731f9eb50be9540a2e9e76d10b5fc6738",
+      "mode": "0o100644",
+      "bytes": 291982,
+      "sha256": "b6b7c53511adf0173ede848668e60fa6b50eb8710212b97cc83ba227bfe20366"
+    },
+    {
+      "path": "lib64/clang/3.8/include/wmmintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/wmmintrin.h?format=TEXT",
+      "git_blob_sha1": "a2d931010aeae12c8737777b738798a57b64bad6",
+      "mode": "0o100644",
+      "bytes": 1398,
+      "sha256": "c6c140cffa46363df13249ed14c3f26ca82b2a36a93ccc17e98f7aceee1c2a17"
+    },
+    {
+      "path": "lib64/clang/3.8/include/x86intrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/x86intrin.h?format=TEXT",
+      "git_blob_sha1": "4d8077e38291540c7ec2349eada54e8719be81f5",
+      "mode": "0o100644",
+      "bytes": 1682,
+      "sha256": "b934e04dbc7d8ffe3566eb931730545e3738f0e848ab9dad47076ba895fbd0a3"
+    },
+    {
+      "path": "lib64/clang/3.8/include/xmmintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/xmmintrin.h?format=TEXT",
+      "git_blob_sha1": "ae0b2cd1b26e88b27ab568c06ee537a0eef8a3c2",
+      "mode": "0o100644",
+      "bytes": 24263,
+      "sha256": "ec8ad10dcd71010b00cfcd637db89fbb067d48b50fdcc6e8325493f02a048af2"
+    },
+    {
+      "path": "lib64/clang/3.8/include/xopintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/xopintrin.h?format=TEXT",
+      "git_blob_sha1": "f07f51c2751539309d5e812876bb3093c77bc759",
+      "mode": "0o100644",
+      "bytes": 21361,
+      "sha256": "0e7756ee952c5b7bfc7497b98c89b6b844691eb625eaf7654d8587bf939aefaf"
+    },
+    {
+      "path": "lib64/clang/3.8/include/xsavecintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/xsavecintrin.h?format=TEXT",
+      "git_blob_sha1": "598470a682e2fb671baf31b2d3d63407e51659cf",
+      "mode": "0o100644",
+      "bytes": 1885,
+      "sha256": "264a339af508b63ec9a876881671261cb6ccd58cdbc2673e4a2f46af8cb536f1"
+    },
+    {
+      "path": "lib64/clang/3.8/include/xsaveintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/xsaveintrin.h?format=TEXT",
+      "git_blob_sha1": "a2e6b2e742ff721d5b12fe60edab7dbe6bb5c6fb",
+      "mode": "0o100644",
+      "bytes": 2157,
+      "sha256": "be5c36baac61aba097ab2168414bf2ccfc2b1f381e84e046704cd0f002471a3d"
+    },
+    {
+      "path": "lib64/clang/3.8/include/xsaveoptintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/xsaveoptintrin.h?format=TEXT",
+      "git_blob_sha1": "d3faae78be4f671f811641c53ce037909ac86bbf",
+      "mode": "0o100644",
+      "bytes": 1919,
+      "sha256": "9af96aa2606d072c4e0c6849ed55583a3f6fde963824e01a7411d39e41e899e5"
+    },
+    {
+      "path": "lib64/clang/3.8/include/xsavesintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/xsavesintrin.h?format=TEXT",
+      "git_blob_sha1": "c5e540a86edb72d54dfb3c6a2dac318d736ed397",
+      "mode": "0o100644",
+      "bytes": 2143,
+      "sha256": "b38737701646045775fe003cc8cdeb34f8d8cc52efab3c2d4a8c896ca57b1aa7"
+    },
+    {
+      "path": "lib64/clang/3.8/include/xtestintrin.h",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/lib64/clang/3.8/include/xtestintrin.h?format=TEXT",
+      "git_blob_sha1": "9d3378fd1eea4b9935b7f3c54119f4a6df45a62b",
+      "mode": "0o100644",
+      "bytes": 1743,
+      "sha256": "9920e4dae0d032dff7119ca94e29c12b56ea19fc61c40dc097561d5b48f9cb79"
+    }
+  ],
+  "decoded_total_bytes": 116643954,
+  "system_package_state_changed": false
+}

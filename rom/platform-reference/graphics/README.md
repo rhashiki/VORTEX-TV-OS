@@ -8,6 +8,13 @@ a plataforma Android completa e a execução gráfica continuam pendentes.
 Aplicá-lo exige recompilar todos os
 consumidores; não atualizar só o header e reutilizar HALs pré-compiladas.
 
+A [etapa Android.mk/produto](../../../docs/VALIDATION_2026-10-27_PRODUCT.md)
+compila, liga e instala os dois módulos pelas regras reais do Android, com
+bibliotecas de referência. Acrescenta `0007` ao gralloc: o formato NV12_VIDEO
+não suportado retorna `-EINVAL` antes de usar tamanho/stride indefinidos.
+A função corrigida passou em 14 verificações host e o módulo recompilado
+passou pelo linker Android. Não se declara execução gráfica ou ROM completa.
+
 ## Fontes e ordem
 
 Cada patch pertence à raiz de um repositório diferente, nos commits do
@@ -21,6 +28,9 @@ sempre em checkouts descartáveis. O XML não aplica nenhum patch.
 | [0002](patches/0002-gralloc-select-mali400-for-rk322x.patch) | `hardware/rockchip/libgralloc` | `c92fb8cd8becd57b025149f2861a2072b092ddea` |
 | [0003](patches/0003-hwc-use-selected-gralloc-header.patch) | `hardware/rockchip/hwcomposer` | `d3ec43f2f751123ca5e7bda2d07eded4c6352a35` |
 | [0004](patches/0004-vendor-use-source-graphics-hals.patch) | `vendor/rockchip/rk322x`, **após** [0006 SD](../../sdcard/patches/0006-vendor-omit-bluetooth.patch) | `50c7170ecb4bd907059db37f09f4767b301f2d15` |
+| [0005](patches/0005-hwc-fix-format-policy-and-hdmi-strings.patch) | `hardware/rockchip/hwcomposer`, após 0003 | `d3ec43f2f751123ca5e7bda2d07eded4c6352a35` |
+| [0006](patches/0006-hwc-fix-diagnostic-formats.patch) | `hardware/rockchip/hwcomposer`, após 0005 | mesma base |
+| [0007](patches/0007-gralloc-reject-unsupported-nv12-video.patch) | `hardware/rockchip/libgralloc`, após 0002 | `c92fb8cd8becd57b025149f2861a2072b092ddea` |
 
 `0001` substitui o membro final `post_cfg`, não usado pelos dois consumidores
 selecionados, por `rk_fb_wb_cfg` com os mesmos campos do kernel

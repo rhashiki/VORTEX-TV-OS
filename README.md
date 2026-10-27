@@ -8,11 +8,11 @@ Preparação com verificação dos originais: [importação dos assets oficiais]
 
 Firmware experimental minimalista para **MXQ PRO 4K 5G / R329Q_V8.0** (Rockchip RK322x, ARMv7, ~1 GB DDR3).
 
-**Estado atual: APK compilado e testado em API25; componentes kernel/DTB e duas HALs gráficas compilados em ensaios separados. As HALs passaram por link manual e carregamento de metadados no linker Android em ARM. Ainda não há ROM ou imagem SD inicializável; operação gráfica e RK3229 físico não foram validados.**
+**Estado atual: APK compilado e testado em API25; kernel/DTB e duas HALs gráficas compilados em ensaios separados. As HALs agora também passam pelas regras reais de compilação/link/instalação do Android.mk, com bibliotecas API25 de referência. O novo perfil SD resolve suas entradas sem launcher de fábrica. Ainda não há ROM ou imagem SD inicializável; operação gráfica e RK3229 físico não foram validados.**
 
 Resultados e limites: [preparação do teste microSD](docs/VALIDATION_2026-10-25_SD.md) · [atualização ao vivo e cancelamento](docs/VALIDATION_2026-10-25_ROBUSTNESS.md) · [Home sem gaveta e preparação AOSP](docs/VALIDATION_2026-10-25_CONTINUATION.md).
 
-Continuação: [HALs ligadas e carregadas em ARM](docs/VALIDATION_2026-10-27_NATIVE_HAL.md) · [contrato gráfico e Installer completo no emulador](docs/VALIDATION_2026-10-27_GRAPHICS_MONITOR.md) · [módulo AOSP e boot](docs/VALIDATION_2026-10-26_AOSP_BOOTLOADER.md) · [perfil SDK SD](rom/sdcard/SD_REFERENCE.md).
+Continuação: [Android.mk real e produto SD](docs/VALIDATION_2026-10-27_PRODUCT.md) · [HALs ligadas e carregadas em ARM](docs/VALIDATION_2026-10-27_NATIVE_HAL.md) · [contrato gráfico e Installer completo no emulador](docs/VALIDATION_2026-10-27_GRAPHICS_MONITOR.md) · [módulo AOSP e boot](docs/VALIDATION_2026-10-26_AOSP_BOOTLOADER.md) · [perfil SDK SD](rom/sdcard/SD_REFERENCE.md).
 
 ## Escopo do produto
 - Home 720p, gradiente roxo/azul neon, data/hora, D-pad e ações de energia.

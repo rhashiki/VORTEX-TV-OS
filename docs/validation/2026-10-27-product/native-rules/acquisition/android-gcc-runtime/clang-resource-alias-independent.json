@@ -1,0 +1,11 @@
+{
+  "scope": "Independent read-only verification of genuine upstream resource-directory symlink, not an invented compatibility alias.",
+  "repository": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
+  "revision": "45562a53b2a5eb7c6e8f400413d19a12c660d7b1",
+  "path": "clang-2690385/lib64/clang/3.8.256229",
+  "mode": "0o120000",
+  "target": "3.8",
+  "git_blob_sha1": "98fccd6d0256e8ee1a922260381bb8bd4a1cf839",
+  "sha256": "0fa04adf7214e7f48f259079f7fae9332d5c37a43070769f3d052f1a98e2952f",
+  "local_symlink_matches": true
+}

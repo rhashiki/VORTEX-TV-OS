@@ -1,0 +1,15 @@
+{
+  "scope": "Real missing host ABI5 runtime packages extracted locally only. No system-package mutation or ABI-alias symlinks.",
+  "packages": [
+    {
+      "url": "https://deb.debian.org/debian/pool/main/n/ncurses/libncurses5_6.4-4_amd64.deb",
+      "bytes": 97504,
+      "sha256": "02f4f7f52c4ce2fc4021793a931bfd85f7870554b8e4d56576d73a4ed0bdb390"
+    },
+    {
+      "url": "https://deb.debian.org/debian/pool/main/n/ncurses/libtinfo5_6.4-4_amd64.deb",
+      "bytes": 328276,
+      "sha256": "dd347f794e651039e7b4c391f86c674fed7f415b3dca6b0937beb0d470f09c1a"
+    }
+  ]
+}

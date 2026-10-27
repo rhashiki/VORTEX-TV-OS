@@ -1,0 +1,17 @@
+Android clang version 3.8.256229  (based on LLVM 3.8.256229)
+Target: arm--linux-android
+Thread model: posix
+InstalledDir: /workspace/build01-product-next/native-rules/tree/prebuilts/clang/host/linux-x86/clang-2690385/bin
+ "/workspace/build01-product-next/native-rules/tree/prebuilts/clang/host/linux-x86/clang-2690385/bin/clang++" -cc1 -triple armv4t--linux-android -E -disable-free -disable-llvm-verifier -main-file-name null -mrelocation-model pic -pic-level 1 -mthread-model posix -mdisable-fp-elim -fmath-errno -masm-verbose -mconstructor-aliases -fuse-init-array -target-cpu arm7tdmi -target-feature +soft-float -target-feature +soft-float-abi -target-feature -neon -target-feature -crypto -target-feature +strict-align -target-abi aapcs-linux -msoft-float -mfloat-abi soft -target-linker-version 2.24 -v -dwarf-column-info -debugger-tuning=gdb -nostdsysteminc -resource-dir /workspace/build01-product-next/native-rules/tree/prebuilts/clang/host/linux-x86/clang-2690385/bin/../lib64/clang/3.8.256229 -internal-isystem /workspace/build01-product-next/native-rules/tree/prebuilts/clang/host/linux-x86/clang-2690385/bin/../lib64/clang/3.8.256229/include -fdeprecated-macro -fdebug-compilation-dir /workspace/build01-product-next/native-rules -ferror-limit 19 -fmessage-length 0 -femulated-tls -fallow-half-arguments-and-returns -fno-signed-char -fobjc-runtime=gcc -fcxx-exceptions -fexceptions -fdiagnostics-show-option -o - -x c++ /dev/null
+clang -cc1 version 3.8.256229 based upon LLVM 3.8.256229 default target x86_64-unknown-linux
+ignoring nonexistent directory "/workspace/build01-product-next/native-rules/tree/prebuilts/clang/host/linux-x86/clang-2690385/bin/../lib64/clang/3.8.256229/include"
+#include "..." search starts here:
+End of search list.
+# 1 "/dev/null"
+# 1 "<built-in>" 1
+# 1 "<built-in>" 3
+# 328 "<built-in>" 3
+# 1 "<command line>" 1
+# 1 "<built-in>" 2
+# 1 "/dev/null" 2
+

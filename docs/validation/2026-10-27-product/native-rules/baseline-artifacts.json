@@ -1,0 +1,16 @@
+{
+  "scope": "Installed artifacts of clean successful Android.mk build attempt11 before gralloc unsupported-format fix; immutable baseline, not final delivery.",
+  "build_log": "attempt-11-clean-android-native.log",
+  "artifacts": [
+    {
+      "name": "gralloc.rk30board.so",
+      "sha256": "a37517f09c61de676a5c19eda67b07387a7c72283e2c0f83dc3b214cd062c845",
+      "size_bytes": 30368
+    },
+    {
+      "name": "hwcomposer.rk30board.so",
+      "sha256": "320155f7edcb431251a8292d877aa0a68fe8dfdf6931dbf9f1fe6bb458e74e74",
+      "size_bytes": 83736
+    }
+  ]
+}

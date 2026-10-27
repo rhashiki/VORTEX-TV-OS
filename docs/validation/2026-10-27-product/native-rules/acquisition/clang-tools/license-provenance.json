@@ -1,0 +1,37 @@
+[
+  {
+    "path": "NOTICE",
+    "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/NOTICE?format=TEXT",
+    "bytes": 20815,
+    "git_blob_sha1": "83addef208feb95ea05dcee9966a93ca5b7462bc",
+    "sha256": "57a2df82bad9393dbb15c3af113970a3593e1a66bec1f56379987fc9143b2aba"
+  },
+  {
+    "path": "AndroidVersion.txt",
+    "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/AndroidVersion.txt?format=TEXT",
+    "bytes": 11,
+    "git_blob_sha1": "7026a5fb631988b8846dc2dd1f30bd44bd5abdb0",
+    "sha256": "c071ee29aaf443f43767f25542f9b43848263114415998c402e5ce551997dc2b"
+  },
+  {
+    "path": "repo.prop",
+    "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/repo.prop?format=TEXT",
+    "bytes": 3238,
+    "git_blob_sha1": "f6ed60d13357365eca67eb7d5cd9a919d180a746",
+    "sha256": "2d4c05d78efcb123a82507e9ef02491f97d8598b242a1bd6f60aa258d55f2128"
+  },
+  {
+    "path": "MODULE_LICENSE_BSD_LIKE",
+    "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/MODULE_LICENSE_BSD_LIKE?format=TEXT",
+    "bytes": 0,
+    "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "MODULE_LICENSE_MIT",
+    "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/45562a53b2a5eb7c6e8f400413d19a12c660d7b1/clang-2690385/MODULE_LICENSE_MIT?format=TEXT",
+    "bytes": 0,
+    "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

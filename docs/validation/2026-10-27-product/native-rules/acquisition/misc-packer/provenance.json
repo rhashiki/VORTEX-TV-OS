@@ -1,0 +1,12 @@
+{
+  "scope": "One genuine official host relocation packer acquired, not a HAL or platform build.",
+  "repository": "https://android.googlesource.com/platform/prebuilts/misc",
+  "tag": "android-7.1.2_r6",
+  "revision": "6287eb468c5772f5da2c468396bdf0068a4fa2d5",
+  "url": "https://android.googlesource.com/platform/prebuilts/misc/+/6287eb468c5772f5da2c468396bdf0068a4fa2d5/linux-x86/relocation_packer/relocation_packer?format=TEXT",
+  "path": "/workspace/build01-product-next/native-rules/tree/prebuilts/misc/linux-x86/relocation_packer/relocation_packer",
+  "git_blob_sha1": "bd549b1ff6d7b2dd6a4c9e54323a88b28eee12ea",
+  "bytes": 7096952,
+  "sha256": "e93f4be5f88bcea8efb8ce30c5fd086382c1b0b99585e85ed558bf8918784ffb",
+  "system_packages_changed": false
+}

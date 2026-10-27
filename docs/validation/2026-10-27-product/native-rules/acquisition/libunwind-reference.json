@@ -1,0 +1,5 @@
+{
+  "repository": "https://android.googlesource.com/platform/external/libunwind_llvm",
+  "tag": "android-7.1.2_r6",
+  "revision": "f171e7279d7fa8977bbe25e19019380ee493e885"
+}

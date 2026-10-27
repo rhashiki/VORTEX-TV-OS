@@ -1,0 +1,4 @@
+Android clang version 3.8.256229  (based on LLVM 3.8.256229)
+Target: x86_64-unknown-linux
+Thread model: posix
+InstalledDir: /workspace/build01-product-next/native-rules/tree/prebuilts/clang/host/linux-x86/clang-2690385/bin

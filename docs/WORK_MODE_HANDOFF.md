@@ -68,6 +68,14 @@ does not call HAL device open; DSO constructors/destructors can execute. This
 supersedes the standalone-object-only limit for that reference experiment,
 without establishing the AOSP build graph or graphics/physical operation.
 
+The [product/native-rule continuation](VALIDATION_2026-10-27_PRODUCT.md)
+builds both HALs using genuine Android.mk compile/link/install rules with
+real reference prebuilts. It adds a separate minimal SD product whose inputs
+are resolved by genuine product_config inheritance and independently audited.
+The build and product experiments remain separate: neither closes the complete
+BSP or produces Android/SD images. Mount-error recovery/BCB behavior, USB-vold
+controller matching and device permissions remain explicit blockers.
+
 Use a cloud computer terminal (if available) to clone main and compile the native Vortex Android APK, run complete local automated checks and an Android emulator for functional tests. Investigate available AOSP 7.1.2 / Rockchip RK322x build dependencies and produce an honest report on whether a complete ROM is feasible on the available compute.
 
 ## Required tooling

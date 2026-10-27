@@ -1,0 +1,44 @@
+[
+  {
+    "path": "tools/releasetools/add_img_to_target_files",
+    "upstream_symlink": "add_img_to_target_files.py",
+    "graph_is_symlink": false,
+    "graph_content_matches_resolved_upstream": true,
+    "resolved_sha256": "e74158dab50325b6fc0fb7b086a170fd228289489eb12e7664aa5a0ff1e9bb68"
+  },
+  {
+    "path": "tools/releasetools/check_target_files_signatures",
+    "upstream_symlink": "check_target_files_signatures.py",
+    "graph_is_symlink": false,
+    "graph_content_matches_resolved_upstream": true,
+    "resolved_sha256": "462c6ba91e59d5aa44fa06aea71025425c521a348f4628724d623e0d636187e2"
+  },
+  {
+    "path": "tools/releasetools/img_from_target_files",
+    "upstream_symlink": "img_from_target_files.py",
+    "graph_is_symlink": false,
+    "graph_content_matches_resolved_upstream": true,
+    "resolved_sha256": "badbd01a05d728154a36d5266eaf9ff3f37dce3d0f5aedbab7581d28c283b4b9"
+  },
+  {
+    "path": "tools/releasetools/make_recovery_patch",
+    "upstream_symlink": "make_recovery_patch.py",
+    "graph_is_symlink": false,
+    "graph_content_matches_resolved_upstream": true,
+    "resolved_sha256": "f45a2344c09d78a9a7e3beb069f49caf2f8ab3f722bb10d5dc6e2be39a61ae85"
+  },
+  {
+    "path": "tools/releasetools/ota_from_target_files",
+    "upstream_symlink": "ota_from_target_files.py",
+    "graph_is_symlink": false,
+    "graph_content_matches_resolved_upstream": true,
+    "resolved_sha256": "8eabc93d1dfb09279c1227f1045248f04c5a6ab55e617c0a614518780a21bedf"
+  },
+  {
+    "path": "tools/releasetools/sign_target_files_apks",
+    "upstream_symlink": "sign_target_files_apks.py",
+    "graph_is_symlink": false,
+    "graph_content_matches_resolved_upstream": true,
+    "resolved_sha256": "6b657b07bf081bf49eee730b972fffcdf44cb1b6824e656d0bafd4c8814be7bf"
+  }
+]

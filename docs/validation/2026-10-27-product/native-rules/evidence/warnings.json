@@ -1,0 +1,15 @@
+{
+  "baseline_warning_lines": [
+    "hardware/rockchip/libgralloc/gralloc_module.cpp:453:48: warning: unused parameter 'module' [-Wunused-parameter]",
+    "hardware/rockchip/libgralloc/gralloc_module.cpp:454:31: warning: unused parameter 'usage' [-Wunused-parameter]",
+    "hardware/rockchip/libgralloc/gralloc_module.cpp:455:7: warning: unused parameter 'l' [-Wunused-parameter]",
+    "hardware/rockchip/libgralloc/gralloc_module.cpp:455:14: warning: unused parameter 't' [-Wunused-parameter]",
+    "hardware/rockchip/libgralloc/gralloc_module.cpp:455:21: warning: unused parameter 'w' [-Wunused-parameter]",
+    "hardware/rockchip/libgralloc/gralloc_module.cpp:455:28: warning: unused parameter 'h' [-Wunused-parameter]",
+    "hardware/rockchip/libgralloc/alloc_device.cpp:613:22: warning: 'stride' may be used uninitialized in this function [-Wmaybe-uninitialized]",
+    "hardware/rockchip/libgralloc/alloc_device.cpp:569:56: warning: 'size' may be used uninitialized in this function [-Wmaybe-uninitialized]",
+    "hardware/rockchip/hwcomposer/TVInfo.cpp:7:0: warning: \"LOG_TAG\" redefined"
+  ],
+  "final_rebuilt_object_warning_lines": [],
+  "final_full_object_set_remaining_warnings": "6 unused gralloc-module parameters and LOG_TAG macro redefinition in TVInfo.cpp from baseline retained; the two possible-uninitialized size/stride diagnostics are fixed by unsupported-format rejection, not suppressed."
+}

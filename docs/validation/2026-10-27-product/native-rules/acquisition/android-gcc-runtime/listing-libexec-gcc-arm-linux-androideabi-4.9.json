@@ -1,0 +1,77 @@
+{
+  "id": "29523d739b2ec3c40af1e3b78cfb847042f217de",
+  "entries": [
+    {
+      "mode": 33261,
+      "type": "blob",
+      "id": "79316eac535354a51d8cb1905037dc73d932de2f",
+      "name": "cc1"
+    },
+    {
+      "mode": 33261,
+      "type": "blob",
+      "id": "624f1442010803b420e76fa107b26ac36466045b",
+      "name": "cc1plus"
+    },
+    {
+      "mode": 33261,
+      "type": "blob",
+      "id": "672165002c031bddff7e43b9d95a5efcc3cb37e7",
+      "name": "collect2"
+    },
+    {
+      "mode": 40960,
+      "type": "blob",
+      "id": "6818e7a75f267603ad2f8ff054d140762c21633b",
+      "name": "libfunction_reordering_plugin.so"
+    },
+    {
+      "mode": 40960,
+      "type": "blob",
+      "id": "6818e7a75f267603ad2f8ff054d140762c21633b",
+      "name": "libfunction_reordering_plugin.so.0"
+    },
+    {
+      "mode": 33261,
+      "type": "blob",
+      "id": "64fb21f5e9f0635bca313bc6c607355388df17a3",
+      "name": "libfunction_reordering_plugin.so.0.0.0"
+    },
+    {
+      "mode": 40960,
+      "type": "blob",
+      "id": "f25ba88987bba39bc355c18aaff6b7db8738ee5d",
+      "name": "liblto_plugin.so"
+    },
+    {
+      "mode": 40960,
+      "type": "blob",
+      "id": "f25ba88987bba39bc355c18aaff6b7db8738ee5d",
+      "name": "liblto_plugin.so.0"
+    },
+    {
+      "mode": 33261,
+      "type": "blob",
+      "id": "94b74eb27fecae67b376c47bbd67b1b1d1b836e1",
+      "name": "liblto_plugin.so.0.0.0"
+    },
+    {
+      "mode": 33261,
+      "type": "blob",
+      "id": "4885553b23bca86462639bc910640346b9a23599",
+      "name": "lto-wrapper"
+    },
+    {
+      "mode": 33261,
+      "type": "blob",
+      "id": "3fb54121806a47c74e40c64c6dbe8102e19a8c3c",
+      "name": "lto1"
+    },
+    {
+      "mode": 16384,
+      "type": "tree",
+      "id": "a30d7bd15559e85f0e6cabc508677fb1163aae7a",
+      "name": "plugin"
+    }
+  ]
+}

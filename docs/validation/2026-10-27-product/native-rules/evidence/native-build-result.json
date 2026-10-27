@@ -1,0 +1,99 @@
+{
+  "scope": "Genuine Android7.1.2 Rockchip GNUmake Android.mk native HAL build in thin reference tree. Top-level tapas aosp_arm/arm eng, explicit Cortex-A7/ARMv7/NEON/RK322x/Mali400 board variables, selected genuine BUILD_PREBUILT platform DSOs. Not source-built platform/BSP, full board product build, rendering or hardware validation.",
+  "recorded_UTC": "2026-10-27T21:07:54.800716+00:00",
+  "status": "pass",
+  "baseline_clean_build": {
+    "script": "verify_clean_make.sh",
+    "log": "attempt-11-clean-android-native.log",
+    "exit_code": 0,
+    "HAL_CPP_units": 12,
+    "libunwind_units": {
+      "CXX": 2,
+      "C": 3,
+      "assembly": 2
+    },
+    "compiler_rt_extras_C_units": 1,
+    "total_compilation_units": 20,
+    "actually_processed_prebuilt_targets": 13,
+    "real_static_modules": [
+      "libunwind_llvm",
+      "libcompiler_rt-extras"
+    ]
+  },
+  "final_fixed_incremental_build": {
+    "script": "verify_clean_make.sh",
+    "log": "attempt-12-gralloc-input-fixed.log",
+    "exit_code": 0,
+    "patch": "0007-gralloc-reject-unsupported-nv12-video.patch",
+    "note": "Genuine version.sh regenerates timestamp headers on each parse, so version consumers of both HALs also rebuild."
+  },
+  "build_rules_unmodified": true,
+  "prebuilt_reference_DSO_modules": 22,
+  "prebuilt_DSO_scope": "21 actual official SDK API25 ARM32 system DSOs plus pinned Rockchip vendor libion; genuine ELF inputs, no generated stubs, no BUILD_SHARED_LIBRARY bypass. These DSOs are not delivered or selected into new product.",
+  "CRT_scope": "Two actual pinned Bionic-source shared CRT objects reused via supported TARGET_CRTBEGIN_SO_O/TARGET_CRTEND_SO_O overrides; previously compiled with softfp Linaro6.3.1.",
+  "toolchains": {
+    "Android_GCC49_revision": "0390252b6bcc6217966ade31d07f8b12f6f78f89",
+    "Android_Clang_revision": "45562a53b2a5eb7c6e8f400413d19a12c660d7b1",
+    "host_relocation_packer_revision": "6287eb468c5772f5da2c468396bdf0068a4fa2d5",
+    "note": "Clang3.8 compiles actual unwind/compiler-rt Android.mk modules; GCC4.9 compiles HALs and links, real linker plugin used. Tool subsets, actual legacy ABI5 ncurses libraries and genuine Clang resource alias acquired without system-package mutation."
+  },
+  "link_checks": [
+    "--no-undefined",
+    "HWC additionally -z defs",
+    "--fatal-warnings",
+    "actual pack relocation + strip + install rules",
+    "ELF32 ARM + exported HMI + no TEXTREL"
+  ],
+  "artifacts": [
+    {
+      "path": "/workspace/build01-product-next/native-rules/artifacts/gralloc.rk30board.so",
+      "bytes": 30368,
+      "sha256": "ad9df6102d59dc1e0f91fabff5dd6a0357a5b531285842e4a7ec351a1492c9ed",
+      "installed_path": "/workspace/build01-product-next/native-rules/out-android-clean/target/product/generic/system/lib/hw/gralloc.rk30board.so",
+      "needed": [
+        "liblog.so",
+        "libcutils.so",
+        "libGLESv1_CM.so",
+        "libion.so",
+        "libhardware.so",
+        "libc++.so",
+        "libdl.so",
+        "libc.so",
+        "libm.so"
+      ],
+      "has_HMI": true,
+      "ELF32_ARM": true,
+      "TEXTREL": false
+    },
+    {
+      "path": "/workspace/build01-product-next/native-rules/artifacts/hwcomposer.rk30board.so",
+      "bytes": 83736,
+      "sha256": "f6c6651d4b31a1400289117c017a1e45cee389bb6a060375783817e726f32fbf",
+      "installed_path": "/workspace/build01-product-next/native-rules/out-android-clean/target/product/generic/system/lib/hw/hwcomposer.rk30board.so",
+      "needed": [
+        "libhardware.so",
+        "liblog.so",
+        "libui.so",
+        "libEGL.so",
+        "libcutils.so",
+        "libion.so",
+        "libhardware_legacy.so",
+        "libsync.so",
+        "libc++.so",
+        "libdl.so",
+        "libc.so",
+        "libm.so"
+      ],
+      "has_HMI": true,
+      "ELF32_ARM": true,
+      "TEXTREL": false
+    }
+  ],
+  "loader_smoke": "../loader/evidence/loader-smoke-result.json",
+  "unresolved": [
+    "No source-built complete Android product or images.",
+    "No GPU/framebuffer HAL open, rendering/fences/ION/RGA function validation.",
+    "No real board/module compatibility or SD boot.",
+    "Legacy warnings remain, recorded in warnings.json."
+  ]
+}

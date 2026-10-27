@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This reference product has no SetupWizard or Provision HOME component.
+     Seed the confirmed SettingsProvider defaults for a fresh data directory.
+     Existing settings are not reset by this resource overlay. -->
+<resources>
+    <bool name="def_device_provisioned">true</bool>
+    <bool name="def_user_setup_complete">true</bool>
+</resources>

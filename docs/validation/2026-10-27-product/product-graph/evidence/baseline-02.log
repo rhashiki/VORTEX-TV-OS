@@ -1,0 +1,10 @@
+  File "/workspace/build01-product-next/product-graph/tree/device/rockchip/common/auto_generator.py", line 114
+    continue
+TabError: inconsistent use of tabs and spaces in indentation
+  File "/workspace/build01-product-next/product-graph/tree/device/rockchip/common/auto_generator.py", line 114
+    continue
+TabError: inconsistent use of tabs and spaces in indentation
+  File "/workspace/build01-product-next/product-graph/tree/device/rockchip/common/auto_generator.py", line 114
+    continue
+TabError: inconsistent use of tabs and spaces in indentation
+build/core/product_config.mk:239: *** _nic.PRODUCTS.[[device/rockchip/rk322x/rk322x_box.mk]]: "frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk" does not exist.  Stop.

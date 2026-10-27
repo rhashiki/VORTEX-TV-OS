@@ -1,0 +1,2 @@
+PRODUCT=rk322x_box DEVICE=rk322x_box INTERNAL=device/rockchip/rk322x/rk322x_box.mk
+make: Nothing to be done for 'inspect'.

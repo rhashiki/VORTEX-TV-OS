@@ -1,0 +1,13 @@
+diff --git a/alloc_device.cpp b/alloc_device.cpp
+index 4dd718d..c4bcac2 100644
+--- a/alloc_device.cpp
++++ b/alloc_device.cpp
+@@ -515,7 +515,7 @@ static int alloc_device_alloc(alloc_device_t *dev, int w, int h, int format, int
+ 				break;
+ 			case HAL_PIXEL_FORMAT_YCrCb_NV12_VIDEO:
+ 				ALOGE("unsupport format [0x%x] now", HAL_PIXEL_FORMAT_YCrCb_NV12_VIDEO);
+-				break;
++				return -EINVAL;
+ 
+ 			default:
+ 				return -EINVAL;

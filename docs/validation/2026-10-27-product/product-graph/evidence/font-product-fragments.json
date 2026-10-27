@@ -1,0 +1,26 @@
+[
+  {
+    "project": "platform/frameworks/base",
+    "revision": "edd171fec429b9d51d9cb2da961a673ec51fcc4d",
+    "path": "frameworks/base/data/fonts/fonts.mk",
+    "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-base/edd171fec429b9d51d9cb2da961a673ec51fcc4d/data/fonts/fonts.mk",
+    "bytes": 876,
+    "sha256": "3eeb88d80ec15efe5d7e5c78cd4970fa239707ef203eebc9493101aa67a8cf1f"
+  },
+  {
+    "project": "platform/external/roboto-fonts",
+    "revision": "b9b029ef6d3548ede2b0cbc8f96c32f3fb1a353c",
+    "path": "external/roboto-fonts/fonts.mk",
+    "url": "https://android.googlesource.com/platform/external/roboto-fonts/+/b9b029ef6d3548ede2b0cbc8f96c32f3fb1a353c/fonts.mk?format=TEXT",
+    "bytes": 1133,
+    "sha256": "e647f4ba903b6b921ad3146716f18d1f7a67341cb4df394c47e08cccf3ccc05a"
+  },
+  {
+    "project": "platform/external/noto-fonts",
+    "revision": "6bc0c988c317c4511525c439588a48747b8f09ac",
+    "path": "external/noto-fonts/fonts.mk",
+    "url": "https://android.googlesource.com/platform/external/noto-fonts/+/6bc0c988c317c4511525c439588a48747b8f09ac/fonts.mk?format=TEXT",
+    "bytes": 4553,
+    "sha256": "03baf50bb2021cf944f46b63bba2ac645a77f941f14e83a56d13fa0b3369ca21"
+  }
+]
