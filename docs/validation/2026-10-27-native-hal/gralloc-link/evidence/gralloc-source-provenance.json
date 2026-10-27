@@ -1,0 +1,26 @@
+[
+  {
+    "file": "gralloc_module.cpp",
+    "revision": "c92fb8cd8becd57b025149f2861a2072b092ddea",
+    "matches_pinned_git_blob": true,
+    "sha256": "9017155d4f2daad8128d9b0fdaae7774619f6f4f977deccba77ccf73e8d82049"
+  },
+  {
+    "file": "alloc_device.cpp",
+    "revision": "c92fb8cd8becd57b025149f2861a2072b092ddea",
+    "matches_pinned_git_blob": true,
+    "sha256": "ad2427dbb90c69069de886a0eee62ebcf6b10d48a1ac8f8088652174ccca3185"
+  },
+  {
+    "file": "framebuffer_device.cpp",
+    "revision": "c92fb8cd8becd57b025149f2861a2072b092ddea",
+    "matches_pinned_git_blob": true,
+    "sha256": "8e625578b79ebc785f172b793bf426aa1c48a90d1c7f5de047e3fdc6e0c89d0f"
+  },
+  {
+    "file": "rockchip_alloc_device.cpp",
+    "revision": "c92fb8cd8becd57b025149f2861a2072b092ddea",
+    "matches_pinned_git_blob": true,
+    "sha256": "b3580260016a3a951a733d7d0a0d184db7ef48e5090d8221349b90554a3b459a"
+  }
+]

@@ -1,0 +1,10 @@
+/workspace/build01-hal-next/hwc/evidence/behavior/after.cpp:54:16: warning: multi-character character constant [-Wmultichar]
+   54 |         *p-- = '\0 ';
+      |                ^~~~~
+/workspace/build01-hal-next/hwc/evidence/behavior/after.cpp: In function ‘bool is_not_suit_mix_policy(hwc_display_contents_1_t*)’:
+/workspace/build01-hal-next/hwc/evidence/behavior/after.cpp:23:9: warning: case label value exceeds maximum value for type [-Wswitch-outside-range]
+   23 |         case HAL_PIXEL_FORMAT_BGRA_8888:
+      |         ^~~~
+/workspace/build01-hal-next/hwc/evidence/behavior/after.cpp:21:12: warning: switch condition has boolean value [-Wswitch-bool]
+   21 |     switch (handle && handle->format) {
+      |            ^

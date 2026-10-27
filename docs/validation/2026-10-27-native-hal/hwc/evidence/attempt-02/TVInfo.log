@@ -1,0 +1,15 @@
+/workspace/build01-hal-next/hwc/source/TVInfo.cpp:7:0: warning: "LOG_TAG" redefined
+ #define LOG_TAG "RKTVINFO"
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+/workspace/build01-hal-next/hwc/source/TVInfo.cpp:91:9: warning: multi-character character constant [-Wmultichar]
+  *p-- = '\0 ';
+         ^~~~~
+/workspace/build01-hal-next/hwc/source/TVInfo.cpp: In function ‘int HdmiSetHDR(int)’:
+/workspace/build01-hal-next/hwc/source/TVInfo.cpp:222:30: warning: call to ‘sprintf’ declared with attribute warning: sprintf is often misused; please use snprintf
+  sprintf(buf, "hdr=%d", eotf);
+                              ^
+/workspace/build01-hal-next/hwc/source/TVInfo.cpp: In function ‘int HdmiSetColorimetry(android_dataspace_t)’:
+/workspace/build01-hal-next/hwc/source/TVInfo.cpp:247:45: warning: call to ‘sprintf’ declared with attribute warning: sprintf is often misused; please use snprintf
+  sprintf(buf, "colorimetry=%d", colorimetry);
+                                             ^

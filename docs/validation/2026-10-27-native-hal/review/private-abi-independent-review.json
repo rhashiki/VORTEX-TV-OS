@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "scope": "Independent read-only verification of actual ARM full-header layout object, bounded vendor Mali/OMX disassembly and actual OMX source-object evidence. No build rerun, ELF load, graphics ioctl or hardware execution.",
+  "findings": [],
+  "source_refs": {
+    "gralloc_revision": "c92fb8cd8becd57b025149f2861a2072b092ddea",
+    "gralloc_private_header_sha256": "19bcf14f3d560d918b4707b19cb706ba6aa0b502a3d6f237147fe1d9d6319957",
+    "system_core_revision": "ab5f1d24b072e36ddcf02439303050c501d9dc5b",
+    "system_window_header_sha256": "d03147e71c1c5b63e704789ad42292a89463e657e9737b9ec32cc25cb1f65ebe",
+    "vendor_revision": "50c7170ecb4bd907059db37f09f4767b301f2d15"
+  },
+  "layout": {
+    "compile_recorded_exit_code": 0,
+    "actual_ARM_ELF32_object_sha256": "b6fd2ef712da56feff0e9085ff7587f1ebe707ed7091611d909a7b922c63fb05",
+    "source_probe_includes_full_real_headers": true,
+    "actual_full_headers_match_pinned_Git": true,
+    "ELF_symbol_measures_independently_verified": 56,
+    "compiled_magic_independently_read_from_ELF_rodata": "0x3141592",
+    "native_handle_size": 12,
+    "private_handle_size": 104,
+    "private_handle_align": 8,
+    "numFds": 1,
+    "numInts": 22,
+    "ANativeWindowBuffer_handle_offset": 60,
+    "offsetof_warning_preserved": true
+  },
+  "Mali": {
+    "blob_sha256": "82f5bc8742026be1ed67db15eb50be7361b3be926d6f90a2d1711163c00ace1c",
+    "blob_bytes_match_pinned_Git": true,
+    "curated_manifest_verified_files": 11,
+    "ELF": "ARM32 little-endian EABI5 soft-float ABI",
+    "fingerprint_matches": [
+      {
+        "field": "native_handle version",
+        "source_offset": 0,
+        "required_value": 12,
+        "blob_instruction_range": "0x10278-0x10280"
+      },
+      {
+        "field": "numFds",
+        "source_offset": 4,
+        "required_value": 1,
+        "blob_instruction_range": "0x10284-0x10288"
+      },
+      {
+        "field": "numInts",
+        "source_offset": 8,
+        "required_value": 22,
+        "blob_instruction_range": "0x1028c-0x10294"
+      },
+      {
+        "field": "magic",
+        "source_offset": 16,
+        "required_value": "0x3141592",
+        "blob_instruction_range": "0x10298-0x102a8"
+      }
+    ],
+    "fingerprint_context": "Helper0x10224 stores incomingr0 infp, loads handle atfp+60 into r4, then validates this handle before private fieldreads. The buffer wrapper offset60 matches measured ANativeWindowBuffer.handle. Other accesses at32/36/48 match measured width/height/usage. Stripped local helper source names are not reconstructed.",
+    "additional_fingerprint_paths": [
+      "0x106f4-0x10724",
+      "0x118dc-0x11918"
+    ],
+    "implied_serialized_size": 104,
+    "size_derivation": "native_header12 +4*(numFds1+numInts22); this does not prove every buffer allocation or memory lifetime.",
+    "selected_field_reads_match": [
+      {
+        "field": "flags",
+        "measured_source_offset": 20,
+        "blob_address": "0x102ac",
+        "context": "Bit tests1/2/4 follow and match FRAMEBUFFER/UMP/ION enum values.",
+        "matches": true
+      },
+      {
+        "field": "fd",
+        "measured_source_offset": 88,
+        "blob_address": "0x10344",
+        "context": "Framebuffer branch passes value as ioctl first argument.",
+        "matches": true
+      },
+      {
+        "field": "offset",
+        "measured_source_offset": 92,
+        "blob_address": "0x10354",
+        "context": "Framebuffer branch offset read; full mapping semantics not proved.",
+        "matches": true
+      },
+      {
+        "field": "base",
+        "measured_source_offset": 56,
+        "blob_address": "0x10374",
+        "context": "Stored before lock-shaped callback.",
+        "matches": true
+      },
+      {
+        "field": "size",
+        "measured_source_offset": 28,
+        "blob_address": "0x10380",
+        "context": "Read after handle fingerprint validation.",
+        "matches": true
+      },
+      {
+        "field": "format",
+        "measured_source_offset": 40,
+        "blob_address": "0x103a4-0x103ac",
+        "context": "Handle reloaded from buffer+60, then field read.",
+        "matches": true
+      },
+      {
+        "field": "share_fd",
+        "measured_source_offset": 12,
+        "blob_address": "0xf64c,0xf664,0xf680",
+        "context": "Separate helper loads buffer+60 handle and reads+12 in ION flag branch.",
+        "matches": true
+      }
+    ],
+    "module_lookup": "Public __egl_platform_initialize_android calls hw_get_module with gralloc string; string bytes checked at0x11c2e5.",
+    "callback_observation": "Reads callback slots136/140 with lock/unlock-shaped arguments. This review does not elevate that observation to full callback ABI or runtime approval."
+  },
+  "OMX": {
+    "independent_review": "omx-private-check.json",
+    "export": "Rockchip_get_gralloc_private",
+    "bounded_code": "0x750-0x770; symbol0x751 hasThumbbit",
+    "source_field_offsets": {
+      "format": 40,
+      "share_fd": 12,
+      "type": 48,
+      "stride": 44,
+      "size": 28
+    },
+    "output_offsets": [
+      0,
+      4,
+      8,
+      12,
+      16
+    ],
+    "compiled_actual_source_object_sha256": "f5825985677e9234f4e0af389ffd5b558080d86a73c0b1ae767c53b848db07e6",
+    "pinned_source_and_real_gralloc_header_verified": true,
+    "observed_five_fields_match": true
+  },
+  "assessment": "Concrete corroboration of the native-handle fingerprint and selected private-field offsets for the examined pinned source and blobs. No divergence found in this bounded set; this is not complete Mali/OMX ABI approval.",
+  "limits": [
+    "No vendor ELF execution, EGL initialization, driver open, buffer allocation/import, ioctl, mapping, rendering or video decode was exercised.",
+    "Fingerprint and selected reads do not prove all fields, allocator semantics, ION/DMA-BUF/RGA, usage formats, ownership, lifetime, cache/coherency or fences.",
+    "Nearest-symbol+offset objdump labels do not identify stripped local helper source functions.",
+    "The private_handle_t probe uses compiler-supported layout with preserved warnings for offsetof on a derived non-standard-layout type; it is not a portable-language layout guarantee.",
+    "Shared-library dependencies and symbol versions must still be linked/loaded in a coherent Android system; no inference of RK3229 physical compatibility or boot."
+  ]
+}

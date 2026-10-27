@@ -1,0 +1,19 @@
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_blit.cpp: In function ‘hwcSTATUS hwcBlit(hwcContext*, hwc_layer_1_t*, private_handle_t*, hwc_rect_t*, hwc_rect_t*, hwc_region_t*, FenceMangrRga*, int)’:
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_blit.cpp:361:32: warning: unused variable ‘dstBase’ [-Wunused-variable]
+     int                 dstFd, dstBase;
+                                ^~~~~~~
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_blit.cpp:387:25: warning: variable ‘mmu_en’ set but not used [-Wunused-but-set-variable]
+     unsigned char       mmu_en;
+                         ^~~~~~
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_blit.cpp: In function ‘hwcSTATUS hwcDim(hwcContext*, hwc_layer_1_t*, private_handle_t*, hwc_rect_t*, hwc_region_t*)’:
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_blit.cpp:1106:35: warning: unused variable ‘dstBase’ [-Wunused-variable]
+     unsigned int      dstFd = ~0, dstBase = ~0;
+                                   ^~~~~~~
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_blit.cpp: In function ‘hwcSTATUS hwcClear(hwcContext*, unsigned int, hwc_layer_1_t*, private_handle_t*, hwc_rect_t*, hwc_region_t*)’:
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_blit.cpp:1314:35: warning: unused variable ‘dstBase’ [-Wunused-variable]
+     unsigned int      dstFd = ~0, dstBase = ~0;
+                                   ^~~~~~~
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_blit.cpp: At global scope:
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_blit.cpp:64:12: warning: ‘int _DumpFbInfo(fb_var_screeninfo*, int)’ defined but not used [-Wunused-function]
+ static int _DumpFbInfo(struct fb_var_screeninfo *info, int win)
+            ^~~~~~~~~~~

@@ -1,0 +1,7 @@
+/workspace/build01-hal-next/hwc/source/hwc_ipp.cpp:116:13: warning: ‘void dump(void*, int, int)’ defined but not used [-Wunused-function]
+ static void dump(void* vaddr, int width, int height)
+             ^~~~
+/workspace/build01-hal-next/hwc/source/hwc_ipp.cpp: In function ‘void dump(void*, int, int)’:
+/workspace/build01-hal-next/hwc/source/hwc_ipp.cpp:125:99: warning: call to ‘sprintf’ declared with attribute warning: sprintf is often misused; please use snprintf
+     sprintf(layername, "/data/dump/src_fb_dmlayer_%d_%d_%d.bin", width, height, DumpSurfaceCount1);
+                                                                                                   ^

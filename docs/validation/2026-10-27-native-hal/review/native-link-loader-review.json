@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "scope": "Independent read-only audit of native HAL artifacts, recorded strict-link commands/object inputs, real reference-library provenance and existing QEMU Android-linker metadata smoke. No compilation, HAL device call, GPU execution or hardware test performed by this reviewer.",
+  "findings": [],
+  "modules": [
+    {
+      "module": "gralloc.rk30board.so",
+      "size_bytes": 40044,
+      "sha256": "757c7bd142bf2d65330e1f4c972e8664706604018a89b1bd0963e5f91e7564a3",
+      "ELF": "ELF32 little-endian ARM EABI5 soft-float shared object",
+      "SONAME": "gralloc.rk30board.so",
+      "DT_NEEDED": [
+        "liblog.so",
+        "libcutils.so",
+        "libGLESv1_CM.so",
+        "libion.so",
+        "libhardware.so",
+        "libstdc++.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ],
+      "HMI_export_global_defined": true,
+      "RELRO_and_BIND_NOW": true,
+      "input_object_count": 4,
+      "strict_link_flags_present": [
+        "-nostdlib",
+        "-shared",
+        "-Wl,--no-undefined",
+        "-Wl,--no-allow-shlib-undefined",
+        "-Wl,-z,defs"
+      ],
+      "unresolved_suppression_not_present": true,
+      "recorded_link_exit_code": 0
+    },
+    {
+      "module": "hwcomposer.rk30board.so",
+      "size_bytes": 140140,
+      "sha256": "585842ade2e8bde7d2f0e8cf9cd9fca43762accf484671266efd1f4106f7241f",
+      "ELF": "ELF32 little-endian ARM EABI5 soft-float shared object",
+      "SONAME": "hwcomposer.rk30board.so",
+      "DT_NEEDED": [
+        "libhardware.so",
+        "liblog.so",
+        "libui.so",
+        "libEGL.so",
+        "libcutils.so",
+        "libion.so",
+        "libhardware_legacy.so",
+        "libsync.so",
+        "libstdc++.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ],
+      "HMI_export_global_defined": true,
+      "RELRO_and_BIND_NOW": true,
+      "input_object_count": 8,
+      "strict_link_flags_present": [
+        "-nostdlib",
+        "-shared",
+        "-Wl,--no-undefined",
+        "-Wl,--no-allow-shlib-undefined",
+        "-Wl,-z,defs"
+      ],
+      "unresolved_suppression_not_present": true,
+      "recorded_link_exit_code": 0
+    }
+  ],
+  "reference_runtime": {
+    "package": "system-images;android-25;google_apis;armeabi-v7a",
+    "SDK_metadata_sha256": "d48bd8404b8d5ab42d84cc0907dfb9e55c8a50194bb07c8a864c331375dd8b3a",
+    "archive": "armeabi-v7a-25_r18.zip",
+    "published_SHA1_independently_checked_in_retained_XML": "a6f7c491e3bb937523dddfa287e07d785934e8a1",
+    "recorded_download_SHA1_matches": true,
+    "recorded_archive_SHA256": "0e888e3141ec4bf55494cbbb268e91fab60de7bf5163f85a40a4bab7e31032ff",
+    "archive_and_temporary_FS_cleaned_before_this_review": true,
+    "reviewer_did_not_recompute_cleaned_archive_hash": true,
+    "current_actual_ARM_libraries_hashed_and_checked": 22,
+    "all_recorded_transitive_DT_NEEDED_present": true,
+    "vendor_libion_SHA256": "2e19ed3a2e51fe8055be131e259e6e205e7482f98645ce2e37dae36557a5ecc9",
+    "vendor_libion_matches_pinned_Git_bytes": true,
+    "no_fake_or_empty_library_substitutes_identified": true,
+    "genuine_unmodified_Bionic_shared_CRT_objects_verified": 3
+  },
+  "link_snapshot": {
+    "manifest_SHA256": "049ac1c764b02dae5d85c50a99574781b9e3dc73a3cf3f5468748ba403f6c687",
+    "verified_entries": 104
+  },
+  "loader_smoke": {
+    "independent_detail": "loader-probe-independent-check.json",
+    "scope": "Real Android ARM linker/libc plus the new DSOs under QEMU Linux user-mode, not a booted Android system.",
+    "five_checks_recorded_pass": true,
+    "positive_checks": [
+      "gralloc dlopen RTLD_NOW/HMI/metadata/dlclose exit0",
+      "HWC dlopen RTLD_NOW/HMI/metadata/dlclose exit0"
+    ],
+    "negative_checks": {
+      "missing_file_exit": 2,
+      "missing_HMI_exit": 3,
+      "wrong_module_id_exit": 4
+    },
+    "helper_SHA256": "3b04317fa4259c73346b2afffa71ef0905306b1679eeff39df1606c63b68a0bc",
+    "probe_checks": [
+      "module tag",
+      "expected module id",
+      "non-null methods pointer",
+      "non-null methods->open pointer"
+    ],
+    "probe_prints_only": [
+      "module_api_version",
+      "hal_api_version",
+      "name"
+    ],
+    "probe_does_not_call_methods_open_or_explicit_GPU_ioctl": true,
+    "gralloc_source_constructor_inspected": "Initializes module metadata/callbacks, zeros state, initializes pthread mutex and sets ion_client=-1; no ion_open/device open in this constructor.",
+    "constructor_limit": "dlopen/dlclose execute applicable constructors/destructors; no blanket assertion that every dependency is side-effect-free.",
+    "PIE_warning": "unsupported flags DT_FLAGS_1=0x8000001 names the probe executable and remains visible in all5logs. NewHALs haveDF_1_NOW only, notPIE."
+  },
+  "assessment": "Both source-built HALs have a strict manual native reference link and a successful dynamic-load/metadata/close smoke in the recorded ARM32 Android-library environment. This closes the earlier standalone-object-only limitation for this reference experiment, without proving the full AOSP build graph or graphics/device operation.",
+  "limits": [
+    "Link inputs are explicit API25 SDK Android7.1.1 reference ELFs plus pinned vendor libion, not a compiled Rockchip Android7.1.2 BSP or original board firmware.",
+    "Imported dynamic symbols remain normal DSO imports; strict link resolves their providers in the recorded reference set. This does not mean allsymbols are defined inside each HAL.",
+    "Probe versions/names are observed output, not expected-version assertions. Module methods, framebuffer/ioctl, buffer allocation/composition, ION/RGA/fences and GPU/HDMI behavior are untested.",
+    "No complete Android system, ramdisk, SD image, monitor integration, physical RK3229 boot or internal-storage preservation is established."
+  ]
+}

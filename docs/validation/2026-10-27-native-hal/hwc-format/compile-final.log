@@ -1,0 +1,81 @@
+rk_hwcomposer 0 In file included from /workspace/build01-hal-next/hwc-format/source/rk_hwcomposer.cpp:15:0:
+/workspace/build01-hal-next/hwc/native-headers/opengl/include/EGL/eglext.h:623:111: warning: ‘visibility’ attribute ignored [-Wattributes]
+ typedef EGLAPI EGLClientBuffer (EGLAPIENTRYP PFNEGLCREATENATIVECLIENTBUFFERANDROID) (const EGLint *attrib_list);
+                                                                                                               ^
+/workspace/build01-hal-next/hwc/native-headers/opengl/include/EGL/eglext.h:650:200: warning: ‘visibility’ attribute ignored [-Wattributes]
+ typedef EGLAPI EGLBoolean (EGLAPIENTRYP PFNEGLGETFRAMETIMESTAMPSANDROID) (EGLDisplay dpy, EGLSurface surface, EGLint framesAgo, EGLint numTimestamps, const EGLint *timestamps, EGLnsecsANDROID *values);
+                                                                                                                                                                                                        ^
+/workspace/build01-hal-next/hwc/native-headers/opengl/include/EGL/eglext.h:651:132: warning: ‘visibility’ attribute ignored [-Wattributes]
+ typedef EGLAPI EGLBoolean (EGLAPIENTRYP PFNEGLQUERYTIMESTAMPSUPPORTEDANDROID) (EGLDisplay dpy, EGLSurface surface, EGLint timestamp);
+                                                                                                                                    ^
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer.cpp: In function ‘void sync_fbinfo_fence(rk_fb_win_cfg_data*)’:
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer.cpp:795:31: warning: unused variable ‘fbinfo’ [-Wunused-variable]
+     struct rk_fb_win_cfg_data fbinfo;
+                               ^~~~~~
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer.cpp: In function ‘int hwc_reset_fb_info(rk_fb_win_cfg_data*, hwcContext*)’:
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer.cpp:818:9: warning: unused variable ‘scale’ [-Wunused-variable]
+     int scale = 1;
+         ^~~~~
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer.cpp: In function ‘int hwc_get_layer_area_info(hwc_layer_1_t*, hwcRECT*, hwcRECT*)’:
+/workspace/build01-hal-n
+rk_hwcomposer_blit 0 /workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_blit.cpp: In function ‘hwcSTATUS hwcBlit(hwcContext*, hwc_layer_1_t*, private_handle_t*, hwc_rect_t*, hwc_rect_t*, hwc_region_t*, FenceMangrRga*, int)’:
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_blit.cpp:361:32: warning: unused variable ‘dstBase’ [-Wunused-variable]
+     int                 dstFd, dstBase;
+                                ^~~~~~~
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_blit.cpp:387:25: warning: variable ‘mmu_en’ set but not used [-Wunused-but-set-variable]
+     unsigned char       mmu_en;
+                         ^~~~~~
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_blit.cpp: In function ‘hwcSTATUS hwcDim(hwcContext*, hwc_layer_1_t*, private_handle_t*, hwc_rect_t*, hwc_region_t*)’:
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_blit.cpp:1106:35: warning: unused variable ‘dstBase’ [-Wunused-variable]
+     unsigned int      dstFd = ~0, dstBase = ~0;
+                                   ^~~~~~~
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_blit.cpp: In function ‘hwcSTATUS hwcClear(hwcContext*, unsigned int, hwc_layer_1_t*, private_handle_t*, hwc_rect_t*, hwc_region_t*)’:
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_blit.cpp:1314:35: warning: unused variable ‘dstBase’ [-Wunused-variable]
+     unsigned int      dstFd = ~0, dstBase = ~0;
+                                   ^~~~~~~
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_blit.cpp: At global scope:
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_blit.cpp:64:12: warning: ‘int _DumpFbInfo(fb_var_screeninfo*, int)’ defined but not used [-Wunused-function]
+ static int _DumpFbInfo(struct fb_var_screeninfo *info, int win)
+            ^~~~~~~~~~~
+
+rk_hwc_com 0 
+rga_api 0 
+rk_hwcomposer_htg 0 /workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_htg.cpp: In function ‘void rk_check_hdmi_uevents(const char*, int)’:
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_htg.cpp:79:9: warning: unused variable ‘hdmiStatus’ [-Wunused-variable]
+     int hdmiStatus = -1;
+         ^~~~~~~~~~
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_htg.cpp: In function ‘void* rk_hwc_hdmi_thread(void*)’:
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_htg.cpp:103:33: warning: unused parameter ‘arg’ [-Wunused-parameter]
+ void  *rk_hwc_hdmi_thread(void *arg)
+                                 ^~~
+
+hwc_ipp 0 /workspace/build01-hal-next/hwc-format/source/hwc_ipp.cpp:116:13: warning: ‘void dump(void*, int, int)’ defined but not used [-Wunused-function]
+ static void dump(void* vaddr, int width, int height)
+             ^~~~
+/workspace/build01-hal-next/hwc-format/source/hwc_ipp.cpp: In function ‘void dump(void*, int, int)’:
+/workspace/build01-hal-next/hwc-format/source/hwc_ipp.cpp:125:99: warning: call to ‘sprintf’ declared with attribute warning: sprintf is often misused; please use snprintf
+     sprintf(layername, "/data/dump/src_fb_dmlayer_%d_%d_%d.bin", width, height, DumpSurfaceCount1);
+                                                                                                   ^
+
+hwc_rga 0 /workspace/build01-hal-next/hwc-format/source/hwc_rga.cpp: In function ‘void set_rga_offset(hwc_rect_t, hwc_rect_t, int)’:
+/workspace/build01-hal-next/hwc-format/source/hwc_rga.cpp:323:32: warning: unused parameter ‘src_rect’ [-Wunused-parameter]
+ void set_rga_offset(hwc_rect_t src_rect,hwc_rect_t dst_rect, int transform)
+                                ^~~~~~~~
+/workspace/build01-hal-next/hwc-format/source/hwc_rga.cpp: In function ‘void set_scale_mode(hwc_rect_t, hwc_rect_t, int)’:
+/workspace/build01-hal-next/hwc-format/source/hwc_rga.cpp:386:66: warning: unused parameter ‘transform’ [-Wunused-parameter]
+ void set_scale_mode(hwc_rect_t src_rect,hwc_rect_t dst_rect, int transform)
+                                                                  ^~~~~~~~~
+
+TVInfo 0 /workspace/build01-hal-next/hwc-format/source/TVInfo.cpp:7:0: warning: "LOG_TAG" redefined
+ #define LOG_TAG "RKTVINFO"
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+/workspace/build01-hal-next/hwc-format/source/TVInfo.cpp: In function ‘int HdmiSetHDR(int)’:
+/workspace/build01-hal-next/hwc-format/source/TVInfo.cpp:222:30: warning: call to ‘sprintf’ declared with attribute warning: sprintf is often misused; please use snprintf
+  sprintf(buf, "hdr=%d", eotf);
+                              ^
+/workspace/build01-hal-next/hwc-format/source/TVInfo.cpp: In function ‘int HdmiSetColorimetry(android_dataspace_t)’:
+/workspace/build01-hal-next/hwc-format/source/TVInfo.cpp:247:45: warning: call to ‘sprintf’ declared with attribute warning: sprintf is often misused; please use snprintf
+  sprintf(buf, "colorimetry=%d", colorimetry);
+                                             ^
+

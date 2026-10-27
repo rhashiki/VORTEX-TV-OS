@@ -1,0 +1,30 @@
+{
+  "command": [
+    "/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-gcc",
+    "-nostdlib",
+    "-fPIE",
+    "-pie",
+    "-march=armv7-a",
+    "-mfloat-abi=softfp",
+    "-mfpu=neon",
+    "-Wl,-e,_start",
+    "-Wl,--dynamic-linker,/system/bin/linker",
+    "-Wl,-z,defs",
+    "-Wl,--no-undefined",
+    "-Wl,--no-allow-shlib-undefined",
+    "-Wl,-z,relro",
+    "-Wl,-z,now",
+    "/workspace/build01-hal-next/loader/crtbegin_dynamic1.o",
+    "/workspace/build01-hal-next/loader/crtbrand.o",
+    "/workspace/build01-hal-next/loader/hal_metadata_probe.o",
+    "-L/workspace/build01-hal-next/gralloc-link/reference/system/lib",
+    "-Wl,-rpath-link,/workspace/build01-hal-next/gralloc-link/reference/system/lib",
+    "-lc",
+    "-ldl",
+    "-lgcc",
+    "/workspace/build01-hal-next/loader/crtend_android.o",
+    "-o",
+    "/workspace/build01-hal-next/loader/hal_metadata_probe"
+  ],
+  "exit_code": 0
+}

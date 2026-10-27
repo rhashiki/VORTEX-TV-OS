@@ -1,0 +1,59 @@
+In file included from /workspace/build01-platform-next/research/rockchip-system-core/include/cutils/log.h:1:0,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.h:18,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer_blit.cpp:13:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer_blit.cpp: In function ‘hwcSTATUS hwcBlit(hwcContext*, hwc_layer_1_t*, private_handle_t*, hwc_rect_t*, hwc_rect_t*, hwc_region_t*, FenceMangrRga*, int)’:
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:618:39: error: format ‘%x’ expects argument of type ‘unsigned int’, but argument 8 has type ‘void*’ [-Werror=format=]
+     __android_log_print(prio, tag, fmt)
+                                       ^
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:461:5: note: in expansion of macro ‘android_printLog’
+     android_printLog(priority, tag, __VA_ARGS__)
+     ^~~~~~~~~~~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:453:5: note: in expansion of macro ‘LOG_PRI’
+     LOG_PRI(ANDROID_##priority, tag, __VA_ARGS__)
+     ^~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:156:27: note: in expansion of macro ‘ALOG’
+ #define ALOGE(...) ((void)ALOG(LOG_ERROR, LOG_TAG, __VA_ARGS__))
+                           ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.h:479:21: note: in expansion of macro ‘ALOGE’
+ #define LOGE        ALOGE
+                     ^~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer_blit.cpp:1014:17: note: in expansion of macro ‘LOGE’
+                 LOGE("RGA src:fd=%d,base=%p,src_vir_w = %d, src_vir_h = %d,srcLogical=%x,srcFormat=%d", srchnd->share_fd, srchnd->base, \
+                 ^~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:618:39: error: format ‘%x’ expects argument of type ‘unsigned int’, but argument 9 has type ‘void*’ [-Werror=format=]
+     __android_log_print(prio, tag, fmt)
+                                       ^
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:461:5: note: in expansion of macro ‘android_printLog’
+     android_printLog(priority, tag, __VA_ARGS__)
+     ^~~~~~~~~~~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:453:5: note: in expansion of macro ‘LOG_PRI’
+     LOG_PRI(ANDROID_##priority, tag, __VA_ARGS__)
+     ^~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:156:27: note: in expansion of macro ‘ALOG’
+ #define ALOGE(...) ((void)ALOG(LOG_ERROR, LOG_TAG, __VA_ARGS__))
+                           ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.h:479:21: note: in expansion of macro ‘ALOGE’
+ #define LOGE        ALOGE
+                     ^~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer_blit.cpp:1016:17: note: in expansion of macro ‘LOGE’
+                 LOGE("RGA dst:fd=%d,offset=%d,base=%p,dst_vir_w = %d, dst_vir_h = %d,dstLogical=%x,dstPhysical=%x,dstFormat=%d", dstFd, DstHandle->offset, DstHandle->base, \
+                 ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer_blit.cpp:361:32: warning: unused variable ‘dstBase’ [-Wunused-variable]
+     int                 dstFd, dstBase;
+                                ^~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer_blit.cpp:387:25: warning: variable ‘mmu_en’ set but not used [-Wunused-but-set-variable]
+     unsigned char       mmu_en;
+                         ^~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer_blit.cpp: In function ‘hwcSTATUS hwcDim(hwcContext*, hwc_layer_1_t*, private_handle_t*, hwc_rect_t*, hwc_region_t*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer_blit.cpp:1106:35: warning: unused variable ‘dstBase’ [-Wunused-variable]
+     unsigned int      dstFd = ~0, dstBase = ~0;
+                                   ^~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer_blit.cpp: In function ‘hwcSTATUS hwcClear(hwcContext*, unsigned int, hwc_layer_1_t*, private_handle_t*, hwc_rect_t*, hwc_region_t*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer_blit.cpp:1314:35: warning: unused variable ‘dstBase’ [-Wunused-variable]
+     unsigned int      dstFd = ~0, dstBase = ~0;
+                                   ^~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer_blit.cpp: At global scope:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer_blit.cpp:64:12: warning: ‘int _DumpFbInfo(fb_var_screeninfo*, int)’ defined but not used [-Wunused-function]
+ static int _DumpFbInfo(struct fb_var_screeninfo *info, int win)
+            ^~~~~~~~~~~
+cc1plus: some warnings being treated as errors

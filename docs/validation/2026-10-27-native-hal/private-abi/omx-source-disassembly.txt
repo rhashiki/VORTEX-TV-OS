@@ -1,0 +1,45 @@
+
+/workspace/build01-hal-next/private-abi/gralloc_priv_omx.o:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <Rockchip_get_gralloc_private>:
+   0:	b480      	push	{r7}
+   2:	b085      	sub	sp, #20
+   4:	af00      	add	r7, sp, #0
+   6:	6078      	str	r0, [r7, #4]
+   8:	6039      	str	r1, [r7, #0]
+   a:	683b      	ldr	r3, [r7, #0]
+   c:	2b00      	cmp	r3, #0
+   e:	d102      	bne.n	16 <Rockchip_get_gralloc_private+0x16>
+  10:	f04f 33ff 	mov.w	r3, #4294967295	; 0xffffffff
+  14:	e016      	b.n	44 <Rockchip_get_gralloc_private+0x44>
+  16:	687b      	ldr	r3, [r7, #4]
+  18:	60fb      	str	r3, [r7, #12]
+  1a:	68fb      	ldr	r3, [r7, #12]
+  1c:	6a9a      	ldr	r2, [r3, #40]	; 0x28
+  1e:	683b      	ldr	r3, [r7, #0]
+  20:	601a      	str	r2, [r3, #0]
+  22:	68fb      	ldr	r3, [r7, #12]
+  24:	68da      	ldr	r2, [r3, #12]
+  26:	683b      	ldr	r3, [r7, #0]
+  28:	605a      	str	r2, [r3, #4]
+  2a:	68fb      	ldr	r3, [r7, #12]
+  2c:	6b1a      	ldr	r2, [r3, #48]	; 0x30
+  2e:	683b      	ldr	r3, [r7, #0]
+  30:	609a      	str	r2, [r3, #8]
+  32:	68fb      	ldr	r3, [r7, #12]
+  34:	6ada      	ldr	r2, [r3, #44]	; 0x2c
+  36:	683b      	ldr	r3, [r7, #0]
+  38:	60da      	str	r2, [r3, #12]
+  3a:	68fb      	ldr	r3, [r7, #12]
+  3c:	69da      	ldr	r2, [r3, #28]
+  3e:	683b      	ldr	r3, [r7, #0]
+  40:	611a      	str	r2, [r3, #16]
+  42:	2300      	movs	r3, #0
+  44:	4618      	mov	r0, r3
+  46:	3714      	adds	r7, #20
+  48:	46bd      	mov	sp, r7
+  4a:	f85d 7b04 	ldr.w	r7, [sp], #4
+  4e:	4770      	bx	lr

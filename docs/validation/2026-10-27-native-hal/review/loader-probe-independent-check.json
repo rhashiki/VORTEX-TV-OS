@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "scope": "Independent read-only inspection of probe source and recorded loader results/logs/scripts. No execution, compilation or trace performed by reviewer.",
+  "findings": [],
+  "inputs": {
+    "helper_source_sha256": "3d2d06e25bb2946b9ddf7afe39d93be87f26c834bf9d086b411f3e2938fd0c76",
+    "helper_executable_sha256": "3b04317fa4259c73346b2afffa71ef0905306b1679eeff39df1606c63b68a0bc",
+    "recorded_result_sha256": "c7ed270643f1da14a6bdc51cfcb1f1703af996ed9f91d6f7b8eca91af167ea77",
+    "driver_script_sha256": "b483672e2997acea438d9a780163b6aa9128c04cd84139d3b53a61e331f7d25b"
+  },
+  "probe_semantics": {
+    "dlopen_flags": "RTLD_NOW | RTLD_LOCAL",
+    "symbol": "HMI via HAL_MODULE_INFO_SYM_AS_STR",
+    "validated_fields": [
+      "HARDWARE_MODULE_TAG",
+      "module id equals expected-id argument",
+      "non-null methods pointer",
+      "non-null methods->open pointer"
+    ],
+    "printed_but_not_compared_against_expected_versions": [
+      "module_api_version",
+      "hal_api_version",
+      "name"
+    ],
+    "device_open_pointer_is_read_not_called": true,
+    "no_explicit_GPU_graphics_or_ioctl_call_in_probe": true,
+    "successful_case_calls_dlclose_and_checks_result": true
+  },
+  "recorded_checks": [
+    {
+      "case": "missing-file",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "log_marker": "DLOPEN_FAILED:",
+      "log_sha256": "dbe6536bbc32673ce840d6dd2bc12d5ff4b1bfed51a12ecf4ee5a8069c3a2396",
+      "PIE_warning_visible": true
+    },
+    {
+      "case": "missing-HMI",
+      "exit_code": 3,
+      "expected_exit_code": 3,
+      "log_marker": "HMI_MISSING:",
+      "log_sha256": "53ddedceb3beb8f7334ec642a40e13590fcc557d554bda5d8d8512ca08361b1b",
+      "PIE_warning_visible": true
+    },
+    {
+      "case": "gralloc",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "log_marker": "HAL_METADATA_OK id=gralloc",
+      "log_sha256": "01db5455fa11da1990ba30441e972e8a59227cb1a1df052e82756e9df75fdb04",
+      "PIE_warning_visible": true
+    },
+    {
+      "case": "hwcomposer",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "log_marker": "HAL_METADATA_OK id=hwcomposer",
+      "log_sha256": "dc10c1d381afb53dfb57d1dfa1e56efabce482885ce0d2e32475ebc7bda47fa9",
+      "PIE_warning_visible": true
+    },
+    {
+      "case": "wrong-id",
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "log_marker": "HMI_INVALID",
+      "log_sha256": "43eb67161a90d11e4450236cb2622e7679af7f7efd2f4214de76a6354d6deba8",
+      "PIE_warning_visible": true
+    }
+  ],
+  "checks_summary": {
+    "total": 5,
+    "positive_metadata_load_and_close": 2,
+    "negative_missing_file": 1,
+    "negative_missing_HMI": 1,
+    "negative_wrong_id": 1,
+    "recorded_status": "pass"
+  },
+  "helper_warning": {
+    "text": "unsupported flags DT_FLAGS_1=0x8000001",
+    "visible_in_all_five_logs": true,
+    "scope": "Warning names the PIE probe executable. It was not suppressed; all recorded cases continue to their expected metadata/error output and exit status. It is not a reported HAL compile/runtime graphics failure.",
+    "build_link_records_pie_flag": true
+  },
+  "limits": [
+    "RTLD_NOW resolves dynamic imports and runs applicable library constructors; dlclose can run destructors. The helper source avoids explicit device-open/GPU/ioctl operations, but this review does not assert that every dependency constructor/destructor is side-effect free.",
+    "Success validates load/HMI metadata/close paths under the recorded QEMU user-mode environment; it does not execute module methods->open or graphics operations.",
+    "Module and HAL API versions are printed; the probe does not compare them to independently expected versions.",
+    "No integrated Android runtime, SurfaceFlinger composition, kernel framebuffer ioctl, GPU/HDMI, physical device or firmware boot is established."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "libraries": 22,
+  "extracted_bytes": 2781540,
+  "names": [
+    "libion.so",
+    "libc.so",
+    "libdl.so",
+    "libm.so",
+    "liblog.so",
+    "libcutils.so",
+    "libhardware.so",
+    "libstdc++.so",
+    "libc++.so",
+    "libui.so",
+    "libutils.so",
+    "libEGL.so",
+    "libGLESv1_CM.so",
+    "libhardware_legacy.so",
+    "libsync.so",
+    "libbinder.so",
+    "libbacktrace.so",
+    "libwpa_client.so",
+    "libnetutils.so",
+    "libbase.so",
+    "libunwind.so",
+    "liblzma.so"
+  ]
+}

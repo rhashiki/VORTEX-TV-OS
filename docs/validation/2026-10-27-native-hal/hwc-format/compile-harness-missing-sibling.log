@@ -1,0 +1,75 @@
+rk_hwcomposer 1 In file included from /workspace/build01-hal-next/hwc-format/source/rk_hwcomposer.cpp:17:0:
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer.h:28:36: fatal error: ../librkvpu/vpu_global.h: No such file or directory
+ #include "../librkvpu/vpu_global.h"
+                                    ^
+compilation terminated.
+
+rk_hwcomposer_blit 1 In file included from /workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_blit.cpp:13:0:
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer.h:28:36: fatal error: ../librkvpu/vpu_global.h: No such file or directory
+ #include "../librkvpu/vpu_global.h"
+                                    ^
+compilation terminated.
+
+rk_hwc_com 1 In file included from /workspace/build01-hal-next/hwc-format/source/rk_hwc_com.cpp:15:0:
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer.h:28:36: fatal error: ../librkvpu/vpu_global.h: No such file or directory
+ #include "../librkvpu/vpu_global.h"
+                                    ^
+compilation terminated.
+
+rga_api 0 
+rk_hwcomposer_htg 0 /workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_htg.cpp: In function ‘void rk_check_hdmi_uevents(const char*, int)’:
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_htg.cpp:79:9: warning: unused variable ‘hdmiStatus’ [-Wunused-variable]
+     int hdmiStatus = -1;
+         ^~~~~~~~~~
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_htg.cpp: In function ‘void* rk_hwc_hdmi_thread(void*)’:
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_htg.cpp:103:33: warning: unused parameter ‘arg’ [-Wunused-parameter]
+ void  *rk_hwc_hdmi_thread(void *arg)
+                                 ^~~
+
+hwc_ipp 0 /workspace/build01-hal-next/hwc-format/source/hwc_ipp.cpp:116:13: warning: ‘void dump(void*, int, int)’ defined but not used [-Wunused-function]
+ static void dump(void* vaddr, int width, int height)
+             ^~~~
+/workspace/build01-hal-next/hwc-format/source/hwc_ipp.cpp: In function ‘void dump(void*, int, int)’:
+/workspace/build01-hal-next/hwc-format/source/hwc_ipp.cpp:125:99: warning: call to ‘sprintf’ declared with attribute warning: sprintf is often misused; please use snprintf
+     sprintf(layername, "/data/dump/src_fb_dmlayer_%d_%d_%d.bin", width, height, DumpSurfaceCount1);
+                                                                                                   ^
+
+hwc_rga 1 /workspace/build01-hal-next/hwc-format/source/hwc_rga.cpp: In function ‘void set_rga_offset(hwc_rect_t, hwc_rect_t, int)’:
+/workspace/build01-hal-next/hwc-format/source/hwc_rga.cpp:323:32: warning: unused parameter ‘src_rect’ [-Wunused-parameter]
+ void set_rga_offset(hwc_rect_t src_rect,hwc_rect_t dst_rect, int transform)
+                                ^~~~~~~~
+/workspace/build01-hal-next/hwc-format/source/hwc_rga.cpp: In function ‘void set_scale_mode(hwc_rect_t, hwc_rect_t, int)’:
+/workspace/build01-hal-next/hwc-format/source/hwc_rga.cpp:386:66: warning: unused parameter ‘transform’ [-Wunused-parameter]
+ void set_scale_mode(hwc_rect_t src_rect,hwc_rect_t dst_rect, int transform)
+                                                                  ^~~~~~~~~
+In file included from /workspace/build01-platform-next/research/rockchip-system-core/include/cutils/log.h:1:0,
+                 from /workspace/build01-hal-next/hwc-format/source/hwc_rga.h:19,
+                 from /workspace/build01-hal-next/hwc-format/source/hwc_rga.cpp:10:
+/workspace/build01-hal-next/hwc-format/source/hwc_rga.cpp: In function ‘int set_rga_cfg(hwc_cfg_t*)’:
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:618:39: error: format ‘%x’ expects argument of type ‘unsigned int’, but argument 8 has type ‘void*’ [-Werror=format=]
+     __android_log_print(prio, tag, fmt)
+                                       ^
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:461:5: note: in expansion of macro ‘android_printLog’
+     android_printLog(priority, tag, __VA_ARGS__)
+     ^~~~~~~~~~~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:453:5: note: in expansion of macro ‘LOG_PRI’
+     LOG_PRI(ANDROID_##priority, tag, __VA_ARGS__)
+     ^~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:120:14: note: in expansion of macro ‘ALOG’
+     ? ((void)ALOG(LOG_DEBUG, LOG_TAG, __VA_ARGS__)) \
+              ^~~~
+/workspace/build01-hal-next/hwc-format/source/hwc_rga.cpp:481:3: note: in expansion of macro ‘ALOGD_IF’
+   ALOGD_IF(DEBUG_LOG,"src rect[%d,%d,%d,%d],src_addr=0x%x,dst rect[%d,%d,%
+TVInfo 0 /workspace/build01-hal-next/hwc-format/source/TVInfo.cpp:7:0: warning: "LOG_TAG" redefined
+ #define LOG_TAG "RKTVINFO"
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+/workspace/build01-hal-next/hwc-format/source/TVInfo.cpp: In function ‘int HdmiSetHDR(int)’:
+/workspace/build01-hal-next/hwc-format/source/TVInfo.cpp:222:30: warning: call to ‘sprintf’ declared with attribute warning: sprintf is often misused; please use snprintf
+  sprintf(buf, "hdr=%d", eotf);
+                              ^
+/workspace/build01-hal-next/hwc-format/source/TVInfo.cpp: In function ‘int HdmiSetColorimetry(android_dataspace_t)’:
+/workspace/build01-hal-next/hwc-format/source/TVInfo.cpp:247:45: warning: call to ‘sprintf’ declared with attribute warning: sprintf is often misused; please use snprintf
+  sprintf(buf, "colorimetry=%d", colorimetry);
+                                             ^
+

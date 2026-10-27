@@ -1,0 +1,388 @@
+
+Symbol table '.dynsym' contains 96 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00001cf8     0 SECTION LOCAL  DEFAULT   11 
+     2: 00017000     0 SECTION LOCAL  DEFAULT   18 
+     3: 00000000     0 FUNC    GLOBAL DEFAULT  UND strerror@LIBC (2)
+     4: 00000000     0 FUNC    GLOBAL DEFAULT  UND memcpy@LIBC (2)
+     5: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_uldivmod
+     6: 00000000     0 FUNC    GLOBAL DEFAULT  UND __assert2@LIBC (2)
+     7: 00000000     0 FUNC    GLOBAL DEFAULT  UND property_set
+     8: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_uidiv
+     9: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZdlPv
+    10: 00000000     0 FUNC    GLOBAL DEFAULT  UND hw_get_module
+    11: 00000000     0 FUNC    GLOBAL DEFAULT  UND close@LIBC (2)
+    12: 00000000     0 FUNC    GLOBAL DEFAULT  UND dup@LIBC (2)
+    13: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_share
+    14: 00000000     0 FUNC    GLOBAL DEFAULT  UND free@LIBC (2)
+    15: 00000000     0 FUNC    GLOBAL DEFAULT  UND malloc@LIBC (2)
+    16: 00000000     0 FUNC    GLOBAL DEFAULT  UND getpid@LIBC (2)
+    17: 00000000     0 FUNC    GLOBAL DEFAULT  UND strlen@LIBC (2)
+    18: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Znwj
+    19: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_close
+    20: 00000000     0 FUNC    GLOBAL DEFAULT  UND munmap@LIBC (2)
+    21: 00000000     0 FUNC    GLOBAL DEFAULT  UND strncmp@LIBC (2)
+    22: 00000000     0 FUNC    GLOBAL DEFAULT  UND snprintf@LIBC (2)
+    23: 00000000     0 FUNC    GLOBAL DEFAULT  UND __android_log_print
+    24: 00000000     0 FUNC    GLOBAL DEFAULT  UND glFinish
+    25: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_unlock@LIBC (2)
+    26: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_alloc
+    27: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_sync_fd
+    28: 00000000     0 FUNC    GLOBAL DEFAULT  UND mmap@LIBC (2)
+    29: 00000000     0 FUNC    GLOBAL DEFAULT  UND memset@LIBC (2)
+    30: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_init@LIBC (2)
+    31: 00000000     0 FUNC    GLOBAL DEFAULT  UND ioctl@LIBC (2)
+    32: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_atexit@LIBC (2)
+    33: 00000000     0 FUNC    GLOBAL DEFAULT  UND atoi@LIBC (2)
+    34: 00000000     0 FUNC    GLOBAL DEFAULT  UND __errno@LIBC (2)
+    35: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_uidivmod
+    36: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_lock@LIBC (2)
+    37: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_get_phys
+    38: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_finalize@LIBC (2)
+    39: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_open
+    40: 00000000     0 FUNC    GLOBAL DEFAULT  UND __register_atfork@LIBC (2)
+    41: 00000000     0 FUNC    GLOBAL DEFAULT  UND property_get
+    42: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_idiv
+    43: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_free
+    44: 00000000     0 FUNC    GLOBAL DEFAULT  UND open@LIBC (2)
+    45: 00003251    22 FUNC    WEAK   DEFAULT   11 _ZN13native_handleC1Ev
+    46: 00003699    26 FUNC    WEAK   DEFAULT   11 _ZNKSt3__16vectorIiNS_9allocatorIiEEE31__annotate_contiguous_containerEPKvS5_S5_S5_
+    47: 00004871    22 FUNC    GLOBAL DEFAULT   11 _Z19compositionCompleteP20framebuffer_device_t
+    48: 000033c7    28 FUNC    WEAK   DEFAULT   11 _ZN16private_handle_tD1Ev
+    49: 00005755    68 FUNC    GLOBAL DEFAULT   11 _Z25rockchip_get_int_propertyPKcS0_
+    50: 00017018   448 OBJECT  GLOBAL DEFAULT   19 HMI
+    51: 000057dd   112 FUNC    GLOBAL DEFAULT   11 _Z20rockchip_set_versionv
+    52: 00005929   320 FUNC    GLOBAL DEFAULT   11 _Z24rockchip_alloc_ion_closeP16private_module_t
+    53: 000049c1    34 FUNC    WEAK   DEFAULT   11 _Z21round_up_to_page_sizej
+    54: 00003267   176 FUNC    WEAK   DEFAULT   11 _ZN16private_handle_tC2EiiiPvi
+    55: 000171e0     0 NOTYPE  GLOBAL DEFAULT   19 _bss_end__
+    56: 000054a1   348 FUNC    GLOBAL DEFAULT   11 _ZN16private_module_tC1Ev
+    57: 000056a5   176 FUNC    GLOBAL DEFAULT   11 _Z37rockchip_get_handle_type_by_heap_maskj
+    58: 00003449   154 FUNC    WEAK   DEFAULT   11 _ZNKSt3__16vectorIiNS_9allocatorIiEEE17__annotate_shrinkEj
+    59: 00005a69    34 FUNC    GLOBAL DEFAULT   11 _Z29rockchip_heap_fix_by_platformPj
+    60: 000036b3    22 FUNC    WEAK   DEFAULT   11 _ZNSt3__121__split_buffer_commonILb1EEC2Ev
+    61: 00003317   176 FUNC    WEAK   DEFAULT   11 _ZN16private_handle_tC1EiiiPviii
+    62: 00003aff   172 FUNC    WEAK   DEFAULT   11 _ZNKSt3__16vectorIiNS_9allocatorIiEEE14__annotate_newEj
+    63: 00003a45   186 FUNC    WEAK   DEFAULT   11 _ZNKSt3__16vectorIiNS_9allocatorIiEEE17__annotate_deleteEv
+    64: 0000584d   220 FUNC    GLOBAL DEFAULT   11 _Z23rockchip_alloc_ion_openP16private_module_t
+    65: 000027bd    32 FUNC    GLOBAL DEFAULT   11 _Z22gralloc_backend_get_fdP16private_handle_tPi
+    66: 00005255   588 FUNC    GLOBAL DEFAULT   11 _Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr
+    67: 000171e0     0 NOTYPE  GLOBAL DEFAULT   19 __end__
+    68: 00003251    22 FUNC    WEAK   DEFAULT   11 _ZN13native_handleC2Ev
+    69: 000033c7    28 FUNC    WEAK   DEFAULT   11 _ZN16private_handle_tD2Ev
+    70: 00003875   308 FUNC    WEAK   DEFAULT   11 _ZNSt3__16vectorIiNS_9allocatorIiEEE26__swap_out_circular_bufferERNS_14__split_bufferIiRS2_EE
+    71: 00003a1d    40 FUNC    WEAK   DEFAULT   11 _ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv
+    72: 00003791   228 FUNC    WEAK   DEFAULT   11 _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEED1Ev
+    73: 00003511   392 FUNC    WEAK   DEFAULT   11 _ZNSt3__16vectorIiNS_9allocatorIiEEE21__push_back_slow_pathIRKiEEvOT_
+    74: 000054a1   348 FUNC    GLOBAL DEFAULT   11 _ZN16private_module_tC2Ev
+    75: 000036c9   200 FUNC    WEAK   DEFAULT   11 _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEEC2EjjS3_
+    76: 00017018     0 NOTYPE  GLOBAL DEFAULT   19 __bss_start
+    77: 000034e3    26 FUNC    WEAK   DEFAULT   11 _ZNSt3__16vectorIiNS_9allocatorIiEEE24__RAII_IncreaseAnnotatorC1ERKS3_j
+    78: 000171e0     0 NOTYPE  GLOBAL DEFAULT   19 _end
+    79: 000033e5   100 FUNC    WEAK   DEFAULT   11 _ZN16private_handle_t8validateEPK13native_handle
+    80: 00017018     0 NOTYPE  GLOBAL DEFAULT   18 _edata
+    81: 00004887   314 FUNC    GLOBAL DEFAULT   11 _Z23framebuffer_device_openPK11hw_module_tPKcPP11hw_device_t
+    82: 000027dd  2442 FUNC    GLOBAL DEFAULT   11 _Z25gralloc_backend_get_attrsP16private_handle_tPv
+    83: 000031a9   168 FUNC    GLOBAL DEFAULT   11 _Z17alloc_device_openPK11hw_module_tPKcPP11hw_device_t
+    84: 000036b3    22 FUNC    WEAK   DEFAULT   11 _ZNSt3__121__split_buffer_commonILb1EEC1Ev
+    85: 00003267   176 FUNC    WEAK   DEFAULT   11 _ZN16private_handle_tC1EiiiPvi
+    86: 000034fd    20 FUNC    WEAK   DEFAULT   11 _ZNSt3__16vectorIiNS_9allocatorIiEEE24__RAII_IncreaseAnnotator6__doneEv
+    87: 00005799    68 FUNC    GLOBAL DEFAULT   11 _Z12rockchip_logi
+    88: 000040b5  1900 FUNC    GLOBAL DEFAULT   11 _Z24init_frame_buffer_lockedP16private_module_t
+    89: 00003317   176 FUNC    WEAK   DEFAULT   11 _ZN16private_handle_tC2EiiiPviii
+    90: 000036c9   200 FUNC    WEAK   DEFAULT   11 _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEEC1EjjS3_
+    91: 000171e0     0 NOTYPE  GLOBAL DEFAULT   19 __bss_end__
+    92: 00017018     0 NOTYPE  GLOBAL DEFAULT   19 __bss_start__
+    93: 00003791   228 FUNC    WEAK   DEFAULT   11 _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEED2Ev
+    94: 000034e3    26 FUNC    WEAK   DEFAULT   11 _ZNSt3__16vectorIiNS_9allocatorIiEEE24__RAII_IncreaseAnnotatorC2ERKS3_j
+    95: 000039a9   114 FUNC    WEAK   DEFAULT   11 _ZNKSt3__16vectorIiNS_9allocatorIiEEE8max_sizeEv
+
+Symbol table '.symtab' contains 286 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000114     0 SECTION LOCAL  DEFAULT    1 
+     2: 00000138     0 SECTION LOCAL  DEFAULT    2 
+     3: 000003cc     0 SECTION LOCAL  DEFAULT    3 
+     4: 0000057c     0 SECTION LOCAL  DEFAULT    4 
+     5: 00000b7c     0 SECTION LOCAL  DEFAULT    5 
+     6: 000015f0     0 SECTION LOCAL  DEFAULT    6 
+     7: 000016b0     0 SECTION LOCAL  DEFAULT    7 
+     8: 000016d0     0 SECTION LOCAL  DEFAULT    8 
+     9: 00001718     0 SECTION LOCAL  DEFAULT    9 
+    10: 00001968     0 SECTION LOCAL  DEFAULT   10 
+    11: 00001cf8     0 SECTION LOCAL  DEFAULT   11 
+    12: 00005a90     0 SECTION LOCAL  DEFAULT   12 
+    13: 00006b58     0 SECTION LOCAL  DEFAULT   13 
+    14: 00016d80     0 SECTION LOCAL  DEFAULT   14 
+    15: 00016d84     0 SECTION LOCAL  DEFAULT   15 
+    16: 00016d88     0 SECTION LOCAL  DEFAULT   16 
+    17: 00016ec0     0 SECTION LOCAL  DEFAULT   17 
+    18: 00017000     0 SECTION LOCAL  DEFAULT   18 
+    19: 00017018     0 SECTION LOCAL  DEFAULT   19 
+    20: 00000000     0 SECTION LOCAL  DEFAULT   20 
+    21: 00000000     0 SECTION LOCAL  DEFAULT   21 
+    22: 00000000     0 FILE    LOCAL  DEFAULT  ABS crtbegin_so.c
+    23: 00001cf8     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    24: 00001d0c     0 NOTYPE  LOCAL  DEFAULT   11 $d
+    25: 00016d84     0 NOTYPE  LOCAL  DEFAULT   15 $d
+    26: 00017000     0 NOTYPE  LOCAL  DEFAULT   18 $d
+    27: 00001d10     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    28: 00001d50     0 NOTYPE  LOCAL  DEFAULT   11 $d
+    29: 00001d58     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    30: 00001d7c     0 NOTYPE  LOCAL  DEFAULT   11 $d
+    31: 00000000     0 FILE    LOCAL  DEFAULT  ABS /workspace/build01-hal-next/gralloc-link/crt/crtbrand.o
+    32: 00006b58     0 NOTYPE  LOCAL  DEFAULT   13 $d
+    33: 00006b58    24 OBJECT  LOCAL  DEFAULT   13 abitag
+    34: 00000000     0 FILE    LOCAL  DEFAULT  ABS alloc_device.cpp
+    35: 00005a90     0 NOTYPE  LOCAL  DEFAULT   12 $d
+    36: 00005a90     8 OBJECT  LOCAL  DEFAULT   12 _ZL28NATIVE_WINDOW_TIMESTAMP_AUTO
+    37: 00005a98     1 OBJECT  LOCAL  DEFAULT   12 _ZNSt3__1L19piecewise_constructE
+    38: 00005a9c     1 OBJECT  LOCAL  DEFAULT   12 _ZNSt3__1L13allocator_argE
+    39: 00005aa0     1 OBJECT  LOCAL  DEFAULT   12 _ZNSt3__112_GLOBAL__N_1L6ignoreE
+    40: 00003250     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    41: 00003266     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    42: 00003316     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    43: 000033c6     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    44: 000033e4     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    45: 00003440     0 NOTYPE  LOCAL  DEFAULT   11 $d
+    46: 00001d80     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    47: 00001d81   856 FUNC    LOCAL  DEFAULT   11 _ZL20gralloc_alloc_bufferP14alloc_device_tjiPPK13native_handle
+    48: 0000206c     0 NOTYPE  LOCAL  DEFAULT   11 $d
+    49: 00005dd8    80 OBJECT  LOCAL  DEFAULT   12 _ZZL20gralloc_alloc_bufferP14alloc_device_tjiPPK13native_handleE19__PRETTY_FUNCTION__
+    50: 000020d8     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    51: 000020d9   544 FUNC    LOCAL  DEFAULT   11 _ZL32gralloc_alloc_framebuffer_lockedP14alloc_device_tjiPPK13native_handle
+    52: 000022d4     0 NOTYPE  LOCAL  DEFAULT   11 $d
+    53: 00005e28    92 OBJECT  LOCAL  DEFAULT   12 _ZZL32gralloc_alloc_framebuffer_lockedP14alloc_device_tjiPPK13native_handleE19__PRETTY_FUNCTION__
+    54: 000022f8     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    55: 000022f9    64 FUNC    LOCAL  DEFAULT   11 _ZL25gralloc_alloc_framebufferP14alloc_device_tjiPPK13native_handle
+    56: 00002339   736 FUNC    LOCAL  DEFAULT   11 _ZL18alloc_device_allocP14alloc_device_tiiiiPPK13native_handlePi
+    57: 000024a8     0 NOTYPE  LOCAL  DEFAULT   11 $d
+    58: 000024bc     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    59: 00002608     0 NOTYPE  LOCAL  DEFAULT   11 $d
+    60: 00002618     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    61: 00002619   420 FUNC    LOCAL  DEFAULT   11 _ZL17alloc_device_freeP14alloc_device_tPK13native_handle
+    62: 00002798     0 NOTYPE  LOCAL  DEFAULT   11 $d
+    63: 00005e84    56 OBJECT  LOCAL  DEFAULT   12 _ZZL17alloc_device_freeP14alloc_device_tPK13native_handleE19__PRETTY_FUNCTION__
+    64: 000027bc     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    65: 00003167    66 FUNC    LOCAL  DEFAULT   11 _ZL18alloc_device_closeP11hw_device_t
+    66: 00003244     0 NOTYPE  LOCAL  DEFAULT   11 $d
+    67: 00003448     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    68: 000034e2     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    69: 000034fc     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    70: 00003510     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    71: 00003698     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    72: 000036b2     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    73: 000036c8     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    74: 00003790     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    75: 00003874     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    76: 000039a8     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    77: 00003a1c     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    78: 00003a38     0 NOTYPE  LOCAL  DEFAULT   11 $d
+    79: 00005ebc   111 OBJECT  LOCAL  DEFAULT   12 _ZZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEvE19__PRETTY_FUNCTION__
+    80: 00003a44     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    81: 00003afe     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    82: 00000000     0 FILE    LOCAL  DEFAULT  ABS framebuffer_device.cpp
+    83: 00005f30     0 NOTYPE  LOCAL  DEFAULT   12 $d
+    84: 00005f30     8 OBJECT  LOCAL  DEFAULT   12 _ZL28NATIVE_WINDOW_TIMESTAMP_AUTO
+    85: 00003bb1    40 FUNC    LOCAL  DEFAULT   11 gralloc_open
+    86: 00003bb0     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    87: 00003bd4     0 NOTYPE  LOCAL  DEFAULT   11 $d
+    88: 00003bd8     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    89: 00003bd9    28 FUNC    LOCAL  DEFAULT   11 gralloc_close
+    90: 00005f40     1 OBJECT  LOCAL  DEFAULT   12 _ZNSt3__1L19piecewise_constructE
+    91: 00005f44     1 OBJECT  LOCAL  DEFAULT   12 _ZNSt3__1L13allocator_argE
+    92: 00005f48     1 OBJECT  LOCAL  DEFAULT   12 _ZNSt3__112_GLOBAL__N_1L6ignoreE
+    93: 000049c0     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    94: 00017004     0 NOTYPE  LOCAL  DEFAULT   18 $d
+    95: 00017004     4 OBJECT  LOCAL  DEFAULT   18 _ZL12swapInterval
+    96: 00003bf5    72 FUNC    LOCAL  DEFAULT   11 _ZL20fb_set_swap_intervalP20framebuffer_device_ti
+    97: 00003c38     0 NOTYPE  LOCAL  DEFAULT   11 $d
+    98: 00003c3c     0 NOTYPE  LOCAL  DEFAULT   11 $t
+    99: 00003c3d  1144 FUNC    LOCAL  DEFAULT   11 _ZL7fb_postP20framebuffer_device_tPK13native_handle
+   100: 0000408c     0 NOTYPE  LOCAL  DEFAULT   11 $d
+   101: 00006268    52 OBJECT  LOCAL  DEFAULT   12 _ZZL7fb_postP20framebuffer_device_tPK13native_handleE19__PRETTY_FUNCTION__
+   102: 000040b4     0 NOTYPE  LOCAL  DEFAULT   11 $t
+   103: 000047c0     0 NOTYPE  LOCAL  DEFAULT   11 $d
+   104: 0000629c    48 OBJECT  LOCAL  DEFAULT   12 _ZZ24init_frame_buffer_lockedP16private_module_tE19__PRETTY_FUNCTION__
+   105: 00004820     0 NOTYPE  LOCAL  DEFAULT   11 $t
+   106: 00004821    46 FUNC    LOCAL  DEFAULT   11 _ZL17init_frame_bufferP16private_module_t
+   107: 0000484f    34 FUNC    LOCAL  DEFAULT   11 _ZL8fb_closeP11hw_device_t
+   108: 000049ac     0 NOTYPE  LOCAL  DEFAULT   11 $d
+   109: 00000000     0 FILE    LOCAL  DEFAULT  ABS gralloc_module.cpp
+   110: 000062d0     0 NOTYPE  LOCAL  DEFAULT   12 $d
+   111: 000062d0     8 OBJECT  LOCAL  DEFAULT   12 _ZL28NATIVE_WINDOW_TIMESTAMP_AUTO
+   112: 000062d8     1 OBJECT  LOCAL  DEFAULT   12 _ZNSt3__1L19piecewise_constructE
+   113: 000062dc     1 OBJECT  LOCAL  DEFAULT   12 _ZNSt3__1L13allocator_argE
+   114: 000062e0     1 OBJECT  LOCAL  DEFAULT   12 _ZNSt3__112_GLOBAL__N_1L6ignoreE
+   115: 000171d8     4 OBJECT  LOCAL  DEFAULT   19 _ZL10s_map_lock
+   116: 000171d8     0 NOTYPE  LOCAL  DEFAULT   19 $d
+   117: 000049e4     0 NOTYPE  LOCAL  DEFAULT   11 $t
+   118: 000049e5   108 FUNC    LOCAL  DEFAULT   11 _ZL19gralloc_device_openPK11hw_module_tPKcPP11hw_device_t
+   119: 00004a48     0 NOTYPE  LOCAL  DEFAULT   11 $d
+   120: 00004a50     0 NOTYPE  LOCAL  DEFAULT   11 $t
+   121: 00004a51   220 FUNC    LOCAL  DEFAULT   11 _ZL15gralloc_performPK16gralloc_module_tiz
+   122: 00004b24     0 NOTYPE  LOCAL  DEFAULT   11 $d
+   123: 00004b2c     0 NOTYPE  LOCAL  DEFAULT   11 $t
+   124: 00004b2d   596 FUNC    LOCAL  DEFAULT   11 _ZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handle
+   125: 00004d28     0 NOTYPE  LOCAL  DEFAULT   11 $d
+   126: 000067e8    70 OBJECT  LOCAL  DEFAULT   12 _ZZL23gralloc_register_bufferPK16gralloc_module_tPK13native_handleE19__PRETTY_FUNCTION__
+   127: 00004d80     0 NOTYPE  LOCAL  DEFAULT   11 $t
+   128: 00004d81   236 FUNC    LOCAL  DEFAULT   11 _ZL12unmap_bufferP16private_handle_t
+   129: 00004e48     0 NOTYPE  LOCAL  DEFAULT   11 $d
+   130: 00006830    37 OBJECT  LOCAL  DEFAULT   12 _ZZL12unmap_bufferP16private_handle_tE19__PRETTY_FUNCTION__
+   131: 00004e6c     0 NOTYPE  LOCAL  DEFAULT   11 $t
+   132: 00004e6d   344 FUNC    LOCAL  DEFAULT   11 _ZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handle
+   133: 00004f8c     0 NOTYPE  LOCAL  DEFAULT   11 $d
+   134: 00006858    72 OBJECT  LOCAL  DEFAULT   12 _ZZL25gralloc_unregister_bufferPK16gralloc_module_tPK13native_handleE19__PRETTY_FUNCTION__
+   135: 00004fc4     0 NOTYPE  LOCAL  DEFAULT   11 $t
+   136: 00004fc5   272 FUNC    LOCAL  DEFAULT   11 _ZL12gralloc_lockPK16gralloc_module_tPK13native_handleiiiiiPPv
+   137: 000050b0     0 NOTYPE  LOCAL  DEFAULT   11 $d
+   138: 000068a0    92 OBJECT  LOCAL  DEFAULT   12 _ZZL12gralloc_lockPK16gralloc_module_tPK13native_handleiiiiiPPvE19__PRETTY_FUNCTION__
+   139: 000050d4     0 NOTYPE  LOCAL  DEFAULT   11 $t
+   140: 000050d5   384 FUNC    LOCAL  DEFAULT   11 _ZL14gralloc_unlockPK16gralloc_module_tPK13native_handle
+   141: 00005224     0 NOTYPE  LOCAL  DEFAULT   11 $d
+   142: 000068fc    61 OBJECT  LOCAL  DEFAULT   12 _ZZL14gralloc_unlockPK16gralloc_module_tPK13native_handleE19__PRETTY_FUNCTION__
+   143: 00005254     0 NOTYPE  LOCAL  DEFAULT   11 $t
+   144: 00005484     0 NOTYPE  LOCAL  DEFAULT   11 $d
+   145: 0000693c    19 OBJECT  LOCAL  DEFAULT   12 _ZZ18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcrE12__FUNCTION__
+   146: 00017014     0 NOTYPE  LOCAL  DEFAULT   18 $d
+   147: 00017014     4 OBJECT  LOCAL  DEFAULT   18 _ZL22gralloc_module_methods
+   148: 000054a0     0 NOTYPE  LOCAL  DEFAULT   11 $t
+   149: 000055d0     0 NOTYPE  LOCAL  DEFAULT   11 $d
+   150: 000055fc     0 NOTYPE  LOCAL  DEFAULT   11 $t
+   151: 000055fd    56 FUNC    LOCAL  DEFAULT   11 _Z41__static_initialization_and_destruction_0ii
+   152: 0000562c     0 NOTYPE  LOCAL  DEFAULT   11 $d
+   153: 00005634     0 NOTYPE  LOCAL  DEFAULT   11 $t
+   154: 00005635    16 FUNC    LOCAL  DEFAULT   11 _GLOBAL__sub_I_gralloc_module.cpp
+   155: 00016d80     0 NOTYPE  LOCAL  DEFAULT   14 $d
+   156: 00000000     0 FILE    LOCAL  DEFAULT  ABS rockchip_alloc_device.cpp
+   157: 00005645    48 FUNC    LOCAL  DEFAULT   11 _ZL18android_atomic_incPVi
+   158: 00005644     0 NOTYPE  LOCAL  DEFAULT   11 $t
+   159: 00005675    48 FUNC    LOCAL  DEFAULT   11 _ZL18android_atomic_decPVi
+   160: 00006950     0 NOTYPE  LOCAL  DEFAULT   12 $d
+   161: 00006950     8 OBJECT  LOCAL  DEFAULT   12 _ZL28NATIVE_WINDOW_TIMESTAMP_AUTO
+   162: 00006958     1 OBJECT  LOCAL  DEFAULT   12 _ZNSt3__1L19piecewise_constructE
+   163: 0000695c     1 OBJECT  LOCAL  DEFAULT   12 _ZNSt3__1L13allocator_argE
+   164: 00006960     1 OBJECT  LOCAL  DEFAULT   12 _ZNSt3__112_GLOBAL__N_1L6ignoreE
+   165: 000056c4     0 NOTYPE  LOCAL  DEFAULT   11 $d
+   166: 00005704     0 NOTYPE  LOCAL  DEFAULT   11 $t
+   167: 00005748     0 NOTYPE  LOCAL  DEFAULT   11 $d
+   168: 00006ac0    56 OBJECT  LOCAL  DEFAULT   12 _ZZ37rockchip_get_handle_type_by_heap_maskjE19__PRETTY_FUNCTION__
+   169: 00005754     0 NOTYPE  LOCAL  DEFAULT   11 $t
+   170: 000171dc     4 OBJECT  LOCAL  DEFAULT   19 _ZZ12rockchip_logiE3log
+   171: 000171dc     0 NOTYPE  LOCAL  DEFAULT   19 $d
+   172: 000057cc     0 NOTYPE  LOCAL  DEFAULT   11 $d
+   173: 000057dc     0 NOTYPE  LOCAL  DEFAULT   11 $t
+   174: 00005844     0 NOTYPE  LOCAL  DEFAULT   11 $d
+   175: 0000584c     0 NOTYPE  LOCAL  DEFAULT   11 $t
+   176: 00005908     0 NOTYPE  LOCAL  DEFAULT   11 $d
+   177: 00006af8    47 OBJECT  LOCAL  DEFAULT   12 _ZZ23rockchip_alloc_ion_openP16private_module_tE19__PRETTY_FUNCTION__
+   178: 00005928     0 NOTYPE  LOCAL  DEFAULT   11 $t
+   179: 00005a3c     0 NOTYPE  LOCAL  DEFAULT   11 $d
+   180: 00006b28    48 OBJECT  LOCAL  DEFAULT   12 _ZZ24rockchip_alloc_ion_closeP16private_module_tE19__PRETTY_FUNCTION__
+   181: 00005a68     0 NOTYPE  LOCAL  DEFAULT   11 $t
+   182: 00000000     0 FILE    LOCAL  DEFAULT  ABS 
+   183: 00001d11    26 FUNC    LOCAL  DEFAULT   11 __atexit_handler_wrapper
+   184: 00001d2b    46 FUNC    LOCAL  DEFAULT   11 atexit
+   185: 00017000     4 OBJECT  LOCAL  DEFAULT   18 __dso_handle
+   186: 00001d59    40 FUNC    LOCAL  DEFAULT   11 pthread_atfork
+   187: 00001cf9    24 FUNC    LOCAL  DEFAULT   11 __on_dlclose
+   188: 00016d88     0 OBJECT  LOCAL  DEFAULT  ABS _DYNAMIC
+   189: 00016ec0     0 OBJECT  LOCAL  DEFAULT  ABS _GLOBAL_OFFSET_TABLE_
+   190: 00001968     0 NOTYPE  LOCAL  DEFAULT   10 $a
+   191: 00001978     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   192: 0000197c     0 NOTYPE  LOCAL  DEFAULT   10 $a
+   193: 00000000     0 FUNC    GLOBAL DEFAULT  UND strerror@@LIBC
+   194: 00000000     0 FUNC    GLOBAL DEFAULT  UND memcpy@@LIBC
+   195: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_uldivmod
+   196: 000057dd   112 FUNC    GLOBAL DEFAULT   11 _Z20rockchip_set_versionv
+   197: 00000000     0 FUNC    GLOBAL DEFAULT  UND __assert2@@LIBC
+   198: 00000000     0 FUNC    GLOBAL DEFAULT  UND property_set
+   199: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_uidiv
+   200: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZdlPv
+   201: 00000000     0 FUNC    GLOBAL DEFAULT  UND hw_get_module
+   202: 00017018     0 NOTYPE  GLOBAL DEFAULT   19 __bss_start__
+   203: 00000000     0 FUNC    GLOBAL DEFAULT  UND close@@LIBC
+   204: 00003699    26 FUNC    WEAK   DEFAULT   11 _ZNKSt3__16vectorIiNS_9allocatorIiEEE31__annotate_contiguous_containerEPKvS5_S5_S5_
+   205: 00003791   228 FUNC    WEAK   DEFAULT   11 _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEED2Ev
+   206: 00003449   154 FUNC    WEAK   DEFAULT   11 _ZNKSt3__16vectorIiNS_9allocatorIiEEE17__annotate_shrinkEj
+   207: 000033e5   100 FUNC    WEAK   DEFAULT   11 _ZN16private_handle_t8validateEPK13native_handle
+   208: 00005929   320 FUNC    GLOBAL DEFAULT   11 _Z24rockchip_alloc_ion_closeP16private_module_t
+   209: 00004887   314 FUNC    GLOBAL DEFAULT   11 _Z23framebuffer_device_openPK11hw_module_tPKcPP11hw_device_t
+   210: 00000000     0 FUNC    GLOBAL DEFAULT  UND dup@@LIBC
+   211: 000034e3    26 FUNC    WEAK   DEFAULT   11 _ZNSt3__16vectorIiNS_9allocatorIiEEE24__RAII_IncreaseAnnotatorC2ERKS3_j
+   212: 0000584d   220 FUNC    GLOBAL DEFAULT   11 _Z23rockchip_alloc_ion_openP16private_module_t
+   213: 000033c7    28 FUNC    WEAK   DEFAULT   11 _ZN16private_handle_tD2Ev
+   214: 000171e0     0 NOTYPE  GLOBAL DEFAULT   19 _bss_end__
+   215: 000054a1   348 FUNC    GLOBAL DEFAULT   11 _ZN16private_module_tC2Ev
+   216: 00005799    68 FUNC    GLOBAL DEFAULT   11 _Z12rockchip_logi
+   217: 00017018     0 NOTYPE  GLOBAL DEFAULT   18 _edata
+   218: 000039a9   114 FUNC    WEAK   DEFAULT   11 _ZNKSt3__16vectorIiNS_9allocatorIiEEE8max_sizeEv
+   219: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_share
+   220: 00000000     0 FUNC    GLOBAL DEFAULT  UND free@@LIBC
+   221: 00017018   448 OBJECT  GLOBAL DEFAULT   19 HMI
+   222: 00000000     0 FUNC    GLOBAL DEFAULT  UND malloc@@LIBC
+   223: 000171e0     0 NOTYPE  GLOBAL DEFAULT   19 __bss_end__
+   224: 00000000     0 FUNC    GLOBAL DEFAULT  UND getpid@@LIBC
+   225: 00003791   228 FUNC    WEAK   DEFAULT   11 _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEED1Ev
+   226: 00005a69    34 FUNC    GLOBAL DEFAULT   11 _Z29rockchip_heap_fix_by_platformPj
+   227: 00000000     0 FUNC    GLOBAL DEFAULT  UND strlen@@LIBC
+   228: 00003511   392 FUNC    WEAK   DEFAULT   11 _ZNSt3__16vectorIiNS_9allocatorIiEEE21__push_back_slow_pathIRKiEEvOT_
+   229: 000036b3    22 FUNC    WEAK   DEFAULT   11 _ZNSt3__121__split_buffer_commonILb1EEC2Ev
+   230: 000036c9   200 FUNC    WEAK   DEFAULT   11 _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEEC2EjjS3_
+   231: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Znwj
+   232: 00004871    22 FUNC    GLOBAL DEFAULT   11 _Z19compositionCompleteP20framebuffer_device_t
+   233: 000049c1    34 FUNC    WEAK   DEFAULT   11 _Z21round_up_to_page_sizej
+   234: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_close
+   235: 000040b5  1900 FUNC    GLOBAL DEFAULT   11 _Z24init_frame_buffer_lockedP16private_module_t
+   236: 00000000     0 FUNC    GLOBAL DEFAULT  UND munmap@@LIBC
+   237: 00000000     0 FUNC    GLOBAL DEFAULT  UND strncmp@@LIBC
+   238: 000054a1   348 FUNC    GLOBAL DEFAULT   11 _ZN16private_module_tC1Ev
+   239: 00000000     0 FUNC    GLOBAL DEFAULT  UND snprintf@@LIBC
+   240: 000033c7    28 FUNC    WEAK   DEFAULT   11 _ZN16private_handle_tD1Ev
+   241: 00000000     0 FUNC    GLOBAL DEFAULT  UND __android_log_print
+   242: 00000000     0 FUNC    GLOBAL DEFAULT  UND glFinish
+   243: 000034e3    26 FUNC    WEAK   DEFAULT   11 _ZNSt3__16vectorIiNS_9allocatorIiEEE24__RAII_IncreaseAnnotatorC1ERKS3_j
+   244: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_unlock@@LIBC
+   245: 00003a45   186 FUNC    WEAK   DEFAULT   11 _ZNKSt3__16vectorIiNS_9allocatorIiEEE17__annotate_deleteEv
+   246: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_alloc
+   247: 00003875   308 FUNC    WEAK   DEFAULT   11 _ZNSt3__16vectorIiNS_9allocatorIiEEE26__swap_out_circular_bufferERNS_14__split_bufferIiRS2_EE
+   248: 000027dd  2442 FUNC    GLOBAL DEFAULT   11 _Z25gralloc_backend_get_attrsP16private_handle_tPv
+   249: 000031a9   168 FUNC    GLOBAL DEFAULT   11 _Z17alloc_device_openPK11hw_module_tPKcPP11hw_device_t
+   250: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_sync_fd
+   251: 000036b3    22 FUNC    WEAK   DEFAULT   11 _ZNSt3__121__split_buffer_commonILb1EEC1Ev
+   252: 00005255   588 FUNC    GLOBAL DEFAULT   11 _Z18gralloc_lock_ycbcrPK16gralloc_module_tPK13native_handleiiiiiP13android_ycbcr
+   253: 000056a5   176 FUNC    GLOBAL DEFAULT   11 _Z37rockchip_get_handle_type_by_heap_maskj
+   254: 00003267   176 FUNC    WEAK   DEFAULT   11 _ZN16private_handle_tC2EiiiPvi
+   255: 00000000     0 FUNC    GLOBAL DEFAULT  UND mmap@@LIBC
+   256: 000171e0     0 NOTYPE  GLOBAL DEFAULT   19 _end
+   257: 00000000     0 FUNC    GLOBAL DEFAULT  UND memset@@LIBC
+   258: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_init@@LIBC
+   259: 00003267   176 FUNC    WEAK   DEFAULT   11 _ZN16private_handle_tC1EiiiPvi
+   260: 00005755    68 FUNC    GLOBAL DEFAULT   11 _Z25rockchip_get_int_propertyPKcS0_
+   261: 00003251    22 FUNC    WEAK   DEFAULT   11 _ZN13native_handleC1Ev
+   262: 000171e0     0 NOTYPE  GLOBAL DEFAULT   19 __end__
+   263: 00003317   176 FUNC    WEAK   DEFAULT   11 _ZN16private_handle_tC2EiiiPviii
+   264: 00000000     0 FUNC    GLOBAL DEFAULT  UND ioctl@@LIBC
+   265: 00017018     0 NOTYPE  GLOBAL DEFAULT   19 __bss_start
+   266: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_atexit@@LIBC
+   267: 00000000     0 FUNC    GLOBAL DEFAULT  UND atoi@@LIBC
+   268: 00003317   176 FUNC    WEAK   DEFAULT   11 _ZN16private_handle_tC1EiiiPviii
+   269: 00003a1d    40 FUNC    WEAK   DEFAULT   11 _ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv
+   270: 000034fd    20 FUNC    WEAK   DEFAULT   11 _ZNSt3__16vectorIiNS_9allocatorIiEEE24__RAII_IncreaseAnnotator6__doneEv
+   271: 00003aff   172 FUNC    WEAK   DEFAULT   11 _ZNKSt3__16vectorIiNS_9allocatorIiEEE14__annotate_newEj
+   272: 00000000     0 FUNC    GLOBAL DEFAULT  UND __errno@@LIBC
+   273: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_uidivmod
+   274: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_lock@@LIBC
+   275: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_get_phys
+   276: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_finalize@@LIBC
+   277: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_open
+   278: 00000000     0 FUNC    GLOBAL DEFAULT  UND __register_atfork@@LIBC
+   279: 00000000     0 FUNC    GLOBAL DEFAULT  UND property_get
+   280: 000036c9   200 FUNC    WEAK   DEFAULT   11 _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEEC1EjjS3_
+   281: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_idiv
+   282: 00000000     0 FUNC    GLOBAL DEFAULT  UND ion_free
+   283: 00003251    22 FUNC    WEAK   DEFAULT   11 _ZN13native_handleC2Ev
+   284: 000027bd    32 FUNC    GLOBAL DEFAULT   11 _Z22gralloc_backend_get_fdP16private_handle_tPi
+   285: 00000000     0 FUNC    GLOBAL DEFAULT  UND open@@LIBC

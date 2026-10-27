@@ -1,0 +1,10 @@
+{
+  "metadata_url": "https://dl.google.com/android/repository/sys-img/android/sys-img2-1.xml",
+  "metadata_sha256": "ebf2d810d9e0c0b511ae49ee6e8c671a8fa67d210d06f5e3e068f83244ece435",
+  "package": "system-images;android-25;default;arm64-v8a",
+  "archive_url": "https://dl.google.com/android/repository/sys-img/android/arm64-v8a-25_r02.zip",
+  "archive_size_bytes": 308416103,
+  "archive_checksum_type": "sha1",
+  "archive_checksum": "b39d359623323a1b4906c071dec396040016ea73",
+  "display": "ARM 64 v8a System Image"
+}

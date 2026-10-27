@@ -1,0 +1,42 @@
+diff --git a/TVInfo.cpp b/TVInfo.cpp
+index da4e949..abe3490 100755
+--- a/TVInfo.cpp
++++ b/TVInfo.cpp
+@@ -88,7 +88,7 @@ static char *itoa(int val, char *buf, unsigned radix)
+ 	    *p++ = (char)(digval + '0');      
+ 	} while(val > 0);
+ 
+-	*p-- = '\0 ';
++	*p-- = '\0';
+ 	do {
+ 		temp = *p;
+ 		*p = *firstdig;
+diff --git a/rk_hwcomposer.cpp b/rk_hwcomposer.cpp
+index 292a1df..0d17508 100755
+--- a/rk_hwcomposer.cpp
++++ b/rk_hwcomposer.cpp
+@@ -236,7 +236,10 @@ bool is_not_suit_mix_policy(hwc_display_contents_1_t *list)
+     if (layer)
+         handle = (struct private_handle_t *)layer->handle;
+ 
+-    switch (handle && handle->format) {
++    if (!handle)
++        return true;
++
++    switch (handle->format) {
+         case HAL_PIXEL_FORMAT_RGBA_8888:
+         case HAL_PIXEL_FORMAT_BGRA_8888:
+             return false;
+diff --git a/rk_hwcomposer_htg.cpp b/rk_hwcomposer_htg.cpp
+index 9f5f92a..b7d86cf 100644
+--- a/rk_hwcomposer_htg.cpp
++++ b/rk_hwcomposer_htg.cpp
+@@ -62,7 +62,7 @@ int rk_check_hdmi_state()
+ 		}
+ 		close(fd);
+ 		ret = atoi(statebuf);
+-		ALOGI("Read HDMI connect state = %d");
++		ALOGI("Read HDMI connect state = %d", ret);
+ 	} else {
+ 		ALOGD("err=%s",strerror(errno));
+ 	}

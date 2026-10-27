@@ -1,0 +1,8 @@
+/workspace/build01-hal-next/hwc-format/source/hwc_rga.cpp: In function ‘void set_rga_offset(hwc_rect_t, hwc_rect_t, int)’:
+/workspace/build01-hal-next/hwc-format/source/hwc_rga.cpp:323:32: warning: unused parameter ‘src_rect’ [-Wunused-parameter]
+ void set_rga_offset(hwc_rect_t src_rect,hwc_rect_t dst_rect, int transform)
+                                ^~~~~~~~
+/workspace/build01-hal-next/hwc-format/source/hwc_rga.cpp: In function ‘void set_scale_mode(hwc_rect_t, hwc_rect_t, int)’:
+/workspace/build01-hal-next/hwc-format/source/hwc_rga.cpp:386:66: warning: unused parameter ‘transform’ [-Wunused-parameter]
+ void set_scale_mode(hwc_rect_t src_rect,hwc_rect_t dst_rect, int transform)
+                                                                  ^~~~~~~~~

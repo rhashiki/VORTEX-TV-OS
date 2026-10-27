@@ -1,0 +1,530 @@
+In file included from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:15:0:
+/workspace/build01-hal-next/hwc/native-headers/opengl/include/EGL/eglext.h:623:111: warning: ‘visibility’ attribute ignored [-Wattributes]
+ typedef EGLAPI EGLClientBuffer (EGLAPIENTRYP PFNEGLCREATENATIVECLIENTBUFFERANDROID) (const EGLint *attrib_list);
+                                                                                                               ^
+/workspace/build01-hal-next/hwc/native-headers/opengl/include/EGL/eglext.h:650:200: warning: ‘visibility’ attribute ignored [-Wattributes]
+ typedef EGLAPI EGLBoolean (EGLAPIENTRYP PFNEGLGETFRAMETIMESTAMPSANDROID) (EGLDisplay dpy, EGLSurface surface, EGLint framesAgo, EGLint numTimestamps, const EGLint *timestamps, EGLnsecsANDROID *values);
+                                                                                                                                                                                                        ^
+/workspace/build01-hal-next/hwc/native-headers/opengl/include/EGL/eglext.h:651:132: warning: ‘visibility’ attribute ignored [-Wattributes]
+ typedef EGLAPI EGLBoolean (EGLAPIENTRYP PFNEGLQUERYTIMESTAMPSUPPORTEDANDROID) (EGLDisplay dpy, EGLSurface surface, EGLint timestamp);
+                                                                                                                                    ^
+In file included from /workspace/build01-platform-next/research/rockchip-system-core/include/cutils/log.h:1:0,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.h:18,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:17:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int LayerZoneCheck(hwc_layer_1_t*, hwcContext*)’:
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:618:39: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘double’ [-Wformat=]
+     __android_log_print(prio, tag, fmt)
+                                       ^
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:461:5: note: in expansion of macro ‘android_printLog’
+     android_printLog(priority, tag, __VA_ARGS__)
+     ^~~~~~~~~~~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:453:5: note: in expansion of macro ‘LOG_PRI’
+     LOG_PRI(ANDROID_##priority, tag, __VA_ARGS__)
+     ^~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:114:27: note: in expansion of macro ‘ALOG’
+ #define ALOGD(...) ((void)ALOG(LOG_DEBUG, LOG_TAG, __VA_ARGS__))
+                           ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:473:13: note: in expansion of macro ‘ALOGD’
+             ALOGD("line=%d,scale over[%d,%d]",__LINE__,hfactor,vfactor);
+             ^~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:618:39: warning: format ‘%d’ expects argument of type ‘int’, but argument 6 has type ‘double’ [-Wformat=]
+     __android_log_print(prio, tag, fmt)
+                                       ^
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:461:5: note: in expansion of macro ‘android_printLog’
+     android_printLog(priority, tag, __VA_ARGS__)
+     ^~~~~~~~~~~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:453:5: note: in expansion of macro ‘LOG_PRI’
+     LOG_PRI(ANDROID_##priority, tag, __VA_ARGS__)
+     ^~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:114:27: note: in expansion of macro ‘ALOG’
+ #define ALOGD(...) ((void)ALOG(LOG_DEBUG, LOG_TAG, __VA_ARGS__))
+                           ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:473:13: note: in expansion of macro ‘ALOGD’
+             ALOGD("line=%d,scale over[%d,%d]",__LINE__,hfactor,vfactor);
+             ^~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘void sync_fbinfo_fence(rk_fb_win_cfg_data*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:795:31: warning: unused variable ‘fbinfo’ [-Wunused-variable]
+     struct rk_fb_win_cfg_data fbinfo;
+                               ^~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int hwc_reset_fb_info(rk_fb_win_cfg_data*, hwcContext*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:818:9: warning: unused variable ‘scale’ [-Wunused-variable]
+     int scale = 1;
+         ^~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int hwc_get_layer_area_info(hwc_layer_1_t*, hwcRECT*, hwcRECT*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1032:18: warning: unused variable ‘SrcRect’ [-Wunused-variable]
+     hwc_rect_t * SrcRect = &layer->sourceCrop;
+                  ^~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1028:60: warning: unused parameter ‘srcrect’ [-Wunused-parameter]
+ int hwc_get_layer_area_info(hwc_layer_1_t * layer,hwcRECT *srcrect,hwcRECT *dstrect)
+                                                            ^~~~~~~
+In file included from /workspace/build01-platform-next/research/rockchip-system-core/include/cutils/log.h:1:0,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.h:18,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:17:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int try_prepare_first(hwcContext*, hwc_display_contents_1_t*)’:
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:618:39: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 6 has type ‘private_handle_t*’ [-Wformat=]
+     __android_log_print(prio, tag, fmt)
+                                       ^
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:461:5: note: in expansion of macro ‘android_printLog’
+     android_printLog(priority, tag, __VA_ARGS__)
+     ^~~~~~~~~~~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:453:5: note: in expansion of macro ‘LOG_PRI’
+     LOG_PRI(ANDROID_##priority, tag, __VA_ARGS__)
+     ^~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:114:27: note: in expansion of macro ‘ALOG’
+ #define ALOGD(...) ((void)ALOG(LOG_DEBUG, LOG_TAG, __VA_ARGS__))
+                           ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1133:17: note: in expansion of macro ‘ALOGD’
+                 ALOGD("layer[%d],name=%s,hanlde=%x,tra=%d,flag=%d",i,layer->LayerName,handle,layer->transform,layer->flags);
+                 ^~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:618:39: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 7 has type ‘long long int’ [-Wformat=]
+     __android_log_print(prio, tag, fmt)
+                                       ^
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:461:5: note: in expansion of macro ‘android_printLog’
+     android_printLog(priority, tag, __VA_ARGS__)
+     ^~~~~~~~~~~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:453:5: note: in expansion of macro ‘LOG_PRI’
+     LOG_PRI(ANDROID_##priority, tag, __VA_ARGS__)
+     ^~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:114:27: note: in expansion of macro ‘ALOG’
+ #define ALOGD(...) ((void)ALOG(LOG_DEBUG, LOG_TAG, __VA_ARGS__))
+                           ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1136:21: note: in expansion of macro ‘ALOGD’
+                     ALOGD("layer[%d],fmt=%d,usage=%x,protect=%x",i,handle->format,handle->usage,GRALLOC_USAGE_PROTECTED);
+                     ^~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int try_hwc_vop_policy(void*, hwc_display_contents_1_t*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1287:35: warning: unused variable ‘handle’ [-Wunused-variable]
+         struct private_handle_t * handle = (struct private_handle_t *)layer->handle;
+                                   ^~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1253:10: warning: variable ‘forceUiDetect’ set but not used [-Wunused-but-set-variable]
+     bool forceUiDetect = false;
+          ^~~~~~~~~~~~~
+In file included from /workspace/build01-platform-next/research/rockchip-system-core/include/cutils/log.h:1:0,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.h:18,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:17:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int try_hwc_rga_policy(void*, hwc_display_contents_1_t*)’:
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:618:39: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 5 has type ‘private_handle_t*’ [-Wformat=]
+     __android_log_print(prio, tag, fmt)
+                                       ^
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:461:5: note: in expansion of macro ‘android_printLog’
+     android_printLog(priority, tag, __VA_ARGS__)
+     ^~~~~~~~~~~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:453:5: note: in expansion of macro ‘LOG_PRI’
+     LOG_PRI(ANDROID_##priority, tag, __VA_ARGS__)
+     ^~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:114:27: note: in expansion of macro ‘ALOG’
+ #define ALOGD(...) ((void)ALOG(LOG_DEBUG, LOG_TAG, __VA_ARGS__))
+                           ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1408:17: note: in expansion of macro ‘ALOGD’
+                 ALOGD("rga policy skip,flag=%x,hanlde=%x",layer->flags,handle);
+                 ^~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1426:35: warning: unused variable ‘handle’ [-Wunused-variable]
+         struct private_handle_t * handle = (struct private_handle_t *)layer->handle;
+                                   ^~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1371:10: warning: unused variable ‘isYuvMod’ [-Wunused-variable]
+     bool isYuvMod = false;
+          ^~~~~~~~
+In file included from /workspace/build01-platform-next/research/rockchip-system-core/include/cutils/log.h:1:0,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.h:18,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:17:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int try_hwc_rga_vop_policy(void*, hwc_display_contents_1_t*)’:
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:618:39: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 5 has type ‘private_handle_t*’ [-Wformat=]
+     __android_log_print(prio, tag, fmt)
+                                       ^
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:461:5: note: in expansion of macro ‘android_printLog’
+     android_printLog(priority, tag, __VA_ARGS__)
+     ^~~~~~~~~~~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:453:5: note: in expansion of macro ‘LOG_PRI’
+     LOG_PRI(ANDROID_##priority, tag, __VA_ARGS__)
+     ^~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:114:27: note: in expansion of macro ‘ALOG’
+ #define ALOGD(...) ((void)ALOG(LOG_DEBUG, LOG_TAG, __VA_ARGS__))
+                           ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1516:17: note: in expansion of macro ‘ALOGD’
+                 ALOGD("policy skip,flag=%x,hanlde=%x,line=%d,name=%s",layer->flags,handle,__LINE__,layer->LayerName);
+                 ^~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:618:39: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘private_handle_t*’ [-Wformat=]
+     __android_log_print(prio, tag, fmt)
+                                       ^
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:461:5: note: in expansion of macro ‘android_printLog’
+     android_printLog(priority, tag, __VA_ARGS__)
+     ^~~~~~~~~~~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:453:5: note: in expansion of macro ‘LOG_PRI’
+     LOG_PRI(ANDROID_##priority, tag, __VA_ARGS__)
+     ^~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:114:27: note: in expansion of macro ‘ALOG’
+ #define ALOGD(...) ((void)ALOG(LOG_DEBUG, LOG_TAG, __VA_ARGS__))
+                           ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1552:20: note: in expansion of macro ‘ALOGD’
+                    ALOGD("line=%d,handle=%d",__LINE__,handle);
+                    ^~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1463:11: warning: unused variable ‘hfactor’ [-Wunused-variable]
+     float hfactor = 1;
+           ^~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1464:11: warning: unused variable ‘vfactor’ [-Wunused-variable]
+     float vfactor = 1;
+           ^~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1465:10: warning: unused variable ‘pixelSize’ [-Wunused-variable]
+     int  pixelSize  = 0;
+          ^~~~~~~~~
+In file included from /workspace/build01-platform-next/research/rockchip-system-core/include/cutils/log.h:1:0,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.h:18,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:17:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int try_hwc_rga_trfm_vop_policy(void*, hwc_display_contents_1_t*)’:
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:618:39: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 5 has type ‘private_handle_t*’ [-Wformat=]
+     __android_log_print(prio, tag, fmt)
+                                       ^
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:461:5: note: in expansion of macro ‘android_printLog’
+     android_printLog(priority, tag, __VA_ARGS__)
+     ^~~~~~~~~~~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:453:5: note: in expansion of macro ‘LOG_PRI’
+     LOG_PRI(ANDROID_##priority, tag, __VA_ARGS__)
+     ^~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:114:27: note: in expansion of macro ‘ALOG’
+ #define ALOGD(...) ((void)ALOG(LOG_DEBUG, LOG_TAG, __VA_ARGS__))
+                           ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1635:17: note: in expansion of macro ‘ALOGD’
+                 ALOGD("policy skip,flag=%x,hanlde=%x,line=%d,name=%s",layer->flags,handle,__LINE__,layer->LayerName);
+                 ^~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1668:35: warning: unused variable ‘handle’ [-Wunused-variable]
+         struct private_handle_t * handle = (struct private_handle_t *)layer->handle;
+                                   ^~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1590:11: warning: unused variable ‘hfactor’ [-Wunused-variable]
+     float hfactor = 1;
+           ^~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1591:11: warning: unused variable ‘vfactor’ [-Wunused-variable]
+     float vfactor = 1;
+           ^~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1592:10: warning: unused variable ‘pixelSize’ [-Wunused-variable]
+     int  pixelSize  = 0;
+          ^~~~~~~~~
+In file included from /workspace/build01-platform-next/research/rockchip-system-core/include/cutils/log.h:1:0,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.h:18,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:17:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int try_hwc_rga_trfm_gpu_vop_policy(void*, hwc_display_contents_1_t*)’:
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:618:39: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 5 has type ‘private_handle_t*’ [-Wformat=]
+     __android_log_print(prio, tag, fmt)
+                                       ^
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:461:5: note: in expansion of macro ‘android_printLog’
+     android_printLog(priority, tag, __VA_ARGS__)
+     ^~~~~~~~~~~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:453:5: note: in expansion of macro ‘LOG_PRI’
+     LOG_PRI(ANDROID_##priority, tag, __VA_ARGS__)
+     ^~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:114:27: note: in expansion of macro ‘ALOG’
+ #define ALOGD(...) ((void)ALOG(LOG_DEBUG, LOG_TAG, __VA_ARGS__))
+                           ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1799:11: note: in expansion of macro ‘ALOGD’
+           ALOGD("policy skip,flag=%x,hanlde=%x,line=%d",layer->flags,handle,__LINE__);
+           ^~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1727:11: warning: unused variable ‘hfactor’ [-Wunused-variable]
+     float hfactor = 1;
+           ^~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1728:11: warning: unused variable ‘vfactor’ [-Wunused-variable]
+     float vfactor = 1;
+           ^~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1729:10: warning: unused variable ‘isYuvMod’ [-Wunused-variable]
+     bool isYuvMod = false;
+          ^~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1730:10: warning: unused variable ‘pixelSize’ [-Wunused-variable]
+     int  pixelSize  = 0;
+          ^~~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1731:18: warning: unused variable ‘i’ [-Wunused-variable]
+     unsigned int i ;
+                  ^
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1752:18: warning: unused variable ‘drest’ [-Wunused-variable]
+     hwc_rect_t * drest = NULL;
+                  ^~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int try_hwc_vop_rga_policy(void*, hwc_display_contents_1_t*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1844:35: warning: unused parameter ‘ctx’ [-Wunused-parameter]
+ int try_hwc_vop_rga_policy(void * ctx,hwc_display_contents_1_t *list)
+                                   ^~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1844:65: warning: unused parameter ‘list’ [-Wunused-parameter]
+ int try_hwc_vop_rga_policy(void * ctx,hwc_display_contents_1_t *list)
+                                                                 ^~~~
+In file included from /workspace/build01-platform-next/research/rockchip-system-core/include/cutils/log.h:1:0,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.h:18,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:17:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int try_hwc_vop_gpu_policy(void*, hwc_display_contents_1_t*)’:
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:618:39: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 5 has type ‘private_handle_t*’ [-Wformat=]
+     __android_log_print(prio, tag, fmt)
+                                       ^
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:461:5: note: in expansion of macro ‘android_printLog’
+     android_printLog(priority, tag, __VA_ARGS__)
+     ^~~~~~~~~~~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:453:5: note: in expansion of macro ‘LOG_PRI’
+     LOG_PRI(ANDROID_##priority, tag, __VA_ARGS__)
+     ^~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:114:27: note: in expansion of macro ‘ALOG’
+ #define ALOGD(...) ((void)ALOG(LOG_DEBUG, LOG_TAG, __VA_ARGS__))
+                           ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2010:11: note: in expansion of macro ‘ALOGD’
+           ALOGD("policy skip,flag=%x,hanlde=%x,tra=%d,num=%d,line=%d",
+           ^~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:618:39: warning: format ‘%x’ expects a matching ‘unsigned int’ argument [-Wformat=]
+     __android_log_print(prio, tag, fmt)
+                                       ^
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:461:5: note: in expansion of macro ‘android_printLog’
+     android_printLog(priority, tag, __VA_ARGS__)
+     ^~~~~~~~~~~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:453:5: note: in expansion of macro ‘LOG_PRI’
+     LOG_PRI(ANDROID_##priority, tag, __VA_ARGS__)
+     ^~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:114:27: note: in expansion of macro ‘ALOG’
+ #define ALOGD(...) ((void)ALOG(LOG_DEBUG, LOG_TAG, __VA_ARGS__))
+                           ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2021:17: note: in expansion of macro ‘ALOGD’
+                 ALOGD("vop_gpu skip,flag=%x,hanlde=%x",layer->flags);
+                 ^~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1961:11: warning: unused variable ‘hfactor’ [-Wunused-variable]
+     float hfactor = 1;
+           ^~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1962:11: warning: unused variable ‘vfactor’ [-Wunused-variable]
+     float vfactor = 1;
+           ^~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1963:10: warning: unused variable ‘isYuvMod’ [-Wunused-variable]
+     bool isYuvMod = false;
+          ^~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1964:10: warning: variable ‘forceSkip’ set but not used [-Wunused-but-set-variable]
+     bool forceSkip = false;
+          ^~~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:1965:18: warning: unused variable ‘drest’ [-Wunused-variable]
+     hwc_rect_t * drest = NULL;
+                  ^~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int try_hwc_nodraw_gpu_vop_policy(void*, hwc_display_contents_1_t*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2069:42: warning: unused parameter ‘ctx’ [-Wunused-parameter]
+ int try_hwc_nodraw_gpu_vop_policy(void * ctx,hwc_display_contents_1_t *list)
+                                          ^~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2069:72: warning: unused parameter ‘list’ [-Wunused-parameter]
+ int try_hwc_nodraw_gpu_vop_policy(void * ctx,hwc_display_contents_1_t *list)
+                                                                        ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int try_hwc_rga_gpu_vop_policy(void*, hwc_display_contents_1_t*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2152:39: warning: unused parameter ‘ctx’ [-Wunused-parameter]
+ int try_hwc_rga_gpu_vop_policy(void * ctx,hwc_display_contents_1_t *list)
+                                       ^~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2152:69: warning: unused parameter ‘list’ [-Wunused-parameter]
+ int try_hwc_rga_gpu_vop_policy(void * ctx,hwc_display_contents_1_t *list)
+                                                                     ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int try_hwc_gpu_vop_policy(void*, hwc_display_contents_1_t*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2236:35: warning: unused parameter ‘ctx’ [-Wunused-parameter]
+ int try_hwc_gpu_vop_policy(void * ctx,hwc_display_contents_1_t *list)
+                                   ^~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2236:65: warning: unused parameter ‘list’ [-Wunused-parameter]
+ int try_hwc_gpu_vop_policy(void * ctx,hwc_display_contents_1_t *list)
+                                                                 ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int try_hwc_gpu_nodraw_vop_policy(void*, hwc_display_contents_1_t*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2327:9: warning: unused variable ‘yuv_cnt’ [-Wunused-variable]
+     int yuv_cnt = 0;
+         ^~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2329:10: warning: unused variable ‘res’ [-Wunused-variable]
+     bool res = false;
+          ^~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2333:10: warning: unused variable ‘pixelSize’ [-Wunused-variable]
+     int  pixelSize  = 0;
+          ^~~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2334:10: warning: unused variable ‘yuvPixelSize’ [-Wunused-variable]
+     int  yuvPixelSize  = 0;
+          ^~~~~~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2337:18: warning: unused variable ‘drest’ [-Wunused-variable]
+     hwc_rect_t * drest = NULL;
+                  ^~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int try_hwc_cp_fb_policy(void*, hwc_display_contents_1_t*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2509:33: warning: unused parameter ‘ctx’ [-Wunused-parameter]
+ int try_hwc_cp_fb_policy(void * ctx,hwc_display_contents_1_t *list)
+                                 ^~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2509:63: warning: unused parameter ‘list’ [-Wunused-parameter]
+ int try_hwc_cp_fb_policy(void * ctx,hwc_display_contents_1_t *list)
+                                                               ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int try_hwc_skip_policy(void*, hwc_display_contents_1_t*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2514:32: warning: unused parameter ‘ctx’ [-Wunused-parameter]
+ int try_hwc_skip_policy(void * ctx,hwc_display_contents_1_t *list)
+                                ^~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2514:62: warning: unused parameter ‘list’ [-Wunused-parameter]
+ int try_hwc_skip_policy(void * ctx,hwc_display_contents_1_t *list)
+                                                              ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int try_hwc_gpu_policy(void*, hwc_display_contents_1_t*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2519:31: warning: unused parameter ‘ctx’ [-Wunused-parameter]
+ int try_hwc_gpu_policy(void * ctx,hwc_display_contents_1_t *list)
+                               ^~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int hwc_prepare_primary(hwc_composer_device_1*, hwc_display_contents_1_t*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2587:32: warning: variable ‘handle’ set but not used [-Wunused-but-set-variable]
+      struct private_handle_t * handle = NULL;
+                                ^~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2537:10: warning: unused variable ‘value’ [-Wunused-variable]
+     char value[PROPERTY_VALUE_MAX];
+          ^~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2538:9: warning: unused variable ‘new_value’ [-Wunused-variable]
+     int new_value = 0;
+         ^~~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2539:9: warning: unused variable ‘iVideoCount’ [-Wunused-variable]
+     int iVideoCount = 0;
+         ^~~~~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2541:16: warning: unused variable ‘videoIndex’ [-Wunused-variable]
+     static int videoIndex = 0;
+                ^~~~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int hwc_prepare_external(hwc_composer_device_1*, hwc_display_contents_1_t*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2643:10: warning: unused variable ‘value’ [-Wunused-variable]
+     char value[PROPERTY_VALUE_MAX];
+          ^~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2644:9: warning: unused variable ‘new_value’ [-Wunused-variable]
+     int new_value = 0;
+         ^~~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2645:9: warning: unused variable ‘iVideoCount’ [-Wunused-variable]
+     int iVideoCount = 0;
+         ^~~~~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2648:16: warning: unused variable ‘videoIndex’ [-Wunused-variable]
+     static int videoIndex = 0;
+                ^~~~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2640:56: warning: unused parameter ‘dev’ [-Wunused-parameter]
+ static int hwc_prepare_external(hwc_composer_device_1 *dev, hwc_display_contents_1_t *list)
+                                                        ^~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int getFbInfo(hwc_display_t, hwc_surface_t, hwc_display_contents_1_t*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:3015:31: warning: unused variable ‘fbBuffer’ [-Wunused-variable]
+     android_native_buffer_t * fbBuffer = NULL;
+                               ^~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:3016:31: warning: unused variable ‘fbhandle’ [-Wunused-variable]
+     struct private_handle_t * fbhandle = NULL;
+                               ^~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:3013:29: warning: unused parameter ‘dpy’ [-Wunused-parameter]
+ int getFbInfo(hwc_display_t dpy, hwc_surface_t surf, hwc_display_contents_1_t *list)
+                             ^~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:3013:48: warning: unused parameter ‘surf’ [-Wunused-parameter]
+ int getFbInfo(hwc_display_t dpy, hwc_surface_t surf, hwc_display_contents_1_t *list)
+                                                ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int DetectValidData(hwcContext*, int*, int, int)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:3078:11: warning: unused variable ‘j’ [-Wunused-variable]
+     int i,j;
+           ^
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:3080:9: warning: unused variable ‘ret’ [-Wunused-variable]
+     int ret;
+         ^~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int Get_layer_disp_area(hwc_layer_1_t*, hwcRECT*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:3138:13: warning: unused variable ‘srcRects’ [-Wunused-variable]
+     hwcRECT srcRects;
+             ^~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int hwc_vop_config(hwcContext*, hwc_display_contents_1_t*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:3184:9: warning: unused variable ‘scale_cnt’ [-Wunused-variable]
+     int scale_cnt = 0;
+         ^~~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:3187:9: warning: unused variable ‘j’ [-Wunused-variable]
+     int j;
+         ^
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:3193:9: warning: unused variable ‘dump’ [-Wunused-variable]
+     int dump = 0;
+         ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:3194:20: warning: unused variable ‘tpend1’ [-Wunused-variable]
+     struct timeval tpend1, tpend2;
+                    ^~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:3194:28: warning: unused variable ‘tpend2’ [-Wunused-variable]
+     struct timeval tpend1, tpend2;
+                            ^~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:3195:10: warning: unused variable ‘usec1’ [-Wunused-variable]
+     long usec1 = 0;
+          ^~~~~
+In file included from /workspace/build01-platform-next/research/rockchip-system-core/include/cutils/log.h:1:0,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.h:18,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:17:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int hwc_rga_blit(hwcContext*, hwc_display_contents_1_t*)’:
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:618:39: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 4 has type ‘hwc_layer_1_t* {aka hwc_layer_1*}’ [-Wformat=]
+     __android_log_print(prio, tag, fmt)
+                                       ^
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:461:5: note: in expansion of macro ‘android_printLog’
+     android_printLog(priority, tag, __VA_ARGS__)
+     ^~~~~~~~~~~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:453:5: note: in expansion of macro ‘LOG_PRI’
+     LOG_PRI(ANDROID_##priority, tag, __VA_ARGS__)
+     ^~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:91:29: note: in expansion of macro ‘ALOG’
+ #define __ALOGV(...) ((void)ALOG(LOG_VERBOSE, LOG_TAG, __VA_ARGS__))
+                             ^~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:95:20: note: in expansion of macro ‘__ALOGV’
+ #define ALOGV(...) __ALOGV(__VA_ARGS__)
+                    ^~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:4045:13: note: in expansion of macro ‘ALOGV’
+             ALOGV("fbLyaer = %x,num=%d",fbLayer,list->numHwLayers);
+             ^~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:3978:10: warning: variable ‘usec1’ set but not used [-Wunused-but-set-variable]
+     long usec1 = 0;
+          ^~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int hwc_set_external(hwc_composer_device_1_t*, hwc_display_contents_1_t*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:4417:10: warning: variable ‘usec1’ set but not used [-Wunused-but-set-variable]
+     long usec1 = 0;
+          ^~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:4411:54: warning: unused parameter ‘dev’ [-Wunused-parameter]
+ static int hwc_set_external(hwc_composer_device_1_t *dev, hwc_display_contents_1_t* list)
+                                                      ^~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘void handle_vsync_event(hwcContext*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:4681:10: warning: unused variable ‘usec1’ [-Wunused-variable]
+     long usec1 = 0;
+          ^~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int hwc_getDisplayConfigs(hwc_composer_device_1*, int, uint32_t*, size_t*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:4865:9: warning: variable ‘ret’ set but not used [-Wunused-but-set-variable]
+     int ret = 0;
+         ^~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int hwc_copybit(hwc_composer_device_1*, buffer_handle_t, buffer_handle_t, int)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:4968:47: warning: unused parameter ‘dev’ [-Wunused-parameter]
+ int hwc_copybit(struct hwc_composer_device_1 *dev, buffer_handle_t src_handle, buffer_handle_t dst_handle, int flag)
+                                               ^~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:4968:68: warning: unused parameter ‘src_handle’ [-Wunused-parameter]
+ int hwc_copybit(struct hwc_composer_device_1 *dev, buffer_handle_t src_handle, buffer_handle_t dst_handle, int flag)
+                                                                    ^~~~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:4968:96: warning: unused parameter ‘dst_handle’ [-Wunused-parameter]
+ int hwc_copybit(struct hwc_composer_device_1 *dev, buffer_handle_t src_handle, buffer_handle_t dst_handle, int flag)
+                                                                                                ^~~~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:4968:112: warning: unused parameter ‘flag’ [-Wunused-parameter]
+ int hwc_copybit(struct hwc_composer_device_1 *dev, buffer_handle_t src_handle, buffer_handle_t dst_handle, int flag)
+                                                                                                                ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int hotplug_get_config(int)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:5591:9: warning: unused variable ‘stride_gr’ [-Wunused-variable]
+     int stride_gr;
+         ^~~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:5575:28: warning: unused parameter ‘flag’ [-Wunused-parameter]
+ int hotplug_get_config(int flag)
+                            ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘void hotplug_change_screen_config(int, int, int)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:6243:39: warning: unused parameter ‘dpy’ [-Wunused-parameter]
+ void hotplug_change_screen_config(int dpy, int fb, int state) {
+                                       ^~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘void* hotplug_invalidate_refresh(void*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:6286:41: warning: unused parameter ‘arg’ [-Wunused-parameter]
+ void  *hotplug_invalidate_refresh(void *arg)
+                                         ^~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: At global scope:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:3076:12: warning: ‘int DetectValidData(hwcContext*, int*, int, int)’ defined but not used [-Wunused-function]
+ static int DetectValidData( hwcContext * context,int *data,int w,int h)
+            ^~~~~~~~~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2648:16: warning: ‘videoIndex’ defined but not used [-Wunused-variable]
+     static int videoIndex = 0;
+                ^~~~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:2541:16: warning: ‘videoIndex’ defined but not used [-Wunused-variable]
+     static int videoIndex = 0;
+                ^~~~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:184:12: warning: ‘int hwc_get_string_property(const char*, const char*, char*)’ defined but not used [-Wunused-function]
+ static int hwc_get_string_property(const char* pcProperty, const char* default_value, char* retult)
+            ^~~~~~~~~~~~~~~~~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:66:12: warning: ‘last_video_addr’ defined but not used [-Wunused-variable]
+ static int last_video_addr[2];
+            ^~~~~~~~~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:65:12: warning: ‘skip_count’ defined but not used [-Wunused-variable]
+ static int skip_count = 0;
+            ^~~~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:62:12: warning: ‘SkipFrameCount’ defined but not used [-Wunused-variable]
+ static int SkipFrameCount = 0;
+            ^~~~~~~~~~~~~~
+In file included from /workspace/build01-hal-next/hwc/source/hwc_rga.h:20:0,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:40:
+/workspace/build01-hal-next/hwc/source/rga_angle.h:55:12: warning: ‘cosa_table’ defined but not used [-Wunused-variable]
+ static int cosa_table[360] =
+            ^~~~~~~~~~
+/workspace/build01-hal-next/hwc/source/rga_angle.h:14:12: warning: ‘sina_table’ defined but not used [-Wunused-variable]
+ static int sina_table[360] =
+            ^~~~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘void hwcDumpArea(hwcArea*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:968:30: warning: call to ‘sprintf’ declared with attribute warning: sprintf is often misused; please use snprintf
+                 area->owners);
+                              ^
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:977:45: warning: call to ‘sprintf’ declared with attribute warning: sprintf is often misused; please use snprintf
+                     sprintf(digit, " %d", i);
+                                             ^
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:983:45: warning: call to ‘sprintf’ declared with attribute warning: sprintf is often misused; please use snprintf
+                     sprintf(digit, ",%d", i);
+                                             ^

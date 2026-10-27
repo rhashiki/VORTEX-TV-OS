@@ -1,0 +1,12 @@
+[
+  {
+    "file": "arm64-v8a-25_r02.zip",
+    "sha256": "1d38666f6e64f983e0d3ad86ef5c42d213685fcd6932a0f2dfbcee0e79767cc2",
+    "reason": "Unused current-stage ARM64 cache; negative inventory retained, root authorized cleanup."
+  },
+  {
+    "file": "armeabi-v7a-25_r18.zip",
+    "sha256": "0e888e3141ec4bf55494cbbb268e91fab60de7bf5163f85a40a4bab7e31032ff",
+    "reason": "Current-stage full archive verified and expanded; release temporary cache before selective library extraction."
+  }
+]

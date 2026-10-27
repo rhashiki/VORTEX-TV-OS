@@ -1,0 +1,31 @@
+
+Dynamic section at offset 0x8533c contains 28 entries:
+  Tag        Type                         Name/Value
+ 0x00000003 (PLTGOT)                     0x865c0
+ 0x00000002 (PLTRELSZ)                   5224 (bytes)
+ 0x00000017 (JMPREL)                     0x12fe4
+ 0x00000014 (PLTREL)                     REL
+ 0x00000011 (REL)                        0x10274
+ 0x00000012 (RELSZ)                      11632 (bytes)
+ 0x00000013 (RELENT)                     8 (bytes)
+ 0x6ffffffa (RELCOUNT)                   1305
+ 0x00000006 (SYMTAB)                     0x1c0
+ 0x0000000b (SYMENT)                     16 (bytes)
+ 0x00000005 (STRTAB)                     0x5f10
+ 0x0000000a (STRSZ)                      17428 (bytes)
+ 0x6ffffef5 (GNU_HASH)                   0xa324
+ 0x00000004 (HASH)                       0xce7c
+ 0x00000001 (NEEDED)                     Shared library: [libdl.so]
+ 0x0000000e (SONAME)                     Library soname: [libc.so]
+ 0x00000019 (INIT_ARRAY)                 0x86314
+ 0x0000001b (INIT_ARRAYSZ)               36 (bytes)
+ 0x0000001a (FINI_ARRAY)                 0x86338
+ 0x0000001c (FINI_ARRAYSZ)               4 (bytes)
+ 0x0000001e (FLAGS)                      BIND_NOW
+ 0x6ffffffb (FLAGS_1)                    Flags: NOW
+ 0x6ffffff0 (VERSYM)                     0xf5f4
+ 0x6ffffffc (VERDEF)                     0x101a0
+ 0x6ffffffd (VERDEFNUM)                  5
+ 0x6ffffffe (VERNEED)                    0x10244
+ 0x6fffffff (VERNEEDNUM)                 1
+ 0x00000000 (NULL)                       0x0

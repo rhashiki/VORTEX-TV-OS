@@ -1,0 +1,4 @@
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer_htg.cpp:24:36: fatal error: hardware_legacy/uevent.h: No such file or directory
+ #include <hardware_legacy/uevent.h>
+                                    ^
+compilation terminated.

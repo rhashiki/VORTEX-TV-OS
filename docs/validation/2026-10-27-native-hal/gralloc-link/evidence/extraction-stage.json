@@ -1,0 +1,29 @@
+{
+  "archive_sha256": "1d38666f6e64f983e0d3ad86ef5c42d213685fcd6932a0f2dfbcee0e79767cc2",
+  "filesystem_image_logical_bytes": 2684354560,
+  "filesystem_image_sha256": "8501b327b24bcc8f24a030a13a0d8637653dc9876145d50c6110b1aef534a3b3",
+  "filesystem_image_allocated_bytes": 695209984,
+  "read_only_debugfs": true,
+  "commands": [
+    {
+      "command": [
+        "/workspace/build01-hal-next/gralloc-link/host-deps/root/usr/sbin/debugfs",
+        "-R",
+        "ls -l /lib",
+        "/workspace/build01-hal-next/gralloc-link/reference-system.sparse-host.img"
+      ],
+      "exit_code": 0,
+      "log": "lib-listing.log"
+    },
+    {
+      "command": [
+        "/workspace/build01-hal-next/gralloc-link/host-deps/root/usr/sbin/debugfs",
+        "-R",
+        "ls -l /bin/linker",
+        "/workspace/build01-hal-next/gralloc-link/reference-system.sparse-host.img"
+      ],
+      "exit_code": 0,
+      "log": "linker-listing.log"
+    }
+  ]
+}

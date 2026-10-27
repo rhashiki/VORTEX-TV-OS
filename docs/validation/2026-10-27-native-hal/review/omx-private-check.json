@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "scope": "Independent read-only bounded static OMX export/header/object check; no build rerun, ELF load, graphics ioctl or hardware execution.",
+  "findings": [],
+  "inputs": {
+    "vendor_revision": "50c7170ecb4bd907059db37f09f4767b301f2d15",
+    "vendor_blob_path": "/workspace/build01-sd-next/vendor-sd/proprietary/lib/libgralloc_priv_omx.so",
+    "vendor_blob_sha256": "d3b5d6c61c8c2599329242020559e02e8b7e6c978341f6ecee141da6247ce82c",
+    "librkvpu_revision": "aa92e18a517967623a8bc0f1bc0752c9807d0743",
+    "actual_source_sha256": "0803d2bc7f423fa61cc876489892902ed7d08290faded2871d7ff9565e7c422d",
+    "actual_output_header_sha256": "c8d61be016378c9d90c1ab03421458ca570e67a58e67d683981faddd200a99fd",
+    "actual_gralloc_header_sha256": "19bcf14f3d560d918b4707b19cb706ba6aa0b502a3d6f237147fe1d9d6319957",
+    "compiled_actual_source_object_sha256": "f5825985677e9234f4e0af389ffd5b558080d86a73c0b1ae767c53b848db07e6",
+    "layout_object_sha256": "b6fd2ef712da56feff0e9085ff7587f1ebe707ed7091611d909a7b922c63fb05"
+  },
+  "export": {
+    "name": "Rockchip_get_gralloc_private",
+    "ELF": "ELF32 little-endian ARM soft-float ABI",
+    "symbol_value": "0x751 (Thumb bit set)",
+    "code_address": "0x750",
+    "size_bytes": 32,
+    "bounded_code_end_exclusive": "0x770",
+    "pointer_arguments": "r0 is handle, r1 is output pointer",
+    "observed_fields": [
+      {
+        "field": "format",
+        "input_handle_offset": 40,
+        "output_offset": 0,
+        "word_bytes": 4,
+        "matches_real_full_header_measurement": true
+      },
+      {
+        "field": "share_fd",
+        "input_handle_offset": 12,
+        "output_offset": 4,
+        "word_bytes": 4,
+        "matches_real_full_header_measurement": true
+      },
+      {
+        "field": "type",
+        "input_handle_offset": 48,
+        "output_offset": 8,
+        "word_bytes": 4,
+        "matches_real_full_header_measurement": true
+      },
+      {
+        "field": "stride",
+        "input_handle_offset": 44,
+        "output_offset": 12,
+        "word_bytes": 4,
+        "matches_real_full_header_measurement": true
+      },
+      {
+        "field": "size",
+        "input_handle_offset": 28,
+        "output_offset": 16,
+        "word_bytes": 4,
+        "matches_real_full_header_measurement": true
+      }
+    ],
+    "output_layout": "Five int fields in source order: format, share_fd, type, stride, size;20bytes on measuredARM ABI.",
+    "return_semantics": "Output pointer null returns-1; non-null output copies five fields and returns0. No input-handle validation is performed in this bounded function."
+  },
+  "actual_source_compile": {
+    "recorded_exit_code": 0,
+    "source_is_byte_identical_to_pinned_git": true,
+    "source_uses_real_gralloc_priv_header": true,
+    "conditional_GPU_G6110_or_USE_DRM_not_defined_in_recorded_command": true,
+    "object_disassembly_shows_same_five_offsets": true,
+    "scope": "Actual entire OMX bridge source compiled to relocatable ARM object; no shared-library link or execution."
+  },
+  "limits": [
+    "Only the five observed fieldreads in one exported function are corroborated.",
+    "No conclusion about the remainder of the proprietary OMX/Mali ABI, buffer ownership/lifetimes or semantic validity of the field contents.",
+    "No proof of ION/DMA-BUF/RGA/fence compatibility, video decoding, GPU correctness or physical RK3229 boot."
+  ]
+}

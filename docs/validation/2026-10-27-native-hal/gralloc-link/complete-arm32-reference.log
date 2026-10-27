@@ -1,0 +1,29 @@
+{
+  "source_url": "https://dl.google.com/android/repository/sys-img/google_apis/armeabi-v7a-25_r18.zip",
+  "package": "system-images;android-25;google_apis;armeabi-v7a",
+  "archive_bytes": 952973150,
+  "published_sha1": "a6f7c491e3bb937523dddfa287e07d785934e8a1",
+  "observed_sha1": "a6f7c491e3bb937523dddfa287e07d785934e8a1",
+  "archive_sha256": "0e888e3141ec4bf55494cbbb268e91fab60de7bf5163f85a40a4bab7e31032ff",
+  "stdlib_zipfile_crc_checked_on_selected_entries": true,
+  "Google_apps_not_used_or_integrated": true,
+  "temporary_image_logical_bytes": 2147483648,
+  "temporary_image_allocated_bytes": 1813618688,
+  "filesystem_image_sha256": "1b945591c0b9d7a5b0d9426007777a1b988f92e55b723cb0ca2e194321cd66ce",
+  "system_image_entry_crc32": "e8481694",
+  "system_image_entry_compressed_bytes": 928609857,
+  "partial_prefix_verified_byte_identical": 1884291072,
+  "minimum_free_bytes_during_resumed_extraction": 8640032768,
+  "root_authorized_cache_cleanup": [
+    {
+      "file": "arm64-v8a-25_r02.zip",
+      "sha256": "1d38666f6e64f983e0d3ad86ef5c42d213685fcd6932a0f2dfbcee0e79767cc2",
+      "reason": "Unused current-stage ARM64 cache; negative inventory retained, root authorized cleanup."
+    },
+    {
+      "file": "armeabi-v7a-25_r18.zip",
+      "sha256": "0e888e3141ec4bf55494cbbb268e91fab60de7bf5163f85a40a4bab7e31032ff",
+      "reason": "Current-stage full archive verified and expanded; release temporary cache before selective library extraction."
+    }
+  ]
+}

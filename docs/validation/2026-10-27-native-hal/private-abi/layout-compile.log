@@ -1,0 +1,102 @@
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:17:45: warning: offsetof within non-standard-layout type ‘private_handle_t’ is undefined [-Winvalid-offsetof]
+ MEASURE(share_fd_offset, __builtin_offsetof(private_handle_t, share_fd))
+                          ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:4:60: note: in definition of macro ‘MEASURE’
+ #define MEASURE(name, value) unsigned char measure_##name[(value) + 1];
+                                                            ^~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:19:42: warning: offsetof within non-standard-layout type ‘private_handle_t’ is undefined [-Winvalid-offsetof]
+ MEASURE(magic_offset, __builtin_offsetof(private_handle_t, magic))
+                       ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:4:60: note: in definition of macro ‘MEASURE’
+ #define MEASURE(name, value) unsigned char measure_##name[(value) + 1];
+                                                            ^~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:21:42: warning: offsetof within non-standard-layout type ‘private_handle_t’ is undefined [-Winvalid-offsetof]
+ MEASURE(flags_offset, __builtin_offsetof(private_handle_t, flags))
+                       ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:4:60: note: in definition of macro ‘MEASURE’
+ #define MEASURE(name, value) unsigned char measure_##name[(value) + 1];
+                                                            ^~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:23:42: warning: offsetof within non-standard-layout type ‘private_handle_t’ is undefined [-Winvalid-offsetof]
+ MEASURE(usage_offset, __builtin_offsetof(private_handle_t, usage))
+                       ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:4:60: note: in definition of macro ‘MEASURE’
+ #define MEASURE(name, value) unsigned char measure_##name[(value) + 1];
+                                                            ^~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:25:41: warning: offsetof within non-standard-layout type ‘private_handle_t’ is undefined [-Winvalid-offsetof]
+ MEASURE(size_offset, __builtin_offsetof(private_handle_t, size))
+                      ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:4:60: note: in definition of macro ‘MEASURE’
+ #define MEASURE(name, value) unsigned char measure_##name[(value) + 1];
+                                                            ^~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:27:42: warning: offsetof within non-standard-layout type ‘private_handle_t’ is undefined [-Winvalid-offsetof]
+ MEASURE(width_offset, __builtin_offsetof(private_handle_t, width))
+                       ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:4:60: note: in definition of macro ‘MEASURE’
+ #define MEASURE(name, value) unsigned char measure_##name[(value) + 1];
+                                                            ^~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:29:43: warning: offsetof within non-standard-layout type ‘private_handle_t’ is undefined [-Winvalid-offsetof]
+ MEASURE(height_offset, __builtin_offsetof(private_handle_t, height))
+                        ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:4:60: note: in definition of macro ‘MEASURE’
+ #define MEASURE(name, value) unsigned char measure_##name[(value) + 1];
+                                                            ^~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:31:43: warning: offsetof within non-standard-layout type ‘private_handle_t’ is undefined [-Winvalid-offsetof]
+ MEASURE(format_offset, __builtin_offsetof(private_handle_t, format))
+                        ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:4:60: note: in definition of macro ‘MEASURE’
+ #define MEASURE(name, value) unsigned char measure_##name[(value) + 1];
+                                                            ^~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:33:43: warning: offsetof within non-standard-layout type ‘private_handle_t’ is undefined [-Winvalid-offsetof]
+ MEASURE(stride_offset, __builtin_offsetof(private_handle_t, stride))
+                        ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:4:60: note: in definition of macro ‘MEASURE’
+ #define MEASURE(name, value) unsigned char measure_##name[(value) + 1];
+                                                            ^~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:35:41: warning: offsetof within non-standard-layout type ‘private_handle_t’ is undefined [-Winvalid-offsetof]
+ MEASURE(type_offset, __builtin_offsetof(private_handle_t, type))
+                      ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:4:60: note: in definition of macro ‘MEASURE’
+ #define MEASURE(name, value) unsigned char measure_##name[(value) + 1];
+                                                            ^~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:41:46: warning: offsetof within non-standard-layout type ‘private_handle_t’ is undefined [-Winvalid-offsetof]
+ MEASURE(lockState_offset, __builtin_offsetof(private_handle_t, lockState))
+                           ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:4:60: note: in definition of macro ‘MEASURE’
+ #define MEASURE(name, value) unsigned char measure_##name[(value) + 1];
+                                                            ^~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:43:47: warning: offsetof within non-standard-layout type ‘private_handle_t’ is undefined [-Winvalid-offsetof]
+ MEASURE(writeOwner_offset, __builtin_offsetof(private_handle_t, writeOwner))
+                            ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:4:60: note: in definition of macro ‘MEASURE’
+ #define MEASURE(name, value) unsigned char measure_##name[(value) + 1];
+                                                            ^~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:45:40: warning: offsetof within non-standard-layout type ‘private_handle_t’ is undefined [-Winvalid-offsetof]
+ MEASURE(pid_offset, __builtin_offsetof(private_handle_t, pid))
+                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:4:60: note: in definition of macro ‘MEASURE’
+ #define MEASURE(name, value) unsigned char measure_##name[(value) + 1];
+                                                            ^~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:47:45: warning: offsetof within non-standard-layout type ‘private_handle_t’ is undefined [-Winvalid-offsetof]
+ MEASURE(yuv_info_offset, __builtin_offsetof(private_handle_t, yuv_info))
+                          ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:4:60: note: in definition of macro ‘MEASURE’
+ #define MEASURE(name, value) unsigned char measure_##name[(value) + 1];
+                                                            ^~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:49:39: warning: offsetof within non-standard-layout type ‘private_handle_t’ is undefined [-Winvalid-offsetof]
+ MEASURE(fd_offset, __builtin_offsetof(private_handle_t, fd))
+                    ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:4:60: note: in definition of macro ‘MEASURE’
+ #define MEASURE(name, value) unsigned char measure_##name[(value) + 1];
+                                                            ^~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:51:43: warning: offsetof within non-standard-layout type ‘private_handle_t’ is undefined [-Winvalid-offsetof]
+ MEASURE(offset_offset, __builtin_offsetof(private_handle_t, offset))
+                        ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:4:60: note: in definition of macro ‘MEASURE’
+ #define MEASURE(name, value) unsigned char measure_##name[(value) + 1];
+                                                            ^~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:53:44: warning: offsetof within non-standard-layout type ‘private_handle_t’ is undefined [-Winvalid-offsetof]
+ MEASURE(ion_hnd_offset, __builtin_offsetof(private_handle_t, ion_hnd))
+                         ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/build01-hal-next/private-abi/private_handle_layout.cpp:4:60: note: in definition of macro ‘MEASURE’
+ #define MEASURE(name, value) unsigned char measure_##name[(value) + 1];
+                                                            ^~~~~

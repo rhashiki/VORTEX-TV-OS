@@ -1,0 +1,32 @@
+
+Version symbols section '.gnu.version' contains 96 entries:
+ Addr: 00000000000015f0  Offset: 0x0015f0  Link: 4 (.dynsym)
+  000:   0 (*local*)       0 (*local*)       0 (*local*)       2 (LIBC)       
+  004:   2 (LIBC)          0 (*local*)       2 (LIBC)          0 (*local*)    
+  008:   0 (*local*)       0 (*local*)       0 (*local*)       2 (LIBC)       
+  00c:   2 (LIBC)          0 (*local*)       2 (LIBC)          2 (LIBC)       
+  010:   2 (LIBC)          2 (LIBC)          0 (*local*)       0 (*local*)    
+  014:   2 (LIBC)          2 (LIBC)          2 (LIBC)          0 (*local*)    
+  018:   0 (*local*)       2 (LIBC)          0 (*local*)       0 (*local*)    
+  01c:   2 (LIBC)          2 (LIBC)          2 (LIBC)          2 (LIBC)       
+  020:   2 (LIBC)          2 (LIBC)          2 (LIBC)          0 (*local*)    
+  024:   2 (LIBC)          0 (*local*)       2 (LIBC)          0 (*local*)    
+  028:   2 (LIBC)          0 (*local*)       0 (*local*)       0 (*local*)    
+  02c:   2 (LIBC)          1 (*global*)      1 (*global*)      1 (*global*)   
+  030:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  034:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  038:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  03c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  040:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  044:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  048:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  04c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  050:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  054:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  058:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  05c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+
+Version needs section '.gnu.version_r' contains 1 entries:
+ Addr: 0x00000000000016b0  Offset: 0x0016b0  Link: 5 (.dynstr)
+  000000: Version: 1  File: libc.so  Cnt: 1
+  0x0010:   Name: LIBC  Flags: none  Version: 2

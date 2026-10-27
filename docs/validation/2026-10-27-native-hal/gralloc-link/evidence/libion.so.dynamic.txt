@@ -1,0 +1,32 @@
+
+Dynamic section at offset 0x2e84 contains 29 entries:
+  Tag        Type                         Name/Value
+ 0x00000003 (PLTGOT)                     0x3fa8
+ 0x00000002 (PLTRELSZ)                   152 (bytes)
+ 0x00000017 (JMPREL)                     0x788
+ 0x00000014 (PLTREL)                     REL
+ 0x00000011 (REL)                        0x6d0
+ 0x00000012 (RELSZ)                      184 (bytes)
+ 0x00000013 (RELENT)                     8 (bytes)
+ 0x6ffffffa (RELCOUNT)                   21
+ 0x00000006 (SYMTAB)                     0x1a0
+ 0x0000000b (SYMENT)                     16 (bytes)
+ 0x00000005 (STRTAB)                     0x3e0
+ 0x0000000a (STRSZ)                      468 (bytes)
+ 0x6ffffef5 (GNU_HASH)                   0x5b4
+ 0x00000001 (NEEDED)                     Shared library: [liblog.so]
+ 0x00000001 (NEEDED)                     Shared library: [libc++.so]
+ 0x00000001 (NEEDED)                     Shared library: [libdl.so]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so]
+ 0x00000001 (NEEDED)                     Shared library: [libm.so]
+ 0x0000000e (SONAME)                     Library soname: [libion.so]
+ 0x0000001a (FINI_ARRAY)                 0x3e38
+ 0x0000001c (FINI_ARRAYSZ)               4 (bytes)
+ 0x0000001e (FLAGS)                      BIND_NOW
+ 0x6ffffffb (FLAGS_1)                    Flags: NOW
+ 0x6ffffff0 (VERSYM)                     0x61c
+ 0x6ffffffc (VERDEF)                     0x664
+ 0x6ffffffd (VERDEFNUM)                  1
+ 0x6ffffffe (VERNEED)                    0x680
+ 0x6fffffff (VERNEEDNUM)                 2
+ 0x00000000 (NULL)                       0x0

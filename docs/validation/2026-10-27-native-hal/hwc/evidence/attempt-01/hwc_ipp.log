@@ -1,0 +1,5 @@
+In file included from /workspace/build01-hal-next/hwc/source/hwc_ipp.cpp:11:0:
+/workspace/build01-hal-next/hwc/source/hwc_ipp.h:48:32: fatal error: linux/rockchip_ion.h: No such file or directory
+ #include <linux/rockchip_ion.h>
+                                ^
+compilation terminated.

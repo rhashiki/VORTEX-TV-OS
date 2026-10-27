@@ -1,0 +1,29 @@
+
+/workspace/build01-sd-next/vendor-sd/proprietary/lib/egl/libGLES_mali.so:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00012668 <__egl_platform_query_buffer_age_android@@Base+0xa84>:
+   12668:	e590003c 	ldr	r0, [r0, #60]	; 0x3c
+   1266c:	e5901028 	ldr	r1, [r0, #40]	; 0x28
+   12670:	e3050659 	movw	r0, #22105	; 0x5659
+   12674:	e3430231 	movt	r0, #12849	; 0x3231
+   12678:	e1510000 	cmp	r1, r0
+   1267c:	13a00000 	movne	r0, #0
+   12680:	13510011 	cmpne	r1, #17
+   12684:	112fff1e 	bxne	lr
+   12688:	e3a00001 	mov	r0, #1
+   1268c:	e12fff1e 	bx	lr
+   12690:	e590103c 	ldr	r1, [r0, #60]	; 0x3c
+   12694:	e5911028 	ldr	r1, [r1, #40]	; 0x28
+   12698:	e3510011 	cmp	r1, #17
+   1269c:	05d01020 	ldrbeq	r1, [r0, #32]
+   126a0:	0311000f 	tsteq	r1, #15
+   126a4:	0a000001 	beq	126b0 <__egl_platform_query_buffer_age_android@@Base+0xacc>
+   126a8:	e3a00000 	mov	r0, #0
+   126ac:	e12fff1e 	bx	lr
+   126b0:	e5900024 	ldr	r0, [r0, #36]	; 0x24
+   126b4:	e3a01001 	mov	r1, #1
+   126b8:	e1c10000 	bic	r0, r1, r0
+   126bc:	e12fff1e 	bx	lr

@@ -1,0 +1,3 @@
+linker: /workspace/build01-hal-next/loader/hal_metadata_probe: unsupported flags DT_FLAGS_1=0x8000001
+WARNING: linker: /workspace/build01-hal-next/loader/hal_metadata_probe: unsupported flags DT_FLAGS_1=0x8000001
+HAL_METADATA_OK id=gralloc module_api=1 hal_api=0 name=Graphics Memory Allocator Module

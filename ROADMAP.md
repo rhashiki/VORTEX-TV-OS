@@ -83,6 +83,7 @@ não foi compilada nem testada. Preservar a memória interna durante essa etapa
 - [x] Compilar kernel/DTB SDK com restrições SD, retirar caminhos vendor/fábrica conhecidos e conferir DTB/fstab/config/cmdline; [resultados](docs/VALIDATION_2026-10-26_SD_PROFILE.md). Continua sem sistema Android ou mídia de boot completos.
 - [x] Compilar VortexHome pelo make/Jack AOSP r6 e validar o APK em API25; compilar TPL/SPL/U-Boot/OP-TEE em ensaio separado, com [resultados e bloqueios de ABI](docs/VALIDATION_2026-10-26_AOSP_BOOTLOADER.md). Isso não conclui a imagem Android ou o boot físico.
 - [x] Corrigir o contrato framebuffer nas fontes fixadas, compilar quatro objetos gralloc e concluir upload/confirmar/cancelar/abrir app pela Home no emulador; [resultados e limites](docs/VALIDATION_2026-10-27_GRAPHICS_MONITOR.md). Ainda sem link HAL, Android completo ou validação física.
+- [x] Compilar HWC com correções de formato/política/strings, ligar manualmente gralloc/HWC com bibliotecas API25 reais e conferir seu carregamento de metadados em ARM; [resultados](docs/VALIDATION_2026-10-27_NATIVE_HAL.md). Não comprova build AOSP completo, composição gráfica ou hardware.
 - [ ] Integração das quatro peças de marca oficiais e atualização visual.
 - [ ] Compilação e regressão completas, incluindo teste de QR/USB/PackageInstaller.
 - [ ] Compilar uma imagem de teste microSD e demonstrar boot externo com a instalação interna preservada.

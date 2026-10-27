@@ -1,0 +1,89 @@
+
+/workspace/build01-sd-next/vendor-sd/proprietary/lib/egl/libGLES_mali.so:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+000106ac <__egl_platform_begin_new_frame_android@@Base+0xb70>:
+   106ac:	e92d4ff0 	push	{r4, r5, r6, r7, r8, r9, sl, fp, lr}
+   106b0:	e24dd004 	sub	sp, sp, #4
+   106b4:	ed2d8b04 	vpush	{d8-d9}
+   106b8:	e24dd0a0 	sub	sp, sp, #160	; 0xa0
+   106bc:	e1a04000 	mov	r4, r0
+   106c0:	e59f0474 	ldr	r0, [pc, #1140]	; 10b3c <__egl_platform_begin_new_frame_android@@Base+0x1000>
+   106c4:	e3a06021 	mov	r6, #33	; 0x21
+   106c8:	e1a07003 	mov	r7, r3
+   106cc:	e1a0a002 	mov	sl, r2
+   106d0:	e79f0000 	ldr	r0, [pc, r0]
+   106d4:	e5900000 	ldr	r0, [r0]
+   106d8:	e58d009c 	str	r0, [sp, #156]	; 0x9c
+   106dc:	e591010c 	ldr	r0, [r1, #268]	; 0x10c
+   106e0:	e594503c 	ldr	r5, [r4, #60]	; 0x3c
+   106e4:	e3500000 	cmp	r0, #0
+   106e8:	03006001 	movweq	r6, #1
+   106ec:	e3550000 	cmp	r5, #0
+   106f0:	0a000018 	beq	10758 <__egl_platform_begin_new_frame_android@@Base+0xc1c>
+   106f4:	e5950000 	ldr	r0, [r5]
+   106f8:	e350000c 	cmp	r0, #12
+   106fc:	1a000015 	bne	10758 <__egl_platform_begin_new_frame_android@@Base+0xc1c>
+   10700:	e5950004 	ldr	r0, [r5, #4]
+   10704:	e3500001 	cmp	r0, #1
+   10708:	05950008 	ldreq	r0, [r5, #8]
+   1070c:	03500016 	cmpeq	r0, #22
+   10710:	1a000010 	bne	10758 <__egl_platform_begin_new_frame_android@@Base+0xc1c>
+   10714:	e5950010 	ldr	r0, [r5, #16]
+   10718:	e3011592 	movw	r1, #5522	; 0x1592
+   1071c:	e3401314 	movt	r1, #788	; 0x314
+   10720:	e1500001 	cmp	r0, r1
+   10724:	1a00000b 	bne	10758 <__egl_platform_begin_new_frame_android@@Base+0xc1c>
+   10728:	e5950014 	ldr	r0, [r5, #20]
+   1072c:	e3100001 	tst	r0, #1
+   10730:	1a000026 	bne	107d0 <__egl_platform_begin_new_frame_android@@Base+0xc94>
+   10734:	e3100002 	tst	r0, #2
+   10738:	1a00003d 	bne	10834 <__egl_platform_begin_new_frame_android@@Base+0xcf8>
+   1073c:	e3100004 	tst	r0, #4
+   10740:	0a000045 	beq	1085c <__egl_platform_begin_new_frame_android@@Base+0xd20>
+   10744:	e3a00000 	mov	r0, #0
+   10748:	e3a0b000 	mov	fp, #0
+   1074c:	e58d0024 	str	r0, [sp, #36]	; 0x24
+   10750:	e58d5020 	str	r5, [sp, #32]
+   10754:	ea000026 	b	107f4 <__egl_platform_begin_new_frame_android@@Base+0xcb8>
+   10758:	e59f2438 	ldr	r2, [pc, #1080]	; 10b98 <__egl_platform_begin_new_frame_android@@Base+0x105c>
+   1075c:	e59f0430 	ldr	r0, [pc, #1072]	; 10b94 <__egl_platform_begin_new_frame_android@@Base+0x1058>
+   10760:	e08f2002 	add	r2, pc, r2
+   10764:	e08f1000 	add	r1, pc, r0
+   10768:	e3a00006 	mov	r0, #6
+   1076c:	ebfff158 	bl	ccd4 <__android_log_print@plt>
+   10770:	e59f3428 	ldr	r3, [pc, #1064]	; 10ba0 <__egl_platform_begin_new_frame_android@@Base+0x1064>
+   10774:	e3007385 	movw	r7, #901	; 0x385
+   10778:	e59f041c 	ldr	r0, [pc, #1052]	; 10b9c <__egl_platform_begin_new_frame_android@@Base+0x1060>
+   1077c:	e59f2420 	ldr	r2, [pc, #1056]	; 10ba4 <__egl_platform_begin_new_frame_android@@Base+0x1068>
+   10780:	e08f3003 	add	r3, pc, r3
+   10784:	e594103c 	ldr	r1, [r4, #60]	; 0x3c
+   10788:	e58d7000 	str	r7, [sp]
+   1078c:	e58d1004 	str	r1, [sp, #4]
+   10790:	e08f1002 	add	r1, pc, r2
+   10794:	e08f2000 	add	r2, pc, r0
+   10798:	e3a00006 	mov	r0, #6
+   1079c:	ebfff14c 	bl	ccd4 <__android_log_print@plt>
+   107a0:	e3a05000 	mov	r5, #0
+   107a4:	e59f03fc 	ldr	r0, [pc, #1020]	; 10ba8 <__egl_platform_begin_new_frame_android@@Base+0x106c>
+   107a8:	e59d109c 	ldr	r1, [sp, #156]	; 0x9c
+   107ac:	e79f0000 	ldr	r0, [pc, r0]
+   107b0:	e5900000 	ldr	r0, [r0]
+   107b4:	e0500001 	subs	r0, r0, r1
+   107b8:	01a00005 	moveq	r0, r5
+   107bc:	028dd0a0 	addeq	sp, sp, #160	; 0xa0
+   107c0:	0cbd8b04 	vpopeq	{d8-d9}
+   107c4:	028dd004 	addeq	sp, sp, #4
+   107c8:	08bd8ff0 	popeq	{r4, r5, r6, r7, r8, r9, sl, fp, pc}
+   107cc:	ebfff13d 	bl	ccc8 <__stack_chk_fail@plt>
+   107d0:	e5950058 	ldr	r0, [r5, #88]	; 0x58
+   107d4:	e28d2058 	add	r2, sp, #88	; 0x58
+   107d8:	e3041602 	movw	r1, #17922	; 0x4602
+   107dc:	ebfff15d 	bl	cd58 <ioctl@plt>
+   107e0:	e59d0068 	ldr	r0, [sp, #104]	; 0x68
+   107e4:	e58d0024 	str	r0, [sp, #36]	; 0x24
+   107e8:	e594003c 	ldr	r0, [r4, #60]	; 0x3c
+   107ec:	e595b05c 	ldr	fp, [r5, #92]	; 0x5c
+   107f0:	e58d0020 	str	r0, [sp, #32]

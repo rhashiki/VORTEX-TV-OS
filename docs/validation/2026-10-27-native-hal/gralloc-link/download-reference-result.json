@@ -1,0 +1,66 @@
+{
+  "metadata_url": "https://dl.google.com/android/repository/sys-img/android/sys-img2-1.xml",
+  "metadata_sha256": "ebf2d810d9e0c0b511ae49ee6e8c671a8fa67d210d06f5e3e068f83244ece435",
+  "package": "system-images;android-25;default;arm64-v8a",
+  "archive_url": "https://dl.google.com/android/repository/sys-img/android/arm64-v8a-25_r02.zip",
+  "archive_size_bytes": 308416103,
+  "archive_checksum_type": "sha1",
+  "archive_checksum": "b39d359623323a1b4906c071dec396040016ea73",
+  "display": "ARM 64 v8a System Image",
+  "observed_size_bytes": 308416103,
+  "observed_sha1": "b39d359623323a1b4906c071dec396040016ea73",
+  "sha256": "1d38666f6e64f983e0d3ad86ef5c42d213685fcd6932a0f2dfbcee0e79767cc2",
+  "checked_at_utc": "2026-10-27T08:43:34.334380+00:00",
+  "zip_entries": [
+    {
+      "name": "arm64-v8a/",
+      "bytes": 0,
+      "compressed_bytes": 0
+    },
+    {
+      "name": "arm64-v8a/advancedFeatures.ini",
+      "bytes": 131,
+      "compressed_bytes": 98
+    },
+    {
+      "name": "arm64-v8a/kernel-ranchu",
+      "bytes": 7748096,
+      "compressed_bytes": 3764029
+    },
+    {
+      "name": "arm64-v8a/NOTICE.txt",
+      "bytes": 1686464,
+      "compressed_bytes": 219266
+    },
+    {
+      "name": "arm64-v8a/kernel-qemu",
+      "bytes": 7748096,
+      "compressed_bytes": 3764029
+    },
+    {
+      "name": "arm64-v8a/build.prop",
+      "bytes": 2234,
+      "compressed_bytes": 961
+    },
+    {
+      "name": "arm64-v8a/userdata.img",
+      "bytes": 576716800,
+      "compressed_bytes": 9163211
+    },
+    {
+      "name": "arm64-v8a/source.properties",
+      "bytes": 177,
+      "compressed_bytes": 137
+    },
+    {
+      "name": "arm64-v8a/ramdisk.img",
+      "bytes": 1463744,
+      "compressed_bytes": 1461648
+    },
+    {
+      "name": "arm64-v8a/system.img",
+      "bytes": 2684354560,
+      "compressed_bytes": 290040994
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+
+/workspace/build01-sd-next/vendor-sd/proprietary/lib/egl/libGLES_mali.so:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00010224 <__egl_platform_begin_new_frame_android@@Base+0x6e8>:
+   10224:	e92d4ff0 	push	{r4, r5, r6, r7, r8, r9, sl, fp, lr}
+   10228:	e24dd0a4 	sub	sp, sp, #164	; 0xa4
+   1022c:	e1a0b000 	mov	fp, r0
+   10230:	e59f03fc 	ldr	r0, [pc, #1020]	; 10634 <__egl_platform_begin_new_frame_android@@Base+0xaf8>
+   10234:	e1a08002 	mov	r8, r2
+   10238:	e1a07001 	mov	r7, r1
+   1023c:	e79f0000 	ldr	r0, [pc, r0]
+   10240:	e5900000 	ldr	r0, [r0]
+   10244:	e58d00a0 	str	r0, [sp, #160]	; 0xa0
+   10248:	e3a00027 	mov	r0, #39	; 0x27
+   1024c:	ebfff2be 	bl	cd4c <sysconf@plt>
+   10250:	e3a05000 	mov	r5, #0
+   10254:	e1a09000 	mov	r9, r0
+   10258:	e58d5058 	str	r5, [sp, #88]	; 0x58
+   1025c:	e3a06021 	mov	r6, #33	; 0x21
+   10260:	e597010c 	ldr	r0, [r7, #268]	; 0x10c
+   10264:	e59b403c 	ldr	r4, [fp, #60]	; 0x3c
+   10268:	e3500000 	cmp	r0, #0
+   1026c:	03006001 	movweq	r6, #1
+   10270:	e3540000 	cmp	r4, #0
+   10274:	0a000017 	beq	102d8 <__egl_platform_begin_new_frame_android@@Base+0x79c>
+   10278:	e5940000 	ldr	r0, [r4]
+   1027c:	e350000c 	cmp	r0, #12
+   10280:	1a000014 	bne	102d8 <__egl_platform_begin_new_frame_android@@Base+0x79c>
+   10284:	e5940004 	ldr	r0, [r4, #4]
+   10288:	e3500001 	cmp	r0, #1
+   1028c:	05940008 	ldreq	r0, [r4, #8]
+   10290:	03500016 	cmpeq	r0, #22
+   10294:	1a00000f 	bne	102d8 <__egl_platform_begin_new_frame_android@@Base+0x79c>
+   10298:	e5940010 	ldr	r0, [r4, #16]
+   1029c:	e3011592 	movw	r1, #5522	; 0x1592
+   102a0:	e3401314 	movt	r1, #788	; 0x314
+   102a4:	e1500001 	cmp	r0, r1
+   102a8:	1a00000a 	bne	102d8 <__egl_platform_begin_new_frame_android@@Base+0x79c>
+   102ac:	e5940014 	ldr	r0, [r4, #20]
+   102b0:	e3100001 	tst	r0, #1
+   102b4:	1a000022 	bne	10344 <__egl_platform_begin_new_frame_android@@Base+0x808>
+   102b8:	e3100002 	tst	r0, #2
+   102bc:	1a000053 	bne	10410 <__egl_platform_begin_new_frame_android@@Base+0x8d4>
+   102c0:	e3100004 	tst	r0, #4
+   102c4:	e3a02000 	mov	r2, #0
+   102c8:	e1a01004 	mov	r1, r4
+   102cc:	e3a00000 	mov	r0, #0
+   102d0:	1a000022 	bne	10360 <__egl_platform_begin_new_frame_android@@Base+0x824>
+   102d4:	ea000057 	b	10438 <__egl_platform_begin_new_frame_android@@Base+0x8fc>
+   102d8:	e59f23b8 	ldr	r2, [pc, #952]	; 10698 <__egl_platform_begin_new_frame_android@@Base+0xb5c>
+   102dc:	e59f03b0 	ldr	r0, [pc, #944]	; 10694 <__egl_platform_begin_new_frame_android@@Base+0xb58>
+   102e0:	e08f2002 	add	r2, pc, r2
+   102e4:	e08f1000 	add	r1, pc, r0
+   102e8:	e3a00006 	mov	r0, #6
+   102ec:	ebfff278 	bl	ccd4 <__android_log_print@plt>
+   102f0:	e59f33a8 	ldr	r3, [pc, #936]	; 106a0 <__egl_platform_begin_new_frame_android@@Base+0xb64>
+   102f4:	e3a07fc3 	mov	r7, #780	; 0x30c
+   102f8:	e59f039c 	ldr	r0, [pc, #924]	; 1069c <__egl_platform_begin_new_frame_android@@Base+0xb60>
+   102fc:	e59f23a0 	ldr	r2, [pc, #928]	; 106a4 <__egl_platform_begin_new_frame_android@@Base+0xb68>
+   10300:	e08f3003 	add	r3, pc, r3
+   10304:	e59b103c 	ldr	r1, [fp, #60]	; 0x3c
+   10308:	e58d7000 	str	r7, [sp]
+   1030c:	e58d1004 	str	r1, [sp, #4]
+   10310:	e08f1002 	add	r1, pc, r2
+   10314:	e08f2000 	add	r2, pc, r0
+   10318:	e3a00006 	mov	r0, #6
+   1031c:	ebfff26c 	bl	ccd4 <__android_log_print@plt>
+   10320:	e59f0380 	ldr	r0, [pc, #896]	; 106a8 <__egl_platform_begin_new_frame_android@@Base+0xb6c>
+   10324:	e59d10a0 	ldr	r1, [sp, #160]	; 0xa0
+   10328:	e79f0000 	ldr	r0, [pc, r0]
+   1032c:	e5900000 	ldr	r0, [r0]
+   10330:	e0500001 	subs	r0, r0, r1
+   10334:	01a00005 	moveq	r0, r5
+   10338:	028dd0a4 	addeq	sp, sp, #164	; 0xa4
+   1033c:	08bd8ff0 	popeq	{r4, r5, r6, r7, r8, r9, sl, fp, pc}
+   10340:	ebfff260 	bl	ccc8 <__stack_chk_fail@plt>
+   10344:	e5940058 	ldr	r0, [r4, #88]	; 0x58
+   10348:	e28d205c 	add	r2, sp, #92	; 0x5c
+   1034c:	e3041602 	movw	r1, #17922	; 0x4602
+   10350:	ebfff280 	bl	cd58 <ioctl@plt>
+   10354:	e594005c 	ldr	r0, [r4, #92]	; 0x5c
+   10358:	e59d206c 	ldr	r2, [sp, #108]	; 0x6c
+   1035c:	e59b103c 	ldr	r1, [fp, #60]	; 0x3c
+   10360:	e58d0024 	str	r0, [sp, #36]	; 0x24
+   10364:	e28de058 	add	lr, sp, #88	; 0x58
+   10368:	e59f02d4 	ldr	r0, [pc, #724]	; 10644 <__egl_platform_begin_new_frame_android@@Base+0xb08>
+   1036c:	e3a05000 	mov	r5, #0
+   10370:	e58d2028 	str	r2, [sp, #40]	; 0x28
+   10374:	e5942038 	ldr	r2, [r4, #56]	; 0x38
+   10378:	e79f0000 	ldr	r0, [pc, r0]
+   1037c:	e58d2058 	str	r2, [sp, #88]	; 0x58
+   10380:	e594a01c 	ldr	sl, [r4, #28]
+   10384:	e59b3020 	ldr	r3, [fp, #32]
+   10388:	e59b2030 	ldr	r2, [fp, #48]	; 0x30
+   1038c:	e5904088 	ldr	r4, [r0, #136]	; 0x88
+   10390:	e59bc024 	ldr	ip, [fp, #36]	; 0x24
+   10394:	e58d5000 	str	r5, [sp]
+   10398:	e98d5008 	stmib	sp, {r3, ip, lr}
+   1039c:	e3a03000 	mov	r3, #0
+   103a0:	e12fff34 	blx	r4
+   103a4:	e59b003c 	ldr	r0, [fp, #60]	; 0x3c
+   103a8:	e5900028 	ldr	r0, [r0, #40]	; 0x28
+   103ac:	e2404001 	sub	r4, r0, #1
+   103b0:	e3540005 	cmp	r4, #5
+   103b4:	2a000004 	bcs	103cc <__egl_platform_begin_new_frame_android@@Base+0x890>
+   103b8:	e6ef1074 	uxtb	r1, r4
+   103bc:	e3a0201b 	mov	r2, #27
+   103c0:	e3a03001 	mov	r3, #1
+   103c4:	e1130132 	tst	r3, r2, lsr r1

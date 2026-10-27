@@ -1,0 +1,43 @@
+/workspace/build01-hal-next/hwc-format/source/hwc_rga.cpp: In function ‘void set_rga_offset(hwc_rect_t, hwc_rect_t, int)’:
+/workspace/build01-hal-next/hwc-format/source/hwc_rga.cpp:323:32: warning: unused parameter ‘src_rect’ [-Wunused-parameter]
+ void set_rga_offset(hwc_rect_t src_rect,hwc_rect_t dst_rect, int transform)
+                                ^~~~~~~~
+/workspace/build01-hal-next/hwc-format/source/hwc_rga.cpp: In function ‘void set_scale_mode(hwc_rect_t, hwc_rect_t, int)’:
+/workspace/build01-hal-next/hwc-format/source/hwc_rga.cpp:386:66: warning: unused parameter ‘transform’ [-Wunused-parameter]
+ void set_scale_mode(hwc_rect_t src_rect,hwc_rect_t dst_rect, int transform)
+                                                                  ^~~~~~~~~
+In file included from /workspace/build01-platform-next/research/rockchip-system-core/include/cutils/log.h:1:0,
+                 from /workspace/build01-hal-next/hwc-format/source/hwc_rga.h:19,
+                 from /workspace/build01-hal-next/hwc-format/source/hwc_rga.cpp:10:
+/workspace/build01-hal-next/hwc-format/source/hwc_rga.cpp: In function ‘int set_rga_cfg(hwc_cfg_t*)’:
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:618:39: error: format ‘%x’ expects argument of type ‘unsigned int’, but argument 8 has type ‘void*’ [-Werror=format=]
+     __android_log_print(prio, tag, fmt)
+                                       ^
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:461:5: note: in expansion of macro ‘android_printLog’
+     android_printLog(priority, tag, __VA_ARGS__)
+     ^~~~~~~~~~~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:453:5: note: in expansion of macro ‘LOG_PRI’
+     LOG_PRI(ANDROID_##priority, tag, __VA_ARGS__)
+     ^~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:120:14: note: in expansion of macro ‘ALOG’
+     ? ((void)ALOG(LOG_DEBUG, LOG_TAG, __VA_ARGS__)) \
+              ^~~~
+/workspace/build01-hal-next/hwc-format/source/hwc_rga.cpp:481:3: note: in expansion of macro ‘ALOGD_IF’
+   ALOGD_IF(DEBUG_LOG,"src rect[%d,%d,%d,%d],src_addr=0x%x,dst rect[%d,%d,%d,%d],dst_addr=0x%x",\
+   ^~~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:618:39: error: format ‘%x’ expects argument of type ‘unsigned int’, but argument 13 has type ‘void*’ [-Werror=format=]
+     __android_log_print(prio, tag, fmt)
+                                       ^
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:461:5: note: in expansion of macro ‘android_printLog’
+     android_printLog(priority, tag, __VA_ARGS__)
+     ^~~~~~~~~~~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:453:5: note: in expansion of macro ‘LOG_PRI’
+     LOG_PRI(ANDROID_##priority, tag, __VA_ARGS__)
+     ^~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:120:14: note: in expansion of macro ‘ALOG’
+     ? ((void)ALOG(LOG_DEBUG, LOG_TAG, __VA_ARGS__)) \
+              ^~~~
+/workspace/build01-hal-next/hwc-format/source/hwc_rga.cpp:481:3: note: in expansion of macro ‘ALOGD_IF’
+   ALOGD_IF(DEBUG_LOG,"src rect[%d,%d,%d,%d],src_addr=0x%x,dst rect[%d,%d,%d,%d],dst_addr=0x%x",\
+   ^~~~~~~~
+cc1plus: some warnings being treated as errors

@@ -1,0 +1,48 @@
+[
+  {
+    "label": "before",
+    "scope": "Host-only behavioral test of byte-extracted actual function bodies with genuine Android HAL/gralloc types; not Android runtime or hardware.",
+    "command": [
+      "g++",
+      "-std=gnu++11",
+      "-DANDROID",
+      "-I/workspace/build01-graphics-next/graphics/libhardware/include",
+      "-I/workspace/build01-platform-next/research/rockchip-system-core/include",
+      "-I/workspace/build01-platform-next/research/mali-legacy/gralloc-rk3328",
+      "-I/workspace/build01-hal-next/hwc/native-headers/opengl/include",
+      "/workspace/build01-hal-next/hwc/evidence/behavior/before.cpp",
+      "-o",
+      "/workspace/build01-hal-next/hwc/evidence/behavior/before"
+    ],
+    "compile_exit_code": 0,
+    "run_exit_code": 1,
+    "function_hashes": {
+      "policy": "2141c6b8528974d42f0a40c2142a8c1f80e58a8825b0c120e66f7eb57fe3f00d",
+      "itoa": "9229ca532ffce3df3d7bfcfe1034e86b7235584997abab2780993455865268d9"
+    },
+    "source_file": "before.cpp"
+  },
+  {
+    "label": "after",
+    "scope": "Host-only behavioral test of byte-extracted actual function bodies with genuine Android HAL/gralloc types; not Android runtime or hardware.",
+    "command": [
+      "g++",
+      "-std=gnu++11",
+      "-DANDROID",
+      "-I/workspace/build01-graphics-next/graphics/libhardware/include",
+      "-I/workspace/build01-platform-next/research/rockchip-system-core/include",
+      "-I/workspace/build01-platform-next/research/mali-legacy/gralloc-rk3328",
+      "-I/workspace/build01-hal-next/hwc/native-headers/opengl/include",
+      "/workspace/build01-hal-next/hwc/evidence/behavior/after.cpp",
+      "-o",
+      "/workspace/build01-hal-next/hwc/evidence/behavior/after"
+    ],
+    "compile_exit_code": 0,
+    "run_exit_code": 0,
+    "function_hashes": {
+      "policy": "33d67a9f84490c5e81f36e349b9dc6e4236ae75e83b5fcb3f0f23dda871e1089",
+      "itoa": "38beb1abe3b93181085402dcec227e3c4b25e91a2b83432da3fd7fcdd82dc644"
+    },
+    "source_file": "after.cpp"
+  }
+]

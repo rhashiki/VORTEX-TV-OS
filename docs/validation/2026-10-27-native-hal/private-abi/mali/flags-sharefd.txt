@@ -1,0 +1,91 @@
+
+/workspace/build01-sd-next/vendor-sd/proprietary/lib/egl/libGLES_mali.so:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+0000f644 <_mali_osu_atomic_init@@Base+0x17c4>:
+    f644:	e92d4bf0 	push	{r4, r5, r6, r7, r8, r9, fp, lr}
+    f648:	e24dd010 	sub	sp, sp, #16
+    f64c:	e591603c 	ldr	r6, [r1, #60]	; 0x3c
+    f650:	e1a05000 	mov	r5, r0
+    f654:	e59d8034 	ldr	r8, [sp, #52]	; 0x34
+    f658:	e1a07003 	mov	r7, r3
+    f65c:	e59d9030 	ldr	r9, [sp, #48]	; 0x30
+    f660:	e1a04002 	mov	r4, r2
+    f664:	e5960014 	ldr	r0, [r6, #20]
+    f668:	e3100001 	tst	r0, #1
+    f66c:	1a000014 	bne	f6c4 <_mali_osu_atomic_init@@Base+0x1844>
+    f670:	e3100002 	tst	r0, #2
+    f674:	1a000030 	bne	f73c <_mali_osu_atomic_init@@Base+0x18bc>
+    f678:	e3100004 	tst	r0, #4
+    f67c:	0a000025 	beq	f718 <_mali_osu_atomic_init@@Base+0x1898>
+    f680:	e596100c 	ldr	r1, [r6, #12]
+    f684:	e1a00005 	mov	r0, r5
+    f688:	e1a02009 	mov	r2, r9
+    f68c:	eb018bdd 	bl	72608 <_mali_base_common_mem_add_phys_mem@@Base+0x248>
+    f690:	e3500000 	cmp	r0, #0
+    f694:	1a000033 	bne	f768 <_mali_osu_atomic_init@@Base+0x18e8>
+    f698:	e59f10ec 	ldr	r1, [pc, #236]	; f78c <_mali_osu_atomic_init@@Base+0x190c>
+    f69c:	e3a07e1d 	mov	r7, #464	; 0x1d0
+    f6a0:	e59f00e0 	ldr	r0, [pc, #224]	; f788 <_mali_osu_atomic_init@@Base+0x1908>
+    f6a4:	e59f30e4 	ldr	r3, [pc, #228]	; f790 <_mali_osu_atomic_init@@Base+0x1910>
+    f6a8:	e08f1001 	add	r1, pc, r1
+    f6ac:	e596200c 	ldr	r2, [r6, #12]
+    f6b0:	e58d7000 	str	r7, [sp]
+    f6b4:	e58d2004 	str	r2, [sp, #4]
+    f6b8:	e08f2003 	add	r2, pc, r3
+    f6bc:	e08f3000 	add	r3, pc, r0
+    f6c0:	ea000025 	b	f75c <_mali_osu_atomic_init@@Base+0x18dc>
+    f6c4:	e596100c 	ldr	r1, [r6, #12]
+    f6c8:	e3510000 	cmp	r1, #0
+    f6cc:	ba000011 	blt	f718 <_mali_osu_atomic_init@@Base+0x1898>
+    f6d0:	e1a00005 	mov	r0, r5
+    f6d4:	e1a02009 	mov	r2, r9
+    f6d8:	eb018bca 	bl	72608 <_mali_base_common_mem_add_phys_mem@@Base+0x248>
+    f6dc:	e3500000 	cmp	r0, #0
+    f6e0:	1a000020 	bne	f768 <_mali_osu_atomic_init@@Base+0x18e8>
+    f6e4:	e59f1088 	ldr	r1, [pc, #136]	; f774 <_mali_osu_atomic_init@@Base+0x18f4>
+    f6e8:	e596200c 	ldr	r2, [r6, #12]
+    f6ec:	e3a06f6b 	mov	r6, #428	; 0x1ac
+    f6f0:	e59f0078 	ldr	r0, [pc, #120]	; f770 <_mali_osu_atomic_init@@Base+0x18f0>
+    f6f4:	e08f1001 	add	r1, pc, r1
+    f6f8:	e59f3078 	ldr	r3, [pc, #120]	; f778 <_mali_osu_atomic_init@@Base+0x18f8>
+    f6fc:	e58d6000 	str	r6, [sp]
+    f700:	e98d0204 	stmib	sp, {r2, r9}
+    f704:	e08f2003 	add	r2, pc, r3
+    f708:	e08f3000 	add	r3, pc, r0
+    f70c:	e3a00006 	mov	r0, #6
+    f710:	e58d400c 	str	r4, [sp, #12]
+    f714:	ebfff56e 	bl	ccd4 <__android_log_print@plt>
+    f718:	e3a00033 	mov	r0, #51	; 0x33
+    f71c:	e0473009 	sub	r3, r7, r9
+    f720:	e58d0000 	str	r0, [sp]
+    f724:	e1a00005 	mov	r0, r5
+    f728:	e1a01004 	mov	r1, r4
+    f72c:	e1a02008 	mov	r2, r8
+    f730:	ebfff56a 	bl	cce0 <_mali_base_common_mem_add_phys_mem@plt>
+    f734:	e28dd010 	add	sp, sp, #16
+    f738:	e8bd8bf0 	pop	{r4, r5, r6, r7, r8, r9, fp, pc}
+    f73c:	e59f103c 	ldr	r1, [pc, #60]	; f780 <_mali_osu_atomic_init@@Base+0x1900>
+    f740:	e30031c5 	movw	r3, #453	; 0x1c5
+    f744:	e59f2038 	ldr	r2, [pc, #56]	; f784 <_mali_osu_atomic_init@@Base+0x1904>
+    f748:	e59f002c 	ldr	r0, [pc, #44]	; f77c <_mali_osu_atomic_init@@Base+0x18fc>
+    f74c:	e08f1001 	add	r1, pc, r1
+    f750:	e88d0048 	stm	sp, {r3, r6}
+    f754:	e08f2002 	add	r2, pc, r2
+    f758:	e08f3000 	add	r3, pc, r0
+    f75c:	e3a00006 	mov	r0, #6
+    f760:	ebfff55b 	bl	ccd4 <__android_log_print@plt>
+    f764:	e3a00000 	mov	r0, #0
+    f768:	e28dd010 	add	sp, sp, #16
+    f76c:	e8bd8bf0 	pop	{r4, r5, r6, r7, r8, r9, fp, pc}
+    f770:	0010cb31 	andseq	ip, r0, r1, lsr fp
+    f774:	0010ca3e 	andseq	ip, r0, lr, lsr sl
+    f778:	0010caf2 			; <UNDEFINED> instruction: 0x0010caf2
+    f77c:	0010cae1 	andseq	ip, r0, r1, ror #21
+    f780:	0010c9e6 	andseq	ip, r0, r6, ror #19
+    f784:	0010c9ea 	andseq	ip, r0, sl, ror #19
+    f788:	0010cb7d 	andseq	ip, r0, sp, ror fp
+    f78c:	0010ca8a 	andseq	ip, r0, sl, lsl #21
+    f790:	0010cbf2 			; <UNDEFINED> instruction: 0x0010cbf2

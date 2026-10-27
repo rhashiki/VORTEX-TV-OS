@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "scope": "Independent read-only source/patch, existing compilation artifact and host behavioral evidence review; no compilation, Android runtime or hardware test performed by reviewer.",
+  "source_revision": "d3ec43f2f751123ca5e7bda2d07eded4c6352a35",
+  "patch": {
+    "path": "/workspace/build01-hal-next/hwc/hwc-fix-format-policy-and-hdmi-strings.patch",
+    "sha256": "9759c12cbf337bee74830ab6c5baea4e0b2e94230965a32e147179e7a554ad4c",
+    "git_apply_check_on_pristine_pinned_source": "pass"
+  },
+  "findings": [],
+  "semantic_review": {
+    "mix_policy": "Before, logical && converts nonzero formats to bool1, so incompatible RGB565/RGBX/unknown formats are accepted as RGBA1. The patch rejects null and switches on actual format, retaining RGBA/BGRA acceptance and conservative rejection for others.",
+    "itoa": "Multi-character constant '\\0 ' stores a space rather than a NUL terminator on the examined compiler. Replacing it with '\\0' fixes termination without changing the conversion algorithm.",
+    "HDMI_log": "The added ret argument matches the existing %d specifier and the immediately preceding atoi result, removing an invalid variadic argument read."
+  },
+  "behavior_evidence": {
+    "checks": 14,
+    "baseline_failures": 8,
+    "corrected_failures": 0,
+    "function_bodies_match_actual_sources": true,
+    "genuine_Android_HAL_and_gralloc_types_used": true,
+    "scope": "Host-only extracted-function behavior, not an ARM or Android execution test. The string inputs are nonnegative decimal values; test does not claim arbitrary radix/INT_MIN coverage."
+  },
+  "compilation_evidence": {
+    "baseline_actual_ARM_objects_verified": 8,
+    "changed_actual_ARM_objects_verified": 3,
+    "current_eight_object_set": [
+      {
+        "source": "rk_hwcomposer.cpp",
+        "source_sha256": "61e93cc6bf4a9320abe53bc651c772a196e0965602c3fca00669ebf607d44e8e",
+        "object_path": "/workspace/build01-hal-next/hwc/evidence/final/rk_hwcomposer.o",
+        "object_sha256": "2c23717c0bd8d3de42c292b0e4360d25c0f1b0a2d94923504d3f1449e5c37be0",
+        "size_bytes": 89064,
+        "compile_exit_code": 0,
+        "warnings_in_raw_log": 110,
+        "log": "/workspace/build01-hal-next/hwc/evidence/final/rk_hwcomposer.log"
+      },
+      {
+        "source": "rk_hwcomposer_blit.cpp",
+        "source_sha256": "73f14cdb9bf5ac68623d54dfb5b2a4da7213b44073c987bd1349ddbe7720b600",
+        "object_path": "/workspace/build01-hal-next/hwc/evidence/attempt-02/rk_hwcomposer_blit.o",
+        "object_sha256": "d84677395a7f4f94e13df555cd3cef6f954a800515c41d3da76cfaad1e111ed3",
+        "size_bytes": 15744,
+        "compile_exit_code": 0,
+        "warnings_in_raw_log": 7,
+        "log": "/workspace/build01-hal-next/hwc/evidence/attempt-02/rk_hwcomposer_blit.log"
+      },
+      {
+        "source": "rk_hwc_com.cpp",
+        "source_sha256": "1adf94e461a2f207a49926c41b7abab4e05bc6080bbcdeefb8147c1fef04b4a9",
+        "object_path": "/workspace/build01-hal-next/hwc/evidence/attempt-02/rk_hwc_com.o",
+        "object_sha256": "a6c5685c1ef137840911eb1c6c62754215055fb325b3309fab94aa4a3d8a07ca",
+        "size_bytes": 5852,
+        "compile_exit_code": 0,
+        "warnings_in_raw_log": 1,
+        "log": "/workspace/build01-hal-next/hwc/evidence/attempt-02/rk_hwc_com.log"
+      },
+      {
+        "source": "rga_api.cpp",
+        "source_sha256": "9ee00b3bc44d7d23f1149dbc982d4d2311ea0e087385f49ec5579209c0a93506",
+        "object_path": "/workspace/build01-hal-next/hwc/evidence/attempt-02/rga_api.o",
+        "object_sha256": "4af90d88aaeec968389a60b1a8497626b7ee8bd9030603cfb3114efe5596bcde",
+        "size_bytes": 7888,
+        "compile_exit_code": 0,
+        "warnings_in_raw_log": 0,
+        "log": "/workspace/build01-hal-next/hwc/evidence/attempt-02/rga_api.log"
+      },
+      {
+        "source": "rk_hwcomposer_htg.cpp",
+        "source_sha256": "b32dd94ddff2d7e533981574966281562a7977cfa820732a190943d22035bfef",
+        "object_path": "/workspace/build01-hal-next/hwc/evidence/final/rk_hwcomposer_htg.o",
+        "object_sha256": "cfd148f6e7852e7fa4881813788cadbc7b168f078af302d59e5caea2685ca322",
+        "size_bytes": 3600,
+        "compile_exit_code": 0,
+        "warnings_in_raw_log": 2,
+        "log": "/workspace/build01-hal-next/hwc/evidence/final/rk_hwcomposer_htg.log"
+      },
+      {
+        "source": "hwc_ipp.cpp",
+        "source_sha256": "26fe2ef9e98d73ca8dba9a39a425d466f924e33f8b54ebebcd9634e0c0389faa",
+        "object_path": "/workspace/build01-hal-next/hwc/evidence/attempt-02/hwc_ipp.o",
+        "object_sha256": "d26a0dc25454f18e69f5d566c139fa555e9fe9db058abfae69942e7a1ab04250",
+        "size_bytes": 6680,
+        "compile_exit_code": 0,
+        "warnings_in_raw_log": 3,
+        "log": "/workspace/build01-hal-next/hwc/evidence/attempt-02/hwc_ipp.log"
+      },
+      {
+        "source": "hwc_rga.cpp",
+        "source_sha256": "9c30eba3f34e34a7a7c1cd93dd97b3cd2231d28f7a6bdb634b9e36472e78088d",
+        "object_path": "/workspace/build01-hal-next/hwc/evidence/attempt-02/hwc_rga.o",
+        "object_sha256": "462396748bb7f9afa60c5830e23df3a1a28d0b7f46193728bfa273f33da98af0",
+        "size_bytes": 11840,
+        "compile_exit_code": 0,
+        "warnings_in_raw_log": 4,
+        "log": "/workspace/build01-hal-next/hwc/evidence/attempt-02/hwc_rga.log"
+      },
+      {
+        "source": "TVInfo.cpp",
+        "source_sha256": "7fb0d72305687709f8ee572204df32ec1ef027126fe3ae66d3cd4edaf02870e4",
+        "object_path": "/workspace/build01-hal-next/hwc/evidence/final/TVInfo.o",
+        "object_sha256": "685bdfab9c45936f8cff0ba28d9536e329e3b37986fd04778561f7c9988eb9a8",
+        "size_bytes": 4712,
+        "compile_exit_code": 0,
+        "warnings_in_raw_log": 5,
+        "log": "/workspace/build01-hal-next/hwc/evidence/final/TVInfo.log"
+      }
+    ],
+    "ARM32_little_endian_ELF": true,
+    "softfp_NEON_no_exceptions_no_RTTI_flags_recorded": true,
+    "all_current_source_hashes_match": true,
+    "corrected_rk_hwcomposer_dependencies_use_selected_gralloc_and_patched_libhardware": true,
+    "warnings_remain_visible": true
+  },
+  "additional_header_provenance": {
+    "frameworks_native_revision": "00c3ec97785c0d42f801083c8fc2fc26d3ce4e2d",
+    "selected_git_blobs_verified": 40,
+    "hardware_legacy_revision": "c04c4261b203c2015b379602a7fdc1137d80e48c",
+    "legacy_headers_verified": 1
+  },
+  "unfinished_prior_agent_tasks": [
+    "No final aggregate HWC build report or frozen HWC manifest was present. Parent can create these from existing artifacts without recompilation.",
+    "Final object set spans evidence/final for3modifiedsources and evidence/attempt-02 for5unchangedsources; do not claim that final directory alone contains all8."
+  ],
+  "limits": [
+    "Standalone object compilation only; no Android make graph, HWC link or module load approved by this review.",
+    "No framebuffer ioctl, DMA-BUF/ION/RGA, composition display, HDMI hardware or RK3229 boot exercised.",
+    "Behavior harness extracts actual functions with real headers but is not a substitute for integrated Android behavior.",
+    "Remaining compiler warnings are preserved, including110warnings in corrected rk_hwcomposer.cpp; no zero-warning claim."
+  ]
+}

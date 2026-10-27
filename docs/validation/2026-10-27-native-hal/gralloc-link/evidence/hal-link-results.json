@@ -1,0 +1,228 @@
+{
+  "platform_reference": "API25/ARM32 GoogleSDKreferenceELFs, vendor50c7170... libion",
+  "modules": [
+    {
+      "module": "gralloc.rk30board.so",
+      "scope": "Manual strict reference link against real API25 ARM platform libraries plus pinned vendorlibion, not an AOSP build or hardware validation.",
+      "command": [
+        "/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-gcc",
+        "-nostdlib",
+        "-shared",
+        "-march=armv7-a",
+        "-mfloat-abi=softfp",
+        "-mfpu=neon",
+        "-Wl,--no-undefined",
+        "-Wl,--no-allow-shlib-undefined",
+        "-Wl,-z,defs",
+        "-Wl,-z,relro",
+        "-Wl,-z,now",
+        "-Wl,--hash-style=both",
+        "-Wl,-soname,gralloc.rk30board.so",
+        "-Wl,-rpath-link,/workspace/build01-hal-next/gralloc-link/reference/system/lib",
+        "-Wl,-Map,/workspace/build01-hal-next/gralloc-link/evidence/gralloc.rk30board.so.map",
+        "/workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o",
+        "/workspace/build01-hal-next/gralloc-link/crt/crtbrand.o",
+        "/workspace/build01-hal-next/gralloc-link/objects/alloc_device.o",
+        "/workspace/build01-hal-next/gralloc-link/objects/framebuffer_device.o",
+        "/workspace/build01-hal-next/gralloc-link/objects/gralloc_module.o",
+        "/workspace/build01-hal-next/gralloc-link/objects/rockchip_alloc_device.o",
+        "-L/workspace/build01-hal-next/gralloc-link/reference/system/lib",
+        "-Wl,--no-as-needed",
+        "-l:liblog.so",
+        "-l:libcutils.so",
+        "-l:libGLESv1_CM.so",
+        "-l:libion.so",
+        "-l:libhardware.so",
+        "-l:libstdc++.so",
+        "-l:libc++.so",
+        "-l:libc.so",
+        "-l:libm.so",
+        "-l:libdl.so",
+        "/workspace/build01-hal-next/gralloc-link/crt/crtend_so.o",
+        "-o",
+        "/workspace/build01-hal-next/gralloc-link/artifacts/gralloc.rk30board.so"
+      ],
+      "exit_code": 0,
+      "object_inputs": [
+        {
+          "path": "/workspace/build01-hal-next/gralloc-link/objects/alloc_device.o",
+          "sha256": "6061300e9ea19f5601adaec5cef8e09bd7352002e7f208b16c3da1adae12417f"
+        },
+        {
+          "path": "/workspace/build01-hal-next/gralloc-link/objects/framebuffer_device.o",
+          "sha256": "267afb75de07a27af4cdc7dec75e1f852f2319eab25271e2eb26e4b040b2ff8e"
+        },
+        {
+          "path": "/workspace/build01-hal-next/gralloc-link/objects/gralloc_module.o",
+          "sha256": "72d8d6ae0aeabdec3f17c3eebc5fbd2a64ffaa3d26b044bff4baec1b90deae75"
+        },
+        {
+          "path": "/workspace/build01-hal-next/gralloc-link/objects/rockchip_alloc_device.o",
+          "sha256": "0b6a1c352d063c16ea7331b7ad127c01868e2c47891487ce2cfd24320b0f779b"
+        }
+      ],
+      "libraries": [
+        "liblog.so",
+        "libcutils.so",
+        "libGLESv1_CM.so",
+        "libion.so",
+        "libhardware.so",
+        "libstdc++.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ],
+      "path": "/workspace/build01-hal-next/gralloc-link/artifacts/gralloc.rk30board.so",
+      "bytes": 40044,
+      "sha256": "757c7bd142bf2d65330e1f4c972e8664706604018a89b1bd0963e5f91e7564a3",
+      "DT_NEEDED": [
+        "liblog.so",
+        "libcutils.so",
+        "libGLESv1_CM.so",
+        "libion.so",
+        "libhardware.so",
+        "libstdc++.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ],
+      "ELF_class": "ELF32",
+      "machine": "ARM",
+      "HMI_export": "50: 00017018   448 OBJECT  GLOBAL DEFAULT   19 HMI",
+      "strict_link_flags_verified": [
+        "--no-undefined",
+        "--no-allow-shlib-undefined",
+        "-z defs"
+      ]
+    },
+    {
+      "module": "hwcomposer.rk30board.so",
+      "scope": "Manual strict reference link against real API25 ARM platform libraries plus pinned vendorlibion, not an AOSP build or hardware validation.",
+      "command": [
+        "/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-gcc",
+        "-nostdlib",
+        "-shared",
+        "-march=armv7-a",
+        "-mfloat-abi=softfp",
+        "-mfpu=neon",
+        "-Wl,--no-undefined",
+        "-Wl,--no-allow-shlib-undefined",
+        "-Wl,-z,defs",
+        "-Wl,-z,relro",
+        "-Wl,-z,now",
+        "-Wl,--hash-style=both",
+        "-Wl,-soname,hwcomposer.rk30board.so",
+        "-Wl,-rpath-link,/workspace/build01-hal-next/gralloc-link/reference/system/lib",
+        "-Wl,-Map,/workspace/build01-hal-next/gralloc-link/evidence/hwcomposer.rk30board.so.map",
+        "/workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o",
+        "/workspace/build01-hal-next/gralloc-link/crt/crtbrand.o",
+        "/workspace/build01-hal-next/hwc-format/evidence/final/TVInfo.o",
+        "/workspace/build01-hal-next/hwc-format/evidence/final/hwc_ipp.o",
+        "/workspace/build01-hal-next/hwc-format/evidence/final/hwc_rga.o",
+        "/workspace/build01-hal-next/hwc-format/evidence/final/rga_api.o",
+        "/workspace/build01-hal-next/hwc-format/evidence/final/rk_hwc_com.o",
+        "/workspace/build01-hal-next/hwc-format/evidence/final/rk_hwcomposer.o",
+        "/workspace/build01-hal-next/hwc-format/evidence/final/rk_hwcomposer_blit.o",
+        "/workspace/build01-hal-next/hwc-format/evidence/final/rk_hwcomposer_htg.o",
+        "-L/workspace/build01-hal-next/gralloc-link/reference/system/lib",
+        "-Wl,--no-as-needed",
+        "-l:libhardware.so",
+        "-l:liblog.so",
+        "-l:libui.so",
+        "-l:libEGL.so",
+        "-l:libcutils.so",
+        "-l:libion.so",
+        "-l:libhardware_legacy.so",
+        "-l:libsync.so",
+        "-l:libstdc++.so",
+        "-l:libc++.so",
+        "-l:libc.so",
+        "-l:libm.so",
+        "-l:libdl.so",
+        "/workspace/build01-hal-next/gralloc-link/crt/crtend_so.o",
+        "-o",
+        "/workspace/build01-hal-next/gralloc-link/artifacts/hwcomposer.rk30board.so"
+      ],
+      "exit_code": 0,
+      "object_inputs": [
+        {
+          "path": "/workspace/build01-hal-next/hwc-format/evidence/final/TVInfo.o",
+          "sha256": "685bdfab9c45936f8cff0ba28d9536e329e3b37986fd04778561f7c9988eb9a8"
+        },
+        {
+          "path": "/workspace/build01-hal-next/hwc-format/evidence/final/hwc_ipp.o",
+          "sha256": "d26a0dc25454f18e69f5d566c139fa555e9fe9db058abfae69942e7a1ab04250"
+        },
+        {
+          "path": "/workspace/build01-hal-next/hwc-format/evidence/final/hwc_rga.o",
+          "sha256": "581887c4cdf049362ef1ee55264676c5fc4ab77806070721b0b89934df9f22bc"
+        },
+        {
+          "path": "/workspace/build01-hal-next/hwc-format/evidence/final/rga_api.o",
+          "sha256": "4af90d88aaeec968389a60b1a8497626b7ee8bd9030603cfb3114efe5596bcde"
+        },
+        {
+          "path": "/workspace/build01-hal-next/hwc-format/evidence/final/rk_hwc_com.o",
+          "sha256": "a8e9cafbe6a3531ccd6062693badecc9d442c68a753a3f5b7d5b67234653a3ef"
+        },
+        {
+          "path": "/workspace/build01-hal-next/hwc-format/evidence/final/rk_hwcomposer.o",
+          "sha256": "8ad42c1c48862accc444b1572962c6fce3dcae8bf72f19d0872ec83eeee862f6"
+        },
+        {
+          "path": "/workspace/build01-hal-next/hwc-format/evidence/final/rk_hwcomposer_blit.o",
+          "sha256": "b28479a096d4a11fc88400e3e4705cf0df4d5a6c9f58377c6aa2070ff1c47e9c"
+        },
+        {
+          "path": "/workspace/build01-hal-next/hwc-format/evidence/final/rk_hwcomposer_htg.o",
+          "sha256": "cfd148f6e7852e7fa4881813788cadbc7b168f078af302d59e5caea2685ca322"
+        }
+      ],
+      "libraries": [
+        "libhardware.so",
+        "liblog.so",
+        "libui.so",
+        "libEGL.so",
+        "libcutils.so",
+        "libion.so",
+        "libhardware_legacy.so",
+        "libsync.so",
+        "libstdc++.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ],
+      "path": "/workspace/build01-hal-next/gralloc-link/artifacts/hwcomposer.rk30board.so",
+      "bytes": 140140,
+      "sha256": "585842ade2e8bde7d2f0e8cf9cd9fca43762accf484671266efd1f4106f7241f",
+      "DT_NEEDED": [
+        "libhardware.so",
+        "liblog.so",
+        "libui.so",
+        "libEGL.so",
+        "libcutils.so",
+        "libion.so",
+        "libhardware_legacy.so",
+        "libsync.so",
+        "libstdc++.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ],
+      "ELF_class": "ELF32",
+      "machine": "ARM",
+      "HMI_export": "179: 0002d214   128 OBJECT  GLOBAL DEFAULT   17 HMI",
+      "strict_link_flags_verified": [
+        "--no-undefined",
+        "--no-allow-shlib-undefined",
+        "-z defs"
+      ]
+    }
+  ],
+  "fake_stubs_used": false,
+  "unresolved_symbol_suppression": false
+}

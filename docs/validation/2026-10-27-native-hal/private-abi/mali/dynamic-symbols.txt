@@ -1,0 +1,733 @@
+
+Symbol table '.dynsym' contains 730 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_finalize@LIBC (2)
+     2: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_atexit@LIBC (2)
+     3: 00000000     0 FUNC    GLOBAL DEFAULT  UND __register_atfork@LIBC (2)
+     4: 00000000     0 FUNC    GLOBAL DEFAULT  UND __gnu_Unwind_Find_exidx@LIBC_N (3)
+     5: 00000000     0 FUNC    GLOBAL DEFAULT  UND dladdr@LIBC (4)
+     6: 00000000     0 FUNC    GLOBAL DEFAULT  UND raise@LIBC (2)
+     7: 00000000     0 FUNC    GLOBAL DEFAULT  UND __stack_chk_fail@LIBC (2)
+     8: 00000000     0 OBJECT  GLOBAL DEFAULT  UND __stack_chk_guard@LIBC (2)
+     9: 00000000     0 FUNC    GLOBAL DEFAULT  UND __strlen_chk@LIBC (2)
+    10: 00000000     0 FUNC    GLOBAL DEFAULT  UND __strncat_chk@LIBC (2)
+    11: 00000000     0 FUNC    GLOBAL DEFAULT  UND dlerror@LIBC (4)
+    12: 00000000     0 FUNC    GLOBAL DEFAULT  UND dlsym@LIBC (4)
+    13: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memclr8@LIBC_N (3)
+    14: 00000000     0 FUNC    GLOBAL DEFAULT  UND __android_log_print
+    15: 00000000     0 FUNC    GLOBAL DEFAULT  UND __errno@LIBC (2)
+    16: 00000000     0 FUNC    GLOBAL DEFAULT  UND __sprintf_chk@LIBC (2)
+    17: 00000000     0 FUNC    GLOBAL DEFAULT  UND atoi@LIBC (2)
+    18: 00000000     0 FUNC    GLOBAL DEFAULT  UND calloc@LIBC (2)
+    19: 00000000     0 FUNC    GLOBAL DEFAULT  UND close@LIBC (2)
+    20: 00000000     0 FUNC    GLOBAL DEFAULT  UND fclose@LIBC (2)
+    21: 00000000     0 FUNC    GLOBAL DEFAULT  UND fgets@LIBC (2)
+    22: 00000000     0 FUNC    GLOBAL DEFAULT  UND fprintf@LIBC (2)
+    23: 00000000     0 FUNC    GLOBAL DEFAULT  UND fopen@LIBC (2)
+    24: 00000000     0 FUNC    GLOBAL DEFAULT  UND free@LIBC (2)
+    25: 00000000     0 FUNC    GLOBAL DEFAULT  UND abort@LIBC (2)
+    26: 00000000     0 FUNC    GLOBAL DEFAULT  UND getpid@LIBC (2)
+    27: 00000000     0 FUNC    GLOBAL DEFAULT  UND hw_get_module
+    28: 00000000     0 FUNC    GLOBAL DEFAULT  UND ioctl@LIBC (2)
+    29: 00000000     0 FUNC    GLOBAL DEFAULT  UND malloc@LIBC (2)
+    30: 00000000     0 FUNC    GLOBAL DEFAULT  UND property_get
+    31: 00000000     0 FUNC    GLOBAL DEFAULT  UND strcmp@LIBC (2)
+    32: 00000000     0 FUNC    GLOBAL DEFAULT  UND strerror@LIBC (2)
+    33: 00000000     0 FUNC    GLOBAL DEFAULT  UND sysconf@LIBC (2)
+    34: 00000000     0 FUNC    GLOBAL DEFAULT  UND syscall@LIBC (2)
+    35: 00000000     0 OBJECT  GLOBAL DEFAULT  UND atrace_is_ready
+    36: 00000000     0 FUNC    GLOBAL DEFAULT  UND atrace_setup
+    37: 00000000     0 FUNC    GLOBAL DEFAULT  UND sin@LIBC (5)
+    38: 00000000     0 FUNC    GLOBAL DEFAULT  UND tan@LIBC (5)
+    39: 00000000     0 FUNC    GLOBAL DEFAULT  UND log@LIBC (5)
+    40: 00000000     0 FUNC    GLOBAL DEFAULT  UND pow@LIBC (5)
+    41: 00000000     0 FUNC    GLOBAL DEFAULT  UND cos@LIBC (5)
+    42: 00000000     0 FUNC    GLOBAL DEFAULT  UND exp@LIBC (5)
+    43: 00000000     0 FUNC    GLOBAL DEFAULT  UND asin@LIBC (5)
+    44: 00000000     0 FUNC    GLOBAL DEFAULT  UND atan2@LIBC (5)
+    45: 00000000     0 FUNC    GLOBAL DEFAULT  UND acos@LIBC (5)
+    46: 00000000     0 FUNC    GLOBAL DEFAULT  UND strstr@LIBC (2)
+    47: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memcpy@LIBC_N (3)
+    48: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memclr@LIBC_N (3)
+    49: 00000000     0 FUNC    GLOBAL DEFAULT  UND __vsnprintf_chk@LIBC (2)
+    50: 00000000     0 FUNC    GLOBAL DEFAULT  UND strncmp@LIBC (2)
+    51: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memmove4@LIBC_N (3)
+    52: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memclr4@LIBC_N (3)
+    53: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memset4@LIBC_N (3)
+    54: 00000000     0 FUNC    GLOBAL DEFAULT  UND ceilf@LIBC (5)
+    55: 00000000     0 FUNC    GLOBAL DEFAULT  UND floorf@LIBC (5)
+    56: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memmove@LIBC_N (3)
+    57: 00000000     0 FUNC    GLOBAL DEFAULT  UND __strncpy_chk2@LIBC (2)
+    58: 00000000     0 FUNC    GLOBAL DEFAULT  UND __snprintf_chk@LIBC (2)
+    59: 00000000     0 FUNC    GLOBAL DEFAULT  UND memcmp@LIBC (2)
+    60: 00000000     0 FUNC    GLOBAL DEFAULT  UND strdup@LIBC (2)
+    61: 00000000     0 FUNC    GLOBAL DEFAULT  UND strncpy@LIBC (2)
+    62: 00000000     0 FUNC    GLOBAL DEFAULT  UND strnlen@LIBC (2)
+    63: 00000000     0 FUNC    GLOBAL DEFAULT  UND mmap@LIBC (2)
+    64: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memcpy4@LIBC_N (3)
+    65: 00000000     0 FUNC    GLOBAL DEFAULT  UND munmap@LIBC (2)
+    66: 00000000     0 FUNC    GLOBAL DEFAULT  UND open@LIBC (2)
+    67: 00000000     0 FUNC    GLOBAL DEFAULT  UND fstat@LIBC (2)
+    68: 00000000     0 FUNC    GLOBAL DEFAULT  UND mmap64@LIBC (2)
+    69: 00000000     0 FUNC    GLOBAL DEFAULT  UND logf@LIBC (5)
+    70: 00000000     0 FUNC    GLOBAL DEFAULT  UND gettimeofday@LIBC (2)
+    71: 00000000     0 FUNC    GLOBAL DEFAULT  UND exp2@LIBC (5)
+    72: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_lock@LIBC (2)
+    73: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_unlock@LIBC (2)
+    74: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_destroy@LIBC (2)
+    75: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_init@LIBC (2)
+    76: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_signal@LIBC (2)
+    77: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_wait@LIBC (2)
+    78: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_destroy@LIBC (2)
+    79: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_init@LIBC (2)
+    80: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_join@LIBC (2)
+    81: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_key_create@LIBC (2)
+    82: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_create@LIBC (2)
+    83: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_getspecific@LIBC (2)
+    84: 00000000     0 FUNC    GLOBAL DEFAULT  UND kill@LIBC (2)
+    85: 00000000     0 FUNC    GLOBAL DEFAULT  UND timer_settime@LIBC (2)
+    86: 00000000     0 FUNC    GLOBAL DEFAULT  UND gettid@LIBC (2)
+    87: 00000000     0 FUNC    GLOBAL DEFAULT  UND timer_create@LIBC (2)
+    88: 00000000     0 FUNC    GLOBAL DEFAULT  UND timer_delete@LIBC (2)
+    89: 00000000     0 FUNC    GLOBAL DEFAULT  UND sched_setscheduler@LIBC (2)
+    90: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_self@LIBC (2)
+    91: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_setspecific@LIBC (2)
+    92: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_timedwait@LIBC (2)
+    93: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memset@LIBC_N (3)
+    94: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutexattr_init@LIBC (2)
+    95: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutexattr_settype@LIBC (2)
+    96: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_trylock@LIBC (2)
+    97: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutexattr_destroy@LIBC (2)
+    98: 00000000     0 FUNC    GLOBAL DEFAULT  UND realloc@LIBC (2)
+    99: 00000000     0 FUNC    GLOBAL DEFAULT  UND cosf@LIBC (5)
+   100: 00000000     0 FUNC    GLOBAL DEFAULT  UND sinf@LIBC (5)
+   101: 00000000     0 FUNC    GLOBAL DEFAULT  UND sqrtf@LIBC (5)
+   102: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memset8@LIBC_N (3)
+   103: 00000000     0 FUNC    GLOBAL DEFAULT  UND __fread_chk@LIBC_N (3)
+   104: 00000000     0 FUNC    GLOBAL DEFAULT  UND fwrite@LIBC (2)
+   105: 00000000     0 FUNC    GLOBAL DEFAULT  UND memset@LIBC (2)
+   106: 00000000     0 FUNC    GLOBAL DEFAULT  UND perror@LIBC (2)
+   107: 00000000     0 OBJECT  GLOBAL DEFAULT  UND stderr@LIBC (2)
+   108: 00000000     0 FUNC    GLOBAL DEFAULT  UND qsort@LIBC (2)
+   109: 00000000     0 FUNC    GLOBAL DEFAULT  UND getenv@LIBC (2)
+   110: 00000000     0 FUNC    GLOBAL DEFAULT  UND sched_yield@LIBC (2)
+   111: 00000000     0 FUNC    GLOBAL DEFAULT  UND usleep@LIBC (2)
+   112: 00000000     0 FUNC    GLOBAL DEFAULT  UND dlclose@LIBC (4)
+   113: 00000000     0 FUNC    GLOBAL DEFAULT  UND dlopen@LIBC (4)
+   114: 00000000     0 FUNC    GLOBAL DEFAULT  UND dup@LIBC (2)
+   115: 00000000     0 FUNC    GLOBAL DEFAULT  UND fcntl@LIBC (2)
+   116: 00000000     0 FUNC    GLOBAL DEFAULT  UND clock_gettime@LIBC (2)
+   117: 00000000     0 FUNC    GLOBAL DEFAULT  UND __poll_chk@LIBC (2)
+   118: 00000000     0 FUNC    GLOBAL DEFAULT  UND __read_chk@LIBC (2)
+   119: 00000000     0 FUNC    GLOBAL DEFAULT  UND __write_chk@LIBC_N (3)
+   120: 00000000     0 FUNC    GLOBAL DEFAULT  UND pipe@LIBC (2)
+   121: 00000000     0 FUNC    GLOBAL DEFAULT  UND __recvfrom_chk@LIBC (2)
+   122: 00000000     0 FUNC    GLOBAL DEFAULT  UND accept@LIBC (2)
+   123: 00000000     0 FUNC    GLOBAL DEFAULT  UND bind@LIBC (2)
+   124: 00000000     0 FUNC    GLOBAL DEFAULT  UND connect@LIBC (2)
+   125: 00000000     0 FUNC    GLOBAL DEFAULT  UND listen@LIBC (2)
+   126: 00000000     0 FUNC    GLOBAL DEFAULT  UND send@LIBC (2)
+   127: 00000000     0 FUNC    GLOBAL DEFAULT  UND shutdown@LIBC (2)
+   128: 00000000     0 FUNC    GLOBAL DEFAULT  UND socket@LIBC (2)
+   129: 00000000     0 FUNC    GLOBAL DEFAULT  UND property_set
+   130: 00056824   220 FUNC    GLOBAL DEFAULT   13 glUniform2i
+   131: 00049bc4   136 FUNC    GLOBAL DEFAULT   13 glTexCoordPointer
+   132: 000472ac   152 FUNC    GLOBAL DEFAULT   13 glColor4f
+   133: 00076fbc   120 FUNC    GLOBAL DEFAULT   13 _mali_arch_soft_job_signal
+   134: 0004bbe8   176 FUNC    GLOBAL DEFAULT   13 glMaterialxOES
+   135: 0004befc   128 FUNC    GLOBAL DEFAULT   13 glPolygonOffsetxOES
+   136: 00047598   104 FUNC    GLOBAL DEFAULT   13 glDisableClientState
+   137: 0004bd20    68 FUNC    GLOBAL DEFAULT   13 glMultMatrixxOES
+   138: 0001593c   164 FUNC    GLOBAL DEFAULT   13 glGetTexParameteriv
+   139: 000482c4   140 FUNC    GLOBAL DEFAULT   13 glGetMaterialfv
+   140: 00071264    20 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_alignment_get
+   141: 0004b0c4   144 FUNC    GLOBAL DEFAULT   13 glTexGenxOES
+   142: 00054d50   104 FUNC    GLOBAL DEFAULT   13 glBlendEquation
+   143: 00080fa4   564 FUNC    GLOBAL DEFAULT   13 _mali_base_arch_mem_modify_cow_memory
+   144: 0004a79c   164 FUNC    GLOBAL DEFAULT   13 glGenRenderbuffersOES
+   145: 0004b460   112 FUNC    GLOBAL DEFAULT   13 glClipPlanexOES
+   146: 00056780   164 FUNC    GLOBAL DEFAULT   13 glUniform2fv
+   147: 00063198   120 FUNC    GLOBAL DEFAULT   13 eglGetConfigAttrib
+   148: 000147d0   128 FUNC    GLOBAL DEFAULT   13 glBlendFunc
+   149: 00055cdc   164 FUNC    GLOBAL DEFAULT   13 glGetVertexAttribiv
+   150: 00011660   144 FUNC    GLOBAL DEFAULT   13 __egl_platform_get_window_size_android
+   151: 000473f8   180 FUNC    GLOBAL DEFAULT   13 glColor4x
+   152: 00015ab8   164 FUNC    GLOBAL DEFAULT   13 glIsEnabled
+   153: 0004bba4    68 FUNC    GLOBAL DEFAULT   13 glLoadMatrixxOES
+   154: 00014c30   196 FUNC    GLOBAL DEFAULT   13 glCompressedTexSubImage2D
+   155: 00070ce0   648 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_cow_memory
+   156: 0004be84   120 FUNC    GLOBAL DEFAULT   13 glPointSizexOES
+   157: 001176cc    16 FUNC    WEAK   DEFAULT   13 __aeabi_ldiv0
+   158: 00047890   212 FUNC    GLOBAL DEFAULT   13 glDrawTexsOES
+   159: 000569a4   228 FUNC    GLOBAL DEFAULT   13 glUniform3f
+   160: 00056b2c   228 FUNC    GLOBAL DEFAULT   13 glUniform3i
+   161: 00015e8c   132 FUNC    GLOBAL DEFAULT   13 glStencilFunc
+   162: 000738f0   572 FUNC    GLOBAL DEFAULT   13 _mali_gp_job_reset
+   163: 00011738     8 FUNC    GLOBAL DEFAULT   13 __egl_platform_get_pixmap_alphaformat_android
+   164: 00016a6c   112 FUNC    GLOBAL DEFAULT   13 glGenVertexArraysOES
+   165: 0004bd68     4 FUNC    GLOBAL DEFAULT   13 glNormal3xOES
+   166: 00049c4c   176 FUNC    GLOBAL DEFAULT   13 glTexEnvf
+   167: 0004b034   144 FUNC    GLOBAL DEFAULT   13 glTexGenivOES
+   168: 0004c3cc   132 FUNC    GLOBAL DEFAULT   13 glGetClipPlanefOES
+   169: 0004c100   136 FUNC    GLOBAL DEFAULT   13 glTexEnvxvOES
+   170: 00049d84   176 FUNC    GLOBAL DEFAULT   13 glTexEnvi
+   171: 00073274   508 FUNC    GLOBAL DEFAULT   13 _mali_base_common_context_create
+   172: 00073544    16 FUNC    GLOBAL DEFAULT   13 _mali_base_common_frame_id_get_new
+   173: 0004b5dc   112 FUNC    GLOBAL DEFAULT   13 glFogxvOES
+   174: 00011740   364 FUNC    GLOBAL DEFAULT   13 __egl_platform_immediate_queue_with_fence_android
+   175: 0004b538   164 FUNC    GLOBAL DEFAULT   13 glFogxOES
+   176: 00017174   164 FUNC    GLOBAL DEFAULT   13 glDiscardFramebufferEXT
+   177: 0004a5e4   108 FUNC    GLOBAL DEFAULT   13 glIsRenderbufferOES
+   178: 0001172c     4 FUNC    GLOBAL DEFAULT   13 __egl_platform_register_lock_item_android
+   179: 0005595c   168 FUNC    GLOBAL DEFAULT   13 glGetShaderSource
+   180: 00072f9c   232 FUNC    GLOBAL DEFAULT   13 _mali_pp_job_free
+   181: 0007411c   284 FUNC    GLOBAL DEFAULT   13 _mali_gp_cmdlist_extend
+   182: 0004a4ec    84 FUNC    GLOBAL DEFAULT   13 glQueryMatrixxOES
+   183: 0004b8e8     4 FUNC    GLOBAL DEFAULT   13 glGetTexParameterxvOES
+   184: 0004a840   168 FUNC    GLOBAL DEFAULT   13 glRenderbufferStorageOES
+   185: 0000f834     8 FUNC    GLOBAL DEFAULT   13 __egl_platform_resize_surface_android
+   186: 000746fc    36 FUNC    GLOBAL DEFAULT   13 _mali_fence_destroy
+   187: 00049ebc   176 FUNC    GLOBAL DEFAULT   13 glTexEnvx
+   188: 0004a8e8   164 FUNC    GLOBAL DEFAULT   13 glGetRenderbufferParameterivOES
+   189: 00117594     0 FUNC    GLOBAL DEFAULT   13 __aeabi_idiv
+   190: 0006e480   112 FUNC    GLOBAL DEFAULT   13 eglClientWaitSyncKHR
+   191: 000701fc  2716 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_free
+   192: 00014acc    68 FUNC    GLOBAL DEFAULT   13 glClearStencil
+   193: 0006bb34   160 FUNC    GLOBAL DEFAULT   13 mali_egl_image_get_height
+   194: 00071f94    12 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_heap_get_max_size
+   195: 000561e0   168 FUNC    GLOBAL DEFAULT   13 glShaderSource
+   196: 00056cb4   244 FUNC    GLOBAL DEFAULT   13 glUniform4f
+   197: 00063e98    92 FUNC    GLOBAL DEFAULT   13 eglDestroyImageKHR
+   198: 00056a88   164 FUNC    GLOBAL DEFAULT   13 glUniform3fv
+   199: 00056e4c   236 FUNC    GLOBAL DEFAULT   13 glUniform4i
+   200: 0006bfd0   240 FUNC    GLOBAL DEFAULT   13 mali_egl_image_get_buffer_width
+   201: 00081774   244 FUNC    GLOBAL DEFAULT   13 _mali_base_arch_mmu_dump_get
+   202: 0004ae00   132 FUNC    GLOBAL DEFAULT   13 glGenerateMipmapOES
+   203: 0001172c     4 FUNC    GLOBAL DEFAULT   13 __egl_platform_update_image_android
+   204: 00015f78   132 FUNC    GLOBAL DEFAULT   13 glStencilOp
+   205: 00048bec   100 FUNC    GLOBAL DEFAULT   13 glLogicOp
+   206: 00080790   192 FUNC    GLOBAL DEFAULT   13 _mali_base_arch_mem_unmap
+   207: 00056600   164 FUNC    GLOBAL DEFAULT   13 glUniform1iv
+   208: 0004c208     4 FUNC    GLOBAL DEFAULT   13 glDepthRangefOES
+   209: 000476bc   128 FUNC    GLOBAL DEFAULT   13 glDrawTexfvOES
+   210: 0001172c     4 FUNC    GLOBAL DEFAULT   13 __egl_platform_release_lock_item_android
+   211: 0007fd08   180 FUNC    GLOBAL DEFAULT   13 _mali_mmu_virtual_address_range_free
+   212: 000554b8   168 FUNC    GLOBAL DEFAULT   13 glGetAttachedShaders
+   213: 0004bfd8   120 FUNC    GLOBAL DEFAULT   13 glScalexOES
+   214: 00049b60   100 FUNC    GLOBAL DEFAULT   13 glShadeModel
+   215: 00048034   132 FUNC    GLOBAL DEFAULT   13 glGetClipPlanef
+   216: 0006e728     4 FUNC    GLOBAL DEFAULT   13 _mali_sys_lock_unlock
+   217: 001176dc    60 FUNC    GLOBAL DEFAULT   13 __gnu_ldivmod_helper
+   218: 00011494   204 FUNC    GLOBAL DEFAULT   13 __egl_platform_queue_buffer_android
+   219: 00017094   112 FUNC    GLOBAL DEFAULT   13 glGetPointervKHR
+   220: 00054db8   108 FUNC    GLOBAL DEFAULT   13 glBlendEquationSeparate
+   221: 00063484    92 FUNC    GLOBAL DEFAULT   13 eglSwapInterval
+   222: 0004ab24   208 FUNC    GLOBAL DEFAULT   13 glCheckFramebufferStatusOES
+   223: 00058160   132 FUNC    GLOBAL DEFAULT   13 glGenerateMipmap
+   224: 000156dc   140 FUNC    GLOBAL DEFAULT   13 glGetFloatv
+   225: 0006bc80   160 FUNC    GLOBAL DEFAULT   13 mali_egl_image_get_miplevels
+   226: 00048350   140 FUNC    GLOBAL DEFAULT   13 glGetMaterialxv
+   227: 00073d58   420 FUNC    GLOBAL DEFAULT   13 _mali_gp_job_start
+   228: 000152a0   104 FUNC    GLOBAL DEFAULT   13 glEnable
+   229: 00055a04   172 FUNC    GLOBAL DEFAULT   13 glGetUniformfv
+   230: 000558d4   136 FUNC    GLOBAL DEFAULT   13 glGetShaderPrecisionFormat
+   231: 00016b24   152 FUNC    GLOBAL DEFAULT   13 glDebugMessageControlKHR
+   232: 00055154   136 FUNC    GLOBAL DEFAULT   13 glDeleteShader
+   233: 0004c18c     4 FUNC    GLOBAL DEFAULT   13 glTexParameterxvOES
+   234: 00058294   176 FUNC    GLOBAL DEFAULT   13 glGetnUniformivEXT
+   235: 000474ac   136 FUNC    GLOBAL DEFAULT   13 glColorPointer
+   236: 00016bbc   152 FUNC    GLOBAL DEFAULT   13 glDebugMessageInsertKHR
+   237: 000471cc   112 FUNC    GLOBAL DEFAULT   13 glClipPlanef
+   238: 00057318   172 FUNC    GLOBAL DEFAULT   13 glVertexAttrib1f
+   239: 0008085c    12 FUNC    GLOBAL DEFAULT   13 _mali_base_arch_mem_free_descriptor
+   240: 000480b8   132 FUNC    GLOBAL DEFAULT   13 glGetClipPlanex
+   241: 00057290   136 FUNC    GLOBAL DEFAULT   13 glValidateProgram
+   242: 00016584   208 FUNC    GLOBAL DEFAULT   13 glMapBufferOES
+   243: 00015428   164 FUNC    GLOBAL DEFAULT   13 glGenBuffers
+   244: 000146c0   136 FUNC    GLOBAL DEFAULT   13 glBindBuffer
+   245: 00063210    76 FUNC    GLOBAL DEFAULT   13 eglGetError
+   246: 00073d2c    24 FUNC    GLOBAL DEFAULT   13 _mali_gp_job_set_auto_free_setting
+   247: 00010bb0  2144 FUNC    GLOBAL DEFAULT   13 __egl_platform_create_surface_android
+   248: 0004a324    68 FUNC    GLOBAL DEFAULT   13 glLoadPaletteFromModelViewMatrixOES
+   249: 000715e8   680 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_heap_alloc
+   250: 000819b4    72 FUNC    GLOBAL DEFAULT   13 _mali_base_arch_sys_wait_handle_wait
+   251: 00070c98    72 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_list_remove_item
+   252: 00016e80   136 FUNC    GLOBAL DEFAULT   13 glObjectLabelKHR
+   253: 0004b1e4   144 FUNC    GLOBAL DEFAULT   13 glGetTexGenfvOES
+   254: 000580b8   168 FUNC    GLOBAL DEFAULT   13 glGetFramebufferAttachmentParameteriv
+   255: 00011410   132 FUNC    GLOBAL DEFAULT   13 __egl_platform_destroy_surface_android
+   256: 000638dc    72 FUNC    GLOBAL DEFAULT   13 eglGetCurrentDisplay
+   257: 0007108c   264 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_addr_get_full
+   258: 0000f834     8 FUNC    GLOBAL DEFAULT   13 __egl_platform_supports_vsync_android
+   259: 0006325c   100 FUNC    GLOBAL DEFAULT   13 eglQueryString
+   260: 0000f794   112 FUNC    GLOBAL DEFAULT   13 __egl_platform_initialize_android
+   261: 0001172c     4 FUNC    GLOBAL DEFAULT   13 __egl_platform_unregister_lock_item_android
+   262: 0004723c   112 FUNC    GLOBAL DEFAULT   13 glClipPlanex
+   263: 00049720   108 FUNC    GLOBAL DEFAULT   13 glPointSize
+   264: 00070f6c   172 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_free_unused_mem
+   265: 00063bc8    92 FUNC    GLOBAL DEFAULT   13 eglDestroySurface
+   266: 000723c0   584 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_add_phys_mem
+   267: 0004a3f0   136 FUNC    GLOBAL DEFAULT   13 glWeightPointerOES
+   268: 00054e24   136 FUNC    GLOBAL DEFAULT   13 glBlendFuncSeparate
+   269: 00056da8   164 FUNC    GLOBAL DEFAULT   13 glUniform4fv
+   270: 0007389c    84 FUNC    GLOBAL DEFAULT   13 _mali_gp_job_free
+   271: 0006e720     4 FUNC    GLOBAL DEFAULT   13 _mali_sys_lock_lock
+   272: 0006b448     8 FUNC    GLOBAL DEFAULT   13 mali_egl_image_get_error
+   273: 0006e730     4 FUNC    GLOBAL DEFAULT   13 _mali_sys_lock_timed_lock
+   274: 00015768   140 FUNC    GLOBAL DEFAULT   13 glGetIntegerv
+   275: 00063d94    40 FUNC    GLOBAL DEFAULT   13 eglReleaseThread
+   276: 0006e7ac    84 FUNC    GLOBAL DEFAULT   13 _mali_base_common_sync_handle_new
+   277: 00056900   164 FUNC    GLOBAL DEFAULT   13 glUniform2iv
+   278: 000819fc    92 FUNC    GLOBAL DEFAULT   13 _mali_base_arch_sys_wait_handle_timed_wait
+   279: 00015db8    76 FUNC    GLOBAL DEFAULT   13 glSampleCoverage
+   280: 00072084    68 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_heap_used_bytes_get
+   281: 0000de58     0 FUNC    GLOBAL DEFAULT   13 _mali_osu_atomic_read
+   282: 0004c450     4 FUNC    GLOBAL DEFAULT   13 glClearDepthfOES
+   283: 00074a04    12 FUNC    GLOBAL DEFAULT   13 _mali_soft_job_set_activated_callback
+   284: 00080850    12 FUNC    GLOBAL DEFAULT   13 _mali_base_arch_mem_allocate_descriptor
+   285: 00047084   144 FUNC    GLOBAL DEFAULT   13 glClearColorx
+   286: 00063f48   120 FUNC    GLOBAL DEFAULT   13 eglSetDamageRegionKHR
+   287: 00057444   184 FUNC    GLOBAL DEFAULT   13 glVertexAttrib2f
+   288: 00056fdc   184 FUNC    GLOBAL DEFAULT   13 glUniformMatrix2fv
+   289: 000157f4   164 FUNC    GLOBAL DEFAULT   13 glGetString
+   290: 0006e694   120 FUNC    GLOBAL DEFAULT   13 eglSwapBuffersWithDamageEXT
+   291: 0006e80c    24 FUNC    GLOBAL DEFAULT   13 _mali_base_common_sync_handle_add_mem_to_free_list
+   292: 00117594   220 FUNC    GLOBAL DEFAULT   13 __divsi3
+   293: 00057de0   164 FUNC    GLOBAL DEFAULT   13 glGenFramebuffers
+   294: 00016f08   144 FUNC    GLOBAL DEFAULT   13 glGetObjectLabelKHR
+   295: 000552e4   100 FUNC    GLOBAL DEFAULT   13 glEnableVertexAttribArray
+   296: 0001699c   100 FUNC    GLOBAL DEFAULT   13 glBindVertexArrayOES
+   297: 00047964   128 FUNC    GLOBAL DEFAULT   13 glDrawTexsvOES
+   298: 0004b7d0   140 FUNC    GLOBAL DEFAULT   13 glGetMaterialxvOES
+   299: 0004a540   164 FUNC    GLOBAL DEFAULT   13 glGenFramebuffersOES
+   300: 0008167c   132 FUNC    GLOBAL DEFAULT   13 _mali_base_arch_mem_write_safe_ptr
+   301: 0006e424    92 FUNC    GLOBAL DEFAULT   13 eglDestroySyncKHR
+   302: 000744e0   168 FUNC    GLOBAL DEFAULT   13 _mali_base_worker_destroy
+   303: 00057f54   184 FUNC    GLOBAL DEFAULT   13 glFramebufferTexture2D
+   304: 000573c4   128 FUNC    GLOBAL DEFAULT   13 glVertexAttrib1fv
+   305: 0013bed4     0 NOTYPE  GLOBAL DEFAULT  ABS _edata
+   306: 00011be4    88 FUNC    GLOBAL DEFAULT   13 __egl_platform_query_buffer_age_android
+   307: 0004773c   212 FUNC    GLOBAL DEFAULT   13 glDrawTexiOES
+   308: 00074458   136 FUNC    GLOBAL DEFAULT   13 _mali_base_worker_quit
+   309: 0001727c   188 FUNC    GLOBAL DEFAULT   13 glReadnPixelsEXT
+   310: 0006e568    92 FUNC    GLOBAL DEFAULT   13 eglDupNativeFenceFDANDROID
+   311: 00063b4c   124 FUNC    GLOBAL DEFAULT   13 eglCreatePixmapSurface
+   312: 00048624   176 FUNC    GLOBAL DEFAULT   13 glLightf
+   313: 00056310   108 FUNC    GLOBAL DEFAULT   13 glStencilMaskSeparate
+   314: 000155fc   160 FUNC    GLOBAL DEFAULT   13 glGetBufferParameteriv
+   315: 00047168   100 FUNC    GLOBAL DEFAULT   13 glClientActiveTexture
+   316: 0006e71c     4 FUNC    GLOBAL DEFAULT   13 _mali_sys_mutex_destroy
+   317: 0005757c   192 FUNC    GLOBAL DEFAULT   13 glVertexAttrib3f
+   318: 00011730     8 FUNC    GLOBAL DEFAULT   13 __egl_platform_get_pixmap_colorspace_android
+   319: 0006371c   120 FUNC    GLOBAL DEFAULT   13 eglQueryContext
+   320: 00063ef4    84 FUNC    GLOBAL DEFAULT   13 eglSetBlobCacheFuncsANDROID
+   321: 000481ac   140 FUNC    GLOBAL DEFAULT   13 glGetLightfv
+   322: 00054f34   200 FUNC    GLOBAL DEFAULT   13 glCreateProgram
+   323: 00063ca4   156 FUNC    GLOBAL DEFAULT   13 eglSurfaceAttrib
+   324: 00073158    68 FUNC    GLOBAL DEFAULT   13 _mali_pp_job_add_to_sync_handle
+   325: 0000de34     0 FUNC    GLOBAL DEFAULT   13 _mali_osu_atomic_dec_and_return
+   326: 00056c10   164 FUNC    GLOBAL DEFAULT   13 glUniform3iv
+   327: 00074998    64 FUNC    GLOBAL DEFAULT   13 _mali_soft_job_new
+   328: 00057a58   164 FUNC    GLOBAL DEFAULT   13 glGenRenderbuffers
+   329: 00063d40    84 FUNC    GLOBAL DEFAULT   13 eglGetCurrentSurface
+   330: 000498e0    92 FUNC    GLOBAL DEFAULT   13 glPushMatrix
+   331: 001178d4   268 FUNC    GLOBAL DEFAULT   13 __udivdi3
+   332: 00016adc    72 FUNC    GLOBAL DEFAULT   13 glIsVertexArrayOES
+   333: 0000f818     8 FUNC    GLOBAL DEFAULT   13 __egl_platform_pixmap_surface_compatible_android
+   334: 000159e0   108 FUNC    GLOBAL DEFAULT   13 glHint
+   335: 000640ac   128 FUNC    GLOBAL DEFAULT   13 eglCreatePlatformPixmapSurfaceEXT
+   336: 00057ba4   164 FUNC    GLOBAL DEFAULT   13 glGetRenderbufferParameteriv
+   337: 00048984   176 FUNC    GLOBAL DEFAULT   13 glLightx
+   338: 00015e04   136 FUNC    GLOBAL DEFAULT   13 glScissor
+   339: 001176cc    16 FUNC    WEAK   DEFAULT   13 __aeabi_idiv0
+   340: 0000f818     8 FUNC    GLOBAL DEFAULT   13 __egl_platform_map_pixmap_android
+   341: 0006e728     4 FUNC    GLOBAL DEFAULT   13 _mali_sys_mutex_unlock
+   342: 00057094   184 FUNC    GLOBAL DEFAULT   13 glUniformMatrix3fv
+   343: 00057cb4   164 FUNC    GLOBAL DEFAULT   13 glBindFramebuffer
+   344: 0004b4d0     4 FUNC    GLOBAL DEFAULT   13 glColor4xOES
+   345: 0000f83c   304 FUNC    GLOBAL DEFAULT   13 __egl_platform_filter_configs_android
+   346: 0004c188     4 FUNC    GLOBAL DEFAULT   13 glTexParameterxOES
+   347: 00014b10   100 FUNC    GLOBAL DEFAULT   13 glColorMask
+   348: 00071208    20 FUNC    GLOBAL DEFAULT   13 memory_type_is_os_arch_allocation
+   349: 0006e734     4 FUNC    GLOBAL DEFAULT   13 _mali_sys_thread_key_set_data
+   350: 00073cbc    40 FUNC    GLOBAL DEFAULT   13 _mali_gp_job_add_mem_to_free_list
+   351: 0004bd6c     4 FUNC    GLOBAL DEFAULT   13 glOrthoxOES
+   352: 0004af14   144 FUNC    GLOBAL DEFAULT   13 glTexGenfvOES
+   353: 00055ab0   172 FUNC    GLOBAL DEFAULT   13 glGetUniformiv
+   354: 00047600   188 FUNC    GLOBAL DEFAULT   13 glDrawTexfOES
+   355: 0007326c     8 FUNC    GLOBAL DEFAULT   13 _mali_pp_job_add_fence
+   356: 00048abc   108 FUNC    GLOBAL DEFAULT   13 glLineWidthx
+   357: 00071278    20 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_usage_get
+   358: 00117574    32 FUNC    GLOBAL DEFAULT   13 __aeabi_uidivmod
+   359: 0001172c     4 FUNC    GLOBAL DEFAULT   13 __egl_platform_copy_buffers_android
+   360: 00015c9c   108 FUNC    GLOBAL DEFAULT   13 glPolygonOffset
+   361: 000576bc   204 FUNC    GLOBAL DEFAULT   13 glVertexAttrib4f
+   362: 0004afa4   144 FUNC    GLOBAL DEFAULT   13 glTexGeniOES
+   363: 000574fc   128 FUNC    GLOBAL DEFAULT   13 glVertexAttrib2fv
+   364: 0001465c   100 FUNC    GLOBAL DEFAULT   13 glActiveTexture
+   365: 001179fc    28 FUNC    GLOBAL DEFAULT   13 __aeabi_llsl
+   366: 00047ea8   168 FUNC    GLOBAL DEFAULT   13 glFrustumf
+   367: 0004acac   172 FUNC    GLOBAL DEFAULT   13 glFramebufferRenderbufferOES
+   368: 00055560   220 FUNC    GLOBAL DEFAULT   13 glGetAttribLocation
+   369: 000713bc   276 FUNC    GLOBAL DEFAULT   13 _mali_base_common_heap_read64
+   370: 0004c20c   168 FUNC    GLOBAL DEFAULT   13 glFrustumfOES
+   371: 00055788   168 FUNC    GLOBAL DEFAULT   13 glGetShaderInfoLog
+   372: 0000f820    20 FUNC    GLOBAL DEFAULT   13 __egl_platform_display_valid_android
+   373: 00047344   180 FUNC    GLOBAL DEFAULT   13 glColor4ub
+   374: 000550cc   136 FUNC    GLOBAL DEFAULT   13 glDeleteProgram
+   375: 001179e0    28 FUNC    GLOBAL DEFAULT   13 __aeabi_llsr
+   376: 00063acc   128 FUNC    GLOBAL DEFAULT   13 eglCreatePbufferFromClientBuffer
+   377: 0004a6f4   168 FUNC    GLOBAL DEFAULT   13 glDeleteRenderbuffersOES
+   378: 00063878   100 FUNC    GLOBAL DEFAULT   13 eglGetDisplay
+   379: 000746a4    60 FUNC    GLOBAL DEFAULT   13 _mali_fence_create
+   380: 00017104   112 FUNC    GLOBAL DEFAULT   13 glGetPointerv
+   381: 00055280   100 FUNC    GLOBAL DEFAULT   13 glDisableVertexAttribArray
+   382: 000714d0   248 FUNC    GLOBAL DEFAULT   13 _mali_base_common_heap_write64
+   383: 0004b408     4 FUNC    GLOBAL DEFAULT   13 glClearColorxOES
+   384: 00015000   100 FUNC    GLOBAL DEFAULT   13 glDepthFunc
+   385: 00056f38   164 FUNC    GLOBAL DEFAULT   13 glUniform4iv
+   386: 00076edc   224 FUNC    GLOBAL DEFAULT   13 _mali_arch_soft_job_start
+   387: 0000f818     8 FUNC    GLOBAL DEFAULT   13 __egl_platform_pixmap_config_compatible_android
+   388: 00047f50   228 FUNC    GLOBAL DEFAULT   13 glFrustumx
+   389: 0006b40c    60 FUNC    GLOBAL DEFAULT   13 mali_egl_image_init
+   390: 0007135c    44 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_list_free
+   391: 0005714c   184 FUNC    GLOBAL DEFAULT   13 glUniformMatrix4fv
+   392: 000635a8    84 FUNC    GLOBAL DEFAULT   13 eglBindAPI
+   393: 00014db0   188 FUNC    GLOBAL DEFAULT   13 glCopyTexSubImage2D
+   394: 00015f10   104 FUNC    GLOBAL DEFAULT   13 glStencilMask
+   395: 00014f78   136 FUNC    GLOBAL DEFAULT   13 glDeleteTextures
+   396: 00076c00   152 FUNC    GLOBAL DEFAULT   13 _mali_base_arch_pp_get_num_total_cores
+   397: 0004ae84   144 FUNC    GLOBAL DEFAULT   13 glTexGenfOES
+   398: 00047c80   164 FUNC    GLOBAL DEFAULT   13 glFogf
+   399: 00056288   136 FUNC    GLOBAL DEFAULT   13 glStencilFuncSeparate
+   400: 0004c35c   112 FUNC    GLOBAL DEFAULT   13 glClipPlanefOES
+   401: 000581e4   176 FUNC    GLOBAL DEFAULT   13 glGetnUniformfvEXT
+   402: 00063a68   100 FUNC    GLOBAL DEFAULT   13 eglCreatePbufferSurface
+   403: 00014a88    68 FUNC    GLOBAL DEFAULT   13 glClearDepthf
+   404: 00016a00   108 FUNC    GLOBAL DEFAULT   13 glDeleteVertexArraysOES
+   405: 000639ec   124 FUNC    GLOBAL DEFAULT   13 eglCreateWindowSurface
+   406: 00073efc    56 FUNC    GLOBAL DEFAULT   13 _mali_gp_job_add_to_sync_handle
+   407: 00048238   140 FUNC    GLOBAL DEFAULT   13 glGetLightxv
+   408: 00015a4c   108 FUNC    GLOBAL DEFAULT   13 glIsBuffer
+   409: 0004b394   116 FUNC    GLOBAL DEFAULT   13 glAlphaFuncxOES
+   410: 00047b1c   252 FUNC    GLOBAL DEFAULT   13 glDrawTexxvOES
+   411: 00016e24    92 FUNC    GLOBAL DEFAULT   13 glPopDebugGroupKHR
+   412: 0004c190   120 FUNC    GLOBAL DEFAULT   13 glTranslatexOES
+   413: 0008ce80    64 FUNC    GLOBAL DEFAULT   13 __mali_shader_binary_state_init
+   414: 0005763c   128 FUNC    GLOBAL DEFAULT   13 glVertexAttrib3fv
+   415: 00055edc   136 FUNC    GLOBAL DEFAULT   13 glLinkProgram
+   416: 00071fa0   228 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_heap_reset
+   417: 00047010   116 FUNC    GLOBAL DEFAULT   13 glAlphaFuncx
+   418: 0006b94c   328 FUNC    GLOBAL DEFAULT   13 mali_egl_image_set_data
+   419: 00063644   124 FUNC    GLOBAL DEFAULT   13 eglCreateContext
+   420: 0008cec0   252 FUNC    GLOBAL DEFAULT   13 __mali_shader_binary_state_reset
+   421: 00047d94   164 FUNC    GLOBAL DEFAULT   13 glFogx
+   422: 000148f4   164 FUNC    GLOBAL DEFAULT   13 glBufferSubData
+   423: 00047114    84 FUNC    GLOBAL DEFAULT   13 glClearDepthx
+   424: 00017218   100 FUNC    GLOBAL DEFAULT   13 glGetGraphicsResetStatusEXT
+   425: 00014850   164 FUNC    GLOBAL DEFAULT   13 glBufferData
+   426: 00055b5c   220 FUNC    GLOBAL DEFAULT   13 glGetUniformLocation
+   427: 0006c2d4   144 FUNC    GLOBAL DEFAULT   13 mali_egl_image_create_sync
+   428: 00117718    60 FUNC    GLOBAL DEFAULT   13 __gnu_uldivmod_helper
+   429: 0008cfbc    16 FUNC    GLOBAL DEFAULT   13 __mali_program_binary_state_init
+   430: 00054c14   164 FUNC    GLOBAL DEFAULT   13 glBindAttribLocation
+   431: 00071194    40 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_is_heap
+   432: 0007f9b8   188 FUNC    GLOBAL DEFAULT   13 _mali_virtual_mem_area_create
+   433: 00073578    20 FUNC    GLOBAL DEFAULT   13 _mali_base_common_context_fence_unlock
+   434: 0004be14   112 FUNC    GLOBAL DEFAULT   13 glPointParameterxvOES
+   435: 00073084    40 FUNC    GLOBAL DEFAULT   13 _mali_pp_job_add_mem_to_free_list
+   436: 0001172c     4 FUNC    GLOBAL DEFAULT   13 __egl_platform_display_get_format_android
+   437: 00014cf4   188 FUNC    GLOBAL DEFAULT   13 glCopyTexImage2D
+   438: 0001515c   152 FUNC    GLOBAL DEFAULT   13 glDrawArrays
+   439: 00055400   184 FUNC    GLOBAL DEFAULT   13 glGetActiveUniform
+   440: 00014998   128 FUNC    GLOBAL DEFAULT   13 glClear
+   441: 0006e858    60 FUNC    GLOBAL DEFAULT   13 _mali_base_common_sync_handle_flush
+   442: 0004b304   144 FUNC    GLOBAL DEFAULT   13 glGetTexGenxvOES
+   443: 0004b6d4   112 FUNC    GLOBAL DEFAULT   13 glGetFixedvOES
+   444: 00057c48   108 FUNC    GLOBAL DEFAULT   13 glIsFramebuffer
+   445: 0001569c    64 FUNC    GLOBAL DEFAULT   13 glGetError
+   446: 0000f818     8 FUNC    GLOBAL DEFAULT   13 __egl_platform_default_display_android
+   447: 0008cfcc   772 FUNC    GLOBAL DEFAULT   13 __mali_program_binary_state_reset
+   448: 0004ba00   176 FUNC    GLOBAL DEFAULT   13 glLightxOES
+   449: 000491ec   116 FUNC    GLOBAL DEFAULT   13 glNormal3f
+   450: 00048800   112 FUNC    GLOBAL DEFAULT   13 glLightModelfv
+   451: 000634e0   100 FUNC    GLOBAL DEFAULT   13 eglBindTexImage
+   452: 0000f804    20 FUNC    GLOBAL DEFAULT   13 __egl_platform_terminate_android
+   453: 000711bc    76 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_size_get
+   454: 00057e84   208 FUNC    GLOBAL DEFAULT   13 glCheckFramebufferStatus
+   455: 0004a478   116 FUNC    GLOBAL DEFAULT   13 glPointSizePointerOES
+   456: 00054b84   144 FUNC    GLOBAL DEFAULT   13 glAttachShader
+   457: 00063420   100 FUNC    GLOBAL DEFAULT   13 eglCopyBuffers
+   458: 00057788   128 FUNC    GLOBAL DEFAULT   13 glVertexAttrib4fv
+   459: 0004993c   112 FUNC    GLOBAL DEFAULT   13 glRotatef
+   460: 0006e72c     4 FUNC    GLOBAL DEFAULT   13 _mali_sys_lock_create
+   461: 00063990    92 FUNC    GLOBAL DEFAULT   13 eglTerminate
+   462: 0006e800    12 FUNC    GLOBAL DEFAULT   13 _mali_base_common_sync_handle_cb_function_set
+   463: 00015bc8   100 FUNC    GLOBAL DEFAULT   13 glLineWidth
+   464: 0006c504   300 FUNC    GLOBAL DEFAULT   13 mali_egl_image_create
+   465: 00049260   152 FUNC    GLOBAL DEFAULT   13 glNormal3x
+   466: 0006bbd4   172 FUNC    GLOBAL DEFAULT   13 mali_egl_image_get_format
+   467: 00081a94    44 FUNC    GLOBAL DEFAULT   13 _mali_base_arch_sys_wait_handle_abandon
+   468: 00016654   192 FUNC    GLOBAL DEFAULT   13 glUnmapBufferOES
+   469: 0004813c   112 FUNC    GLOBAL DEFAULT   13 glGetFixedv
+   470: 000730d4   132 FUNC    GLOBAL DEFAULT   13 _mali_pp_job_start
+   471: 00074588   156 FUNC    GLOBAL DEFAULT   13 _mali_base_worker_task_add
+   472: 00063118   128 FUNC    GLOBAL DEFAULT   13 eglChooseConfig
+   473: 00071388    52 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_list_size_get
+   474: 000499ac   144 FUNC    GLOBAL DEFAULT   13 glRotatex
+   475: 0004a230   136 FUNC    GLOBAL DEFAULT   13 glVertexPointer
+   476: 0004936c   168 FUNC    GLOBAL DEFAULT   13 glOrthof
+   477: 00014b74   188 FUNC    GLOBAL DEFAULT   13 glCompressedTexImage2D
+   478: 00014748   136 FUNC    GLOBAL DEFAULT   13 glBindTexture
+   479: 00063fc0   108 FUNC    GLOBAL DEFAULT   13 eglGetPlatformDisplayEXT
+   480: 0001172c     4 FUNC    GLOBAL DEFAULT   13 __egl_platform_deinit_display_android
+   481: 0004a650   164 FUNC    GLOBAL DEFAULT   13 glBindRenderbufferOES
+   482: 0004bd70   164 FUNC    GLOBAL DEFAULT   13 glPointParameterxOES
+   483: 0008d328  1924 FUNC    GLOBAL DEFAULT   13 __mali_link_binary_shaders
+   484: 0004b990   112 FUNC    GLOBAL DEFAULT   13 glLightModelxvOES
+   485: 000749d8    36 FUNC    GLOBAL DEFAULT   13 _mali_soft_job_free
+   486: 0007e814   224 FUNC    GLOBAL DEFAULT   13 _mali_uku_mem_free
+   487: 0006e738     4 FUNC    GLOBAL DEFAULT   13 _mali_sys_thread_key_get_data
+   488: 000860e4  5104 FUNC    GLOBAL DEFAULT   13 __mali_binary_shader_load
+   489: 00046fa4   108 FUNC    GLOBAL DEFAULT   13 glAlphaFunc
+   490: 0004a98c   108 FUNC    GLOBAL DEFAULT   13 glIsFramebufferOES
+   491: 00049414   228 FUNC    GLOBAL DEFAULT   13 glOrthox
+   492: 00055e04   108 FUNC    GLOBAL DEFAULT   13 glIsProgram
+   493: 0001172c     4 FUNC    GLOBAL DEFAULT   13 __egl_platform_unmap_pixmap_android
+   494: 0004a368   136 FUNC    GLOBAL DEFAULT   13 glMatrixIndexPointerOES
+   495: 00016d9c   136 FUNC    GLOBAL DEFAULT   13 glPushDebugGroupKHR
+   496: 0007fdc8    16 FUNC    GLOBAL DEFAULT   13 _mali_virtual_mem_area_get
+   497: 00054ffc   208 FUNC    GLOBAL DEFAULT   13 glCreateShader
+   498: 00056014   168 FUNC    GLOBAL DEFAULT   13 glProgramBinaryOES
+   499: 0001172c     4 FUNC    GLOBAL DEFAULT   13 __egl_platform_get_pixmap_size_android
+   500: 000167a4   176 FUNC    GLOBAL DEFAULT   13 glRenderbufferStorageMultisampleEXT
+   501: 0004aa9c   136 FUNC    GLOBAL DEFAULT   13 glDeleteFramebuffersOES
+   502: 000483dc   140 FUNC    GLOBAL DEFAULT   13 glGetTexEnvfv
+   503: 000116f0    40 FUNC    GLOBAL DEFAULT   13 __egl_platform_window_valid_android
+   504: 00070f68     4 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_modify_cow_memory
+   505: 0004c050   176 FUNC    GLOBAL DEFAULT   13 glTexEnvxOES
+   506: 0001172c     4 FUNC    GLOBAL DEFAULT   13 __egl_platform_process_lock_item_android
+   507: 000486d4   136 FUNC    GLOBAL DEFAULT   13 glLightfv
+   508: 00016c54   108 FUNC    GLOBAL DEFAULT   13 glDebugMessageCallbackKHR
+   509: 00048ec0   104 FUNC    GLOBAL DEFAULT   13 glMatrixMode
+   510: 0004b650   132 FUNC    GLOBAL DEFAULT   13 glGetClipPlanexOES
+   511: 00015308    92 FUNC    GLOBAL DEFAULT   13 glFinish
+   512: 000154cc   164 FUNC    GLOBAL DEFAULT   13 glGenTextures
+   513: 0004b8ec   164 FUNC    GLOBAL DEFAULT   13 glLightModelxOES
+   514: 00057afc   168 FUNC    GLOBAL DEFAULT   13 glRenderbufferStorage
+   515: 000551dc   164 FUNC    GLOBAL DEFAULT   13 glDetachShader
+   516: 0005563c   168 FUNC    GLOBAL DEFAULT   13 glGetProgramInfoLog
+   517: 001179fc    28 FUNC    GLOBAL DEFAULT   13 __ashldi3
+   518: 00047d24   112 FUNC    GLOBAL DEFAULT   13 glFogfv
+   519: 0004b154   144 FUNC    GLOBAL DEFAULT   13 glTexGenxvOES
+   520: 000735a4    20 FUNC    GLOBAL DEFAULT   13 _mali_base_common_context_get_global_pp_fence
+   521: 00015570   140 FUNC    GLOBAL DEFAULT   13 glGetBooleanv
+   522: 001174cc   168 FUNC    GLOBAL DEFAULT   13 __udivsi3
+   523: 0001172c     4 FUNC    GLOBAL DEFAULT   13 __egl_platform_stop_rendering_android
+   524: 000163a8   204 FUNC    GLOBAL DEFAULT   13 glTexSubImage2D
+   525: 0006f07c  4336 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_alloc
+   526: 00048914   112 FUNC    GLOBAL DEFAULT   13 glLightModelxv
+   527: 000632c0    72 FUNC    GLOBAL DEFAULT   13 eglWaitClient
+   528: 0000f818     8 FUNC    GLOBAL DEFAULT   13 __egl_platform_pixmap_copybuffers_compatible_android
+   529: 00049cfc   136 FUNC    GLOBAL DEFAULT   13 glTexEnvfv
+   530: 00054eac   136 FUNC    GLOBAL DEFAULT   13 glCompileShader
+   531: 0007128c    72 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_list_insert_after
+   532: 00056130   176 FUNC    GLOBAL DEFAULT   13 glShaderBinary
+   533: 0007e734   224 FUNC    GLOBAL DEFAULT   13 _mali_uku_mem_allocate
+   534: 00011718    12 FUNC    GLOBAL DEFAULT   13 __egl_platform_window_compatible_android
+   535: 00049a3c    88 FUNC    GLOBAL DEFAULT   13 glSampleCoveragex
+   536: 0000f834     8 FUNC    GLOBAL DEFAULT   13 __egl_platform_get_display_orientation_android
+   537: 0005800c   172 FUNC    GLOBAL DEFAULT   13 glFramebufferRenderbuffer
+   538: 0007121c    72 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_order_get
+   539: 00015d08   176 FUNC    GLOBAL DEFAULT   13 glReadPixels
+   540: 0004a164    84 FUNC    GLOBAL DEFAULT   13 glTranslatef
+   541: 0006e954    40 FUNC    GLOBAL DEFAULT   13 _mali_base_common_sync_handle_register_reference
+   542: 00048f28   212 FUNC    GLOBAL DEFAULT   13 glMultiTexCoord4b
+   543: 00015ffc   204 FUNC    GLOBAL DEFAULT   13 glTexImage2D
+   544: 000153c0   104 FUNC    GLOBAL DEFAULT   13 glFrontFace
+   545: 0004b4d4   100 FUNC    GLOBAL DEFAULT   13 glDepthRangexOES
+   546: 00048ffc   168 FUNC    GLOBAL DEFAULT   13 glMultiTexCoord4f
+   547: 00063350    84 FUNC    GLOBAL DEFAULT   13 eglWaitNative
+   548: 00074730    52 FUNC    GLOBAL DEFAULT   13 _mali_fence_reset
+   549: 000494f8   164 FUNC    GLOBAL DEFAULT   13 glPointParameterf
+   550: 0006bd20   404 FUNC    GLOBAL DEFAULT   13 mali_egl_image_map_buffer
+   551: 00057d58   136 FUNC    GLOBAL DEFAULT   13 glDeleteFramebuffers
+   552: 0000fb3c    24 FUNC    GLOBAL DEFAULT   13 __egl_platform_begin_new_frame_android
+   553: 00074240    48 FUNC    GLOBAL DEFAULT   13 _mali_gp_job_piggyback
+   554: 0000f834     8 FUNC    GLOBAL DEFAULT   13 __egl_platform_init_display_android
+   555: 0006e718     4 FUNC    GLOBAL DEFAULT   13 _mali_sys_mutex_create
+   556: 000151f4   172 FUNC    GLOBAL DEFAULT   13 glDrawElements
+   557: 00055830   164 FUNC    GLOBAL DEFAULT   13 glGetShaderiv
+   558: 0007133c    32 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_list_get_previous
+   559: 0000de10     0 FUNC    GLOBAL DEFAULT   13 _mali_osu_atomic_inc_and_return
+   560: 00057204   140 FUNC    GLOBAL DEFAULT   13 glUseProgram
+   561: 0000f96c    60 FUNC    GLOBAL DEFAULT   13 __egl_platform_surface_buffer_invalid_android
+   562: 0007fb38   464 FUNC    GLOBAL DEFAULT   13 _mali_mmu_virtual_address_range_allocate
+   563: 0004a1b8   120 FUNC    GLOBAL DEFAULT   13 glTranslatex
+   564: 000630a0   120 FUNC    GLOBAL DEFAULT   13 eglGetConfigs
+   565: 0004b744   140 FUNC    GLOBAL DEFAULT   13 glGetLightxvOES
+   566: 00073cf8    52 FUNC    GLOBAL DEFAULT   13 _mali_gp_job_get_wait_handle
+   567: 00080be8   956 FUNC    GLOBAL DEFAULT   13 _mali_base_arch_mem_cow_memory
+   568: 000490a4   192 FUNC    GLOBAL DEFAULT   13 glMultiTexCoord4x
+   569: 0001172c     4 FUNC    GLOBAL DEFAULT   13 __egl_platform_get_pixmap_format_android
+   570: 00063544   100 FUNC    GLOBAL DEFAULT   13 eglReleaseTexImage
+   571: 0000de64     0 FUNC    GLOBAL DEFAULT   13 _mali_osu_atomic_write
+   572: 0004960c   164 FUNC    GLOBAL DEFAULT   13 glPointParameterx
+   573: 00016194   164 FUNC    GLOBAL DEFAULT   13 glTexParameterfv
+   574: 0004c2b4   168 FUNC    GLOBAL DEFAULT   13 glOrthofOES
+   575: 0006e61c   120 FUNC    GLOBAL DEFAULT   13 eglSwapBuffersWithDamageKHR
+   576: 00015064    68 FUNC    GLOBAL DEFAULT   13 glDepthMask
+   577: 0000f834     8 FUNC    GLOBAL DEFAULT   13 __egl_platform_pixmap_egl_image_compatible_android
+   578: 00016cc0   220 FUNC    GLOBAL DEFAULT   13 glGetDebugMessageLogKHR
+   579: 00015b5c   108 FUNC    GLOBAL DEFAULT   13 glIsTexture
+   580: 000492f8   116 FUNC    GLOBAL DEFAULT   13 glNormalPointer
+   581: 00011aa8    48 FUNC    GLOBAL DEFAULT   13 __egl_platform_setup_soft_job_callback_android
+   582: 00055f64   176 FUNC    GLOBAL DEFAULT   13 glGetProgramBinaryOES
+   583: 000150a8    76 FUNC    GLOBAL DEFAULT   13 glDepthRangef
+   584: 0004a9f8   164 FUNC    GLOBAL DEFAULT   13 glBindFramebufferOES
+   585: 000484f4   140 FUNC    GLOBAL DEFAULT   13 glGetTexEnvxv
+   586: 0004bab0   136 FUNC    GLOBAL DEFAULT   13 glLightxvOES
+   587: 0006ba94   160 FUNC    GLOBAL DEFAULT   13 mali_egl_image_get_width
+   588: 0007fa74   196 FUNC    GLOBAL DEFAULT   13 _mali_virtual_mem_area_destroy
+   589: 0004959c   112 FUNC    GLOBAL DEFAULT   13 glPointParameterfv
+   590: 00011724     8 FUNC    GLOBAL DEFAULT   13 __egl_platform_get_buffer_android
+   591: 00054cb8   152 FUNC    GLOBAL DEFAULT   13 glBlendColor
+   592: 0006402c   128 FUNC    GLOBAL DEFAULT   13 eglCreatePlatformWindowSurfaceEXT
+   593: 0000de80     0 FUNC    GLOBAL DEFAULT   13 _mali_osu_atomic_init
+   594: 0000f834     8 FUNC    GLOBAL DEFAULT   13 __egl_platform_wait_native_android
+   595: 00048a34   136 FUNC    GLOBAL DEFAULT   13 glLightxv
+   596: 0007358c    24 FUNC    GLOBAL DEFAULT   13 _mali_base_common_context_add_global_pp_fence
+   597: 00015364    92 FUNC    GLOBAL DEFAULT   13 glFlush
+   598: 0001172c     4 FUNC    GLOBAL DEFAULT   13 __egl_platform_swap_buffers_android
+   599: 00048c50   176 FUNC    GLOBAL DEFAULT   13 glMaterialf
+   600: 0004978c   120 FUNC    GLOBAL DEFAULT   13 glPointSizex
+   601: 0005790c   164 FUNC    GLOBAL DEFAULT   13 glBindRenderbuffer
+   602: 0006c46c   152 FUNC    GLOBAL DEFAULT   13 mali_egl_image_wait_sync
+   603: 00047e38   112 FUNC    GLOBAL DEFAULT   13 glFogxv
+   604: 00011ad8    52 FUNC    GLOBAL DEFAULT   13 __egl_platform_soft_job_callback_android
+   605: 00083400   200 FUNC    GLOBAL DEFAULT   13 mali_image_get_yuv_info
+   606: 00014e6c   108 FUNC    GLOBAL DEFAULT   13 glCullFace
+   607: 00047534   100 FUNC    GLOBAL DEFAULT   13 glDepthRangex
+   608: 00016914   136 FUNC    GLOBAL DEFAULT   13 glEGLImageTargetRenderbufferStorageOES
+   609: 0004bb38   108 FUNC    GLOBAL DEFAULT   13 glLineWidthxOES
+   610: 0006c1b0    28 FUNC    GLOBAL DEFAULT   13 mali_egl_image_get_buffer_secure_id
+   611: 00015898   164 FUNC    GLOBAL DEFAULT   13 glGetTexParameterfv
+   612: 0004b40c    84 FUNC    GLOBAL DEFAULT   13 glClearDepthxOES
+   613: 00063924   108 FUNC    GLOBAL DEFAULT   13 eglInitialize
+   614: 00048b64    68 FUNC    GLOBAL DEFAULT   13 glLoadMatrixf
+   615: 00048d00   136 FUNC    GLOBAL DEFAULT   13 glMaterialfv
+   616: 00049164    68 FUNC    GLOBAL DEFAULT   13 glMultMatrixf
+   617: 00049a94    84 FUNC    GLOBAL DEFAULT   13 glScalef
+   618: 0005637c   136 FUNC    GLOBAL DEFAULT   13 glStencilOpSeparate
+   619: 000720c8   760 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_heap_out_of_memory
+   620: 0006c1cc   264 FUNC    GLOBAL DEFAULT   13 mali_egl_image_get_buffer_layout
+   621: 00048468   140 FUNC    GLOBAL DEFAULT   13 glGetTexEnviv
+   622: 00049f6c   136 FUNC    GLOBAL DEFAULT   13 glTexEnvxv
+   623: 000560bc   116 FUNC    GLOBAL DEFAULT   13 glReleaseShaderCompiler
+   624: 0006e4f0   120 FUNC    GLOBAL DEFAULT   13 eglGetSyncAttribKHR
+   625: 00048d88   176 FUNC    GLOBAL DEFAULT   13 glMaterialx
+   626: 000749fc     8 FUNC    GLOBAL DEFAULT   13 _mali_soft_job_add_fence
+   627: 00071f88    12 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_heap_get_blocksize
+   628: 0004a2b8   108 FUNC    GLOBAL DEFAULT   13 glCurrentPaletteMatrixOES
+   629: 00048b28    60 FUNC    GLOBAL DEFAULT   13 glLoadIdentity
+   630: 00047c18   104 FUNC    GLOBAL DEFAULT   13 glEnableClientState
+   631: 00055c38   164 FUNC    GLOBAL DEFAULT   13 glGetVertexAttribfv
+   632: 000636c0    92 FUNC    GLOBAL DEFAULT   13 eglDestroyContext
+   633: 000730ac    40 FUNC    GLOBAL DEFAULT   13 _mali_pp_job_get_wait_handle
+   634: 0004bc98   136 FUNC    GLOBAL DEFAULT   13 glMaterialxvOES
+   635: 00063dbc    84 FUNC    GLOBAL DEFAULT   13 eglGetProcAddress
+   636: 00071d1c   620 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_heap_get_end_address
+   637: 00047810   128 FUNC    GLOBAL DEFAULT   13 glDrawTexivOES
+   638: 00073470   196 FUNC    GLOBAL DEFAULT   13 _mali_base_common_context_destroy
+   639: 00048ba8    68 FUNC    GLOBAL DEFAULT   13 glLoadMatrixx
+   640: 0006e97c    64 FUNC    GLOBAL DEFAULT   13 _mali_base_common_sync_handle_release_reference
+   641: 00073ce4    20 FUNC    GLOBAL DEFAULT   13 _mali_gp_job_set_callback
+   642: 000160c8   204 FUNC    GLOBAL DEFAULT   13 glTexParameterf
+   643: 000491a8    68 FUNC    GLOBAL DEFAULT   13 glMultMatrixx
+   644: 00049ae8   120 FUNC    GLOBAL DEFAULT   13 glScalex
+   645: 00055e70   108 FUNC    GLOBAL DEFAULT   13 glIsShader
+   646: 00016238   204 FUNC    GLOBAL DEFAULT   13 glTexParameteri
+   647: 00063e10   136 FUNC    GLOBAL DEFAULT   13 eglCreateImageKHR
+   648: 0006c3e8   132 FUNC    GLOBAL DEFAULT   13 mali_egl_image_unset_sync
+   649: 00049884    92 FUNC    GLOBAL DEFAULT   13 glPopMatrix
+   650: 000633a4   124 FUNC    GLOBAL DEFAULT   13 eglSwapBuffers
+   651: 000635fc    72 FUNC    GLOBAL DEFAULT   13 eglQueryAPI
+   652: 0006e824    52 FUNC    GLOBAL DEFAULT   13 _mali_base_common_sync_handle_get_wait_handle
+   653: 000150f4   104 FUNC    GLOBAL DEFAULT   13 glDisable
+   654: 00049e34   136 FUNC    GLOBAL DEFAULT   13 glTexEnviv
+   655: 0013cca4     0 NOTYPE  GLOBAL DEFAULT  ABS _end
+   656: 0006e3c0   100 FUNC    GLOBAL DEFAULT   13 eglCreateSyncKHR
+   657: 00011a70    56 FUNC    GLOBAL DEFAULT   13 __egl_platform_surface_post_processing_needed_android
+   658: 0006beb4   284 FUNC    GLOBAL DEFAULT   13 mali_egl_image_unmap_buffer
+   659: 00117754   384 FUNC    GLOBAL DEFAULT   13 __divdi3
+   660: 00049ff4   204 FUNC    GLOBAL DEFAULT   13 glTexParameterx
+   661: 001179e0    28 FUNC    GLOBAL DEFAULT   13 __lshrdi3
+   662: 00076d30   116 FUNC    GLOBAL DEFAULT   13 _mali_arch_pp_get_core_version
+   663: 00063c24   128 FUNC    GLOBAL DEFAULT   13 eglQuerySurface
+   664: 00016714   144 FUNC    GLOBAL DEFAULT   13 glGetBufferPointervOES
+   665: 0001700c   136 FUNC    GLOBAL DEFAULT   13 glGetObjectPtrLabelKHR
+   666: 0004bf80    88 FUNC    GLOBAL DEFAULT   13 glSampleCoveragexOES
+   667: 00016854   192 FUNC    GLOBAL DEFAULT   13 glFramebufferTexture2DMultisampleEXT
+   668: 0004a0c0   164 FUNC    GLOBAL DEFAULT   13 glTexParameterxv
+   669: 0006c364   132 FUNC    GLOBAL DEFAULT   13 mali_egl_image_set_sync
+   670: 00011b0c   216 FUNC    GLOBAL DEFAULT   13 __egl_platform_swap_interval_android
+   671: 0004b274   144 FUNC    GLOBAL DEFAULT   13 glGetTexGenivOES
+   672: 0004b85c   140 FUNC    GLOBAL DEFAULT   13 glGetTexEnvxvOES
+   673: 00073564    20 FUNC    GLOBAL DEFAULT   13 _mali_base_common_context_fence_lock
+   674: 0001172c     4 FUNC    GLOBAL DEFAULT   13 __egl_platform_start_rendering_android
+   675: 000496b0   112 FUNC    GLOBAL DEFAULT   13 glPointParameterxv
+   676: 000579b0   168 FUNC    GLOBAL DEFAULT   13 glDeleteRenderbuffers
+   677: 00056404   208 FUNC    GLOBAL DEFAULT   13 glUniform1f
+   678: 000578a0   108 FUNC    GLOBAL DEFAULT   13 glIsRenderbuffer
+   679: 00056578   136 FUNC    GLOBAL DEFAULT   13 glUniform1i
+   680: 0007131c    32 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_list_get_next
+   681: 00014a18   112 FUNC    GLOBAL DEFAULT   13 glClearColor
+   682: 0004abf4   184 FUNC    GLOBAL DEFAULT   13 glFramebufferTexture2DOES
+   683: 0006e71c     4 FUNC    GLOBAL DEFAULT   13 _mali_sys_lock_destroy
+   684: 000479e4   312 FUNC    GLOBAL DEFAULT   13 glDrawTexxOES
+   685: 00073d44    20 FUNC    GLOBAL DEFAULT   13 _mali_gp_job_get_auto_free_setting
+   686: 0006c0c0   240 FUNC    GLOBAL DEFAULT   13 mali_egl_image_get_buffer_height
+   687: 000564d4   164 FUNC    GLOBAL DEFAULT   13 glUniform1fv
+   688: 00014ed8   160 FUNC    GLOBAL DEFAULT   13 glDeleteBuffers
+   689: 0006b8b0   156 FUNC    GLOBAL DEFAULT   13 mali_egl_image_unlock_ptr
+   690: 0004875c   164 FUNC    GLOBAL DEFAULT   13 glLightModelf
+   691: 00063830    72 FUNC    GLOBAL DEFAULT   13 eglGetCurrentContext
+   692: 00016304   164 FUNC    GLOBAL DEFAULT   13 glTexParameteriv
+   693: 001174cc     0 FUNC    GLOBAL DEFAULT   13 __aeabi_uidiv
+   694: 00057808   152 FUNC    GLOBAL DEFAULT   13 glVertexAttribPointer
+   695: 0004bf7c     4 FUNC    GLOBAL DEFAULT   13 glRotatexOES
+   696: 00055d80   132 FUNC    GLOBAL DEFAULT   13 glGetVertexAttribPointerv
+   697: 000712d4    72 FUNC    GLOBAL DEFAULT   13 _mali_base_common_mem_list_insert_before
+   698: 0013bed4     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
+   699: 00048580   164 FUNC    GLOBAL DEFAULT   13 glGetTexParameterxv
+   700: 00049804   128 FUNC    GLOBAL DEFAULT   13 glPolygonOffsetx
+   701: 00076730   148 FUNC    GLOBAL DEFAULT   13 _mali_arch_fence_wait
+   702: 0004ad58   168 FUNC    GLOBAL DEFAULT   13 glGetFramebufferAttachmentParameterivOES
+   703: 00048e38   136 FUNC    GLOBAL DEFAULT   13 glMaterialxv
+   704: 00016474   136 FUNC    GLOBAL DEFAULT   13 glViewport
+   705: 0004b64c     4 FUNC    GLOBAL DEFAULT   13 glFrustumxOES
+   706: 00063308    72 FUNC    GLOBAL DEFAULT   13 eglWaitGL
+   707: 0006c630   128 FUNC    GLOBAL DEFAULT   13 mali_egl_image_destroy
+   708: 00015c2c   112 FUNC    GLOBAL DEFAULT   13 glPixelStorei
+   709: 00117690     0 FUNC    GLOBAL DEFAULT   13 __aeabi_uldivmod
+   710: 000743a4   180 FUNC    GLOBAL DEFAULT   13 _mali_base_worker_create
+   711: 00016f98   116 FUNC    GLOBAL DEFAULT   13 glObjectPtrLabelKHR
+   712: 0006e9bc    44 FUNC    GLOBAL DEFAULT   13 _mali_base_common_sync_handle_add_to_sync_handle
+   713: 00117670    32 FUNC    GLOBAL DEFAULT   13 __aeabi_idivmod
+   714: 0000f818     8 FUNC    GLOBAL DEFAULT   13 __egl_platform_pixmap_support_gpu_access_android
+   715: 0004bd64     4 FUNC    GLOBAL DEFAULT   13 glMultiTexCoord4xOES
+   716: 00072f50    76 FUNC    GLOBAL DEFAULT   13 _mali_pp_job_new
+   717: 000735b8   740 FUNC    GLOBAL DEFAULT   13 _mali_gp_job_new
+   718: 000815e0   156 FUNC    GLOBAL DEFAULT   13 _mali_base_arch_mem_write_safe
+   719: 0006e720     4 FUNC    GLOBAL DEFAULT   13 _mali_sys_mutex_lock
+   720: 000164fc   136 FUNC    GLOBAL DEFAULT   13 glEGLImageTargetTexture2DOES
+   721: 000556e4   164 FUNC    GLOBAL DEFAULT   13 glGetProgramiv
+   722: 0000f818     8 FUNC    GLOBAL DEFAULT   13 __egl_platform_pixmap_valid_android
+   723: 00055348   184 FUNC    GLOBAL DEFAULT   13 glGetActiveAttrib
+   724: 00048870   164 FUNC    GLOBAL DEFAULT   13 glLightModelx
+   725: 00081700   116 FUNC    GLOBAL DEFAULT   13 _mali_base_arch_mmu_dump_size_get
+   726: 00063794   156 FUNC    GLOBAL DEFAULT   13 eglMakeCurrent
+   727: 0006b81c   148 FUNC    GLOBAL DEFAULT   13 mali_egl_image_lock_ptr
+   728: 000566a4   220 FUNC    GLOBAL DEFAULT   13 glUniform2f
+   729: 000805b0   480 FUNC    GLOBAL DEFAULT   13 _mali_base_arch_mem_map

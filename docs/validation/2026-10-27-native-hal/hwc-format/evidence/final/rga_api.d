@@ -1,0 +1,24 @@
+/workspace/build01-hal-next/hwc-format/evidence/final/rga_api.o: \
+ /workspace/build01-hal-next/hwc-format/source/rga_api.cpp \
+ /workspace/build01-graphics-next/graphics/libhardware/include/hardware/rga.h \
+ /workspace/build01-hal-next/hwc-format/source/rga_angle.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/include/stdio.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/include/sys/cdefs.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/include/android/api-level.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/include/sys/types.h \
+ /workspace/build01-sd/kernel-work/toolchain/lib/gcc/arm-linux-gnueabihf/6.3.1/include/stddef.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/include/stdint.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/include/bits/wchar_limits.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/types.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-arm/asm/types.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/types.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/int-ll64.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-arm/asm/bitsperlong.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/bitsperlong.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/posix_types.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/stddef.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/compiler.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-arm/asm/posix_types.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/posix_types.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/include/sys/sysmacros.h \
+ /workspace/build01-sd/kernel-work/toolchain/lib/gcc/arm-linux-gnueabihf/6.3.1/include/stdarg.h

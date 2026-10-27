@@ -1,0 +1,11 @@
+{
+  "revision": "c04c4261b203c2015b379602a7fdc1137d80e48c",
+  "files": [
+    {
+      "path": "include/hardware_legacy/uevent.h",
+      "url": "https://raw.githubusercontent.com/rockchip-android/hardware-libhardware_legacy/c04c4261b203c2015b379602a7fdc1137d80e48c/include/hardware_legacy/uevent.h",
+      "sha256": "b3458d9eb82b69c6eeff07e4b2de22a13d96bcfda3035940b8621f14168b635b",
+      "bytes": 1112
+    }
+  ]
+}

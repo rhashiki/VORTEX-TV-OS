@@ -1,0 +1,35 @@
+
+/workspace/build01-sd-next/vendor-sd/proprietary/lib/egl/libGLES_mali.so:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+0000f794 <__egl_platform_initialize_android@@Base>:
+    f794:	e92d4800 	push	{fp, lr}
+    f798:	e24dd008 	sub	sp, sp, #8
+    f79c:	e59f0050 	ldr	r0, [pc, #80]	; f7f4 <__egl_platform_initialize_android@@Base+0x60>
+    f7a0:	e59f1050 	ldr	r1, [pc, #80]	; f7f8 <__egl_platform_initialize_android@@Base+0x64>
+    f7a4:	e79f0000 	ldr	r0, [pc, r0]
+    f7a8:	e5900000 	ldr	r0, [r0]
+    f7ac:	e58d0004 	str	r0, [sp, #4]
+    f7b0:	e3a00000 	mov	r0, #0
+    f7b4:	e58d0000 	str	r0, [sp]
+    f7b8:	e08f0001 	add	r0, pc, r1
+    f7bc:	e1a0100d 	mov	r1, sp
+    f7c0:	ebfff549 	bl	ccec <hw_get_module@plt>
+    f7c4:	e59f0030 	ldr	r0, [pc, #48]	; f7fc <__egl_platform_initialize_android@@Base+0x68>
+    f7c8:	e59d1000 	ldr	r1, [sp]
+    f7cc:	e78f1000 	str	r1, [pc, r0]
+    f7d0:	e59f0028 	ldr	r0, [pc, #40]	; f800 <__egl_platform_initialize_android@@Base+0x6c>
+    f7d4:	e59d1004 	ldr	r1, [sp, #4]
+    f7d8:	e79f0000 	ldr	r0, [pc, r0]
+    f7dc:	e5900000 	ldr	r0, [r0]
+    f7e0:	e0500001 	subs	r0, r0, r1
+    f7e4:	03a00001 	moveq	r0, #1
+    f7e8:	028dd008 	addeq	sp, sp, #8
+    f7ec:	08bd8800 	popeq	{fp, pc}
+    f7f0:	ebfff534 	bl	ccc8 <__stack_chk_fail@plt>
+    f7f4:	0012a078 	andseq	sl, r2, r8, ror r0
+    f7f8:	0010cb25 	andseq	ip, r0, r5, lsr #22
+    f7fc:	0012c7cc 	andseq	ip, r2, ip, asr #15
+    f800:	0012a044 	andseq	sl, r2, r4, asr #32

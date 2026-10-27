@@ -1,0 +1,120 @@
+
+/workspace/build01-sd-next/vendor-sd/proprietary/lib/egl/libGLES_mali.so:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+000118ac <__egl_platform_immediate_queue_with_fence_android@@Base+0x16c>:
+   118ac:	e92d48f0 	push	{r4, r5, r6, r7, fp, lr}
+   118b0:	e24dd018 	sub	sp, sp, #24
+   118b4:	e1a05001 	mov	r5, r1
+   118b8:	e59f117c 	ldr	r1, [pc, #380]	; 11a3c <__egl_platform_immediate_queue_with_fence_android@@Base+0x2fc>
+   118bc:	e79f1001 	ldr	r1, [pc, r1]
+   118c0:	e5911000 	ldr	r1, [r1]
+   118c4:	e58d1014 	str	r1, [sp, #20]
+   118c8:	e5904010 	ldr	r4, [r0, #16]
+   118cc:	e1a00004 	mov	r0, r4
+   118d0:	eb000364 	bl	12668 <__egl_platform_query_buffer_age_android@@Base+0xa84>
+   118d4:	e3500001 	cmp	r0, #1
+   118d8:	1a00004f 	bne	11a1c <__egl_platform_immediate_queue_with_fence_android@@Base+0x2dc>
+   118dc:	e594103c 	ldr	r1, [r4, #60]	; 0x3c
+   118e0:	e3510000 	cmp	r1, #0
+   118e4:	0a000026 	beq	11984 <__egl_platform_immediate_queue_with_fence_android@@Base+0x244>
+   118e8:	e5910000 	ldr	r0, [r1]
+   118ec:	e350000c 	cmp	r0, #12
+   118f0:	1a000023 	bne	11984 <__egl_platform_immediate_queue_with_fence_android@@Base+0x244>
+   118f4:	e5910004 	ldr	r0, [r1, #4]
+   118f8:	e3500001 	cmp	r0, #1
+   118fc:	05910008 	ldreq	r0, [r1, #8]
+   11900:	03500016 	cmpeq	r0, #22
+   11904:	1a00001e 	bne	11984 <__egl_platform_immediate_queue_with_fence_android@@Base+0x244>
+   11908:	e5910010 	ldr	r0, [r1, #16]
+   1190c:	e3012592 	movw	r2, #5522	; 0x1592
+   11910:	e3402314 	movt	r2, #788	; 0x314
+   11914:	e1500002 	cmp	r0, r2
+   11918:	1a000019 	bne	11984 <__egl_platform_immediate_queue_with_fence_android@@Base+0x244>
+   1191c:	e59f011c 	ldr	r0, [pc, #284]	; 11a40 <__egl_platform_immediate_queue_with_fence_android@@Base+0x300>
+   11920:	e3a07000 	mov	r7, #0
+   11924:	e5943020 	ldr	r3, [r4, #32]
+   11928:	e28d6010 	add	r6, sp, #16
+   1192c:	e5942030 	ldr	r2, [r4, #48]	; 0x30
+   11930:	e79f0000 	ldr	r0, [pc, r0]
+   11934:	e594c024 	ldr	ip, [r4, #36]	; 0x24
+   11938:	e590e088 	ldr	lr, [r0, #136]	; 0x88
+   1193c:	e58d7000 	str	r7, [sp]
+   11940:	e98d1008 	stmib	sp, {r3, ip}
+   11944:	e3a03000 	mov	r3, #0
+   11948:	e58d600c 	str	r6, [sp, #12]
+   1194c:	e12fff3e 	blx	lr
+   11950:	e3500000 	cmp	r0, #0
+   11954:	ba000024 	blt	119ec <__egl_platform_immediate_queue_with_fence_android@@Base+0x2ac>
+   11958:	e59d2010 	ldr	r2, [sp, #16]
+   1195c:	e1a00004 	mov	r0, r4
+   11960:	e1a01005 	mov	r1, r5
+   11964:	e3a03004 	mov	r3, #4
+   11968:	eb0003a4 	bl	12800 <__egl_platform_query_buffer_age_android@@Base+0xc1c>
+   1196c:	e59f00d0 	ldr	r0, [pc, #208]	; 11a44 <__egl_platform_immediate_queue_with_fence_android@@Base+0x304>
+   11970:	e594103c 	ldr	r1, [r4, #60]	; 0x3c
+   11974:	e79f0000 	ldr	r0, [pc, r0]
+   11978:	e590208c 	ldr	r2, [r0, #140]	; 0x8c
+   1197c:	e12fff32 	blx	r2
+   11980:	ea000025 	b	11a1c <__egl_platform_immediate_queue_with_fence_android@@Base+0x2dc>
+   11984:	e59f20d0 	ldr	r2, [pc, #208]	; 11a5c <__egl_platform_immediate_queue_with_fence_android@@Base+0x31c>
+   11988:	e59f00c8 	ldr	r0, [pc, #200]	; 11a58 <__egl_platform_immediate_queue_with_fence_android@@Base+0x318>
+   1198c:	e08f2002 	add	r2, pc, r2
+   11990:	e08f1000 	add	r1, pc, r0
+   11994:	e3a00006 	mov	r0, #6
+   11998:	ebffeccd 	bl	ccd4 <__android_log_print@plt>
+   1199c:	e59f30c0 	ldr	r3, [pc, #192]	; 11a64 <__egl_platform_immediate_queue_with_fence_android@@Base+0x324>
+   119a0:	e3005a13 	movw	r5, #2579	; 0xa13
+   119a4:	e59f00b4 	ldr	r0, [pc, #180]	; 11a60 <__egl_platform_immediate_queue_with_fence_android@@Base+0x320>
+   119a8:	e59f20b8 	ldr	r2, [pc, #184]	; 11a68 <__egl_platform_immediate_queue_with_fence_android@@Base+0x328>
+   119ac:	e08f3003 	add	r3, pc, r3
+   119b0:	e594103c 	ldr	r1, [r4, #60]	; 0x3c
+   119b4:	e58d5000 	str	r5, [sp]
+   119b8:	e58d1004 	str	r1, [sp, #4]
+   119bc:	e08f1002 	add	r1, pc, r2
+   119c0:	e08f2000 	add	r2, pc, r0
+   119c4:	e3a00006 	mov	r0, #6
+   119c8:	ebffecc1 	bl	ccd4 <__android_log_print@plt>
+   119cc:	e59f0098 	ldr	r0, [pc, #152]	; 11a6c <__egl_platform_immediate_queue_with_fence_android@@Base+0x32c>
+   119d0:	e59d1014 	ldr	r1, [sp, #20]
+   119d4:	e79f0000 	ldr	r0, [pc, r0]
+   119d8:	e5900000 	ldr	r0, [r0]
+   119dc:	e0500001 	subs	r0, r0, r1
+   119e0:	028dd018 	addeq	sp, sp, #24
+   119e4:	08bd88f0 	popeq	{r4, r5, r6, r7, fp, pc}
+   119e8:	ea000012 	b	11a38 <__egl_platform_immediate_queue_with_fence_android@@Base+0x2f8>
+   119ec:	e59f1058 	ldr	r1, [pc, #88]	; 11a4c <__egl_platform_immediate_queue_with_fence_android@@Base+0x30c>
+   119f0:	e3007a1b 	movw	r7, #2587	; 0xa1b
+   119f4:	e59f004c 	ldr	r0, [pc, #76]	; 11a48 <__egl_platform_immediate_queue_with_fence_android@@Base+0x308>
+   119f8:	e59f3050 	ldr	r3, [pc, #80]	; 11a50 <__egl_platform_immediate_queue_with_fence_android@@Base+0x310>
+   119fc:	e08f1001 	add	r1, pc, r1
+   11a00:	e594203c 	ldr	r2, [r4, #60]	; 0x3c
+   11a04:	e58d7000 	str	r7, [sp]
+   11a08:	e58d2004 	str	r2, [sp, #4]
+   11a0c:	e08f2003 	add	r2, pc, r3
+   11a10:	e08f3000 	add	r3, pc, r0
+   11a14:	e3a00006 	mov	r0, #6
+   11a18:	ebffecad 	bl	ccd4 <__android_log_print@plt>
+   11a1c:	e59f0030 	ldr	r0, [pc, #48]	; 11a54 <__egl_platform_immediate_queue_with_fence_android@@Base+0x314>
+   11a20:	e59d1014 	ldr	r1, [sp, #20]
+   11a24:	e79f0000 	ldr	r0, [pc, r0]
+   11a28:	e5900000 	ldr	r0, [r0]
+   11a2c:	e0500001 	subs	r0, r0, r1
+   11a30:	028dd018 	addeq	sp, sp, #24
+   11a34:	08bd88f0 	popeq	{r4, r5, r6, r7, fp, pc}
+   11a38:	ebffeca2 	bl	ccc8 <__stack_chk_fail@plt>
+   11a3c:	00127f60 	andseq	r7, r2, r0, ror #30
+   11a40:	0012a668 	andseq	sl, r2, r8, ror #12
+   11a44:	0012a624 	andseq	sl, r2, r4, lsr #12
+   11a48:	0010af0e 	andseq	sl, r0, lr, lsl #30
+   11a4c:	0010a736 	andseq	sl, r0, r6, lsr r7
+   11a50:	0010af66 	andseq	sl, r0, r6, ror #30
+   11a54:	00127df8 			; <UNDEFINED> instruction: 0x00127df8
+   11a58:	0010b279 	andseq	fp, r0, r9, ror r2
+   11a5c:	0010b285 	andseq	fp, r0, r5, lsl #5
+   11a60:	0010a925 	andseq	sl, r0, r5, lsr #18
+   11a64:	0010af72 	andseq	sl, r0, r2, ror pc
+   11a68:	0010a776 	andseq	sl, r0, r6, ror r7
+   11a6c:	00127e48 	andseq	r7, r2, r8, asr #28

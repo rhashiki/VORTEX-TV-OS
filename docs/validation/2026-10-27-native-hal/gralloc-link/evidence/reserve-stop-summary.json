@@ -1,0 +1,13 @@
+{
+  "record_kind": "Summary of observed acquisition-tool result; not a reconstructed raw stderr log.",
+  "script": "acquire_arm32_reference.py",
+  "outcome": "AssertionError: disk reserve",
+  "guard": "shutil.disk_usage(root).free >= 8 * 1024**3",
+  "archive_download_complete": true,
+  "archive_size_bytes": 952973150,
+  "archive_sha1_verified": "a6f7c491e3bb937523dddfa287e07d785934e8a1",
+  "partial_image_logical_bytes_at_stop": 1884291072,
+  "partial_image_allocated_bytes_observed": 1555521536,
+  "recovery": "Root authorized deleting only unused current-stage archive caches; stdlib extraction resumed with byte-identical prefix verification and completed CRC/SHA checks.",
+  "full_acquisition_result": "arm32-reference-acquisition.json"
+}

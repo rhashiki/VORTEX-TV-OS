@@ -1,0 +1,26 @@
+[
+  {
+    "name": "alloc_device.o",
+    "sha256": "6061300e9ea19f5601adaec5cef8e09bd7352002e7f208b16c3da1adae12417f",
+    "architecture": "ELF32 ARM EABI5",
+    "VFP_calling_convention": "base/softfp; no VFP argument tag"
+  },
+  {
+    "name": "framebuffer_device.o",
+    "sha256": "267afb75de07a27af4cdc7dec75e1f852f2319eab25271e2eb26e4b040b2ff8e",
+    "architecture": "ELF32 ARM EABI5",
+    "VFP_calling_convention": "base/softfp; no VFP argument tag"
+  },
+  {
+    "name": "gralloc_module.o",
+    "sha256": "72d8d6ae0aeabdec3f17c3eebc5fbd2a64ffaa3d26b044bff4baec1b90deae75",
+    "architecture": "ELF32 ARM EABI5",
+    "VFP_calling_convention": "base/softfp; no VFP argument tag"
+  },
+  {
+    "name": "rockchip_alloc_device.o",
+    "sha256": "0b6a1c352d063c16ea7331b7ad127c01868e2c47891487ce2cfd24320b0f779b",
+    "architecture": "ELF32 ARM EABI5",
+    "VFP_calling_convention": "base/softfp; no VFP argument tag"
+  }
+]

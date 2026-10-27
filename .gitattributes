@@ -11,3 +11,9 @@ docs/validation/2026-10-26-aosp-bootloader/**/*.txt -whitespace
 docs/validation/2026-10-26-aosp-bootloader/bootloader/optee.generated.mk -whitespace
 docs/validation/2026-10-27-graphics-monitor/**/*.log -whitespace
 docs/validation/2026-10-27-graphics-monitor/**/*.txt -whitespace
+docs/validation/2026-10-27-native-hal/**/*.log -whitespace
+docs/validation/2026-10-27-native-hal/**/*.txt -whitespace
+docs/validation/2026-10-27-native-hal/**/*.map -whitespace
+# Preserve upstream metadata and byte-extracted function bodies as evidence.
+docs/validation/2026-10-27-native-hal/gralloc-link/evidence/*.properties -whitespace
+docs/validation/2026-10-27-native-hal/hwc/evidence/behavior/*.cpp -whitespace

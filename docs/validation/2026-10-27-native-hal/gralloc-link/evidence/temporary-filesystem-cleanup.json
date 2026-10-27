@@ -1,0 +1,7 @@
+{
+  "name": "reference-arm32-system.sparse-host.img",
+  "logical_bytes": 2147483648,
+  "allocated_bytes": 1813630976,
+  "sha256": "1b945591c0b9d7a5b0d9426007777a1b988f92e55b723cb0ca2e194321cd66ce",
+  "reason": "All selected actual ARM32 libraries and linker extracted+hashed; reclaim only current-stage temporary filesystem."
+}

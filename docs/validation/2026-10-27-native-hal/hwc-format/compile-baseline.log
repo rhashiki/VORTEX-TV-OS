@@ -1,0 +1,96 @@
+rk_hwcomposer 1 In file included from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:15:0:
+/workspace/build01-hal-next/hwc/native-headers/opengl/include/EGL/eglext.h:623:111: warning: ‘visibility’ attribute ignored [-Wattributes]
+ typedef EGLAPI EGLClientBuffer (EGLAPIENTRYP PFNEGLCREATENATIVECLIENTBUFFERANDROID) (const EGLint *attrib_list);
+                                                                                                               ^
+/workspace/build01-hal-next/hwc/native-headers/opengl/include/EGL/eglext.h:650:200: warning: ‘visibility’ attribute ignored [-Wattributes]
+ typedef EGLAPI EGLBoolean (EGLAPIENTRYP PFNEGLGETFRAMETIMESTAMPSANDROID) (EGLDisplay dpy, EGLSurface surface, EGLint framesAgo, EGLint numTimestamps, const EGLint *timestamps, EGLnsecsANDROID *values);
+                                                                                                                                                                                                        ^
+/workspace/build01-hal-next/hwc/native-headers/opengl/include/EGL/eglext.h:651:132: warning: ‘visibility’ attribute ignored [-Wattributes]
+ typedef EGLAPI EGLBoolean (EGLAPIENTRYP PFNEGLQUERYTIMESTAMPSUPPORTEDANDROID) (EGLDisplay dpy, EGLSurface surface, EGLint timestamp);
+                                                                                                                                    ^
+In file included from /workspace/build01-platform-next/research/rockchip-system-core/include/cutils/log.h:1:0,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.h:18,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp:17:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.cpp: In function ‘int LayerZoneCheck(hwc_layer_1_t*, hwcContext*)’:
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:618:39: error: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘double’ [-Werror=format=]
+     __android_log_print(prio, tag, fmt)
+                                       ^
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:461:5: note: in expansion of macro ‘android_pri
+rk_hwcomposer_blit 1 In file included from /workspace/build01-platform-next/research/rockchip-system-core/include/cutils/log.h:1:0,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.h:18,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer_blit.cpp:13:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer_blit.cpp: In function ‘hwcSTATUS hwcBlit(hwcContext*, hwc_layer_1_t*, private_handle_t*, hwc_rect_t*, hwc_rect_t*, hwc_region_t*, FenceMangrRga*, int)’:
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:618:39: error: format ‘%x’ expects argument of type ‘unsigned int’, but argument 8 has type ‘void*’ [-Werror=format=]
+     __android_log_print(prio, tag, fmt)
+                                       ^
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:461:5: note: in expansion of macro ‘android_printLog’
+     android_printLog(priority, tag, __VA_ARGS__)
+     ^~~~~~~~~~~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:453:5: note: in expansion of macro ‘LOG_PRI’
+     LOG_PRI(ANDROID_##priority, tag, __VA_ARGS__)
+     ^~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:156:27: note: in expansion of macro ‘ALOG’
+ #define ALOGE(...) ((void)ALOG(LOG_ERROR, LOG_TAG, __VA_ARGS__))
+                           ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer.h:479:21: note: in expansion of macro ‘ALOGE’
+ #define LOGE        ALOGE
+                     ^~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer_blit.cpp:1014:17: note: in expansion of macro ‘LOGE’
+                 LOGE("RGA src:fd=%d,base=%p,src_vir_w = %d, src_vir_h = %d,srcLogical=%x,srcFormat=%d", srchnd->share_fd, srchnd->base, \
+                 ^~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:618:39: error: format ‘%x’ expects argument of type ‘unsigned int’, but argument 9 has type ‘void*’ [-Werror=format=]
+     __android_log_print(prio, tag, fmt)
+                                       ^
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:461:5: note: in expansion of mac
+rk_hwc_com 1 In file included from /workspace/build01-platform-next/research/rockchip-system-core/include/cutils/log.h:1:0,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.h:18,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwc_com.cpp:15:
+/workspace/build01-hal-next/hwc/source/rk_hwc_com.cpp: In function ‘hwcSTATUS hwcGetBufferInfo(hwcContext*, private_handle_t*, void**, unsigned int*, unsigned int*, unsigned int*, unsigned int*, void**)’:
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:618:39: error: format ‘%p’ expects argument of type ‘void*’, but argument 4 has type ‘RK_U32 {aka unsigned int}’ [-Werror=format=]
+     __android_log_print(prio, tag, fmt)
+                                       ^
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:461:5: note: in expansion of macro ‘android_printLog’
+     android_printLog(priority, tag, __VA_ARGS__)
+     ^~~~~~~~~~~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:453:5: note: in expansion of macro ‘LOG_PRI’
+     LOG_PRI(ANDROID_##priority, tag, __VA_ARGS__)
+     ^~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:91:29: note: in expansion of macro ‘ALOG’
+ #define __ALOGV(...) ((void)ALOG(LOG_VERBOSE, LOG_TAG, __VA_ARGS__))
+                             ^~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:95:20: note: in expansion of macro ‘__ALOGV’
+ #define ALOGV(...) __ALOGV(__VA_ARGS__)
+                    ^~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwc_com.cpp:214:17: note: in expansion of macro ‘ALOGV’
+                 ALOGV("hwcGetBufferInfo:video info phy_addr=%p,w=%d,h=%d",pFrame->FrameBusAddr[0],*Width,*Height);
+                 ^~~~~
+cc1plus: some warnings being treated as errors
+
+hwc_rga 1 /workspace/build01-hal-next/hwc/source/hwc_rga.cpp: In function ‘void set_rga_offset(hwc_rect_t, hwc_rect_t, int)’:
+/workspace/build01-hal-next/hwc/source/hwc_rga.cpp:323:32: warning: unused parameter ‘src_rect’ [-Wunused-parameter]
+ void set_rga_offset(hwc_rect_t src_rect,hwc_rect_t dst_rect, int transform)
+                                ^~~~~~~~
+/workspace/build01-hal-next/hwc/source/hwc_rga.cpp: In function ‘void set_scale_mode(hwc_rect_t, hwc_rect_t, int)’:
+/workspace/build01-hal-next/hwc/source/hwc_rga.cpp:386:66: warning: unused parameter ‘transform’ [-Wunused-parameter]
+ void set_scale_mode(hwc_rect_t src_rect,hwc_rect_t dst_rect, int transform)
+                                                                  ^~~~~~~~~
+In file included from /workspace/build01-platform-next/research/rockchip-system-core/include/cutils/log.h:1:0,
+                 from /workspace/build01-hal-next/hwc/source/hwc_rga.h:19,
+                 from /workspace/build01-hal-next/hwc/source/hwc_rga.cpp:10:
+/workspace/build01-hal-next/hwc/source/hwc_rga.cpp: In function ‘int set_rga_cfg(hwc_cfg_t*)’:
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:618:39: error: format ‘%x’ expects argument of type ‘unsigned int’, but argument 8 has type ‘void*’ [-Werror=format=]
+     __android_log_print(prio, tag, fmt)
+                                       ^
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:461:5: note: in expansion of macro ‘android_printLog’
+     android_printLog(priority, tag, __VA_ARGS__)
+     ^~~~~~~~~~~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:453:5: note: in expansion of macro ‘LOG_PRI’
+     LOG_PRI(ANDROID_##priority, tag, __VA_ARGS__)
+     ^~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:120:14: note: in expansion of macro ‘ALOG’
+     ? ((void)ALOG(LOG_DEBUG, LOG_TAG, __VA_ARGS__)) \
+              ^~~~
+/workspace/build01-hal-next/hwc/source/hwc_rga.cpp:481:3: note: in expansion of macro ‘ALOGD_IF’
+   ALOGD_IF(DEBUG_LOG,"src rect[%d,%d,%d,%d],src_addr=0x%x,dst rect[%d,%d,%d,%d],dst_addr=0x%x",\
+   ^~~~~~~~
+/workspace/build01-pl

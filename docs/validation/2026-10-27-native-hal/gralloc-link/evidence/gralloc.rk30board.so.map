@@ -1,0 +1,562 @@
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+ .group         0x0000000000000000        0x8 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+ .group         0x0000000000000000        0x8 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+ .group         0x0000000000000000        0x8 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+ .group         0x0000000000000000        0x8 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+ .group         0x0000000000000000        0x8 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+ .group         0x0000000000000000        0x8 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+ .group         0x0000000000000000        0x8 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+ .group         0x0000000000000000        0x8 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+ .group         0x0000000000000000        0x8 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+ .group         0x0000000000000000        0x8 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+ .group         0x0000000000000000        0x8 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+ .group         0x0000000000000000        0x8 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+ .group         0x0000000000000000        0x8 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+ .group         0x0000000000000000        0x8 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+ .group         0x0000000000000000        0x8 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+ .group         0x0000000000000000        0x8 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+ .group         0x0000000000000000        0x8 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+ .group         0x0000000000000000        0x8 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+ .group         0x0000000000000000        0x8 /workspace/build01-hal-next/gralloc-link/objects/framebuffer_device.o
+ .group         0x0000000000000000        0x8 /workspace/build01-hal-next/gralloc-link/objects/framebuffer_device.o
+ .group         0x0000000000000000        0x8 /workspace/build01-hal-next/gralloc-link/objects/framebuffer_device.o
+ .group         0x0000000000000000        0x8 /workspace/build01-hal-next/gralloc-link/objects/framebuffer_device.o
+ .text._ZN13native_handleC2Ev
+                0x0000000000000000       0x16 /workspace/build01-hal-next/gralloc-link/objects/framebuffer_device.o
+ .text._ZN16private_handle_tC2EiiiPviii
+                0x0000000000000000       0xb0 /workspace/build01-hal-next/gralloc-link/objects/framebuffer_device.o
+ .text._ZN16private_handle_t8validateEPK13native_handle
+                0x0000000000000000       0x64 /workspace/build01-hal-next/gralloc-link/objects/framebuffer_device.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-hal-next/gralloc-link/objects/framebuffer_device.o
+ .group         0x0000000000000000        0x8 /workspace/build01-hal-next/gralloc-link/objects/gralloc_module.o
+ .text._ZN16private_handle_t8validateEPK13native_handle
+                0x0000000000000000       0x64 /workspace/build01-hal-next/gralloc-link/objects/gralloc_module.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-hal-next/gralloc-link/objects/gralloc_module.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-hal-next/gralloc-link/objects/rockchip_alloc_device.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-hal-next/gralloc-link/crt/crtend_so.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+LOAD /workspace/build01-hal-next/gralloc-link/crt/crtbrand.o
+LOAD /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+LOAD /workspace/build01-hal-next/gralloc-link/objects/framebuffer_device.o
+LOAD /workspace/build01-hal-next/gralloc-link/objects/gralloc_module.o
+LOAD /workspace/build01-hal-next/gralloc-link/objects/rockchip_alloc_device.o
+LOAD /workspace/build01-hal-next/gralloc-link/reference/system/lib/liblog.so
+LOAD /workspace/build01-hal-next/gralloc-link/reference/system/lib/libcutils.so
+LOAD /workspace/build01-hal-next/gralloc-link/reference/system/lib/libGLESv1_CM.so
+LOAD /workspace/build01-hal-next/gralloc-link/reference/system/lib/libion.so
+LOAD /workspace/build01-hal-next/gralloc-link/reference/system/lib/libhardware.so
+LOAD /workspace/build01-hal-next/gralloc-link/reference/system/lib/libstdc++.so
+LOAD /workspace/build01-hal-next/gralloc-link/reference/system/lib/libc++.so
+LOAD /workspace/build01-hal-next/gralloc-link/reference/system/lib/libc.so
+LOAD /workspace/build01-hal-next/gralloc-link/reference/system/lib/libm.so
+LOAD /workspace/build01-hal-next/gralloc-link/reference/system/lib/libdl.so
+LOAD /workspace/build01-hal-next/gralloc-link/crt/crtend_so.o
+                0x0000000000000114                . = (0x0 + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+                0x0000000000000114       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x0000000000000114       0x24 linker stubs
+
+.hash           0x0000000000000138      0x294
+ *(.hash)
+ .hash          0x0000000000000138      0x294 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+
+.gnu.hash       0x00000000000003cc      0x1b0
+ *(.gnu.hash)
+ .gnu.hash      0x00000000000003cc      0x1b0 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+
+.dynsym         0x000000000000057c      0x600
+ *(.dynsym)
+ .dynsym        0x000000000000057c      0x600 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+
+.dynstr         0x0000000000000b7c      0xa73
+ *(.dynstr)
+ .dynstr        0x0000000000000b7c      0xa73 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+
+.gnu.version    0x00000000000015f0       0xc0
+ *(.gnu.version)
+ .gnu.version   0x00000000000015f0       0xc0 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+
+.gnu.version_d  0x00000000000016b0        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000000016b0        0x0 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+
+.gnu.version_r  0x00000000000016b0       0x20
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000000016b0       0x20 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+
+.rel.dyn        0x00000000000016d0       0x48
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ .rel.text      0x00000000000016d0        0x0 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ .rel.data      0x00000000000016d0       0x18 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+ .rel.data.rel.local
+                0x00000000000016e8        0x8 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x00000000000016f0       0x18 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rel.iplt)
+ .rel.iplt      0x0000000000001708        0x0 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+ .rel.fini_array
+                0x0000000000001708        0x8 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+ .rel.init_array
+                0x0000000000001710        0x8 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+
+.rela.dyn
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rela.iplt)
+
+.rel.plt        0x0000000000001718      0x250
+ *(.rel.plt)
+ .rel.plt       0x0000000000001718      0x250 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+
+.rela.plt
+ *(.rela.plt)
+
+.init
+ *(SORT(.init))
+
+.plt            0x0000000000001968      0x38c
+ *(.plt)
+ .plt           0x0000000000001968      0x38c /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+
+.iplt           0x0000000000001cf4        0x0
+ *(.iplt)
+ .iplt          0x0000000000001cf4        0x0 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+
+.text           0x0000000000001cf8     0x3d94
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000001cf8       0x88 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+                0x0000000000001cf8                __on_dlclose
+                0x0000000000001d10                __atexit_handler_wrapper
+                0x0000000000001d2a                atexit
+                0x0000000000001d58                pthread_atfork
+ .text          0x0000000000001d80        0x0 /workspace/build01-hal-next/gralloc-link/crt/crtbrand.o
+ .text          0x0000000000001d80     0x14d0 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+                0x00000000000027bc                gralloc_backend_get_fd(private_handle_t*, int*)
+                0x00000000000027dc                gralloc_backend_get_attrs(private_handle_t*, void*)
+                0x00000000000031a8                alloc_device_open(hw_module_t const*, char const*, hw_device_t**)
+ .text._ZN13native_handleC2Ev
+                0x0000000000003250       0x16 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+                0x0000000000003250                native_handle::native_handle()
+                0x0000000000003250                native_handle::native_handle()
+ .text._ZN16private_handle_tC2EiiiPvi
+                0x0000000000003266       0xb0 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+                0x0000000000003266                private_handle_t::private_handle_t(int, int, int, void*, int)
+                0x0000000000003266                private_handle_t::private_handle_t(int, int, int, void*, int)
+ .text._ZN16private_handle_tC2EiiiPviii
+                0x0000000000003316       0xb0 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+                0x0000000000003316                private_handle_t::private_handle_t(int, int, int, void*, int, int, int)
+                0x0000000000003316                private_handle_t::private_handle_t(int, int, int, void*, int, int, int)
+ .text._ZN16private_handle_tD2Ev
+                0x00000000000033c6       0x1c /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+                0x00000000000033c6                private_handle_t::~private_handle_t()
+                0x00000000000033c6                private_handle_t::~private_handle_t()
+ *fill*         0x00000000000033e2        0x2 
+ .text._ZN16private_handle_t8validateEPK13native_handle
+                0x00000000000033e4       0x64 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+                0x00000000000033e4                private_handle_t::validate(native_handle const*)
+ .text._ZNKSt3__16vectorIiNS_9allocatorIiEEE17__annotate_shrinkEj
+                0x0000000000003448       0x9a /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+                0x0000000000003448                std::__1::vector<int, std::__1::allocator<int> >::__annotate_shrink(unsigned int) const
+ .text._ZNSt3__16vectorIiNS_9allocatorIiEEE24__RAII_IncreaseAnnotatorC2ERKS3_j
+                0x00000000000034e2       0x1a /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+                0x00000000000034e2                std::__1::vector<int, std::__1::allocator<int> >::__RAII_IncreaseAnnotator::__RAII_IncreaseAnnotator(std::__1::vector<int, std::__1::allocator<int> > const&, unsigned int)
+                0x00000000000034e2                std::__1::vector<int, std::__1::allocator<int> >::__RAII_IncreaseAnnotator::__RAII_IncreaseAnnotator(std::__1::vector<int, std::__1::allocator<int> > const&, unsigned int)
+ .text._ZNSt3__16vectorIiNS_9allocatorIiEEE24__RAII_IncreaseAnnotator6__doneEv
+                0x00000000000034fc       0x14 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+                0x00000000000034fc                std::__1::vector<int, std::__1::allocator<int> >::__RAII_IncreaseAnnotator::__done()
+ .text._ZNSt3__16vectorIiNS_9allocatorIiEEE21__push_back_slow_pathIRKiEEvOT_
+                0x0000000000003510      0x188 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+                0x0000000000003510                void std::__1::vector<int, std::__1::allocator<int> >::__push_back_slow_path<int const&>(int const&)
+ .text._ZNKSt3__16vectorIiNS_9allocatorIiEEE31__annotate_contiguous_containerEPKvS5_S5_S5_
+                0x0000000000003698       0x1a /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+                0x0000000000003698                std::__1::vector<int, std::__1::allocator<int> >::__annotate_contiguous_container(void const*, void const*, void const*, void const*) const
+ .text._ZNSt3__121__split_buffer_commonILb1EEC2Ev
+                0x00000000000036b2       0x16 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+                0x00000000000036b2                std::__1::__split_buffer_common<true>::__split_buffer_common()
+                0x00000000000036b2                std::__1::__split_buffer_common<true>::__split_buffer_common()
+ .text._ZNSt3__114__split_bufferIiRNS_9allocatorIiEEEC2EjjS3_
+                0x00000000000036c8       0xc8 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+                0x00000000000036c8                std::__1::__split_buffer<int, std::__1::allocator<int>&>::__split_buffer(unsigned int, unsigned int, std::__1::allocator<int>&)
+                0x00000000000036c8                std::__1::__split_buffer<int, std::__1::allocator<int>&>::__split_buffer(unsigned int, unsigned int, std::__1::allocator<int>&)
+ .text._ZNSt3__114__split_bufferIiRNS_9allocatorIiEEED2Ev
+                0x0000000000003790       0xe4 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+                0x0000000000003790                std::__1::__split_buffer<int, std::__1::allocator<int>&>::~__split_buffer()
+                0x0000000000003790                std::__1::__split_buffer<int, std::__1::allocator<int>&>::~__split_buffer()
+ .text._ZNSt3__16vectorIiNS_9allocatorIiEEE26__swap_out_circular_bufferERNS_14__split_bufferIiRS2_EE
+                0x0000000000003874      0x134 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+                0x0000000000003874                std::__1::vector<int, std::__1::allocator<int> >::__swap_out_circular_buffer(std::__1::__split_buffer<int, std::__1::allocator<int>&>&)
+ .text._ZNKSt3__16vectorIiNS_9allocatorIiEEE8max_sizeEv
+                0x00000000000039a8       0x72 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+                0x00000000000039a8                std::__1::vector<int, std::__1::allocator<int> >::max_size() const
+ *fill*         0x0000000000003a1a        0x2 
+ .text._ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv
+                0x0000000000003a1c       0x28 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+                0x0000000000003a1c                std::__1::__vector_base_common<true>::__throw_length_error() const
+ .text._ZNKSt3__16vectorIiNS_9allocatorIiEEE17__annotate_deleteEv
+                0x0000000000003a44       0xba /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+                0x0000000000003a44                std::__1::vector<int, std::__1::allocator<int> >::__annotate_delete() const
+ .text._ZNKSt3__16vectorIiNS_9allocatorIiEEE14__annotate_newEj
+                0x0000000000003afe       0xac /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+                0x0000000000003afe                std::__1::vector<int, std::__1::allocator<int> >::__annotate_new(unsigned int) const
+ *fill*         0x0000000000003baa        0x6 
+ .text          0x0000000000003bb0      0xe10 /workspace/build01-hal-next/gralloc-link/objects/framebuffer_device.o
+                0x00000000000040b4                init_frame_buffer_locked(private_module_t*)
+                0x0000000000004870                compositionComplete(framebuffer_device_t*)
+                0x0000000000004886                framebuffer_device_open(hw_module_t const*, char const*, hw_device_t**)
+ .text._Z21round_up_to_page_sizej
+                0x00000000000049c0       0x22 /workspace/build01-hal-next/gralloc-link/objects/framebuffer_device.o
+                0x00000000000049c0                round_up_to_page_size(unsigned int)
+ *fill*         0x00000000000049e2        0x2 
+ .text          0x00000000000049e4      0xc60 /workspace/build01-hal-next/gralloc-link/objects/gralloc_module.o
+                0x0000000000005254                gralloc_lock_ycbcr(gralloc_module_t const*, native_handle const*, int, int, int, int, int, android_ycbcr*)
+                0x00000000000054a0                private_module_t::private_module_t()
+                0x00000000000054a0                private_module_t::private_module_t()
+ .text          0x0000000000005644      0x448 /workspace/build01-hal-next/gralloc-link/objects/rockchip_alloc_device.o
+                0x00000000000056a4                rockchip_get_handle_type_by_heap_mask(unsigned int)
+                0x0000000000005754                rockchip_get_int_property(char const*, char const*)
+                0x0000000000005798                rockchip_log(int)
+                0x00000000000057dc                rockchip_set_version()
+                0x000000000000584c                rockchip_alloc_ion_open(private_module_t*)
+                0x0000000000005928                rockchip_alloc_ion_close(private_module_t*)
+                0x0000000000005a68                rockchip_heap_fix_by_platform(unsigned int*)
+ .text          0x0000000000005a8c        0x0 /workspace/build01-hal-next/gralloc-link/crt/crtend_so.o
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x0000000000005a8c        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x0000000000005a8c        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x0000000000005a8c        0x0 linker stubs
+ *(.v4_bx)
+ .v4_bx         0x0000000000005a8c        0x0 linker stubs
+
+.fini
+ *(SORT(.fini))
+                [!provide]                        PROVIDE (__etext, .)
+                [!provide]                        PROVIDE (_etext, .)
+                [!provide]                        PROVIDE (etext, .)
+
+.rodata         0x0000000000005a90     0x10c8
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x0000000000005a90      0x49b /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+ *fill*         0x0000000000005f2b        0x5 
+ .rodata        0x0000000000005f30      0x39c /workspace/build01-hal-next/gralloc-link/objects/framebuffer_device.o
+ *fill*         0x00000000000062cc        0x4 
+ .rodata        0x00000000000062d0      0x67f /workspace/build01-hal-next/gralloc-link/objects/gralloc_module.o
+ *fill*         0x000000000000694f        0x1 
+ .rodata        0x0000000000006950      0x208 /workspace/build01-hal-next/gralloc-link/objects/rockchip_alloc_device.o
+
+.note.android.ident
+                0x0000000000006b58       0x18
+ .note.android.ident
+                0x0000000000006b58       0x18 /workspace/build01-hal-next/gralloc-link/crt/crtbrand.o
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                [!provide]                        PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                [!provide]                        PROVIDE (__exidx_end, .)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x0000000000016d80                . = DATA_SEGMENT_ALIGN (0x10000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array     0x0000000000016d80        0x4
+ *(SORT(.init_array.*) SORT(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+ .init_array    0x0000000000016d80        0x4 /workspace/build01-hal-next/gralloc-link/objects/gralloc_module.o
+
+.fini_array     0x0000000000016d84        0x4
+ *(SORT(.fini_array.*) SORT(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+ .fini_array    0x0000000000016d84        0x4 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x0000000000016d88      0x138
+ *(.dynamic)
+ .dynamic       0x0000000000016d88      0x138 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+                0x0000000000016d88                _DYNAMIC
+
+.got            0x0000000000016ec0      0x140
+ *(.got.plt)
+ .got.plt       0x0000000000016ec0      0x134 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+                0x0000000000016ec0                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0000000000016ff4        0x0 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+ *(.got)
+ .got           0x0000000000016ff4        0xc /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+ *(.igot)
+                0x0000000000017000                . = DATA_SEGMENT_RELRO_END (., 0x0)
+
+.data           0x0000000000017000       0x18
+                [!provide]                        PROVIDE (__data_start, .)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000000017000        0x4 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+                0x0000000000017000                __dso_handle
+ .data          0x0000000000017004        0x0 /workspace/build01-hal-next/gralloc-link/crt/crtbrand.o
+ .data          0x0000000000017004        0x0 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+ .data          0x0000000000017004       0x10 /workspace/build01-hal-next/gralloc-link/objects/framebuffer_device.o
+ .data          0x0000000000017014        0x0 /workspace/build01-hal-next/gralloc-link/objects/gralloc_module.o
+ .data.rel.local
+                0x0000000000017014        0x4 /workspace/build01-hal-next/gralloc-link/objects/gralloc_module.o
+ .data          0x0000000000017018        0x0 /workspace/build01-hal-next/gralloc-link/objects/rockchip_alloc_device.o
+ .data          0x0000000000017018        0x0 /workspace/build01-hal-next/gralloc-link/crt/crtend_so.o
+
+.data1
+ *(.data1)
+                0x0000000000017018                _edata = .
+                [!provide]                        PROVIDE (edata, .)
+                0x0000000000017018                . = .
+                0x0000000000017018                __bss_start = .
+                0x0000000000017018                __bss_start__ = .
+
+.bss            0x0000000000017018      0x1c8
+ *(.dynbss)
+ .dynbss        0x0000000000017018        0x0 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000000017018        0x0 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+ .bss           0x0000000000017018        0x0 /workspace/build01-hal-next/gralloc-link/crt/crtbrand.o
+ .bss           0x0000000000017018        0x0 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+ .bss           0x0000000000017018        0x0 /workspace/build01-hal-next/gralloc-link/objects/framebuffer_device.o
+ .bss           0x0000000000017018      0x1c4 /workspace/build01-hal-next/gralloc-link/objects/gralloc_module.o
+                0x0000000000017018                HMI
+ .bss           0x00000000000171dc        0x4 /workspace/build01-hal-next/gralloc-link/objects/rockchip_alloc_device.o
+ .bss           0x00000000000171e0        0x0 /workspace/build01-hal-next/gralloc-link/crt/crtend_so.o
+ *(COMMON)
+                0x00000000000171e0                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x00000000000171e0                _bss_end__ = .
+                0x00000000000171e0                __bss_end__ = .
+                0x00000000000171e0                . = ALIGN (0x4)
+                0x00000000000171e0                . = SEGMENT_START ("ldata-segment", .)
+                0x00000000000171e0                . = ALIGN (0x4)
+                0x00000000000171e0                __end__ = .
+                0x00000000000171e0                _end = .
+                [!provide]                        PROVIDE (end, .)
+                0x00000000000171e0                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2d
+ *(.comment)
+ .comment       0x0000000000000000       0x2d /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+                                         0x2e (size before relaxing)
+ .comment       0x000000000000002d       0x2e /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+ .comment       0x000000000000002d       0x2e /workspace/build01-hal-next/gralloc-link/objects/framebuffer_device.o
+ .comment       0x000000000000002d       0x2e /workspace/build01-hal-next/gralloc-link/objects/gralloc_module.o
+ .comment       0x000000000000002d       0x2e /workspace/build01-hal-next/gralloc-link/objects/rockchip_alloc_device.o
+
+.ARM.attributes
+                0x0000000000000000       0x31
+ .ARM.attributes
+                0x0000000000000000       0x33 /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o
+ .ARM.attributes
+                0x0000000000000033       0x21 /workspace/build01-hal-next/gralloc-link/crt/crtbrand.o
+ .ARM.attributes
+                0x0000000000000054       0x33 /workspace/build01-hal-next/gralloc-link/objects/alloc_device.o
+ .ARM.attributes
+                0x0000000000000087       0x33 /workspace/build01-hal-next/gralloc-link/objects/framebuffer_device.o
+ .ARM.attributes
+                0x00000000000000ba       0x33 /workspace/build01-hal-next/gralloc-link/objects/gralloc_module.o
+ .ARM.attributes
+                0x00000000000000ed       0x33 /workspace/build01-hal-next/gralloc-link/objects/rockchip_alloc_device.o
+ .ARM.attributes
+                0x0000000000000120       0x21 /workspace/build01-hal-next/gralloc-link/crt/crtend_so.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_addr
+ *(.debug_addr)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(/workspace/build01-hal-next/gralloc-link/artifacts/gralloc.rk30board.so elf32-littlearm)

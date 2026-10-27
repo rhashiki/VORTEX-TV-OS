@@ -1,0 +1,22 @@
+[
+  {
+    "path": "system-images;android-24;default;armeabi-v7a",
+    "metadata_url": "https://dl.google.com/android/repository/sys-img/android/sys-img2-1.xml",
+    "metadata_sha256": "ebf2d810d9e0c0b511ae49ee6e8c671a8fa67d210d06f5e3e068f83244ece435",
+    "download_base": "https://dl.google.com/android/repository/sys-img/android/",
+    "archive": "armeabi-v7a-24_r07.zip",
+    "bytes": 283677512,
+    "checksum_type": null,
+    "checksum": "3454546b4eed2d6c3dd06d47757d6da9f4176033"
+  },
+  {
+    "path": "system-images;android-25;google_apis;armeabi-v7a",
+    "metadata_url": "https://dl.google.com/android/repository/sys-img/google_apis/sys-img2-1.xml",
+    "metadata_sha256": "d48bd8404b8d5ab42d84cc0907dfb9e55c8a50194bb07c8a864c331375dd8b3a",
+    "download_base": "https://dl.google.com/android/repository/sys-img/google_apis/",
+    "archive": "armeabi-v7a-25_r18.zip",
+    "bytes": 952973150,
+    "checksum_type": null,
+    "checksum": "a6f7c491e3bb937523dddfa287e07d785934e8a1"
+  }
+]

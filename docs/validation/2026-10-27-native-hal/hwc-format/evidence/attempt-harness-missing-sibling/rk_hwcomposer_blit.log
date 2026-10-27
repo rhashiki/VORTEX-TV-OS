@@ -1,0 +1,5 @@
+In file included from /workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_blit.cpp:13:0:
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer.h:28:36: fatal error: ../librkvpu/vpu_global.h: No such file or directory
+ #include "../librkvpu/vpu_global.h"
+                                    ^
+compilation terminated.

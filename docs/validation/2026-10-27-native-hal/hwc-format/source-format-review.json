@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "scope": "Incremental diagnostic varargs format correction and actual ARMv7 softfp HWC translation-unit compilation only; not AOSP make, linked HAL or graphics runtime.",
+  "source_refs": {
+    "hwcomposer": {
+      "path": "/workspace/build01-platform-next/research/mali-legacy/hwcomposer-rk3328",
+      "revision": "d3ec43f2f751123ca5e7bda2d07eded4c6352a35"
+    },
+    "libhardware": {
+      "path": "/workspace/build01-graphics-next/graphics/libhardware",
+      "revision": "d0c81ba009240cb9ab38d75d7e88190055349c2a"
+    },
+    "system_core": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core",
+      "revision": "ab5f1d24b072e36ddcf02439303050c501d9dc5b"
+    },
+    "bionic": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic",
+      "revision": "8b2e5b977118ebb8447cdf429c4a6be534c4fd1b"
+    }
+  },
+  "incremental_base_functional_patch": {
+    "path": "/workspace/build01-hal-next/hwc/hwc-fix-format-policy-and-hdmi-strings.patch",
+    "sha256": "9759c12cbf337bee74830ab6c5baea4e0b2e94230965a32e147179e7a554ad4c"
+  },
+  "patch": {
+    "file": "hwc-fix-diagnostic-formats.patch",
+    "sha256": "8d913f844160e3bb008c4c15b6bd0ad5bd5a26c1e1fb81a9c94b1f50597e12d9",
+    "bytes": 8021,
+    "strict_UTF8": true,
+    "ASCII_only": true,
+    "transport": "ordinary unified text patch; legacy source bytes preserved"
+  },
+  "changed_files": [
+    {
+      "file": "rk_hwcomposer.cpp",
+      "before_sha256": "61e93cc6bf4a9320abe53bc651c772a196e0965602c3fca00669ebf607d44e8e",
+      "after_sha256": "1628faa1a698116b7fb0e40b0ce7706f8e3c6acdc8548e0f9739076a597f869f"
+    },
+    {
+      "file": "rk_hwcomposer_blit.cpp",
+      "before_sha256": "73f14cdb9bf5ac68623d54dfb5b2a4da7213b44073c987bd1349ddbe7720b600",
+      "after_sha256": "364e2ea8ab8761661ef5c5cffb0864f76abf19c8d55a7e4e6ffb63d90d61359e"
+    },
+    {
+      "file": "rk_hwc_com.cpp",
+      "before_sha256": "1adf94e461a2f207a49926c41b7abab4e05bc6080bbcdeefb8147c1fef04b4a9",
+      "after_sha256": "a4adce6274988a0bde7daad2b103c4aa05e437643a290b294ba8985b9f569d51"
+    },
+    {
+      "file": "hwc_rga.cpp",
+      "before_sha256": "9c30eba3f34e34a7a7c1cd93dd97b3cd2231d28f7a6bdb634b9e36472e78088d",
+      "after_sha256": "1ab600e72667759103579d88c6e6116389c38aa9ee0fd3b7103278740b18426d"
+    }
+  ],
+  "corrections": [
+    "Use %f for promoted floating-point scale factors.",
+    "Use %p and void* arguments for handle/layer pointers, and %p for existing void* logical addresses.",
+    "Use %llx with unsigned long long for the protected usage constant.",
+    "Supply the missing handle argument in vop_gpu diagnostic.",
+    "Keep physical RK_U32 bus address as hexadecimal integer, not pointer."
+  ],
+  "baseline_affected_TUs": 4,
+  "baseline_affected_TUs_fail_with_Werror_format": true,
+  "baseline_format_errors": 17,
+  "final_actual_ARM_TUs": 8,
+  "final_all_exit_zero": true,
+  "final_format_diagnostics": 0,
+  "remaining_warnings_by_class": {
+    "-Wattributes": 3,
+    "-Wunused-variable": 60,
+    "-Wunused-parameter": 28,
+    "-Wunused-but-set-variable": 7,
+    "-Wunused-function": 4,
+    "unclassified": 7
+  },
+  "final_objects": [
+    {
+      "source": "rk_hwcomposer.cpp",
+      "source_sha256": "1628faa1a698116b7fb0e40b0ce7706f8e3c6acdc8548e0f9739076a597f869f",
+      "path": "/workspace/build01-hal-next/hwc-format/evidence/final/rk_hwcomposer.o",
+      "sha256": "8ad42c1c48862accc444b1572962c6fce3dcae8bf72f19d0872ec83eeee862f6",
+      "size_bytes": 89072,
+      "log": "evidence/final/rk_hwcomposer.log"
+    },
+    {
+      "source": "rk_hwcomposer_blit.cpp",
+      "source_sha256": "364e2ea8ab8761661ef5c5cffb0864f76abf19c8d55a7e4e6ffb63d90d61359e",
+      "path": "/workspace/build01-hal-next/hwc-format/evidence/final/rk_hwcomposer_blit.o",
+      "sha256": "b28479a096d4a11fc88400e3e4705cf0df4d5a6c9f58377c6aa2070ff1c47e9c",
+      "size_bytes": 15744,
+      "log": "evidence/final/rk_hwcomposer_blit.log"
+    },
+    {
+      "source": "rk_hwc_com.cpp",
+      "source_sha256": "a4adce6274988a0bde7daad2b103c4aa05e437643a290b294ba8985b9f569d51",
+      "path": "/workspace/build01-hal-next/hwc-format/evidence/final/rk_hwc_com.o",
+      "sha256": "a8e9cafbe6a3531ccd6062693badecc9d442c68a753a3f5b7d5b67234653a3ef",
+      "size_bytes": 5852,
+      "log": "evidence/final/rk_hwc_com.log"
+    },
+    {
+      "source": "rga_api.cpp",
+      "source_sha256": "9ee00b3bc44d7d23f1149dbc982d4d2311ea0e087385f49ec5579209c0a93506",
+      "path": "/workspace/build01-hal-next/hwc-format/evidence/final/rga_api.o",
+      "sha256": "4af90d88aaeec968389a60b1a8497626b7ee8bd9030603cfb3114efe5596bcde",
+      "size_bytes": 7888,
+      "log": "evidence/final/rga_api.log"
+    },
+    {
+      "source": "rk_hwcomposer_htg.cpp",
+      "source_sha256": "b32dd94ddff2d7e533981574966281562a7977cfa820732a190943d22035bfef",
+      "path": "/workspace/build01-hal-next/hwc-format/evidence/final/rk_hwcomposer_htg.o",
+      "sha256": "cfd148f6e7852e7fa4881813788cadbc7b168f078af302d59e5caea2685ca322",
+      "size_bytes": 3600,
+      "log": "evidence/final/rk_hwcomposer_htg.log"
+    },
+    {
+      "source": "hwc_ipp.cpp",
+      "source_sha256": "26fe2ef9e98d73ca8dba9a39a425d466f924e33f8b54ebebcd9634e0c0389faa",
+      "path": "/workspace/build01-hal-next/hwc-format/evidence/final/hwc_ipp.o",
+      "sha256": "d26a0dc25454f18e69f5d566c139fa555e9fe9db058abfae69942e7a1ab04250",
+      "size_bytes": 6680,
+      "log": "evidence/final/hwc_ipp.log"
+    },
+    {
+      "source": "hwc_rga.cpp",
+      "source_sha256": "1ab600e72667759103579d88c6e6116389c38aa9ee0fd3b7103278740b18426d",
+      "path": "/workspace/build01-hal-next/hwc-format/evidence/final/hwc_rga.o",
+      "sha256": "581887c4cdf049362ef1ee55264676c5fc4ab77806070721b0b89934df9f22bc",
+      "size_bytes": 11836,
+      "log": "evidence/final/hwc_rga.log"
+    },
+    {
+      "source": "TVInfo.cpp",
+      "source_sha256": "7fb0d72305687709f8ee572204df32ec1ef027126fe3ae66d3cd4edaf02870e4",
+      "path": "/workspace/build01-hal-next/hwc-format/evidence/final/TVInfo.o",
+      "sha256": "685bdfab9c45936f8cff0ba28d9536e329e3b37986fd04778561f7c9988eb9a8",
+      "size_bytes": 4712,
+      "log": "evidence/final/TVInfo.log"
+    }
+  ],
+  "git_apply_replay": {
+    "commands": [
+      {
+        "command": [
+          "git",
+          "apply",
+          "--check",
+          "/workspace/build01-hal-next/hwc-format/hwc-fix-diagnostic-formats.patch"
+        ],
+        "exit_code": 0,
+        "output": ""
+      },
+      {
+        "command": [
+          "git",
+          "apply",
+          "/workspace/build01-hal-next/hwc-format/hwc-fix-diagnostic-formats.patch"
+        ],
+        "exit_code": 0,
+        "output": "/workspace/build01-hal-next/hwc-format/hwc-fix-diagnostic-formats.patch:22: trailing whitespace.\n                    ALOGD(\"layer[%d],fmt=%d,usage=%x,protect=%llx\",i,handle->format,handle->usage,(unsigned long long)GRALLOC_USAGE_PROTECTED);                   \n/workspace/build01-hal-next/hwc-format/hwc-fix-diagnostic-formats.patch:58: trailing whitespace.\n                ALOGD(\"policy skip,flag=%x,hanlde=%p,line=%d,name=%s\",layer->flags,(void *)handle,__LINE__,layer->LayerName);              \nwarning: 2 lines add whitespace errors.\n"
+      }
+    ],
+    "byte_identical": true
+  },
+  "harness_note": "First private compile attempt lacked the real sibling librkvpu source symlink required by ../librkvpu/vpu_global.h; failure was preserved. Restoring the same genuine source path layout changed no source or headers. Earlier replace-script count assertion exposed repeated inactive log strings and was corrected before successful build.",
+  "limits": [
+    "The strict format check covers the recorded RK322x/RK322X_BOX/DMA_BUF flags only, not every upstream feature/platform configuration.",
+    "18 log call sites were changed, including repeated identical pointer log patterns outside the active diagnostic branch; the active branch had17format errors before.",
+    "Other warnings remain visible and were not suppressed; there is no zero-warning claim.",
+    "No HAL link, dlopen, graphics ioctl, hardware, Android system build or boot was performed by this task."
+  ],
+  "actual_compiler_dependency_count": 196
+}

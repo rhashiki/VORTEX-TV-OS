@@ -1,0 +1,4 @@
+/workspace/build01-hal-next/hwc/source/TVInfo.cpp:4:18: fatal error: math.h: No such file or directory
+ #include <math.h>
+                  ^
+compilation terminated.

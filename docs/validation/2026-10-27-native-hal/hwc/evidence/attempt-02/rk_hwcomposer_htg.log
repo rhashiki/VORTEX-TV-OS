@@ -1,0 +1,26 @@
+In file included from /workspace/build01-platform-next/research/rockchip-system-core/include/cutils/log.h:1:0,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer_htg.cpp:22:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer_htg.cpp: In function ‘int rk_check_hdmi_state()’:
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:618:39: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+     __android_log_print(prio, tag, fmt)
+                                       ^
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:461:5: note: in expansion of macro ‘android_printLog’
+     android_printLog(priority, tag, __VA_ARGS__)
+     ^~~~~~~~~~~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:453:5: note: in expansion of macro ‘LOG_PRI’
+     LOG_PRI(ANDROID_##priority, tag, __VA_ARGS__)
+     ^~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:128:27: note: in expansion of macro ‘ALOG’
+ #define ALOGI(...) ((void)ALOG(LOG_INFO, LOG_TAG, __VA_ARGS__))
+                           ^~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer_htg.cpp:65:3: note: in expansion of macro ‘ALOGI’
+   ALOGI("Read HDMI connect state = %d");
+   ^~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer_htg.cpp: In function ‘void rk_check_hdmi_uevents(const char*, int)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer_htg.cpp:79:9: warning: unused variable ‘hdmiStatus’ [-Wunused-variable]
+     int hdmiStatus = -1;
+         ^~~~~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer_htg.cpp: In function ‘void* rk_hwc_hdmi_thread(void*)’:
+/workspace/build01-hal-next/hwc/source/rk_hwcomposer_htg.cpp:103:33: warning: unused parameter ‘arg’ [-Wunused-parameter]
+ void  *rk_hwc_hdmi_thread(void *arg)
+                                 ^~~

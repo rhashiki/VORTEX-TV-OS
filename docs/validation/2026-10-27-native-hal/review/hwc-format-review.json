@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "scope": "Independent read-only review of incremental diagnostic format patch, existing actual ARM object compilation and patch replay; no build rerun, HAL link/load, graphics runtime or hardware claims.",
+  "findings": [],
+  "patch": {
+    "path": "/workspace/build01-hal-next/hwc-format/hwc-fix-diagnostic-formats.patch",
+    "sha256": "8d913f844160e3bb008c4c15b6bd0ad5bd5a26c1e1fb81a9c94b1f50597e12d9",
+    "applies_after_functional_patch_sha256": "9759c12cbf337bee74830ab6c5baea4e0b2e94230965a32e147179e7a554ad4c",
+    "ASCII_and_strict_UTF8_transport": true,
+    "contains_NUL": false,
+    "git_apply_check_against_functional_base": "pass",
+    "four_source_files_replay_byte_identical": true,
+    "legacy_non_ASCII_source_bytes_preserved": true
+  },
+  "argument_type_review": [
+    {
+      "site": "LayerZoneCheck scale factors",
+      "actual_types": "float hfactor/vfactor; default varargs promotion to double",
+      "correction": "%d -> %f",
+      "assessment": "Correct printf double argument format; no conversion of calculation values."
+    },
+    {
+      "site": "private handle and framebuffer layer diagnostics",
+      "actual_types": "private_handle_t* and hwc_layer_1_t*",
+      "correction": "%p with explicit (void*) casts",
+      "assessment": "Correct pointer argument representation; no pointer dereference added."
+    },
+    {
+      "site": "protected usage flag diagnostic",
+      "actual_types": "GRALLOC_USAGE_PROTECTED enumerator within extended usage enum",
+      "correction": "%llx with explicit unsigned long long cast",
+      "assessment": "Cast fixes exact varargs width/type, independent of enum underlying type."
+    },
+    {
+      "site": "vop_gpu skipped-layer diagnostic",
+      "actual_types": "loop-local private_handle_t* assigned from this layer before log",
+      "correction": "Adds formerly missing handle argument, cast to void*, for %p",
+      "assessment": "Removes missing variadic argument read; retains log condition and composition policy."
+    },
+    {
+      "site": "RGA logical base diagnostics",
+      "actual_types": "srcLogical/dstLogical are void*; active RK322x SRC_HANDLE_BASE/DST_HANDLE_BASE resolve to private_handle_t::base of type void*",
+      "correction": "%x -> %p",
+      "assessment": "Correct for recorded RK322x/Mali400 branch. No claim for other platform variants."
+    },
+    {
+      "site": "RGA/video physical address diagnostics",
+      "actual_types": "dstPhysical is unsigned int; FrameBusAddr element is uint32_t / RK_U32 unsigned int on recorded ARM ABI",
+      "correction": "Keep %x / replace pointer %p with 0x%x",
+      "assessment": "Correct integer hexadecimal representation; avoids treating bus address as pointer."
+    }
+  ],
+  "compilation_evidence": {
+    "baseline_actual_TUs": 4,
+    "baseline_all_fail_under_Werror_format": true,
+    "baseline_format_errors_verified": 17,
+    "corrected_actual_ARM_TUs": 8,
+    "corrected_all_exit_zero": true,
+    "Werror_format_recorded_on_all_eight": true,
+    "format_suppression_not_used": true,
+    "final_format_diagnostics": 0,
+    "all_current_source_and_object_hashes_verified": true,
+    "remaining_warning_class_total_verified": 109,
+    "remaining_warnings_visible": true
+  },
+  "frozen_manifests_verified": [
+    {
+      "file": "evidence.sha256",
+      "sha256": "993ad6670df045ade07ffdce2a259dca92259fb019103d9b1f977d5661d3375d",
+      "verified_entries": 63
+    }
+  ],
+  "limits": [
+    "The strict format result covers the recorded RK322x/RK322X_BOX/DMA_BUF compile configuration only.",
+    "Other warnings remain; this is not a zero-warning build or a review of every dormant feature/platform branch.",
+    "The patch changes diagnostic formatting/arguments only; it does not validate composition, ioctl, ION/RGA, buffer lifetime, linked HALs, Android runtime or hardware."
+  ]
+}

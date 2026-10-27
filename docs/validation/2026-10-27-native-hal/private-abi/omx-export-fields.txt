@@ -1,0 +1,22 @@
+
+/workspace/build01-sd-next/vendor-sd/proprietary/lib/libgralloc_priv_omx.so:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000750 <Rockchip_get_gralloc_private@@Base>:
+     750:	b159      	cbz	r1, 76a <Rockchip_get_gralloc_private@@Base+0x1a>
+     752:	6a82      	ldr	r2, [r0, #40]	; 0x28
+     754:	600a      	str	r2, [r1, #0]
+     756:	68c2      	ldr	r2, [r0, #12]
+     758:	604a      	str	r2, [r1, #4]
+     75a:	6b02      	ldr	r2, [r0, #48]	; 0x30
+     75c:	608a      	str	r2, [r1, #8]
+     75e:	6ac2      	ldr	r2, [r0, #44]	; 0x2c
+     760:	60ca      	str	r2, [r1, #12]
+     762:	69c0      	ldr	r0, [r0, #28]
+     764:	6108      	str	r0, [r1, #16]
+     766:	2000      	movs	r0, #0
+     768:	4770      	bx	lr
+     76a:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
+     76e:	4770      	bx	lr

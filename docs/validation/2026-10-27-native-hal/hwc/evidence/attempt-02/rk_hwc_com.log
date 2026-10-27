@@ -1,0 +1,22 @@
+In file included from /workspace/build01-platform-next/research/rockchip-system-core/include/cutils/log.h:1:0,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwcomposer.h:18,
+                 from /workspace/build01-hal-next/hwc/source/rk_hwc_com.cpp:15:
+/workspace/build01-hal-next/hwc/source/rk_hwc_com.cpp: In function ‘hwcSTATUS hwcGetBufferInfo(hwcContext*, private_handle_t*, void**, unsigned int*, unsigned int*, unsigned int*, unsigned int*, void**)’:
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:618:39: warning: format ‘%p’ expects argument of type ‘void*’, but argument 4 has type ‘RK_U32 {aka unsigned int}’ [-Wformat=]
+     __android_log_print(prio, tag, fmt)
+                                       ^
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:461:5: note: in expansion of macro ‘android_printLog’
+     android_printLog(priority, tag, __VA_ARGS__)
+     ^~~~~~~~~~~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:453:5: note: in expansion of macro ‘LOG_PRI’
+     LOG_PRI(ANDROID_##priority, tag, __VA_ARGS__)
+     ^~~~~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:91:29: note: in expansion of macro ‘ALOG’
+ #define __ALOGV(...) ((void)ALOG(LOG_VERBOSE, LOG_TAG, __VA_ARGS__))
+                             ^~~~
+/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h:95:20: note: in expansion of macro ‘__ALOGV’
+ #define ALOGV(...) __ALOGV(__VA_ARGS__)
+                    ^~~~~~~
+/workspace/build01-hal-next/hwc/source/rk_hwc_com.cpp:214:17: note: in expansion of macro ‘ALOGV’
+                 ALOGV("hwcGetBufferInfo:video info phy_addr=%p,w=%d,h=%d",pFrame->FrameBusAddr[0],*Width,*Height);
+                 ^~~~~

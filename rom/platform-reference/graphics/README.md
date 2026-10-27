@@ -1,8 +1,11 @@
 # Contrato framebuffer do candidato RK322x
 
 Este patchset opt-in corrige a divergência **medida** entre o libhardware
-selecionado e o kernel SDK. Não aprova os blobs Mali/OMX, não foi ligado como
-HAL e não gera uma imagem Android. Aplicá-lo exige recompilar todos os
+selecionado e o kernel SDK. Não aprova os blobs Mali/OMX ou uma imagem Android.
+A [continuação nativa](NATIVE_HAL_BUILD.md) compilou também HWC, ligou os dois
+módulos manualmente e verificou seu carregamento no linker Android sob QEMU;
+a plataforma Android completa e a execução gráfica continuam pendentes.
+Aplicá-lo exige recompilar todos os
 consumidores; não atualizar só o header e reutilizar HALs pré-compiladas.
 
 ## Fontes e ordem
@@ -50,14 +53,15 @@ gerados do kernel compilado, foram usados nas medições ARM. O contrato
 corrigido coincide em 94 medidas de tamanho, alinhamento e campos. A asserção
 de tamanho falha com o header anterior e passa depois. Os quatro arquivos
 C++ reais do gralloc também compilaram como objetos ARM com Bionic e headers
-Android. Isso não é link de `gralloc.rk30board.so` pelo Android nem execução
-em dispositivo. HWC não foi compilado nesse ensaio.
+Android. Esse ensaio inicial não fez link de `gralloc.rk30board.so` pelo Android
+nem compilou HWC. Os resultados posteriores de HWC/link manual estão na
+receita nativa acima, sem aprovação de execução gráfica em dispositivo.
 
 Foram conferidos os patches nas fontes fixadas e a expansão GNUmake em
 cenários limpos/residuais e outras plataformas. Esse harness desabilita
 shells e registro de módulos; verifica somente seleção, não compila HALs.
 
-Ainda faltam o link Android completo, inventário final sem as cópias antigas,
+Ainda faltam o build/link Android completo, inventário final sem as cópias antigas,
 contrato privado dos blobs Mali/OMX, demais ioctls ION/RGA, fences e execução
 real. Nem a igualdade dos layouts nem uma compilação C++ provam esses pontos.
 

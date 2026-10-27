@@ -1,0 +1,15 @@
+PASS null-list-rejected
+PASS empty-list-rejected
+PASS null-handle-rejected
+PASS RGBA-accepted
+PASS BGRA-accepted
+FAIL RGB565-rejected
+FAIL RGBX-rejected
+PASS format-zero-rejected
+FAIL unknown-format-rejected
+FAIL 0
+FAIL 1
+FAIL 42
+FAIL 1234
+FAIL 123456789
+TOTAL checks=14 failures=8

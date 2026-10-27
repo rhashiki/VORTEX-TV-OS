@@ -1,0 +1,36 @@
+
+Dynamic section at offset 0x57c80 contains 33 entries:
+  Tag        Type                         Name/Value
+ 0x00000003 (PLTGOT)                     0x5f01c
+ 0x00000002 (PLTRELSZ)                   8112 (bytes)
+ 0x00000017 (JMPREL)                     0x2fc0c
+ 0x00000014 (PLTREL)                     REL
+ 0x6000000f (Operating System specific: 6000000f)        0x2c21c
+ 0x60000010 (Operating System specific: 60000010)        0x39f0
+ 0x00000013 (RELENT)                     8 (bytes)
+ 0x6ffffffa (RELCOUNT)                   605
+ 0x00000006 (SYMTAB)                     0x61a0
+ 0x0000000b (SYMENT)                     16 (bytes)
+ 0x00000005 (STRTAB)                     0xc7f0
+ 0x0000000a (STRSZ)                      115082 (bytes)
+ 0x6ffffef5 (GNU_HASH)                   0x2897c
+ 0x00000001 (NEEDED)                     Shared library: [liblog.so]
+ 0x00000001 (NEEDED)                     Shared library: [libcutils.so]
+ 0x00000001 (NEEDED)                     Shared library: [libutils.so]
+ 0x00000001 (NEEDED)                     Shared library: [libc++.so]
+ 0x00000001 (NEEDED)                     Shared library: [libdl.so]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so]
+ 0x00000001 (NEEDED)                     Shared library: [libm.so]
+ 0x0000000e (SONAME)                     Library soname: [libbinder.so]
+ 0x0000001a (FINI_ARRAY)                 0x57380
+ 0x0000001c (FINI_ARRAYSZ)               4 (bytes)
+ 0x00000019 (INIT_ARRAY)                 0x57384
+ 0x0000001b (INIT_ARRAYSZ)               56 (bytes)
+ 0x0000001e (FLAGS)                      BIND_NOW
+ 0x6ffffffb (FLAGS_1)                    Flags: NOW
+ 0x6ffffff0 (VERSYM)                     0x2b4e4
+ 0x6ffffffc (VERDEF)                     0x2c1b0
+ 0x6ffffffd (VERDEFNUM)                  1
+ 0x6ffffffe (VERNEED)                    0x2c1cc
+ 0x6fffffff (VERNEEDNUM)                 2
+ 0x00000000 (NULL)                       0x0

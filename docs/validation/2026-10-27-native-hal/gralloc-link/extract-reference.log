@@ -1,0 +1,13 @@
+debugfs 1.47.2 (1-Jan-2025)
+/lib: File not found by ext2_lookup 
+
+debugfs 1.47.2 (1-Jan-2025)
+/bin/linker: File not found by ext2_lookup 
+
+{
+  "archive_sha256": "1d38666f6e64f983e0d3ad86ef5c42d213685fcd6932a0f2dfbcee0e79767cc2",
+  "filesystem_image_logical_bytes": 2684354560,
+  "filesystem_image_sha256": "8501b327b24bcc8f24a030a13a0d8637653dc9876145d50c6110b1aef534a3b3",
+  "filesystem_image_allocated_bytes": 695209984,
+  "read_only_debugfs": true
+}

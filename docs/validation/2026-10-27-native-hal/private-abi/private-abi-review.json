@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "scope": "Full-header ARM layout measured and compared with selected read-only blob disassembly fields only; no private ABI or device/runtime approval.",
+  "source_revisions": {
+    "gralloc": "c92fb8cd8becd57b025149f2861a2072b092ddea",
+    "librkvpu": "aa92e18a517967623a8bc0f1bc0752c9807d0743",
+    "vendor": "50c7170ecb4bd907059db37f09f4767b301f2d15"
+  },
+  "layout_measurements": 57,
+  "selected_equality_checks": {
+    "native_version_offset": true,
+    "native_version_size12": true,
+    "native_numfds1": true,
+    "native_numints22": true,
+    "native_magic": true,
+    "native_serialized_size104": true,
+    "ANativeWindowBuffer_handle_offset60": true,
+    "Mali_observed_flags_offset": true,
+    "Mali_observed_fd_offset": true,
+    "Mali_observed_offset_offset": true,
+    "Mali_observed_base_offset": true,
+    "Mali_observed_size_offset": true,
+    "Mali_observed_format_offset": true,
+    "Mali_observed_share_fd_offset": true,
+    "OMX_observed_format_offset": true,
+    "OMX_observed_share_fd_offset": true,
+    "OMX_observed_type_offset": true,
+    "OMX_observed_stride_offset": true,
+    "OMX_observed_size_offset": true
+  },
+  "Mali_fingerprint": {
+    "blob_sha256": "82f5bc8742026be1ed67db15eb50be7361b3be926d6f90a2d1711163c00ace1c",
+    "checks": [
+      {
+        "address": "0x10278-0x10280",
+        "handle_offset": 0,
+        "required_value": 12,
+        "interpretation": "native_handle version"
+      },
+      {
+        "address": "0x10284-0x10288",
+        "handle_offset": 4,
+        "required_value": 1,
+        "interpretation": "native_handle numFds"
+      },
+      {
+        "address": "0x1028c-0x10294",
+        "handle_offset": 8,
+        "required_value": 22,
+        "interpretation": "native_handle numInts"
+      },
+      {
+        "address": "0x10298-0x102a8",
+        "handle_offset": 16,
+        "required_value": "0x03141592",
+        "interpretation": "private magic"
+      }
+    ],
+    "observed_fields": {
+      "flags": 20,
+      "fd": 88,
+      "offset": 92,
+      "base": 56,
+      "size": 28,
+      "format": 40,
+      "share_fd": 12
+    }
+  },
+  "OMX_export": {
+    "symbol": "Rockchip_get_gralloc_private",
+    "address": "0x750",
+    "sha256": "d3b5d6c61c8c2599329242020559e02e8b7e6c978341f6ecee141da6247ce82c",
+    "matches_pinned_git_blob": true,
+    "fields": [
+      {
+        "field": "format",
+        "source_offset": 40,
+        "output_offset": 0
+      },
+      {
+        "field": "share_fd",
+        "source_offset": 12,
+        "output_offset": 4
+      },
+      {
+        "field": "type",
+        "source_offset": 48,
+        "output_offset": 8
+      },
+      {
+        "field": "stride",
+        "source_offset": 44,
+        "output_offset": 12
+      },
+      {
+        "field": "size",
+        "source_offset": 28,
+        "output_offset": 16
+      }
+    ],
+    "command": [
+      "/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-objdump",
+      "-d",
+      "--start-address=0x750",
+      "--stop-address=0x770",
+      "/workspace/build01-sd-next/vendor-sd/proprietary/lib/libgralloc_priv_omx.so"
+    ]
+  },
+  "actual_OMX_source_object": {
+    "scope": "Actual pinned OMX private bridge source compiled to an ARM relocatable object only, no shared-library link or runtime.",
+    "source": "/workspace/build01-platform-next/research/rockchip-librkvpu/omx_get_gralloc_private/gralloc_priv_omx.cpp",
+    "source_sha256": "0803d2bc7f423fa61cc876489892902ed7d08290faded2871d7ff9565e7c422d",
+    "command": [
+      "/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-g++",
+      "-I",
+      "/workspace/build01-platform-next/research/rockchip-librkvpu/omx_get_gralloc_private",
+      "-c",
+      "-std=gnu++11",
+      "-fPIC",
+      "-march=armv7-a",
+      "-mfloat-abi=softfp",
+      "-mfpu=neon",
+      "-DANDROID",
+      "-D__ANDROID__",
+      "-D__ANDROID_API__=25",
+      "-DGRALLOC_32_BITS",
+      "-DSTANDARD_LINUX_SCREEN",
+      "-DPLATFORM_SDK_VERSION=25",
+      "-DLOG_TAG=\"gralloc\"",
+      "-nostdinc",
+      "-nostdinc++",
+      "-I",
+      "/workspace/build01-platform-next/research/mali-legacy/gralloc-rk3328",
+      "-I",
+      "/workspace/build01-graphics-next/graphics/libhardware/include",
+      "-I",
+      "/workspace/build01-platform-next/research/rockchip-system-core/include",
+      "-I",
+      "/workspace/build01-graphics-next/graphics/hal-build/native-opengl-include",
+      "-isystem",
+      "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include",
+      "-isystem",
+      "/workspace/build01-platform-next/research/rockchip-bionic/libc/include",
+      "-isystem",
+      "/workspace/build01-platform-next/research/rockchip-bionic/libc/arch-arm/include",
+      "-isystem",
+      "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi",
+      "-isystem",
+      "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-arm",
+      "-isystem",
+      "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/android/uapi",
+      "-isystem",
+      "/workspace/build01-sd/kernel-work/toolchain/lib/gcc/arm-linux-gnueabihf/6.3.1/include",
+      "-MD",
+      "-MF",
+      "/workspace/build01-hal-next/private-abi/gralloc_priv_omx.d",
+      "/workspace/build01-platform-next/research/rockchip-librkvpu/omx_get_gralloc_private/gralloc_priv_omx.cpp",
+      "-o",
+      "/workspace/build01-hal-next/private-abi/gralloc_priv_omx.o"
+    ],
+    "exit_code": 0,
+    "object_sha256": "f5825985677e9234f4e0af389ffd5b558080d86a73c0b1ae767c53b848db07e6"
+  },
+  "limits": [
+    "Only named fields/paths are compared. Other layouts, lifetime, ownership, usage, coherency, allocation, fences, ION/RGA/VPU/GPU semantics remain unverified.",
+    "No GPU rendering, Android system boot, firmware flash or physical hardware operation.",
+    "OMX source object compilation is not a link or byte equality with the vendor prebuilt."
+  ]
+}

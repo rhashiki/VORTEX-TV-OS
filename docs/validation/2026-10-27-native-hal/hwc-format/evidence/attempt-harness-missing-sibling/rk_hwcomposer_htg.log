@@ -1,0 +1,8 @@
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_htg.cpp: In function ‘void rk_check_hdmi_uevents(const char*, int)’:
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_htg.cpp:79:9: warning: unused variable ‘hdmiStatus’ [-Wunused-variable]
+     int hdmiStatus = -1;
+         ^~~~~~~~~~
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_htg.cpp: In function ‘void* rk_hwc_hdmi_thread(void*)’:
+/workspace/build01-hal-next/hwc-format/source/rk_hwcomposer_htg.cpp:103:33: warning: unused parameter ‘arg’ [-Wunused-parameter]
+ void  *rk_hwc_hdmi_thread(void *arg)
+                                 ^~~

@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "scope": "Final frozen evidence and compiled artifact integrity cross-check only; no additional runtime/graphics/hardware test.",
+  "base_commit": "0928d6a1081b9fd373769e0e7fa6f9282134fdc8",
+  "frozen_snapshots": {
+    "hwc": {
+      "manifest_sha256": "94d3722d3bb6b004ba80727c2f10c8c4e5c0ea996cb4d70de6a9705fd084af51",
+      "verified_files": 68
+    },
+    "hwc-format": {
+      "manifest_sha256": "993ad6670df045ade07ffdce2a259dca92259fb019103d9b1f977d5661d3375d",
+      "verified_files": 63
+    },
+    "private-abi": {
+      "manifest_sha256": "5945205d5c952b7748400d49500d577b54c558f1c22d4ba90a305741c7f54ae2",
+      "verified_files": 29
+    },
+    "gralloc-link": {
+      "manifest_sha256": "049ac1c764b02dae5d85c50a99574781b9e3dc73a3cf3f5468748ba403f6c687",
+      "verified_files": 104
+    },
+    "loader": {
+      "manifest_sha256": "88eee157c43bbb50a1e3b0f01be9cfa5c7e4c0394f9e5d7d187f5c0a2fb6cb5d",
+      "verified_files": 30
+    },
+    "review/hwc-review.sha256": {
+      "manifest_sha256": "84d563ecd04b11bab95dba349c58e40ed20f6a41d189d73f352b57a6b397aa3b",
+      "verified_files": 2
+    },
+    "review/private-abi-review.sha256": {
+      "manifest_sha256": "f374004d218864e5d5d3c429df09d5f1498cdef4bd33fdfc0541626b442c98e1",
+      "verified_files": 5
+    },
+    "review/native-link-loader-review.sha256": {
+      "manifest_sha256": "00b639b0a73798d86ac9c947fd1355df756091aa5bea03a677354af3f70a24a3",
+      "verified_files": 4
+    }
+  },
+  "patch_hashes": {
+    "rom/platform-reference/graphics/patches/0005-hwc-fix-format-policy-and-hdmi-strings.patch": "9759c12cbf337bee74830ab6c5baea4e0b2e94230965a32e147179e7a554ad4c",
+    "rom/platform-reference/graphics/patches/0006-hwc-fix-diagnostic-formats.patch": "8d913f844160e3bb008c4c15b6bd0ad5bd5a26c1e1fb81a9c94b1f50597e12d9"
+  },
+  "linked_HALs": [
+    {
+      "module": "gralloc.rk30board.so",
+      "bytes": 40044,
+      "sha256": "757c7bd142bf2d65330e1f4c972e8664706604018a89b1bd0963e5f91e7564a3",
+      "ELF_class": "ELF32",
+      "machine": "ARM"
+    },
+    {
+      "module": "hwcomposer.rk30board.so",
+      "bytes": 140140,
+      "sha256": "585842ade2e8bde7d2f0e8cf9cd9fca43762accf484671266efd1f4106f7241f",
+      "ELF_class": "ELF32",
+      "machine": "ARM"
+    }
+  ],
+  "strict_link_and_actual_reference_ELF_providers_verified": true,
+  "loader_checks_passed": 5,
+  "host_HWC_behavior_cases": 14,
+  "host_HWC_baseline_failures": 8,
+  "final_HWC_functions_match_tested_bodies": true,
+  "final_HWC_translation_units": 8,
+  "baseline_format_errors": 17,
+  "final_format_diagnostics": 0,
+  "private_layout_values_measured": 57,
+  "private_selected_static_equalities": 19,
+  "app_source_unchanged": true,
+  "full_AOSP_build": "not_performed",
+  "full_Android_or_SD_image": "not_produced",
+  "graphics_device_calls": "not_tested",
+  "physical_boot": "not_performed"
+}

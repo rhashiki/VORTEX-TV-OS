@@ -1,0 +1,32 @@
+
+Dynamic section at offset 0x17aec contains 29 entries:
+  Tag        Type                         Name/Value
+ 0x00000003 (PLTGOT)                     0x18c48
+ 0x00000002 (PLTRELSZ)                   1880 (bytes)
+ 0x00000017 (JMPREL)                     0x4fc4
+ 0x00000014 (PLTREL)                     REL
+ 0x00000011 (REL)                        0x483c
+ 0x00000012 (RELSZ)                      1928 (bytes)
+ 0x00000013 (RELENT)                     8 (bytes)
+ 0x6ffffffa (RELCOUNT)                   232
+ 0x00000006 (SYMTAB)                     0x1c0
+ 0x0000000b (SYMENT)                     16 (bytes)
+ 0x00000005 (STRTAB)                     0x1e20
+ 0x0000000a (STRSZ)                      7268 (bytes)
+ 0x6ffffef5 (GNU_HASH)                   0x3a84
+ 0x00000001 (NEEDED)                     Shared library: [liblog.so]
+ 0x00000001 (NEEDED)                     Shared library: [libc++.so]
+ 0x00000001 (NEEDED)                     Shared library: [libdl.so]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so]
+ 0x00000001 (NEEDED)                     Shared library: [libm.so]
+ 0x0000000e (SONAME)                     Library soname: [libcutils.so]
+ 0x0000001a (FINI_ARRAY)                 0x17fc0
+ 0x0000001c (FINI_ARRAYSZ)               4 (bytes)
+ 0x0000001e (FLAGS)                      BIND_NOW
+ 0x6ffffffb (FLAGS_1)                    Flags: NOW
+ 0x6ffffff0 (VERSYM)                     0x4444
+ 0x6ffffffc (VERDEF)                     0x47d0
+ 0x6ffffffd (VERDEFNUM)                  1
+ 0x6ffffffe (VERNEED)                    0x47ec
+ 0x6fffffff (VERNEEDNUM)                 2
+ 0x00000000 (NULL)                       0x0
