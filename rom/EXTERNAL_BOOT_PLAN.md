@@ -1,5 +1,13 @@
 # Testar por microSD antes da instalação interna
 
+**Objetivo final esclarecido pelo proprietário:** um [cartão SD de instalação
+do Vortex](SD_INSTALLER_PLAN.md), semelhante ao disco de instalação do Windows:
+iniciar pelo cartão, confirmar a preparação das partições internas, instalar
+o sistema e retirar o cartão para o próximo boot. Este documento conserva o
+teste externo como etapa de desenvolvimento; ele não substitui esse instalador.
+O perfil SD de teste atual desabilita o armazenamento interno e precisa
+permanecer separado do futuro perfil de instalação.
+
 Estratégia proposta pelo proprietário em 25/10/2026: iniciar o Vortex por
 cartão SD ou pendrive, testar na TV Box e só depois preparar a instalação
 definitiva. **Prioridade de investigação: microSD.** Pendrive fica condicionado

@@ -23,6 +23,22 @@ actually demonstrated; lack of extra information does not establish them.
 
 ## Working goal
 
+The owner clarified the final delivery: a **bootable SD installer**, analogous
+to a Windows installation disc. It should boot an installation environment,
+identify internal storage, verify a compatible Android payload, request explicit
+confirmation before removing data, install/verify the internal partitions, then
+instruct removal of the card for internal boot. See
+[SD installer plan](../rom/SD_INSTALLER_PLAN.md). This is a planned workflow,
+not an implemented installer or a physical flashing operation already authorized
+for an unknown image. Do not request more board information from the owner;
+future discovery should be automatic in the installation environment.
+
+Keep the external-test profile as a separate development/validation stage.
+Its kernel disables NAND/eMMC and cannot install to internal storage. The
+installer needs its own reviewed kernel/ramdisk/storage support and a complete
+Android payload; a small Linux/initramfs environment is an option to investigate.
+Do not promise PC-style automatic SD boot on this untested RK322x unit.
+
 Owner's preferred hardware validation sequence: build/audit a microSD test image,
 test externally on the TV Box, then prepare permanent internal installation.
 USB mass-storage boot is conditional on bootloader support. Follow
