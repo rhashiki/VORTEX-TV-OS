@@ -9,3 +9,7 @@ local.properties
 *.aab
 *.img
 assets/bootanimation.zip
+
+# Native Vortex TV OS one-time device provisioning; never commit secrets.
+rom/prebuilt/catalog-access
+rom/prebuilt/VortexTV.apk
