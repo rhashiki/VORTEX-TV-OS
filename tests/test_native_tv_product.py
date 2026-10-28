@@ -24,7 +24,7 @@ class NativeVortexTVProductTest(unittest.TestCase):
 
     def test_os_remains_unvalidated_as_firmware(self):
         readme=(ROOT/"rom/prebuilt/README.md").read_text()
-        self.assertIn("nenhuma imagem inicializável",readme)
+        self.assertIn("não contém imagem inicializável",readme)
         self.assertIn("os.vortex.tv.stream",readme)
         self.assertIn("sem login",readme)
 
