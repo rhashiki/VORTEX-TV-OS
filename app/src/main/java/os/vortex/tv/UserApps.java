@@ -26,7 +26,12 @@ final class UserApps {
                 if (info.activityInfo == null || info.activityInfo.applicationInfo == null) continue;
                 ApplicationInfo app = info.activityInfo.applicationInfo;
                 if (c.getPackageName().equals(app.packageName)) continue;
-                if ((app.flags & ApplicationInfo.FLAG_SYSTEM) != 0 &&
+                // VortexTV is intentionally a preinstalled *system app*.
+                // Keep hiding unrelated factory apps, but always show VortexTV
+                // in the same launcher grid as user-installed APKs.
+                final boolean nativeStreaming="os.vortex.tv.stream".equals(app.packageName);
+                if (!nativeStreaming &&
+                    (app.flags & ApplicationInfo.FLAG_SYSTEM) != 0 &&
                     (app.flags & ApplicationInfo.FLAG_UPDATED_SYSTEM_APP) == 0) continue;
                 if (seen.add(app.packageName)) out.add(info);
             }
