@@ -13,6 +13,12 @@ class NativeVortexTVProductTest(unittest.TestCase):
         self.assertIn("LOCAL_CERTIFICATE := platform",module)
         self.assertIn("include $(BUILD_PREBUILT)",module)
 
+    def test_launcher_shows_preinstalled_streaming_app(self):
+        apps=(ROOT/"app/src/main/java/os/vortex/tv/UserApps.java").read_text()
+        self.assertIn('"os.vortex.tv.stream".equals(app.packageName)',apps)
+        self.assertIn('if (!nativeStreaming &&',apps)
+        self.assertIn('ApplicationInfo.FLAG_SYSTEM',apps)
+
     def test_private_access_file_is_generated_in_build_not_git(self):
         product=(ROOT/"rom/vortex_product.mk").read_text()
         ignore=(ROOT/".gitignore").read_text()
