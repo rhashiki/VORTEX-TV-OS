@@ -16,11 +16,17 @@ Continuação: [Android.mk real e produto SD](docs/VALIDATION_2026-10-27_PRODUCT
 
 ## Escopo do produto
 - Home 720p, gradiente roxo/azul neon, data/hora, D-pad e ações de energia.
-- Uma aplicação de usuário de fábrica: Home + Vortex App Installer unificados.
+- Apps nativos de fábrica: **VortexHome** (Home + Vortex App Installer unificados) e **VortexTV** (streaming, catálogo Supabase automático), com pacotes Android distintos e sem login para o usuário.
 - Enviar APK do celular por QR Code e HTTP local temporário, ou selecionar de USB.
 - Android PackageInstaller instala com confirmação na TV. Todos os apps de usuário aparecem diretamente na Home, sem gaveta.
 - Boot animation baseada no vídeo fornecido pelo proprietário, sem nuvem.
 - Sem Bluetooth, Google Play Services ou Vortex App Store.
+
+
+### Vortex TV nativo no firmware
+A integração do app de streaming é definida em [rom/prebuilt/README.md](rom/prebuilt/README.md) e `rom/vortex_product.mk`. A lista de 33.601 URLs permanece no Supabase; o APK, quando instalado no sistema, consulta o catálogo automaticamente via uma configuração OEM que não aparece na interface. O firmware **não** hospeda filmes ou retransmite canais.
+
+**Estado:** módulos AOSP ligados no produto experimental, mas **nenhuma imagem RK3229 inicializável foi homologada**; a montagem exige um APK release e a configuração OEM fornecidos durante o build, nunca no Git.
 
 ## Implementações no repositório
 - `app/`: Java nativo API25; sem WebView, AndroidX ou runtime Kotlin.
