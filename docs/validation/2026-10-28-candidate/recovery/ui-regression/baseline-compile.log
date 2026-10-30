@@ -1,0 +1,29 @@
+In file included from /workspace/build01-full-next/recovery/ui-regression/fixtures/device.h:2,
+                 from /workspace/build01-full-next/recovery/recovery_ui.baseline.cpp:23,
+                 from /workspace/build01-full-next/recovery/ui-regression/baseline-harness.cpp:6:
+/workspace/build01-full-next/recovery/ui-regression/fixtures/screen_ui.h:6:20: error: ‘virtual RecoveryUI::KeyAction RecoveryUI::CheckKey(int, bool)’ was hidden [-Werror=overloaded-virtual=]
+    6 |  virtual KeyAction CheckKey(int key, bool long_press) { ++callback_calls;last_key=key;last_long_press=long_press;return IGNORE; }
+      |                    ^~~~~~~~
+/workspace/build01-full-next/recovery/recovery_ui.baseline.cpp:47:23: note:   by ‘virtual RecoveryUI::KeyAction RkUI::CheckKey(int)’
+   47 |     virtual KeyAction CheckKey(int key) {
+      |                       ^~~~~~~~
+/workspace/build01-full-next/recovery/recovery_ui.baseline.cpp: In constructor ‘RkDevice::RkDevice()’:
+/workspace/build01-full-next/recovery/recovery_ui.baseline.cpp:70:20: error: no matching function for call to ‘Device::Device()’
+   70 |         ui(new RkUI) {
+      |                    ^
+/workspace/build01-full-next/recovery/ui-regression/fixtures/device.h:5:11: note: candidate: ‘Device::Device(RecoveryUI*)’
+    5 |  explicit Device(RecoveryUI* ui): ui_(ui) {}
+      |           ^~~~~~
+/workspace/build01-full-next/recovery/ui-regression/fixtures/device.h:5:11: note:   candidate expects 1 argument, 0 provided
+/workspace/build01-full-next/recovery/ui-regression/fixtures/device.h:3:7: note: candidate: ‘constexpr Device::Device(const Device&)’
+    3 | class Device {
+      |       ^~~~~~
+/workspace/build01-full-next/recovery/ui-regression/fixtures/device.h:3:7: note:   candidate expects 1 argument, 0 provided
+/workspace/build01-full-next/recovery/recovery_ui.baseline.cpp: In member function ‘virtual Device::BuiltinAction RkDevice::InvokeMenuItem(int)’:
+/workspace/build01-full-next/recovery/recovery_ui.baseline.cpp:99:26: error: ‘APPLY_EXT’ was not declared in this scope
+   99 |           case 2: return APPLY_EXT;
+      |                          ^~~~~~~~~
+/workspace/build01-full-next/recovery/recovery_ui.baseline.cpp:101:26: error: ‘APPLY_CACHE’ was not declared in this scope
+  101 |           case 4: return APPLY_CACHE;
+      |                          ^~~~~~~~~~~
+cc1plus: all warnings being treated as errors

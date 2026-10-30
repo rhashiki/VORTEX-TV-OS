@@ -1,0 +1,9 @@
+{
+  "repository": "https://android.googlesource.com/platform/external/safe-iop",
+  "revision": "cd76f998688d145235de78ecd5b340d0eac9239d",
+  "url": "https://android.googlesource.com/platform/external/safe-iop/+archive/cd76f998688d145235de78ecd5b340d0eac9239d.tar.gz",
+  "archive_bytes": 11147,
+  "archive_sha256": "30d5fd0eafd4c11fb99992c8c02001bf494c8b99e90cf4554784814eb93fceb5",
+  "header_identical_to_verified_subset": true,
+  "source_files": 8
+}

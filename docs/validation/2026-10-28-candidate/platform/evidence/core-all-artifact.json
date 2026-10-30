@@ -1,0 +1,21 @@
+{
+  "scope": "source-built core-all classes-full-debug.jar from whole-product attempt13, not installed/dexed Android runtime",
+  "artifact": "/workspace/build01-full-next/platform/artifacts/core-all-classes-full-debug.jar",
+  "size_bytes": 7895697,
+  "sha256": "d48d5bb865dc86eb02722c97cc20d7fdae1fae78e6001b99a2bbcc4a930a96ee",
+  "zip_entries": 4770,
+  "class_entries": 4559,
+  "crc": "pass",
+  "essential_class_headers": "CAFE_BABE Java8major52 pass",
+  "android_runtime_execution": "not_performed",
+  "source_revisions": {
+    "libcore": {
+      "revision": "e0874054acea0e164c4464d3bb82302df50e8e5c",
+      "url": "https://android.googlesource.com/platform/libcore"
+    },
+    "external/icu": {
+      "revision": "18c86be3562ecbfaffd4a42b4fcc702874acf605",
+      "url": "https://android.googlesource.com/platform/external/icu"
+    }
+  }
+}

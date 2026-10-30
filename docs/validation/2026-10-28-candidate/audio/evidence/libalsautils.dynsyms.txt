@@ -1,0 +1,88 @@
+
+Symbol table '.dynsym' contains 85 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_finalize@LIBC (2)
+     2: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_atexit@LIBC (2)
+     3: 00000000     0 FUNC    GLOBAL DEFAULT  UND __register_atfork@LIBC (2)
+     4: 00000000     0 FUNC    GLOBAL DEFAULT  UND __android_log_print
+     5: 00000000     0 FUNC    GLOBAL DEFAULT  UND __snprintf_chk@LIBC (2)
+     6: 00000000     0 FUNC    GLOBAL DEFAULT  UND __stack_chk_fail@LIBC (2)
+     7: 00000000     0 OBJECT  GLOBAL DEFAULT  UND __stack_chk_guard@LIBC (2)
+     8: 00000000     0 FUNC    GLOBAL DEFAULT  UND __strlcat_chk@LIBC (2)
+     9: 00000000     0 FUNC    GLOBAL DEFAULT  UND __strlen_chk@LIBC (2)
+    10: 00000000     0 FUNC    GLOBAL DEFAULT  UND dladdr@LIBC (4)
+    11: 00000000     0 FUNC    GLOBAL DEFAULT  UND dprintf@LIBC (2)
+    12: 00000000     0 FUNC    GLOBAL DEFAULT  UND pcm_close
+    13: 00000000     0 FUNC    GLOBAL DEFAULT  UND pcm_is_ready
+    14: 00000000     0 FUNC    GLOBAL DEFAULT  UND pcm_open
+    15: 00000000     0 FUNC    GLOBAL DEFAULT  UND pcm_params_free
+    16: 00000000     0 FUNC    GLOBAL DEFAULT  UND __gnu_Unwind_Find_exidx@LIBC_N (3)
+    17: 00000000     0 FUNC    GLOBAL DEFAULT  UND raise@LIBC (2)
+    18: 00000000     0 FUNC    GLOBAL DEFAULT  UND pcm_params_get
+    19: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memcpy@LIBC_N (3)
+    20: 00000000     0 FUNC    GLOBAL DEFAULT  UND pcm_params_get_mask
+    21: 00000000     0 FUNC    GLOBAL DEFAULT  UND pcm_params_get_max
+    22: 00000000     0 FUNC    GLOBAL DEFAULT  UND pcm_params_get_min
+    23: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memclr8@LIBC_N (3)
+    24: 00000000     0 FUNC    GLOBAL DEFAULT  UND property_get_int32
+    25: 00000000     0 FUNC    GLOBAL DEFAULT  UND strdup@LIBC (2)
+    26: 00000000     0 FUNC    GLOBAL DEFAULT  UND pcm_get_error
+    27: 00000000     0 FUNC    GLOBAL DEFAULT  UND pcm_get_htimestamp
+    28: 00000000     0 FUNC    GLOBAL DEFAULT  UND pcm_read
+    29: 00000000     0 FUNC    GLOBAL DEFAULT  UND pcm_write
+    30: 00000000     0 FUNC    GLOBAL DEFAULT  UND strlen@LIBC (2)
+    31: 00000000     0 FUNC    GLOBAL DEFAULT  UND abort@LIBC (2)
+    32: 00000000     0 FUNC    GLOBAL DEFAULT  UND fprintf@LIBC (2)
+    33: 00000000     0 OBJECT  GLOBAL DEFAULT  UND stderr@LIBC (2)
+    34: 000015c1    64 FUNC    GLOBAL DEFAULT   12 profile_decache
+    35: 000021c3     2 FUNC    GLOBAL DEFAULT   12 log_pcm_config
+    36: 000020bd     6 FUNC    GLOBAL DEFAULT   12 proxy_read
+    37: 0000384c     0 FUNC    GLOBAL DEFAULT   12 __aeabi_uldivmod
+    38: 00003888    16 FUNC    WEAK   DEFAULT   12 __aeabi_idiv0
+    39: 00002121   140 FUNC    GLOBAL DEFAULT   12 log_pcm_mask
+    40: 00001fd9    18 FUNC    GLOBAL DEFAULT   12 proxy_close
+    41: 00001feb     4 FUNC    GLOBAL DEFAULT   12 proxy_get_sample_rate
+    42: 000038d4    60 FUNC    GLOBAL DEFAULT   12 __gnu_uldivmod_helper
+    43: 00001695    48 FUNC    GLOBAL DEFAULT   12 profile_is_format_valid
+    44: 000021ad    22 FUNC    GLOBAL DEFAULT   12 log_pcm_params
+    45: 000020c5    92 FUNC    GLOBAL DEFAULT   12 proxy_dump
+    46: 00001b95   300 FUNC    GLOBAL DEFAULT   12 profile_get_channel_count_strs
+    47: 00001add   184 FUNC    GLOBAL DEFAULT   12 profile_get_format_strs
+    48: 00001581    22 FUNC    GLOBAL DEFAULT   12 profile_is_initialized
+    49: 00001601    68 FUNC    GLOBAL DEFAULT   12 profile_calc_min_period_size
+    50: 00003898    60 FUNC    GLOBAL DEFAULT   12 __gnu_ldivmod_helper
+    51: 00003bb8    28 FUNC    GLOBAL DEFAULT   12 __aeabi_llsl
+    52: 00003b9c    28 FUNC    GLOBAL DEFAULT   12 __lshrdi3
+    53: 00001fef     4 FUNC    GLOBAL DEFAULT   12 proxy_get_format
+    54: 00001ffb     4 FUNC    GLOBAL DEFAULT   12 proxy_get_period_count
+    55: 00001645     4 FUNC    GLOBAL DEFAULT   12 profile_get_period_size
+    56: 000016f7    48 FUNC    GLOBAL DEFAULT   12 profile_is_channel_count_valid
+    57: 00003a90   268 FUNC    GLOBAL DEFAULT   12 __udivdi3
+    58: 000021c5    92 FUNC    GLOBAL DEFAULT   12 get_pcm_format_for_mask
+    59: 00001e81   248 FUNC    GLOBAL DEFAULT   12 proxy_prepare
+    60: 00002099    36 FUNC    GLOBAL DEFAULT   12 proxy_write
+    61: 00003b9c    28 FUNC    GLOBAL DEFAULT   12 __aeabi_llsr
+    62: 00001ff3     4 FUNC    GLOBAL DEFAULT   12 proxy_get_channel_count
+    63: 00003bb8    28 FUNC    GLOBAL DEFAULT   12 __ashldi3
+    64: 00001649    16 FUNC    GLOBAL DEFAULT   12 profile_get_default_sample_rate
+    65: 00001729   768 FUNC    GLOBAL DEFAULT   12 profile_read_device_info
+    66: 000016d3    36 FUNC    GLOBAL DEFAULT   12 profile_get_closest_channel_count
+    67: 00001541    64 FUNC    GLOBAL DEFAULT   12 profile_init
+    68: 00001ff7     4 FUNC    GLOBAL DEFAULT   12 proxy_get_period_size
+    69: 00006004     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
+    70: 00001fff    20 FUNC    GLOBAL DEFAULT   12 proxy_get_latency
+    71: 00006005     0 NOTYPE  GLOBAL DEFAULT  ABS _end
+    72: 00001cc1   448 FUNC    GLOBAL DEFAULT   12 profile_dump
+    73: 00001659    46 FUNC    GLOBAL DEFAULT   12 profile_is_sample_rate_valid
+    74: 00001597     6 FUNC    GLOBAL DEFAULT   12 profile_is_valid
+    75: 00001f79    96 FUNC    GLOBAL DEFAULT   12 proxy_open
+    76: 00003888    16 FUNC    WEAK   DEFAULT   12 __aeabi_ldiv0
+    77: 00006004     0 NOTYPE  GLOBAL DEFAULT  ABS _edata
+    78: 00004a30    50 OBJECT  GLOBAL DEFAULT   14 pcm_format_value_map
+    79: 0000159d    24 FUNC    GLOBAL DEFAULT   12 profile_is_cached_for
+    80: 00003910   384 FUNC    GLOBAL DEFAULT   12 __divdi3
+    81: 000016c5    14 FUNC    GLOBAL DEFAULT   12 profile_get_default_channel_count
+    82: 00001a29   180 FUNC    GLOBAL DEFAULT   12 profile_get_sample_rate_strs
+    83: 00001687    14 FUNC    GLOBAL DEFAULT   12 profile_get_default_format
+    84: 00002015   132 FUNC    GLOBAL DEFAULT   12 proxy_get_presentation_position

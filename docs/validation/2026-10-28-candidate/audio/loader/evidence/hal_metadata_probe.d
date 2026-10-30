@@ -1,0 +1,30 @@
+/workspace/build01-full-next/audio/loader/hal_metadata_probe.o: \
+ /workspace/build01-full-next/audio/loader/hal_metadata_probe.c \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/include/dlfcn.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/include/sys/cdefs.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/include/android/api-level.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/include/stdio.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/include/sys/types.h \
+ /workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/lib/gcc/arm-linux-androideabi/4.9/include/stddef.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/include/stdint.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/include/bits/wchar_limits.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/types.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-arm/asm/types.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/types.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/int-ll64.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-arm/asm/bitsperlong.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/bitsperlong.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/posix_types.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/stddef.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/compiler.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-arm/asm/posix_types.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/posix_types.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/include/sys/sysmacros.h \
+ /workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/lib/gcc/arm-linux-androideabi/4.9/include/stdarg.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/include/string.h \
+ /workspace/build01-platform-next/research/rockchip-bionic/libc/include/xlocale.h \
+ /workspace/build01-full-next/audio/tree/hardware/libhardware/include/hardware/hardware.h \
+ /workspace/build01-full-next/audio/tree/system/core/include/cutils/native_handle.h \
+ /workspace/build01-full-next/audio/tree/system/core/include/system/graphics.h \
+ /workspace/build01-full-next/audio/tree/hardware/libhardware/include/hardware/power.h \
+ /workspace/build01-product-next/native-rules/tree/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/lib/gcc/arm-linux-androideabi/4.9/include/stdbool.h

@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "scope": "source patch plan for the explicit experimental overlay; kernel image is built separately",
+  "projects": {
+    "build": {
+      "patches": [
+        "rom/product/patches/0001-scope-minimal-packages-to-vortex-sd.patch"
+      ]
+    },
+    "vendor/vortex/home": {
+      "patches": [
+        "rom/platform-reference/vortex-product-integration.patch"
+      ]
+    },
+    "device/rockchip/rk322x": {
+      "patches": [
+        "rom/sdcard/patches/0001-rk322x-sd-only-fstab.patch",
+        "rom/sdcard/patches/0004-rk3229-sdk-sd-controller.patch"
+      ]
+    },
+    "device/rockchip/common": {
+      "patches": [
+        "rom/sdcard/patches/0002-common-sd-only-init.patch",
+        "rom/sdcard/patches/0003-common-disable-internal-provisioning.patch",
+        "rom/sdcard/patches/0005-common-remove-sd-factory-services.patch"
+      ]
+    },
+    "vendor/rockchip/rk322x": {
+      "patches": [
+        "rom/sdcard/patches/0006-vendor-omit-bluetooth.patch",
+        "rom/platform-reference/graphics/patches/0004-vendor-use-source-graphics-hals.patch"
+      ]
+    },
+    "hardware/libhardware": {
+      "patches": [
+        "rom/platform-reference/graphics/patches/0001-libhardware-match-kernel-fb-contract.patch"
+      ]
+    },
+    "hardware/rockchip/libgralloc": {
+      "patches": [
+        "rom/platform-reference/graphics/patches/0002-gralloc-select-mali400-for-rk322x.patch",
+        "rom/platform-reference/graphics/patches/0007-gralloc-reject-unsupported-nv12-video.patch"
+      ],
+      "generated_untracked": [
+        "version.h"
+      ]
+    },
+    "hardware/rockchip/hwcomposer": {
+      "patches": [
+        "rom/platform-reference/graphics/patches/0003-hwc-use-selected-gralloc-header.patch",
+        "rom/platform-reference/graphics/patches/0005-hwc-fix-format-policy-and-hdmi-strings.patch",
+        "rom/platform-reference/graphics/patches/0006-hwc-fix-diagnostic-formats.patch"
+      ],
+      "generated_untracked": [
+        "version.h"
+      ]
+    },
+    "hardware/rockchip/audio": {
+      "patches": [
+        "rom/platform-reference/audio/patches/0001-audio-reject-unsupported-hdmi-bypass-rate.patch"
+      ]
+    }
+  }
+}

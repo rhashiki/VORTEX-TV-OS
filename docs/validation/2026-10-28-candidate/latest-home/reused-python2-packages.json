@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://archive.debian.org/debian/pool/main/p/python2.7/libpython2.7-minimal_2.7.18-8+deb11u1_amd64.deb",
+    "bytes": 397032,
+    "sha256": "85833c92314011b89bbead6f9a5a7a360b5ee4f9b95e001225afead4ebf9f7d3",
+    "installation": "Extracted task-local, system package state unchanged"
+  },
+  {
+    "url": "https://archive.debian.org/debian/pool/main/p/python2.7/libpython2.7-stdlib_2.7.18-8+deb11u1_amd64.deb",
+    "bytes": 1863736,
+    "sha256": "3e627d6d8992b853e000b8a4c09dda613fb767cdb711a2eac20ebc9f867b593c",
+    "installation": "Extracted task-local, system package state unchanged"
+  },
+  {
+    "url": "https://archive.debian.org/debian/pool/main/p/python2.7/python2.7-minimal_2.7.18-8+deb11u1_amd64.deb",
+    "bytes": 1301072,
+    "sha256": "44f0cdc1a343303d31c55fcb3a6402cfe326adf749ec30e375e6e0c0c5f7c1f7",
+    "installation": "Extracted task-local, system package state unchanged"
+  },
+  {
+    "url": "https://archive.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.18-8+deb11u1_amd64.deb",
+    "bytes": 310988,
+    "sha256": "0b0b34b069d41970af75a4fe5b9012465e480fc0a0488ec16554d6299fe0b46e",
+    "installation": "Extracted task-local, system package state unchanged"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "musl": "original source archive COPYRIGHT, retained verbatim",
+  "GPL-3": "/usr/share/common-licenses/GPL-3",
+  "Apache-2.0": "/usr/share/common-licenses/Apache-2.0",
+  "COPYING.RUNTIME": "https://github.com/gcc-mirror/gcc/blob/releases/gcc-6.3.0/COPYING.RUNTIME",
+  "libgcc": "Genuine Linaro6.3.1 libgcc runtime, GCC Runtime Library Exception3.1; no compiler executable redistributed"
+}

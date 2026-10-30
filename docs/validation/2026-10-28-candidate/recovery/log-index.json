@@ -1,0 +1,459 @@
+[
+  {
+    "path": "acquisition.log",
+    "bytes": 63,
+    "sha256": "7f75639e3f64df184425198cc60206c181b097e35298eb5b6b3d6ca06fd31b33",
+    "zip_path": "raw-logs/recovery/acquisition.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-01-full-recovery.log",
+    "bytes": 1649,
+    "sha256": "f1204614f954f88fa73cebec6a7e2b670d94b941647871e8d939e1dcc03e992a",
+    "zip_path": "raw-logs/recovery/attempt-01-full-recovery.log",
+    "last_errors": [
+      "make: *** No rule to make target '/workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtbegin_static.o', needed by '/workspace/build01-full-next/recovery/out/target/product/generic/obj/EXECUTABLES/recovery_intermediates/LINKED/recovery'.  Stop."
+    ],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-02-ui-mtd-baseline.log",
+    "bytes": 11954,
+    "sha256": "0e8e499d3926cd2b84e43aa2f6a650d03e6e253167294390bf116e7b1f10f892",
+    "zip_path": "raw-logs/recovery/attempt-02-ui-mtd-baseline.log",
+    "last_errors": [
+      "device/rockchip/common/recovery/recovery_ui.cpp:70:20: error: no matching function for call to 'Device::Device()'",
+      "device/rockchip/common/recovery/recovery_ui.cpp:99:26: error: 'APPLY_EXT' was not declared in this scope",
+      "device/rockchip/common/recovery/recovery_ui.cpp:101:26: error: 'APPLY_CACHE' was not declared in this scope",
+      "make: *** [build/core/binary.mk:925: /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/librecovery_ui_aosp_arm_intermediates/recovery_ui.o] Error 1"
+    ],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-03-ui-api-fixed.log",
+    "bytes": 19226,
+    "sha256": "bf4130fb0fe431a4b312e05a899d9ffd5bd46d48cf6fadce778789aca234e254",
+    "zip_path": "raw-logs/recovery/attempt-03-ui-api-fixed.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-04-more-source-modules.log",
+    "bytes": 17633,
+    "sha256": "421c192bbf46b92ef1c9a602558309fbafe85ee68d01d89abb5281acf7b3cf7d",
+    "zip_path": "raw-logs/recovery/attempt-04-more-source-modules.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-05-genuine-static-crt.log",
+    "bytes": 4904,
+    "sha256": "89cbefba773079722b3e34e1d0dedaad14171efa3ef571f6f21dd458189f38e8",
+    "zip_path": "raw-logs/recovery/attempt-05-genuine-static-crt.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-06-recovery-with-static-crt.log",
+    "bytes": 1659,
+    "sha256": "8e3a5ebbc0d5c06693e743b78bf8e533f4496777a0709d9c05c27dbb0cc5875c",
+    "zip_path": "raw-logs/recovery/attempt-06-recovery-with-static-crt.log",
+    "last_errors": [
+      "make: *** No rule to make target '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libbatterymonitor_intermediates/export_includes', needed by '/workspace/build01-full-next/recovery/out/target/product/generic/obj/EXECUTABLES/recovery_intermediates/import_includes'.  Stop."
+    ],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-07-core-modules.log",
+    "bytes": 1518,
+    "sha256": "d023c15e26c55dcedddab8af5ef0c614155e33715511345028bf1a2ea8a71d2c",
+    "zip_path": "raw-logs/recovery/attempt-07-core-modules.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-08-source-only-recovery.log",
+    "bytes": 1503,
+    "sha256": "ac69eb680ccacf669001ebf6122377eb7fca13a5aec335a1fbab5425e1f3e169",
+    "zip_path": "raw-logs/recovery/attempt-08-source-only-recovery.log",
+    "last_errors": [
+      "make: *** No rule to make target 'external/llvm/llvm.mk'.  Stop."
+    ],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-09-resume-source-static.log",
+    "bytes": 1509,
+    "sha256": "d25e64fcb13b3c72d2ece1c9be0c1fb47db9bc01c9f8a659718fc0ad5bebeacb",
+    "zip_path": "raw-logs/recovery/attempt-09-resume-source-static.log",
+    "last_errors": [
+      "make: *** No rule to make target 'system/core/libfs_mgr/Android.mk'.  Stop."
+    ],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-10-correct-fs-mgr-path.log",
+    "bytes": 5186,
+    "sha256": "837a4ca9adbfbc7153eb7bd661a2a1fd4178b8585a2413d2a06bf616562f7d3e",
+    "zip_path": "raw-logs/recovery/attempt-10-correct-fs-mgr-path.log",
+    "last_errors": [
+      "make: *** No rule to make target '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libz_intermediates/export_includes', needed by '/workspace/build01-full-next/recovery/out/target/product/generic/obj/EXECUTABLES/recovery_intermediates/import_includes'.  Stop."
+    ],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-11-platform-static-zlib.log",
+    "bytes": 4937,
+    "sha256": "191371584754273f72379b000f6987db539b15d500069f1d442bfe82431f9239",
+    "zip_path": "raw-logs/recovery/attempt-11-platform-static-zlib.log",
+    "last_errors": [
+      "make: *** No rule to make target '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libpng_intermediates/export_includes', needed by '/workspace/build01-full-next/recovery/out/target/product/generic/obj/EXECUTABLES/recovery_intermediates/import_includes'.  Stop."
+    ],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-12-ui-callback-fixed.log",
+    "bytes": 5388,
+    "sha256": "4871ce5622d216a73b817a65a9c9e97102ff7a87a3982d79a67b1450c548e0e3",
+    "zip_path": "raw-logs/recovery/attempt-12-ui-callback-fixed.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-13-ui-platform-key-policy.log",
+    "bytes": 5388,
+    "sha256": "0205b2d6fffa03e06441247bae6f4b84e53e491198dca0c7da692ef60befa3ad",
+    "zip_path": "raw-logs/recovery/attempt-13-ui-platform-key-policy.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-14-real-png-crypto.log",
+    "bytes": 5017,
+    "sha256": "1be4e9c170b347d9974cbae3f8149f6086c09a7047d9296ea2db757fc22b3f5c",
+    "zip_path": "raw-logs/recovery/attempt-14-real-png-crypto.log",
+    "last_errors": [
+      "make: *** No rule to make target '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libselinux_intermediates/export_includes', needed by '/workspace/build01-full-next/recovery/out/target/product/generic/obj/EXECUTABLES/recovery_intermediates/import_includes'.  Stop."
+    ],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-15-source-zlib-archive.log",
+    "bytes": 50239,
+    "sha256": "9ccce733933415c7c11f053c97ab317a691e422089728b0b65fbb1833ab929de",
+    "zip_path": "raw-logs/recovery/attempt-15-source-zlib-archive.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-16-expanded-static-source.log",
+    "bytes": 5581,
+    "sha256": "ba17cefb877658bf59178636ce44dc41f04606e2e5785ecc9ba449cc354b5241",
+    "zip_path": "raw-logs/recovery/attempt-16-expanded-static-source.log",
+    "last_errors": [
+      "make: *** [build/core/binary.mk:847: /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libedify_intermediates/parser.cpp] Error 127"
+    ],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-17-real-host-bison.log",
+    "bytes": 2580,
+    "sha256": "c6870b922315d79fce7a50ab5c156f5e010f407b498fe3e489248e37ba3451f4",
+    "zip_path": "raw-logs/recovery/attempt-17-real-host-bison.log",
+    "last_errors": [
+      "make: *** [build/core/binary.mk:875: /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libedify_intermediates/lexer.cpp] Error 127"
+    ],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-18-real-host-flex.log",
+    "bytes": 45515,
+    "sha256": "3f05157c656aa8d2375201c2e92b3ac19a442f57dfc31225e2bbb973095a66a4",
+    "zip_path": "raw-logs/recovery/attempt-18-real-host-flex.log",
+    "last_errors": [
+      "system/core/healthd/include/healthd/BatteryMonitor.h:20:10: fatal error: 'batteryservice/BatteryService.h' file not found",
+      "make: *** [build/core/binary.mk:925: /workspace/build01-full-next/recovery/out/target/product/generic/obj/EXECUTABLES/recovery_intermediates/recovery.o] Error 1"
+    ],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-19-real-native-battery-headers.log",
+    "bytes": 5118,
+    "sha256": "086f114dcbf007bf069f236044c1b4384813a89484d4bcbd01e98def5674a7d6",
+    "zip_path": "raw-logs/recovery/attempt-19-real-native-battery-headers.log",
+    "last_errors": [
+      "frameworks/native/include/binder/Parcel.h:24:10: fatal error: 'nativehelper/ScopedFd.h' file not found",
+      "make: *** [build/core/binary.mk:925: /workspace/build01-full-next/recovery/out/target/product/generic/obj/EXECUTABLES/recovery_intermediates/recovery.o] Error 1"
+    ],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-20-real-nativehelper-headers.log",
+    "bytes": 8736,
+    "sha256": "e993984075e5e80053ec9079dc22e78b5ac813f4eeba4f157b4cf4dd2ba82033",
+    "zip_path": "raw-logs/recovery/attempt-20-real-nativehelper-headers.log",
+    "last_errors": [
+      "bootable/recovery/roots.cpp:34:10: fatal error: 'cryptfs.h' file not found",
+      "make: *** [build/core/binary.mk:925: /workspace/build01-full-next/recovery/out/target/product/generic/obj/EXECUTABLES/recovery_intermediates/roots.o] Error 1"
+    ],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-21-real-vold-headers.log",
+    "bytes": 3555155,
+    "sha256": "66c1315bba43ec8660a2ef13c8c5254c606e3d475f9b57fff655b43900949fd3",
+    "zip_path": "raw-logs/recovery/attempt-21-real-vold-headers.log",
+    "last_errors": [
+      "make: *** No rule to make target '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/liblogwrap_intermediates/export_includes', needed by '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libext4_utils_static_intermediates/import_includes'.  Stop."
+    ],
+    "versioned_raw_log": false
+  },
+  {
+    "path": "attempt-22-core-static-provider-closure.log",
+    "bytes": 96382,
+    "sha256": "778e3285120498455f836f88c3c3634ab14e91aa5b452a85c6882c62b273c2b7",
+    "zip_path": "raw-logs/recovery/attempt-22-core-static-provider-closure.log",
+    "last_errors": [
+      "bootable/recovery/minzip/Zip.c:6:10: fatal error: 'safe_iop.h' file not found",
+      "make: *** [build/core/binary.mk:1026: /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libminzip_intermediates/Zip.o] Error 1"
+    ],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-23-real-safe-iop.log",
+    "bytes": 5919,
+    "sha256": "13a4497f5d25d7c9dc810ef4ec652121344194cfb45c8378bfa3808af19d9026",
+    "zip_path": "raw-logs/recovery/attempt-23-real-safe-iop.log",
+    "last_errors": [
+      "make: *** No rule to make target '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libadbd_intermediates/export_includes', needed by '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libminadbd_intermediates/import_includes'.  Stop."
+    ],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-24-real-adb-core-provider.log",
+    "bytes": 1503,
+    "sha256": "8828cb1c8d04d74e0f587c0fb908a0a63687abbd4f31f867ef69d8fdb819216a",
+    "zip_path": "raw-logs/recovery/attempt-24-real-adb-core-provider.log",
+    "last_errors": [
+      "make: *** No rule to make target 'system/core/libasyncio/Android.mk'.  Stop."
+    ],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-25-real-adbd-provider.log",
+    "bytes": 50984,
+    "sha256": "41b5fc2d7e2c1515e002895e0a132dd9315d9e36872bcc3a61896ad059c19efe",
+    "zip_path": "raw-logs/recovery/attempt-25-real-adbd-provider.log",
+    "last_errors": [
+      "system/core/adb/transport_local.cpp:191:10: fatal error: 'hardware/qemu_pipe.h' file not found",
+      "make: *** [build/core/binary.mk:925: /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libadbd_intermediates/transport_local.o] Error 1"
+    ],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-26-real-libhardware-headers.log",
+    "bytes": 28514,
+    "sha256": "ae72a415ee9f91f2f93068c5552bc2b35f5f2ac97fa97b3b0a985f50dd2e2c69",
+    "zip_path": "raw-logs/recovery/attempt-26-real-libhardware-headers.log",
+    "last_errors": [
+      "make: *** No rule to make target '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libadf_intermediates/export_includes', needed by '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libminui_intermediates/import_includes'.  Stop."
+    ],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-27-real-adf-drm-providers.log",
+    "bytes": 116937,
+    "sha256": "5476c4b4cbe497e3561fb57bd10be2eda9da0f7929003aa82e20fc61d4d86cac",
+    "zip_path": "raw-logs/recovery/attempt-27-real-adf-drm-providers.log",
+    "last_errors": [
+      "make: *** No rule to make target '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libfec_intermediates/export_includes', needed by '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libfs_mgr_intermediates/import_includes'.  Stop."
+    ],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-28-real-fec-provider.log",
+    "bytes": 2516,
+    "sha256": "ad7eb462b70d5599986698c3313a726626fb2448a106650103e39066951e7089",
+    "zip_path": "raw-logs/recovery/attempt-28-real-fec-provider.log",
+    "last_errors": [
+      "make: *** No rule to make target '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libfec_rs_intermediates/export_includes', needed by '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libfs_mgr_intermediates/import_includes'.  Stop."
+    ],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-29-real-fec-rs-source.log",
+    "bytes": 63918,
+    "sha256": "12377c5356981d4b60d7a5b52cd25e0699876f006a404bb7b300da9664298d31",
+    "zip_path": "raw-logs/recovery/attempt-29-real-fec-rs-source.log",
+    "last_errors": [
+      "prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/../lib/gcc/arm-linux-androideabi/4.9/include/stdint.h:9:26: fatal error: stdint.h: No such file or directory",
+      "make: *** [build/core/binary.mk:1026: /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libcrypto_static_intermediates/android_compat_hacks.o] Error 1"
+    ],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "attempt-30-official-ndk9-crypto.log",
+    "bytes": 1085050,
+    "sha256": "32f6b8e341145f2a98c8375c18ee2f6b343fce50e17ce9e6d4749a14e1480a45",
+    "zip_path": "raw-logs/recovery/attempt-30-official-ndk9-crypto.log",
+    "last_errors": [
+      "make: *** No rule to make target '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libpcre_intermediates/export_includes', needed by '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libselinux_intermediates/import_includes'.  Stop."
+    ],
+    "versioned_raw_log": false
+  },
+  {
+    "path": "attempt-31-real-pcre-source.log",
+    "bytes": 249772,
+    "sha256": "405a8c74ded11d7fdc9985c1bb66809948a51b20eaf8f156844995817c9dcd93",
+    "zip_path": "raw-logs/recovery/attempt-31-real-pcre-source.log",
+    "last_errors": [
+      "make: *** No rule to make target '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libbz_intermediates/export_includes', needed by '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libapplypatch_intermediates/import_includes'.  Stop."
+    ],
+    "versioned_raw_log": false
+  },
+  {
+    "path": "attempt-32-real-bzip2-source.log",
+    "bytes": 264145,
+    "sha256": "7ceff43728472987b5d713e3768b878666fc0dd965f2ead4a34eed3eaca8ed81",
+    "zip_path": "raw-logs/recovery/attempt-32-real-bzip2-source.log",
+    "last_errors": [],
+    "versioned_raw_log": false
+  },
+  {
+    "path": "boringssl-acquisition.log",
+    "bytes": 745,
+    "sha256": "7c02ff461bc5bf7e10885b56d6503a702563af35901d611e6246b3f3ae1ea69e",
+    "zip_path": "raw-logs/recovery/boringssl-acquisition.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "bzip2-acquisition.log",
+    "bytes": 703,
+    "sha256": "fd55d24d5e644d93effef4f31dae61f2690c3a34cf8bf7cc374f5cd937fca0fb",
+    "zip_path": "raw-logs/recovery/bzip2-acquisition.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "fec-acquisition.log",
+    "bytes": 701,
+    "sha256": "fc92adf6ec06e14b61484a45eea5bbf8a334a7bfe976163e8b9a646d0928bb60",
+    "zip_path": "raw-logs/recovery/fec-acquisition.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "jemalloc-acquisition.log",
+    "bytes": 744,
+    "sha256": "36a840c455574a2bc5b2c0585247d3f82c0d086d3742a4f22c5708ee4ee5979d",
+    "zip_path": "raw-logs/recovery/jemalloc-acquisition.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "libcxx-acquisition.log",
+    "bytes": 742,
+    "sha256": "13ed92d8a59a42c3e1a2310b05a478261fade7fa6e1e9b963566adc341c120a0",
+    "zip_path": "raw-logs/recovery/libcxx-acquisition.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "libcxxabi-acquisition.log",
+    "bytes": 745,
+    "sha256": "f881268f79206d06fa7e30e8d486b8d0f0f1583b473586c34a61c6c6addcf021",
+    "zip_path": "raw-logs/recovery/libcxxabi-acquisition.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "libdrm-acquisition.log",
+    "bytes": 704,
+    "sha256": "7f879be4e0c81b232f8760317974eecd04f65193acbd6e277a1204b29ddb7e25",
+    "zip_path": "raw-logs/recovery/libdrm-acquisition.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "libnativehelper-acquisition.log",
+    "bytes": 751,
+    "sha256": "5126f4b427f63ce8714dd17d1a2d6a30812298f34fd26e5062fcef703d5aa8ae",
+    "zip_path": "raw-logs/recovery/libnativehelper-acquisition.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "libpng-acquisition.log",
+    "bytes": 742,
+    "sha256": "b582eac49f5391b3b9414f0e31ea20830455d6c5b2542cc002e03d9152921062",
+    "zip_path": "raw-logs/recovery/libpng-acquisition.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "libselinux-acquisition.log",
+    "bytes": 746,
+    "sha256": "d4ad9f0b9d43908bd41d6aab8ea8e6103f8a3a4c0cca8e46604a0985ddd42c19",
+    "zip_path": "raw-logs/recovery/libselinux-acquisition.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "pcre-acquisition.log",
+    "bytes": 702,
+    "sha256": "b9dd6aade7dc7c9ca0a08dc4d55d808f17100b302c83a1b165901df17b067a63",
+    "zip_path": "raw-logs/recovery/pcre-acquisition.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "safe-iop-acquisition.log",
+    "bytes": 258,
+    "sha256": "df06799988c109465cb128008c478e866a285b38f755b835fb5d8683d1e77033",
+    "zip_path": "raw-logs/recovery/safe-iop-acquisition.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "selinux-acquisition.log",
+    "bytes": 743,
+    "sha256": "13792043ced1b18b20d98e766645393a46d416cfa8cdd8b63cea7288faf9bf67",
+    "zip_path": "raw-logs/recovery/selinux-acquisition.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "squashfs-acquisition.log",
+    "bytes": 712,
+    "sha256": "aec6496505ba520d0c0a5508be8e7d1cbe85132174214fdd2e6d5af0ae1b095e",
+    "zip_path": "raw-logs/recovery/squashfs-acquisition.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "system-extras-acquisition.log",
+    "bytes": 749,
+    "sha256": "8eee3450ae71a95e01436a1132f0331d9852d7ecc12085a556f42a7227171bda",
+    "zip_path": "raw-logs/recovery/system-extras-acquisition.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "vold-acquisition.log",
+    "bytes": 740,
+    "sha256": "c89e1b493414887d0df74d559a380cc41edac469be38a87eb5e6cc15dbf229c1",
+    "zip_path": "raw-logs/recovery/vold-acquisition.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  },
+  {
+    "path": "zlib-acquisition.log",
+    "bytes": 740,
+    "sha256": "f77a25360220c019622c36c9d95f4acf5fd73c91c73378448a1964620fcbf830",
+    "zip_path": "raw-logs/recovery/zlib-acquisition.log",
+    "last_errors": [],
+    "versioned_raw_log": true
+  }
+]

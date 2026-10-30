@@ -1,0 +1,2728 @@
+{
+  "scope": "Static link-map observations only; no vendor code or recovery execution",
+  "map": {
+    "path": "recovery-link.map",
+    "bytes": 5312268,
+    "sha256": "e532827675ae5b5b1d6fb04a19fa1682c904804ec2b9821f8ed0d479c53fa19b"
+  },
+  "summary": {
+    "librkupdate": {
+      "allocated_section_records": 307,
+      "allocated_section_bytes": 102938,
+      "members": [
+        "CRC.o",
+        "MD5Checksum.o",
+        "RKAndroidDevice.o",
+        "RKBoot.o",
+        "RKComm.o",
+        "RKDevice.o",
+        "RKImage.o",
+        "RKLog.o",
+        "Upgrade.o"
+      ]
+    },
+    "librkrsa": {
+      "allocated_section_records": 0,
+      "allocated_section_bytes": 0,
+      "members": []
+    },
+    "libext2_uuid": {
+      "allocated_section_records": 26,
+      "allocated_section_bytes": 1830,
+      "members": [
+        "gen_uuid.o",
+        "pack.o",
+        "unpack.o"
+      ]
+    },
+    "libcrc32": {
+      "allocated_section_records": 2,
+      "allocated_section_bytes": 48,
+      "members": [
+        "ldcrc.o"
+      ]
+    }
+  },
+  "allocated_records": [
+    {
+      "line": 26464,
+      "section": ".text._Z9CreateUidPh",
+      "address": "0x00064b6c",
+      "bytes": 132,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 26467,
+      "section": ".text._Z23GetPubicKeyFromExternalPcP6CRKLogPhRj",
+      "address": "0x00064bf0",
+      "bytes": 464,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 26470,
+      "section": ".text._Z21GetPubicKeyFromDeviceP6CRKLogPhRj",
+      "address": "0x00064dc0",
+      "bytes": 164,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 26473,
+      "section": ".text._Z12UnlockDeviceP8CRKImageP6CRKLogPhj",
+      "address": "0x00064e64",
+      "bytes": 244,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 26476,
+      "section": ".text._Z22do_rk_firmware_upgradePcPvS0_S_",
+      "address": "0x00064f58",
+      "bytes": 1232,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 26479,
+      "section": ".text._Z23do_rk_partition_upgradePcPvS0_cS_",
+      "address": "0x00065428",
+      "bytes": 884,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 26482,
+      "section": ".text._ZNKSt3__121__basic_string_commonILb1EE20__throw_length_errorEv",
+      "address": "0x0006579c",
+      "bytes": 76,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 26485,
+      "section": ".text.__clang_call_terminate",
+      "address": "0x000657e8",
+      "bytes": 10,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 26488,
+      "section": ".text._ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2ERKS5_jjRKS4_",
+      "address": "0x000657f2",
+      "bytes": 70,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 26491,
+      "section": ".text._ZNKSt3__121__basic_string_commonILb1EE20__throw_out_of_rangeEv",
+      "address": "0x00065838",
+      "bytes": 76,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 26494,
+      "section": ".text._ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv",
+      "address": "0x00065884",
+      "bytes": 76,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 26497,
+      "section": ".text._Z6CRC_32Phjj",
+      "address": "0x000658d0",
+      "bytes": 40,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 26500,
+      "section": ".text._Z15CRCBuildTable16tPt",
+      "address": "0x000658f8",
+      "bytes": 74,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 26503,
+      "section": ".text._Z6CRC_16Phj",
+      "address": "0x00065944",
+      "bytes": 92,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 26506,
+      "section": ".text._Z5P_RC4Pht",
+      "address": "0x000659a0",
+      "bytes": 196,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 26509,
+      "section": ".text._Z10bch_encodePhS_",
+      "address": "0x00065a64",
+      "bytes": 328,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 26512,
+      "section": ".text._Z9CRC_CCITTPhj",
+      "address": "0x00065bac",
+      "bytes": 76,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 26515,
+      "section": ".text._Z8gen_polyv",
+      "address": "0x00065bf8",
+      "bytes": 1168,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 26518,
+      "section": ".text._Z11generate_gfv",
+      "address": "0x00066088",
+      "bytes": 228,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 26521,
+      "section": ".text._ZN8CRKImage10GetVersionEv",
+      "address": "0x0006616c",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 26524,
+      "section": ".text._ZN8CRKImage15GetMergeVersionEv",
+      "address": "0x00066172",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 26527,
+      "section": ".text._ZN8CRKImage14GetReleaseTimeEv",
+      "address": "0x00066178",
+      "bytes": 12,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 26530,
+      "section": ".text._ZN8CRKImage16GetSupportDeviceEv",
+      "address": "0x00066184",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 26533,
+      "section": ".text._ZN8CRKImage9GetOsTypeEv",
+      "address": "0x0006618a",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 26536,
+      "section": ".text._ZN8CRKImage13GetBackupSizeEv",
+      "address": "0x00066190",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 26539,
+      "section": ".text._ZN8CRKImage13GetBootOffsetEv",
+      "address": "0x00066196",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 26542,
+      "section": ".text._ZN8CRKImage11GetBootSizeEv",
+      "address": "0x0006619c",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 26545,
+      "section": ".text._ZN8CRKImage11GetFWOffsetEv",
+      "address": "0x000661a2",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 26548,
+      "section": ".text._ZN8CRKImage9GetFWSizeEv",
+      "address": "0x000661a8",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 26551,
+      "section": ".text._ZN8CRKImage8Md5CheckEx",
+      "address": "0x000661b0",
+      "bytes": 428,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 26554,
+      "section": ".text._ZN8CRKImage7GetDataExjPh",
+      "address": "0x0006635c",
+      "bytes": 100,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 26557,
+      "section": ".text._ZN8CRKImage10GetMd5DataERPhS1_",
+      "address": "0x000663c0",
+      "bytes": 18,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 26560,
+      "section": ".text._ZN8CRKImageC2ENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEERb",
+      "address": "0x000663d4",
+      "bytes": 1112,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 26564,
+      "section": ".text._ZN8CRKImageD2Ev",
+      "address": "0x0006682c",
+      "bytes": 44,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 26568,
+      "section": ".text._ZN6CRKLog12GetEnableLogEv",
+      "address": "0x00066858",
+      "bytes": 4,
+      "module": "librkupdate",
+      "member": "RKLog.o"
+    },
+    {
+      "line": 26571,
+      "section": ".text._ZN6CRKLog12SetEnableLogEb",
+      "address": "0x0006685c",
+      "bytes": 4,
+      "module": "librkupdate",
+      "member": "RKLog.o"
+    },
+    {
+      "line": 26574,
+      "section": ".text._ZN6CRKLogC2Eb",
+      "address": "0x00066860",
+      "bytes": 56,
+      "module": "librkupdate",
+      "member": "RKLog.o"
+    },
+    {
+      "line": 26578,
+      "section": ".text._ZN6CRKLog6RecordEPKcz",
+      "address": "0x00066898",
+      "bytes": 108,
+      "module": "librkupdate",
+      "member": "RKLog.o"
+    },
+    {
+      "line": 26581,
+      "section": ".text._ZN6CRKLog10SaveBufferENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEPhj",
+      "address": "0x00066904",
+      "bytes": 72,
+      "module": "librkupdate",
+      "member": "RKLog.o"
+    },
+    {
+      "line": 26584,
+      "section": ".text._ZN6CRKLog11PrintBufferERNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEPhjj",
+      "address": "0x0006694c",
+      "bytes": 340,
+      "module": "librkupdate",
+      "member": "RKLog.o"
+    },
+    {
+      "line": 26587,
+      "section": ".text._ZN10CRKUsbCommC2EP6CRKLog",
+      "address": "0x00066aa0",
+      "bytes": 620,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 26591,
+      "section": ".text._ZN10CRKUsbComm19RKU_ReopenLBAHandleEv",
+      "address": "0x00066d0c",
+      "bytes": 112,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 26594,
+      "section": ".text._ZN10CRKUsbComm21RKU_ShowNandLBADeviceEv",
+      "address": "0x00066d7c",
+      "bytes": 128,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 26597,
+      "section": ".text._ZN10CRKUsbCommD2Ev",
+      "address": "0x00066dfc",
+      "bytes": 48,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 26601,
+      "section": ".text._ZN10CRKUsbCommD0Ev",
+      "address": "0x00066e2c",
+      "bytes": 14,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 26604,
+      "section": ".text._ZN10CRKUsbComm17RKU_ReadFlashInfoEPhPj",
+      "address": "0x00066e3c",
+      "bytes": 72,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 26607,
+      "section": ".text._ZN10CRKUsbComm11RKU_ReadLBAEjjPhh",
+      "address": "0x00066e84",
+      "bytes": 280,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 26610,
+      "section": ".text._ZN10CRKUsbComm14RKU_ReadSectorEjjPh",
+      "address": "0x00066f9c",
+      "bytes": 72,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 26613,
+      "section": ".text._ZN10CRKUsbComm16RKU_TestBadBlockEhjjPh",
+      "address": "0x00066fe4",
+      "bytes": 208,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 26616,
+      "section": ".text._ZN10CRKUsbComm12RKU_WriteLBAEjjPhh",
+      "address": "0x000670b4",
+      "bytes": 288,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 26619,
+      "section": ".text._ZN10CRKUsbComm15RKU_WriteSectorEjjPh",
+      "address": "0x000671d4",
+      "bytes": 72,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 26622,
+      "section": ".text._ZN10CRKUsbComm18RKU_EndWriteSectorEPh",
+      "address": "0x0006721c",
+      "bytes": 68,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 26625,
+      "section": ".text._ZN10CRKUsbComm15RKU_GetLockFlagEPh",
+      "address": "0x00067260",
+      "bytes": 88,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 26628,
+      "section": ".text._ZN10CRKUsbComm16RKU_GetPublicKeyEPh",
+      "address": "0x000672b8",
+      "bytes": 68,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 26631,
+      "section": ".text._ZN9CRKDevice19SetPrepareEraseFlagEb",
+      "address": "0x000672fc",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 26634,
+      "section": ".text._ZN9CRKDevice11SetWorkFlowEj",
+      "address": "0x00067302",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 26637,
+      "section": ".text._ZN9CRKDevice6SetUidEPh",
+      "address": "0x00067308",
+      "bytes": 90,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 26640,
+      "section": ".text._ZN9CRKDevice17SetMiscModifyFlagE21ENUM_MISC_MODIFY_FLAG",
+      "address": "0x00067362",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 26643,
+      "section": ".text._ZN9CRKDevice9SetOsTypeE12ENUM_OS_TYPE",
+      "address": "0x00067368",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 26646,
+      "section": ".text._ZN9CRKDevice9GetOsTypeEv",
+      "address": "0x0006736e",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 26649,
+      "section": ".text._ZN9CRKDevice19GetLogObjectPointerEv",
+      "address": "0x00067374",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 26652,
+      "section": ".text._ZN9CRKDevice20GetCommObjectPointerEv",
+      "address": "0x0006737a",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 26655,
+      "section": ".text._ZN9CRKDeviceC2ER21_STRUCT_RKDEVICE_DESC",
+      "address": "0x00067380",
+      "bytes": 372,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 26658,
+      "section": ".text._ZN9CRKDeviceD2Ev",
+      "address": "0x000674f4",
+      "bytes": 168,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 26662,
+      "section": ".text._ZN9CRKDeviceD0Ev",
+      "address": "0x0006759c",
+      "bytes": 14,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 26665,
+      "section": ".text._ZN9CRKDevice9SetObjectEP8CRKImageP7CRKCommP6CRKLog",
+      "address": "0x000675aa",
+      "bytes": 54,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 26668,
+      "section": ".text._ZN9CRKDevice14EraseEmmcBlockEhjj",
+      "address": "0x000675e0",
+      "bytes": 156,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 26671,
+      "section": ".text._ZN9CRKDevice12GetFlashInfoEv",
+      "address": "0x0006767c",
+      "bytes": 452,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 26674,
+      "section": ".text._ZN9CRKDevice18BuildBlockStateMapEh",
+      "address": "0x00067840",
+      "bytes": 184,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 26677,
+      "section": ".text._ZN9CRKDevice15ReadMutilSectorEjjPh",
+      "address": "0x000678f8",
+      "bytes": 140,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 26680,
+      "section": ".text._ZN9CRKDevice15EraseMutilBlockEhjjb",
+      "address": "0x00067984",
+      "bytes": 176,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 26683,
+      "section": ".text._ZN9CRKDevice15FindValidBlocksEcc",
+      "address": "0x00067a34",
+      "bytes": 62,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 26686,
+      "section": ".text._Z11UshortToBCDt",
+      "address": "0x00067a72",
+      "bytes": 118,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 26689,
+      "section": ".text._Z9ByteToBCDh",
+      "address": "0x00067ae8",
+      "bytes": 42,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 26692,
+      "section": ".text._ZN9CRKDevice10CheckCrc16EPhtt",
+      "address": "0x00067b12",
+      "bytes": 24,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 26695,
+      "section": ".text._ZN9CRKDevice8CheckUidEhPh",
+      "address": "0x00067b2a",
+      "bytes": 28,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 26698,
+      "section": ".text._ZN9CRKDevice10GetIDBDataEjPhj",
+      "address": "0x00067b48",
+      "bytes": 276,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 26701,
+      "section": ".text._ZN9CRKDevice16GetWriteBackDataEjPh",
+      "address": "0x00067c5c",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 26704,
+      "section": ".text._ZN16CRKAndroidDevice11FindIDBlockEcRc",
+      "address": "0x00067c64",
+      "bytes": 224,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26707,
+      "section": ".text._ZN16CRKAndroidDevice10FindAllIDBEv",
+      "address": "0x00067d44",
+      "bytes": 116,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26710,
+      "section": ".text._ZN16CRKAndroidDevice14ReserveIDBlockEcc",
+      "address": "0x00067db8",
+      "bytes": 66,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26713,
+      "section": ".text._ZN16CRKAndroidDevice12CalcIDBCountEv",
+      "address": "0x00067dfc",
+      "bytes": 92,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26716,
+      "section": ".text._ZN16CRKAndroidDevice13GetLoaderSizeEv",
+      "address": "0x00067e58",
+      "bytes": 156,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26719,
+      "section": ".text._ZN16CRKAndroidDevice17GetLoaderDataSizeEv",
+      "address": "0x00067ef4",
+      "bytes": 156,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26722,
+      "section": ".text._ZN16CRKAndroidDevice13OffsetIDBlockEc",
+      "address": "0x00067f90",
+      "bytes": 102,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26725,
+      "section": ".text._ZN16CRKAndroidDeviceC2ER21_STRUCT_RKDEVICE_DESC",
+      "address": "0x00067ff8",
+      "bytes": 68,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26729,
+      "section": ".text._ZN16CRKAndroidDeviceD2Ev",
+      "address": "0x0006803c",
+      "bytes": 108,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26733,
+      "section": ".text._ZN16CRKAndroidDeviceD0Ev",
+      "address": "0x000680a8",
+      "bytes": 14,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26736,
+      "section": ".text._ZN16CRKAndroidDevice16GetOldSectorDataEv",
+      "address": "0x000680b8",
+      "bytes": 264,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26739,
+      "section": ".text._ZN16CRKAndroidDevice11MakeSector0EPh",
+      "address": "0x000681c0",
+      "bytes": 96,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26742,
+      "section": ".text._ZN16CRKAndroidDevice11MakeSector1EPh",
+      "address": "0x00068220",
+      "bytes": 412,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26745,
+      "section": ".text._ZN16CRKAndroidDevice11MakeSector2EPh",
+      "address": "0x000683bc",
+      "bytes": 116,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26748,
+      "section": ".text._ZN16CRKAndroidDevice11MakeSector3EPh",
+      "address": "0x00068430",
+      "bytes": 136,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26751,
+      "section": ".text._ZN16CRKAndroidDevice15MakeIDBlockDataEPh",
+      "address": "0x000684b8",
+      "bytes": 820,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26754,
+      "section": ".text._ZN16CRKAndroidDevice13MakeSpareDataEPhjS0_",
+      "address": "0x000687ec",
+      "bytes": 176,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26757,
+      "section": ".text._ZN16CRKAndroidDevice12WriteIDBlockEPhjb",
+      "address": "0x0006889c",
+      "bytes": 292,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26760,
+      "section": ".text._ZN16CRKAndroidDevice10PrepareIDBEv",
+      "address": "0x000689c0",
+      "bytes": 924,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26763,
+      "section": ".text._ZN16CRKAndroidDevice15DownloadIDBlockEv",
+      "address": "0x00068d5c",
+      "bytes": 132,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26766,
+      "section": ".text._ZN16CRKAndroidDevice13DownloadImageEv",
+      "address": "0x00068de0",
+      "bytes": 1200,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26769,
+      "section": ".text._ZN16CRKAndroidDevice19MakeParamFileBufferER19STRUCT_RKIMAGE_ITEM",
+      "address": "0x00069290",
+      "bytes": 204,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26772,
+      "section": ".text._ZN16CRKAndroidDevice18RKA_Param_DownloadER19STRUCT_RKIMAGE_ITEMRxx",
+      "address": "0x0006935c",
+      "bytes": 216,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26775,
+      "section": ".text._ZN16CRKAndroidDevice17RKA_File_DownloadER19STRUCT_RKIMAGE_ITEMRxx",
+      "address": "0x00069434",
+      "bytes": 700,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26778,
+      "section": ".text._ZN16CRKAndroidDevice15RKA_Param_CheckER19STRUCT_RKIMAGE_ITEMRxx",
+      "address": "0x000696f0",
+      "bytes": 712,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26781,
+      "section": ".text._ZN16CRKAndroidDevice14RKA_File_CheckER19STRUCT_RKIMAGE_ITEMRxx",
+      "address": "0x000699b8",
+      "bytes": 1056,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26784,
+      "section": ".text._ZN16CRKAndroidDevice28write_partition_upgrade_flagEjPhj",
+      "address": "0x00069dd8",
+      "bytes": 144,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26787,
+      "section": ".text._ZN16CRKAndroidDevice27read_partition_upgrade_flagEjPhPj",
+      "address": "0x00069e68",
+      "bytes": 168,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26790,
+      "section": ".text._ZN16CRKAndroidDevice16UpgradePartitionEv",
+      "address": "0x00069f10",
+      "bytes": 1696,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26793,
+      "section": ".text._ZNSt3__16vectorIiNS_9allocatorIiEEE6insertENS_11__wrap_iterIPKiEERS5_",
+      "address": "0x0006a5b0",
+      "bytes": 424,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26796,
+      "section": ".text._ZN16CRKAndroidDevice8EraseIDBEv",
+      "address": "0x0006a758",
+      "bytes": 100,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26799,
+      "section": ".text._ZN16CRKAndroidDevice14EraseAllBlocksEv",
+      "address": "0x0006a7bc",
+      "bytes": 176,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26802,
+      "section": ".text._ZN16CRKAndroidDevice15BufferWriteBackEv",
+      "address": "0x0006a86c",
+      "bytes": 360,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26805,
+      "section": ".text._ZN16CRKAndroidDevice16FindBackupBufferEv",
+      "address": "0x0006a9d4",
+      "bytes": 536,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26808,
+      "section": ".text._ZN16CRKAndroidDevice20GetParameterPartSizeER19STRUCT_RKIMAGE_ITEM",
+      "address": "0x0006abec",
+      "bytes": 1392,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26811,
+      "section": ".text._ZN16CRKAndroidDevice18ParsePartitionInfoERNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES7_RjS8_",
+      "address": "0x0006b15c",
+      "bytes": 1124,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26814,
+      "section": ".text._ZN16CRKAndroidDevice12GetPublicKeyEPhRj",
+      "address": "0x0006b5c0",
+      "bytes": 392,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26817,
+      "section": ".text._ZNSt3__16vectorIiNS_9allocatorIiEEE26__swap_out_circular_bufferERNS_14__split_bufferIiRS2_EEPi",
+      "address": "0x0006b748",
+      "bytes": 90,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26820,
+      "section": ".text._ZNSt3__16vectorIiNS_9allocatorIiEEE21__push_back_slow_pathIRKiEEvOT_",
+      "address": "0x0006b7a2",
+      "bytes": 148,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 26823,
+      "section": ".text._ZN12CMD5Checksum6GetMD5EP7__sFILEx",
+      "address": "0x0006b840",
+      "bytes": 424,
+      "module": "librkupdate",
+      "member": "MD5Checksum.o"
+    },
+    {
+      "line": 26826,
+      "section": ".text._ZN12CMD5Checksum6UpdateEPhj",
+      "address": "0x0006b9e8",
+      "bytes": 120,
+      "module": "librkupdate",
+      "member": "MD5Checksum.o"
+    },
+    {
+      "line": 26829,
+      "section": ".text._ZN12CMD5Checksum5FinalEv",
+      "address": "0x0006ba60",
+      "bytes": 284,
+      "module": "librkupdate",
+      "member": "MD5Checksum.o"
+    },
+    {
+      "line": 26832,
+      "section": ".text._ZN12CMD5ChecksumD2Ev",
+      "address": "0x0006bb7c",
+      "bytes": 36,
+      "module": "librkupdate",
+      "member": "MD5Checksum.o"
+    },
+    {
+      "line": 26835,
+      "section": ".text._ZN12CMD5Checksum11ByteToDWordEPjPhj",
+      "address": "0x0006bba0",
+      "bytes": 46,
+      "module": "librkupdate",
+      "member": "MD5Checksum.o"
+    },
+    {
+      "line": 26838,
+      "section": ".text._ZN12CMD5Checksum9TransformEPh",
+      "address": "0x0006bbd0",
+      "bytes": 1920,
+      "module": "librkupdate",
+      "member": "MD5Checksum.o"
+    },
+    {
+      "line": 26841,
+      "section": ".text._ZN12CMD5Checksum11DWordToByteEPhPjj",
+      "address": "0x0006c350",
+      "bytes": 56,
+      "module": "librkupdate",
+      "member": "MD5Checksum.o"
+    },
+    {
+      "line": 26844,
+      "section": ".text._ZN12CMD5ChecksumD0Ev",
+      "address": "0x0006c388",
+      "bytes": 36,
+      "module": "librkupdate",
+      "member": "MD5Checksum.o"
+    },
+    {
+      "line": 26847,
+      "section": ".text._ZN7CRKBoot17GetRc4DisableFlagEv",
+      "address": "0x0006c3ac",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKBoot.o"
+    },
+    {
+      "line": 26850,
+      "section": ".text._ZN7CRKBoot11GetSignFlagEv",
+      "address": "0x0006c3b2",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKBoot.o"
+    },
+    {
+      "line": 26853,
+      "section": ".text._ZN7CRKBoot10GetVersionEv",
+      "address": "0x0006c3b8",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKBoot.o"
+    },
+    {
+      "line": 26856,
+      "section": ".text._ZN7CRKBoot15GetMergeVersionEv",
+      "address": "0x0006c3be",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKBoot.o"
+    },
+    {
+      "line": 26859,
+      "section": ".text._ZN7CRKBoot14GetReleaseTimeEv",
+      "address": "0x0006c3c4",
+      "bytes": 12,
+      "module": "librkupdate",
+      "member": "RKBoot.o"
+    },
+    {
+      "line": 26862,
+      "section": ".text._ZN7CRKBoot16GetSupportDeviceEv",
+      "address": "0x0006c3d0",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKBoot.o"
+    },
+    {
+      "line": 26865,
+      "section": ".text._ZN7CRKBoot16GetEntry471CountEv",
+      "address": "0x0006c3d6",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKBoot.o"
+    },
+    {
+      "line": 26868,
+      "section": ".text._ZN7CRKBoot16GetEntry472CountEv",
+      "address": "0x0006c3dc",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKBoot.o"
+    },
+    {
+      "line": 26871,
+      "section": ".text._ZN7CRKBoot19GetEntryLoaderCountEv",
+      "address": "0x0006c3e2",
+      "bytes": 6,
+      "module": "librkupdate",
+      "member": "RKBoot.o"
+    },
+    {
+      "line": 26874,
+      "section": ".text._ZN7CRKBoot16GetEntryPropertyE16ENUM_RKBOOTENTRYhRjS1_Pc",
+      "address": "0x0006c3e8",
+      "bytes": 142,
+      "module": "librkupdate",
+      "member": "RKBoot.o"
+    },
+    {
+      "line": 26877,
+      "section": ".text._ZN7CRKBoot12GetEntryDataE16ENUM_RKBOOTENTRYhPh",
+      "address": "0x0006c476",
+      "bytes": 104,
+      "module": "librkupdate",
+      "member": "RKBoot.o"
+    },
+    {
+      "line": 26880,
+      "section": ".text._ZN7CRKBoot14GetIndexByNameE16ENUM_RKBOOTENTRYPc",
+      "address": "0x0006c4e0",
+      "bytes": 196,
+      "module": "librkupdate",
+      "member": "RKBoot.o"
+    },
+    {
+      "line": 26883,
+      "section": ".text._ZN7CRKBootD2Ev",
+      "address": "0x0006c5a4",
+      "bytes": 18,
+      "module": "librkupdate",
+      "member": "RKBoot.o"
+    },
+    {
+      "line": 26887,
+      "section": ".text._ZN7CRKBootC2EPhjRb",
+      "address": "0x0006c5b8",
+      "bytes": 444,
+      "module": "librkupdate",
+      "member": "RKBoot.o"
+    },
+    {
+      "line": 27051,
+      "section": ".text._Z10CRC_32_NEWPhjj",
+      "address": "0x000704c8",
+      "bytes": 40,
+      "module": "libcrc32",
+      "member": "ldcrc.o"
+    },
+    {
+      "line": 27113,
+      "section": ".text.get_random_fd",
+      "address": "0x00070c38",
+      "bytes": 184,
+      "module": "libext2_uuid",
+      "member": "gen_uuid.o"
+    },
+    {
+      "line": 27115,
+      "section": ".text.get_random_bytes",
+      "address": "0x00070cf0",
+      "bytes": 104,
+      "module": "libext2_uuid",
+      "member": "gen_uuid.o"
+    },
+    {
+      "line": 27117,
+      "section": ".text.uuid__generate_time",
+      "address": "0x00070d58",
+      "bytes": 1104,
+      "module": "libext2_uuid",
+      "member": "gen_uuid.o"
+    },
+    {
+      "line": 27120,
+      "section": ".text.uuid_generate_time",
+      "address": "0x000711a8",
+      "bytes": 8,
+      "module": "libext2_uuid",
+      "member": "gen_uuid.o"
+    },
+    {
+      "line": 27123,
+      "section": ".text.uuid__generate_random",
+      "address": "0x000711b0",
+      "bytes": 128,
+      "module": "libext2_uuid",
+      "member": "gen_uuid.o"
+    },
+    {
+      "line": 27126,
+      "section": ".text.uuid_generate_random",
+      "address": "0x00071230",
+      "bytes": 20,
+      "module": "libext2_uuid",
+      "member": "gen_uuid.o"
+    },
+    {
+      "line": 27129,
+      "section": ".text.uuid_generate",
+      "address": "0x00071244",
+      "bytes": 32,
+      "module": "libext2_uuid",
+      "member": "gen_uuid.o"
+    },
+    {
+      "line": 27132,
+      "section": ".text.uuid_pack",
+      "address": "0x00071264",
+      "bytes": 60,
+      "module": "libext2_uuid",
+      "member": "pack.o"
+    },
+    {
+      "line": 27135,
+      "section": ".text.uuid_unpack",
+      "address": "0x000712a0",
+      "bytes": 80,
+      "module": "libext2_uuid",
+      "member": "unpack.o"
+    },
+    {
+      "line": 33368,
+      "section": ".ARM.exidx.text._Z9CreateUidPh",
+      "address": "0x000c6e6c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 33370,
+      "section": ".ARM.exidx.text._Z23GetPubicKeyFromExternalPcP6CRKLogPhRj",
+      "address": "0x000c6e74",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 33372,
+      "section": ".ARM.exidx.text._Z21GetPubicKeyFromDeviceP6CRKLogPhRj",
+      "address": "0x000c6e7c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 33374,
+      "section": ".ARM.exidx.text._Z12UnlockDeviceP8CRKImageP6CRKLogPhj",
+      "address": "0x000c6e84",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 33376,
+      "section": ".ARM.exidx.text._Z22do_rk_firmware_upgradePcPvS0_S_",
+      "address": "0x000c6e8c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 33378,
+      "section": ".ARM.exidx.text._Z23do_rk_partition_upgradePcPvS0_cS_",
+      "address": "0x000c6e94",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 33380,
+      "section": ".ARM.exidx.text._ZNKSt3__121__basic_string_commonILb1EE20__throw_length_errorEv",
+      "address": "0x000c6e9c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 33382,
+      "section": ".ARM.exidx.text.__clang_call_terminate",
+      "address": "0x000c6ea4",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 33384,
+      "section": ".ARM.exidx.text._ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2ERKS5_jjRKS4_",
+      "address": "0x000c6eac",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 33386,
+      "section": ".ARM.exidx.text._ZNKSt3__121__basic_string_commonILb1EE20__throw_out_of_rangeEv",
+      "address": "0x000c6eb4",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 33388,
+      "section": ".ARM.exidx.text._ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv",
+      "address": "0x000c6ebc",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 33390,
+      "section": ".ARM.exidx.text._Z6CRC_32Phjj",
+      "address": "0x000c6ec4",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 33392,
+      "section": ".ARM.exidx.text._Z15CRCBuildTable16tPt",
+      "address": "0x000c6ecc",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 33394,
+      "section": ".ARM.exidx.text._Z6CRC_16Phj",
+      "address": "0x000c6ed4",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 33396,
+      "section": ".ARM.exidx.text._Z10bch_encodePhS_",
+      "address": "0x000c6edc",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 33398,
+      "section": ".ARM.exidx.text._Z9CRC_CCITTPhj",
+      "address": "0x000c6ee4",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 33400,
+      "section": ".ARM.exidx.text._Z8gen_polyv",
+      "address": "0x000c6eec",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 33402,
+      "section": ".ARM.exidx.text._Z11generate_gfv",
+      "address": "0x000c6ef4",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 33404,
+      "section": ".ARM.exidx.text._ZN8CRKImage10GetVersionEv",
+      "address": "0x000c6efc",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 33406,
+      "section": ".ARM.exidx.text._ZN8CRKImage14GetReleaseTimeEv",
+      "address": "0x000c6f04",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 33408,
+      "section": ".ARM.exidx.text._ZN8CRKImage16GetSupportDeviceEv",
+      "address": "0x000c6f0c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 33410,
+      "section": ".ARM.exidx.text._ZN8CRKImage8Md5CheckEx",
+      "address": "0x000c6f14",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 33412,
+      "section": ".ARM.exidx.text._ZN8CRKImage7GetDataExjPh",
+      "address": "0x000c6f1c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 33414,
+      "section": ".ARM.exidx.text._ZN8CRKImage10GetMd5DataERPhS1_",
+      "address": "0x000c6f24",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 33416,
+      "section": ".ARM.exidx.text._ZN8CRKImageC2ENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEERb",
+      "address": "0x000c6f2c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 33418,
+      "section": ".ARM.exidx.text._ZN8CRKImageD2Ev",
+      "address": "0x000c6f34",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 33420,
+      "section": ".ARM.exidx.text._ZN6CRKLog12GetEnableLogEv",
+      "address": "0x000c6f3c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKLog.o"
+    },
+    {
+      "line": 33422,
+      "section": ".ARM.exidx.text._ZN6CRKLog6RecordEPKcz",
+      "address": "0x000c6f44",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKLog.o"
+    },
+    {
+      "line": 33424,
+      "section": ".ARM.exidx.text._ZN6CRKLog10SaveBufferENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEPhj",
+      "address": "0x000c6f4c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKLog.o"
+    },
+    {
+      "line": 33426,
+      "section": ".ARM.exidx.text._ZN6CRKLog11PrintBufferERNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEPhjj",
+      "address": "0x000c6f54",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKLog.o"
+    },
+    {
+      "line": 33428,
+      "section": ".ARM.exidx.text._ZN10CRKUsbCommC2EP6CRKLog",
+      "address": "0x000c6f5c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 33430,
+      "section": ".ARM.exidx.text._ZN10CRKUsbComm19RKU_ReopenLBAHandleEv",
+      "address": "0x000c6f64",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 33432,
+      "section": ".ARM.exidx.text._ZN10CRKUsbComm21RKU_ShowNandLBADeviceEv",
+      "address": "0x000c6f6c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 33434,
+      "section": ".ARM.exidx.text._ZN10CRKUsbCommD2Ev",
+      "address": "0x000c6f74",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 33436,
+      "section": ".ARM.exidx.text._ZN10CRKUsbCommD0Ev",
+      "address": "0x000c6f7c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 33438,
+      "section": ".ARM.exidx.text._ZN10CRKUsbComm17RKU_ReadFlashInfoEPhPj",
+      "address": "0x000c6f84",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 33440,
+      "section": ".ARM.exidx.text._ZN10CRKUsbComm11RKU_ReadLBAEjjPhh",
+      "address": "0x000c6f8c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 33442,
+      "section": ".ARM.exidx.text._ZN10CRKUsbComm14RKU_ReadSectorEjjPh",
+      "address": "0x000c6f94",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 33444,
+      "section": ".ARM.exidx.text._ZN10CRKUsbComm16RKU_TestBadBlockEhjjPh",
+      "address": "0x000c6f9c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 33446,
+      "section": ".ARM.exidx.text._ZN10CRKUsbComm12RKU_WriteLBAEjjPhh",
+      "address": "0x000c6fa4",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 33448,
+      "section": ".ARM.exidx.text._ZN10CRKUsbComm15RKU_WriteSectorEjjPh",
+      "address": "0x000c6fac",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 33450,
+      "section": ".ARM.exidx.text._ZN10CRKUsbComm15RKU_GetLockFlagEPh",
+      "address": "0x000c6fb4",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 33452,
+      "section": ".ARM.exidx.text._ZN10CRKUsbComm16RKU_GetPublicKeyEPh",
+      "address": "0x000c6fbc",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 33454,
+      "section": ".ARM.exidx.text._ZN9CRKDevice19SetPrepareEraseFlagEb",
+      "address": "0x000c6fc4",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 33456,
+      "section": ".ARM.exidx.text._ZN9CRKDevice6SetUidEPh",
+      "address": "0x000c6fcc",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 33458,
+      "section": ".ARM.exidx.text._ZN9CRKDevice17SetMiscModifyFlagE21ENUM_MISC_MODIFY_FLAG",
+      "address": "0x000c6fd4",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 33460,
+      "section": ".ARM.exidx.text._ZN9CRKDeviceC2ER21_STRUCT_RKDEVICE_DESC",
+      "address": "0x000c6fdc",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 33462,
+      "section": ".ARM.exidx.text._ZN9CRKDeviceD2Ev",
+      "address": "0x000c6fe4",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 33464,
+      "section": ".ARM.exidx.text._ZN9CRKDeviceD0Ev",
+      "address": "0x000c6fec",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 33466,
+      "section": ".ARM.exidx.text._ZN9CRKDevice9SetObjectEP8CRKImageP7CRKCommP6CRKLog",
+      "address": "0x000c6ff4",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 33468,
+      "section": ".ARM.exidx.text._ZN9CRKDevice14EraseEmmcBlockEhjj",
+      "address": "0x000c6ffc",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 33470,
+      "section": ".ARM.exidx.text._ZN9CRKDevice12GetFlashInfoEv",
+      "address": "0x000c7004",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 33472,
+      "section": ".ARM.exidx.text._ZN9CRKDevice18BuildBlockStateMapEh",
+      "address": "0x000c700c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 33474,
+      "section": ".ARM.exidx.text._ZN9CRKDevice15ReadMutilSectorEjjPh",
+      "address": "0x000c7014",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 33476,
+      "section": ".ARM.exidx.text._ZN9CRKDevice15EraseMutilBlockEhjjb",
+      "address": "0x000c701c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 33478,
+      "section": ".ARM.exidx.text._ZN9CRKDevice15FindValidBlocksEcc",
+      "address": "0x000c7024",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 33480,
+      "section": ".ARM.exidx.text._Z11UshortToBCDt",
+      "address": "0x000c702c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 33482,
+      "section": ".ARM.exidx.text._Z9ByteToBCDh",
+      "address": "0x000c7034",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 33484,
+      "section": ".ARM.exidx.text._ZN9CRKDevice10CheckCrc16EPhtt",
+      "address": "0x000c703c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 33486,
+      "section": ".ARM.exidx.text._ZN9CRKDevice8CheckUidEhPh",
+      "address": "0x000c7044",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 33488,
+      "section": ".ARM.exidx.text._ZN9CRKDevice10GetIDBDataEjPhj",
+      "address": "0x000c704c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 33490,
+      "section": ".ARM.exidx.text._ZN9CRKDevice16GetWriteBackDataEjPh",
+      "address": "0x000c7054",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 33492,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice11FindIDBlockEcRc",
+      "address": "0x000c705c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33494,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice10FindAllIDBEv",
+      "address": "0x000c7064",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33496,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice14ReserveIDBlockEcc",
+      "address": "0x000c706c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33498,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice12CalcIDBCountEv",
+      "address": "0x000c7074",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33500,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice13GetLoaderSizeEv",
+      "address": "0x000c707c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33502,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice13OffsetIDBlockEc",
+      "address": "0x000c7084",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33504,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDeviceC2ER21_STRUCT_RKDEVICE_DESC",
+      "address": "0x000c708c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33506,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDeviceD2Ev",
+      "address": "0x000c7094",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33508,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDeviceD0Ev",
+      "address": "0x000c709c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33510,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice16GetOldSectorDataEv",
+      "address": "0x000c70a4",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33512,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice11MakeSector0EPh",
+      "address": "0x000c70ac",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33514,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice11MakeSector1EPh",
+      "address": "0x000c70b4",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33516,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice11MakeSector2EPh",
+      "address": "0x000c70bc",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33518,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice11MakeSector3EPh",
+      "address": "0x000c70c4",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33520,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice15MakeIDBlockDataEPh",
+      "address": "0x000c70cc",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33522,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice13MakeSpareDataEPhjS0_",
+      "address": "0x000c70d4",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33524,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice12WriteIDBlockEPhjb",
+      "address": "0x000c70dc",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33526,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice10PrepareIDBEv",
+      "address": "0x000c70e4",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33528,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice15DownloadIDBlockEv",
+      "address": "0x000c70ec",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33530,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice13DownloadImageEv",
+      "address": "0x000c70f4",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33532,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice19MakeParamFileBufferER19STRUCT_RKIMAGE_ITEM",
+      "address": "0x000c70fc",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33534,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice18RKA_Param_DownloadER19STRUCT_RKIMAGE_ITEMRxx",
+      "address": "0x000c7104",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33536,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice17RKA_File_DownloadER19STRUCT_RKIMAGE_ITEMRxx",
+      "address": "0x000c710c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33538,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice15RKA_Param_CheckER19STRUCT_RKIMAGE_ITEMRxx",
+      "address": "0x000c7114",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33540,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice14RKA_File_CheckER19STRUCT_RKIMAGE_ITEMRxx",
+      "address": "0x000c711c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33542,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice28write_partition_upgrade_flagEjPhj",
+      "address": "0x000c7124",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33544,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice27read_partition_upgrade_flagEjPhPj",
+      "address": "0x000c712c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33546,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice16UpgradePartitionEv",
+      "address": "0x000c7134",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33548,
+      "section": ".ARM.exidx.text._ZNSt3__16vectorIiNS_9allocatorIiEEE6insertENS_11__wrap_iterIPKiEERS5_",
+      "address": "0x000c713c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33550,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice8EraseIDBEv",
+      "address": "0x000c7144",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33552,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice14EraseAllBlocksEv",
+      "address": "0x000c714c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33554,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice15BufferWriteBackEv",
+      "address": "0x000c7154",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33556,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice16FindBackupBufferEv",
+      "address": "0x000c715c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33558,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice20GetParameterPartSizeER19STRUCT_RKIMAGE_ITEM",
+      "address": "0x000c7164",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33560,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice18ParsePartitionInfoERNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES7_RjS8_",
+      "address": "0x000c716c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33562,
+      "section": ".ARM.exidx.text._ZN16CRKAndroidDevice12GetPublicKeyEPhRj",
+      "address": "0x000c7174",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33564,
+      "section": ".ARM.exidx.text._ZNSt3__16vectorIiNS_9allocatorIiEEE26__swap_out_circular_bufferERNS_14__split_bufferIiRS2_EEPi",
+      "address": "0x000c717c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33566,
+      "section": ".ARM.exidx.text._ZNSt3__16vectorIiNS_9allocatorIiEEE21__push_back_slow_pathIRKiEEvOT_",
+      "address": "0x000c7184",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 33568,
+      "section": ".ARM.exidx.text._ZN12CMD5Checksum6GetMD5EP7__sFILEx",
+      "address": "0x000c718c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "MD5Checksum.o"
+    },
+    {
+      "line": 33570,
+      "section": ".ARM.exidx.text._ZN12CMD5Checksum6UpdateEPhj",
+      "address": "0x000c7194",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "MD5Checksum.o"
+    },
+    {
+      "line": 33572,
+      "section": ".ARM.exidx.text._ZN12CMD5Checksum5FinalEv",
+      "address": "0x000c719c",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "MD5Checksum.o"
+    },
+    {
+      "line": 33574,
+      "section": ".ARM.exidx.text._ZN12CMD5ChecksumD2Ev",
+      "address": "0x000c71a4",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "MD5Checksum.o"
+    },
+    {
+      "line": 33576,
+      "section": ".ARM.exidx.text._ZN12CMD5Checksum11ByteToDWordEPjPhj",
+      "address": "0x000c71ac",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "MD5Checksum.o"
+    },
+    {
+      "line": 33578,
+      "section": ".ARM.exidx.text._ZN12CMD5Checksum9TransformEPh",
+      "address": "0x000c71b4",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "MD5Checksum.o"
+    },
+    {
+      "line": 33580,
+      "section": ".ARM.exidx.text._ZN12CMD5Checksum11DWordToByteEPhPjj",
+      "address": "0x000c71bc",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "MD5Checksum.o"
+    },
+    {
+      "line": 33582,
+      "section": ".ARM.exidx.text._ZN7CRKBoot17GetRc4DisableFlagEv",
+      "address": "0x000c71c4",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKBoot.o"
+    },
+    {
+      "line": 33584,
+      "section": ".ARM.exidx.text._ZN7CRKBoot14GetReleaseTimeEv",
+      "address": "0x000c71cc",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKBoot.o"
+    },
+    {
+      "line": 33586,
+      "section": ".ARM.exidx.text._ZN7CRKBoot16GetSupportDeviceEv",
+      "address": "0x000c71d4",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKBoot.o"
+    },
+    {
+      "line": 33588,
+      "section": ".ARM.exidx.text._ZN7CRKBoot16GetEntryPropertyE16ENUM_RKBOOTENTRYhRjS1_Pc",
+      "address": "0x000c71dc",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKBoot.o"
+    },
+    {
+      "line": 33590,
+      "section": ".ARM.exidx.text._ZN7CRKBoot12GetEntryDataE16ENUM_RKBOOTENTRYhPh",
+      "address": "0x000c71e4",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKBoot.o"
+    },
+    {
+      "line": 33592,
+      "section": ".ARM.exidx.text._ZN7CRKBoot14GetIndexByNameE16ENUM_RKBOOTENTRYPc",
+      "address": "0x000c71ec",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKBoot.o"
+    },
+    {
+      "line": 33594,
+      "section": ".ARM.exidx.text._ZN7CRKBootD2Ev",
+      "address": "0x000c71f4",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKBoot.o"
+    },
+    {
+      "line": 33596,
+      "section": ".ARM.exidx.text._ZN7CRKBootC2EPhjRb",
+      "address": "0x000c71fc",
+      "bytes": 8,
+      "module": "librkupdate",
+      "member": "RKBoot.o"
+    },
+    {
+      "line": 33700,
+      "section": ".ARM.exidx.text._Z10CRC_32_NEWPhjj",
+      "address": "0x000c739c",
+      "bytes": 8,
+      "module": "libcrc32",
+      "member": "ldcrc.o"
+    },
+    {
+      "line": 33732,
+      "section": ".ARM.exidx.text.get_random_fd",
+      "address": "0x000c741c",
+      "bytes": 8,
+      "module": "libext2_uuid",
+      "member": "gen_uuid.o"
+    },
+    {
+      "line": 33734,
+      "section": ".ARM.exidx.text.get_random_bytes",
+      "address": "0x000c7424",
+      "bytes": 8,
+      "module": "libext2_uuid",
+      "member": "gen_uuid.o"
+    },
+    {
+      "line": 33736,
+      "section": ".ARM.exidx.text.uuid__generate_time",
+      "address": "0x000c742c",
+      "bytes": 8,
+      "module": "libext2_uuid",
+      "member": "gen_uuid.o"
+    },
+    {
+      "line": 33738,
+      "section": ".ARM.exidx.text.uuid_generate_time",
+      "address": "0x000c7434",
+      "bytes": 8,
+      "module": "libext2_uuid",
+      "member": "gen_uuid.o"
+    },
+    {
+      "line": 33740,
+      "section": ".ARM.exidx.text.uuid__generate_random",
+      "address": "0x000c743c",
+      "bytes": 8,
+      "module": "libext2_uuid",
+      "member": "gen_uuid.o"
+    },
+    {
+      "line": 33742,
+      "section": ".ARM.exidx.text.uuid_generate_random",
+      "address": "0x000c7444",
+      "bytes": 8,
+      "module": "libext2_uuid",
+      "member": "gen_uuid.o"
+    },
+    {
+      "line": 33744,
+      "section": ".ARM.exidx.text.uuid_generate",
+      "address": "0x000c744c",
+      "bytes": 8,
+      "module": "libext2_uuid",
+      "member": "gen_uuid.o"
+    },
+    {
+      "line": 33746,
+      "section": ".ARM.exidx.text.uuid_pack",
+      "address": "0x000c7454",
+      "bytes": 8,
+      "module": "libext2_uuid",
+      "member": "pack.o"
+    },
+    {
+      "line": 33748,
+      "section": ".ARM.exidx.text.uuid_unpack",
+      "address": "0x000c745c",
+      "bytes": 8,
+      "module": "libext2_uuid",
+      "member": "unpack.o"
+    },
+    {
+      "line": 36759,
+      "section": ".ARM.extab.text._Z23GetPubicKeyFromExternalPcP6CRKLogPhRj",
+      "address": "0x000e7ba4",
+      "bytes": 12,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 36761,
+      "section": ".ARM.extab.text._Z21GetPubicKeyFromDeviceP6CRKLogPhRj",
+      "address": "0x000e7bb0",
+      "bytes": 80,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 36763,
+      "section": ".ARM.extab.text._Z12UnlockDeviceP8CRKImageP6CRKLogPhj",
+      "address": "0x000e7c00",
+      "bytes": 40,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 36765,
+      "section": ".ARM.extab.text._Z22do_rk_firmware_upgradePcPvS0_S_",
+      "address": "0x000e7c28",
+      "bytes": 304,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 36767,
+      "section": ".ARM.extab.text._Z23do_rk_partition_upgradePcPvS0_cS_",
+      "address": "0x000e7d58",
+      "bytes": 236,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 36769,
+      "section": ".ARM.extab.text._ZNKSt3__121__basic_string_commonILb1EE20__throw_length_errorEv",
+      "address": "0x000e7e44",
+      "bytes": 52,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 36771,
+      "section": ".ARM.extab.text._ZNKSt3__121__basic_string_commonILb1EE20__throw_out_of_rangeEv",
+      "address": "0x000e7e78",
+      "bytes": 52,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 36773,
+      "section": ".ARM.extab.text._ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv",
+      "address": "0x000e7eac",
+      "bytes": 52,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 36775,
+      "section": ".ARM.extab.text._Z8gen_polyv",
+      "address": "0x000e7ee0",
+      "bytes": 12,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 36777,
+      "section": ".ARM.extab.text._ZN8CRKImage8Md5CheckEx",
+      "address": "0x000e7eec",
+      "bytes": 72,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 36779,
+      "section": ".ARM.extab.text._ZN8CRKImageC2ENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEERb",
+      "address": "0x000e7f34",
+      "bytes": 52,
+      "module": "librkupdate",
+      "member": "RKImage.o"
+    },
+    {
+      "line": 36781,
+      "section": ".ARM.extab.text._ZN6CRKLog11PrintBufferERNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEPhjj",
+      "address": "0x000e7f68",
+      "bytes": 84,
+      "module": "librkupdate",
+      "member": "RKLog.o"
+    },
+    {
+      "line": 36783,
+      "section": ".ARM.extab.text._ZN10CRKUsbCommD2Ev",
+      "address": "0x000e7fbc",
+      "bytes": 32,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 36785,
+      "section": ".ARM.extab.text._ZN10CRKUsbComm16RKU_TestBadBlockEhjjPh",
+      "address": "0x000e7fdc",
+      "bytes": 52,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 36787,
+      "section": ".ARM.extab.text._ZN9CRKDevice14EraseEmmcBlockEhjj",
+      "address": "0x000e8010",
+      "bytes": 12,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 36789,
+      "section": ".ARM.extab.text._ZN9CRKDevice12GetFlashInfoEv",
+      "address": "0x000e801c",
+      "bytes": 52,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 36791,
+      "section": ".ARM.extab.text._ZN16CRKAndroidDevice11FindIDBlockEcRc",
+      "address": "0x000e8050",
+      "bytes": 12,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 36793,
+      "section": ".ARM.extab.text._ZN16CRKAndroidDevice16GetOldSectorDataEv",
+      "address": "0x000e805c",
+      "bytes": 12,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 36795,
+      "section": ".ARM.extab.text._ZN16CRKAndroidDevice15MakeIDBlockDataEPh",
+      "address": "0x000e8068",
+      "bytes": 12,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 36797,
+      "section": ".ARM.extab.text._ZN16CRKAndroidDevice13MakeSpareDataEPhjS0_",
+      "address": "0x000e8074",
+      "bytes": 12,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 36799,
+      "section": ".ARM.extab.text._ZN16CRKAndroidDevice12WriteIDBlockEPhjb",
+      "address": "0x000e8080",
+      "bytes": 12,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 36801,
+      "section": ".ARM.extab.text._ZN16CRKAndroidDevice10PrepareIDBEv",
+      "address": "0x000e808c",
+      "bytes": 256,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 36803,
+      "section": ".ARM.extab.text._ZN16CRKAndroidDevice13DownloadImageEv",
+      "address": "0x000e818c",
+      "bytes": 16,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 36805,
+      "section": ".ARM.extab.text._ZN16CRKAndroidDevice15RKA_Param_CheckER19STRUCT_RKIMAGE_ITEMRxx",
+      "address": "0x000e819c",
+      "bytes": 184,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 36807,
+      "section": ".ARM.extab.text._ZN16CRKAndroidDevice14RKA_File_CheckER19STRUCT_RKIMAGE_ITEMRxx",
+      "address": "0x000e8254",
+      "bytes": 184,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 36809,
+      "section": ".ARM.extab.text._ZN16CRKAndroidDevice16UpgradePartitionEv",
+      "address": "0x000e830c",
+      "bytes": 152,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 36811,
+      "section": ".ARM.extab.text._ZNSt3__16vectorIiNS_9allocatorIiEEE6insertENS_11__wrap_iterIPKiEERS5_",
+      "address": "0x000e83a4",
+      "bytes": 52,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 36813,
+      "section": ".ARM.extab.text._ZN16CRKAndroidDevice15BufferWriteBackEv",
+      "address": "0x000e83d8",
+      "bytes": 12,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 36815,
+      "section": ".ARM.extab.text._ZN16CRKAndroidDevice16FindBackupBufferEv",
+      "address": "0x000e83e4",
+      "bytes": 12,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 36817,
+      "section": ".ARM.extab.text._ZN16CRKAndroidDevice20GetParameterPartSizeER19STRUCT_RKIMAGE_ITEM",
+      "address": "0x000e83f0",
+      "bytes": 216,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 36819,
+      "section": ".ARM.extab.text._ZN16CRKAndroidDevice18ParsePartitionInfoERNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES7_RjS8_",
+      "address": "0x000e84c8",
+      "bytes": 284,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 36821,
+      "section": ".ARM.extab.text._ZN16CRKAndroidDevice12GetPublicKeyEPhRj",
+      "address": "0x000e85e4",
+      "bytes": 12,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 36823,
+      "section": ".ARM.extab.text._ZN12CMD5Checksum6GetMD5EP7__sFILEx",
+      "address": "0x000e85f0",
+      "bytes": 128,
+      "module": "librkupdate",
+      "member": "MD5Checksum.o"
+    },
+    {
+      "line": 36825,
+      "section": ".ARM.extab.text._ZN12CMD5Checksum5FinalEv",
+      "address": "0x000e8670",
+      "bytes": 92,
+      "module": "librkupdate",
+      "member": "MD5Checksum.o"
+    },
+    {
+      "line": 36827,
+      "section": ".ARM.extab.text._ZN7CRKBoot14GetIndexByNameE16ENUM_RKBOOTENTRYPc",
+      "address": "0x000e86cc",
+      "bytes": 12,
+      "module": "librkupdate",
+      "member": "RKBoot.o"
+    },
+    {
+      "line": 37505,
+      "section": ".data.rel.ro._ZTV10CRKUsbComm",
+      "address": "0x000efbe0",
+      "bytes": 80,
+      "module": "librkupdate",
+      "member": "RKComm.o"
+    },
+    {
+      "line": 37508,
+      "section": ".data.rel.ro._ZTV9CRKDevice",
+      "address": "0x000efc30",
+      "bytes": 88,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 37511,
+      "section": ".data.rel.ro._ZTV16CRKAndroidDevice",
+      "address": "0x000efc88",
+      "bytes": 88,
+      "module": "librkupdate",
+      "member": "RKAndroidDevice.o"
+    },
+    {
+      "line": 37514,
+      "section": ".data.rel.ro._ZTV12CMD5Checksum",
+      "address": "0x000efce0",
+      "bytes": 16,
+      "module": "librkupdate",
+      "member": "MD5Checksum.o"
+    },
+    {
+      "line": 38004,
+      "section": ".data.gTable_Crc32",
+      "address": "0x000f14d4",
+      "bytes": 1024,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 38007,
+      "section": ".data.szManufName",
+      "address": "0x000f18d4",
+      "bytes": 32,
+      "module": "librkupdate",
+      "member": "RKDevice.o"
+    },
+    {
+      "line": 38010,
+      "section": ".data._ZL7PADDING",
+      "address": "0x000f18f4",
+      "bytes": 64,
+      "module": "librkupdate",
+      "member": "MD5Checksum.o"
+    },
+    {
+      "line": 38015,
+      "section": ".data.fd.7157",
+      "address": "0x000f193c",
+      "bytes": 4,
+      "module": "libext2_uuid",
+      "member": "gen_uuid.o"
+    },
+    {
+      "line": 38017,
+      "section": ".data.state_fd.7189",
+      "address": "0x000f1940",
+      "bytes": 4,
+      "module": "libext2_uuid",
+      "member": "gen_uuid.o"
+    },
+    {
+      "line": 38294,
+      "section": ".bss.g_callback",
+      "address": "0x000f406c",
+      "bytes": 4,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 38297,
+      "section": ".bss.g_progress_callback",
+      "address": "0x000f4070",
+      "bytes": 4,
+      "module": "librkupdate",
+      "member": "Upgrade.o"
+    },
+    {
+      "line": 38299,
+      "section": ".bss.rr",
+      "address": "0x000f4074",
+      "bytes": 4,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 38301,
+      "section": ".bss.p",
+      "address": "0x000f4080",
+      "bytes": 56,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 38303,
+      "section": ".bss.alpha_to",
+      "address": "0x000f40b8",
+      "bytes": 32768,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 38305,
+      "section": ".bss.index_of",
+      "address": "0x000fc0b8",
+      "bytes": 32768,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 38307,
+      "section": ".bss.gg",
+      "address": "0x001040b8",
+      "bytes": 420,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 38309,
+      "section": ".bss.ggx1",
+      "address": "0x0010425c",
+      "bytes": 4,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 38311,
+      "section": ".bss.ggx2",
+      "address": "0x00104260",
+      "bytes": 4,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 38313,
+      "section": ".bss.ggx3",
+      "address": "0x00104264",
+      "bytes": 4,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 38315,
+      "section": ".bss.ggx4",
+      "address": "0x00104268",
+      "bytes": 4,
+      "module": "librkupdate",
+      "member": "CRC.o"
+    },
+    {
+      "line": 38349,
+      "section": ".bss.state_f.7190",
+      "address": "0x00104330",
+      "bytes": 4,
+      "module": "libext2_uuid",
+      "member": "gen_uuid.o"
+    },
+    {
+      "line": 38351,
+      "section": ".bss.has_init.7234",
+      "address": "0x00104334",
+      "bytes": 4,
+      "module": "libext2_uuid",
+      "member": "gen_uuid.o"
+    },
+    {
+      "line": 38353,
+      "section": ".bss.clock_seq.7191",
+      "address": "0x00104338",
+      "bytes": 2,
+      "module": "libext2_uuid",
+      "member": "gen_uuid.o"
+    },
+    {
+      "line": 38355,
+      "section": ".bss.node_id.7233",
+      "address": "0x0010433c",
+      "bytes": 8,
+      "module": "libext2_uuid",
+      "member": "gen_uuid.o"
+    },
+    {
+      "line": 38357,
+      "section": ".bss.adjustment.7187",
+      "address": "0x00104344",
+      "bytes": 4,
+      "module": "libext2_uuid",
+      "member": "gen_uuid.o"
+    },
+    {
+      "line": 38359,
+      "section": ".bss.last.7188",
+      "address": "0x00104348",
+      "bytes": 8,
+      "module": "libext2_uuid",
+      "member": "gen_uuid.o"
+    }
+  ]
+}

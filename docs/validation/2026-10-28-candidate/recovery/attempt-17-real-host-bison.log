@@ -1,0 +1,60 @@
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=recovery
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/recovery/out
+============================================
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/recovery/out
+============================================
+bootable/recovery/Android.mk:64: *** Redirect log to UART
+Yacc: recovery <= bootable/recovery/edify/parser.yy
+/workspace/build01-platform-next/host-deps/usr/bin/bison -d  --defines=/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libedify_intermediates/parser.h -o /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libedify_intermediates/parser.cpp bootable/recovery/edify/parser.yy
+bootable/recovery/edify/parser.yy:56.1-14: warning: deprecated directive: ‘%error-verbose’, use ‘%define parse.error verbose’ [-Wdeprecated]
+   56 | %error-verbose
+      | ^~~~~~~~~~~~~~
+      | %define parse.error verbose
+bootable/recovery/edify/parser.yy: warning: fix-its can be applied.  Rerun with option '--update'. [-Wother]
+Lex: recovery <= bootable/recovery/edify/lexer.ll
+prebuilts/misc/linux-x86/flex/flex-2.5.39 -o/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libedify_intermediates/lexer.cpp bootable/recovery/edify/lexer.ll
+/bin/bash: line 1: prebuilts/misc/linux-x86/flex/flex-2.5.39: No such file or directory
+make: *** [build/core/binary.mk:875: /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libedify_intermediates/lexer.cpp] Error 127

@@ -1,0 +1,74 @@
+{
+  "scope": "independent source and disposable-fixture review of candidate full-platform driver, not a BSP or Android image build",
+  "status": "pass_after_material_findings_fixed",
+  "reviewed_files": {
+    "tools/build_full_platform.py": {
+      "size_bytes": 25539,
+      "sha256": "de7e8647d8490fdf9ae0a74a62d9f14793bb02c83031f773ab7a2d863fb3880d"
+    },
+    "tests/test_full_platform_driver.py": {
+      "size_bytes": 16823,
+      "sha256": "64c172ad9c87eb44e6cca5296c88cf6b106705eca2eb5cf6844a0484f5dfa01e"
+    },
+    "rom/product/full-platform-patches.json": {
+      "size_bytes": 2169,
+      "sha256": "e55f86cd2310245a75d3bf86ce2a8b45de9e72d7d3342f1f2f07d25f1cb66556"
+    },
+    "evidence/driver-contract-tests.log": {
+      "size_bytes": 5117,
+      "sha256": "1f22432c46f6b58222ce742681f344a87516f26f343c1bfc4b35d46b3963565a"
+    },
+    "review/final-recheck-tests.log": {
+      "size_bytes": 1296,
+      "sha256": "2578f05a39a78885de4b69a7700537bf0960319b7181615ad27eae7d22c12bad"
+    },
+    "review/final-reproducer-recheck.json": {
+      "size_bytes": 902,
+      "sha256": "895cb7a2fbdedcb2892033d6d459acc7acd305d5b3e7a15364e41b5cc04bf1d1"
+    }
+  },
+  "findings_resolved": [
+    {
+      "id": "profile-output-node-types",
+      "resolution": "Product template and destination scans now reject special children. Existing destination and output paths must be directories. Negative cases prove rejection before source patches."
+    },
+    {
+      "id": "log-product-overlap",
+      "resolution": "A log directory inside or equal to the materialized product is rejected before log creation or source patch mutation."
+    },
+    {
+      "id": "git-fsmonitor-execution",
+      "resolution": "Every Git call disables core.fsmonitor and hooks. The original helper-marker reproducer now passes without helper execution."
+    },
+    {
+      "id": "git-clean-filter-execution",
+      "resolution": "No Git worktree diff is used. Raw tracked working bytes and modes are compared with Git blob IDs. A configured clean filter no longer executes for a same-content file whose timestamp changed."
+    },
+    {
+      "id": "replacement-ref-pin-bypass",
+      "resolution": "Every Git call uses --no-replace-objects. An original HEAD pin paired with a replacement commit tree is rejected; no output or log directory is created."
+    }
+  ],
+  "independent_checks": {
+    "focused_author_negative_tests_executed": 8,
+    "focused_test_result": "pass",
+    "original_reproducers_reexecuted_after_fixes": 3,
+    "reproducer_result": "pass",
+    "author_full_contract_test_log": "36 tests pass. Shell and make orchestration fixtures are explicitly labelled and do not compile Android."
+  },
+  "confirmed": [
+    "Exact critical HEAD pins and raw untouched tracked bytes/modes are checked. Staged changes, assume-unchanged, skip-worktree, unknown source inputs and ignored build definitions are blocked within the explicit projects.",
+    "Patch-affected paths are compared with pristine or verified prefix states produced from Git blob bytes and actual git apply in scratch directories. Arbitrary partial patch states are rejected.",
+    "Default mode does not source envsetup/BSP build scripts or mutate BSP, output, log or product paths. It deliberately runs host Git, selected JDK/Python version commands and temporary scratch patch checks.",
+    "Only explicit --run applies source patches, copies the product and invokes genuine envsetup/lunch/make droid. No direct flash, mount or device command, vendor build.sh, source download or GitHub Actions call is present.",
+    "The kernel override uses a bounded regular-file read and an input-marker hash. This does not assert that the file is a valid kernel or compatible with the hardware.",
+    "The source patch plan leaves kernel building separate and does not enable recovery in the existing SD test product."
+  ],
+  "limits": [
+    "Host executables and the control checkout are explicitly trusted. This is not a sandbox against concurrently changing source files or arbitrary host configuration.",
+    "Only critical overlay projects are validated. Other AOSP project states and generated-header origins are not authenticated.",
+    "Preflight is not a lock. Rechecks reduce ordinary mistakes but do not provide atomic rollback of multi-project patching or complete concurrency isolation.",
+    "An actual repo manifest -r, when available, is captured with provenance rather than fabricated. Absence or failure is reported; a candidate build may still run.",
+    "Passing fixtures does not establish source/module closure, an Android ROM, recovery/SD image, physical compatibility or boot."
+  ]
+}

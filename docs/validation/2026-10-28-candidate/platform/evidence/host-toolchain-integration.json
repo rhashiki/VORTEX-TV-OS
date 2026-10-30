@@ -1,0 +1,7 @@
+{
+  "path": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8",
+  "repository": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8",
+  "revision": "73ca99196723f810dad42390d154654354f57c16",
+  "old_shared_prebuilts_mutated": false,
+  "setup": "new owned GCC parent; prior ARM tools reused read-only; genuine host toolchain added at expected path"
+}

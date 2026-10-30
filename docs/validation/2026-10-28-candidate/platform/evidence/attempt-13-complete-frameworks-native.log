@@ -1,0 +1,349 @@
+including device/rockchip/rk322x/vendorsetup.sh
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=vortex_rk322x_sd_box
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/platform/out
+============================================
+LUNCH_STATUS=0
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=vortex_rk322x_sd_box
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/platform/out
+============================================
+Clean step: find /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box -type f -name "libgui*" -print0 | xargs -0 rm -f
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj/SHARED_LIBRARIES/libgui_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj/SHARED_LIBRARIES/libgui_intermediates
+including ./bionic/Android.mk ...
+including ./build/libs/host/Android.mk ...
+including ./build/target/board/Android.mk ...
+including ./build/target/product/security/Android.mk ...
+including ./build/tools/Android.mk ...
+including ./device/rockchip/common/Android.mk ...
+including ./external/compiler-rt/Android.mk ...
+including ./external/icu/Android.mk ...
+including ./external/junit/Android.mk ...
+including ./external/libcxx/Android.mk ...
+including ./external/libcxxabi/Android.mk ...
+including ./external/libunwind_llvm/Android.mk ...
+including ./external/llvm/Android.mk ...
+including ./external/zlib/Android.mk ...
+including ./frameworks/base/Android.mk ...
+find: ‘../opt/telephony/src/java/android/provider’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony/gsm’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/rtp’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/sip’: No such file or directory
+find: ‘../../frameworks/data-binding/baseLibrary/src/main’: No such file or directory
+find: ‘../../frameworks/data-binding/extensions/library/src/main’: No such file or directory
+find: ‘../../frameworks/data-binding/extensions/library/src/doc’: No such file or directory
+find: ‘../../frameworks/support/annotations’: No such file or directory
+find: ‘../../frameworks/support/compat’: No such file or directory
+find: ‘../../frameworks/support/media-compat’: No such file or directory
+find: ‘../../frameworks/support/fragment’: No such file or directory
+find: ‘../../frameworks/support/core-ui’: No such file or directory
+find: ‘../../frameworks/support/core-utils’: No such file or directory
+find: ‘../../frameworks/support/v7/gridlayout’: No such file or directory
+find: ‘../../frameworks/support/v7/cardview’: No such file or directory
+find: ‘../../frameworks/support/v7/mediarouter’: No such file or directory
+find: ‘../../frameworks/support/v7/palette’: No such file or directory
+find: ‘../../frameworks/support/v8/renderscript’: No such file or directory
+find: ‘../../frameworks/support/v13’: No such file or directory
+find: ‘../../frameworks/support/v17/leanback’: No such file or directory
+find: ‘../../frameworks/support/design’: No such file or directory
+find: ‘../../frameworks/support/percent’: No such file or directory
+find: ‘../../frameworks/support/recommendation’: No such file or directory
+find: ‘../../frameworks/support/transition’: No such file or directory
+find: ‘../../frameworks/support/v7/preference’: No such file or directory
+find: ‘../../frameworks/support/v14/preference’: No such file or directory
+find: ‘../../frameworks/support/v17/preference-leanback’: No such file or directory
+find: ‘../../frameworks/support/documents-archive’: No such file or directory
+find: ‘../../frameworks/support/customtabs’: No such file or directory
+find: ‘../../frameworks/multidex/library/src’: No such file or directory
+find: ‘../../frameworks/multidex/instrumentation/src’: No such file or directory
+find: ‘../../frameworks/support/graphics/drawable/animated’: No such file or directory
+find: ‘../../frameworks/support/graphics/drawable/static’: No such file or directory
+find: ‘../../frameworks/support/v7/appcompat/src’: No such file or directory
+find: ‘../../frameworks/support/v7/recyclerview/src’: No such file or directory
+find: ‘../opt/telephony/src/java/android/provider’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony/gsm’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/rtp’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/sip’: No such file or directory
+find: ‘../opt/telephony/src/java/android/provider’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony/gsm’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/rtp’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/sip’: No such file or directory
+find: ‘../../frameworks/data-binding/baseLibrary/src/main’: No such file or directory
+find: ‘../../frameworks/data-binding/extensions/library/src/main’: No such file or directory
+find: ‘../../frameworks/data-binding/extensions/library/src/doc’: No such file or directory
+find: ‘../../frameworks/support/annotations’: No such file or directory
+find: ‘../../frameworks/support/compat’: No such file or directory
+find: ‘../../frameworks/support/media-compat’: No such file or directory
+find: ‘../../frameworks/support/fragment’: No such file or directory
+find: ‘../../frameworks/support/core-ui’: No such file or directory
+find: ‘../../frameworks/support/core-utils’: No such file or directory
+find: ‘../../frameworks/support/v7/gridlayout’: No such file or directory
+find: ‘../../frameworks/support/v7/cardview’: No such file or directory
+find: ‘../../frameworks/support/v7/mediarouter’: No such file or directory
+find: ‘../../frameworks/support/v7/palette’: No such file or directory
+find: ‘../../frameworks/support/v8/renderscript’: No such file or directory
+find: ‘../../frameworks/support/v13’: No such file or directory
+find: ‘../../frameworks/support/v17/leanback’: No such file or directory
+find: ‘../../frameworks/support/design’: No such file or directory
+find: ‘../../frameworks/support/percent’: No such file or directory
+find: ‘../../frameworks/support/recommendation’: No such file or directory
+find: ‘../../frameworks/support/transition’: No such file or directory
+find: ‘../../frameworks/support/v7/preference’: No such file or directory
+find: ‘../../frameworks/support/v14/preference’: No such file or directory
+find: ‘../../frameworks/support/v17/preference-leanback’: No such file or directory
+find: ‘../../frameworks/support/documents-archive’: No such file or directory
+find: ‘../../frameworks/support/customtabs’: No such file or directory
+find: ‘../../frameworks/multidex/library/src’: No such file or directory
+find: ‘../../frameworks/multidex/instrumentation/src’: No such file or directory
+find: ‘../../frameworks/support/graphics/drawable/animated’: No such file or directory
+find: ‘../../frameworks/support/graphics/drawable/static’: No such file or directory
+find: ‘../../frameworks/support/v7/appcompat/src’: No such file or directory
+find: ‘../../frameworks/support/v7/recyclerview/src’: No such file or directory
+find: ‘../opt/telephony/src/java/android/provider’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony/gsm’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/rtp’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/sip’: No such file or directory
+find: ‘../../external/nist-sip/java’: No such file or directory
+find: ‘../../external/tagsoup/src’: No such file or directory
+build/core/package_internal.mk:143: Empty argument supplied to find-subdir-assets
+including ./frameworks/native/cmds/atrace/Android.mk ...
+including ./frameworks/native/cmds/bugreport/Android.mk ...
+including ./frameworks/native/cmds/bugreportz/Android.mk ...
+including ./frameworks/native/cmds/cmd/Android.mk ...
+including ./frameworks/native/cmds/dumpstate/Android.mk ...
+including ./frameworks/native/cmds/dumpsys/Android.mk ...
+including ./frameworks/native/cmds/flatland/Android.mk ...
+including ./frameworks/native/cmds/installd/Android.mk ...
+including ./frameworks/native/cmds/ip-up-vpn/Android.mk ...
+including ./frameworks/native/cmds/rawbu/Android.mk ...
+including ./frameworks/native/cmds/service/Android.mk ...
+including ./frameworks/native/cmds/servicemanager/Android.mk ...
+including ./frameworks/native/libs/binder/Android.mk ...
+including ./frameworks/native/libs/diskusage/Android.mk ...
+including ./frameworks/native/libs/gui/Android.mk ...
+including ./frameworks/native/libs/input/Android.mk ...
+including ./frameworks/native/libs/ui/Android.mk ...
+including ./frameworks/native/opengl/libagl/Android.mk ...
+including ./frameworks/native/opengl/libs/Android.mk ...
+including ./frameworks/native/opengl/tests/Android.mk ...
+including ./frameworks/native/services/batteryservice/Android.mk ...
+including ./frameworks/native/services/inputflinger/Android.mk ...
+including ./frameworks/native/services/powermanager/Android.mk ...
+including ./frameworks/native/services/sensorservice/Android.mk ...
+including ./frameworks/native/services/surfaceflinger/Android.mk ...
+including ./frameworks/native/vulkan/Android.mk ...
+including ./hardware/libhardware/Android.mk ...
+including ./hardware/rockchip/hwcomposer/Android.mk ...
+Generated version.h
+including ./hardware/rockchip/libgralloc/Android.mk ...
+Generated version.h
+including ./hardware/rockchip/librkvpu/Android.mk ...
+including ./libcore/Android.mk ...
+including ./prebuilts/sdk/Android.mk ...
+including ./system/core/Android.mk ...
+including ./vendor/rockchip/rk322x/Android.mk ...
+including ./vendor/vortex/home/Android.mk ...
+Export includes file: -- /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libinput_intermediates/export_includes
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libinput_intermediates/ && rm -f /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libinput_intermediates/export_includes.tmp
+Export includes file: -- /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libutils_intermediates/export_includes
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libutils_intermediates/ && rm -f /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libutils_intermediates/export_includes.tmp
+touch /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libinput_intermediates/export_includes.tmp
+touch /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libutils_intermediates/export_includes.tmp
+mv /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libinput_intermediates/export_includes.tmp /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libinput_intermediates/export_includes ;
+mv /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libutils_intermediates/export_includes.tmp /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libutils_intermediates/export_includes ;
+Export includes file: -- /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcutils_intermediates/export_includes
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcutils_intermediates/ && rm -f /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcutils_intermediates/export_includes.tmp
+Export includes file: -- /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/liblog_intermediates/export_includes
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/liblog_intermediates/ && rm -f /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/liblog_intermediates/export_includes.tmp
+touch /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcutils_intermediates/export_includes.tmp
+touch /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/liblog_intermediates/export_includes.tmp
+mv /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcutils_intermediates/export_includes.tmp /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcutils_intermediates/export_includes ;
+mv /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/liblog_intermediates/export_includes.tmp /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/liblog_intermediates/export_includes ;
+Import includes file: /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/import_includes
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/ && rm -f /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/import_includes
+Export includes file: -- /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libc++abi_intermediates/export_includes
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libc++abi_intermediates/ && rm -f /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libc++abi_intermediates/export_includes.tmp
+for f in /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/export_includes; do \
+  cat $f >> /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/import_includes; \
+done
+for d in external/libcxxabi/include; do \
+        echo "-I $d" >> /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libc++abi_intermediates/export_includes.tmp; \
+        done
+mv /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libc++abi_intermediates/export_includes.tmp /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libc++abi_intermediates/export_includes ;
+Export includes file: -- /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libc++_static_intermediates/export_includes
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libc++_static_intermediates/ && rm -f /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libc++_static_intermediates/export_includes.tmp
+for d in external/libcxx/include external/libcxxabi/include; do \
+        echo "-I $d" >> /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libc++_static_intermediates/export_includes.tmp; \
+        done
+Import includes file: /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libc++abi_intermediates/import_includes
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libc++abi_intermediates/ && rm -f /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libc++abi_intermediates/import_includes
+mv /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libc++_static_intermediates/export_includes.tmp /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libc++_static_intermediates/export_includes ;
+for f in /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/export_includes; do \
+  cat $f >> /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libc++abi_intermediates/import_includes; \
+done
+Import includes file: /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libinput_intermediates/import_includes
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libinput_intermediates/ && rm -f /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libinput_intermediates/import_includes
+for f in /workspace/build01-full-next/platform/out/host/linux-x86/obj/SHARED_LIBRARIES/libc++_intermediates/export_includes /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/export_includes; do \
+  cat $f >> /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libinput_intermediates/import_includes; \
+done
+Import includes file: /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libutils_intermediates/import_includes
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libutils_intermediates/ && rm -f /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libutils_intermediates/import_includes
+for f in /workspace/build01-full-next/platform/out/host/linux-x86/obj/SHARED_LIBRARIES/libc++_intermediates/export_includes /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/liblog_intermediates/export_includes /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/export_includes; do \
+  cat $f >> /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libutils_intermediates/import_includes; \
+done
+Import includes file: /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcutils_intermediates/import_includes
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcutils_intermediates/ && rm -f /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcutils_intermediates/import_includes
+for f in /workspace/build01-full-next/platform/out/host/linux-x86/obj/SHARED_LIBRARIES/libc++_intermediates/export_includes /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/liblog_intermediates/export_includes /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/export_includes; do \
+  cat $f >> /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcutils_intermediates/import_includes; \
+done
+Import includes file: /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/liblog_intermediates/import_includes
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/liblog_intermediates/ && rm -f /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/liblog_intermediates/import_includes
+for f in /workspace/build01-full-next/platform/out/host/linux-x86/obj/SHARED_LIBRARIES/libc++_intermediates/export_includes /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/export_includes; do \
+  cat $f >> /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/liblog_intermediates/import_includes; \
+done
+Export includes file: -- /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/validatekeymaps_intermediates/export_includes
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/validatekeymaps_intermediates/ && rm -f /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/validatekeymaps_intermediates/export_includes.tmp
+touch /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/validatekeymaps_intermediates/export_includes.tmp
+mv /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/validatekeymaps_intermediates/export_includes.tmp /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/validatekeymaps_intermediates/export_includes ;
+Import includes file: /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/acp_intermediates/import_includes
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/acp_intermediates/ && rm -f /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/acp_intermediates/import_includes
+for f in /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libhost_intermediates/export_includes /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/export_includes; do \
+  cat $f >> /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/acp_intermediates/import_includes; \
+done
+Import includes file: /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libhost_intermediates/import_includes
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libhost_intermediates/ && rm -f /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libhost_intermediates/import_includes
+for f in /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/export_includes; do \
+  cat $f >> /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libhost_intermediates/import_includes; \
+done
+Notice file: system/core/libutils/NOTICE -- /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib64/libutils.a.txt
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib64/
+cat system/core/libutils/NOTICE > /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib64/libutils.a.txt
+Notice file: system/core/libutils/NOTICE -- /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib/libutils.a.txt
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib/
+cat system/core/libutils/NOTICE > /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib/libutils.a.txt
+Notice file: system/core/libutils/NOTICE -- /workspace/build01-full-next/platform/out/host/windows-x86/obj/NOTICE_FILES/src//lib/libutils.a.txt
+mkdir -p /workspace/build01-full-next/platform/out/host/windows-x86/obj/NOTICE_FILES/src//lib/
+cat system/core/libutils/NOTICE > /workspace/build01-full-next/platform/out/host/windows-x86/obj/NOTICE_FILES/src//lib/libutils.a.txt
+Notice file: system/core/libutils/NOTICE -- /workspace/build01-full-next/platform/out/host/windows-x86/obj/NOTICE_FILES/src//lib64/libutils.a.txt
+mkdir -p /workspace/build01-full-next/platform/out/host/windows-x86/obj/NOTICE_FILES/src//lib64/
+cat system/core/libutils/NOTICE > /workspace/build01-full-next/platform/out/host/windows-x86/obj/NOTICE_FILES/src//lib64/libutils.a.txt
+Notice file: system/core/libcutils/NOTICE -- /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib64/libcutils.a.txt
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib64/
+cat system/core/libcutils/NOTICE > /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib64/libcutils.a.txt
+Notice file: system/core/libcutils/NOTICE -- /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib/libcutils.a.txt
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib/
+cat system/core/libcutils/NOTICE > /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib/libcutils.a.txt
+Notice file: system/core/libcutils/NOTICE -- /workspace/build01-full-next/platform/out/host/windows-x86/obj/NOTICE_FILES/src//lib/libcutils.a.txt
+mkdir -p /workspace/build01-full-next/platform/out/host/windows-x86/obj/NOTICE_FILES/src//lib/
+cat system/core/libcutils/NOTICE > /workspace/build01-full-next/platform/out/host/windows-x86/obj/NOTICE_FILES/src//lib/libcutils.a.txt
+Notice file: system/core/libcutils/NOTICE -- /workspace/build01-full-next/platform/out/host/windows-x86/obj/NOTICE_FILES/src//lib64/libcutils.a.txt
+mkdir -p /workspace/build01-full-next/platform/out/host/windows-x86/obj/NOTICE_FILES/src//lib64/
+cat system/core/libcutils/NOTICE > /workspace/build01-full-next/platform/out/host/windows-x86/obj/NOTICE_FILES/src//lib64/libcutils.a.txt
+Notice file: system/core/liblog/NOTICE -- /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib64/liblog.a.txt
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib64/
+cat system/core/liblog/NOTICE > /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib64/liblog.a.txt
+Notice file: system/core/liblog/NOTICE -- /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib/liblog.a.txt
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib/
+cat system/core/liblog/NOTICE > /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib/liblog.a.txt
+Notice file: system/core/liblog/NOTICE -- /workspace/build01-full-next/platform/out/host/windows-x86/obj/NOTICE_FILES/src//lib/liblog.a.txt
+mkdir -p /workspace/build01-full-next/platform/out/host/windows-x86/obj/NOTICE_FILES/src//lib/
+cat system/core/liblog/NOTICE > /workspace/build01-full-next/platform/out/host/windows-x86/obj/NOTICE_FILES/src//lib/liblog.a.txt
+Notice file: system/core/liblog/NOTICE -- /workspace/build01-full-next/platform/out/host/windows-x86/obj/NOTICE_FILES/src//lib64/liblog.a.txt
+mkdir -p /workspace/build01-full-next/platform/out/host/windows-x86/obj/NOTICE_FILES/src//lib64/
+cat system/core/liblog/NOTICE > /workspace/build01-full-next/platform/out/host/windows-x86/obj/NOTICE_FILES/src//lib64/liblog.a.txt
+Notice file: external/libcxx/NOTICE -- /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib64/libc++.so.txt
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib64/
+cat external/libcxx/NOTICE > /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib64/libc++.so.txt
+Notice file: external/libcxx/NOTICE -- /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib64/libc++_static.a.txt
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib64/
+Notice file: external/libcxx/NOTICE -- /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib/libc++_static.a.txt
+cat external/libcxx/NOTICE > /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib64/libc++_static.a.txt
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib/
+cat external/libcxx/NOTICE > /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib/libc++_static.a.txt
+target Java: core-all (/workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes)
+rm -f /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes-full-debug.jar
+Export includes file: -- /workspace/build01-full-next/platform/out/host/linux-x86/obj/SHARED_LIBRARIES/libz-host_intermediates/export_includes
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/SHARED_LIBRARIES/libz-host_intermediates/ && rm -f /workspace/build01-full-next/platform/out/host/linux-x86/obj/SHARED_LIBRARIES/libz-host_intermediates/export_includes.tmp
+rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes
+for d in external/zlib; do \
+        echo "-I $d" >> /workspace/build01-full-next/platform/out/host/linux-x86/obj/SHARED_LIBRARIES/libz-host_intermediates/export_includes.tmp; \
+        done
+mkdir -p /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/
+mv /workspace/build01-full-next/platform/out/host/linux-x86/obj/SHARED_LIBRARIES/libz-host_intermediates/export_includes.tmp /workspace/build01-full-next/platform/out/host/linux-x86/obj/SHARED_LIBRARIES/libz-host_intermediates/export_includes ;
+mkdir -p /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes
+for f in ; do if [ ! -f $f ]; then echo Missing file $f; exit 1; fi; unzip -qo $f -d /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes; done
+Import includes file: /workspace/build01-full-next/platform/out/host/linux-x86/obj/SHARED_LIBRARIES/libz-host_intermediates/import_includes
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/SHARED_LIBRARIES/libz-host_intermediates/ && rm -f /workspace/build01-full-next/platform/out/host/linux-x86/obj/SHARED_LIBRARIES/libz-host_intermediates/import_includes
+rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes/META-INF
+for f in /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/export_includes; do \
+  cat $f >> /workspace/build01-full-next/platform/out/host/linux-x86/obj/SHARED_LIBRARIES/libz-host_intermediates/import_includes; \
+done
+Export includes file: -- /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/ijar_intermediates/export_includes
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/ijar_intermediates/ && rm -f /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/ijar_intermediates/export_includes.tmp
+touch /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/ijar_intermediates/export_includes.tmp
+mv /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/ijar_intermediates/export_includes.tmp /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/ijar_intermediates/export_includes ;
+make: *** No rule to make target '/workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/conscrypt_intermediates/classes.jar', needed by '/workspace/build01-full-next/platform/out/target/common/obj/PACKAGING/boot-jars-package-check_intermediates/stamp'.  Stop.
+make: *** Waiting for unfinished jobs....
+Notice file: external/zlib/NOTICE -- /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib64/libz-host.so.txt
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib64/
+if [ -d "/workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/src" ]; then find /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/src -name '*.java' -and -not -name '.*' >> /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes/java-source-list; fi
+cat external/zlib/NOTICE > /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib64/libz-host.so.txt
+tr ' ' '\n' < /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes/java-source-list | build/tools/normalize_path.py | sort -u > /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes/java-source-list-uniq
+if [ -s /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes/java-source-list-uniq ] ; then javac -J-Xmx1024M -Xmaxerrs 9999999 -encoding UTF-8  -bootclasspath ""   -extdirs "" -d /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes -g -encoding UTF-8 -Xmaxwarns 9999999 -source 1.8 -target 1.8 \@/workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes/java-source-list-uniq || ( rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes ; exit 41 ) fi
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+rm -f /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes/java-source-list
+rm -f /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes/java-source-list-uniq
+jar -cf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes-full-debug.jar -C /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes .
+jar uf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes-full-debug.jar @/workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes-full-debug.jar.jar-arg-list
+
+#### make failed to build some targets (54 seconds) ####
+

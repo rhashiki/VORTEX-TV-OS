@@ -1,0 +1,97 @@
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=audio.primary.rk30board audio.usb.default audio.r_submix.default power.default
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/audio/out-clang
+============================================
+TAPAS_STATUS=0
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=audio.primary.rk30board audio.usb.default audio.r_submix.default power.default
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/audio/out-clang
+============================================
+make: Nothing to be done for 'audio.primary.rk30board'.
+make: Nothing to be done for 'audio.usb.default'.
+target thumb C++: libnbaio <= frameworks/av/media/libnbaio/NBLog.cpp
+target Symbolic: libbinder (/workspace/build01-full-next/audio/out-clang/target/product/generic/symbols/system/lib/libbinder.so)
+PWD=/proc/self/cwd  prebuilts/clang/host/linux-x86/clang-2690385/bin/clang++ -I system/media/audio_utils/include -I frameworks/av/media/libnbaio -I /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates -I /workspace/build01-full-next/audio/out-clang/target/product/generic/gen/SHARED_LIBRARIES/libnbaio_intermediates -I libnativehelper/include/nativehelper -I system/core/include -I system/core/include -I external/libcxx/include -I bionic/libc/include -I bionic/libc/arch-arm/include -I bionic/libc/kernel/uapi -I bionic/libc/kernel/uapi/asm-arm -I bionic/libm/include -I bionic/libm/include/arm -isystem system/core/include -isystem system/media/audio/include -isystem hardware/libhardware/include -isystem hardware/libhardware_legacy/include -isystem hardware/ril/include -isystem libnativehelper/include -isystem frameworks/native/include -isystem frameworks/native/opengl/include -isystem frameworks/av/include -isystem frameworks/base/include -isystem /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/include -isystem bionic/libc/arch-arm/include -isystem bionic/libc/include -isystem bionic/libc/kernel/uapi -isystem bionic/libc/kernel/common -isystem bionic/libc/kernel/uapi/asm-arm -isystem bionic/libm/include -isystem bionic/libm/include/arm -c    -fno-exceptions -Wno-multichar -msoft-float -ffunction-sections -fdata-sections -funwind-tables -fstack-protector-strong -Wa,--noexecstack -Werror=format-security -D_FORTIFY_SOURCE=2 -fno-short-enums -no-canonical-prefixes -mcpu=cortex-a7 -D__ARM_FEATURE_LPAE=1 -mfloat-abi=softfp -mfpu=neon -DANDROID -fmessage-length=0 -W -Wall -Wno-unused -Winit-self -Wpointer-arith -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Werror=date-time -DNDEBUG -g -Wstrict-aliasing=2 -DNDEBUG -UDEBUG -D__compiler_offsetof=__builtin_offsetof -Wno-reserved-id-macro -Wno-format-pedantic -Wno-unused-command-line-argument -nostdlibinc  -target arm-linux-androideabi    -target arm-linux-androideabi -Bprebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/arm-linux-androideabi/bin   -fvisibility-inlines-hidden -Wsign-promo -Wno-inconsistent-missing-override -nostdlibinc  -target arm-linux-androideabi   -mthumb -Os -fomit-frame-pointer -fno-strict-aliasing  -fno-rtti -Werror -Wall -fPIC -D_USING_LIBCXX -std=gnu++14  -Werror=address-of-temporary -Werror=null-dereference -Werror=return-type   -MD -MF /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates/NBLog.d -o /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates/NBLog.o frameworks/av/media/libnbaio/NBLog.cpp
+/workspace/build01-platform-next/aosp-app/host-bin/acp -fp /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libbinder_intermediates/PACKED/libbinder.so /workspace/build01-full-next/audio/out-clang/target/product/generic/symbols/system/lib/libbinder.so
+make: Nothing to be done for 'power.default'.
+target StaticLib: libmedia_helper (/workspace/build01-full-next/audio/out-clang/target/product/generic/obj/STATIC_LIBRARIES/libmedia_helper_intermediates/libmedia_helper.a)
+prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-ar crsPD  /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/STATIC_LIBRARIES/libmedia_helper_intermediates/libmedia_helper.a /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/STATIC_LIBRARIES/libmedia_helper_intermediates/AudioParameter.o
+target Strip: libbinder (/workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/libbinder.so)
+prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-strip --strip-all /workspace/build01-full-next/audio/out-clang/target/product/generic/symbols/system/lib/libbinder.so -o /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/libbinder.so 
+(prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-readelf -d /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/libbinder.so | grep SONAME || echo "No SONAME for /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/libbinder.so") > /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/libbinder.so.toc.tmp
+prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-readelf --dyn-syms /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/libbinder.so | awk '{$2=""; $3=""; print}' >> /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/libbinder.so.toc.tmp
+mv /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/libbinder.so.toc.tmp /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/libbinder.so.toc
+Install: /workspace/build01-full-next/audio/out-clang/target/product/generic/system/lib/libbinder.so
+/workspace/build01-platform-next/aosp-app/host-bin/acp -fp /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/libbinder.so /workspace/build01-full-next/audio/out-clang/target/product/generic/system/lib/libbinder.so
+cp /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates/NBLog.d /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates/NBLog.P; sed -e 's/#.*//' -e 's/^[^:]*: *//' -e 's/ *\\$//' -e '/^$/ d' -e 's/$/ :/' < /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates/NBLog.d >> /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates/NBLog.P; rm -f /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates/NBLog.d
+target SharedLib: libnbaio (/workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates/LINKED/libnbaio.so)
+prebuilts/clang/host/linux-x86/clang-2690385/bin/clang++ -nostdlib -Wl,-soname,libnbaio.so -Wl,--gc-sections -shared -L/workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o      /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates/AudioBufferProviderSource.o /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates/AudioStreamOutSink.o /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates/AudioStreamInSource.o /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates/NBAIO.o /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates/MonoPipe.o /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates/MonoPipeReader.o /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates/Pipe.o /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates/PipeReader.o /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates/SourceAudioBufferProvider.o /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates/NBLog.o              -Wl,--whole-archive   -Wl,--no-whole-archive   /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/STATIC_LIBRARIES/libunwind_llvm_intermediates/libunwind_llvm.a /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/libcompiler_rt-extras.a   prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/lib/libatomic.a prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/../lib/gcc/arm-linux-androideabi/4.9/libgcc.a -laudioutils -lbinder -lcutils -lutils -llog -lc++ -ldl -lc -lm  -o /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates/LINKED/libnbaio.so   -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,--build-id=md5 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--icf=safe -Wl,--hash-style=gnu -Wl,--no-undefined-version -Wl,--no-fix-cortex-a8    -target arm-linux-androideabi -Bprebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/arm-linux-androideabi/bin   -Wl,--exclude-libs,libunwind_llvm.a -Wl,--no-undefined /workspace/build01-hal-next/gralloc-link/crt/crtend_so.o 
+target Pack Relocations: libnbaio (/workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates/PACKED/libnbaio.so)
+/workspace/build01-platform-next/aosp-app/host-bin/acp -fp /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates/LINKED/libnbaio.so /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates/PACKED/libnbaio.so
+prebuilts/misc/linux-x86/relocation_packer/relocation_packer /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates/PACKED/libnbaio.so
+target Symbolic: libnbaio (/workspace/build01-full-next/audio/out-clang/target/product/generic/symbols/system/lib/libnbaio.so)
+/workspace/build01-platform-next/aosp-app/host-bin/acp -fp /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/libnbaio_intermediates/PACKED/libnbaio.so /workspace/build01-full-next/audio/out-clang/target/product/generic/symbols/system/lib/libnbaio.so
+target Strip: libnbaio (/workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/libnbaio.so)
+prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-strip --strip-all /workspace/build01-full-next/audio/out-clang/target/product/generic/symbols/system/lib/libnbaio.so -o /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/libnbaio.so && prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-objcopy --add-gnu-debuglink=/workspace/build01-full-next/audio/out-clang/target/product/generic/symbols/system/lib/libnbaio.so /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/libnbaio.so
+(prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-readelf -d /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/libnbaio.so | grep SONAME || echo "No SONAME for /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/libnbaio.so") > /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/libnbaio.so.toc.tmp
+Install: /workspace/build01-full-next/audio/out-clang/target/product/generic/system/lib/libnbaio.so
+prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-readelf --dyn-syms /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/libnbaio.so | awk '{$2=""; $3=""; print}' >> /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/libnbaio.so.toc.tmp
+/workspace/build01-platform-next/aosp-app/host-bin/acp -fp /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/libnbaio.so /workspace/build01-full-next/audio/out-clang/target/product/generic/system/lib/libnbaio.so
+mv /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/libnbaio.so.toc.tmp /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/libnbaio.so.toc
+target SharedLib: audio.r_submix.default (/workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.r_submix.default_intermediates/LINKED/audio.r_submix.default.so)
+prebuilts/clang/host/linux-x86/clang-2690385/bin/clang++ -nostdlib -Wl,-soname,audio.r_submix.default.so -Wl,--gc-sections -shared -L/workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o      /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.r_submix.default_intermediates/audio_hw.o              -Wl,--whole-archive   -Wl,--no-whole-archive   /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/STATIC_LIBRARIES/libmedia_helper_intermediates/libmedia_helper.a /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/STATIC_LIBRARIES/libunwind_llvm_intermediates/libunwind_llvm.a /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/libcompiler_rt-extras.a   prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/lib/libatomic.a prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/../lib/gcc/arm-linux-androideabi/4.9/libgcc.a -llog -lcutils -lutils -lnbaio -lc++ -ldl -lc -lm  -o /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.r_submix.default_intermediates/LINKED/audio.r_submix.default.so   -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,--build-id=md5 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--icf=safe -Wl,--hash-style=gnu -Wl,--no-undefined-version -Wl,--no-fix-cortex-a8    -target arm-linux-androideabi -Bprebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/arm-linux-androideabi/bin   -Wl,--exclude-libs,libunwind_llvm.a -Wl,--no-undefined /workspace/build01-hal-next/gralloc-link/crt/crtend_so.o 
+target Pack Relocations: audio.r_submix.default (/workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.r_submix.default_intermediates/PACKED/audio.r_submix.default.so)
+/workspace/build01-platform-next/aosp-app/host-bin/acp -fp /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.r_submix.default_intermediates/LINKED/audio.r_submix.default.so /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.r_submix.default_intermediates/PACKED/audio.r_submix.default.so
+prebuilts/misc/linux-x86/relocation_packer/relocation_packer /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.r_submix.default_intermediates/PACKED/audio.r_submix.default.so
+target Symbolic: audio.r_submix.default (/workspace/build01-full-next/audio/out-clang/target/product/generic/symbols/system/lib/hw/audio.r_submix.default.so)
+/workspace/build01-platform-next/aosp-app/host-bin/acp -fp /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.r_submix.default_intermediates/PACKED/audio.r_submix.default.so /workspace/build01-full-next/audio/out-clang/target/product/generic/symbols/system/lib/hw/audio.r_submix.default.so
+target Strip: audio.r_submix.default (/workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/audio.r_submix.default.so)
+prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-strip --strip-all /workspace/build01-full-next/audio/out-clang/target/product/generic/symbols/system/lib/hw/audio.r_submix.default.so -o /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/audio.r_submix.default.so && prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-objcopy --add-gnu-debuglink=/workspace/build01-full-next/audio/out-clang/target/product/generic/symbols/system/lib/hw/audio.r_submix.default.so /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/audio.r_submix.default.so
+(prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-readelf -d /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/audio.r_submix.default.so | grep SONAME || echo "No SONAME for /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/audio.r_submix.default.so") > /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/audio.r_submix.default.so.toc.tmp
+Install: /workspace/build01-full-next/audio/out-clang/target/product/generic/system/lib/hw/audio.r_submix.default.so
+prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-readelf --dyn-syms /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/audio.r_submix.default.so | awk '{$2=""; $3=""; print}' >> /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/audio.r_submix.default.so.toc.tmp
+/workspace/build01-platform-next/aosp-app/host-bin/acp -fp /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/audio.r_submix.default.so /workspace/build01-full-next/audio/out-clang/target/product/generic/system/lib/hw/audio.r_submix.default.so
+mv /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/audio.r_submix.default.so.toc.tmp /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/audio.r_submix.default.so.toc
+
+#### make completed successfully (2 seconds) ####
+

@@ -9,6 +9,11 @@ retirado e o sistema passa a iniciar da memória interna.
 ou ROM completa produzidos e validados.** A intenção de instalar não equivale
 a uma gravação física já executada ou à aprovação de uma imagem desconhecida.
 
+A [continuação de compilação](../docs/VALIDATION_2026-10-28_CANDIDATE.md)
+produziu um recovery Rockchip estático e um initramfs de diagnóstico separados.
+O primeiro ainda não foi executado; o segundo não possui backend de instalação.
+Nenhum deles constitui o cartão de instalação completo descrito aqui.
+
 ## Experiência pretendida
 
 1. Com a TV Box desligada, inserir o cartão preparado e ligar o aparelho.

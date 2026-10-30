@@ -1,0 +1,19 @@
+Cloning into 'deps/pcre'...
+warning: refs/tags/android-7.1.2_r6 2014f973d4175a6be26c1c6c95fbd18934b4cc0c is not a commit!
+Note: switching to '222bbf4b3fb8e13c21686803e47e31aa3e4ad130'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+

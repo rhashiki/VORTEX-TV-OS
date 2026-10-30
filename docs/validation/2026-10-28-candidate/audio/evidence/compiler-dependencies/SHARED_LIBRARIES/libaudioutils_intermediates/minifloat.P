@@ -1,0 +1,21 @@
+/workspace/build01-full-next/audio/out-final/target/product/generic/obj/SHARED_LIBRARIES/libaudioutils_intermediates/minifloat.o: \
+  system/media/audio_utils/minifloat.c bionic/libm/include/math.h \
+  bionic/libc/include/sys/cdefs.h \
+  bionic/libc/include/android/api-level.h bionic/libc/include/limits.h \
+  bionic/libc/include/sys/limits.h \
+  bionic/libc/kernel/uapi/linux/limits.h \
+  bionic/libc/include/sys/syslimits.h \
+  bionic/libc/include/bits/posix_limits.h \
+  system/media/audio_utils/include/audio_utils/minifloat.h \
+  bionic/libc/include/stdint.h bionic/libc/include/bits/wchar_limits.h \
+  prebuilts/clang/host/linux-x86/clang-2690385/bin/../lib64/clang/3.8.256229/include/stddef.h
+  system/media/audio_utils/minifloat.c bionic/libm/include/math.h :
+  bionic/libc/include/sys/cdefs.h :
+  bionic/libc/include/android/api-level.h bionic/libc/include/limits.h :
+  bionic/libc/include/sys/limits.h :
+  bionic/libc/kernel/uapi/linux/limits.h :
+  bionic/libc/include/sys/syslimits.h :
+  bionic/libc/include/bits/posix_limits.h :
+  system/media/audio_utils/include/audio_utils/minifloat.h :
+  bionic/libc/include/stdint.h bionic/libc/include/bits/wchar_limits.h :
+  prebuilts/clang/host/linux-x86/clang-2690385/bin/../lib64/clang/3.8.256229/include/stddef.h :

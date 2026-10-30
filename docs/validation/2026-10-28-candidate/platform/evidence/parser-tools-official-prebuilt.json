@@ -1,0 +1,86 @@
+{
+  "repository": "https://android.googlesource.com/platform/prebuilts/misc",
+  "revision": "6287eb468c5772f5da2c468396bdf0068a4fa2d5",
+  "scope": "unchanged genuine r6 host parser tools expected by Android make, not a target-library substitute",
+  "acquisitions": [
+    {
+      "subtree": "linux-x86/bison",
+      "url": "https://android.googlesource.com/platform/prebuilts/misc/+archive/6287eb468c5772f5da2c468396bdf0068a4fa2d5/linux-x86/bison.tar.gz",
+      "archive_bytes": 546983,
+      "archive_sha256": "942ec69e0b3dfb939db5848d322ba6eb47a703706b1b7571d654ec5440acf368",
+      "files": [
+        {
+          "path": "linux-x86/bison/MODULE_LICENSE_GPL",
+          "bytes": 0,
+          "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "mode": "0o644"
+        },
+        {
+          "path": "linux-x86/bison/NOTICE",
+          "bytes": 35147,
+          "git_blob": "94a9ed024d3859793618152ea559a168bbcbb5e2",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+          "mode": "0o644"
+        },
+        {
+          "path": "linux-x86/bison/PREBUILT",
+          "bytes": 156,
+          "git_blob": "46151b3326ec9b4f3ce94487e20bf482bbe81588",
+          "sha256": "5603eb878f64fc14e7fb580537ef91489ccd7bc6938fbdf1c707082b1fe586d9",
+          "mode": "0o644"
+        },
+        {
+          "path": "linux-x86/bison/bison",
+          "bytes": 1400205,
+          "git_blob": "024be8cae72b980ee49683fc12154bd9bc770dae",
+          "sha256": "80af5cb3829a4bc713e0d742d23e2cc0e502579c9d6db3c0a1affa6006e7521c",
+          "mode": "0o755"
+        }
+      ]
+    },
+    {
+      "subtree": "linux-x86/flex",
+      "url": "https://android.googlesource.com/platform/prebuilts/misc/+archive/6287eb468c5772f5da2c468396bdf0068a4fa2d5/linux-x86/flex.tar.gz",
+      "archive_bytes": 2490376,
+      "archive_sha256": "fef468cbe2d7f895e19d47d7d2acefe955c64e7abd5312a4067c149f22114430",
+      "files": [
+        {
+          "path": "linux-x86/flex/MODULE_LICENSE_BSD_LIKE",
+          "bytes": 0,
+          "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "mode": "0o644"
+        },
+        {
+          "path": "linux-x86/flex/NOTICE",
+          "bytes": 1829,
+          "git_blob": "c041f02c49c6f772fa411879840239556f92d9ae",
+          "sha256": "cfdb6e51f57b4fcc1a6ab1a629011b9ff989b84fb4a2dcfee9a472655fbabc06",
+          "mode": "0o644"
+        },
+        {
+          "path": "linux-x86/flex/PREBUILT",
+          "bytes": 595,
+          "git_blob": "b78594f5af4b665b762f161d9e6231d1e15026ab",
+          "sha256": "963266ac733e5e2393513614d20bf89a9bcdd19f698343d0845941186c252a97",
+          "mode": "0o644"
+        },
+        {
+          "path": "linux-x86/flex/flex-2.5.39",
+          "bytes": 1473304,
+          "git_blob": "7488e09e0971a00c9e6345315fa6f0e3bfb05490",
+          "sha256": "0e1e3da39d3fd823bd0af023152ee3c86a9a758da1eb876e5a9fdf0e17b6a642",
+          "mode": "0o755"
+        },
+        {
+          "path": "linux-x86/flex/flex-2.5.39.tar.gz",
+          "bytes": 1916273,
+          "git_blob": "35e1617d8faa6df9efcddd67f76d1810c1b0b68a",
+          "sha256": "71dd1b58158c935027104c830c019e48c73250708af5def45ea256c789318948",
+          "mode": "0o644"
+        }
+      ]
+    }
+  ]
+}

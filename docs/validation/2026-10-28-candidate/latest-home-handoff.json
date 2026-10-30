@@ -1,0 +1,33 @@
+{
+  "status": "frozen",
+  "scope": "VortexHome only; not streaming APK, complete Android, ROM or SD image",
+  "evidence_package": "/workspace/build01-full-next/latest-home/evidence-package",
+  "evidence_manifest_sha256": "7fbe000abd211686a6022df6d88339c0682471fa4faa1bab05136f6bec0e4993",
+  "text_files_including_manifest": 20,
+  "text_bytes": 52643,
+  "artifact_directory": "/workspace/build01-full-next/latest-home/artifacts",
+  "artifacts": [
+    {
+      "path": "artifacts/VortexHome-main-1db0c91-aosp-r6.apk",
+      "bytes": 44410,
+      "sha256": "37581d89ae8fda9cc42c9d0d2e1771c5962e76f5cdc91d9bc866ee5c36844c41",
+      "installed_copy_sha256": "37581d89ae8fda9cc42c9d0d2e1771c5962e76f5cdc91d9bc866ee5c36844c41",
+      "package": "os.vortex.tv",
+      "version_code": 1,
+      "version_name": "0.1.0-dev",
+      "min_sdk": 25,
+      "target_sdk": 25,
+      "signature_scheme_v2": true,
+      "signer": "Public AOSP platform TEST key; not production/device identity",
+      "certificate_sha256": "c8a2e9bccf597c2fb6dc66bee293fc13f2fc47ec77bc6b2b0d52c11f51192ab8"
+    }
+  ],
+  "source_revision": "1db0c914fda74419be097b36c1e753296bcc2bbc",
+  "build_exit_code": 0,
+  "runtime_validation": "not_executed",
+  "sdk_inputs_reverified": 22,
+  "source_files_exact": 17,
+  "new_area_disk_bytes": 26162018,
+  "peak_disk_observed_mib": 53,
+  "verification_qualification": "Initial checker expected DEX035 and was corrected to actual API25-supported DEX037; original checker mismatch recorded, no APK changes."
+}

@@ -1,0 +1,308 @@
+[
+  {
+    "path": "external/gtest",
+    "head": {
+      "exit_code": 0,
+      "stdout": "81cb746e0ba7ce98a77b175139c7425fd41021c6\n",
+      "stderr": ""
+    },
+    "origin": {
+      "exit_code": 0,
+      "stdout": "https://android.googlesource.com/platform/external/gtest\n",
+      "stderr": ""
+    },
+    "status": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  {
+    "path": "external/libphonenumber",
+    "head": {
+      "exit_code": 0,
+      "stdout": "a2958e2a0fadcf63688029b7e6b0ccc5732222a2\n",
+      "stderr": ""
+    },
+    "origin": {
+      "exit_code": 0,
+      "stdout": "https://android.googlesource.com/platform/external/libphonenumber\n",
+      "stderr": ""
+    },
+    "status": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  {
+    "path": "external/jarjar",
+    "head": {
+      "exit_code": 0,
+      "stdout": "8795f34e379f7d29be2ee6cc0b9377106a1d96d7\n",
+      "stderr": ""
+    },
+    "origin": {
+      "exit_code": 0,
+      "stdout": "https://android.googlesource.com/platform/external/jarjar\n",
+      "stderr": ""
+    },
+    "status": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  {
+    "path": "external/okhttp",
+    "head": {
+      "exit_code": 0,
+      "stdout": "867f0e5f35a8fc355206693ddefbf55ae04b9caa\n",
+      "stderr": ""
+    },
+    "origin": {
+      "exit_code": 0,
+      "stdout": "https://android.googlesource.com/platform/external/okhttp\n",
+      "stderr": ""
+    },
+    "status": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  {
+    "path": "external/bouncycastle",
+    "head": {
+      "exit_code": 0,
+      "stdout": "c2727c35a0a865cb64e7d9b9d9aeda4de058a443\n",
+      "stderr": ""
+    },
+    "origin": {
+      "exit_code": 0,
+      "stdout": "https://android.googlesource.com/platform/external/bouncycastle\n",
+      "stderr": ""
+    },
+    "status": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  {
+    "path": "external/icu",
+    "head": {
+      "exit_code": 0,
+      "stdout": "18c86be3562ecbfaffd4a42b4fcc702874acf605\n",
+      "stderr": ""
+    },
+    "origin": {
+      "exit_code": 0,
+      "stdout": "https://android.googlesource.com/platform/external/icu\n",
+      "stderr": ""
+    },
+    "status": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  {
+    "path": "external/conscrypt",
+    "head": {
+      "exit_code": 0,
+      "stdout": "c4297341bff3fe06aa1f13c97d09c1c22a12daab\n",
+      "stderr": ""
+    },
+    "origin": {
+      "exit_code": 0,
+      "stdout": "https://android.googlesource.com/platform/external/conscrypt\n",
+      "stderr": ""
+    },
+    "status": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  {
+    "path": "external/llvm",
+    "head": {
+      "exit_code": 0,
+      "stdout": "f9d1195a27113f6dafba785611690175ad3914eb\n",
+      "stderr": ""
+    },
+    "origin": {
+      "exit_code": 0,
+      "stdout": "https://android.googlesource.com/platform/external/llvm\n",
+      "stderr": ""
+    },
+    "status": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  {
+    "path": "external/junit",
+    "head": {
+      "exit_code": 0,
+      "stdout": "77f8b3f30164ea92ca73ebc8a685b12bd4b1512c\n",
+      "stderr": ""
+    },
+    "origin": {
+      "exit_code": 0,
+      "stdout": "https://android.googlesource.com/platform/external/junit\n",
+      "stderr": ""
+    },
+    "status": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  {
+    "path": "external/bison",
+    "head": {
+      "exit_code": 0,
+      "stdout": "7467d52af437dd3dfea237a6865ab84bf258dee0\n",
+      "stderr": ""
+    },
+    "origin": {
+      "exit_code": 0,
+      "stdout": "https://android.googlesource.com/platform/external/bison\n",
+      "stderr": ""
+    },
+    "status": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  {
+    "path": "system/tools/aidl",
+    "head": {
+      "exit_code": 0,
+      "stdout": "23fb35162bc8b22bc88662eb53d66d0d4247763a\n",
+      "stderr": ""
+    },
+    "origin": {
+      "exit_code": 0,
+      "stdout": "https://android.googlesource.com/platform/system/tools/aidl\n",
+      "stderr": ""
+    },
+    "status": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  {
+    "path": "libcore",
+    "head": {
+      "exit_code": 0,
+      "stdout": "e0874054acea0e164c4464d3bb82302df50e8e5c\n",
+      "stderr": ""
+    },
+    "origin": {
+      "exit_code": 0,
+      "stdout": "https://android.googlesource.com/platform/libcore\n",
+      "stderr": ""
+    },
+    "status": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  {
+    "path": "frameworks/base",
+    "head": {
+      "exit_code": 0,
+      "stdout": "edd171fec429b9d51d9cb2da961a673ec51fcc4d\n",
+      "stderr": ""
+    },
+    "origin": {
+      "exit_code": 0,
+      "stdout": "https://github.com/rockchip-android/frameworks-base.git\n",
+      "stderr": ""
+    },
+    "status": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  {
+    "path": "frameworks/native",
+    "head": {
+      "exit_code": 0,
+      "stdout": "00c3ec97785c0d42f801083c8fc2fc26d3ce4e2d\n",
+      "stderr": ""
+    },
+    "origin": {
+      "exit_code": 0,
+      "stdout": "https://github.com/rockchip-android/frameworks-native.git\n",
+      "stderr": ""
+    },
+    "status": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  {
+    "path": "prebuilts/tools",
+    "head": {
+      "exit_code": 0,
+      "stdout": "b5022f03051bf5ad63112659132e3ec0fa6af4ce\n",
+      "stderr": ""
+    },
+    "origin": {
+      "exit_code": 0,
+      "stdout": "https://android.googlesource.com/platform/prebuilts/tools\n",
+      "stderr": ""
+    },
+    "status": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  {
+    "path": "hardware/rockchip/libgralloc",
+    "head": {
+      "exit_code": 0,
+      "stdout": "c92fb8cd8becd57b025149f2861a2072b092ddea\n",
+      "stderr": ""
+    },
+    "origin": {
+      "exit_code": 0,
+      "stdout": "/workspace/build01-platform-next/research/mali-legacy/gralloc-rk3328\n",
+      "stderr": ""
+    },
+    "status": {
+      "exit_code": 0,
+      "stdout": " M Android.mk\n M alloc_device.cpp\n?? version.h\n",
+      "stderr": ""
+    }
+  },
+  {
+    "path": "hardware/rockchip/hwcomposer",
+    "head": {
+      "exit_code": 0,
+      "stdout": "d3ec43f2f751123ca5e7bda2d07eded4c6352a35\n",
+      "stderr": ""
+    },
+    "origin": {
+      "exit_code": 0,
+      "stdout": "/workspace/build01-platform-next/research/mali-legacy/hwcomposer-rk3328\n",
+      "stderr": ""
+    },
+    "status": {
+      "exit_code": 0,
+      "stdout": " M Android.mk\n M TVInfo.cpp\n M hwc_rga.cpp\n M rk_hwc_com.cpp\n M rk_hwcomposer.cpp\n M rk_hwcomposer_blit.cpp\n M rk_hwcomposer_htg.cpp\n?? version.h\n",
+      "stderr": ""
+    }
+  }
+]

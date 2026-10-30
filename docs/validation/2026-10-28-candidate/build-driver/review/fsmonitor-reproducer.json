@@ -1,0 +1,8 @@
+{
+  "scope": "disposable fixture Gitconfig reproducer; no real BSP/device",
+  "status": "finding_reproduced",
+  "returncode": 0,
+  "configured_fsmonitor_executed": true,
+  "stdout_tail": "t authenticated by this preflight.\",\n    \"Declared generated headers are inventoried, not authenticated; other ignored generated artifacts are outside this contract.\",\n    \"Actual source module closure is decided by the genuine platform build, not this script.\",\n    \"No driver, complete image, SD media or physical compatibility is approved.\"\n  ]\n}\n",
+  "stderr_tail": ""
+}

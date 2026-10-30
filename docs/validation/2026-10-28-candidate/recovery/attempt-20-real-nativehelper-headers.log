@@ -1,0 +1,59 @@
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=recovery
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/recovery/out
+============================================
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/recovery/out
+============================================
+bootable/recovery/Android.mk:64: *** Redirect log to UART
+target thumb C++: recovery <= bootable/recovery/recovery.cpp
+PWD=/proc/self/cwd  prebuilts/clang/host/linux-x86/clang-2690385/bin/clang++ -I system/vold -I system/extras/ext4_utils -I system/core/adb -I external/e2fsprogs/lib -I system/extras/ext4_utils -I bootable/recovery -I /workspace/build01-full-next/recovery/out/target/product/generic/obj/EXECUTABLES/recovery_intermediates -I /workspace/build01-full-next/recovery/out/target/product/generic/gen/EXECUTABLES/recovery_intermediates -I libnativehelper/include/nativehelper -I bionic/libc/include -I bionic/libc/arch-arm/include -I bionic/libc/kernel/uapi -I bionic/libc/kernel/uapi/asm-arm -I bionic/libm/include -I bionic/libm/include/arm -I system/core/healthd/include -I bootable/recovery/bootloader_message/include -I system/core/libsparse/include -I external/zlib -I external/libpng -I system/core/fs_mgr/include -I external/boringssl/src/include -I system/core/base/include -I external/libselinux/include -I bootable/recovery/otafault -I external/zlib -I external/libcxx/include -I external/libcxxabi/include -I system/core/healthd/include -isystem system/core/include -isystem system/media/audio/include -isystem hardware/libhardware/include -isystem hardware/libhardware_legacy/include -isystem hardware/ril/include -isystem libnativehelper/include -isystem frameworks/native/include -isystem frameworks/native/opengl/include -isystem frameworks/av/include -isystem frameworks/base/include -isystem /workspace/build01-full-next/recovery/out/target/product/generic/obj/include -isystem bionic/libc/arch-arm/include -isystem bionic/libc/include -isystem bionic/libc/kernel/uapi -isystem bionic/libc/kernel/common -isystem bionic/libc/kernel/uapi/asm-arm -isystem bionic/libm/include -isystem bionic/libm/include/arm -c    -fno-exceptions -Wno-multichar -msoft-float -ffunction-sections -fdata-sections -funwind-tables -fstack-protector-strong -Wa,--noexecstack -Werror=format-security -D_FORTIFY_SOURCE=2 -fno-short-enums -no-canonical-prefixes -mcpu=cortex-a7 -D__ARM_FEATURE_LPAE=1 -mfloat-abi=softfp -mfpu=neon -DANDROID -fmessage-length=0 -W -Wall -Wno-unused -Winit-self -Wpointer-arith -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Werror=date-time -DNDEBUG -g -Wstrict-aliasing=2 -DNDEBUG -UDEBUG -D__compiler_offsetof=__builtin_offsetof -Wno-reserved-id-macro -Wno-format-pedantic -Wno-unused-command-line-argument -nostdlibinc  -target arm-linux-androideabi    -target arm-linux-androideabi -Bprebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/arm-linux-androideabi/bin   -fvisibility-inlines-hidden -Wsign-promo -Wno-inconsistent-missing-override -nostdlibinc  -target arm-linux-androideabi   -mthumb -Os -fomit-frame-pointer -fno-strict-aliasing  -fno-rtti -DLogToSerial -DRECOVERY_API_VERSION=3 -Wno-unused-parameter -DUSE_EXT4 -fpie -D_USING_LIBCXX -std=gnu++14  -Werror=address-of-temporary -Werror=null-dereference -Werror=return-type   -MD -MF /workspace/build01-full-next/recovery/out/target/product/generic/obj/EXECUTABLES/recovery_intermediates/recovery.d -o /workspace/build01-full-next/recovery/out/target/product/generic/obj/EXECUTABLES/recovery_intermediates/recovery.o bootable/recovery/recovery.cpp
+cp /workspace/build01-full-next/recovery/out/target/product/generic/obj/EXECUTABLES/recovery_intermediates/recovery.d /workspace/build01-full-next/recovery/out/target/product/generic/obj/EXECUTABLES/recovery_intermediates/recovery.P; sed -e 's/#.*//' -e 's/^[^:]*: *//' -e 's/ *\\$//' -e '/^$/ d' -e 's/$/ :/' < /workspace/build01-full-next/recovery/out/target/product/generic/obj/EXECUTABLES/recovery_intermediates/recovery.d >> /workspace/build01-full-next/recovery/out/target/product/generic/obj/EXECUTABLES/recovery_intermediates/recovery.P; rm -f /workspace/build01-full-next/recovery/out/target/product/generic/obj/EXECUTABLES/recovery_intermediates/recovery.d
+target thumb C++: recovery <= bootable/recovery/roots.cpp
+PWD=/proc/self/cwd  prebuilts/clang/host/linux-x86/clang-2690385/bin/clang++ -I system/vold -I system/extras/ext4_utils -I system/core/adb -I external/e2fsprogs/lib -I system/extras/ext4_utils -I bootable/recovery -I /workspace/build01-full-next/recovery/out/target/product/generic/obj/EXECUTABLES/recovery_intermediates -I /workspace/build01-full-next/recovery/out/target/product/generic/gen/EXECUTABLES/recovery_intermediates -I libnativehelper/include/nativehelper -I bionic/libc/include -I bionic/libc/arch-arm/include -I bionic/libc/kernel/uapi -I bionic/libc/kernel/uapi/asm-arm -I bionic/libm/include -I bionic/libm/include/arm -I system/core/healthd/include -I bootable/recovery/bootloader_message/include -I system/core/libsparse/include -I external/zlib -I external/libpng -I system/core/fs_mgr/include -I external/boringssl/src/include -I system/core/base/include -I external/libselinux/include -I bootable/recovery/otafault -I external/zlib -I external/libcxx/include -I external/libcxxabi/include -I system/core/healthd/include -isystem system/core/include -isystem system/media/audio/include -isystem hardware/libhardware/include -isystem hardware/libhardware_legacy/include -isystem hardware/ril/include -isystem libnativehelper/include -isystem frameworks/native/include -isystem frameworks/native/opengl/include -isystem frameworks/av/include -isystem frameworks/base/include -isystem /workspace/build01-full-next/recovery/out/target/product/generic/obj/include -isystem bionic/libc/arch-arm/include -isystem bionic/libc/include -isystem bionic/libc/kernel/uapi -isystem bionic/libc/kernel/common -isystem bionic/libc/kernel/uapi/asm-arm -isystem bionic/libm/include -isystem bionic/libm/include/arm -c    -fno-exceptions -Wno-multichar -msoft-float -ffunction-sections -fdata-sections -funwind-tables -fstack-protector-strong -Wa,--noexecstack -Werror=format-security -D_FORTIFY_SOURCE=2 -fno-short-enums -no-canonical-prefixes -mcpu=cortex-a7 -D__ARM_FEATURE_LPAE=1 -mfloat-abi=softfp -mfpu=neon -DANDROID -fmessage-length=0 -W -Wall -Wno-unused -Winit-self -Wpointer-arith -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Werror=date-time -DNDEBUG -g -Wstrict-aliasing=2 -DNDEBUG -UDEBUG -D__compiler_offsetof=__builtin_offsetof -Wno-reserved-id-macro -Wno-format-pedantic -Wno-unused-command-line-argument -nostdlibinc  -target arm-linux-androideabi    -target arm-linux-androideabi -Bprebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/arm-linux-androideabi/bin   -fvisibility-inlines-hidden -Wsign-promo -Wno-inconsistent-missing-override -nostdlibinc  -target arm-linux-androideabi   -mthumb -Os -fomit-frame-pointer -fno-strict-aliasing  -fno-rtti -DLogToSerial -DRECOVERY_API_VERSION=3 -Wno-unused-parameter -DUSE_EXT4 -fpie -D_USING_LIBCXX -std=gnu++14  -Werror=address-of-temporary -Werror=null-dereference -Werror=return-type   -MD -MF /workspace/build01-full-next/recovery/out/target/product/generic/obj/EXECUTABLES/recovery_intermediates/roots.d -o /workspace/build01-full-next/recovery/out/target/product/generic/obj/EXECUTABLES/recovery_intermediates/roots.o bootable/recovery/roots.cpp
+bootable/recovery/roots.cpp:34:10: fatal error: 'cryptfs.h' file not found
+#include "cryptfs.h"
+         ^
+1 error generated.
+make: *** [build/core/binary.mk:925: /workspace/build01-full-next/recovery/out/target/product/generic/obj/EXECUTABLES/recovery_intermediates/roots.o] Error 1

@@ -1,0 +1,70 @@
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=recovery
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/recovery/out
+============================================
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/recovery/out
+============================================
+bootable/recovery/Android.mk:64: *** Redirect log to UART
+Export includes file: -- /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libpng_intermediates/export_includes
+mkdir -p /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libpng_intermediates/ && rm -f /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libpng_intermediates/export_includes.tmp
+for d in external/libpng; do \
+        echo "-I $d" >> /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libpng_intermediates/export_includes.tmp; \
+        done
+mv /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libpng_intermediates/export_includes.tmp /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libpng_intermediates/export_includes ;
+Export includes file: -- /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libcrypto_static_intermediates/export_includes
+mkdir -p /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libcrypto_static_intermediates/ && rm -f /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libcrypto_static_intermediates/export_includes.tmp
+for d in external/boringssl/src/include; do \
+        echo "-I $d" >> /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libcrypto_static_intermediates/export_includes.tmp; \
+        done
+mv /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libcrypto_static_intermediates/export_includes.tmp /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libcrypto_static_intermediates/export_includes ;
+Export includes file: -- /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libutils_intermediates/export_includes
+mkdir -p /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libutils_intermediates/ && rm -f /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libutils_intermediates/export_includes.tmp
+touch /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libutils_intermediates/export_includes.tmp
+mv /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libutils_intermediates/export_includes.tmp /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libutils_intermediates/export_includes ;
+Export includes file: -- /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/liblog_intermediates/export_includes
+mkdir -p /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/liblog_intermediates/ && rm -f /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/liblog_intermediates/export_includes.tmp
+touch /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/liblog_intermediates/export_includes.tmp
+mv /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/liblog_intermediates/export_includes.tmp /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/liblog_intermediates/export_includes ;
+make: *** No rule to make target '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libselinux_intermediates/export_includes', needed by '/workspace/build01-full-next/recovery/out/target/product/generic/obj/EXECUTABLES/recovery_intermediates/import_includes'.  Stop.

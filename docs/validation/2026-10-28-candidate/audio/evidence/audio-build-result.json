@@ -1,0 +1,317 @@
+{
+  "scope": "Genuine Android.mk compile/link/pack/strip/install in a thin reference tree; not a complete source-built BSP.",
+  "status": "pass",
+  "verified_UTC": "2026-10-28T11:05:57.744801+00:00",
+  "clean_build": {
+    "log": "attempt-08-final-clean.log",
+    "script": "build_audio_final.sh",
+    "compilation_units": 53,
+    "units_by_module": {
+      "libunwind_llvm": 7,
+      "libcompiler_rt-extras": 1,
+      "libspeexresampler": 1,
+      "libexpat": 3,
+      "libspeex": 5,
+      "libalsautils": 4,
+      "libmedia_helper": 1,
+      "power.default": 1,
+      "audio.primary.rk30board": 4,
+      "libtinyalsa": 2,
+      "libaudioutils": 11,
+      "libaudioroute": 1,
+      "audio.usb.default": 1,
+      "audio.r_submix.default": 1,
+      "libnbaio": 10
+    },
+    "HAL_modules": 4,
+    "source_shared_dependencies": 7,
+    "source_static_archives": 4,
+    "registered_reference_prebuilt_DSO_modules": 22,
+    "actually_processed_prebuilt_modules": [
+      "libbinder",
+      "libc",
+      "libc++",
+      "libcutils",
+      "libdl",
+      "libhardware_legacy",
+      "liblog",
+      "libm",
+      "libutils"
+    ]
+  },
+  "toolchains": {
+    "HAL_and_dependency_compiler": "genuine Android Clang clang-2690385 (3.8), official revision45562a53b2a5eb7c6e8f400413d19a12c660d7b1",
+    "linker_and_runtime": "genuine Android GCC4.9 tools/runtime, revision0390252b6bcc6217966ade31d07f8b12f6f78f89",
+    "shared_CRT": "Reused pinned Bionic source CRT objects from prior reference experiment, compiled softfp with Linaro6.3.1; not source-built by this clean make.",
+    "loader_probe": "Separately compiled Bionic dynamic CRT and metadata probe with actual Android GCC4.9; see loader/evidence/probe-build.json.",
+    "Expat_NDK_interface": "Genuine Expat Android.mk declares LOCAL_SDK_VERSION=8 for ARM; recorded official NDK API8 sysroot subset provides headers/link interfaces, excluded from delivery."
+  },
+  "regression": {
+    "baseline_passed": 10,
+    "baseline_expected_failures": 1,
+    "patched_passed": 11,
+    "instrumentation": "GCC14 -ftrivial-auto-var-init=zero initializes otherwise uninitialized enum to safe zero for deterministic baseline rejection test; not a sanitizer finding or prediction of uninstrumented UB behavior"
+  },
+  "loader_smoke": {
+    "cases": 8,
+    "result": "pass",
+    "HAL_open_or_power_hook_invoked": false
+  },
+  "warning_count": 28,
+  "artifacts": [
+    {
+      "path": "/workspace/build01-full-next/audio/artifacts/system/lib/hw/audio.primary.rk30board.so",
+      "size_bytes": 182488,
+      "sha256": "8814c9b2b1d47b394bfb7f981c802ce7fa1325c10518bbd43a5ba51a2f6cbfd6",
+      "installed_path": "/workspace/build01-full-next/audio/out-final/target/product/generic/system/lib/hw/audio.primary.rk30board.so",
+      "kind": "HAL",
+      "ELF32_ARM": true,
+      "hardfloat_calling_convention": false,
+      "TEXTREL": false,
+      "has_HMI": true,
+      "needed": [
+        "liblog.so",
+        "libcutils.so",
+        "libtinyalsa.so",
+        "libaudioutils.so",
+        "libaudioroute.so",
+        "libhardware_legacy.so",
+        "libc++.so",
+        "libdl.so",
+        "libc.so",
+        "libm.so"
+      ]
+    },
+    {
+      "path": "/workspace/build01-full-next/audio/artifacts/system/lib/hw/audio.usb.default.so",
+      "size_bytes": 22196,
+      "sha256": "934643a44841444d5d92b21a84093fa63afcd8a25d29ae4f12e8942fa4653f7a",
+      "installed_path": "/workspace/build01-full-next/audio/out-final/target/product/generic/system/lib/hw/audio.usb.default.so",
+      "kind": "HAL",
+      "ELF32_ARM": true,
+      "hardfloat_calling_convention": false,
+      "TEXTREL": false,
+      "has_HMI": true,
+      "needed": [
+        "liblog.so",
+        "libcutils.so",
+        "libtinyalsa.so",
+        "libaudioutils.so",
+        "libalsautils.so",
+        "libc++.so",
+        "libdl.so",
+        "libc.so",
+        "libm.so"
+      ]
+    },
+    {
+      "path": "/workspace/build01-full-next/audio/artifacts/system/lib/hw/audio.r_submix.default.so",
+      "size_bytes": 34524,
+      "sha256": "509128a5173de1272d6a1fed03d4305cd961763740570759be6f13f1c71d15e4",
+      "installed_path": "/workspace/build01-full-next/audio/out-final/target/product/generic/system/lib/hw/audio.r_submix.default.so",
+      "kind": "HAL",
+      "ELF32_ARM": true,
+      "hardfloat_calling_convention": false,
+      "TEXTREL": false,
+      "has_HMI": true,
+      "needed": [
+        "liblog.so",
+        "libcutils.so",
+        "libutils.so",
+        "libnbaio.so",
+        "libc++.so",
+        "libdl.so",
+        "libc.so",
+        "libm.so"
+      ]
+    },
+    {
+      "path": "/workspace/build01-full-next/audio/artifacts/system/lib/hw/power.default.so",
+      "size_bytes": 14024,
+      "sha256": "01e59a07d6a24ba866fc2c9c0e949ae78ec9a51a1668a26e3a3cf9b0e97638ba",
+      "installed_path": "/workspace/build01-full-next/audio/out-final/target/product/generic/system/lib/hw/power.default.so",
+      "kind": "HAL",
+      "ELF32_ARM": true,
+      "hardfloat_calling_convention": false,
+      "TEXTREL": false,
+      "has_HMI": true,
+      "needed": [
+        "liblog.so",
+        "libc++.so",
+        "libdl.so",
+        "libc.so",
+        "libm.so"
+      ]
+    },
+    {
+      "path": "/workspace/build01-full-next/audio/artifacts/system/lib/libtinyalsa.so",
+      "size_bytes": 30472,
+      "sha256": "57ab265751e0b8e51a878e865e179b215e8d04115a803f3130a71a976e1c3b70",
+      "installed_path": "/workspace/build01-full-next/audio/out-final/target/product/generic/system/lib/libtinyalsa.so",
+      "kind": "source_shared_dependency",
+      "ELF32_ARM": true,
+      "hardfloat_calling_convention": false,
+      "TEXTREL": false,
+      "has_HMI": false,
+      "needed": [
+        "liblog.so",
+        "libcutils.so",
+        "libutils.so",
+        "libc++.so",
+        "libdl.so",
+        "libc.so",
+        "libm.so"
+      ]
+    },
+    {
+      "path": "/workspace/build01-full-next/audio/artifacts/system/lib/libaudioutils.so",
+      "size_bytes": 30288,
+      "sha256": "478880d49b6accbc2e5335d31f9fc1cfc30fb5155bb3961429dcd99b94445f89",
+      "installed_path": "/workspace/build01-full-next/audio/out-final/target/product/generic/system/lib/libaudioutils.so",
+      "kind": "source_shared_dependency",
+      "ELF32_ARM": true,
+      "hardfloat_calling_convention": false,
+      "TEXTREL": false,
+      "has_HMI": false,
+      "needed": [
+        "libcutils.so",
+        "liblog.so",
+        "libspeexresampler.so",
+        "libc++.so",
+        "libdl.so",
+        "libc.so",
+        "libm.so"
+      ]
+    },
+    {
+      "path": "/workspace/build01-full-next/audio/artifacts/system/lib/libaudioroute.so",
+      "size_bytes": 22060,
+      "sha256": "ad5813b5661b32ae40fa9ac7a15f7b813300606b2f49dc2ca809b9de9e820751",
+      "installed_path": "/workspace/build01-full-next/audio/out-final/target/product/generic/system/lib/libaudioroute.so",
+      "kind": "source_shared_dependency",
+      "ELF32_ARM": true,
+      "hardfloat_calling_convention": false,
+      "TEXTREL": false,
+      "has_HMI": false,
+      "needed": [
+        "liblog.so",
+        "libcutils.so",
+        "libutils.so",
+        "libexpat.so",
+        "libtinyalsa.so",
+        "libc++.so",
+        "libdl.so",
+        "libc.so",
+        "libm.so"
+      ]
+    },
+    {
+      "path": "/workspace/build01-full-next/audio/artifacts/system/lib/libalsautils.so",
+      "size_bytes": 22092,
+      "sha256": "5db334370eab3635257fb56bc6c26b9baa83ea583af4f790732d83ffa1ec507a",
+      "installed_path": "/workspace/build01-full-next/audio/out-final/target/product/generic/system/lib/libalsautils.so",
+      "kind": "source_shared_dependency",
+      "ELF32_ARM": true,
+      "hardfloat_calling_convention": false,
+      "TEXTREL": false,
+      "has_HMI": false,
+      "needed": [
+        "liblog.so",
+        "libcutils.so",
+        "libtinyalsa.so",
+        "libaudioutils.so",
+        "libc++.so",
+        "libdl.so",
+        "libc.so",
+        "libm.so"
+      ]
+    },
+    {
+      "path": "/workspace/build01-full-next/audio/artifacts/system/lib/libspeexresampler.so",
+      "size_bytes": 27604,
+      "sha256": "c3f9a01a3958068fc7ec13492f6b9a92e37165173fdb950babecad262ed4c8ea",
+      "installed_path": "/workspace/build01-full-next/audio/out-final/target/product/generic/system/lib/libspeexresampler.so",
+      "kind": "source_shared_dependency",
+      "ELF32_ARM": true,
+      "hardfloat_calling_convention": false,
+      "TEXTREL": false,
+      "has_HMI": false,
+      "needed": [
+        "libc++.so",
+        "libdl.so",
+        "libc.so",
+        "libm.so"
+      ]
+    },
+    {
+      "path": "/workspace/build01-full-next/audio/artifacts/system/lib/libexpat.so",
+      "size_bytes": 91560,
+      "sha256": "012137fc33fda1463d0605a8a55952294a2da238c9018559ae5d65b7a3ffed46",
+      "installed_path": "/workspace/build01-full-next/audio/out-final/target/product/generic/system/lib/libexpat.so",
+      "kind": "source_shared_dependency",
+      "ELF32_ARM": true,
+      "hardfloat_calling_convention": false,
+      "TEXTREL": false,
+      "has_HMI": false,
+      "needed": [
+        "libc.so",
+        "libstdc++.so"
+      ]
+    },
+    {
+      "path": "/workspace/build01-full-next/audio/artifacts/system/lib/libnbaio.so",
+      "size_bytes": 38436,
+      "sha256": "da1f684063cab37078930dbe3af6ce35d99369e746a8e5de02793a4e80c15c09",
+      "installed_path": "/workspace/build01-full-next/audio/out-final/target/product/generic/system/lib/libnbaio.so",
+      "kind": "source_shared_dependency",
+      "ELF32_ARM": true,
+      "hardfloat_calling_convention": false,
+      "TEXTREL": false,
+      "has_HMI": false,
+      "needed": [
+        "libaudioutils.so",
+        "libbinder.so",
+        "libcutils.so",
+        "libutils.so",
+        "liblog.so",
+        "libc++.so",
+        "libdl.so",
+        "libc.so",
+        "libm.so"
+      ]
+    },
+    {
+      "path": "/workspace/build01-full-next/audio/artifacts/static/libspeex.a",
+      "size_bytes": 218104,
+      "sha256": "bd739285e5c5781921d2ee7b444bde4c9b91a6e2bad2eea8ee8e0070076d5702",
+      "installed_path": null,
+      "kind": "source_static_archive"
+    },
+    {
+      "path": "/workspace/build01-full-next/audio/artifacts/static/libmedia_helper.a",
+      "size_bytes": 74552,
+      "sha256": "5472ede8ac264ccb8adc904d9067bc42565c434e144e3bb1d776cb797871528d",
+      "installed_path": null,
+      "kind": "source_static_archive"
+    },
+    {
+      "path": "/workspace/build01-full-next/audio/artifacts/static/libunwind_llvm.a",
+      "size_bytes": 172822,
+      "sha256": "2857fda9981591f1bbc27a176d66afbde34c7fc7499a421d627cb70f3d39a2ac",
+      "installed_path": null,
+      "kind": "source_static_archive"
+    },
+    {
+      "path": "/workspace/build01-full-next/audio/artifacts/static/libcompiler_rt-extras.a",
+      "size_bytes": 3898,
+      "sha256": "d5dd05f164da84ec52ad90ae41dbd23cb45c3840fc8c50975039ffa4d138ddb8",
+      "installed_path": null,
+      "kind": "source_static_archive"
+    }
+  ],
+  "unresolved": [
+    "Reference system DSOs are real API25 binaries, not source-built platform libraries; excluded from delivery.",
+    "No audio playback/recording, HDMI/SPDIF/USB/power operation or physical hardware validation.",
+    "No complete Android build, Android/recovery/SD image or flash operation."
+  ]
+}

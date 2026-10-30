@@ -72,7 +72,13 @@ class ContractChecks(unittest.TestCase):
 
     def test_no_firmware_loader_overwrite(self):
         product=read("rom/vortex_product.mk")
-        self.assertNotIn("PRODUCT_COPY_FILES",product)
+        # The OEM catalog configuration is now a legitimate system copy.
+        # Keep this fragment from introducing any firmware/boot image copies.
+        product=re.sub(r"#[^\n]*", "", product).replace("\\\n", " ")
+        copies=re.findall(r"^\s*PRODUCT_COPY_FILES\s*[:+?]?=([^\n]*)", product, re.M)
+        self.assertEqual([entry for line in copies for entry in line.split()], [
+            "vendor/vortex/home/rom/prebuilt/catalog-access:system/etc/vortex-tv/catalog-access"
+        ])
 
     def test_bootanimation_generator(self):
         gen=read("tools/bootanimation_from_video.py")

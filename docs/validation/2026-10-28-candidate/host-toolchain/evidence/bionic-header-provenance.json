@@ -1,0 +1,10 @@
+{
+  "source_repository": "https://github.com/rockchip-android/bionic",
+  "source_revision": "8b2e5b977118ebb8447cdf429c4a6be534c4fd1b",
+  "source_path": "libc/include/stdatomic.h",
+  "bytes": 19660,
+  "sha256": "b036ea3ee4d1b6512645f2666f651f85bf82e80a5ab34061e6f40592dea7f002",
+  "copied_exactly_from_git_blob": true,
+  "upstream_link_target": "../../../../../../../../bionic/libc/include/stdatomic.h",
+  "upstream_symlink_unmodified": true
+}

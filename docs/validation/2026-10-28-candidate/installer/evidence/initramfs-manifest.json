@@ -1,0 +1,49 @@
+{
+  "scope": "deterministic initramfs component only; no bootloader/kernel/Android image or hardware boot",
+  "entries": [
+    {
+      "name": "dev",
+      "mode": "0o40755",
+      "size_bytes": 0,
+      "rdev_major": 0,
+      "rdev_minor": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "proc",
+      "mode": "0o40755",
+      "size_bytes": 0,
+      "rdev_major": 0,
+      "rdev_minor": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "sys",
+      "mode": "0o40755",
+      "size_bytes": 0,
+      "rdev_major": 0,
+      "rdev_minor": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "dev/console",
+      "mode": "0o20600",
+      "size_bytes": 0,
+      "rdev_major": 5,
+      "rdev_minor": 1,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "init",
+      "mode": "0o100755",
+      "size_bytes": 27436,
+      "rdev_major": 0,
+      "rdev_minor": 0,
+      "sha256": "34c3e9afb616e5802508e2be7b0e7b0d98267d70e42bdcaff1efafa1a742a950"
+    }
+  ],
+  "gzip_mtime": 0,
+  "root_uid_gid": 0,
+  "determinism_check": "same binary produces byte-identical newc and gzip within this tool invocation",
+  "mount_or_device_operations": "none; dev/console is encoded as archive metadata only"
+}

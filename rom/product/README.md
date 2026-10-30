@@ -20,9 +20,10 @@ byte a byte no ensaio com as mesmas entradas.
 ## Compor as fontes
 
 Usar uma árvore descartável da [composição experimental](../platform-reference/README.md),
-nas revisões exatas ali indicadas. O XML ainda fixa um Vortex histórico;
-aplicar sua correção de módulo AOSP documentada. Os novos arquivos abaixo
-vêm deste checkout atualizado, não daquele commit histórico.
+nas revisões exatas ali indicadas. O XML fixa o Vortex 1db0c91; aplicar o
+vortex-product-integration.patch documentado antes da descoberta de produtos.
+O módulo do APK nesse pin já tem a correção AOSP anterior. Copiar o perfil
+do checkout atualizado conforme abaixo.
 
 1. Aplicar os [patches SD 0001–0006](../sdcard/README.md), na ordem e nos
    repositórios indicados.
@@ -31,22 +32,26 @@ vêm deste checkout atualizado, não daquele commit histórico.
    do patch SD 0006.
 3. Aplicar o patch deste diretório na raiz do projeto `build` de revisão
    `d2721c65c9282b31df7b79f85289ee6c4e636716`.
-4. Copiar o perfil para `device/vortex/rk322x_sd_box` dentro do BSP.
+4. Copiar o perfil para `device/vortex/vortex_rk322x_sd_box` dentro do BSP.
+   O nome final do diretório precisa corresponder a `PRODUCT_DEVICE` para a
+   descoberta real do BoardConfig. O AndroidProducts.mk só registra esse path,
+   pois a cópia de fontes em vendor/vortex/home também contém o template.
 
 ```sh
 # Executar na raiz da árvore BSP, com caminho absoluto para este checkout.
 VORTEX_CHECKOUT=/caminho/absoluto/VORTEX-TV-OS
 git -C build apply --check "$VORTEX_CHECKOUT/rom/product/patches/0001-scope-minimal-packages-to-vortex-sd.patch"
 git -C build apply "$VORTEX_CHECKOUT/rom/product/patches/0001-scope-minimal-packages-to-vortex-sd.patch"
-mkdir -p device/vortex/rk322x_sd_box
-cp -a "$VORTEX_CHECKOUT/rom/product/rk322x_sd_box/." device/vortex/rk322x_sd_box/
+mkdir -p device/vortex/vortex_rk322x_sd_box
+cp -a "$VORTEX_CHECKOUT/rom/product/rk322x_sd_box/." device/vortex/vortex_rk322x_sd_box/
 ```
 
 Com uma árvore completa, o alvo é `lunch vortex_rk322x_sd_box-eng`.
-**Esse lunch e a compilação completa de imagens ainda não foram executados.**
-O ensaio de produto usa um preâmbulo diagnóstico e as funções genuínas de
-importação/herança; o ensaio nativo usa `tapas`, não este produto completo.
-Não confundir os dois resultados.
+**Esse lunch passou na tentativa real de plataforma; make droid ainda falha
+por dependências/fontes ausentes, sem gerar imagens completas.** O ensaio
+anterior de listas usava um preâmbulo diagnóstico; ele não detectou o path
+incorreto de BoardConfig nem a duplicação causada pelo template no vendor.
+Os ensaios nativos continuam separados, usando tapas e bibliotecas de referência.
 
 ## Escolhas e limites
 

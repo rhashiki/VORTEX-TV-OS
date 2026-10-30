@@ -1,0 +1,73 @@
+{
+  "scope": "candidate whole product source-build attempt; incomplete source checkout initially, no prebuilt SDK platform modules",
+  "base_vortex_commit": "ba4afebe58e9c9cb8fd2a05dc88d142ce1b5e8fe",
+  "reused": [
+    {
+      "destination": "bionic",
+      "source": "/workspace/build01-platform-next/research/rockchip-bionic",
+      "mode": "copy of genuine source with inherited patches"
+    },
+    {
+      "destination": "system/core",
+      "source": "/workspace/build01-platform-next/research/rockchip-system-core",
+      "mode": "copy of genuine source with inherited patches"
+    },
+    {
+      "destination": "hardware/libhardware",
+      "source": "/workspace/build01-graphics-next/graphics/libhardware",
+      "mode": "copy of genuine source with inherited patches"
+    },
+    {
+      "destination": "hardware/rockchip/libgralloc",
+      "source": "/workspace/build01-product-next/native-rules/tree/hardware/rockchip/libgralloc",
+      "mode": "copy of genuine source with inherited patches"
+    },
+    {
+      "destination": "hardware/rockchip/hwcomposer",
+      "source": "/workspace/build01-product-next/native-rules/tree/hardware/rockchip/hwcomposer",
+      "mode": "copy of genuine source with inherited patches"
+    },
+    {
+      "destination": "hardware/rockchip/librkvpu",
+      "source": "/workspace/build01-platform-next/research/rockchip-librkvpu",
+      "mode": "copy of genuine source with inherited patches"
+    },
+    {
+      "destination": "prebuilts/sdk",
+      "source": "/workspace/build01-platform-next/aosp-app/tree/prebuilts/sdk",
+      "mode": "read-only reuse; no input code changes"
+    },
+    {
+      "destination": "prebuilts/gcc",
+      "source": "/workspace/build01-product-next/native-rules/tree/prebuilts/gcc",
+      "mode": "read-only reuse; no input code changes"
+    },
+    {
+      "destination": "prebuilts/clang",
+      "source": "/workspace/build01-product-next/native-rules/tree/prebuilts/clang",
+      "mode": "read-only reuse; no input code changes"
+    },
+    {
+      "destination": "prebuilts/misc",
+      "source": "/workspace/build01-product-next/native-rules/tree/prebuilts/misc",
+      "mode": "read-only reuse; no input code changes"
+    },
+    {
+      "destination": "external/libunwind_llvm",
+      "source": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm",
+      "mode": "read-only reuse; no input code changes"
+    },
+    {
+      "destination": "external/compiler-rt",
+      "source": "/workspace/build01-product-next/native-rules/tree/external/compiler-rt",
+      "mode": "read-only reuse; no input code changes"
+    },
+    {
+      "destination": "vendor/vortex/home",
+      "source": "/workspace/vortex-build",
+      "mode": "read-only reuse; no input code changes"
+    }
+  ],
+  "profile_path_correction": "real envsetup.mk expects TARGET_DEVICE as final device directory name; fixed from rk322x_sd_box to vortex_rk322x_sd_box",
+  "home_source": "copied real Vortex checkout including app/Android.mk; thin product fragment alone is insufficient"
+}

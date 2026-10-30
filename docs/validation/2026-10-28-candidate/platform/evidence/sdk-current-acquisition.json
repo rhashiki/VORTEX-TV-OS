@@ -1,0 +1,20 @@
+[
+  {
+    "path": "current/android.jar",
+    "repository": "https://android.googlesource.com/platform/prebuilts/sdk",
+    "revision": "23f7de5ba433fc82269ba63c203fe0a3eaf4a680",
+    "url": "https://android.googlesource.com/platform/prebuilts/sdk/+/23f7de5ba433fc82269ba63c203fe0a3eaf4a680/current/android.jar?format=TEXT",
+    "size_bytes": 34619219,
+    "sha256": "6a50d70670897bb384978bf36f89c91d125be9a7809235c3a40140ff34707443",
+    "kind": "real upstream SDK stub; not generated or aliased to another API"
+  },
+  {
+    "path": "current/uiautomator.jar",
+    "repository": "https://android.googlesource.com/platform/prebuilts/sdk",
+    "revision": "23f7de5ba433fc82269ba63c203fe0a3eaf4a680",
+    "url": "https://android.googlesource.com/platform/prebuilts/sdk/+/23f7de5ba433fc82269ba63c203fe0a3eaf4a680/current/uiautomator.jar?format=TEXT",
+    "size_bytes": 10458,
+    "sha256": "597f8a0def319c77fd7f088971cdc1311c17a66a92bf6f90c1208c188ee40068",
+    "kind": "real upstream SDK stub; not generated or aliased to another API"
+  }
+]

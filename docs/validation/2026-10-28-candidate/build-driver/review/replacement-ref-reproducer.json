@@ -1,0 +1,10 @@
+{
+  "scope": "disposablefixtureGitrefsreplace; no realBSP/device",
+  "status": "finding_reproduced",
+  "returncode": 0,
+  "original_expected_pin": "c5bd726efe0b37ad9c36c8fbc626b499ecafdfc6",
+  "replacement_commit": "d769f680e2e7767ed5de96595f73df2552316691",
+  "configured_replacement_can_change_tree_without_changing_reported_HEAD": true,
+  "stdout_tail": "t authenticated by this preflight.\",\n    \"Declared generated headers are inventoried, not authenticated; other ignored generated artifacts are outside this contract.\",\n    \"Actual source module closure is decided by the genuine platform build, not this script.\",\n    \"No driver, complete image, SD media or physical compatibility is approved.\"\n  ]\n}\n",
+  "stderr_tail": ""
+}

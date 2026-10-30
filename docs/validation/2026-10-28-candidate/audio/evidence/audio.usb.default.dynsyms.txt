@@ -1,0 +1,69 @@
+
+Symbol table '.dynsym' contains 66 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_finalize@LIBC (2)
+     2: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_atexit@LIBC (2)
+     3: 00000000     0 FUNC    GLOBAL DEFAULT  UND __register_atfork@LIBC (2)
+     4: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memclr@LIBC_N (3)
+     5: 00000000     0 FUNC    GLOBAL DEFAULT  UND __android_log_assert
+     6: 00000000     0 FUNC    GLOBAL DEFAULT  UND __stack_chk_fail@LIBC (2)
+     7: 00000000     0 OBJECT  GLOBAL DEFAULT  UND __stack_chk_guard@LIBC (2)
+     8: 00000000     0 FUNC    GLOBAL DEFAULT  UND adjust_channels
+     9: 00000000     0 FUNC    GLOBAL DEFAULT  UND atoi@LIBC (2)
+    10: 00000000     0 FUNC    GLOBAL DEFAULT  UND calloc@LIBC (2)
+    11: 00000000     0 FUNC    GLOBAL DEFAULT  UND dprintf@LIBC (2)
+    12: 00000000     0 FUNC    GLOBAL DEFAULT  UND free@LIBC (2)
+    13: 00000000     0 FUNC    GLOBAL DEFAULT  UND profile_dump
+    14: 00000000     0 FUNC    GLOBAL DEFAULT  UND profile_get_channel_count_strs
+    15: 00000000     0 FUNC    GLOBAL DEFAULT  UND profile_get_closest_channel_count
+    16: 00000000     0 FUNC    GLOBAL DEFAULT  UND profile_get_default_channel_count
+    17: 00000000     0 FUNC    GLOBAL DEFAULT  UND profile_get_default_format
+    18: 00000000     0 FUNC    GLOBAL DEFAULT  UND profile_get_default_sample_rate
+    19: 00000000     0 FUNC    GLOBAL DEFAULT  UND profile_get_format_strs
+    20: 00000000     0 FUNC    GLOBAL DEFAULT  UND profile_get_sample_rate_strs
+    21: 00000000     0 FUNC    GLOBAL DEFAULT  UND profile_init
+    22: 00000000     0 FUNC    GLOBAL DEFAULT  UND profile_is_cached_for
+    23: 00000000     0 FUNC    GLOBAL DEFAULT  UND profile_is_format_valid
+    24: 00000000     0 FUNC    GLOBAL DEFAULT  UND profile_is_sample_rate_valid
+    25: 00000000     0 FUNC    GLOBAL DEFAULT  UND profile_read_device_info
+    26: 00000000     0 FUNC    GLOBAL DEFAULT  UND proxy_close
+    27: 00000000     0 FUNC    GLOBAL DEFAULT  UND proxy_dump
+    28: 00000000     0 FUNC    GLOBAL DEFAULT  UND proxy_get_channel_count
+    29: 00000000     0 FUNC    GLOBAL DEFAULT  UND proxy_get_format
+    30: 00000000     0 FUNC    GLOBAL DEFAULT  UND proxy_get_latency
+    31: 00000000     0 FUNC    GLOBAL DEFAULT  UND proxy_get_period_size
+    32: 00000000     0 FUNC    GLOBAL DEFAULT  UND proxy_get_presentation_position
+    33: 00000000     0 FUNC    GLOBAL DEFAULT  UND proxy_get_sample_rate
+    34: 00000000     0 FUNC    GLOBAL DEFAULT  UND proxy_open
+    35: 00000000     0 FUNC    GLOBAL DEFAULT  UND proxy_prepare
+    36: 00000000     0 FUNC    GLOBAL DEFAULT  UND proxy_read
+    37: 00000000     0 FUNC    GLOBAL DEFAULT  UND proxy_write
+    38: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_init@LIBC (2)
+    39: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_lock@LIBC (2)
+    40: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_trylock@LIBC (2)
+    41: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_unlock@LIBC (2)
+    42: 00000000     0 FUNC    GLOBAL DEFAULT  UND realloc@LIBC (2)
+    43: 00000000     0 FUNC    GLOBAL DEFAULT  UND sleep@LIBC (2)
+    44: 00000000     0 FUNC    GLOBAL DEFAULT  UND str_parms_add_str
+    45: 00000000     0 FUNC    GLOBAL DEFAULT  UND str_parms_create
+    46: 00000000     0 FUNC    GLOBAL DEFAULT  UND str_parms_create_str
+    47: 00000000     0 FUNC    GLOBAL DEFAULT  UND str_parms_destroy
+    48: 00000000     0 FUNC    GLOBAL DEFAULT  UND str_parms_get_str
+    49: 00000000     0 FUNC    GLOBAL DEFAULT  UND str_parms_has_key
+    50: 00000000     0 FUNC    GLOBAL DEFAULT  UND str_parms_to_str
+    51: 00000000     0 FUNC    GLOBAL DEFAULT  UND strcmp@LIBC (2)
+    52: 00000000     0 FUNC    GLOBAL DEFAULT  UND strdup@LIBC (2)
+    53: 00000000     0 FUNC    GLOBAL DEFAULT  UND usleep@LIBC (2)
+    54: 00000000     0 FUNC    GLOBAL DEFAULT  UND abort@LIBC (2)
+    55: 00000000     0 FUNC    GLOBAL DEFAULT  UND fprintf@LIBC (2)
+    56: 00000000     0 OBJECT  GLOBAL DEFAULT  UND stderr@LIBC (2)
+    57: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memclr8@LIBC_N (3)
+    58: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memcpy@LIBC_N (3)
+    59: 00000000     0 FUNC    GLOBAL DEFAULT  UND __gnu_Unwind_Find_exidx@LIBC_N (3)
+    60: 00000000     0 FUNC    GLOBAL DEFAULT  UND __snprintf_chk@LIBC (2)
+    61: 00000000     0 FUNC    GLOBAL DEFAULT  UND dladdr@LIBC (4)
+    62: 00006089     0 NOTYPE  GLOBAL DEFAULT  ABS _end
+    63: 00006088     0 NOTYPE  GLOBAL DEFAULT  ABS _edata
+    64: 00006008   128 OBJECT  GLOBAL DEFAULT   20 HMI
+    65: 00006088     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start

@@ -1,0 +1,45 @@
+{
+  "scope": "Host-only API-shape/menu/key regression of actual unmodified UI source with narrow fixtures; genuine Android object compilation logged separately. No recovery link, framebuffer, real input, flash or device execution. Fixture headers copy the real action enums and two-argument key callback shape; fixture callback markers verify pass-through but do not implement the Android key policy or UI ABI.",
+  "status": "pass",
+  "checks": [
+    {
+      "label": "baseline",
+      "source_sha256": "0e7247179c17eb05beb2d2a8986ea7e4ae99a3359fc1c42a32e0719e69243fcb",
+      "compile_command": [
+        "g++",
+        "-std=c++11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I/workspace/build01-full-next/recovery/ui-regression/fixtures",
+        "/workspace/build01-full-next/recovery/ui-regression/baseline-harness.cpp",
+        "-o",
+        "/workspace/build01-full-next/recovery/ui-regression/baseline-test"
+      ],
+      "compile_exit_code": 1,
+      "expected_result": "compile failure due to old Device constructor and removed action enums"
+    },
+    {
+      "label": "patched",
+      "source_sha256": "90106514f48d3d11a26e67af16979de2cded87e291f89ccc74651379669eb912",
+      "compile_command": [
+        "g++",
+        "-std=c++11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I/workspace/build01-full-next/recovery/ui-regression/fixtures",
+        "/workspace/build01-full-next/recovery/ui-regression/patched-harness.cpp",
+        "-o",
+        "/workspace/build01-full-next/recovery/ui-regression/patched-test"
+      ],
+      "compile_exit_code": 0,
+      "runtime_exit_code": 0,
+      "runtime_result": "RESULT passed=20 failed=0"
+    }
+  ],
+  "source_headers": {
+    "device.h": "69ff15771df62d7900761659f74839035cbbf695712b1f324624935f44b731e1",
+    "ui.h": "a6e2fc73deb8d915ab1bb725f35fb95939b204abb30bbe0351b673a179b0d445"
+  }
+}

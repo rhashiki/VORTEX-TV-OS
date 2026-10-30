@@ -1,0 +1,8 @@
+{
+  "java": "openjdk version \"1.8.0_504\"",
+  "javac": "javac 1.8.0_504",
+  "make": "GNU Make 4.4.1",
+  "gcc": "gcc (Debian 14.2.0-19) 14.2.0",
+  "python2": "Python 2.7.18",
+  "aapt": "Android Asset Packaging Tool, v0.2-2481650"
+}

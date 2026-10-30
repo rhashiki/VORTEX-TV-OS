@@ -1,0 +1,19 @@
+Cloning into '/workspace/build01-full-next/platform/tree/external/junit'...
+warning: refs/tags/android-7.1.2_r6 5a9571f5bef2e8ab3b1d8c81945ef4f131545d53 is not a commit!
+Note: switching to '77f8b3f30164ea92ca73ebc8a685b12bd4b1512c'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+

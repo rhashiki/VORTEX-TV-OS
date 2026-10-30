@@ -1,0 +1,17 @@
+{
+  "status": "ready",
+  "toolchain_path": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8",
+  "repository": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8",
+  "revision": "73ca99196723f810dad42390d154654354f57c16",
+  "extraction_regular_files": 3339,
+  "extraction_symlinks": 202,
+  "all_bytes_modes_links_match_archive": true,
+  "host_smoke_cases": 5,
+  "host_smoke_status": "pass",
+  "archive_plus_regular_payload_bytes": 323525416,
+  "budget_bytes": 419430400,
+  "evidence_package": "/workspace/build01-full-next/host-toolchain/evidence-package",
+  "evidence_text_files_including_manifest": 37,
+  "manifest_sha256": "19b453173f4e35d424163b77585d7607f38bc8e53d5c29c3625f0fc8c1a28b23",
+  "scope": "host toolchain provisioning and smoke, not a complete Android build or target/hardware test"
+}

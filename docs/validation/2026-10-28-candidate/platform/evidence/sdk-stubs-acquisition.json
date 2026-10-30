@@ -1,0 +1,83 @@
+[
+  {
+    "path": "current/android.jar",
+    "repository": "https://android.googlesource.com/platform/prebuilts/sdk",
+    "revision": "23f7de5ba433fc82269ba63c203fe0a3eaf4a680",
+    "url": "https://android.googlesource.com/platform/prebuilts/sdk/+/23f7de5ba433fc82269ba63c203fe0a3eaf4a680/current/android.jar?format=TEXT",
+    "size_bytes": 34619219,
+    "sha256": "6a50d70670897bb384978bf36f89c91d125be9a7809235c3a40140ff34707443",
+    "kind": "real upstream SDK stub; not generated or aliased to another API"
+  },
+  {
+    "path": "current/uiautomator.jar",
+    "repository": "https://android.googlesource.com/platform/prebuilts/sdk",
+    "revision": "23f7de5ba433fc82269ba63c203fe0a3eaf4a680",
+    "url": "https://android.googlesource.com/platform/prebuilts/sdk/+/23f7de5ba433fc82269ba63c203fe0a3eaf4a680/current/uiautomator.jar?format=TEXT",
+    "size_bytes": 10458,
+    "sha256": "597f8a0def319c77fd7f088971cdc1311c17a66a92bf6f90c1208c188ee40068",
+    "kind": "real upstream SDK stub; not generated or aliased to another API"
+  },
+  {
+    "path": "14/android.jar",
+    "repository": "https://android.googlesource.com/platform/prebuilts/sdk",
+    "revision": "23f7de5ba433fc82269ba63c203fe0a3eaf4a680",
+    "url": "https://android.googlesource.com/platform/prebuilts/sdk/+/23f7de5ba433fc82269ba63c203fe0a3eaf4a680/14/android.jar?format=TEXT",
+    "size_bytes": 17704039,
+    "sha256": "a941c11d60332612f393d7a72245f34d15306fe768c26ad8386c9ee9e7af00de",
+    "kind": "actual upstream historical SDK stub, selected by real source LOCAL_SDK_VERSION"
+  },
+  {
+    "path": "21/android.jar",
+    "repository": "https://android.googlesource.com/platform/prebuilts/sdk",
+    "revision": "23f7de5ba433fc82269ba63c203fe0a3eaf4a680",
+    "url": "https://android.googlesource.com/platform/prebuilts/sdk/+/23f7de5ba433fc82269ba63c203fe0a3eaf4a680/21/android.jar?format=TEXT",
+    "size_bytes": 25819751,
+    "sha256": "a3a0991b4ebe550698979086f2133be8455c284b75c06e398f6410a6d6390616",
+    "kind": "actual upstream historical SDK stub, selected by real source LOCAL_SDK_VERSION"
+  },
+  {
+    "path": "7/android.jar",
+    "repository": "https://android.googlesource.com/platform/prebuilts/sdk",
+    "revision": "23f7de5ba433fc82269ba63c203fe0a3eaf4a680",
+    "url": "https://android.googlesource.com/platform/prebuilts/sdk/+/23f7de5ba433fc82269ba63c203fe0a3eaf4a680/7/android.jar?format=TEXT",
+    "size_bytes": 5176806,
+    "sha256": "d2077126666dc9fa04056c2bacdfd1883885c24ef75ade6edbfd9b3401a01d47",
+    "kind": "actual upstream historical SDK stub, selected by real source LOCAL_SDK_VERSION"
+  },
+  {
+    "path": "8/android.jar",
+    "repository": "https://android.googlesource.com/platform/prebuilts/sdk",
+    "revision": "23f7de5ba433fc82269ba63c203fe0a3eaf4a680",
+    "url": "https://android.googlesource.com/platform/prebuilts/sdk/+/23f7de5ba433fc82269ba63c203fe0a3eaf4a680/8/android.jar?format=TEXT",
+    "size_bytes": 5435268,
+    "sha256": "327195c8647eb254bb74acc6648474955120cee561a3ca6c58c026454aa11f5e",
+    "kind": "actual upstream historical SDK stub, selected by real source LOCAL_SDK_VERSION"
+  },
+  {
+    "path": "9/android.jar",
+    "repository": "https://android.googlesource.com/platform/prebuilts/sdk",
+    "revision": "23f7de5ba433fc82269ba63c203fe0a3eaf4a680",
+    "url": "https://android.googlesource.com/platform/prebuilts/sdk/+/23f7de5ba433fc82269ba63c203fe0a3eaf4a680/9/android.jar?format=TEXT",
+    "size_bytes": 8407959,
+    "sha256": "ff6e68f77de8d0085dd0c1afe7995deb16904b72f8a31e5e86d3076c0d682fb8",
+    "kind": "actual upstream historical SDK stub, selected by real source LOCAL_SDK_VERSION"
+  },
+  {
+    "path": "system_current/android.jar",
+    "repository": "https://android.googlesource.com/platform/prebuilts/sdk",
+    "revision": "23f7de5ba433fc82269ba63c203fe0a3eaf4a680",
+    "url": "https://android.googlesource.com/platform/prebuilts/sdk/+/23f7de5ba433fc82269ba63c203fe0a3eaf4a680/system_current/android.jar?format=TEXT",
+    "size_bytes": 34808123,
+    "sha256": "c5d61c973aed1794af1d77ade086c8dcb81df40ff121d7033149619a629d3bbf",
+    "kind": "actual upstream historical SDK stub, selected by real source LOCAL_SDK_VERSION"
+  },
+  {
+    "path": "4/android.jar",
+    "repository": "https://android.googlesource.com/platform/prebuilts/sdk",
+    "revision": "23f7de5ba433fc82269ba63c203fe0a3eaf4a680",
+    "url": "https://android.googlesource.com/platform/prebuilts/sdk/+/23f7de5ba433fc82269ba63c203fe0a3eaf4a680/4/android.jar?format=TEXT",
+    "size_bytes": 3241697,
+    "sha256": "f17962f86785af4ea6dce182fd93bb650a7ac55a12dec8656454e6e6dbce52af",
+    "kind": "actual upstream SDK4 stub required by genuine JUnit Android.mk"
+  }
+]

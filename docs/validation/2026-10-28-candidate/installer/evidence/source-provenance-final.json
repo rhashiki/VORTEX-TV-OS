@@ -1,0 +1,228 @@
+{
+  "scope": "static Linux ARM32 diagnostic component, not Android Bionic or complete installer/image",
+  "source_sha256": "a3c83c37e28f88ded43f4b375d9deef643070a346430d8a11a1fb76da5279a1c",
+  "source_and_header_inputs": [
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/alloca.h",
+      "size_bytes": 219,
+      "sha256": "8768404d7cf4af5fb135b1a2ca91765bd2be311ac072e0ec8b68f5cb3e6e0f3e"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/bits/alltypes.h",
+      "size_bytes": 11202,
+      "sha256": "81581a84bea8af3070b67dce8f7c0d1406d7c2e072d7a3575c956f0ae08deacd"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/bits/dirent.h",
+      "size_bytes": 201,
+      "sha256": "a1c1ccd32905b6304606802aea2a417a22be848ae2a219dff3e0315d2f6aa8b5"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/bits/errno.h",
+      "size_bytes": 3669,
+      "sha256": "1760adb5572357ae1fa93625bd501e975c1ba03fdb3f97fc4fce46398772ae7b"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/bits/fcntl.h",
+      "size_bytes": 842,
+      "sha256": "61ef448ccdc6b93b0f95530fe2d11406e3b7982afc2a570bdb94e674165a9829"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/bits/ioctl.h",
+      "size_bytes": 3054,
+      "sha256": "a1ef9fa70d6d1f14e1a370b21c428b27c5f89e88ebe7500174d60683b096219e"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/bits/ioctl_fix.h",
+      "size_bytes": 40,
+      "sha256": "48e9008ab6e7c16acf356175877ea4aacc1d75b5b0482b47490ee14c62548bda"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/bits/limits.h",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/bits/posix.h",
+      "size_bytes": 68,
+      "sha256": "1518ec6b108557044f70590eeabfb55f419360d2bc93e503f7d24efaf0b8bded"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/bits/signal.h",
+      "size_bytes": 1984,
+      "sha256": "7e36c03ba27b497a278d97a2c4c85834ae1e9b4922392f4dc1911c8e320add39"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/bits/stat.h",
+      "size_bytes": 544,
+      "sha256": "ddd398b475596f2a5e68fcdbbc6167c2bb0468ef489d42e9a82e6a40bb81fbaf"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/bits/statfs.h",
+      "size_bytes": 195,
+      "sha256": "6ce681e292fa857adae906fdc7a2ac641c931659d9c3ac824203eed2980199a4"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/ctype.h",
+      "size_bytes": 1787,
+      "sha256": "0bf45ee657538bf2033a9a17f286f5a4cbcba22a19667deb28d43ac8952c6d30"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/dirent.h",
+      "size_bytes": 1711,
+      "sha256": "62f0387e896572d0360c7d696ac928a33191446ee5132cc22821bc4d0a5dbb3b"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/endian.h",
+      "size_bytes": 1958,
+      "sha256": "4414084736937798abcc075d1f8053e116d873c81dda0908013bfca3331771b9"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/errno.h",
+      "size_bytes": 369,
+      "sha256": "a461912e4058202de8ec414cbd67e04a84965bbff9aff61523bd3baf090b217d"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/fcntl.h",
+      "size_bytes": 4661,
+      "sha256": "22fb6921bcfbfd1ca74cdbea97ad811c9ce3df9ec410f6c9dedacd1da3d9680c"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/features.h",
+      "size_bytes": 865,
+      "sha256": "6d228e77b88b69f70f9157548b6ec673ffc6b998ce6035fbbee0caddb8442903"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/limits.h",
+      "size_bytes": 4179,
+      "sha256": "d6fb743478f7a8dd27f057db844a806165709641b0d0e78fbf0cabf5c88f1e12"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/signal.h",
+      "size_bytes": 7500,
+      "sha256": "2410adbea406ecb28e00e2f376ef772837dae5a7ce187ace1d9eb2aec9cc9d44"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/stdio.h",
+      "size_bytes": 5863,
+      "sha256": "36dda63d91161ecdd42755393bc7ff827dbfe82e512b630d2f2386c1acb8dbfa"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/stdlib.h",
+      "size_bytes": 4875,
+      "sha256": "9dade04aa761839017a0de3023d9e5500cb1e431682fc89d84f9a956e4a7c9d6"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/string.h",
+      "size_bytes": 3013,
+      "sha256": "714a7724b0051be159c0fb7ec7f97c4ff9dd16c22e1be926c957f747cc6a8906"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/strings.h",
+      "size_bytes": 964,
+      "sha256": "b8fde0a141ac481de1f88abafbf5678ddfd8d89b309e3253adea1fa0ecb8d9e4"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/sys/ioctl.h",
+      "size_bytes": 3083,
+      "sha256": "18cc2b9eee923943e198f03f77cae411bd8f34d9a3fc2202851a1e95dc73532e"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/sys/mount.h",
+      "size_bytes": 1927,
+      "sha256": "f217bc6987f9e420949c31ece18720d14e80b71c87be1dcfd7542d052c43d992"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/sys/select.h",
+      "size_bytes": 1332,
+      "sha256": "cda463ae12b5b189bea17a69b403d6f53949f013d926d92fb325be11f95db3ae"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/sys/stat.h",
+      "size_bytes": 4281,
+      "sha256": "ff768c64a759db3d946703c019afc8f189c20f44fa87dfbc7fdc8e45306e1506"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/sys/statfs.h",
+      "size_bytes": 484,
+      "sha256": "aba62ed459ef032953beaba67a3711af9e85642d47d4f2ee77acfde48d7489f4"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/sys/statvfs.h",
+      "size_bytes": 1181,
+      "sha256": "cc74ef408bf5f37a076197eee7149932f7ba41f00376b622a9e2c10efb0a52d5"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/sys/types.h",
+      "size_bytes": 1886,
+      "sha256": "341f6883a4b4be125847d0d4edf3ec5e5bd966e0632569837e9211bb399bf47d"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/musl/include/unistd.h",
+      "size_bytes": 13590,
+      "sha256": "d6365cc93a99349c2b5ef3eb9211659497c1390d0ad302454fabfaef78c98711"
+    },
+    {
+      "path": "/workspace/build01-full-next/installer/vortex_diagnostic_init.c",
+      "size_bytes": 9589,
+      "sha256": "a3c83c37e28f88ded43f4b375d9deef643070a346430d8a11a1fb76da5279a1c"
+    }
+  ],
+  "recompile_command": [
+    "./musl/bin/musl-gcc",
+    "-Os",
+    "-march=armv7-a",
+    "-mfloat-abi=hard",
+    "-mfpu=vfpv3-d16",
+    "-ffunction-sections",
+    "-fdata-sections",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-static",
+    "-Wl,--gc-sections",
+    "-Wl,--build-id=sha1",
+    "-MMD",
+    "-MF",
+    "verification/diagnostic-inputs.d",
+    "vortex_diagnostic_init.c",
+    "-o",
+    "verification/vortex-diagnostic-init.unstripped"
+  ],
+  "cwd": "/workspace/build01-full-next/installer",
+  "recompiled_stripped_binary_identical": true,
+  "artifacts": [
+    {
+      "path": "artifacts/vortex-diagnostic-init",
+      "size_bytes": 27436,
+      "sha256": "34c3e9afb616e5802508e2be7b0e7b0d98267d70e42bdcaff1efafa1a742a950"
+    },
+    {
+      "path": "artifacts/vortex-diagnostic-init.unstripped",
+      "size_bytes": 57552,
+      "sha256": "fdfd126af7d4360431047648d9a0bd36d76b0a406e9ec8bbc1e068a6dbbd07f8"
+    },
+    {
+      "path": "artifacts/vortex-diagnostic-initramfs.cpio",
+      "size_bytes": 28148,
+      "sha256": "f7e851baaae1502d2abd9a5e883431a8b808e2e38f8601a1e806262294f56312"
+    },
+    {
+      "path": "artifacts/vortex-diagnostic-initramfs.cpio.gz",
+      "size_bytes": 19392,
+      "sha256": "39d116db80486916a8c29001b03af832da2a38f4e15fbd3f61813a46c39cd046"
+    }
+  ],
+  "tests": {
+    "count": 24,
+    "status": "pass",
+    "actual_binary_under_qemu_user_mode": true,
+    "binary_sha256": "34c3e9afb616e5802508e2be7b0e7b0d98267d70e42bdcaff1efafa1a742a950",
+    "pid1_mounts_or_kernel_boot": "not_executed",
+    "trace_scope": "mutating open flags/syscalls absent and fixture snapshots unchanged; no-raw-device-I/O additionally supported by reviewed source, not trace path attestation"
+  },
+  "independent_final_review_sha256": "3f54f8e2fe1efeb615c1c143241cf8ad03be07d3ce5be5627d977f5843eb6bb0",
+  "full_rom_or_sd_image": "not_built",
+  "physical_hardware": "not_tested",
+  "dependency_scan_scope": "GCC -M scan with the same preprocessing/target flags as byte-identical verification compilation; full system-header hashes, not compiler binary/runtime-library closure."
+}

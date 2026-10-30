@@ -1,0 +1,126 @@
+{
+  "repository": "https://github.com/rhashiki/VORTEX-TV-OS",
+  "revision": "1db0c914fda74419be097b36c1e753296bcc2bbc",
+  "scope": "exact tracked Android.mk and app/src from this commit only; no source modifications",
+  "files": [
+    {
+      "path": "Android.mk",
+      "mode": "100644",
+      "git_blob": "b85f9b28281973492b925baf205ed4436f8a9963",
+      "bytes": 731,
+      "sha256": "0ccbaf103edf02a46fad6615b435df4cf2e0813a163c0d0355cd403299be680f"
+    },
+    {
+      "path": "app/src/main/AndroidManifest.xml",
+      "mode": "100644",
+      "git_blob": "9eee9b345adc7fe7dd81ce3f18a0f7ee77b39b11",
+      "bytes": 2428,
+      "sha256": "a17a439cca21fe717b731011a8aa9249c0388f7a40ad1b72c830d945e5a128c8"
+    },
+    {
+      "path": "app/src/main/java/io/nayuki/qrcodegen/BitBuffer.java",
+      "mode": "100644",
+      "git_blob": "624d129e73d5efa37194d21e0c420c75b96dba8b",
+      "bytes": 4159,
+      "sha256": "d5496452b435423beead30aa356e10a7c0ba4790b7da37ee4a1b80b4df136447"
+    },
+    {
+      "path": "app/src/main/java/io/nayuki/qrcodegen/DataTooLongException.java",
+      "mode": "100644",
+      "git_blob": "f1453effb23f412d1aad81f3cf241ddb0ec3ab03",
+      "bytes": 2890,
+      "sha256": "7661186dde4b27334fd94f4950f58522eaab256274388152e5cb8e35ef463e1a"
+    },
+    {
+      "path": "app/src/main/java/io/nayuki/qrcodegen/QrCode.java",
+      "mode": "100644",
+      "git_blob": "f0bafbbca19f265ce3572c33b59b5d6862a76bb4",
+      "bytes": 35238,
+      "sha256": "01715baeb383ec26f7c38138299a2b6e5bbfa36fa607441c79dc9cc76b107c6b"
+    },
+    {
+      "path": "app/src/main/java/io/nayuki/qrcodegen/QrSegment.java",
+      "mode": "100644",
+      "git_blob": "3a8b5345647086f2f1365cdcfa2f4c1d2e8df36b",
+      "bytes": 12234,
+      "sha256": "70f10e518d3a8f1a1862e598a249abaac036a9c6fae4e5892c4b6d24995bb8d7"
+    },
+    {
+      "path": "app/src/main/java/os/vortex/tv/ApkInstaller.java",
+      "mode": "100644",
+      "git_blob": "2c87663d1be60b54a672dad53b7641624e9dac70",
+      "bytes": 3497,
+      "sha256": "2419b1af2ce117258442441529ac4795836fc3880310a116cac46929ef72cdfd"
+    },
+    {
+      "path": "app/src/main/java/os/vortex/tv/HomeActivity.java",
+      "mode": "100644",
+      "git_blob": "2391d0bf115754c2176f5dd16b82ae2f4c4f1dd2",
+      "bytes": 9681,
+      "sha256": "4d10e36c857a2ec01cc31957c0006b5459afd8f688f9463e965c70682c78535a"
+    },
+    {
+      "path": "app/src/main/java/os/vortex/tv/InstallResultReceiver.java",
+      "mode": "100644",
+      "git_blob": "bb803b2ff26f4219f72defcfc81a714c86a71941",
+      "bytes": 1680,
+      "sha256": "792170af0b4b84cf094db06dd8ed686be479b76db2327c1923f600349ed35b5b"
+    },
+    {
+      "path": "app/src/main/java/os/vortex/tv/InstallerActivity.java",
+      "mode": "100644",
+      "git_blob": "8184cee787fb98f5410e3729d4db9bf0524bc65e",
+      "bytes": 10650,
+      "sha256": "4967e4038f45dc5ab477c8005ecdc686146f46a3075b9f28569aade6c332dc32"
+    },
+    {
+      "path": "app/src/main/java/os/vortex/tv/LanApkServer.java",
+      "mode": "100644",
+      "git_blob": "e1b902fb4c8d6e939d5f286f6199d7c75b5d1af4",
+      "bytes": 16505,
+      "sha256": "42377d48ccaf801060e28e80fc23189bae5bdb8cad1a351a7532f9698a58c36a"
+    },
+    {
+      "path": "app/src/main/java/os/vortex/tv/NetworkAddress.java",
+      "mode": "100644",
+      "git_blob": "fd3545390c7ae2e201e126bb252d183f39e032dd",
+      "bytes": 1557,
+      "sha256": "961491b38c95857f45ee45c69b560f97ba47ceb36747527ef40d053ad19d82ea"
+    },
+    {
+      "path": "app/src/main/java/os/vortex/tv/SettingsActivity.java",
+      "mode": "100644",
+      "git_blob": "cc8d263e683063495c17318476c7f1886645d64c",
+      "bytes": 2124,
+      "sha256": "5d2ea19cfb85e504ca0511258e97d26fdc1c18a97b7983864fc8c9b0c3efe2f0"
+    },
+    {
+      "path": "app/src/main/java/os/vortex/tv/Ui.java",
+      "mode": "100644",
+      "git_blob": "c6e07225c3cc412b40f64411e452a1c4cc49502f",
+      "bytes": 5586,
+      "sha256": "56f1c04cfbb70cd6d03195d602d6d5b0684e0c42c85efdf431446ff339e96c5c"
+    },
+    {
+      "path": "app/src/main/java/os/vortex/tv/UserApps.java",
+      "mode": "100644",
+      "git_blob": "6d142d916025679e692f9efaf48240ef326c32ce",
+      "bytes": 3308,
+      "sha256": "c902b7f88a25b69a259809759d5dba3a346047a0db12a554d5503108eee464ce"
+    },
+    {
+      "path": "app/src/main/res/drawable/ic_power.xml",
+      "mode": "100644",
+      "git_blob": "fa2656412bf39ac106d02476e4ae331ada4df633",
+      "bytes": 493,
+      "sha256": "bfbd0a7f64906d44d86b3064711ecc2a29beceea18437d988e026fe2d2ad6eaf"
+    },
+    {
+      "path": "app/src/main/res/values/styles.xml",
+      "mode": "100644",
+      "git_blob": "2ff569cbad5f7005521fb1ffff15670563f3d0fb",
+      "bytes": 516,
+      "sha256": "18d45aacb4fd3dddd74b74e2b0b2651d14c06d21b02aa676fe3294c04542560c"
+    }
+  ]
+}

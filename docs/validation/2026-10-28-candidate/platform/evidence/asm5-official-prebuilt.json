@@ -1,0 +1,52 @@
+{
+  "scope": "genuine default r6 host bytecode tool dependency; not a platform DSO replacement",
+  "repository": "https://android.googlesource.com/platform/prebuilts/misc",
+  "revision": "6287eb468c5772f5da2c468396bdf0068a4fa2d5",
+  "url": "https://android.googlesource.com/platform/prebuilts/misc/+archive/6287eb468c5772f5da2c468396bdf0068a4fa2d5/common/asm.tar.gz",
+  "archive_bytes": 698107,
+  "archive_sha256": "00e8df66ba65a31f942bbc272f58f7d8874abec2f04546e308de6c9f18cc83f6",
+  "files": [
+    {
+      "path": "common/asm/Android.mk",
+      "bytes": 792,
+      "git_blob": "5f56b79e2dbcb6a3bfbd74a94494457dde1f5c54",
+      "sha256": "400ecb24ca47cf0fe3d39440b940a3c668b547321b490787df71b8a764d42bcd"
+    },
+    {
+      "path": "common/asm/LICENSE.txt",
+      "bytes": 1616,
+      "git_blob": "cc7942effdbdfcddc2e29ec21c6a5fdff295d786",
+      "sha256": "c7bae31bd4756e8df18329af40af411374350d91a3381e6dfe4e68b9bf6aca54"
+    },
+    {
+      "path": "common/asm/MODULE_LICENSE_BSD_LIKE",
+      "bytes": 0,
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "common/asm/PREBUILT",
+      "bytes": 147,
+      "git_blob": "933dfce4e5b111bda98b3f904b15d92dedc94447",
+      "sha256": "4b15c47f7d2be074ba7d508e86608b6e53cfcf0c2eaddc6469535975aff0491f"
+    },
+    {
+      "path": "common/asm/README",
+      "bytes": 551,
+      "git_blob": "9afe920eae21c6511b7bb08fa829d6005ddc52dd",
+      "sha256": "f7cd3abb317f76484b7a37094bea9dc220b4244619265c8d9807e09afa43218a"
+    },
+    {
+      "path": "common/asm/asm-5.0.jar",
+      "bytes": 53297,
+      "git_blob": "cdb283dd7f6d7d420ba0fca8ec23e1f38fc3b7c1",
+      "sha256": "896618ed8ae62702521a78bc7be42b7c491a08e6920a15f89a3ecdec31e9a220"
+    },
+    {
+      "path": "common/asm/src.zip",
+      "bytes": 666599,
+      "git_blob": "542e021e6fdab0c03f041cb04b15e209384820c8",
+      "sha256": "3552888a8c3bd87013d27880ec0131184a178fc4555f58caf1157f06cfd474de"
+    }
+  ]
+}

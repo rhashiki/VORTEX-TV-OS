@@ -1,0 +1,20 @@
+Cloning into '/workspace/build01-full-next/platform/sources/icu'...
+warning: refs/tags/android-7.1.2_r6 88cb353a924f948a6d9467cdb4afcfd146134960 is not a commit!
+Note: switching to '18c86be3562ecbfaffd4a42b4fcc702874acf605'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+Updating files:  87% (7946/9088)Updating files:  88% (7998/9088)Updating files:  89% (8089/9088)Updating files:  90% (8180/9088)Updating files:  91% (8271/9088)Updating files:  92% (8361/9088)Updating files:  93% (8452/9088)Updating files:  94% (8543/9088)Updating files:  95% (8634/9088)Updating files:  96% (8725/9088)Updating files:  97% (8816/9088)Updating files:  98% (8907/9088)Updating files:  99% (8998/9088)Updating files: 100% (9088/9088)Updating files: 100% (9088/9088), done.

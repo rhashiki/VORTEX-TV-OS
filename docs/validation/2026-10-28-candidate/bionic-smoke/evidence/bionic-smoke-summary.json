@@ -1,0 +1,89 @@
+{
+  "scope": "Metadata-only RTLD_NOW/HMI/close with actual Android linker under QEMU user mode. Probe does not invoke HAL open or power hooks; constructors/destructors can execute. Isolated runtime combines three source-built Bionic DSOs, seven source-built audio dependency DSOs and remaining API25/pinned-vendor reference DSOs. No complete Android, recovery or physical hardware boot.",
+  "status": "partial_qualified_result",
+  "normal_metadata_cases": {
+    "status": "pass",
+    "count": 10,
+    "cases": [
+      "missing-file",
+      "missing-HMI-new-libm",
+      "gralloc",
+      "hwcomposer",
+      "audio-primary",
+      "audio-usb",
+      "audio-submix",
+      "power",
+      "power-not-device",
+      "wrong-id"
+    ]
+  },
+  "additional_exploratory_case": {
+    "case": "missing-HMI-new-libdl",
+    "command": [
+      "/workspace/build01-hal-next/loader/bin/qemu-arm-static",
+      "-strace",
+      "-L",
+      "/workspace/build01-full-next/bionic-smoke/reference",
+      "-E",
+      "LD_LIBRARY_PATH=/system/lib",
+      "/workspace/build01-full-next/audio/loader/hal_metadata_probe",
+      "/workspace/build01-full-next/bionic-smoke/reference/system/lib/libdl.so",
+      "audio",
+      "device"
+    ],
+    "exit_code": 2,
+    "expected_exit_code": 3,
+    "status": "fail",
+    "module": {
+      "path": "/workspace/build01-full-next/bionic-smoke/reference/system/lib/libdl.so",
+      "size_bytes": 13652,
+      "sha256": "dd3e9269e81bcff5aac34f7237fb186950cdd9869619b8e29e746b521f35b86f"
+    },
+    "stdout_log": "missing-HMI-new-libdl.stdout.log",
+    "trace_log": "missing-HMI-new-libdl.trace.log"
+  },
+  "followup_baselines": [
+    {
+      "scope": "follow-up diagnostic only, baseline reference libdl file explicitly loaded using the same mixed runtime",
+      "command": [
+        "/workspace/build01-hal-next/loader/bin/qemu-arm-static",
+        "-strace",
+        "-L",
+        "/workspace/build01-full-next/bionic-smoke/reference",
+        "-E",
+        "LD_LIBRARY_PATH=/system/lib",
+        "/workspace/build01-full-next/audio/loader/hal_metadata_probe",
+        "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libdl.so",
+        "audio",
+        "device"
+      ],
+      "exit_code": 2,
+      "failure_tail": "PROT_WRITE,MAP_PRIVATE|MAP_FIXED,3,0x2) = 0x3f574000\n12054 munmap(0x3f571000,20480) = 0\n12054 close(3) = 0\n12054 munmap(0x3f576000,2249) = 0\n12054 munmap(0x3f577000,7832) = 0\n12054 munmap(0x3f579000,1880) = 0\n12054 munmap(0x3f57a000,392) = 0\n12054 munmap(0x3f57b000,4096) = 0\n12054 mprotect(0x3f78a000,4096,PROT_READ) = 0\n12054 mprotect(0x3f78d000,4096,PROT_READ) = 0\n12054 futex(0x3f770064,FUTEX_PRIVATE_FLAG|FUTEX_WAKE,2147483647,NULL,NULL,0) = 0\n12054 write(2,0x3fffec7c,158)DLOPEN_FAILED: dlopen failed: cannot locate symbol \"__cxa_finalize\" referenced by \"/workspace/build01-hal-next/gralloc-link/reference/system/lib/libdl.so\"...\n = 158\n12054 mprotect(0x3f57f000,4096,PROT_READ|PROT_WRITE) = 0\n12054 mprotect(0x3f57f000,4096,PROT_READ) = 0\n12054 munmap(0x3f57f000,4096) = 0\n12054 exit_group(2)\n"
+    },
+    {
+      "scope": "follow-up diagnostic baseline, unchanged reference prefix and unchanged reference libdl explicit-file dlopen",
+      "command": [
+        "/workspace/build01-hal-next/loader/bin/qemu-arm-static",
+        "-strace",
+        "-L",
+        "/workspace/build01-hal-next/gralloc-link/reference",
+        "-E",
+        "LD_LIBRARY_PATH=/system/lib",
+        "/workspace/build01-full-next/audio/loader/hal_metadata_probe",
+        "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libdl.so",
+        "audio",
+        "device"
+      ],
+      "exit_code": 2,
+      "failure_tail": "880) = 0\n12060 munmap(0x3f57a000,392) = 0\n12060 munmap(0x3f57b000,4096) = 0\n12060 mprotect(0x3f78a000,4096,PROT_READ) = 0\n12060 mprotect(0x3f78d000,4096,PROT_READ) = 0\n12060 futex(0x3f770068,FUTEX_PRIVATE_FLAG|FUTEX_WAKE,2147483647,NULL,NULL,0) = 0\n12060 write(2,0x3fffec88,158)DLOPEN_FAILED: dlopen failed: cannot locate symbol \"__cxa_finalize\" referenced by \"/workspace/build01-hal-next/gralloc-link/reference/system/lib/libdl.so\"...\n = 158\n12060 mprotect(0x3f57f000,4096,PROT_READ|PROT_WRITE) = 0\n12060 mprotect(0x3f57f000,4096,PROT_READ) = 0\n12060 munmap(0x3f57f000,4096) = 0\n12060 exit_group(2)\n"
+    }
+  ],
+  "qualification": "The six HAL metadata positives and four normal negatives pass. An additional direct-file source-libdl dlopen fails before HMI with unresolved __cxa_finalize. The same direct-file operation also fails with the unchanged reference libdl and unchanged reference runtime. This context does not erase the unexpected source-libdl result or prove source-libdl stub functions execute. No aliases, error suppression, expected-result edits or rebuilds were used.",
+  "limits": [
+    "The Android reference linker itself is not source-built here. It may implement libdl through its built-in libdl symbol table; the explicit libdl missing-HMI case loads the provided file but does not prove its stub functions execute.",
+    "QEMU user-mode uses the cloud Linux kernel, not RK322x Linux3.10. No graphics/audio/power operation or full init is tested.",
+    "Source-built Bionic bytes are copied and hash-bound before execution; original SDK/reference and recovery outputs are never modified."
+  ],
+  "original_experiment_report_sha256": "33531bc758a976cab05e5a0607887753180d4dcf23fabc3b07abf0004c51d405",
+  "integrity_report_sha256": "2fce32068550c7932f5277abe99607b692963de40957face38d47d79e3f0d456"
+}

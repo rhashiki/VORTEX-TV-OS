@@ -1,0 +1,2096 @@
+{
+  "scope": "Observed input files from 53 genuine compiler-generated .P rules; not full BSP closure.",
+  "rule_count": 53,
+  "files": {
+    "hardware/rockchip/audio/tinyalsa_hal/alsa_mixer.c": {
+      "path": "/workspace/build01-full-next/audio/tree/hardware/rockchip/audio/tinyalsa_hal/alsa_mixer.c",
+      "size_bytes": 20091,
+      "sha256": "33b73dea025cc6bd04eafdc441c2dd6882e734b05de5bc27a61a85d6f3411e0f"
+    },
+    "bionic/libc/include/stdio.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/stdio.h",
+      "size_bytes": 14480,
+      "sha256": "b9750f003ba2d874f46ab95489344b0c6068e6fd16bfcd1757bac2ca8cdeb9a4"
+    },
+    "bionic/libc/include/sys/cdefs.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/sys/cdefs.h",
+      "size_bytes": 15704,
+      "sha256": "ad6bdd1b505bb9b4d24d8ec55fdf44bf144758e31df0d3e860f41db62c70e5ec"
+    },
+    "bionic/libc/include/android/api-level.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/android/api-level.h",
+      "size_bytes": 1638,
+      "sha256": "e168cc36f49c29d3ff818df4d1f77e6a227136c517135c31ee2dac04de40ba72"
+    },
+    "bionic/libc/include/sys/types.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/sys/types.h",
+      "size_bytes": 4854,
+      "sha256": "a7939b18fcadf8748e28cf609fa8633295539acff327e585a678c89e5bf5d171"
+    },
+    "prebuilts/clang/host/linux-x86/clang-2690385/bin/../lib64/clang/3.8.256229/include/stddef.h": {
+      "path": "/workspace/build01-product-next/native-rules/tree/prebuilts/clang/host/linux-x86/clang-2690385/lib64/clang/3.8/include/stddef.h",
+      "size_bytes": 4498,
+      "sha256": "4fe29f8d1e821017f3cfc5dd56ba39160d7629a49f049e39aef8ffeeec008a60"
+    },
+    "bionic/libc/include/stdint.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/stdint.h",
+      "size_bytes": 6640,
+      "sha256": "1d5ae2f322636c59c551764530a697fa57d4c08667b69acf3fd724509ed6b9c4"
+    },
+    "bionic/libc/include/bits/wchar_limits.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/bits/wchar_limits.h",
+      "size_bytes": 1717,
+      "sha256": "676bdae83ff29ea787a7b42cb4e18d81fa248f5fefac08e35ffaac4d5426c32f"
+    },
+    "bionic/libc/kernel/uapi/linux/types.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/types.h",
+      "size_bytes": 1962,
+      "sha256": "6e96bc879a8e9f8b3cac9871f0f0e9a6cb4ce4712382a793a7d289c551155950"
+    },
+    "bionic/libc/kernel/uapi/asm-arm/asm/types.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-arm/asm/types.h",
+      "size_bytes": 1006,
+      "sha256": "89cd9c2f4bbb2b9a0ef25b3034d3622bc4b1c0f6d3f5e4fecf26fc4905b49803"
+    },
+    "bionic/libc/kernel/uapi/asm-generic/types.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/types.h",
+      "size_bytes": 1149,
+      "sha256": "5b65b92f2cc527a73fb817d3a7543c29a78409e7ab3bf8c1df8387bc42a5888b"
+    },
+    "bionic/libc/kernel/uapi/asm-generic/int-ll64.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/int-ll64.h",
+      "size_bytes": 1788,
+      "sha256": "e9c49c4b2216941a7948206eae8a3524422a357f0bbdcb7b822683a2cf854902"
+    },
+    "bionic/libc/kernel/uapi/asm-arm/asm/bitsperlong.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-arm/asm/bitsperlong.h",
+      "size_bytes": 1012,
+      "sha256": "d8ce1a3839488ce3ad119ce0330ec69103ea716310a7276d8c1d40d132f67c53"
+    },
+    "bionic/libc/kernel/uapi/asm-generic/bitsperlong.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/bitsperlong.h",
+      "size_bytes": 1197,
+      "sha256": "4bbb85832f354f08ff3eba88ba056b69dd96bb45accd1ed0d81cf21a797c9d2f"
+    },
+    "bionic/libc/kernel/uapi/linux/posix_types.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/posix_types.h",
+      "size_bytes": 1564,
+      "sha256": "c5ac4592b15eb88803cdf92adee6347a7ce6ae3d4b4efb3794d2d54ab098bef9"
+    },
+    "bionic/libc/kernel/uapi/linux/stddef.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/stddef.h",
+      "size_bytes": 1003,
+      "sha256": "fe2ff2da7bc9b96e996a6c0a46709ff062132e3c6d504172cfb16a7abd6ece59"
+    },
+    "bionic/libc/kernel/uapi/linux/compiler.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/compiler.h",
+      "size_bytes": 605,
+      "sha256": "e4ab687905d07e9513a7a3f811b9cb4604c9fc0cc1b47c1909e80939ecc1368e"
+    },
+    "bionic/libc/kernel/uapi/asm-arm/asm/posix_types.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-arm/asm/posix_types.h",
+      "size_bytes": 1684,
+      "sha256": "104c5588f338a2233ad3442a86efdb1001fbb0df04eb08ba2d3694eafce74782"
+    },
+    "bionic/libc/kernel/uapi/asm-generic/posix_types.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/posix_types.h",
+      "size_bytes": 3915,
+      "sha256": "bf0a830176bfd172350ef1d5d8b0a085052935940fb05d982117a7244ee8a300"
+    },
+    "bionic/libc/include/sys/sysmacros.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/sys/sysmacros.h",
+      "size_bytes": 1885,
+      "sha256": "9ca57c5c0d73261c686606713ebdbf5b876842d79d5096afb1d162114ad7c6cf"
+    },
+    "prebuilts/clang/host/linux-x86/clang-2690385/bin/../lib64/clang/3.8.256229/include/stdarg.h": {
+      "path": "/workspace/build01-product-next/native-rules/tree/prebuilts/clang/host/linux-x86/clang-2690385/lib64/clang/3.8/include/stdarg.h",
+      "size_bytes": 2094,
+      "sha256": "d259e763f1945f136c161ca033da9e2e75093f9f4d66a26f46e8ee5157dd5c62"
+    },
+    "bionic/libc/include/stdlib.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/stdlib.h",
+      "size_bytes": 6312,
+      "sha256": "8ba5f7b54df73817ce3bcee1791fcb09e0cb2429e9d1158b7877e28e7d845c49"
+    },
+    "bionic/libc/include/xlocale.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/xlocale.h",
+      "size_bytes": 1591,
+      "sha256": "8df460768232680f5f4616c606bcab253cfc0f28c0288c3b373ec0c8ba3bd5d2"
+    },
+    "bionic/libc/include/alloca.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/alloca.h",
+      "size_bytes": 1506,
+      "sha256": "a44813f5b610c7d5b896e7b2e14f9299a99bef145792c900ad6db9e74b119a03"
+    },
+    "bionic/libc/include/malloc.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/malloc.h",
+      "size_bytes": 2608,
+      "sha256": "07f811e79706c5d501fd754479b1d2de301af602d022a107d6991b5070693001"
+    },
+    "bionic/libc/include/string.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/string.h",
+      "size_bytes": 12471,
+      "sha256": "018600cda4c8e4f2e458487894216d6379ae014bba021dfb22201fd31e745713"
+    },
+    "bionic/libc/include/unistd.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/unistd.h",
+      "size_bytes": 18234,
+      "sha256": "8b5472cfd883139a77dccf33f1d824f73d1235a2e9d39e01df13d8cf06b07346"
+    },
+    "bionic/libc/include/sys/select.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/sys/select.h",
+      "size_bytes": 2908,
+      "sha256": "d982faf97d9e0f897667c91e00e403a572e4c3fbdd42671435aaa23d84330853"
+    },
+    "bionic/libc/kernel/uapi/linux/time.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/time.h",
+      "size_bytes": 2865,
+      "sha256": "814ea7e02263c4684bcb9ca1a3093948fbb5eb9fc826fb588135b5d5f28e21a8"
+    },
+    "bionic/libc/include/signal.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/signal.h",
+      "size_bytes": 4654,
+      "sha256": "4296fd7d5ef859d9dc5418237b598fed0543aa8c8fb910f349739c180d6c42ab"
+    },
+    "bionic/libc/kernel/uapi/asm-arm/asm/sigcontext.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-arm/asm/sigcontext.h",
+      "size_bytes": 2033,
+      "sha256": "18cf8383c5580715bcc54fb99806acfdd8c2c635df73bfdb4edbdf0bf98fc55a"
+    },
+    "bionic/libc/include/bits/pthread_types.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/bits/pthread_types.h",
+      "size_bytes": 1730,
+      "sha256": "8db9cd7bc0c3a3dbb9431972cef553373a28898a38bb372e0d8cd50b228816b8"
+    },
+    "bionic/libc/include/bits/timespec.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/bits/timespec.h",
+      "size_bytes": 1729,
+      "sha256": "646f08ee531575ccfa811e8a47b82d184269804183d72a3f75531e3c5117c3a9"
+    },
+    "bionic/libc/include/limits.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/limits.h",
+      "size_bytes": 2906,
+      "sha256": "7111d29af2e86f2af7e8e9c7d0959c6ab19d1ac1fa2fcc1a3e1f08ac887b4faa"
+    },
+    "bionic/libc/include/sys/limits.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/sys/limits.h",
+      "size_bytes": 4468,
+      "sha256": "d6b1101e6e9ca0764029c3fa77b4b00e69817058b819c3a073a8cb7fdc4a5b60"
+    },
+    "bionic/libc/kernel/uapi/linux/limits.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/limits.h",
+      "size_bytes": 1636,
+      "sha256": "e98881787fc9c5fa529d7e1381af2b5032abf9a4053d035f8d4f27150cd75bef"
+    },
+    "bionic/libc/include/sys/syslimits.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/sys/syslimits.h",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "bionic/libc/include/bits/posix_limits.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/bits/posix_limits.h",
+      "size_bytes": 7747,
+      "sha256": "c2261d0277dbda6edc9f12d0f55d1fd6e5a7d6aaf8fa28fa505a8b7ca8d72df2"
+    },
+    "bionic/libc/kernel/uapi/linux/signal.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/signal.h",
+      "size_bytes": 1206,
+      "sha256": "1fe27ee2d7f8a6c79d16a48a6b0cf01194b0fe417f57e066baa50f3e5f258f5e"
+    },
+    "bionic/libc/kernel/uapi/asm-arm/asm/signal.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-arm/asm/signal.h",
+      "size_bytes": 3997,
+      "sha256": "68e0cff625e89e5e3faf99903ff276ee9f68effd4d7d59447047123a669f827e"
+    },
+    "bionic/libc/kernel/uapi/asm-generic/signal-defs.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/signal-defs.h",
+      "size_bytes": 1924,
+      "sha256": "190607037edc3774f64a78fcf55ca0f0fc051b7b50733ef5d8f0d5565df91c63"
+    },
+    "bionic/libc/kernel/uapi/asm-arm/asm/siginfo.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-arm/asm/siginfo.h",
+      "size_bytes": 1008,
+      "sha256": "a0cf54343201f11280dceac8ac2f16fe498d84a518c94b48a5e80d9fdd1c8f67"
+    },
+    "bionic/libc/kernel/uapi/asm-generic/siginfo.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/siginfo.h",
+      "size_bytes": 10472,
+      "sha256": "8c68177113b694f13e2eb895ad44dd146b31a8be42930934e3f53e1436586e52"
+    },
+    "bionic/libc/include/sys/ucontext.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/sys/ucontext.h",
+      "size_bytes": 6335,
+      "sha256": "3963c6f0f35329ce410eb4d7b7cc35113f739aaf44783977968afe9c4a4d4e8b"
+    },
+    "bionic/libc/include/sys/user.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/sys/user.h",
+      "size_bytes": 5642,
+      "sha256": "ab21ad6839d0ffaa4bd0440ed169995614ba5ccf16d0e081986c3406187fc840"
+    },
+    "bionic/libc/include/sys/sysconf.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/sys/sysconf.h",
+      "size_bytes": 7949,
+      "sha256": "b0fff7cc8c8402e77a6823e7194f6d4fe4eb9d790775bf37167398c97c22ee6d"
+    },
+    "bionic/libc/include/bits/lockf.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/bits/lockf.h",
+      "size_bytes": 1729,
+      "sha256": "643de368478ab9bc8e034a5887324d6d87fa098489c5c2de4daece5c0257c59e"
+    },
+    "bionic/libc/include/fcntl.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/fcntl.h",
+      "size_bytes": 4880,
+      "sha256": "923f4122a66cb566d4797589eb8f7d51feceda4bad719b2e0e70e04c6482ae55"
+    },
+    "bionic/libc/kernel/uapi/linux/fadvise.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/fadvise.h",
+      "size_bytes": 1527,
+      "sha256": "6db8fcaf383e4ffcd80fa5acad259201aadbe0158b86466ab036b139812ee816"
+    },
+    "bionic/libc/kernel/uapi/linux/fcntl.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/fcntl.h",
+      "size_bytes": 2511,
+      "sha256": "752d2afd1b4fe8b9b6ee626754f5ea0f89e8080a628884bb965f3bd270ac8d07"
+    },
+    "bionic/libc/kernel/uapi/asm-arm/asm/fcntl.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-arm/asm/fcntl.h",
+      "size_bytes": 1312,
+      "sha256": "a9aed07d4ca31a9ff86bf40eb9f171cd9a2e99876132f82a5eedadc104aa92a7"
+    },
+    "bionic/libc/kernel/uapi/asm-generic/fcntl.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/fcntl.h",
+      "size_bytes": 6648,
+      "sha256": "aa8fecb7dfdea0aeac857afafabbf2883c1674b0d015eaf8e865d07452403e11"
+    },
+    "bionic/libc/kernel/uapi/linux/stat.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/stat.h",
+      "size_bytes": 2545,
+      "sha256": "e90a7f9b5e157181bfbf924fe6311e3dee5e65e9906e80694012dd4b8fe8b3f2"
+    },
+    "bionic/libc/kernel/uapi/linux/uio.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/uio.h",
+      "size_bytes": 1356,
+      "sha256": "c23242eb83790508881179383139c7121d54e99ef9c0e0c02371ef8b999190b1"
+    },
+    "bionic/libc/include/errno.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/errno.h",
+      "size_bytes": 1987,
+      "sha256": "9acc095a5def5af964253f8637c2c8653dc6eb1f041b3078f5827b77e3e4b2b0"
+    },
+    "bionic/libc/kernel/uapi/linux/errno.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/errno.h",
+      "size_bytes": 998,
+      "sha256": "be9bc45625a92cc003ddfa6b8570af6f219baa9bde8146dd36cdae6a876c08fa"
+    },
+    "bionic/libc/kernel/uapi/asm-arm/asm/errno.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-arm/asm/errno.h",
+      "size_bytes": 1006,
+      "sha256": "7711e8d93da573a2a599309296442ed8e64f82c943ee3280ef8c14d6c6d77ff1"
+    },
+    "bionic/libc/kernel/uapi/asm-generic/errno.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/errno.h",
+      "size_bytes": 4986,
+      "sha256": "6f76696059ed54af3a4efdf6ca6c06392118578c7ddbfcfc88222d946440b849"
+    },
+    "bionic/libc/kernel/uapi/asm-generic/errno-base.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/errno-base.h",
+      "size_bytes": 2316,
+      "sha256": "f9c7c0ee4cc2ce0722c7efc9ffd6f0a27b48cb7b4d24ffc7e7ea2c5390be272f"
+    },
+    "bionic/libc/include/ctype.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/ctype.h",
+      "size_bytes": 3614,
+      "sha256": "2ed57e265c3c0f6280a9c4992687eb14d424735d394e000a22edde3c343d0b00"
+    },
+    "bionic/libc/kernel/uapi/linux/ioctl.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/ioctl.h",
+      "size_bytes": 1126,
+      "sha256": "812fe7a8fe125e8a89fe69bbc1a81a7cc82258e2b671e15675838810d46984d0"
+    },
+    "bionic/libc/kernel/uapi/asm-arm/asm/ioctl.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-arm/asm/ioctl.h",
+      "size_bytes": 1006,
+      "sha256": "2e6d80ea8203585b91df270e74e53768a604622111a4a3c258c057b0420d4912"
+    },
+    "bionic/libc/kernel/uapi/asm-generic/ioctl.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/ioctl.h",
+      "size_bytes": 3770,
+      "sha256": "ff3330779dc0facab5dc9f1ecd8e83f8c2905b398a93dd2e55d42a81f666eb6c"
+    },
+    "hardware/rockchip/audio/tinyalsa_hal/asound.h": {
+      "path": "/workspace/build01-full-next/audio/tree/hardware/rockchip/audio/tinyalsa_hal/asound.h",
+      "size_bytes": 27758,
+      "sha256": "44566022f83c4620ae2e742bd2e537d5c1929df60e3181b19e8109f081875d77"
+    },
+    "hardware/rockchip/audio/tinyalsa_hal/alsa_audio.h": {
+      "path": "/workspace/build01-full-next/audio/tree/hardware/rockchip/audio/tinyalsa_hal/alsa_audio.h",
+      "size_bytes": 3552,
+      "sha256": "7eaed95266e4cfb6585a019e2bbd04aaae8edde26c9878ac329f7d2d02b54a82"
+    },
+    "system/core/include/cutils/log.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/cutils/log.h",
+      "size_bytes": 21,
+      "sha256": "73abb3a501626b16b0dc2eb77947aec6ab27f294f478b5f3828e4eada2dd601e"
+    },
+    "system/core/include/log/log.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/log/log.h",
+      "size_bytes": 20206,
+      "sha256": "b2158f1a23a83ae94084786300f2eea54a2378e75bd5d7535b6a7d215ce89899"
+    },
+    "bionic/libc/include/time.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/time.h",
+      "size_bytes": 4057,
+      "sha256": "4550fc19a2b9c070d131e90ad86a8d71d08d8f21cf95eb7394c9fbd5d3ed494e"
+    },
+    "bionic/libc/include/sys/time.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/sys/time.h",
+      "size_bytes": 3508,
+      "sha256": "04cf6a80ad8a9cd4cafb2a4d03fc72801d73672e8ed024a60d8052928e237da1"
+    },
+    "system/core/include/log/logd.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/log/logd.h",
+      "size_bytes": 1531,
+      "sha256": "68a6f34fd069ff4a3de720e6317173aa7f72c83b74c1917902b0542c3f9aa3a0"
+    },
+    "system/core/include/android/log.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/android/log.h",
+      "size_bytes": 4337,
+      "sha256": "327c55ed511dfdca15cddd8ce0e2efe89600b8e0fee5b98e6c9b8d09b93c6fb0"
+    },
+    "bionic/libc/include/pthread.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/pthread.h",
+      "size_bytes": 11921,
+      "sha256": "e1b98ad597f016b26ffdfc25176f4d4f530745b07c11eb2595b82d4f667614ce"
+    },
+    "bionic/libc/include/sched.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/sched.h",
+      "size_bytes": 5415,
+      "sha256": "1fcfa5a88f06b79eaf2c56870a989d30040d4b6f775236ebe8521ef1b789777d"
+    },
+    "bionic/libc/kernel/uapi/linux/sched.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/sched.h",
+      "size_bytes": 2590,
+      "sha256": "f279c4688ec63571d13a022c301d8a64a34fc1fac89a4333ada46907593c8ebd"
+    },
+    "system/core/include/log/uio.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/log/uio.h",
+      "size_bytes": 1105,
+      "sha256": "c8c6265e30f22109fbbf6c3d6be2523e84117926fefc1e7aa191481be539496d"
+    },
+    "bionic/libc/include/sys/uio.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/sys/uio.h",
+      "size_bytes": 2371,
+      "sha256": "41a6669a48b66399342122b479bbe78c32f561a072cdf0673faf7a3b62d8ba24"
+    },
+    "hardware/rockchip/audio/tinyalsa_hal/alsa_route.c": {
+      "path": "/workspace/build01-full-next/audio/tree/hardware/rockchip/audio/tinyalsa_hal/alsa_route.c",
+      "size_bytes": 15975,
+      "sha256": "2de49bbbbdb1e31d1bb7d954f73542dd89ec44daf50cea88a9e77f6ef4f10fc2"
+    },
+    "system/core/include/cutils/config_utils.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/cutils/config_utils.h",
+      "size_bytes": 1767,
+      "sha256": "8bc869b58adeeac00fd53cf106b636dba8c84e70839409c48ac960ecffb25e62"
+    },
+    "bionic/libm/include/math.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libm/include/math.h",
+      "size_bytes": 11900,
+      "sha256": "1d51ffff31bf5457f665420a1591f3eb8ee68c4de38620f35c0e244fbfa1e25d"
+    },
+    "hardware/rockchip/audio/tinyalsa_hal/codec_config/config_list.h": {
+      "path": "/workspace/build01-full-next/audio/tree/hardware/rockchip/audio/tinyalsa_hal/codec_config/config_list.h",
+      "size_bytes": 2329,
+      "sha256": "b08b4c70f61cc92c4c25c1a3c99ae890d8a2ca49a28d0b504e4b316110942462"
+    },
+    "hardware/rockchip/audio/tinyalsa_hal/codec_config/config.h": {
+      "path": "/workspace/build01-full-next/audio/tree/hardware/rockchip/audio/tinyalsa_hal/codec_config/config.h",
+      "size_bytes": 2338,
+      "sha256": "395b2c77a4fc1321ceffd7a16ec46d23e9687a9ffaa6d7149b1ce217058651de"
+    },
+    "hardware/rockchip/audio/tinyalsa_hal/codec_config/default_config.h": {
+      "path": "/workspace/build01-full-next/audio/tree/hardware/rockchip/audio/tinyalsa_hal/codec_config/default_config.h",
+      "size_bytes": 12475,
+      "sha256": "cd19ba8f9a41994f7b4e00e510c8831c85a3eff67746dd18f61fbb0c8a5dd705"
+    },
+    "hardware/rockchip/audio/tinyalsa_hal/codec_config/rk616_config.h": {
+      "path": "/workspace/build01-full-next/audio/tree/hardware/rockchip/audio/tinyalsa_hal/codec_config/rk616_config.h",
+      "size_bytes": 35167,
+      "sha256": "6b8e42dbbc2660c6253a4b3a28c940db3408844ee709d7d8790353901f714159"
+    },
+    "hardware/rockchip/audio/tinyalsa_hal/codec_config/rt3261_config.h": {
+      "path": "/workspace/build01-full-next/audio/tree/hardware/rockchip/audio/tinyalsa_hal/codec_config/rt3261_config.h",
+      "size_bytes": 85647,
+      "sha256": "3f1b66d95e1584baaa3e68efe2918d3b2ff0bbef75325059e95b136c9bf3482e"
+    },
+    "hardware/rockchip/audio/tinyalsa_hal/codec_config/rt5616_config.h": {
+      "path": "/workspace/build01-full-next/audio/tree/hardware/rockchip/audio/tinyalsa_hal/codec_config/rt5616_config.h",
+      "size_bytes": 21194,
+      "sha256": "25b18ef004718fbcbf6ea8c24df8e01cc2165d86f4d2b0fd0ac6b1f0db343248"
+    },
+    "hardware/rockchip/audio/tinyalsa_hal/codec_config/rt5640_config.h": {
+      "path": "/workspace/build01-full-next/audio/tree/hardware/rockchip/audio/tinyalsa_hal/codec_config/rt5640_config.h",
+      "size_bytes": 4447,
+      "sha256": "ee5e24248fa0bf6086ee174e3fb9ee110ffc2e59a298733586f685ebd1e8dec2"
+    },
+    "hardware/rockchip/audio/tinyalsa_hal/codec_config/rt3224_config.h": {
+      "path": "/workspace/build01-full-next/audio/tree/hardware/rockchip/audio/tinyalsa_hal/codec_config/rt3224_config.h",
+      "size_bytes": 85608,
+      "sha256": "14b5e0b83a9e2b8a568ac976243032250d6f9fb2f61df22485e22ca12066d870"
+    },
+    "hardware/rockchip/audio/tinyalsa_hal/codec_config/wm8960_config.h": {
+      "path": "/workspace/build01-full-next/audio/tree/hardware/rockchip/audio/tinyalsa_hal/codec_config/wm8960_config.h",
+      "size_bytes": 22298,
+      "sha256": "eb6c2954cb4c3ddca031b06e8edfe05f11262818a90e6c1d83f9fa37f4113899"
+    },
+    "hardware/rockchip/audio/tinyalsa_hal/codec_config/es8396_config.h": {
+      "path": "/workspace/build01-full-next/audio/tree/hardware/rockchip/audio/tinyalsa_hal/codec_config/es8396_config.h",
+      "size_bytes": 8327,
+      "sha256": "048c69dda2b795cb56f2e63b484f92e97251d9f5c0cd31b01ae766304589290a"
+    },
+    "hardware/rockchip/audio/tinyalsa_hal/codec_config/rt5651_config.h": {
+      "path": "/workspace/build01-full-next/audio/tree/hardware/rockchip/audio/tinyalsa_hal/codec_config/rt5651_config.h",
+      "size_bytes": 26598,
+      "sha256": "9ef8f8fd062211da24e742aa086b80a8cc705ea21e2ae4a7ffc8999e59ac39c6"
+    },
+    "hardware/rockchip/audio/tinyalsa_hal/codec_config/es8316_config.h": {
+      "path": "/workspace/build01-full-next/audio/tree/hardware/rockchip/audio/tinyalsa_hal/codec_config/es8316_config.h",
+      "size_bytes": 9562,
+      "sha256": "1ba16b1f1bcae2edb3b3bcca996b9fc5bebfd90ea3f57268f1d41c6f9dc6c474"
+    },
+    "hardware/rockchip/audio/tinyalsa_hal/codec_config/cx2072_config.h": {
+      "path": "/workspace/build01-full-next/audio/tree/hardware/rockchip/audio/tinyalsa_hal/codec_config/cx2072_config.h",
+      "size_bytes": 9976,
+      "sha256": "b3ef301bd57ed0652ec7a05eeb30d3b496a5cd7fb2d1e3e61e7340d4c0e677c2"
+    },
+    "hardware/rockchip/audio/tinyalsa_hal/codec_config/hdmi_analog_config.h": {
+      "path": "/workspace/build01-full-next/audio/tree/hardware/rockchip/audio/tinyalsa_hal/codec_config/hdmi_analog_config.h",
+      "size_bytes": 10401,
+      "sha256": "be92630bc6cdd904a7d2d822844c07a0f3cc21243b44c6755e911ea99f46b944"
+    },
+    "hardware/rockchip/audio/tinyalsa_hal/audio_hw.c": {
+      "path": "/workspace/build01-full-next/audio/tree/hardware/rockchip/audio/tinyalsa_hal/audio_hw.c",
+      "size_bytes": 80427,
+      "sha256": "3e1250c98bcf0825f84afb0cc75759179c60c75f98759c1133e2e513132ac409"
+    },
+    "hardware/rockchip/audio/tinyalsa_hal/audio_hw.h": {
+      "path": "/workspace/build01-full-next/audio/tree/hardware/rockchip/audio/tinyalsa_hal/audio_hw.h",
+      "size_bytes": 23738,
+      "sha256": "813721d573549dd64cb336ae14971dbdc29afabccd421ba42de2151015083987"
+    },
+    "system/core/include/cutils/properties.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/cutils/properties.h",
+      "size_bytes": 4733,
+      "sha256": "5b84c76c1842b53e8d106443fe931a548e80fd3b46e30cf486902259b89cd592"
+    },
+    "bionic/libc/include/sys/system_properties.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/sys/system_properties.h",
+      "size_bytes": 3846,
+      "sha256": "23436a9ce5eb01afd4e9f323969a2fb13f93ce5fc9ba94b90b5f6930abb72aac"
+    },
+    "system/core/include/cutils/str_parms.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/cutils/str_parms.h",
+      "size_bytes": 2178,
+      "sha256": "f7d0b83838c2526b15b624435ff37088aa43bcd584d1597470e2acfa9fdc3f97"
+    },
+    "hardware/libhardware/include/hardware/audio.h": {
+      "path": "/workspace/build01-graphics-next/graphics/libhardware/include/hardware/audio.h",
+      "size_bytes": 28251,
+      "sha256": "e50def66ad15c9bc619243544347842d3fa2b2f4a7838dd3ed601ad3f44e328a"
+    },
+    "bionic/libc/include/strings.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/strings.h",
+      "size_bytes": 2794,
+      "sha256": "b73d95af5e6e3147cd52198d6b12a1a6ca021a7c263d84b18c35d7a6c807a1e1"
+    },
+    "system/core/include/cutils/bitops.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/cutils/bitops.h",
+      "size_bytes": 3036,
+      "sha256": "0982fd74a6e397df0486e396cd5d433d5cc4f7b3099052774efacbd2eaba4cb2"
+    },
+    "prebuilts/clang/host/linux-x86/clang-2690385/bin/../lib64/clang/3.8.256229/include/stdbool.h": {
+      "path": "/workspace/build01-product-next/native-rules/tree/prebuilts/clang/host/linux-x86/clang-2690385/lib64/clang/3.8/include/stdbool.h",
+      "size_bytes": 1730,
+      "sha256": "a8b8b524c68f7241d2c3def2547a52dd0dd56dcbba33b2a1af0b70d75e2da8e3"
+    },
+    "hardware/libhardware/include/hardware/hardware.h": {
+      "path": "/workspace/build01-graphics-next/graphics/libhardware/include/hardware/hardware.h",
+      "size_bytes": 7946,
+      "sha256": "30b0467c4fd2512a0774456d3676c180c98ce81934f34489b0b37b2e046f09c6"
+    },
+    "system/core/include/cutils/native_handle.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/cutils/native_handle.h",
+      "size_bytes": 1857,
+      "sha256": "dc40921bf7e369619be1fe67b8b4e5280bcc0b402c71107050f8546bb4c745e7"
+    },
+    "system/core/include/system/graphics.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/system/graphics.h",
+      "size_bytes": 52785,
+      "sha256": "1b0d79d456bc989a6c0f0731c626c09c52f669012c2d2f3babfdccd8360b77cf"
+    },
+    "system/media/audio/include/system/audio.h": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio/include/system/audio.h",
+      "size_bytes": 66850,
+      "sha256": "1e90ce93587f93e6f862a5dae4d5088a5a01baadd2fda0f10564d720285f01e4"
+    },
+    "hardware/libhardware/include/hardware/audio_effect.h": {
+      "path": "/workspace/build01-graphics-next/graphics/libhardware/include/hardware/audio_effect.h",
+      "size_bytes": 54381,
+      "sha256": "9e7db023090ea2ba43e6ab56b89e695b9a8bbe3bcb8940cb04acc48ab010b0ba"
+    },
+    "bionic/libc/kernel/uapi/linux/videodev2.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/videodev2.h",
+      "size_bytes": 68349,
+      "sha256": "bd031a1991212e25de1abf0bd30be5ef0d475a52e4813cd1dcfbf6b355d99733"
+    },
+    "bionic/libc/kernel/uapi/linux/v4l2-common.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/v4l2-common.h",
+      "size_bytes": 2660,
+      "sha256": "c37a1f4f617c2645199861dd77f1f42ff0b057de1f60b3009794ba8fb67ed5ab"
+    },
+    "bionic/libc/kernel/uapi/linux/v4l2-controls.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/v4l2-controls.h",
+      "size_bytes": 55805,
+      "sha256": "3d311a6e2db67ea878b8ee1eb2077b84ef89771f83bbdba8a7f2ffbec671077a"
+    },
+    "external/tinyalsa/include/tinyalsa/asoundlib.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/tinyalsa/include/tinyalsa/asoundlib.h",
+      "size_bytes": 11550,
+      "sha256": "6ebc900b4921f2fd21468be74267d6ee9b25f1471aaec5444d28eed4ddd7424e"
+    },
+    "system/media/audio_utils/include/audio_utils/resampler.h": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_utils/include/audio_utils/resampler.h",
+      "size_bytes": 3532,
+      "sha256": "1fbe67a638ef14a11ee7e17085268fb83074be4e016d750d61aab8c79d0387a1"
+    },
+    "system/media/audio_route/include/audio_route/audio_route.h": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_route/include/audio_route/audio_route.h",
+      "size_bytes": 1652,
+      "sha256": "bb942491947ab0cae90b109496769e070b6afdd6bf0ee563fb5cb1490912b2cc"
+    },
+    "external/speex/include/speex/speex.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/speex/include/speex/speex.h",
+      "size_bytes": 13947,
+      "sha256": "1a9a59c5fb21f967289d0816b889cfbecab0ef5f53ebba2451fcb24a9d4486ec"
+    },
+    "external/speex/include/speex/speex_bits.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/speex/include/speex/speex_bits.h",
+      "size_bytes": 6669,
+      "sha256": "88ffabfa59833e84fc35c5b131a0f42d1a6777f64c2345e2e9f84a95a957e84f"
+    },
+    "external/speex/include/speex/speex_types.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/speex/include/speex/speex_types.h",
+      "size_bytes": 3591,
+      "sha256": "4524e2c7db34d93b2312bd9af827b7c2a9b377120573540a4e674de4d2a8102e"
+    },
+    "external/speex/include/speex/speex_config_types.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/speex/include/speex/speex_config_types.h",
+      "size_bytes": 225,
+      "sha256": "9daf1c840a8fa8fd075c73eb046008a1cbd782a6c4af8d9a6d3eca07944e3575"
+    },
+    "external/speex/include/speex/speex_preprocess.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/speex/include/speex/speex_preprocess.h",
+      "size_bytes": 8609,
+      "sha256": "a55d6043469387a0e8a7f1598e4762e207470062e78bb50504438f9bd89235ab"
+    },
+    "bionic/libc/include/poll.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/poll.h",
+      "size_bytes": 3290,
+      "sha256": "3a39492bfc8490528cd733bdf36d854577122205342b874cf427df149ba7693a"
+    },
+    "bionic/libc/kernel/uapi/linux/poll.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/poll.h",
+      "size_bytes": 997,
+      "sha256": "4ea72d9556e2448ced0e41a066d502e46200d1a26b05151b24d1bf9128351ebe"
+    },
+    "bionic/libc/kernel/uapi/asm-arm/asm/poll.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-arm/asm/poll.h",
+      "size_bytes": 1005,
+      "sha256": "7d775f6bbf2b7322ea41279db1136b5fb7a47e99dcffe4ce8adc068f56421ca0"
+    },
+    "bionic/libc/kernel/uapi/asm-generic/poll.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/poll.h",
+      "size_bytes": 2198,
+      "sha256": "71feca1705b372033944ac543fcc9d3e4650a8c706161d376e27a6e51cfd619c"
+    },
+    "bionic/libc/kernel/uapi/linux/fb.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/fb.h",
+      "size_bytes": 14564,
+      "sha256": "0863ddd57b90692f015692dfe071bf041fd692ba43757bb6892b58e63128d177"
+    },
+    "bionic/libc/kernel/uapi/linux/i2c.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/i2c.h",
+      "size_bytes": 4505,
+      "sha256": "07766df57ab53e5b50ed0bda9c26f2cd9b5e4bf3361f0d468be2715b2018e2e8"
+    },
+    "/workspace/build01-hal-next/hwc/legacy-headers/include/hardware_legacy/uevent.h": {
+      "path": "/workspace/build01-hal-next/hwc/legacy-headers/include/hardware_legacy/uevent.h",
+      "size_bytes": 1112,
+      "sha256": "b3458d9eb82b69c6eeff07e4b2de22a13d96bcfda3035940b8621f14168b635b"
+    },
+    "hardware/rockchip/audio/tinyalsa_hal/audio_hw_hdmi.h": {
+      "path": "/workspace/build01-full-next/audio/tree/hardware/rockchip/audio/tinyalsa_hal/audio_hw_hdmi.h",
+      "size_bytes": 1171,
+      "sha256": "158e5d200e8c62d53664c79570895f35cfc53217e830bfd352e2953e1ddf877d"
+    },
+    "bionic/libc/include/sys/resource.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/sys/resource.h",
+      "size_bytes": 2209,
+      "sha256": "550cf2ff684df7291f7982851722c8959d999e89243ae022c5eb0e332367e623"
+    },
+    "bionic/libc/kernel/uapi/linux/resource.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/resource.h",
+      "size_bytes": 2902,
+      "sha256": "5fd08eb07cd1a6c4a3a5f67ac57e2e7ca887c5b6dbafcdda5e84b938e50220c6"
+    },
+    "bionic/libc/kernel/uapi/asm-arm/asm/resource.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-arm/asm/resource.h",
+      "size_bytes": 1009,
+      "sha256": "0422a837c82ddbd8a2200ff998b261284a0896e8afbee7e57ac1f9259a726ea4"
+    },
+    "bionic/libc/kernel/uapi/asm-generic/resource.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/resource.h",
+      "size_bytes": 2253,
+      "sha256": "0fae85a30919f5aa70c04cd10e804817145348942ad9f18a5a85cc0a723a1f5e"
+    },
+    "hardware/rockchip/audio/tinyalsa_hal/audio_hw_hdmi.c": {
+      "path": "/workspace/build01-full-next/audio/tree/hardware/rockchip/audio/tinyalsa_hal/audio_hw_hdmi.c",
+      "size_bytes": 2420,
+      "sha256": "fabef670844aae12c270a5de7b7946f7acee77a7a50c2e8ff77ef1208ce70d6c"
+    },
+    "hardware/libhardware/modules/audio_remote_submix/audio_hw.cpp": {
+      "path": "/workspace/build01-graphics-next/graphics/libhardware/modules/audio_remote_submix/audio_hw.cpp",
+      "size_bytes": 73189,
+      "sha256": "5eb9b08516bca5fe829267551288c880fd66c36c8623e41072af4f84c73179e1"
+    },
+    "prebuilts/clang/host/linux-x86/clang-2690385/bin/../lib64/clang/3.8.256229/include/__stddef_max_align_t.h": {
+      "path": "/workspace/build01-product-next/native-rules/tree/prebuilts/clang/host/linux-x86/clang-2690385/lib64/clang/3.8/include/__stddef_max_align_t.h",
+      "size_bytes": 1770,
+      "sha256": "5d26aeae66fc6f9cb969df50a2382536208f94dec476dd17239924e34550f33d"
+    },
+    "bionic/libc/include/sys/param.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/sys/param.h",
+      "size_bytes": 1870,
+      "sha256": "7e0e6e9e61e8c16b40e9169d05b30d85ff398d9d08e22270d242741a94e0987b"
+    },
+    "bionic/libc/kernel/uapi/linux/param.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/param.h",
+      "size_bytes": 1126,
+      "sha256": "9afdb5da000441db87c6437a52c9bfd221a039cefa3f80842c1ffda913f8b6f5"
+    },
+    "bionic/libc/kernel/uapi/asm-arm/asm/param.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-arm/asm/param.h",
+      "size_bytes": 1006,
+      "sha256": "873df4d0b5826914396e9d919d92cbd3b5623fbe1ae915dea307ae9c9cc81a03"
+    },
+    "bionic/libc/kernel/uapi/asm-generic/param.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/param.h",
+      "size_bytes": 1437,
+      "sha256": "fec91022cda14827346731d64e5d5e45e3424a7fc9ab2d590fe608eb5273f831"
+    },
+    "system/core/include/cutils/compiler.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/cutils/compiler.h",
+      "size_bytes": 1359,
+      "sha256": "b544a1f41e0ec7592773af661cd21ba53c3e1165dd4a67c32d6cd9d79cf2abd6"
+    },
+    "frameworks/av/include/media/AudioParameter.h": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/include/media/AudioParameter.h",
+      "size_bytes": 2749,
+      "sha256": "1dc7618aa22d6ab34cae3605dbfac06d3c08665bb7e9c760d547336c0ead221a"
+    },
+    "system/core/include/utils/Errors.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/utils/Errors.h",
+      "size_bytes": 2548,
+      "sha256": "de2e6637bcb715fab116797fd2f8f800dc3c2d0c71451c3cf95b7ca23af7edfe"
+    },
+    "system/core/include/utils/KeyedVector.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/utils/KeyedVector.h",
+      "size_bytes": 7265,
+      "sha256": "2d68b26a35e2084575a5253706bcd3c843884c3eab02cc9b0f4b7b5ecb6a2dd8"
+    },
+    "bionic/libc/include/assert.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/assert.h",
+      "size_bytes": 2743,
+      "sha256": "8a8001f8da58aec4851856ed7fe41aa48672eaa4ad739558871cb09b24d7fa43"
+    },
+    "system/core/include/utils/SortedVector.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/utils/SortedVector.h",
+      "size_bytes": 9447,
+      "sha256": "e9a306e7e6b5c338a2c221516d9dc0b92ef29753a75f8b7dcc7463126f53b99a"
+    },
+    "system/core/include/utils/Vector.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/utils/Vector.h",
+      "size_bytes": 13846,
+      "sha256": "b8443fdb99ee4f6c321e7dfb52e0dedb95f17759a969a6df9c56d467c65478e1"
+    },
+    "external/libcxx/include/new": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/new",
+      "size_bytes": 5795,
+      "sha256": "3b6afe2f6bdb51ad7c23ee9bfddedb81c5dd3347d4dc175b952c065acbf78156"
+    },
+    "external/libcxx/include/__config": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/__config",
+      "size_bytes": 20732,
+      "sha256": "e6209f1f0128e23c6aa6241740e440af7d6ec48c54e43fee9c9b84d39e31bc75"
+    },
+    "external/libcxx/include/exception": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/exception",
+      "size_bytes": 7663,
+      "sha256": "dde830d8cb96abf613d493acac4ebd8df3441d675a6ea05939ecfcf901b7877d"
+    },
+    "external/libcxx/include/cstddef": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/cstddef",
+      "size_bytes": 2575,
+      "sha256": "3ebb521262c3ec5c3626b4492469c1e32500b0614037855f16ee976f32646d39"
+    },
+    "external/libcxx/include/type_traits": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/type_traits",
+      "size_bytes": 121714,
+      "sha256": "caf179bf21f182d8867f24a0453bb23d8a7745d3d414a229d007a0a30a8b649f"
+    },
+    "external/libcxx/include/__undef___deallocate": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/__undef___deallocate",
+      "size_bytes": 648,
+      "sha256": "114886121d56aafdd36a3b81aa2c6d00a5b0c231c094aa07df50fa47142fb6cd"
+    },
+    "system/core/include/utils/VectorImpl.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/utils/VectorImpl.h",
+      "size_bytes": 7409,
+      "sha256": "bf1a313a1a21064845e10050ed01c34e6b3eb9fd8bc478708f0a1cd5653ce266"
+    },
+    "system/core/include/utils/TypeHelpers.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/utils/TypeHelpers.h",
+      "size_bytes": 9279,
+      "sha256": "8da0caa132a139ae2dce8c311f550458c7799cbda27b408ffc704007441d3c83"
+    },
+    "system/core/include/utils/String8.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/utils/String8.h",
+      "size_bytes": 12277,
+      "sha256": "c83e7b485fa2dd550af4ee1044380c54838afb070668ce6beda07ec6aee60b41"
+    },
+    "system/core/include/utils/Unicode.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/utils/Unicode.h",
+      "size_bytes": 6348,
+      "sha256": "b09499e617a83f3673cd616f325ac9204add7843b2880d8d37cd9b9a554c5bcc"
+    },
+    "frameworks/av/include/media/AudioBufferProvider.h": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/include/media/AudioBufferProvider.h",
+      "size_bytes": 2795,
+      "sha256": "3b6ee73a912b64529f7e13bcb43226d29e784fc90676ce0abcf8472f43ec4532"
+    },
+    "frameworks/av/include/media/nbaio/MonoPipe.h": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/include/media/nbaio/MonoPipe.h",
+      "size_bytes": 4998,
+      "sha256": "a797f241ec7e5590dd8c89ef2d576bacc4426b00794769fa038e5f56b04c2345"
+    },
+    "frameworks/av/include/media/nbaio/NBAIO.h": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/include/media/nbaio/NBAIO.h",
+      "size_bytes": 16849,
+      "sha256": "d87a0d71f2d7c76b8c92f98cf930c1ff6da8b930d6b9bd87d0b0ee9af1fb0daa"
+    },
+    "system/core/include/utils/RefBase.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/utils/RefBase.h",
+      "size_bytes": 16346,
+      "sha256": "08fae8458e8dae8a71d816d6e7e24090bea6bf8b8ccb3bc364078124c3190777"
+    },
+    "external/libcxx/include/atomic": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/atomic",
+      "size_bytes": 60007,
+      "sha256": "be6aacd92acdb92582fb4ca8f3c8e71ec23b70d8eddb36c4b4ee59964367087a"
+    },
+    "external/libcxx/include/cstdint": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/cstdint",
+      "size_bytes": 2785,
+      "sha256": "a6accf4072737474ab83c3011f758f201af9250251d76ee8f54569e14cef532c"
+    },
+    "system/core/include/utils/StrongPointer.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/utils/StrongPointer.h",
+      "size_bytes": 6386,
+      "sha256": "75445eebf9427ace4fe3d18b4964e68ffb2e0285dfb2ce17309c2ed4f2e95388"
+    },
+    "system/core/include/cutils/atomic.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/cutils/atomic.h",
+      "size_bytes": 9190,
+      "sha256": "611e35ef97f30b9cc06cce86b3675eba988d8121b631c179a3c4b7de67225ba6"
+    },
+    "bionic/libc/include/stdatomic.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/stdatomic.h",
+      "size_bytes": 19660,
+      "sha256": "b036ea3ee4d1b6512645f2666f651f85bf82e80a5ab34061e6f40592dea7f002"
+    },
+    "frameworks/av/include/media/AudioTimestamp.h": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/include/media/AudioTimestamp.h",
+      "size_bytes": 6213,
+      "sha256": "410c7d1adf345a99c1812d1adb910a942db433fd67917263e3590fd034410f53"
+    },
+    "external/libcxx/include/string": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/string",
+      "size_bytes": 154326,
+      "sha256": "66d1c2e5083ac58dceb8cae77d3eec998ecdf8f5763a31e4ab183ccbea6a10cd"
+    },
+    "external/libcxx/include/iosfwd": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/iosfwd",
+      "size_bytes": 7757,
+      "sha256": "3ee29a2fbcd489c883b70841776a8ecd1c004032ba9f9350ce8e33715687e2d0"
+    },
+    "bionic/libc/include/wchar.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/wchar.h",
+      "size_bytes": 8002,
+      "sha256": "35e797ff1ac9020126908de5ea811b8399154f68b5551b8b57d21a6f7bfdb37c"
+    },
+    "external/libcxx/include/cstring": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/cstring",
+      "size_bytes": 3350,
+      "sha256": "21bc0effaeafae0b6eb7b80c56ed566972d9e0398754a1a26398f99b8c306204"
+    },
+    "external/libcxx/include/cstdio": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/cstdio",
+      "size_bytes": 5613,
+      "sha256": "9d5a2014067b9471fa3281721aab5c344ec283bbe900d05211488fad42213928"
+    },
+    "external/libcxx/include/cwchar": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/cwchar",
+      "size_bytes": 7888,
+      "sha256": "de49d196d123f97f80611735eb3956fefbb42e1e7cbc9bbee40ab428cf8d908e"
+    },
+    "external/libcxx/include/cwctype": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/cwctype",
+      "size_bytes": 6205,
+      "sha256": "dfced9fa99d81b480c967a5ed9228e95b8047a46f710a51c94474f8db9327744"
+    },
+    "external/libcxx/include/cctype": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/cctype",
+      "size_bytes": 4705,
+      "sha256": "3e0f3e50bb4bf0a1a6690eec7383cfffa79515b698970b125ffcc5f2d44e3244"
+    },
+    "bionic/libc/include/wctype.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/wctype.h",
+      "size_bytes": 2181,
+      "sha256": "203f2e5b4f2fb70cd9fed9d66b50d9141f5c02a95659468ceeb9f563d8328057"
+    },
+    "external/libcxx/include/algorithm": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/algorithm",
+      "size_bytes": 200826,
+      "sha256": "cce123cca74add2f9374b8f560593975943cbd5dc62c309f5fc5e50b57305b07"
+    },
+    "external/libcxx/include/initializer_list": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/initializer_list",
+      "size_bytes": 2846,
+      "sha256": "913bd6460ef92b5976c8e3d99def379024d107a9cd9e7594163681d3ca4f7cf4"
+    },
+    "external/libcxx/include/utility": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/utility",
+      "size_bytes": 24316,
+      "sha256": "d8b97491baad34f2f128d32f6409ef1b173efa0e0feb2d31839eb9709e96a08b"
+    },
+    "external/libcxx/include/__tuple": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/__tuple",
+      "size_bytes": 12244,
+      "sha256": "48d34f84c75bb3367376bbd19976941002164d6934e284ca8c5f4cca52fc4c6b"
+    },
+    "external/libcxx/include/memory": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/memory",
+      "size_bytes": 178153,
+      "sha256": "358f90182c5dac2ba1e2900a924deb5e9365103b97e53c2ea8eabd7950a15648"
+    },
+    "external/libcxx/include/typeinfo": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/typeinfo",
+      "size_bytes": 4351,
+      "sha256": "aa21d6602a30697659f852f2379fc6a83a75dace33dca7efb301dd3c88f4ea66"
+    },
+    "external/libcxx/include/limits": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/limits",
+      "size_bytes": 40484,
+      "sha256": "b5f426ace540a359fed16e0636456aba1d40f08e6563e534aa9eac1d09b69549"
+    },
+    "external/libcxx/include/__undef_min_max": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/__undef_min_max",
+      "size_bytes": 945,
+      "sha256": "5d4c232a5187366eb5dccbe2fb63148e0443dddaeb0ad47f50dc4715179c5546"
+    },
+    "external/libcxx/include/iterator": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/iterator",
+      "size_bytes": 54314,
+      "sha256": "26bd34d79f5fda35411319682743bfeecf83c943bd969bb93bebaa21a8520cb0"
+    },
+    "external/libcxx/include/__functional_base": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/__functional_base",
+      "size_bytes": 18626,
+      "sha256": "83353da5235f5e6a672ec684682a832c095b8289de2013308317a19ab52ecafd"
+    },
+    "external/libcxx/include/__debug": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/__debug",
+      "size_bytes": 5898,
+      "sha256": "4ce88933e493207d9e2a8824b8f70de91487fab42227c550e2c25b295709b835"
+    },
+    "external/libcxx/include/tuple": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/tuple",
+      "size_bytes": 42960,
+      "sha256": "8651e5a1f1f356ebba9f5303a5488cc6a09d43218e5723f4bdf2fc4103e17f4c"
+    },
+    "external/libcxx/include/cassert": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/cassert",
+      "size_bytes": 546,
+      "sha256": "cdc7ff1c26192eafac0ef24d43545a4fa8fe27ffe31ea31e4647a5c0ae389a48"
+    },
+    "external/libcxx/include/stdexcept": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/stdexcept",
+      "size_bytes": 4418,
+      "sha256": "e63eb752af647a276a3b8a224177ef8e3353923235a6900f75632e73f6d4ae20"
+    },
+    "external/libcxx/include/sstream": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/sstream",
+      "size_bytes": 33219,
+      "sha256": "61763c9a6599995d24b5d5610300b503c34a4f8a42310784914b46dc160cf931"
+    },
+    "external/libcxx/include/ostream": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/ostream",
+      "size_bytes": 32784,
+      "sha256": "049014fd85bf64fd306f5c64e08e6fdfde029322732db69a13211ce1fcc98d5d"
+    },
+    "external/libcxx/include/ios": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/ios",
+      "size_bytes": 24910,
+      "sha256": "fda78797dafc6fc71e833fdc3bc06fc24a26bac7e239eb18334d4178ff106b2a"
+    },
+    "external/libcxx/include/__locale": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/__locale",
+      "size_bytes": 45509,
+      "sha256": "4592e4d74fa771b905047228ed1f702c49e5ed3593383e6970dfd8ba160504d6"
+    },
+    "external/libcxx/include/mutex": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/mutex",
+      "size_bytes": 14040,
+      "sha256": "0bb79f47da86b9d72dc55158537455049b1f865994a1188f5a85fece649bfee2"
+    },
+    "external/libcxx/include/__mutex_base": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/__mutex_base",
+      "size_bytes": 11570,
+      "sha256": "b7fca1a5c4c2bf390bcbf6c401dbee79f277000bd5e4bef3d263120501e985e5"
+    },
+    "external/libcxx/include/chrono": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/chrono",
+      "size_bytes": 36739,
+      "sha256": "263fa27a7604c7ea6ebf0fd2af0e2cdff48e0dfa07d931ee4bec64b0f09df5c2"
+    },
+    "external/libcxx/include/ctime": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/ctime",
+      "size_bytes": 1413,
+      "sha256": "a610fc2a791785dc295d6c1e1d9f680199b2d05053aa56c94285996844768b5d"
+    },
+    "external/libcxx/include/ratio": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/ratio",
+      "size_bytes": 14735,
+      "sha256": "a2d00fd1346f7aade505ef852eb9140ea679ae205244e5859f284b68cca5e674"
+    },
+    "external/libcxx/include/climits": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/climits",
+      "size_bytes": 894,
+      "sha256": "f2784782f22c497533f2f75d955ed8759293eecacf66996e7e35eab73f65045d"
+    },
+    "external/libcxx/include/system_error": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/system_error",
+      "size_bytes": 21647,
+      "sha256": "51fab4bb9977787b247d2868379b86a37dc0ec3c5ee004a027398dadd869a500"
+    },
+    "external/libcxx/include/cerrno": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/cerrno",
+      "size_bytes": 5050,
+      "sha256": "e9084ca120566aae324f4d559787409f29c8270192ab68637144443ee3d41de9"
+    },
+    "external/libcxx/include/functional": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/functional",
+      "size_bytes": 74757,
+      "sha256": "2c0c5498420b245edfe28ae30e062a836c06b51b6b7942f82f99acd7f3569dfe"
+    },
+    "bionic/libc/include/locale.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/locale.h",
+      "size_bytes": 3709,
+      "sha256": "c8e811f610c72739859499e509ca2dca198f011847ce573037e96c7219364f3a"
+    },
+    "external/libcxx/include/streambuf": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/streambuf",
+      "size_bytes": 16056,
+      "sha256": "305c8bdc8f798513e933d029a6b44535750d26a6743add996e9e6ceab5893f55"
+    },
+    "external/libcxx/include/locale": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/locale",
+      "size_bytes": 154800,
+      "sha256": "b0e49877860cbc7c146780c0ff74d12a167f8374116aa4f6f309d684d6b4c6cd"
+    },
+    "external/libcxx/include/cstdarg": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/cstdarg",
+      "size_bytes": 890,
+      "sha256": "c6ddab96f6b07c47b0cd5d67e8691684034c2e3e040af158634e9d1df5a0cc3e"
+    },
+    "external/libcxx/include/cstdlib": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/cstdlib",
+      "size_bytes": 5486,
+      "sha256": "637263d77e69aefdd3f42aa0f013d2b079fbb38bae97885e86f1d1dd405790e1"
+    },
+    "external/libcxx/include/bitset": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/bitset",
+      "size_bytes": 33852,
+      "sha256": "e566a10e7c0b119ddde176f8eabc5f464cdd7cf0569beb800a1f0496671a732d"
+    },
+    "external/libcxx/include/__bit_reference": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/__bit_reference",
+      "size_bytes": 52514,
+      "sha256": "0053aaf1fe63312c62afc6b3f4ca89a77e5cc3abafc8aacc00c295feb614e19c"
+    },
+    "external/libcxx/include/istream": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/istream",
+      "size_bytes": 50235,
+      "sha256": "87f8a62e6564ae01527dd4cd16c1c3548fc10005f01b9ca10d71de784b62fc1a"
+    },
+    "frameworks/av/include/media/SingleStateQueue.h": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/include/media/SingleStateQueue.h",
+      "size_bytes": 5632,
+      "sha256": "f157db87b37b788cc986b4b55d661cd3bf90abfe864ac4d98f9971f3b5afc217"
+    },
+    "frameworks/av/include/media/nbaio/MonoPipeReader.h": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/include/media/nbaio/MonoPipeReader.h",
+      "size_bytes": 1958,
+      "sha256": "7fac2b5532f1f4e61830c2f2d464adaaaa71e40e9f72720292b531aedbe977e9"
+    },
+    "hardware/libhardware/modules/usbaudio/audio_hal.c": {
+      "path": "/workspace/build01-graphics-next/graphics/libhardware/modules/usbaudio/audio_hal.c",
+      "size_bytes": 41133,
+      "sha256": "f7f6625838ece7d94e3209837b19c1930373a1987cb8543e7673d31d84a65098"
+    },
+    "bionic/libc/include/inttypes.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/inttypes.h",
+      "size_bytes": 9669,
+      "sha256": "d615c1c5f1b3b9a3599e7d6e645bd92d994f11802cf2154b1be99a7eb901aaf2"
+    },
+    "system/core/include/cutils/list.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/cutils/list.h",
+      "size_bytes": 2222,
+      "sha256": "4241e5a97932744016a604517af4cbdd838e33d821b94feb4ea074aa9a8efd7f"
+    },
+    "hardware/libhardware/include/hardware/audio_alsaops.h": {
+      "path": "/workspace/build01-graphics-next/graphics/libhardware/include/hardware/audio_alsaops.h",
+      "size_bytes": 3146,
+      "sha256": "51d2e7ed6b8adcc0a95fee6298dfd5bcebd24d14f5542f1c6857984eb96cd5b2"
+    },
+    "system/media/audio_utils/include/audio_utils/channels.h": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_utils/include/audio_utils/channels.h",
+      "size_bytes": 2008,
+      "sha256": "d751c536b3e9eff6b8bed9d876dfbaafa1e37260832390c10a0e19a580e93d51"
+    },
+    "system/media/alsa_utils/include/alsa_device_profile.h": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/alsa_utils/include/alsa_device_profile.h",
+      "size_bytes": 3742,
+      "sha256": "121148538fe34d7358eb44bbf088de3bb128de4838adc4218c9bd7cb557a2cbd"
+    },
+    "system/media/alsa_utils/include/alsa_device_proxy.h": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/alsa_utils/include/alsa_device_proxy.h",
+      "size_bytes": 2124,
+      "sha256": "af21c44bbb2c66516ea92e2abc53c3c9ab3212d90442643d799542391fc5e739"
+    },
+    "system/media/alsa_utils/include/alsa_logging.h": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/alsa_utils/include/alsa_logging.h",
+      "size_bytes": 1016,
+      "sha256": "054abca84f6008187c47719f4aa39d991d0030fbeb788001c620de8c4e9e0476"
+    },
+    "system/media/alsa_utils/alsa_device_profile.c": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/alsa_utils/alsa_device_profile.c",
+      "size_bytes": 22979,
+      "sha256": "9ee1109371908b63097dfabfb3482f056c30b6f4580469b1a4978b2319412a8b"
+    },
+    "system/media/alsa_utils/include/alsa_format.h": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/alsa_utils/include/alsa_format.h",
+      "size_bytes": 914,
+      "sha256": "f640d8bd807f125f662be3a29495cd9bebdf724380bca6c12f9f21bada157dba"
+    },
+    "system/media/alsa_utils/alsa_device_proxy.c": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/alsa_utils/alsa_device_proxy.c",
+      "size_bytes": 7020,
+      "sha256": "befe8396a7ce53ddd0f1aee674e71582adb81da84b30284c0c7ce28dff1ee07c"
+    },
+    "system/media/alsa_utils/alsa_format.c": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/alsa_utils/alsa_format.c",
+      "size_bytes": 4916,
+      "sha256": "305eed0c28b63a87b1f2559846a5f01b74e369efb709cf7d666984abad357211"
+    },
+    "system/media/alsa_utils/alsa_logging.c": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/alsa_utils/alsa_logging.c",
+      "size_bytes": 5521,
+      "sha256": "0a05fd120ac87b6ecdcbd2cc757cbbc25cd227600d1414a98e11bbc511e2c8a3"
+    },
+    "system/media/audio_route/audio_route.c": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_route/audio_route.c",
+      "size_bytes": 28555,
+      "sha256": "f0c63c26e61e551c9908338df3bb9009c93dbe9b0a82cdc7b89060ff613b59a9"
+    },
+    "external/expat/lib/expat.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/expat/lib/expat.h",
+      "size_bytes": 41752,
+      "sha256": "3dfafd45e0668c9c6325530c6b61b26f5f90fa7b69201f9076014502ecc23a3f"
+    },
+    "external/expat/lib/expat_external.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/expat/lib/expat_external.h",
+      "size_bytes": 3364,
+      "sha256": "1e8d07c8b0802a326a802efa863778a5f16624d2df4c7292165de00267c4936f"
+    },
+    "system/media/audio_utils/channels.c": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_utils/channels.c",
+      "size_bytes": 15554,
+      "sha256": "575cc51f890ceacd7533d6cf69cfd468582d872f1e1205f4f4b1db2f2bc24e7d"
+    },
+    "system/media/audio_utils/private/private.h": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_utils/private/private.h",
+      "size_bytes": 1061,
+      "sha256": "d4639f82093d0586e107755ee071b2998ad65606d07a9db6ea7e5aaf79246669"
+    },
+    "system/media/audio_utils/conversion.cpp": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_utils/conversion.cpp",
+      "size_bytes": 2197,
+      "sha256": "75e6ff9c7c8b0c915374f3ede5c6e4251dd69eb8c72bcfc0b893807170a8dbe3"
+    },
+    "system/media/audio_utils/include/audio_utils/conversion.h": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_utils/include/audio_utils/conversion.h",
+      "size_bytes": 1463,
+      "sha256": "89b85acd948d5f8e3748b2ea3ea88cc777ceb30e5faa4fcf5492fd01163c46f6"
+    },
+    "system/core/include/utils/Log.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/utils/Log.h",
+      "size_bytes": 2140,
+      "sha256": "2c08767cc89633244e345b6cf78551e9a1c2401c63b7e4fb24f8bf966425152d"
+    },
+    "system/media/audio_utils/include/audio_utils/limiter.h": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_utils/include/audio_utils/limiter.h",
+      "size_bytes": 1394,
+      "sha256": "ef2de6cb3dd8aeab86cfbad4b48a72db2ffca3c226cd249f38798f814fd53b9f"
+    },
+    "system/media/audio_utils/echo_reference.c": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_utils/echo_reference.c",
+      "size_bytes": 22041,
+      "sha256": "54368c8dcd88e1b697b09f40b8ffe7a0bc206d26884567363c4b349acbd7e271"
+    },
+    "system/media/audio_utils/include/audio_utils/echo_reference.h": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_utils/include/audio_utils/echo_reference.h",
+      "size_bytes": 2611,
+      "sha256": "02f6eba3c14256b19c16be2b80fd2f08a0330c0fb40ae95d68ceed8851b27802"
+    },
+    "system/media/audio_utils/fifo.c": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_utils/fifo.c",
+      "size_bytes": 4792,
+      "sha256": "1bc76eff99b8a5106a2da1425ab345b47b0ebed350632e6ee8be14dcdd38183d"
+    },
+    "system/media/audio_utils/include/audio_utils/fifo.h": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_utils/include/audio_utils/fifo.h",
+      "size_bytes": 3764,
+      "sha256": "47ec91b50d926fe9a538e13990c69cafc664aa6fc5c542dae849d0c6749b5f55"
+    },
+    "system/media/audio_utils/include/audio_utils/roundup.h": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_utils/include/audio_utils/roundup.h",
+      "size_bytes": 868,
+      "sha256": "646b84a0d9c1ab23bc63be7668126dadc781e938e945d9e5a93535d78f174d6a"
+    },
+    "system/media/audio_utils/fixedfft.cpp": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_utils/fixedfft.cpp",
+      "size_bytes": 7057,
+      "sha256": "225e3a85790a4da0bd9da776783a6bfd4c9e41d4f7241c12732d13cc691bc5ff"
+    },
+    "bionic/libc/arch-arm/include/machine/cpu-features.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/arch-arm/include/machine/cpu-features.h",
+      "size_bytes": 2135,
+      "sha256": "1afe084cc8cae3133563b62b54591ee5e985ecf36971c108736afbe4356d75a8"
+    },
+    "system/media/audio_utils/include/audio_utils/fixedfft.h": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_utils/include/audio_utils/fixedfft.h",
+      "size_bytes": 941,
+      "sha256": "c13116e3c06abd5e5ac21869660f39670aecc77738b769a14ec3276b4d4afde6"
+    },
+    "system/media/audio_utils/format.c": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_utils/format.c",
+      "size_bytes": 6941,
+      "sha256": "10c9bcad4c943879c126d62dc73c8894116b2da2c90926bb8731a4a12799c361"
+    },
+    "system/media/audio_utils/include/audio_utils/primitives.h": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_utils/include/audio_utils/primitives.h",
+      "size_bytes": 40460,
+      "sha256": "bd7f26a2300b073213c10f64de24c9c55d74b45f76df33e48f4e0a4bc82172ce"
+    },
+    "system/media/audio_utils/include/audio_utils/format.h": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_utils/include/audio_utils/format.h",
+      "size_bytes": 3197,
+      "sha256": "2668a2688c9c7faad68830c0a4eb89fd85ba330043a693e1dc4dff9c25a53738"
+    },
+    "system/media/audio_utils/limiter.c": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_utils/limiter.c",
+      "size_bytes": 1982,
+      "sha256": "6f05abca3018e90b338124c4fb0e9110f01b8a8b4e9f50446d2b2080260c4682"
+    },
+    "system/media/audio_utils/minifloat.c": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_utils/minifloat.c",
+      "size_bytes": 1929,
+      "sha256": "05774b8beab915e84daab1fdc7b059b5e096dbe58053881377b161d7c99c1d66"
+    },
+    "system/media/audio_utils/include/audio_utils/minifloat.h": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_utils/include/audio_utils/minifloat.h",
+      "size_bytes": 2946,
+      "sha256": "56cd20362220dcd7f6c41a2c1bc77ca7eacae1495c9ff98dd500f61a9e68a17d"
+    },
+    "system/media/audio_utils/primitives.c": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_utils/primitives.c",
+      "size_bytes": 13573,
+      "sha256": "7424fd61ead10f27023248909e1405df6151d24df281a056a2b005b414bee060"
+    },
+    "system/media/audio_utils/resampler.c": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_utils/resampler.c",
+      "size_bytes": 9918,
+      "sha256": "1de854452e4d54f843ee7a1a148236288762c1d68e0352b6b891eaf43fab7e86"
+    },
+    "external/speex/include/speex/speex_resampler.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/speex/include/speex/speex_resampler.h",
+      "size_bytes": 14713,
+      "sha256": "18961b1db04d77eebdecdfbd2e62f0682ef3010a233e6b25d7ee8d099d0f3eda"
+    },
+    "system/media/audio_utils/roundup.c": {
+      "path": "/workspace/build01-full-next/audio/tree/system/media/audio_utils/roundup.c",
+      "size_bytes": 1027,
+      "sha256": "3abaf5f044eb94acb12bfba2c5e82ac394eabce88bb3319510365fb6d9c9b713"
+    },
+    "external/expat/lib/xmlparse.c": {
+      "path": "/workspace/build01-full-next/audio/tree/external/expat/lib/xmlparse.c",
+      "size_bytes": 199688,
+      "sha256": "7b5f4d01d2d9e8b13d239aad39ad65b843aec571d0e72621e5190018d5b85a44"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/stdint.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/stdint.h",
+      "size_bytes": 6698,
+      "sha256": "876683fd67aabbda5eed2971d5583f1a30c35bb02aa7fedff78b9c208337ff47"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/_types.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/_types.h",
+      "size_bytes": 3351,
+      "sha256": "80cfc55a69ed435d0e41e20fcf2fffbb69047284ad6dabc2a54372f1626d748a"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/machine/_types.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/machine/_types.h",
+      "size_bytes": 3734,
+      "sha256": "471db9848cd38f73cd8fa660e47c0b032d001b6f5c0afded17f61d15565b5215"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/_wchar_limits.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/_wchar_limits.h",
+      "size_bytes": 4109,
+      "sha256": "d885c77cbffc04edc27d3fcd784fae13565c5f66b5862e86b507ff71d1cfbd85"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/android/api-level.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/android/api-level.h",
+      "size_bytes": 1515,
+      "sha256": "733424cc38f3306de427640b16d95a189b79524ccfbd4f91e12b617166ad1909"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/string.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/string.h",
+      "size_bytes": 3532,
+      "sha256": "9684a83dadd2feeec2a86ec5f8efd5414f657a97c2ea75a54d6416ce90d5daa6"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/cdefs.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/cdefs.h",
+      "size_bytes": 19244,
+      "sha256": "6f258ff388012637a29219418a9de0c5d1f24a0ddfcbc19200b840de5f5a8586"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/cdefs_elf.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/cdefs_elf.h",
+      "size_bytes": 5311,
+      "sha256": "4360a02258a52b0610a021f7ce053c7bb9b29c38fb621dad6b406efa1da62eb8"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/malloc.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/malloc.h",
+      "size_bytes": 1667,
+      "sha256": "5e2383b8cd4c83126f164b31ebac232cb52c86a382ce1025f6d11cc08440e3a0"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/assert.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/assert.h",
+      "size_bytes": 2721,
+      "sha256": "70e0ba544f9dfd1e1d62e0a85583f1c9ffe430e90d289f380b04a2ac487bce13"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/limits.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/limits.h",
+      "size_bytes": 3609,
+      "sha256": "4379f6db062a8067a66301f6a309654b0c299a94916940669270b53c1bb0c4be"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/limits.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/limits.h",
+      "size_bytes": 7059,
+      "sha256": "a83c48cd2b056ba907d2dfb9d164fd77861f1e02abf796564c9e17668a5a7a10"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/linux/limits.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/linux/limits.h",
+      "size_bytes": 1101,
+      "sha256": "6eb1358fd1d92c7f77cab8e7741e24fd98624cb1a4ddc1ee47b610d651335432"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/machine/internal_types.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/machine/internal_types.h",
+      "size_bytes": 231,
+      "sha256": "f77a027960e213be4def14c1aa9553508edac298c56fe6dffbcd4f467aae663e"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/machine/limits.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/machine/limits.h",
+      "size_bytes": 2564,
+      "sha256": "81aefa5ee9e00b3a4801bfa24d3149234d216a99c2f29174d59813cace911ff4"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/syslimits.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/syslimits.h",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/asm/page.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/asm/page.h",
+      "size_bytes": 817,
+      "sha256": "0ea7a939498f851b7a39a08fd57da7cf3878ec3889e865252a61efd8cab5882b"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/time.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/time.h",
+      "size_bytes": 3124,
+      "sha256": "0b4dc051455d54ad1a7fcc90b80428358ab17deb23c05a5ef9773d117a31ba03"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/types.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/types.h",
+      "size_bytes": 3833,
+      "sha256": "fcce210d870ed1f23842c6a45ac3cdd26b3cd40a97aa725a5e63cc69fc982a62"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/linux/posix_types.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/linux/posix_types.h",
+      "size_bytes": 1267,
+      "sha256": "115954b209336a47164e6563b2730434f9ea38d3f3586d3a98c305952c7225e4"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/linux/stddef.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/linux/stddef.h",
+      "size_bytes": 1292,
+      "sha256": "906730e95064653a80717cf6fd87301eb0a7040e75d96650d67c0ca4256e2efc"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/linux/compiler.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/linux/compiler.h",
+      "size_bytes": 1156,
+      "sha256": "f3cdd3c6c57656819a56abce1cd045c3cad9ffe1db41d4972dc301ee47b62641"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/asm/posix_types.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/asm/posix_types.h",
+      "size_bytes": 2298,
+      "sha256": "f96e5519b0240827c414e5c51d31bd0bb337e86f63d0552a3cf22e96a3bfb798"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/asm/types.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/asm/types.h",
+      "size_bytes": 1066,
+      "sha256": "ef6124c0839b5a127d656db1cb00e7f5a5bdde8bfada407c32d41bfa8a39d8f4"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/linux/types.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/linux/types.h",
+      "size_bytes": 1174,
+      "sha256": "d675b0c54b8e4cfe2bc8da8eb96d3d5b4ce68552267fd90834416b876ab808e8"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/machine/kernel.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/machine/kernel.h",
+      "size_bytes": 1915,
+      "sha256": "e9b1f78080cf0e185f5ba4c68a067f940b32f32503e5746d4f656a15ead3f905"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/sysmacros.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/sysmacros.h",
+      "size_bytes": 1894,
+      "sha256": "736e2a0d8223c881f5457326cbeec8cf261be3d42ea843465e54f0e7cfcd38c8"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/linux/time.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/linux/time.h",
+      "size_bytes": 1737,
+      "sha256": "c101a6e0d459d4ee73ad1e2e1bce1a12e001659382bacf2ffdf3c16c37aa8623"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/unistd.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/unistd.h",
+      "size_bytes": 6565,
+      "sha256": "9a968016e4566ee1d762cdb7ab33c30429de03f3aa76d453b579efbb40ff8671"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/select.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/select.h",
+      "size_bytes": 1852,
+      "sha256": "149541f32d20b2803db08807056b50fb188320f7c17249176b6b3dd926fb1170"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/signal.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/signal.h",
+      "size_bytes": 4067,
+      "sha256": "bbad9f688749e5b02716000e46d9fa4097529be426427d7201492f57e8d74b5e"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/asm/signal.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/asm/signal.h",
+      "size_bytes": 2345,
+      "sha256": "8f39276b1331c162f173c6538c829ce68113e038dd5d0f8244084de59f032965"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/asm-generic/signal.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/asm-generic/signal.h",
+      "size_bytes": 1243,
+      "sha256": "97ee8440979b925f49acb4aba2c56ed6c593d64e4d917275a81e8c7c8c63d6b4"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/asm/sigcontext.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/asm/sigcontext.h",
+      "size_bytes": 1256,
+      "sha256": "0b50bd417ef35a5be058fc4477001376b4bf8030777f57058a496f2b0ea852e1"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/asm/siginfo.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/asm/siginfo.h",
+      "size_bytes": 761,
+      "sha256": "abb0974277a30b46b7bb5a30d0f3019a3db6714aa8a939574f7ccf42419840a4"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/asm-generic/siginfo.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/asm-generic/siginfo.h",
+      "size_bytes": 5229,
+      "sha256": "55d1f6b482f8fad2801c10d3c5269e6f85fc60a16a26b759b2f59bc6f6a65fa2"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/ucontext.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/ucontext.h",
+      "size_bytes": 5870,
+      "sha256": "1a1ff5f458b348b54edaafcb6b49ff01c012e804d420f3e83cf767c4d6f01a4b"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/user.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/user.h",
+      "size_bytes": 5464,
+      "sha256": "98e28f1c6ce00c883cae76aa68b9adc7ce30cb2a8f74a9c6e28b355b38346101"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/sysconf.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/sys/sysconf.h",
+      "size_bytes": 5313,
+      "sha256": "da1fbc5147cca34c78ccb18c4de4c962ac816dc6f54e128263b351701f9209ee"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/linux/capability.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/linux/capability.h",
+      "size_bytes": 1881,
+      "sha256": "c58885f8f2f04a61d7f1ed7503f764bf3c54160b2c153dc71a894f9158bfeaed"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/pathconf.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/pathconf.h",
+      "size_bytes": 2472,
+      "sha256": "8ae53db67bab1196ae7c9313861489533ec23fdfabde015a34a74acffd8d0afb"
+    },
+    "external/expat/expat_config.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/expat/expat_config.h",
+      "size_bytes": 2981,
+      "sha256": "fc9c3bcc6279f7295c47dc403ffa475d8af86e9a369f34905c39c705076b987d"
+    },
+    "external/expat/lib/ascii.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/expat/lib/ascii.h",
+      "size_bytes": 1985,
+      "sha256": "86d03033908dea236df38591ea8f0df6b5601a13c3913f2d324ede66eb0eeeea"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/stdlib.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/stdlib.h",
+      "size_bytes": 5323,
+      "sha256": "9a5485cdd00ccf044dcc4981c4d21c506b9eca0bf2155afd867493e3e2b2b6d4"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/alloca.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/alloca.h",
+      "size_bytes": 1506,
+      "sha256": "a44813f5b610c7d5b896e7b2e14f9299a99bef145792c900ad6db9e74b119a03"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/strings.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/strings.h",
+      "size_bytes": 2508,
+      "sha256": "7340b4be8b304aaefe1d9238265816a25c321bbb4a3738f3c7c5095004f1f73f"
+    },
+    "prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/memory.h": {
+      "path": "/workspace/build01-full-next/audio/tree/prebuilts/ndk/current/platforms/android-8/arch-arm/usr/include/memory.h",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "external/expat/lib/internal.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/expat/lib/internal.h",
+      "size_bytes": 2028,
+      "sha256": "5da4b392681312efd711bc890fea9907b0f2c5fedf810ca0fb362c2fda20ac66"
+    },
+    "external/expat/lib/xmltok.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/expat/lib/xmltok.h",
+      "size_bytes": 11409,
+      "sha256": "7bbab395673e2bb1a40f3361f9bdef9d9be1600800e850d372048a5e1d4c661e"
+    },
+    "external/expat/lib/xmlrole.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/expat/lib/xmlrole.h",
+      "size_bytes": 3023,
+      "sha256": "5f19e5a011e89c1f1e90b950691b9c7a6aed1ef510c8205b8bd9b861205dfbd7"
+    },
+    "external/expat/lib/xmlrole.c": {
+      "path": "/workspace/build01-full-next/audio/tree/external/expat/lib/xmlrole.c",
+      "size_bytes": 32475,
+      "sha256": "c02ce9975e1916f2cb9bf5f2059701886c089375cb78a3f33ba938dcb45f2ed9"
+    },
+    "external/expat/lib/xmltok.c": {
+      "path": "/workspace/build01-full-next/audio/tree/external/expat/lib/xmltok.c",
+      "size_bytes": 43487,
+      "sha256": "9c133c53dd18f48fa5f892d10528088de338915394c876d810c407d07076c14e"
+    },
+    "external/expat/lib/nametab.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/expat/lib/nametab.h",
+      "size_bytes": 7050,
+      "sha256": "63a71bfd650c5a883aa630a042ec1636307773988ae648305c90c0036aa0335b"
+    },
+    "external/expat/lib/xmltok_impl.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/expat/lib/xmltok_impl.h",
+      "size_bytes": 661,
+      "sha256": "577149bf7372ad62e8ad3e36ba82686c90efac0b694a19270c7b728999af7a39"
+    },
+    "external/expat/lib/xmltok_impl.c": {
+      "path": "/workspace/build01-full-next/audio/tree/external/expat/lib/xmltok_impl.c",
+      "size_bytes": 44528,
+      "sha256": "7d6b46c9bc221d48f101cdc55283f3fd987258734ae45de105dd548cb0657853"
+    },
+    "external/expat/lib/asciitab.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/expat/lib/asciitab.h",
+      "size_bytes": 1760,
+      "sha256": "b2c8839725b0c894f695b438c923965e53322f4504663bc2ac9a1a63a45dd2dd"
+    },
+    "external/expat/lib/utf8tab.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/expat/lib/utf8tab.h",
+      "size_bytes": 1763,
+      "sha256": "cc245d824f827cc239db0416e6142136676ffc294da28b883c983ffbc50457da"
+    },
+    "external/expat/lib/iasciitab.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/expat/lib/iasciitab.h",
+      "size_bytes": 1830,
+      "sha256": "22d906ae7d09c1aab8fc78459d24854dc7169a77f2a57db3539de43a2653568f"
+    },
+    "external/expat/lib/latin1tab.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/expat/lib/latin1tab.h",
+      "size_bytes": 1813,
+      "sha256": "621dc10ffc282a5e7eba9c5eb39571f168b129d2e4a52209951751ff3cb58fd6"
+    },
+    "external/expat/lib/xmltok_ns.c": {
+      "path": "/workspace/build01-full-next/audio/tree/external/expat/lib/xmltok_ns.c",
+      "size_bytes": 3144,
+      "sha256": "08f92b2a04bbb1675899839808d1315df3ace05f6097a56971b3c637693e2be9"
+    },
+    "frameworks/av/media/libnbaio/AudioBufferProviderSource.cpp": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/media/libnbaio/AudioBufferProviderSource.cpp",
+      "size_bytes": 4969,
+      "sha256": "5a4e6d0ab63dc6deb25b9cae7e7495f1bc5a1a76d133e906f322c4d2367dc886"
+    },
+    "frameworks/av/include/media/nbaio/AudioBufferProviderSource.h": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/include/media/nbaio/AudioBufferProviderSource.h",
+      "size_bytes": 1913,
+      "sha256": "42d612e4c36802fd61d8f6b504aeadf3cdae9fb32cb6c3eafc32af333b9d768b"
+    },
+    "frameworks/av/media/libnbaio/AudioStreamInSource.cpp": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/media/libnbaio/AudioStreamInSource.cpp",
+      "size_bytes": 2687,
+      "sha256": "e557099cfc9584aec67eef85115ef97bcd3b83f65eacd591db0aab068391c08a"
+    },
+    "frameworks/av/include/media/nbaio/AudioStreamInSource.h": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/include/media/nbaio/AudioStreamInSource.h",
+      "size_bytes": 2080,
+      "sha256": "dd3254ad3000411c31c2da54ffd182a7cd45f776ecda9c617d7bf99ff01eebe5"
+    },
+    "frameworks/av/media/libnbaio/AudioStreamOutSink.cpp": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/media/libnbaio/AudioStreamOutSink.cpp",
+      "size_bytes": 2895,
+      "sha256": "4adff089b71910fd96290f2efc863b4a0ec74eeccfee65908b81db29fb6e42d8"
+    },
+    "frameworks/av/include/media/nbaio/AudioStreamOutSink.h": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/include/media/nbaio/AudioStreamOutSink.h",
+      "size_bytes": 2050,
+      "sha256": "0666996503b42073b4f86c16feed0b312a9af880e76a06f06e3270155cc842d1"
+    },
+    "frameworks/av/media/libnbaio/MonoPipe.cpp": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/media/libnbaio/MonoPipe.cpp",
+      "size_bytes": 6870,
+      "sha256": "8abd241488f8cdb23b29bf5c6b49671c6c1aee831dee3abd7d9e59349bed4250"
+    },
+    "system/core/include/utils/Trace.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/utils/Trace.h",
+      "size_bytes": 1713,
+      "sha256": "63444e7545438257df722cb9ca8c22737183c88bdf36b445529d1865b7ddad4b"
+    },
+    "bionic/libc/include/sys/stat.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/sys/stat.h",
+      "size_bytes": 5768,
+      "sha256": "5a315eea8c38087127c42cd98bcef0c4110de427e890c6669a3f9f1ca7e3423f"
+    },
+    "system/core/include/utils/threads.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/utils/threads.h",
+      "size_bytes": 1048,
+      "sha256": "5041ef681318648bbe35dee6c703823a693270c104f3592a9ce7bdcb956dfbeb"
+    },
+    "system/core/include/utils/AndroidThreads.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/utils/AndroidThreads.h",
+      "size_bytes": 4743,
+      "sha256": "0d7008101b551b6e6568e005168b7758129d8688d86ebc77faf87225058cbee5"
+    },
+    "system/core/include/utils/ThreadDefs.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/utils/ThreadDefs.h",
+      "size_bytes": 2364,
+      "sha256": "224c683cc083845f3c01c20cd8700c95b16e807a6dfcf04614d56329dbec0b6d"
+    },
+    "system/core/include/system/thread_defs.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/system/thread_defs.h",
+      "size_bytes": 2611,
+      "sha256": "42d3f3b29752d188bcb6ad7cdcad6dfa780b0d8a729b01fd376398fa32f016a7"
+    },
+    "system/core/include/utils/Condition.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/utils/Condition.h",
+      "size_bytes": 4825,
+      "sha256": "5fd68654a647b0a34057c91774536aa8663e94161c36484fce8b6601c967a2db"
+    },
+    "system/core/include/utils/Mutex.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/utils/Mutex.h",
+      "size_bytes": 5092,
+      "sha256": "d9ad4a2e7dcc94200645cf85b29936ce7292085dbdb3ed23c5d480798fc5896c"
+    },
+    "system/core/include/utils/Timers.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/utils/Timers.h",
+      "size_bytes": 3564,
+      "sha256": "2bb6416ee7ca1ad5ec2f8abc11b9b18b4c1432e5ea0e2de6e8a7fa712a97688e"
+    },
+    "system/core/include/utils/Compat.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/utils/Compat.h",
+      "size_bytes": 2363,
+      "sha256": "a2ea5d67e86f4818a2063ea16570d72eb53a44526880301edd86c250b2537ee5"
+    },
+    "system/core/include/utils/RWLock.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/utils/RWLock.h",
+      "size_bytes": 3512,
+      "sha256": "f0da151d0e1d925be96ff81f11ba029739c23808ec0b4cf4f24c29e896539dc7"
+    },
+    "system/core/include/utils/Thread.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/utils/Thread.h",
+      "size_bytes": 4267,
+      "sha256": "027d9b767e37d74ba7a3ef23497629c914f2a83f8b39b154862206a3bb689b3e"
+    },
+    "system/core/include/cutils/trace.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/cutils/trace.h",
+      "size_bytes": 8899,
+      "sha256": "8538d2a3d3119e19656d54f7dba6f516f97352b491cc89b136745702b890c979"
+    },
+    "frameworks/av/media/libnbaio/MonoPipeReader.cpp": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/media/libnbaio/MonoPipeReader.cpp",
+      "size_bytes": 2373,
+      "sha256": "2a25fa9e8cd864fa18f41b31e375eed8994d432b78010d1957235180cc820c79"
+    },
+    "frameworks/av/media/libnbaio/NBAIO.cpp": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/media/libnbaio/NBAIO.cpp",
+      "size_bytes": 5486,
+      "sha256": "bd5642a91d1398a11bd6bedf5c2c0771a304829bd76ddcf3ff3ffa233e33e1b4"
+    },
+    "frameworks/av/media/libnbaio/NBLog.cpp": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/media/libnbaio/NBLog.cpp",
+      "size_bytes": 12799,
+      "sha256": "542c04d9216b2075bd415e18049731469f098dddc67206b54614ec866387c349"
+    },
+    "frameworks/av/include/media/nbaio/NBLog.h": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/include/media/nbaio/NBLog.h",
+      "size_bytes": 6815,
+      "sha256": "19b654bdb54eb5feaf04bfc34e5227d89b49ce34805fa80623ca0e4085c784cd"
+    },
+    "frameworks/native/include/binder/IMemory.h": {
+      "path": "/workspace/build01-full-next/audio/acquisition/frameworks-native/include/binder/IMemory.h",
+      "size_bytes": 2653,
+      "sha256": "5cd1cac2c0a0bd8661db1a4bdd0a47bcbe164fed915d5967387f4a86cc395d9c"
+    },
+    "bionic/libc/include/sys/mman.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/sys/mman.h",
+      "size_bytes": 2698,
+      "sha256": "810ecf1d28f0454e2c4c25faafd483f9d22532d35a7bb6cc6a0950ee47ebb6ec"
+    },
+    "bionic/libc/kernel/uapi/asm-arm/asm/mman.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-arm/asm/mman.h",
+      "size_bytes": 1115,
+      "sha256": "351f215a2f1c735f4f9ec84a00116c5e314c8e4d38e952a346f96c1a8ec563d8"
+    },
+    "bionic/libc/kernel/uapi/asm-generic/mman.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/mman.h",
+      "size_bytes": 1696,
+      "sha256": "8bb8ee0182c7e9231891ab29cbbf6c73d46257f126db6f81e915e7375db4484e"
+    },
+    "bionic/libc/kernel/uapi/asm-generic/mman-common.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/mman-common.h",
+      "size_bytes": 2614,
+      "sha256": "a357ceb3a383882c79d5d9273168873868e416b07b34b48e57aaa447abfadc48"
+    },
+    "frameworks/native/include/binder/IInterface.h": {
+      "path": "/workspace/build01-full-next/audio/acquisition/frameworks-native/include/binder/IInterface.h",
+      "size_bytes": 5346,
+      "sha256": "f1df1400d1802efa1493b12011c42a0463a78992fdcede39465a5a5c607d5f12"
+    },
+    "frameworks/native/include/binder/Binder.h": {
+      "path": "/workspace/build01-full-next/audio/acquisition/frameworks-native/include/binder/Binder.h",
+      "size_bytes": 3635,
+      "sha256": "726557a5d0a8a8992481032e7a3865b5b749e1893b3ea8c23d5a6d9f335cbaab"
+    },
+    "frameworks/native/include/binder/IBinder.h": {
+      "path": "/workspace/build01-full-next/audio/acquisition/frameworks-native/include/binder/IBinder.h",
+      "size_bytes": 6235,
+      "sha256": "c0293fbf06d5a0b6186e5fd02279c98a27eeae6e92164c579dd9497a8247011f"
+    },
+    "system/core/include/utils/String16.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-system-core/include/utils/String16.h",
+      "size_bytes": 7656,
+      "sha256": "67ca22cbbc0f7745eb2f31a9fb1792b25540021d2d9429cd7e83e618c67f9898"
+    },
+    "frameworks/av/media/libnbaio/Pipe.cpp": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/media/libnbaio/Pipe.cpp",
+      "size_bytes": 2272,
+      "sha256": "539198a9065756aefdcab3d687e6ae3a6e9bf125a42335e2860ec1fe29551f03"
+    },
+    "frameworks/av/include/media/nbaio/Pipe.h": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/include/media/nbaio/Pipe.h",
+      "size_bytes": 2725,
+      "sha256": "5510bbd1085a9aadad0a0724902b3b21e54b9e696969c44563d84e1f55d7821a"
+    },
+    "frameworks/av/media/libnbaio/PipeReader.cpp": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/media/libnbaio/PipeReader.cpp",
+      "size_bytes": 3113,
+      "sha256": "be39a4a8d85fa5240b56be1e401ca5fa0ddca90b22db70883c3cbd28c363ae28"
+    },
+    "frameworks/av/include/media/nbaio/PipeReader.h": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/include/media/nbaio/PipeReader.h",
+      "size_bytes": 1857,
+      "sha256": "a145d356602db2a191bc0e3e8c388c205b50ccd0839ece5d92ab580e78ec822f"
+    },
+    "frameworks/av/media/libnbaio/SourceAudioBufferProvider.cpp": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/media/libnbaio/SourceAudioBufferProvider.cpp",
+      "size_bytes": 3949,
+      "sha256": "f8e00d40226d10ff88d8efa38637a63d6041d26525e7449de60f9dcffa0fa64e"
+    },
+    "frameworks/av/include/media/nbaio/SourceAudioBufferProvider.h": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/include/media/nbaio/SourceAudioBufferProvider.h",
+      "size_bytes": 2108,
+      "sha256": "85a8e32bd96e5e593affb166aea95a3f8c8463b288e8c8e5b19244cc243fda75"
+    },
+    "frameworks/av/include/media/ExtendedAudioBufferProvider.h": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/include/media/ExtendedAudioBufferProvider.h",
+      "size_bytes": 1385,
+      "sha256": "6511343d318e7b142405727be8d793ea85e03bdd98b07660ded4c39e756e057c"
+    },
+    "external/speex/libspeex/resample.c": {
+      "path": "/workspace/build01-full-next/audio/tree/external/speex/libspeex/resample.c",
+      "size_bytes": 41088,
+      "sha256": "feb3174d7d90f6b5b3c6581d4ec57821bfcd0821347c1fed48d284eb840d58f3"
+    },
+    "external/speex/libspeex/arch.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/speex/libspeex/arch.h",
+      "size_bytes": 7048,
+      "sha256": "472333c8f936ef5d90f4d2a4c9b9d5bd425d097601cca1a3b2240bb03c4713e0"
+    },
+    "external/speex/libspeex/fixed_generic.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/speex/libspeex/fixed_generic.h",
+      "size_bytes": 5408,
+      "sha256": "0cf832d0689108084b1f50613bb784e9f7b84ededdbc0bea0c0a6d3d4ccfe45f"
+    },
+    "external/speex/libspeex/os_support.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/speex/libspeex/os_support.h",
+      "size_bytes": 5297,
+      "sha256": "2a34e13d99ca77d6bbb52c90b16878abd7080184e45b71553db8e01720954ad1"
+    },
+    "external/speex/libspeex/stack_alloc.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/speex/libspeex/stack_alloc.h",
+      "size_bytes": 3373,
+      "sha256": "d9e654bc2cedacb4afe97fef8d187ca08630f77de132df3b819708eaaf4ce00f"
+    },
+    "external/speex/libspeex/resample_neon.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/speex/libspeex/resample_neon.h",
+      "size_bytes": 5976,
+      "sha256": "2f257184b66b77deab146ff33929eb1f202118886ed6b3692c4126b10a9976c6"
+    },
+    "prebuilts/clang/host/linux-x86/clang-2690385/bin/../lib64/clang/3.8.256229/include/arm_neon.h": {
+      "path": "/workspace/build01-product-next/native-rules/tree/prebuilts/clang/host/linux-x86/clang-2690385/lib64/clang/3.8/include/arm_neon.h",
+      "size_bytes": 2278391,
+      "sha256": "9cc4ec02331321befddb1d5154e772ee85ce81efb9dcc465c12f66a44d1db01e"
+    },
+    "external/tinyalsa/mixer.c": {
+      "path": "/workspace/build01-full-next/audio/tree/external/tinyalsa/mixer.c",
+      "size_bytes": 15042,
+      "sha256": "f2a87ffd3d11f532e89096789603944829c287d5431f9802db00ff330ea902c0"
+    },
+    "bionic/libc/include/sys/ioctl.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/sys/ioctl.h",
+      "size_bytes": 1840,
+      "sha256": "cb60dcdc4cfd8270f1a44483e00cad93298ef47f36394af23a476563bbbd41a1"
+    },
+    "bionic/libc/kernel/uapi/linux/termios.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/termios.h",
+      "size_bytes": 1579,
+      "sha256": "85239f1f9beb7e61ac44245de7f079218f7eb2777d7117c451d4632fafca48e5"
+    },
+    "bionic/libc/kernel/uapi/asm-arm/asm/termios.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-arm/asm/termios.h",
+      "size_bytes": 1008,
+      "sha256": "6c5809ab1032055dd4240ddaea38093f2ac6c14151dbaa55b413b45a65eaad22"
+    },
+    "bionic/libc/kernel/uapi/asm-generic/termios.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/termios.h",
+      "size_bytes": 2363,
+      "sha256": "ac89c0130c6c8a3edd09e7643394a2db51bfd997bb475629d18a2336c5880f53"
+    },
+    "bionic/libc/kernel/uapi/asm-arm/asm/termbits.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-arm/asm/termbits.h",
+      "size_bytes": 1009,
+      "sha256": "fe5b2d8679e7a574fd4758d9d8cf5c3e762873430c812bd1812f45d26e70dc54"
+    },
+    "bionic/libc/kernel/uapi/asm-generic/termbits.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/termbits.h",
+      "size_bytes": 7952,
+      "sha256": "95a9997a46d219019a371719f823ad286dc1a43d9d56dff90195df0df71cb72a"
+    },
+    "bionic/libc/kernel/uapi/asm-arm/asm/ioctls.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-arm/asm/ioctls.h",
+      "size_bytes": 1167,
+      "sha256": "bfc7d87e7c74fdc8338ee5fb7fef1a3dbae884317bc0ab37df392fb7697a8bd6"
+    },
+    "bionic/libc/kernel/uapi/asm-generic/ioctls.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/asm-generic/ioctls.h",
+      "size_bytes": 5054,
+      "sha256": "45ac4ab47a7fece282cfc128dda480ae2cde0efccec365c95cd04062925731d9"
+    },
+    "bionic/libc/include/sys/ioctl_compat.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/sys/ioctl_compat.h",
+      "size_bytes": 7061,
+      "sha256": "2e83554a8a18379deb758cfe57b7f0c16442611c73f9752c10ca7b3038746b53"
+    },
+    "bionic/libc/kernel/uapi/linux/tty.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/linux/tty.h",
+      "size_bytes": 2077,
+      "sha256": "57c62065c37c3c37cf39494edd60430767812660ad9cc6a6d3e52ad66de3929a"
+    },
+    "bionic/libc/kernel/uapi/sound/asound.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/kernel/uapi/sound/asound.h",
+      "size_bytes": 45655,
+      "sha256": "c8c9b0aa9341f325fa4a1e3e37ca814156ee7e2b277a725cceddda152d9716fa"
+    },
+    "external/tinyalsa/pcm.c": {
+      "path": "/workspace/build01-full-next/audio/tree/external/tinyalsa/pcm.c",
+      "size_bytes": 40249,
+      "sha256": "b054c3b7dca402830ae005dddb593d2461fb59d50879b4d27b060ca95565612e"
+    },
+    "hardware/libhardware/modules/power/power.c": {
+      "path": "/workspace/build01-graphics-next/graphics/libhardware/modules/power/power.c",
+      "size_bytes": 1711,
+      "sha256": "917020fd9f70ab4afc02753fa94cab60ec013c5f56744648e07e32c71d728c71"
+    },
+    "hardware/libhardware/include/hardware/power.h": {
+      "path": "/workspace/build01-graphics-next/graphics/libhardware/include/hardware/power.h",
+      "size_bytes": 12592,
+      "sha256": "fb2f2a875de623434c57dd43bb8ed1cb31d3035391abb4a50673456c9134f53d"
+    },
+    "external/compiler-rt/lib/builtins/mulodi4.c": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/compiler-rt/lib/builtins/mulodi4.c",
+      "size_bytes": 1423,
+      "sha256": "24533c80a19ff83c78eb18c24d10d8ec6f0d76ece6e418acebde217e3373b4ed"
+    },
+    "external/compiler-rt/lib/builtins/int_lib.h": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/compiler-rt/lib/builtins/int_lib.h",
+      "size_bytes": 4000,
+      "sha256": "7f3e5af0d36242666289d6614514fad5c90fbe18545ae69792b87a03533f39ee"
+    },
+    "prebuilts/clang/host/linux-x86/clang-2690385/bin/../lib64/clang/3.8.256229/include/float.h": {
+      "path": "/workspace/build01-product-next/native-rules/tree/prebuilts/clang/host/linux-x86/clang-2690385/lib64/clang/3.8/include/float.h",
+      "size_bytes": 3881,
+      "sha256": "0595430e91337c9f5560e33fa5b0b5733a4167bc2357d7fde9813e51de14daed"
+    },
+    "external/compiler-rt/lib/builtins/int_types.h": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/compiler-rt/lib/builtins/int_types.h",
+      "size_bytes": 3162,
+      "sha256": "b3b24bb23773a59f717775454536d07e3c9d8d0af75a1bb972674f4a63daa4cd"
+    },
+    "external/compiler-rt/lib/builtins/int_endianness.h": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/compiler-rt/lib/builtins/int_endianness.h",
+      "size_bytes": 2915,
+      "sha256": "3214cb49b829d43fb71cec794d995f66cf57d45ff034f08df565aff325094c77"
+    },
+    "external/compiler-rt/lib/builtins/int_util.h": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/compiler-rt/lib/builtins/int_util.h",
+      "size_bytes": 1346,
+      "sha256": "6afb257f6b3edb7a2d25b1affa4d4dacd67258017f6fdd726b96d148c6405081"
+    },
+    "frameworks/av/media/libmedia/AudioParameter.cpp": {
+      "path": "/workspace/build01-full-next/audio/tree/frameworks/av/media/libmedia/AudioParameter.cpp",
+      "size_bytes": 4959,
+      "sha256": "ce61fba96e0f0eb6fe755d3b27af99ba54f27663e9d37ea864f32755b4e1fa3a"
+    },
+    "external/speex/libspeex/fftwrap.c": {
+      "path": "/workspace/build01-full-next/audio/tree/external/speex/libspeex/fftwrap.c",
+      "size_bytes": 9468,
+      "sha256": "ade5a778967a1d65336840664ecaa0dde5c4c9bc089037c87f4b70ecb698e1b1"
+    },
+    "external/speex/libspeex/smallft.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/speex/libspeex/smallft.h",
+      "size_bytes": 1490,
+      "sha256": "715352e7efe55cb671f37fa341610ce7df893016625506e22175d9f1b1b817e9"
+    },
+    "external/speex/libspeex/filterbank.c": {
+      "path": "/workspace/build01-full-next/audio/tree/external/speex/libspeex/filterbank.c",
+      "size_bytes": 6838,
+      "sha256": "b69d62fa1c238c96adc0f03cdc1f28624a9ecb81a15517f00045361982dc5f85"
+    },
+    "external/speex/libspeex/filterbank.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/speex/libspeex/filterbank.h",
+      "size_bytes": 2268,
+      "sha256": "8b86cc1f52c52abe5685c751e30c91b2e24a5a60d30893027445886c30d0d249"
+    },
+    "external/speex/libspeex/math_approx.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/speex/libspeex/math_approx.h",
+      "size_bytes": 7608,
+      "sha256": "b63e5a72a548cefb603044b5597a57483978739ebe2b9098a86221d4d6b12363"
+    },
+    "external/speex/libspeex/mdf.c": {
+      "path": "/workspace/build01-full-next/audio/tree/external/speex/libspeex/mdf.c",
+      "size_bytes": 44090,
+      "sha256": "5922ed3a7ea23f1a39376d67ae2ceef3de16737ebb8d03650e3712872922ddc4"
+    },
+    "external/speex/include/speex/speex_echo.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/speex/include/speex/speex_echo.h",
+      "size_bytes": 6453,
+      "sha256": "0e5e8b4f56370eb96983ce1f0fbae06e62b9968a53820a89b75a2af28af11130"
+    },
+    "external/speex/libspeex/fftwrap.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/speex/libspeex/fftwrap.h",
+      "size_bytes": 2261,
+      "sha256": "258bf802b5ef8ecb3914a3ae2d9b27c5b4567a4d7c2b6dc73b9302042b9356a9"
+    },
+    "external/speex/libspeex/pseudofloat.h": {
+      "path": "/workspace/build01-full-next/audio/tree/external/speex/libspeex/pseudofloat.h",
+      "size_bytes": 8581,
+      "sha256": "c0f041a9b90bc9bbf2c77252f55238bf95aa8b0c6d2bc86ec34f3520cf52da20"
+    },
+    "external/speex/libspeex/preprocess.c": {
+      "path": "/workspace/build01-full-next/audio/tree/external/speex/libspeex/preprocess.c",
+      "size_bytes": 41790,
+      "sha256": "44b91ddd1371d690e4412e83c5943eedbfd7c3025787b99e96d311c02fe0ac4b"
+    },
+    "external/speex/libspeex/smallft.c": {
+      "path": "/workspace/build01-full-next/audio/tree/external/speex/libspeex/smallft.c",
+      "size_bytes": 22276,
+      "sha256": "0193411918875904a9626bfe53b22a29c59a5ddeb04bb01487154c44f9953f1e"
+    },
+    "external/libunwind_llvm/src/Unwind-EHABI.cpp": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm/src/Unwind-EHABI.cpp",
+      "size_bytes": 37454,
+      "sha256": "21165f1713d0408268f0e8b88ad6cb96431e423ea9d4b673e542258f6858fe60"
+    },
+    "external/libunwind_llvm/src/Unwind-EHABI.h": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm/src/Unwind-EHABI.h",
+      "size_bytes": 1399,
+      "sha256": "cac948f3e4817334305ed4501aadefea2cfdc4a76bd425fdaccf77b46bfdfd31"
+    },
+    "external/libunwind_llvm/include/__libunwind_config.h": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm/include/__libunwind_config.h",
+      "size_bytes": 631,
+      "sha256": "3c3135d3013cf0041df608f6b66ad7384384cd7aa5c0fd6e0b0a58367885c7bf"
+    },
+    "external/libunwind_llvm/include/unwind.h": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm/include/unwind.h",
+      "size_bytes": 12892,
+      "sha256": "b6e44f48a9e2775f1c7193f3478039b72d0d67275411238687139175f30e342e"
+    },
+    "external/libunwind_llvm/src/config.h": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm/src/config.h",
+      "size_bytes": 4754,
+      "sha256": "5089ab6cf914975cb19b6013585868d2f85cdcb43c221008b0b07eb5bad6d45c"
+    },
+    "external/libunwind_llvm/include/libunwind.h": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm/include/libunwind.h",
+      "size_bytes": 13007,
+      "sha256": "fcca86804603a03b7720e4d8534a5a85bb69c9ce382cb0ee3157a245d94442de"
+    },
+    "external/libunwind_llvm/src/libunwind_ext.h": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm/src/libunwind_ext.h",
+      "size_bytes": 1412,
+      "sha256": "8ecaaedfad58bc2495a35635fc4cd39e79e2443ce93c28da6854296d26ac4fc9"
+    },
+    "external/libunwind_llvm/src/Unwind-sjlj.c": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm/src/Unwind-sjlj.c",
+      "size_bytes": 18843,
+      "sha256": "8efc814fb59273e44d6132fa38d676c4f2b017a9777bfce5c60b1b1bb63edfb6"
+    },
+    "external/libunwind_llvm/src/unwind_ext.h": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm/src/unwind_ext.h",
+      "size_bytes": 822,
+      "sha256": "35bc8c8d0487ab9ed9d3ef932a3f2a9ecbf3a57da020463d0926e17dbda4f0c9"
+    },
+    "external/libunwind_llvm/src/UnwindLevel1-gcc-ext.c": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm/src/UnwindLevel1-gcc-ext.c",
+      "size_bytes": 11332,
+      "sha256": "9875db75bf70b1c0951cb203ea659bcfe6a7adbc73ad6c6c1f39b3bc8e72368e"
+    },
+    "external/libunwind_llvm/src/UnwindLevel1.c": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm/src/UnwindLevel1.c",
+      "size_bytes": 20633,
+      "sha256": "a41e945d5cd91f04a1b705919f4d7f0fdb94d8f40363b4a53bafd4ccc350c772"
+    },
+    "external/libunwind_llvm/src/UnwindRegistersRestore.S": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm/src/UnwindRegistersRestore.S",
+      "size_bytes": 11715,
+      "sha256": "e8241d77b579264b540939a3152a6487a276456f4fee70b6202d1e807f233b15"
+    },
+    "external/libunwind_llvm/src/assembly.h": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm/src/assembly.h",
+      "size_bytes": 2322,
+      "sha256": "18c0d4e190ff81b7154508ed81371a44282d75de26c7e5f451c299c4159595c6"
+    },
+    "external/libunwind_llvm/src/UnwindRegistersSave.S": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm/src/UnwindRegistersSave.S",
+      "size_bytes": 11453,
+      "sha256": "4ba563b259102c47a50ed522134d00d33e14f6ff6e855c45f7515d24fd0a2e26"
+    },
+    "external/libunwind_llvm/src/libunwind.cpp": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm/src/libunwind.cpp",
+      "size_bytes": 12823,
+      "sha256": "3ac78afcc8bbefe8eaf532737099fd6a3ba40165db9719de6cce7c903ed66ad8"
+    },
+    "external/libcxx/include/vector": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/vector",
+      "size_bytes": 109105,
+      "sha256": "a5abf896d0d061dbe42a95e0b846136f3dc59d6426d8dbfb335506f757603a07"
+    },
+    "external/libcxx/include/__split_buffer": {
+      "path": "/workspace/build01-graphics-next/graphics/hal-build/libcxx-include/__split_buffer",
+      "size_bytes": 22214,
+      "sha256": "1a28643d2f87e5ea2d6f94ef943a67eda935aee19938ef6d8771e9bf96031cbe"
+    },
+    "external/libunwind_llvm/src/UnwindCursor.hpp": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm/src/UnwindCursor.hpp",
+      "size_bytes": 47041,
+      "sha256": "1eb14819c4bb38c27c3025c5a2200c23c66fca2e9c001c013b88dbbfb5eaf091"
+    },
+    "external/libunwind_llvm/src/AddressSpace.hpp": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm/src/AddressSpace.hpp",
+      "size_bytes": 18005,
+      "sha256": "0e40fd8d12268d2a94a65d07328e1c3d2c447380570eedc25f43d6aa316aa8e2"
+    },
+    "bionic/libc/include/dlfcn.h": {
+      "path": "/workspace/build01-platform-next/research/rockchip-bionic/libc/include/dlfcn.h",
+      "size_bytes": 2763,
+      "sha256": "0c537de84f3e7d50fb7540ed428f86e9d8fc7a8e20fb9afdad0e4effdd98b61f"
+    },
+    "external/libunwind_llvm/src/dwarf2.h": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm/src/dwarf2.h",
+      "size_bytes": 10709,
+      "sha256": "e916e8c98923ed644557a4b612a6e7d4c2051b5019d20cba7cad728220957304"
+    },
+    "external/libunwind_llvm/src/Registers.hpp": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm/src/Registers.hpp",
+      "size_bytes": 44871,
+      "sha256": "8fe756f530b6793b5c84880ba974fb5851c4255fa7f91b8fd5bb156b64a934af"
+    },
+    "external/libunwind_llvm/src/CompactUnwinder.hpp": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm/src/CompactUnwinder.hpp",
+      "size_bytes": 25795,
+      "sha256": "8d54fba74323e967c83629a730e527b5ba4a874264d15ebb49bbb86c185df886"
+    },
+    "external/libunwind_llvm/include/mach-o/compact_unwind_encoding.h": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm/include/mach-o/compact_unwind_encoding.h",
+      "size_bytes": 19080,
+      "sha256": "ad271b1841e39632e413a7554f49a92c2f8b31d8ac0d4140bfddfcdf694d527d"
+    },
+    "external/libunwind_llvm/src/DwarfInstructions.hpp": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm/src/DwarfInstructions.hpp",
+      "size_bytes": 21072,
+      "sha256": "bc7c44799b2781a900803951fb63c83e48f1052416cf3510ae5ba2df908539d9"
+    },
+    "external/libunwind_llvm/src/DwarfParser.hpp": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm/src/DwarfParser.hpp",
+      "size_bytes": 26622,
+      "sha256": "6e3ebcd599cbf3b81b93660530fa9f775ac75efbd651feaefa07aafd8c9d7d0a"
+    },
+    "external/libunwind_llvm/src/EHHeaderParser.hpp": {
+      "path": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm/src/EHHeaderParser.hpp",
+      "size_bytes": 5180,
+      "sha256": "23c088d74c89a133f2e5b37ad22c8937aad41d9439016e4316de827ef9b7f43e"
+    }
+  }
+}

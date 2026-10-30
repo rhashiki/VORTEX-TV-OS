@@ -1,0 +1,20 @@
+missing-file 2  
+missing-HMI-new-libm 3  
+missing-HMI-new-libdl 2  f78a000,4096,PROT_READ) = 0
+9523 mprotect(0x3f78d000,4096,PROT_READ) = 0
+9523 futex(0x3f770064,FUTEX_PRIVATE_FLAG|FUTEX_WAKE,2147483647,NULL,NULL,0) = 0
+9523 write(2,0x3fffec9c,159)DLOPEN_FAILED: dlopen failed: cannot locate symbol "__cxa_finalize" referenced by "/workspace/build01-full-next/bionic-smoke/reference/system/lib/libdl.so"...
+ = 159
+9523 mprotect(0x3f57f000,4096,PROT_READ|PROT_WRITE) = 0
+9523 mprotect(0x3f57f000,4096,PROT_READ) = 0
+9523 munmap(0x3f57f000,4096) = 0
+9523 exit_group(2)
+
+gralloc 0 HAL_METADATA_OK id=gralloc module_api=1 hal_api=0 name=Graphics Memory Allocator Module mode=device open_present=1 
+hwcomposer 0 HAL_METADATA_OK id=hwcomposer module_api=1 hal_api=2 name=Hardware Composer Module mode=device open_present=1 
+audio-primary 0 HAL_METADATA_OK id=audio module_api=1 hal_api=256 name=Manta audio HW HAL mode=device open_present=1 
+audio-usb 0 HAL_METADATA_OK id=audio module_api=1 hal_api=256 name=USB audio HW HAL mode=device open_present=1 
+audio-submix 0 HAL_METADATA_OK id=audio module_api=1 hal_api=256 name=Wifi Display audio HAL mode=device open_present=1 
+power 0 HAL_METADATA_OK id=power module_api=2 hal_api=256 name=Default Power HAL mode=module open_present=0 
+power-not-device 4  
+wrong-id 4  

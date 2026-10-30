@@ -1,0 +1,84 @@
+{
+  "scope": "Independent source and test review only; no recovery/device executed",
+  "status": "changes_requested_before_final_freeze",
+  "findings": [
+    {
+      "id": "callback_signature",
+      "severity": "material",
+      "source": "RkUI::CheckKey(int) vs RecoveryUI::CheckKey(int,bool)",
+      "details": "One-argument method hides the real two-argument callback; current host fixture defines the old one-argument shape and calls the derived object directly. A passing direct-call test does not demonstrate Android callback dispatch. Parent notified and fixing."
+    },
+    {
+      "id": "pointer_storage_label",
+      "severity": "wording",
+      "details": "Device(RecoveryUI*) stores pointer; empty real destructor does not establish ownership/lifetime cleanup. Rename test label to storage rather than ownership."
+    }
+  ],
+  "verified_menu": {
+    "items": 5,
+    "mapping": [
+      "0 REBOOT",
+      "1 APPLY_ADB_SIDELOAD",
+      "2 APPLY_SDCARD",
+      "3 WIPE_DATA",
+      "4 WIPE_CACHE"
+    ],
+    "invalid_positions": "NO_ACTION",
+    "constructor": "Device(new RkUI) matches required current Device constructor"
+  },
+  "unsafe_upstream_paths": {
+    "sdboot_config": "sdboot.cpp151 and155\u2013160 accepts nonzero fw_update; SD configuration path at178",
+    "mode_selection": "sdboot.cpp344 defaults bUpdateIDBlock=true; only pFile==2 clears it at354",
+    "backend_calls": "sdboot.cpp370\u2013373 selects do_rk_firmware_upgrade or do_rk_partition_upgrade",
+    "factory_update_archives": [
+      "librkupdate.a",
+      "librkrsa.a",
+      "libext2_uuid.a",
+      "libcrc32.a"
+    ],
+    "warning": "These paths exist in source; this review did not execute them or prove exact backend behavior."
+  },
+  "integration_limit": "Generic aosp_arm module attempt does not show TARGET_RECOVERY_UI_LIB selection or a recovery executable/image link. Separately compiled UI archive is not an integrated recovery.",
+  "files": {
+    "0001-common-recovery-match-nougat-device-api.patch": {
+      "bytes": 1846,
+      "sha256": "5fe03d5035379afd7f4968e6019daa953008c615e421997483d1d5ab9a7dde12"
+    },
+    "tree/device/rockchip/common/recovery/recovery_ui.cpp": {
+      "bytes": 2864,
+      "sha256": "150f25256079eb581bb15c12fd28e1e1141f56eb52db1cd57e8d276fbc0c39a8"
+    },
+    "source/device.h": {
+      "bytes": 4534,
+      "sha256": "69ff15771df62d7900761659f74839035cbbf695712b1f324624935f44b731e1"
+    },
+    "source/ui.h": {
+      "bytes": 5942,
+      "sha256": "a6e2fc73deb8d915ab1bb725f35fb95939b204abb30bbe0351b673a179b0d445"
+    },
+    "source/ui.cpp": {
+      "bytes": 10112,
+      "sha256": "bbab1ea5c25e039ec3d248010424a9f0c61352cab5979f6894c288bb0eca9ff7"
+    },
+    "source/sdboot.cpp": {
+      "bytes": 13727,
+      "sha256": "f3ae1faec77dc0269ecb16a4fabb076e9253c60cb052bc63fb2b2131b4495a22"
+    },
+    "source/recovery.cpp": {
+      "bytes": 72162,
+      "sha256": "4c48673c5c33b570721f5bd445f9c82dee091fa3d75087e25306c0dccb4f6b61"
+    },
+    "source/Android.mk": {
+      "bytes": 5219,
+      "sha256": "8819b5a5ad9d345d564d8597bd3830d0a153493c1fee00050b5026f9a68a4f3a"
+    },
+    "ui-regression/run_regression.py": {
+      "bytes": 5968,
+      "sha256": "c3400e1d19990f41322a06154f1298b0b5a27a4293905a3043afa41ec67901f7"
+    },
+    "ui-regression/result.json": {
+      "bytes": 1799,
+      "sha256": "ba7d23e53aa1809c81730836a3f41b882a8e3c23a70f17c164e0e44c5d01a775"
+    }
+  }
+}

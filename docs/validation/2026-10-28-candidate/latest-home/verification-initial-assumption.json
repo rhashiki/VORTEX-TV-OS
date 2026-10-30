@@ -1,0 +1,6 @@
+{
+  "initial_checker_expected": "DEX035",
+  "observed_header_hex": "6465780a30333700",
+  "result": "checker assumption invalid for API25/Java8; genuine Jack output DEX037 is supported starting API24. Build exit0 unaffected.",
+  "correction": "Require genuine observed DEX037 for this API25 module; no APK bytes modified."
+}

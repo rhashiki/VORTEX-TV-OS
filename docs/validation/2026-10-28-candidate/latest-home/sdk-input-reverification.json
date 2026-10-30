@@ -1,0 +1,159 @@
+{
+  "project_revision": "23f7de5ba433fc82269ba63c203fe0a3eaf4a680",
+  "files": [
+    {
+      "path": "25/android.jar",
+      "bytes": 34617723,
+      "git_blob": "8a10a539e5ffa435ab8f10d14c86dc038b6df351",
+      "sha256": "005d3fb542371e22aa490973475dd896c253de8e65c61c838a26d8282c8178f0",
+      "unchanged_from_verified_r6_input": true
+    },
+    {
+      "path": "25/framework.aidl",
+      "bytes": 8284,
+      "git_blob": "279de3e6f34a4db42170dc5974194b4e7e38a310",
+      "sha256": "63e5b64a4016f8aa512c494499db6db631a74db208752813e814dc377e400c19",
+      "unchanged_from_verified_r6_input": true
+    },
+    {
+      "path": "Android.mk",
+      "bytes": 913,
+      "git_blob": "ce45497bdb1e6d48280da73f0020d7cd262aabe7",
+      "sha256": "0944661b4ca00d22fa1f123a27533f2d2f3acee021657ca06a406de6768858e6",
+      "unchanged_from_verified_r6_input": true
+    },
+    {
+      "path": "tools/Android.mk",
+      "bytes": 9363,
+      "git_blob": "1de6980093d1e026783fd5985ed143472c126298",
+      "sha256": "7a2fd5d8d222992a4be416b2271923db0093847060f173437f65b2484420f750",
+      "unchanged_from_verified_r6_input": true
+    },
+    {
+      "path": "tools/dx",
+      "bytes": 2577,
+      "git_blob": "632af438ff5d3f7b04283a7c7b1056e84e634e92",
+      "sha256": "c92940e8cbf8155a172d98832b99990ead22d37a3cdf4b578e8c504bb7e870b2",
+      "unchanged_from_verified_r6_input": true
+    },
+    {
+      "path": "tools/jack",
+      "bytes": 4864,
+      "git_blob": "ae291f421ea9127252555dc034ef78273c76de40",
+      "sha256": "5c6e99f43ebd1e32e7d49bf14416d847373a9c71b97432bd94cee0bd522a0f9a",
+      "unchanged_from_verified_r6_input": true
+    },
+    {
+      "path": "tools/jack-admin",
+      "bytes": 18068,
+      "git_blob": "ee193fcf5a494b697a083b5df2e246f401de3a8a",
+      "sha256": "c869e82eaeb75107ce285cbf00c102de6a88ef74b57ae1fd1b467649e45b31d1",
+      "unchanged_from_verified_r6_input": true
+    },
+    {
+      "path": "tools/jack-launcher.jar",
+      "bytes": 4378061,
+      "git_blob": "3b57bc33928280fa04fe88d51e4baace489d144b",
+      "sha256": "c6f25d10e37bd000b2c97f48921b4b53b4550ca78d2e00a07017a5e16adee110",
+      "unchanged_from_verified_r6_input": true
+    },
+    {
+      "path": "tools/jack-server-4.8.ALPHA.jar",
+      "bytes": 4758810,
+      "git_blob": "481c501ce7f6dbd3cbb5b7f5a40f9f685c5084d8",
+      "sha256": "11f667f3cf924b172d6b910d379863371646f55fbca3ed0f3b9e92a2b60ac81a",
+      "unchanged_from_verified_r6_input": true
+    },
+    {
+      "path": "tools/jack_for_module.mk",
+      "bytes": 804,
+      "git_blob": "6623a48dfcd39034235427842c8c18ba9edbcd22",
+      "sha256": "f9011f2435267d521b800f6d2ffbe720e2e59694191ed600a97e38b22d8b6b99",
+      "unchanged_from_verified_r6_input": true
+    },
+    {
+      "path": "tools/jack_server_setup.mk",
+      "bytes": 2476,
+      "git_blob": "fd6a13411221c06d374caa4ecf0026e19c38655a",
+      "sha256": "78718e4630ab31900f85cadf222e15037635130a073154a26bac8f910d4bfdbd",
+      "unchanged_from_verified_r6_input": true
+    },
+    {
+      "path": "tools/jack_versions.mk",
+      "bytes": 1278,
+      "git_blob": "406b9d4648bc0c8d3b55047c87204522a1b8a052",
+      "sha256": "804342f814ef402da1966a053a3101fc705d01de564bd710a77ad9d011758c7b",
+      "unchanged_from_verified_r6_input": true
+    },
+    {
+      "path": "tools/jacks/jack-3.36.CANDIDATE.jar",
+      "bytes": 10880406,
+      "git_blob": "e66b9053b0d881d9cf0eec8b8dfa5684b0f6fc81",
+      "sha256": "adbd4a0a10c6f516525a8fecfaf61acffed1571af9e6dfca34115337bfef2bc7",
+      "unchanged_from_verified_r6_input": true
+    },
+    {
+      "path": "tools/lib/dx.jar",
+      "bytes": 958047,
+      "git_blob": "8e7333c71528a7c90be85da10a0048f6d488322a",
+      "sha256": "d1807efb70b8214ec2b61feff6bf7e9b86b7d45068b2e56493b8e44ddf6346e4",
+      "unchanged_from_verified_r6_input": true
+    },
+    {
+      "path": "tools/lib/signapk.jar",
+      "bytes": 2015067,
+      "git_blob": "121864ff1eb42565757f959dc70963c748f8deb9",
+      "sha256": "0fb56f32a27a49ccfa4c7e5b67a80dd7504ad9ef25ac32c76edbac0e30a9906d",
+      "unchanged_from_verified_r6_input": true
+    },
+    {
+      "path": "tools/linux/bin/aapt",
+      "bytes": 1258738,
+      "git_blob": "05140cce0d0cbeab06f4aea43c79cddb251bbe60",
+      "sha256": "700839e44fbcab338f7cb7dab61506c37c83b534e1027b158a1027e1e8030af1",
+      "unchanged_from_verified_r6_input": true
+    },
+    {
+      "path": "tools/linux/bin/acp",
+      "bytes": 29069,
+      "git_blob": "8dbb8722a6da669c8cff8cd18f11284a4dc39058",
+      "sha256": "31cd0650f567883fab9a4a516b2a39373304288b3304b510dd2ab69812802832",
+      "unchanged_from_verified_r6_input": true
+    },
+    {
+      "path": "tools/linux/bin/aidl",
+      "bytes": 557436,
+      "git_blob": "1e3a21d635046c8be590204768b064fe0be8ed57",
+      "sha256": "fe16f99be670cc1a4ea44e3a2c237f79377debf954bb81e81ebf39fc30cad606",
+      "unchanged_from_verified_r6_input": true
+    },
+    {
+      "path": "tools/linux/bin/zipalign",
+      "bytes": 92962,
+      "git_blob": "cfe32b0a921537302ccec5a2fc0e9e2000e10655",
+      "sha256": "6b8de2c3ca3f4f3f36bc0f8212e191d6a42a03ac38688b96dca257d6dfb510fc",
+      "unchanged_from_verified_r6_input": true
+    },
+    {
+      "path": "tools/linux/lib/libc++.so",
+      "bytes": 1017636,
+      "git_blob": "ac3c2c861324a145e838899eb6df73b06828ae7b",
+      "sha256": "880de944a13713387846acec350fcf03384e2e05b2324ec113c100737cdce585",
+      "unchanged_from_verified_r6_input": true
+    },
+    {
+      "path": "tools/linux/lib64/libc++.so",
+      "bytes": 1047016,
+      "git_blob": "9f8ec8656250f87293605352c90a771d11b29f28",
+      "sha256": "b732ea24d98ec1e1c4b05512e813210079ac02784186a7359105b510e4c62f89",
+      "unchanged_from_verified_r6_input": true
+    },
+    {
+      "path": "tools/linux/lib64/libconscrypt_openjdk_jni.so",
+      "bytes": 8401448,
+      "git_blob": "9aafe006756c20963c4b2ad1d8f2431bf61d32a3",
+      "sha256": "d31c1cc0cbfe3bc1c8caba555cc08aed7cdf58ee72781da52ccac97986a6b828",
+      "unchanged_from_verified_r6_input": true
+    }
+  ]
+}

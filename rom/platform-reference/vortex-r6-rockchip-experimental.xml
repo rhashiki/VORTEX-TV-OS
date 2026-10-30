@@ -15,6 +15,7 @@
   <remove-project name="platform/hardware/libhardware" />
   <remove-project name="platform/hardware/libhardware_legacy" />
   <remove-project name="platform/hardware/broadcom/wlan" />
+  <remove-project name="platform/external/tinyalsa" />
   <project name="rockchip-android/bionic" path="bionic" revision="8b2e5b977118ebb8447cdf429c4a6be534c4fd1b" remote="vortex-research-github" groups="pdk" />
   <project name="rockchip-android/build" path="build" revision="d2721c65c9282b31df7b79f85289ee6c4e636716" remote="vortex-research-github" groups="pdk">
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -47,5 +48,6 @@
   <project name="D042888-2/android_device_rockchip_common" path="device/rockchip/common" revision="3b1aa90ef43f9d34094739a211ad44bf9a2c0b74" remote="vortex-research-github" />
   <project name="D042888-2/android_vendor_rockchip_rk322x" path="vendor/rockchip/rk322x" revision="50c7170ecb4bd907059db37f09f4767b301f2d15" remote="vortex-research-github" />
   <project name="rockchip-linux/kernel" path="kernel" revision="6c04d006ae881944d32c19e68b992d0bd5ab4fde" remote="vortex-research-github" />
-  <project name="rhashiki/VORTEX-TV-OS" path="vendor/vortex/home" revision="45d626a4bc508b49b8863bd67e2ce9f2f17554d5" remote="vortex-research-github" />
+  <project name="rockchip-android/external-tinyalsa" path="external/tinyalsa" revision="472b5e3fc1660660e0e9a3fa4cd5f752643920f2" remote="vortex-research-github" />
+  <project name="rhashiki/VORTEX-TV-OS" path="vendor/vortex/home" revision="1db0c914fda74419be097b36c1e753296bcc2bbc" remote="vortex-research-github" />
 </manifest>

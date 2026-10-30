@@ -1,0 +1,228 @@
+including device/rockchip/rk322x/vendorsetup.sh
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=vortex_rk322x_sd_box
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/platform/out
+============================================
+LUNCH_STATUS=0
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=vortex_rk322x_sd_box
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/platform/out
+============================================
+including ./bionic/Android.mk ...
+including ./build/libs/host/Android.mk ...
+including ./build/target/board/Android.mk ...
+including ./build/target/product/security/Android.mk ...
+including ./build/tools/Android.mk ...
+including ./device/rockchip/common/Android.mk ...
+including ./external/boringssl/Android.mk ...
+including ./external/bouncycastle/Android.mk ...
+including ./external/compiler-rt/Android.mk ...
+including ./external/conscrypt/Android.mk ...
+including ./external/icu/Android.mk ...
+including ./external/jarjar/Android.mk ...
+including ./external/junit/Android.mk ...
+including ./external/libcxx/Android.mk ...
+including ./external/libcxxabi/Android.mk ...
+including ./external/libphonenumber/Android.mk ...
+including ./external/libunwind_llvm/Android.mk ...
+including ./external/llvm/Android.mk ...
+including ./external/okhttp/Android.mk ...
+including ./external/safe-iop/Android.mk ...
+including ./external/zlib/Android.mk ...
+including ./frameworks/base/Android.mk ...
+find: ‘../opt/telephony/src/java/android/provider’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony/gsm’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/rtp’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/sip’: No such file or directory
+find: ‘../../frameworks/data-binding/baseLibrary/src/main’: No such file or directory
+find: ‘../../frameworks/data-binding/extensions/library/src/main’: No such file or directory
+find: ‘../../frameworks/data-binding/extensions/library/src/doc’: No such file or directory
+find: ‘../../frameworks/support/annotations’: No such file or directory
+find: ‘../../frameworks/support/compat’: No such file or directory
+find: ‘../../frameworks/support/media-compat’: No such file or directory
+find: ‘../../frameworks/support/fragment’: No such file or directory
+find: ‘../../frameworks/support/core-ui’: No such file or directory
+find: ‘../../frameworks/support/core-utils’: No such file or directory
+find: ‘../../frameworks/support/v7/gridlayout’: No such file or directory
+find: ‘../../frameworks/support/v7/cardview’: No such file or directory
+find: ‘../../frameworks/support/v7/mediarouter’: No such file or directory
+find: ‘../../frameworks/support/v7/palette’: No such file or directory
+find: ‘../../frameworks/support/v8/renderscript’: No such file or directory
+find: ‘../../frameworks/support/v13’: No such file or directory
+find: ‘../../frameworks/support/v17/leanback’: No such file or directory
+find: ‘../../frameworks/support/design’: No such file or directory
+find: ‘../../frameworks/support/percent’: No such file or directory
+find: ‘../../frameworks/support/recommendation’: No such file or directory
+find: ‘../../frameworks/support/transition’: No such file or directory
+find: ‘../../frameworks/support/v7/preference’: No such file or directory
+find: ‘../../frameworks/support/v14/preference’: No such file or directory
+find: ‘../../frameworks/support/v17/preference-leanback’: No such file or directory
+find: ‘../../frameworks/support/documents-archive’: No such file or directory
+find: ‘../../frameworks/support/customtabs’: No such file or directory
+find: ‘../../frameworks/multidex/library/src’: No such file or directory
+find: ‘../../frameworks/multidex/instrumentation/src’: No such file or directory
+find: ‘../../frameworks/support/graphics/drawable/animated’: No such file or directory
+find: ‘../../frameworks/support/graphics/drawable/static’: No such file or directory
+find: ‘../../frameworks/support/v7/appcompat/src’: No such file or directory
+find: ‘../../frameworks/support/v7/recyclerview/src’: No such file or directory
+find: ‘../opt/telephony/src/java/android/provider’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony/gsm’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/rtp’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/sip’: No such file or directory
+find: ‘../opt/telephony/src/java/android/provider’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony/gsm’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/rtp’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/sip’: No such file or directory
+find: ‘../../frameworks/data-binding/baseLibrary/src/main’: No such file or directory
+find: ‘../../frameworks/data-binding/extensions/library/src/main’: No such file or directory
+find: ‘../../frameworks/data-binding/extensions/library/src/doc’: No such file or directory
+find: ‘../../frameworks/support/annotations’: No such file or directory
+find: ‘../../frameworks/support/compat’: No such file or directory
+find: ‘../../frameworks/support/media-compat’: No such file or directory
+find: ‘../../frameworks/support/fragment’: No such file or directory
+find: ‘../../frameworks/support/core-ui’: No such file or directory
+find: ‘../../frameworks/support/core-utils’: No such file or directory
+find: ‘../../frameworks/support/v7/gridlayout’: No such file or directory
+find: ‘../../frameworks/support/v7/cardview’: No such file or directory
+find: ‘../../frameworks/support/v7/mediarouter’: No such file or directory
+find: ‘../../frameworks/support/v7/palette’: No such file or directory
+find: ‘../../frameworks/support/v8/renderscript’: No such file or directory
+find: ‘../../frameworks/support/v13’: No such file or directory
+find: ‘../../frameworks/support/v17/leanback’: No such file or directory
+find: ‘../../frameworks/support/design’: No such file or directory
+find: ‘../../frameworks/support/percent’: No such file or directory
+find: ‘../../frameworks/support/recommendation’: No such file or directory
+find: ‘../../frameworks/support/transition’: No such file or directory
+find: ‘../../frameworks/support/v7/preference’: No such file or directory
+find: ‘../../frameworks/support/v14/preference’: No such file or directory
+find: ‘../../frameworks/support/v17/preference-leanback’: No such file or directory
+find: ‘../../frameworks/support/documents-archive’: No such file or directory
+find: ‘../../frameworks/support/customtabs’: No such file or directory
+find: ‘../../frameworks/multidex/library/src’: No such file or directory
+find: ‘../../frameworks/multidex/instrumentation/src’: No such file or directory
+find: ‘../../frameworks/support/graphics/drawable/animated’: No such file or directory
+find: ‘../../frameworks/support/graphics/drawable/static’: No such file or directory
+find: ‘../../frameworks/support/v7/appcompat/src’: No such file or directory
+find: ‘../../frameworks/support/v7/recyclerview/src’: No such file or directory
+find: ‘../opt/telephony/src/java/android/provider’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony/gsm’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/rtp’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/sip’: No such file or directory
+find: ‘../../external/nist-sip/java’: No such file or directory
+find: ‘../../external/tagsoup/src’: No such file or directory
+build/core/package_internal.mk:143: Empty argument supplied to find-subdir-assets
+including ./frameworks/native/cmds/atrace/Android.mk ...
+including ./frameworks/native/cmds/bugreport/Android.mk ...
+including ./frameworks/native/cmds/bugreportz/Android.mk ...
+including ./frameworks/native/cmds/cmd/Android.mk ...
+including ./frameworks/native/cmds/dumpstate/Android.mk ...
+including ./frameworks/native/cmds/dumpsys/Android.mk ...
+including ./frameworks/native/cmds/flatland/Android.mk ...
+including ./frameworks/native/cmds/installd/Android.mk ...
+including ./frameworks/native/cmds/ip-up-vpn/Android.mk ...
+including ./frameworks/native/cmds/rawbu/Android.mk ...
+including ./frameworks/native/cmds/service/Android.mk ...
+including ./frameworks/native/cmds/servicemanager/Android.mk ...
+including ./frameworks/native/libs/binder/Android.mk ...
+including ./frameworks/native/libs/diskusage/Android.mk ...
+including ./frameworks/native/libs/gui/Android.mk ...
+including ./frameworks/native/libs/input/Android.mk ...
+including ./frameworks/native/libs/ui/Android.mk ...
+including ./frameworks/native/opengl/libagl/Android.mk ...
+including ./frameworks/native/opengl/libs/Android.mk ...
+including ./frameworks/native/opengl/tests/Android.mk ...
+including ./frameworks/native/services/batteryservice/Android.mk ...
+including ./frameworks/native/services/inputflinger/Android.mk ...
+including ./frameworks/native/services/powermanager/Android.mk ...
+including ./frameworks/native/services/sensorservice/Android.mk ...
+including ./frameworks/native/services/surfaceflinger/Android.mk ...
+including ./frameworks/native/vulkan/Android.mk ...
+including ./hardware/libhardware/Android.mk ...
+including ./hardware/rockchip/hwcomposer/Android.mk ...
+Generated version.h
+including ./hardware/rockchip/libgralloc/Android.mk ...
+Generated version.h
+including ./hardware/rockchip/librkvpu/Android.mk ...
+including ./libcore/Android.mk ...
+including ./prebuilts/misc/common/asm/Android.mk ...
+including ./prebuilts/sdk/Android.mk ...
+including ./prebuilts/tools/Android.mk ...
+including ./system/core/Android.mk ...
+including ./system/tools/aidl/Android.mk ...
+including ./vendor/rockchip/rk322x/Android.mk ...
+including ./vendor/vortex/home/Android.mk ...
+Install: /workspace/build01-full-next/platform/out/host/linux-x86/bin/validatekeymaps
+/workspace/build01-full-next/platform/out/host/linux-x86/bin/acp -fp /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/validatekeymaps_intermediates/validatekeymaps /workspace/build01-full-next/platform/out/host/linux-x86/bin/validatekeymaps
+Copying: /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes.jar
+/workspace/build01-full-next/platform/out/host/linux-x86/bin/acp -fp /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes-jarjar.jar /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes.jar
+Install: /workspace/build01-full-next/platform/out/host/linux-x86/bin/ijar
+/workspace/build01-full-next/platform/out/host/linux-x86/bin/acp -fp /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/ijar_intermediates/ijar /workspace/build01-full-next/platform/out/host/linux-x86/bin/ijar
+Install: /workspace/build01-full-next/platform/out/host/linux-x86/bin/conscrypt_generate_constants
+host Java: jarjar (/workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates/classes)
+/workspace/build01-full-next/platform/out/host/linux-x86/bin/acp -fp /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/conscrypt_generate_constants_intermediates/conscrypt_generate_constants /workspace/build01-full-next/platform/out/host/linux-x86/bin/conscrypt_generate_constants
+rm -f /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates/classes-full-debug.jar
+rm -rf /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates/classes
+Yacc: aidl <= system/tools/aidl/aidl_language_y.yy
+mkdir -p /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates/
+prebuilts/misc/linux-x86/bison/bison -d  --defines=/workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libaidl-common_intermediates/aidl_language_y.h -o /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libaidl-common_intermediates/aidl_language_y.cpp system/tools/aidl/aidl_language_y.yy
+mkdir -p /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates/classes
+/bin/bash: line 1: prebuilts/misc/linux-x86/bison/bison: No such file or directory
+make: *** [build/core/binary.mk:847: /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libaidl-common_intermediates/aidl_language_y.cpp] Error 127
+make: *** Waiting for unfinished jobs....
+for f in  /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/asm-5.0_intermediates/javalib.jar  /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar-asm-commons_intermediates/javalib.jar; do if [ ! -f $f ]; then echo Missing file $f; exit 1; fi; unzip -qo $f -d /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates/classes; done
+rm -rf /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates/classes/META-INF
+if [ -d "/workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates/src" ]; then find /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates/src -name '*.java' -and -not -name '.*' >> /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates/classes/java-source-list; fi
+tr ' ' '\n' < /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates/classes/java-source-list | build/tools/normalize_path.py | sort -u > /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates/classes/java-source-list-uniq
+if [ -s /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates/classes/java-source-list-uniq ] ; then javac -J-Xmx1024M -Xmaxerrs 9999999 -encoding UTF-8   -classpath /workspace/build01-full-next/platform/out/host/linux-x86/framework/jarjar-apache-ant.jar:/workspace/build01-full-next/platform/out/host/linux-x86/framework/jarjar-maven-plugin-api.jar:/workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/asm-5.0_intermediates/javalib.jar:/workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar-asm-commons_intermediates/javalib.jar  -extdirs "" -d /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates/classes -g -source 1.8 -target 1.8 \@/workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates/classes/java-source-list-uniq || ( rm -rf /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates/classes ; exit 41 ) fi
+rm -f /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates/classes/java-source-list
+rm -f /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates/classes/java-source-list-uniq
+sed -e "s/%BUILD_NUMBER%/$(cat /workspace/build01-full-next/platform/out/build_number.txt)/" external/jarjar/manifest.txt > /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates//manifest.mf && jar -cfm /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates/classes-full-debug.jar /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates//manifest.mf -C /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates/classes .
+jar uf /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates/classes-full-debug.jar @/workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates/classes-full-debug.jar.jar-arg-list
+
+#### make failed to build some targets (20 seconds) ####
+

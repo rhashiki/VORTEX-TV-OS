@@ -1,0 +1,17 @@
+{
+  "scope": "follow-up diagnostic only, baseline reference libdl file explicitly loaded using the same mixed runtime",
+  "command": [
+    "/workspace/build01-hal-next/loader/bin/qemu-arm-static",
+    "-strace",
+    "-L",
+    "/workspace/build01-full-next/bionic-smoke/reference",
+    "-E",
+    "LD_LIBRARY_PATH=/system/lib",
+    "/workspace/build01-full-next/audio/loader/hal_metadata_probe",
+    "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libdl.so",
+    "audio",
+    "device"
+  ],
+  "exit_code": 2,
+  "failure_tail": "PROT_WRITE,MAP_PRIVATE|MAP_FIXED,3,0x2) = 0x3f574000\n12054 munmap(0x3f571000,20480) = 0\n12054 close(3) = 0\n12054 munmap(0x3f576000,2249) = 0\n12054 munmap(0x3f577000,7832) = 0\n12054 munmap(0x3f579000,1880) = 0\n12054 munmap(0x3f57a000,392) = 0\n12054 munmap(0x3f57b000,4096) = 0\n12054 mprotect(0x3f78a000,4096,PROT_READ) = 0\n12054 mprotect(0x3f78d000,4096,PROT_READ) = 0\n12054 futex(0x3f770064,FUTEX_PRIVATE_FLAG|FUTEX_WAKE,2147483647,NULL,NULL,0) = 0\n12054 write(2,0x3fffec7c,158)DLOPEN_FAILED: dlopen failed: cannot locate symbol \"__cxa_finalize\" referenced by \"/workspace/build01-hal-next/gralloc-link/reference/system/lib/libdl.so\"...\n = 158\n12054 mprotect(0x3f57f000,4096,PROT_READ|PROT_WRITE) = 0\n12054 mprotect(0x3f57f000,4096,PROT_READ) = 0\n12054 munmap(0x3f57f000,4096) = 0\n12054 exit_group(2)\n"
+}

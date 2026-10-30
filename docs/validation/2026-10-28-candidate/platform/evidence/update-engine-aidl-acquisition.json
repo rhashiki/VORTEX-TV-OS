@@ -1,0 +1,43 @@
+{
+  "repository": "https://android.googlesource.com/platform/system/update_engine",
+  "tag": "android-7.1.2_r6",
+  "revision": "c736d4791c584760848a228b7eb579362ecf4e6f",
+  "scope": "binder_bindings only; not a complete source checkout or module registration",
+  "files": [
+    {
+      "path": "binder_bindings/android/brillo/IUpdateEngine.aidl",
+      "bytes": 1525,
+      "git_blob": "1c0a3e55027b0cf6d5f81d72775c060a52deabd3",
+      "sha256": "77d4463008ba05a8768ddf85da05e522b5b36f5e086310088db33db24eda0de8",
+      "url": "https://android.googlesource.com/platform/system/update_engine/+/c736d4791c584760848a228b7eb579362ecf4e6f/binder_bindings/android/brillo/IUpdateEngine.aidl?format=TEXT"
+    },
+    {
+      "path": "binder_bindings/android/brillo/IUpdateEngineStatusCallback.aidl",
+      "bytes": 847,
+      "git_blob": "42b643850b6fa5276a24f20fe56c657ac9b01822",
+      "sha256": "d68cb366f97479b97cc6b21cf135228d10e4c6ffb098d9826bf9bae64ba069f5",
+      "url": "https://android.googlesource.com/platform/system/update_engine/+/c736d4791c584760848a228b7eb579362ecf4e6f/binder_bindings/android/brillo/IUpdateEngineStatusCallback.aidl?format=TEXT"
+    },
+    {
+      "path": "binder_bindings/android/brillo/ParcelableUpdateEngineStatus.aidl",
+      "bytes": 752,
+      "git_blob": "fc10505b5d0d9a01b48360c2d068510c2da421b0",
+      "sha256": "fc077d97ea2d009ab970b363de467c152ac041e9afb54003032a9037a236d968",
+      "url": "https://android.googlesource.com/platform/system/update_engine/+/c736d4791c584760848a228b7eb579362ecf4e6f/binder_bindings/android/brillo/ParcelableUpdateEngineStatus.aidl?format=TEXT"
+    },
+    {
+      "path": "binder_bindings/android/os/IUpdateEngine.aidl",
+      "bytes": 1006,
+      "git_blob": "4c60eed6d787c7a055f0ebff6896afaaac06b0ad",
+      "sha256": "d3aa26ee592732be255c37540fe2468df8f6a2c1180600d0d65a3036adad9956",
+      "url": "https://android.googlesource.com/platform/system/update_engine/+/c736d4791c584760848a228b7eb579362ecf4e6f/binder_bindings/android/os/IUpdateEngine.aidl?format=TEXT"
+    },
+    {
+      "path": "binder_bindings/android/os/IUpdateEngineCallback.aidl",
+      "bytes": 796,
+      "git_blob": "729abdd80c1f19c6f0c5a4ceb312a156c4775b60",
+      "sha256": "7f081465b69709b04cc0e41316d30973ed2b424a42bc1b1de8ecf1c8d6d906f3",
+      "url": "https://android.googlesource.com/platform/system/update_engine/+/c736d4791c584760848a228b7eb579362ecf4e6f/binder_bindings/android/os/IUpdateEngineCallback.aidl?format=TEXT"
+    }
+  ]
+}

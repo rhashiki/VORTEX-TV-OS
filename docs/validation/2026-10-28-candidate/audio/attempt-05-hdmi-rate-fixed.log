@@ -1,0 +1,129 @@
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=audio.primary.rk30board audio.usb.default power.default
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/audio/out-clang
+============================================
+TAPAS_STATUS=0
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=audio.primary.rk30board audio.usb.default power.default
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/audio/out-clang
+============================================
+target thumb C: audio.primary.rk30board <= hardware/rockchip/audio/tinyalsa_hal/audio_hw.c
+make: Nothing to be done for 'audio.usb.default'.
+make: Nothing to be done for 'power.default'.
+PWD=/proc/self/cwd  prebuilts/clang/host/linux-x86/clang-2690385/bin/clang -I external/tinyalsa/include -I system/media/audio_utils/include -I system/media/audio_route/include -I external/speex/include -I hardware/rockchip/audio/tinyalsa_hal -I /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.primary.rk30board_intermediates -I /workspace/build01-full-next/audio/out-clang/target/product/generic/gen/SHARED_LIBRARIES/audio.primary.rk30board_intermediates -I libnativehelper/include/nativehelper -I system/core/include -I system/core/include -I /workspace/build01-hal-next/hwc/legacy-headers/include -I external/libcxx/include -I bionic/libc/include -I bionic/libc/arch-arm/include -I bionic/libc/kernel/uapi -I bionic/libc/kernel/uapi/asm-arm -I bionic/libm/include -I bionic/libm/include/arm -isystem system/core/include -isystem system/media/audio/include -isystem hardware/libhardware/include -isystem hardware/libhardware_legacy/include -isystem hardware/ril/include -isystem libnativehelper/include -isystem frameworks/native/include -isystem frameworks/native/opengl/include -isystem frameworks/av/include -isystem frameworks/base/include -isystem /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/include -isystem bionic/libc/arch-arm/include -isystem bionic/libc/include -isystem bionic/libc/kernel/uapi -isystem bionic/libc/kernel/common -isystem bionic/libc/kernel/uapi/asm-arm -isystem bionic/libm/include -isystem bionic/libm/include/arm -c    -fno-exceptions -Wno-multichar -msoft-float -ffunction-sections -fdata-sections -funwind-tables -fstack-protector-strong -Wa,--noexecstack -Werror=format-security -D_FORTIFY_SOURCE=2 -fno-short-enums -no-canonical-prefixes -mcpu=cortex-a7 -D__ARM_FEATURE_LPAE=1 -mfloat-abi=softfp -mfpu=neon -DANDROID -fmessage-length=0 -W -Wall -Wno-unused -Winit-self -Wpointer-arith -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Werror=date-time -DNDEBUG -g -Wstrict-aliasing=2 -DNDEBUG -UDEBUG -D__compiler_offsetof=__builtin_offsetof -Wno-reserved-id-macro -Wno-format-pedantic -Wno-unused-command-line-argument -nostdlibinc  -target arm-linux-androideabi    -target arm-linux-androideabi -Bprebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/arm-linux-androideabi/bin    -std=gnu99     -mthumb -Os -fomit-frame-pointer -fno-strict-aliasing   -Wno-unused-parameter -DBOX_HAL -DRK3228 -fPIC -D_USING_LIBCXX   -Werror=address-of-temporary -Werror=null-dereference -Werror=return-type  -MD -MF /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.primary.rk30board_intermediates/audio_hw.d -o /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.primary.rk30board_intermediates/audio_hw.o hardware/rockchip/audio/tinyalsa_hal/audio_hw.c
+hardware/rockchip/audio/tinyalsa_hal/audio_hw.c:519:45: warning: implicit declaration of function 'get_route_config' is invalid in C99 [-Wimplicit-function-declaration]
+    const struct config_route *route_info = get_route_config(getRouteFromDevice(out->device));
+                                            ^
+hardware/rockchip/audio/tinyalsa_hal/audio_hw.c:519:32: warning: incompatible integer to pointer conversion initializing 'const struct config_route *' with an expression of type 'int' [-Wint-conversion]
+    const struct config_route *route_info = get_route_config(getRouteFromDevice(out->device));
+                               ^            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hardware/rockchip/audio/tinyalsa_hal/audio_hw.c:593:14: warning: incompatible pointer types passing 'struct stream_out *' to parameter of type 'const struct audio_stream *' [-Wincompatible-pointer-types]
+    out_dump(out, 0);
+             ^~~
+hardware/rockchip/audio/tinyalsa_hal/audio_hw.c:55:41: note: passing argument to parameter 'stream' here
+int out_dump(const struct audio_stream *stream, int fd);
+                                        ^
+hardware/rockchip/audio/tinyalsa_hal/audio_hw.c:773:13: warning: incompatible pointer types passing 'struct stream_in *' to parameter of type 'const struct audio_stream *' [-Wincompatible-pointer-types]
+    in_dump(in, 0);
+            ^~
+hardware/rockchip/audio/tinyalsa_hal/audio_hw.c:54:40: note: passing argument to parameter 'stream' here
+int in_dump(const struct audio_stream *stream, int fd);
+                                       ^
+hardware/rockchip/audio/tinyalsa_hal/audio_hw.c:905:19: warning: use of GNU old-style field designator extension [-Wgnu-designator]
+                { raw : NULL, },
+                  ^~~~~
+                  .raw = 
+hardware/rockchip/audio/tinyalsa_hal/audio_hw.c:906:1: warning: use of GNU old-style field designator extension [-Wgnu-designator]
+frame_count :
+^~~~~~~~~~~~~
+.frame_count = 
+hardware/rockchip/audio/tinyalsa_hal/audio_hw.c:1338:70: warning: format specifies type 'int' but the argument has type 'FILE *' (aka 'struct __sFILE *') [-Wformat]
+            ALOGD("DEBUG open /data/debug.pcm error =%d ,errno = %d",fd,errno);
+                                                     ~~              ^~
+system/core/include/log/log.h:114:52: note: expanded from macro 'ALOGD'
+#define ALOGD(...) ((void)ALOG(LOG_DEBUG, LOG_TAG, __VA_ARGS__))
+                                                   ^~~~~~~~~~~
+system/core/include/log/log.h:453:38: note: expanded from macro 'ALOG'
+    LOG_PRI(ANDROID_##priority, tag, __VA_ARGS__)
+                                     ^~~~~~~~~~~
+system/core/include/log/log.h:461:37: note: expanded from macro 'LOG_PRI'
+    android_printLog(priority, tag, __VA_ARGS__)
+                                    ^~~~~~~~~~~
+system/core/include/log/log.h:618:36: note: expanded from macro 'android_printLog'
+    __android_log_print(prio, tag, fmt)
+                                   ^~~
+hardware/rockchip/audio/tinyalsa_hal/audio_hw.c:1462:34: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+    if ((direct_mode.output_mode == HW_PARAMS_FLAG_NLPCM)) {
+         ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+hardware/rockchip/audio/tinyalsa_hal/audio_hw.c:1462:34: note: remove extraneous parentheses around the comparison to silence this warning
+    if ((direct_mode.output_mode == HW_PARAMS_FLAG_NLPCM)) {
+        ~                        ^                      ~
+hardware/rockchip/audio/tinyalsa_hal/audio_hw.c:1462:34: note: use '=' to turn this equality comparison into an assignment
+    if ((direct_mode.output_mode == HW_PARAMS_FLAG_NLPCM)) {
+                                 ^~
+                                 =
+hardware/rockchip/audio/tinyalsa_hal/audio_hw.c:1511:57: warning: passing 'const int16_t *' (aka 'const short *') to parameter of type 'int16_t *' (aka 'short *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+                                                        (const int16_t *)buffer,
+                                                        ^~~~~~~~~~~~~~~~~~~~~~~
+hardware/rockchip/audio/tinyalsa_hal/audio_hw.c:2739:23: warning: comparison between pointer and integer ('pthread_t' (aka 'long') and 'void *')
+    if (hdmi_uevent_t != NULL) {
+        ~~~~~~~~~~~~~ ^  ~~~~
+10 warnings generated.
+cp /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.primary.rk30board_intermediates/audio_hw.d /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.primary.rk30board_intermediates/audio_hw.P; sed -e 's/#.*//' -e 's/^[^:]*: *//' -e 's/ *\\$//' -e '/^$/ d' -e 's/$/ :/' < /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.primary.rk30board_intermediates/audio_hw.d >> /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.primary.rk30board_intermediates/audio_hw.P; rm -f /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.primary.rk30board_intermediates/audio_hw.d
+target SharedLib: audio.primary.rk30board (/workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.primary.rk30board_intermediates/LINKED/audio.primary.rk30board.so)
+prebuilts/clang/host/linux-x86/clang-2690385/bin/clang++ -nostdlib -Wl,-soname,audio.primary.rk30board.so -Wl,--gc-sections -shared -L/workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib /workspace/build01-hal-next/gralloc-link/crt/crtbegin_so.o             /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.primary.rk30board_intermediates/audio_hw.o /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.primary.rk30board_intermediates/alsa_route.o /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.primary.rk30board_intermediates/alsa_mixer.o /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.primary.rk30board_intermediates/audio_hw_hdmi.o       -Wl,--whole-archive   -Wl,--no-whole-archive   /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/STATIC_LIBRARIES/libspeex_intermediates/libspeex.a /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/STATIC_LIBRARIES/libunwind_llvm_intermediates/libunwind_llvm.a /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/libcompiler_rt-extras.a   prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/lib/libatomic.a prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/../lib/gcc/arm-linux-androideabi/4.9/libgcc.a -llog -lcutils -ltinyalsa -laudioutils -laudioroute -lhardware_legacy -lc++ -ldl -lc -lm  -o /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.primary.rk30board_intermediates/LINKED/audio.primary.rk30board.so   -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,--build-id=md5 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--icf=safe -Wl,--hash-style=gnu -Wl,--no-undefined-version -Wl,--no-fix-cortex-a8    -target arm-linux-androideabi -Bprebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/arm-linux-androideabi/bin   -Wl,--exclude-libs,libunwind_llvm.a -Wl,--no-undefined /workspace/build01-hal-next/gralloc-link/crt/crtend_so.o 
+target Pack Relocations: audio.primary.rk30board (/workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.primary.rk30board_intermediates/PACKED/audio.primary.rk30board.so)
+/workspace/build01-platform-next/aosp-app/host-bin/acp -fp /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.primary.rk30board_intermediates/LINKED/audio.primary.rk30board.so /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.primary.rk30board_intermediates/PACKED/audio.primary.rk30board.so
+prebuilts/misc/linux-x86/relocation_packer/relocation_packer /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.primary.rk30board_intermediates/PACKED/audio.primary.rk30board.so
+target Symbolic: audio.primary.rk30board (/workspace/build01-full-next/audio/out-clang/target/product/generic/symbols/system/lib/hw/audio.primary.rk30board.so)
+/workspace/build01-platform-next/aosp-app/host-bin/acp -fp /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/SHARED_LIBRARIES/audio.primary.rk30board_intermediates/PACKED/audio.primary.rk30board.so /workspace/build01-full-next/audio/out-clang/target/product/generic/symbols/system/lib/hw/audio.primary.rk30board.so
+target Strip: audio.primary.rk30board (/workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/audio.primary.rk30board.so)
+prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-strip --strip-all /workspace/build01-full-next/audio/out-clang/target/product/generic/symbols/system/lib/hw/audio.primary.rk30board.so -o /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/audio.primary.rk30board.so && prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-objcopy --add-gnu-debuglink=/workspace/build01-full-next/audio/out-clang/target/product/generic/symbols/system/lib/hw/audio.primary.rk30board.so /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/audio.primary.rk30board.so
+(prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-readelf -d /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/audio.primary.rk30board.so | grep SONAME || echo "No SONAME for /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/audio.primary.rk30board.so") > /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/audio.primary.rk30board.so.toc.tmp
+Install: /workspace/build01-full-next/audio/out-clang/target/product/generic/system/lib/hw/audio.primary.rk30board.so
+prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-readelf --dyn-syms /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/audio.primary.rk30board.so | awk '{$2=""; $3=""; print}' >> /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/audio.primary.rk30board.so.toc.tmp
+/workspace/build01-platform-next/aosp-app/host-bin/acp -fp /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/audio.primary.rk30board.so /workspace/build01-full-next/audio/out-clang/target/product/generic/system/lib/hw/audio.primary.rk30board.so
+mv /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/audio.primary.rk30board.so.toc.tmp /workspace/build01-full-next/audio/out-clang/target/product/generic/obj/lib/audio.primary.rk30board.so.toc
+
+#### make completed successfully (2 seconds) ####
+

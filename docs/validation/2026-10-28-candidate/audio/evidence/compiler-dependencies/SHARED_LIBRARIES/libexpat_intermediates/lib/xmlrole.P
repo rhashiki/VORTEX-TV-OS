@@ -1,0 +1,11 @@
+/workspace/build01-full-next/audio/out-final/target/product/generic/obj/SHARED_LIBRARIES/libexpat_intermediates/lib/xmlrole.o: \
+  external/expat/lib/xmlrole.c \
+  prebuilts/clang/host/linux-x86/clang-2690385/bin/../lib64/clang/3.8.256229/include/stddef.h \
+  external/expat/expat_config.h external/expat/lib/expat_external.h \
+  external/expat/lib/internal.h external/expat/lib/xmlrole.h \
+  external/expat/lib/xmltok.h external/expat/lib/ascii.h
+  external/expat/lib/xmlrole.c :
+  prebuilts/clang/host/linux-x86/clang-2690385/bin/../lib64/clang/3.8.256229/include/stddef.h :
+  external/expat/expat_config.h external/expat/lib/expat_external.h :
+  external/expat/lib/internal.h external/expat/lib/xmlrole.h :
+  external/expat/lib/xmltok.h external/expat/lib/ascii.h :

@@ -1,0 +1,166 @@
+{
+  "scope": "pinned_inputs_only_not_module_closure_or_boot_approval",
+  "status": "blocked",
+  "bsp_root": "/workspace/build01-full-next/platform/tree",
+  "control_root": "/workspace/vortex-build",
+  "critical_projects": {
+    "frameworks/base": {
+      "revision": "edd171fec429b9d51d9cb2da961a673ec51fcc4d",
+      "applied_prefix": 0,
+      "patch_count": 0,
+      "patches": [],
+      "expected_final_files": {},
+      "observed_generated_inputs": {},
+      "untouched_tracked_files_raw_verified": 32258,
+      "generated_input_origin": "declared exception; content inventoried, generation is not authenticated"
+    },
+    "frameworks/native": {
+      "revision": "00c3ec97785c0d42f801083c8fc2fc26d3ce4e2d",
+      "applied_prefix": 0,
+      "patch_count": 0,
+      "patches": [],
+      "expected_final_files": {},
+      "observed_generated_inputs": {},
+      "untouched_tracked_files_raw_verified": 1118,
+      "generated_input_origin": "declared exception; content inventoried, generation is not authenticated"
+    },
+    "hardware/rockchip/libgralloc": {
+      "revision": "c92fb8cd8becd57b025149f2861a2072b092ddea",
+      "applied_prefix": 2,
+      "patch_count": 2,
+      "patches": [
+        {
+          "path": "/workspace/vortex-build/rom/platform-reference/graphics/patches/0002-gralloc-select-mali400-for-rk322x.patch",
+          "sha256": "4405334b0a86071f253c59fab40f35896fd055f95fe8c91758336bdf74bee968"
+        },
+        {
+          "path": "/workspace/vortex-build/rom/platform-reference/graphics/patches/0007-gralloc-reject-unsupported-nv12-video.patch",
+          "sha256": "403474fd006c4c22645375362f81bffdcd8edd9103ab2ec3c1c69bd272b93e89"
+        }
+      ],
+      "expected_final_files": {
+        "Android.mk": {
+          "sha256": "21992e6da2e4aa8f5e0844111523bf0136dc783c7c1f8e0a099029aa6256f56e",
+          "mode": "100644"
+        },
+        "alloc_device.cpp": {
+          "sha256": "fea99635ec550061a2082404ca6cddeff58874be9312832ed5c106f61441d07f",
+          "mode": "100644"
+        }
+      },
+      "observed_generated_inputs": {
+        "version.h": {
+          "sha256": "7f090262f98481aba57566f30e9c614d318dc9dae2cd462c5620b5a89ad7e49c",
+          "size_bytes": 148
+        }
+      },
+      "untouched_tracked_files_raw_verified": 11,
+      "generated_input_origin": "declared exception; content inventoried, generation is not authenticated"
+    },
+    "hardware/rockchip/hwcomposer": {
+      "revision": "d3ec43f2f751123ca5e7bda2d07eded4c6352a35",
+      "applied_prefix": 3,
+      "patch_count": 3,
+      "patches": [
+        {
+          "path": "/workspace/vortex-build/rom/platform-reference/graphics/patches/0003-hwc-use-selected-gralloc-header.patch",
+          "sha256": "0a06468422b3e41f3beea6d4f29aa1b906d8df92fb7da969626819d3b817aa6d"
+        },
+        {
+          "path": "/workspace/vortex-build/rom/platform-reference/graphics/patches/0005-hwc-fix-format-policy-and-hdmi-strings.patch",
+          "sha256": "9759c12cbf337bee74830ab6c5baea4e0b2e94230965a32e147179e7a554ad4c"
+        },
+        {
+          "path": "/workspace/vortex-build/rom/platform-reference/graphics/patches/0006-hwc-fix-diagnostic-formats.patch",
+          "sha256": "8d913f844160e3bb008c4c15b6bd0ad5bd5a26c1e1fb81a9c94b1f50597e12d9"
+        }
+      ],
+      "expected_final_files": {
+        "Android.mk": {
+          "sha256": "6b6a2014dc476b5bd2dce5326bf140336e248f2bf95eb88be578a1c98e5285af",
+          "mode": "100755"
+        },
+        "TVInfo.cpp": {
+          "sha256": "7fb0d72305687709f8ee572204df32ec1ef027126fe3ae66d3cd4edaf02870e4",
+          "mode": "100755"
+        },
+        "hwc_rga.cpp": {
+          "sha256": "1ab600e72667759103579d88c6e6116389c38aa9ee0fd3b7103278740b18426d",
+          "mode": "100755"
+        },
+        "rk_hwc_com.cpp": {
+          "sha256": "a4adce6274988a0bde7daad2b103c4aa05e437643a290b294ba8985b9f569d51",
+          "mode": "100755"
+        },
+        "rk_hwcomposer.cpp": {
+          "sha256": "1628faa1a698116b7fb0e40b0ce7706f8e3c6acdc8548e0f9739076a597f869f",
+          "mode": "100755"
+        },
+        "rk_hwcomposer_blit.cpp": {
+          "sha256": "364e2ea8ab8761661ef5c5cffb0864f76abf19c8d55a7e4e6ffb63d90d61359e",
+          "mode": "100755"
+        },
+        "rk_hwcomposer_htg.cpp": {
+          "sha256": "b32dd94ddff2d7e533981574966281562a7977cfa820732a190943d22035bfef",
+          "mode": "100644"
+        }
+      },
+      "observed_generated_inputs": {
+        "version.h": {
+          "sha256": "658cd5f86f93443fb57173c6ec31b76b4d46340a4ebf8a97eb35a8c98d386a29",
+          "size_bytes": 148
+        }
+      },
+      "untouched_tracked_files_raw_verified": 13,
+      "generated_input_origin": "declared exception; content inventoried, generation is not authenticated"
+    }
+  },
+  "profile_destination": "/workspace/build01-full-next/platform/tree/device/vortex/vortex_rk322x_sd_box",
+  "profile_state": "identical",
+  "out_dir": "/workspace/build01-full-next/build-driver/rejected-out",
+  "available_bytes": 6551871488,
+  "configured_reserve_gib": 10.0,
+  "reserve_is_not_measured_platform_requirement": true,
+  "jobs": 1,
+  "jdk_version": "openjdk version \"1.8.0_504\"\nOpenJDK Runtime Environment (Temurin)(build 1.8.0_504-b01)\nOpenJDK 64-Bit Server VM (Temurin)(build 25.504-b01, mixed mode)",
+  "javac_version": "javac 1.8.0_504",
+  "kernel_override": {
+    "path": "/workspace/build01-sd-next/kernel-sd/out/arch/arm/boot/Image",
+    "sha256": "00ab9ab1393ac76c96ec984b73a680fc586e861d22f1c404485b6d043a6a9f52",
+    "size_bytes": 15380696
+  },
+  "errors": [
+    "bionic: Command failed: ['git', '--no-pager', '--no-optional-locks']: fatal: not a git repository (or any of the parent directories): .git\n",
+    "build: Command failed: ['git', '--no-pager', '--no-optional-locks']: fatal: not a git repository (or any of the parent directories): .git\n",
+    "build/blueprint: [Errno 2] No such file or directory: PosixPath('/workspace/build01-full-next/platform/tree/build/blueprint')",
+    "build/kati: [Errno 2] No such file or directory: PosixPath('/workspace/build01-full-next/platform/tree/build/kati')",
+    "build/soong: [Errno 2] No such file or directory: PosixPath('/workspace/build01-full-next/platform/tree/build/soong')",
+    "system/core: Command failed: ['git', '--no-pager', '--no-optional-locks']: fatal: not a git repository (or any of the parent directories): .git\n",
+    "system/sepolicy: [Errno 2] No such file or directory: PosixPath('/workspace/build01-full-next/platform/tree/system/sepolicy')",
+    "frameworks/av: [Errno 2] No such file or directory: PosixPath('/workspace/build01-full-next/platform/tree/frameworks/av')",
+    "hardware/libhardware: Command failed: ['git', '--no-pager', '--no-optional-locks']: fatal: not a git repository (or any of the parent directories): .git\n",
+    "hardware/libhardware_legacy: [Errno 2] No such file or directory: PosixPath('/workspace/build01-full-next/platform/tree/hardware/libhardware_legacy')",
+    "hardware/rockchip/audio: [Errno 2] No such file or directory: PosixPath('/workspace/build01-full-next/platform/tree/hardware/rockchip/audio')",
+    "hardware/rockchip/librga: [Errno 2] No such file or directory: PosixPath('/workspace/build01-full-next/platform/tree/hardware/rockchip/librga')",
+    "hardware/rockchip/librkvpu: Command failed: ['git', '--no-pager', '--no-optional-locks']: fatal: not a git repository (or any of the parent directories): .git\n",
+    "hardware/rockchip/libiep: [Errno 2] No such file or directory: PosixPath('/workspace/build01-full-next/platform/tree/hardware/rockchip/libiep')",
+    "hardware/rockchip/jpeghw: [Errno 2] No such file or directory: PosixPath('/workspace/build01-full-next/platform/tree/hardware/rockchip/jpeghw')",
+    "hardware/rockchip/omx_il: [Errno 2] No such file or directory: PosixPath('/workspace/build01-full-next/platform/tree/hardware/rockchip/omx_il')",
+    "hardware/rockchip/hdmicec: [Errno 2] No such file or directory: PosixPath('/workspace/build01-full-next/platform/tree/hardware/rockchip/hdmicec')",
+    "external/wlan_loader: [Errno 2] No such file or directory: PosixPath('/workspace/build01-full-next/platform/tree/external/wlan_loader')",
+    "hardware/broadcom/wlan: [Errno 2] No such file or directory: PosixPath('/workspace/build01-full-next/platform/tree/hardware/broadcom/wlan')",
+    "device/rockchip/rk322x: Command failed: ['git', '--no-pager', '--no-optional-locks']: fatal: not a git repository (or any of the parent directories): .git\n",
+    "device/rockchip/common: Command failed: ['git', '--no-pager', '--no-optional-locks']: fatal: not a git repository (or any of the parent directories): .git\n",
+    "vendor/rockchip/rk322x: Command failed: ['git', '--no-pager', '--no-optional-locks']: fatal: not a git repository (or any of the parent directories): .git\n",
+    "kernel: [Errno 2] No such file or directory: PosixPath('/workspace/build01-full-next/platform/tree/kernel')",
+    "external/tinyalsa: [Errno 2] No such file or directory: PosixPath('/workspace/build01-full-next/platform/tree/external/tinyalsa')",
+    "vendor/vortex/home: Command failed: ['git', '--no-pager', '--no-optional-locks']: fatal: not a git repository (or any of the parent directories): .git\n",
+    "Available bytes 6551871488 below configured operational reserve 10.0 GiB (not a proven AOSP minimum)"
+  ],
+  "limits": [
+    "Only explicit overlay pins are validated; other AOSP projects are not authenticated by this preflight.",
+    "Declared generated headers are inventoried, not authenticated; other ignored generated artifacts are outside this contract.",
+    "Actual source module closure is decided by the genuine platform build, not this script.",
+    "No driver, complete image, SD media or physical compatibility is approved."
+  ]
+}

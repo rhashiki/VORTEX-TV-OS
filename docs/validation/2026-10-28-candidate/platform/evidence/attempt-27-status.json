@@ -1,0 +1,7 @@
+{
+  "command": "bash build_candidate_native_parser.sh",
+  "exit_code": 2,
+  "log": "evidence/attempt-27-genuine-gtest-source.log",
+  "current_stop": "missing system/netd/server/binder/android/net/INetd.aidl",
+  "reason_for_checkpoint": "Bounded closure experiment checkpoint; source tree remains incomplete, so stopping here does not assert this next small source gap is impossible to resolve."
+}

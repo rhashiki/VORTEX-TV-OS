@@ -1,0 +1,20 @@
+[
+  {
+    "path": "evidence/attempt-18-real-jarjar-asm.log",
+    "bytes": 1001570,
+    "sha256": "e61dca112a9e53e7050fcc89bca12cabafd27c22a8ece47112d018307bf266ac",
+    "package_path": "raw-logs/platform/attempt-18-real-jarjar-asm.log"
+  },
+  {
+    "path": "evidence/attempt-23-source-host-bison.log",
+    "bytes": 359523,
+    "sha256": "e321c48f2f71706c0a5e1070b8f343bc976178fdbd8bc9a92e1a706ac4c741c7",
+    "package_path": "raw-logs/platform/attempt-23-source-host-bison.log"
+  },
+  {
+    "path": "evidence/licenses/libcore/ojluni/NOTICE",
+    "bytes": 421471,
+    "sha256": "cb41b8e3c007df5129056379cc855c5d0e9b39df7e710ca8f0cba66d8d66b0a1",
+    "package_path": "raw-logs/platform/licenses/libcore/ojluni/NOTICE"
+  }
+]

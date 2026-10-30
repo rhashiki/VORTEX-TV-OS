@@ -1,0 +1,20 @@
+Cloning into '/workspace/build01-full-next/platform/tree/external/bison'...
+warning: refs/tags/android-7.1.2_r6 68db04680bd9a82a61629137a492614516c025bb is not a commit!
+Note: switching to '7467d52af437dd3dfea237a6865ab84bf258dee0'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+Updating files:   3% (1/27)Updating files:   7% (2/27)Updating files:  11% (3/27)Updating files:  14% (4/27)Updating files:  18% (5/27)Updating files:  22% (6/27)Updating files:  25% (7/27)Updating files:  29% (8/27)Updating files:  33% (9/27)Updating files:  37% (10/27)Updating files:  40% (11/27)Updating files:  44% (12/27)Updating files:  48% (13/27)Updating files:  51% (14/27)Updating files:  55% (15/27)Updating files:  59% (16/27)Updating files:  62% (17/27)Updating files:  66% (18/27)Updating files:  70% (19/27)Updating files:  74% (20/27)Updating files:  77% (21/27)Updating files:  81% (22/27)Updating files:  85% (23/27)Updating files:  88% (24/27)Updating files:  92% (25/27)Updating files:  96% (26/27)Updating files: 100% (27/27)Updating files: 100% (27/27), done.

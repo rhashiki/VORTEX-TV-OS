@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "observed_utc": "2026-10-27T21:38:30.622298+00:00",
+  "scope": "capacity_and_declared_source_inventory_only",
+  "host": {
+    "workspace_disk_total_bytes": 33770192896,
+    "workspace_disk_used_bytes": 21683093504,
+    "workspace_disk_free_bytes": 10352336896,
+    "memory_limit_bytes": 8589934592,
+    "memory_current_bytes": 6041174016,
+    "cpu_quota_cores": 2.0,
+    "host_visible_cpu_count": "3",
+    "swap_current_bytes": 0,
+    "swap_devices": "Filename\t\t\t\tType\t\tSize\t\tUsed\t\tPriority\n",
+    "separate_writable_persistent_mount_observed": false,
+    "tmpfs_is_additional_persistent_build_disk": false
+  },
+  "manifest": {
+    "base_projects": 541,
+    "removed_projects": 13,
+    "overlay_projects": 28,
+    "composed_projects": 556,
+    "by_top_level_path": {
+      "abi": 1,
+      "art": 1,
+      "bionic": 1,
+      "bootable": 1,
+      "build": 4,
+      "compatibility": 1,
+      "cts": 1,
+      "dalvik": 1,
+      "developers": 3,
+      "development": 1,
+      "device": 41,
+      "docs": 1,
+      "external": 255,
+      "frameworks": 34,
+      "hardware": 52,
+      "kernel": 1,
+      "libcore": 1,
+      "libnativehelper": 1,
+      "ndk": 1,
+      "packages": 74,
+      "pdk": 1,
+      "platform_testing": 1,
+      "prebuilts": 39,
+      "sdk": 1,
+      "system": 22,
+      "test": 1,
+      "toolchain": 1,
+      "tools": 12,
+      "vendor": 2
+    },
+    "fully_pinned_overlay_projects": 28,
+    "remaining_default_tag_projects": 528,
+    "default_minus_darwin_excluded_count": 24,
+    "default_minus_darwin_remaining_count": 532,
+    "filter_is_not_transitive_module_dependency_closure": true,
+    "repo_manifest_r_lock_produced": false
+  },
+  "runtime_capabilities": {
+    "managed_environment_status": "connected, running, observations_current true",
+    "network_policy": "unrestricted/enforced",
+    "configured_capabilities": [],
+    "configured_outbound_identities": [],
+    "configured_secrets": [],
+    "available_environment_tool_scope": "status and diagnostics; no attached storage/VM creation tool found"
+  },
+  "conclusions": {
+    "normal_complete_repo_sync_and_platform_build": "capacity_not_satisfied_by_current_environment",
+    "exact_minimum_custom_product_bytes": "not_measured",
+    "bounded_selected_source_build_experiments": "possible, subject to actual module dependencies and free-space limits",
+    "rom_image_built": false,
+    "no_old_sources_or_artifacts_deleted": true,
+    "no_disk_mount_or_resource_configuration_changed": true
+  },
+  "input_hashes": {
+    "/workspace/vortex-build/rom/platform-reference/aosp-r6-default.xml": "9a0ef14c94804bbdf5c90c25f24a52f6435035a54e90827ca7626ca7e696363f",
+    "/workspace/vortex-build/rom/platform-reference/vortex-r6-rockchip-experimental.xml": "12911892777019e11ad10b2aa44b4d027697689b6417982f09566c1e4256f571"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "commit": "73ca99196723f810dad42390d154654354f57c16",
+  "tree": "6a915ed39f73a68c0efa8b8ff8cec6fddbdf5671",
+  "parents": [
+    "f61a459478cdc31e8aae22a182cdbf814ba08012"
+  ],
+  "author": {
+    "name": "Dan Albert",
+    "email": "danalbert@google.com",
+    "time": "Mon Nov 09 10:14:27 2015 -0800"
+  },
+  "committer": {
+    "name": "Dan Albert",
+    "email": "danalbert@google.com",
+    "time": "Mon Nov 09 10:14:27 2015 -0800"
+  },
+  "message": "Add NOTICE and MODULE_LICENSE files.\n\nBug: http://b/25479535\nChange-Id: I2a1c5a4318edeafb555eb7936cb4fdd6189c80c0\n",
+  "tree_diff": [
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "new_mode": 33188,
+      "new_path": "MODULE_LICENSE_GPL"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "623b6258a134210f0b0ada106fdaab7f0370d9c5",
+      "new_mode": 33188,
+      "new_path": "NOTICE"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+PASS menu-0-label-and-action
+PASS menu-1-label-and-action
+PASS menu-2-label-and-action
+PASS menu-3-label-and-action
+PASS menu-4-label-and-action
+PASS menu-terminated-after-five
+PASS negative-menu-index
+PASS first-past-end-menu-index
+PASS large-menu-index
+PASS down-key
+PASS volume-down-key
+PASS up-key
+PASS volume-up-key
+PASS enter-key
+PASS power-key
+PASS unmapped-key
+PASS hidden-menu-ignores-navigation
+PASS base-device-stores-ui-pointer
+PASS platform-two-argument-callback-short
+PASS platform-two-argument-callback-long
+RESULT passed=20 failed=0

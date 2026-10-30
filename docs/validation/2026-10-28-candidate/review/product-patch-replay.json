@@ -1,0 +1,52 @@
+{
+  "scope": "independent source patch replay and manifest metadata only; no platform closure",
+  "base_vortex_commit": "ba4afebe58e9c9cb8fd2a05dc88d142ce1b5e8fe",
+  "patch_sha256": "4deea3f95faee02f6fd28d17cfccde5c5dd789579d100c68b741bd83db9a2faa",
+  "archive_sha256": "5dc9ef860f35af275dc784b9ecfebbdc8c0e81059edae279d2ebe26d4f1c3699",
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "apply",
+        "--check",
+        "/workspace/vortex-build/rom/platform-reference/vortex-product-integration.patch"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "apply",
+        "/workspace/vortex-build/rom/platform-reference/vortex-product-integration.patch"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "files": [
+    {
+      "path": "rom/product/rk322x_sd_box/AndroidProducts.mk",
+      "sha256": "f10b5539bae59b20395bbf3d83ee29fa30eba0ee96278ab8dcc342be33b6ea2a",
+      "replay_matches_repository": true,
+      "materialized_profile_matches": true
+    },
+    {
+      "path": "rom/product/rk322x_sd_box/vortex_rk322x_sd_box.mk",
+      "sha256": "0701a333925c97669d87aca419af6f1d3201c96876b139e9d983277cce630c4b",
+      "replay_matches_repository": true,
+      "materialized_profile_matches": true
+    }
+  ],
+  "manifest": {
+    "removed_projects": 14,
+    "new_projects": 29,
+    "all_remove_targets_exist_in_official_manifest": true,
+    "no_duplicate_added_paths": true,
+    "tinyalsa_actual_source_revision": "472b5e3fc1660660e0e9a3fa4cd5f752643920f2",
+    "vortex_revision": "ba4afebe58e9c9cb8fd2a05dc88d142ce1b5e8fe"
+  },
+  "status": "pass"
+}

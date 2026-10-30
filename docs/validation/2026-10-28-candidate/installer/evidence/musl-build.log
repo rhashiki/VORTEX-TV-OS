@@ -1,0 +1,3 @@
+sh tools/musl-gcc.specs.sh "/workspace/build01-full-next/installer/musl/include" "/workspace/build01-full-next/installer/musl/lib" "/lib/ld-musl-armhf.so.1" > lib/musl-gcc.specs
+printf '#!/bin/sh\nexec "${REALGCC:-/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-gcc}" "$@" -specs "%s/musl-gcc.specs"\n' "/workspace/build01-full-next/installer/musl/lib" > obj/musl-gcc
+chmod +x obj/musl-gcc

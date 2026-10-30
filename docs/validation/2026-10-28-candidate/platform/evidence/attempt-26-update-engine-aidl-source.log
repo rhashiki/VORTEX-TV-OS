@@ -1,0 +1,226 @@
+including device/rockchip/rk322x/vendorsetup.sh
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=vortex_rk322x_sd_box
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/platform/out
+============================================
+LUNCH_STATUS=0
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=vortex_rk322x_sd_box
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/platform/out
+============================================
+including ./bionic/Android.mk ...
+including ./build/libs/host/Android.mk ...
+including ./build/target/board/Android.mk ...
+including ./build/target/product/security/Android.mk ...
+including ./build/tools/Android.mk ...
+including ./device/rockchip/common/Android.mk ...
+including ./external/bison/Android.mk ...
+including ./external/boringssl/Android.mk ...
+including ./external/bouncycastle/Android.mk ...
+including ./external/compiler-rt/Android.mk ...
+including ./external/conscrypt/Android.mk ...
+including ./external/icu/Android.mk ...
+including ./external/jarjar/Android.mk ...
+including ./external/junit/Android.mk ...
+including ./external/libcxx/Android.mk ...
+including ./external/libcxxabi/Android.mk ...
+including ./external/libphonenumber/Android.mk ...
+including ./external/libunwind_llvm/Android.mk ...
+including ./external/llvm/Android.mk ...
+including ./external/okhttp/Android.mk ...
+including ./external/safe-iop/Android.mk ...
+including ./external/zlib/Android.mk ...
+including ./frameworks/base/Android.mk ...
+find: ‘../opt/telephony/src/java/android/provider’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony/gsm’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/rtp’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/sip’: No such file or directory
+find: ‘../../frameworks/data-binding/baseLibrary/src/main’: No such file or directory
+find: ‘../../frameworks/data-binding/extensions/library/src/main’: No such file or directory
+find: ‘../../frameworks/data-binding/extensions/library/src/doc’: No such file or directory
+find: ‘../../frameworks/support/annotations’: No such file or directory
+find: ‘../../frameworks/support/compat’: No such file or directory
+find: ‘../../frameworks/support/media-compat’: No such file or directory
+find: ‘../../frameworks/support/fragment’: No such file or directory
+find: ‘../../frameworks/support/core-ui’: No such file or directory
+find: ‘../../frameworks/support/core-utils’: No such file or directory
+find: ‘../../frameworks/support/v7/gridlayout’: No such file or directory
+find: ‘../../frameworks/support/v7/cardview’: No such file or directory
+find: ‘../../frameworks/support/v7/mediarouter’: No such file or directory
+find: ‘../../frameworks/support/v7/palette’: No such file or directory
+find: ‘../../frameworks/support/v8/renderscript’: No such file or directory
+find: ‘../../frameworks/support/v13’: No such file or directory
+find: ‘../../frameworks/support/v17/leanback’: No such file or directory
+find: ‘../../frameworks/support/design’: No such file or directory
+find: ‘../../frameworks/support/percent’: No such file or directory
+find: ‘../../frameworks/support/recommendation’: No such file or directory
+find: ‘../../frameworks/support/transition’: No such file or directory
+find: ‘../../frameworks/support/v7/preference’: No such file or directory
+find: ‘../../frameworks/support/v14/preference’: No such file or directory
+find: ‘../../frameworks/support/v17/preference-leanback’: No such file or directory
+find: ‘../../frameworks/support/documents-archive’: No such file or directory
+find: ‘../../frameworks/support/customtabs’: No such file or directory
+find: ‘../../frameworks/multidex/library/src’: No such file or directory
+find: ‘../../frameworks/multidex/instrumentation/src’: No such file or directory
+find: ‘../../frameworks/support/graphics/drawable/animated’: No such file or directory
+find: ‘../../frameworks/support/graphics/drawable/static’: No such file or directory
+find: ‘../../frameworks/support/v7/appcompat/src’: No such file or directory
+find: ‘../../frameworks/support/v7/recyclerview/src’: No such file or directory
+find: ‘../opt/telephony/src/java/android/provider’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony/gsm’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/rtp’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/sip’: No such file or directory
+find: ‘../opt/telephony/src/java/android/provider’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony/gsm’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/rtp’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/sip’: No such file or directory
+find: ‘../../frameworks/data-binding/baseLibrary/src/main’: No such file or directory
+find: ‘../../frameworks/data-binding/extensions/library/src/main’: No such file or directory
+find: ‘../../frameworks/data-binding/extensions/library/src/doc’: No such file or directory
+find: ‘../../frameworks/support/annotations’: No such file or directory
+find: ‘../../frameworks/support/compat’: No such file or directory
+find: ‘../../frameworks/support/media-compat’: No such file or directory
+find: ‘../../frameworks/support/fragment’: No such file or directory
+find: ‘../../frameworks/support/core-ui’: No such file or directory
+find: ‘../../frameworks/support/core-utils’: No such file or directory
+find: ‘../../frameworks/support/v7/gridlayout’: No such file or directory
+find: ‘../../frameworks/support/v7/cardview’: No such file or directory
+find: ‘../../frameworks/support/v7/mediarouter’: No such file or directory
+find: ‘../../frameworks/support/v7/palette’: No such file or directory
+find: ‘../../frameworks/support/v8/renderscript’: No such file or directory
+find: ‘../../frameworks/support/v13’: No such file or directory
+find: ‘../../frameworks/support/v17/leanback’: No such file or directory
+find: ‘../../frameworks/support/design’: No such file or directory
+find: ‘../../frameworks/support/percent’: No such file or directory
+find: ‘../../frameworks/support/recommendation’: No such file or directory
+find: ‘../../frameworks/support/transition’: No such file or directory
+find: ‘../../frameworks/support/v7/preference’: No such file or directory
+find: ‘../../frameworks/support/v14/preference’: No such file or directory
+find: ‘../../frameworks/support/v17/preference-leanback’: No such file or directory
+find: ‘../../frameworks/support/documents-archive’: No such file or directory
+find: ‘../../frameworks/support/customtabs’: No such file or directory
+find: ‘../../frameworks/multidex/library/src’: No such file or directory
+find: ‘../../frameworks/multidex/instrumentation/src’: No such file or directory
+find: ‘../../frameworks/support/graphics/drawable/animated’: No such file or directory
+find: ‘../../frameworks/support/graphics/drawable/static’: No such file or directory
+find: ‘../../frameworks/support/v7/appcompat/src’: No such file or directory
+find: ‘../../frameworks/support/v7/recyclerview/src’: No such file or directory
+find: ‘../opt/telephony/src/java/android/provider’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony/gsm’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/rtp’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/sip’: No such file or directory
+find: ‘../../external/nist-sip/java’: No such file or directory
+find: ‘../../external/tagsoup/src’: No such file or directory
+build/core/package_internal.mk:143: Empty argument supplied to find-subdir-assets
+including ./frameworks/native/cmds/atrace/Android.mk ...
+including ./frameworks/native/cmds/bugreport/Android.mk ...
+including ./frameworks/native/cmds/bugreportz/Android.mk ...
+including ./frameworks/native/cmds/cmd/Android.mk ...
+including ./frameworks/native/cmds/dumpstate/Android.mk ...
+including ./frameworks/native/cmds/dumpsys/Android.mk ...
+including ./frameworks/native/cmds/flatland/Android.mk ...
+including ./frameworks/native/cmds/installd/Android.mk ...
+including ./frameworks/native/cmds/ip-up-vpn/Android.mk ...
+including ./frameworks/native/cmds/rawbu/Android.mk ...
+including ./frameworks/native/cmds/service/Android.mk ...
+including ./frameworks/native/cmds/servicemanager/Android.mk ...
+including ./frameworks/native/libs/binder/Android.mk ...
+including ./frameworks/native/libs/diskusage/Android.mk ...
+including ./frameworks/native/libs/gui/Android.mk ...
+including ./frameworks/native/libs/input/Android.mk ...
+including ./frameworks/native/libs/ui/Android.mk ...
+including ./frameworks/native/opengl/libagl/Android.mk ...
+including ./frameworks/native/opengl/libs/Android.mk ...
+including ./frameworks/native/opengl/tests/Android.mk ...
+including ./frameworks/native/services/batteryservice/Android.mk ...
+including ./frameworks/native/services/inputflinger/Android.mk ...
+including ./frameworks/native/services/powermanager/Android.mk ...
+including ./frameworks/native/services/sensorservice/Android.mk ...
+including ./frameworks/native/services/surfaceflinger/Android.mk ...
+including ./frameworks/native/vulkan/Android.mk ...
+including ./hardware/libhardware/Android.mk ...
+including ./hardware/rockchip/hwcomposer/Android.mk ...
+Generated version.h
+including ./hardware/rockchip/libgralloc/Android.mk ...
+Generated version.h
+including ./hardware/rockchip/librkvpu/Android.mk ...
+including ./libcore/Android.mk ...
+including ./prebuilts/misc/common/asm/Android.mk ...
+including ./prebuilts/sdk/Android.mk ...
+including ./prebuilts/tools/Android.mk ...
+including ./system/core/Android.mk ...
+including ./system/tools/aidl/Android.mk ...
+including ./vendor/rockchip/rk322x/Android.mk ...
+including ./vendor/vortex/home/Android.mk ...
+Copying: /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-oj_intermediates/classes-jarjar.jar
+Copying: /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-libart_intermediates/classes-jarjar.jar
+/workspace/build01-full-next/platform/out/host/linux-x86/bin/acp -fp /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-oj_intermediates/classes-full-debug.jar /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-oj_intermediates/classes-jarjar.jar
+/workspace/build01-full-next/platform/out/host/linux-x86/bin/acp -fp /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-libart_intermediates/classes-full-debug.jar /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-libart_intermediates/classes-jarjar.jar
+Install: /workspace/build01-full-next/platform/out/host/linux-x86/framework/jarjar.jar
+/workspace/build01-full-next/platform/out/host/linux-x86/bin/acp -fp /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/jarjar_intermediates/javalib.jar /workspace/build01-full-next/platform/out/host/linux-x86/framework/jarjar.jar
+Import includes file: /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/aidl_intermediates/import_includes
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/aidl_intermediates/ && rm -f /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/aidl_intermediates/import_includes
+host C++: libaidl-common <= system/tools/aidl/aidl.cpp
+for f in /workspace/build01-full-next/platform/out/host/linux-x86/obj/SHARED_LIBRARIES/libc++_intermediates/export_includes /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libaidl-common_intermediates/export_includes /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libbase_intermediates/export_includes /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcutils_intermediates/export_includes /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/export_includes; do \
+  cat $f >> /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/aidl_intermediates/import_includes; \
+done
+PWD=/proc/self/cwd  prebuilts/clang/host/linux-x86/clang-2690385/bin/clang++ -I external/gtest/include -I system/tools/aidl -I /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libaidl-common_intermediates -I /workspace/build01-full-next/platform/out/host/linux-x86/gen/STATIC_LIBRARIES/libaidl-common_intermediates -I libnativehelper/include/nativehelper -I external/libcxx/include -I external/libcxxabi/include -I system/core/base/include -isystem system/core/include -isystem system/media/audio/include -isystem hardware/libhardware/include -isystem hardware/libhardware_legacy/include -isystem hardware/ril/include -isystem libnativehelper/include -isystem frameworks/native/include -isystem frameworks/native/opengl/include -isystem frameworks/av/include -isystem frameworks/base/include -isystem tools/include -isystem /workspace/build01-full-next/platform/out/host/linux-x86/obj/include -c    -fno-exceptions -Wno-multichar -m64 -Wa,--noexecstack -fPIC -no-canonical-prefixes -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fstack-protector -D__STDC_FORMAT_MACROS -D__STDC_CONSTANT_MACROS -DANDROID -fmessage-length=0 -W -Wall -Wno-unused -Winit-self -Wpointer-arith -O2 -g -fno-strict-aliasing -DNDEBUG -UDEBUG -D__compiler_offsetof=__builtin_offsetof -Wno-reserved-id-macro -Wno-format-pedantic -Wno-unused-command-line-argument   --gcc-toolchain=prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8 -fstack-protector-strong    --gcc-toolchain=prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8 --sysroot prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot -Bprebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/bin -target x86_64-linux-gnu   -Wsign-promo -Wno-inconsistent-missing-override   --gcc-toolchain=prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8 --sysroot prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot -isystem prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/include/c++/4.8 -isystem prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/include/c++/4.8/x86_64-linux -isystem prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/include/c++/4.8/backward -target x86_64-linux-gnu  -fPIC -D_USING_LIBCXX -Wall -Wextra -Werror -Wno-unused-parameter -Wno-unused-function -Wno-unneeded-internal-declaration -Wno-deprecated-register -Wno-writable-strings -std=gnu++14 -nostdinc++  -Werror=address-of-temporary -Werror=null-dereference -Werror=return-type   -MD -MF /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libaidl-common_intermediates/aidl.d -o /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libaidl-common_intermediates/aidl.o system/tools/aidl/aidl.cpp
+host C++: libaidl-common <= system/tools/aidl/aidl_language.cpp
+PWD=/proc/self/cwd  prebuilts/clang/host/linux-x86/clang-2690385/bin/clang++ -I external/gtest/include -I system/tools/aidl -I /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libaidl-common_intermediates -I /workspace/build01-full-next/platform/out/host/linux-x86/gen/STATIC_LIBRARIES/libaidl-common_intermediates -I libnativehelper/include/nativehelper -I external/libcxx/include -I external/libcxxabi/include -I system/core/base/include -isystem system/core/include -isystem system/media/audio/include -isystem hardware/libhardware/include -isystem hardware/libhardware_legacy/include -isystem hardware/ril/include -isystem libnativehelper/include -isystem frameworks/native/include -isystem frameworks/native/opengl/include -isystem frameworks/av/include -isystem frameworks/base/include -isystem tools/include -isystem /workspace/build01-full-next/platform/out/host/linux-x86/obj/include -c    -fno-exceptions -Wno-multichar -m64 -Wa,--noexecstack -fPIC -no-canonical-prefixes -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fstack-protector -D__STDC_FORMAT_MACROS -D__STDC_CONSTANT_MACROS -DANDROID -fmessage-length=0 -W -Wall -Wno-unused -Winit-self -Wpointer-arith -O2 -g -fno-strict-aliasing -DNDEBUG -UDEBUG -D__compiler_offsetof=__builtin_offsetof -Wno-reserved-id-macro -Wno-format-pedantic -Wno-unused-command-line-argument   --gcc-toolchain=prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8 -fstack-protector-strong    --gcc-toolchain=prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8 --sysroot prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot -Bprebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/bin -target x86_64-linux-gnu   -Wsign-promo -Wno-inconsistent-missing-override   --gcc-toolchain=prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8 --sysroot prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot -isystem prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/include/c++/4.8 -isystem prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/include/c++/4.8/x86_64-linux -isystem prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/include/c++/4.8/backward -target x86_64-linux-gnu  -fPIC -D_USING_LIBCXX -Wall -Wextra -Werror -Wno-unused-parameter -Wno-unused-function -Wno-unneeded-internal-declaration -Wno-deprecated-register -Wno-writable-strings -std=gnu++14 -nostdinc++  -Werror=address-of-temporary -Werror=null-dereference -Werror=return-type   -MD -MF /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libaidl-common_intermediates/aidl_language.d -o /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libaidl-common_intermediates/aidl_language.o system/tools/aidl/aidl_language.cpp
+In file included from system/tools/aidl/aidl.cpp:17:
+In file included from system/tools/aidl/aidl.h:27:
+system/tools/aidl/options.h:24:10: fatal error: 'gtest/gtest_prod.h' file not found
+#include <gtest/gtest_prod.h>
+         ^
+1 error generated.
+make: *** [build/core/binary.mk:925: /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libaidl-common_intermediates/aidl.o] Error 1
+make: *** Waiting for unfinished jobs....
+cp /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libaidl-common_intermediates/aidl_language.d /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libaidl-common_intermediates/aidl_language.P; sed -e 's/#.*//' -e 's/^[^:]*: *//' -e 's/ *\\$//' -e '/^$/ d' -e 's/$/ :/' < /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libaidl-common_intermediates/aidl_language.d >> /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libaidl-common_intermediates/aidl_language.P; rm -f /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libaidl-common_intermediates/aidl_language.d
+
+#### make failed to build some targets (57 seconds) ####
+

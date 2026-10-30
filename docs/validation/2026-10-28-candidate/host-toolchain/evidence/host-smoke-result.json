@@ -1,0 +1,95 @@
+{
+  "scope": "host compiler/sysroot/header smoke only; not a full Android build or target/hardware test",
+  "status": "pass",
+  "cases": [
+    {
+      "case": "gcc-version",
+      "command": [
+        "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/bin/x86_64-linux-gcc",
+        "--version"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "pass"
+    },
+    {
+      "case": "gcc-stdlib-features-compile",
+      "command": [
+        "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/bin/x86_64-linux-gcc",
+        "--sysroot=/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot",
+        "-m64",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "/workspace/build01-full-next/host-toolchain/smoke/stdlib_features.c",
+        "-o",
+        "/workspace/build01-full-next/host-toolchain/smoke/stdlib_features"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "pass"
+    },
+    {
+      "case": "gcc-stdlib-features-runtime",
+      "command": [
+        "/workspace/build01-full-next/host-toolchain/smoke/stdlib_features"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "pass"
+    },
+    {
+      "case": "clang-real-libcxx-headers-compile",
+      "command": [
+        "/workspace/build01-full-next/platform/tree/prebuilts/clang/host/linux-x86/clang-2690385/bin/clang++",
+        "--gcc-toolchain=/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8",
+        "--sysroot=/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot",
+        "-target",
+        "x86_64-linux-gnu",
+        "-m64",
+        "-std=c++14",
+        "-nostdinc++",
+        "-I",
+        "/workspace/build01-full-next/platform/tree/external/libcxx/include",
+        "-I",
+        "/workspace/build01-full-next/platform/tree/external/libcxxabi/include",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-c",
+        "/workspace/build01-full-next/host-toolchain/smoke/libcxx_headers.cpp",
+        "-o",
+        "/workspace/build01-full-next/host-toolchain/smoke/libcxx_headers.o"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "pass"
+    },
+    {
+      "case": "host-test-elf",
+      "command": [
+        "readelf",
+        "-h",
+        "-l",
+        "-d",
+        "/workspace/build01-full-next/host-toolchain/smoke/stdlib_features"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "pass"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/workspace/build01-full-next/host-toolchain/smoke/stdlib_features",
+      "size_bytes": 6688,
+      "sha256": "03c83976473a273dd16382648daf0fe933bfe31a5611204f806d6250fbadb64f"
+    },
+    {
+      "path": "/workspace/build01-full-next/host-toolchain/smoke/libcxx_headers.o",
+      "size_bytes": 1432,
+      "sha256": "630842ad2e1cb0f317af398d71cd5d9a86a786c11d19108926ff2eae52f15b44"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "official-requirements-2018.html",
+    "url": "https://android.googlesource.com/platform/docs/source.android.com/+/7a4e60bdebfa9c7ebf0a953770da06c29488d1ef/en/setup/requirements.html?format=TEXT",
+    "bytes": 7697,
+    "sha256": "3faa3328cd2294a17a3f09230f07946a6c9a71b8e7dfdf9dfaf3fdbbff7bf1a0",
+    "status": "acquired"
+  },
+  {
+    "name": "official-building-older.jd",
+    "url": "https://android.googlesource.com/platform/docs/source.android.com/+/0385c482894d09ec34b9320883a598a77f7894e9/src/source/building.jd?format=TEXT",
+    "bytes": 2443,
+    "sha256": "349b998f0c2eb7b3b1d14a052fd019f30825ab5e7d5726257b994de9232c6c88",
+    "status": "acquired"
+  },
+  {
+    "name": "official-building-older-commit.json",
+    "url": "https://android.googlesource.com/platform/docs/source.android.com/+/0385c482894d09ec34b9320883a598a77f7894e9?format=JSON",
+    "bytes": 585,
+    "sha256": "21d5777303c476fbdd24adfa68af273399dee56d632b1148a781388e34dcad9a",
+    "status": "acquired"
+  },
+  {
+    "name": "official-requirements-2018-commit.json",
+    "url": "https://android.googlesource.com/platform/docs/source.android.com/+/7a4e60bdebfa9c7ebf0a953770da06c29488d1ef?format=JSON",
+    "bytes": 4509,
+    "sha256": "f6db46d6f88c997d1bffc2a98868c96443d6b7b61f3217b2396adef082008372",
+    "status": "acquired"
+  }
+]

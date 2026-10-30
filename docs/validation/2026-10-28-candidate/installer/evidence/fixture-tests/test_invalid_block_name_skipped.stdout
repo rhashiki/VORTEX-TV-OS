@@ -1,0 +1,2 @@
+{"event":"scope","version":1,"mode":"non_pid1_inventory","block_device_io_opened":false,"storage_write_backend":"absent","output":"stdout_only","boot_medium_verified":false,"logging_to_sd":"disabled_unverified_boot_identity"}
+{"event":"summary","block_records":0,"write_target_selected":false,"boot_medium_verified":false}

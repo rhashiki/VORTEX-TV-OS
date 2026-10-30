@@ -1,0 +1,29 @@
+usage: build_full_platform.py [-h] --bsp-root BSP_ROOT
+                              [--vortex-root VORTEX_ROOT] --jdk-home JDK_HOME
+                              [--python2 PYTHON2] [--patch-plan PATCH_PLAN]
+                              [--out-dir OUT_DIR] [--log-dir LOG_DIR]
+                              [--kernel-image KERNEL_IMAGE] [--jobs {1,2}]
+                              [--min-free-gib MIN_FREE_GIB] [--run]
+
+Check pinned source inputs, or explicitly prepare and build a candidate
+Android. Default mode never sources BSP scripts or changes the BSP. --run
+applies the reviewed patch plan, materializes the product and invokes
+envsetup/lunch/make. It does not download sources, install host packages,
+flash or mount devices.
+
+options:
+  -h, --help            show this help message and exit
+  --bsp-root BSP_ROOT
+  --vortex-root VORTEX_ROOT
+  --jdk-home JDK_HOME
+  --python2 PYTHON2
+  --patch-plan PATCH_PLAN
+  --out-dir OUT_DIR
+  --log-dir LOG_DIR
+  --kernel-image KERNEL_IMAGE
+  --jobs {1,2}
+  --min-free-gib MIN_FREE_GIB
+                        Operational reserve, not a measured minimum for full
+                        AOSP
+  --run                 Apply verified source patches and invoke the actual
+                        complete-product droid target

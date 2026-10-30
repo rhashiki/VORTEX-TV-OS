@@ -1,0 +1,21 @@
+
+Symbol table '.dynsym' contains 18 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_finalize@LIBC (2)
+     2: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_atexit@LIBC (2)
+     3: 00000000     0 FUNC    GLOBAL DEFAULT  UND __register_atfork@LIBC (2)
+     4: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memcpy@LIBC_N (3)
+     5: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memclr8@LIBC_N (3)
+     6: 00000000     0 FUNC    GLOBAL DEFAULT  UND __gnu_Unwind_Find_exidx@LIBC_N (3)
+     7: 00000000     0 FUNC    GLOBAL DEFAULT  UND __stack_chk_fail@LIBC (2)
+     8: 00000000     0 FUNC    GLOBAL DEFAULT  UND __snprintf_chk@LIBC (2)
+     9: 00000000     0 OBJECT  GLOBAL DEFAULT  UND __stack_chk_guard@LIBC (2)
+    10: 00000000     0 FUNC    GLOBAL DEFAULT  UND dladdr@LIBC (4)
+    11: 00000000     0 FUNC    GLOBAL DEFAULT  UND abort@LIBC (2)
+    12: 00000000     0 FUNC    GLOBAL DEFAULT  UND fprintf@LIBC (2)
+    13: 00000000     0 OBJECT  GLOBAL DEFAULT  UND stderr@LIBC (2)
+    14: 000040a5     0 NOTYPE  GLOBAL DEFAULT  ABS _end
+    15: 000040a0     0 NOTYPE  GLOBAL DEFAULT  ABS _edata
+    16: 00004004   156 OBJECT  GLOBAL DEFAULT   20 HMI
+    17: 000040a0     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start

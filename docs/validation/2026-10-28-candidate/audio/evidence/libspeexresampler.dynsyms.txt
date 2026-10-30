@@ -1,0 +1,54 @@
+
+Symbol table '.dynsym' contains 51 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000000     0 FUNC    GLOBAL DEFAULT  UND raise@LIBC (2)
+     2: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_finalize@LIBC (2)
+     3: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_atexit@LIBC (2)
+     4: 00000000     0 FUNC    GLOBAL DEFAULT  UND __register_atfork@LIBC (2)
+     5: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memclr@LIBC_N (3)
+     6: 00000000     0 FUNC    GLOBAL DEFAULT  UND __stack_chk_fail@LIBC (2)
+     7: 00000000     0 OBJECT  GLOBAL DEFAULT  UND __stack_chk_guard@LIBC (2)
+     8: 00000000     0 FUNC    GLOBAL DEFAULT  UND calloc@LIBC (2)
+     9: 00000000     0 FUNC    GLOBAL DEFAULT  UND floorf@LIBC (4)
+    10: 00000000     0 FUNC    GLOBAL DEFAULT  UND free@LIBC (2)
+    11: 00000000     0 FUNC    GLOBAL DEFAULT  UND realloc@LIBC (2)
+    12: 00000000     0 FUNC    GLOBAL DEFAULT  UND sin@LIBC (4)
+    13: 00000000     0 FUNC    GLOBAL DEFAULT  UND __gnu_Unwind_Find_exidx@LIBC_N (3)
+    14: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memclr8@LIBC_N (3)
+    15: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memcpy@LIBC_N (3)
+    16: 00000000     0 FUNC    GLOBAL DEFAULT  UND __snprintf_chk@LIBC (2)
+    17: 00000000     0 FUNC    GLOBAL DEFAULT  UND dladdr@LIBC (5)
+    18: 00000000     0 FUNC    GLOBAL DEFAULT  UND abort@LIBC (2)
+    19: 00000000     0 FUNC    GLOBAL DEFAULT  UND fprintf@LIBC (2)
+    20: 00000000     0 OBJECT  GLOBAL DEFAULT  UND stderr@LIBC (2)
+    21: 00002a60    12 FUNC    GLOBAL DEFAULT   12 speex_resampler_get_quality
+    22: 00002a94    12 FUNC    GLOBAL DEFAULT   12 speex_resampler_get_input_latency
+    23: 00004324   168 FUNC    GLOBAL DEFAULT   12 __udivsi3
+    24: 000043cc    32 FUNC    GLOBAL DEFAULT   12 __aeabi_uidivmod
+    25: 00001050    56 FUNC    GLOBAL DEFAULT   12 speex_resampler_set_quality
+    26: 000075a8     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
+    27: 00002af8    60 FUNC    GLOBAL DEFAULT   12 speex_resampler_reset_mem
+    28: 000075a9     0 NOTYPE  GLOBAL DEFAULT  ABS _end
+    29: 00000ea8   424 FUNC    GLOBAL DEFAULT   12 speex_resampler_init_frac
+    30: 00002120  1888 FUNC    GLOBAL DEFAULT   12 speex_resampler_process_float
+    31: 00002ac0    56 FUNC    GLOBAL DEFAULT   12 speex_resampler_skip_zeros
+    32: 000019e8    60 FUNC    GLOBAL DEFAULT   12 speex_resampler_destroy
+    33: 00002a38    20 FUNC    GLOBAL DEFAULT   12 speex_resampler_get_rate
+    34: 00000e88    32 FUNC    GLOBAL DEFAULT   12 speex_resampler_init
+    35: 00002a6c     8 FUNC    GLOBAL DEFAULT   12 speex_resampler_set_input_stride
+    36: 00004324     0 FUNC    GLOBAL DEFAULT   12 __aeabi_uidiv
+    37: 000043ec    16 FUNC    WEAK   DEFAULT   12 __aeabi_idiv0
+    38: 000075a8     0 NOTYPE  GLOBAL DEFAULT  ABS _edata
+    39: 00002aa0    32 FUNC    GLOBAL DEFAULT   12 speex_resampler_get_output_latency
+    40: 00001088   292 FUNC    GLOBAL DEFAULT   12 speex_resampler_set_rate_frac
+    41: 000043ec    16 FUNC    WEAK   DEFAULT   12 __aeabi_ldiv0
+    42: 00002a74    12 FUNC    GLOBAL DEFAULT   12 speex_resampler_get_input_stride
+    43: 00002880   204 FUNC    GLOBAL DEFAULT   12 speex_resampler_process_interleaved_float
+    44: 0000294c   204 FUNC    GLOBAL DEFAULT   12 speex_resampler_process_interleaved_int
+    45: 00002a88    12 FUNC    GLOBAL DEFAULT   12 speex_resampler_get_output_stride
+    46: 00002a18    32 FUNC    GLOBAL DEFAULT   12 speex_resampler_set_rate
+    47: 00002a80     8 FUNC    GLOBAL DEFAULT   12 speex_resampler_set_output_stride
+    48: 00001a30  1768 FUNC    GLOBAL DEFAULT   12 speex_resampler_process_int
+    49: 00002b34    40 FUNC    GLOBAL DEFAULT   12 speex_resampler_strerror
+    50: 00002a4c    20 FUNC    GLOBAL DEFAULT   12 speex_resampler_get_ratio

@@ -1,0 +1,17 @@
+/workspace/build01-full-next/audio/out-final/target/product/generic/obj/SHARED_LIBRARIES/libaudioutils_intermediates/limiter.o: \
+  system/media/audio_utils/limiter.c bionic/libm/include/math.h \
+  bionic/libc/include/sys/cdefs.h \
+  bionic/libc/include/android/api-level.h bionic/libc/include/limits.h \
+  bionic/libc/include/sys/limits.h \
+  bionic/libc/kernel/uapi/linux/limits.h \
+  bionic/libc/include/sys/syslimits.h \
+  bionic/libc/include/bits/posix_limits.h \
+  system/media/audio_utils/include/audio_utils/limiter.h
+  system/media/audio_utils/limiter.c bionic/libm/include/math.h :
+  bionic/libc/include/sys/cdefs.h :
+  bionic/libc/include/android/api-level.h bionic/libc/include/limits.h :
+  bionic/libc/include/sys/limits.h :
+  bionic/libc/kernel/uapi/linux/limits.h :
+  bionic/libc/include/sys/syslimits.h :
+  bionic/libc/include/bits/posix_limits.h :
+  system/media/audio_utils/include/audio_utils/limiter.h :

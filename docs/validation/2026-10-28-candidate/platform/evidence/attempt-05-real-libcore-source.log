@@ -1,0 +1,1066 @@
+including device/rockchip/rk322x/vendorsetup.sh
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=vortex_rk322x_sd_box
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/platform/out
+============================================
+LUNCH_STATUS=0
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=vortex_rk322x_sd_box
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/platform/out
+============================================
+Clean step: rm -rf /workspace/build01-full-next/platform/out/system/framework/conscrypt-nojarjar.jar
+Clean step: rm -rf /workspace/build01-full-next/platform/out/system/framework/conscrypt-nojarjar.jar
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/core*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/system/etc/security/cacerts/*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/core*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/host/common/obj/JAVA_LIBRARIES/core*
+including ./bionic/Android.mk ...
+including ./build/libs/host/Android.mk ...
+including ./build/target/board/Android.mk ...
+including ./build/target/product/security/Android.mk ...
+including ./build/tools/Android.mk ...
+including ./device/rockchip/common/Android.mk ...
+including ./external/compiler-rt/Android.mk ...
+including ./external/libunwind_llvm/Android.mk ...
+including ./external/llvm/Android.mk ...
+including ./hardware/libhardware/Android.mk ...
+including ./hardware/rockchip/hwcomposer/Android.mk ...
+Generated version.h
+including ./hardware/rockchip/libgralloc/Android.mk ...
+Generated version.h
+including ./hardware/rockchip/librkvpu/Android.mk ...
+including ./libcore/Android.mk ...
+find: ‘../external/icu/android_icu4j//src/main/java’: No such file or directory
+/bin/bash: line 1: cd: libcore/../external/icu/android_icu4j//resources: No such file or directory
+/bin/bash: line 1: cd: libcore/../external/icu/android_icu4j//resources: No such file or directory
+/bin/bash: line 1: cd: libcore/../external/icu/android_icu4j//resources: No such file or directory
+/bin/bash: line 1: cd: libcore/../external/icu/android_icu4j//resources: No such file or directory
+/bin/bash: line 1: cd: external/icu: No such file or directory
+find: ‘android_icu4j/src/main/java/android/icu/lang’: No such file or directory
+find: ‘android_icu4j/src/main/java/android/icu/math’: No such file or directory
+find: ‘android_icu4j/src/main/java/android/icu/text’: No such file or directory
+find: ‘android_icu4j/src/main/java/android/icu/util’: No such file or directory
+including ./prebuilts/sdk/Android.mk ...
+including ./system/core/Android.mk ...
+including ./vendor/rockchip/rk322x/Android.mk ...
+including ./vendor/vortex/home/Android.mk ...
+target Java: core-all (/workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes)
+rm -f /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes-full-debug.jar
+Export includes file: -- /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libhost_intermediates/export_includes
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libhost_intermediates/ && rm -f /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libhost_intermediates/export_includes.tmp
+rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes
+mkdir -p /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/
+for d in build/libs/host/include; do \
+        echo "-I $d" >> /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libhost_intermediates/export_includes.tmp; \
+        done
+mkdir -p /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes
+mv /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libhost_intermediates/export_includes.tmp /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libhost_intermediates/export_includes ;
+for f in ; do if [ ! -f $f ]; then echo Missing file $f; exit 1; fi; unzip -qo $f -d /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes; done
+rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes/META-INF
+Export includes file: -- /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/export_includes
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/ && rm -f /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/export_includes.tmp
+touch /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/export_includes.tmp
+mv /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/export_includes.tmp /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/export_includes ;
+Export includes file: -- /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/acp_intermediates/export_includes
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/acp_intermediates/ && rm -f /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/acp_intermediates/export_includes.tmp
+touch /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/acp_intermediates/export_includes.tmp
+if [ -d "/workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/src" ]; then find /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/src -name '*.java' -and -not -name '.*' >> /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes/java-source-list; fi
+mv /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/acp_intermediates/export_includes.tmp /workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/acp_intermediates/export_includes ;
+tr ' ' '\n' < /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes/java-source-list | build/tools/normalize_path.py | sort -u > /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes/java-source-list-uniq
+Notice file: external/compiler-rt/NOTICE -- /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib64/libcompiler_rt-extras.a.txt
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib64/
+cat external/compiler-rt/NOTICE > /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib64/libcompiler_rt-extras.a.txt
+Notice file: external/compiler-rt/NOTICE -- /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib/libcompiler_rt-extras.a.txt
+mkdir -p /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib/
+cat external/compiler-rt/NOTICE > /workspace/build01-full-next/platform/out/host/linux-x86/obj/NOTICE_FILES/src//lib/libcompiler_rt-extras.a.txt
+if [ -s /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes/java-source-list-uniq ] ; then javac -J-Xmx1024M -Xmaxerrs 9999999 -encoding UTF-8  -bootclasspath ""   -extdirs "" -d /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes -g -encoding UTF-8 -Xmaxwarns 9999999 -source 1.8 -target 1.8 \@/workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes/java-source-list-uniq || ( rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes ; exit 41 ) fi
+Notice file: external/compiler-rt/NOTICE -- /workspace/build01-full-next/platform/out/host/windows-x86/obj/NOTICE_FILES/src//lib/libcompiler_rt-extras.a.txt
+mkdir -p /workspace/build01-full-next/platform/out/host/windows-x86/obj/NOTICE_FILES/src//lib/
+cat external/compiler-rt/NOTICE > /workspace/build01-full-next/platform/out/host/windows-x86/obj/NOTICE_FILES/src//lib/libcompiler_rt-extras.a.txt
+make: *** No rule to make target '/workspace/build01-full-next/platform/out/host/linux-x86/obj/SHARED_LIBRARIES/libz-host_intermediates/export_includes', needed by '/workspace/build01-full-next/platform/out/host/linux-x86/obj/EXECUTABLES/ijar_intermediates/import_includes'.  Stop.
+make: *** Waiting for unfinished jobs....
+Notice file: external/compiler-rt/NOTICE -- /workspace/build01-full-next/platform/out/host/windows-x86/obj/NOTICE_FILES/src//lib64/libcompiler_rt-extras.a.txt
+mkdir -p /workspace/build01-full-next/platform/out/host/windows-x86/obj/NOTICE_FILES/src//lib64/
+cat external/compiler-rt/NOTICE > /workspace/build01-full-next/platform/out/host/windows-x86/obj/NOTICE_FILES/src//lib64/libcompiler_rt-extras.a.txt
+libcore/libart/src/main/java/java/lang/CaseMapper.java:19: error: package android.icu.text does not exist
+import android.icu.text.Transliterator;
+                       ^
+libcore/libart/src/main/java/java/lang/CaseMapper.java:139: error: cannot find symbol
+    private static final ThreadLocal<Transliterator> EL_UPPER = new ThreadLocal<Transliterator>() {
+                                     ^
+  symbol:   class Transliterator
+  location: class CaseMapper
+libcore/luni/src/main/java/libcore/icu/CollationKeyICU.java:22: error: package android.icu.text does not exist
+    private final android.icu.text.CollationKey key;
+                                  ^
+libcore/luni/src/main/java/libcore/icu/CollationKeyICU.java:24: error: package android.icu.text does not exist
+    public CollationKeyICU(String source, android.icu.text.CollationKey key) {
+                                                          ^
+libcore/luni/src/main/java/libcore/icu/DateIntervalFormat.java:19: error: package android.icu.util does not exist
+import android.icu.util.Calendar;
+                       ^
+libcore/luni/src/main/java/libcore/icu/DateIntervalFormat.java:20: error: package android.icu.util does not exist
+import android.icu.util.ULocale;
+                       ^
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:19: error: package android.icu.impl does not exist
+import android.icu.impl.JavaTimeZone;
+                       ^
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:20: error: package android.icu.util does not exist
+import android.icu.util.Calendar;
+                       ^
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:21: error: package android.icu.util does not exist
+import android.icu.util.GregorianCalendar;
+                       ^
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:22: error: package android.icu.util does not exist
+import android.icu.util.ULocale;
+                       ^
+libcore/luni/src/main/java/libcore/icu/DateIntervalFormat.java:33: error: package android.icu.text does not exist
+  private static final BasicLruCache<String, android.icu.text.DateIntervalFormat> CACHED_FORMATTERS
+                                                             ^
+libcore/luni/src/main/java/libcore/icu/DateIntervalFormat.java:54: error: cannot find symbol
+  public static String formatDateRange(ULocale icuLocale, android.icu.util.TimeZone icuTimeZone,
+                                       ^
+  symbol:   class ULocale
+  location: class DateIntervalFormat
+libcore/luni/src/main/java/libcore/icu/DateIntervalFormat.java:54: error: package android.icu.util does not exist
+  public static String formatDateRange(ULocale icuLocale, android.icu.util.TimeZone icuTimeZone,
+                                                                          ^
+libcore/luni/src/main/java/libcore/icu/DateIntervalFormat.java:85: error: cannot find symbol
+  private static android.icu.text.DateIntervalFormat getFormatter(String skeleton, ULocale locale,
+                                                                                   ^
+  symbol:   class ULocale
+  location: class DateIntervalFormat
+libcore/luni/src/main/java/libcore/icu/DateIntervalFormat.java:86: error: package android.icu.util does not exist
+      android.icu.util.TimeZone icuTimeZone) {
+                      ^
+libcore/luni/src/main/java/libcore/icu/DateIntervalFormat.java:85: error: package android.icu.text does not exist
+  private static android.icu.text.DateIntervalFormat getFormatter(String skeleton, ULocale locale,
+                                 ^
+libcore/luni/src/main/java/libcore/icu/DateIntervalFormat.java:98: error: cannot find symbol
+  private static boolean isMidnight(Calendar c) {
+                                    ^
+  symbol:   class Calendar
+  location: class DateIntervalFormat
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:53: error: package android.icu.util does not exist
+  public static android.icu.util.TimeZone icuTimeZone(java.util.TimeZone tz) {
+                                ^
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:59: error: package android.icu.util does not exist
+  public static Calendar createIcuCalendar(android.icu.util.TimeZone icuTimeZone, ULocale icuLocale,
+                                                           ^
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:59: error: cannot find symbol
+  public static Calendar createIcuCalendar(android.icu.util.TimeZone icuTimeZone, ULocale icuLocale,
+                                                                                  ^
+  symbol:   class ULocale
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:59: error: cannot find symbol
+  public static Calendar createIcuCalendar(android.icu.util.TimeZone icuTimeZone, ULocale icuLocale,
+                ^
+  symbol:   class Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:66: error: cannot find symbol
+  public static String toSkeleton(Calendar calendar, int flags) {
+                                  ^
+  symbol:   class Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:70: error: cannot find symbol
+  public static String toSkeleton(Calendar startCalendar, Calendar endCalendar, int flags) {
+                                  ^
+  symbol:   class Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:70: error: cannot find symbol
+  public static String toSkeleton(Calendar startCalendar, Calendar endCalendar, int flags) {
+                                                          ^
+  symbol:   class Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:150: error: cannot find symbol
+  public static int dayDistance(Calendar c1, Calendar c2) {
+                                ^
+  symbol:   class Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:150: error: cannot find symbol
+  public static int dayDistance(Calendar c1, Calendar c2) {
+                                             ^
+  symbol:   class Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:154: error: cannot find symbol
+  private static boolean onTheHour(Calendar c) {
+                                   ^
+  symbol:   class Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:158: error: cannot find symbol
+  private static boolean fallOnDifferentDates(Calendar c1, Calendar c2) {
+                                              ^
+  symbol:   class Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:158: error: cannot find symbol
+  private static boolean fallOnDifferentDates(Calendar c1, Calendar c2) {
+                                                           ^
+  symbol:   class Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:164: error: cannot find symbol
+  private static boolean fallInSameMonth(Calendar c1, Calendar c2) {
+                                         ^
+  symbol:   class Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:164: error: cannot find symbol
+  private static boolean fallInSameMonth(Calendar c1, Calendar c2) {
+                                                      ^
+  symbol:   class Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:168: error: cannot find symbol
+  private static boolean fallInSameYear(Calendar c1, Calendar c2) {
+                                        ^
+  symbol:   class Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:168: error: cannot find symbol
+  private static boolean fallInSameYear(Calendar c1, Calendar c2) {
+                                                     ^
+  symbol:   class Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:172: error: cannot find symbol
+  private static boolean isThisYear(Calendar c) {
+                                    ^
+  symbol:   class Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateTimeFormat.java:19: error: package android.icu.text does not exist
+import android.icu.text.DateFormat;
+                       ^
+libcore/luni/src/main/java/libcore/icu/DateTimeFormat.java:20: error: package android.icu.text does not exist
+import android.icu.text.DateTimePatternGenerator;
+                       ^
+libcore/luni/src/main/java/libcore/icu/DateTimeFormat.java:21: error: package android.icu.text does not exist
+import android.icu.text.DisplayContext;
+                       ^
+libcore/luni/src/main/java/libcore/icu/DateTimeFormat.java:22: error: package android.icu.text does not exist
+import android.icu.text.SimpleDateFormat;
+                       ^
+libcore/luni/src/main/java/libcore/icu/DateTimeFormat.java:23: error: package android.icu.util does not exist
+import android.icu.util.Calendar;
+                       ^
+libcore/luni/src/main/java/libcore/icu/DateTimeFormat.java:24: error: package android.icu.util does not exist
+import android.icu.util.ULocale;
+                       ^
+libcore/luni/src/main/java/libcore/icu/DateTimeFormat.java:34: error: cannot find symbol
+  static class FormatterCache extends BasicLruCache<String, DateFormat> {
+                                                            ^
+  symbol:   class DateFormat
+  location: class DateTimeFormat
+libcore/luni/src/main/java/libcore/icu/DateTimeFormat.java:43: error: cannot find symbol
+  public static String format(ULocale icuLocale, Calendar time, int flags,
+                              ^
+  symbol:   class ULocale
+  location: class DateTimeFormat
+libcore/luni/src/main/java/libcore/icu/DateTimeFormat.java:43: error: cannot find symbol
+  public static String format(ULocale icuLocale, Calendar time, int flags,
+                                                 ^
+  symbol:   class Calendar
+  location: class DateTimeFormat
+libcore/luni/src/main/java/libcore/icu/DateTimeFormat.java:44: error: cannot find symbol
+      DisplayContext displayContext) {
+      ^
+  symbol:   class DisplayContext
+  location: class DateTimeFormat
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:22: error: package android.icu.text does not exist
+import android.icu.text.DisplayContext;
+                       ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:23: error: package android.icu.util does not exist
+import android.icu.util.Calendar;
+                       ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:24: error: package android.icu.util does not exist
+import android.icu.util.ULocale;
+                       ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:55: error: package android.icu.text does not exist
+      extends BasicLruCache<String, android.icu.text.RelativeDateTimeFormatter> {
+                                                    ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:100: error: cannot find symbol
+      long now, long minResolution, int flags, DisplayContext displayContext) {
+                                               ^
+  symbol:   class DisplayContext
+  location: class RelativeDateTimeFormatter
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:113: error: cannot find symbol
+  private static String getRelativeTimeSpanString(ULocale icuLocale,
+                                                  ^
+  symbol:   class ULocale
+  location: class RelativeDateTimeFormatter
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:114: error: package android.icu.util does not exist
+      android.icu.util.TimeZone icuTimeZone, long time, long now, long minResolution, int flags,
+                      ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:115: error: cannot find symbol
+      DisplayContext displayContext) {
+      ^
+  symbol:   class DisplayContext
+  location: class RelativeDateTimeFormatter
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:338: error: cannot find symbol
+      ULocale locale, android.icu.text.RelativeDateTimeFormatter.Style style,
+      ^
+  symbol:   class ULocale
+  location: class RelativeDateTimeFormatter
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:338: error: package android.icu.text.RelativeDateTimeFormatter does not exist
+      ULocale locale, android.icu.text.RelativeDateTimeFormatter.Style style,
+                                                                ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:339: error: cannot find symbol
+      DisplayContext displayContext) {
+      ^
+  symbol:   class DisplayContext
+  location: class RelativeDateTimeFormatter
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:337: error: package android.icu.text does not exist
+  private static android.icu.text.RelativeDateTimeFormatter getFormatter(
+                                 ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:351: error: package android.icu.util does not exist
+  private static int dayDistance(android.icu.util.TimeZone icuTimeZone, long startTime,
+                                                 ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:356: error: package android.icu.util does not exist
+  private static int julianDay(android.icu.util.TimeZone icuTimeZone, long time) {
+                                               ^
+libcore/ojluni/src/main/java/java/util/Currency.java:69: error: package android.icu.util does not exist
+    private transient final android.icu.util.Currency icuCurrency;
+                                            ^
+libcore/ojluni/src/main/java/java/util/Currency.java:78: error: package android.icu.util does not exist
+    private Currency(android.icu.util.Currency icuCurrency) {
+                                     ^
+libcore/ojluni/src/main/java/java/net/IDN.java:28: error: package android.icu.text does not exist
+import android.icu.text.IDNA;
+                       ^
+libcore/ojluni/src/main/java/java/text/Bidi.java:100: error: package android.icu.text does not exist
+    private android.icu.text.Bidi bidiBase;
+                            ^
+libcore/ojluni/src/main/java/java/text/Bidi.java:187: error: package android.icu.text does not exist
+    private Bidi(android.icu.text.Bidi bidiBase) {
+                                 ^
+libcore/ojluni/src/main/java/java/text/CollationElementIterator.java:111: error: package android.icu.text does not exist
+    private android.icu.text.CollationElementIterator icuIterator;
+                            ^
+libcore/ojluni/src/main/java/java/text/CollationElementIterator.java:113: error: package android.icu.text does not exist
+    CollationElementIterator(android.icu.text.CollationElementIterator iterator) {
+                                             ^
+libcore/ojluni/src/main/java/java/text/Collator.java:217: error: package android.icu.text does not exist
+    android.icu.text.Collator icuColl;
+                    ^
+libcore/ojluni/src/main/java/java/text/Collator.java:219: error: package android.icu.text does not exist
+    Collator(android.icu.text.Collator icuColl) {
+                             ^
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:57: error: package android.icu.math does not exist
+import android.icu.math.MathContext;
+                       ^
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:382: error: package android.icu.text does not exist
+    private transient android.icu.text.DecimalFormat icuDecimalFormat;
+                                      ^
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:1079: error: package android.icu.text does not exist
+    private boolean compareIcuRoundingIncrement(android.icu.text.DecimalFormat other) {
+                                                                ^
+libcore/ojluni/src/main/java/java/text/DecimalFormatSymbols.java:683: error: package android.icu.text does not exist
+    protected android.icu.text.DecimalFormatSymbols getIcuDecimalFormatSymbols() {
+                              ^
+libcore/ojluni/src/main/java/java/text/DecimalFormatSymbols.java:719: error: package android.icu.text does not exist
+            android.icu.text.DecimalFormatSymbols dfs) {
+                            ^
+libcore/ojluni/src/main/java/java/text/DecimalFormatSymbols.java:1047: error: package android.icu.text does not exist
+    private transient android.icu.text.DecimalFormatSymbols cachedIcuDFS = null;
+                                      ^
+libcore/ojluni/src/main/java/java/text/IcuIteratorWrapper.java:212: error: package android.icu.text does not exist
+    private android.icu.text.BreakIterator wrapped;
+                            ^
+libcore/ojluni/src/main/java/java/text/IcuIteratorWrapper.java:218: error: package android.icu.text does not exist
+    IcuIteratorWrapper(android.icu.text.BreakIterator iterator) {
+                                       ^
+libcore/ojluni/src/main/java/java/text/Normalizer.java:147: error: package android.icu.text.Normalizer does not exist
+        private final android.icu.text.Normalizer.Mode icuMode;
+                                                 ^
+libcore/ojluni/src/main/java/java/text/Normalizer.java:149: error: package android.icu.text.Normalizer does not exist
+        Form(android.icu.text.Normalizer.Mode icuMode) {
+                                        ^
+libcore/ojluni/src/main/java/java/text/RuleBasedCollator.java:252: error: package android.icu.text does not exist
+    RuleBasedCollator(android.icu.text.RuleBasedCollator wrapper) {
+                                      ^
+libcore/ojluni/src/main/java/java/text/RuleBasedCollator.java:399: error: package android.icu.text does not exist
+    private android.icu.text.RuleBasedCollator collAsICU() {
+                            ^
+libcore/ojluni/src/main/java/java/util/TimeZone.java:712: error: package android.icu.util does not exist
+            android.icu.util.TimeZone.clearCachedDefault();
+                            ^
+libcore/libart/src/main/java/java/lang/CaseMapper.java:139: error: cannot find symbol
+    private static final ThreadLocal<Transliterator> EL_UPPER = new ThreadLocal<Transliterator>() {
+                                                                                ^
+  symbol:   class Transliterator
+  location: class CaseMapper
+libcore/libart/src/main/java/java/lang/CaseMapper.java:140: error: cannot find symbol
+        @Override protected Transliterator initialValue() {
+                            ^
+  symbol: class Transliterator
+libcore/libart/src/main/java/java/lang/CaseMapper.java:141: error: cannot find symbol
+            return Transliterator.getInstance("el-Upper");
+                   ^
+  symbol: variable Transliterator
+libcore/luni/src/main/java/libcore/icu/CollationKeyICU.java:31: error: package android.icu.text does not exist
+        final android.icu.text.CollationKey otherKey;
+                              ^
+libcore/luni/src/main/java/libcore/icu/CollationKeyICU.java:35: error: package android.icu.text does not exist
+            otherKey = new android.icu.text.CollationKey(other.getSourceString(),
+                                           ^
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:54: error: cannot find symbol
+    JavaTimeZone javaTimeZone = new JavaTimeZone(tz, null);
+    ^
+  symbol:   class JavaTimeZone
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:54: error: cannot find symbol
+    JavaTimeZone javaTimeZone = new JavaTimeZone(tz, null);
+                                    ^
+  symbol:   class JavaTimeZone
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:61: error: cannot find symbol
+    Calendar calendar = new GregorianCalendar(icuTimeZone, icuLocale);
+    ^
+  symbol:   class Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:61: error: cannot find symbol
+    Calendar calendar = new GregorianCalendar(icuTimeZone, icuLocale);
+                            ^
+  symbol:   class GregorianCalendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:151: error: cannot find symbol
+    return c2.get(Calendar.JULIAN_DAY) - c1.get(Calendar.JULIAN_DAY);
+                  ^
+  symbol:   variable Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:151: error: cannot find symbol
+    return c2.get(Calendar.JULIAN_DAY) - c1.get(Calendar.JULIAN_DAY);
+                                                ^
+  symbol:   variable Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:155: error: cannot find symbol
+    return c.get(Calendar.MINUTE) == 0 && c.get(Calendar.SECOND) == 0;
+                 ^
+  symbol:   variable Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:155: error: cannot find symbol
+    return c.get(Calendar.MINUTE) == 0 && c.get(Calendar.SECOND) == 0;
+                                                ^
+  symbol:   variable Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:159: error: cannot find symbol
+    return c1.get(Calendar.YEAR) != c2.get(Calendar.YEAR) ||
+                  ^
+  symbol:   variable Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:159: error: cannot find symbol
+    return c1.get(Calendar.YEAR) != c2.get(Calendar.YEAR) ||
+                                           ^
+  symbol:   variable Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:160: error: cannot find symbol
+        c1.get(Calendar.MONTH) != c2.get(Calendar.MONTH) ||
+               ^
+  symbol:   variable Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:160: error: cannot find symbol
+        c1.get(Calendar.MONTH) != c2.get(Calendar.MONTH) ||
+                                         ^
+  symbol:   variable Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:161: error: cannot find symbol
+        c1.get(Calendar.DAY_OF_MONTH) != c2.get(Calendar.DAY_OF_MONTH);
+               ^
+  symbol:   variable Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:161: error: cannot find symbol
+        c1.get(Calendar.DAY_OF_MONTH) != c2.get(Calendar.DAY_OF_MONTH);
+                                                ^
+  symbol:   variable Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:165: error: cannot find symbol
+    return c1.get(Calendar.MONTH) == c2.get(Calendar.MONTH);
+                  ^
+  symbol:   variable Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:165: error: cannot find symbol
+    return c1.get(Calendar.MONTH) == c2.get(Calendar.MONTH);
+                                            ^
+  symbol:   variable Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:169: error: cannot find symbol
+    return c1.get(Calendar.YEAR) == c2.get(Calendar.YEAR);
+                  ^
+  symbol:   variable Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:169: error: cannot find symbol
+    return c1.get(Calendar.YEAR) == c2.get(Calendar.YEAR);
+                                           ^
+  symbol:   variable Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:173: error: cannot find symbol
+    Calendar now = (Calendar) c.clone();
+    ^
+  symbol:   class Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:173: error: cannot find symbol
+    Calendar now = (Calendar) c.clone();
+                    ^
+  symbol:   class Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:175: error: cannot find symbol
+    return c.get(Calendar.YEAR) == now.get(Calendar.YEAR);
+                 ^
+  symbol:   variable Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateUtilsBridge.java:175: error: cannot find symbol
+    return c.get(Calendar.YEAR) == now.get(Calendar.YEAR);
+                                           ^
+  symbol:   variable Calendar
+  location: class DateUtilsBridge
+libcore/luni/src/main/java/libcore/icu/DateIntervalFormat.java:47: error: package android.icu.util does not exist
+    android.icu.util.TimeZone icuTimeZone = DateUtilsBridge.icuTimeZone(tz);
+                    ^
+libcore/luni/src/main/java/libcore/icu/DateIntervalFormat.java:48: error: cannot find symbol
+    ULocale icuLocale = ULocale.getDefault();
+    ^
+  symbol:   class ULocale
+  location: class DateIntervalFormat
+libcore/luni/src/main/java/libcore/icu/DateIntervalFormat.java:48: error: cannot find symbol
+    ULocale icuLocale = ULocale.getDefault();
+                        ^
+  symbol:   variable ULocale
+  location: class DateIntervalFormat
+libcore/luni/src/main/java/libcore/icu/DateIntervalFormat.java:56: error: cannot find symbol
+    Calendar startCalendar = DateUtilsBridge.createIcuCalendar(icuTimeZone, icuLocale, startMs);
+    ^
+  symbol:   class Calendar
+  location: class DateIntervalFormat
+libcore/luni/src/main/java/libcore/icu/DateIntervalFormat.java:57: error: cannot find symbol
+    Calendar endCalendar;
+    ^
+  symbol:   class Calendar
+  location: class DateIntervalFormat
+libcore/luni/src/main/java/libcore/icu/DateIntervalFormat.java:73: error: cannot find symbol
+      endCalendar.add(Calendar.DAY_OF_MONTH, -1);
+                      ^
+  symbol:   variable Calendar
+  location: class DateIntervalFormat
+libcore/luni/src/main/java/libcore/icu/DateIntervalFormat.java:78: error: package android.icu.text does not exist
+      android.icu.text.DateIntervalFormat formatter =
+                      ^
+libcore/luni/src/main/java/libcore/icu/DateIntervalFormat.java:88: error: package android.icu.text does not exist
+    android.icu.text.DateIntervalFormat formatter = CACHED_FORMATTERS.get(key);
+                    ^
+libcore/luni/src/main/java/libcore/icu/DateIntervalFormat.java:92: error: package android.icu.text does not exist
+    formatter = android.icu.text.DateIntervalFormat.getInstance(skeleton, locale);
+                                ^
+libcore/luni/src/main/java/libcore/icu/DateIntervalFormat.java:99: error: cannot find symbol
+    return c.get(Calendar.HOUR_OF_DAY) == 0 &&
+                 ^
+  symbol:   variable Calendar
+  location: class DateIntervalFormat
+libcore/luni/src/main/java/libcore/icu/DateIntervalFormat.java:100: error: cannot find symbol
+        c.get(Calendar.MINUTE) == 0 &&
+              ^
+  symbol:   variable Calendar
+  location: class DateIntervalFormat
+libcore/luni/src/main/java/libcore/icu/DateIntervalFormat.java:101: error: cannot find symbol
+        c.get(Calendar.SECOND) == 0 &&
+              ^
+  symbol:   variable Calendar
+  location: class DateIntervalFormat
+libcore/luni/src/main/java/libcore/icu/DateIntervalFormat.java:102: error: cannot find symbol
+        c.get(Calendar.MILLISECOND) == 0;
+              ^
+  symbol:   variable Calendar
+  location: class DateIntervalFormat
+libcore/luni/src/main/java/libcore/icu/DateTimeFormat.java:48: error: cannot find symbol
+      DateFormat formatter = CACHED_FORMATTERS.get(key);
+      ^
+  symbol:   class DateFormat
+  location: class DateTimeFormat
+libcore/luni/src/main/java/libcore/icu/DateTimeFormat.java:50: error: cannot find symbol
+        DateTimePatternGenerator generator = DateTimePatternGenerator.getInstance(icuLocale);
+        ^
+  symbol:   class DateTimePatternGenerator
+  location: class DateTimeFormat
+libcore/luni/src/main/java/libcore/icu/DateTimeFormat.java:50: error: cannot find symbol
+        DateTimePatternGenerator generator = DateTimePatternGenerator.getInstance(icuLocale);
+                                             ^
+  symbol:   variable DateTimePatternGenerator
+  location: class DateTimeFormat
+libcore/luni/src/main/java/libcore/icu/DateTimeFormat.java:51: error: cannot find symbol
+        formatter = new SimpleDateFormat(generator.getBestPattern(skeleton), icuLocale);
+                        ^
+  symbol:   class SimpleDateFormat
+  location: class DateTimeFormat
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:95: error: cannot find symbol
+    final DisplayContext displayContext = DisplayContext.CAPITALIZATION_FOR_BEGINNING_OF_SENTENCE;
+          ^
+  symbol:   class DisplayContext
+  location: class RelativeDateTimeFormatter
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:95: error: cannot find symbol
+    final DisplayContext displayContext = DisplayContext.CAPITALIZATION_FOR_BEGINNING_OF_SENTENCE;
+                                          ^
+  symbol:   variable DisplayContext
+  location: class RelativeDateTimeFormatter
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:107: error: cannot find symbol
+    ULocale icuLocale = ULocale.forLocale(locale);
+    ^
+  symbol:   class ULocale
+  location: class RelativeDateTimeFormatter
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:107: error: cannot find symbol
+    ULocale icuLocale = ULocale.forLocale(locale);
+                        ^
+  symbol:   variable ULocale
+  location: class RelativeDateTimeFormatter
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:108: error: package android.icu.util does not exist
+    android.icu.util.TimeZone icuTimeZone = DateUtilsBridge.icuTimeZone(tz);
+                    ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:120: error: package android.icu.text.RelativeDateTimeFormatter does not exist
+    android.icu.text.RelativeDateTimeFormatter.Style style;
+                                              ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:122: error: package android.icu.text.RelativeDateTimeFormatter does not exist
+      style = android.icu.text.RelativeDateTimeFormatter.Style.SHORT;
+                                                        ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:124: error: package android.icu.text.RelativeDateTimeFormatter does not exist
+      style = android.icu.text.RelativeDateTimeFormatter.Style.LONG;
+                                                        ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:127: error: package android.icu.text.RelativeDateTimeFormatter does not exist
+    android.icu.text.RelativeDateTimeFormatter.Direction direction;
+                                              ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:129: error: package android.icu.text.RelativeDateTimeFormatter does not exist
+      direction = android.icu.text.RelativeDateTimeFormatter.Direction.LAST;
+                                                            ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:131: error: package android.icu.text.RelativeDateTimeFormatter does not exist
+      direction = android.icu.text.RelativeDateTimeFormatter.Direction.NEXT;
+                                                            ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:139: error: package android.icu.text.RelativeDateTimeFormatter does not exist
+    android.icu.text.RelativeDateTimeFormatter.RelativeUnit unit;
+                                              ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:140: error: package android.icu.text.RelativeDateTimeFormatter does not exist
+    android.icu.text.RelativeDateTimeFormatter.AbsoluteUnit aunit = null;
+                                              ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:144: error: package android.icu.text.RelativeDateTimeFormatter does not exist
+      unit = android.icu.text.RelativeDateTimeFormatter.RelativeUnit.SECONDS;
+                                                       ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:147: error: package android.icu.text.RelativeDateTimeFormatter does not exist
+      unit = android.icu.text.RelativeDateTimeFormatter.RelativeUnit.MINUTES;
+                                                       ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:153: error: package android.icu.text.RelativeDateTimeFormatter does not exist
+      unit = android.icu.text.RelativeDateTimeFormatter.RelativeUnit.HOURS;
+                                                       ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:156: error: package android.icu.text.RelativeDateTimeFormatter does not exist
+      unit = android.icu.text.RelativeDateTimeFormatter.RelativeUnit.DAYS;
+                                                       ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:170: error: package android.icu.text.RelativeDateTimeFormatter does not exist
+                    android.icu.text.RelativeDateTimeFormatter.Direction.LAST_2,
+                                                              ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:171: error: package android.icu.text.RelativeDateTimeFormatter does not exist
+                    android.icu.text.RelativeDateTimeFormatter.AbsoluteUnit.DAY);
+                                                              ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:177: error: package android.icu.text.RelativeDateTimeFormatter does not exist
+                    android.icu.text.RelativeDateTimeFormatter.Direction.NEXT_2,
+                                                              ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:178: error: package android.icu.text.RelativeDateTimeFormatter does not exist
+                    android.icu.text.RelativeDateTimeFormatter.AbsoluteUnit.DAY);
+                                                              ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:187: error: package android.icu.text.RelativeDateTimeFormatter does not exist
+        aunit = android.icu.text.RelativeDateTimeFormatter.AbsoluteUnit.DAY;
+                                                          ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:191: error: package android.icu.text.RelativeDateTimeFormatter does not exist
+        aunit = android.icu.text.RelativeDateTimeFormatter.AbsoluteUnit.DAY;
+                                                          ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:192: error: package android.icu.text.RelativeDateTimeFormatter does not exist
+        direction = android.icu.text.RelativeDateTimeFormatter.Direction.THIS;
+                                                              ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:197: error: package android.icu.text.RelativeDateTimeFormatter does not exist
+      unit = android.icu.text.RelativeDateTimeFormatter.RelativeUnit.WEEKS;
+                                                       ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:199: error: cannot find symbol
+      Calendar timeCalendar = DateUtilsBridge.createIcuCalendar(icuTimeZone, icuLocale, time);
+      ^
+  symbol:   class Calendar
+  location: class RelativeDateTimeFormatter
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:209: error: cannot find symbol
+        Calendar nowCalendar = DateUtilsBridge.createIcuCalendar(icuTimeZone, icuLocale, now);
+        ^
+  symbol:   class Calendar
+  location: class RelativeDateTimeFormatter
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:211: error: cannot find symbol
+        if (timeCalendar.get(Calendar.YEAR) != nowCalendar.get(Calendar.YEAR)) {
+                             ^
+  symbol:   variable Calendar
+  location: class RelativeDateTimeFormatter
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:211: error: cannot find symbol
+        if (timeCalendar.get(Calendar.YEAR) != nowCalendar.get(Calendar.YEAR)) {
+                                                               ^
+  symbol:   variable Calendar
+  location: class RelativeDateTimeFormatter
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:221: error: package android.icu.text does not exist
+      android.icu.text.RelativeDateTimeFormatter formatter =
+                      ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:269: error: cannot find symbol
+    ULocale icuLocale = ULocale.forLocale(locale);
+    ^
+  symbol:   class ULocale
+  location: class RelativeDateTimeFormatter
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:269: error: cannot find symbol
+    ULocale icuLocale = ULocale.forLocale(locale);
+                        ^
+  symbol:   variable ULocale
+  location: class RelativeDateTimeFormatter
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:270: error: package android.icu.util does not exist
+    android.icu.util.TimeZone icuTimeZone = DateUtilsBridge.icuTimeZone(tz);
+                    ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:277: error: package android.icu.text.RelativeDateTimeFormatter does not exist
+    android.icu.text.RelativeDateTimeFormatter.Style style;
+                                              ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:279: error: package android.icu.text.RelativeDateTimeFormatter does not exist
+        style = android.icu.text.RelativeDateTimeFormatter.Style.SHORT;
+                                                          ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:281: error: package android.icu.text.RelativeDateTimeFormatter does not exist
+        style = android.icu.text.RelativeDateTimeFormatter.Style.LONG;
+                                                          ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:284: error: cannot find symbol
+    Calendar timeCalendar = DateUtilsBridge.createIcuCalendar(icuTimeZone, icuLocale, time);
+    ^
+  symbol:   class Calendar
+  location: class RelativeDateTimeFormatter
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:285: error: cannot find symbol
+    Calendar nowCalendar = DateUtilsBridge.createIcuCalendar(icuTimeZone, icuLocale, now);
+    ^
+  symbol:   class Calendar
+  location: class RelativeDateTimeFormatter
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:299: error: cannot find symbol
+          flags, DisplayContext.CAPITALIZATION_FOR_BEGINNING_OF_SENTENCE);
+                 ^
+  symbol:   variable DisplayContext
+  location: class RelativeDateTimeFormatter
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:303: error: cannot find symbol
+      if (timeCalendar.get(Calendar.YEAR) != nowCalendar.get(Calendar.YEAR)) {
+                           ^
+  symbol:   variable Calendar
+  location: class RelativeDateTimeFormatter
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:303: error: cannot find symbol
+      if (timeCalendar.get(Calendar.YEAR) != nowCalendar.get(Calendar.YEAR)) {
+                                                             ^
+  symbol:   variable Calendar
+  location: class RelativeDateTimeFormatter
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:312: error: cannot find symbol
+          DisplayContext.CAPITALIZATION_FOR_BEGINNING_OF_SENTENCE);
+          ^
+  symbol:   variable DisplayContext
+  location: class RelativeDateTimeFormatter
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:316: error: cannot find symbol
+        DisplayContext.CAPITALIZATION_NONE);
+        ^
+  symbol:   variable DisplayContext
+  location: class RelativeDateTimeFormatter
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:320: error: cannot find symbol
+    DisplayContext capitalizationContext = DisplayContext.CAPITALIZATION_NONE;
+    ^
+  symbol:   class DisplayContext
+  location: class RelativeDateTimeFormatter
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:320: error: cannot find symbol
+    DisplayContext capitalizationContext = DisplayContext.CAPITALIZATION_NONE;
+                                           ^
+  symbol:   variable DisplayContext
+  location: class RelativeDateTimeFormatter
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:341: error: package android.icu.text does not exist
+    android.icu.text.RelativeDateTimeFormatter formatter = CACHED_FORMATTERS.get(key);
+                    ^
+libcore/luni/src/main/java/libcore/icu/RelativeDateTimeFormatter.java:343: error: package android.icu.text does not exist
+      formatter = android.icu.text.RelativeDateTimeFormatter.getInstance(
+                                  ^
+libcore/ojluni/src/main/java/java/util/Currency.java:96: error: package android.icu.util does not exist
+                android.icu.util.Currency icuInstance =
+                                ^
+libcore/ojluni/src/main/java/java/util/Currency.java:97: error: package android.icu.util does not exist
+                        android.icu.util.Currency.getInstance(currencyCode);
+                                        ^
+libcore/ojluni/src/main/java/java/util/Currency.java:130: error: package android.icu.util does not exist
+        android.icu.util.Currency icuInstance =
+                        ^
+libcore/ojluni/src/main/java/java/util/Currency.java:131: error: package android.icu.util does not exist
+                android.icu.util.Currency.getInstance(locale);
+                                ^
+libcore/ojluni/src/main/java/java/util/Currency.java:161: error: package android.icu.util does not exist
+                Set<android.icu.util.Currency> icuAvailableCurrencies
+                                    ^
+libcore/ojluni/src/main/java/java/util/Currency.java:162: error: package android.icu.util does not exist
+                        = android.icu.util.Currency.getAvailableCurrencies();
+                                          ^
+libcore/ojluni/src/main/java/java/util/Currency.java:164: error: package android.icu.util does not exist
+                for (android.icu.util.Currency icuCurrency : icuAvailableCurrencies) {
+                                     ^
+libcore/ojluni/src/main/java/java/net/IDN.java:110: error: cannot find symbol
+            return IDNA.convertIDNToASCII(input, flag).toString();
+                   ^
+  symbol:   variable IDNA
+  location: class IDN
+libcore/ojluni/src/main/java/java/net/IDN.java:111: error: package android.icu.text does not exist
+        } catch (android.icu.text.StringPrepParseException e) {
+                                 ^
+libcore/ojluni/src/main/java/java/net/IDN.java:160: error: cannot find symbol
+            return convertFullStop(IDNA.convertIDNToUnicode(input, flag)).toString();
+                                   ^
+  symbol:   variable IDNA
+  location: class IDN
+libcore/ojluni/src/main/java/java/net/IDN.java:161: error: package android.icu.text does not exist
+        } catch (android.icu.text.StringPrepParseException e) {
+                                 ^
+libcore/ojluni/src/main/java/java/text/Bidi.java:87: error: package android.icu.text does not exist
+                return android.icu.text.Bidi.DIRECTION_DEFAULT_LEFT_TO_RIGHT;
+                                       ^
+libcore/ojluni/src/main/java/java/text/Bidi.java:89: error: package android.icu.text does not exist
+                return android.icu.text.Bidi.DIRECTION_DEFAULT_RIGHT_TO_LEFT;
+                                       ^
+libcore/ojluni/src/main/java/java/text/Bidi.java:91: error: package android.icu.text does not exist
+                return android.icu.text.Bidi.DIRECTION_LEFT_TO_RIGHT;
+                                       ^
+libcore/ojluni/src/main/java/java/text/Bidi.java:93: error: package android.icu.text does not exist
+                return android.icu.text.Bidi.DIRECTION_RIGHT_TO_LEFT;
+                                       ^
+libcore/ojluni/src/main/java/java/text/Bidi.java:96: error: package android.icu.text does not exist
+                return android.icu.text.Bidi.DIRECTION_LEFT_TO_RIGHT;
+                                       ^
+libcore/ojluni/src/main/java/java/text/Bidi.java:145: error: package android.icu.text does not exist
+        this.bidiBase = new android.icu.text.Bidi(paragraph);
+                                            ^
+libcore/ojluni/src/main/java/java/text/Bidi.java:183: error: package android.icu.text does not exist
+        bidiBase = new android.icu.text.Bidi(text, textStart, embeddings, embStart,
+                                       ^
+libcore/ojluni/src/main/java/java/text/Bidi.java:210: error: package android.icu.text does not exist
+            return new Bidi(new android.icu.text.Bidi(new char[] {}, 0, new byte[] {}, 0, 0,
+                                                ^
+libcore/ojluni/src/main/java/java/text/Bidi.java:350: error: package android.icu.text does not exist
+        return android.icu.text.Bidi.requiresBidi(text, start, limit);
+                               ^
+libcore/ojluni/src/main/java/java/text/Bidi.java:385: error: package android.icu.text does not exist
+        android.icu.text.Bidi.reorderVisually(levels, levelStart, objects, objectStart, count);
+                        ^
+libcore/ojluni/src/main/java/java/text/BreakIterator.java:456: error: package android.icu.text does not exist
+                android.icu.text.BreakIterator.getWordInstance(locale));
+                                ^
+libcore/ojluni/src/main/java/java/text/BreakIterator.java:481: error: package android.icu.text does not exist
+                android.icu.text.BreakIterator.getLineInstance(locale));
+                                ^
+libcore/ojluni/src/main/java/java/text/BreakIterator.java:506: error: package android.icu.text does not exist
+                android.icu.text.BreakIterator.getCharacterInstance(locale));
+                                ^
+libcore/ojluni/src/main/java/java/text/BreakIterator.java:531: error: package android.icu.text does not exist
+                android.icu.text.BreakIterator.getSentenceInstance(locale));
+                                ^
+libcore/ojluni/src/main/java/java/text/BreakIterator.java:548: error: package android.icu.text does not exist
+        return android.icu.text.BreakIterator.getAvailableLocales();
+                               ^
+libcore/ojluni/src/main/java/java/text/CollationElementIterator.java:109: error: package android.icu.text does not exist
+    public final static int NULLORDER = android.icu.text.CollationElementIterator.NULLORDER;
+                                                        ^
+libcore/ojluni/src/main/java/java/text/CollationElementIterator.java:170: error: package android.icu.text does not exist
+        return android.icu.text.CollationElementIterator.primaryOrder(order);
+                               ^
+libcore/ojluni/src/main/java/java/text/CollationElementIterator.java:180: error: package android.icu.text does not exist
+        return (short) android.icu.text.CollationElementIterator.secondaryOrder(order);
+                                       ^
+libcore/ojluni/src/main/java/java/text/CollationElementIterator.java:190: error: package android.icu.text does not exist
+        return (short) android.icu.text.CollationElementIterator.tertiaryOrder(order);
+                                       ^
+libcore/ojluni/src/main/java/java/text/Collator.java:231: error: package android.icu.text does not exist
+        icuColl = android.icu.text.RuleBasedCollator.getInstance(Locale.getDefault());
+                                  ^
+libcore/ojluni/src/main/java/java/text/Collator.java:257: error: package android.icu.text does not exist
+        return new RuleBasedCollator((android.icu.text.RuleBasedCollator)
+                                                      ^
+libcore/ojluni/src/main/java/java/text/Collator.java:258: error: package android.icu.text does not exist
+                android.icu.text.Collator.getInstance(desiredLocale));
+                                ^
+libcore/ojluni/src/main/java/java/text/Collator.java:289: error: package android.icu.text does not exist
+            clone.icuColl = (android.icu.text.Collator) icuColl.clone();
+                                             ^
+libcore/ojluni/src/main/java/java/text/Collator.java:380: error: package android.icu.text does not exist
+        return (value == android.icu.text.Collator.IDENTICAL) ? IDENTICAL : value;
+                                         ^
+libcore/ojluni/src/main/java/java/text/Collator.java:400: error: package android.icu.text does not exist
+            newStrength = android.icu.text.Collator.IDENTICAL;
+                                          ^
+libcore/ojluni/src/main/java/java/text/Collator.java:448: error: package android.icu.text does not exist
+                return android.icu.text.Collator.CANONICAL_DECOMPOSITION;
+                                       ^
+libcore/ojluni/src/main/java/java/text/Collator.java:450: error: package android.icu.text does not exist
+                return android.icu.text.Collator.NO_DECOMPOSITION;
+                                       ^
+libcore/ojluni/src/main/java/java/text/Collator.java:458: error: package android.icu.text does not exist
+            case android.icu.text.Collator.NO_DECOMPOSITION:
+                                 ^
+libcore/ojluni/src/main/java/java/text/Collator.java:461: error: package android.icu.text does not exist
+            case android.icu.text.Collator.CANONICAL_DECOMPOSITION:
+                                 ^
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:466: error: package android.icu.text does not exist
+        this.icuDecimalFormat =  new android.icu.text.DecimalFormat(pattern,
+                                                     ^
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:479: error: package android.icu.text.NumberFormat does not exist
+        android.icu.text.NumberFormat.Field attribute;
+                                     ^
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:481: error: package android.icu.text.NumberFormat does not exist
+            attribute = android.icu.text.NumberFormat.Field.INTEGER;
+                                                     ^
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:483: error: package android.icu.text.NumberFormat does not exist
+            attribute = android.icu.text.NumberFormat.Field.FRACTION;
+                                                     ^
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:485: error: package android.icu.text.NumberFormat does not exist
+            attribute = android.icu.text.NumberFormat.Field.DECIMAL_SEPARATOR;
+                                                     ^
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:487: error: package android.icu.text.NumberFormat does not exist
+            attribute = android.icu.text.NumberFormat.Field.EXPONENT_SYMBOL;
+                                                     ^
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:489: error: package android.icu.text.NumberFormat does not exist
+            attribute = android.icu.text.NumberFormat.Field.EXPONENT_SIGN;
+                                                     ^
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:491: error: package android.icu.text.NumberFormat does not exist
+            attribute = android.icu.text.NumberFormat.Field.EXPONENT;
+                                                     ^
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:493: error: package android.icu.text.NumberFormat does not exist
+            attribute = android.icu.text.NumberFormat.Field.GROUPING_SEPARATOR;
+                                                     ^
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:495: error: package android.icu.text.NumberFormat does not exist
+            attribute = android.icu.text.NumberFormat.Field.CURRENCY;
+                                                     ^
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:497: error: package android.icu.text.NumberFormat does not exist
+            attribute = android.icu.text.NumberFormat.Field.PERCENT;
+                                                     ^
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:499: error: package android.icu.text.NumberFormat does not exist
+            attribute = android.icu.text.NumberFormat.Field.PERMILLE;
+                                                     ^
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:501: error: package android.icu.text.NumberFormat does not exist
+            attribute = android.icu.text.NumberFormat.Field.SIGN;
+                                                     ^
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:811: error: package android.icu.math does not exist
+            if (number instanceof android.icu.math.BigDecimal) {
+                                                  ^
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:812: error: package android.icu.math does not exist
+                return ((android.icu.math.BigDecimal) number).toBigDecimal();
+                                         ^
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:815: error: package android.icu.math does not exist
+        if ((number instanceof android.icu.math.BigDecimal) || (number instanceof BigInteger)) {
+                                               ^
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:1052: error: package android.icu.text does not exist
+            other.icuDecimalFormat = (android.icu.text.DecimalFormat) icuDecimalFormat.clone();
+                                                      ^
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:1363: error: cannot find symbol
+            return MathContext.ROUND_UP;
+                   ^
+  symbol:   variable MathContext
+  location: class DecimalFormat
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:1365: error: cannot find symbol
+            return MathContext.ROUND_DOWN;
+                   ^
+  symbol:   variable MathContext
+  location: class DecimalFormat
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:1367: error: cannot find symbol
+            return MathContext.ROUND_CEILING;
+                   ^
+  symbol:   variable MathContext
+  location: class DecimalFormat
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:1369: error: cannot find symbol
+            return MathContext.ROUND_FLOOR;
+                   ^
+  symbol:   variable MathContext
+  location: class DecimalFormat
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:1371: error: cannot find symbol
+            return MathContext.ROUND_HALF_UP;
+                   ^
+  symbol:   variable MathContext
+  location: class DecimalFormat
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:1373: error: cannot find symbol
+            return MathContext.ROUND_HALF_DOWN;
+                   ^
+  symbol:   variable MathContext
+  location: class DecimalFormat
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:1375: error: cannot find symbol
+            return MathContext.ROUND_HALF_EVEN;
+                   ^
+  symbol:   variable MathContext
+  location: class DecimalFormat
+libcore/ojluni/src/main/java/java/text/DecimalFormat.java:1377: error: cannot find symbol
+            return MathContext.ROUND_UNNECESSARY;
+                   ^
+  symbol:   variable MathContext
+  location: class DecimalFormat
+libcore/ojluni/src/main/java/java/text/DecimalFormatSymbols.java:688: error: package android.icu.text does not exist
+        cachedIcuDFS = new android.icu.text.DecimalFormatSymbols(this.locale);
+                                           ^
+libcore/ojluni/src/main/java/java/text/DecimalFormatSymbols.java:703: error: package android.icu.util does not exist
+                    android.icu.util.Currency.getInstance(currency.getCurrencyCode()));
+                                    ^
+libcore/ojluni/src/main/java/java/text/IcuIteratorWrapper.java:230: error: package android.icu.text does not exist
+        result.wrapped = (android.icu.text.BreakIterator) wrapped.clone();
+                                          ^
+libcore/ojluni/src/main/java/java/text/Normalizer.java:130: error: package android.icu.text does not exist
+        NFD(android.icu.text.Normalizer.NFD),
+                            ^
+libcore/ojluni/src/main/java/java/text/Normalizer.java:135: error: package android.icu.text does not exist
+        NFC(android.icu.text.Normalizer.NFC),
+                            ^
+libcore/ojluni/src/main/java/java/text/Normalizer.java:140: error: package android.icu.text does not exist
+        NFKD(android.icu.text.Normalizer.NFKD),
+                             ^
+libcore/ojluni/src/main/java/java/text/Normalizer.java:145: error: package android.icu.text does not exist
+        NFKC(android.icu.text.Normalizer.NFKC);
+                             ^
+libcore/ojluni/src/main/java/java/text/Normalizer.java:170: error: package android.icu.text does not exist
+        return android.icu.text.Normalizer.normalize(src.toString(), form.icuMode);
+                               ^
+libcore/ojluni/src/main/java/java/text/Normalizer.java:188: error: package android.icu.text does not exist
+        return android.icu.text.Normalizer.isNormalized(src.toString(), form.icuMode, 0);
+                               ^
+libcore/ojluni/src/main/java/java/text/RuleBasedCollator.java:294: error: package android.icu.text does not exist
+            icuColl = new android.icu.text.RuleBasedCollator(rules);
+                                          ^
+libcore/ojluni/src/main/java/java/text/RuleBasedCollator.java:400: error: package android.icu.text does not exist
+        return (android.icu.text.RuleBasedCollator) icuColl;
+                                ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+247 errors
+make: *** [build/core/java.mk:448: /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes-full-debug.jar] Error 41
+
+#### make failed to build some targets (15 seconds) ####
+

@@ -1,0 +1,21 @@
+)]}'
+{
+  "commit": "0385c482894d09ec34b9320883a598a77f7894e9",
+  "tree": "2486dfca9a573b8d211c937b45c0839eb84545d5",
+  "parents": [
+    "1b6f50bc73d3aec7fbb3350818b33814bd57d198",
+    "3bd2eafd1ca7e31384ed81076b994d4db09e4e81"
+  ],
+  "author": {
+    "name": "Clay Murphy",
+    "email": "claym@google.com",
+    "time": "Mon Apr 06 23:23:31 2015 +0000"
+  },
+  "committer": {
+    "name": "Gerrit Code Review",
+    "email": "noreply-gerritcodereview@google.com",
+    "time": "Mon Apr 06 23:23:32 2015 +0000"
+  },
+  "message": "Merge \"Update SELinux documentation.\"",
+  "tree_diff": []
+}

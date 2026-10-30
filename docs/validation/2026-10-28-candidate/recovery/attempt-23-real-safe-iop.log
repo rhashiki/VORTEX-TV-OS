@@ -1,0 +1,55 @@
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=recovery
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/recovery/out
+============================================
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/recovery/out
+============================================
+bootable/recovery/Android.mk:64: *** Redirect log to UART
+target thumb C: libminzip <= bootable/recovery/minzip/Zip.c
+PWD=/proc/self/cwd  prebuilts/clang/host/linux-x86/clang-2690385/bin/clang -I external/zlib -I external/safe-iop/include -I bootable/recovery/minzip -I /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libminzip_intermediates -I /workspace/build01-full-next/recovery/out/target/product/generic/gen/STATIC_LIBRARIES/libminzip_intermediates -I libnativehelper/include/nativehelper -I external/libcxx/include -I bionic/libc/include -I bionic/libc/arch-arm/include -I bionic/libc/kernel/uapi -I bionic/libc/kernel/uapi/asm-arm -I bionic/libm/include -I bionic/libm/include/arm -I external/libselinux/include -isystem system/core/include -isystem system/media/audio/include -isystem hardware/libhardware/include -isystem hardware/libhardware_legacy/include -isystem hardware/ril/include -isystem libnativehelper/include -isystem frameworks/native/include -isystem frameworks/native/opengl/include -isystem frameworks/av/include -isystem frameworks/base/include -isystem /workspace/build01-full-next/recovery/out/target/product/generic/obj/include -isystem bionic/libc/arch-arm/include -isystem bionic/libc/include -isystem bionic/libc/kernel/uapi -isystem bionic/libc/kernel/common -isystem bionic/libc/kernel/uapi/asm-arm -isystem bionic/libm/include -isystem bionic/libm/include/arm -c    -fno-exceptions -Wno-multichar -msoft-float -ffunction-sections -fdata-sections -funwind-tables -fstack-protector-strong -Wa,--noexecstack -Werror=format-security -D_FORTIFY_SOURCE=2 -fno-short-enums -no-canonical-prefixes -mcpu=cortex-a7 -D__ARM_FEATURE_LPAE=1 -mfloat-abi=softfp -mfpu=neon -DANDROID -fmessage-length=0 -W -Wall -Wno-unused -Winit-self -Wpointer-arith -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Werror=date-time -DNDEBUG -g -Wstrict-aliasing=2 -DNDEBUG -UDEBUG -D__compiler_offsetof=__builtin_offsetof -Wno-reserved-id-macro -Wno-format-pedantic -Wno-unused-command-line-argument -nostdlibinc  -target arm-linux-androideabi    -target arm-linux-androideabi -Bprebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/arm-linux-androideabi/bin    -std=gnu99     -mthumb -Os -fomit-frame-pointer -fno-strict-aliasing   -Werror -Wall -fPIC -D_USING_LIBCXX   -Werror=address-of-temporary -Werror=null-dereference -Werror=return-type  -MD -MF /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libminzip_intermediates/Zip.d -o /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libminzip_intermediates/Zip.o bootable/recovery/minzip/Zip.c
+cp /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libminzip_intermediates/Zip.d /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libminzip_intermediates/Zip.P; sed -e 's/#.*//' -e 's/^[^:]*: *//' -e 's/ *\\$//' -e '/^$/ d' -e 's/$/ :/' < /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libminzip_intermediates/Zip.d >> /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libminzip_intermediates/Zip.P; rm -f /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libminzip_intermediates/Zip.d
+target StaticLib: libminzip (/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libminzip_intermediates/libminzip.a)
+prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-ar crsPD  /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libminzip_intermediates/libminzip.a /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libminzip_intermediates/Hash.o /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libminzip_intermediates/SysUtil.o /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libminzip_intermediates/DirUtil.o /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libminzip_intermediates/Inlines.o /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libminzip_intermediates/Zip.o
+make: *** No rule to make target '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libadbd_intermediates/export_includes', needed by '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libminadbd_intermediates/import_includes'.  Stop.

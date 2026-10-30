@@ -1,0 +1,75 @@
+--- a/recovery/recovery_ui.cpp
++++ b/recovery/recovery_ui.cpp
+@@ -31,46 +31,16 @@
+ const char* ITEMS[] ={ "reboot system now",
+                        "apply update from ADB",
+                        "apply update from external storage",
+-                       "update rkimage from external storage",
+-                       "apply update from cache",
+                        "wipe data/factory reset",
+                        "wipe cache partition",
+-                       "recovery system from backup",
+                        NULL };
+ 
+-class RkUI : public ScreenRecoveryUI {
+-  public:
+-	RkUI() :
+-        consecutive_power_keys(0) {
+-    }
+-
+-    virtual KeyAction CheckKey(int key) {
+-        if (IsKeyPressed(KEY_POWER) && key == KEY_VOLUMEUP) {
+-            return TOGGLE;
+-        }
+-        if (key == KEY_POWER) {
+-            ++consecutive_power_keys;
+-            if (consecutive_power_keys >= 7) {
+-                return REBOOT;
+-            }
+-        } else {
+-            consecutive_power_keys = 0;
+-        }
+-        return ENQUEUE;
+-    }
+-
+-  private:
+-    int consecutive_power_keys;
+-};
+-
+-
+ class RkDevice : public Device {
+   public:
+ 	RkDevice() :
+-        ui(new RkUI) {
++        Device(new ScreenRecoveryUI) {
+     }
+ 
+-    RecoveryUI* GetUI() { return ui; }
+ 
+     int HandleMenuKey(int key_code, int visible) {
+         if (visible) {
+@@ -96,21 +66,15 @@
+         switch (menu_position) {
+           case 0: return REBOOT;
+           case 1: return APPLY_ADB_SIDELOAD;
+-          case 2: return APPLY_EXT;
+-          //case 3: return APPLY_INT_RKIMG;
+-          case 4: return APPLY_CACHE;
+-          case 5: return WIPE_DATA;
+-          case 6: return WIPE_CACHE;
+-          //case 7: return RECOVER_SYSTEM;
++          case 2: return APPLY_SDCARD;
++          case 3: return WIPE_DATA;
++          case 4: return WIPE_CACHE;
+           default: return NO_ACTION;
+         }
+     }
+ 
+     const char* const* GetMenuHeaders() { return HEADERS; }
+     const char* const* GetMenuItems() { return ITEMS; }
+-
+-  private:
+-    RecoveryUI* ui;
+ };
+ 
+ Device* make_device() {

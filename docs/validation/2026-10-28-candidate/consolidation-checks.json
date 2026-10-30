@@ -1,0 +1,62 @@
+{
+  "scope": "final consolidation input hashes, links and recorded regression result; not Android boot proof",
+  "publication_parent": "1db0c914fda74419be097b36c1e753296bcc2bbc",
+  "manifests": [
+    {
+      "manifest": "docs/validation/2026-10-28-candidate/audio/evidence.sha256",
+      "entries_verified": 174,
+      "sha256": "c7693e998e7dc65fb72957386bc858007870e34b878be2987b2e523911015b6a"
+    },
+    {
+      "manifest": "docs/validation/2026-10-28-candidate/bionic-smoke/evidence.sha256",
+      "entries_verified": 45,
+      "sha256": "9b3165b737439cd6d76e170a1f58337fa59b84e6dd7f6d4e2f5532e0231a4df7"
+    },
+    {
+      "manifest": "docs/validation/2026-10-28-candidate/host-toolchain/evidence.sha256",
+      "entries_verified": 36,
+      "sha256": "19b453173f4e35d424163b77585d7607f38bc8e53d5c29c3625f0fc8c1a28b23"
+    },
+    {
+      "manifest": "docs/validation/2026-10-28-candidate/installer/evidence.sha256",
+      "entries_verified": 79,
+      "sha256": "3749d646a3d75c0b9855b6cb74e7d158f219b63ea6c1ddeea562d9643790ea3b"
+    },
+    {
+      "manifest": "docs/validation/2026-10-28-candidate/latest-home/evidence.sha256",
+      "entries_verified": 19,
+      "sha256": "7fbe000abd211686a6022df6d88339c0682471fa4faa1bab05136f6bec0e4993"
+    },
+    {
+      "manifest": "docs/validation/2026-10-28-candidate/platform/evidence.sha256",
+      "entries_verified": 76,
+      "sha256": "652eb99d73931f53f226b6b8d35abe295c63e0f372d8b63267773d0bc56540ea"
+    },
+    {
+      "manifest": "docs/validation/2026-10-28-candidate/recovery/evidence.sha256",
+      "entries_verified": 120,
+      "sha256": "7027f05e2f0ea8d55599223e081269cbc4827271f33f496df0a1cf4cd4bd4833"
+    },
+    {
+      "manifest": "docs/validation/2026-10-28-candidate/build-driver/sha256.json",
+      "entries_verified": 17,
+      "sha256": "b78c99d405046607732f2160dab5627a32af5fcdfd3fbdda45fc9b8e0df5dad0"
+    },
+    {
+      "manifest": "docs/validation/2026-10-28-candidate/capacity/sha256.json",
+      "entries_verified": 11,
+      "sha256": "97d085b4184a788924f66a92da4d12b3a3097b6edda394f959148a09780a96c2"
+    }
+  ],
+  "verified_digest_entries": 577,
+  "local_markdown_links": "pass",
+  "repository_regressions": {
+    "tests": 170,
+    "skips": 0,
+    "result": "pass"
+  },
+  "app_diff_against_current_main": "empty",
+  "native_streaming_private_inputs": "absent; no contents accessed",
+  "full_android_last_stop": "missing system/netd/server/binder/android/net/INetd.aidl",
+  "status": "pass"
+}

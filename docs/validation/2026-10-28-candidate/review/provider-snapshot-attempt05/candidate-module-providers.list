@@ -1,0 +1,902 @@
+
+BugpointPasses: external/llvm/tools/bugpoint-passes
+BugpointPasses_32: external/llvm/tools/bugpoint-passes
+CodeCacheCreate_test: system/core/libnativebridge/tests system/core/libnativebridge/tests
+CodeCacheCreate_test_32: system/core/libnativebridge/tests
+CodeCacheExists_test: system/core/libnativebridge/tests system/core/libnativebridge/tests
+CodeCacheExists_test_32: system/core/libnativebridge/tests
+CodeCacheStatFail_test: system/core/libnativebridge/tests system/core/libnativebridge/tests
+CodeCacheStatFail_test_32: system/core/libnativebridge/tests
+CompleteFlow_test: system/core/libnativebridge/tests system/core/libnativebridge/tests
+CompleteFlow_test_32: system/core/libnativebridge/tests
+FileCheck: external/llvm/utils/FileCheck
+InvalidCharsNativeBridge_test: system/core/libnativebridge/tests system/core/libnativebridge/tests
+InvalidCharsNativeBridge_test_32: system/core/libnativebridge/tests
+LLVMHello: external/llvm/lib/Transforms/Hello
+LLVMHello_32: external/llvm/lib/Transforms/Hello
+LLVMgold: external/llvm/tools/gold
+NativeBridge2Signal_test: system/core/libnativebridge/tests system/core/libnativebridge/tests
+NativeBridge2Signal_test_32: system/core/libnativebridge/tests
+NativeBridgeVersion_test: system/core/libnativebridge/tests system/core/libnativebridge/tests
+NativeBridgeVersion_test_32: system/core/libnativebridge/tests
+NeedsNativeBridge_test: system/core/libnativebridge/tests system/core/libnativebridge/tests
+NeedsNativeBridge_test_32: system/core/libnativebridge/tests
+PreInitializeNativeBridgeFail1_test: system/core/libnativebridge/tests system/core/libnativebridge/tests
+PreInitializeNativeBridgeFail1_test_32: system/core/libnativebridge/tests
+PreInitializeNativeBridgeFail2_test: system/core/libnativebridge/tests system/core/libnativebridge/tests
+PreInitializeNativeBridgeFail2_test_32: system/core/libnativebridge/tests
+PreInitializeNativeBridge_test: system/core/libnativebridge/tests system/core/libnativebridge/tests
+PreInitializeNativeBridge_test_32: system/core/libnativebridge/tests
+ReSetupNativeBridge_test: system/core/libnativebridge/tests system/core/libnativebridge/tests
+ReSetupNativeBridge_test_32: system/core/libnativebridge/tests
+SharedBufferTest: system/core/libutils system/core/libutils
+SharedBufferTest_32: system/core/libutils
+UnavailableNativeBridge_test: system/core/libnativebridge/tests system/core/libnativebridge/tests
+UnavailableNativeBridge_test_32: system/core/libnativebridge/tests
+UpdateTestApp: libcore/tzdata/update_test_app
+ValidNameNativeBridge_test: system/core/libnativebridge/tests system/core/libnativebridge/tests
+ValidNameNativeBridge_test_32: system/core/libnativebridge/tests
+VortexHome: vendor/vortex/home
+acp: build/tools/acp
+adb: system/core/adb
+adb_device_tracker_test: system/core/adb
+adb_test: system/core/adb
+adbd: system/core/adb
+adbd_test: system/core/adb
+apicheck: build/tools/apicheck
+append2simg: system/core/libsparse
+asan_test: external/compiler-rt/lib/asan external/compiler-rt/lib/asan
+asan_test_32: external/compiler-rt/lib/asan
+asanwrapper: external/compiler-rt/lib/asan
+atree: build/tools/atree
+audio.primary.default: hardware/libhardware/modules/audio
+audio.r_submix.default: hardware/libhardware/modules/audio_remote_submix
+audio.stub.default: hardware/libhardware/modules/audio
+audio.usb.default: hardware/libhardware/modules/usbaudio
+audio_policy.stub: hardware/libhardware/modules/audio
+backtrace_test: system/core/libbacktrace system/core/libbacktrace
+backtrace_test_32: system/core/libbacktrace
+benchmarks: libcore/benchmarks
+bionic-benchmarks: bionic/benchmarks
+bionic-benchmarks-glibc: bionic/benchmarks
+bionic-benchmarks-glibc_32: bionic/benchmarks
+bionic-compile-time-tests-clang++: bionic/tests
+bionic-compile-time-tests-g++: bionic/tests
+bionic-unit-tests: bionic/tests
+bionic-unit-tests-gcc: bionic/tests
+bionic-unit-tests-glibc: bionic/tests
+bionic-unit-tests-glibc_32: bionic/tests
+bionic-unit-tests-static: bionic/tests
+bionic_tests_zipalign: bionic/tests/libs
+bootstat: system/core/bootstat
+bootstat_tests: system/core/bootstat system/core/bootstat
+bootstat_tests_32: system/core/bootstat
+bugpoint: external/llvm/tools/bugpoint
+camera.default: hardware/libhardware/modules/camera
+camera.usb.default: hardware/libhardware/modules/usbcamera
+camera2_test: hardware/libhardware/tests/camera2
+camera3_tests: hardware/libhardware/tests/camera3
+charger_res_images: system/core/healthd
+consumerir.default: hardware/libhardware/modules/consumerir
+core-all: libcore
+core-all-hostdex: libcore
+core-lambda-stubs: libcore
+core-lambda-stubs-hostdex: libcore
+core-libart: libcore
+core-libart-hostdex: libcore
+core-libart-testdex: libcore
+core-oj: libcore
+core-oj-hostdex: libcore
+core-oj-testdex: libcore
+core-ojtests: libcore
+core-ojtests-hostdex: libcore
+core-ojtests-public: libcore
+core-tests: libcore
+core-tests-hostdex: libcore
+core-tests-support: libcore
+core-tests-support-hostdex: libcore
+count: external/llvm/utils/count
+crash_reporter: system/core/crash_reporter
+crash_reporter_logs.conf: system/core/crash_reporter
+crash_reporter_tests: system/core/crash_reporter
+crash_sender: system/core/crash_reporter
+crasher: system/core/debuggerd
+debuggerd: system/core/debuggerd
+debuggerd_test: system/core/debuggerd system/core/debuggerd
+debuggerd_test_32: system/core/debuggerd
+dex-host: libcore
+dhcptool: system/core/libnetutils
+drmservice: system/core/drmservice
+dumpkey: system/core/libmincrypt/tools
+ecdsa_test: system/core/libmincrypt/test
+ecdsa_test_32: system/core/libmincrypt/test
+elf_file_unittest_relocs_arm32.so: bionic/tools/relocation_packer
+elf_file_unittest_relocs_arm32_packed.so: bionic/tools/relocation_packer
+elf_file_unittest_relocs_arm64.so: bionic/tools/relocation_packer
+elf_file_unittest_relocs_arm64_packed.so: bionic/tools/relocation_packer
+elf_file_unittest_relocs_ia32.so: bionic/tools/relocation_packer
+elf_file_unittest_relocs_ia32_packed.so: bionic/tools/relocation_packer
+elf_file_unittest_relocs_mips32.so: bionic/tools/relocation_packer
+elf_file_unittest_relocs_mips32_packed.so: bionic/tools/relocation_packer
+elf_file_unittest_relocs_x64.so: bionic/tools/relocation_packer
+elf_file_unittest_relocs_x64_packed.so: bionic/tools/relocation_packer
+fastboot: system/core/fastboot
+fastboot_test: system/core/fastboot
+fastboot_test_32: system/core/fastboot
+fingerprint.default: hardware/libhardware/modules/fingerprint
+fingerprint_tests: hardware/libhardware/tests/fingerprint
+fingerprintd: system/core/fingerprintd
+fortify1-tests-clang: bionic/tests bionic/tests
+fortify1-tests-clang_32: bionic/tests
+fortify1-tests-gcc: bionic/tests bionic/tests
+fortify1-tests-gcc_32: bionic/tests
+fortify2-tests-clang: bionic/tests bionic/tests
+fortify2-tests-clang_32: bionic/tests
+fortify2-tests-gcc: bionic/tests bionic/tests
+fortify2-tests-gcc_32: bionic/tests
+fs_config: build/tools/fs_config
+fs_config_dirs: build/tools/fs_config
+fs_config_files: build/tools/fs_config
+fs_config_generate_vortex_rk322x_sd_box: build/tools/fs_config
+fs_get_stats: build/tools/fs_get_stats
+fs_mgr: system/core/fs_mgr
+gatekeeper.trusty: system/core/trusty/gatekeeper
+gatekeeperd: system/core/gatekeeperd
+gatekeeperd-unit-tests: system/core/gatekeeperd/tests
+gralloc.default: hardware/libhardware/modules/gralloc
+gralloc.rk30board: hardware/rockchip/libgralloc
+grep: system/core/toolbox
+healthd: system/core/healthd
+host_cross_adb: system/core/adb
+host_cross_adb_test: system/core/adb
+host_cross_bionic_tests_zipalign: bionic/tests/libs
+host_cross_fastboot: system/core/fastboot
+host_cross_fastboot_test: system/core/fastboot
+host_cross_fastboot_test_64: system/core/fastboot
+host_cross_libLLVM: external/llvm
+host_cross_libLLVMAArch64AsmParser: external/llvm/lib/Target/AArch64/AsmParser
+host_cross_libLLVMAArch64AsmParser_64: external/llvm/lib/Target/AArch64/AsmParser
+host_cross_libLLVMAArch64AsmPrinter: external/llvm/lib/Target/AArch64/InstPrinter
+host_cross_libLLVMAArch64AsmPrinter_64: external/llvm/lib/Target/AArch64/InstPrinter
+host_cross_libLLVMAArch64CodeGen: external/llvm/lib/Target/AArch64
+host_cross_libLLVMAArch64CodeGen_64: external/llvm/lib/Target/AArch64
+host_cross_libLLVMAArch64Desc: external/llvm/lib/Target/AArch64/MCTargetDesc
+host_cross_libLLVMAArch64Desc_64: external/llvm/lib/Target/AArch64/MCTargetDesc
+host_cross_libLLVMAArch64Disassembler: external/llvm/lib/Target/AArch64/Disassembler
+host_cross_libLLVMAArch64Disassembler_64: external/llvm/lib/Target/AArch64/Disassembler
+host_cross_libLLVMAArch64Info: external/llvm/lib/Target/AArch64/TargetInfo
+host_cross_libLLVMAArch64Info_64: external/llvm/lib/Target/AArch64/TargetInfo
+host_cross_libLLVMAArch64Utils: external/llvm/lib/Target/AArch64/Utils
+host_cross_libLLVMAArch64Utils_64: external/llvm/lib/Target/AArch64/Utils
+host_cross_libLLVMARMAsmParser: external/llvm/lib/Target/ARM/AsmParser
+host_cross_libLLVMARMAsmParser_64: external/llvm/lib/Target/ARM/AsmParser
+host_cross_libLLVMARMAsmPrinter: external/llvm/lib/Target/ARM/InstPrinter
+host_cross_libLLVMARMAsmPrinter_64: external/llvm/lib/Target/ARM/InstPrinter
+host_cross_libLLVMARMCodeGen: external/llvm/lib/Target/ARM
+host_cross_libLLVMARMCodeGen_64: external/llvm/lib/Target/ARM
+host_cross_libLLVMARMDesc: external/llvm/lib/Target/ARM/MCTargetDesc
+host_cross_libLLVMARMDesc_64: external/llvm/lib/Target/ARM/MCTargetDesc
+host_cross_libLLVMARMDisassembler: external/llvm/lib/Target/ARM/Disassembler
+host_cross_libLLVMARMDisassembler_64: external/llvm/lib/Target/ARM/Disassembler
+host_cross_libLLVMARMInfo: external/llvm/lib/Target/ARM/TargetInfo
+host_cross_libLLVMARMInfo_64: external/llvm/lib/Target/ARM/TargetInfo
+host_cross_libLLVMAnalysis: external/llvm/lib/Analysis
+host_cross_libLLVMAnalysis_64: external/llvm/lib/Analysis
+host_cross_libLLVMAsmParser: external/llvm/lib/AsmParser
+host_cross_libLLVMAsmParser_64: external/llvm/lib/AsmParser
+host_cross_libLLVMAsmPrinter: external/llvm/lib/CodeGen/AsmPrinter
+host_cross_libLLVMAsmPrinter_64: external/llvm/lib/CodeGen/AsmPrinter
+host_cross_libLLVMBitReader: external/llvm/lib/Bitcode/Reader
+host_cross_libLLVMBitReader_64: external/llvm/lib/Bitcode/Reader
+host_cross_libLLVMBitWriter: external/llvm/lib/Bitcode/Writer
+host_cross_libLLVMBitWriter_64: external/llvm/lib/Bitcode/Writer
+host_cross_libLLVMCodeGen: external/llvm/lib/CodeGen
+host_cross_libLLVMCodeGen_64: external/llvm/lib/CodeGen
+host_cross_libLLVMCore: external/llvm/lib/IR
+host_cross_libLLVMCore_64: external/llvm/lib/IR
+host_cross_libLLVMDebugInfoDWARF: external/llvm/lib/DebugInfo/DWARF
+host_cross_libLLVMDebugInfoDWARF_64: external/llvm/lib/DebugInfo/DWARF
+host_cross_libLLVMDebugInfoPDB: external/llvm/lib/DebugInfo/PDB
+host_cross_libLLVMDebugInfoPDB_64: external/llvm/lib/DebugInfo/PDB
+host_cross_libLLVMExecutionEngine: external/llvm/lib/ExecutionEngine
+host_cross_libLLVMExecutionEngine_64: external/llvm/lib/ExecutionEngine
+host_cross_libLLVMIRReader: external/llvm/lib/IRReader
+host_cross_libLLVMIRReader_64: external/llvm/lib/IRReader
+host_cross_libLLVMInstCombine: external/llvm/lib/Transforms/InstCombine
+host_cross_libLLVMInstCombine_64: external/llvm/lib/Transforms/InstCombine
+host_cross_libLLVMInstrumentation: external/llvm/lib/Transforms/Instrumentation
+host_cross_libLLVMInstrumentation_64: external/llvm/lib/Transforms/Instrumentation
+host_cross_libLLVMLibDriver: external/llvm/lib/LibDriver
+host_cross_libLLVMLibDriver_64: external/llvm/lib/LibDriver
+host_cross_libLLVMLinker: external/llvm/lib/Linker
+host_cross_libLLVMLinker_64: external/llvm/lib/Linker
+host_cross_libLLVMMC: external/llvm/lib/MC
+host_cross_libLLVMMCDisassembler: external/llvm/lib/MC/MCDisassembler
+host_cross_libLLVMMCDisassembler_64: external/llvm/lib/MC/MCDisassembler
+host_cross_libLLVMMCJIT: external/llvm/lib/ExecutionEngine/MCJIT
+host_cross_libLLVMMCJIT_64: external/llvm/lib/ExecutionEngine/MCJIT
+host_cross_libLLVMMCParser: external/llvm/lib/MC/MCParser
+host_cross_libLLVMMCParser_64: external/llvm/lib/MC/MCParser
+host_cross_libLLVMMC_64: external/llvm/lib/MC
+host_cross_libLLVMMipsAsmParser: external/llvm/lib/Target/Mips/AsmParser
+host_cross_libLLVMMipsAsmParser_64: external/llvm/lib/Target/Mips/AsmParser
+host_cross_libLLVMMipsAsmPrinter: external/llvm/lib/Target/Mips/InstPrinter
+host_cross_libLLVMMipsAsmPrinter_64: external/llvm/lib/Target/Mips/InstPrinter
+host_cross_libLLVMMipsCodeGen: external/llvm/lib/Target/Mips
+host_cross_libLLVMMipsCodeGen_64: external/llvm/lib/Target/Mips
+host_cross_libLLVMMipsDesc: external/llvm/lib/Target/Mips/MCTargetDesc
+host_cross_libLLVMMipsDesc_64: external/llvm/lib/Target/Mips/MCTargetDesc
+host_cross_libLLVMMipsDisassembler: external/llvm/lib/Target/Mips/Disassembler
+host_cross_libLLVMMipsDisassembler_64: external/llvm/lib/Target/Mips/Disassembler
+host_cross_libLLVMMipsInfo: external/llvm/lib/Target/Mips/TargetInfo
+host_cross_libLLVMMipsInfo_64: external/llvm/lib/Target/Mips/TargetInfo
+host_cross_libLLVMObject: external/llvm/lib/Object
+host_cross_libLLVMObject_64: external/llvm/lib/Object
+host_cross_libLLVMOption: external/llvm/lib/Option
+host_cross_libLLVMOption_64: external/llvm/lib/Option
+host_cross_libLLVMOrcJIT: external/llvm/lib/ExecutionEngine/Orc
+host_cross_libLLVMOrcJIT_64: external/llvm/lib/ExecutionEngine/Orc
+host_cross_libLLVMProfileData: external/llvm/lib/ProfileData
+host_cross_libLLVMProfileData_64: external/llvm/lib/ProfileData
+host_cross_libLLVMRuntimeDyld: external/llvm/lib/ExecutionEngine/RuntimeDyld
+host_cross_libLLVMRuntimeDyld_64: external/llvm/lib/ExecutionEngine/RuntimeDyld
+host_cross_libLLVMScalarOpts: external/llvm/lib/Transforms/Scalar
+host_cross_libLLVMScalarOpts_64: external/llvm/lib/Transforms/Scalar
+host_cross_libLLVMSelectionDAG: external/llvm/lib/CodeGen/SelectionDAG
+host_cross_libLLVMSelectionDAG_64: external/llvm/lib/CodeGen/SelectionDAG
+host_cross_libLLVMSupport: external/llvm/lib/Support
+host_cross_libLLVMSupport_64: external/llvm/lib/Support
+host_cross_libLLVMSymbolize: external/llvm/lib/DebugInfo/Symbolize
+host_cross_libLLVMSymbolize_64: external/llvm/lib/DebugInfo/Symbolize
+host_cross_libLLVMTarget: external/llvm/lib/Target
+host_cross_libLLVMTarget_64: external/llvm/lib/Target
+host_cross_libLLVMTransformObjCARC: external/llvm/lib/Transforms/ObjCARC
+host_cross_libLLVMTransformObjCARC_64: external/llvm/lib/Transforms/ObjCARC
+host_cross_libLLVMTransformUtils: external/llvm/lib/Transforms/Utils
+host_cross_libLLVMTransformUtils_64: external/llvm/lib/Transforms/Utils
+host_cross_libLLVMVectorize: external/llvm/lib/Transforms/Vectorize
+host_cross_libLLVMVectorize_64: external/llvm/lib/Transforms/Vectorize
+host_cross_libLLVMX86AsmParser: external/llvm/lib/Target/X86/AsmParser
+host_cross_libLLVMX86AsmParser_64: external/llvm/lib/Target/X86/AsmParser
+host_cross_libLLVMX86AsmPrinter: external/llvm/lib/Target/X86/InstPrinter
+host_cross_libLLVMX86AsmPrinter_64: external/llvm/lib/Target/X86/InstPrinter
+host_cross_libLLVMX86CodeGen: external/llvm/lib/Target/X86
+host_cross_libLLVMX86CodeGen_64: external/llvm/lib/Target/X86
+host_cross_libLLVMX86Desc: external/llvm/lib/Target/X86/MCTargetDesc
+host_cross_libLLVMX86Desc_64: external/llvm/lib/Target/X86/MCTargetDesc
+host_cross_libLLVMX86Disassembler: external/llvm/lib/Target/X86/Disassembler
+host_cross_libLLVMX86Disassembler_64: external/llvm/lib/Target/X86/Disassembler
+host_cross_libLLVMX86Info: external/llvm/lib/Target/X86/TargetInfo
+host_cross_libLLVMX86Info_64: external/llvm/lib/Target/X86/TargetInfo
+host_cross_libLLVMX86Utils: external/llvm/lib/Target/X86/Utils
+host_cross_libLLVMX86Utils_64: external/llvm/lib/Target/X86/Utils
+host_cross_libLLVM_64: external/llvm
+host_cross_libLLVMipo: external/llvm/lib/Transforms/IPO
+host_cross_libLLVMipo_64: external/llvm/lib/Transforms/IPO
+host_cross_libadb: system/core/adb
+host_cross_libbase: system/core/base system/core/base
+host_cross_libbase_64: system/core/base system/core/base
+host_cross_libbase_test: system/core/base
+host_cross_libbase_test_64: system/core/base
+host_cross_libcompiler_rt-extras: external/compiler-rt
+host_cross_libcompiler_rt-extras_64: external/compiler-rt
+host_cross_libcutils: system/core/libcutils
+host_cross_libcutils_64: system/core/libcutils
+host_cross_libcutils_test_static: system/core/libcutils/tests
+host_cross_libcutils_test_static_64: system/core/libcutils/tests
+host_cross_libdiagnose_usb: system/core/adb
+host_cross_libdiagnose_usb_64: system/core/adb
+host_cross_libhost: build/libs/host
+host_cross_libhost_64: build/libs/host
+host_cross_liblog: system/core/liblog system/core/liblog
+host_cross_liblog_64: system/core/liblog system/core/liblog
+host_cross_libsparse_host: system/core/libsparse
+host_cross_libsparse_host_64: system/core/libsparse
+host_cross_libutils: system/core/libutils
+host_cross_libutils_64: system/core/libutils
+host_cross_libziparchive-host: system/core/libziparchive
+host_cross_libziparchive-host_64: system/core/libziparchive
+host_cross_zipalign: build/tools/zipalign
+host_cross_ziparchive-tests-host: system/core/libziparchive
+host_cross_ziparchive-tests-host_64: system/core/libziparchive
+host_cross_ziptime: build/tools/ziptime
+hwc-test-arrows: hardware/libhardware/tests/hwc
+hwcomposer.default: hardware/libhardware/modules/hwcomposer
+hwcomposer.rk30board: hardware/rockchip/hwcomposer
+ijar: build/tools/ijar
+img2simg: system/core/libsparse
+img2simg_host: system/core/libsparse
+init: system/core/init
+init-debug.rc: system/core/rootdir
+init.environ.rc: system/core/rootdir
+init.rc: system/core/rootdir
+init_parser_tests: system/core/init
+init_parser_tests_32: system/core/init
+init_tests: system/core/init
+input.evdev.default: hardware/libhardware/modules/input/evdev
+ion-unit-tests: system/core/libion/tests
+iontest: system/core/libion
+jack: prebuilts/sdk/tools
+jack-admin: prebuilts/sdk/tools
+jsr166-tests: libcore
+keymaster_test: hardware/libhardware/tests/keymaster
+libBionicCtsGtestMain: bionic/tests bionic/tests
+libBionicCtsGtestMain_32: bionic/tests
+libBionicGtestMain: bionic/tests bionic/tests
+libBionicGtestMain_32: bionic/tests
+libBionicStandardTests: bionic/tests bionic/tests
+libBionicStandardTests_32: bionic/tests
+libBionicTests: bionic/tests bionic/tests
+libBionicTests_32: bionic/tests
+libLLVM: external/llvm prebuilts/sdk/tools
+libLLVMAArch64AsmParser: external/llvm/lib/Target/AArch64/AsmParser external/llvm/lib/Target/AArch64/AsmParser
+libLLVMAArch64AsmParser_32: external/llvm/lib/Target/AArch64/AsmParser
+libLLVMAArch64AsmPrinter: external/llvm/lib/Target/AArch64/InstPrinter external/llvm/lib/Target/AArch64/InstPrinter
+libLLVMAArch64AsmPrinter_32: external/llvm/lib/Target/AArch64/InstPrinter
+libLLVMAArch64CodeGen: external/llvm/lib/Target/AArch64 external/llvm/lib/Target/AArch64
+libLLVMAArch64CodeGen_32: external/llvm/lib/Target/AArch64
+libLLVMAArch64Desc: external/llvm/lib/Target/AArch64/MCTargetDesc external/llvm/lib/Target/AArch64/MCTargetDesc
+libLLVMAArch64Desc_32: external/llvm/lib/Target/AArch64/MCTargetDesc
+libLLVMAArch64Disassembler: external/llvm/lib/Target/AArch64/Disassembler external/llvm/lib/Target/AArch64/Disassembler
+libLLVMAArch64Disassembler_32: external/llvm/lib/Target/AArch64/Disassembler
+libLLVMAArch64Info: external/llvm/lib/Target/AArch64/TargetInfo external/llvm/lib/Target/AArch64/TargetInfo
+libLLVMAArch64Info_32: external/llvm/lib/Target/AArch64/TargetInfo
+libLLVMAArch64Utils: external/llvm/lib/Target/AArch64/Utils external/llvm/lib/Target/AArch64/Utils
+libLLVMAArch64Utils_32: external/llvm/lib/Target/AArch64/Utils
+libLLVMARMAsmParser: external/llvm/lib/Target/ARM/AsmParser external/llvm/lib/Target/ARM/AsmParser
+libLLVMARMAsmParser_32: external/llvm/lib/Target/ARM/AsmParser
+libLLVMARMAsmPrinter: external/llvm/lib/Target/ARM/InstPrinter external/llvm/lib/Target/ARM/InstPrinter
+libLLVMARMAsmPrinter_32: external/llvm/lib/Target/ARM/InstPrinter
+libLLVMARMCodeGen: external/llvm/lib/Target/ARM external/llvm/lib/Target/ARM
+libLLVMARMCodeGen_32: external/llvm/lib/Target/ARM
+libLLVMARMDesc: external/llvm/lib/Target/ARM/MCTargetDesc external/llvm/lib/Target/ARM/MCTargetDesc
+libLLVMARMDesc_32: external/llvm/lib/Target/ARM/MCTargetDesc
+libLLVMARMDisassembler: external/llvm/lib/Target/ARM/Disassembler external/llvm/lib/Target/ARM/Disassembler
+libLLVMARMDisassembler_32: external/llvm/lib/Target/ARM/Disassembler
+libLLVMARMInfo: external/llvm/lib/Target/ARM/TargetInfo external/llvm/lib/Target/ARM/TargetInfo
+libLLVMARMInfo_32: external/llvm/lib/Target/ARM/TargetInfo
+libLLVMAnalysis: external/llvm/lib/Analysis external/llvm/lib/Analysis
+libLLVMAnalysis_32: external/llvm/lib/Analysis
+libLLVMAsmParser: external/llvm/lib/AsmParser external/llvm/lib/AsmParser
+libLLVMAsmParser_32: external/llvm/lib/AsmParser
+libLLVMAsmPrinter: external/llvm/lib/CodeGen/AsmPrinter external/llvm/lib/CodeGen/AsmPrinter
+libLLVMAsmPrinter_32: external/llvm/lib/CodeGen/AsmPrinter
+libLLVMBitReader: external/llvm/lib/Bitcode/Reader external/llvm/lib/Bitcode/Reader
+libLLVMBitReader_32: external/llvm/lib/Bitcode/Reader
+libLLVMBitWriter: external/llvm/lib/Bitcode/Writer external/llvm/lib/Bitcode/Writer
+libLLVMBitWriter_32: external/llvm/lib/Bitcode/Writer
+libLLVMCodeGen: external/llvm/lib/CodeGen external/llvm/lib/CodeGen
+libLLVMCodeGen_32: external/llvm/lib/CodeGen
+libLLVMCore: external/llvm/lib/IR external/llvm/lib/IR
+libLLVMCore_32: external/llvm/lib/IR
+libLLVMDebugInfoDWARF: external/llvm/lib/DebugInfo/DWARF external/llvm/lib/DebugInfo/DWARF
+libLLVMDebugInfoDWARF_32: external/llvm/lib/DebugInfo/DWARF
+libLLVMDebugInfoPDB: external/llvm/lib/DebugInfo/PDB external/llvm/lib/DebugInfo/PDB
+libLLVMDebugInfoPDB_32: external/llvm/lib/DebugInfo/PDB
+libLLVMExecutionEngine: external/llvm/lib/ExecutionEngine
+libLLVMExecutionEngine_32: external/llvm/lib/ExecutionEngine
+libLLVMFuzzer: external/llvm/lib/Fuzzer external/llvm/lib/Fuzzer
+libLLVMFuzzerNoMain: external/llvm/lib/Fuzzer external/llvm/lib/Fuzzer
+libLLVMFuzzerNoMain_32: external/llvm/lib/Fuzzer
+libLLVMFuzzer_32: external/llvm/lib/Fuzzer
+libLLVMIRReader: external/llvm/lib/IRReader external/llvm/lib/IRReader
+libLLVMIRReader_32: external/llvm/lib/IRReader
+libLLVMInstCombine: external/llvm/lib/Transforms/InstCombine external/llvm/lib/Transforms/InstCombine
+libLLVMInstCombine_32: external/llvm/lib/Transforms/InstCombine
+libLLVMInstrumentation: external/llvm/lib/Transforms/Instrumentation external/llvm/lib/Transforms/Instrumentation
+libLLVMInstrumentation_32: external/llvm/lib/Transforms/Instrumentation
+libLLVMInterpreter: external/llvm/lib/ExecutionEngine/Interpreter
+libLLVMInterpreter_32: external/llvm/lib/ExecutionEngine/Interpreter
+libLLVMLTO: external/llvm/lib/LTO external/llvm/lib/LTO
+libLLVMLTO_32: external/llvm/lib/LTO
+libLLVMLibDriver: external/llvm/lib/LibDriver external/llvm/lib/LibDriver
+libLLVMLibDriver_32: external/llvm/lib/LibDriver
+libLLVMLinker: external/llvm/lib/Linker external/llvm/lib/Linker
+libLLVMLinker_32: external/llvm/lib/Linker
+libLLVMMC: external/llvm/lib/MC external/llvm/lib/MC
+libLLVMMCDisassembler: external/llvm/lib/MC/MCDisassembler external/llvm/lib/MC/MCDisassembler
+libLLVMMCDisassembler_32: external/llvm/lib/MC/MCDisassembler
+libLLVMMCJIT: external/llvm/lib/ExecutionEngine/MCJIT
+libLLVMMCJIT_32: external/llvm/lib/ExecutionEngine/MCJIT
+libLLVMMCParser: external/llvm/lib/MC/MCParser external/llvm/lib/MC/MCParser
+libLLVMMCParser_32: external/llvm/lib/MC/MCParser
+libLLVMMC_32: external/llvm/lib/MC
+libLLVMMIRParser: external/llvm/lib/CodeGen/MIRParser external/llvm/lib/CodeGen/MIRParser
+libLLVMMIRParser_32: external/llvm/lib/CodeGen/MIRParser
+libLLVMMipsAsmParser: external/llvm/lib/Target/Mips/AsmParser external/llvm/lib/Target/Mips/AsmParser
+libLLVMMipsAsmParser_32: external/llvm/lib/Target/Mips/AsmParser
+libLLVMMipsAsmPrinter: external/llvm/lib/Target/Mips/InstPrinter external/llvm/lib/Target/Mips/InstPrinter
+libLLVMMipsAsmPrinter_32: external/llvm/lib/Target/Mips/InstPrinter
+libLLVMMipsCodeGen: external/llvm/lib/Target/Mips external/llvm/lib/Target/Mips
+libLLVMMipsCodeGen_32: external/llvm/lib/Target/Mips
+libLLVMMipsDesc: external/llvm/lib/Target/Mips/MCTargetDesc external/llvm/lib/Target/Mips/MCTargetDesc
+libLLVMMipsDesc_32: external/llvm/lib/Target/Mips/MCTargetDesc
+libLLVMMipsDisassembler: external/llvm/lib/Target/Mips/Disassembler external/llvm/lib/Target/Mips/Disassembler
+libLLVMMipsDisassembler_32: external/llvm/lib/Target/Mips/Disassembler
+libLLVMMipsInfo: external/llvm/lib/Target/Mips/TargetInfo external/llvm/lib/Target/Mips/TargetInfo
+libLLVMMipsInfo_32: external/llvm/lib/Target/Mips/TargetInfo
+libLLVMObject: external/llvm/lib/Object external/llvm/lib/Object
+libLLVMObject_32: external/llvm/lib/Object
+libLLVMOption: external/llvm/lib/Option external/llvm/lib/Option
+libLLVMOption_32: external/llvm/lib/Option
+libLLVMOrcJIT: external/llvm/lib/ExecutionEngine/Orc
+libLLVMOrcJIT_32: external/llvm/lib/ExecutionEngine/Orc
+libLLVMPasses: external/llvm/lib/Passes external/llvm/lib/Passes
+libLLVMPasses_32: external/llvm/lib/Passes
+libLLVMProfileData: external/llvm/lib/ProfileData external/llvm/lib/ProfileData
+libLLVMProfileData_32: external/llvm/lib/ProfileData
+libLLVMRuntimeDyld: external/llvm/lib/ExecutionEngine/RuntimeDyld
+libLLVMRuntimeDyld_32: external/llvm/lib/ExecutionEngine/RuntimeDyld
+libLLVMScalarOpts: external/llvm/lib/Transforms/Scalar external/llvm/lib/Transforms/Scalar
+libLLVMScalarOpts_32: external/llvm/lib/Transforms/Scalar
+libLLVMSelectionDAG: external/llvm/lib/CodeGen/SelectionDAG external/llvm/lib/CodeGen/SelectionDAG
+libLLVMSelectionDAG_32: external/llvm/lib/CodeGen/SelectionDAG
+libLLVMSupport: external/llvm/lib/Support external/llvm/lib/Support
+libLLVMSupport_32: external/llvm/lib/Support
+libLLVMSymbolize: external/llvm/lib/DebugInfo/Symbolize external/llvm/lib/DebugInfo/Symbolize
+libLLVMSymbolize_32: external/llvm/lib/DebugInfo/Symbolize
+libLLVMTableGen: external/llvm/lib/TableGen
+libLLVMTableGen_32: external/llvm/lib/TableGen
+libLLVMTarget: external/llvm/lib/Target external/llvm/lib/Target
+libLLVMTarget_32: external/llvm/lib/Target
+libLLVMTransformObjCARC: external/llvm/lib/Transforms/ObjCARC external/llvm/lib/Transforms/ObjCARC
+libLLVMTransformObjCARC_32: external/llvm/lib/Transforms/ObjCARC
+libLLVMTransformUtils: external/llvm/lib/Transforms/Utils external/llvm/lib/Transforms/Utils
+libLLVMTransformUtils_32: external/llvm/lib/Transforms/Utils
+libLLVMVectorize: external/llvm/lib/Transforms/Vectorize external/llvm/lib/Transforms/Vectorize
+libLLVMVectorize_32: external/llvm/lib/Transforms/Vectorize
+libLLVMX86AsmParser: external/llvm/lib/Target/X86/AsmParser external/llvm/lib/Target/X86/AsmParser
+libLLVMX86AsmParser_32: external/llvm/lib/Target/X86/AsmParser
+libLLVMX86AsmPrinter: external/llvm/lib/Target/X86/InstPrinter external/llvm/lib/Target/X86/InstPrinter
+libLLVMX86AsmPrinter_32: external/llvm/lib/Target/X86/InstPrinter
+libLLVMX86CodeGen: external/llvm/lib/Target/X86 external/llvm/lib/Target/X86
+libLLVMX86CodeGen_32: external/llvm/lib/Target/X86
+libLLVMX86Desc: external/llvm/lib/Target/X86/MCTargetDesc external/llvm/lib/Target/X86/MCTargetDesc
+libLLVMX86Desc_32: external/llvm/lib/Target/X86/MCTargetDesc
+libLLVMX86Disassembler: external/llvm/lib/Target/X86/Disassembler external/llvm/lib/Target/X86/Disassembler
+libLLVMX86Disassembler_32: external/llvm/lib/Target/X86/Disassembler
+libLLVMX86Info: external/llvm/lib/Target/X86/TargetInfo external/llvm/lib/Target/X86/TargetInfo
+libLLVMX86Info_32: external/llvm/lib/Target/X86/TargetInfo
+libLLVMX86Utils: external/llvm/lib/Target/X86/Utils external/llvm/lib/Target/X86/Utils
+libLLVMX86Utils_32: external/llvm/lib/Target/X86/Utils
+libLLVMipo: external/llvm/lib/Transforms/IPO external/llvm/lib/Transforms/IPO
+libLLVMipo_32: external/llvm/lib/Transforms/IPO
+libLTO: external/llvm/tools/lto
+libLTO_32: external/llvm/tools/lto
+lib_relocation_packer: bionic/tools/relocation_packer
+lib_relocation_packer_32: bionic/tools/relocation_packer
+libadb: system/core/adb
+libadbd: system/core/adb
+libadf: system/core/adf/libadf
+libadfhwc: system/core/adf/libadfhwc
+libasan: external/compiler-rt/lib/asan external/compiler-rt/lib/asan
+libasan_32: external/compiler-rt/lib/asan
+libasan_cxx: external/compiler-rt/lib/asan
+libasan_cxx_32: external/compiler-rt/lib/asan
+libasan_noinst_test: external/compiler-rt/lib/asan external/compiler-rt/lib/asan
+libasan_noinst_test_32: external/compiler-rt/lib/asan
+libatest_simple_zip: bionic/tests/libs
+libbacktrace: system/core/libbacktrace system/core/libbacktrace system/core/libbacktrace
+libbacktrace_32: system/core/libbacktrace system/core/libbacktrace
+libbacktrace_offline: system/core/libbacktrace system/core/libbacktrace
+libbacktrace_offline_32: system/core/libbacktrace
+libbacktrace_test: system/core/libbacktrace system/core/libbacktrace
+libbacktrace_test_32: system/core/libbacktrace
+libbase: system/core/base system/core/base system/core/base system/core/base
+libbase_32: system/core/base system/core/base
+libbase_test: system/core/base system/core/base
+libbase_test_32: system/core/base
+libbatterymonitor: system/core/healthd
+libbinderwrapper: system/core/libbinderwrapper
+libbinderwrapper_test_support: system/core/libbinderwrapper
+libbootstat: system/core/bootstat
+libbootstat_debug: system/core/bootstat
+libbootstat_host_debug: system/core/bootstat
+libbootstat_host_debug_32: system/core/bootstat
+libc: bionic/libc bionic/libc
+libc_aeabi: bionic/libc
+libc_bionic: bionic/libc
+libc_bionic_ndk: bionic/libc
+libc_common: bionic/libc
+libc_cxa: bionic/libc
+libc_dns: bionic/libc
+libc_freebsd: bionic/libc
+libc_gdtoa: bionic/libc
+libc_init_static: bionic/libc
+libc_logging: bionic/libc
+libc_malloc: bionic/libc
+libc_malloc_debug: bionic/libc/malloc_debug
+libc_malloc_debug_backtrace: bionic/libc/malloc_debug
+libc_ndk: bionic/libc
+libc_netbsd: bionic/libc
+libc_nomalloc: bionic/libc
+libc_openbsd: bionic/libc
+libc_openbsd_ndk: bionic/libc
+libc_pthread: bionic/libc
+libc_stack_protector: bionic/libc
+libc_syscalls: bionic/libc
+libc_tzcode: bionic/libc
+libclang: prebuilts/sdk/tools
+libcnativewindow: hardware/libhardware/tests/hwc
+libcompiler_rt: external/compiler-rt external/compiler-rt external/compiler-rt external/compiler-rt
+libcompiler_rt-extras: external/compiler-rt external/compiler-rt
+libcompiler_rt-extras_32: external/compiler-rt
+libcompiler_rt_32: external/compiler-rt external/compiler-rt
+libcrash: system/core/crash_reporter
+libcutils: system/core/libcutils system/core/libcutils system/core/libcutils system/core/libcutils
+libcutils_32: system/core/libcutils system/core/libcutils
+libcutils_test: system/core/libcutils/tests system/core/libcutils/tests
+libcutils_test_32: system/core/libcutils/tests
+libcutils_test_static: system/core/libcutils/tests system/core/libcutils/tests
+libcutils_test_static_32: system/core/libcutils/tests
+libdiagnose_usb: system/core/adb
+libdiagnose_usb_32: system/core/adb
+libdiskconfig: system/core/libdiskconfig
+libdiskconfig_host: system/core/libdiskconfig
+libdiskconfig_host_32: system/core/libdiskconfig
+libdl: bionic/libdl bionic/libdl
+libdl_preempt_test_1: bionic/tests/libs bionic/tests/libs
+libdl_preempt_test_1_32: bionic/tests/libs
+libdl_preempt_test_2: bionic/tests/libs bionic/tests/libs
+libdl_preempt_test_2_32: bionic/tests/libs
+libdl_test_df_1_global: bionic/tests/libs bionic/tests/libs
+libdl_test_df_1_global_32: bionic/tests/libs
+libdlext_test: bionic/tests/libs bionic/tests/libs
+libdlext_test_32: bionic/tests/libs
+libdlext_test_different_soname: bionic/tests/libs bionic/tests/libs
+libdlext_test_different_soname_32: bionic/tests/libs
+libdlext_test_fd: bionic/tests/libs
+libdlext_test_norelro: bionic/tests/libs
+libdlext_test_runpath_zip_zipaligned: bionic/tests/libs
+libdlext_test_zip: bionic/tests/libs
+libdlext_test_zip_zipaligned: bionic/tests/libs
+libfs_mgr: system/core/fs_mgr
+libgnu-hash-table-library: bionic/tests/libs bionic/tests/libs
+libgnu-hash-table-library_32: bionic/tests/libs
+libgralloc_priv_omx: hardware/rockchip/librkvpu/omx_get_gralloc_private
+libhardware: hardware/libhardware
+libhealthd.default: system/core/healthd
+libhealthd.vortex_rk322x_sd_box: device/rockchip/common/health
+libhealthd_internal: system/core/healthd
+libhost: build/libs/host
+libhost_32: build/libs/host
+libinit: system/core/init
+libinit_parser: system/core/init
+libinit_parser_32: system/core/init
+libinput_evdev: hardware/libhardware/modules/input/evdev
+libinput_evdevtests: hardware/libhardware/tests/input/evdev
+libinterception: external/compiler-rt/lib/interception
+libinterception_32: external/compiler-rt/lib/interception
+libion: system/core/libion
+libjavacore: libcore libcore
+libjavacore-benchmarks: libcore
+libjavacore-unit-tests: libcore
+libjavacore_32: libcore
+libjavacoretests: libcore libcore
+libjavacoretests_32: libcore
+liblog: system/core/liblog system/core/liblog system/core/liblog system/core/liblog
+liblog-benchmarks: system/core/liblog/tests
+liblog-unit-tests: system/core/liblog/tests
+liblog_32: system/core/liblog system/core/liblog
+liblogwrap: system/core/logwrapper system/core/logwrapper
+libm: bionic/libm bionic/libm
+libmemtrack: system/core/libmemtrack
+libmemunreachable: system/core/libmemunreachable
+libmetrics: system/core/metricsd
+libmetricscollectorservice: system/core/metricsd
+libmincrypt: system/core/libmincrypt system/core/libmincrypt
+libmincrypt_32: system/core/libmincrypt
+libnativebridge: system/core/libnativebridge system/core/libnativebridge system/core/libnativebridge
+libnativebridge-dummy: system/core/libnativebridge/tests system/core/libnativebridge/tests
+libnativebridge-dummy_32: system/core/libnativebridge/tests
+libnativebridge2-dummy: system/core/libnativebridge/tests system/core/libnativebridge/tests
+libnativebridge2-dummy_32: system/core/libnativebridge/tests
+libnativebridge_32: system/core/libnativebridge system/core/libnativebridge
+libnativeloader: system/core/libnativeloader system/core/libnativeloader system/core/libnativeloader
+libnativeloader_32: system/core/libnativeloader system/core/libnativeloader
+libnetutils: system/core/libnetutils
+libnstest_dlopened: bionic/tests/libs
+libnstest_private: bionic/tests/libs
+libnstest_private_external: bionic/tests/libs
+libnstest_public: bionic/tests/libs
+libnstest_root: bionic/tests/libs
+libnstest_root_not_isolated: bionic/tests/libs
+libopenjdk: libcore libcore
+libopenjdk_32: libcore
+libopenjdkd: libcore libcore
+libopenjdkd_32: libcore
+libpackagelistparser: system/core/libpackagelistparser system/core/libpackagelistparser
+libpixelflinger: system/core/libpixelflinger
+libpixelflinger_static: system/core/libpixelflinger
+libprocessgroup: system/core/libprocessgroup
+libprofile_rt: external/compiler-rt/lib/profile external/compiler-rt/lib/profile
+libprofile_rt_32: external/compiler-rt/lib/profile
+librecovery_ui_vortex_rk322x_sd_box: device/rockchip/common/recovery
+libsan: external/compiler-rt/lib/sanitizer_common
+libsan_32: external/compiler-rt/lib/sanitizer_common
+libsparse: system/core/libsparse
+libsparse_host: system/core/libsparse
+libsparse_host_32: system/core/libsparse
+libsparse_static: system/core/libsparse
+libstagefrighthw: hardware/rockchip/librkvpu/libstagefrighthw
+libstdc++: bionic/libc bionic/libc
+libsuspend: system/core/libsuspend system/core/libsuspend
+libsync: system/core/libsync
+libsysutils: system/core/libsysutils
+libsysv-hash-table-library: bionic/tests/libs bionic/tests/libs
+libsysv-hash-table-library_32: bionic/tests/libs
+libtest_atexit: bionic/tests/libs bionic/tests/libs
+libtest_atexit_32: bionic/tests/libs
+libtest_check_order_dlsym: bionic/tests/libs bionic/tests/libs
+libtest_check_order_dlsym_1_left: bionic/tests/libs bionic/tests/libs
+libtest_check_order_dlsym_1_left_32: bionic/tests/libs
+libtest_check_order_dlsym_2_right: bionic/tests/libs bionic/tests/libs
+libtest_check_order_dlsym_2_right_32: bionic/tests/libs
+libtest_check_order_dlsym_32: bionic/tests/libs
+libtest_check_order_dlsym_3_c: bionic/tests/libs bionic/tests/libs
+libtest_check_order_dlsym_3_c_32: bionic/tests/libs
+libtest_check_order_dlsym_a: bionic/tests/libs bionic/tests/libs
+libtest_check_order_dlsym_a_32: bionic/tests/libs
+libtest_check_order_dlsym_b: bionic/tests/libs bionic/tests/libs
+libtest_check_order_dlsym_b_32: bionic/tests/libs
+libtest_check_order_dlsym_d: bionic/tests/libs bionic/tests/libs
+libtest_check_order_dlsym_d_32: bionic/tests/libs
+libtest_check_order_reloc_root: bionic/tests/libs bionic/tests/libs
+libtest_check_order_reloc_root_1: bionic/tests/libs bionic/tests/libs
+libtest_check_order_reloc_root_1_32: bionic/tests/libs
+libtest_check_order_reloc_root_2: bionic/tests/libs bionic/tests/libs
+libtest_check_order_reloc_root_2_32: bionic/tests/libs
+libtest_check_order_reloc_root_32: bionic/tests/libs
+libtest_check_order_reloc_siblings: bionic/tests/libs bionic/tests/libs
+libtest_check_order_reloc_siblings_1: bionic/tests/libs bionic/tests/libs
+libtest_check_order_reloc_siblings_1_32: bionic/tests/libs
+libtest_check_order_reloc_siblings_2: bionic/tests/libs bionic/tests/libs
+libtest_check_order_reloc_siblings_2_32: bionic/tests/libs
+libtest_check_order_reloc_siblings_3: bionic/tests/libs bionic/tests/libs
+libtest_check_order_reloc_siblings_32: bionic/tests/libs
+libtest_check_order_reloc_siblings_3_32: bionic/tests/libs
+libtest_check_order_reloc_siblings_a: bionic/tests/libs bionic/tests/libs
+libtest_check_order_reloc_siblings_a_32: bionic/tests/libs
+libtest_check_order_reloc_siblings_b: bionic/tests/libs bionic/tests/libs
+libtest_check_order_reloc_siblings_b_32: bionic/tests/libs
+libtest_check_order_reloc_siblings_c: bionic/tests/libs bionic/tests/libs
+libtest_check_order_reloc_siblings_c_1: bionic/tests/libs bionic/tests/libs
+libtest_check_order_reloc_siblings_c_1_32: bionic/tests/libs
+libtest_check_order_reloc_siblings_c_2: bionic/tests/libs bionic/tests/libs
+libtest_check_order_reloc_siblings_c_2_32: bionic/tests/libs
+libtest_check_order_reloc_siblings_c_32: bionic/tests/libs
+libtest_check_order_reloc_siblings_d: bionic/tests/libs bionic/tests/libs
+libtest_check_order_reloc_siblings_d_32: bionic/tests/libs
+libtest_check_order_reloc_siblings_e: bionic/tests/libs bionic/tests/libs
+libtest_check_order_reloc_siblings_e_32: bionic/tests/libs
+libtest_check_order_reloc_siblings_f: bionic/tests/libs bionic/tests/libs
+libtest_check_order_reloc_siblings_f_32: bionic/tests/libs
+libtest_dlopen_from_ctor: bionic/tests/libs bionic/tests/libs
+libtest_dlopen_from_ctor_32: bionic/tests/libs
+libtest_dlopen_from_ctor_main: bionic/tests/libs bionic/tests/libs
+libtest_dlopen_from_ctor_main_32: bionic/tests/libs
+libtest_dlopen_weak_undefined_func: bionic/tests/libs bionic/tests/libs
+libtest_dlopen_weak_undefined_func_32: bionic/tests/libs
+libtest_dlsym_df_1_global: bionic/tests/libs bionic/tests/libs
+libtest_dlsym_df_1_global_32: bionic/tests/libs
+libtest_dlsym_from_this: bionic/tests/libs bionic/tests/libs
+libtest_dlsym_from_this_32: bionic/tests/libs
+libtest_dlsym_from_this_child: bionic/tests/libs bionic/tests/libs
+libtest_dlsym_from_this_child_32: bionic/tests/libs
+libtest_dlsym_from_this_grandchild: bionic/tests/libs bionic/tests/libs
+libtest_dlsym_from_this_grandchild_32: bionic/tests/libs
+libtest_dlsym_weak_func: bionic/tests/libs bionic/tests/libs
+libtest_dlsym_weak_func_32: bionic/tests/libs
+libtest_dt_runpath_a: bionic/tests/libs bionic/tests/libs
+libtest_dt_runpath_a_32: bionic/tests/libs
+libtest_dt_runpath_b: bionic/tests/libs bionic/tests/libs
+libtest_dt_runpath_b_32: bionic/tests/libs
+libtest_dt_runpath_c: bionic/tests/libs bionic/tests/libs
+libtest_dt_runpath_c_32: bionic/tests/libs
+libtest_dt_runpath_d: bionic/tests/libs bionic/tests/libs
+libtest_dt_runpath_d_32: bionic/tests/libs
+libtest_dt_runpath_d_zip: bionic/tests/libs
+libtest_dt_runpath_x: bionic/tests/libs bionic/tests/libs
+libtest_dt_runpath_x_32: bionic/tests/libs
+libtest_empty: bionic/tests/libs bionic/tests/libs
+libtest_empty_32: bionic/tests/libs
+libtest_ifunc: bionic/tests/libs
+libtest_ifunc_32: bionic/tests/libs
+libtest_nodelete_1: bionic/tests/libs bionic/tests/libs
+libtest_nodelete_1_32: bionic/tests/libs
+libtest_nodelete_2: bionic/tests/libs bionic/tests/libs
+libtest_nodelete_2_32: bionic/tests/libs
+libtest_nodelete_dt_flags_1: bionic/tests/libs bionic/tests/libs
+libtest_nodelete_dt_flags_1_32: bionic/tests/libs
+libtest_pthread_atfork: bionic/tests/libs bionic/tests/libs
+libtest_pthread_atfork_32: bionic/tests/libs
+libtest_relo_check_dt_needed_order: bionic/tests/libs bionic/tests/libs
+libtest_relo_check_dt_needed_order_1: bionic/tests/libs bionic/tests/libs
+libtest_relo_check_dt_needed_order_1_32: bionic/tests/libs
+libtest_relo_check_dt_needed_order_2: bionic/tests/libs bionic/tests/libs
+libtest_relo_check_dt_needed_order_2_32: bionic/tests/libs
+libtest_relo_check_dt_needed_order_32: bionic/tests/libs
+libtest_simple: bionic/tests/libs bionic/tests/libs
+libtest_simple_32: bionic/tests/libs
+libtest_two_parents_child: bionic/tests/libs bionic/tests/libs
+libtest_two_parents_child_32: bionic/tests/libs
+libtest_two_parents_parent1: bionic/tests/libs bionic/tests/libs
+libtest_two_parents_parent1_32: bionic/tests/libs
+libtest_two_parents_parent2: bionic/tests/libs bionic/tests/libs
+libtest_two_parents_parent2_32: bionic/tests/libs
+libtest_versioned_lib: bionic/tests/libs bionic/tests/libs
+libtest_versioned_lib_32: bionic/tests/libs
+libtest_versioned_libv1: bionic/tests/libs bionic/tests/libs
+libtest_versioned_libv1_32: bionic/tests/libs
+libtest_versioned_libv2: bionic/tests/libs bionic/tests/libs
+libtest_versioned_libv2_32: bionic/tests/libs
+libtest_versioned_otherlib: bionic/tests/libs bionic/tests/libs
+libtest_versioned_otherlib_32: bionic/tests/libs
+libtest_versioned_otherlib_empty: bionic/tests/libs bionic/tests/libs
+libtest_versioned_otherlib_empty_32: bionic/tests/libs
+libtest_versioned_uselibv1: bionic/tests/libs bionic/tests/libs
+libtest_versioned_uselibv1_32: bionic/tests/libs
+libtest_versioned_uselibv2: bionic/tests/libs bionic/tests/libs
+libtest_versioned_uselibv2_32: bionic/tests/libs
+libtest_versioned_uselibv2_other: bionic/tests/libs bionic/tests/libs
+libtest_versioned_uselibv2_other_32: bionic/tests/libs
+libtest_versioned_uselibv3_other: bionic/tests/libs bionic/tests/libs
+libtest_versioned_uselibv3_other_32: bionic/tests/libs
+libtest_with_dependency: bionic/tests/libs bionic/tests/libs
+libtest_with_dependency_32: bionic/tests/libs
+libtest_with_dependency_loop: bionic/tests/libs bionic/tests/libs
+libtest_with_dependency_loop_32: bionic/tests/libs
+libtest_with_dependency_loop_a: bionic/tests/libs bionic/tests/libs
+libtest_with_dependency_loop_a_32: bionic/tests/libs
+libtest_with_dependency_loop_b: bionic/tests/libs bionic/tests/libs
+libtest_with_dependency_loop_b_32: bionic/tests/libs
+libtest_with_dependency_loop_b_tmp: bionic/tests/libs bionic/tests/libs
+libtest_with_dependency_loop_b_tmp_32: bionic/tests/libs
+libtest_with_dependency_loop_c: bionic/tests/libs bionic/tests/libs
+libtest_with_dependency_loop_c_32: bionic/tests/libs
+libtoolbox_dd: system/core/toolbox
+libtrusty: system/core/trusty/libtrusty system/core/trusty/libtrusty
+libtsan: external/compiler-rt/lib/tsan
+libtsan_cxx: external/compiler-rt/lib/tsan
+libtsan_rtl_test: external/compiler-rt/lib/tsan
+libtsan_unit_test: external/compiler-rt/lib/tsan
+libubsan: external/compiler-rt/lib/ubsan external/compiler-rt/lib/ubsan
+libubsan_32: external/compiler-rt/lib/ubsan
+libubsan_cxx: external/compiler-rt/lib/ubsan
+libubsan_cxx_32: external/compiler-rt/lib/ubsan
+libubsan_standalone: external/compiler-rt/lib/ubsan
+libubsan_standalone_32: external/compiler-rt/lib/ubsan
+libubsan_standalone_cxx: external/compiler-rt/lib/ubsan
+libubsan_standalone_cxx_32: external/compiler-rt/lib/ubsan
+libunwind_llvm: external/libunwind_llvm
+libusbhost: system/core/libusbhost system/core/libusbhost system/core/libusbhost
+libusbhost_32: system/core/libusbhost
+libutils: system/core/libutils system/core/libutils system/core/libutils
+libutils_32: system/core/libutils
+libutils_tests: system/core/libutils/tests
+libutils_tests_host: system/core/libutils/tests
+libutils_tests_host_32: system/core/libutils/tests
+libziparchive: system/core/libziparchive
+libziparchive-host: system/core/libziparchive system/core/libziparchive
+libziparchive-host_32: system/core/libziparchive system/core/libziparchive
+linker: bionic/linker
+linker-unit-tests: bionic/linker/tests
+llc: external/llvm/tools/llc external/llvm/tools/llc
+lli: external/llvm/tools/lli
+lli-child-target: external/llvm/tools/lli/ChildTarget
+llvm-ar: external/llvm/tools/llvm-ar
+llvm-as: external/llvm/tools/llvm-as
+llvm-bcanalyzer: external/llvm/tools/llvm-bcanalyzer
+llvm-c-test: external/llvm/tools/llvm-c-test
+llvm-config: external/llvm/tools/llvm-config
+llvm-cov: external/llvm/tools/llvm-cov
+llvm-cxxdump: external/llvm/tools/llvm-cxxdump
+llvm-diff: external/llvm/tools/llvm-diff
+llvm-dis: external/llvm/tools/llvm-dis
+llvm-dsymutil: external/llvm/tools/dsymutil
+llvm-dwarfdump: external/llvm/tools/llvm-dwarfdump
+llvm-dwp: external/llvm/tools/llvm-dwp
+llvm-extract: external/llvm/tools/llvm-extract
+llvm-link: external/llvm/tools/llvm-link external/llvm/tools/llvm-link
+llvm-lto: external/llvm/tools/llvm-lto
+llvm-mc: external/llvm/tools/llvm-mc
+llvm-mcmarkup: external/llvm/tools/llvm-mcmarkup
+llvm-nm: external/llvm/tools/llvm-nm
+llvm-objdump: external/llvm/tools/llvm-objdump
+llvm-pdbdump: external/llvm/tools/llvm-pdbdump
+llvm-profdata: external/llvm/tools/llvm-profdata
+llvm-readobj: external/llvm/tools/llvm-readobj
+llvm-rtdyld: external/llvm/tools/llvm-rtdyld
+llvm-size: external/llvm/tools/llvm-size
+llvm-split: external/llvm/tools/llvm-split
+llvm-symbolizer: external/llvm/tools/llvm-symbolizer external/llvm/tools/llvm-symbolizer
+llvm-tblgen: external/llvm/utils/TableGen
+lmkd: system/core/lmkd
+local_time.default: hardware/libhardware/modules/local_time
+logcat: system/core/logcat
+logcat-benchmarks: system/core/logcat/tests
+logcat-unit-tests: system/core/logcat/tests
+logd: system/core/logd
+logd-unit-tests: system/core/logd/tests
+logpersist.start: system/core/logcat
+logwrapper: system/core/logwrapper
+malloc_debug_unit_tests: bionic/libc/malloc_debug
+memtrack_test: system/core/libmemtrack
+memunreachable_test: system/core/libmemunreachable system/core/libmemunreachable
+memunreachable_test_32: system/core/libmemunreachable
+metrics.json: system/core/metricsd
+metrics_client: system/core/metricsd
+metrics_collector: system/core/metricsd
+metrics_collector_tests: system/core/metricsd
+metricsd: system/core/metricsd
+metricsd_binder_proxy: system/core/metricsd
+metricsd_protos: system/core/metricsd
+metricsd_tests: system/core/metricsd
+mkbootfs: system/core/cpio
+mkbootimg: system/core/mkbootimg
+mkparameter: build/tools/mkparameter
+nfc.default: hardware/libhardware/modules/nfc
+nfc_nci.default: hardware/libhardware/modules/nfc-nci
+not: external/llvm/utils/not
+obj2yaml: external/llvm/tools/obj2yaml
+ojluni-phony: libcore/ojluni
+opt: external/llvm/tools/opt external/llvm/tools/opt
+periodic_scheduler: system/core/crash_reporter
+power.default: hardware/libhardware/modules/power
+r: system/core/toolbox
+reboot: system/core/reboot
+relocation_packer: bionic/tools/relocation_packer
+relocation_packer_unit_tests: bionic/tools/relocation_packer
+relocation_packer_unit_tests_32: bionic/tools/relocation_packer
+rgb2565: build/tools/rgb2565
+rsa_test: system/core/libmincrypt/test
+rsa_test_32: system/core/libmincrypt/test
+run-as: system/core/run-as
+san_test: external/compiler-rt/lib/sanitizer_common/tests
+san_test-Nolibc: external/compiler-rt/lib/sanitizer_common/tests
+san_test_32: external/compiler-rt/lib/sanitizer_common/tests
+sancov: external/llvm/tools/sancov
+sdcard: system/core/sdcard
+sdk_v25: prebuilts/sdk
+sdk_vtest_current: prebuilts/sdk
+sensorstests: hardware/libhardware/modules/sensors/tests
+signapk: build/tools/signapk
+signtos: build/tools/signtos
+simg2img: system/core/libsparse
+simg2img_host: system/core/libsparse
+simg_dump.py: system/core/libsparse
+static-hal-check: hardware/libhardware/tests/hardware
+sync_test: system/core/libsync
+system_core_charger_res_images_battery_fail.png: system/core/healthd
+system_core_charger_res_images_battery_scale.png: system/core/healthd
+test-nusensors: hardware/libhardware/tests/nusensors
+test-opengl-codegen: system/core/libpixelflinger/tests/codegen
+test-pixelflinger-gglmul: system/core/libpixelflinger/tests/gglmul
+thermal.default: hardware/libhardware/modules/thermal
+toolbox: system/core/toolbox
+tv_input.default: hardware/libhardware/modules/tv_input
+tzdata: bionic/libc/zoneinfo
+tzdata-host: bionic/libc/zoneinfo
+tzdata_tools: libcore/tzdata
+tzdata_update: libcore/tzdata
+tzdata_update-tests: libcore/tzdata
+tzdatacheck: system/core/tzdatacheck system/core/tzdatacheck
+uiautomator_sdk_v25: prebuilts/sdk
+uiautomator_sdk_vtest_current: prebuilts/sdk
+usbtest: system/core/fastboot
+vehicle-hal-tool: hardware/libhardware/tests/vehicle
+vehicle.default: hardware/libhardware/modules/vehicle
+vehicle_tests: hardware/libhardware/tests/vehicle
+verify-uselistorder: external/llvm/tools/verify-uselistorder
+verity_key: build/target/product/security
+vibrator.default: hardware/libhardware/modules/vibrator
+vpu_mem_observer: hardware/rockchip/librkvpu/common/vpu_mem_pool
+vr.default: hardware/libhardware/modules/vr
+warn_collector: system/core/crash_reporter
+yaml-bench: external/llvm/utils/yaml-bench
+yaml2obj: external/llvm/tools/yaml2obj
+zipalign: build/tools/zipalign
+ziparchive-tests: system/core/libziparchive
+ziparchive-tests-host: system/core/libziparchive
+ziparchive-tests-host_32: system/core/libziparchive
+ziptime: build/tools/ziptime

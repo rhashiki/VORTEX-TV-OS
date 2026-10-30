@@ -1,0 +1,41 @@
+[
+  {
+    "path": "artifacts/core-all-classes-full-debug.jar",
+    "source": "out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes-full-debug.jar",
+    "bytes": 7895697,
+    "sha256": "d48d5bb865dc86eb02722c97cc20d7fdae1fae78e6001b99a2bbcc4a930a96ee",
+    "zip_crc_ok": true,
+    "zip_entries": 4770,
+    "class_entries": 4559,
+    "class_file_major_versions": [
+      52
+    ],
+    "scope": "compiled JVM class files; no DEX, ART execution, Android image or RK3229 boot proof"
+  },
+  {
+    "path": "artifacts/core-oj-classes-full-debug.jar",
+    "source": "out/target/common/obj/JAVA_LIBRARIES/core-oj_intermediates/classes-full-debug.jar",
+    "bytes": 4254727,
+    "sha256": "09c6239ae60e7e9a816582109b4d6eb89db685bdd3f6068accdda03b27da4c30",
+    "zip_crc_ok": true,
+    "zip_entries": 2687,
+    "class_entries": 2570,
+    "class_file_major_versions": [
+      52
+    ],
+    "scope": "compiled JVM class files; no DEX, ART execution, Android image or RK3229 boot proof"
+  },
+  {
+    "path": "artifacts/core-libart-classes-full-debug.jar",
+    "source": "out/target/common/obj/JAVA_LIBRARIES/core-libart_intermediates/classes-full-debug.jar",
+    "bytes": 3633367,
+    "sha256": "3f561b45779aa4ee8e0f7a72c55a4c542519ef19b32c914668e37894c80186fb",
+    "zip_crc_ok": true,
+    "zip_entries": 2085,
+    "class_entries": 1980,
+    "class_file_major_versions": [
+      52
+    ],
+    "scope": "compiled JVM class files; no DEX, ART execution, Android image or RK3229 boot proof"
+  }
+]

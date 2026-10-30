@@ -1,0 +1,3 @@
+From https://github.com/rockchip-android/frameworks-base
+ * branch              edd171fec429b9d51d9cb2da961a673ec51fcc4d -> FETCH_HEAD
+HEAD is now at edd171fe fix screen turn off too log when keyguard is null

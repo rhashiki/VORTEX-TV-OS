@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "python3",
+    "/workspace/build01-full-next/build-driver/tools/build_full_platform.py",
+    "--bsp-root",
+    "/workspace/build01-full-next/platform/tree",
+    "--vortex-root",
+    "/workspace/vortex-build",
+    "--patch-plan",
+    "/workspace/build01-full-next/build-driver/rom/product/full-platform-patches.json",
+    "--jdk-home",
+    "/workspace/android-toolchain/jdk8u504-b01",
+    "--python2",
+    "/workspace/build01-platform-next/aosp-app/host-bin/python",
+    "--kernel-image",
+    "/workspace/build01-sd-next/kernel-sd/out/arch/arm/boot/Image",
+    "--out-dir",
+    "/workspace/build01-full-next/build-driver/rejected-out"
+  ],
+  "returncode": 2,
+  "scope": "check_only_current_incomplete_tree_no_mutation"
+}

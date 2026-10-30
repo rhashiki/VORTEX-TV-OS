@@ -23,6 +23,20 @@ actually demonstrated; lack of extra information does not establish them.
 
 ## Working goal
 
+The owner explicitly authorized candidate compilation using matching public
+RK322x sources despite remaining board unknowns. Continue builds and fix actual
+source/dependency errors; record assumptions and unverified hardware values.
+This does not authorize an unreviewed physical flash or erase operation.
+
+The [28/10 continuation](VALIDATION_2026-10-28_CANDIDATE.md) executes real lunch
+and make droid, fixes product discovery/duplicate registration, compiles the
+core-all Java intermediate plus audio/power and Bionic components, and adds a
+static Linux diagnostic init/initramfs. The full-platform driver and reviewed
+patch plan are documented in [FULL_PLATFORM_BUILD.md](../rom/product/FULL_PLATFORM_BUILD.md).
+The diagnostic component has no flash backend; the recovery experiment is
+separate from the SD-only product. No full ROM/SD image or physical boot is
+established by those results. Use its evidence for the precise latest stop.
+
 The owner clarified the final delivery: a **bootable SD installer**, analogous
 to a Windows installation disc. It should boot an installation environment,
 identify internal storage, verify a compatible Android payload, request explicit

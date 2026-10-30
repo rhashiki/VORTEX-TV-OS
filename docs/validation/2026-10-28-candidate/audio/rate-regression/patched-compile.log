@@ -1,0 +1,4 @@
+/workspace/build01-full-next/audio/rate-regression/patched-harness.c: In function ‘adev_open_output_stream’:
+/workspace/build01-full-next/audio/rate-regression/patched-harness.c:74:54: warning: unused parameter ‘handle’ [-Wunused-parameter]
+   74 |                                    audio_io_handle_t handle,
+      |                                    ~~~~~~~~~~~~~~~~~~^~~~~~

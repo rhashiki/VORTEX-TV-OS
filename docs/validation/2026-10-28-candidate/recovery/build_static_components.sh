@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+export RECOVERY_MAKEFILES='bootable/recovery/Android.mk device/rockchip/common/recovery/Android.mk bionic/libc/Android.mk bionic/libm/Android.mk system/core/base/Android.mk system/core/libcutils/Android.mk system/core/liblog/Android.mk system/core/fs_mgr/Android.mk system/core/healthd/Android.mk system/core/libsparse/Android.mk system/core/libutils/Android.mk system/core/libbacktrace/Android.mk external/libcxx/Android.mk system/extras/ext4_utils/Android.mk external/libunwind_llvm/Android.mk external/compiler-rt/Android.mk external/zlib/Android.mk external/libpng/Android.mk external/boringssl/Android.mk external/jemalloc/Android.mk external/libcxxabi/Android.mk bionic/libdl/Android.mk external/libselinux/Android.mk'
+bash /workspace/build01-full-next/recovery/attempt_make.sh /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libz_intermediates/libz.a

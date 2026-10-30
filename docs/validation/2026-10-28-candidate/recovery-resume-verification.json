@@ -1,0 +1,39 @@
+{
+  "scope": "read-only revalidation after environment restart; no recovery execution",
+  "checks": {
+    "text_manifest_files": 120,
+    "text_files_including_manifest": 121,
+    "manifest_sha256": "7027f05e2f0ea8d55599223e081269cbc4827271f33f496df0a1cf4cd4bd4833",
+    "artifact_files": 98,
+    "artifact_kinds": {
+      "source-built static module archive": 54,
+      "source-built Bionic shared module": 3,
+      "compiled main translation unit; not linked executable": 16,
+      "source-built CRT input or combined relocatable object": 7,
+      "compiled recovery ELF with source modules and pinned vendor static inputs; not recovery.img": 1,
+      "upstream source license notice": 17
+    },
+    "large_raw_log_and_map_files": 5,
+    "license_notices": 17,
+    "recovery_elf": {
+      "bytes": 956040,
+      "sha256": "5e2c3639b15a51728b24f8400dd2539c2ace87647fca41527698129ce543928c",
+      "ELF": "32-bit little-endian ARM ET_EXEC",
+      "dynamic_interpreter": "absent",
+      "dynamic_program_header": "absent",
+      "executed": false
+    },
+    "vendor_standalone_archives_absent": true,
+    "independent_final_review_matches": true
+  },
+  "status": "pass",
+  "counts": {
+    "compiler_dependency_rules_with_objects": 1582,
+    "primary_objects_including_combined_crt": 1584,
+    "source_static_archive_modules": 54,
+    "source_bionic_dsos": 3,
+    "vendor_archive_inputs_named_by_link": 4,
+    "recovery_main_objects": 16,
+    "ui_host_checks": 20
+  }
+}

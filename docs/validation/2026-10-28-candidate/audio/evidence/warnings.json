@@ -1,0 +1,39 @@
+{
+  "count": 28,
+  "lines": [
+    "external/speex/libspeex/resample.c:605:20: warning: comparison of integers of different signs: 'spx_int32_t' (aka 'int') and 'spx_uint32_t' (aka 'unsigned int') [-Wsign-compare]",
+    "external/speex/libspeex/resample.c:686:23: warning: comparison of integers of different signs: 'spx_int32_t' (aka 'int') and 'spx_uint32_t' (aka 'unsigned int') [-Wsign-compare]",
+    "external/speex/libspeex/resample.c:694:23: warning: comparison of integers of different signs: 'spx_int32_t' (aka 'int') and 'unsigned int' [-Wsign-compare]",
+    "external/speex/libspeex/resample.c:697:20: warning: comparison of integers of different signs: 'spx_int32_t' (aka 'int') and 'unsigned int' [-Wsign-compare]",
+    "external/speex/libspeex/resample.c:704:23: warning: comparison of integers of different signs: 'spx_int32_t' (aka 'int') and 'unsigned int' [-Wsign-compare]",
+    "external/speex/libspeex/resample.c:870:21: warning: comparison of integers of different signs: 'int' and 'spx_uint32_t' (aka 'unsigned int') [-Wsign-compare]",
+    "external/speex/libspeex/resample.c:873:20: warning: comparison of integers of different signs: 'int' and 'spx_uint32_t' (aka 'unsigned int') [-Wsign-compare]",
+    "external/speex/libspeex/resample.c:926:19: warning: comparison of integers of different signs: 'int' and 'spx_uint32_t' (aka 'unsigned int') [-Wsign-compare]",
+    "external/speex/libspeex/resample.c:933:19: warning: comparison of integers of different signs: 'int' and 'spx_uint32_t' (aka 'unsigned int') [-Wsign-compare]",
+    "external/speex/libspeex/resample.c:943:16: warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]",
+    "hardware/libhardware/modules/power/power.c:28:45: warning: unused parameter 'module' [-Wunused-parameter]",
+    "hardware/libhardware/modules/power/power.c:32:56: warning: unused parameter 'module' [-Wunused-parameter]",
+    "hardware/libhardware/modules/power/power.c:32:68: warning: unused parameter 'on' [-Wunused-parameter]",
+    "hardware/libhardware/modules/power/power.c:36:45: warning: unused parameter 'module' [-Wunused-parameter]",
+    "hardware/libhardware/modules/power/power.c:37:30: warning: unused parameter 'data' [-Wunused-parameter]",
+    "hardware/rockchip/audio/tinyalsa_hal/audio_hw.c:519:45: warning: implicit declaration of function 'get_route_config' is invalid in C99 [-Wimplicit-function-declaration]",
+    "hardware/rockchip/audio/tinyalsa_hal/audio_hw.c:519:32: warning: incompatible integer to pointer conversion initializing 'const struct config_route *' with an expression of type 'int' [-Wint-conversion]",
+    "hardware/rockchip/audio/tinyalsa_hal/audio_hw.c:593:14: warning: incompatible pointer types passing 'struct stream_out *' to parameter of type 'const struct audio_stream *' [-Wincompatible-pointer-types]",
+    "hardware/rockchip/audio/tinyalsa_hal/audio_hw.c:773:13: warning: incompatible pointer types passing 'struct stream_in *' to parameter of type 'const struct audio_stream *' [-Wincompatible-pointer-types]",
+    "hardware/rockchip/audio/tinyalsa_hal/audio_hw.c:905:19: warning: use of GNU old-style field designator extension [-Wgnu-designator]",
+    "hardware/rockchip/audio/tinyalsa_hal/audio_hw.c:906:1: warning: use of GNU old-style field designator extension [-Wgnu-designator]",
+    "hardware/rockchip/audio/tinyalsa_hal/audio_hw.c:1338:70: warning: format specifies type 'int' but the argument has type 'FILE *' (aka 'struct __sFILE *') [-Wformat]",
+    "hardware/rockchip/audio/tinyalsa_hal/audio_hw.c:1462:34: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]",
+    "hardware/rockchip/audio/tinyalsa_hal/audio_hw.c:1511:57: warning: passing 'const int16_t *' (aka 'const short *') to parameter of type 'int16_t *' (aka 'short *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]",
+    "hardware/rockchip/audio/tinyalsa_hal/audio_hw.c:2739:23: warning: comparison between pointer and integer ('pthread_t' (aka 'long') and 'void *')",
+    "hardware/rockchip/audio/tinyalsa_hal/alsa_mixer.c:311:16: warning: data argument not used by format string [-Wformat-extra-args]",
+    "hardware/rockchip/audio/tinyalsa_hal/alsa_mixer.c:321:16: warning: data argument not used by format string [-Wformat-extra-args]",
+    "hardware/rockchip/audio/tinyalsa_hal/audio_hw_hdmi.c:26:9: warning: 'LOG_TAG' macro redefined [-Wmacro-redefined]"
+  ],
+  "scope": "Warnings retained in the final clean build; no zero-warning or audio-functionality claim.",
+  "unresolved_examples": [
+    "Legacy implicit get_route_config declaration and integer-to-pointer conversion.",
+    "Pointer/type, format and macro redefinition warnings remain.",
+    "Only unsupported HDMI bypass sample-rate uninitialized-enum path is fixed by this patch."
+  ]
+}

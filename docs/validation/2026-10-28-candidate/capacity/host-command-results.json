@@ -1,0 +1,58 @@
+[
+  {
+    "argv": [
+      "findmnt",
+      "-b",
+      "-o",
+      "TARGET,SOURCE,FSTYPE,SIZE,AVAIL,OPTIONS"
+    ],
+    "exit_code": 0,
+    "stdout": "TARGET                       SOURCE       FSTYPE         SIZE       AVAIL OPTIONS\n/                            overlay      overlay 33770192896 10352336896 rw,relatime,lowerdir=/run/kata-containers/erofs-multi-layer/a5fddd1d558d4f5daf9634cd50935bde/lower-0,upperdir=/run/kata-containers/erofs-multi-layer/a5fddd1d558d4f5daf9634cd50935bde/upper/upper,workdir=/run/kata-containers/erofs-multi-layer/a5fddd1d558d4f5daf9634cd50935bde/upper/work,index=off,metacopy=off\n\u251c\u2500/tmp                       none         tmpfs    5226233856  5226086400 rw,relatime\n\u251c\u2500/proc                      proc         proc              0           0 rw,nosuid,nodev,noexec,relatime\n\u251c\u2500/dev                       tmpfs        tmpfs      67108864    67108864 rw,nosuid,size=65536k,mode=755\n\u2502 \u251c\u2500/dev/pts                 devpts       devpts            0           0 rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=666\n\u2502 \u251c\u2500/dev/shm                 shm          tmpfs    5226233856  5226233856 rw,relatime\n\u2502 \u2514\u2500/dev/mqueue              mqueue       mqueue            0           0 rw,nosuid,nodev,noexec,relatime\n\u251c\u2500/sys                       sysfs        sysfs             0           0 rw,nosuid,nodev,noexec,relatime\n\u2502 \u2514\u2500/sys/fs/cgroup           cgroup2[/..] cgroup2           0           0 rw,nosuid,nodev,noexec,relatime,nsdelegate\n\u2514\u2500/run/codex-runtime-secrets tmpfs        tmpfs       1048576     1044480 rw,nosuid,nodev,noexec,relatime,size=1024k,mode=755\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "lsblk",
+      "-b",
+      "-o",
+      "NAME,TYPE,SIZE,FSTYPE,MOUNTPOINTS"
+    ],
+    "exit_code": 0,
+    "stdout": "NAME  TYPE        SIZE FSTYPE MOUNTPOINTS\nvda   disk 34359738368        \npmem0 disk 15089008640        \n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "df",
+      "-B1",
+      "/workspace",
+      "/tmp",
+      "/dev/shm"
+    ],
+    "exit_code": 0,
+    "stdout": "Filesystem       1B-blocks        Used   Available Use% Mounted on\noverlay        33770192896 21683093504 10352336896  68% /\nnone            5226233856      147456  5226086400   1% /tmp\nshm             5226233856           0  5226233856   0% /dev/shm\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "docker",
+      "info",
+      "--format",
+      "{{json .Driver}} {{json .DockerRootDir}} {{json .MemTotal}} {{json .NCPU}}"
+    ],
+    "exit_code": 0,
+    "stdout": "\"vfs\" \"/var/lib/docker\" 10452471808 3\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "df",
+      "-B1",
+      "/var/lib/docker",
+      "/workspace"
+    ],
+    "exit_code": 0,
+    "stdout": "Filesystem       1B-blocks        Used   Available Use% Mounted on\noverlay        33770192896 21683097600 10352332800  68% /\noverlay        33770192896 21683097600 10352332800  68% /\n",
+    "stderr": ""
+  }
+]

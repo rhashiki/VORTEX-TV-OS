@@ -1,0 +1,59 @@
+{
+  "scope": "host function-boundary regression using actual extracted function, real public Android/tinyalsa header types, simplified private stream/device layouts and recording property/rate/channel-status/lock/allocation boundaries; no device IO or real Android ABI validation",
+  "baseline_instrumentation": "GCC14 -ftrivial-auto-var-init=zero initializes otherwise uninitialized enum to safe zero for deterministic baseline rejection test; not a sanitizer finding or prediction of uninstrumented UB behavior",
+  "checks": [
+    {
+      "label": "baseline",
+      "source": "/workspace/build01-full-next/audio/baseline/audio_hw.c",
+      "source_sha256": "e65e3736b19208984a98dd240bbe6a880e091418b2e064b9a511e480648ba4e4",
+      "function_sha256": "c4a0daece128d387579e2f3838a1c670180a506f2ae601eb453b624bfb223b2b",
+      "compiler_command": [
+        "cc",
+        "-std=gnu99",
+        "-O0",
+        "-Wall",
+        "-Wextra",
+        "-ftrivial-auto-var-init=zero",
+        "-D__unused=__attribute__((unused))",
+        "-I/workspace/build01-full-next/audio/tree/hardware/libhardware/include",
+        "-I/workspace/build01-full-next/audio/tree/system/media/audio/include",
+        "-I/workspace/build01-full-next/audio/tree/system/core/include",
+        "-I/workspace/build01-full-next/audio/tree/external/tinyalsa/include",
+        "/workspace/build01-full-next/audio/rate-regression/baseline-harness.c",
+        "-o",
+        "/workspace/build01-full-next/audio/rate-regression/baseline-test"
+      ],
+      "exit_code": 1,
+      "passed": 10,
+      "failed": 1,
+      "expected_result_met": true
+    },
+    {
+      "label": "patched",
+      "source": "/workspace/build01-full-next/audio/tree/hardware/rockchip/audio/tinyalsa_hal/audio_hw.c",
+      "source_sha256": "3e1250c98bcf0825f84afb0cc75759179c60c75f98759c1133e2e513132ac409",
+      "function_sha256": "c66412e3dbb512980b9edd0c8c5ad841d2c8481cdf1c2303e93e6540cb30a829",
+      "compiler_command": [
+        "cc",
+        "-std=gnu99",
+        "-O0",
+        "-Wall",
+        "-Wextra",
+        "-ftrivial-auto-var-init=zero",
+        "-D__unused=__attribute__((unused))",
+        "-I/workspace/build01-full-next/audio/tree/hardware/libhardware/include",
+        "-I/workspace/build01-full-next/audio/tree/system/media/audio/include",
+        "-I/workspace/build01-full-next/audio/tree/system/core/include",
+        "-I/workspace/build01-full-next/audio/tree/external/tinyalsa/include",
+        "/workspace/build01-full-next/audio/rate-regression/patched-harness.c",
+        "-o",
+        "/workspace/build01-full-next/audio/rate-regression/patched-test"
+      ],
+      "exit_code": 0,
+      "passed": 11,
+      "failed": 0,
+      "expected_result_met": true
+    }
+  ],
+  "status": "pass"
+}

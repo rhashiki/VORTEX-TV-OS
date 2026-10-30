@@ -1,0 +1,117 @@
+{
+  "status": "pass_for_integrity_and_observed_paths",
+  "files_rechecked": 30,
+  "source_bionic_linked_and_stripped_build_ids_match": {
+    "libc.so": [
+      {
+        "kind": "stripped",
+        "path": "/workspace/build01-full-next/bionic-smoke/reference/system/lib/libc.so",
+        "size_bytes": 697952,
+        "sha256": "45aaba04bbeea0cd15d2809748b394e74c4248c4ad3bd479428f8d88ebef3a81",
+        "build_id": "a1b6075d0abca27e017ed7ecec3f1d90"
+      },
+      {
+        "kind": "linked",
+        "path": "/workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libc_intermediates/LINKED/libc.so",
+        "size_bytes": 3745208,
+        "sha256": "fd85c911b472368aae949aa8cb049be3dd7db92c18ff54556005119a42c76a07",
+        "build_id": "a1b6075d0abca27e017ed7ecec3f1d90"
+      }
+    ],
+    "libdl.so": [
+      {
+        "kind": "stripped",
+        "path": "/workspace/build01-full-next/bionic-smoke/reference/system/lib/libdl.so",
+        "size_bytes": 13652,
+        "sha256": "dd3e9269e81bcff5aac34f7237fb186950cdd9869619b8e29e746b521f35b86f",
+        "build_id": "023794149537cd526b704798f12e7a72"
+      },
+      {
+        "kind": "linked",
+        "path": "/workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libdl_intermediates/LINKED/libdl.so",
+        "size_bytes": 48276,
+        "sha256": "f936bce5f0f965e002aadacf2284a65b573c8f3e81731487430ff70a0bd75074",
+        "build_id": "023794149537cd526b704798f12e7a72"
+      }
+    ],
+    "libm.so": [
+      {
+        "kind": "stripped",
+        "path": "/workspace/build01-full-next/bionic-smoke/reference/system/lib/libm.so",
+        "size_bytes": 137048,
+        "sha256": "79c2055323dedb9ac176c45f391bfffee2ff7d44358b3c5a89ced52dee35fa72",
+        "build_id": "64a4af7cf595602b40b4b96351a7224c"
+      },
+      {
+        "kind": "linked",
+        "path": "/workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libm_intermediates/LINKED/libm.so",
+        "size_bytes": 666028,
+        "sha256": "8985586d0107e023b56992411b87c681c3fa90c8ad975f7b71df79334ebe0cf6",
+        "build_id": "64a4af7cf595602b40b4b96351a7224c"
+      }
+    ]
+  },
+  "normal_case_trace_checks": [
+    {
+      "case": "missing-file",
+      "opened_hash_bound_prefix_libc": true,
+      "opened_hash_bound_prefix_libm": false,
+      "libdl_file_path_observed": false
+    },
+    {
+      "case": "missing-HMI-new-libm",
+      "opened_hash_bound_prefix_libc": true,
+      "opened_hash_bound_prefix_libm": false,
+      "libdl_file_path_observed": false
+    },
+    {
+      "case": "gralloc",
+      "opened_hash_bound_prefix_libc": true,
+      "opened_hash_bound_prefix_libm": true,
+      "libdl_file_path_observed": false
+    },
+    {
+      "case": "hwcomposer",
+      "opened_hash_bound_prefix_libc": true,
+      "opened_hash_bound_prefix_libm": true,
+      "libdl_file_path_observed": false
+    },
+    {
+      "case": "audio-primary",
+      "opened_hash_bound_prefix_libc": true,
+      "opened_hash_bound_prefix_libm": true,
+      "libdl_file_path_observed": false
+    },
+    {
+      "case": "audio-usb",
+      "opened_hash_bound_prefix_libc": true,
+      "opened_hash_bound_prefix_libm": true,
+      "libdl_file_path_observed": false
+    },
+    {
+      "case": "audio-submix",
+      "opened_hash_bound_prefix_libc": true,
+      "opened_hash_bound_prefix_libm": true,
+      "libdl_file_path_observed": false
+    },
+    {
+      "case": "power",
+      "opened_hash_bound_prefix_libc": true,
+      "opened_hash_bound_prefix_libm": true,
+      "libdl_file_path_observed": false
+    },
+    {
+      "case": "power-not-device",
+      "opened_hash_bound_prefix_libc": true,
+      "opened_hash_bound_prefix_libm": true,
+      "libdl_file_path_observed": false
+    },
+    {
+      "case": "wrong-id",
+      "opened_hash_bound_prefix_libc": true,
+      "opened_hash_bound_prefix_libm": true,
+      "libdl_file_path_observed": false
+    }
+  ],
+  "scope": "Prefix files are byte-fixed copies; QEMU -L points to this prefix. Trace path opens plus prefix integrity support actual source-built libc/libm use; no assertion of direct libdl stub execution."
+}

@@ -1,0 +1,18 @@
+{
+  "scope": "Independent review of changed test_no_firmware_loader_overwrite only, plus synthetic text cases. No repository suite or Android build repeated. This is a direct PRODUCT_COPY_FILES assignment contract, not full GNUmake semantic interpretation.",
+  "reviewed_file": "tests/test_source_layout.py",
+  "sha256": "8347c09500c208d4b9b4f773e8346ca0153a35a7ef37002f1fe9af663e6069eb",
+  "product_fragment_sha256": "fcf61a21ecb8a791477a0c80d82240f0f671e1b23e1385a3a94924428cd18089",
+  "cases": {
+    "current_exact_oem_accepted": true,
+    "continued_exact_oem_accepted": true,
+    "extra_same_line_rejected": true,
+    "extra_separate_assignment_rejected": true,
+    "extra_continued_entry_rejected": true,
+    "different_oem_source_rejected": true,
+    "different_oem_destination_rejected": true,
+    "missing_oem_rejected": true
+  },
+  "status": "pass",
+  "finding": "Exact legitimate upstream OEM copy is accepted. Additional direct entries/assignments, wrong source/destination, and missing OEM mapping are rejected. No concrete defect found in this test change."
+}

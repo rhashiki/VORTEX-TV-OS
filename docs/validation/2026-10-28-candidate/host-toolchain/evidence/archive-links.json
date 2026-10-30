@@ -1,0 +1,1214 @@
+[
+  {
+    "path": "libexec/gcc/x86_64-linux/4.8/liblto_plugin.so",
+    "target": "liblto_plugin.so.0.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/libexec/gcc/x86_64-linux/4.8/liblto_plugin.so.0.0.0"
+  },
+  {
+    "path": "libexec/gcc/x86_64-linux/4.8/liblto_plugin.so.0",
+    "target": "liblto_plugin.so.0.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/libexec/gcc/x86_64-linux/4.8/liblto_plugin.so.0.0.0"
+  },
+  {
+    "path": "sysroot/usr/include/ncurses.h",
+    "target": "curses.h",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/include/curses.h"
+  },
+  {
+    "path": "sysroot/usr/include/stdatomic.h",
+    "target": "../../../../../../../../bionic/libc/include/stdatomic.h",
+    "type": "symlink",
+    "relative_resolved": "tree/bionic/libc/include/stdatomic.h"
+  },
+  {
+    "path": "sysroot/usr/lib/ld-linux-x86-64.so.2",
+    "target": "ld-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/ld-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libBrokenLocale.so",
+    "target": "libBrokenLocale.so.1",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libBrokenLocale.so.1"
+  },
+  {
+    "path": "sysroot/usr/lib/libBrokenLocale.so.1",
+    "target": "libBrokenLocale-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libBrokenLocale-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libGL.so",
+    "target": "libGL.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libGL.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libX11.so",
+    "target": "libX11.so.6.3.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libX11.so.6.3.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libX11.so.6",
+    "target": "libX11.so.6.3.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libX11.so.6.3.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libXau.so.6",
+    "target": "libXau.so.6.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libXau.so.6.0.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libXdamage.so.1",
+    "target": "libXdamage.so.1.1.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libXdamage.so.1.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libXdmcp.so.6",
+    "target": "libXdmcp.so.6.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libXdmcp.so.6.0.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libXext.so",
+    "target": "libXext.so.6.4.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libXext.so.6.4.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libXext.so.6",
+    "target": "libXext.so.6.4.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libXext.so.6.4.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libXfixes.so",
+    "target": "libXfixes.so.3.1.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libXfixes.so.3.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libXfixes.so.3",
+    "target": "libXfixes.so.3.1.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libXfixes.so.3.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libXi.so",
+    "target": "libXi.so.6.1.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libXi.so.6.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libXxf86vm.so.1",
+    "target": "libXxf86vm.so.1.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libXxf86vm.so.1.0.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libacl.a",
+    "target": "libacl.a",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libacl.a"
+  },
+  {
+    "path": "sysroot/usr/lib/libacl.so",
+    "target": "libacl.so.1",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libacl.so.1"
+  },
+  {
+    "path": "sysroot/usr/lib/libacl.so.1",
+    "target": "libacl.so.1.1.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libacl.so.1.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libanl.so",
+    "target": "libanl.so.1",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libanl.so.1"
+  },
+  {
+    "path": "sysroot/usr/lib/libanl.so.1",
+    "target": "libanl-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libanl-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libasound.so",
+    "target": "libasound.so.2.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libasound.so.2.0.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libasound.so.2",
+    "target": "libasound.so.2.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libasound.so.2.0.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libattr.so",
+    "target": "libattr.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libattr.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libattr.so.1",
+    "target": "libattr.so.1.1.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libattr.so.1.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libaudiofile.so",
+    "target": "libaudiofile.so.1.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libaudiofile.so.1.0.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libc.so.6",
+    "target": "libc-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libc-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libcap.so",
+    "target": "libcap.so.2",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libcap.so.2"
+  },
+  {
+    "path": "sysroot/usr/lib/libcap.so.2",
+    "target": "libcap.so.2.22",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libcap.so.2.22"
+  },
+  {
+    "path": "sysroot/usr/lib/libcidn.so",
+    "target": "libcidn.so.1",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libcidn.so.1"
+  },
+  {
+    "path": "sysroot/usr/lib/libcidn.so.1",
+    "target": "libcidn-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libcidn-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libcrypt.so",
+    "target": "libcrypt.so.1",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libcrypt.so.1"
+  },
+  {
+    "path": "sysroot/usr/lib/libcrypt.so.1",
+    "target": "libcrypt-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libcrypt-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libcurses.a",
+    "target": "libncurses.a",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libncurses.a"
+  },
+  {
+    "path": "sysroot/usr/lib/libcurses.so",
+    "target": "libncurses.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libncurses.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libdl.so",
+    "target": "libdl.so.2",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libdl.so.2"
+  },
+  {
+    "path": "sysroot/usr/lib/libdl.so.2",
+    "target": "libdl-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libdl-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libdrm.so.2",
+    "target": "libdrm.so.2.4.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libdrm.so.2.4.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libesd.so",
+    "target": "libesd.so.0.2.39",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libesd.so.0.2.39"
+  },
+  {
+    "path": "sysroot/usr/lib/libform.so",
+    "target": "libform.so.5",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libform.so.5"
+  },
+  {
+    "path": "sysroot/usr/lib/libform.so.5",
+    "target": "libform.so.5.9",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libform.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib/libm.so",
+    "target": "libm.so.6",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libm.so.6"
+  },
+  {
+    "path": "sysroot/usr/lib/libm.so.6",
+    "target": "libm-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libm-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libmenu.so",
+    "target": "libmenu.so.5",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libmenu.so.5"
+  },
+  {
+    "path": "sysroot/usr/lib/libmenu.so.5",
+    "target": "libmenu.so.5.9",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libmenu.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib/libncurses.so.5",
+    "target": "libncurses.so.5.9",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libncurses.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib/libnsl.so",
+    "target": "libnsl.so.1",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnsl.so.1"
+  },
+  {
+    "path": "sysroot/usr/lib/libnsl.so.1",
+    "target": "libnsl-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnsl-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_compat.so",
+    "target": "libnss_compat.so.2",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_compat.so.2"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_compat.so.2",
+    "target": "libnss_compat-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_compat-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_db.so",
+    "target": "libnss_db.so.2",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_db.so.2"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_dns.so",
+    "target": "libnss_dns.so.2",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_dns.so.2"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_dns.so.2",
+    "target": "libnss_dns-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_dns-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_files.so",
+    "target": "libnss_files.so.2",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_files.so.2"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_files.so.2",
+    "target": "libnss_files-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_files-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_hesiod.so",
+    "target": "libnss_hesiod.so.2",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_hesiod.so.2"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_hesiod.so.2",
+    "target": "libnss_hesiod-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_hesiod-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_nis.so",
+    "target": "libnss_nis.so.2",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_nis.so.2"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_nis.so.2",
+    "target": "libnss_nis-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_nis-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_nisplus.so",
+    "target": "libnss_nisplus.so.2",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_nisplus.so.2"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_nisplus.so.2",
+    "target": "libnss_nisplus-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_nisplus-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libpanel.so",
+    "target": "libpanel.so.5",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libpanel.so.5"
+  },
+  {
+    "path": "sysroot/usr/lib/libpanel.so.5",
+    "target": "libpanel.so.5.9",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libpanel.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib/libpthread.so.0",
+    "target": "libpthread-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libpthread-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libpulse-mainloop-glib.so",
+    "target": "libpulse-mainloop-glib.so.0.0.4",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libpulse-mainloop-glib.so.0.0.4"
+  },
+  {
+    "path": "sysroot/usr/lib/libpulse-simple.so",
+    "target": "libpulse-simple.so.0.0.3",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libpulse-simple.so.0.0.3"
+  },
+  {
+    "path": "sysroot/usr/lib/libpulse-simple.so.0",
+    "target": "libpulse-simple.so.0.0.3",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libpulse-simple.so.0.0.3"
+  },
+  {
+    "path": "sysroot/usr/lib/libpulse.so",
+    "target": "libpulse.so.0.13.5",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libpulse.so.0.13.5"
+  },
+  {
+    "path": "sysroot/usr/lib/libpulse.so.0",
+    "target": "libpulse.so.0.13.5",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libpulse.so.0.13.5"
+  },
+  {
+    "path": "sysroot/usr/lib/libresolv.so",
+    "target": "libresolv.so.2",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libresolv.so.2"
+  },
+  {
+    "path": "sysroot/usr/lib/libresolv.so.2",
+    "target": "libresolv-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libresolv-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/librt.so",
+    "target": "librt.so.1",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/librt.so.1"
+  },
+  {
+    "path": "sysroot/usr/lib/librt.so.1",
+    "target": "librt-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/librt-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libtermcap.a",
+    "target": "libtinfo.a",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libtinfo.a"
+  },
+  {
+    "path": "sysroot/usr/lib/libthread_db.so",
+    "target": "libthread_db.so.1",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libthread_db.so.1"
+  },
+  {
+    "path": "sysroot/usr/lib/libthread_db.so.1",
+    "target": "libthread_db-1.0.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libthread_db-1.0.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libtic.so",
+    "target": "libtic.so.5",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libtic.so.5"
+  },
+  {
+    "path": "sysroot/usr/lib/libtic.so.5",
+    "target": "libtic.so.5.9",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libtic.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib/libtinfo.so",
+    "target": "libtinfo.so.5",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libtinfo.so.5"
+  },
+  {
+    "path": "sysroot/usr/lib/libtinfo.so.5",
+    "target": "libtinfo.so.5.9",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libtinfo.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib/libutil.so",
+    "target": "libutil.so.1",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libutil.so.1"
+  },
+  {
+    "path": "sysroot/usr/lib/libutil.so.1",
+    "target": "libutil-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libutil-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libxcb.so",
+    "target": "libxcb.so.1.1.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libxcb.so.1.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libxcb.so.1",
+    "target": "libxcb.so.1.1.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libxcb.so.1.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libz.so",
+    "target": "libz.so.1.2.3.4",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libz.so.1.2.3.4"
+  },
+  {
+    "path": "sysroot/usr/lib/libz.so.1",
+    "target": "libz.so.1.2.3.4",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libz.so.1.2.3.4"
+  },
+  {
+    "path": "sysroot/usr/lib/mesa/libGL.so",
+    "target": "libGL.so.1",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/mesa/libGL.so.1"
+  },
+  {
+    "path": "sysroot/usr/lib/mesa/libGL.so.1",
+    "target": "libGL.so.1.2",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/mesa/libGL.so.1.2"
+  },
+  {
+    "path": "sysroot/usr/lib32/ld-linux.so.2",
+    "target": "ld-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/ld-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libBrokenLocale.so",
+    "target": "libBrokenLocale.so.1",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libBrokenLocale.so.1"
+  },
+  {
+    "path": "sysroot/usr/lib32/libBrokenLocale.so.1",
+    "target": "libBrokenLocale-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libBrokenLocale-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libGL.so",
+    "target": "libGL.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libGL.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libX11.so",
+    "target": "libX11.so.6.3.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libX11.so.6.3.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libX11.so.6",
+    "target": "libX11.so.6.3.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libX11.so.6.3.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libXau.so.6",
+    "target": "libXau.so.6.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libXau.so.6.0.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libXdamage.so.1",
+    "target": "libXdamage.so.1.1.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libXdamage.so.1.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libXdmcp.so.6",
+    "target": "libXdmcp.so.6.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libXdmcp.so.6.0.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libXext.so",
+    "target": "libXext.so.6.4.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libXext.so.6.4.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libXext.so.6",
+    "target": "libXext.so.6.4.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libXext.so.6.4.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libXfixes.so",
+    "target": "libXfixes.so.3.1.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libXfixes.so.3.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libXfixes.so.3",
+    "target": "libXfixes.so.3.1.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libXfixes.so.3.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libXi.so",
+    "target": "libXi.so.6.1.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libXi.so.6.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libXxf86vm.so.1",
+    "target": "libXxf86vm.so.1.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libXxf86vm.so.1.0.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libacl.a",
+    "target": "libacl.a",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libacl.a"
+  },
+  {
+    "path": "sysroot/usr/lib32/libacl.so",
+    "target": "libacl.so.1",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libacl.so.1"
+  },
+  {
+    "path": "sysroot/usr/lib32/libacl.so.1",
+    "target": "libacl.so.1.1.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libacl.so.1.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libanl.so",
+    "target": "libanl.so.1",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libanl.so.1"
+  },
+  {
+    "path": "sysroot/usr/lib32/libanl.so.1",
+    "target": "libanl-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libanl-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libasound.so",
+    "target": "libasound.so.2.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libasound.so.2.0.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libasound.so.2",
+    "target": "libasound.so.2.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libasound.so.2.0.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libattr.so",
+    "target": "libattr.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libattr.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libattr.so.1",
+    "target": "libattr.so.1.1.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libattr.so.1.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libaudiofile.so",
+    "target": "libaudiofile.so.1.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libaudiofile.so.1.0.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libc.so.6",
+    "target": "libc-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libc-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libcap.so",
+    "target": "libcap.so.2",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libcap.so.2"
+  },
+  {
+    "path": "sysroot/usr/lib32/libcap.so.2",
+    "target": "libcap.so.2.22",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libcap.so.2.22"
+  },
+  {
+    "path": "sysroot/usr/lib32/libcidn.so",
+    "target": "libcidn.so.1",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libcidn.so.1"
+  },
+  {
+    "path": "sysroot/usr/lib32/libcidn.so.1",
+    "target": "libcidn-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libcidn-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libcrypt.so",
+    "target": "libcrypt.so.1",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libcrypt.so.1"
+  },
+  {
+    "path": "sysroot/usr/lib32/libcrypt.so.1",
+    "target": "libcrypt-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libcrypt-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libcurses.a",
+    "target": "libncurses.a",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libncurses.a"
+  },
+  {
+    "path": "sysroot/usr/lib32/libcurses.so",
+    "target": "libncurses.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libncurses.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libdl.so",
+    "target": "libdl.so.2",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libdl.so.2"
+  },
+  {
+    "path": "sysroot/usr/lib32/libdl.so.2",
+    "target": "libdl-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libdl-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libdrm.so.2",
+    "target": "libdrm.so.2.4.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libdrm.so.2.4.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libesd.so",
+    "target": "libesd.so.0.2.39",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libesd.so.0.2.39"
+  },
+  {
+    "path": "sysroot/usr/lib32/libform.so",
+    "target": "libform.so.5",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libform.so.5"
+  },
+  {
+    "path": "sysroot/usr/lib32/libform.so.5",
+    "target": "libform.so.5.9",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libform.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib32/libm.so",
+    "target": "libm.so.6",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libm.so.6"
+  },
+  {
+    "path": "sysroot/usr/lib32/libm.so.6",
+    "target": "libm-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libm-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libmenu.so",
+    "target": "libmenu.so.5",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libmenu.so.5"
+  },
+  {
+    "path": "sysroot/usr/lib32/libmenu.so.5",
+    "target": "libmenu.so.5.9",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libmenu.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib32/libncurses.so.5",
+    "target": "libncurses.so.5.9",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libncurses.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnsl.so",
+    "target": "libnsl.so.1",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnsl.so.1"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnsl.so.1",
+    "target": "libnsl-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnsl-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_compat.so",
+    "target": "libnss_compat.so.2",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_compat.so.2"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_compat.so.2",
+    "target": "libnss_compat-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_compat-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_db.so",
+    "target": "libnss_db.so.2",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_db.so.2"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_dns.so",
+    "target": "libnss_dns.so.2",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_dns.so.2"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_dns.so.2",
+    "target": "libnss_dns-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_dns-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_files.so",
+    "target": "libnss_files.so.2",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_files.so.2"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_files.so.2",
+    "target": "libnss_files-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_files-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_hesiod.so",
+    "target": "libnss_hesiod.so.2",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_hesiod.so.2"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_hesiod.so.2",
+    "target": "libnss_hesiod-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_hesiod-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_nis.so",
+    "target": "libnss_nis.so.2",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_nis.so.2"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_nis.so.2",
+    "target": "libnss_nis-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_nis-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_nisplus.so",
+    "target": "libnss_nisplus.so.2",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_nisplus.so.2"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_nisplus.so.2",
+    "target": "libnss_nisplus-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_nisplus-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libpanel.so",
+    "target": "libpanel.so.5",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libpanel.so.5"
+  },
+  {
+    "path": "sysroot/usr/lib32/libpanel.so.5",
+    "target": "libpanel.so.5.9",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libpanel.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib32/libpthread.so.0",
+    "target": "libpthread-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libpthread-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libpulse-mainloop-glib.so",
+    "target": "libpulse-mainloop-glib.so.0.0.4",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libpulse-mainloop-glib.so.0.0.4"
+  },
+  {
+    "path": "sysroot/usr/lib32/libpulse-simple.so",
+    "target": "libpulse-simple.so.0.0.3",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libpulse-simple.so.0.0.3"
+  },
+  {
+    "path": "sysroot/usr/lib32/libpulse-simple.so.0",
+    "target": "libpulse-simple.so.0.0.3",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libpulse-simple.so.0.0.3"
+  },
+  {
+    "path": "sysroot/usr/lib32/libpulse.so",
+    "target": "libpulse.so.0.13.5",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libpulse.so.0.13.5"
+  },
+  {
+    "path": "sysroot/usr/lib32/libpulse.so.0",
+    "target": "libpulse.so.0.13.5",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libpulse.so.0.13.5"
+  },
+  {
+    "path": "sysroot/usr/lib32/libresolv.so",
+    "target": "libresolv.so.2",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libresolv.so.2"
+  },
+  {
+    "path": "sysroot/usr/lib32/libresolv.so.2",
+    "target": "libresolv-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libresolv-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/librt.so",
+    "target": "librt.so.1",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/librt.so.1"
+  },
+  {
+    "path": "sysroot/usr/lib32/librt.so.1",
+    "target": "librt-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/librt-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libtermcap.a",
+    "target": "libtinfo.a",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libtinfo.a"
+  },
+  {
+    "path": "sysroot/usr/lib32/libthread_db.so",
+    "target": "libthread_db.so.1",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libthread_db.so.1"
+  },
+  {
+    "path": "sysroot/usr/lib32/libthread_db.so.1",
+    "target": "libthread_db-1.0.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libthread_db-1.0.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libtic.so",
+    "target": "libtic.so.5",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libtic.so.5"
+  },
+  {
+    "path": "sysroot/usr/lib32/libtic.so.5",
+    "target": "libtic.so.5.9",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libtic.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib32/libtinfo.so",
+    "target": "libtinfo.so.5",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libtinfo.so.5"
+  },
+  {
+    "path": "sysroot/usr/lib32/libtinfo.so.5",
+    "target": "libtinfo.so.5.9",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libtinfo.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib32/libutil.so",
+    "target": "libutil.so.1",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libutil.so.1"
+  },
+  {
+    "path": "sysroot/usr/lib32/libutil.so.1",
+    "target": "libutil-2.15.so",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libutil-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libxcb.so",
+    "target": "libxcb.so.1.1.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libxcb.so.1.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libxcb.so.1",
+    "target": "libxcb.so.1.1.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libxcb.so.1.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libz.so",
+    "target": "libz.so.1.2.3.4",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libz.so.1.2.3.4"
+  },
+  {
+    "path": "sysroot/usr/lib32/libz.so.1",
+    "target": "libz.so.1.2.3.4",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libz.so.1.2.3.4"
+  },
+  {
+    "path": "sysroot/usr/lib32/mesa/libGL.so",
+    "target": "libGL.so.1",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/mesa/libGL.so.1"
+  },
+  {
+    "path": "sysroot/usr/lib32/mesa/libGL.so.1",
+    "target": "libGL.so.1.2",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/mesa/libGL.so.1.2"
+  },
+  {
+    "path": "x86_64-linux/lib32/libasan.so",
+    "target": "libasan.so.0.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib32/libasan.so.0.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib32/libasan.so.0",
+    "target": "libasan.so.0.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib32/libasan.so.0.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib32/libatomic.so",
+    "target": "libatomic.so.1.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib32/libatomic.so.1.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib32/libatomic.so.1",
+    "target": "libatomic.so.1.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib32/libatomic.so.1.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib32/libgcc_s.so",
+    "target": "libgcc_s.so.1",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib32/libgcc_s.so.1"
+  },
+  {
+    "path": "x86_64-linux/lib32/libitm.so",
+    "target": "libitm.so.1.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib32/libitm.so.1.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib32/libitm.so.1",
+    "target": "libitm.so.1.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib32/libitm.so.1.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib32/libssp.so",
+    "target": "libssp.so.0.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib32/libssp.so.0.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib32/libssp.so.0",
+    "target": "libssp.so.0.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib32/libssp.so.0.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib32/libstdc++.so",
+    "target": "libstdc++.so.6.0.19",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib32/libstdc++.so.6.0.19"
+  },
+  {
+    "path": "x86_64-linux/lib32/libstdc++.so.6",
+    "target": "libstdc++.so.6.0.19",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib32/libstdc++.so.6.0.19"
+  },
+  {
+    "path": "x86_64-linux/lib64/libasan.so",
+    "target": "libasan.so.0.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libasan.so.0.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib64/libasan.so.0",
+    "target": "libasan.so.0.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libasan.so.0.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib64/libatomic.so",
+    "target": "libatomic.so.1.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libatomic.so.1.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib64/libatomic.so.1",
+    "target": "libatomic.so.1.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libatomic.so.1.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib64/libgcc_s.so",
+    "target": "libgcc_s.so.1",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libgcc_s.so.1"
+  },
+  {
+    "path": "x86_64-linux/lib64/libitm.so",
+    "target": "libitm.so.1.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libitm.so.1.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib64/libitm.so.1",
+    "target": "libitm.so.1.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libitm.so.1.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib64/libssp.so",
+    "target": "libssp.so.0.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libssp.so.0.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib64/libssp.so.0",
+    "target": "libssp.so.0.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libssp.so.0.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib64/libstdc++.so",
+    "target": "libstdc++.so.6.0.19",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libstdc++.so.6.0.19"
+  },
+  {
+    "path": "x86_64-linux/lib64/libstdc++.so.6",
+    "target": "libstdc++.so.6.0.19",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libstdc++.so.6.0.19"
+  },
+  {
+    "path": "x86_64-linux/lib64/libtsan.so",
+    "target": "libtsan.so.0.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libtsan.so.0.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib64/libtsan.so.0",
+    "target": "libtsan.so.0.0.0",
+    "type": "symlink",
+    "relative_resolved": "tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libtsan.so.0.0.0"
+  }
+]

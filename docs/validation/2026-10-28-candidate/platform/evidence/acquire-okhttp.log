@@ -1,0 +1,19 @@
+Cloning into '/workspace/build01-full-next/platform/tree/external/okhttp'...
+warning: refs/tags/android-7.1.2_r6 2e0e29353de0e2e6a891988275c5b9f05fb4d222 is not a commit!
+Note: switching to '867f0e5f35a8fc355206693ddefbf55ae04b9caa'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+

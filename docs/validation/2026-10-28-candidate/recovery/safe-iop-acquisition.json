@@ -1,0 +1,26 @@
+{
+  "repository": "https://android.googlesource.com/platform/external/safe-iop",
+  "revision": "cd76f998688d145235de78ecd5b340d0eac9239d",
+  "tag": "android-7.1.2_r6",
+  "kind": "bounded genuine source-header subset; no static library fabricated",
+  "files": [
+    {
+      "path": "include/safe_iop.h",
+      "url": "https://android.googlesource.com/platform/external/safe-iop/+/cd76f998688d145235de78ecd5b340d0eac9239d/include/safe_iop.h?format=TEXT",
+      "sha256": "84a9f8a4956fabb9cd4b4c4d7971868f2bcdcca7f89757c077b266bb7c71ce55",
+      "bytes": 24549
+    },
+    {
+      "path": "Android.mk",
+      "url": "https://android.googlesource.com/platform/external/safe-iop/+/cd76f998688d145235de78ecd5b340d0eac9239d/Android.mk?format=TEXT",
+      "sha256": "5f392bc7ed00e5b51c18f82d9792743c38cdd55ffa12c6f6e12c8f4912d382a6",
+      "bytes": 839
+    },
+    {
+      "path": "NOTICE",
+      "url": "https://android.googlesource.com/platform/external/safe-iop/+/cd76f998688d145235de78ecd5b340d0eac9239d/NOTICE?format=TEXT",
+      "sha256": "b71befc71cd206e875c6e46def1a08c7850ae96b52910375be5d71ef633a872d",
+      "bytes": 849
+    }
+  ]
+}

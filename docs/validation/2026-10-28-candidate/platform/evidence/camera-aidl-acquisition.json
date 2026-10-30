@@ -1,0 +1,105 @@
+{
+  "repository": "https://github.com/rockchip-android/frameworks-av",
+  "revision": "ac031469f276a02febe6874d1445413b148c6cb7",
+  "scope": "camera/aidl only; not complete frameworks/av checkout or module registration",
+  "files": [
+    {
+      "path": "camera/aidl/android/hardware/CameraInfo.aidl",
+      "bytes": 717,
+      "sha256": "3adf3c4b72a6fd6166aa12f2a9e246c997c8652f3b3139426ef17082416ad427",
+      "git_blob": "c6a3a616b33463bb4edff20929912949a67b97d4",
+      "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-av/ac031469f276a02febe6874d1445413b148c6cb7/camera/aidl/android/hardware/CameraInfo.aidl"
+    },
+    {
+      "path": "camera/aidl/android/hardware/ICamera.aidl",
+      "bytes": 862,
+      "sha256": "e8458ccabacf4ca816abe592c4ee09d2bbd57c82920da50e9886d57247764002",
+      "git_blob": "f9db8426ba588d5875ad5ce66c08645c7acc7646",
+      "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-av/ac031469f276a02febe6874d1445413b148c6cb7/camera/aidl/android/hardware/ICamera.aidl"
+    },
+    {
+      "path": "camera/aidl/android/hardware/ICameraClient.aidl",
+      "bytes": 752,
+      "sha256": "7af8e33a05d6dd77d56258994a995d03fd2f9f5a49c2e6c471cdbadfc1155ebf",
+      "git_blob": "808edeec79db36cdccc41478b8a6a27e318479f4",
+      "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-av/ac031469f276a02febe6874d1445413b148c6cb7/camera/aidl/android/hardware/ICameraClient.aidl"
+    },
+    {
+      "path": "camera/aidl/android/hardware/ICameraService.aidl",
+      "bytes": 4637,
+      "sha256": "b9375cc7f12f940f3b44dbc542eb6ee384deaf9a16e1cc138700333de6cd0a03",
+      "git_blob": "e94fd0c0fdbeba40716898dafed68dc00277fa60",
+      "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-av/ac031469f276a02febe6874d1445413b148c6cb7/camera/aidl/android/hardware/ICameraService.aidl"
+    },
+    {
+      "path": "camera/aidl/android/hardware/ICameraServiceListener.aidl",
+      "bytes": 2829,
+      "sha256": "4cd9ad310651fb004eed64b007ebec2f14a69d4edd9b500b4d68b721ea207034",
+      "git_blob": "4e2a8c72e36c6eb1f64b1c8cbe365930825b8293",
+      "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-av/ac031469f276a02febe6874d1445413b148c6cb7/camera/aidl/android/hardware/ICameraServiceListener.aidl"
+    },
+    {
+      "path": "camera/aidl/android/hardware/ICameraServiceProxy.aidl",
+      "bytes": 1119,
+      "sha256": "85d737d30fea2e05b016aee1549c2b7580596a09915d69eb3db5b5afadced644",
+      "git_blob": "0e654d5083b66e1542129ff6664310d2f2f02d2f",
+      "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-av/ac031469f276a02febe6874d1445413b148c6cb7/camera/aidl/android/hardware/ICameraServiceProxy.aidl"
+    },
+    {
+      "path": "camera/aidl/android/hardware/camera2/CaptureRequest.aidl",
+      "bytes": 741,
+      "sha256": "34a3bf2370187ce8ee0a30f8fa570184fa106916fea3aae0e5fd920f9c3d2903",
+      "git_blob": "9931fc71e8e3663ca7dac925e54c83c3d2534efb",
+      "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-av/ac031469f276a02febe6874d1445413b148c6cb7/camera/aidl/android/hardware/camera2/CaptureRequest.aidl"
+    },
+    {
+      "path": "camera/aidl/android/hardware/camera2/ICameraDeviceCallbacks.aidl",
+      "bytes": 1810,
+      "sha256": "01d714a0e1c447eb2f4009833ace21b9a143a8cbaea050811cd15cbf2d48abca",
+      "git_blob": "755ec8eb2921003be41eb779f347298b0ee605f4",
+      "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-av/ac031469f276a02febe6874d1445413b148c6cb7/camera/aidl/android/hardware/camera2/ICameraDeviceCallbacks.aidl"
+    },
+    {
+      "path": "camera/aidl/android/hardware/camera2/ICameraDeviceUser.aidl",
+      "bytes": 4147,
+      "sha256": "2706e15ad10a3c0479e18d4b3359d6ae11bc8d5b9c5a00326301638704d0c88f",
+      "git_blob": "96ecfa09554c5b39f0892613f20509adf8fb1d92",
+      "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-av/ac031469f276a02febe6874d1445413b148c6cb7/camera/aidl/android/hardware/camera2/ICameraDeviceUser.aidl"
+    },
+    {
+      "path": "camera/aidl/android/hardware/camera2/impl/CameraMetadataNative.aidl",
+      "bytes": 744,
+      "sha256": "d2f0b55e1a52e60ad66444bb7f57a4d6c0d7164722e8b34742c8417dcccdf998",
+      "git_blob": "507f575a0f6bdeb79ab3e2c87c7a6d2a793b2d81",
+      "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-av/ac031469f276a02febe6874d1445413b148c6cb7/camera/aidl/android/hardware/camera2/impl/CameraMetadataNative.aidl"
+    },
+    {
+      "path": "camera/aidl/android/hardware/camera2/impl/CaptureResultExtras.aidl",
+      "bytes": 742,
+      "sha256": "6f5bd9bb876945266dd871586082c90d55e9ffd8fb340948fbd1fd2ef3e3bd03",
+      "git_blob": "5f47edaff07a1cc906960452e682fa5ecffd5e1e",
+      "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-av/ac031469f276a02febe6874d1445413b148c6cb7/camera/aidl/android/hardware/camera2/impl/CaptureResultExtras.aidl"
+    },
+    {
+      "path": "camera/aidl/android/hardware/camera2/params/OutputConfiguration.aidl",
+      "bytes": 758,
+      "sha256": "0c669f17e09890d34601dd51db0ca3116b79022b29a2153a3599be23eb772f16",
+      "git_blob": "a8ad832576c41bc20787ad6d51a6f66dd2073dc7",
+      "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-av/ac031469f276a02febe6874d1445413b148c6cb7/camera/aidl/android/hardware/camera2/params/OutputConfiguration.aidl"
+    },
+    {
+      "path": "camera/aidl/android/hardware/camera2/params/VendorTagDescriptor.aidl",
+      "bytes": 750,
+      "sha256": "2cb8cfa79934826ca4619d02cd10b72641be899a85f3b79fc340eab380675c5b",
+      "git_blob": "9ee426339ca3d8179997b12ac2d329ab4fb7a231",
+      "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-av/ac031469f276a02febe6874d1445413b148c6cb7/camera/aidl/android/hardware/camera2/params/VendorTagDescriptor.aidl"
+    },
+    {
+      "path": "camera/aidl/android/hardware/camera2/utils/SubmitInfo.aidl",
+      "bytes": 739,
+      "sha256": "5d0c1e66a567616e43bb283a1d9125c61d0a69372ea8800532924a785d4f3cc2",
+      "git_blob": "57531ad824455aa6f61b2ae09cf6b50b61fdfcec",
+      "url": "https://raw.githubusercontent.com/rockchip-android/frameworks-av/ac031469f276a02febe6874d1445413b148c6cb7/camera/aidl/android/hardware/camera2/utils/SubmitInfo.aidl"
+    }
+  ]
+}

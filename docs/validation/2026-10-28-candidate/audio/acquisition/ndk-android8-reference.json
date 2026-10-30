@@ -1,0 +1,7 @@
+{
+  "repository": "https://android.googlesource.com/platform/prebuilts/ndk",
+  "revision": "c563e319025cff2ba8f3542b9e07ea416f39c31d",
+  "url": "https://android.googlesource.com/platform/prebuilts/ndk/+archive/c563e319025cff2ba8f3542b9e07ea416f39c31d/current/platforms/android-8/arch-arm/usr.tar.gz",
+  "archive_bytes": 1983442,
+  "sha256": "fd864bfb5870ef42cb63ddb3da5a18399582444a1d31d8f0e5375b082101858d"
+}

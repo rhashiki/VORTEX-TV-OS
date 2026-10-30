@@ -12,7 +12,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 # Reference has no setup wizard. These are real SettingsProvider defaults;
 # resource compilation and fresh-device first boot are still unvalidated.
-PRODUCT_PACKAGE_OVERLAYS += device/vortex/rk322x_sd_box/overlay
+PRODUCT_PACKAGE_OVERLAYS += device/vortex/vortex_rk322x_sd_box/overlay
 
 PRODUCT_NAME := vortex_rk322x_sd_box
 PRODUCT_DEVICE := vortex_rk322x_sd_box
@@ -53,8 +53,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Mount selector remains supplied by the actual kernel/bootloader. Do not set
 # ro.bootmode or pretend a different boot medium is SD.
 PRODUCT_COPY_FILES += \
-    device/vortex/rk322x_sd_box/init.vortex-sd-reference.rc:root/init.rk30board.rc \
+    device/vortex/vortex_rk322x_sd_box/init.vortex-sd-reference.rc:root/init.rk30board.rc \
     device/rockchip/rk322x/fstab.rk30board.bootmode.sd:root/fstab.rk30board.bootmode.sd \
-    device/vortex/rk322x_sd_box/audio_policy.vortex-sd-reference.conf:system/etc/audio_policy.conf \
+    device/vortex/vortex_rk322x_sd_box/audio_policy.vortex-sd-reference.conf:system/etc/audio_policy.conf \
     vendor/rockchip/rk322x/proprietary/lib/egl/libGLES_mali.so:system/lib/egl/libGLES_mali.so \
     vendor/rockchip/rk322x/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg

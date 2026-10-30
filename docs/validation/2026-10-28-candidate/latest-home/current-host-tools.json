@@ -1,0 +1,19 @@
+{
+  "versions": {
+    "java": "openjdk version \"1.8.0_504\"",
+    "javac": "javac 1.8.0_504",
+    "make": "GNU Make 4.4.1",
+    "python2": "Python 2.7.18",
+    "aapt": "Android Asset Packaging Tool, v0.2-2481650"
+  },
+  "compatibility_overrides": [
+    {
+      "path": "/workspace/build01-platform-next/aosp-app/host-bin/acp",
+      "sha256": "498b109e18998fc4b7ee21b41b3c13b1f2417b03f0653f0fc43e32ef4bd0c13c"
+    },
+    {
+      "path": "/workspace/android-toolchain/sdk/build-tools/33.0.2/zipalign",
+      "sha256": "da52681849c6bb8656775674b56b14bb9ff00ecf2ec8524389adc6acfe46b34f"
+    }
+  ]
+}

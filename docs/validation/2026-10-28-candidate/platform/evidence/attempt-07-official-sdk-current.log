@@ -1,0 +1,150 @@
+including device/rockchip/rk322x/vendorsetup.sh
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=vortex_rk322x_sd_box
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/platform/out
+============================================
+LUNCH_STATUS=0
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=vortex_rk322x_sd_box
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/platform/out
+============================================
+including ./bionic/Android.mk ...
+including ./build/libs/host/Android.mk ...
+including ./build/target/board/Android.mk ...
+including ./build/target/product/security/Android.mk ...
+including ./build/tools/Android.mk ...
+including ./device/rockchip/common/Android.mk ...
+including ./external/compiler-rt/Android.mk ...
+including ./external/icu/Android.mk ...
+including ./external/libunwind_llvm/Android.mk ...
+including ./external/llvm/Android.mk ...
+including ./frameworks/base/Android.mk ...
+find: ‘../opt/telephony/src/java/android/provider’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony/gsm’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/rtp’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/sip’: No such file or directory
+find: ‘../../frameworks/data-binding/baseLibrary/src/main’: No such file or directory
+find: ‘../../frameworks/data-binding/extensions/library/src/main’: No such file or directory
+find: ‘../../frameworks/data-binding/extensions/library/src/doc’: No such file or directory
+find: ‘../../frameworks/support/annotations’: No such file or directory
+find: ‘../../frameworks/support/compat’: No such file or directory
+find: ‘../../frameworks/support/media-compat’: No such file or directory
+find: ‘../../frameworks/support/fragment’: No such file or directory
+find: ‘../../frameworks/support/core-ui’: No such file or directory
+find: ‘../../frameworks/support/core-utils’: No such file or directory
+find: ‘../../frameworks/support/v7/gridlayout’: No such file or directory
+find: ‘../../frameworks/support/v7/cardview’: No such file or directory
+find: ‘../../frameworks/support/v7/mediarouter’: No such file or directory
+find: ‘../../frameworks/support/v7/palette’: No such file or directory
+find: ‘../../frameworks/support/v8/renderscript’: No such file or directory
+find: ‘../../frameworks/support/v13’: No such file or directory
+find: ‘../../frameworks/support/v17/leanback’: No such file or directory
+find: ‘../../frameworks/support/design’: No such file or directory
+find: ‘../../frameworks/support/percent’: No such file or directory
+find: ‘../../frameworks/support/recommendation’: No such file or directory
+find: ‘../../frameworks/support/transition’: No such file or directory
+find: ‘../../frameworks/support/v7/preference’: No such file or directory
+find: ‘../../frameworks/support/v14/preference’: No such file or directory
+find: ‘../../frameworks/support/v17/preference-leanback’: No such file or directory
+find: ‘../../frameworks/support/documents-archive’: No such file or directory
+find: ‘../../frameworks/support/customtabs’: No such file or directory
+find: ‘../../frameworks/multidex/library/src’: No such file or directory
+find: ‘../../frameworks/multidex/instrumentation/src’: No such file or directory
+find: ‘../../frameworks/support/graphics/drawable/animated’: No such file or directory
+find: ‘../../frameworks/support/graphics/drawable/static’: No such file or directory
+find: ‘../../frameworks/support/v7/appcompat/src’: No such file or directory
+find: ‘../../frameworks/support/v7/recyclerview/src’: No such file or directory
+find: ‘../opt/telephony/src/java/android/provider’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony/gsm’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/rtp’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/sip’: No such file or directory
+find: ‘../opt/telephony/src/java/android/provider’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony/gsm’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/rtp’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/sip’: No such file or directory
+find: ‘../../frameworks/data-binding/baseLibrary/src/main’: No such file or directory
+find: ‘../../frameworks/data-binding/extensions/library/src/main’: No such file or directory
+find: ‘../../frameworks/data-binding/extensions/library/src/doc’: No such file or directory
+find: ‘../../frameworks/support/annotations’: No such file or directory
+find: ‘../../frameworks/support/compat’: No such file or directory
+find: ‘../../frameworks/support/media-compat’: No such file or directory
+find: ‘../../frameworks/support/fragment’: No such file or directory
+find: ‘../../frameworks/support/core-ui’: No such file or directory
+find: ‘../../frameworks/support/core-utils’: No such file or directory
+find: ‘../../frameworks/support/v7/gridlayout’: No such file or directory
+find: ‘../../frameworks/support/v7/cardview’: No such file or directory
+find: ‘../../frameworks/support/v7/mediarouter’: No such file or directory
+find: ‘../../frameworks/support/v7/palette’: No such file or directory
+find: ‘../../frameworks/support/v8/renderscript’: No such file or directory
+find: ‘../../frameworks/support/v13’: No such file or directory
+find: ‘../../frameworks/support/v17/leanback’: No such file or directory
+find: ‘../../frameworks/support/design’: No such file or directory
+find: ‘../../frameworks/support/percent’: No such file or directory
+find: ‘../../frameworks/support/recommendation’: No such file or directory
+find: ‘../../frameworks/support/transition’: No such file or directory
+find: ‘../../frameworks/support/v7/preference’: No such file or directory
+find: ‘../../frameworks/support/v14/preference’: No such file or directory
+find: ‘../../frameworks/support/v17/preference-leanback’: No such file or directory
+find: ‘../../frameworks/support/documents-archive’: No such file or directory
+find: ‘../../frameworks/support/customtabs’: No such file or directory
+find: ‘../../frameworks/multidex/library/src’: No such file or directory
+find: ‘../../frameworks/multidex/instrumentation/src’: No such file or directory
+find: ‘../../frameworks/support/graphics/drawable/animated’: No such file or directory
+find: ‘../../frameworks/support/graphics/drawable/static’: No such file or directory
+find: ‘../../frameworks/support/v7/appcompat/src’: No such file or directory
+find: ‘../../frameworks/support/v7/recyclerview/src’: No such file or directory
+find: ‘../opt/telephony/src/java/android/provider’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony/gsm’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/rtp’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/sip’: No such file or directory
+find: ‘../../external/nist-sip/java’: No such file or directory
+find: ‘../../external/tagsoup/src’: No such file or directory
+build/core/java.mk:26: *** frameworks/base/core/tests/hosttests/test-apps/MultiDexLegacyTestServices: Invalid LOCAL_SDK_VERSION '9' Choices are: test_current current 25.  Stop.
+
+#### make failed to build some targets (8 seconds) ####
+

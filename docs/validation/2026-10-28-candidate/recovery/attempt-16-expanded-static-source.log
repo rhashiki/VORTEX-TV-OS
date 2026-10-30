@@ -1,0 +1,73 @@
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=recovery
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/recovery/out
+============================================
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/recovery/out
+============================================
+bootable/recovery/Android.mk:64: *** Redirect log to UART
+Export includes file: -- /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libselinux_intermediates/export_includes
+mkdir -p /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libselinux_intermediates/ && rm -f /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libselinux_intermediates/export_includes.tmp
+for d in external/libselinux/include; do \
+        echo "-I $d" >> /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libselinux_intermediates/export_includes.tmp; \
+        done
+mv /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libselinux_intermediates/export_includes.tmp /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libselinux_intermediates/export_includes ;
+Export includes file: -- /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libm_intermediates/export_includes
+mkdir -p /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libm_intermediates/ && rm -f /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libm_intermediates/export_includes.tmp
+touch /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libm_intermediates/export_includes.tmp
+mv /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libm_intermediates/export_includes.tmp /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libm_intermediates/export_includes ;
+Export includes file: -- /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libc_intermediates/export_includes
+mkdir -p /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libc_intermediates/ && rm -f /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libc_intermediates/export_includes.tmp
+touch /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libc_intermediates/export_includes.tmp
+mv /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libc_intermediates/export_includes.tmp /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libc_intermediates/export_includes ;
+Export includes file: bootable/recovery/rkupdate/update/Android.mk -- /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/librkupdate_intermediates/export_includes
+mkdir -p /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/librkupdate_intermediates/ && rm -f /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/librkupdate_intermediates/export_includes
+touch /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/librkupdate_intermediates/export_includes
+Export includes file: bootable/recovery/rkupdate/rsa/Android.mk -- /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/librkrsa_intermediates/export_includes
+mkdir -p /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/librkrsa_intermediates/ && rm -f /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/librkrsa_intermediates/export_includes
+touch /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/librkrsa_intermediates/export_includes
+Yacc: recovery <= bootable/recovery/edify/parser.yy
+prebuilts/misc/linux-x86/bison/bison -d  --defines=/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libedify_intermediates/parser.h -o /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libedify_intermediates/parser.cpp bootable/recovery/edify/parser.yy
+/bin/bash: line 1: prebuilts/misc/linux-x86/bison/bison: No such file or directory
+make: *** [build/core/binary.mk:847: /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libedify_intermediates/parser.cpp] Error 127

@@ -1,0 +1,4142 @@
+{
+  "source_revision": "d2721c65c9282b31df7b79f85289ee6c4e636716",
+  "all_build_files_match_pinned_source": true,
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "0e9d5dbaf3090e418f9e7a2e604b86fc4b89598512523854d5b4137ea502611f"
+    },
+    {
+      "path": "CleanSpec.mk",
+      "sha256": "709adae23c1efb91f1b1a07ecf253814b6ff39d0f842b6710b46f61287a650de"
+    },
+    {
+      "path": "buildspec.mk.default",
+      "sha256": "0f145695dadcfc9288a7ad0de87a8975fd7fa2d1b86f24299dc34f1a5d61f1e1"
+    },
+    {
+      "path": "core/LINUX_KERNEL_COPYING",
+      "sha256": "af8067302947c01fd9eee72befa54c7e3ef8a48fecde7fd71277f2290b2bf0f7"
+    },
+    {
+      "path": "core/Makefile",
+      "sha256": "88ee9cba6d567b175257876eab3bcf6eee4795e7287933ee9a75ba48b9b31617"
+    },
+    {
+      "path": "core/aapt2.mk",
+      "sha256": "440266cf40abb0fac9a07413003a7254ea32c09ca66587190bbea3fe33e91c02"
+    },
+    {
+      "path": "core/android_manifest.mk",
+      "sha256": "fcc0a57fdbd46fb420c8fcd2ee8837256f9a54b24120fc8253e6d858c1167c49"
+    },
+    {
+      "path": "core/apicheck_msg_current.txt",
+      "sha256": "3d9915921b419f15f16b3343fe7438e3e3dbf8c5a903e1584432484b2d54f70a"
+    },
+    {
+      "path": "core/apicheck_msg_last.txt",
+      "sha256": "e819a1f68d8e144d7b2d08bbca1d7608c8c55c5adf2b904e7334175f98f4a3c0"
+    },
+    {
+      "path": "core/base_rules.mk",
+      "sha256": "58b3e2a295d938c823d67171c311aefb0c6bbc93b583983c3ea98a99465fbf34"
+    },
+    {
+      "path": "core/binary.mk",
+      "sha256": "fcefcccef3c245ea7ed47290d8a8271b6c932f6e1fcaa3d052a183aa4998547a"
+    },
+    {
+      "path": "core/build-system.html",
+      "sha256": "35ac1c2b692d30c2cef6d8a2e0278d0558b6fa3c4aa0a0026f7693a84c937eed"
+    },
+    {
+      "path": "core/build_id.mk",
+      "sha256": "31539a240f4580387d4c5d699de1350eb6d5d323fad4d26b3298d8c2d07d2784"
+    },
+    {
+      "path": "core/build_rro_package.mk",
+      "sha256": "97f1d70c40a5644ec954ebb84fab8acc7553d89d7241362a8b0bbeed3efd5a61"
+    },
+    {
+      "path": "core/ccache.mk",
+      "sha256": "f0e8bd446b51f32913f9091996a25e62a5a156efa41ad45f46ccbd493ef85030"
+    },
+    {
+      "path": "core/checktree",
+      "sha256": "e0ee3ca2ed0b9eb43594daee4f425f8707a2a80fa870e5b0183d3b8737dc4c7e"
+    },
+    {
+      "path": "core/clang/HOST_CROSS_x86.mk",
+      "sha256": "9aaf02403a480081b39434f2ff35be787b6a2bbc098c94568fd1811e220cd4b6"
+    },
+    {
+      "path": "core/clang/HOST_CROSS_x86_64.mk",
+      "sha256": "529a67167f4332004f5181e64e6ab255cc2b91965c80051cbb8a88b60b57bf0e"
+    },
+    {
+      "path": "core/clang/HOST_x86.mk",
+      "sha256": "8fbcf2f1d11b3f9072d3e3d813058251f9361f23930fb8682552af14f0d636cb"
+    },
+    {
+      "path": "core/clang/HOST_x86_64.mk",
+      "sha256": "ce7c7a99e0e8c511c4db7f1275a691f588cac673080ca3e1b71e9e078f02c53b"
+    },
+    {
+      "path": "core/clang/HOST_x86_common.mk",
+      "sha256": "3a8255d8844ae69acfb552264014484967b0a2cf6f4c44f2b96fad2183a359af"
+    },
+    {
+      "path": "core/clang/TARGET_arm.mk",
+      "sha256": "393296c9a6002a2274658087c21cce686a92442f89062601a2f103c30a2c526c"
+    },
+    {
+      "path": "core/clang/TARGET_arm64.mk",
+      "sha256": "572c26c4b1d0e36d3ac404bbb651dbaeda4a4e0f8c76c59dcda308b8f96902c2"
+    },
+    {
+      "path": "core/clang/TARGET_mips.mk",
+      "sha256": "42a88219520ec13840d4e6ca7d00d96acf960e7ae8364249ccaaf13480f44ee2"
+    },
+    {
+      "path": "core/clang/TARGET_mips64.mk",
+      "sha256": "b7dde1b46b217caa952cb2733a59459776dbcb3e37fbaf563f12656ac924bfa1"
+    },
+    {
+      "path": "core/clang/TARGET_x86.mk",
+      "sha256": "e4d7022d987728d6f1d16c2fb71a8d7f42357e51efcfe8610d9592681781cbaf"
+    },
+    {
+      "path": "core/clang/TARGET_x86_64.mk",
+      "sha256": "41554598dda2e6187fc5f3986777168c05026b204e09849661bcba397bf61735"
+    },
+    {
+      "path": "core/clang/arm.mk",
+      "sha256": "9bbae0425c79432122f5f6f291f67ebade31b0ec5b55d5a4797fa0e64f7cdfd0"
+    },
+    {
+      "path": "core/clang/arm64.mk",
+      "sha256": "61be44d3d877dfe9cb55d420fe495d08a82bf1c8e015946b8570b6fdd636a1c4"
+    },
+    {
+      "path": "core/clang/config.mk",
+      "sha256": "afd7a8b971b24fc2b0f672a5cd7aa54b6f3ac86dc0d585afbf98ef28ff2ec1b9"
+    },
+    {
+      "path": "core/clang/mips.mk",
+      "sha256": "376364d5a9fc773af899951d51e5197f7d2419b8619614cb9ac1698d84223389"
+    },
+    {
+      "path": "core/clang/mips64.mk",
+      "sha256": "1da58f3111f541a007883d876821fc1fa51ff5d8a452a2540ef758d69d4768b1"
+    },
+    {
+      "path": "core/clang/versions.mk",
+      "sha256": "9892bef98f9563d97eae86a4adb7c2c934fc2172eb651ba05b1b666223b031ea"
+    },
+    {
+      "path": "core/clang/x86.mk",
+      "sha256": "a2c8aac5c9ae63ef158445e567975e61407289206c61f40039c98c2d155dda87"
+    },
+    {
+      "path": "core/clang/x86_64.mk",
+      "sha256": "0a6261b0a6ffa6fdd309f22d7ddfc0ea8543fbc8bf9c71f1c15e57d34a8ca309"
+    },
+    {
+      "path": "core/cleanbuild.mk",
+      "sha256": "c535dd8625c674ea3747baaf511472c695a1f302df6bb812b70d0ae06516928d"
+    },
+    {
+      "path": "core/cleanspec.mk",
+      "sha256": "e74bf8a8db2c1cdc47962255557f1595df8c93c8be76ba4b031d9fdc739b89d8"
+    },
+    {
+      "path": "core/clear_vars.mk",
+      "sha256": "b042b15f6846a3317007b077dbfa67fa29687a940e190e80d4996d67fd7aba46"
+    },
+    {
+      "path": "core/combo/HOST_CROSS_windows-x86.mk",
+      "sha256": "acb504ec59117ae1b5efdfe75cb8833e7af601f9e7fc403bdd2e723860563ff4"
+    },
+    {
+      "path": "core/combo/HOST_CROSS_windows-x86_64.mk",
+      "sha256": "91c9cd97f5dcc7d33629d237d145ca22bcb47c3ee69598a33e4fb0dd85aca9d3"
+    },
+    {
+      "path": "core/combo/HOST_darwin-x86.mk",
+      "sha256": "6d442d5496c6885f1f8d9654ab1f9c50f01fec4c7bf5999bfa6c7089e9777ade"
+    },
+    {
+      "path": "core/combo/HOST_darwin-x86_64.mk",
+      "sha256": "9998dcf500f3570787c2682dad59192162944f771f32c86c783570cdedf96f54"
+    },
+    {
+      "path": "core/combo/HOST_linux-x86.mk",
+      "sha256": "7daf5afd95ca0aa69a72ab67a6957205c3fe33ee897267da14a439e2732d32d4"
+    },
+    {
+      "path": "core/combo/HOST_linux-x86_64.mk",
+      "sha256": "298f0e48b5ae51bc08c3499039da10565d4f64c5a54f2225835a661972d0eca3"
+    },
+    {
+      "path": "core/combo/TARGET_linux-arm.mk",
+      "sha256": "0c0fc8edeb0eec5e51b376c396ff31be3a1b268e254d91ce0abbc863b858e1c8"
+    },
+    {
+      "path": "core/combo/TARGET_linux-arm64.mk",
+      "sha256": "7688ebbd4c46ab4689239ad03b6b2e809086686b56da7b45c4158e11a2c69224"
+    },
+    {
+      "path": "core/combo/TARGET_linux-mips.mk",
+      "sha256": "fbf5deb242fc37bb78b743912ed28190b4fa1dbd69ffb755e71c85bbdb8bdcaf"
+    },
+    {
+      "path": "core/combo/TARGET_linux-mips64.mk",
+      "sha256": "10bd897a0de593adca13639bc5aad9e02ba8d4a07e605f6ee7447b0c73b230df"
+    },
+    {
+      "path": "core/combo/TARGET_linux-x86.mk",
+      "sha256": "65b8dc6f97dcd3d017c73e80c9335746574baaee19bbbbf240a4fc7c23222f05"
+    },
+    {
+      "path": "core/combo/TARGET_linux-x86_64.mk",
+      "sha256": "59b2190254adcf9792ef7cef4b1f8477ee31ebb3d779b8256bae777d5753d3e4"
+    },
+    {
+      "path": "core/combo/arch/arm/armv5te-vfp.mk",
+      "sha256": "8f5918e48edb1bdd55a967469282761f03f67b568236d396fcc12ae562c1fd91"
+    },
+    {
+      "path": "core/combo/arch/arm/armv5te.mk",
+      "sha256": "5ebcfd121d1e9d8ad2cb956539449a4aff0fec557698e9b1c6ff623b79037c49"
+    },
+    {
+      "path": "core/combo/arch/arm/armv7-a-neon.mk",
+      "sha256": "24392d9354e842470cb05e65075e676817d58380a24e0162f69c0467ea80d0dd"
+    },
+    {
+      "path": "core/combo/arch/arm/armv7-a.mk",
+      "sha256": "447471d451887f2359b3ae04abbe941a154fc1621cf3ae414cfa1852ae96a091"
+    },
+    {
+      "path": "core/combo/arch/arm64/armv8-a.mk",
+      "sha256": "88a2f4f35a784c23ee28f59b461e7ba932273b77274a0b895766e3ea53b85807"
+    },
+    {
+      "path": "core/combo/arch/mips/mips32-fp.mk",
+      "sha256": "a14d7fdb04e5c0998f6800586089514153b405576fe8b5011ecb1eab72b69825"
+    },
+    {
+      "path": "core/combo/arch/mips/mips32r2-fp-xburst.mk",
+      "sha256": "dd404511768613aff963055139ec23642357b08f8681329a854554429d5a9d20"
+    },
+    {
+      "path": "core/combo/arch/mips/mips32r2-fp.mk",
+      "sha256": "fcc0c4dc063e2c60d0415d8d02b99692ddfb08ff545fa493bb6fe1a6e25188f7"
+    },
+    {
+      "path": "core/combo/arch/mips/mips32r2dsp-fp.mk",
+      "sha256": "2954c4ebb97a3ebfacf18bfc13c0407f38b1ac7cab48f1f390c65d58b7632252"
+    },
+    {
+      "path": "core/combo/arch/mips/mips32r2dspr2-fp.mk",
+      "sha256": "af31871c0bc68bbaa2ad9a8e2061bc3c78e5c3ebab675490bc30d7a5dc812606"
+    },
+    {
+      "path": "core/combo/arch/mips/mips32r6.mk",
+      "sha256": "70b15bfaeeddbf1ec850ab900e79dbaaaf30a918cb79510fad07a044d65bb8e4"
+    },
+    {
+      "path": "core/combo/arch/mips64/mips64r2.mk",
+      "sha256": "0a73bb8255111311be9a82f01d0aa0e8a6bd3386fc530170c3100264a1eadeff"
+    },
+    {
+      "path": "core/combo/arch/mips64/mips64r6.mk",
+      "sha256": "7978b21ae43b675df50afe377b1d2ab1b0d72901e05525c66355c309108594b5"
+    },
+    {
+      "path": "core/combo/arch/x86/atom.mk",
+      "sha256": "2b73322f49d20918b6808c09b45f6818d4d9288ba74f0a5d02d4ad426e5502ae"
+    },
+    {
+      "path": "core/combo/arch/x86/haswell.mk",
+      "sha256": "787242a26137a0648f8cbe82715d309ced9ddae066aba0f6221f30a0e0217c70"
+    },
+    {
+      "path": "core/combo/arch/x86/ivybridge.mk",
+      "sha256": "5ad93bfc93d2564dbce4edc76291fba99344d34137533d25e5202a58118b1492"
+    },
+    {
+      "path": "core/combo/arch/x86/sandybridge.mk",
+      "sha256": "ca2ac5c1096306cff38ff8a885b5109116700211dab79ea852e92cae4ae8f205"
+    },
+    {
+      "path": "core/combo/arch/x86/silvermont.mk",
+      "sha256": "329c7c99e05834b9ac2757f94c62b3f86ea9bf0ed1f75830930da710e42e2af1"
+    },
+    {
+      "path": "core/combo/arch/x86/x86.mk",
+      "sha256": "99eec114b7fff8b62ecea1481a791d8e6e4d5039113fa82e7630cb33aabbb51c"
+    },
+    {
+      "path": "core/combo/arch/x86_64/haswell.mk",
+      "sha256": "68209ac98e994fe801555ffda021db85f7d32f0b39edd596e7a7e4bbdb80dfde"
+    },
+    {
+      "path": "core/combo/arch/x86_64/ivybridge.mk",
+      "sha256": "40cf757f777f39b3c12ffb57156f6dbf6248b82a9d1c4d7740d02debeb0d16c2"
+    },
+    {
+      "path": "core/combo/arch/x86_64/sandybridge.mk",
+      "sha256": "05ebea7b9864ec3a7a796b6d5b817c561a08335d3cdc3a198a6ec304426f0604"
+    },
+    {
+      "path": "core/combo/arch/x86_64/silvermont.mk",
+      "sha256": "797e94a6a06da022ad4617a462d01ccb5cc81f8049710ff58e471dd85db7d6e9"
+    },
+    {
+      "path": "core/combo/arch/x86_64/x86_64.mk",
+      "sha256": "10b128e5a6e17909e7b7a4a948da9f6c3f3acfe5e6f8c279f9fc509d5bda98c1"
+    },
+    {
+      "path": "core/combo/fdo.mk",
+      "sha256": "72caeaec63332ba0fa4efb7028eab413a17ec8cd58d0ffb48768424969b81206"
+    },
+    {
+      "path": "core/combo/javac.mk",
+      "sha256": "505a2ddb416732605f9199df9622d51c473d020f967762cd7736be329f2138b7"
+    },
+    {
+      "path": "core/combo/mac_version.mk",
+      "sha256": "5d06075574653b7788b19a2a0541fd525e8b2b1d70674d9a69ce82770bc03eae"
+    },
+    {
+      "path": "core/combo/select.mk",
+      "sha256": "8fd8437b0bedd053c012b4d21a6ffcfd9a048d9cdc465a5907a2c196030c1dbd"
+    },
+    {
+      "path": "core/config.mk",
+      "sha256": "fd390ca1a78a1e95e622a33baadd174337d1eec51a9da0632bdc212cdb79ddfe"
+    },
+    {
+      "path": "core/config_sanitizers.mk",
+      "sha256": "809f938be06e4253d91459c6dd16a2c232cc74dd82d3da1561822e99aebbdccd"
+    },
+    {
+      "path": "core/configure_local_jack.mk",
+      "sha256": "84e73d92435e75a31555994f74e97f7e00c7269c7cc3c65f3d615695e873ddaf"
+    },
+    {
+      "path": "core/configure_module_stem.mk",
+      "sha256": "71a11b99a3ef1c49be1d448cd8f2e90e29af5671f58752f42f10b2dde641fbbe"
+    },
+    {
+      "path": "core/copy_headers.mk",
+      "sha256": "b46b8675550ce44df81149abda86973f97dea9022c4b693984b1e676d99e4f05"
+    },
+    {
+      "path": "core/cxx_stl_setup.mk",
+      "sha256": "9af86573fd121b81c856eecbdac213450f8af0f0cbb17a813dfd6f063dafbc88"
+    },
+    {
+      "path": "core/definitions.mk",
+      "sha256": "727c59e26d768aae0e7cdcd1a46c523ad509fa157c56643a8f26929d339b72e1"
+    },
+    {
+      "path": "core/device.mk",
+      "sha256": "d9d4c33cd8c9b6f557ebf274b7278995c83f33c10d3c0ba36bf124b89e41a3cd"
+    },
+    {
+      "path": "core/dex_preopt.mk",
+      "sha256": "814caf607049bd9f628c143dd1492440dcc91534525901c766e68eed074a4408"
+    },
+    {
+      "path": "core/dex_preopt_libart.mk",
+      "sha256": "a2b263a204472056454e92d8106db1d76609f6d4dd78d208f25f859c3d6d7cbf"
+    },
+    {
+      "path": "core/dex_preopt_libart_boot.mk",
+      "sha256": "050b038dec94ae0ac1a8626dabe2a6d3cfe1ad14b88173ff90eb2218820d2cdc"
+    },
+    {
+      "path": "core/dex_preopt_odex_install.mk",
+      "sha256": "1a0e2a3934b0a051cb7e9fb29132aab0fcd7827e6479e4ce2e0ea0d685ade3c9"
+    },
+    {
+      "path": "core/distdir.mk",
+      "sha256": "2d12bac4fd008a90a36a0178394853147c8777a6dc119994d9ed3017ee47ccdb"
+    },
+    {
+      "path": "core/dpi_specific_apk.mk",
+      "sha256": "1e36c492ae0ebca50e2db358056275afe6f1a30afc42eace24a0c3726ee767cf"
+    },
+    {
+      "path": "core/droiddoc.mk",
+      "sha256": "07909bdecde8a7af32165704cb5e6a24f2d427296d8afb199a9e5033edb5ba00"
+    },
+    {
+      "path": "core/dumpvar.mk",
+      "sha256": "e223f4f07aad1e8be9c5e3b0760ba0c80e0cfb6516b48e0b979741d4ca10ce6b"
+    },
+    {
+      "path": "core/dynamic_binary.mk",
+      "sha256": "34be121d771b58c23c0ec96d1345c028ebe68449f8ddd80d864423a7966ce859"
+    },
+    {
+      "path": "core/envsetup.mk",
+      "sha256": "74ef0826e193d397decacf89538e71d35d93fd051345a57d3754109018953308"
+    },
+    {
+      "path": "core/executable.mk",
+      "sha256": "0f2538395c417e8290af04a14eba2e8eb29e3ee0d05903222a386866443cb159"
+    },
+    {
+      "path": "core/executable_internal.mk",
+      "sha256": "530126f769cd764d3f0d537699c77d85d02c5c30d490a29ebcf89b2b62164083"
+    },
+    {
+      "path": "core/executable_prefer_symlink.mk",
+      "sha256": "e1418aeb2208fc9bcef4065eba02e0fb55103d9d1bedba741ba351181e1cda69"
+    },
+    {
+      "path": "core/filter_symbols.sh",
+      "sha256": "870b23b9d94680e68444ac197c2af3c4ffd4f763477bef4a59cbdd4f38c0b045"
+    },
+    {
+      "path": "core/find-jdk-tools-jar.sh",
+      "sha256": "5838cbebe11fe1dd289db0f255c3ee10ec73495db44fba15081398db61f5120f"
+    },
+    {
+      "path": "core/fuzz_test.mk",
+      "sha256": "fb18d0e5d3b822386b6fa1feb9eb89eb927d658ee54856409530264a1a81ce2d"
+    },
+    {
+      "path": "core/goma.mk",
+      "sha256": "71ece8d607800aa22d72cb3355af5a311f3b452a716780d174a21280e81a0b50"
+    },
+    {
+      "path": "core/help.mk",
+      "sha256": "0e6cdd765e3899877d9f7377ba5614a991a29d67a57744791a506920905a1474"
+    },
+    {
+      "path": "core/host_dalvik_java_library.mk",
+      "sha256": "efb3e34c594cf02ad0769fda46b61632e2f33560b8fbdd71a7faa89c1a367480"
+    },
+    {
+      "path": "core/host_dalvik_static_java_library.mk",
+      "sha256": "8398091cd457a36c9571211eb4454cbf6a171bd087bdb7f34dae7b89a5600bf0"
+    },
+    {
+      "path": "core/host_executable.mk",
+      "sha256": "42eaaa0dbf64a61bed0d6fef4ca8d7b202b51b6839e81b3060e2c9b6e24e667b"
+    },
+    {
+      "path": "core/host_executable_internal.mk",
+      "sha256": "e8f69ec028610b5d88ca586b658ac86bca9245929761ab459b2d76892a7e8381"
+    },
+    {
+      "path": "core/host_fuzz_test.mk",
+      "sha256": "a49311b6940f92ba78da7c5f7510890a093e399bb06252e2bd50e95622d7e5c9"
+    },
+    {
+      "path": "core/host_java_library.mk",
+      "sha256": "e35b3d878ae52d33cb4b0a0473ae36ce88a9582beafd4cce0f518ce7e671a4de"
+    },
+    {
+      "path": "core/host_java_library_common.mk",
+      "sha256": "bb15375ae644f7e0656d00aaec8d55b6d0043417fe61e154917997992e6c395a"
+    },
+    {
+      "path": "core/host_native_test.mk",
+      "sha256": "9033285e633034762fa4145156b1419e37a45afe7f4a9b810ab74a7ea80aa0de"
+    },
+    {
+      "path": "core/host_prebuilt.mk",
+      "sha256": "198a53a86c884a56987d3f9eb3c8265e884444277fd1d24e0e449819bcf52871"
+    },
+    {
+      "path": "core/host_shared_library.mk",
+      "sha256": "999afc278f9c5751434b11a3c0b66edc865fe185b8a7f7739b8eef6f98b56f3c"
+    },
+    {
+      "path": "core/host_shared_library_internal.mk",
+      "sha256": "7ae8b7b53001fee3dfe74b5bcd4fea93712103afe1ea95e9c0986bcf681e71d0"
+    },
+    {
+      "path": "core/host_shared_test_lib.mk",
+      "sha256": "981368fe905a47b37755c4dd6e980caf2932aba0b25333776f8d4a0edd295770"
+    },
+    {
+      "path": "core/host_static_library.mk",
+      "sha256": "d575a9adc771949c9b5916a3db22631ba12c7203f6be02ab2abc2cea8e302b5a"
+    },
+    {
+      "path": "core/host_static_library_internal.mk",
+      "sha256": "89ede58d3ad38ff02b868d648a7d6f4f3cd4a5da4f61276ecca07789c4c5f728"
+    },
+    {
+      "path": "core/host_static_test_lib.mk",
+      "sha256": "c404a21f076262b6bc07643825595cc4e038e6f521ac5b4060143e0bdf4a4642"
+    },
+    {
+      "path": "core/host_test_internal.mk",
+      "sha256": "a81d949ea0ce5a43a749d0cf58f06befb291bcd5fc1c63008f3dd9f6f412b85a"
+    },
+    {
+      "path": "core/install_jni_libs.mk",
+      "sha256": "d2915c4f8d667cbc2022f71ad7b05ebde07bd270b57302f0e6f39af22290e6d1"
+    },
+    {
+      "path": "core/install_jni_libs_internal.mk",
+      "sha256": "c67d4f54a0b1765432d5382e09f5b41932afb9efefba6f4286bb8843a71c214d"
+    },
+    {
+      "path": "core/jack-default.args",
+      "sha256": "07649bf298e70ed16cd475a360c1b57099d2f738a49fa92420863a0b49a9c748"
+    },
+    {
+      "path": "core/java.mk",
+      "sha256": "d14a0bbc339c9a2d0b50801943df82a6856ccecf1b0787020926bbde50264aa6"
+    },
+    {
+      "path": "core/java_common.mk",
+      "sha256": "d117c88d9fc4a703c0fbad1706f048b0e62a6e71791080915a689bc7c9966285"
+    },
+    {
+      "path": "core/java_library.mk",
+      "sha256": "950065ad7e5333ebf7640745ab60160e8deaded03d38973bf755fdcb73c9eed3"
+    },
+    {
+      "path": "core/legacy_prebuilts.mk",
+      "sha256": "6883108e890ae4673cf1491b8e5664934abe97e57427342d0e81e21faa8dc4f3"
+    },
+    {
+      "path": "core/main.mk",
+      "sha256": "fd05fc4ffade17b3711a0b010c5a1c31886e2d4d2929320aa0c0622d77cfc381"
+    },
+    {
+      "path": "core/module_arch_supported.mk",
+      "sha256": "c75dc4464deaae856d370eeb2eccd2f429d7cdde9a30c94255c5f1b564f48581"
+    },
+    {
+      "path": "core/multi_prebuilt.mk",
+      "sha256": "89ebd8e83e9db8196098965062495d74cf5c83647ed3c403cd776a7c4916b474"
+    },
+    {
+      "path": "core/multilib.mk",
+      "sha256": "cf346271bf089b991926a63139b156d24e3ea4a2d4d06c29463ccb15c9562291"
+    },
+    {
+      "path": "core/native_benchmark.mk",
+      "sha256": "390fab6e3a3fb79e83e976dae11c2f3dfa11f86bb0f5bb4f9b619d5d41aa595d"
+    },
+    {
+      "path": "core/native_test.mk",
+      "sha256": "c432f734ddb236ab1c1fc9adaaff84fa6a12ce84508f7c9212b2b7fb56d4ff6d"
+    },
+    {
+      "path": "core/ninja.mk",
+      "sha256": "6f94ae6db6eb526425a73f3d469bb69d3bb171b3d6c91badade9faf47736a084"
+    },
+    {
+      "path": "core/node_fns.mk",
+      "sha256": "ee5b09ce11a92384969845b27da7054f5656f28517ba22464c5e2e1405ca9292"
+    },
+    {
+      "path": "core/notice_files.mk",
+      "sha256": "fb08876da6417da8203b830991f8181f030c727eb2ca0cbc621abf314218cef7"
+    },
+    {
+      "path": "core/package.mk",
+      "sha256": "4df73fd641d20557afaaf4d95d59d939924685218bc63cf219791acfa08e8c35"
+    },
+    {
+      "path": "core/package_internal.mk",
+      "sha256": "f47a2b42f608bd6ad51baca35f9d6b4b524bc2854129b514fbc931d501b76d66"
+    },
+    {
+      "path": "core/pathmap.mk",
+      "sha256": "fb4700166fbc80a8c8ddadd2d3743616f3fd63152a00c4e9e770b18e1e7fd1bf"
+    },
+    {
+      "path": "core/pdk_config.mk",
+      "sha256": "be926659cdc1df379e6b8fb15b841a0ce738906d9ed38e94713bed8148d08736"
+    },
+    {
+      "path": "core/pdk_fusion_modules.mk",
+      "sha256": "8678feeb1ad8da61f5412266c54b9d783e35670a3a7e4ea50235420b68ccf1b4"
+    },
+    {
+      "path": "core/phony_package.mk",
+      "sha256": "3be5e363a9208bddc2f44f00b4574a2c4142be9e4a9894cf6a27191658f4e0f3"
+    },
+    {
+      "path": "core/post_clean.mk",
+      "sha256": "27726d449836f9bb9d82e984780b38e07552a799a69d9b46cab756d65528770a"
+    },
+    {
+      "path": "core/prebuilt.mk",
+      "sha256": "f11f858e81f6d1aa4115ae2171cb6b4619910a854eccea92f8ed05488011caf4"
+    },
+    {
+      "path": "core/prebuilt_internal.mk",
+      "sha256": "c8549b59b3f610394480426b4ca11201a5546c2a14c04f33f2041ddd81da2515"
+    },
+    {
+      "path": "core/process_wrapper.sh",
+      "sha256": "8cb72017812d8cdf12e61debc0b5a9afd2d2c07d50f7bf2e4f11936c4f7a8cb9"
+    },
+    {
+      "path": "core/process_wrapper_gdb.cmds",
+      "sha256": "b5004f26a852b0d60ec1237432c1a33c2307ff2458c374d9d99749d045c7feb9"
+    },
+    {
+      "path": "core/process_wrapper_gdb.sh",
+      "sha256": "90991d84e01ff3b2b0b7f10ce977cd9407b166093f170df2773e4b0395bd13e8"
+    },
+    {
+      "path": "core/product-graph.mk",
+      "sha256": "95b98a7c1b54d998aba2f8a4713080399495325c10e06f273467332afd39e8d1"
+    },
+    {
+      "path": "core/product.mk",
+      "sha256": "e519a1126eb1ab01282e89c76b7f083753dc12aaec0814431d7e5e16a5d44167"
+    },
+    {
+      "path": "core/product_config.mk",
+      "sha256": "027e66384855868b86526c458af4c3113c26eb35d0a812eb5693feac21b0df95"
+    },
+    {
+      "path": "core/proguard.emma.flags",
+      "sha256": "d0037a385e73ccb42de540205aebc229492d1bff6c10382851765f5a4fa3090a"
+    },
+    {
+      "path": "core/proguard.flags",
+      "sha256": "95a7906071b93ce3c6e2d36b2b3c85aecb01de1184b6d1597bc0967a8888df45"
+    },
+    {
+      "path": "core/proguard.jacoco.flags",
+      "sha256": "e6d3df6119207292c7465d52736723da55d8971a2f29c0316a6a55443ca7d98b"
+    },
+    {
+      "path": "core/proguard_basic_keeps.flags",
+      "sha256": "54fc8c119d8d34e7aedd9e1a4cdbaa7bb5ab8194cafb99f6008aea89a9d8b350"
+    },
+    {
+      "path": "core/proguard_tests.flags",
+      "sha256": "f1d4fceb0777c1eb56125c4011cfd6e68fb2cb8509e0f09c1d18ed4924d9e092"
+    },
+    {
+      "path": "core/root.mk",
+      "sha256": "c4093f39d041957f4711ccab829155afac95cbaeb309bd1bc610faa6a6cc866a"
+    },
+    {
+      "path": "core/sdk_font.mk",
+      "sha256": "63a188eabba5050794dab1f084fe85d56182b9dd4991d74d7ac56fd0207fc67c"
+    },
+    {
+      "path": "core/setup_one_odex.mk",
+      "sha256": "d07668f383bab84d721ee45a5e1648b600545016a220830b60fcebbd25594fbf"
+    },
+    {
+      "path": "core/shared_library.mk",
+      "sha256": "2b13d0adf96b386be3a8696e8d6a8fdbbe6198d9b55f98a868aee68d2e7b6be2"
+    },
+    {
+      "path": "core/shared_library_internal.mk",
+      "sha256": "084812acb282ad72e5763cb8ace1a831cf45afd111f512a8c2119d91d30d2958"
+    },
+    {
+      "path": "core/shared_test_lib.mk",
+      "sha256": "6e3a085eed9cc1dc3d055fc9990abfaad7ac0a4d6c2ac965b4cf69da3cf66b66"
+    },
+    {
+      "path": "core/soong.mk",
+      "sha256": "9e8c046f4b0f8178bb72b644538a11d175a4927c89ad15377f67ad0569588ef5"
+    },
+    {
+      "path": "core/static_java_library.mk",
+      "sha256": "0d9f8ff83e6ed1d1e08f21dc0e22b92c5b9fafdf193b6c482c2e9545f0a0cb74"
+    },
+    {
+      "path": "core/static_library.mk",
+      "sha256": "51dcb48996fa7fc1907415807a1a0ab2f792f8ccfe0601addbfa0da25dc23738"
+    },
+    {
+      "path": "core/static_library_internal.mk",
+      "sha256": "d6d8a54c7d490af6b714e12e42298caaf661d12d8089eb8112e6b517fb59cfd1"
+    },
+    {
+      "path": "core/static_test_lib.mk",
+      "sha256": "4203c5852b8711e0d4d4b37602df503bd3921c077d07d2840f7a7d63a5ff7dc8"
+    },
+    {
+      "path": "core/target_test_internal.mk",
+      "sha256": "aaca9945712b19c50727bae3f751dccc88dfc4ffcd32f6d123d1264a776bef92"
+    },
+    {
+      "path": "core/tasks/apicheck.mk",
+      "sha256": "3e1e39b1fe98cf9e45dbdcfb6d274fc655044185f4a502b235150b98d9fc5a0f"
+    },
+    {
+      "path": "core/tasks/boot_jars_package_check.mk",
+      "sha256": "aa18a0306bac4dfdc8889946b316d42ba4487b669a844fb0c079f45add968a0d"
+    },
+    {
+      "path": "core/tasks/build_custom_images.mk",
+      "sha256": "be9f61e335f636565867232aebb2efa32b99f7192a1b171ec75e8501ff3c9210"
+    },
+    {
+      "path": "core/tasks/check_boot_jars/check_boot_jars.py",
+      "sha256": "3f309c0cd8c2a50353eb1baefd3377cead90ed752cf03a88fe27b3cf11352686"
+    },
+    {
+      "path": "core/tasks/check_boot_jars/package_whitelist.txt",
+      "sha256": "d089ab98ad5acf7e346cce042cebb7786685d87cabb42126bea4e8fada15e9d3"
+    },
+    {
+      "path": "core/tasks/collect_gpl_sources.mk",
+      "sha256": "a3eb08490fe731f6b8355ec413ea0c42aab86fb9ab697a9b3bab66c2c28b3827"
+    },
+    {
+      "path": "core/tasks/cts.mk",
+      "sha256": "d504c646ac7afa9261ff124ab87c7a597d00b556c938030e1f481bf7bf568e2c"
+    },
+    {
+      "path": "core/tasks/deps_licenses.mk",
+      "sha256": "03cc63bddd2d5ec398093f218c2bc4508d25cd442217a75f1e66a82849f82dcf"
+    },
+    {
+      "path": "core/tasks/ide.mk",
+      "sha256": "839481c53e45d508f58748f949c10065eb89dfd8966a230b159db0e528b36fec"
+    },
+    {
+      "path": "core/tasks/module-info.mk",
+      "sha256": "0b4180ac997e4eddc2011b30ba6e3ddd01756bd9b9cef6c2ff0ec92ceb20af10"
+    },
+    {
+      "path": "core/tasks/oem_image.mk",
+      "sha256": "09578cdaad2adfd43caab9223a37fe0c7bb11b609ee5db94cc55d2ae91fe8d41"
+    },
+    {
+      "path": "core/tasks/old-cts.mk",
+      "sha256": "c8fd4a50a86b747b96f55b581619df59b54097358fc6d47bbe65ebe456cdf916"
+    },
+    {
+      "path": "core/tasks/sdk-addon.mk",
+      "sha256": "61e945f7b35478a78256de5cf5f03f21509979aa22fc0893608270c11b4111d5"
+    },
+    {
+      "path": "core/tasks/tools/build_custom_image.mk",
+      "sha256": "5671ac6ca10a45e96d910857a1dc2ae6b4150fd67462500d7c5fa0ebd2aeea70"
+    },
+    {
+      "path": "core/tasks/tools/compatibility.mk",
+      "sha256": "3c5278f7ef0dfcecd52eea310614b4f5a73f83043ef60e3a692ddd9762592ead"
+    },
+    {
+      "path": "core/tasks/tools/package-modules.mk",
+      "sha256": "502b59da79cd97f79c9a02f35dc6638c74b0e98740e5cdc86be7e806d19bf4a7"
+    },
+    {
+      "path": "core/tasks/vendor_module_check.mk",
+      "sha256": "55a6e0acc14209a99d7048e1be72172bf1448957345e8209ab7f9d2e1a0960a8"
+    },
+    {
+      "path": "core/tasks/vts.mk",
+      "sha256": "30f3698e898d91d03b9a72ffdd6d6383f14e6b085438a8d86aa8842be83c6abc"
+    },
+    {
+      "path": "core/version_defaults.mk",
+      "sha256": "9c51bff7366fbc20f06bfb56432c7f3c707bb2c96f57f9a4d6d0f5e055cb3f22"
+    },
+    {
+      "path": "envsetup.sh",
+      "sha256": "8f9c46a3e68099f2e6523fc7d75702ad2cdbf5d4bc0f097c185979b849d4205c"
+    },
+    {
+      "path": "libs/host/Android.mk",
+      "sha256": "4ba53856c7e7984e9e434a9b8e1025857d551c838d9bfe991462e75fa72ed94a"
+    },
+    {
+      "path": "libs/host/CopyFile.c",
+      "sha256": "bb39826fa9c26c0dce2bee7149f0668ac599731e6853c56e7cacf765c37cdacc"
+    },
+    {
+      "path": "libs/host/include/host/CopyFile.h",
+      "sha256": "10633dee95d15746351990dddda6eae5a0a5c60965f998063c9583aad993e13e"
+    },
+    {
+      "path": "target/board/Android.mk",
+      "sha256": "c7edc00d3bbc6910063f66495325163fad2094c1065a5a830cdbd4422eaf4c68"
+    },
+    {
+      "path": "target/board/generic/AndroidBoard.mk",
+      "sha256": "7523bf638282c8fae759baca57fe7958c2b82addf4edd5a46f948b53b8e4a567"
+    },
+    {
+      "path": "target/board/generic/BoardConfig.mk",
+      "sha256": "f4155d00b9ac682af64e210185695f92f1f63f651bf05a9ecbfba6e83caed55b"
+    },
+    {
+      "path": "target/board/generic/README.txt",
+      "sha256": "d61d9728eec85af24f030819bcfc6308857777966262ea5515f1f8c55e7c4060"
+    },
+    {
+      "path": "target/board/generic/device.mk",
+      "sha256": "06b676818610251da5c147cc76cd98e33bd1ab19f70715f817a74dc00191c358"
+    },
+    {
+      "path": "target/board/generic/sepolicy/bootanim.te",
+      "sha256": "3ef64bc5eb52a53cd025dbe9bdd5c769b5c3ad962f0e6385546e7497f7208e02"
+    },
+    {
+      "path": "target/board/generic/sepolicy/device.te",
+      "sha256": "f40f81fb02a247fc0c14d2ead99abb171b199b2aed8fc993853d3f5b10f91de0"
+    },
+    {
+      "path": "target/board/generic/sepolicy/domain.te",
+      "sha256": "58afd7f4d37edf0269d8f0a1f1d6fa2be9b8aa7a323066091bd14b3947858ec6"
+    },
+    {
+      "path": "target/board/generic/sepolicy/file.te",
+      "sha256": "87a389cc2b19a63ade83b67836c614fea5db58ddd0e9fa46f3ab2f41de9bf220"
+    },
+    {
+      "path": "target/board/generic/sepolicy/file_contexts",
+      "sha256": "c5125909b9738eb0c4b288d8870bfa54ebd6fc949335636641665f925be0d6e0"
+    },
+    {
+      "path": "target/board/generic/sepolicy/goldfish_setup.te",
+      "sha256": "f96e4a6e0117ceabfb9ec88ac498fb27a815606bae8491640c8ec31705365155"
+    },
+    {
+      "path": "target/board/generic/sepolicy/init.te",
+      "sha256": "c9dd642b364e9403f0b126d2d5a2680f58c5f983bb6ce82077583bd211750e28"
+    },
+    {
+      "path": "target/board/generic/sepolicy/logd.te",
+      "sha256": "9873ba7d3cded60d328462ba9b08dbe44b2dc7a670e65960df19c0dece068d57"
+    },
+    {
+      "path": "target/board/generic/sepolicy/netd.te",
+      "sha256": "17ce63d6fc97fa27d1d26175a9f447e04c216dc8bfa803354f993143125646c5"
+    },
+    {
+      "path": "target/board/generic/sepolicy/property.te",
+      "sha256": "59ff1d275ab643c1350b2fd6c2a4b3fd1633c1067f2531105db89b467b117097"
+    },
+    {
+      "path": "target/board/generic/sepolicy/property_contexts",
+      "sha256": "a5205c0e430115088af2b246d0d66160502d3380e45c3668496450fdc775e75e"
+    },
+    {
+      "path": "target/board/generic/sepolicy/qemu_props.te",
+      "sha256": "451997b7cda63d5e5a37aa4289a72d119a5c5a150ae7c1758470fff973d5f575"
+    },
+    {
+      "path": "target/board/generic/sepolicy/qemud.te",
+      "sha256": "67c278704336977e2309489c614f0eba048708bf50a47bbad1bf45720bec4a06"
+    },
+    {
+      "path": "target/board/generic/sepolicy/rild.te",
+      "sha256": "60f052e53d054fb15897291a5b4a7398ed6fcf1f791f8698e89e9b5a45a5ddc2"
+    },
+    {
+      "path": "target/board/generic/sepolicy/shell.te",
+      "sha256": "c0295d05eacb750a4565ad6e0a2b88ba4dd19fe63c6d3bd6c923d513981f408d"
+    },
+    {
+      "path": "target/board/generic/sepolicy/surfaceflinger.te",
+      "sha256": "55ef85ae1f9da4eed8878e529e5e4c8b4306b032440aee90dd2e5721c5e09eb3"
+    },
+    {
+      "path": "target/board/generic/sepolicy/system_server.te",
+      "sha256": "1d3d54c696f7136dd89054e219b9c941831ee265a2a1da0044f537e3c2ffdf1d"
+    },
+    {
+      "path": "target/board/generic/sepolicy/zygote.te",
+      "sha256": "a62c72ac6313b573b7827cfb86084be2d2c686de18dac53f2b30cae38be8d454"
+    },
+    {
+      "path": "target/board/generic/system.prop",
+      "sha256": "acd0fb3cd78186fe8a963dc3d2821ab184f21e4053270966c10cb3cc844b84b2"
+    },
+    {
+      "path": "target/board/generic_arm64/BoardConfig.mk",
+      "sha256": "737cdfb3465fb00b649562336d286abaa8ecd3f0c4f02f7a3969852450373ec7"
+    },
+    {
+      "path": "target/board/generic_arm64/README.txt",
+      "sha256": "28b61f9db41771cf29c25245a26037bfae3c451c6ac8a2ba3c468f17e15451cc"
+    },
+    {
+      "path": "target/board/generic_arm64/device.mk",
+      "sha256": "8748b8c7a9ac8857a538b0c132051436a1d611867b9c1d064de9b958b17be248"
+    },
+    {
+      "path": "target/board/generic_arm64/system.prop",
+      "sha256": "e650b7ef5f9fb308d66b1159cce6bfbdf55ee3e2158e1710d861710dfc240ef5"
+    },
+    {
+      "path": "target/board/generic_armv5/AndroidBoard.mk",
+      "sha256": "2f7dad4969f4c13e1b5c8217eb32c97d3346999bd4457c045c50c03d119bb317"
+    },
+    {
+      "path": "target/board/generic_armv5/BoardConfig.mk",
+      "sha256": "205231a37554d6e9859f36312fc4bc57dc1d5dde546b0ae13c44ba29df833ed2"
+    },
+    {
+      "path": "target/board/generic_armv5/README.txt",
+      "sha256": "0eec324e683c1d147d0b7ad83b17b8fd6f2ca2a229f1014fccf037e6bebba0ab"
+    },
+    {
+      "path": "target/board/generic_armv5/device.mk",
+      "sha256": "36107fae3932af3ca895f1dcb1edd6ba018af091eb0b54776e722e5072af5efd"
+    },
+    {
+      "path": "target/board/generic_armv5/system.prop",
+      "sha256": "b8464492fe395538cde6a02819436eca63e05cd286c5ccd7ad059dd59dbf96ff"
+    },
+    {
+      "path": "target/board/generic_mips/BoardConfig.mk",
+      "sha256": "ba5a94348485bffd0474d41c657f2f988014dc11ffcd657ee1a257ad716ed6a4"
+    },
+    {
+      "path": "target/board/generic_mips/README.txt",
+      "sha256": "c4412d5efc0e4dd173e4f4f8aa91ce3383e88a822eb3c8e8bc905501c5188bbb"
+    },
+    {
+      "path": "target/board/generic_mips/device.mk",
+      "sha256": "6388e100ef9f3ae8705b75211ea33097a86b05fcce0e07af153de78eec2db063"
+    },
+    {
+      "path": "target/board/generic_mips/system.prop",
+      "sha256": "b8464492fe395538cde6a02819436eca63e05cd286c5ccd7ad059dd59dbf96ff"
+    },
+    {
+      "path": "target/board/generic_mips64/BoardConfig.mk",
+      "sha256": "2ffa9b316a3c3488fc116131124530e44bea24373cd12b2567e9fe8f57742439"
+    },
+    {
+      "path": "target/board/generic_mips64/README.txt",
+      "sha256": "20660e1bb51bc5d61d1c793ab743fb5e64b5c07dcac28410cb02126ed8f588e6"
+    },
+    {
+      "path": "target/board/generic_mips64/device.mk",
+      "sha256": "bf696a5435e996a72048282f488e8d88d687bdddc9ebdb8e8392c53041377c78"
+    },
+    {
+      "path": "target/board/generic_mips64/system.prop",
+      "sha256": "104c0b059cb2fc441a3b371640ef8f2bf9fc3ffc2e59ea75108c440b1ec75bfd"
+    },
+    {
+      "path": "target/board/generic_x86/BoardConfig.mk",
+      "sha256": "ddcaea9f9dd9598d46ce803f0d0acd2fbe0c3079e670ac55d2d3cdd76247ac06"
+    },
+    {
+      "path": "target/board/generic_x86/README.txt",
+      "sha256": "44e96db92dc25760db58ba325a57b04bbc791efe739489a2e247b397cfc5f469"
+    },
+    {
+      "path": "target/board/generic_x86/device.mk",
+      "sha256": "aed632205ba9d3328a1f49ed5f5538c21d77a2809f6d0e7ac764e90478bc5b50"
+    },
+    {
+      "path": "target/board/generic_x86/sepolicy/domain.te",
+      "sha256": "c45164b7976355db0e91b7ad93f9edeb85fda38f4cb9063533990fd065c3fb9c"
+    },
+    {
+      "path": "target/board/generic_x86/sepolicy/healthd.te",
+      "sha256": "1069b805c9a4c0ef5523d3baeff25483503cc89e7a027198fd2c11632cd3b770"
+    },
+    {
+      "path": "target/board/generic_x86/sepolicy/init.te",
+      "sha256": "c9dd642b364e9403f0b126d2d5a2680f58c5f983bb6ce82077583bd211750e28"
+    },
+    {
+      "path": "target/board/generic_x86/sepolicy/installd.te",
+      "sha256": "53b573f9a05c8f8a34531fbf244fabd427071e86fe8c0f4abb9a4b5a73082a28"
+    },
+    {
+      "path": "target/board/generic_x86/sepolicy/zygote.te",
+      "sha256": "e0bca4ddc34557b727a9dc121884c47f16975f6ea93b1057d2014169d20c6a62"
+    },
+    {
+      "path": "target/board/generic_x86/system.prop",
+      "sha256": "b8464492fe395538cde6a02819436eca63e05cd286c5ccd7ad059dd59dbf96ff"
+    },
+    {
+      "path": "target/board/generic_x86_64/BoardConfig.mk",
+      "sha256": "5f48e100feb9108ac810ea0edc58cc7fd44468015b35f574704db18744bdf878"
+    },
+    {
+      "path": "target/board/generic_x86_64/README.txt",
+      "sha256": "036cbb38c26cb65f718f107af5c2349900bde88f02cdc3a3b23545df514df27a"
+    },
+    {
+      "path": "target/board/generic_x86_64/device.mk",
+      "sha256": "aed632205ba9d3328a1f49ed5f5538c21d77a2809f6d0e7ac764e90478bc5b50"
+    },
+    {
+      "path": "target/board/generic_x86_64/system.prop",
+      "sha256": "b8464492fe395538cde6a02819436eca63e05cd286c5ccd7ad059dd59dbf96ff"
+    },
+    {
+      "path": "target/product/AndroidProducts.mk",
+      "sha256": "73f73e1fd85f760f1b1b9569e36e7d6d112651d4dd50436e4642e239da555f67"
+    },
+    {
+      "path": "target/product/aosp_arm.mk",
+      "sha256": "525850bfd6ec77b47600cb363d55b2392952e06e30a7fd471c3563551f622f3e"
+    },
+    {
+      "path": "target/product/aosp_arm64.mk",
+      "sha256": "e1067b3fead1f8ce0952be5174a66940b896ad627647559ea5cad7c7e5fa073b"
+    },
+    {
+      "path": "target/product/aosp_base.mk",
+      "sha256": "4dc3562de185c9aad5581b35f644d939205c56c0613760b1c1b1cdefb901e5ee"
+    },
+    {
+      "path": "target/product/aosp_base_telephony.mk",
+      "sha256": "e1dd9b44df37decccced11d72f206600648398002ef9aa8fe012d8e0a8ba3b21"
+    },
+    {
+      "path": "target/product/aosp_mips.mk",
+      "sha256": "5fe86c10390f06a898b981eaeb1b2b4057fe8523b3e203e9b1dcab43b0d62888"
+    },
+    {
+      "path": "target/product/aosp_mips64.mk",
+      "sha256": "985d97431ec993035c4758b5f9615bb60c7cd2503f3890edc9dedb0f0356c5be"
+    },
+    {
+      "path": "target/product/aosp_x86.mk",
+      "sha256": "9d86cd60400d003087de910b39bdf934f98bdc8305292ae584367218f3922264"
+    },
+    {
+      "path": "target/product/aosp_x86_64.mk",
+      "sha256": "4d406e37eefcc2f2fd01a6680a3acc7f5b6b9deb87c18133fc714c302278b6b7"
+    },
+    {
+      "path": "target/product/base.mk",
+      "sha256": "e04a63dd17ff897ae4df032fd11da9a799c4cecf22e8e8453dcc795a057b6bd9"
+    },
+    {
+      "path": "target/product/core.mk",
+      "sha256": "28871f3571afd0babbf91f19690ab7e910ceaa33809f64803afd5d04336f6cc9"
+    },
+    {
+      "path": "target/product/core_64_bit.mk",
+      "sha256": "340a99a8a0d10cf49c4d06cdd360c1d9889c25085775b44fe845515b5ed12719"
+    },
+    {
+      "path": "target/product/core_base.mk",
+      "sha256": "58e7bdf0b44ab3d722560c0701b624596c670e135e902f8df61eef659c1f0c7c"
+    },
+    {
+      "path": "target/product/core_minimal.mk",
+      "sha256": "bbb25484722c67f668f378238b5af3fa1c9bf4f73de39bedb35e19799c1f9567"
+    },
+    {
+      "path": "target/product/core_tiny.mk",
+      "sha256": "a143a209e03ffabb280f389b9f5ae0aca8ddeeabe7875f8ceec48b575c4055c0"
+    },
+    {
+      "path": "target/product/embedded.mk",
+      "sha256": "9fb7683f4a8200bc5797eae0032b739f429fc282e5c5882155f49cb01999b372"
+    },
+    {
+      "path": "target/product/emulator.mk",
+      "sha256": "fbeb1597413b295b4ffb613df6f0cbb907405e5cff01e25c7d42d6f40f8f322c"
+    },
+    {
+      "path": "target/product/full.mk",
+      "sha256": "cb911697d52b1bffeb29c88909714ac07a16431fe81c0dd86cc02abd0c0f7d4f"
+    },
+    {
+      "path": "target/product/full_base.mk",
+      "sha256": "9c5301516346431233c2f46ebd9ebbe6455787e48a61a7b3596fb99466d7d40a"
+    },
+    {
+      "path": "target/product/full_base_telephony.mk",
+      "sha256": "70e4a45e43fff7600bfdf3e62c6910d0dfefe46db6375446f1833862e28becf0"
+    },
+    {
+      "path": "target/product/full_mips.mk",
+      "sha256": "57633d78ee0c1b9f9f18b7535379641a95d0e4d9df24b207718d937b874a6fa7"
+    },
+    {
+      "path": "target/product/full_x86.mk",
+      "sha256": "11e650d62a27895267bfea9ac4af191ffcc04757b866003eb3dd02fb899fa552"
+    },
+    {
+      "path": "target/product/generic.mk",
+      "sha256": "74212f24f426827863b6c0037f826c98c0fc07745173a1c9720aeaed4c3be226"
+    },
+    {
+      "path": "target/product/generic_armv5.mk",
+      "sha256": "0db8f20b2c56378214260dee45e367ec79885bb65f792570c85a2784a8c4ad21"
+    },
+    {
+      "path": "target/product/generic_mips.mk",
+      "sha256": "4f275e8507e798799acea1f6109fce5cbd50dd2518100753e84c72da9f179728"
+    },
+    {
+      "path": "target/product/generic_no_telephony.mk",
+      "sha256": "efb3fd4733b5bef82c6775067f4552f8193202a532ca7f559160076b67eb4b59"
+    },
+    {
+      "path": "target/product/generic_x86.mk",
+      "sha256": "52c6d31921e6b2e34f4502c5533e1f6c4a7e3a602a2ce3c498e32c05e2fd3382"
+    },
+    {
+      "path": "target/product/languages_full.mk",
+      "sha256": "05371e7db4c082aba2d4359e05aea82438797ac1b8636327ea7900158e9121c4"
+    },
+    {
+      "path": "target/product/languages_small.mk",
+      "sha256": "33d0e7d240b24610afff404db3d9aa8e916de751fb3c8e692e5975abe00611c7"
+    },
+    {
+      "path": "target/product/locales_full.mk",
+      "sha256": "744aa11790a8ace1ce4f34950624ff1f14790a831f581fbac6f6b17608f7bc6e"
+    },
+    {
+      "path": "target/product/product_launched_with_l.mk",
+      "sha256": "cc57e0de05a76227bbb3525902f47a878001cf8c84ac6b12c5a6d6e985c81ce7"
+    },
+    {
+      "path": "target/product/product_launched_with_l_mr1.mk",
+      "sha256": "eaba18b3b59a5769eb6dadb4592881e7976bba8e98b5b16b8f75d5edfbffae78"
+    },
+    {
+      "path": "target/product/product_launched_with_m.mk",
+      "sha256": "576fa815e527e2c922a62808074053daa0061c771e595c1d8f5645dfc1a0494c"
+    },
+    {
+      "path": "target/product/product_launched_with_n.mk",
+      "sha256": "414747eaec39bc38d52bea2de74cf2ab99b3bcc82bb08ec2b40ed1d8257ebafc"
+    },
+    {
+      "path": "target/product/runtime_libart.mk",
+      "sha256": "8efcfcbb5904b5b2cd1b60f6cd8467cba960d1ae4aaabc51d4942c5ad3923f32"
+    },
+    {
+      "path": "target/product/sdk.mk",
+      "sha256": "5b74d5bffcded0dd60bfe04e239d8bf50af9d2c23aab1a8374bef3986bf2b38f"
+    },
+    {
+      "path": "target/product/sdk_arm64.mk",
+      "sha256": "6e7d0dad0bd8ad9c414217d36c849e2708f9e68f88307d87dc4b7c696731a45f"
+    },
+    {
+      "path": "target/product/sdk_base.mk",
+      "sha256": "9370d5cab5a10e6c489d4b3da0abfb945ba1ba1a04966a890554327bd39a9a83"
+    },
+    {
+      "path": "target/product/sdk_mips.mk",
+      "sha256": "777357b96c7f4fb379ae22d2e0e3cb461efbb2e4917005059ad283f72b10bcac"
+    },
+    {
+      "path": "target/product/sdk_phone_arm64.mk",
+      "sha256": "94e43c9f0397c5758e8a94379aa5715905a2b87bd02183cfcca5f559ac9813b7"
+    },
+    {
+      "path": "target/product/sdk_phone_armv7.mk",
+      "sha256": "5d5e96f1fb831155458c2e2a9811e68f69767fb949ec495942767d1f8e3f4753"
+    },
+    {
+      "path": "target/product/sdk_phone_mips.mk",
+      "sha256": "62e37a61a207901d6e31cc6512cbb8bf1f8bddcbdb38f34d31929a9790e4d1cf"
+    },
+    {
+      "path": "target/product/sdk_phone_mips64.mk",
+      "sha256": "49d75398c9f52c7b9975fa913929c8d1cbb20b2acc672567c019b904e754cd9f"
+    },
+    {
+      "path": "target/product/sdk_phone_x86.mk",
+      "sha256": "0e5afde26c4704395aa06c2883224b3e0e67635eb635a9f09d8b6e7db386e48d"
+    },
+    {
+      "path": "target/product/sdk_phone_x86_64.mk",
+      "sha256": "7bd5f443eb813343dafe902f40515356180ca1a4c869e4ead29216cb756fe31f"
+    },
+    {
+      "path": "target/product/sdk_x86.mk",
+      "sha256": "bda5fc739d054d92aa3059b1da2cec27e0d53edd0215e4fc80d0ab2b051c9b7c"
+    },
+    {
+      "path": "target/product/sdk_x86_64.mk",
+      "sha256": "605251ad5bf7f07cd602ec754ef3f5db6baf6b4369acf9a9a4e84fbac4435f3f"
+    },
+    {
+      "path": "target/product/security/Android.mk",
+      "sha256": "c1df6ce84801960f2af1235084be2a2a5a336297f06e4e86694949f335b6b95c"
+    },
+    {
+      "path": "target/product/security/README",
+      "sha256": "83d22eb3b160a932e3e7e1ed9ea6df482a304a4b91033c76a2f0a0a068fc50e2"
+    },
+    {
+      "path": "target/product/security/media.pem",
+      "sha256": "3134bafcdec503a8ab6ef965f2a3716bb028a6c76be36c8ee8eaf18ff5b7bbdd"
+    },
+    {
+      "path": "target/product/security/media.pk8",
+      "sha256": "2761ca16290f5ee4075e2863c843010470ce1013df0aaa620d20e7ecd650d215"
+    },
+    {
+      "path": "target/product/security/media.x509.pem",
+      "sha256": "5d7416714d0f8b06decaefc7e6f29c0d2fd1c9f88419c693c8b685005d7cc442"
+    },
+    {
+      "path": "target/product/security/platform.pem",
+      "sha256": "9c92ed72798074a9e27eebfd6b31e79ce6598f95094dbf98674fd711858af156"
+    },
+    {
+      "path": "target/product/security/platform.pk8",
+      "sha256": "f24056fe406bc0b609e34b8ca2b23f9bef52401712f212ad438bba976791945b"
+    },
+    {
+      "path": "target/product/security/platform.x509.pem",
+      "sha256": "29873cf3837dd45d61cd0e7bcb37c75306f4f2e63d7e46956c8a5640e70019e6"
+    },
+    {
+      "path": "target/product/security/shared.pem",
+      "sha256": "acbafaf2960eaef21b256338870ef4c4d9cdcf3788bfc24ab63ec6d0e937f6ff"
+    },
+    {
+      "path": "target/product/security/shared.pk8",
+      "sha256": "a70d608ea57eebe8aacffd6e9cc7194c7312d222e7251fe210afeedd32f116a6"
+    },
+    {
+      "path": "target/product/security/shared.x509.pem",
+      "sha256": "ba8be8826989381d61b2a09dbdcf6134eba83b2e2c925e82b30287d8ad271379"
+    },
+    {
+      "path": "target/product/security/testkey.pem",
+      "sha256": "1ca6c4123091a732433a52edb1a257708c1fed9875d97c13335215798fd1f2c7"
+    },
+    {
+      "path": "target/product/security/testkey.pk8",
+      "sha256": "6062eea9d9d0c993906564ca644ef7b1ada2d2038bffb7343ac78b7714c955e7"
+    },
+    {
+      "path": "target/product/security/testkey.x509.pem",
+      "sha256": "10a7b524d14750a12b44472524340df6b300f1b648fb63c3b17a161bde1e08d7"
+    },
+    {
+      "path": "target/product/security/verity.pk8",
+      "sha256": "75b2553350ae99867440c036edfb6262d34f878a733bc1a82990c01ef3e44145"
+    },
+    {
+      "path": "target/product/security/verity.x509.pem",
+      "sha256": "ea9e433bb502a3ddef2c85460b499ab1bf8b2ff3f776b468199e5aa358932d9c"
+    },
+    {
+      "path": "target/product/security/verity_key",
+      "sha256": "5b5790b5632958cc53ad4358eec77a40f9d4ee09e338280726113d3e13759d3d"
+    },
+    {
+      "path": "target/product/telephony.mk",
+      "sha256": "61b75ecf8e60099b8c1ef3b2ee2c5d7c2e52b5325aa1c40c78239e7f3380f4db"
+    },
+    {
+      "path": "target/product/vboot.mk",
+      "sha256": "9403c8251c9a89599c0d425ab4dcfec4132d276fd879cc3a5ba4106011a1eb3c"
+    },
+    {
+      "path": "target/product/verity.mk",
+      "sha256": "9fec93c7e360d33b5abbfe1364c258cd7ee3fa15d8c7da90fe5a6cca079ff526"
+    },
+    {
+      "path": "tools/Android.mk",
+      "sha256": "46adbaabbcc14321e778b7b4fbf7ccfd43c345bdddd4f7523a7fd40246660e3d"
+    },
+    {
+      "path": "tools/acp/Android.mk",
+      "sha256": "0610eba0561d41399b3e6edd111ab8a2225295491c46381360adc43b57f42d2b"
+    },
+    {
+      "path": "tools/acp/README",
+      "sha256": "eb0c048cae20c78ceacf34afaa94630e654970865c255611d0a3160831a575d9"
+    },
+    {
+      "path": "tools/acp/acp.c",
+      "sha256": "5d1c2dede44bd635bd2813cc099a6959347d4447af06610ee78cfae209c8c189"
+    },
+    {
+      "path": "tools/adbs",
+      "sha256": "f22e6326e1c090052980b9e1b47c5ce58950bc94d58d0e3fd1b913cb5da4ce35"
+    },
+    {
+      "path": "tools/apicheck/Android.mk",
+      "sha256": "512e87bcbcd542c3b6731b669cf5d0850fcafdfc8aee9a702646324ca6573b00"
+    },
+    {
+      "path": "tools/apicheck/etc/apicheck",
+      "sha256": "cd72ba7b331eb1dd3e2b404abd1da2228622fad891723db8bd49bed4c29538ac"
+    },
+    {
+      "path": "tools/atree/Android.mk",
+      "sha256": "7c27896e249724251498057ef242915599e24d5dc8c7469046cff206be1a6bda"
+    },
+    {
+      "path": "tools/atree/atree.cpp",
+      "sha256": "532aa84804a10cdc624deb6f475f70be9747c354a8f09c1bcab3a13c110f7165"
+    },
+    {
+      "path": "tools/atree/files.cpp",
+      "sha256": "6af6ca374dff2204f2d6191e396be93f7c2373836440a1469b556ad3c044cdd7"
+    },
+    {
+      "path": "tools/atree/files.h",
+      "sha256": "a7ee0401ecf260b2e09ff85241612cd968bd223dfc03c2962602e51d9ea8cd90"
+    },
+    {
+      "path": "tools/atree/fs.cpp",
+      "sha256": "bb18884e6647646c71b6882126de0862259d7193e1bc4c41878e251223ca094e"
+    },
+    {
+      "path": "tools/atree/fs.h",
+      "sha256": "11ebf24ab8a59de0dffee6cc8cddeab4d5980dea7ba0c5a275d04ba54378a93f"
+    },
+    {
+      "path": "tools/atree/options.h",
+      "sha256": "13bf8383fa682b5ac1e3462ad72157d3f80c7025fd4e1a4e619130c266fb88f3"
+    },
+    {
+      "path": "tools/buildinfo.sh",
+      "sha256": "563ae3eced6ca0ae9e232758ea3420461ccd1064295b12ef4311263d0d364c01"
+    },
+    {
+      "path": "tools/check_builds.sh",
+      "sha256": "e698fe810cbcec33c6e032ec75a4727ee318a2337d078e0652e41b7bb9a67b57"
+    },
+    {
+      "path": "tools/check_radio_versions.py",
+      "sha256": "c8457b4d7025cee3b7b95a3a564202080dd68602c59362160072796bd9c94e51"
+    },
+    {
+      "path": "tools/compare_fileslist.py",
+      "sha256": "bdfacb9ce36e3b33e5eebaeefb2be8296b88dfd30a76e14d4f6c1597b172e85f"
+    },
+    {
+      "path": "tools/diff_package_overlays.py",
+      "sha256": "4072d5b42d59a81894201c8994de8a8ef74bc76bbdc34792c67d58ea2cfe2747"
+    },
+    {
+      "path": "tools/droiddoc/Android.mk",
+      "sha256": "bb8d9791617e8404484f77d380355ef58b3592037a0c19edced071bb0af6ab7c"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/assets/GPL-LICENSE.txt",
+      "sha256": "ca9158686423ec56319653f44e1c821db41f008968e4c4c4a7542820725108ae"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/assets/LICENSE.txt",
+      "sha256": "2f7e39811bb2fe6d47e23f97dd69e48b4bfd79da2026e78d1d9048d197d34c83"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/assets/android-developer-docs.css",
+      "sha256": "0eeb7cf9bacf3b2b8d82621d5356326c3462b180bc55dd04b480b6dc7dd09194"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/assets/css/default.css",
+      "sha256": "f05a9ab507960573b11f49190d6c5fe4770ebe8b45a09f675832b721a6266484"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/assets/css/fullscreen.css",
+      "sha256": "6683c7a1f0840462b9d1f899aaf7f84da33547c23982510743de3d4a1b46f089"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/assets/design/default.js",
+      "sha256": "8b1060f122b14756cde0ad26b4d1a0e07a10f4dbbd6524260600da8a18a2be83"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/assets/images/icon_more.png",
+      "sha256": "eea232493ac0b9a0321d7752223918f52d6b75a1ede9b633c80def2cb1a23b38"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/assets/images/icon_search.png",
+      "sha256": "9eb859a62db08a434c872a93d8d53569852c33991d12977d446b6931ec0a8868"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/assets/images/more_bottom.png",
+      "sha256": "321e30ec2f9b8684e3baa51031bffd2e4b9dd480c5f1da19d65788509865c797"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/assets/images/more_mid.png",
+      "sha256": "3e836e3667b731c91a0f8866d2b4dc0c53ce1d3a19beed642a9bb97af388bac2"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/assets/images/more_top.png",
+      "sha256": "1a0221f82abf8cb1b255da06aeb018625eee7d5fc4ca6d73db7298e66fc6c2e1"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/assets/js/android_3p-bundle.js",
+      "sha256": "41578b30af758fa26bd43c86e91fdf347797d12585266958e616df5f1fbefad6"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/assets/js/docs.js",
+      "sha256": "22bc7b851b205a849efbb011124c2be9187de42761eb8e8b7e9b9252da6b20df"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/assets/js/prettify.js",
+      "sha256": "e2e576e3bc607cd179ff511947010f645d3441a35313aec0dbd06c4437f83b77"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/class.cs",
+      "sha256": "4c26ee0d5ca521dce7b8bf138e9677fd73cee35cd226bdd241787d70426588ba"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/classes.cs",
+      "sha256": "27e1755a5e93a6c67248bf102e91d7b637f22ce64a4727f6aaa30d63eb6d56de"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/components/masthead.cs",
+      "sha256": "bcc33b81bb2dcac169c5c95f482dc0a5ebeebd5ddd2442ba0633a17faf58136f"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/customizations.cs",
+      "sha256": "7dec65847de0d83be095bd0a7c9830efbbf0d046eb7e232109d00afe6b78fea2"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/data.hdf",
+      "sha256": "7984e8bf6d37a3e2deb1164d9abf40d54d340ef9cf605d4ec7ab65f1b53d1a54"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/designpage.cs",
+      "sha256": "5364d84b85f199af4ba42a63e2b493c1f3fa20a6144395193fd6a00711a898a8"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/docpage.cs",
+      "sha256": "83e4473c02c3d5fd14d248c5fb45c3f94b06684dbbbcfa98641e1606c85f9409"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/footer.cs",
+      "sha256": "8510c17e14de59b0a776b8f3987b8cb454855db60b0103a8a4f5175c40073b49"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/gcm_navtree_data.cs",
+      "sha256": "c2bc44222531dea16e11ef3ef8a7064f28dbf9fd03b29aebbe78cd0ea2ac11e9"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/gms_navtree_data.cs",
+      "sha256": "48696ae1949cdf08eddb518eb93292addfa154bb3c130bc88beddbe003fda125"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/head_tag.cs",
+      "sha256": "82d7a9e6cf6311b9c42d5294f53a69453dbdf03cbec02f514f377ee9331f3b3c"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/header.cs",
+      "sha256": "75fc060c467933a94eab4c96eaafac5f9d174ddc1519db74a6499233d22f0a43"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/header_tabs.cs",
+      "sha256": "bce26dcf6b3bbada8a07a1e5c1095b7d672050ed21a7558c9c9a200b67a20ba1"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/jd_lists_unified.cs",
+      "sha256": "532981aa5fa1dede8605edc4680020685611852f1eec4318f088220dae6343e2"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/macros_override.cs",
+      "sha256": "977a8ba9cebbf9bedacd7ea0cf541e779a6344f9265bcc6d29c90f7eae46027f"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/navtree_data.cs",
+      "sha256": "a415a5040d90ad43ad98090d0f14fbec8ea066ecff146f4e1408f3c41ba5fc89"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/nosidenavpage.cs",
+      "sha256": "8eef99842195274ce0a6c4dbc0ac4b027ef1b44bf4ea4bb9e68ad2d817b4924a"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/package.cs",
+      "sha256": "29cc42d72c2756039565560b9d930d12cb6935e0463a845d97df47d079de5ea8"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/packages.cs",
+      "sha256": "6687058a3a39e6e62d704524d5ab0e754951cfb41d032854b1e3d3ee107d86be"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/sample.cs",
+      "sha256": "d4eea496f026011413d01e47d8e6fd502bb51e9b8d702b9a9723a83b6a367afc"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/sampleindex.cs",
+      "sha256": "14bfb89f723c7278db69e1b0c0df6b61f92acde6a506d4314a00856d6c3cb102"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/samples_navtree_data.cs",
+      "sha256": "7118b5377a7f945571f49898b7ca04371be460a69e40d7b5bf469d0b0c4df840"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/sdkpage.cs",
+      "sha256": "19871b309de8f796ee935ec3726e61e7baa942e91e6ac2f37a69c770aad55907"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/timestamp.cs",
+      "sha256": "51f670f80e7bdadccf423703effab9bb51076cc1e6456535416828489747f0d6"
+    },
+    {
+      "path": "tools/droiddoc/templates-ndk/trailer.cs",
+      "sha256": "69851bc94f7de9ff3f8080ba0f8df159104db827923fb574743afdba48e7ab2a"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/android-developer-core.css",
+      "sha256": "bba0c57210e24842a7233a6fa54d1af2736423e5ce18072014b841dad4277e51"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/android-developer-docs-devguide.css",
+      "sha256": "d1394e69b3277a2d76baf9b1f54de7d487a8d0f3f6468f10e8fd56a27663c702"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/android-developer-docs.css",
+      "sha256": "2d2514f6152044ad5987f5454022002c4d49b949e0b307d03d83af15e5516b7b"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/android-developer-docs.js",
+      "sha256": "9e0295cf6accbe70ee0b932d1a5d58f93a1ec9bed54bb5368e0588f3751a2b1f"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/android-developer-reference.js",
+      "sha256": "d7431fd6e70289f235de92fc278e52c6805eeae51d9eb46ddd90810e8413ee37"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/android-developer-resource-browser.css",
+      "sha256": "5d1f434fa165bc79285bade6c88d1f2bc364c186daffbd8b8e98561233b2483b"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/android-developer-resource-browser.js",
+      "sha256": "55c1f04fdcf8f70300c99448dd95acb033147f906ae091728370c2d700db89e4"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/carousel.js",
+      "sha256": "ede720c632b603eed8b75ea12ac9a8e75ab9c25467295769aae9c77533d68da2"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/customizations.js",
+      "sha256": "e8962c8b05eb2dfa56d651ef833bf41574c51f1c8a8d7e642d176d045126fbba"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/design/callout.png",
+      "sha256": "45978ea1c6616a6cfa26eaf547760baca6c1c8eac2ae50fc1463da06a76ca92b"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/design/default.css",
+      "sha256": "2bfdb0e8b1fc4c883072945a9b59840bd1e82897d3e32b8937f572897e1fd77d"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/design/default.js",
+      "sha256": "260c8e0333843b924ef9f89a8a6251a3d686c89741c4e76119a9603a21f4b974"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/design/device_galaxynexus_blank_land_span13.png",
+      "sha256": "f08969c475cd3a4af196d69c94eddc4ae2e19be717d786dc214807c951c455ea"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/design/device_galaxynexus_blank_port_span5.png",
+      "sha256": "314ed464644f75138a81c20003bdd45cbd52cdb930f12eda80d563fb93d80dd7"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/design/device_galaxynexus_blank_port_span9.png",
+      "sha256": "8ac0fa8fd475e7a8c62c6e3d787b06ecc585e2b3f8752d8cdf997d28429ca458"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/design/disclosure_down.png",
+      "sha256": "027e10c78657e15eb3e3b951457ee944abe6bf62683b77810ebfd73146e988db"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/design/disclosure_left.png",
+      "sha256": "a7318ea4c263c0e23447efc18b49b0cbba602ed096c7cb3a46d08fcc3577ba3f"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/design/disclosure_right.png",
+      "sha256": "b515d034a8465eee79aa7e3d813347ab08839a8024d721a9117db448697d2e7f"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/design/disclosure_up.png",
+      "sha256": "f0cf500243480ddd3c7cd7a62128cdda1c549e2322e3cc5f859ba41a00ac2dc6"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/design/ico_action.png",
+      "sha256": "e3a75efd4e3e11de818de1e1b49e1605021552af0e5219596cec713237ed99f2"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/design/ico_good.png",
+      "sha256": "733da51834f5bb48b61501a80ce09772a567844c7af528ade6bb9abbc289a497"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/design/ico_movie_inline.png",
+      "sha256": "da0accbbc9f20f44b268412e22a7b3ab19641edb6a0ebd4be0cf9eb6681a80d0"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/design/ico_phone_tablet.png",
+      "sha256": "3252fe1661d8fe07d43cf7cee388f0fbf337f7675e9f270fe3aa7fda7fa79e52"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/design/ico_use.png",
+      "sha256": "c07d4aa30cc61715ee7e9aa8347c34ad76c710c4a5eb49080130c186d554f3d6"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/design/ico_web.png",
+      "sha256": "93cdb65869cbcd06197e42164bbdae24a6782a622fde4712039fcde6804d46dd"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/design/ico_wrong.png",
+      "sha256": "1a587a58280ccf7ad31b4a16f1b248ae38ab996614fc0d0a70a61a50c269babf"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/design/open_new_page.png",
+      "sha256": "93bece20e4d6577a606e65ff2ab7dd5001e557c88d98f4add37e2b9a2cdb6b5d"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/android-developers-logo.png",
+      "sha256": "5be1cfbb95359c8052ec85ddd41a33861cb8da6346c86b1eefed0270572ba9ac"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/android-partner-logo.png",
+      "sha256": "4fa075a248c05d2a9f05b44ef4298d2f8dc3560059177bbff3145874b07dd089"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/android_logo.png",
+      "sha256": "292f7f774d8583bed3bc671b04402ba45093fddf7d1c72fd87d7bdcfd7fc55f8"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/android_wrench.png",
+      "sha256": "4cef37d52f4d4efbd362b71379953aaae739bdfe96726dbff43c8aa9c6139d20"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/arrow_bluelink_down.png",
+      "sha256": "e2721fefee657f6ddfdaa16c5294f3f66ba4f5ca864c37820742bbf225fa5f43"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/arrow_bluelink_up.png",
+      "sha256": "7ea04546c34216c572968eaf92c14abdf2c4af16ae6852155c0650111b674cf9"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/arrow_left_off.jpg",
+      "sha256": "22e38092c02ae8c551c890cf989ce9fc9c42dac4ebb4f82a9df903409eaf633c"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/arrow_left_on.jpg",
+      "sha256": "9b723eee37e265e6afa8bfda90044fedf7976dd85cc81b3d3f3d006a31414c6b"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/arrow_right_off.jpg",
+      "sha256": "4782c9f58add1e5e7b2572d0651e1cc97f150da775a31127a5ee709050adb644"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/arrow_right_on.jpg",
+      "sha256": "c1b1080d3a112a95a58bb984dec32acf6044f7b18174819f958c9a25e260cdb9"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/bg_community_leftDiv.jpg",
+      "sha256": "ae1e7ad003cedf425cb34734688f55ad6beacfc5bbd0c1e2f57e832d08b5d98f"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/bg_fade.jpg",
+      "sha256": "365c2125e15db37f8112284b85479c53af7cc79ab204e62eea29e72fa8c2d8dc"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/bg_images_sprite.png",
+      "sha256": "bce9d014854b9da3ace85ec36ed1cddc7ef72ef7cbf75a899a5407419021f258"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/bg_logo.png",
+      "sha256": "194cd6495714ceceb9b79bc2945e5f832cbf8211b799e6636b1b2edf6daa2dbd"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/body-gradient-tab.png",
+      "sha256": "88e37c20af2bfa6434e5d46a05904c536f767ae11193701c28190f0d8207b775"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/body-gradient.png",
+      "sha256": "dd45840ea5743ab666110429302d1c98505a90a9c7781a05617e3b21d19d5dba"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/developers-logo.png",
+      "sha256": "a1f006b42ef029808d3c34b0d4aa14723e9427500bf34d057719eb99ebffa370"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/grad-rule-qv.png",
+      "sha256": "d118c53e3d8d267ac60efbcfd2f3a2299d7f2b309a40cc5035e38d29d5ff4231"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/Android_Dev_Lab_l.png",
+      "sha256": "ad09b359e7b7eb6c67311f6dcd3f4e8b886a2715a2dfd1c60995d47c0cd343ab"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/GDC2011.png",
+      "sha256": "d1c92f2b02d3466de11272cab05a1c0b847f1dfbcda6e4e454001c458ecb8d9b"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/GTV_icon_large.png",
+      "sha256": "98021dc05033f6ece663526a86ad71f48d652aec710bb23c88de7b435991cea7"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/GTV_icon_small.png",
+      "sha256": "edfab6b1a36c6652f3d57cc398f06703bfb120c6fd3d7e5c18f743259769e673"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/IO-logo-2011.png",
+      "sha256": "7a0fab4c3e76735eef9400fd6e4c1f88af2bb4394b5e0d487e413827573aae46"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/IO-logo.png",
+      "sha256": "1a5006134317a6964cd12594382cdcdbf533848fa0e5c6be9445d725798bdec3"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/adc2_l.png",
+      "sha256": "6c809ab25bdcee063b924716c77c5349d152055f9eaeada6de0e2b16ecb9b6f9"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/adc2_s.png",
+      "sha256": "1b024d270f3af80b0fd49aa0c68d1282e4b121841eb75c4792ceda1355072084"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/android_adc.png",
+      "sha256": "c031f82c17e8fbbdd7fdb1cd1a624f30d763619fb22094b7e5386bc493ac0512"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/bg_home_announcement.png",
+      "sha256": "5a8bbdb8791aa94ee30fe9dc9aaeff3b8032668c379eaaeec449c72138cc779f"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/bg_home_bottom.jpg",
+      "sha256": "a4b8af667601d7ba5814afc489757f3ef2daca10bc2ba81b57e3ff6c70c9b258"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/bg_home_carousel.png",
+      "sha256": "49c6ecc9649e9a00cf6cfeb07f788d0e6c8f8cee37b785776b7ed94346c6299a"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/bg_home_carousel_board.png",
+      "sha256": "1de6d0ca309a24f24f62a6e3fe0f2c9e0a177d0ddc103dfbd6a1c9d77bbbab9b"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/bg_home_carousel_wheel.png",
+      "sha256": "e4464d4dbaec85dcbbf9885721624ada76ac8fc295ee298e8b6b1d83ae5492b5"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/carousel_buttons_sprite.png",
+      "sha256": "0adbd30c3ac8feb49c010c6406dfe00ef1a48fae3308d69dd7486a21e6cb6cd7"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/devphone-large.png",
+      "sha256": "536cfe62d3fa7402515c908e4241487062b6efe18707eb76b0d9900661df68b7"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/devphone-small.png",
+      "sha256": "5f7c1e49023e61055fd3cbcb7921f49acd7ac1f83d8a2f962cba74adc8aa557f"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/donut-android.png",
+      "sha256": "948aafb8a534c229c14ed1cd405c20eaa99139f930a3a3c71708c2a69d807732"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/eclair-android.png",
+      "sha256": "7043072f90111f7506374d74f68afc85431a48797fe864ef5f4b7d06413c7f6f"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/froyo-android.png",
+      "sha256": "6375f7d38c5d53dd17a887afa689385fb86942e1d7c1ada4b994887b46c6fa93"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/gdc-logo.png",
+      "sha256": "1545eef315af5b9b5b2802b5bc430ed0dc7c164dd0d89815d588f51335e39c32"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/gingerdroid.png",
+      "sha256": "ad94fbffb235aaff8cde02ed5f943241997a4ba53a417420aea08bc9be747f0a"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/google-plus-small.png",
+      "sha256": "72abeef054abba4a92010cce6bf50070089746bee5511a077d3d969197d5126d"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/google-plus.png",
+      "sha256": "5cdc530aba9b756216dd618b80c12bec94c36797fb459c9e8417cd2a9e653c30"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/honeycomb-android.png",
+      "sha256": "413f8234b10b4772e586abb502c68d7725a449364008a4a645fe3f69cf293adb"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/ics-android.png",
+      "sha256": "3fb5a0b887da16e4229b10c8ee3513a8a591c59dcff8342edc4d80db94c7aeb5"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/io-large.png",
+      "sha256": "77f8c2f7446eb75e9c5a0fe333994d1fad8c71fa8a0d870c9712d169b795ea2f"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/io-small.png",
+      "sha256": "e4d0e6b9b6403511d00b2e86483b94f6d70e12c917d4b9eeeb1f418356ba33dd"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/maps-large.png",
+      "sha256": "b4154adbc446c0efb87ec6202f9e98bf18e33239ee8f78c60d456a6f7c957ec3"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/maps-small.png",
+      "sha256": "a8dbef06ba914c4b15dc17e78133a98893c7e1beb4ee8432151aa5bec869710b"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/market-large.png",
+      "sha256": "5e8cb2cee66fb01f59065712eec833f5bb679c65e8c0589678aebdfef51c1943"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/market-small.png",
+      "sha256": "1b0e7115c67e570e9425640a115babeedd4369b9b7f73bd9d97f5ebfb4f4efed"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/sdk-large.png",
+      "sha256": "24b22545f3760dab51eef8a6414288813dce3c18bdcaf4d6edd77629373649d6"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/home/sdk-small.png",
+      "sha256": "fda597350c36c9ec85489a7e788f993f3d1b0d22c9f75e9c0c2fe4397c5f9378"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/hr_gray_main.jpg",
+      "sha256": "6f4a9db3b7e66924a390d8fb9e4fc12352aba11afb2b8e15e42e5644083b8af4"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/hr_gray_side.jpg",
+      "sha256": "df040787c00a30231e526ee5d7ece17693a9bbc65415f44012214d0f56cb8326"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/icon_contribute.jpg",
+      "sha256": "15cc58589e57f3e9dc7cfeeb4ff043cde00397c044e470d1615856a3d0959796"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/icon_design.png",
+      "sha256": "105ecbc854cf384c522e7edf25313b4465798a866c3cfe143ad84c3002a1354d"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/icon_download.jpg",
+      "sha256": "dad9eb7407c4f72338d7f6e193eaa80eacb02422dffdc39899480d9406870a22"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/icon_download2.jpg",
+      "sha256": "2f67b859b95b40cfe90bbb94cf0188a9a98e603275d3cc01f5f888c0d1123e66"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/icon_guidelines_logo.png",
+      "sha256": "af833d763ea6d8d53f651e455c1f517c1b1ea9981283ccdc6ff700a21bbb3c30"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/icon_market.jpg",
+      "sha256": "67399efa6c1f13e3e979ba328fbd12c8336bb6f62c39957ee0bdb981c1a3d29b"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/icon_play.png",
+      "sha256": "f05d27892f75027f7cdec888cbe996ff6761020444d2a74349228fda47dcb52b"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/icon_robot.jpg",
+      "sha256": "ac0e3d9e11743daf7e9bdf830800f8fae3553d17d611b0fe1e77458f306c65d8"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/icon_world.jpg",
+      "sha256": "504e28fa7bd90fd47f9f8126acd8bae6f757c31c7f730ea4a933ee33b133a063"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/left_off.jpg",
+      "sha256": "22e38092c02ae8c551c890cf989ce9fc9c42dac4ebb4f82a9df903409eaf633c"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/left_on.jpg",
+      "sha256": "9b723eee37e265e6afa8bfda90044fedf7976dd85cc81b3d3f3d006a31414c6b"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/logo_breadcrumbz.jpg",
+      "sha256": "6ca55210195e34055586d1b220cfa5b91e36ce8e2eae480b80f3cebbb06009a2"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/open_source.png",
+      "sha256": "e9375b89543b4756806879d2c90d5e8a862cc268561fe31f4388d7b44ad6e0a6"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/preliminary.png",
+      "sha256": "e9bd935c73ea16f2146391dbf034db96ef7bc4bd9343bc845725add509dd4a83"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/resizable-e.gif",
+      "sha256": "e685c586394abb5c33750cf98910c3af33cf5bfc09d11240b85fbe19140a823c"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/resizable-e2.gif",
+      "sha256": "4edc6ea3b122f10b5d26a40916ebaf19915868a46371d426286cdbf743256ba8"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/resizable-eg.gif",
+      "sha256": "583ce3a27cb97ac96801f7f57d73ae4ba48d44a4396908a35a7b8977381729a8"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/resizable-s.gif",
+      "sha256": "90842f1a2d41231ae89bf244daf3caf11c008b0e25f792969cb9c9884820b17d"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/resizable-s2.gif",
+      "sha256": "cadea17257c4d60af80f4accf4d4da95d9f8e1166f9bf122a863d5d767f10c27"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/resizable-sg.gif",
+      "sha256": "4384305ebe352985229e6b9860f7f3f7b7e2232c264567126fd25db2dcd66508"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/resource-article.png",
+      "sha256": "886cef4df3254cf154a0ace5648c7c5c1e5d03b8b77c776f91f013c2f78d4258"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/resource-big-article.png",
+      "sha256": "02c7142853ee218f0676f752b586f6ae46ded13f6bb83cdd8fd6c28710bf4d85"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/resource-big-sample.png",
+      "sha256": "88e0b6714fa7af52999c70a86eca2a1247cf87b2a1259b2e6a2fcadd48b60724"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/resource-big-tutorial.png",
+      "sha256": "d0f6886eb1f2f60eb865a25efb142f9afc6628ecab2a090f345957602dea67dc"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/resource-big-video.png",
+      "sha256": "1752f2b803cf655b4db76e0e1012a4f276b9b0ccaf15896b7e8acf921c9330b5"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/resource-sample.png",
+      "sha256": "bb11f946b41f5bdadd98eb66cd0f42e50c97d8faa4f13fe454147286b305ae4a"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/resource-tutorial.png",
+      "sha256": "6633fa4fb95ab073dd1694c455b5bfd4b773aa30e499f6d7c4fab670e9650f44"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/resource-video.png",
+      "sha256": "990f27fc354717834dbf75c3e9b75acc22d957fa1c2b0598ec89a29f03d5531c"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/right_off.jpg",
+      "sha256": "4782c9f58add1e5e7b2572d0651e1cc97f150da775a31127a5ee709050adb644"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/right_on.jpg",
+      "sha256": "c1b1080d3a112a95a58bb984dec32acf6044f7b18174819f958c9a25e260cdb9"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/sidenav-rule.png",
+      "sha256": "c428ce5745bb067977a691c2cb1677ab509d1afa053db8c97f55ba5ada23e39c"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/slide_1.jpg",
+      "sha256": "e59de6c50abbc71cf84fe7cbc6e0623cc3d261e6078233912761a855b3067420"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/slide_2.jpg",
+      "sha256": "f988ec46920e749befcd11384de7ef3c6bf2d4377e57e5e2e7e8e2908b138057"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/slide_3.jpg",
+      "sha256": "b8a650770bdffe7373fcce1480cb5a145784caa1002993bb6e808767e1d0cec4"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/slide_large_1.jpg",
+      "sha256": "badd644a1442430b92ffb887101a351bcb4e15ef6eb242ca2a9f4695bde797b7"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/slide_large_2.jpg",
+      "sha256": "1443941c9ebf79a18e09816acc18c25e286b4578e85db6c86909571762012446"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/slide_large_3.jpg",
+      "sha256": "754996c3b78a6a7ab30240d0bdfe583d588a59b54c282590b5775cf8bb5a448c"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/slide_off.jpg",
+      "sha256": "40806e2458f40e3087067c9d67688d9992ae30eef71e2da3bbdddd3cf7ac369f"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/slide_on.jpg",
+      "sha256": "aa0d257d696ced965a415143fdc92dbbafaef135198d97e0e6a6fe1580ccd030"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/spacer.gif",
+      "sha256": "5cdcc8ca597b17212c1515d1383ae6a1c8f9bf9a9736c6a9b8caf89ce4fade50"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/triangle-closed-small.png",
+      "sha256": "7f36d6d557e2495f4584a023cefb2068f67bd8da26eeca7def4010d692babc49"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/triangle-closed.png",
+      "sha256": "912dd2962eceeeded89edb8656c1fd62a6c3758b7fccc9f08c1e20eff1f77627"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/triangle-opened-small.png",
+      "sha256": "b794e80966ce3f60119a97ac82fe67f747d379277fecf007b84eccb3a45b5648"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/triangle-opened.png",
+      "sha256": "b68a7252bfd6e532362ab96c60657efb4d76fc6a82d341c33c0a05e317473443"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/uiguidelines1.png",
+      "sha256": "af44f0df8197c7d29d440944ac312dd545f65f31c9c811679473cbc175308123"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/images/video-droid.png",
+      "sha256": "fbadf4386164dece795d9c8ebe093d6409b0b186832a94e0d171ce1fe6d68510"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/jdiff_logo.gif",
+      "sha256": "98ea46b2a59e89f163e3c02b87a5f4a465a8682996c9c7d863a77235b6cd6734"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/jquery-1.6.2.min.js",
+      "sha256": "daa9a7565d6e53d5c8bb9c5117760da97bf488259401444aac11f71abbfa63a6"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/jquery-history.js",
+      "sha256": "150cc3da2d149d6a9eeead9b13cfa3c1b308d4c952e933b36b6dc473280e91ec"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/jquery-resizable.min.js",
+      "sha256": "916f04e1099636f38d0293333bc9013f8cec34396bfb854a87aafab53fcaad7d"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/microtemplate.js",
+      "sha256": "57ce30ee10526df95827754aafd5fced7377ab7a145c49fed6d11b54921f579e"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/prettify.js",
+      "sha256": "ee4168e7c3e413b35d385247fb5bcb42739ecdafb1fa0bb6933e1783984acffc"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/search_autocomplete.js",
+      "sha256": "848a92017f2a99575770fcce85932d3344b1dd2a24d5c67f3f2373990e706516"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/style.css",
+      "sha256": "36153e02bbb968cfdc6ab58a3d69c8d317f1007f85caba962fc0f2aa8a7a7404"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/triangle-none.gif",
+      "sha256": "9b3ecb9bb4846e0af4ec86ec2bcea6a8f47e541244dfccb028cde675f0fc6332"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/assets/yui-3.3.0-reset-min.css",
+      "sha256": "92347a4be81719d18b6614e721a9daf5e5db526ae93b1cb0ca78c1661d567e12"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/components/masthead.cs",
+      "sha256": "b4747d0a54207059af737322972393761c4fcb505c57369c804ac561519f5667"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/customizations.cs",
+      "sha256": "fbb02b6214d2ae07d69d931f732d0f3ce0a11c565ea2dcce05d05e380a0c6d1c"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/data.hdf",
+      "sha256": "7984e8bf6d37a3e2deb1164d9abf40d54d340ef9cf605d4ec7ab65f1b53d1a54"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/docpage.cs",
+      "sha256": "d4223b3c37404bcc62f049584a07bb2139aa5a4dab60db9f386c001696de6e8f"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/footer.cs",
+      "sha256": "fbc861e613639502fb5b26187f5472310530957c6672a961670efd337af12997"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/head_tag.cs",
+      "sha256": "20a9b903223057d912c5aa736b762a6cfd8d01483d40d1841b3d83ca4138dd4e"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/header_tabs.cs",
+      "sha256": "85e16e8d979226e66b6ac977306af15b6b03a67a278404421062bacf8e7cf963"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/jd_lists_unified.cs",
+      "sha256": "532981aa5fa1dede8605edc4680020685611852f1eec4318f088220dae6343e2"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/sampleindex.cs",
+      "sha256": "b48c6b4120ed57e8bc50cf2c2df3ab32b69428fb2f62c874d8078d49b655ee29"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/sdkpage.cs",
+      "sha256": "54be41a1294ab953d7adfd7e960f85c3c2a5f2d0bfb6e62c195936cd165d5142"
+    },
+    {
+      "path": "tools/droiddoc/templates-pdk/trailer.cs",
+      "sha256": "0e305236ac15784a43788f3eaf24451d78cf98092e6acf98867b94fd4d565879"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/GPL-LICENSE.txt",
+      "sha256": "ca9158686423ec56319653f44e1c821db41f008968e4c4c4a7542820725108ae"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/LICENSE.txt",
+      "sha256": "2f7e39811bb2fe6d47e23f97dd69e48b4bfd79da2026e78d1d9048d197d34c83"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/android-developer-docs.css",
+      "sha256": "0eeb7cf9bacf3b2b8d82621d5356326c3462b180bc55dd04b480b6dc7dd09194"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/css/default.css",
+      "sha256": "92547af03035f967f175eec3a1dc4ff985b4971458519687b166bd6d0df2885b"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/css/fullscreen.css",
+      "sha256": "535620529e102bd831c32e1952923bd22e366e04a0fef3b1827d224117199b9e"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/design/default.js",
+      "sha256": "8b1060f122b14756cde0ad26b4d1a0e07a10f4dbbd6524260600da8a18a2be83"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/android-developers-logo.png",
+      "sha256": "5be1cfbb95359c8052ec85ddd41a33861cb8da6346c86b1eefed0270572ba9ac"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/android_wrench.png",
+      "sha256": "4cef37d52f4d4efbd362b71379953aaae739bdfe96726dbff43c8aa9c6139d20"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/arrow-left-develop.png",
+      "sha256": "15bc3120e9b6324a96629984149986c6a6cb58e143919825808cc8be9f6eadc5"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/arrow-left.png",
+      "sha256": "666c5452c4a64376f1bfcc5e3b630224361b1659940f38c2c48995efede0c4f9"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/arrow-right-develop.png",
+      "sha256": "a81e94df07c930fbc2cb12d5841119035f0b1cc74e60f45950b54ea81abed4e0"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/arrow-right.png",
+      "sha256": "02a4e002eade6db1e377dc984a43d64c7a76c639e39c44cdbbc679413d8f2146"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/arrow_bluelink_down.png",
+      "sha256": "e2721fefee657f6ddfdaa16c5294f3f66ba4f5ca864c37820742bbf225fa5f43"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/arrow_bluelink_up.png",
+      "sha256": "7ea04546c34216c572968eaf92c14abdf2c4af16ae6852155c0650111b674cf9"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/arrow_left_off.jpg",
+      "sha256": "22e38092c02ae8c551c890cf989ce9fc9c42dac4ebb4f82a9df903409eaf633c"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/arrow_left_on.jpg",
+      "sha256": "9b723eee37e265e6afa8bfda90044fedf7976dd85cc81b3d3f3d006a31414c6b"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/arrow_right_off.jpg",
+      "sha256": "4782c9f58add1e5e7b2572d0651e1cc97f150da775a31127a5ee709050adb644"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/arrow_right_on.jpg",
+      "sha256": "c1b1080d3a112a95a58bb984dec32acf6044f7b18174819f958c9a25e260cdb9"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/arrows-up-down.png",
+      "sha256": "e6e0316f77abf9fc6b90ed8e60cd96ce7a2c31e303e5d9be110cf3d813d89ff6"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/bg_community_leftDiv.jpg",
+      "sha256": "ae1e7ad003cedf425cb34734688f55ad6beacfc5bbd0c1e2f57e832d08b5d98f"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/bg_fade.jpg",
+      "sha256": "365c2125e15db37f8112284b85479c53af7cc79ab204e62eea29e72fa8c2d8dc"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/bg_gradient.jpg",
+      "sha256": "2eb5c86b122ab59626feffbd73637f620438461067fc5f12d37ca5d50a4821f1"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/bg_images_sprite.png",
+      "sha256": "bce9d014854b9da3ace85ec36ed1cddc7ef72ef7cbf75a899a5407419021f258"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/bg_logo.png",
+      "sha256": "78f53c6989c03ec4f8ac7cf5bad299f8a108acbe1181d8d47913225c96661db6"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/blog-default.png",
+      "sha256": "4a41b8c42c08cfd1f5da43449f157db5228136b291db5fa0ca6bfeb9a128e6fc"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/body-gradient-tab.png",
+      "sha256": "88e37c20af2bfa6434e5d46a05904c536f767ae11193701c28190f0d8207b775"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/body-gradient.png",
+      "sha256": "dd45840ea5743ab666110429302d1c98505a90a9c7781a05617e3b21d19d5dba"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/close.png",
+      "sha256": "7eeed9a6d0a45e0f44b5d03fc9bcff873dfcc936168d9600f8da0d12313671d9"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/dac_logo.png",
+      "sha256": "181b53e7cfedaaeba08a32080b5b59b580a09b694653842b6de80ae9c1c2ca37"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/developers-logo.png",
+      "sha256": "a1f006b42ef029808d3c34b0d4aa14723e9427500bf34d057719eb99ebffa370"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/fullscreen.png",
+      "sha256": "df8156380026008d591fb1166ac7e487700957d5b6e5caa07c090a8c534350f4"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/grad-rule-qv.png",
+      "sha256": "d118c53e3d8d267ac60efbcfd2f3a2299d7f2b309a40cc5035e38d29d5ff4231"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/Android_Dev_Lab_l.png",
+      "sha256": "ad09b359e7b7eb6c67311f6dcd3f4e8b886a2715a2dfd1c60995d47c0cd343ab"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/GDC2011.png",
+      "sha256": "d1c92f2b02d3466de11272cab05a1c0b847f1dfbcda6e4e454001c458ecb8d9b"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/GTV_icon_large.png",
+      "sha256": "98021dc05033f6ece663526a86ad71f48d652aec710bb23c88de7b435991cea7"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/GTV_icon_small.png",
+      "sha256": "edfab6b1a36c6652f3d57cc398f06703bfb120c6fd3d7e5c18f743259769e673"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/IO-logo-2011.png",
+      "sha256": "7a0fab4c3e76735eef9400fd6e4c1f88af2bb4394b5e0d487e413827573aae46"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/IO-logo.png",
+      "sha256": "1a5006134317a6964cd12594382cdcdbf533848fa0e5c6be9445d725798bdec3"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/adc2_l.png",
+      "sha256": "6c809ab25bdcee063b924716c77c5349d152055f9eaeada6de0e2b16ecb9b6f9"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/adc2_s.png",
+      "sha256": "1b024d270f3af80b0fd49aa0c68d1282e4b121841eb75c4792ceda1355072084"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/android_adc.png",
+      "sha256": "c031f82c17e8fbbdd7fdb1cd1a624f30d763619fb22094b7e5386bc493ac0512"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/bg_home_announcement.png",
+      "sha256": "5a8bbdb8791aa94ee30fe9dc9aaeff3b8032668c379eaaeec449c72138cc779f"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/bg_home_bottom.jpg",
+      "sha256": "a4b8af667601d7ba5814afc489757f3ef2daca10bc2ba81b57e3ff6c70c9b258"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/bg_home_carousel.png",
+      "sha256": "49c6ecc9649e9a00cf6cfeb07f788d0e6c8f8cee37b785776b7ed94346c6299a"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/bg_home_carousel_board.png",
+      "sha256": "1de6d0ca309a24f24f62a6e3fe0f2c9e0a177d0ddc103dfbd6a1c9d77bbbab9b"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/bg_home_carousel_wheel.png",
+      "sha256": "e4464d4dbaec85dcbbf9885721624ada76ac8fc295ee298e8b6b1d83ae5492b5"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/carousel_buttons_sprite.png",
+      "sha256": "0adbd30c3ac8feb49c010c6406dfe00ef1a48fae3308d69dd7486a21e6cb6cd7"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/devphone-large.png",
+      "sha256": "536cfe62d3fa7402515c908e4241487062b6efe18707eb76b0d9900661df68b7"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/devphone-small.png",
+      "sha256": "5f7c1e49023e61055fd3cbcb7921f49acd7ac1f83d8a2f962cba74adc8aa557f"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/donut-android.png",
+      "sha256": "948aafb8a534c229c14ed1cd405c20eaa99139f930a3a3c71708c2a69d807732"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/eclair-android.png",
+      "sha256": "7043072f90111f7506374d74f68afc85431a48797fe864ef5f4b7d06413c7f6f"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/froyo-android.png",
+      "sha256": "6375f7d38c5d53dd17a887afa689385fb86942e1d7c1ada4b994887b46c6fa93"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/gdc-logo.png",
+      "sha256": "1545eef315af5b9b5b2802b5bc430ed0dc7c164dd0d89815d588f51335e39c32"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/gingerdroid.png",
+      "sha256": "ad94fbffb235aaff8cde02ed5f943241997a4ba53a417420aea08bc9be747f0a"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/google-plus-small.png",
+      "sha256": "72abeef054abba4a92010cce6bf50070089746bee5511a077d3d969197d5126d"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/google-plus.png",
+      "sha256": "5cdc530aba9b756216dd618b80c12bec94c36797fb459c9e8417cd2a9e653c30"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/honeycomb-android.png",
+      "sha256": "413f8234b10b4772e586abb502c68d7725a449364008a4a645fe3f69cf293adb"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/icon-about.png",
+      "sha256": "526d3a6f3bd79c2dad0ebbe38d378dd6a8a8c91c8d84681023d588da0d2eac68"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/icon-design.png",
+      "sha256": "4c220425f14974c4010f9925c2e5daba859dab264c0dc97f6a6f33b8433c71db"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/icon-develop.png",
+      "sha256": "017b3101eef13d3d56af338285e7e5623d74a82faa9141960b7477fe87d80876"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/icon-distribute.png",
+      "sha256": "143512dbf11410155ee7d97d2d98d637f75358bbe9d79af4708f76e991967867"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/ics-android.png",
+      "sha256": "3fb5a0b887da16e4229b10c8ee3513a8a591c59dcff8342edc4d80db94c7aeb5"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/io-large.png",
+      "sha256": "77f8c2f7446eb75e9c5a0fe333994d1fad8c71fa8a0d870c9712d169b795ea2f"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/io-small.png",
+      "sha256": "e4d0e6b9b6403511d00b2e86483b94f6d70e12c917d4b9eeeb1f418356ba33dd"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/maps-large.png",
+      "sha256": "b4154adbc446c0efb87ec6202f9e98bf18e33239ee8f78c60d456a6f7c957ec3"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/maps-small.png",
+      "sha256": "a8dbef06ba914c4b15dc17e78133a98893c7e1beb4ee8432151aa5bec869710b"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/market-large.png",
+      "sha256": "5e8cb2cee66fb01f59065712eec833f5bb679c65e8c0589678aebdfef51c1943"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/market-small.png",
+      "sha256": "1b0e7115c67e570e9425640a115babeedd4369b9b7f73bd9d97f5ebfb4f4efed"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/sdk-large.png",
+      "sha256": "24b22545f3760dab51eef8a6414288813dce3c18bdcaf4d6edd77629373649d6"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/home/sdk-small.png",
+      "sha256": "fda597350c36c9ec85489a7e788f993f3d1b0d22c9f75e9c0c2fe4397c5f9378"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/hr_gray_main.jpg",
+      "sha256": "6f4a9db3b7e66924a390d8fb9e4fc12352aba11afb2b8e15e42e5644083b8af4"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/hr_gray_side.jpg",
+      "sha256": "df040787c00a30231e526ee5d7ece17693a9bbc65415f44012214d0f56cb8326"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/icon_contribute.jpg",
+      "sha256": "15cc58589e57f3e9dc7cfeeb4ff043cde00397c044e470d1615856a3d0959796"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/icon_design.png",
+      "sha256": "105ecbc854cf384c522e7edf25313b4465798a866c3cfe143ad84c3002a1354d"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/icon_download.jpg",
+      "sha256": "dad9eb7407c4f72338d7f6e193eaa80eacb02422dffdc39899480d9406870a22"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/icon_download2.jpg",
+      "sha256": "2f67b859b95b40cfe90bbb94cf0188a9a98e603275d3cc01f5f888c0d1123e66"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/icon_guidelines_logo.png",
+      "sha256": "af833d763ea6d8d53f651e455c1f517c1b1ea9981283ccdc6ff700a21bbb3c30"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/icon_market.jpg",
+      "sha256": "67399efa6c1f13e3e979ba328fbd12c8336bb6f62c39957ee0bdb981c1a3d29b"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/icon_more.png",
+      "sha256": "eea232493ac0b9a0321d7752223918f52d6b75a1ede9b633c80def2cb1a23b38"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/icon_play.png",
+      "sha256": "f05d27892f75027f7cdec888cbe996ff6761020444d2a74349228fda47dcb52b"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/icon_robot.jpg",
+      "sha256": "ac0e3d9e11743daf7e9bdf830800f8fae3553d17d611b0fe1e77458f306c65d8"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/icon_search.png",
+      "sha256": "9eb859a62db08a434c872a93d8d53569852c33991d12977d446b6931ec0a8868"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/icon_world.jpg",
+      "sha256": "504e28fa7bd90fd47f9f8126acd8bae6f757c31c7f730ea4a933ee33b133a063"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/left_off.jpg",
+      "sha256": "22e38092c02ae8c551c890cf989ce9fc9c42dac4ebb4f82a9df903409eaf633c"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/left_on.jpg",
+      "sha256": "9b723eee37e265e6afa8bfda90044fedf7976dd85cc81b3d3f3d006a31414c6b"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/locale.png",
+      "sha256": "090bd387e0efd6b730f5d9d3674938efc1cfb13da416307842c18df91ef347d9"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/logo_breadcrumbz.jpg",
+      "sha256": "6ca55210195e34055586d1b220cfa5b91e36ce8e2eae480b80f3cebbb06009a2"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/more_bottom.png",
+      "sha256": "321e30ec2f9b8684e3baa51031bffd2e4b9dd480c5f1da19d65788509865c797"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/more_check.png",
+      "sha256": "b3fa763499d81293eb21e1017d115649c309244df651cbce601a58e4f0a24024"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/more_mid.png",
+      "sha256": "3e836e3667b731c91a0f8866d2b4dc0c53ce1d3a19beed642a9bb97af388bac2"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/more_top.png",
+      "sha256": "1a0221f82abf8cb1b255da06aeb018625eee7d5fc4ca6d73db7298e66fc6c2e1"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/open_source.png",
+      "sha256": "e9375b89543b4756806879d2c90d5e8a862cc268561fe31f4388d7b44ad6e0a6"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/preliminary.png",
+      "sha256": "e9bd935c73ea16f2146391dbf034db96ef7bc4bd9343bc845725add509dd4a83"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/quicknav_arrow.png",
+      "sha256": "b4f1c6165de3562629a9e2549f4fa94d89e18cdf6971f2738114709f2970033a"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/quicknav_btn_bg.png",
+      "sha256": "f10350e9c0e6be9b2b574e7370aadb681d067ae90a50bfb44a8b6126d19c4c88"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/resizable-e.gif",
+      "sha256": "e685c586394abb5c33750cf98910c3af33cf5bfc09d11240b85fbe19140a823c"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/resizable-e2.gif",
+      "sha256": "4edc6ea3b122f10b5d26a40916ebaf19915868a46371d426286cdbf743256ba8"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/resizable-eg.gif",
+      "sha256": "583ce3a27cb97ac96801f7f57d73ae4ba48d44a4396908a35a7b8977381729a8"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/resizable-s.gif",
+      "sha256": "90842f1a2d41231ae89bf244daf3caf11c008b0e25f792969cb9c9884820b17d"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/resizable-s2.gif",
+      "sha256": "cadea17257c4d60af80f4accf4d4da95d9f8e1166f9bf122a863d5d767f10c27"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/resizable-s2.png",
+      "sha256": "48e43751990b59052b0530acf982a194a09983c194d6baf8b94f227c61894c73"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/resizable-sg.gif",
+      "sha256": "4384305ebe352985229e6b9860f7f3f7b7e2232c264567126fd25db2dcd66508"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/resource-article.png",
+      "sha256": "886cef4df3254cf154a0ace5648c7c5c1e5d03b8b77c776f91f013c2f78d4258"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/resource-big-article.png",
+      "sha256": "02c7142853ee218f0676f752b586f6ae46ded13f6bb83cdd8fd6c28710bf4d85"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/resource-big-sample.png",
+      "sha256": "88e0b6714fa7af52999c70a86eca2a1247cf87b2a1259b2e6a2fcadd48b60724"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/resource-big-tutorial.png",
+      "sha256": "d0f6886eb1f2f60eb865a25efb142f9afc6628ecab2a090f345957602dea67dc"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/resource-big-video.png",
+      "sha256": "1752f2b803cf655b4db76e0e1012a4f276b9b0ccaf15896b7e8acf921c9330b5"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/resource-sample.png",
+      "sha256": "bb11f946b41f5bdadd98eb66cd0f42e50c97d8faa4f13fe454147286b305ae4a"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/resource-tutorial.png",
+      "sha256": "6633fa4fb95ab073dd1694c455b5bfd4b773aa30e499f6d7c4fab670e9650f44"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/resource-video.png",
+      "sha256": "990f27fc354717834dbf75c3e9b75acc22d957fa1c2b0598ec89a29f03d5531c"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/right_off.jpg",
+      "sha256": "4782c9f58add1e5e7b2572d0651e1cc97f150da775a31127a5ee709050adb644"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/right_on.jpg",
+      "sha256": "c1b1080d3a112a95a58bb984dec32acf6044f7b18174819f958c9a25e260cdb9"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/sac_logo.png",
+      "sha256": "992bfc0e6ccd93978ec79f7581bd5e63e3f1682dabd3c2ceebc70ddb9367ca5d"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/sac_logo@2x.png",
+      "sha256": "292f7f774d8583bed3bc671b04402ba45093fddf7d1c72fd87d7bdcfd7fc55f8"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/sidenav-rule.png",
+      "sha256": "c428ce5745bb067977a691c2cb1677ab509d1afa053db8c97f55ba5ada23e39c"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/slide_1.jpg",
+      "sha256": "e59de6c50abbc71cf84fe7cbc6e0623cc3d261e6078233912761a855b3067420"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/slide_2.jpg",
+      "sha256": "f988ec46920e749befcd11384de7ef3c6bf2d4377e57e5e2e7e8e2908b138057"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/slide_3.jpg",
+      "sha256": "b8a650770bdffe7373fcce1480cb5a145784caa1002993bb6e808767e1d0cec4"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/slide_large_1.jpg",
+      "sha256": "badd644a1442430b92ffb887101a351bcb4e15ef6eb242ca2a9f4695bde797b7"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/slide_large_2.jpg",
+      "sha256": "1443941c9ebf79a18e09816acc18c25e286b4578e85db6c86909571762012446"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/slide_large_3.jpg",
+      "sha256": "754996c3b78a6a7ab30240d0bdfe583d588a59b54c282590b5775cf8bb5a448c"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/slide_off.jpg",
+      "sha256": "40806e2458f40e3087067c9d67688d9992ae30eef71e2da3bbdddd3cf7ac369f"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/slide_on.jpg",
+      "sha256": "aa0d257d696ced965a415143fdc92dbbafaef135198d97e0e6a6fe1580ccd030"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/spacer.gif",
+      "sha256": "5cdcc8ca597b17212c1515d1383ae6a1c8f9bf9a9736c6a9b8caf89ce4fade50"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/styles/callout.png",
+      "sha256": "45978ea1c6616a6cfa26eaf547760baca6c1c8eac2ae50fc1463da06a76ca92b"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/styles/device_galaxynexus_blank_land_span13.png",
+      "sha256": "f08969c475cd3a4af196d69c94eddc4ae2e19be717d786dc214807c951c455ea"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/styles/device_galaxynexus_blank_land_span8.png",
+      "sha256": "e6a3fb9f2e5798f70890c934f51d9b6dc01bf206bd53ad3099c7eb63453883e6"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/styles/device_galaxynexus_blank_port_span5.png",
+      "sha256": "314ed464644f75138a81c20003bdd45cbd52cdb930f12eda80d563fb93d80dd7"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/styles/device_galaxynexus_blank_port_span9.png",
+      "sha256": "8ac0fa8fd475e7a8c62c6e3d787b06ecc585e2b3f8752d8cdf997d28429ca458"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/styles/disclosure_down.png",
+      "sha256": "c9ba55d7b531b9cac3f38b60f5ca72e81167efe2d8a3b2913e7ec6e32a36470c"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/styles/disclosure_left.png",
+      "sha256": "9486585e909b56134a683f2cfa52f9e543bcf65b7262f95ce08194c5a24556cf"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/styles/disclosure_right.png",
+      "sha256": "7309a9d34e805922ac7ca35b530132d43660bbf369a10574d9662409295e64af"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/styles/disclosure_up.png",
+      "sha256": "7d2790c9fd92ad107024d2c731949467efeebf799316d14348e78c5b6006790d"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/styles/gototop.png",
+      "sha256": "4f1a6d71007b982034ffc92f41047516b969cd70f8845cafd38046d335925929"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/styles/ico_action.png",
+      "sha256": "e3a75efd4e3e11de818de1e1b49e1605021552af0e5219596cec713237ed99f2"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/styles/ico_good.png",
+      "sha256": "733da51834f5bb48b61501a80ce09772a567844c7af528ade6bb9abbc289a497"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/styles/ico_movie_inline.png",
+      "sha256": "da0accbbc9f20f44b268412e22a7b3ab19641edb6a0ebd4be0cf9eb6681a80d0"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/styles/ico_phone_tablet.png",
+      "sha256": "3252fe1661d8fe07d43cf7cee388f0fbf337f7675e9f270fe3aa7fda7fa79e52"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/styles/ico_use.png",
+      "sha256": "c07d4aa30cc61715ee7e9aa8347c34ad76c710c4a5eb49080130c186d554f3d6"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/styles/ico_web.png",
+      "sha256": "93cdb65869cbcd06197e42164bbdae24a6782a622fde4712039fcde6804d46dd"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/styles/ico_wrong.png",
+      "sha256": "1a587a58280ccf7ad31b4a16f1b248ae38ab996614fc0d0a70a61a50c269babf"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/styles/open_new_page.png",
+      "sha256": "93bece20e4d6577a606e65ff2ab7dd5001e557c88d98f4add37e2b9a2cdb6b5d"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/triangle-closed-small.png",
+      "sha256": "7f36d6d557e2495f4584a023cefb2068f67bd8da26eeca7def4010d692babc49"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/triangle-closed.png",
+      "sha256": "df6b6b177c179d515a215be40920ccedb78c926c543b0b9321373c30a481801b"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/triangle-opened-small.png",
+      "sha256": "b794e80966ce3f60119a97ac82fe67f747d379277fecf007b84eccb3a45b5648"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/triangle-opened.png",
+      "sha256": "577daa25d9724a168cf03f5fabdf9131ba7b4051ae64988267a3262377adebbd"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/uiguidelines1.png",
+      "sha256": "af44f0df8197c7d29d440944ac312dd545f65f31c9c811679473cbc175308123"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/images/video-droid.png",
+      "sha256": "fbadf4386164dece795d9c8ebe093d6409b0b186832a94e0d171ce1fe6d68510"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/js/android_3p-bundle.js",
+      "sha256": "41578b30af758fa26bd43c86e91fdf347797d12585266958e616df5f1fbefad6"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/js/docs.js",
+      "sha256": "5c7353e7a857fcc188ad13b84f736b4d1df0d08c726d6c47f767bc19ca752220"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/assets/js/prettify.js",
+      "sha256": "e2e576e3bc607cd179ff511947010f645d3441a35313aec0dbd06c4437f83b77"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/class.cs",
+      "sha256": "7edbd87f53d16ad8e732f9d5c57b2d5d6745fbc85fd6b540ada6dde96ef89103"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/classes.cs",
+      "sha256": "d20e74acf9be30eb5a55b57eb18a8376c7a5d9510932885d2aeaf5d1aef23b8e"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/components/masthead.cs",
+      "sha256": "583279dad5ac54e33c4dba6184ff395679b5b6bd84c0431a621c70f502c5f466"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/customizations.cs",
+      "sha256": "a0b1775317d6d8682b4dbd2ca8328479dbbde6ab953454e2b7715a699e0138fa"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/data.hdf",
+      "sha256": "7984e8bf6d37a3e2deb1164d9abf40d54d340ef9cf605d4ec7ab65f1b53d1a54"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/designpage.cs",
+      "sha256": "98cb8d683c2d3bc7f0eef9b33702fff67300728af8693378360ac83de4db1e79"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/docpage.cs",
+      "sha256": "0e20b42a4b9b1b18de1f29a34147d4248eb4cb95d37fe4d151fe296b4ffd21f1"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/footer.cs",
+      "sha256": "d9f9ec64245a2eed2e1fcc1c2c6ea57bcebce36cea67f97c008bacec1186ed29"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/gcm_navtree_data.cs",
+      "sha256": "c2bc44222531dea16e11ef3ef8a7064f28dbf9fd03b29aebbe78cd0ea2ac11e9"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/gms_navtree_data.cs",
+      "sha256": "48696ae1949cdf08eddb518eb93292addfa154bb3c130bc88beddbe003fda125"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/head_tag.cs",
+      "sha256": "69b5ebedee175d8a3daf66bb66992486d893a9ca7b0f0401092fffbd71b2271f"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/header.cs",
+      "sha256": "491027783d4af2db83d0d6b3e90cccecc3cad5aa2455808fb23eee5739dd3f2a"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/header_tabs.cs",
+      "sha256": "bce26dcf6b3bbada8a07a1e5c1095b7d672050ed21a7558c9c9a200b67a20ba1"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/jd_lists_unified.cs",
+      "sha256": "532981aa5fa1dede8605edc4680020685611852f1eec4318f088220dae6343e2"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/navtree_data.cs",
+      "sha256": "a415a5040d90ad43ad98090d0f14fbec8ea066ecff146f4e1408f3c41ba5fc89"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/nosidenavpage.cs",
+      "sha256": "8eef99842195274ce0a6c4dbc0ac4b027ef1b44bf4ea4bb9e68ad2d817b4924a"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/package.cs",
+      "sha256": "5dfbc11c979eb540199aaf0a9a73945751cd2aae419b6ffb6c087c155d2cac5f"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/packages.cs",
+      "sha256": "4e58f7841b6be6fd985345f62e5de758eaf6f15cab51b9e14c76cc5b426e6ae9"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/sampleindex.cs",
+      "sha256": "a9e4ec06740b7fdc731349f1192db5adbac47f40bd8199051ac32d93deebca04"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/sdkpage.cs",
+      "sha256": "591f7eb1475fcd7a120ae37d650f163455168be2e913bb546020258cf57dd6c6"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/timestamp.cs",
+      "sha256": "51f670f80e7bdadccf423703effab9bb51076cc1e6456535416828489747f0d6"
+    },
+    {
+      "path": "tools/droiddoc/templates-sac/trailer.cs",
+      "sha256": "69851bc94f7de9ff3f8080ba0f8df159104db827923fb574743afdba48e7ab2a"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/GPL-LICENSE.txt",
+      "sha256": "ca9158686423ec56319653f44e1c821db41f008968e4c4c4a7542820725108ae"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/LICENSE.txt",
+      "sha256": "2f7e39811bb2fe6d47e23f97dd69e48b4bfd79da2026e78d1d9048d197d34c83"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/android-developer-docs.css",
+      "sha256": "0eeb7cf9bacf3b2b8d82621d5356326c3462b180bc55dd04b480b6dc7dd09194"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/css/default.css",
+      "sha256": "6f033b9f6d0f9c9dd02fb0b8981ed2aa8f82cb9a886cb3e96c41f79a5f10aaa5"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/css/fullscreen.css",
+      "sha256": "397a20aa3825e2516b54e552bc5e93399fd5511e3845148799ff49a67c9c902b"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/design/default.js",
+      "sha256": "8b1060f122b14756cde0ad26b4d1a0e07a10f4dbbd6524260600da8a18a2be83"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/android-developers-logo.png",
+      "sha256": "5be1cfbb95359c8052ec85ddd41a33861cb8da6346c86b1eefed0270572ba9ac"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/android.png",
+      "sha256": "292f7f774d8583bed3bc671b04402ba45093fddf7d1c72fd87d7bdcfd7fc55f8"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/android_logo.png",
+      "sha256": "717c98cef7c77cb38a477aa8b95b32163f9caaaabb33f4e6225cc78c51cef654"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/android_logo@2x.png",
+      "sha256": "cb37c1fd1ed9abe2fd976d5a976ddb4112b1d6dd8e1766d938d2c02c85a7952e"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/android_logo_ndk.png",
+      "sha256": "7bc85677fc46d8f86c6336b0ef63c0a94bdee7283c123557079747bc79d25994"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/android_logo_ndk@2x.png",
+      "sha256": "95115078a028579c4e3df1067cb501d59c7b6e593b35fce434c29939b954fa03"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/android_wrench.png",
+      "sha256": "4cef37d52f4d4efbd362b71379953aaae739bdfe96726dbff43c8aa9c6139d20"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/arrow-left-develop.png",
+      "sha256": "15bc3120e9b6324a96629984149986c6a6cb58e143919825808cc8be9f6eadc5"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/arrow-left.png",
+      "sha256": "666c5452c4a64376f1bfcc5e3b630224361b1659940f38c2c48995efede0c4f9"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/arrow-right-develop.png",
+      "sha256": "a81e94df07c930fbc2cb12d5841119035f0b1cc74e60f45950b54ea81abed4e0"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/arrow-right.png",
+      "sha256": "02a4e002eade6db1e377dc984a43d64c7a76c639e39c44cdbbc679413d8f2146"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/arrow_bluelink_down.png",
+      "sha256": "e2721fefee657f6ddfdaa16c5294f3f66ba4f5ca864c37820742bbf225fa5f43"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/arrow_bluelink_up.png",
+      "sha256": "7ea04546c34216c572968eaf92c14abdf2c4af16ae6852155c0650111b674cf9"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/arrow_left_off.jpg",
+      "sha256": "22e38092c02ae8c551c890cf989ce9fc9c42dac4ebb4f82a9df903409eaf633c"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/arrow_left_on.jpg",
+      "sha256": "9b723eee37e265e6afa8bfda90044fedf7976dd85cc81b3d3f3d006a31414c6b"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/arrow_right_off.jpg",
+      "sha256": "4782c9f58add1e5e7b2572d0651e1cc97f150da775a31127a5ee709050adb644"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/arrow_right_on.jpg",
+      "sha256": "c1b1080d3a112a95a58bb984dec32acf6044f7b18174819f958c9a25e260cdb9"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/arrows-up-down.png",
+      "sha256": "e6e0316f77abf9fc6b90ed8e60cd96ce7a2c31e303e5d9be110cf3d813d89ff6"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/bg_community_leftDiv.jpg",
+      "sha256": "ae1e7ad003cedf425cb34734688f55ad6beacfc5bbd0c1e2f57e832d08b5d98f"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/bg_fade.jpg",
+      "sha256": "365c2125e15db37f8112284b85479c53af7cc79ab204e62eea29e72fa8c2d8dc"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/bg_gradient.jpg",
+      "sha256": "2eb5c86b122ab59626feffbd73637f620438461067fc5f12d37ca5d50a4821f1"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/bg_images_sprite.png",
+      "sha256": "bce9d014854b9da3ace85ec36ed1cddc7ef72ef7cbf75a899a5407419021f258"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/bg_logo.png",
+      "sha256": "78f53c6989c03ec4f8ac7cf5bad299f8a108acbe1181d8d47913225c96661db6"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/blog-default.png",
+      "sha256": "4a41b8c42c08cfd1f5da43449f157db5228136b291db5fa0ca6bfeb9a128e6fc"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/body-gradient-tab.png",
+      "sha256": "88e37c20af2bfa6434e5d46a05904c536f767ae11193701c28190f0d8207b775"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/body-gradient.png",
+      "sha256": "dd45840ea5743ab666110429302d1c98505a90a9c7781a05617e3b21d19d5dba"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/breadcrumb.png",
+      "sha256": "f3a2d578cae2d5bdd772e343ed7c9e6bc2b13fc4a9e1d7bbf29277472b4d49b2"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/close-grey.png",
+      "sha256": "26306ee6264ed979a05fdd855ed6cd80775d2d912c79e8c361c43a752c3b22f2"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/close-grey_2x.png",
+      "sha256": "330c2b7853ce1e70d014c82e9d68673b6da8f180ed04d5a88c9ae614d4e0c76d"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/close-white.png",
+      "sha256": "63572d16baf8e90bb944c53671424fdf0c0224d1e0e040b699f2206528518cf1"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/close-white_2x.png",
+      "sha256": "d45aa6dd311f909d265895af55ef6125ffa37ef4688210bf7c5e5fc34f4aaa31"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/close.png",
+      "sha256": "7eeed9a6d0a45e0f44b5d03fc9bcff873dfcc936168d9600f8da0d12313671d9"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/dac_logo.png",
+      "sha256": "181b53e7cfedaaeba08a32080b5b59b580a09b694653842b6de80ae9c1c2ca37"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/dac_logo@2x.png",
+      "sha256": "45a429a49f9f955c3845f6e5d5946dc85fac62d23abbd96122f943e475aa87b2"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/developers-logo.png",
+      "sha256": "a1f006b42ef029808d3c34b0d4aa14723e9427500bf34d057719eb99ebffa370"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/file-generic.png",
+      "sha256": "ed6d8fc3c1abaf4e27c223d6945093dd692aca44742b951a93b241b899f8bf3d"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/file-image.png",
+      "sha256": "138d47cbe24d20191d9e75af3dfd7db11e72fa4657f504d4e31003c16c1578bf"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/file-java.png",
+      "sha256": "23d5f35068f8ae918cf91261c74cb97a642dcf0286643970df45cd9ac2feb7b0"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/file-manifest.png",
+      "sha256": "378a47b88d093ab3429b784ede0584f770003e09b3f8ab3ae92639bcea91c5fb"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/file-xml.png",
+      "sha256": "aa71ff5c0b72bc65512bfb424fb0a04ac554032f7b205ebcdc3fe6a32cfdb1fe"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/folder.png",
+      "sha256": "4b5eb21f495c4f033bfdce10f3fa8575b526c2fd7c8fbd76bda5ebcebc4c0f57"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/fullscreen.png",
+      "sha256": "df8156380026008d591fb1166ac7e487700957d5b6e5caa07c090a8c534350f4"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/grad-rule-qv.png",
+      "sha256": "d118c53e3d8d267ac60efbcfd2f3a2299d7f2b309a40cc5035e38d29d5ff4231"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/Android_Dev_Lab_l.png",
+      "sha256": "ad09b359e7b7eb6c67311f6dcd3f4e8b886a2715a2dfd1c60995d47c0cd343ab"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/GDC2011.png",
+      "sha256": "d1c92f2b02d3466de11272cab05a1c0b847f1dfbcda6e4e454001c458ecb8d9b"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/GTV_icon_large.png",
+      "sha256": "98021dc05033f6ece663526a86ad71f48d652aec710bb23c88de7b435991cea7"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/GTV_icon_small.png",
+      "sha256": "edfab6b1a36c6652f3d57cc398f06703bfb120c6fd3d7e5c18f743259769e673"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/IO-logo-2011.png",
+      "sha256": "7a0fab4c3e76735eef9400fd6e4c1f88af2bb4394b5e0d487e413827573aae46"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/IO-logo.png",
+      "sha256": "1a5006134317a6964cd12594382cdcdbf533848fa0e5c6be9445d725798bdec3"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/adc2_l.png",
+      "sha256": "6c809ab25bdcee063b924716c77c5349d152055f9eaeada6de0e2b16ecb9b6f9"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/adc2_s.png",
+      "sha256": "1b024d270f3af80b0fd49aa0c68d1282e4b121841eb75c4792ceda1355072084"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/android_adc.png",
+      "sha256": "c031f82c17e8fbbdd7fdb1cd1a624f30d763619fb22094b7e5386bc493ac0512"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/android_m_hero_1200.jpg",
+      "sha256": "40d68bf7d97b77834f22fbd220ffa81e5ffa51746a96a13395a0d052d7d5b725"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/bg_home_announcement.png",
+      "sha256": "5a8bbdb8791aa94ee30fe9dc9aaeff3b8032668c379eaaeec449c72138cc779f"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/bg_home_bottom.jpg",
+      "sha256": "a4b8af667601d7ba5814afc489757f3ef2daca10bc2ba81b57e3ff6c70c9b258"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/bg_home_carousel.png",
+      "sha256": "49c6ecc9649e9a00cf6cfeb07f788d0e6c8f8cee37b785776b7ed94346c6299a"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/bg_home_carousel_board.png",
+      "sha256": "1de6d0ca309a24f24f62a6e3fe0f2c9e0a177d0ddc103dfbd6a1c9d77bbbab9b"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/bg_home_carousel_wheel.png",
+      "sha256": "e4464d4dbaec85dcbbf9885721624ada76ac8fc295ee298e8b6b1d83ae5492b5"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/carousel_buttons_sprite.png",
+      "sha256": "0adbd30c3ac8feb49c010c6406dfe00ef1a48fae3308d69dd7486a21e6cb6cd7"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/devphone-large.png",
+      "sha256": "536cfe62d3fa7402515c908e4241487062b6efe18707eb76b0d9900661df68b7"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/devphone-small.png",
+      "sha256": "5f7c1e49023e61055fd3cbcb7921f49acd7ac1f83d8a2f962cba74adc8aa557f"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/donut-android.png",
+      "sha256": "948aafb8a534c229c14ed1cd405c20eaa99139f930a3a3c71708c2a69d807732"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/eclair-android.png",
+      "sha256": "7043072f90111f7506374d74f68afc85431a48797fe864ef5f4b7d06413c7f6f"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/froyo-android.png",
+      "sha256": "6375f7d38c5d53dd17a887afa689385fb86942e1d7c1ada4b994887b46c6fa93"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/gdc-logo.png",
+      "sha256": "1545eef315af5b9b5b2802b5bc430ed0dc7c164dd0d89815d588f51335e39c32"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/gingerdroid.png",
+      "sha256": "ad94fbffb235aaff8cde02ed5f943241997a4ba53a417420aea08bc9be747f0a"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/google-plus-small.png",
+      "sha256": "72abeef054abba4a92010cce6bf50070089746bee5511a077d3d969197d5126d"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/google-plus.png",
+      "sha256": "5cdc530aba9b756216dd618b80c12bec94c36797fb459c9e8417cd2a9e653c30"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/honeycomb-android.png",
+      "sha256": "413f8234b10b4772e586abb502c68d7725a449364008a4a645fe3f69cf293adb"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/icon-about.png",
+      "sha256": "526d3a6f3bd79c2dad0ebbe38d378dd6a8a8c91c8d84681023d588da0d2eac68"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/icon-design.png",
+      "sha256": "4c220425f14974c4010f9925c2e5daba859dab264c0dc97f6a6f33b8433c71db"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/icon-develop.png",
+      "sha256": "017b3101eef13d3d56af338285e7e5623d74a82faa9141960b7477fe87d80876"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/icon-distribute.png",
+      "sha256": "143512dbf11410155ee7d97d2d98d637f75358bbe9d79af4708f76e991967867"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/ics-android.png",
+      "sha256": "3fb5a0b887da16e4229b10c8ee3513a8a591c59dcff8342edc4d80db94c7aeb5"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/io-large.png",
+      "sha256": "77f8c2f7446eb75e9c5a0fe333994d1fad8c71fa8a0d870c9712d169b795ea2f"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/io-small.png",
+      "sha256": "e4d0e6b9b6403511d00b2e86483b94f6d70e12c917d4b9eeeb1f418356ba33dd"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/maps-large.png",
+      "sha256": "b4154adbc446c0efb87ec6202f9e98bf18e33239ee8f78c60d456a6f7c957ec3"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/maps-small.png",
+      "sha256": "a8dbef06ba914c4b15dc17e78133a98893c7e1beb4ee8432151aa5bec869710b"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/market-large.png",
+      "sha256": "5e8cb2cee66fb01f59065712eec833f5bb679c65e8c0589678aebdfef51c1943"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/market-small.png",
+      "sha256": "1b0e7115c67e570e9425640a115babeedd4369b9b7f73bd9d97f5ebfb4f4efed"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/sdk-large.png",
+      "sha256": "24b22545f3760dab51eef8a6414288813dce3c18bdcaf4d6edd77629373649d6"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/home/sdk-small.png",
+      "sha256": "fda597350c36c9ec85489a7e788f993f3d1b0d22c9f75e9c0c2fe4397c5f9378"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/hr_gray_main.jpg",
+      "sha256": "6f4a9db3b7e66924a390d8fb9e4fc12352aba11afb2b8e15e42e5644083b8af4"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/hr_gray_side.jpg",
+      "sha256": "df040787c00a30231e526ee5d7ece17693a9bbc65415f44012214d0f56cb8326"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/icon_contribute.jpg",
+      "sha256": "15cc58589e57f3e9dc7cfeeb4ff043cde00397c044e470d1615856a3d0959796"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/icon_design.png",
+      "sha256": "105ecbc854cf384c522e7edf25313b4465798a866c3cfe143ad84c3002a1354d"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/icon_download.jpg",
+      "sha256": "dad9eb7407c4f72338d7f6e193eaa80eacb02422dffdc39899480d9406870a22"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/icon_download2.jpg",
+      "sha256": "2f67b859b95b40cfe90bbb94cf0188a9a98e603275d3cc01f5f888c0d1123e66"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/icon_guidelines_logo.png",
+      "sha256": "af833d763ea6d8d53f651e455c1f517c1b1ea9981283ccdc6ff700a21bbb3c30"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/icon_market.jpg",
+      "sha256": "67399efa6c1f13e3e979ba328fbd12c8336bb6f62c39957ee0bdb981c1a3d29b"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/icon_more.png",
+      "sha256": "eea232493ac0b9a0321d7752223918f52d6b75a1ede9b633c80def2cb1a23b38"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/icon_play.png",
+      "sha256": "f05d27892f75027f7cdec888cbe996ff6761020444d2a74349228fda47dcb52b"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/icon_robot.jpg",
+      "sha256": "ac0e3d9e11743daf7e9bdf830800f8fae3553d17d611b0fe1e77458f306c65d8"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/icon_search.png",
+      "sha256": "9eb859a62db08a434c872a93d8d53569852c33991d12977d446b6931ec0a8868"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/icon_world.jpg",
+      "sha256": "504e28fa7bd90fd47f9f8126acd8bae6f757c31c7f730ea4a933ee33b133a063"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/left_off.jpg",
+      "sha256": "22e38092c02ae8c551c890cf989ce9fc9c42dac4ebb4f82a9df903409eaf633c"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/left_on.jpg",
+      "sha256": "9b723eee37e265e6afa8bfda90044fedf7976dd85cc81b3d3f3d006a31414c6b"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/link-out.png",
+      "sha256": "0b9c3539db001c36c05d0a01acd256167549a3bb6b09b3b8ee4a29a7cda5674a"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/locale.png",
+      "sha256": "090bd387e0efd6b730f5d9d3674938efc1cfb13da416307842c18df91ef347d9"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/logo_breadcrumbz.jpg",
+      "sha256": "6ca55210195e34055586d1b220cfa5b91e36ce8e2eae480b80f3cebbb06009a2"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/more_bottom.png",
+      "sha256": "321e30ec2f9b8684e3baa51031bffd2e4b9dd480c5f1da19d65788509865c797"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/more_check.png",
+      "sha256": "b3fa763499d81293eb21e1017d115649c309244df651cbce601a58e4f0a24024"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/more_mid.png",
+      "sha256": "3e836e3667b731c91a0f8866d2b4dc0c53ce1d3a19beed642a9bb97af388bac2"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/more_top.png",
+      "sha256": "1a0221f82abf8cb1b255da06aeb018625eee7d5fc4ca6d73db7298e66fc6c2e1"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/open_source.png",
+      "sha256": "e9375b89543b4756806879d2c90d5e8a862cc268561fe31f4388d7b44ad6e0a6"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/preliminary.png",
+      "sha256": "e9bd935c73ea16f2146391dbf034db96ef7bc4bd9343bc845725add509dd4a83"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/preview.png",
+      "sha256": "fe3b05a017029e24deec61b503834b2a0dad86578ab490795e6877547a97dc41"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/quicknav_arrow.png",
+      "sha256": "b4f1c6165de3562629a9e2549f4fa94d89e18cdf6971f2738114709f2970033a"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/quicknav_btn_bg.png",
+      "sha256": "f10350e9c0e6be9b2b574e7370aadb681d067ae90a50bfb44a8b6126d19c4c88"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/resizable-e.gif",
+      "sha256": "e685c586394abb5c33750cf98910c3af33cf5bfc09d11240b85fbe19140a823c"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/resizable-e2.gif",
+      "sha256": "4edc6ea3b122f10b5d26a40916ebaf19915868a46371d426286cdbf743256ba8"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/resizable-eg.gif",
+      "sha256": "583ce3a27cb97ac96801f7f57d73ae4ba48d44a4396908a35a7b8977381729a8"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/resizable-s.gif",
+      "sha256": "90842f1a2d41231ae89bf244daf3caf11c008b0e25f792969cb9c9884820b17d"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/resizable-s2.gif",
+      "sha256": "cadea17257c4d60af80f4accf4d4da95d9f8e1166f9bf122a863d5d767f10c27"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/resizable-s2.png",
+      "sha256": "48e43751990b59052b0530acf982a194a09983c194d6baf8b94f227c61894c73"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/resizable-sg.gif",
+      "sha256": "4384305ebe352985229e6b9860f7f3f7b7e2232c264567126fd25db2dcd66508"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/resource-article.png",
+      "sha256": "886cef4df3254cf154a0ace5648c7c5c1e5d03b8b77c776f91f013c2f78d4258"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/resource-big-article.png",
+      "sha256": "02c7142853ee218f0676f752b586f6ae46ded13f6bb83cdd8fd6c28710bf4d85"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/resource-big-sample.png",
+      "sha256": "88e0b6714fa7af52999c70a86eca2a1247cf87b2a1259b2e6a2fcadd48b60724"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/resource-big-tutorial.png",
+      "sha256": "d0f6886eb1f2f60eb865a25efb142f9afc6628ecab2a090f345957602dea67dc"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/resource-big-video.png",
+      "sha256": "1752f2b803cf655b4db76e0e1012a4f276b9b0ccaf15896b7e8acf921c9330b5"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/resource-card-default-android.jpg",
+      "sha256": "e44618f27c5d21527662680b8fdd33071ce8755b4e8e85261ac8be97b59f7c09"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/resource-sample.png",
+      "sha256": "bb11f946b41f5bdadd98eb66cd0f42e50c97d8faa4f13fe454147286b305ae4a"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/resource-tutorial.png",
+      "sha256": "6633fa4fb95ab073dd1694c455b5bfd4b773aa30e499f6d7c4fab670e9650f44"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/resource-video.png",
+      "sha256": "990f27fc354717834dbf75c3e9b75acc22d957fa1c2b0598ec89a29f03d5531c"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/right_off.jpg",
+      "sha256": "4782c9f58add1e5e7b2572d0651e1cc97f150da775a31127a5ee709050adb644"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/right_on.jpg",
+      "sha256": "c1b1080d3a112a95a58bb984dec32acf6044f7b18174819f958c9a25e260cdb9"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/sidenav-rule.png",
+      "sha256": "c428ce5745bb067977a691c2cb1677ab509d1afa053db8c97f55ba5ada23e39c"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/slide_1.jpg",
+      "sha256": "e59de6c50abbc71cf84fe7cbc6e0623cc3d261e6078233912761a855b3067420"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/slide_2.jpg",
+      "sha256": "f988ec46920e749befcd11384de7ef3c6bf2d4377e57e5e2e7e8e2908b138057"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/slide_3.jpg",
+      "sha256": "b8a650770bdffe7373fcce1480cb5a145784caa1002993bb6e808767e1d0cec4"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/slide_large_1.jpg",
+      "sha256": "badd644a1442430b92ffb887101a351bcb4e15ef6eb242ca2a9f4695bde797b7"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/slide_large_2.jpg",
+      "sha256": "1443941c9ebf79a18e09816acc18c25e286b4578e85db6c86909571762012446"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/slide_large_3.jpg",
+      "sha256": "754996c3b78a6a7ab30240d0bdfe583d588a59b54c282590b5775cf8bb5a448c"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/slide_off.jpg",
+      "sha256": "40806e2458f40e3087067c9d67688d9992ae30eef71e2da3bbdddd3cf7ac369f"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/slide_on.jpg",
+      "sha256": "aa0d257d696ced965a415143fdc92dbbafaef135198d97e0e6a6fe1580ccd030"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/spacer.gif",
+      "sha256": "5cdcc8ca597b17212c1515d1383ae6a1c8f9bf9a9736c6a9b8caf89ce4fade50"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/sprite-2x.png",
+      "sha256": "8890b814571bc0a5fcefff96a490a329c7456315afc7df57b262329ec629b512"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/sprite.png",
+      "sha256": "1adecb24c841be64e1913ec1bf2ce03ff238bce8908b571fafd30ce0fe646857"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/sprite@2x.png",
+      "sha256": "d99c27ad39566510f2b99ee9a1d6a2693fea9c7bc246c1bffdf5806aed2c8122"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/stack-arrow-right.png",
+      "sha256": "25d202d22b46a517371f26b02db002ed19ab841afe0678b608279359313a6277"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/callout.png",
+      "sha256": "45978ea1c6616a6cfa26eaf547760baca6c1c8eac2ae50fc1463da06a76ca92b"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/device_galaxynexus_blank_land_span13.png",
+      "sha256": "f08969c475cd3a4af196d69c94eddc4ae2e19be717d786dc214807c951c455ea"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/device_galaxynexus_blank_land_span8.png",
+      "sha256": "e6a3fb9f2e5798f70890c934f51d9b6dc01bf206bd53ad3099c7eb63453883e6"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/device_galaxynexus_blank_port_span5.png",
+      "sha256": "314ed464644f75138a81c20003bdd45cbd52cdb930f12eda80d563fb93d80dd7"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/device_galaxynexus_blank_port_span9.png",
+      "sha256": "8ac0fa8fd475e7a8c62c6e3d787b06ecc585e2b3f8752d8cdf997d28429ca458"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/device_nexus4_blank_port_432.png",
+      "sha256": "4fa755f1631d7e86859104fc863db06f586785e336b8fe095c1bd553bad5c45e"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/device_nexus5_blank_land_span13.png",
+      "sha256": "5b093db719154520d29b2969213832c1774e668b4d6b9fe33e152c51171f3e7d"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/device_nexus5_blank_port_span5.png",
+      "sha256": "456f2b40c58d361dd184876e988f14ba332634ee93d9ecd2b9b6dc4f50f81593"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/device_wear_square.png",
+      "sha256": "f6f96a87fd0150b52962fb2345854cc78333fc466f813225cbc4bc690f653cd8"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/device_wear_square_small.png",
+      "sha256": "ff5a04c9a72729a06d309ca3120c81e93c71143ce6c991947fcbafe65d01c02d"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/disclosure_down.png",
+      "sha256": "c9ba55d7b531b9cac3f38b60f5ca72e81167efe2d8a3b2913e7ec6e32a36470c"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/disclosure_left.png",
+      "sha256": "9486585e909b56134a683f2cfa52f9e543bcf65b7262f95ce08194c5a24556cf"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/disclosure_right.png",
+      "sha256": "7309a9d34e805922ac7ca35b530132d43660bbf369a10574d9662409295e64af"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/disclosure_up.png",
+      "sha256": "7d2790c9fd92ad107024d2c731949467efeebf799316d14348e78c5b6006790d"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/gototop.png",
+      "sha256": "4f1a6d71007b982034ffc92f41047516b969cd70f8845cafd38046d335925929"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/helpouts-logo-35.png",
+      "sha256": "7c5abecc7edc4d9daaeb0daaf9e0a6bafb9a5414c6209838bc732675f3afc8c6"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/helpouts-logo-35_2x.png",
+      "sha256": "11659fda6a7d002dd0b1d0276fd9417b1b0696a2c05ea2bcfcc7ba9f11836854"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/ico_action.png",
+      "sha256": "e3a75efd4e3e11de818de1e1b49e1605021552af0e5219596cec713237ed99f2"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/ico_good.png",
+      "sha256": "733da51834f5bb48b61501a80ce09772a567844c7af528ade6bb9abbc289a497"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/ico_movie_inline.png",
+      "sha256": "da0accbbc9f20f44b268412e22a7b3ab19641edb6a0ebd4be0cf9eb6681a80d0"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/ico_phone_tablet.png",
+      "sha256": "3252fe1661d8fe07d43cf7cee388f0fbf337f7675e9f270fe3aa7fda7fa79e52"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/ico_use.png",
+      "sha256": "c07d4aa30cc61715ee7e9aa8347c34ad76c710c4a5eb49080130c186d554f3d6"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/ico_web.png",
+      "sha256": "93cdb65869cbcd06197e42164bbdae24a6782a622fde4712039fcde6804d46dd"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/ico_wrong.png",
+      "sha256": "1a587a58280ccf7ad31b4a16f1b248ae38ab996614fc0d0a70a61a50c269babf"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/notice-designers-video.png",
+      "sha256": "4364962333f1f0ecadcedcc89105e9c2ddfa7045e1a93dc57b84707c69919b62"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/notice-designers-video@2x.png",
+      "sha256": "802a08d3a48e12321aa8c3e58c9761b13afaef67c2c784c7080d69711d079746"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/notice-designers.png",
+      "sha256": "9316073dcb53f268fc4716e45a8525d21c9fc903c2a614804782b3f307e4adce"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/notice-designers@2x.png",
+      "sha256": "8da21b2a66b59285eb58299447924a0e0fa797e8bf8a274c072a0cd9e10df46e"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/notice-developers-video.png",
+      "sha256": "3611de9ace356c5c4793144f7d414d2331050bb525c0e16b0a7d91b98fe9da93"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/notice-developers-video@2x.png",
+      "sha256": "e0ce6a0baa7638bfb143cf61baa682242c8f532cb805e1890f6762bb6d48a977"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/notice-developers.png",
+      "sha256": "3fab9018ee8d7f12171572113ca55d3b324b08f24327cc952522b9e9ba121e2c"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/notice-developers@2x.png",
+      "sha256": "cdb1f28b5280ed96137d8d72b6caf33c0668d99372978013a8983876d1dcb108"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/styles/open_new_page.png",
+      "sha256": "93bece20e4d6577a606e65ff2ab7dd5001e557c88d98f4add37e2b9a2cdb6b5d"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/triangle-closed-small.png",
+      "sha256": "7f36d6d557e2495f4584a023cefb2068f67bd8da26eeca7def4010d692babc49"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/triangle-closed.png",
+      "sha256": "df6b6b177c179d515a215be40920ccedb78c926c543b0b9321373c30a481801b"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/triangle-opened-small.png",
+      "sha256": "b794e80966ce3f60119a97ac82fe67f747d379277fecf007b84eccb3a45b5648"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/triangle-opened.png",
+      "sha256": "577daa25d9724a168cf03f5fabdf9131ba7b4051ae64988267a3262377adebbd"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/uiguidelines1.png",
+      "sha256": "af44f0df8197c7d29d440944ac312dd545f65f31c9c811679473cbc175308123"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/images/video-droid.png",
+      "sha256": "fbadf4386164dece795d9c8ebe093d6409b0b186832a94e0d171ce1fe6d68510"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/js/android_3p-bundle.js",
+      "sha256": "0e3a774e9575b2230edd9164d08f9b03f4e0863e7ffc6136083f54b2100425b6"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/js/docs.js",
+      "sha256": "8e264e6182d5c1da578060712111a58b622bdd6f4ea214d91b6671bc8bcaa244"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/assets/js/prettify.js",
+      "sha256": "e2e576e3bc607cd179ff511947010f645d3441a35313aec0dbd06c4437f83b77"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/body_tag.cs",
+      "sha256": "52ecd2808b5e39381ccf6dd9aa1b28c263404d3008c23a39a2830c7611d314d4"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/class.cs",
+      "sha256": "08d23850dcc61683fcc71170854fb7e0a1f3c36cd5d89490c7fe2f49e0e8b3db"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/classes.cs",
+      "sha256": "aa086d2dfed6ad416cbaf39cffaf8b116c7063e8595d5ea7e98e8f2d1d127109"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/components/masthead.cs",
+      "sha256": "bf86b5ba181c9cb4c944531effbcff9002a154d558892ab677a339b551f12f62"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/customizations.cs",
+      "sha256": "52a33a310a9950f3067696752d3184796b567e786b8d8b939aa8f23d66f24802"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/data.hdf",
+      "sha256": "7984e8bf6d37a3e2deb1164d9abf40d54d340ef9cf605d4ec7ab65f1b53d1a54"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/designpage.cs",
+      "sha256": "f13e95788e2b71987f396fc35cf9b178e9ea9370acc20d414460fb59ba561634"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/docpage.cs",
+      "sha256": "e9a8d9b9d1ffad7a4a6091244b47b3ad933d7b64f720953eed3d9a70501d53f7"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/footer.cs",
+      "sha256": "094a839b4b4b9db1cc60eddb9ee68447be70a14467fc35c71be06e340854392c"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/gcm_navtree_data.cs",
+      "sha256": "c2bc44222531dea16e11ef3ef8a7064f28dbf9fd03b29aebbe78cd0ea2ac11e9"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/gms_navtree_data.cs",
+      "sha256": "48696ae1949cdf08eddb518eb93292addfa154bb3c130bc88beddbe003fda125"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/head_tag.cs",
+      "sha256": "9c4822678ccf5e24f7294a7b214f2ae061e6eb02eaa9e35b15db146d45d735d8"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/header.cs",
+      "sha256": "0664901104b70feb5ab8304f37106be6ec50154192068a53c77f51b8a41363e5"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/header_tabs.cs",
+      "sha256": "bce26dcf6b3bbada8a07a1e5c1095b7d672050ed21a7558c9c9a200b67a20ba1"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/jd_lists_unified.cs",
+      "sha256": "68454893f1f9908606f1346d6c7a3a9024d5787078f80f96565198eff7c12dd8"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/lists.cs",
+      "sha256": "119202591f76f9060e29ea7865fdae550855ceeaf6db8e9c2ab8a4d116ee2c43"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/macros_override.cs",
+      "sha256": "0760e51f1902458cdbd8a263c28c5e5a9e3434797428c73eec5818cc3e1daf17"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/navtree_data.cs",
+      "sha256": "a415a5040d90ad43ad98090d0f14fbec8ea066ecff146f4e1408f3c41ba5fc89"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/nosidenavpage.cs",
+      "sha256": "907c898b59f717b7501252a6b06b3aacb48a58bc5b312065697f1bf33eca3d48"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/package.cs",
+      "sha256": "7fc3e70fa158c2d78cad1c120847ee531484c535936814703260236400a348c3"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/packages.cs",
+      "sha256": "8a603942459de882ec010fe1f1f4d6a1489886b0e2bcd56acc5774d4df1fa2ce"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/page_info.cs",
+      "sha256": "841c318f4e978729cda928189c0c9bb87eb923f96b16b9fb784ca35c77c40658"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/sample.cs",
+      "sha256": "0bd2b7b4cc344f181c3251c9b4c0961a314bcec3c03914430a7bbccec4871833"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/sampleindex.cs",
+      "sha256": "eaae1970bedc1ace2ef17e86025abd4aa0b0b77c6a0e8f5aa4b0d0a4c8713843"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/samples_navtree_data.cs",
+      "sha256": "64b50395dd2439b27241f4eacaab21154ca4d7fcdc9d184ad9c20d41e3bbaacf"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/timestamp.cs",
+      "sha256": "51f670f80e7bdadccf423703effab9bb51076cc1e6456535416828489747f0d6"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/trailer.cs",
+      "sha256": "c771e58ed33a31ee3534c362a809abecc62cc9ffc5387e3f48511cf67f54316a"
+    },
+    {
+      "path": "tools/droiddoc/templates-sdk/yaml_navtree.cs",
+      "sha256": "e127017da7b273246278cb63d307c7398abcab409d96edc3dd41a1f7c0872892"
+    },
+    {
+      "path": "tools/droiddoc/test/generics/Android.mk",
+      "sha256": "c022cb41bfb42923556bbca0536bd5e8c4e257839441ddaa999d68aecafddbce"
+    },
+    {
+      "path": "tools/droiddoc/test/generics/src/com/android/generics/AbsListView.java",
+      "sha256": "150686daaedeaf842e1b8df279ad843d94df5e9331b8d77b7a04c7a52216fb06"
+    },
+    {
+      "path": "tools/droiddoc/test/generics/src/com/android/generics/Adapter.java",
+      "sha256": "c05bc0d787d4ac1ba54cf9220d79d5f55122ad4a31c9a823fd4042a1c825ffef"
+    },
+    {
+      "path": "tools/droiddoc/test/generics/src/com/android/generics/AdapterView.java",
+      "sha256": "471fd8ec40e3c21c63f98a841ba1f0bac5a084af98df3da33c61751a9c054d02"
+    },
+    {
+      "path": "tools/droiddoc/test/generics/src/com/android/generics/Bar.java",
+      "sha256": "88ec3115e64b02a9b92e22fd0128cf072770950dfcc3fe1f82c4ecbc9d5d88f0"
+    },
+    {
+      "path": "tools/droiddoc/test/generics/src/com/android/generics/Foo.java",
+      "sha256": "84d73c4a4702542486587dc4193b2636595213af65b56dbf44e26bf51e6a9d14"
+    },
+    {
+      "path": "tools/droiddoc/test/generics/src/com/android/generics/FooBar.java",
+      "sha256": "45ae3972473e9c75ebdf6974302cff91ee8d7be1f512120d645dac2bb928b80f"
+    },
+    {
+      "path": "tools/droiddoc/test/generics/src/com/android/generics/Iface.java",
+      "sha256": "e9d00c6ea301a3986a19636a1519bf4c09d2d039be7b873bb7da042f1f3f7e77"
+    },
+    {
+      "path": "tools/droiddoc/test/generics/src/com/android/generics/ListAdapter.java",
+      "sha256": "86d4a90ba232bf5eb2e0a428e9194609735a0954c1979dd6403157b15bdf34f9"
+    },
+    {
+      "path": "tools/droiddoc/test/generics/src/com/android/generics/TestComparable.java",
+      "sha256": "d8daaf8e8004fe3599860859def23a61f60ec98fec9c0cb63c2c2eba8946d6a5"
+    },
+    {
+      "path": "tools/droiddoc/test/generics/src/com/android/generics/TestEnum.java",
+      "sha256": "25596bf9eb4aabc700893df613a6b317171e6f70045b1e7195819732c072886a"
+    },
+    {
+      "path": "tools/droiddoc/test/stubs/Android.mk",
+      "sha256": "fe6efd5ce352acb5d8bedba8eed3554e3882abd08ab8edf53544254f2f7bd0b0"
+    },
+    {
+      "path": "tools/droiddoc/test/stubs/expected/com/android/stubs/Annot.java",
+      "sha256": "142cd068cddc9a62aac1a65b7fb33d8ad284e4d477cc650789e83ec57e5dcdb1"
+    },
+    {
+      "path": "tools/droiddoc/test/stubs/expected/com/android/stubs/InterfaceEnum.java",
+      "sha256": "9565dfd2616fce81127d9f3836b93b1c388908d072a0f9fd116ceb4861758a36"
+    },
+    {
+      "path": "tools/droiddoc/test/stubs/expected/com/android/stubs/Parent.java",
+      "sha256": "98cef092c2cd3a694b72921a22d846ec7c5d6c1a4ad133c83418b59f3fd6366b"
+    },
+    {
+      "path": "tools/droiddoc/test/stubs/expected/com/android/stubs/SomeEnum.java",
+      "sha256": "b3873be0a519b64f4e4b8a8b15a0313c9d2a6ea464d926f03e8c6f3d82240f49"
+    },
+    {
+      "path": "tools/droiddoc/test/stubs/expected/com/android/stubs/Types.java",
+      "sha256": "faba2b324b2d8816a8d6ff455656cc2aa80cd7c040af0dc7a2c71b782a3a4782"
+    },
+    {
+      "path": "tools/droiddoc/test/stubs/expected/com/android/stubs/a/A.java",
+      "sha256": "3550f4c746505d9addee35aaeb12f588189416d818c461e4c79562aae1e9c716"
+    },
+    {
+      "path": "tools/droiddoc/test/stubs/expected/com/android/stubs/a/SomeInterface.java",
+      "sha256": "925c1446a5b731576b8a2959bd891d3f59abf7e653e3abfa7d9c14e675c1ff50"
+    },
+    {
+      "path": "tools/droiddoc/test/stubs/expected/com/android/stubs/b/B.java",
+      "sha256": "8579251fa5885fc21cc5b23ea3f5b21cb5e9660c6b676439e6ef2e8997ec1737"
+    },
+    {
+      "path": "tools/droiddoc/test/stubs/func.sh",
+      "sha256": "63e149b87feba6a3103a1fbb02a6cf1c440994716ce936e401c52cc6fee827cf"
+    },
+    {
+      "path": "tools/droiddoc/test/stubs/run.sh",
+      "sha256": "b5f31233bca75caa32f3bafdefb76d7b63b8fdaa30623c66ac880576947132fe"
+    },
+    {
+      "path": "tools/droiddoc/test/stubs/src/com/android/stubs/Annot.java",
+      "sha256": "dd0e7e838de030887dfe5a15a51829721b48bc9b01d2e246fa06527abf874977"
+    },
+    {
+      "path": "tools/droiddoc/test/stubs/src/com/android/stubs/InterfaceEnum.java",
+      "sha256": "e2c60b12cc1aaf4d7d70dfa34ddd974ffdb0ce6b2b799ec32ed54de487a3d219"
+    },
+    {
+      "path": "tools/droiddoc/test/stubs/src/com/android/stubs/Parent.java",
+      "sha256": "e8e8726de837eb68ddb4437002204ca2bc150f1c08561580830798ebc04f59f0"
+    },
+    {
+      "path": "tools/droiddoc/test/stubs/src/com/android/stubs/SomeEnum.java",
+      "sha256": "0d6d8d784df48a168922791f83127c49f836adf55ca3411dc76b669c799c94ba"
+    },
+    {
+      "path": "tools/droiddoc/test/stubs/src/com/android/stubs/Types.java",
+      "sha256": "cf90f2625109f332a7306a976575fe57874179c14b355924312a4fb0d64dc644"
+    },
+    {
+      "path": "tools/droiddoc/test/stubs/src/com/android/stubs/a/A.java",
+      "sha256": "6d0c569dee0c68348becc1919df68fd56ba59e0be4cedc2bd904c20980888109"
+    },
+    {
+      "path": "tools/droiddoc/test/stubs/src/com/android/stubs/a/SomeInterface.java",
+      "sha256": "7bcec714109f0578524f90ad0a619f1d25de2e7566fa502e94337b07802da4a5"
+    },
+    {
+      "path": "tools/droiddoc/test/stubs/src/com/android/stubs/b/B.java",
+      "sha256": "a644de4949c7779b0d4572beb34a5247f8e4b32e25230f3bd965cc81a0449a3b"
+    },
+    {
+      "path": "tools/droiddoc/test/stubs/src/com/android/stubs/hidden/Hidden.java",
+      "sha256": "a859066f7b9d4e628a08e6c9aa514eff05d10c5c58524e6fd8a59f18b840d6e5"
+    },
+    {
+      "path": "tools/droiddoc/test/stubs/src/com/android/stubs/hidden/HiddenOuter.java",
+      "sha256": "b7f967e93663db0c98e10f918a4b0c2acce8ed58ed33711df1dd68c95e10e848"
+    },
+    {
+      "path": "tools/droiddoc/test/stubs/src/com/android/stubs/hidden/PackagePrivate.java",
+      "sha256": "5ca2e02b0cfbdd2c75afdc914843faf180fd138fc1b6faff45a8b90e5988a028"
+    },
+    {
+      "path": "tools/dump-package-stats",
+      "sha256": "cb7726447014a7d83eb85e92695682550fcadc57dcfe9cd434b2844e541bd408"
+    },
+    {
+      "path": "tools/event_log_tags.py",
+      "sha256": "8b99dfb025a2c1472a18eb83ef3d92c07449602c821f9865ef8f122f23c2cb13"
+    },
+    {
+      "path": "tools/fileslist.py",
+      "sha256": "b3dc38f94419063e37fb5a1c476e5e9f60886f404c261d6c73c944c2888d615c"
+    },
+    {
+      "path": "tools/fileslist_util.py",
+      "sha256": "2a5d55770fc3c1d62d06f82bd4dbdd6461f843a7eaea680a5a5b59d8667bff2e"
+    },
+    {
+      "path": "tools/filter-product-graph.py",
+      "sha256": "f53fe27434cc2377684fcf3c1d28ab55455c92d96e711610e14e83c737b6d44a"
+    },
+    {
+      "path": "tools/findleaves.py",
+      "sha256": "1294b300e554d5130db253b78f646abdadbccfe2ead0c5480dffaae2f8721ed9"
+    },
+    {
+      "path": "tools/fixlinebreaks.sh",
+      "sha256": "1e797e93028a66d1eea1c5603842819c36e090ad891e5d74ad1ec56210a9a69c"
+    },
+    {
+      "path": "tools/fs_config/Android.mk",
+      "sha256": "01de8e96a998fd5f613705d83b8cac69dcef48a0b8b8b03d57b31091f64a4577"
+    },
+    {
+      "path": "tools/fs_config/default/android_filesystem_config.h",
+      "sha256": "5e2d9d2e400cbd7bcee62dc41047fed55de855762416a579b6ac41a3609fef68"
+    },
+    {
+      "path": "tools/fs_config/fs_config.c",
+      "sha256": "402ec4be25d22f77c2bfd8541f741a5de4277d4902fdaf440ec83844299a251e"
+    },
+    {
+      "path": "tools/fs_config/fs_config_generate.c",
+      "sha256": "6c8d5ee4d4bc7ad043510e2ad009a065c0d039b997097994d3aeb5346ae7dae0"
+    },
+    {
+      "path": "tools/fs_get_stats/Android.mk",
+      "sha256": "69454ec7a8bd14dfc2dafd72442c3cb4fe42d2c16012a27164d4322c0e60066a"
+    },
+    {
+      "path": "tools/fs_get_stats/fs_get_stats.c",
+      "sha256": "8aaf75084879ba31880d21e80c235e201e85c89baaf03e47f9ff8e4fe6d06ea8"
+    },
+    {
+      "path": "tools/generate-notice-files.py",
+      "sha256": "6bc3852553599931217df4eea7706ebf98b2a3bb8ee8a6f43ac8027e25104ccb"
+    },
+    {
+      "path": "tools/ijar/Android.mk",
+      "sha256": "b336a57d63250901e8915f618d0ec36abb4ff1407f9c1ddfc18ec430f455f206"
+    },
+    {
+      "path": "tools/ijar/LICENSE",
+      "sha256": "8c6db340475136df3c1201d458fa5755698eace76e510471ecc9d857d6083dac"
+    },
+    {
+      "path": "tools/ijar/README.txt",
+      "sha256": "bf493ca9ad4911bd437ab4d090b0fef7af8dd4ee531da9d6e36e2508f6466d71"
+    },
+    {
+      "path": "tools/ijar/classfile.cc",
+      "sha256": "73cda6ecf0e9a5a07c2206619c9ae4cae6e635a1a1d8856c2ce6e3f70dc8d682"
+    },
+    {
+      "path": "tools/ijar/common.h",
+      "sha256": "d4ecd2bb2a3ff3e382fd59f5dd12a178f3b51c3147f06e13a05660e232b96dbc"
+    },
+    {
+      "path": "tools/ijar/ijar.cc",
+      "sha256": "effe9e6706ee337d5d852fd3a6b9868088a45187f859c13137ec5b1dde41933b"
+    },
+    {
+      "path": "tools/ijar/zip.cc",
+      "sha256": "a76dd3ebd3c36422c4f2ac85840bf5dbac532c3af9d0113a61da2bd5ce8e55c3"
+    },
+    {
+      "path": "tools/ijar/zip.h",
+      "sha256": "cda70654c9b4f8ab6491a0ef7018b3e6860d0ffc848205821b8f131b5fe25b38"
+    },
+    {
+      "path": "tools/ijar/zip_main.cc",
+      "sha256": "4fa15d86144a923643b6ee6cec6d0fa6ee2780ead69a2ecb6cc32796b39af19f"
+    },
+    {
+      "path": "tools/java-event-log-tags.py",
+      "sha256": "0c7e031f95d46dea36370f9fd2175a4762eae0d61504c3b85f6768899f79ccfd"
+    },
+    {
+      "path": "tools/java-layers.py",
+      "sha256": "fc6549c4787470df34a277c488b51fb39a6ac920ad0a57b0139e755ded70ffe2"
+    },
+    {
+      "path": "tools/makeparallel/.gitignore",
+      "sha256": "849824a79306feee2c97312b92dc44f5085a0f724e960e5df30ac7d047e94892"
+    },
+    {
+      "path": "tools/makeparallel/Android.bp",
+      "sha256": "2f9088eacf3ea65850274b45b528f436bb83f99e68322c8f84204f5b884bb65e"
+    },
+    {
+      "path": "tools/makeparallel/Makefile",
+      "sha256": "b61a9fc5135e085e5a0d34cce273c9431c15a0eb002e03e18e608d1e3d3ef779"
+    },
+    {
+      "path": "tools/makeparallel/Makefile.test",
+      "sha256": "2231dd0e8406e72468cecf5966daf75dec4175cab405f340d7b215b3e35883d5"
+    },
+    {
+      "path": "tools/makeparallel/README.md",
+      "sha256": "468fb69661d73fd1b7e65a95a3a859c7c028a3e140324ff1a54f65cb818c6e41"
+    },
+    {
+      "path": "tools/makeparallel/makeparallel.cpp",
+      "sha256": "23ae210c6be254bbece411464c89583b89bf1c8f14649dbcd67e7c7ff546e406"
+    },
+    {
+      "path": "tools/merge-event-log-tags.py",
+      "sha256": "e76e41c6934a8579e89798ad443ea6be3fa600e06990fe23b2d3a055788da846"
+    },
+    {
+      "path": "tools/mkparameter/Android.mk",
+      "sha256": "9d28ac2679fbca0bc756abfcefb3c21bb55a8718b94ba2f3373bab6f39ffb1df"
+    },
+    {
+      "path": "tools/mkparameter/crc.c",
+      "sha256": "5c9d527f926b09eab94099b06cb2681acdedbbed016077bb786493e61e03bbb7"
+    },
+    {
+      "path": "tools/mkparameter/crc.h",
+      "sha256": "66348dbfab1006fb89be16747ec9e7672393d302f7c5949e3e16c6d6e35f8686"
+    },
+    {
+      "path": "tools/mkparameter/mkparameter.c",
+      "sha256": "dff3dbb2ed07d7d03e2087491601dca7062f768e4f3d2e6ace4670699581fbec"
+    },
+    {
+      "path": "tools/mktarball.sh",
+      "sha256": "22ef92b549a615c5c40b43b27ce8bfe02e9ef7a33ad749f69814ae3e4cb6b881"
+    },
+    {
+      "path": "tools/normalize_path.py",
+      "sha256": "29d7d0042949af84072a71c4dda0d3193e7bab08fa3c97da7c322dc0fcc2691d"
+    },
+    {
+      "path": "tools/parsedeps.py",
+      "sha256": "0d926d37789822128e196dd9fe42f3c144090951edf44235af9656bca38bd25a"
+    },
+    {
+      "path": "tools/post_process_props.py",
+      "sha256": "8070f03b936bc7956edb3c623a069852a9099fd38ef25ec9dcbfb29e787d4ff2"
+    },
+    {
+      "path": "tools/print_module_licenses.sh",
+      "sha256": "fa1e6197ba48867748a556c7626b938aa58bd01a9fa63edc13c762e6bd62fb37"
+    },
+    {
+      "path": "tools/product_debug.py",
+      "sha256": "87e62bb1c185caf3ac2bdda55291c0794fb453e7f7cd622de765bb07115dab62"
+    },
+    {
+      "path": "tools/releasetools/add_img_to_target_files",
+      "sha256": "e74158dab50325b6fc0fb7b086a170fd228289489eb12e7664aa5a0ff1e9bb68"
+    },
+    {
+      "path": "tools/releasetools/add_img_to_target_files.py",
+      "sha256": "e74158dab50325b6fc0fb7b086a170fd228289489eb12e7664aa5a0ff1e9bb68"
+    },
+    {
+      "path": "tools/releasetools/blockimgdiff.py",
+      "sha256": "6a1f45c5a3b4a50a30fbfd81ddf940807e139a1c64b56803f10fd64596089532"
+    },
+    {
+      "path": "tools/releasetools/build_image.py",
+      "sha256": "063b73beea9b59f5e05ac62aae16668c429fba1150ae4afac4f03efea537b2ce"
+    },
+    {
+      "path": "tools/releasetools/check_target_files_signatures",
+      "sha256": "462c6ba91e59d5aa44fa06aea71025425c521a348f4628724d623e0d636187e2"
+    },
+    {
+      "path": "tools/releasetools/check_target_files_signatures.py",
+      "sha256": "462c6ba91e59d5aa44fa06aea71025425c521a348f4628724d623e0d636187e2"
+    },
+    {
+      "path": "tools/releasetools/common.py",
+      "sha256": "6840a036c3aee8e703b0a2a98bc4ba9cd98f044559cea0f1922f9d72dab55665"
+    },
+    {
+      "path": "tools/releasetools/edify_generator.py",
+      "sha256": "423bb8eb3042d9af3eae75ddf6fc654d2f420b6ca84613088b0c45251ad3de82"
+    },
+    {
+      "path": "tools/releasetools/img_from_target_files",
+      "sha256": "badbd01a05d728154a36d5266eaf9ff3f37dce3d0f5aedbab7581d28c283b4b9"
+    },
+    {
+      "path": "tools/releasetools/img_from_target_files.py",
+      "sha256": "badbd01a05d728154a36d5266eaf9ff3f37dce3d0f5aedbab7581d28c283b4b9"
+    },
+    {
+      "path": "tools/releasetools/make_recovery_patch",
+      "sha256": "f45a2344c09d78a9a7e3beb069f49caf2f8ab3f722bb10d5dc6e2be39a61ae85"
+    },
+    {
+      "path": "tools/releasetools/make_recovery_patch.py",
+      "sha256": "f45a2344c09d78a9a7e3beb069f49caf2f8ab3f722bb10d5dc6e2be39a61ae85"
+    },
+    {
+      "path": "tools/releasetools/ota_from_target_files",
+      "sha256": "8eabc93d1dfb09279c1227f1045248f04c5a6ab55e617c0a614518780a21bedf"
+    },
+    {
+      "path": "tools/releasetools/ota_from_target_files.py",
+      "sha256": "8eabc93d1dfb09279c1227f1045248f04c5a6ab55e617c0a614518780a21bedf"
+    },
+    {
+      "path": "tools/releasetools/pylintrc",
+      "sha256": "c2ce5c255b80e0ee507d2de49b2ef3fd866012e51608be7a6671678df1a4a976"
+    },
+    {
+      "path": "tools/releasetools/rangelib.py",
+      "sha256": "b9d2cc7cf8ec978332aee34f0ea5cad4f353218618d9d23bfc8123d4e7461496"
+    },
+    {
+      "path": "tools/releasetools/sign_target_files_apks",
+      "sha256": "6b657b07bf081bf49eee730b972fffcdf44cb1b6824e656d0bafd4c8814be7bf"
+    },
+    {
+      "path": "tools/releasetools/sign_target_files_apks.py",
+      "sha256": "6b657b07bf081bf49eee730b972fffcdf44cb1b6824e656d0bafd4c8814be7bf"
+    },
+    {
+      "path": "tools/releasetools/sparse_img.py",
+      "sha256": "7b1726489221a3b96aef081396785153b2b7aafe25d2308de073b87e3784afd1"
+    },
+    {
+      "path": "tools/releasetools/target_files_diff.py",
+      "sha256": "6cfb25bca65ee4ccd540b87803b080635184b6c623204bb9f4924783a18e7ff5"
+    },
+    {
+      "path": "tools/releasetools/test_blockimgdiff.py",
+      "sha256": "b0a4851dcdc5f0f5856e5ae7e27b80c8f307a867c53dd63585ec602274abcda7"
+    },
+    {
+      "path": "tools/releasetools/test_common.py",
+      "sha256": "033c63091f3e8db81411ffec0f8a6c3815383b22c6b92ef0a2c6cce8b15e4535"
+    },
+    {
+      "path": "tools/releasetools/test_rangelib.py",
+      "sha256": "54bd9e0ead247611237dbd2fa431231abdeadd22923f588a1fbb075e7df0225e"
+    },
+    {
+      "path": "tools/rgb2565/Android.mk",
+      "sha256": "fc787cf86d32976157a102ca7ea7b6a6676fd5f9b457950e90be6e71219f723c"
+    },
+    {
+      "path": "tools/rgb2565/to565.c",
+      "sha256": "58c565e6f3c924b16005aaa712a0ad513c0a33e54e595cf2670fdb83c8ff0085"
+    },
+    {
+      "path": "tools/signapk/Android.mk",
+      "sha256": "d16f734b93f6d5f68f96603adb53c6d8142e1b36c925a36140a288c4dcc044dc"
+    },
+    {
+      "path": "tools/signapk/SignApk.mf",
+      "sha256": "f4a590e66c6fbc62d1d4726011c43152d2d3e068d58b2be4a522e72d5b4e4af9"
+    },
+    {
+      "path": "tools/signapk/src/com/android/signapk/ApkSignerV2.java",
+      "sha256": "247d09cb3646b933ee4f6fd43abe38f9cac458e68dd61b4d29c1a88cfd86a61e"
+    },
+    {
+      "path": "tools/signapk/src/com/android/signapk/Pair.java",
+      "sha256": "ef13e9291709e6b4b50957f96979dab8e24ed63ccf0eb25057e689738e47221b"
+    },
+    {
+      "path": "tools/signapk/src/com/android/signapk/SignApk.java",
+      "sha256": "cf415737582ed971b2b35e5bf1ecd011dfc816e4e080ebd34cb16f5b4a0d41c7"
+    },
+    {
+      "path": "tools/signapk/src/com/android/signapk/ZipUtils.java",
+      "sha256": "4c0af1236c13215a281faacedeae860b8459856eabf2bc516f6f050883bac5bd"
+    },
+    {
+      "path": "tools/signapk/test/run",
+      "sha256": "b33365b784ce7028aea93b243cba37a5e0ef8d0e9b27cbc9b61f8a774bacd159"
+    },
+    {
+      "path": "tools/signtos/Android.mk",
+      "sha256": "9fc2c256365c858e245e15a1c3825b6bbcec20385aaf7753cded0e38ac68aa33"
+    },
+    {
+      "path": "tools/signtos/SignTos.java",
+      "sha256": "dca81d18376a53d296b12f2c8918bbf61392e97c9e46d533aae340a5f08d8438"
+    },
+    {
+      "path": "tools/signtos/SignTos.mf",
+      "sha256": "897dfcc9933399783c316781511172ea403be70fd6d4a02d585776ce232e3a74"
+    },
+    {
+      "path": "tools/warn.py",
+      "sha256": "408bf88f33c7010a032ec30328b0d8a436c92182dc9492dbee30ada5e6851d93"
+    },
+    {
+      "path": "tools/zipalign/Android.mk",
+      "sha256": "903159252b0fe091d1ba3841e5962f04763d4989305e8f6941c8bc3978a7eacb"
+    },
+    {
+      "path": "tools/zipalign/README.txt",
+      "sha256": "19325891c63664e22d31c6b66590c5b6dae20a8172f95baca896f4008fe4c4be"
+    },
+    {
+      "path": "tools/zipalign/ZipAlign.cpp",
+      "sha256": "300b35fb9566b915755ebdc33f6e6dc58ae082801cb699bb1934d043d4327d73"
+    },
+    {
+      "path": "tools/zipalign/ZipEntry.cpp",
+      "sha256": "58071ce521cb55413d7ff7be5f30b0bd7f6d5107c09cdc7e4efa1d5fb7a5b947"
+    },
+    {
+      "path": "tools/zipalign/ZipEntry.h",
+      "sha256": "e397556fdba054688051b0e09623cb5caacb6fe93f036b0e0751a37013249f5d"
+    },
+    {
+      "path": "tools/zipalign/ZipFile.cpp",
+      "sha256": "2eb46c836ea1fbeabf3b7df4a64b5b80de88ef07cac107148a93966a87070ef1"
+    },
+    {
+      "path": "tools/zipalign/ZipFile.h",
+      "sha256": "d4735af978dd3a1a08d1be3352fcc1435a2ab4601a88392519e715954aadfd8a"
+    },
+    {
+      "path": "tools/ziptime/Android.mk",
+      "sha256": "594222e83aa8a62342e79e98b4693e6ac22f146f610b686409fcb9f341384a7c"
+    },
+    {
+      "path": "tools/ziptime/README.txt",
+      "sha256": "efb79d9d7cdb8f3b5b6196151b3a879abdee0fdf4273bf887573d6c5171c43bc"
+    },
+    {
+      "path": "tools/ziptime/ZipEntry.cpp",
+      "sha256": "fc19201bc4bce643a63b3fcaa6ef6c6bc55abab2e3ca38edd9ffcad48358f9dc"
+    },
+    {
+      "path": "tools/ziptime/ZipEntry.h",
+      "sha256": "d7aababbb154113b8d0322e76500de1d6a0113f2a5d10430c6a25f5750a6ab52"
+    },
+    {
+      "path": "tools/ziptime/ZipFile.cpp",
+      "sha256": "0eb988bd758f0ac46b1c167a35f9b89572a102c149f11a0b244c7d70ce0fd1da"
+    },
+    {
+      "path": "tools/ziptime/ZipFile.h",
+      "sha256": "eadc9227f04255c1b46a81898b44968a5a90b17fc245bbcada81bb9791a1573e"
+    },
+    {
+      "path": "tools/ziptime/ZipTime.cpp",
+      "sha256": "fa1c86d3b487429991d73fd83da86be530778f5fbd020323afb5e57a9a9f0a4b"
+    }
+  ]
+}

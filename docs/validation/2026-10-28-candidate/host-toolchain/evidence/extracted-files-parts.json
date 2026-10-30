@@ -1,0 +1,31 @@
+{
+  "original_records": 3339,
+  "original_sha256": "a0984d3d8c76e571e143bbb9665a9637ceb45ec6a752e35e19e4cc169fed7082",
+  "parts": [
+    {
+      "path": "evidence/extracted-files.part00.json",
+      "records": 700,
+      "sha256": "1d1f0bf0c26cf75b2141f0d5a69653777df29bde4e0887a4f1fa694e05cf95b2"
+    },
+    {
+      "path": "evidence/extracted-files.part01.json",
+      "records": 700,
+      "sha256": "c93d557566b0cfe7ce5dfefee91fda7edf3a9e21fe852ffa263d4c2f8f61f6ec"
+    },
+    {
+      "path": "evidence/extracted-files.part02.json",
+      "records": 700,
+      "sha256": "4b9db1f34c20b47e0c1da237fcb093f77edd7d1af3f4c4326419569a94be9e7e"
+    },
+    {
+      "path": "evidence/extracted-files.part03.json",
+      "records": 700,
+      "sha256": "485e0351ea859d9766cc6c661e4c5e0517085e2ebfba0f3bc5d19c78df6b77a9"
+    },
+    {
+      "path": "evidence/extracted-files.part04.json",
+      "records": 539,
+      "sha256": "be656306c08fb300d135e81d9fa40e6bd47b96f6966284291936a8da45422a46"
+    }
+  ]
+}

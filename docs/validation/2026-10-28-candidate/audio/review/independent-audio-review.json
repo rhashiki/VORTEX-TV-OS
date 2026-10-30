@@ -1,0 +1,73 @@
+{
+  "scope": "independent read-only source, fixture, metadata-probe and saved-artifact review; no rebuild or runtime/device operation",
+  "conclusion": "no_material_findings_within_reviewed_scope",
+  "checks": {
+    "baseline_matches_pinned_source": "03b111b6736b48ec17ffee4906caecf59323d8c1",
+    "only_expected_function_change": true,
+    "unsupported_rate_rejected_before_array_use_lock_channel_status_and_config_publication": true,
+    "error_path_frees_allocation_and_sets_stream_output_null": true,
+    "neighboring_supported_paths_unchanged": true,
+    "test_uses_actual_extracted_function": true,
+    "baseline_uses_explicit_zero_init_instrumentation_and_is_not_claimed_as_sanitizer_or_uninstrumented_runtime": true,
+    "enum_zero_matches_real_OUTPUT_DEEP_BUF": true,
+    "tinyalsa_vendor_flag_has_real_kernel_parameter_use": true,
+    "probe_does_not_invoke_hal_open_or_power_hooks": true,
+    "power_null_open_is_valid_and_modeled": true,
+    "all_eight_saved_cases_have_expected_exit": true,
+    "all_probe_inputs_match_hashes": true
+  },
+  "artifacts": [
+    {
+      "name": "audio.primary.rk30board.so",
+      "size_bytes": 182488,
+      "sha256": "8814c9b2b1d47b394bfb7f981c802ce7fa1325c10518bbd43a5ba51a2f6cbfd6",
+      "matches_loader_result": true
+    },
+    {
+      "name": "audio.r_submix.default.so",
+      "size_bytes": 34524,
+      "sha256": "509128a5173de1272d6a1fed03d4305cd961763740570759be6f13f1c71d15e4",
+      "matches_loader_result": true
+    },
+    {
+      "name": "audio.usb.default.so",
+      "size_bytes": 22196,
+      "sha256": "934643a44841444d5d92b21a84093fa63afcd8a25d29ae4f12e8942fa4653f7a",
+      "matches_loader_result": true
+    },
+    {
+      "name": "power.default.so",
+      "size_bytes": 14024,
+      "sha256": "01e59a07d6a24ba866fc2c9c0e949ae78ec9a51a1668a26e3a3cf9b0e97638ba",
+      "matches_loader_result": true
+    }
+  ],
+  "reviewed_text": {
+    "0001-audio-reject-unsupported-hdmi-bypass-rate.patch": {
+      "size_bytes": 598,
+      "sha256": "5f396c37b6b502cc62e4f40a487fe65068b73b0b37127d05b56d310bfbaaa6ed"
+    },
+    "rate-regression/run_regression.py": {
+      "size_bytes": 10056,
+      "sha256": "3ab0d18110375b7407589415e643e2dd60626a8117109909dc9f7f063c80f6b8"
+    },
+    "rate-regression/regression-result.json": {
+      "size_bytes": 2758,
+      "sha256": "943500b81633d534334c37308dea167f7eaa23c04421238a1f9eeb7dd9c1f7cc"
+    },
+    "loader/hal_metadata_probe.c": {
+      "size_bytes": 1480,
+      "sha256": "ca03f90c37c67c16404c088fbdde83732d50cff0ae67ae27c912d1dcd41db928"
+    },
+    "loader/evidence/loader-smoke-result.json": {
+      "size_bytes": 7022,
+      "sha256": "7da2ebec8595c42527b5d29874cedb185513bb696a7ad2c34dd3ca7983f65d34"
+    }
+  },
+  "limits": [
+    "Host function fixture uses simplified private structures and real public header types; it does not prove Android ARM ABI or playback.",
+    "Recorded loader tests check tag/id/method presence and print names/versions; constructors/destructors may run.",
+    "No HDMI, USB, recording, power behavior, full Android boot or physical-board compatibility is approved.",
+    "No finding about unrelated behavior elsewhere in the large upstream audio HAL."
+  ]
+}

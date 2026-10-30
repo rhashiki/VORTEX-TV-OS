@@ -1,0 +1,3 @@
+{"event":"scope","version":1,"mode":"non_pid1_inventory","block_device_io_opened":false,"storage_write_backend":"absent","output":"stdout_only","boot_medium_verified":false,"logging_to_sd":"disabled_unverified_boot_identity"}
+{"event":"block","name":"x","classification":"unknown_no_write_target_selected","sectors_512":"18446744073709551615","size_bytes":null,"read_only":"0","removable":"0","type":null,"partition_number":null,"device_name":null,"sysfs_link":null,"write_target_approved":false}
+{"event":"summary","block_records":1,"write_target_selected":false,"boot_medium_verified":false}

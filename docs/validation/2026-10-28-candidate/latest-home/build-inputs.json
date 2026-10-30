@@ -1,0 +1,22 @@
+[
+  {
+    "path": "build/core/root.mk",
+    "sha256": "c4093f39d041957f4711ccab829155afac95cbaeb309bd1bc610faa6a6cc866a"
+  },
+  {
+    "path": "build/core/configure_local_jack.mk",
+    "sha256": "84e73d92435e75a31555994f74e97f7e00c7269c7cc3c65f3d615695e873ddaf"
+  },
+  {
+    "path": "build/core/java_common.mk",
+    "sha256": "d117c88d9fc4a703c0fbad1706f048b0e62a6e71791080915a689bc7c9966285"
+  },
+  {
+    "path": "build/core/package_internal.mk",
+    "sha256": "f47a2b42f608bd6ad51baca35f9d6b4b524bc2854129b514fbc931d501b76d66"
+  },
+  {
+    "path": "build/target/product/security/platform.x509.pem",
+    "sha256": "9837de028f460c35cc8d3fa45f14eecce30f6fbfe4b93d399aef1acb80c20d14"
+  }
+]

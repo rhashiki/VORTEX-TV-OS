@@ -1,0 +1,78 @@
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=recovery
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/recovery/out
+============================================
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+[middle omitted; raw log hash and ZIP path in log-index.json]
+cat bionic/libm/NOTICE > /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libm.a.txt
+Notice file: bionic/libc/NOTICE -- /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libc.a.txt
+mkdir -p /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/
+cat bionic/libc/NOTICE > /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libc.a.txt
+Notice file: bootable/recovery/applypatch/NOTICE -- /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libapplypatch.a.txt
+mkdir -p /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/
+cat bootable/recovery/applypatch/NOTICE > /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libapplypatch.a.txt
+Notice file: external/libcxx/NOTICE -- /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libc++_static.a.txt
+mkdir -p /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/
+cat external/libcxx/NOTICE > /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libc++_static.a.txt
+Notice file: external/libunwind_llvm/NOTICE -- /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libunwind_llvm.a.txt
+mkdir -p /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/
+cat external/libunwind_llvm/NOTICE > /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libunwind_llvm.a.txt
+Notice file: bionic/libdl/NOTICE -- /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libdl.a.txt
+mkdir -p /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/
+cat bionic/libdl/NOTICE > /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libdl.a.txt
+Notice file: external/compiler-rt/NOTICE -- /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libcompiler_rt-extras.a.txt
+mkdir -p /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/
+cat external/compiler-rt/NOTICE > /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libcompiler_rt-extras.a.txt
+Notice file: bionic/libc/NOTICE -- /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libc.so.txt
+mkdir -p /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/
+cat bionic/libc/NOTICE > /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libc.so.txt
+Notice file: bionic/libc/NOTICE -- /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libc_common.a.txt
+mkdir -p /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/
+cat bionic/libc/NOTICE > /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libc_common.a.txt
+Notice file: external/jemalloc/NOTICE -- /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libjemalloc.a.txt
+mkdir -p /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/
+cat external/jemalloc/NOTICE > /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libjemalloc.a.txt
+Notice file: bionic/libdl/NOTICE -- /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libdl.so.txt
+mkdir -p /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/
+cat bionic/libdl/NOTICE > /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libdl.so.txt
+Install: /workspace/build01-full-next/recovery/out/target/product/generic/system/lib/libdl.so
+/workspace/build01-platform-next/aosp-app/host-bin/acp -fp /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/libdl.so /workspace/build01-full-next/recovery/out/target/product/generic/system/lib/libdl.so
+Install: /workspace/build01-full-next/recovery/out/target/product/generic/system/lib/libc.so
+/workspace/build01-platform-next/aosp-app/host-bin/acp -fp /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/libc.so /workspace/build01-full-next/recovery/out/target/product/generic/system/lib/libc.so
+Notice file: bionic/libm/NOTICE -- /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libm.so.txt
+mkdir -p /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/
+cat bionic/libm/NOTICE > /workspace/build01-full-next/recovery/out/target/product/generic/obj/NOTICE_FILES/src//system/lib/libm.so.txt
+Install: /workspace/build01-full-next/recovery/out/target/product/generic/system/lib/libm.so
+/workspace/build01-platform-next/aosp-app/host-bin/acp -fp /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/libm.so /workspace/build01-full-next/recovery/out/target/product/generic/system/lib/libm.so
+Install: /workspace/build01-full-next/recovery/out/target/product/generic/recovery/root/sbin/recovery
+/workspace/build01-platform-next/aosp-app/host-bin/acp -fp /workspace/build01-full-next/recovery/out/target/product/generic/obj/EXECUTABLES/recovery_intermediates/recovery /workspace/build01-full-next/recovery/out/target/product/generic/recovery/root/sbin/recovery
+
+#### make completed successfully (58 seconds) ####
+

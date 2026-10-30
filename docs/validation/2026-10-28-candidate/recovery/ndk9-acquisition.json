@@ -1,0 +1,9 @@
+{
+  "repository": "https://android.googlesource.com/platform/prebuilts/ndk",
+  "revision": "c563e319025cff2ba8f3542b9e07ea416f39c31d",
+  "url": "https://android.googlesource.com/platform/prebuilts/ndk/+archive/c563e319025cff2ba8f3542b9e07ea416f39c31d/current/platforms/android-9/arch-arm/usr.tar.gz",
+  "archive_bytes": 2036281,
+  "archive_sha256": "8da253d1d01e7e4d04a8595de47976a927d553dd892d3ed0379a48ee1dfd5131",
+  "regular_payload_bytes": 8166517,
+  "scope": "actual official API9 ARM NDK sysroot for unchanged BoringSSL Android.mk; no API8 alias; NDK bytes excluded from deliverable artifacts"
+}

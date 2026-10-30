@@ -1,0 +1,62 @@
+{
+  "source_bionic_repository": "/workspace/build01-platform-next/research/rockchip-bionic",
+  "source_bionic_revision": "8b2e5b977118ebb8447cdf429c4a6be534c4fd1b",
+  "full_build_log": {
+    "path": "/workspace/build01-full-next/recovery/attempt-21-real-vold-headers.log",
+    "size_bytes": 3555155,
+    "sha256": "66c1315bba43ec8660a2ef13c8c5254c606e3d475f9b57fff655b43900949fd3"
+  },
+  "selected_actual_link_steps": [
+    {
+      "line_number": 285,
+      "line": "target SharedLib: libdl (/workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libdl_intermediates/LINKED/libdl.so)",
+      "next_recipe_line": "prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-g++ -nostdlib -Wl,-soname,libdl.so -Wl,--gc-sections -Wl,-shared -L/workspace/build01-full-next/recovery/out/target/product/generic/obj/lib /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtbegin_so.o             /workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libdl_intermediates/libdl.o       -Wl,--whole-archive   -Wl,--no-whole-archive   /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/libcompiler_rt-extras.a   prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/lib/libatomic.a prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/../lib/gcc/arm-linux-androideabi/4.9/libgcc.a   -o /workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libdl_intermediates/LINKED/libdl.so -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,--build-id=md5 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--icf=safe -Wl,--hash-style=gnu -Wl,--no-undefined-version -Wl,--no-fix-cortex-a8 -Wl,--exclude-libs=libgcc.a -Wl,--version-script=bionic/libdl/libdl.arm.map  /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtend_so.o "
+    },
+    {
+      "line_number": 287,
+      "line": "target Pack Relocations: libdl (/workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libdl_intermediates/PACKED/libdl.so)",
+      "next_recipe_line": "/workspace/build01-platform-next/aosp-app/host-bin/acp -fp /workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libdl_intermediates/LINKED/libdl.so /workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libdl_intermediates/PACKED/libdl.so"
+    },
+    {
+      "line_number": 290,
+      "line": "target Symbolic: libdl (/workspace/build01-full-next/recovery/out/target/product/generic/symbols/system/lib/libdl.so)",
+      "next_recipe_line": "/workspace/build01-platform-next/aosp-app/host-bin/acp -fp /workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libdl_intermediates/PACKED/libdl.so /workspace/build01-full-next/recovery/out/target/product/generic/symbols/system/lib/libdl.so"
+    },
+    {
+      "line_number": 292,
+      "line": "target Strip: libdl (/workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/libdl.so)",
+      "next_recipe_line": "prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-strip --strip-all /workspace/build01-full-next/recovery/out/target/product/generic/symbols/system/lib/libdl.so -o /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/libdl.so && prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-objcopy --add-gnu-debuglink=/workspace/build01-full-next/recovery/out/target/product/generic/symbols/system/lib/libdl.so /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/libdl.so"
+    },
+    {
+      "line_number": 2843,
+      "line": "target SharedLib: libc (/workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libc_intermediates/LINKED/libc.so)",
+      "next_recipe_line": "prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-g++ -nostdlib -Wl,-soname,libc.so -Wl,--gc-sections -Wl,-shared -L/workspace/build01-full-next/recovery/out/target/product/generic/obj/lib    /workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libc_intermediates/arch-common/bionic/crtbrand.o /workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libc_intermediates/arch-common/bionic/crtend_so.o   /workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libc_intermediates/bionic/malloc_common.o /workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libc_intermediates/bionic/libc_init_dynamic.o /workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libc_intermediates/bionic/NetdClient.o       /workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libc_intermediates/arch-common/bionic/crtbegin_so.o /workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libc_intermediates/arch-arm/bionic/exidx_dynamic.o /workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libc_intermediates/arch-arm/bionic/atexit_legacy.o       -Wl,--whole-archive  /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libc_common_intermediates/libc_common.a /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libjemalloc_intermediates/libjemalloc.a -Wl,--no-whole-archive   /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/libcompiler_rt-extras.a   prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/lib/libatomic.a prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/../lib/gcc/arm-linux-androideabi/4.9/libgcc.a -ldl  -o /workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libc_intermediates/LINKED/libc.so -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,--build-id=md5 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--icf=safe -Wl,--hash-style=gnu -Wl,--no-undefined-version -Wl,--no-fix-cortex-a8 -Wl,--hash-style=both -Wl,--version-script,bionic/libc/libc.arm.map  -Wl,--no-undefined  "
+    },
+    {
+      "line_number": 2847,
+      "line": "target Symbolic: libc (/workspace/build01-full-next/recovery/out/target/product/generic/symbols/system/lib/libc.so)",
+      "next_recipe_line": "/workspace/build01-platform-next/aosp-app/host-bin/acp -fp /workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libc_intermediates/PACKED/libc.so /workspace/build01-full-next/recovery/out/target/product/generic/symbols/system/lib/libc.so"
+    },
+    {
+      "line_number": 3383,
+      "line": "target SharedLib: libm (/workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libm_intermediates/LINKED/libm.so)",
+      "next_recipe_line": "prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-g++ -nostdlib -Wl,-soname,libm.so -Wl,--gc-sections -Wl,-shared -L/workspace/build01-full-next/recovery/out/target/product/generic/obj/lib /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtbegin_so.o                    -Wl,--whole-archive  /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libm_intermediates/libm.a -Wl,--no-whole-archive   /workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libcompiler_rt-extras_intermediates/libcompiler_rt-extras.a   prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/lib/libatomic.a prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/../lib/gcc/arm-linux-androideabi/4.9/libgcc.a -lc  -o /workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libm_intermediates/LINKED/libm.so -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,--build-id=md5 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--icf=safe -Wl,--hash-style=gnu -Wl,--no-undefined-version -Wl,--no-fix-cortex-a8 -Wl,--hash-style=both -Wl,--version-script,bionic/libm/libm.arm.map  -Wl,--no-undefined /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtend_so.o "
+    },
+    {
+      "line_number": 3385,
+      "line": "target Pack Relocations: libm (/workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libm_intermediates/PACKED/libm.so)",
+      "next_recipe_line": "/workspace/build01-platform-next/aosp-app/host-bin/acp -fp /workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libm_intermediates/LINKED/libm.so /workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libm_intermediates/PACKED/libm.so"
+    },
+    {
+      "line_number": 3388,
+      "line": "target Symbolic: libm (/workspace/build01-full-next/recovery/out/target/product/generic/symbols/system/lib/libm.so)",
+      "next_recipe_line": "/workspace/build01-platform-next/aosp-app/host-bin/acp -fp /workspace/build01-full-next/recovery/out/target/product/generic/obj/SHARED_LIBRARIES/libm_intermediates/PACKED/libm.so /workspace/build01-full-next/recovery/out/target/product/generic/symbols/system/lib/libm.so"
+    },
+    {
+      "line_number": 3390,
+      "line": "target Strip: libm (/workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/libm.so)",
+      "next_recipe_line": "prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-strip --strip-all /workspace/build01-full-next/recovery/out/target/product/generic/symbols/system/lib/libm.so -o /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/libm.so && prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-objcopy --add-gnu-debuglink=/workspace/build01-full-next/recovery/out/target/product/generic/symbols/system/lib/libm.so /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/libm.so"
+    }
+  ],
+  "libdl_source_design": "The pinned Android.mk intentionally permits undefined symbols for a stub libdl with no system shared-library dependencies. The source says actual dl functions are supplied by the dynamic linker. This explains why normal DT_NEEDED use does not prove direct libdl file execution; it does not change the recorded exploratory failure."
+}

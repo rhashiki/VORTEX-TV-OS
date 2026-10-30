@@ -1,0 +1,1874 @@
+Archive member included to satisfy reference by file (symbol)
+
+/workspace/build01-full-next/installer/musl/lib/libc.a(isalnum.o)
+                              /tmp/ccOGoLSw.o (isalnum)
+/workspace/build01-full-next/installer/musl/lib/libc.a(closedir.o)
+                              /tmp/ccOGoLSw.o (closedir)
+/workspace/build01-full-next/installer/musl/lib/libc.a(opendir.o)
+                              /tmp/ccOGoLSw.o (opendir)
+/workspace/build01-full-next/installer/musl/lib/libc.a(readdir.o)
+                              /tmp/ccOGoLSw.o (readdir)
+/workspace/build01-full-next/installer/musl/lib/libc.a(__libc_start_main.o)
+                              /workspace/build01-full-next/installer/musl/lib/Scrt1.o (__libc_start_main)
+/workspace/build01-full-next/installer/musl/lib/libc.a(__errno_location.o)
+                              /tmp/ccOGoLSw.o (__errno_location)
+/workspace/build01-full-next/installer/musl/lib/libc.a(exit.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(__libc_start_main.o) (exit)
+/workspace/build01-full-next/installer/musl/lib/libc.a(open.o)
+                              /tmp/ccOGoLSw.o (open)
+/workspace/build01-full-next/installer/musl/lib/libc.a(defsysinfo.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(__libc_start_main.o) (__sysinfo)
+/workspace/build01-full-next/installer/musl/lib/libc.a(libc.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(__libc_start_main.o) (__progname_full)
+/workspace/build01-full-next/installer/musl/lib/libc.a(syscall_ret.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(open.o) (__syscall_ret)
+/workspace/build01-full-next/installer/musl/lib/libc.a(mount.o)
+                              /tmp/ccOGoLSw.o (mount)
+/workspace/build01-full-next/installer/musl/lib/libc.a(calloc.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(opendir.o) (calloc)
+/workspace/build01-full-next/installer/musl/lib/libc.a(free.o)
+                              /tmp/ccOGoLSw.o (free)
+/workspace/build01-full-next/installer/musl/lib/libc.a(lite_malloc.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(calloc.o) (malloc)
+/workspace/build01-full-next/installer/musl/lib/libc.a(free.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(free.o) (__libc_free)
+/workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(free.o) (__malloc_lock)
+/workspace/build01-full-next/installer/musl/lib/libc.a(replaced.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(calloc.o) (__malloc_replaced)
+/workspace/build01-full-next/installer/musl/lib/libc.a(mmap.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(lite_malloc.o) (__mmap)
+/workspace/build01-full-next/installer/musl/lib/libc.a(mprotect.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o) (mprotect)
+/workspace/build01-full-next/installer/musl/lib/libc.a(munmap.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(free.o) (munmap)
+/workspace/build01-full-next/installer/musl/lib/libc.a(fstat.o)
+                              /tmp/ccOGoLSw.o (__fstat_time64)
+/workspace/build01-full-next/installer/musl/lib/libc.a(fstatat.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(fstat.o) (__fstatat)
+/workspace/build01-full-next/installer/musl/lib/libc.a(mkdir.o)
+                              /tmp/ccOGoLSw.o (mkdir)
+/workspace/build01-full-next/installer/musl/lib/libc.a(stat.o)
+                              /tmp/ccOGoLSw.o (__stat_time64)
+/workspace/build01-full-next/installer/musl/lib/libc.a(statvfs.o)
+                              /tmp/ccOGoLSw.o (statfs)
+/workspace/build01-full-next/installer/musl/lib/libc.a(fflush.o)
+                              /tmp/ccOGoLSw.o (fflush)
+/workspace/build01-full-next/installer/musl/lib/libc.a(fputs.o)
+                              /tmp/ccOGoLSw.o (fputs)
+/workspace/build01-full-next/installer/musl/lib/libc.a(fwrite.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(fputs.o) (fwrite)
+/workspace/build01-full-next/installer/musl/lib/libc.a(ofl.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(fflush.o) (__ofl_lock)
+/workspace/build01-full-next/installer/musl/lib/libc.a(printf.o)
+                              /tmp/ccOGoLSw.o (printf)
+/workspace/build01-full-next/installer/musl/lib/libc.a(putchar.o)
+                              /tmp/ccOGoLSw.o (putchar)
+/workspace/build01-full-next/installer/musl/lib/libc.a(snprintf.o)
+                              /tmp/ccOGoLSw.o (snprintf)
+/workspace/build01-full-next/installer/musl/lib/libc.a(stderr.o)
+                              /tmp/ccOGoLSw.o (stderr)
+/workspace/build01-full-next/installer/musl/lib/libc.a(stdout.o)
+                              /tmp/ccOGoLSw.o (stdout)
+/workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(printf.o) (vfprintf)
+/workspace/build01-full-next/installer/musl/lib/libc.a(vsnprintf.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(snprintf.o) (vsnprintf)
+/workspace/build01-full-next/installer/musl/lib/libc.a(qsort_nr.o)
+                              /tmp/ccOGoLSw.o (qsort)
+/workspace/build01-full-next/installer/musl/lib/libc.a(strtol.o)
+                              /tmp/ccOGoLSw.o (strtoull)
+/workspace/build01-full-next/installer/musl/lib/libc.a(memcpy.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o) (memcpy)
+/workspace/build01-full-next/installer/musl/lib/libc.a(memset.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(__libc_start_main.o) (memset)
+/workspace/build01-full-next/installer/musl/lib/libc.a(strcmp.o)
+                              /tmp/ccOGoLSw.o (strcmp)
+/workspace/build01-full-next/installer/musl/lib/libc.a(strdup.o)
+                              /tmp/ccOGoLSw.o (strdup)
+/workspace/build01-full-next/installer/musl/lib/libc.a(strlen.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(fputs.o) (strlen)
+/workspace/build01-full-next/installer/musl/lib/libc.a(strncmp.o)
+                              /tmp/ccOGoLSw.o (strncmp)
+/workspace/build01-full-next/installer/musl/lib/libc.a(strnlen.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o) (strnlen)
+/workspace/build01-full-next/installer/musl/lib/libc.a(__lock.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(lite_malloc.o) (__lock)
+/workspace/build01-full-next/installer/musl/lib/libc.a(__syscall_cp.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(open.o) (__syscall_cp)
+/workspace/build01-full-next/installer/musl/lib/libc.a(close.o)
+                              /tmp/ccOGoLSw.o (close)
+/workspace/build01-full-next/installer/musl/lib/libc.a(getpid.o)
+                              /tmp/ccOGoLSw.o (getpid)
+/workspace/build01-full-next/installer/musl/lib/libc.a(pause.o)
+                              /tmp/ccOGoLSw.o (pause)
+/workspace/build01-full-next/installer/musl/lib/libc.a(read.o)
+                              /tmp/ccOGoLSw.o (read)
+/workspace/build01-full-next/installer/musl/lib/libc.a(readlink.o)
+                              /tmp/ccOGoLSw.o (readlink)
+/workspace/build01-full-next/installer/musl/lib/libc.a(__environ.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(__libc_start_main.o) (__environ)
+/workspace/build01-full-next/installer/musl/lib/libc.a(__init_tls.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(__libc_start_main.o) (__init_tls)
+/workspace/build01-full-next/installer/musl/lib/libc.a(strerror.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o) (strerror)
+/workspace/build01-full-next/installer/musl/lib/libc.a(_Exit.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(exit.o) (_Exit)
+/workspace/build01-full-next/installer/musl/lib/libc.a(intscan.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(strtol.o) (__intscan)
+/workspace/build01-full-next/installer/musl/lib/libc.a(procfdname.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(fstatat.o) (__procfdname)
+/workspace/build01-full-next/installer/musl/lib/libc.a(shgetc.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(strtol.o) (__shlim)
+/workspace/build01-full-next/installer/musl/lib/libc.a(__lctrans.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(strerror.o) (__lctrans)
+/workspace/build01-full-next/installer/musl/lib/libc.a(frexpl.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o) (frexpl)
+/workspace/build01-full-next/installer/musl/lib/libc.a(wctomb.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o) (wctomb)
+/workspace/build01-full-next/installer/musl/lib/libc.a(__lockfile.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(fflush.o) (__lockfile)
+/workspace/build01-full-next/installer/musl/lib/libc.a(__overflow.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(putchar.o) (__overflow)
+/workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_close.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(stderr.o) (__stdio_close)
+/workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_seek.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(stderr.o) (__stdio_seek)
+/workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_write.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(stderr.o) (__stdio_write)
+/workspace/build01-full-next/installer/musl/lib/libc.a(__stdout_write.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(stdout.o) (__stdout_write)
+/workspace/build01-full-next/installer/musl/lib/libc.a(__towrite.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(fwrite.o) (__towrite)
+/workspace/build01-full-next/installer/musl/lib/libc.a(__uflow.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(shgetc.o) (__uflow)
+/workspace/build01-full-next/installer/musl/lib/libc.a(qsort.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(qsort_nr.o) (__qsort_r)
+/workspace/build01-full-next/installer/musl/lib/libc.a(memchr.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(strnlen.o) (memchr)
+/workspace/build01-full-next/installer/musl/lib/libc.a(__set_thread_area.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(__init_tls.o) (__set_thread_area)
+/workspace/build01-full-next/installer/musl/lib/libc.a(default_attr.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(__init_tls.o) (__default_stacksize)
+/workspace/build01-full-next/installer/musl/lib/libc.a(lseek.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_seek.o) (__lseek)
+/workspace/build01-full-next/installer/musl/lib/libc.a(frexp.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(frexpl.o) (frexp)
+/workspace/build01-full-next/installer/musl/lib/libc.a(wcrtomb.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(wctomb.o) (wcrtomb)
+/workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_exit.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(__towrite.o) (__stdio_exit_needed)
+/workspace/build01-full-next/installer/musl/lib/libc.a(__toread.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(__uflow.o) (__toread)
+/workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivsi3.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(calloc.o) (__aeabi_uidiv)
+/workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_divsi3.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o) (__aeabi_idiv)
+/workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_lshrdi3.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(intscan.o) (__aeabi_llsr)
+/workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_ashldi3.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o) (__aeabi_llsl)
+/workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_aeabi_uldivmod.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o) (__aeabi_uldivmod)
+/workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_dvmd_lnx.o)
+                              /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_aeabi_uldivmod.o) (__aeabi_ldiv0)
+/workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivmoddi4.o)
+                              /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_aeabi_uldivmod.o) (__udivmoddi4)
+/workspace/build01-full-next/installer/musl/lib/libc.a(raise.o)
+                              /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_dvmd_lnx.o) (raise)
+/workspace/build01-full-next/installer/musl/lib/libc.a(block.o)
+                              /workspace/build01-full-next/installer/musl/lib/libc.a(raise.o) (__block_app_sigs)
+
+Allocating common symbols
+Common symbol       size              file
+
+__thread_list_lock  0x4               /workspace/build01-full-next/installer/musl/lib/libc.a(__init_tls.o)
+__hwcap             0x4               /workspace/build01-full-next/installer/musl/lib/libc.a(libc.o)
+__libc              0x38              /workspace/build01-full-next/installer/musl/lib/libc.a(libc.o)
+__malloc_lock       0x4               /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o)
+__malloc_replaced   0x4               /workspace/build01-full-next/installer/musl/lib/libc.a(replaced.o)
+__aligned_alloc_replaced
+                    0x4               /workspace/build01-full-next/installer/musl/lib/libc.a(replaced.o)
+__sysinfo           0x4               /workspace/build01-full-next/installer/musl/lib/libc.a(defsysinfo.o)
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/Scrt1.o
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/Scrt1.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/Scrt1.o
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/crti.o
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/crti.o
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/crti.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/crti.o
+ .data          0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/crtbeginS.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/crtbeginS.o
+ .text          0x0000000000000000        0x0 /tmp/ccOGoLSw.o
+ .data          0x0000000000000000        0x0 /tmp/ccOGoLSw.o
+ .bss           0x0000000000000000        0x0 /tmp/ccOGoLSw.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /tmp/ccOGoLSw.o
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(isalnum.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(isalnum.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(isalnum.o)
+ .text.__isalnum_l
+                0x0000000000000000        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(isalnum.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(isalnum.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(closedir.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(closedir.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(closedir.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(closedir.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(opendir.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(opendir.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(opendir.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(opendir.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(readdir.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(readdir.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(readdir.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(readdir.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__libc_start_main.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__libc_start_main.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__libc_start_main.o)
+ .text.dummy    0x0000000000000000        0x2 /workspace/build01-full-next/installer/musl/lib/libc.a(__libc_start_main.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__libc_start_main.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__errno_location.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__errno_location.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__errno_location.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__errno_location.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(exit.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(exit.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(exit.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(exit.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(open.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(open.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(open.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(open.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(defsysinfo.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(defsysinfo.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(defsysinfo.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(defsysinfo.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(libc.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(libc.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(libc.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(libc.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(syscall_ret.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(syscall_ret.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(syscall_ret.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(syscall_ret.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(mount.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(mount.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(mount.o)
+ .text.umount   0x0000000000000000       0x10 /workspace/build01-full-next/installer/musl/lib/libc.a(mount.o)
+ .text.umount2  0x0000000000000000        0xe /workspace/build01-full-next/installer/musl/lib/libc.a(mount.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(mount.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(calloc.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(calloc.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(calloc.o)
+ .text.allzerop
+                0x0000000000000000        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(calloc.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(calloc.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(free.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(free.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(free.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(free.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(lite_malloc.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(lite_malloc.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(lite_malloc.o)
+ .text.__simple_malloc
+                0x0000000000000000      0x19c /workspace/build01-full-next/installer/musl/lib/libc.a(lite_malloc.o)
+ .text.__libc_malloc
+                0x0000000000000000        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(lite_malloc.o)
+ .bss.brk.5698  0x0000000000000000        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(lite_malloc.o)
+ .bss.cur.5699  0x0000000000000000        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(lite_malloc.o)
+ .bss.end.5700  0x0000000000000000        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(lite_malloc.o)
+ .bss.lock      0x0000000000000000        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(lite_malloc.o)
+ .bss.mmap_step.5701
+                0x0000000000000000        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(lite_malloc.o)
+ .rodata.__bump_lockptr
+                0x0000000000000000        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(lite_malloc.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(lite_malloc.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(free.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(free.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(free.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(free.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o)
+ .text.__malloc_atfork
+                0x0000000000000000       0x1c /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(replaced.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(replaced.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(replaced.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(replaced.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(mmap.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(mmap.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(mmap.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(mmap.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(mprotect.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(mprotect.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(mprotect.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(mprotect.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(munmap.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(munmap.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(munmap.o)
+ .text.dummy    0x0000000000000000        0x2 /workspace/build01-full-next/installer/musl/lib/libc.a(munmap.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(munmap.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(fstat.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(fstat.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(fstat.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(fstat.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(fstatat.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(fstatat.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(fstatat.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(fstatat.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(mkdir.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(mkdir.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(mkdir.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(mkdir.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(stat.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(stat.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(stat.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(stat.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(statvfs.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(statvfs.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(statvfs.o)
+ .text.__fstatfs
+                0x0000000000000000       0x2c /workspace/build01-full-next/installer/musl/lib/libc.a(statvfs.o)
+ .text.statvfs  0x0000000000000000       0x70 /workspace/build01-full-next/installer/musl/lib/libc.a(statvfs.o)
+ .text.fstatvfs
+                0x0000000000000000       0x70 /workspace/build01-full-next/installer/musl/lib/libc.a(statvfs.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(statvfs.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(fflush.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(fflush.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(fflush.o)
+ .bss.dummy     0x0000000000000000        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(fflush.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(fflush.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(fputs.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(fputs.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(fputs.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(fputs.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(fwrite.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(fwrite.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(fwrite.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(fwrite.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(ofl.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(ofl.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(ofl.o)
+ .rodata.__stdio_ofl_lockptr
+                0x0000000000000000        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(ofl.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(ofl.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(printf.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(printf.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(printf.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(printf.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(putchar.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(putchar.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(putchar.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(putchar.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(snprintf.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(snprintf.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(snprintf.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(snprintf.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(stderr.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(stderr.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(stderr.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(stderr.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(stdout.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(stdout.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(stdout.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(stdout.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(vsnprintf.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(vsnprintf.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(vsnprintf.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(vsnprintf.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(qsort_nr.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(qsort_nr.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(qsort_nr.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(qsort_nr.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strtol.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strtol.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strtol.o)
+ .text.strtoll  0x0000000000000000       0x14 /workspace/build01-full-next/installer/musl/lib/libc.a(strtol.o)
+ .text.strtoul  0x0000000000000000       0x14 /workspace/build01-full-next/installer/musl/lib/libc.a(strtol.o)
+ .text.strtol   0x0000000000000000       0x14 /workspace/build01-full-next/installer/musl/lib/libc.a(strtol.o)
+ .text.strtoimax
+                0x0000000000000000        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(strtol.o)
+ .text.strtoumax
+                0x0000000000000000        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(strtol.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strtol.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(memcpy.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(memcpy.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(memcpy.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(memset.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(memset.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(memset.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(memset.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strcmp.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strcmp.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strcmp.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strcmp.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strdup.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strdup.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strdup.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strdup.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strlen.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strlen.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strlen.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strlen.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strncmp.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strncmp.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strncmp.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strncmp.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strnlen.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strnlen.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strnlen.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strnlen.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__lock.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__lock.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__lock.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__lock.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__syscall_cp.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__syscall_cp.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__syscall_cp.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__syscall_cp.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(close.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(close.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(close.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(close.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(getpid.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(getpid.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(getpid.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(getpid.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(pause.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(pause.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(pause.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(pause.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(read.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(read.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(read.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(read.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(readlink.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(readlink.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(readlink.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(readlink.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__environ.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__environ.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__environ.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__environ.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__init_tls.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__init_tls.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__init_tls.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__init_tls.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strerror.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strerror.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strerror.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(strerror.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(_Exit.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(_Exit.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(_Exit.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(_Exit.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(intscan.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(intscan.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(intscan.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(intscan.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(procfdname.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(procfdname.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(procfdname.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(procfdname.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(shgetc.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(shgetc.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(shgetc.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(shgetc.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__lctrans.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__lctrans.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__lctrans.o)
+ .text.__lctrans_cur
+                0x0000000000000000        0xe /workspace/build01-full-next/installer/musl/lib/libc.a(__lctrans.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__lctrans.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(frexpl.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(frexpl.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(frexpl.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(frexpl.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(wctomb.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(wctomb.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(wctomb.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(wctomb.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__lockfile.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__lockfile.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__lockfile.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__lockfile.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__overflow.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__overflow.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__overflow.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__overflow.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_close.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_close.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_close.o)
+ .text.dummy    0x0000000000000000        0x2 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_close.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_close.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_seek.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_seek.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_seek.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_seek.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_write.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_write.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_write.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_write.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdout_write.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdout_write.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdout_write.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdout_write.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__towrite.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__towrite.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__towrite.o)
+ .text.__towrite_needs_stdio_exit
+                0x0000000000000000        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(__towrite.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__towrite.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__uflow.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__uflow.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__uflow.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__uflow.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(qsort.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(qsort.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(qsort.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(qsort.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(memchr.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(memchr.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(memchr.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(memchr.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__set_thread_area.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__set_thread_area.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__set_thread_area.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__set_thread_area.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(default_attr.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(default_attr.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(default_attr.o)
+ .data.__default_guardsize
+                0x0000000000000000        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(default_attr.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(default_attr.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(lseek.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(lseek.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(lseek.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(lseek.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(frexp.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(frexp.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(frexp.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(frexp.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(wcrtomb.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(wcrtomb.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(wcrtomb.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(wcrtomb.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_exit.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_exit.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_exit.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_exit.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__toread.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__toread.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__toread.o)
+ .text.__toread_needs_stdio_exit
+                0x0000000000000000        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(__toread.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(__toread.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivsi3.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivsi3.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivsi3.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_divsi3.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_divsi3.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_divsi3.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_lshrdi3.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_lshrdi3.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_lshrdi3.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_ashldi3.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_ashldi3.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_ashldi3.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_aeabi_uldivmod.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_aeabi_uldivmod.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_dvmd_lnx.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_dvmd_lnx.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_dvmd_lnx.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivmoddi4.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivmoddi4.o)
+ .ARM.extab     0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivmoddi4.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivmoddi4.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(raise.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(raise.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(raise.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(raise.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(block.o)
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(block.o)
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(block.o)
+ .text.__block_all_sigs
+                0x0000000000000000       0x18 /workspace/build01-full-next/installer/musl/lib/libc.a(block.o)
+ .rodata.all_mask
+                0x0000000000000000        0x8 /workspace/build01-full-next/installer/musl/lib/libc.a(block.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/libc.a(block.o)
+ .text          0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/crtendS.o
+ .data          0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/crtendS.o
+ .bss           0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/crtendS.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/crtendS.o
+ .text          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/crtn.o
+ .data          0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/crtn.o
+ .bss           0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/crtn.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /workspace/build01-full-next/installer/musl/lib/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /workspace/build01-full-next/installer/musl/lib/Scrt1.o
+LOAD /workspace/build01-full-next/installer/musl/lib/crti.o
+LOAD /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/crtbeginS.o
+LOAD /tmp/ccOGoLSw.o
+START GROUP
+LOAD /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a
+LOAD /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc_eh.a
+LOAD /workspace/build01-full-next/installer/musl/lib/libc.a
+END GROUP
+LOAD /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/crtendS.o
+LOAD /workspace/build01-full-next/installer/musl/lib/crtn.o
+                [!provide]                        PROVIDE (__executable_start, 0x10000)
+                0x00000000000100d4                . = (0x10000 + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+                0x00000000000100d4       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x00000000000100d4       0x24 linker stubs
+
+.hash
+ *(.hash)
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.dyn        0x00000000000100f8        0x0
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x00000000000100f8        0x0 /workspace/build01-full-next/installer/musl/lib/Scrt1.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+                [!provide]                        PROVIDE (__rel_iplt_start, .)
+ *(.rel.iplt)
+ .rel.iplt      0x00000000000100f8        0x0 /workspace/build01-full-next/installer/musl/lib/Scrt1.o
+                [!provide]                        PROVIDE (__rel_iplt_end, .)
+
+.rela.dyn       0x00000000000100f8        0x0
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+                [!provide]                        PROVIDE (__rela_iplt_start, .)
+ *(.rela.iplt)
+                [!provide]                        PROVIDE (__rela_iplt_end, .)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.init           0x00000000000100f8        0x8
+ *(SORT(.init))
+ .init          0x00000000000100f8        0x2 /workspace/build01-full-next/installer/musl/lib/crti.o
+                0x00000000000100f8                _init
+ .init          0x00000000000100fa        0x6 /workspace/build01-full-next/installer/musl/lib/crtn.o
+
+.plt
+ *(.plt)
+
+.iplt           0x0000000000010100        0x0
+ *(.iplt)
+ .iplt          0x0000000000010100        0x0 /workspace/build01-full-next/installer/musl/lib/Scrt1.o
+
+.text           0x0000000000010100     0x53c4
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ .text.exit     0x0000000000010100       0x16 /workspace/build01-full-next/installer/musl/lib/libc.a(exit.o)
+                0x0000000000010100                exit
+ *(.text.startup .text.startup.*)
+ *fill*         0x0000000000010116        0x2 
+ .text.startup.main
+                0x0000000000010118      0x154 /tmp/ccOGoLSw.o
+                0x0000000000010118                main
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x000000000001026c       0x1c /workspace/build01-full-next/installer/musl/lib/Scrt1.o
+                0x000000000001026c                _start
+ .text._start_c
+                0x0000000000010288       0x40 /workspace/build01-full-next/installer/musl/lib/Scrt1.o
+                0x0000000000010288                _start_c
+ .text          0x00000000000102c8       0xd0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/crtbeginS.o
+ .text.name_compare
+                0x0000000000010398        0x8 /tmp/ccOGoLSw.o
+ .text.wait_forever
+                0x00000000000103a0       0x24 /tmp/ccOGoLSw.o
+ .text.json_string
+                0x00000000000103c4       0x64 /tmp/ccOGoLSw.o
+ .text.scope    0x0000000000010428       0x30 /tmp/ccOGoLSw.o
+ .text.event_error
+                0x0000000000010458       0x30 /tmp/ccOGoLSw.o
+ .text.read_meta
+                0x0000000000010488      0x160 /tmp/ccOGoLSw.o
+ .text.inventory
+                0x00000000000105e8      0x4d4 /tmp/ccOGoLSw.o
+ .text.isalnum  0x0000000000010abc       0x1a /workspace/build01-full-next/installer/musl/lib/libc.a(isalnum.o)
+                0x0000000000010abc                isalnum
+ .text.closedir
+                0x0000000000010ad6       0x16 /workspace/build01-full-next/installer/musl/lib/libc.a(closedir.o)
+                0x0000000000010ad6                closedir
+ .text.opendir  0x0000000000010aec       0x34 /workspace/build01-full-next/installer/musl/lib/libc.a(opendir.o)
+                0x0000000000010aec                opendir
+ .text.readdir  0x0000000000010b20       0x52 /workspace/build01-full-next/installer/musl/lib/libc.a(readdir.o)
+                0x0000000000010b20                readdir
+ .text.dummy1   0x0000000000010b72        0x2 /workspace/build01-full-next/installer/musl/lib/libc.a(__libc_start_main.o)
+                0x0000000000010b72                __init_ssp
+ .text.__init_libc
+                0x0000000000010b74      0x114 /workspace/build01-full-next/installer/musl/lib/libc.a(__libc_start_main.o)
+                0x0000000000010b74                __init_libc
+ .text.libc_start_init
+                0x0000000000010c88       0x20 /workspace/build01-full-next/installer/musl/lib/libc.a(__libc_start_main.o)
+                0x0000000000010c88                __libc_start_init
+ .text.libc_start_main_stage2
+                0x0000000000010ca8       0x1e /workspace/build01-full-next/installer/musl/lib/libc.a(__libc_start_main.o)
+ *fill*         0x0000000000010cc6        0x2 
+ .text.__libc_start_main
+                0x0000000000010cc8       0x28 /workspace/build01-full-next/installer/musl/lib/libc.a(__libc_start_main.o)
+                0x0000000000010cc8                __libc_start_main
+ .text.__errno_location
+                0x0000000000010cf0        0x8 /workspace/build01-full-next/installer/musl/lib/libc.a(__errno_location.o)
+                0x0000000000010cf0                ___errno_location
+                0x0000000000010cf0                __errno_location
+ .text.dummy    0x0000000000010cf8        0x2 /workspace/build01-full-next/installer/musl/lib/libc.a(exit.o)
+                0x0000000000010cf8                __funcs_on_exit
+ *fill*         0x0000000000010cfa        0x2 
+ .text.libc_exit_fini
+                0x0000000000010cfc       0x24 /workspace/build01-full-next/installer/musl/lib/libc.a(exit.o)
+                0x0000000000010cfc                __libc_exit_fini
+ .text.open     0x0000000000010d20       0x58 /workspace/build01-full-next/installer/musl/lib/libc.a(open.o)
+                0x0000000000010d20                open
+ .text.__syscall_ret
+                0x0000000000010d78       0x1a /workspace/build01-full-next/installer/musl/lib/libc.a(syscall_ret.o)
+                0x0000000000010d78                __syscall_ret
+ .text.mount    0x0000000000010d92       0x16 /workspace/build01-full-next/installer/musl/lib/libc.a(mount.o)
+                0x0000000000010d92                mount
+ .text.calloc   0x0000000000010da8       0x98 /workspace/build01-full-next/installer/musl/lib/libc.a(calloc.o)
+                0x0000000000010da8                calloc
+ .text.free     0x0000000000010e40        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(free.o)
+                0x0000000000010e40                free
+ .text.default_malloc
+                0x0000000000010e44        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(lite_malloc.o)
+                0x0000000000010e44                malloc
+ .text.queue    0x0000000000010e48       0x24 /workspace/build01-full-next/installer/musl/lib/libc.a(free.o)
+ .text.get_meta
+                0x0000000000010e6c       0xd4 /workspace/build01-full-next/installer/musl/lib/libc.a(free.o)
+ .text.get_stride
+                0x0000000000010f40       0x2c /workspace/build01-full-next/installer/musl/lib/libc.a(free.o)
+ .text.nontrivial_free
+                0x0000000000010f6c      0x21c /workspace/build01-full-next/installer/musl/lib/libc.a(free.o)
+ .text.__libc_free
+                0x0000000000011188      0x100 /workspace/build01-full-next/installer/musl/lib/libc.a(free.o)
+                0x0000000000011188                __libc_free
+ .text.queue    0x0000000000011288       0x24 /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o)
+ .text.get_stride
+                0x00000000000112ac       0x2c /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o)
+ .text.enframe  0x00000000000112d8       0xbc /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o)
+ .text.size_to_class
+                0x0000000000011394       0x34 /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o)
+ .text.wrlock   0x00000000000113c8       0x18 /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o)
+ .text.step_seq
+                0x00000000000113e0       0x30 /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o)
+ .text.__malloc_alloc_meta
+                0x0000000000011410      0x1c0 /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o)
+                0x0000000000011410                __malloc_alloc_meta
+ .text.alloc_slot
+                0x00000000000115d0      0x450 /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o)
+ .text.__libc_malloc_impl
+                0x0000000000011a20      0x164 /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o)
+                0x0000000000011a20                __libc_malloc_impl
+ .text.__malloc_allzerop
+                0x0000000000011b84       0xf4 /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o)
+                0x0000000000011b84                __malloc_allzerop
+ .text.dummy    0x0000000000011c78        0x2 /workspace/build01-full-next/installer/musl/lib/libc.a(mmap.o)
+                0x0000000000011c78                __vm_wait
+ *fill*         0x0000000000011c7a        0x2 
+ .text.__mmap   0x0000000000011c7c       0x88 /workspace/build01-full-next/installer/musl/lib/libc.a(mmap.o)
+                0x0000000000011c7c                __mmap
+                0x0000000000011c7c                mmap
+ .text.__mprotect
+                0x0000000000011d04       0x2c /workspace/build01-full-next/installer/musl/lib/libc.a(mprotect.o)
+                0x0000000000011d04                __mprotect
+                0x0000000000011d04                mprotect
+ .text.__munmap
+                0x0000000000011d30       0x20 /workspace/build01-full-next/installer/musl/lib/libc.a(munmap.o)
+                0x0000000000011d30                munmap
+                0x0000000000011d30                __munmap
+ .text.__fstat  0x0000000000011d50       0x1c /workspace/build01-full-next/installer/musl/lib/libc.a(fstat.o)
+                0x0000000000011d50                __fstat_time64
+                0x0000000000011d50                __fstat
+ .text.__fstatat
+                0x0000000000011d6c      0x33c /workspace/build01-full-next/installer/musl/lib/libc.a(fstatat.o)
+                0x0000000000011d6c                __fstatat
+                0x0000000000011d6c                __fstatat_time64
+ .text.mkdir    0x00000000000120a8        0xe /workspace/build01-full-next/installer/musl/lib/libc.a(mkdir.o)
+                0x00000000000120a8                mkdir
+ .text.__stat_time64
+                0x00000000000120b6        0xe /workspace/build01-full-next/installer/musl/lib/libc.a(stat.o)
+                0x00000000000120b6                __stat_time64
+ .text.__statfs
+                0x00000000000120c4       0x2a /workspace/build01-full-next/installer/musl/lib/libc.a(statvfs.o)
+                0x00000000000120c4                statfs
+ *fill*         0x00000000000120ee        0x2 
+ .text.fflush   0x00000000000120f0       0xd0 /workspace/build01-full-next/installer/musl/lib/libc.a(fflush.o)
+                0x00000000000120f0                fflush
+                0x00000000000120f0                fflush_unlocked
+ .text.fputs    0x00000000000121c0       0x22 /workspace/build01-full-next/installer/musl/lib/libc.a(fputs.o)
+                0x00000000000121c0                fputs_unlocked
+                0x00000000000121c0                fputs
+ .text.__fwritex
+                0x00000000000121e2       0x7e /workspace/build01-full-next/installer/musl/lib/libc.a(fwrite.o)
+                0x00000000000121e2                __fwritex
+ .text.fwrite   0x0000000000012260       0x58 /workspace/build01-full-next/installer/musl/lib/libc.a(fwrite.o)
+                0x0000000000012260                fwrite_unlocked
+                0x0000000000012260                fwrite
+ .text.__ofl_lock
+                0x00000000000122b8       0x14 /workspace/build01-full-next/installer/musl/lib/libc.a(ofl.o)
+                0x00000000000122b8                __ofl_lock
+ .text.__ofl_unlock
+                0x00000000000122cc        0xc /workspace/build01-full-next/installer/musl/lib/libc.a(ofl.o)
+                0x00000000000122cc                __ofl_unlock
+ .text.printf   0x00000000000122d8       0x20 /workspace/build01-full-next/installer/musl/lib/libc.a(printf.o)
+                0x00000000000122d8                printf
+ .text.locking_putc.constprop.1
+                0x00000000000122f8       0xa4 /workspace/build01-full-next/installer/musl/lib/libc.a(putchar.o)
+ .text.putchar  0x000000000001239c       0x44 /workspace/build01-full-next/installer/musl/lib/libc.a(putchar.o)
+                0x000000000001239c                putchar
+ .text.snprintf
+                0x00000000000123e0       0x1a /workspace/build01-full-next/installer/musl/lib/libc.a(snprintf.o)
+                0x00000000000123e0                snprintf
+ .text.pop_arg  0x00000000000123fa       0xa2 /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o)
+ .text.fmt_u    0x000000000001249c       0x64 /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o)
+ .text.getint   0x0000000000012500       0x40 /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o)
+ .text.out      0x0000000000012540       0x14 /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o)
+ .text.pad      0x0000000000012554       0x4c /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o)
+ .text.fmt_fp   0x00000000000125a0      0x8e4 /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o)
+ .text.printf_core
+                0x0000000000012e84      0x6d8 /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o)
+ .text.vfprintf
+                0x000000000001355c       0xe0 /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o)
+                0x000000000001355c                vfprintf
+ .text.sn_write
+                0x000000000001363c       0x62 /workspace/build01-full-next/installer/musl/lib/libc.a(vsnprintf.o)
+ *fill*         0x000000000001369e        0x2 
+ .text.vsnprintf
+                0x00000000000136a0       0x4c /workspace/build01-full-next/installer/musl/lib/libc.a(vsnprintf.o)
+                0x00000000000136a0                vsnprintf
+ .text.wrapper_cmp
+                0x00000000000136ec        0x2 /workspace/build01-full-next/installer/musl/lib/libc.a(qsort_nr.o)
+ *fill*         0x00000000000136ee        0x2 
+ .text.qsort    0x00000000000136f0       0x14 /workspace/build01-full-next/installer/musl/lib/libc.a(qsort_nr.o)
+                0x00000000000136f0                qsort
+ .text.strtox   0x0000000000013704       0x44 /workspace/build01-full-next/installer/musl/lib/libc.a(strtol.o)
+ .text.strtoull
+                0x0000000000013748       0x16 /workspace/build01-full-next/installer/musl/lib/libc.a(strtol.o)
+                0x0000000000013748                __strtoull_internal
+                0x0000000000013748                strtoull
+ .text          0x000000000001375e      0x2dc /workspace/build01-full-next/installer/musl/lib/libc.a(memcpy.o)
+                0x000000000001375e                memcpy
+ .text.memset   0x0000000000013a3a       0xae /workspace/build01-full-next/installer/musl/lib/libc.a(memset.o)
+                0x0000000000013a3a                memset
+ .text.strcmp   0x0000000000013ae8       0x1a /workspace/build01-full-next/installer/musl/lib/libc.a(strcmp.o)
+                0x0000000000013ae8                strcmp
+ .text.strdup   0x0000000000013b02       0x20 /workspace/build01-full-next/installer/musl/lib/libc.a(strdup.o)
+                0x0000000000013b02                strdup
+ .text.strlen   0x0000000000013b22       0x38 /workspace/build01-full-next/installer/musl/lib/libc.a(strlen.o)
+                0x0000000000013b22                strlen
+ .text.strncmp  0x0000000000013b5a       0x28 /workspace/build01-full-next/installer/musl/lib/libc.a(strncmp.o)
+                0x0000000000013b5a                strncmp
+ .text.strnlen  0x0000000000013b82       0x16 /workspace/build01-full-next/installer/musl/lib/libc.a(strnlen.o)
+                0x0000000000013b82                strnlen
+ .text.__lock   0x0000000000013b98       0xe0 /workspace/build01-full-next/installer/musl/lib/libc.a(__lock.o)
+                0x0000000000013b98                __lock
+ .text.__unlock
+                0x0000000000013c78       0x54 /workspace/build01-full-next/installer/musl/lib/libc.a(__lock.o)
+                0x0000000000013c78                __unlock
+ .text.sccp     0x0000000000013ccc       0x18 /workspace/build01-full-next/installer/musl/lib/libc.a(__syscall_cp.o)
+                0x0000000000013ccc                __syscall_cp_c
+ .text.__syscall_cp
+                0x0000000000013ce4        0xa /workspace/build01-full-next/installer/musl/lib/libc.a(__syscall_cp.o)
+                0x0000000000013ce4                __syscall_cp
+ .text.dummy    0x0000000000013cee        0x2 /workspace/build01-full-next/installer/musl/lib/libc.a(close.o)
+                0x0000000000013cee                __aio_close
+ .text.close    0x0000000000013cf0       0x2a /workspace/build01-full-next/installer/musl/lib/libc.a(close.o)
+                0x0000000000013cf0                close
+ .text.getpid   0x0000000000013d1a        0xc /workspace/build01-full-next/installer/musl/lib/libc.a(getpid.o)
+                0x0000000000013d1a                getpid
+ .text.pause    0x0000000000013d26       0x1e /workspace/build01-full-next/installer/musl/lib/libc.a(pause.o)
+                0x0000000000013d26                pause
+ .text.read     0x0000000000013d44       0x20 /workspace/build01-full-next/installer/musl/lib/libc.a(read.o)
+                0x0000000000013d44                read
+ .text.readlink
+                0x0000000000013d64       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(readlink.o)
+                0x0000000000013d64                readlink
+ *fill*         0x0000000000013d92        0x2 
+ .text.__init_tp
+                0x0000000000013d94       0x5c /workspace/build01-full-next/installer/musl/lib/libc.a(__init_tls.o)
+                0x0000000000013d94                __init_tp
+ .text.__copy_tls
+                0x0000000000013df0       0x6c /workspace/build01-full-next/installer/musl/lib/libc.a(__init_tls.o)
+                0x0000000000013df0                __copy_tls
+ .text.static_init_tls
+                0x0000000000013e5c      0x108 /workspace/build01-full-next/installer/musl/lib/libc.a(__init_tls.o)
+                0x0000000000013e5c                __init_tls
+ .text.__strerror_l
+                0x0000000000013f64       0x20 /workspace/build01-full-next/installer/musl/lib/libc.a(strerror.o)
+                0x0000000000013f64                strerror_l
+                0x0000000000013f64                __strerror_l
+ .text.strerror
+                0x0000000000013f84        0xc /workspace/build01-full-next/installer/musl/lib/libc.a(strerror.o)
+                0x0000000000013f84                strerror
+ .text._Exit    0x0000000000013f90       0x1a /workspace/build01-full-next/installer/musl/lib/libc.a(_Exit.o)
+                0x0000000000013f90                _Exit
+ *fill*         0x0000000000013faa        0x2 
+ .text.__intscan
+                0x0000000000013fac      0x3ec /workspace/build01-full-next/installer/musl/lib/libc.a(intscan.o)
+                0x0000000000013fac                __intscan
+ .text.__procfdname
+                0x0000000000014398       0x58 /workspace/build01-full-next/installer/musl/lib/libc.a(procfdname.o)
+                0x0000000000014398                __procfdname
+ .text.__shlim  0x00000000000143f0       0x38 /workspace/build01-full-next/installer/musl/lib/libc.a(shgetc.o)
+                0x00000000000143f0                __shlim
+ .text.__shgetc
+                0x0000000000014428       0xa8 /workspace/build01-full-next/installer/musl/lib/libc.a(shgetc.o)
+                0x0000000000014428                __shgetc
+ .text.dummy    0x00000000000144d0        0x2 /workspace/build01-full-next/installer/musl/lib/libc.a(__lctrans.o)
+                0x00000000000144d0                __lctrans_impl
+ .text.__lctrans
+                0x00000000000144d2        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(__lctrans.o)
+                0x00000000000144d2                __lctrans
+ .text.frexpl   0x00000000000144d6        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(frexpl.o)
+                0x00000000000144d6                frexpl
+ .text.wctomb   0x00000000000144da        0xa /workspace/build01-full-next/installer/musl/lib/libc.a(wctomb.o)
+                0x00000000000144da                wctomb
+ .text.__lockfile
+                0x00000000000144e4       0xa6 /workspace/build01-full-next/installer/musl/lib/libc.a(__lockfile.o)
+                0x00000000000144e4                __lockfile
+ .text.__unlockfile
+                0x000000000001458a       0x42 /workspace/build01-full-next/installer/musl/lib/libc.a(__lockfile.o)
+                0x000000000001458a                __unlockfile
+ .text.__overflow
+                0x00000000000145cc       0x4c /workspace/build01-full-next/installer/musl/lib/libc.a(__overflow.o)
+                0x00000000000145cc                __overflow
+ .text.__stdio_close
+                0x0000000000014618       0x1a /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_close.o)
+                0x0000000000014618                __stdio_close
+ .text.__stdio_seek
+                0x0000000000014632        0x6 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_seek.o)
+                0x0000000000014632                __stdio_seek
+ .text.__stdio_write
+                0x0000000000014638       0x90 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_write.o)
+                0x0000000000014638                __stdio_write
+ .text.__stdout_write
+                0x00000000000146c8       0x40 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdout_write.o)
+                0x00000000000146c8                __stdout_write
+ .text.__towrite
+                0x0000000000014708       0x30 /workspace/build01-full-next/installer/musl/lib/libc.a(__towrite.o)
+                0x0000000000014708                __towrite
+ .text.__uflow  0x0000000000014738       0x28 /workspace/build01-full-next/installer/musl/lib/libc.a(__uflow.o)
+                0x0000000000014738                __uflow
+ .text.shl      0x0000000000014760       0x2a /workspace/build01-full-next/installer/musl/lib/libc.a(qsort.o)
+ .text.shr      0x000000000001478a       0x2a /workspace/build01-full-next/installer/musl/lib/libc.a(qsort.o)
+ .text.cycle    0x00000000000147b4       0x5e /workspace/build01-full-next/installer/musl/lib/libc.a(qsort.o)
+ .text.sift     0x0000000000014812       0x80 /workspace/build01-full-next/installer/musl/lib/libc.a(qsort.o)
+ .text.trinkle  0x0000000000014892       0xe2 /workspace/build01-full-next/installer/musl/lib/libc.a(qsort.o)
+ .text.__qsort_r
+                0x0000000000014974      0x1ae /workspace/build01-full-next/installer/musl/lib/libc.a(qsort.o)
+                0x0000000000014974                __qsort_r
+                0x0000000000014974                qsort_r
+ .text.memchr   0x0000000000014b22       0x66 /workspace/build01-full-next/installer/musl/lib/libc.a(memchr.o)
+                0x0000000000014b22                memchr
+ .text.__set_thread_area
+                0x0000000000014b88       0x10 /workspace/build01-full-next/installer/musl/lib/libc.a(__set_thread_area.o)
+                0x0000000000014b88                __set_thread_area
+ .text.__lseek  0x0000000000014b98       0x2a /workspace/build01-full-next/installer/musl/lib/libc.a(lseek.o)
+                0x0000000000014b98                lseek
+                0x0000000000014b98                __lseek
+ *fill*         0x0000000000014bc2        0x6 
+ .text.frexp    0x0000000000014bc8       0x78 /workspace/build01-full-next/installer/musl/lib/libc.a(frexp.o)
+                0x0000000000014bc8                frexp
+ .text.wcrtomb  0x0000000000014c40       0xb2 /workspace/build01-full-next/installer/musl/lib/libc.a(wcrtomb.o)
+                0x0000000000014c40                wcrtomb
+ .text.close_file
+                0x0000000000014cf2       0x3c /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_exit.o)
+ *fill*         0x0000000000014d2e        0x2 
+ .text.__stdio_exit
+                0x0000000000014d30       0x3c /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_exit.o)
+                0x0000000000014d30                __stdio_exit
+                0x0000000000014d30                __stdio_exit_needed
+ .text.__toread
+                0x0000000000014d6c       0x46 /workspace/build01-full-next/installer/musl/lib/libc.a(__toread.o)
+                0x0000000000014d6c                __toread
+ *fill*         0x0000000000014db2        0x6 
+ .text          0x0000000000014db8      0x278 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivsi3.o)
+                0x0000000000014db8                __udivsi3
+                0x0000000000014db8                __aeabi_uidiv
+                0x0000000000015014                __aeabi_uidivmod
+ .text          0x0000000000015030      0x2b0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_divsi3.o)
+                0x0000000000015030                __aeabi_idiv
+                0x0000000000015030                __divsi3
+                0x00000000000152c4                __aeabi_idivmod
+ .text          0x00000000000152e0       0x18 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_lshrdi3.o)
+                0x00000000000152e0                __aeabi_llsr
+                0x00000000000152e0                __lshrdi3
+ .text          0x00000000000152f8       0x18 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_ashldi3.o)
+                0x00000000000152f8                __ashldi3
+                0x00000000000152f8                __aeabi_llsl
+ .text          0x0000000000015310       0x30 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_aeabi_uldivmod.o)
+                0x0000000000015310                __aeabi_uldivmod
+ .text          0x0000000000015340        0xc /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_dvmd_lnx.o)
+                0x0000000000015340                __aeabi_ldiv0
+                0x0000000000015340                __aeabi_idiv0
+ .text          0x000000000001534c      0x118 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivmoddi4.o)
+                0x000000000001534c                __udivmoddi4
+ .text.raise    0x0000000000015464       0x32 /workspace/build01-full-next/installer/musl/lib/libc.a(raise.o)
+                0x0000000000015464                raise
+ *fill*         0x0000000000015496        0x2 
+ .text.__block_app_sigs
+                0x0000000000015498       0x18 /workspace/build01-full-next/installer/musl/lib/libc.a(block.o)
+                0x0000000000015498                __block_app_sigs
+ .text.__restore_sigs
+                0x00000000000154b0       0x14 /workspace/build01-full-next/installer/musl/lib/libc.a(block.o)
+                0x00000000000154b0                __restore_sigs
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000000154c4        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000000154c4        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000000154c4        0x0 linker stubs
+ *(.v4_bx)
+ .v4_bx         0x00000000000154c4        0x0 linker stubs
+
+.fini           0x00000000000154c4        0x8
+ *(SORT(.fini))
+ .fini          0x00000000000154c4        0x2 /workspace/build01-full-next/installer/musl/lib/crti.o
+                0x00000000000154c4                _fini
+ .fini          0x00000000000154c6        0x6 /workspace/build01-full-next/installer/musl/lib/crtn.o
+                [!provide]                        PROVIDE (__etext, .)
+                [!provide]                        PROVIDE (_etext, .)
+                [!provide]                        PROVIDE (etext, .)
+
+.rodata         0x00000000000154cc     0x1148
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.event_error.str1.1
+                0x00000000000154cc       0x28 /tmp/ccOGoLSw.o
+ .rodata.inventory.str1.1
+                0x00000000000154f4      0x28e /tmp/ccOGoLSw.o
+                                        0x295 (size before relaxing)
+ .rodata.json_string.str1.1
+                0x0000000000015782        0x7 /tmp/ccOGoLSw.o
+                                          0xc (size before relaxing)
+ .rodata.main.str1.1
+                0x0000000000015789      0x111 /tmp/ccOGoLSw.o
+                                        0x118 (size before relaxing)
+ .rodata.read_meta.str1.1
+                0x000000000001589a       0x29 /tmp/ccOGoLSw.o
+ .rodata.scope.str1.1
+                0x00000000000158c3       0xd0 /tmp/ccOGoLSw.o
+ .rodata.wait_forever.str1.1
+                0x0000000000015993       0x34 /tmp/ccOGoLSw.o
+ .rodata.__init_libc.str1.1
+                0x00000000000159c7        0xa /workspace/build01-full-next/installer/musl/lib/libc.a(__libc_start_main.o)
+                                          0xb (size before relaxing)
+ *fill*         0x00000000000159d1        0x1 
+ .rodata.__malloc_size_classes
+                0x00000000000159d2       0x60 /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o)
+                0x00000000000159d2                __malloc_size_classes
+ .rodata.med_cnt_tab
+                0x0000000000015a32        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o)
+ .rodata.small_cnt_tab
+                0x0000000000015a36       0x1b /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o)
+ .rodata.__fstat.str1.1
+                0x0000000000015a51        0x1 /workspace/build01-full-next/installer/musl/lib/libc.a(fstat.o)
+ *fill*         0x0000000000015a51        0x3 
+ .rodata.stderr
+                0x0000000000015a54        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(stderr.o)
+                0x0000000000015a54                stderr
+ .rodata.stdout
+                0x0000000000015a58        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(stdout.o)
+                0x0000000000015a58                stdout
+ .rodata.fmt_fp.str1.1
+                0x0000000000015a5c       0x23 /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o)
+                                         0x25 (size before relaxing)
+ .rodata.printf_core.str1.1
+                0x0000000000015a7f       0x11 /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o)
+ .rodata.states
+                0x0000000000015a90      0x1d0 /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o)
+ .rodata.xdigits
+                0x0000000000015c60       0x10 /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o)
+ .rodata.errmsgidx
+                0x0000000000015c70      0x108 /workspace/build01-full-next/installer/musl/lib/libc.a(strerror.o)
+ .rodata.errmsgstr
+                0x0000000000015d78      0x77a /workspace/build01-full-next/installer/musl/lib/libc.a(strerror.o)
+ .rodata        0x00000000000164f2        0x9 /workspace/build01-full-next/installer/musl/lib/libc.a(intscan.o)
+ .rodata.table  0x00000000000164fb      0x101 /workspace/build01-full-next/installer/musl/lib/libc.a(intscan.o)
+ .rodata.__procfdname.str1.1
+                0x00000000000165fc        0xf /workspace/build01-full-next/installer/musl/lib/libc.a(procfdname.o)
+ *fill*         0x000000000001660b        0x1 
+ .rodata.app_mask
+                0x000000000001660c        0x8 /workspace/build01-full-next/installer/musl/lib/libc.a(block.o)
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                [!provide]                        PROVIDE (__exidx_start, .)
+
+.ARM.exidx      0x0000000000016614        0x8
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx     0x0000000000016614        0x8 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivmoddi4.o)
+                [!provide]                        PROVIDE (__exidx_end, .)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x000000000001661c        0x4
+ *(.eh_frame)
+ .eh_frame      0x000000000001661c        0x4 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/crtendS.o
+ *(.eh_frame.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x0000000000026620                . = DATA_SEGMENT_ALIGN (0x10000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000000026620        0x0
+                [!provide]                        PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end, .)
+
+.init_array     0x0000000000026620        0x4
+                0x0000000000026620                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*) SORT(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+ .init_array    0x0000000000026620        0x4 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/crtbeginS.o
+                0x0000000000026624                PROVIDE (__init_array_end, .)
+
+.fini_array     0x0000000000026624        0x4
+                0x0000000000026624                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*) SORT(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+ .fini_array    0x0000000000026624        0x4 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/crtbeginS.o
+                0x0000000000026628                PROVIDE (__fini_array_end, .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr            0x0000000000026628        0x4
+ *(.jcr)
+ .jcr           0x0000000000026628        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/crtbeginS.o
+ .jcr           0x0000000000026628        0x4 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/crtendS.o
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic
+ *(.dynamic)
+                0x000000000002662c                . = DATA_SEGMENT_RELRO_END (., 0x0)
+
+.got            0x000000000002662c       0x28
+ *(.got.plt)
+ .got.plt       0x000000000002662c        0xc /workspace/build01-full-next/installer/musl/lib/Scrt1.o
+                0x000000000002662c                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0000000000026638        0x0 /workspace/build01-full-next/installer/musl/lib/Scrt1.o
+ *(.got)
+ .got           0x0000000000026638       0x1c /workspace/build01-full-next/installer/musl/lib/Scrt1.o
+ *(.igot)
+
+.data           0x0000000000026658      0x138
+                [!provide]                        PROVIDE (__data_start, .)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.rel.local
+                0x0000000000026658        0x4 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/crtbeginS.o
+                0x0000000000026658                __dso_handle
+ *fill*         0x000000000002665c        0x4 
+ .data.__stderr_FILE
+                0x0000000000026660       0x90 /workspace/build01-full-next/installer/musl/lib/libc.a(stderr.o)
+                0x0000000000026660                __stderr_FILE
+ .data.__stderr_used
+                0x00000000000266f0        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(stderr.o)
+                0x00000000000266f0                __stderr_used
+ *fill*         0x00000000000266f4        0x4 
+ .data.__stdout_FILE
+                0x00000000000266f8       0x90 /workspace/build01-full-next/installer/musl/lib/libc.a(stdout.o)
+                0x00000000000266f8                __stdout_FILE
+ .data.__stdout_used
+                0x0000000000026788        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(stdout.o)
+                0x0000000000026788                __stdout_used
+ .data.__default_stacksize
+                0x000000000002678c        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(default_attr.o)
+                0x000000000002678c                __default_stacksize
+
+.tm_clone_table
+                0x0000000000026790        0x0
+ .tm_clone_table
+                0x0000000000026790        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/crtbeginS.o
+ .tm_clone_table
+                0x0000000000026790        0x0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/crtendS.o
+
+.data1
+ *(.data1)
+                0x0000000000026790                _edata = .
+                [!provide]                        PROVIDE (edata, .)
+                0x0000000000026790                . = .
+                0x0000000000026790                __bss_start = .
+                0x0000000000026790                __bss_start__ = .
+
+.bss            0x0000000000026790      0x744
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000000026790        0x1 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/crtbeginS.o
+ *fill*         0x0000000000026791        0x3 
+ .bss.__progname
+                0x0000000000026794        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(libc.o)
+                0x0000000000026794                __progname
+                0x0000000000026794                program_invocation_short_name
+ .bss.__progname_full
+                0x0000000000026798        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(libc.o)
+                0x0000000000026798                program_invocation_name
+                0x0000000000026798                __progname_full
+ *fill*         0x000000000002679c        0x4 
+ .bss.__malloc_context
+                0x00000000000267a0      0x1f8 /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o)
+                0x00000000000267a0                __malloc_context
+ .bss.ofl_head  0x0000000000026998        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(ofl.o)
+ .bss.ofl_lock  0x000000000002699c        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(ofl.o)
+ .bss.buf       0x00000000000269a0        0x8 /workspace/build01-full-next/installer/musl/lib/libc.a(stderr.o)
+ .bss.buf       0x00000000000269a8      0x408 /workspace/build01-full-next/installer/musl/lib/libc.a(stdout.o)
+ .bss.__environ
+                0x0000000000026db0        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(__environ.o)
+                0x0000000000026db0                _environ
+                0x0000000000026db0                __environ
+                0x0000000000026db0                environ
+                0x0000000000026db0                ___environ
+ .bss.builtin_tls
+                0x0000000000026db4       0xb4 /workspace/build01-full-next/installer/musl/lib/libc.a(__init_tls.o)
+ .bss.main_tls  0x0000000000026e68       0x18 /workspace/build01-full-next/installer/musl/lib/libc.a(__init_tls.o)
+ .bss.dummy_file
+                0x0000000000026e80        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_exit.o)
+                0x0000000000026e80                __stdin_used
+ *(COMMON)
+ COMMON         0x0000000000026e84        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(defsysinfo.o)
+                0x0000000000026e84                __sysinfo
+ COMMON         0x0000000000026e88       0x3c /workspace/build01-full-next/installer/musl/lib/libc.a(libc.o)
+                0x0000000000026e88                __hwcap
+                0x0000000000026e8c                __libc
+ COMMON         0x0000000000026ec4        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o)
+                0x0000000000026ec4                __malloc_lock
+ COMMON         0x0000000000026ec8        0x8 /workspace/build01-full-next/installer/musl/lib/libc.a(replaced.o)
+                0x0000000000026ec8                __malloc_replaced
+                0x0000000000026ecc                __aligned_alloc_replaced
+ COMMON         0x0000000000026ed0        0x4 /workspace/build01-full-next/installer/musl/lib/libc.a(__init_tls.o)
+                0x0000000000026ed0                __thread_list_lock
+                0x0000000000026ed4                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x0000000000026ed4                _bss_end__ = .
+                0x0000000000026ed4                __bss_end__ = .
+                0x0000000000026ed4                . = ALIGN (0x4)
+                0x0000000000026ed4                . = SEGMENT_START ("ldata-segment", .)
+                0x0000000000026ed4                . = ALIGN (0x4)
+                0x0000000000026ed4                __end__ = .
+                0x0000000000026ed4                _end = .
+                [!provide]                        PROVIDE (end, .)
+                0x0000000000026ed4                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2d
+ *(.comment)
+ .comment       0x0000000000000000       0x2d /workspace/build01-full-next/installer/musl/lib/Scrt1.o
+                                         0x2e (size before relaxing)
+ .comment       0x000000000000002d       0x2e /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/crtbeginS.o
+ .comment       0x000000000000002d       0x2e /tmp/ccOGoLSw.o
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(isalnum.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(closedir.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(opendir.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(readdir.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(__libc_start_main.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(__errno_location.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(exit.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(open.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(defsysinfo.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(libc.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(syscall_ret.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(mount.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(calloc.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(free.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(lite_malloc.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(free.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(replaced.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(mmap.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(mprotect.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(munmap.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(fstat.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(fstatat.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(mkdir.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(stat.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(statvfs.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(fflush.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(fputs.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(fwrite.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(ofl.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(printf.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(putchar.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(snprintf.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(stderr.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(stdout.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(vsnprintf.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(qsort_nr.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(strtol.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(memset.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(strcmp.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(strdup.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(strlen.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(strncmp.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(strnlen.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(__lock.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(__syscall_cp.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(close.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(getpid.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(pause.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(read.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(readlink.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(__environ.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(__init_tls.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(strerror.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(_Exit.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(intscan.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(procfdname.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(shgetc.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(__lctrans.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(frexpl.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(wctomb.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(__lockfile.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(__overflow.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_close.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_seek.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_write.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(__stdout_write.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(__towrite.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(__uflow.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(qsort.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(memchr.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(__set_thread_area.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(default_attr.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(lseek.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(frexp.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(wcrtomb.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_exit.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(__toread.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivmoddi4.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(raise.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-full-next/installer/musl/lib/libc.a(block.o)
+ .comment       0x000000000000002d       0x2e /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/crtendS.o
+
+.ARM.attributes
+                0x0000000000000000       0x33
+ .ARM.attributes
+                0x0000000000000000       0x35 /workspace/build01-full-next/installer/musl/lib/Scrt1.o
+ .ARM.attributes
+                0x0000000000000035       0x1f /workspace/build01-full-next/installer/musl/lib/crti.o
+ .ARM.attributes
+                0x0000000000000054       0x33 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/crtbeginS.o
+ .ARM.attributes
+                0x0000000000000087       0x33 /tmp/ccOGoLSw.o
+ .ARM.attributes
+                0x00000000000000ba       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(isalnum.o)
+ .ARM.attributes
+                0x00000000000000ef       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(closedir.o)
+ .ARM.attributes
+                0x0000000000000124       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(opendir.o)
+ .ARM.attributes
+                0x0000000000000159       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(readdir.o)
+ .ARM.attributes
+                0x000000000000018e       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(__libc_start_main.o)
+ .ARM.attributes
+                0x00000000000001c3       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(__errno_location.o)
+ .ARM.attributes
+                0x00000000000001f8       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(exit.o)
+ .ARM.attributes
+                0x000000000000022d       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(open.o)
+ .ARM.attributes
+                0x0000000000000262       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(defsysinfo.o)
+ .ARM.attributes
+                0x0000000000000297       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(libc.o)
+ .ARM.attributes
+                0x00000000000002cc       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(syscall_ret.o)
+ .ARM.attributes
+                0x0000000000000301       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(mount.o)
+ .ARM.attributes
+                0x0000000000000336       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(calloc.o)
+ .ARM.attributes
+                0x000000000000036b       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(free.o)
+ .ARM.attributes
+                0x00000000000003a0       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(lite_malloc.o)
+ .ARM.attributes
+                0x00000000000003d5       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(free.o)
+ .ARM.attributes
+                0x000000000000040a       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(malloc.o)
+ .ARM.attributes
+                0x000000000000043f       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(replaced.o)
+ .ARM.attributes
+                0x0000000000000474       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(mmap.o)
+ .ARM.attributes
+                0x00000000000004a9       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(mprotect.o)
+ .ARM.attributes
+                0x00000000000004de       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(munmap.o)
+ .ARM.attributes
+                0x0000000000000513       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(fstat.o)
+ .ARM.attributes
+                0x0000000000000548       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(fstatat.o)
+ .ARM.attributes
+                0x000000000000057d       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(mkdir.o)
+ .ARM.attributes
+                0x00000000000005b2       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(stat.o)
+ .ARM.attributes
+                0x00000000000005e7       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(statvfs.o)
+ .ARM.attributes
+                0x000000000000061c       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(fflush.o)
+ .ARM.attributes
+                0x0000000000000651       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(fputs.o)
+ .ARM.attributes
+                0x0000000000000686       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(fwrite.o)
+ .ARM.attributes
+                0x00000000000006bb       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(ofl.o)
+ .ARM.attributes
+                0x00000000000006f0       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(printf.o)
+ .ARM.attributes
+                0x0000000000000725       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(putchar.o)
+ .ARM.attributes
+                0x000000000000075a       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(snprintf.o)
+ .ARM.attributes
+                0x000000000000078f       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(stderr.o)
+ .ARM.attributes
+                0x00000000000007c4       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(stdout.o)
+ .ARM.attributes
+                0x00000000000007f9       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(vfprintf.o)
+ .ARM.attributes
+                0x000000000000082e       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(vsnprintf.o)
+ .ARM.attributes
+                0x0000000000000863       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(qsort_nr.o)
+ .ARM.attributes
+                0x0000000000000898       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(strtol.o)
+ .ARM.attributes
+                0x00000000000008cd       0x1f /workspace/build01-full-next/installer/musl/lib/libc.a(memcpy.o)
+ .ARM.attributes
+                0x00000000000008ec       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(memset.o)
+ .ARM.attributes
+                0x0000000000000921       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(strcmp.o)
+ .ARM.attributes
+                0x0000000000000956       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(strdup.o)
+ .ARM.attributes
+                0x000000000000098b       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(strlen.o)
+ .ARM.attributes
+                0x00000000000009c0       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(strncmp.o)
+ .ARM.attributes
+                0x00000000000009f5       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(strnlen.o)
+ .ARM.attributes
+                0x0000000000000a2a       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(__lock.o)
+ .ARM.attributes
+                0x0000000000000a5f       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(__syscall_cp.o)
+ .ARM.attributes
+                0x0000000000000a94       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(close.o)
+ .ARM.attributes
+                0x0000000000000ac9       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(getpid.o)
+ .ARM.attributes
+                0x0000000000000afe       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(pause.o)
+ .ARM.attributes
+                0x0000000000000b33       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(read.o)
+ .ARM.attributes
+                0x0000000000000b68       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(readlink.o)
+ .ARM.attributes
+                0x0000000000000b9d       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(__environ.o)
+ .ARM.attributes
+                0x0000000000000bd2       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(__init_tls.o)
+ .ARM.attributes
+                0x0000000000000c07       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(strerror.o)
+ .ARM.attributes
+                0x0000000000000c3c       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(_Exit.o)
+ .ARM.attributes
+                0x0000000000000c71       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(intscan.o)
+ .ARM.attributes
+                0x0000000000000ca6       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(procfdname.o)
+ .ARM.attributes
+                0x0000000000000cdb       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(shgetc.o)
+ .ARM.attributes
+                0x0000000000000d10       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(__lctrans.o)
+ .ARM.attributes
+                0x0000000000000d45       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(frexpl.o)
+ .ARM.attributes
+                0x0000000000000d7a       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(wctomb.o)
+ .ARM.attributes
+                0x0000000000000daf       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(__lockfile.o)
+ .ARM.attributes
+                0x0000000000000de4       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(__overflow.o)
+ .ARM.attributes
+                0x0000000000000e19       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_close.o)
+ .ARM.attributes
+                0x0000000000000e4e       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_seek.o)
+ .ARM.attributes
+                0x0000000000000e83       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_write.o)
+ .ARM.attributes
+                0x0000000000000eb8       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdout_write.o)
+ .ARM.attributes
+                0x0000000000000eed       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(__towrite.o)
+ .ARM.attributes
+                0x0000000000000f22       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(__uflow.o)
+ .ARM.attributes
+                0x0000000000000f57       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(qsort.o)
+ .ARM.attributes
+                0x0000000000000f8c       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(memchr.o)
+ .ARM.attributes
+                0x0000000000000fc1       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(__set_thread_area.o)
+ .ARM.attributes
+                0x0000000000000ff6       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(default_attr.o)
+ .ARM.attributes
+                0x000000000000102b       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(lseek.o)
+ .ARM.attributes
+                0x0000000000001060       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(frexp.o)
+ .ARM.attributes
+                0x0000000000001095       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(wcrtomb.o)
+ .ARM.attributes
+                0x00000000000010ca       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(__stdio_exit.o)
+ .ARM.attributes
+                0x00000000000010ff       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(__toread.o)
+ .ARM.attributes
+                0x0000000000001134       0x21 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x0000000000001155       0x21 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x0000000000001176       0x21 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_lshrdi3.o)
+ .ARM.attributes
+                0x0000000000001197       0x21 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_ashldi3.o)
+ .ARM.attributes
+                0x00000000000011b8       0x21 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x00000000000011d9       0x21 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_dvmd_lnx.o)
+ .ARM.attributes
+                0x00000000000011fa       0x33 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x000000000000122d       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(raise.o)
+ .ARM.attributes
+                0x0000000000001262       0x35 /workspace/build01-full-next/installer/musl/lib/libc.a(block.o)
+ .ARM.attributes
+                0x0000000000001297       0x33 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/crtendS.o
+ .ARM.attributes
+                0x00000000000012ca       0x1f /workspace/build01-full-next/installer/musl/lib/crtn.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000       0xe0
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x20 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivsi3.o)
+ .debug_aranges
+                0x0000000000000020       0x20 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_divsi3.o)
+ .debug_aranges
+                0x0000000000000040       0x20 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_lshrdi3.o)
+ .debug_aranges
+                0x0000000000000060       0x20 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_ashldi3.o)
+ .debug_aranges
+                0x0000000000000080       0x20 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_aeabi_uldivmod.o)
+ .debug_aranges
+                0x00000000000000a0       0x20 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_dvmd_lnx.o)
+ .debug_aranges
+                0x00000000000000c0       0x20 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivmoddi4.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x1787
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0x1d3 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivsi3.o)
+ .debug_info    0x00000000000001d3      0x1d3 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_divsi3.o)
+ .debug_info    0x00000000000003a6      0x1d3 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_lshrdi3.o)
+ .debug_info    0x0000000000000579      0x1d3 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_ashldi3.o)
+ .debug_info    0x000000000000074c      0x1cf /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_aeabi_uldivmod.o)
+ .debug_info    0x000000000000091b      0x1d3 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_dvmd_lnx.o)
+ .debug_info    0x0000000000000aee      0xc99 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivmoddi4.o)
+
+.debug_abbrev   0x0000000000000000      0x1ee
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x14 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivsi3.o)
+ .debug_abbrev  0x0000000000000014       0x14 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_divsi3.o)
+ .debug_abbrev  0x0000000000000028       0x14 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_lshrdi3.o)
+ .debug_abbrev  0x000000000000003c       0x14 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_ashldi3.o)
+ .debug_abbrev  0x0000000000000050       0x14 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_aeabi_uldivmod.o)
+ .debug_abbrev  0x0000000000000064       0x14 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_dvmd_lnx.o)
+ .debug_abbrev  0x0000000000000078      0x176 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivmoddi4.o)
+
+.debug_line     0x0000000000000000      0xb5b
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000      0x10a /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivsi3.o)
+ .debug_line    0x000000000000010a      0x11b /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_divsi3.o)
+ .debug_line    0x0000000000000225       0xf6 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_lshrdi3.o)
+ .debug_line    0x000000000000031b       0xf6 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_ashldi3.o)
+ .debug_line    0x0000000000000411       0xeb /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_aeabi_uldivmod.o)
+ .debug_line    0x00000000000004fc       0xf0 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_dvmd_lnx.o)
+ .debug_line    0x00000000000005ec      0x56f /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivmoddi4.o)
+
+.debug_frame    0x0000000000000000       0xc8
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x20 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivsi3.o)
+ .debug_frame   0x0000000000000020       0x20 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_divsi3.o)
+ .debug_frame   0x0000000000000040       0x2c /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x000000000000006c       0x28 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_dvmd_lnx.o)
+ .debug_frame   0x0000000000000094       0x34 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivmoddi4.o)
+
+.debug_str      0x0000000000000000      0xfaf
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0xfaf /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivmoddi4.o)
+                                       0x1075 (size before relaxing)
+
+.debug_loc      0x0000000000000000      0x1f7
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x1f7 /workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a(_udivmoddi4.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_addr
+ *(.debug_addr)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(/workspace/build01-full-next/installer/artifacts/vortex-diagnostic-init.unstripped elf32-littlearm)

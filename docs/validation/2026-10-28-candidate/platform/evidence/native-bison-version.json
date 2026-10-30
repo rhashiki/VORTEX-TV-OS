@@ -1,0 +1,10 @@
+{
+  "path": "/workspace/build01-full-next/platform/out/host/linux-x86/bin/bison",
+  "bytes": 1333296,
+  "sha256": "84fe8a8e6f7f5edf9b9584459ef16468c1c76bada0a3c9092345d808503d59f9",
+  "exit_code": 0,
+  "stdout": "bison (GNU Bison) 2.7\nWritten by Robert Corbett and Richard Stallman.\n\nCopyright (C) 2012 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n",
+  "stderr": "",
+  "source_revision": "7467d52af437dd3dfea237a6865ab84bf258dee0",
+  "scope": "source-built host tool through genuine Android.mk; not target firmware"
+}

@@ -1,0 +1,53 @@
+{
+  "status": "compiled_unbundled_home_apk",
+  "scope": "VortexHome only; not streaming APK, complete Android, ROM or SD image",
+  "source_revision": "1db0c914fda74419be097b36c1e753296bcc2bbc",
+  "source_files": 17,
+  "source_changes": "none",
+  "source_byte_verification": "pass",
+  "build": {
+    "configuration": "tapas arm eng VortexHome",
+    "make_target": "VortexHome",
+    "aosp_build_revision": "5bcb8ef25cbb92b0f6ee9a40fb05bb47b5173774",
+    "sdk_revision": "23f7de5ba433fc82269ba63c203fe0a3eaf4a680",
+    "USE_NINJA": "false",
+    "USE_SOONG": "false",
+    "JACK_SERVER": "false",
+    "local_jack": "full",
+    "host_compatibility": "Reused genuine r6 native-source acp and explicit SDK33.0.2 zipalign override from prior experiment; remaining API25/Jack/aapt and build rules r6. Not pristine all-r6 host prebuilts.",
+    "build_sources_reused_read_only": true,
+    "output_directory": "/workspace/build01-full-next/latest-home/out"
+  },
+  "artifact": {
+    "path": "artifacts/VortexHome-main-1db0c91-aosp-r6.apk",
+    "bytes": 44410,
+    "sha256": "37581d89ae8fda9cc42c9d0d2e1771c5962e76f5cdc91d9bc866ee5c36844c41",
+    "installed_copy_sha256": "37581d89ae8fda9cc42c9d0d2e1771c5962e76f5cdc91d9bc866ee5c36844c41",
+    "package": "os.vortex.tv",
+    "version_code": 1,
+    "version_name": "0.1.0-dev",
+    "min_sdk": 25,
+    "target_sdk": 25,
+    "signature_scheme_v2": true,
+    "signer": "Public AOSP platform TEST key; not production/device identity",
+    "certificate_sha256": "c8a2e9bccf597c2fb6dc66bee293fc13f2fc47ec77bc6b2b0d52c11f51192ab8"
+  },
+  "checks": {
+    "zip_crc": "pass",
+    "alignment_4byte": "pass",
+    "signature": "pass",
+    "manifest_metadata": "pass",
+    "dex037_and_streaming_package_marker": "pass; byte-string presence only, not runtime/allowlist behavior proof"
+  },
+  "limitations": [
+    "No emulator/device installation or runtime validation of this updated binary. Earlier API25 results are historical, for earlier binaries.",
+    "Native VortexTV prebuilt streaming app and OEM catalog-access input were not present, fetched, built or packaged.",
+    "No user-facing app drawer or visual asset changes made. No branding previews/substitutions introduced.",
+    "No complete Android/system/recovery/boot/SD image or physical operation. No GitHub Actions used."
+  ],
+  "capacity": {
+    "new_area_bytes": 26162018,
+    "budget_bytes": 157286400,
+    "free_bytes": 5657575424
+  }
+}

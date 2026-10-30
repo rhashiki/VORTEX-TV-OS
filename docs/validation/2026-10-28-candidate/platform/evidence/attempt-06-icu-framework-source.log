@@ -1,0 +1,350 @@
+including device/rockchip/rk322x/vendorsetup.sh
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=vortex_rk322x_sd_box
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/platform/out
+============================================
+LUNCH_STATUS=0
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=vortex_rk322x_sd_box
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/platform/out
+============================================
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/com/android/internal/os/IDropBoxService.java
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/backup
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/com/android/internal/backup
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/backup
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/com/android/internal/backup
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/app
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/content
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/APPS/FrameworkTest_intermediates/
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/android.policy*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/framework/android.policy.jar
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates
+Clean step: rm -f /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj/lib/libequalizer.so
+Clean step: rm -f /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj/lib/libequalizertest.so
+Clean step: rm -f /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj/lib/libreverb.so
+Clean step: rm -f /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj/lib/libreverbtest.so
+Clean step: rm -f /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/symbols/system/lib/libequalizer.so
+Clean step: rm -f /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/symbols/system/lib/libequalizertest.so
+Clean step: rm -f /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/symbols/system/lib/libreverb.so
+Clean step: rm -f /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/symbols/system/lib/libreverbtest.so
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj/SHARED_LIBRARIES/libequalizer_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj/SHARED_LIBRARIES/libequalizertest_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj/SHARED_LIBRARIES/libreverb_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj/SHARED_LIBRARIES/libreverbtest_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/lib/soundfx/
+Clean step: find . -type f -name "*.rs" -print0 | xargs -0 touch
+touch: missing file operand
+Try 'touch --help' for more information.
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj/SHARED_LIBRARIES/libandroid_runtime_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj/lib/libandroid_runtime.so
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/symbols/system/lib/libandroid_runtime.so
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/lib/libandroid_runtime.so
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj/SHARED_LIBRARIES/libhwui_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj/lib/libhwui.so
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/symbols/system/lib/libhwui.so
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/lib/libhwui.so
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/os/storage/*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/content/IClipboard.P
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/telephony/java/com/android/internal/telephony/ITelephonyRegistry.P
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/android_stubs_current_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/docs/api-stubs*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/com/trustedlogic
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/android_stubs_current_intermediates/src/com/trustedlogic
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/com/trustedlogic
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/android_stubs_current_intermediates/src/com/trustedlogic
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/APPS/Music2_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/nfc/INdefTag.java
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj/STATIC_LIBRARIES/libstagefright_aacdec_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj/STATIC_LIBRARIES/libstagefright_mp3dec_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/build.prop
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/APPS/ImageProcessing_intermediates/
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/APPS/ModelViewer_intermediates/
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/APPS/PerfTest_intermediates/
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/APPS/RSTest_intermediates/
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/hardware/IUsbManager.java
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/nfc
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj/SHARED_LIBRARIES/libstagefright_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/os
+Clean step: rm -rf /workspace/build01-full-next/platform/outtarget/common/obj/JAVA_LIBRARIES/framework_intermediates/src/keystore/java/android/security/IKeyChainAliasResponse.java
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/vpn
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/nfc
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/APPS/SystemUI_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/R/com/android/systemui/R.java
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/media/java/android/media/IAudioService.P
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/media/java/android/media/IAudioService.P
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/media/audio/
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/nfc/
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/wifi/java
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/wifi/java
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/media/audio/
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/fonts/Lohit_Hindi.ttf
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/media/audio/
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/fonts/DroidSans*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/media/audio/
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/fonts/DroidSans*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/media/audio/
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/content
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/android_stubs_current_intermediates/src/android/content
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/APPS/*/src/renderscript
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/*/src/renderscript
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/APPS/*/src/RenderScript.stamp
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/*/src/RenderScript.stamp
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj/SHARED_LIBRARIES/libRS_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj/STATIC_LIBRARIES/libRSDriver_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libRS_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/accessibilityservice/IEventListener.java
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/accessibilityservice/IEventListener.P
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/view/accessibility/IAccessibilityManager.P
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/accessibilityservice/IAccessibilityServiceClientCallback.java
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/accessibilityservice/IAccessibilityServiceClientCallback.P
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/accessibilityservice/IAccessibilityServiceClient.P
+Clean step: rm -f /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/media/video/Disco*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/APPS/ImageProcessing_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/APPS/ImageProcessing2_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/APPS/ImageProcessing_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/media/audio/ui/*.ogg
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/telephony/java/com/android/internal/telephony/IExtendedNetworkService.java
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/telephony/java/com/android/internal/telephony/IExtendedNetworkService.P
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/APPS/ImageProcessing_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/view/IDisplayContentChangeListener.java
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/view/IDisplayContentChangeListener.P
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/view/IWindowManager.java
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/view/IWindowManager.P
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/view/IDisplayMagnificationController.java
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/view/IDisplayMagnificationController.P
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/view/IDisplayMagnificationMediator.java
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/view/IDisplayMagnificationMediator.P
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/voip
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj/SHARED_LIBRARIES/librtp_jni_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/lib/librtp_jni.so
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj/lib/librtp_jni.so
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/symbols/system/lib/librtp_jni.so
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/telephony/java/com/android/internal/telephony/SmsRawData.*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/com/android/internal/view/IInputMethodCallback.*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/com/android/internal/view/IInputMethodSession.*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/com/android/internal/view/IInputMethodCallback.*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/APPS/framework-res_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/host/linux-x86/obj/STATIC_LIBRARIES/libandroidfw_intermediates/import_includes
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates/src/core/java/android/print/IPrinterDiscoveryObserver.*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates/src/core/java/android/print/
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates/src/core/java/android/printservice/
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates/src/packages/services/Proxy/
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates/src/core/java/android/print/IPrinterDiscoverySessionObserver.*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates/src/core/java/android/print/IPrinterDiscoverySessionClient.*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates/src/core/java/android/os/IBattery*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/android_stubs_current_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/usr/idc/frameworks
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/usr/keylayout/frameworks
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/usr/keychars/frameworks
+Clean step: rm -f /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/media/video/*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/media/audio/
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/media/audio/effects/
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/APPS/framework-res_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates/src/core/java/android/print/IPrintClient.*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/services_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates/src/media/java/android/media/IMedia*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates/src/core/java/android/view/IMagnificationCallbacks*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates/src/core/java/android/tv/
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates/src/media/java/android/media/
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates/src/core/java/android/app
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/android_stubs_current_intermediates/src/android/app/wearable
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates/src/core/java/android/tv/ITv*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates/classes/android/app/task
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates/src/core/java/android/app/task
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates/classes/android/app/TaskManager
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates/src/core/java/android/app/maintenance
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates/classes/android/app/maintenance
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/classes/android/app/maintenance
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/android_stubs_current_intermediates/classes/android/app/maintenance
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/android_stubs_current_intermediates/src/android/app/maintenance
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/services_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates/src/core/java/android/app
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/ims-common_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework2_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates/src/telecomm/java/com/android/internal/telecom
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/framework.* /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/framework2.*
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/docs/api-stubs-timestamp
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/android_stubs_current_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/services.core_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/services_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/services.core_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/services_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/bin/inputflinger /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/symbols/system/bin/inputflinger
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/APPS/RsFountainFbo_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework-base_intermediates/src/telecomm/java/com/android/internal/telecomm
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/com/android/internal/widget/ILockSettingsObserver.java
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/APPS/SystemUI_intermediates/
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/Keyguard_intermediates/
+Clean step: rm -f /workspace/build01-full-next/platform/out/target/product/*/system/framework/android.policy.jar
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/bin/inputflinger /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/symbols/system/bin/inputflinger
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/lib/libinputflingerhost.so /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/system/lib64/libinputflingerhost.so
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/symbols/system/lib/libinputflingerhost.so /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/symbols/system/lib64/libinputflingerhost.so
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj/lib/libinputflingerhost.so /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj_arm/lib/libinputflingerhost.so
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj/SHARED_LIBRARIES/libinputflingerhost_intermediates /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/obj_arm/SHARED_LIBRARIES/libinputflingerhost_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/product/vortex_rk322x_sd_box/target/common/obj/framework.aidl
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/APPS/DocumentsUI_intermediates
+Clean step: rm -f /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/media/java/android/media/IRemoteControlClient.*
+Clean step: rm -f /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/media/java/android/media/IRemoteControlDisplay.*
+Clean step: rm -f /workspace/build01-full-next/platform/out/target/common/obj/APPS/FeatureSplit1_intermediates/src/com/android/test/split/feature/R.java
+Clean step: rm -f /workspace/build01-full-next/platform/out/target/common/obj/APPS/FeatureSplit2_intermediates/src/com/android/test/split/feature/R.java
+Clean step: rm -rf /workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/hardware
+including ./bionic/Android.mk ...
+including ./build/libs/host/Android.mk ...
+including ./build/target/board/Android.mk ...
+including ./build/target/product/security/Android.mk ...
+including ./build/tools/Android.mk ...
+including ./device/rockchip/common/Android.mk ...
+including ./external/compiler-rt/Android.mk ...
+including ./external/icu/Android.mk ...
+including ./external/libunwind_llvm/Android.mk ...
+including ./external/llvm/Android.mk ...
+including ./frameworks/base/Android.mk ...
+find: ‘../opt/telephony/src/java/android/provider’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony/gsm’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/rtp’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/sip’: No such file or directory
+find: ‘../../frameworks/data-binding/baseLibrary/src/main’: No such file or directory
+find: ‘../../frameworks/data-binding/extensions/library/src/main’: No such file or directory
+find: ‘../../frameworks/data-binding/extensions/library/src/doc’: No such file or directory
+find: ‘../../frameworks/support/annotations’: No such file or directory
+find: ‘../../frameworks/support/compat’: No such file or directory
+find: ‘../../frameworks/support/media-compat’: No such file or directory
+find: ‘../../frameworks/support/fragment’: No such file or directory
+find: ‘../../frameworks/support/core-ui’: No such file or directory
+find: ‘../../frameworks/support/core-utils’: No such file or directory
+find: ‘../../frameworks/support/v7/gridlayout’: No such file or directory
+find: ‘../../frameworks/support/v7/cardview’: No such file or directory
+find: ‘../../frameworks/support/v7/mediarouter’: No such file or directory
+find: ‘../../frameworks/support/v7/palette’: No such file or directory
+find: ‘../../frameworks/support/v8/renderscript’: No such file or directory
+find: ‘../../frameworks/support/v13’: No such file or directory
+find: ‘../../frameworks/support/v17/leanback’: No such file or directory
+find: ‘../../frameworks/support/design’: No such file or directory
+find: ‘../../frameworks/support/percent’: No such file or directory
+find: ‘../../frameworks/support/recommendation’: No such file or directory
+find: ‘../../frameworks/support/transition’: No such file or directory
+find: ‘../../frameworks/support/v7/preference’: No such file or directory
+find: ‘../../frameworks/support/v14/preference’: No such file or directory
+find: ‘../../frameworks/support/v17/preference-leanback’: No such file or directory
+find: ‘../../frameworks/support/documents-archive’: No such file or directory
+find: ‘../../frameworks/support/customtabs’: No such file or directory
+find: ‘../../frameworks/multidex/library/src’: No such file or directory
+find: ‘../../frameworks/multidex/instrumentation/src’: No such file or directory
+find: ‘../../frameworks/support/graphics/drawable/animated’: No such file or directory
+find: ‘../../frameworks/support/graphics/drawable/static’: No such file or directory
+find: ‘../../frameworks/support/v7/appcompat/src’: No such file or directory
+find: ‘../../frameworks/support/v7/recyclerview/src’: No such file or directory
+find: ‘../opt/telephony/src/java/android/provider’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony/gsm’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/rtp’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/sip’: No such file or directory
+find: ‘../opt/telephony/src/java/android/provider’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony/gsm’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/rtp’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/sip’: No such file or directory
+find: ‘../../frameworks/data-binding/baseLibrary/src/main’: No such file or directory
+find: ‘../../frameworks/data-binding/extensions/library/src/main’: No such file or directory
+find: ‘../../frameworks/data-binding/extensions/library/src/doc’: No such file or directory
+find: ‘../../frameworks/support/annotations’: No such file or directory
+find: ‘../../frameworks/support/compat’: No such file or directory
+find: ‘../../frameworks/support/media-compat’: No such file or directory
+find: ‘../../frameworks/support/fragment’: No such file or directory
+find: ‘../../frameworks/support/core-ui’: No such file or directory
+find: ‘../../frameworks/support/core-utils’: No such file or directory
+find: ‘../../frameworks/support/v7/gridlayout’: No such file or directory
+find: ‘../../frameworks/support/v7/cardview’: No such file or directory
+find: ‘../../frameworks/support/v7/mediarouter’: No such file or directory
+find: ‘../../frameworks/support/v7/palette’: No such file or directory
+find: ‘../../frameworks/support/v8/renderscript’: No such file or directory
+find: ‘../../frameworks/support/v13’: No such file or directory
+find: ‘../../frameworks/support/v17/leanback’: No such file or directory
+find: ‘../../frameworks/support/design’: No such file or directory
+find: ‘../../frameworks/support/percent’: No such file or directory
+find: ‘../../frameworks/support/recommendation’: No such file or directory
+find: ‘../../frameworks/support/transition’: No such file or directory
+find: ‘../../frameworks/support/v7/preference’: No such file or directory
+find: ‘../../frameworks/support/v14/preference’: No such file or directory
+find: ‘../../frameworks/support/v17/preference-leanback’: No such file or directory
+find: ‘../../frameworks/support/documents-archive’: No such file or directory
+find: ‘../../frameworks/support/customtabs’: No such file or directory
+find: ‘../../frameworks/multidex/library/src’: No such file or directory
+find: ‘../../frameworks/multidex/instrumentation/src’: No such file or directory
+find: ‘../../frameworks/support/graphics/drawable/animated’: No such file or directory
+find: ‘../../frameworks/support/graphics/drawable/static’: No such file or directory
+find: ‘../../frameworks/support/v7/appcompat/src’: No such file or directory
+find: ‘../../frameworks/support/v7/recyclerview/src’: No such file or directory
+find: ‘../opt/telephony/src/java/android/provider’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony/gsm’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/rtp’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/sip’: No such file or directory
+find: ‘../../external/nist-sip/java’: No such file or directory
+find: ‘../../external/tagsoup/src’: No such file or directory
+build/core/java.mk:26: *** frameworks/base/cmds/uiautomator/instrumentation: Invalid LOCAL_SDK_VERSION 'current' Choices are: test_current 25.  Stop.
+
+#### make failed to build some targets (6 seconds) ####
+

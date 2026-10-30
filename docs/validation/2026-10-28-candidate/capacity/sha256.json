@@ -1,0 +1,57 @@
+[
+  {
+    "path": "README.md",
+    "size_bytes": 5733,
+    "sha256": "4680f4b6b81ef983e67b140d9066dad5ed3db6b525bd07589e6e913da873f201"
+  },
+  {
+    "path": "capacity.json",
+    "size_bytes": 2841,
+    "sha256": "17eeb6b3e8973d0c37caad786993cceaa219e2f4bab4e1113d089ec45bf2089a"
+  },
+  {
+    "path": "host-command-results.json",
+    "size_bytes": 3016,
+    "sha256": "b7408de168f0b57595f44551318140f3b0ec9503b5b993dd9fc5c8f69a0b3020"
+  },
+  {
+    "path": "manifest-selected-projects.json",
+    "size_bytes": 75880,
+    "sha256": "cc07f94102d3dc4975bd02596bbb83857db4c688066f89cf11bf3cc483ea0e73"
+  },
+  {
+    "path": "measure_capacity.py",
+    "size_bytes": 5657,
+    "sha256": "da027af903729bebce9315543909cb133ce3b9cf8ba76ce47be0ff0c8da10fe8"
+  },
+  {
+    "path": "measurement-console.json",
+    "size_bytes": 2841,
+    "sha256": "17eeb6b3e8973d0c37caad786993cceaa219e2f4bab4e1113d089ec45bf2089a"
+  },
+  {
+    "path": "official-building-older-commit.json",
+    "size_bytes": 585,
+    "sha256": "21d5777303c476fbdd24adfa68af273399dee56d632b1148a781388e34dcad9a"
+  },
+  {
+    "path": "official-building-older.jd",
+    "size_bytes": 2443,
+    "sha256": "349b998f0c2eb7b3b1d14a052fd019f30825ab5e7d5726257b994de9232c6c88"
+  },
+  {
+    "path": "official-requirements-2018-commit.json",
+    "size_bytes": 4509,
+    "sha256": "f6db46d6f88c997d1bffc2a98868c96443d6b7b61f3217b2396adef082008372"
+  },
+  {
+    "path": "official-requirements-2018.html",
+    "size_bytes": 7697,
+    "sha256": "3faa3328cd2294a17a3f09230f07946a6c9a71b8e7dfdf9dfaf3fdbbff7bf1a0"
+  },
+  {
+    "path": "official-source-provenance.json",
+    "size_bytes": 1326,
+    "sha256": "b38c2083b2f49ead482350a42ed59c98e2f83eb1b450ba87e346835483fd0e21"
+  }
+]

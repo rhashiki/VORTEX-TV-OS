@@ -1,0 +1,113 @@
+
+Symbol table '.dynsym' contains 110 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_finalize@LIBC (2)
+     2: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_atexit@LIBC (2)
+     3: 00000000     0 FUNC    GLOBAL DEFAULT  UND __register_atfork@LIBC (2)
+     4: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android14MonoPipeReaderC1EPNS_8MonoPipeE
+     5: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android16Format_from_SR_CEjj14audio_format_t
+     6: 00000000     0 FUNC    GLOBAL DEFAULT  UND dladdr@LIBC (4)
+     7: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android7String8C1EPKc
+     8: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android7String8D1Ev
+     9: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android8MonoPipe10isShutdownEv
+    10: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android8MonoPipe8shutdownEb
+    11: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android8MonoPipeC1EjRKNS_12NBAIO_FormatEb
+    12: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNK7android7RefBase9decStrongEPKv
+    13: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNK7android7RefBase9incStrongEPKv
+    14: 00000000     0 FUNC    GLOBAL DEFAULT  UND raise@LIBC (2)
+    15: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Znwj
+    16: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memclr@LIBC_N (3)
+    17: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memclr8@LIBC_N (3)
+    18: 00000000     0 FUNC    GLOBAL DEFAULT  UND __gnu_Unwind_Find_exidx@LIBC_N (3)
+    19: 00000000     0 FUNC    GLOBAL DEFAULT  UND __android_log_print
+    20: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memcpy@LIBC_N (3)
+    21: 00000000     0 FUNC    GLOBAL DEFAULT  UND __sprintf_chk@LIBC (2)
+    22: 00000000     0 FUNC    GLOBAL DEFAULT  UND __stack_chk_fail@LIBC (2)
+    23: 00000000     0 OBJECT  GLOBAL DEFAULT  UND __stack_chk_guard@LIBC (2)
+    24: 00000000     0 FUNC    GLOBAL DEFAULT  UND __write_chk@LIBC_N (3)
+    25: 00000000     0 FUNC    GLOBAL DEFAULT  UND calloc@LIBC (2)
+    26: 00000000     0 FUNC    GLOBAL DEFAULT  UND clock_gettime@LIBC (2)
+    27: 00000000     0 FUNC    GLOBAL DEFAULT  UND free@LIBC (2)
+    28: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_lock@LIBC (2)
+    29: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_unlock@LIBC (2)
+    30: 00000000     0 FUNC    GLOBAL DEFAULT  UND strcmp@LIBC (2)
+    31: 00000000     0 FUNC    GLOBAL DEFAULT  UND strdup@LIBC (2)
+    32: 00000000     0 FUNC    GLOBAL DEFAULT  UND strncmp@LIBC (2)
+    33: 00000000     0 FUNC    GLOBAL DEFAULT  UND strncpy@LIBC (2)
+    34: 00000000     0 FUNC    GLOBAL DEFAULT  UND usleep@LIBC (2)
+    35: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android10VectorImpl13finish_vectorEv
+    36: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android10VectorImpl5clearEv
+    37: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android16SortedVectorImpl3addEPKv
+    38: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android16SortedVectorImpl6removeEPKv
+    39: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android16SortedVectorImplC2Ejj
+    40: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android16SortedVectorImplD2Ev
+    41: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android7String85setToERKS0_
+    42: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android7String86appendEPKc
+    43: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android7String86appendERKS0_
+    44: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android7String8C1EPKcj
+    45: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android7String8C1ERKS0_
+    46: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android7String8C1Ev
+    47: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNK7android16SortedVectorImpl7indexOfEPKv
+    48: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNK7android7String86lengthEv
+    49: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZdaPv
+    50: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZdlPv
+    51: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Znaj
+    52: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memmove4@LIBC_N (3)
+    53: 00000000     0 FUNC    GLOBAL DEFAULT  UND __android_log_assert
+    54: 00000000     0 FUNC    GLOBAL DEFAULT  UND __snprintf_chk@LIBC (2)
+    55: 00000000     0 FUNC    GLOBAL DEFAULT  UND __strlen_chk@LIBC (2)
+    56: 00000000     0 FUNC    GLOBAL DEFAULT  UND sscanf@LIBC (2)
+    57: 00000000     0 FUNC    GLOBAL DEFAULT  UND strcpy@LIBC (2)
+    58: 00000000     0 FUNC    GLOBAL DEFAULT  UND strcspn@LIBC (2)
+    59: 00000000     0 FUNC    GLOBAL DEFAULT  UND strtok_r@LIBC (2)
+    60: 00000000     0 FUNC    GLOBAL DEFAULT  UND abort@LIBC (2)
+    61: 00000000     0 FUNC    GLOBAL DEFAULT  UND fprintf@LIBC (2)
+    62: 00000000     0 OBJECT  GLOBAL DEFAULT  UND stderr@LIBC (2)
+    63: 00004559    16 FUNC    WEAK   DEFAULT   12 _ZNK7android12SortedVectorINS_16key_value_pair_tINS_7String8ES2_EEE16do_move_backwardEPvPKvj
+    64: 00003661    32 FUNC    WEAK   DEFAULT   12 _ZN7android2spINS_14MonoPipeReaderEEaSEPS1_
+    65: 00005bf8    16 FUNC    WEAK   DEFAULT   12 __aeabi_idiv0
+    66: 00009008   128 OBJECT  GLOBAL DEFAULT   20 HMI
+    67: 00004301    46 FUNC    GLOBAL DEFAULT   12 _ZN7android14AudioParameter3getERKNS_7String8ERS1_
+    68: 00004195   112 FUNC    GLOBAL DEFAULT   12 _ZN7android14AudioParameter6addIntERKNS_7String8Ei
+    69: 00004559    16 FUNC    WEAK   DEFAULT   12 _ZNK7android12SortedVectorINS_16key_value_pair_tINS_7String8ES2_EEE15do_move_forwardEPvPKvj
+    70: 00005c44    60 FUNC    GLOBAL DEFAULT   12 __gnu_uldivmod_helper
+    71: 000044d5    28 FUNC    WEAK   DEFAULT   12 _ZNK7android12SortedVectorINS_16key_value_pair_tINS_7String8ES2_EEE12do_constructEPvj
+    72: 000040ed   116 FUNC    GLOBAL DEFAULT   12 _ZN7android14AudioParameter8toStringEv
+    73: 00003661    32 FUNC    WEAK   DEFAULT   12 _ZN7android2spINS_8MonoPipeEEaSEPS1_
+    74: 00005c08    60 FUNC    GLOBAL DEFAULT   12 __gnu_ldivmod_helper
+    75: 00005f28    28 FUNC    GLOBAL DEFAULT   12 __aeabi_llsl
+    76: 00005f0c    28 FUNC    GLOBAL DEFAULT   12 __lshrdi3
+    77: 00008cd4     4 OBJECT  GLOBAL DEFAULT   17 _ZN7android14AudioParameter13keyFrameCountE
+    78: 00008cd0     4 OBJECT  GLOBAL DEFAULT   17 _ZN7android14AudioParameter11keyChannelsE
+    79: 00008cf0    44 OBJECT  WEAK   DEFAULT   17 _ZTVN7android12SortedVectorINS_16key_value_pair_tINS_7String8ES2_EEEE
+    80: 00005e00   268 FUNC    GLOBAL DEFAULT   12 __udivdi3
+    81: 00004099    68 FUNC    GLOBAL DEFAULT   12 _ZN7android14AudioParameterD1Ev
+    82: 00005f0c    28 FUNC    GLOBAL DEFAULT   12 __aeabi_llsr
+    83: 000043e1   116 FUNC    GLOBAL DEFAULT   12 _ZN7android14AudioParameter8getFloatERKNS_7String8ERf
+    84: 00005f28    28 FUNC    GLOBAL DEFAULT   12 __ashldi3
+    85: 00008cc4     4 OBJECT  GLOBAL DEFAULT   17 _ZN7android14AudioParameter10keyRoutingE
+    86: 00004455    50 FUNC    GLOBAL DEFAULT   12 _ZN7android14AudioParameter5getAtEjRNS_7String8ES2_
+    87: 00004531    40 FUNC    WEAK   DEFAULT   12 _ZNK7android12SortedVectorINS_16key_value_pair_tINS_7String8ES2_EEE8do_splatEPvPKvj
+    88: 00004205   128 FUNC    GLOBAL DEFAULT   12 _ZN7android14AudioParameter8addFloatERKNS_7String8Ef
+    89: 00003e19   360 FUNC    GLOBAL DEFAULT   12 _ZN7android14AudioParameterC1ERKNS_7String8E
+    90: 00008cc8     4 OBJECT  GLOBAL DEFAULT   17 _ZN7android14AudioParameter15keySamplingRateE
+    91: 00004285    36 FUNC    GLOBAL DEFAULT   12 _ZN7android14AudioParameter6removeERKNS_7String8E
+    92: 00009088     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
+    93: 000044f1    28 FUNC    WEAK   DEFAULT   12 _ZNK7android12SortedVectorINS_16key_value_pair_tINS_7String8ES2_EEE10do_destroyEPvj
+    94: 000090c9     0 NOTYPE  GLOBAL DEFAULT  ABS _end
+    95: 0000436d   116 FUNC    GLOBAL DEFAULT   12 _ZN7android14AudioParameter6getIntERKNS_7String8ERi
+    96: 00004161    52 FUNC    GLOBAL DEFAULT   12 _ZN7android14AudioParameter3addERKNS_7String8ES3_
+    97: 00008cd8     4 OBJECT  GLOBAL DEFAULT   17 _ZN7android14AudioParameter14keyInputSourceE
+    98: 00008ce0    16 OBJECT  GLOBAL DEFAULT   17 _ZTVN7android14AudioParameterE
+    99: 00005bf8    16 FUNC    WEAK   DEFAULT   12 __aeabi_ldiv0
+   100: 00009088     0 NOTYPE  GLOBAL DEFAULT  ABS _edata
+   101: 00005bb4     0 FUNC    GLOBAL DEFAULT   12 __aeabi_ldivmod
+   102: 00008cdc     4 OBJECT  GLOBAL DEFAULT   17 _ZN7android14AudioParameter14keyScreenStateE
+   103: 00004099    68 FUNC    GLOBAL DEFAULT   12 _ZN7android14AudioParameterD2Ev
+   104: 00005c80   384 FUNC    GLOBAL DEFAULT   12 __divdi3
+   105: 00003e19   360 FUNC    GLOBAL DEFAULT   12 _ZN7android14AudioParameterC2ERKNS_7String8E
+   106: 0000450d    36 FUNC    WEAK   DEFAULT   12 _ZNK7android12SortedVectorINS_16key_value_pair_tINS_7String8ES2_EEE7do_copyEPvPKvj
+   107: 00008ccc     4 OBJECT  GLOBAL DEFAULT   17 _ZN7android14AudioParameter9keyFormatE
+   108: 000040dd    14 FUNC    GLOBAL DEFAULT   12 _ZN7android14AudioParameterD0Ev
+   109: 00004569    30 FUNC    WEAK   DEFAULT   12 _ZNK7android12SortedVectorINS_16key_value_pair_tINS_7String8ES2_EEE10do_compareEPKvS6_

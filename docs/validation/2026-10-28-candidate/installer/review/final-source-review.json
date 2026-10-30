@@ -1,0 +1,94 @@
+{
+  "scope": "independent read-only final diagnostic-source and fixture-contract review; no PID1/kernel/hardware execution",
+  "status": "pass_no_additional_material_findings_in_declared_scope",
+  "reviewed_files": {
+    "vortex_diagnostic_init.c": {
+      "size_bytes": 9589,
+      "sha256": "a3c83c37e28f88ded43f4b375d9deef643070a346430d8a11a1fb76da5279a1c"
+    },
+    "test_component.py": {
+      "size_bytes": 8899,
+      "sha256": "c85965af0c7bf86dee0ce229a475da2c81394db663343e5c7495d4b0b048b9d4"
+    },
+    "artifacts/vortex-diagnostic-init": {
+      "size_bytes": 27436,
+      "sha256": "34c3e9afb616e5802508e2be7b0e7b0d98267d70e42bdcaff1efafa1a742a950"
+    }
+  },
+  "syntax_check": {
+    "command": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fsyntax-only",
+      "/workspace/build01-full-next/installer/vortex_diagnostic_init.c"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "previous_findings": [
+    {
+      "id": "metadata-open-race",
+      "status": "fixed_by_source_review",
+      "evidence": "read_meta pins O_PATH|O_NOFOLLOW descriptor, fstat rejects nonregular inode before any data open, reopens /proc/self/fd and verifies device/inode/type; final component symlink and FIFO fixtures are included"
+    },
+    {
+      "id": "pid1-root-assumption",
+      "status": "fixed_by_source_review_not_runtime_tested",
+      "evidence": "statfs root RAMFS/TMPFS guard precedes both mkdir and mount; refusal waits as PID1 without storage fallback"
+    },
+    {
+      "id": "unbounded-scandir-allocation",
+      "status": "fixed_by_source_review_and_bounded_fixture",
+      "evidence": "readdir/strdup loop caps accepted names at1024 before sorting; too-many-entries fixture rejects before per-block inventory"
+    }
+  ],
+  "confirmed": [
+    "All accepted data opens originate from pinned regular metadata files. O_PATH special-node pins do not invoke device I/O open; no direct block/MTD character device data open exists.",
+    "There is no flash, format, storage-writing, reboot, exec, shell, or target-approval backend.",
+    "SD/eMMC/MTD classifications remain unverified candidates; raw size data never selects a write target or approves boot-medium identity.",
+    "Only intended PID1 mounts are read-only proc/sysfs with nosuid,nodev,noexec; archive dev/console is metadata, not a host-created device.",
+    "Error paths wait as PID1 or fail outside PID1; no alternate installation path is attempted."
+  ],
+  "existing_test_evidence": {
+    "case_methods": 24,
+    "reported_cases": 24,
+    "status": "pass",
+    "binary_hash_matches_report": true,
+    "cases_cover": [
+      "test_sd_candidate_never_approved_as_boot",
+      "test_mmc_candidate_never_approved_as_internal",
+      "test_unknown_vendor_nand_name_not_guessed",
+      "test_mtd_block_does_not_assert_nand",
+      "test_partition_is_not_whole_disk",
+      "test_virtual_storage_not_internal_target",
+      "test_inconsistent_sd_removable_stays_unknown",
+      "test_inconsistent_mmc_removable_stays_unknown",
+      "test_size_multiply_overflow_rejected",
+      "test_size_parse_overflow_rejected",
+      "test_signed_size_rejected",
+      "test_metadata_symlink_not_followed",
+      "test_metadata_fifo_not_opened_for_io",
+      "test_metadata_directory_rejected",
+      "test_oversized_metadata_rejected",
+      "test_embedded_nul_metadata_rejected",
+      "test_json_quotes_and_newlines_escaped",
+      "test_invalid_block_name_skipped",
+      "test_enumeration_sorted_and_bounded",
+      "test_too_many_entries_fail_before_inventory",
+      "test_empty_inventory_selects_no_target",
+      "test_missing_sysfs_fails_without_fallback",
+      "test_relative_fixture_argument_rejected",
+      "test_missing_arguments_rejected_outside_pid1"
+    ]
+  },
+  "limits": [
+    "Host syntax check does not exercise ARM ABI or PID1 branches; existing actual ARM/QEMU fixture results are inspected, not rerun by this reviewer.",
+    "Fixture trace assertions check mutating flags/calls and unchanged fixture bytes; they do not alone authenticate storage identity or prove arbitrary device behavior. The no-raw-device-data-open conclusion is grounded in the reviewed source and trusted metadata input scope.",
+    "Kernel sysfs parent links are intentionally followed. This is a trusted kernel/fixture reader, not a sandbox for adversarial directory trees.",
+    "No RAM root guard execution, real proc/sysfs mount, Linux3.10 syscall behavior, kernel/initramfs boot, display/console availability, physical drivers, FlashID, partition layout, internal preservation, or boot-medium matching is demonstrated."
+  ]
+}

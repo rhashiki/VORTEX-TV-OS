@@ -1,0 +1,5 @@
+/workspace/build01-full-next/audio/out-final/target/product/generic/obj/SHARED_LIBRARIES/libaudioutils_intermediates/roundup.o: \
+  system/media/audio_utils/roundup.c \
+  system/media/audio_utils/include/audio_utils/roundup.h
+  system/media/audio_utils/roundup.c :
+  system/media/audio_utils/include/audio_utils/roundup.h :

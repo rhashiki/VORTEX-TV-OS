@@ -1,0 +1,7 @@
+{
+  "scope": "Changed/untracked candidate files only; pattern scan is not a comprehensive secret audit",
+  "checked_files": 531,
+  "missing_local_markdown_links": [],
+  "workflow_paths": [],
+  "secret_pattern_hits": []
+}

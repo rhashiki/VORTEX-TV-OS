@@ -1,0 +1,7 @@
+/workspace/build01-platform-next/aosp-app/tree/build/tools/acp/acp.c: In function ‘process’:
+/workspace/build01-platform-next/aosp-app/tree/build/tools/acp/acp.c:47:17: warning: unused variable ‘destStat’ [-Wunused-variable]
+   47 |     struct stat destStat;
+      |                 ^~~~~~~~
+/workspace/build01-platform-next/aosp-app/tree/build/tools/acp/acp.c:44:12: warning: unused variable ‘cc’ [-Wunused-variable]
+   44 |     int i, cc;
+      |            ^~

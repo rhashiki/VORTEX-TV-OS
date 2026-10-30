@@ -1,0 +1,83 @@
+{
+  "frozen_utc": "2026-10-30T00:32:29.405403+00:00",
+  "scope": "bounded genuine Android make droid attempt on incomplete source checkout",
+  "baseline_vortex_commit": "ba4afebe58e9c9cb8fd2a05dc88d142ce1b5e8fe",
+  "current_main_gap": "Main 1db0c914fda74419be097b36c1e753296bcc2bbc additionally requires private native VortexTV APK and OEM catalog-access input; neither is available here. Baseline experiment intentionally did not replace them with dummy inputs.",
+  "last_attempt": "attempt-27-genuine-gtest-source.log",
+  "last_errors": [
+    "make: *** No rule to make target 'frameworks/base/../../system/netd/server/binder/android/net/INetd.aidl', needed by '/workspace/build01-full-next/platform/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/../../system/netd/server/binder/android/net/INetd.java'.  Stop."
+  ],
+  "last_log_sha256": "f59bbeb0ff43b009d324cf00d05ec2f71f08409297a9797e4d1f049f9c3d5cb9",
+  "object_files_in_output": 592,
+  "host_object_files_in_output": 592,
+  "target_object_files_in_output": 0,
+  "native_host_aidl_linked": false,
+  "free_bytes_at_freeze": 5624922112,
+  "source_reserve_bytes": 3758096384,
+  "complete_android_build": false,
+  "full_source_lock": false,
+  "boot_or_system_image_generated": false,
+  "physical_target_touched": false,
+  "github_actions_used": false,
+  "artifacts": [
+    {
+      "path": "artifacts/core-all-classes-full-debug.jar",
+      "source": "out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/classes-full-debug.jar",
+      "bytes": 7895697,
+      "sha256": "d48d5bb865dc86eb02722c97cc20d7fdae1fae78e6001b99a2bbcc4a930a96ee",
+      "zip_crc_ok": true,
+      "zip_entries": 4770,
+      "class_entries": 4559,
+      "class_file_major_versions": [
+        52
+      ],
+      "scope": "compiled JVM class files; no DEX, ART execution, Android image or RK3229 boot proof"
+    },
+    {
+      "path": "artifacts/core-oj-classes-full-debug.jar",
+      "source": "out/target/common/obj/JAVA_LIBRARIES/core-oj_intermediates/classes-full-debug.jar",
+      "bytes": 4254727,
+      "sha256": "09c6239ae60e7e9a816582109b4d6eb89db685bdd3f6068accdda03b27da4c30",
+      "zip_crc_ok": true,
+      "zip_entries": 2687,
+      "class_entries": 2570,
+      "class_file_major_versions": [
+        52
+      ],
+      "scope": "compiled JVM class files; no DEX, ART execution, Android image or RK3229 boot proof"
+    },
+    {
+      "path": "artifacts/core-libart-classes-full-debug.jar",
+      "source": "out/target/common/obj/JAVA_LIBRARIES/core-libart_intermediates/classes-full-debug.jar",
+      "bytes": 3633367,
+      "sha256": "3f561b45779aa4ee8e0f7a72c55a4c542519ef19b32c914668e37894c80186fb",
+      "zip_crc_ok": true,
+      "zip_entries": 2085,
+      "class_entries": 1980,
+      "class_file_major_versions": [
+        52
+      ],
+      "scope": "compiled JVM class files; no DEX, ART execution, Android image or RK3229 boot proof"
+    }
+  ],
+  "large_logs": [
+    {
+      "path": "evidence/attempt-18-real-jarjar-asm.log",
+      "bytes": 1001570,
+      "sha256": "e61dca112a9e53e7050fcc89bca12cabafd27c22a8ece47112d018307bf266ac",
+      "package_path": "raw-logs/platform/attempt-18-real-jarjar-asm.log"
+    },
+    {
+      "path": "evidence/attempt-23-source-host-bison.log",
+      "bytes": 359523,
+      "sha256": "e321c48f2f71706c0a5e1070b8f343bc976178fdbd8bc9a92e1a706ac4c741c7",
+      "package_path": "raw-logs/platform/attempt-23-source-host-bison.log"
+    },
+    {
+      "path": "evidence/licenses/libcore/ojluni/NOTICE",
+      "bytes": 421471,
+      "sha256": "cb41b8e3c007df5129056379cc855c5d0e9b39df7e710ca8f0cba66d8d66b0a1",
+      "package_path": "raw-logs/platform/licenses/libcore/ojluni/NOTICE"
+    }
+  ]
+}

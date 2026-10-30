@@ -25,3 +25,11 @@ docs/validation/2026-10-27-product/native-rules/gralloc-invalid-test/*.cpp -whit
 # Exact upstream module definitions and license notices retain their bytes.
 docs/validation/2026-10-27-product/native-rules/actual-module-definitions/** -whitespace
 docs/validation/2026-10-27-product/native-rules/licenses/** -whitespace
+docs/validation/2026-10-28-candidate/**/*.log -whitespace
+docs/validation/2026-10-28-candidate/**/*.txt -whitespace
+docs/validation/2026-10-28-candidate/**/*.list -whitespace
+docs/validation/2026-10-28-candidate/**/*.map -whitespace
+docs/validation/2026-10-28-candidate/**/actual-module-definitions/** -whitespace
+docs/validation/2026-10-28-candidate/**/licenses/** -whitespace
+docs/validation/2026-10-28-candidate/recovery/review-source/** -whitespace
+rom/installer-diagnostic/licenses/** -whitespace

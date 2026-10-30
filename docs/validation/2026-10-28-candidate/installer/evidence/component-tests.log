@@ -1,0 +1,29 @@
+test_embedded_nul_metadata_rejected (__main__.ArmComponentTests.test_embedded_nul_metadata_rejected) ... ok
+test_empty_inventory_selects_no_target (__main__.ArmComponentTests.test_empty_inventory_selects_no_target) ... ok
+test_enumeration_sorted_and_bounded (__main__.ArmComponentTests.test_enumeration_sorted_and_bounded) ... ok
+test_inconsistent_mmc_removable_stays_unknown (__main__.ArmComponentTests.test_inconsistent_mmc_removable_stays_unknown) ... ok
+test_inconsistent_sd_removable_stays_unknown (__main__.ArmComponentTests.test_inconsistent_sd_removable_stays_unknown) ... ok
+test_invalid_block_name_skipped (__main__.ArmComponentTests.test_invalid_block_name_skipped) ... ok
+test_json_quotes_and_newlines_escaped (__main__.ArmComponentTests.test_json_quotes_and_newlines_escaped) ... ok
+test_metadata_directory_rejected (__main__.ArmComponentTests.test_metadata_directory_rejected) ... ok
+test_metadata_fifo_not_opened_for_io (__main__.ArmComponentTests.test_metadata_fifo_not_opened_for_io) ... ok
+test_metadata_symlink_not_followed (__main__.ArmComponentTests.test_metadata_symlink_not_followed) ... ok
+test_missing_arguments_rejected_outside_pid1 (__main__.ArmComponentTests.test_missing_arguments_rejected_outside_pid1) ... ok
+test_missing_sysfs_fails_without_fallback (__main__.ArmComponentTests.test_missing_sysfs_fails_without_fallback) ... ok
+test_mmc_candidate_never_approved_as_internal (__main__.ArmComponentTests.test_mmc_candidate_never_approved_as_internal) ... ok
+test_mtd_block_does_not_assert_nand (__main__.ArmComponentTests.test_mtd_block_does_not_assert_nand) ... ok
+test_oversized_metadata_rejected (__main__.ArmComponentTests.test_oversized_metadata_rejected) ... ok
+test_partition_is_not_whole_disk (__main__.ArmComponentTests.test_partition_is_not_whole_disk) ... ok
+test_relative_fixture_argument_rejected (__main__.ArmComponentTests.test_relative_fixture_argument_rejected) ... ok
+test_sd_candidate_never_approved_as_boot (__main__.ArmComponentTests.test_sd_candidate_never_approved_as_boot) ... ok
+test_signed_size_rejected (__main__.ArmComponentTests.test_signed_size_rejected) ... ok
+test_size_multiply_overflow_rejected (__main__.ArmComponentTests.test_size_multiply_overflow_rejected) ... ok
+test_size_parse_overflow_rejected (__main__.ArmComponentTests.test_size_parse_overflow_rejected) ... ok
+test_too_many_entries_fail_before_inventory (__main__.ArmComponentTests.test_too_many_entries_fail_before_inventory) ... ok
+test_unknown_vendor_nand_name_not_guessed (__main__.ArmComponentTests.test_unknown_vendor_nand_name_not_guessed) ... ok
+test_virtual_storage_not_internal_target (__main__.ArmComponentTests.test_virtual_storage_not_internal_target) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.462s
+
+OK

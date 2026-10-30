@@ -1,0 +1,87 @@
+51455 set_tid_address(159440,124,1,0,159156,0) = 51455
+51455 getpid() = 51455
+51455 statx(AT_FDCWD,"/workspace/build01-full-next/installer/fixtures/diag-ajhjzfwu",AT_NO_AUTOMOUNT,STATX_BASIC_STATS,0x407fff68) = 0
+51455 ioctl(1,TIOCGWINSZ,0x40800030) = -1 errno=25 (Inappropriate ioctl for device)
+51455 writev(1,0x40800008,0x2) = 226
+51455 open("/workspace/build01-full-next/installer/fixtures/diag-ajhjzfwu/sys/class/block",O_RDONLY|O_DIRECTORY|O_LARGEFILE|O_CLOEXEC) = 3
+51455 fcntl64(3,F_SETFD,1) = 0
+51455 brk(NULL) = 0x00027000
+51455 brk(0x00029000) = 0x00029000
+51455 mmap2(0x00027000,4096,PROT_NONE,MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED,-1,0) = 0x00027000
+51455 mmap2(NULL,8192,PROT_READ|PROT_WRITE,MAP_PRIVATE|MAP_ANONYMOUS,-1,0) = 0x3fffd000
+51455 getdents64(3,0x3fffd038,2048) = 96
+51455 mmap2(NULL,4096,PROT_READ|PROT_WRITE,MAP_PRIVATE|MAP_ANONYMOUS,-1,0) = 0x3fffc000
+51455 getdents64(3,0x3fffd038,2048) = 0
+51455 close(3) = 0
+51455 munmap(0x3fffd000,8192) = 0
+51455 open("/workspace/build01-full-next/installer/fixtures/diag-ajhjzfwu/sys/class/block/a/size",O_RDONLY|O_LARGEFILE|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 3
+51455 fcntl64(3,F_SETFD,1) = 0
+51455 statx(3,"",AT_EMPTY_PATH|AT_NO_AUTOMOUNT,STATX_BASIC_STATS,0x407f4d78) = 0
+51455 open("/proc/self/fd/3",O_RDONLY|O_LARGEFILE|O_NONBLOCK|O_CLOEXEC) = 4
+51455 fcntl64(4,F_SETFD,1) = 0
+51455 statx(4,"",AT_EMPTY_PATH|AT_NO_AUTOMOUNT,STATX_BASIC_STATS,0x407f4d78) = 0
+51455 close(3) = 0
+51455 read(4,0x407f8068,4095) = 5
+51455 read(4,0x407f4eaf,1) = 0
+51455 close(4) = 0
+51455 open("/workspace/build01-full-next/installer/fixtures/diag-ajhjzfwu/sys/class/block/a/ro",O_RDONLY|O_LARGEFILE|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 3
+51455 fcntl64(3,F_SETFD,1) = 0
+51455 statx(3,"",AT_EMPTY_PATH|AT_NO_AUTOMOUNT,STATX_BASIC_STATS,0x407f4d78) = 0
+51455 open("/proc/self/fd/3",O_RDONLY|O_LARGEFILE|O_NONBLOCK|O_CLOEXEC) = 4
+51455 fcntl64(4,F_SETFD,1) = 0
+51455 statx(4,"",AT_EMPTY_PATH|AT_NO_AUTOMOUNT,STATX_BASIC_STATS,0x407f4d78) = 0
+51455 close(3) = 0
+51455 read(4,0x407f9068,4095) = 2
+51455 read(4,0x407f4eaf,1) = 0
+51455 close(4) = 0
+51455 open("/workspace/build01-full-next/installer/fixtures/diag-ajhjzfwu/sys/class/block/a/removable",O_RDONLY|O_LARGEFILE|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 3
+51455 fcntl64(3,F_SETFD,1) = 0
+51455 statx(3,"",AT_EMPTY_PATH|AT_NO_AUTOMOUNT,STATX_BASIC_STATS,0x407f4d78) = 0
+51455 open("/proc/self/fd/3",O_RDONLY|O_LARGEFILE|O_NONBLOCK|O_CLOEXEC) = 4
+51455 fcntl64(4,F_SETFD,1) = 0
+51455 statx(4,"",AT_EMPTY_PATH|AT_NO_AUTOMOUNT,STATX_BASIC_STATS,0x407f4d78) = 0
+51455 close(3) = 0
+51455 read(4,0x407fa068,4095) = 2
+51455 read(4,0x407f4eaf,1) = 0
+51455 close(4) = 0
+51455 open("/workspace/build01-full-next/installer/fixtures/diag-ajhjzfwu/sys/class/block/a/device/type",O_RDONLY|O_LARGEFILE|O_NOFOLLOW|O_CLOEXEC|O_PATH) = -1 errno=2 (No such file or directory)
+51455 open("/workspace/build01-full-next/installer/fixtures/diag-ajhjzfwu/sys/class/block/a/partition",O_RDONLY|O_LARGEFILE|O_NOFOLLOW|O_CLOEXEC|O_PATH) = -1 errno=2 (No such file or directory)
+51455 open("/workspace/build01-full-next/installer/fixtures/diag-ajhjzfwu/sys/class/block/a/device/name",O_RDONLY|O_LARGEFILE|O_NOFOLLOW|O_CLOEXEC|O_PATH) = -1 errno=2 (No such file or directory)
+51455 readlink("/workspace/build01-full-next/installer/fixtures/diag-ajhjzfwu/sys/class/block/a",0x407ff068,4095) = -1 errno=22 (Invalid argument)
+51455 open("/workspace/build01-full-next/installer/fixtures/diag-ajhjzfwu/sys/class/block/z/size",O_RDONLY|O_LARGEFILE|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 3
+51455 fcntl64(3,F_SETFD,1) = 0
+51455 statx(3,"",AT_EMPTY_PATH|AT_NO_AUTOMOUNT,STATX_BASIC_STATS,0x407f4d78) = 0
+51455 open("/proc/self/fd/3",O_RDONLY|O_LARGEFILE|O_NONBLOCK|O_CLOEXEC) = 4
+51455 fcntl64(4,F_SETFD,1) = 0
+51455 statx(4,"",AT_EMPTY_PATH|AT_NO_AUTOMOUNT,STATX_BASIC_STATS,0x407f4d78) = 0
+51455 close(3) = 0
+51455 read(4,0x407f8068,4095) = 5
+51455 read(4,0x407f4eaf,1) = 0
+51455 close(4) = 0
+51455 open("/workspace/build01-full-next/installer/fixtures/diag-ajhjzfwu/sys/class/block/z/ro",O_RDONLY|O_LARGEFILE|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 3
+51455 fcntl64(3,F_SETFD,1) = 0
+51455 statx(3,"",AT_EMPTY_PATH|AT_NO_AUTOMOUNT,STATX_BASIC_STATS,0x407f4d78) = 0
+51455 open("/proc/self/fd/3",O_RDONLY|O_LARGEFILE|O_NONBLOCK|O_CLOEXEC) = 4
+51455 fcntl64(4,F_SETFD,1) = 0
+51455 statx(4,"",AT_EMPTY_PATH|AT_NO_AUTOMOUNT,STATX_BASIC_STATS,0x407f4d78) = 0
+51455 close(3) = 0
+51455 read(4,0x407f9068,4095) = 2
+51455 read(4,0x407f4eaf,1) = 0
+51455 close(4) = 0
+51455 open("/workspace/build01-full-next/installer/fixtures/diag-ajhjzfwu/sys/class/block/z/removable",O_RDONLY|O_LARGEFILE|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 3
+51455 fcntl64(3,F_SETFD,1) = 0
+51455 statx(3,"",AT_EMPTY_PATH|AT_NO_AUTOMOUNT,STATX_BASIC_STATS,0x407f4d78) = 0
+51455 open("/proc/self/fd/3",O_RDONLY|O_LARGEFILE|O_NONBLOCK|O_CLOEXEC) = 4
+51455 fcntl64(4,F_SETFD,1) = 0
+51455 statx(4,"",AT_EMPTY_PATH|AT_NO_AUTOMOUNT,STATX_BASIC_STATS,0x407f4d78) = 0
+51455 close(3) = 0
+51455 read(4,0x407fa068,4095) = 2
+51455 read(4,0x407f4eaf,1) = 0
+51455 close(4) = 0
+51455 open("/workspace/build01-full-next/installer/fixtures/diag-ajhjzfwu/sys/class/block/z/device/type",O_RDONLY|O_LARGEFILE|O_NOFOLLOW|O_CLOEXEC|O_PATH) = -1 errno=2 (No such file or directory)
+51455 open("/workspace/build01-full-next/installer/fixtures/diag-ajhjzfwu/sys/class/block/z/partition",O_RDONLY|O_LARGEFILE|O_NOFOLLOW|O_CLOEXEC|O_PATH) = -1 errno=2 (No such file or directory)
+51455 open("/workspace/build01-full-next/installer/fixtures/diag-ajhjzfwu/sys/class/block/z/device/name",O_RDONLY|O_LARGEFILE|O_NOFOLLOW|O_CLOEXEC|O_PATH) = -1 errno=2 (No such file or directory)
+51455 readlink("/workspace/build01-full-next/installer/fixtures/diag-ajhjzfwu/sys/class/block/z",0x407ff068,4095) = -1 errno=22 (Invalid argument)
+51455 munmap(0x3fffc000,4096) = 0
+51455 writev(1,0x408000f8,0x2) = 611
+51455 exit_group(0)

@@ -1,0 +1,150 @@
+[
+  {
+    "path": "build",
+    "resolved": "/workspace/build01-full-next/recovery/tree/build",
+    "status": "header/source subset; consult compiler input hashes and acquisition provenance"
+  },
+  {
+    "path": "bionic",
+    "resolved": "/workspace/build01-platform-next/research/rockchip-bionic",
+    "status": "header/source subset; consult compiler input hashes and acquisition provenance"
+  },
+  {
+    "path": "system/core",
+    "resolved": "/workspace/build01-platform-next/research/rockchip-system-core",
+    "status": "header/source subset; consult compiler input hashes and acquisition provenance"
+  },
+  {
+    "path": "hardware/libhardware",
+    "resolved": "/workspace/build01-graphics-next/graphics/libhardware",
+    "head": "d0c81ba009240cb9ab38d75d7e88190055349c2a",
+    "url": "/workspace/build01-platform-next/research/rockchip-libhardware",
+    "observed_compiler_input_hashes": "compiler-inputs-index.json"
+  },
+  {
+    "path": "bootable/recovery",
+    "resolved": "/workspace/build01-full-next/recovery/source",
+    "head": "4e64764f19db25238c296691ef0d950603eae33b",
+    "url": "https://github.com/rockchip-android/bootable-recovery.git",
+    "observed_compiler_input_hashes": "compiler-inputs-index.json"
+  },
+  {
+    "path": "external/compiler-rt",
+    "resolved": "/workspace/build01-product-next/native-rules/tree/external/compiler-rt",
+    "head": "fa6e8d21528c9d085d1565cef2cea204fe9d6a2d",
+    "url": "https://android.googlesource.com/platform/external/compiler-rt",
+    "observed_compiler_input_hashes": "compiler-inputs-index.json"
+  },
+  {
+    "path": "external/libunwind_llvm",
+    "resolved": "/workspace/build01-product-next/native-rules/tree/external/libunwind_llvm",
+    "head": "f171e7279d7fa8977bbe25e19019380ee493e885",
+    "url": "https://android.googlesource.com/platform/external/libunwind_llvm",
+    "observed_compiler_input_hashes": "compiler-inputs-index.json"
+  },
+  {
+    "path": "external/zlib",
+    "resolved": "/workspace/build01-full-next/recovery/deps/zlib",
+    "head": "cec8538e6162907d587c5229b81fc6a025cc1236",
+    "url": "https://android.googlesource.com/platform/external/zlib",
+    "observed_compiler_input_hashes": "compiler-inputs-index.json"
+  },
+  {
+    "path": "external/libpng",
+    "resolved": "/workspace/build01-full-next/recovery/deps/libpng",
+    "head": "106a9f5260a146e74dc1cd755e33b12177df2bb8",
+    "url": "https://android.googlesource.com/platform/external/libpng",
+    "observed_compiler_input_hashes": "compiler-inputs-index.json"
+  },
+  {
+    "path": "external/boringssl",
+    "resolved": "/workspace/build01-full-next/recovery/deps/boringssl",
+    "head": "a4c04512a587375d73713434d43b8096f0d04bd4",
+    "url": "https://android.googlesource.com/platform/external/boringssl",
+    "observed_compiler_input_hashes": "compiler-inputs-index.json"
+  },
+  {
+    "path": "external/jemalloc",
+    "resolved": "/workspace/build01-full-next/recovery/deps/jemalloc",
+    "head": "08795324eae5f68d211dc5483746af51203dc661",
+    "url": "https://android.googlesource.com/platform/external/jemalloc",
+    "observed_compiler_input_hashes": "compiler-inputs-index.json"
+  },
+  {
+    "path": "external/libcxx",
+    "resolved": "/workspace/build01-full-next/recovery/deps/libcxx",
+    "head": "d8170174bf66c98fca967b7133783c0c95292993",
+    "url": "https://android.googlesource.com/platform/external/libcxx",
+    "observed_compiler_input_hashes": "compiler-inputs-index.json"
+  },
+  {
+    "path": "external/libcxxabi",
+    "resolved": "/workspace/build01-full-next/recovery/deps/libcxxabi",
+    "head": "fb11cb31ea214386a681d2f28b126b310ac53657",
+    "url": "https://android.googlesource.com/platform/external/libcxxabi",
+    "observed_compiler_input_hashes": "compiler-inputs-index.json"
+  },
+  {
+    "path": "external/libselinux",
+    "resolved": "/workspace/build01-full-next/recovery/deps/libselinux",
+    "head": "9d7eba17309e2d8761354e054c8800cf34402549",
+    "url": "https://android.googlesource.com/platform/external/libselinux",
+    "observed_compiler_input_hashes": "compiler-inputs-index.json"
+  },
+  {
+    "path": "external/libdrm",
+    "resolved": "/workspace/build01-full-next/recovery/deps/libdrm",
+    "head": "d6513d7e0f454db11eb469ef9629ff06582a3003",
+    "url": "https://android.googlesource.com/platform/external/libdrm",
+    "observed_compiler_input_hashes": "compiler-inputs-index.json"
+  },
+  {
+    "path": "external/fec",
+    "resolved": "/workspace/build01-full-next/recovery/deps/fec",
+    "head": "791afbe58ff9f55145c4adf632ab8cc9ca6e5686",
+    "url": "https://android.googlesource.com/platform/external/fec",
+    "observed_compiler_input_hashes": "compiler-inputs-index.json"
+  },
+  {
+    "path": "external/squashfs-tools",
+    "resolved": "/workspace/build01-full-next/recovery/deps/squashfs-tools",
+    "head": "6697c183c48387fb577c5ded9c52fcfa071af2a7",
+    "url": "https://android.googlesource.com/platform/external/squashfs-tools",
+    "observed_compiler_input_hashes": "compiler-inputs-index.json"
+  },
+  {
+    "path": "external/pcre",
+    "resolved": "/workspace/build01-full-next/recovery/deps/pcre",
+    "head": "222bbf4b3fb8e13c21686803e47e31aa3e4ad130",
+    "url": "https://android.googlesource.com/platform/external/pcre",
+    "observed_compiler_input_hashes": "compiler-inputs-index.json"
+  },
+  {
+    "path": "external/bzip2",
+    "resolved": "/workspace/build01-full-next/recovery/deps/bzip2",
+    "head": "769544af4d0085c21c949e43c8f959be5a192434",
+    "url": "https://android.googlesource.com/platform/external/bzip2",
+    "observed_compiler_input_hashes": "compiler-inputs-index.json"
+  },
+  {
+    "path": "system/extras",
+    "resolved": "/workspace/build01-full-next/recovery/deps/system-extras",
+    "head": "8a764b54002d26c01e2c7cd5aa0d038dfe0623bd",
+    "url": "https://android.googlesource.com/platform/system/extras",
+    "observed_compiler_input_hashes": "compiler-inputs-index.json"
+  },
+  {
+    "path": "libnativehelper",
+    "resolved": "/workspace/build01-full-next/recovery/deps/libnativehelper",
+    "head": "8ebb2fb2e4b92592368c1360d49d5dfa16ef56cc",
+    "url": "https://android.googlesource.com/platform/libnativehelper",
+    "observed_compiler_input_hashes": "compiler-inputs-index.json"
+  },
+  {
+    "path": "system/vold",
+    "resolved": "/workspace/build01-full-next/recovery/deps/vold",
+    "head": "e74c3ea1e2dfb81eeef00ecc399ef78c37fe7868",
+    "url": "https://android.googlesource.com/platform/system/vold",
+    "observed_compiler_input_hashes": "compiler-inputs-index.json"
+  }
+]

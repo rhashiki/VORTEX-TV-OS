@@ -1,0 +1,226 @@
+{
+  "scope": "private copied test runtime only; do not redistribute SDK/vendor DSOs",
+  "files": [
+    {
+      "destination": "system/lib/libEGL.so",
+      "origin": "unchanged official API25 reference or pinned libion; not source-built here",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libEGL.so",
+      "size_bytes": 104076,
+      "sha256": "9d9d4359727bc2684205e090c7d6c4ceacddda8b58defebb0d656915c2a95da9"
+    },
+    {
+      "destination": "system/lib/libGLESv1_CM.so",
+      "origin": "unchanged official API25 reference or pinned libion; not source-built here",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libGLESv1_CM.so",
+      "size_bytes": 34432,
+      "sha256": "a1f4ad70aaaf128353aa856df487e39180a68e57ce00d1f5fbda71e4d9448af1"
+    },
+    {
+      "destination": "system/lib/libbacktrace.so",
+      "origin": "unchanged official API25 reference or pinned libion; not source-built here",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libbacktrace.so",
+      "size_bytes": 58968,
+      "sha256": "a1d49c7e6c60f8ae033655167117225143cfe2e063436a3e889328d9ba29e046"
+    },
+    {
+      "destination": "system/lib/libbase.so",
+      "origin": "unchanged official API25 reference or pinned libion; not source-built here",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libbase.so",
+      "size_bytes": 42636,
+      "sha256": "1b1d1702460fc9b2e068259742b7acab05d4c000609af780ec9bf4a6863a183b"
+    },
+    {
+      "destination": "system/lib/libbinder.so",
+      "origin": "unchanged official API25 reference or pinned libion; not source-built here",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libbinder.so",
+      "size_bytes": 366224,
+      "sha256": "2450518cd7d651a8ab45a2dc77c80be61928c2e22cb56e3f4ab22dd17f031c7b"
+    },
+    {
+      "destination": "system/lib/libc++.so",
+      "origin": "unchanged official API25 reference or pinned libion; not source-built here",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libc++.so",
+      "size_bytes": 575132,
+      "sha256": "ff4503006faf60cd5d20017a38d007dd9451ff35d15ce4b35fcb34e3d4c6e223"
+    },
+    {
+      "destination": "system/lib/libc.so",
+      "origin": "source-built Bionic from recovery actual Android.mk",
+      "source": "/workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/libc.so",
+      "size_bytes": 697952,
+      "sha256": "45aaba04bbeea0cd15d2809748b394e74c4248c4ad3bd479428f8d88ebef3a81"
+    },
+    {
+      "destination": "system/lib/libcutils.so",
+      "origin": "unchanged official API25 reference or pinned libion; not source-built here",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libcutils.so",
+      "size_bytes": 100408,
+      "sha256": "4cb6c95b64a06ce449db9736e3bc64802ba7bca012a7b72d78ac913b6bc67f70"
+    },
+    {
+      "destination": "system/lib/libdl.so",
+      "origin": "source-built Bionic from recovery actual Android.mk",
+      "source": "/workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/libdl.so",
+      "size_bytes": 13652,
+      "sha256": "dd3e9269e81bcff5aac34f7237fb186950cdd9869619b8e29e746b521f35b86f"
+    },
+    {
+      "destination": "system/lib/libhardware.so",
+      "origin": "unchanged official API25 reference or pinned libion; not source-built here",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libhardware.so",
+      "size_bytes": 13912,
+      "sha256": "1ea3a05b21526a6ece66dbc7953d360a72e6302aaf7c4235afa1d457204de725"
+    },
+    {
+      "destination": "system/lib/libhardware_legacy.so",
+      "origin": "unchanged official API25 reference or pinned libion; not source-built here",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libhardware_legacy.so",
+      "size_bytes": 26240,
+      "sha256": "46fb0c2bd8566f4433d78c847b9d178c9b6d961c312ec2e99525a35094e8bde0"
+    },
+    {
+      "destination": "system/lib/libion.so",
+      "origin": "unchanged official API25 reference or pinned libion; not source-built here",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libion.so",
+      "size_bytes": 13912,
+      "sha256": "2e19ed3a2e51fe8055be131e259e6e205e7482f98645ce2e37dae36557a5ecc9"
+    },
+    {
+      "destination": "system/lib/liblog.so",
+      "origin": "unchanged official API25 reference or pinned libion; not source-built here",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/liblog.so",
+      "size_bytes": 63428,
+      "sha256": "5efd0db22151bfd2afe76f31a361bfd303a7908e026217063917271ec60da877"
+    },
+    {
+      "destination": "system/lib/liblzma.so",
+      "origin": "unchanged official API25 reference or pinned libion; not source-built here",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/liblzma.so",
+      "size_bytes": 95868,
+      "sha256": "703bb6186c0b6c6fae3cb0c96082663bb5214530dc993a0360bfd5402f9a73d1"
+    },
+    {
+      "destination": "system/lib/libm.so",
+      "origin": "source-built Bionic from recovery actual Android.mk",
+      "source": "/workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/libm.so",
+      "size_bytes": 137048,
+      "sha256": "79c2055323dedb9ac176c45f391bfffee2ff7d44358b3c5a89ced52dee35fa72"
+    },
+    {
+      "destination": "system/lib/libnetutils.so",
+      "origin": "unchanged official API25 reference or pinned libion; not source-built here",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libnetutils.so",
+      "size_bytes": 30312,
+      "sha256": "a3351fc2d0b170d44f207989c5f0b02f16803f3d3536615403fa998f32247209"
+    },
+    {
+      "destination": "system/lib/libstdc++.so",
+      "origin": "unchanged official API25 reference or pinned libion; not source-built here",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libstdc++.so",
+      "size_bytes": 22116,
+      "sha256": "d040ca808209862d26f6e74db342e8b7f04f84f365cb6f2d472b872eb54e49ab"
+    },
+    {
+      "destination": "system/lib/libsync.so",
+      "origin": "unchanged official API25 reference or pinned libion; not source-built here",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libsync.so",
+      "size_bytes": 13908,
+      "sha256": "5c4595bb1513f66a46bb63c72e6d013999c6f088e931e1a0c3a391ea3489a54e"
+    },
+    {
+      "destination": "system/lib/libui.so",
+      "origin": "unchanged official API25 reference or pinned libion; not source-built here",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libui.so",
+      "size_bytes": 91796,
+      "sha256": "52d1732cc12610d3cf2ec9ad506c815bec8ab07df947bbf6549a08732424acc4"
+    },
+    {
+      "destination": "system/lib/libunwind.so",
+      "origin": "unchanged official API25 reference or pinned libion; not source-built here",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libunwind.so",
+      "size_bytes": 87688,
+      "sha256": "cbe114f9d067997d1ca05d8bce16a3090eb6ec646aa1af3d40edb6a83d09732e"
+    },
+    {
+      "destination": "system/lib/libutils.so",
+      "origin": "unchanged official API25 reference or pinned libion; not source-built here",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libutils.so",
+      "size_bytes": 99992,
+      "sha256": "4372ce06f03f58fecdef8351e2f73c49e9f7a42ff9a625baf1563cb9df377cb9"
+    },
+    {
+      "destination": "system/lib/libwpa_client.so",
+      "origin": "unchanged official API25 reference or pinned libion; not source-built here",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/lib/libwpa_client.so",
+      "size_bytes": 22112,
+      "sha256": "f1a476c39c9b54f584bff724c0909663de74a08ea25c833b601e289d2431b66f"
+    },
+    {
+      "destination": "system/lib/libalsautils.so",
+      "origin": "source-built audio dependency from actual Android.mk",
+      "source": "/workspace/build01-full-next/audio/artifacts/system/lib/libalsautils.so",
+      "size_bytes": 22092,
+      "sha256": "5db334370eab3635257fb56bc6c26b9baa83ea583af4f790732d83ffa1ec507a"
+    },
+    {
+      "destination": "system/lib/libaudioroute.so",
+      "origin": "source-built audio dependency from actual Android.mk",
+      "source": "/workspace/build01-full-next/audio/artifacts/system/lib/libaudioroute.so",
+      "size_bytes": 22060,
+      "sha256": "ad5813b5661b32ae40fa9ac7a15f7b813300606b2f49dc2ca809b9de9e820751"
+    },
+    {
+      "destination": "system/lib/libaudioutils.so",
+      "origin": "source-built audio dependency from actual Android.mk",
+      "source": "/workspace/build01-full-next/audio/artifacts/system/lib/libaudioutils.so",
+      "size_bytes": 30288,
+      "sha256": "478880d49b6accbc2e5335d31f9fc1cfc30fb5155bb3961429dcd99b94445f89"
+    },
+    {
+      "destination": "system/lib/libexpat.so",
+      "origin": "source-built audio dependency from actual Android.mk",
+      "source": "/workspace/build01-full-next/audio/artifacts/system/lib/libexpat.so",
+      "size_bytes": 91560,
+      "sha256": "012137fc33fda1463d0605a8a55952294a2da238c9018559ae5d65b7a3ffed46"
+    },
+    {
+      "destination": "system/lib/libnbaio.so",
+      "origin": "source-built audio dependency from actual Android.mk",
+      "source": "/workspace/build01-full-next/audio/artifacts/system/lib/libnbaio.so",
+      "size_bytes": 38436,
+      "sha256": "da1f684063cab37078930dbe3af6ce35d99369e746a8e5de02793a4e80c15c09"
+    },
+    {
+      "destination": "system/lib/libspeexresampler.so",
+      "origin": "source-built audio dependency from actual Android.mk",
+      "source": "/workspace/build01-full-next/audio/artifacts/system/lib/libspeexresampler.so",
+      "size_bytes": 27604,
+      "sha256": "c3f9a01a3958068fc7ec13492f6b9a92e37165173fdb950babecad262ed4c8ea"
+    },
+    {
+      "destination": "system/lib/libtinyalsa.so",
+      "origin": "source-built audio dependency from actual Android.mk",
+      "source": "/workspace/build01-full-next/audio/artifacts/system/lib/libtinyalsa.so",
+      "size_bytes": 30472,
+      "sha256": "57ab265751e0b8e51a878e865e179b215e8d04115a803f3130a71a976e1c3b70"
+    },
+    {
+      "destination": "system/bin/linker",
+      "origin": "unchanged actual Android ARM32 reference linker",
+      "source": "/workspace/build01-hal-next/gralloc-link/reference/system/bin/linker",
+      "size_bytes": 626424,
+      "sha256": "5ca617a5371ca22a8f455950dd154aa2075e420bb2a4d3c997f440b6912af380"
+    }
+  ],
+  "source_bionic_revision": "8b2e5b977118ebb8447cdf429c4a6be534c4fd1b",
+  "probe": {
+    "path": "/workspace/build01-full-next/audio/loader/hal_metadata_probe",
+    "size_bytes": 6612,
+    "sha256": "18979b52fca5919b0896c51f306886e0100b7e7318d7d4cb21fcaac177b1a2cd"
+  },
+  "qemu": {
+    "path": "/workspace/build01-hal-next/loader/bin/qemu-arm-static",
+    "size_bytes": 11284016,
+    "sha256": "4707fc8fee4660dba6d150d930152d995f2aa784e3b52b4deb8be282533d1f87"
+  }
+}

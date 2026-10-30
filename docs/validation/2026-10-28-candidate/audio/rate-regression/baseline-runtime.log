@@ -1,0 +1,12 @@
+FAIL unsupported-HDMI-bypass-rate rc=0 alloc=1 free=0 locks=1 chansta=0
+PASS supported-HDMI-NLPCM rc=0 alloc=1 free=1 locks=1 chansta=1
+PASS supported-HDMI-HBR rc=0 alloc=1 free=1 locks=1 chansta=1
+PASS HDMI-no-bypass-defaults rc=0 alloc=1 free=1 locks=1 chansta=1
+PASS SPDIF-supported-rate rc=0 alloc=1 free=1 locks=1 chansta=0
+PASS SPDIF-existing-rate-fallback rc=0 alloc=1 free=1 locks=1 chansta=0
+PASS direct-without-passthrough-mode rc=0 alloc=1 free=1 locks=1 chansta=0
+PASS deep-buffer rc=0 alloc=1 free=1 locks=1 chansta=0
+PASS default-speaker rc=0 alloc=1 free=1 locks=1 chansta=0
+PASS busy-HDMI-slot rc=-16 alloc=1 free=1 locks=1 chansta=1
+PASS allocation-failure rc=-12 alloc=0 free=0 locks=0 chansta=0
+RESULT passed=10 failed=1

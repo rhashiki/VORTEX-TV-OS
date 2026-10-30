@@ -1,0 +1,31 @@
+{
+  "scope": "independent reproduction of previously demonstrated Gitconfig/ref issues after fixes, disposable fixtures only",
+  "status": "pass",
+  "driver_sha256": "de7e8647d8490fdf9ae0a74a62d9f14793bb02c83031f773ab7a2d863fb3880d",
+  "cases": [
+    {
+      "case": "fsmonitor",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "sideeffect_helper_executed": false,
+      "output_or_log_directory_created": false,
+      "status": "pass"
+    },
+    {
+      "case": "cleanfilter",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "sideeffect_helper_executed": false,
+      "output_or_log_directory_created": false,
+      "status": "pass"
+    },
+    {
+      "case": "replacement-ref",
+      "expected_exit_code": 2,
+      "actual_exit_code": 2,
+      "sideeffect_helper_executed": false,
+      "output_or_log_directory_created": false,
+      "status": "pass"
+    }
+  ]
+}

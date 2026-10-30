@@ -1,0 +1,61 @@
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=/workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtbegin_static.o /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtend_android.o
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/recovery/out
+============================================
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=/workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtbegin_static.o /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtend_android.o
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.18.55-x86_64-with-debian-13.6
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NHG47K
+OUT_DIR=/workspace/build01-full-next/recovery/out
+============================================
+prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-gcc -Ibionic/libc/include -DPLATFORM_SDK_VERSION=25  -Ibionic/libc/arch-arm/include -mthumb-interwork \
+	-MD -MF /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtbegin_static1.d -o /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtbegin_static1.o -c bionic/libc/arch-common/bionic/crtbegin.c
+cp /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtbegin_static1.d /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtbegin_static1.P; sed -e 's/#.*//' -e 's/^[^:]*: *//' -e 's/ *\\$//' -e '/^$/ d' -e 's/$/ :/' < /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtbegin_static1.d >> /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtbegin_static1.P; rm -f /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtbegin_static1.d
+prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-gcc  -Ibionic/libc/include -DPLATFORM_SDK_VERSION=25  -Ibionic/libc/arch-arm/include -mthumb-interwork \
+	-MD -MF /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtbrand.d -o /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtbrand.o -c bionic/libc/arch-common/bionic/crtbrand.S
+cp /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtbrand.d /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtbrand.P; sed -e 's/#.*//' -e 's/^[^:]*: *//' -e 's/ *\\$//' -e '/^$/ d' -e 's/$/ :/' < /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtbrand.d >> /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtbrand.P; rm -f /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtbrand.d
+prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-ld  -r -o /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtbegin_static.o /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtbegin_static1.o /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtbrand.o
+prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-gcc -Ibionic/libc/include -DPLATFORM_SDK_VERSION=25  -Ibionic/libc/arch-arm/include -mthumb-interwork \
+	-MD -MF /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtend_android.d -o /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtend_android.o -c bionic/libc/arch-common/bionic/crtend.S
+cp /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtend_android.d /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtend_android.P; sed -e 's/#.*//' -e 's/^[^:]*: *//' -e 's/ *\\$//' -e '/^$/ d' -e 's/$/ :/' < /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtend_android.d >> /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtend_android.P; rm -f /workspace/build01-full-next/recovery/out/target/product/generic/obj/lib/crtend_android.d
+
+#### make completed successfully (1 seconds) ####
+

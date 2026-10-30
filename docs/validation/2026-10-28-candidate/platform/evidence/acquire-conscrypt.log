@@ -1,0 +1,19 @@
+Cloning into '/workspace/build01-full-next/platform/tree/external/conscrypt'...
+warning: refs/tags/android-7.1.2_r6 39fd17a9c069b03e66eeb01f428f5a99493692c1 is not a commit!
+Note: switching to 'c4297341bff3fe06aa1f13c97d09c1c22a12daab'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+

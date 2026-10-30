@@ -1,0 +1,83 @@
+{
+  "id": "6a915ed39f73a68c0efa8b8ff8cec6fddbdf5671",
+  "entries": [
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "name": "MODULE_LICENSE_GPL"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "623b6258a134210f0b0ada106fdaab7f0370d9c5",
+      "name": "NOTICE"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "72d71d50d5da8e127bc57d1236e3060212fd424e",
+      "name": "PACKAGE_SOURCES"
+    },
+    {
+      "mode": 33188,
+      "type": "blob",
+      "id": "aada52a3426d96f753f094e532fa2f99c0c8dfe0",
+      "name": "TOOLCHAIN_SOURCES"
+    },
+    {
+      "mode": 16384,
+      "type": "tree",
+      "id": "9bf76ef26d32e64140c140a5770372a0e7850f35",
+      "name": "bin"
+    },
+    {
+      "mode": 33261,
+      "type": "blob",
+      "id": "c2a2ef40b6a6d3c378b5ee856105f3f92eb08776",
+      "name": "build-precise-multilib-toolchain.sh"
+    },
+    {
+      "mode": 16384,
+      "type": "tree",
+      "id": "1b7bec3a809b126ef305394a46bd58411103e2a9",
+      "name": "include"
+    },
+    {
+      "mode": 16384,
+      "type": "tree",
+      "id": "cd36535fe615b5ca2e1a8eb92406a165b7c64277",
+      "name": "lib"
+    },
+    {
+      "mode": 16384,
+      "type": "tree",
+      "id": "f77acf1f0dc17360273c4b584aa3291fa74c6e1c",
+      "name": "lib64"
+    },
+    {
+      "mode": 16384,
+      "type": "tree",
+      "id": "e1512d381bef554a75d73d0521559a34c6ade59b",
+      "name": "libexec"
+    },
+    {
+      "mode": 16384,
+      "type": "tree",
+      "id": "4b45ef29682d7494c9b491b360b3d9b026fb808c",
+      "name": "sysroot"
+    },
+    {
+      "mode": 16384,
+      "type": "tree",
+      "id": "3712e64ebcf4091cc2af3117f0c509dee743a888",
+      "name": "toolchain-patches"
+    },
+    {
+      "mode": 16384,
+      "type": "tree",
+      "id": "fe2f8fb01a92a96b7c6b8284206d312c380aa7f9",
+      "name": "x86_64-linux"
+    }
+  ]
+}

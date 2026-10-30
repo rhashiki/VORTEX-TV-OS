@@ -1,0 +1,45 @@
+{
+  "status": "frozen",
+  "scope": "standalone Linux ARM32 static diagnostic init/initramfs component; not recovery/installer/Android/SD image",
+  "source_package": "/workspace/build01-full-next/installer/source-package",
+  "evidence_package": "/workspace/build01-full-next/installer/evidence-package",
+  "evidence_manifest_sha256": "3749d646a3d75c0b9855b6cb74e7d158f219b63ea6c1ddeea562d9643790ea3b",
+  "text_files_including_manifest": 80,
+  "text_total_bytes": 1862426,
+  "artifact_directory": "/workspace/build01-full-next/installer/artifacts",
+  "artifacts": [
+    {
+      "path": "artifacts/vortex-diagnostic-init",
+      "size_bytes": 27436,
+      "sha256": "34c3e9afb616e5802508e2be7b0e7b0d98267d70e42bdcaff1efafa1a742a950"
+    },
+    {
+      "path": "artifacts/vortex-diagnostic-init.unstripped",
+      "size_bytes": 57552,
+      "sha256": "fdfd126af7d4360431047648d9a0bd36d76b0a406e9ec8bbc1e068a6dbbd07f8"
+    },
+    {
+      "path": "artifacts/vortex-diagnostic-initramfs.cpio",
+      "size_bytes": 28148,
+      "sha256": "f7e851baaae1502d2abd9a5e883431a8b808e2e38f8601a1e806262294f56312"
+    },
+    {
+      "path": "artifacts/vortex-diagnostic-initramfs.cpio.gz",
+      "size_bytes": 19392,
+      "sha256": "39d116db80486916a8c29001b03af832da2a38f4e15fbd3f61813a46c39cd046"
+    }
+  ],
+  "tests": {
+    "count": 24,
+    "status": "pass",
+    "actual_binary_under_qemu_user_mode": true,
+    "binary_sha256": "34c3e9afb616e5802508e2be7b0e7b0d98267d70e42bdcaff1efafa1a742a950",
+    "pid1_mounts_or_kernel_boot": "not_executed",
+    "trace_scope": "mutating open flags/syscalls absent and fixture snapshots unchanged; no-raw-device-I/O additionally supported by reviewed source, not trace path attestation"
+  },
+  "review": "review/final-source-review.json",
+  "review_sha256": "3f54f8e2fe1efeb615c1c143241cf8ad03be07d3ce5be5627d977f5843eb6bb0",
+  "recompile_source_matches_final_artifact": true,
+  "root_kernel_boot": "not_tested",
+  "physical_hardware": "not_tested"
+}

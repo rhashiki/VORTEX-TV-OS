@@ -1,0 +1,14 @@
+--- a/tinyalsa_hal/audio_hw.c
++++ b/tinyalsa_hal/audio_hw.c
+@@ -2160,9 +2160,9 @@
+                     }
+                     type = OUTPUT_HDMI_MULTI;
+                 } else {
+-                    out->config = pcm_config;
+-                    out->config.rate = 44100;
+                     ALOGE("hdmi bitstream samplerate %d unsupport", config->sample_rate);
++                    ret = -EINVAL;
++                    goto err_open;
+                 }
+                 out->config.channels = audio_channel_count_from_out_mask(config->channel_mask);
+                 if (out->config.channels < 2)

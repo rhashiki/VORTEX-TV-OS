@@ -1,0 +1,5 @@
+51471 set_tid_address(159440,124,1,0,159156,0) = 51471
+51471 getpid() = 51471
+51471 writev(2,0x40800098,0x2)Diagnostic component only. Use --inventory-root ABSOLUTE_FIXTURE_ROOT outside PID1.
+ = 84
+51471 exit_group(64)

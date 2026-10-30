@@ -1,0 +1,206 @@
+{
+  "scope": "actual static ARM Linux binary under QEMU user mode, trusted local metadata fixtures only",
+  "status": "pass",
+  "tests_run": 24,
+  "cases": [
+    {
+      "case": "test_embedded_nul_metadata_rejected",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_no_storage_io_or_write_flags": true,
+      "stdout_log": "test_embedded_nul_metadata_rejected.stdout",
+      "trace_log": "test_embedded_nul_metadata_rejected.strace"
+    },
+    {
+      "case": "test_empty_inventory_selects_no_target",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_no_storage_io_or_write_flags": true,
+      "stdout_log": "test_empty_inventory_selects_no_target.stdout",
+      "trace_log": "test_empty_inventory_selects_no_target.strace"
+    },
+    {
+      "case": "test_enumeration_sorted_and_bounded",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_no_storage_io_or_write_flags": true,
+      "stdout_log": "test_enumeration_sorted_and_bounded.stdout",
+      "trace_log": "test_enumeration_sorted_and_bounded.strace"
+    },
+    {
+      "case": "test_inconsistent_mmc_removable_stays_unknown",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_no_storage_io_or_write_flags": true,
+      "stdout_log": "test_inconsistent_mmc_removable_stays_unknown.stdout",
+      "trace_log": "test_inconsistent_mmc_removable_stays_unknown.strace"
+    },
+    {
+      "case": "test_inconsistent_sd_removable_stays_unknown",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_no_storage_io_or_write_flags": true,
+      "stdout_log": "test_inconsistent_sd_removable_stays_unknown.stdout",
+      "trace_log": "test_inconsistent_sd_removable_stays_unknown.strace"
+    },
+    {
+      "case": "test_invalid_block_name_skipped",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_no_storage_io_or_write_flags": true,
+      "stdout_log": "test_invalid_block_name_skipped.stdout",
+      "trace_log": "test_invalid_block_name_skipped.strace"
+    },
+    {
+      "case": "test_json_quotes_and_newlines_escaped",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_no_storage_io_or_write_flags": true,
+      "stdout_log": "test_json_quotes_and_newlines_escaped.stdout",
+      "trace_log": "test_json_quotes_and_newlines_escaped.strace"
+    },
+    {
+      "case": "test_metadata_directory_rejected",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_no_storage_io_or_write_flags": true,
+      "stdout_log": "test_metadata_directory_rejected.stdout",
+      "trace_log": "test_metadata_directory_rejected.strace"
+    },
+    {
+      "case": "test_metadata_fifo_not_opened_for_io",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_no_storage_io_or_write_flags": true,
+      "stdout_log": "test_metadata_fifo_not_opened_for_io.stdout",
+      "trace_log": "test_metadata_fifo_not_opened_for_io.strace"
+    },
+    {
+      "case": "test_metadata_symlink_not_followed",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_no_storage_io_or_write_flags": true,
+      "stdout_log": "test_metadata_symlink_not_followed.stdout",
+      "trace_log": "test_metadata_symlink_not_followed.strace"
+    },
+    {
+      "case": "test_missing_arguments_rejected_outside_pid1",
+      "exit_code": 64,
+      "fixture_unchanged": true,
+      "trace_no_storage_io_or_write_flags": true,
+      "stdout_log": "test_missing_arguments_rejected_outside_pid1.stdout",
+      "trace_log": "test_missing_arguments_rejected_outside_pid1.strace"
+    },
+    {
+      "case": "test_missing_sysfs_fails_without_fallback",
+      "exit_code": 1,
+      "fixture_unchanged": true,
+      "trace_no_storage_io_or_write_flags": true,
+      "stdout_log": "test_missing_sysfs_fails_without_fallback.stdout",
+      "trace_log": "test_missing_sysfs_fails_without_fallback.strace"
+    },
+    {
+      "case": "test_mmc_candidate_never_approved_as_internal",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_no_storage_io_or_write_flags": true,
+      "stdout_log": "test_mmc_candidate_never_approved_as_internal.stdout",
+      "trace_log": "test_mmc_candidate_never_approved_as_internal.strace"
+    },
+    {
+      "case": "test_mtd_block_does_not_assert_nand",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_no_storage_io_or_write_flags": true,
+      "stdout_log": "test_mtd_block_does_not_assert_nand.stdout",
+      "trace_log": "test_mtd_block_does_not_assert_nand.strace"
+    },
+    {
+      "case": "test_oversized_metadata_rejected",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_no_storage_io_or_write_flags": true,
+      "stdout_log": "test_oversized_metadata_rejected.stdout",
+      "trace_log": "test_oversized_metadata_rejected.strace"
+    },
+    {
+      "case": "test_partition_is_not_whole_disk",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_no_storage_io_or_write_flags": true,
+      "stdout_log": "test_partition_is_not_whole_disk.stdout",
+      "trace_log": "test_partition_is_not_whole_disk.strace"
+    },
+    {
+      "case": "test_relative_fixture_argument_rejected",
+      "exit_code": 64,
+      "fixture_unchanged": true,
+      "trace_no_storage_io_or_write_flags": true,
+      "stdout_log": "test_relative_fixture_argument_rejected.stdout",
+      "trace_log": "test_relative_fixture_argument_rejected.strace"
+    },
+    {
+      "case": "test_sd_candidate_never_approved_as_boot",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_no_storage_io_or_write_flags": true,
+      "stdout_log": "test_sd_candidate_never_approved_as_boot.stdout",
+      "trace_log": "test_sd_candidate_never_approved_as_boot.strace"
+    },
+    {
+      "case": "test_signed_size_rejected",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_no_storage_io_or_write_flags": true,
+      "stdout_log": "test_signed_size_rejected.stdout",
+      "trace_log": "test_signed_size_rejected.strace"
+    },
+    {
+      "case": "test_size_multiply_overflow_rejected",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_no_storage_io_or_write_flags": true,
+      "stdout_log": "test_size_multiply_overflow_rejected.stdout",
+      "trace_log": "test_size_multiply_overflow_rejected.strace"
+    },
+    {
+      "case": "test_size_parse_overflow_rejected",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_no_storage_io_or_write_flags": true,
+      "stdout_log": "test_size_parse_overflow_rejected.stdout",
+      "trace_log": "test_size_parse_overflow_rejected.strace"
+    },
+    {
+      "case": "test_too_many_entries_fail_before_inventory",
+      "exit_code": 1,
+      "fixture_unchanged": true,
+      "trace_no_storage_io_or_write_flags": true,
+      "stdout_log": "test_too_many_entries_fail_before_inventory.stdout",
+      "trace_log": "test_too_many_entries_fail_before_inventory.strace"
+    },
+    {
+      "case": "test_unknown_vendor_nand_name_not_guessed",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_no_storage_io_or_write_flags": true,
+      "stdout_log": "test_unknown_vendor_nand_name_not_guessed.stdout",
+      "trace_log": "test_unknown_vendor_nand_name_not_guessed.strace"
+    },
+    {
+      "case": "test_virtual_storage_not_internal_target",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_no_storage_io_or_write_flags": true,
+      "stdout_log": "test_virtual_storage_not_internal_target.stdout",
+      "trace_log": "test_virtual_storage_not_internal_target.strace"
+    }
+  ],
+  "binary_sha256": "34c3e9afb616e5802508e2be7b0e7b0d98267d70e42bdcaff1efafa1a742a950",
+  "qemu_sha256": "4707fc8fee4660dba6d150d930152d995f2aa784e3b52b4deb8be282533d1f87",
+  "limits": [
+    "PID1 mounts/root-filesystem guard/wait path not executed by this user-mode suite",
+    "No Rockchip kernel boot, internal storage driver, FlashID, partition offsets, SD identity or physical compatibility proven",
+    "Stdout is captured by the host test harness; SD logging and all installation writes remain absent"
+  ]
+}

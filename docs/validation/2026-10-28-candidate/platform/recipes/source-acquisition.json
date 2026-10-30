@@ -1,0 +1,38 @@
+[
+  {
+    "path": "llvm",
+    "revision": "f9d1195a27113f6dafba785611690175ad3914eb",
+    "url": "https://android.googlesource.com/platform/external/llvm",
+    "status_porcelain": "",
+    "full_worktree": true,
+    "materialized_checkout_path": "/workspace/build01-full-next/platform/tree/external/llvm",
+    "sources_alias": "stable alias for sharing; build tree path is a real directory, avoiding relative cross-project symlink traversal"
+  },
+  {
+    "path": "libcore",
+    "revision": "e0874054acea0e164c4464d3bb82302df50e8e5c",
+    "url": "https://android.googlesource.com/platform/libcore",
+    "status_porcelain": "",
+    "full_worktree": true,
+    "materialized_checkout_path": "/workspace/build01-full-next/platform/tree/libcore",
+    "sources_alias": "stable alias for sharing; build tree path is a real directory, avoiding relative cross-project symlink traversal"
+  },
+  {
+    "path": "icu",
+    "revision": "18c86be3562ecbfaffd4a42b4fcc702874acf605",
+    "url": "https://android.googlesource.com/platform/external/icu",
+    "status_porcelain": "",
+    "full_worktree": true,
+    "materialized_checkout_path": "/workspace/build01-full-next/platform/tree/external/icu",
+    "sources_alias": "stable alias for sharing; build tree path is a real directory, avoiding relative cross-project symlink traversal"
+  },
+  {
+    "path": "frameworks-base",
+    "revision": "edd171fec429b9d51d9cb2da961a673ec51fcc4d",
+    "url": "https://github.com/rockchip-android/frameworks-base.git",
+    "status_porcelain": "",
+    "full_worktree": true,
+    "materialized_checkout_path": "/workspace/build01-full-next/platform/tree/frameworks/base",
+    "sources_alias": "stable alias for sharing; build tree path is a real directory, avoiding relative cross-project symlink traversal"
+  }
+]

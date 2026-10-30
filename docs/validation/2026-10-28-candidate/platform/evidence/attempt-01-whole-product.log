@@ -1,0 +1,7 @@
+including device/rockchip/rk322x/vendorsetup.sh
+build/core/envsetup.mk:152: *** No config file found for TARGET_DEVICE vortex_rk322x_sd_box.  Stop.
+
+** Don't have a product spec for: 'vortex_rk322x_sd_box'
+** Do you have the right repo manifest?
+
+LUNCH_STATUS=1

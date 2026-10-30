@@ -1,0 +1,82 @@
+{
+  "text_files_including_manifest": 175,
+  "text_bytes": 1980086,
+  "manifest_sha256": "c7693e998e7dc65fb72957386bc858007870e34b878be2987b2e523911015b6a",
+  "artifacts": [
+    {
+      "path": "static/libcompiler_rt-extras.a",
+      "bytes": 3898,
+      "sha256": "d5dd05f164da84ec52ad90ae41dbd23cb45c3840fc8c50975039ffa4d138ddb8"
+    },
+    {
+      "path": "static/libmedia_helper.a",
+      "bytes": 74552,
+      "sha256": "5472ede8ac264ccb8adc904d9067bc42565c434e144e3bb1d776cb797871528d"
+    },
+    {
+      "path": "static/libspeex.a",
+      "bytes": 218104,
+      "sha256": "bd739285e5c5781921d2ee7b444bde4c9b91a6e2bad2eea8ee8e0070076d5702"
+    },
+    {
+      "path": "static/libunwind_llvm.a",
+      "bytes": 172822,
+      "sha256": "2857fda9981591f1bbc27a176d66afbde34c7fc7499a421d627cb70f3d39a2ac"
+    },
+    {
+      "path": "system/lib/hw/audio.primary.rk30board.so",
+      "bytes": 182488,
+      "sha256": "8814c9b2b1d47b394bfb7f981c802ce7fa1325c10518bbd43a5ba51a2f6cbfd6"
+    },
+    {
+      "path": "system/lib/hw/audio.r_submix.default.so",
+      "bytes": 34524,
+      "sha256": "509128a5173de1272d6a1fed03d4305cd961763740570759be6f13f1c71d15e4"
+    },
+    {
+      "path": "system/lib/hw/audio.usb.default.so",
+      "bytes": 22196,
+      "sha256": "934643a44841444d5d92b21a84093fa63afcd8a25d29ae4f12e8942fa4653f7a"
+    },
+    {
+      "path": "system/lib/hw/power.default.so",
+      "bytes": 14024,
+      "sha256": "01e59a07d6a24ba866fc2c9c0e949ae78ec9a51a1668a26e3a3cf9b0e97638ba"
+    },
+    {
+      "path": "system/lib/libalsautils.so",
+      "bytes": 22092,
+      "sha256": "5db334370eab3635257fb56bc6c26b9baa83ea583af4f790732d83ffa1ec507a"
+    },
+    {
+      "path": "system/lib/libaudioroute.so",
+      "bytes": 22060,
+      "sha256": "ad5813b5661b32ae40fa9ac7a15f7b813300606b2f49dc2ca809b9de9e820751"
+    },
+    {
+      "path": "system/lib/libaudioutils.so",
+      "bytes": 30288,
+      "sha256": "478880d49b6accbc2e5335d31f9fc1cfc30fb5155bb3961429dcd99b94445f89"
+    },
+    {
+      "path": "system/lib/libexpat.so",
+      "bytes": 91560,
+      "sha256": "012137fc33fda1463d0605a8a55952294a2da238c9018559ae5d65b7a3ffed46"
+    },
+    {
+      "path": "system/lib/libnbaio.so",
+      "bytes": 38436,
+      "sha256": "da1f684063cab37078930dbe3af6ce35d99369e746a8e5de02793a4e80c15c09"
+    },
+    {
+      "path": "system/lib/libspeexresampler.so",
+      "bytes": 27604,
+      "sha256": "c3f9a01a3958068fc7ec13492f6b9a92e37165173fdb950babecad262ed4c8ea"
+    },
+    {
+      "path": "system/lib/libtinyalsa.so",
+      "bytes": 30472,
+      "sha256": "57ab265751e0b8e51a878e865e179b215e8d04115a803f3130a71a976e1c3b70"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+
+Symbol table '.dynsym' contains 112 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_finalize@LIBC (2)
+     2: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_atexit@LIBC (2)
+     3: 00000000     0 FUNC    GLOBAL DEFAULT  UND __register_atfork@LIBC (2)
+     4: 00000000     0 FUNC    GLOBAL DEFAULT  UND __android_log_print
+     5: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memclr@LIBC_N (3)
+     6: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memclr4@LIBC_N (3)
+     7: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memcpy@LIBC_N (3)
+     8: 00000000     0 FUNC    GLOBAL DEFAULT  UND __snprintf_chk@LIBC (2)
+     9: 00000000     0 FUNC    GLOBAL DEFAULT  UND dladdr@LIBC (4)
+    10: 00000000     0 FUNC    GLOBAL DEFAULT  UND __android_log_assert
+    11: 00000000     0 FUNC    GLOBAL DEFAULT  UND raise@LIBC (2)
+    12: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memclr8@LIBC_N (3)
+    13: 00000000     0 FUNC    GLOBAL DEFAULT  UND __gnu_Unwind_Find_exidx@LIBC_N (3)
+    14: 00000000     0 FUNC    GLOBAL DEFAULT  UND __stack_chk_fail@LIBC (2)
+    15: 00000000     0 OBJECT  GLOBAL DEFAULT  UND __stack_chk_guard@LIBC (2)
+    16: 00000000     0 FUNC    GLOBAL DEFAULT  UND frexpf@LIBC (5)
+    17: 00000000     0 FUNC    GLOBAL DEFAULT  UND ldexpf@LIBC (5)
+    18: 00000000     0 FUNC    GLOBAL DEFAULT  UND abort@LIBC (2)
+    19: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memmove@LIBC_N (3)
+    20: 00000000     0 FUNC    GLOBAL DEFAULT  UND calloc@LIBC (2)
+    21: 00000000     0 FUNC    GLOBAL DEFAULT  UND free@LIBC (2)
+    22: 00000000     0 FUNC    GLOBAL DEFAULT  UND realloc@LIBC (2)
+    23: 00000000     0 FUNC    GLOBAL DEFAULT  UND speex_resampler_destroy
+    24: 00000000     0 FUNC    GLOBAL DEFAULT  UND speex_resampler_get_input_latency
+    25: 00000000     0 FUNC    GLOBAL DEFAULT  UND speex_resampler_get_output_latency
+    26: 00000000     0 FUNC    GLOBAL DEFAULT  UND speex_resampler_init
+    27: 00000000     0 FUNC    GLOBAL DEFAULT  UND speex_resampler_process_int
+    28: 00000000     0 FUNC    GLOBAL DEFAULT  UND speex_resampler_process_interleaved_int
+    29: 00000000     0 FUNC    GLOBAL DEFAULT  UND speex_resampler_reset_mem
+    30: 00000000     0 FUNC    GLOBAL DEFAULT  UND speex_resampler_strerror
+    31: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_signal@LIBC (2)
+    32: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_timedwait_relative_np@LIBC (2)
+    33: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_lock@LIBC (2)
+    34: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_unlock@LIBC (2)
+    35: 00000000     0 FUNC    GLOBAL DEFAULT  UND fprintf@LIBC (2)
+    36: 00000000     0 OBJECT  GLOBAL DEFAULT  UND stderr@LIBC (2)
+    37: 00002ab1   148 FUNC    GLOBAL DEFAULT   12 limiter
+    38: 0000306d    38 FUNC    GLOBAL DEFAULT   12 memcpy_to_i16_from_q8_23
+    39: 00002d61    36 FUNC    GLOBAL DEFAULT   12 memcpy_to_float_from_i16
+    40: 00002c7f    24 FUNC    GLOBAL DEFAULT   12 memcpy_to_u8_from_i16
+    41: 0000562c     0 FUNC    GLOBAL DEFAULT   12 __aeabi_ldivmod
+    42: 00003241   420 FUNC    GLOBAL DEFAULT   12 memcpy_by_channel_mask
+    43: 000059c0    28 FUNC    GLOBAL DEFAULT   12 __lshrdi3
+    44: 00002c61    30 FUNC    GLOBAL DEFAULT   12 memcpy_to_i16_from_u8
+    45: 0000317f    20 FUNC    GLOBAL DEFAULT   12 upmix_to_stereo_i16_from_mono_i16
+    46: 00002d3d    36 FUNC    GLOBAL DEFAULT   12 memcpy_to_float_from_q4_27
+    47: 00002cf1    76 FUNC    GLOBAL DEFAULT   12 memcpy_to_i16_from_float
+    48: 00003a65   164 FUNC    GLOBAL DEFAULT   12 create_echo_reference
+    49: 000056f8    60 FUNC    GLOBAL DEFAULT   12 __gnu_uldivmod_helper
+    50: 000039e7    40 FUNC    GLOBAL DEFAULT   12 roundup
+    51: 00005734   384 FUNC    GLOBAL DEFAULT   12 __divdi3
+    52: 000031bb    16 FUNC    GLOBAL DEFAULT   12 upmix_to_stereo_float_from_mono_float
+    53: 00002dad    64 FUNC    GLOBAL DEFAULT   12 memcpy_to_float_from_p24
+    54: 00002ce1    16 FUNC    GLOBAL DEFAULT   12 memcpy_to_i16_from_i32
+    55: 000031cb    26 FUNC    GLOBAL DEFAULT   12 nonZeroMono32
+    56: 00002749   138 FUNC    GLOBAL DEFAULT   12 audio_utils_fifo_write
+    57: 00002f1d    34 FUNC    GLOBAL DEFAULT   12 memcpy_to_p24_from_i32
+    58: 00002f3f    20 FUNC    GLOBAL DEFAULT   12 memcpy_to_q8_23_from_i16
+    59: 00003161    30 FUNC    GLOBAL DEFAULT   12 downmix_to_mono_i16_from_stereo_i16
+    60: 00003193    40 FUNC    GLOBAL DEFAULT   12 downmix_to_mono_float_from_stereo_float
+    61: 000039c7    32 FUNC    GLOBAL DEFAULT   12 release_resampler
+    62: 000031e5    26 FUNC    GLOBAL DEFAULT   12 nonZeroMono16
+    63: 000027d3   136 FUNC    GLOBAL DEFAULT   12 audio_utils_fifo_read
+    64: 00002e31    32 FUNC    GLOBAL DEFAULT   12 memcpy_to_p24_from_i16
+    65: 000031ff    32 FUNC    GLOBAL DEFAULT   12 nonZeroStereo32
+    66: 000056ac    16 FUNC    WEAK   DEFAULT   12 __aeabi_ldiv0
+    67: 00001d18   388 FUNC    GLOBAL DEFAULT   12 _Z9fixed_fftiPi
+    68: 00002c99    72 FUNC    GLOBAL DEFAULT   12 memcpy_to_u8_from_float
+    69: 00002723    36 FUNC    GLOBAL DEFAULT   12 audio_utils_fifo_init
+    70: 00002be9    60 FUNC    GLOBAL DEFAULT   12 float_from_gain
+    71: 00003809    92 FUNC    GLOBAL DEFAULT   12 resampler_resample_from_input
+    72: 000056ac    16 FUNC    WEAK   DEFAULT   12 __aeabi_idiv0
+    73: 0000321f    32 FUNC    GLOBAL DEFAULT   12 nonZeroStereo16
+    74: 00003597   110 FUNC    GLOBAL DEFAULT   12 memcpy_by_index_array_initialization_src_index
+    75: 00002f55   124 FUNC    GLOBAL DEFAULT   12 memcpy_to_q8_23_from_float_with_clamp
+    76: 00002b45   164 FUNC    GLOBAL DEFAULT   12 gain_from_float
+    77: 00002c25    60 FUNC    GLOBAL DEFAULT   12 ditherAndClamp
+    78: 00001e9c   232 FUNC    GLOBAL DEFAULT   12 fixed_fft_real
+    79: 00002fd1    42 FUNC    GLOBAL DEFAULT   12 memcpy_to_q8_23_from_p24
+    80: 00002747     2 FUNC    GLOBAL DEFAULT   12 audio_utils_fifo_deinit
+    81: 00003095    36 FUNC    GLOBAL DEFAULT   12 memcpy_to_float_from_q8_23
+    82: 00002ded    28 FUNC    GLOBAL DEFAULT   12 memcpy_to_i16_from_p24
+    83: 000030b9    20 FUNC    GLOBAL DEFAULT   12 memcpy_to_i32_from_i16
+    84: 0000368d   380 FUNC    GLOBAL DEFAULT   12 resampler_resample_from_provider
+    85: 000059dc    28 FUNC    GLOBAL DEFAULT   12 __aeabi_llsl
+    86: 00003505   146 FUNC    GLOBAL DEFAULT   12 memcpy_by_index_array_initialization
+    87: 00002a59    86 FUNC    GLOBAL DEFAULT   12 memcpy_by_index_array_initialization_from_channel_mask
+    88: 000033e5   288 FUNC    GLOBAL DEFAULT   12 memcpy_by_index_array
+    89: 00003605   134 FUNC    GLOBAL DEFAULT   12 memcpy_by_index_array_initialization_dst_index
+    90: 00003a55    16 FUNC    GLOBAL DEFAULT   12 echo_reference_release_buffer
+    91: 000058b4   268 FUNC    GLOBAL DEFAULT   12 __udivdi3
+    92: 000059dc    28 FUNC    GLOBAL DEFAULT   12 __ashldi3
+    93: 000059c0    28 FUNC    GLOBAL DEFAULT   12 __aeabi_llsr
+    94: 00008004     0 NOTYPE  GLOBAL DEFAULT  ABS _edata
+    95: 000030cd   112 FUNC    GLOBAL DEFAULT   12 memcpy_to_i32_from_float
+    96: 000056bc    60 FUNC    GLOBAL DEFAULT   12 __gnu_ldivmod_helper
+    97: 00001f89   260 FUNC    GLOBAL DEFAULT   12 mono_blend
+    98: 00002e09    40 FUNC    GLOBAL DEFAULT   12 memcpy_to_i32_from_p24
+    99: 00008005     0 NOTYPE  GLOBAL DEFAULT  ABS _end
+   100: 00002edd    64 FUNC    GLOBAL DEFAULT   12 memcpy_to_p24_from_q8_23
+   101: 00002ffd   112 FUNC    GLOBAL DEFAULT   12 memcpy_to_q4_27_from_float
+   102: 0000285d   508 FUNC    GLOBAL DEFAULT   12 memcpy_by_audio_format
+   103: 00003865   304 FUNC    GLOBAL DEFAULT   12 create_resampler
+   104: 00005670     0 FUNC    GLOBAL DEFAULT   12 __aeabi_uldivmod
+   105: 00003fbd    32 FUNC    GLOBAL DEFAULT   12 release_echo_reference
+   106: 00002d85    40 FUNC    GLOBAL DEFAULT   12 memcpy_to_float_from_u8
+   107: 00003a0f    70 FUNC    GLOBAL DEFAULT   12 echo_reference_get_next_buffer
+   108: 0000313d    36 FUNC    GLOBAL DEFAULT   12 memcpy_to_float_from_i32
+   109: 00008004     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
+   110: 0000208d  1686 FUNC    GLOBAL DEFAULT   12 adjust_channels
+   111: 00002e51   140 FUNC    GLOBAL DEFAULT   12 memcpy_to_p24_from_float

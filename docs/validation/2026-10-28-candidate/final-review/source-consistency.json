@@ -1,0 +1,57 @@
+{
+  "scope": "read-only source consistency, metadata and patch replay; no tests or builds repeated, no hardware operation",
+  "base_head": "1db0c914fda74419be097b36c1e753296bcc2bbc",
+  "current_vortex_overlay_pin": "1db0c914fda74419be097b36c1e753296bcc2bbc",
+  "product_patch_sha256": "4deea3f95faee02f6fd28d17cfccde5c5dd789579d100c68b741bd83db9a2faa",
+  "product_patch_replay": [
+    {
+      "argv": [
+        "git",
+        "apply",
+        "--check",
+        "/workspace/vortex-build/rom/platform-reference/vortex-product-integration.patch"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "apply",
+        "/workspace/vortex-build/rom/platform-reference/vortex-product-integration.patch"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    }
+  ],
+  "product_files": [
+    {
+      "path": "rom/product/rk322x_sd_box/AndroidProducts.mk",
+      "current_matches_replay": true,
+      "sha256": "f10b5539bae59b20395bbf3d83ee29fa30eba0ee96278ab8dcc342be33b6ea2a"
+    },
+    {
+      "path": "rom/product/rk322x_sd_box/vortex_rk322x_sd_box.mk",
+      "current_matches_replay": true,
+      "sha256": "0701a333925c97669d87aca419af6f1d3201c96876b139e9d983277cce630c4b"
+    }
+  ],
+  "manifest": {
+    "overlay_projects": 29,
+    "base_projects": 541,
+    "remove_projects": 14,
+    "all_remove_names_valid": true,
+    "composed_project_count": 556,
+    "unique_paths": 556,
+    "remaining_aosp_tag_projects": 527
+  },
+  "driver_review": "No additional concrete defect found in current driver. Its trust/closure limitations are documented.",
+  "historical_snapshot_note": "Historical ba4 platform run and copied build-driver records remain historical even though current overlay is 1db.",
+  "pending_root_docs": [
+    "Scope historical APK/Home claim to ba4; preserve explicit current VortexTV APK/OEM integration gap."
+  ],
+  "status": "patch_and_manifest_consistent",
+  "resolved_during_review": [
+    "Evidence index README was added and final local Markdown link scan is clean."
+  ]
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "path": "hardware/rockchip/libgralloc",
+    "pin": "c92fb8cd8becd57b025149f2861a2072b092ddea",
+    "patches": [
+      "0002-gralloc-select-mali400-for-rk322x.patch",
+      "0007-gralloc-reject-unsupported-nv12-video.patch"
+    ],
+    "method": "genuine detached local shared Git clone; no fabricated Git metadata"
+  },
+  {
+    "path": "hardware/rockchip/hwcomposer",
+    "pin": "d3ec43f2f751123ca5e7bda2d07eded4c6352a35",
+    "patches": [
+      "0003-hwc-use-selected-gralloc-header.patch",
+      "0005-hwc-fix-format-policy-and-hdmi-strings.patch",
+      "0006-hwc-fix-diagnostic-formats.patch"
+    ],
+    "method": "genuine detached local shared Git clone; no fabricated Git metadata"
+  }
+]

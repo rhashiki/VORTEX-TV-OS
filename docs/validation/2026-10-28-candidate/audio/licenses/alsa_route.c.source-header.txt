@@ -1,0 +1,28 @@
+/*
+ * Copyright (C) 2015 Rockchip Electronics Co., Ltd.
+ */
+
+/*
+ * @file alsa_route.c
+ * @brief 
+ * @author  RkAudio
+ * @version 1.0.8
+ * @date 2015-08-24
+ */
+
+#define LOG_TAG "alsa_route"
+
+//#define LOG_NDEBUG 0
+
+#include <cutils/log.h>
+#include <cutils/config_utils.h>
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <ctype.h>
+#include <math.h>
+

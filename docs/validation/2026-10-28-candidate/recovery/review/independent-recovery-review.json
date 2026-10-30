@@ -1,0 +1,132 @@
+{
+  "scope": "Independent read-only source and recorded-test review, not independent device execution or full recovery approval",
+  "status": "no_remaining_material_findings_in_reviewed_ui_scope",
+  "reviewed_recovery_revision": "4e64764f19db25238c296691ef0d950603eae33b",
+  "resolved_findings": [
+    {
+      "id": "callback_signature",
+      "previous": "Legacy RkUI::CheckKey(int) hid selected RecoveryUI::CheckKey(int,bool), and old fixture reproduced incorrect one-argument shape.",
+      "resolution": "Obsolete RkUI and its duplicate counter were removed. Device constructs ScreenRecoveryUI directly, leaving actual platform key handling inherited. Final fixture copies the two-argument callback shape and calls through RecoveryUI* with markers. It makes no claim to execute the real platform long-press/reboot policy."
+    },
+    {
+      "id": "pointer_storage_label",
+      "resolution": "Final check says base-device-stores-ui-pointer. The real base stores the pointer; its empty destructor does not establish RAII ownership."
+    }
+  ],
+  "verified_menu": {
+    "items": 5,
+    "mapping": [
+      "0 REBOOT",
+      "1 APPLY_ADB_SIDELOAD",
+      "2 APPLY_SDCARD",
+      "3 WIPE_DATA",
+      "4 WIPE_CACHE"
+    ],
+    "invalid_positions": "NO_ACTION",
+    "navigation": "down/volume-down, up/volume-up, enter/power only invoke when visible; unmapped or hidden menu returns kNoAction",
+    "constructor": "Device(new ScreenRecoveryUI) matches selected Device(RecoveryUI*) and inherited GetUI()"
+  },
+  "recorded_validation": {
+    "host_fixture_checks": 20,
+    "host_result": "pass in recorded log; reviewed assertions and result, not rerun by reviewer",
+    "baseline": "Old constructor and APPLY_EXT/APPLY_CACHE cause the recorded expected compilation failure",
+    "android_rule_result": "attempt-13 records actual ARM C++ compilation and archive creation of librecovery_ui_aosp_arm; not a recovery executable link"
+  },
+  "unsafe_upstream_paths": {
+    "sd_config": "sdboot.cpp151,155\u2013160 converts nonzero fw_update into command arguments; SD config path at178 and USB at193",
+    "dispatch": "recovery.cpp1748\u20131751 captures fw_update;1910\u20131913 calls do_rk_mode_update",
+    "idblock": "sdboot.cpp344 initializes bUpdateIDBlock=true; only pFile==2 clears it at354;370\u2013373 selects firmware or partition update",
+    "vendor_prebuilt_module_providers": [
+      "librkupdate",
+      "librkrsa",
+      "libext2_uuid",
+      "libcrc32"
+    ],
+    "limit": "The four provider Android.mk files select prebuilt ARM/ARM64 .a files. This source review does not establish complete source, license terms, or exact backend behavior, and executed none of those paths."
+  },
+  "integration_limits": [
+    "The UI patch remains an opt-in source adaptation. Generic aosp_arm attempts do not show TARGET_RECOVERY_UI_LIB selection into a successful recovery link.",
+    "Static archives/CRT and host menu tests do not constitute recovery executable, recovery.img, SD boot, NAND/eMMC compatibility, framebuffer/input operation or a flashable ROM.",
+    "Raw upstream recovery contains update/format/write functionality and must not be described as read-only diagnostics.",
+    "Actual platform key policy remains inherited by source structure; the final host marker fixture does not simulate its implementation or Android UI ABI."
+  ],
+  "previous_review": "pre-dispatch-fix-review.json preserves the superseded findings and hashes",
+  "files": {
+    "0001-common-recovery-match-nougat-device-api.patch": {
+      "bytes": 2100,
+      "sha256": "316f96f1db6d2fa18d41820c6cbe020a7c50a04829b8069cbb56681dd5ea496e"
+    },
+    "tree/device/rockchip/common/recovery/recovery_ui.cpp": {
+      "bytes": 2300,
+      "sha256": "90106514f48d3d11a26e67af16979de2cded87e291f89ccc74651379669eb912"
+    },
+    "source/device.h": {
+      "bytes": 4534,
+      "sha256": "69ff15771df62d7900761659f74839035cbbf695712b1f324624935f44b731e1"
+    },
+    "source/ui.h": {
+      "bytes": 5942,
+      "sha256": "a6e2fc73deb8d915ab1bb725f35fb95939b204abb30bbe0351b673a179b0d445"
+    },
+    "source/ui.cpp": {
+      "bytes": 10112,
+      "sha256": "bbab1ea5c25e039ec3d248010424a9f0c61352cab5979f6894c288bb0eca9ff7"
+    },
+    "source/screen_ui.h": {
+      "bytes": 4853,
+      "sha256": "35156d62aef9e043aa2802064bfa5327e2ff6d93e0993a0a7b91171ec840c9e2"
+    },
+    "source/screen_ui.cpp": {
+      "bytes": 26178,
+      "sha256": "14bc83507b9b846c46a7ef11b6d375ed60a117c7ac20ab147f3b530e6e99845d"
+    },
+    "source/sdboot.cpp": {
+      "bytes": 13727,
+      "sha256": "f3ae1faec77dc0269ecb16a4fabb076e9253c60cb052bc63fb2b2131b4495a22"
+    },
+    "source/recovery.cpp": {
+      "bytes": 72162,
+      "sha256": "4c48673c5c33b570721f5bd445f9c82dee091fa3d75087e25306c0dccb4f6b61"
+    },
+    "source/install.cpp": {
+      "bytes": 21309,
+      "sha256": "e1aa93d7eb7d18480ecc53fe24ee63da6ae7b2b30029c2033ba3ffa13ae2adf8"
+    },
+    "source/Android.mk": {
+      "bytes": 5219,
+      "sha256": "8819b5a5ad9d345d564d8597bd3830d0a153493c1fee00050b5026f9a68a4f3a"
+    },
+    "source/rkupdate/update/Android.mk": {
+      "bytes": 240,
+      "sha256": "ab70807635145c47e21f267f45899a68ff5c7cf31221ba62cff27007f237e036"
+    },
+    "source/rkupdate/rsa/Android.mk": {
+      "bytes": 230,
+      "sha256": "9449920ec36589a81f1c45793466c91c1f9df3d2d4ab2d31c3111bdb02ad5a51"
+    },
+    "source/rkupdate/uuid/Android.mk": {
+      "bytes": 240,
+      "sha256": "f5e35a517fb85b1b079c495e054c804cdf59fb024d12113e4c3a14cdac87f7df"
+    },
+    "source/crc/Android.mk": {
+      "bytes": 230,
+      "sha256": "9bbee02e0fdd29f30bc365d7c92e383d5359f7c5a6e0aa28c46ec01d7948dcd8"
+    },
+    "ui-regression/run_regression.py": {
+      "bytes": 5911,
+      "sha256": "35a00a3615123810747252443ccaf721867f6fa582e2678793e1d2997388ecad"
+    },
+    "ui-regression/result.json": {
+      "bytes": 1893,
+      "sha256": "6d2721fa78bd3a9fff04a549e140b0a32dc4f2abb7f5a95dd0e6ea7ce6956a3f"
+    },
+    "ui-regression/patched-runtime.log": {
+      "bytes": 549,
+      "sha256": "35a751ef241253f512adedcf2af850a956d77c59f1ccf33d517b8f18c3834023"
+    },
+    "attempt-13-ui-platform-key-policy.log": {
+      "bytes": 5388,
+      "sha256": "0205b2d6fffa03e06441247bae6f4b84e53e491198dca0c7da692ef60befa3ad"
+    }
+  }
+}

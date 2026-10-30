@@ -1,0 +1,44 @@
+[
+  {
+    "manifest": "audio/evidence.sha256",
+    "good": 174,
+    "mismatch": [],
+    "missing": []
+  },
+  {
+    "manifest": "bionic-smoke/evidence.sha256",
+    "good": 45,
+    "mismatch": [],
+    "missing": []
+  },
+  {
+    "manifest": "build-driver/sha256.json",
+    "good": 17,
+    "mismatch": [],
+    "missing": []
+  },
+  {
+    "manifest": "capacity/sha256.json",
+    "good": 11,
+    "mismatch": [],
+    "missing": []
+  },
+  {
+    "manifest": "host-toolchain/evidence.sha256",
+    "good": 36,
+    "mismatch": [],
+    "missing": []
+  },
+  {
+    "manifest": "installer/evidence.sha256",
+    "good": 79,
+    "mismatch": [],
+    "missing": []
+  },
+  {
+    "manifest": "recovery/evidence.sha256",
+    "good": 120,
+    "mismatch": [],
+    "missing": []
+  }
+]

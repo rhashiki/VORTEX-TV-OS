@@ -1,0 +1,8 @@
+[
+  {
+    "path": "sysroot/usr/include/stdatomic.h",
+    "target": "../../../../../../../../bionic/libc/include/stdatomic.h",
+    "resolved_in_mirror": "/workspace/build01-full-next/host-toolchain/tree/bionic/libc/include/stdatomic.h",
+    "within_mirrored_tree": true
+  }
+]

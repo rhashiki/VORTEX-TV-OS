@@ -1,0 +1,8 @@
+Cloning into '/workspace/build01-full-next/platform/tree/frameworks/native'...
+remote: warning: lazy fetching disabled; some objects may not be available        
+remote: fatal: could not fetch 94e86076308dce8c2dc17a27035f7e41ee7c430e from promisor remote        
+error: git upload-pack: git-pack-objects died with error.
+fatal: git upload-pack: aborting due to possible repository corruption on the remote side.
+remote: aborting due to possible repository corruption on the remote side.
+fatal: early EOF
+fatal: fetch-pack: invalid index-pack output

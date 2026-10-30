@@ -1,0 +1,13 @@
+test_default_preflight_does_not_execute_fsmonitor (test_full_platform_driver.DriverContract.test_default_preflight_does_not_execute_fsmonitor) ... ok
+test_default_preflight_does_not_execute_clean_filter (test_full_platform_driver.DriverContract.test_default_preflight_does_not_execute_clean_filter) ... ok
+test_replacement_refs_cannot_substitute_an_unpinned_commit (test_full_platform_driver.DriverContract.test_replacement_refs_cannot_substitute_an_unpinned_commit) ... ok
+test_product_destination_cannot_be_a_regular_file (test_full_platform_driver.DriverContract.test_product_destination_cannot_be_a_regular_file) ... ok
+test_product_destination_special_child_is_rejected (test_full_platform_driver.DriverContract.test_product_destination_special_child_is_rejected) ... ok
+test_template_special_child_is_rejected (test_full_platform_driver.DriverContract.test_template_special_child_is_rejected) ... ok
+test_output_path_cannot_be_a_regular_file (test_full_platform_driver.DriverContract.test_output_path_cannot_be_a_regular_file) ... ok
+test_log_directory_cannot_overlap_product_destination (test_full_platform_driver.DriverContract.test_log_directory_cannot_overlap_product_destination) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 2.057s
+
+OK

@@ -1,0 +1,19 @@
+Cloning into 'tree/external/gtest'...
+warning: refs/tags/android-7.1.2_r6 6df160278d676f81cf36d4b0b1484d9f848899de is not a commit!
+Note: switching to '81cb746e0ba7ce98a77b175139c7425fd41021c6'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+

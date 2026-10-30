@@ -1,0 +1,33 @@
+{
+  "scope": "independent read-only source/workflow review with isolated disposable Git fixtures; no real BSP mutation/build/device execution",
+  "status": "findings_sent_for_correction",
+  "findings": [
+    {
+      "id": "profile-and-output-node-types",
+      "detail": "Original profile/template scans ignored special children and accepted a nondirectory destination; existing output regular-file path also passed until late mutation. Driver author has applied early kind checks and five negative cases; final recheck pending."
+    },
+    {
+      "id": "log-destination-overlap",
+      "detail": "Original log guard omitted materialized device destination, permitting extra logfiles followed by failure after source patches. Author has added guard/test; final recheck pending."
+    },
+    {
+      "id": "git-fsmonitor-execution",
+      "detail": "Default check mode executed a repository-configured core.fsmonitor helper; disposable fixture returned0 while marker was written. Reproducer fsmonitor-reproducer.json. Fix pending."
+    },
+    {
+      "id": "git-clean-filter-execution",
+      "detail": "Default check mode executed a configured cleanfilter selected by tracked.gitattributes when Git compared same-byte touchedworktreefile. --no-ext-diff/--no-textconv alone do not disable cleanfilters. Reproducer cleanfilter-reproducer.json. Fix pending."
+    }
+  ],
+  "confirmed_initially": [
+    "No explicit download, host package installation, physical device/mount/flash command or GitHub Actions path in driver.",
+    "Only --run enters source mutation then envsetup/lunch/make droid; host Git and explicit JDK/Python version commands execute during default checks.",
+    "SourceHEAD/staged/assumeunchanged/skipworktree/untracked definitions checks and byte-verified patch-prefix replay are present.",
+    "Existing output marker includes source pins/patches/product plus JDK/Python/kernel selectors; it is not a resolved full-AOSP lock."
+  ],
+  "limits": [
+    "Local host executables themselves are assumed trusted.",
+    "The review does not establish complete module closure, boot, physical hardware or correctness of third-party BSPscripts executed by explicit --run."
+  ],
+  "driver_sha_at_findings_snapshot": "604184a35dbd02cd55daa81c778774ae906fe81de627a18538df7f55c58af838"
+}

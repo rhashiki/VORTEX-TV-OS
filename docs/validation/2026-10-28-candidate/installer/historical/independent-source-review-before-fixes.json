@@ -1,0 +1,43 @@
+{
+  "scope": "read_only_independent_source_review_of_diagnostic_component",
+  "source_sha256": "49652f04e773ca61150f32776e63302e8fed7994d4c738040679d8d1b2699923",
+  "status": "two_scope_hardening_findings_reported_to_parent",
+  "syntax_check": {
+    "command": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fsyntax-only",
+      "/workspace/build01-full-next/installer/vortex_diagnostic_init.c"
+    ],
+    "exit_code": 0
+  },
+  "findings": [
+    {
+      "id": "metadata-open-race",
+      "severity": "contract_scope",
+      "detail": "lstat plus later O_RDONLY open can open a replaced special inode before fstat rejection. No read follows a rejected fstat, but block_devices_opened:false is unconditional. Trusted genuine sysfs makes this implausible; adversarial fixtures are not fully race-proof.",
+      "suggestion": "Pin O_PATH descriptor, validate regular type, then reopen verified descriptor for read; or explicitly narrow input trust/claim."
+    },
+    {
+      "id": "pid1-root-assumption",
+      "severity": "contract_scope",
+      "detail": "getpid()==1 alone does not prove root is an initramfs. mkdir proc/sys could modify disk-root metadata in another deployment, despite unconditional writes_to_storage:false.",
+      "suggestion": "Check RAMFS_MAGIC/TMPFS_MAGIC with statfs before PID1 mkdir/mount, or narrow intended-deployment claim."
+    }
+  ],
+  "confirmed": [
+    "No write/open flag or mount source targets raw storage in the intended initramfs path.",
+    "SD and MMC roles remain candidates; no record approves a write target or claims boot-medium identity.",
+    "No flash/format/reboot backend or interactive shell is implemented.",
+    "Mounts are proc/sysfs only with read-only/nosuid/nodev/noexec.",
+    "Read-meta byte bound, decimal overflow handling and JSON escaping are present."
+  ],
+  "limits": [
+    "No PID1/kernel/initramfs boot, mount execution, physical hardware, drivers or internal preservation demonstrated.",
+    "Fixture execution is not a security sandbox; class/block parent symlinks are intentionally traversed for real sysfs compatibility.",
+    "scandir allocates before entry-count rejection; use trusted kernel/finite test trees rather than assuming a memory-bound adversarial directory reader."
+  ]
+}

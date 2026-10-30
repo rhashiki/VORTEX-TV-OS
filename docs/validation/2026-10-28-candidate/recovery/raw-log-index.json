@@ -1,0 +1,47 @@
+[
+  {
+    "path": "attempt-21-real-vold-headers.log",
+    "bytes": 3555155,
+    "sha256": "66c1315bba43ec8660a2ef13c8c5254c606e3d475f9b57fff655b43900949fd3",
+    "zip_path": "raw-logs/recovery/attempt-21-real-vold-headers.log",
+    "last_errors": [
+      "make: *** No rule to make target '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/liblogwrap_intermediates/export_includes', needed by '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libext4_utils_static_intermediates/import_includes'.  Stop."
+    ],
+    "versioned_raw_log": false
+  },
+  {
+    "path": "attempt-30-official-ndk9-crypto.log",
+    "bytes": 1085050,
+    "sha256": "32f6b8e341145f2a98c8375c18ee2f6b343fce50e17ce9e6d4749a14e1480a45",
+    "zip_path": "raw-logs/recovery/attempt-30-official-ndk9-crypto.log",
+    "last_errors": [
+      "make: *** No rule to make target '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libpcre_intermediates/export_includes', needed by '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libselinux_intermediates/import_includes'.  Stop."
+    ],
+    "versioned_raw_log": false
+  },
+  {
+    "path": "attempt-31-real-pcre-source.log",
+    "bytes": 249772,
+    "sha256": "405a8c74ded11d7fdc9985c1bb66809948a51b20eaf8f156844995817c9dcd93",
+    "zip_path": "raw-logs/recovery/attempt-31-real-pcre-source.log",
+    "last_errors": [
+      "make: *** No rule to make target '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libbz_intermediates/export_includes', needed by '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libapplypatch_intermediates/import_includes'.  Stop."
+    ],
+    "versioned_raw_log": false
+  },
+  {
+    "path": "attempt-32-real-bzip2-source.log",
+    "bytes": 264145,
+    "sha256": "7ceff43728472987b5d713e3768b878666fc0dd965f2ead4a34eed3eaca8ed81",
+    "zip_path": "raw-logs/recovery/attempt-32-real-bzip2-source.log",
+    "last_errors": [],
+    "versioned_raw_log": false
+  },
+  {
+    "path": "recovery-link.map",
+    "bytes": 5312268,
+    "sha256": "e532827675ae5b5b1d6fb04a19fa1682c904804ec2b9821f8ed0d479c53fa19b",
+    "zip_path": "raw-logs/recovery/recovery-link.map",
+    "versioned_raw_log": false
+  }
+]

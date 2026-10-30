@@ -1,0 +1,37 @@
+{
+  "repository": "https://github.com/rockchip-android/hardware-rockchip-audio",
+  "revision": "03b111b6736b48ec17ffee4906caecf59323d8c1",
+  "patch": "0001-audio-reject-unsupported-hdmi-bypass-rate.patch",
+  "files": [
+    {
+      "path": "Android.mk",
+      "upstream_sha256": "4fa72a895e0b7ca4c84148402b8d21372cfce735b053fc597254147949a9a7e0",
+      "compiled_sha256": "4fa72a895e0b7ca4c84148402b8d21372cfce735b053fc597254147949a9a7e0"
+    },
+    {
+      "path": "tinyalsa_hal/Android.mk",
+      "upstream_sha256": "0ba7709f6694f6821f64eb7859bbed998fb9abd6bf6cc9ed7bf7eed3921f62bb",
+      "compiled_sha256": "0ba7709f6694f6821f64eb7859bbed998fb9abd6bf6cc9ed7bf7eed3921f62bb"
+    },
+    {
+      "path": "tinyalsa_hal/audio_hw.c",
+      "upstream_sha256": "e65e3736b19208984a98dd240bbe6a880e091418b2e064b9a511e480648ba4e4",
+      "compiled_sha256": "3e1250c98bcf0825f84afb0cc75759179c60c75f98759c1133e2e513132ac409"
+    },
+    {
+      "path": "tinyalsa_hal/alsa_route.c",
+      "upstream_sha256": "2de49bbbbdb1e31d1bb7d954f73542dd89ec44daf50cea88a9e77f6ef4f10fc2",
+      "compiled_sha256": "2de49bbbbdb1e31d1bb7d954f73542dd89ec44daf50cea88a9e77f6ef4f10fc2"
+    },
+    {
+      "path": "tinyalsa_hal/alsa_mixer.c",
+      "upstream_sha256": "33b73dea025cc6bd04eafdc441c2dd6882e734b05de5bc27a61a85d6f3411e0f",
+      "compiled_sha256": "33b73dea025cc6bd04eafdc441c2dd6882e734b05de5bc27a61a85d6f3411e0f"
+    },
+    {
+      "path": "tinyalsa_hal/audio_hw_hdmi.c",
+      "upstream_sha256": "fabef670844aae12c270a5de7b7946f7acee77a7a50c2e8ff77ef1208ce70d6c",
+      "compiled_sha256": "fabef670844aae12c270a5de7b7946f7acee77a7a50c2e8ff77ef1208ce70d6c"
+    }
+  ]
+}

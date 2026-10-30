@@ -1,0 +1,108 @@
+{
+  "status": "pass",
+  "regular_files": 3339,
+  "symlinks": 202,
+  "regular_payload_bytes": 240883563,
+  "all_regular_bytes_modes_match_archive": true,
+  "all_symlink_targets_match_archive": true,
+  "unresolved_links_are_preserved_upstream": [
+    {
+      "path": "sysroot/usr/lib/libGL.so",
+      "link_target": "libGL.so",
+      "resolution": "preserved_upstream_self_reference",
+      "resolved_target": null
+    },
+    {
+      "path": "sysroot/usr/lib/libXi.so",
+      "link_target": "libXi.so.6.1.0",
+      "resolution": "preserved_upstream_dangling_reference",
+      "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libXi.so.6.1.0"
+    },
+    {
+      "path": "sysroot/usr/lib/libacl.a",
+      "link_target": "libacl.a",
+      "resolution": "preserved_upstream_self_reference",
+      "resolved_target": null
+    },
+    {
+      "path": "sysroot/usr/lib/libattr.so",
+      "link_target": "libattr.so",
+      "resolution": "preserved_upstream_self_reference",
+      "resolved_target": null
+    },
+    {
+      "path": "sysroot/usr/lib/libaudiofile.so",
+      "link_target": "libaudiofile.so.1.0.0",
+      "resolution": "preserved_upstream_dangling_reference",
+      "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libaudiofile.so.1.0.0"
+    },
+    {
+      "path": "sysroot/usr/lib/libesd.so",
+      "link_target": "libesd.so.0.2.39",
+      "resolution": "preserved_upstream_dangling_reference",
+      "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libesd.so.0.2.39"
+    },
+    {
+      "path": "sysroot/usr/lib/libnss_db.so",
+      "link_target": "libnss_db.so.2",
+      "resolution": "preserved_upstream_dangling_reference",
+      "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_db.so.2"
+    },
+    {
+      "path": "sysroot/usr/lib/libpulse-mainloop-glib.so",
+      "link_target": "libpulse-mainloop-glib.so.0.0.4",
+      "resolution": "preserved_upstream_dangling_reference",
+      "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libpulse-mainloop-glib.so.0.0.4"
+    },
+    {
+      "path": "sysroot/usr/lib32/libGL.so",
+      "link_target": "libGL.so",
+      "resolution": "preserved_upstream_self_reference",
+      "resolved_target": null
+    },
+    {
+      "path": "sysroot/usr/lib32/libXi.so",
+      "link_target": "libXi.so.6.1.0",
+      "resolution": "preserved_upstream_dangling_reference",
+      "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libXi.so.6.1.0"
+    },
+    {
+      "path": "sysroot/usr/lib32/libacl.a",
+      "link_target": "libacl.a",
+      "resolution": "preserved_upstream_self_reference",
+      "resolved_target": null
+    },
+    {
+      "path": "sysroot/usr/lib32/libattr.so",
+      "link_target": "libattr.so",
+      "resolution": "preserved_upstream_self_reference",
+      "resolved_target": null
+    },
+    {
+      "path": "sysroot/usr/lib32/libaudiofile.so",
+      "link_target": "libaudiofile.so.1.0.0",
+      "resolution": "preserved_upstream_dangling_reference",
+      "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libaudiofile.so.1.0.0"
+    },
+    {
+      "path": "sysroot/usr/lib32/libesd.so",
+      "link_target": "libesd.so.0.2.39",
+      "resolution": "preserved_upstream_dangling_reference",
+      "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libesd.so.0.2.39"
+    },
+    {
+      "path": "sysroot/usr/lib32/libnss_db.so",
+      "link_target": "libnss_db.so.2",
+      "resolution": "preserved_upstream_dangling_reference",
+      "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_db.so.2"
+    },
+    {
+      "path": "sysroot/usr/lib32/libpulse-mainloop-glib.so",
+      "link_target": "libpulse-mainloop-glib.so.0.0.4",
+      "resolution": "preserved_upstream_dangling_reference",
+      "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libpulse-mainloop-glib.so.0.0.4"
+    }
+  ],
+  "selected_bionic_cross_project_header_sha256": "b036ea3ee4d1b6512645f2666f651f85bf82e80a5ab34061e6f40592dea7f002",
+  "scope": "pinned host toolchain extraction only, not Android build or hardware compatibility"
+}

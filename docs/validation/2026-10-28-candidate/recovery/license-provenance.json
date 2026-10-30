@@ -1,0 +1,173 @@
+[
+  {
+    "source": "/workspace/build01-full-next/recovery/tree/bionic/libc/NOTICE",
+    "evidence_parts_in_order": [
+      "licenses/01-NOTICE.part000.txt",
+      "licenses/01-NOTICE.part001.txt"
+    ],
+    "artifact_original": "licenses/01-NOTICE",
+    "sha256": "7e50997c1c5ada7064f67e38691dbdb38b78b9f150d24fafecfa2787eb01e72f",
+    "evidence_encoding": "UTF-8 exact bytes",
+    "reconstruction": "base64-decode when indicated; otherwise concatenate parts in order for byte-identical original notice"
+  },
+  {
+    "source": "/workspace/build01-full-next/recovery/tree/bionic/libm/NOTICE",
+    "evidence_parts_in_order": [
+      "licenses/02-NOTICE"
+    ],
+    "artifact_original": "licenses/02-NOTICE",
+    "sha256": "b706aa24a5cf03a98b2af54f0d776862e8ebbdc722a56ba23520bfeaec57989f",
+    "evidence_encoding": "UTF-8 exact bytes",
+    "reconstruction": "base64-decode when indicated; otherwise concatenate parts in order for byte-identical original notice"
+  },
+  {
+    "source": "/workspace/build01-full-next/recovery/tree/system/core/NOTICE",
+    "evidence_parts_in_order": [
+      "licenses/03-NOTICE"
+    ],
+    "artifact_original": "licenses/03-NOTICE",
+    "sha256": "5f28c11f8b1b3f97b9d42c74b85371ebf4127f241b799279bcecd69f7ee542dc",
+    "evidence_encoding": "UTF-8 exact bytes",
+    "reconstruction": "base64-decode when indicated; otherwise concatenate parts in order for byte-identical original notice"
+  },
+  {
+    "source": "/workspace/build01-full-next/recovery/tree/external/libpng/LICENSE",
+    "evidence_parts_in_order": [
+      "licenses/05-LICENSE"
+    ],
+    "artifact_original": "licenses/05-LICENSE",
+    "sha256": "bade5d8cc9bb2461ebf7b18471ed194f79815d2f982d3fff088f3751b6248973",
+    "evidence_encoding": "UTF-8 exact bytes",
+    "reconstruction": "base64-decode when indicated; otherwise concatenate parts in order for byte-identical original notice"
+  },
+  {
+    "source": "/workspace/build01-full-next/recovery/tree/external/boringssl/NOTICE",
+    "evidence_parts_in_order": [
+      "licenses/06-NOTICE"
+    ],
+    "artifact_original": "licenses/06-NOTICE",
+    "sha256": "257fe1b542f846557d0fc938f4206d6c9a6334e2b571fa020e51f96377537120",
+    "evidence_encoding": "UTF-8 exact bytes",
+    "reconstruction": "base64-decode when indicated; otherwise concatenate parts in order for byte-identical original notice"
+  },
+  {
+    "source": "/workspace/build01-full-next/recovery/tree/external/jemalloc/COPYING",
+    "evidence_parts_in_order": [
+      "licenses/07-COPYING"
+    ],
+    "artifact_original": "licenses/07-COPYING",
+    "sha256": "5e49cb5013479e951cea2b6120ad2ff3c547463f11435c182bee7d6f391f2133",
+    "evidence_encoding": "UTF-8 exact bytes",
+    "reconstruction": "base64-decode when indicated; otherwise concatenate parts in order for byte-identical original notice"
+  },
+  {
+    "source": "/workspace/build01-full-next/recovery/tree/external/libcxx/NOTICE",
+    "evidence_parts_in_order": [
+      "licenses/08-NOTICE"
+    ],
+    "artifact_original": "licenses/08-NOTICE",
+    "sha256": "02f1756aae5637e3ef51bb9437d98fb826a50bf3dd1602b2c4595bdc1ea7bcd1",
+    "evidence_encoding": "UTF-8 exact bytes",
+    "reconstruction": "base64-decode when indicated; otherwise concatenate parts in order for byte-identical original notice"
+  },
+  {
+    "source": "/workspace/build01-full-next/recovery/tree/external/libcxxabi/NOTICE",
+    "evidence_parts_in_order": [
+      "licenses/09-NOTICE"
+    ],
+    "artifact_original": "licenses/09-NOTICE",
+    "sha256": "10072aa5e7cde74c6b19f554552a6e78f3c0404a966f83041b2cbcf746622b4f",
+    "evidence_encoding": "UTF-8 exact bytes",
+    "reconstruction": "base64-decode when indicated; otherwise concatenate parts in order for byte-identical original notice"
+  },
+  {
+    "source": "/workspace/build01-full-next/recovery/tree/external/libselinux/NOTICE",
+    "evidence_parts_in_order": [
+      "licenses/10-NOTICE"
+    ],
+    "artifact_original": "licenses/10-NOTICE",
+    "sha256": "86657b4c0fe868d7cbd977cb04c63b6c667e08fa51595a7bc846ad4bed8fc364",
+    "evidence_encoding": "UTF-8 exact bytes",
+    "reconstruction": "base64-decode when indicated; otherwise concatenate parts in order for byte-identical original notice"
+  },
+  {
+    "source": "/workspace/build01-full-next/recovery/tree/external/zlib/NOTICE",
+    "evidence_parts_in_order": [
+      "licenses/11-NOTICE"
+    ],
+    "artifact_original": "licenses/11-NOTICE",
+    "sha256": "60c2c920b6af058e3b9659a19e2e667985c9ac193d426309925077a511f32a45",
+    "evidence_encoding": "UTF-8 exact bytes",
+    "reconstruction": "base64-decode when indicated; otherwise concatenate parts in order for byte-identical original notice"
+  },
+  {
+    "source": "/workspace/build01-full-next/recovery/tree/external/fec/NOTICE",
+    "evidence_parts_in_order": [
+      "licenses/13-NOTICE.base64.txt"
+    ],
+    "artifact_original": "licenses/13-NOTICE",
+    "sha256": "ebc385a0b1d477be5177ed6d9129557aa59a3ad0f26ebe7dd97ee942a0fb68ee",
+    "evidence_encoding": "base64 of original legacy text bytes",
+    "reconstruction": "base64-decode when indicated; otherwise concatenate parts in order for byte-identical original notice"
+  },
+  {
+    "source": "/workspace/build01-full-next/recovery/tree/external/squashfs-tools/NOTICE",
+    "evidence_parts_in_order": [
+      "licenses/14-NOTICE"
+    ],
+    "artifact_original": "licenses/14-NOTICE",
+    "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+    "evidence_encoding": "UTF-8 exact bytes",
+    "reconstruction": "base64-decode when indicated; otherwise concatenate parts in order for byte-identical original notice"
+  },
+  {
+    "source": "/workspace/build01-full-next/recovery/tree/external/pcre/NOTICE",
+    "evidence_parts_in_order": [
+      "licenses/15-NOTICE"
+    ],
+    "artifact_original": "licenses/15-NOTICE",
+    "sha256": "8b24d29b44fd2c822d84fc8b0f7e4051fcdc551bfa328b79aec771963594f528",
+    "evidence_encoding": "UTF-8 exact bytes",
+    "reconstruction": "base64-decode when indicated; otherwise concatenate parts in order for byte-identical original notice"
+  },
+  {
+    "source": "/workspace/build01-full-next/recovery/tree/external/bzip2/LICENSE",
+    "evidence_parts_in_order": [
+      "licenses/16-LICENSE"
+    ],
+    "artifact_original": "licenses/16-LICENSE",
+    "sha256": "4919cfb14a73cd64fcef67b107613970cf1659a09aa675dba31314f373bc7204",
+    "evidence_encoding": "UTF-8 exact bytes",
+    "reconstruction": "base64-decode when indicated; otherwise concatenate parts in order for byte-identical original notice"
+  },
+  {
+    "source": "/workspace/build01-full-next/recovery/tree/external/compiler-rt/LICENSE.TXT",
+    "evidence_parts_in_order": [
+      "licenses/17-LICENSE.TXT"
+    ],
+    "artifact_original": "licenses/17-LICENSE.TXT",
+    "sha256": "83477b0ebd9c4b7e97d236994f1142b072588eaf59556f0cdc5c7684537931aa",
+    "evidence_encoding": "UTF-8 exact bytes",
+    "reconstruction": "base64-decode when indicated; otherwise concatenate parts in order for byte-identical original notice"
+  },
+  {
+    "source": "/workspace/build01-full-next/recovery/tree/external/compiler-rt/NOTICE",
+    "evidence_parts_in_order": [
+      "licenses/18-NOTICE"
+    ],
+    "artifact_original": "licenses/18-NOTICE",
+    "sha256": "ea8dc0b8122a4b33e9aaa87eb39842e4b8eb25056e0abe54d4815412664f195f",
+    "evidence_encoding": "UTF-8 exact bytes",
+    "reconstruction": "base64-decode when indicated; otherwise concatenate parts in order for byte-identical original notice"
+  },
+  {
+    "source": "/workspace/build01-full-next/recovery/deps/safe-iop/NOTICE",
+    "evidence_parts_in_order": [
+      "licenses/20-NOTICE"
+    ],
+    "artifact_original": "licenses/20-NOTICE",
+    "sha256": "b71befc71cd206e875c6e46def1a08c7850ae96b52910375be5d71ef633a872d",
+    "evidence_encoding": "UTF-8 exact bytes",
+    "reconstruction": "base64-decode when indicated; otherwise concatenate parts in order for byte-identical original notice"
+  }
+]

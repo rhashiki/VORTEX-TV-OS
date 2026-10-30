@@ -1,0 +1,102 @@
+)]}'
+{
+  "commit": "7a4e60bdebfa9c7ebf0a953770da06c29488d1ef",
+  "tree": "021e37ca44f1f03fc9b76d2c5f46866be1418139",
+  "parents": [
+    "d5e0ee3300d7176fb17595ce3e7c7d18703a9f31"
+  ],
+  "author": {
+    "name": "Android Partner Docs",
+    "email": "noreply@android.com",
+    "time": "Mon Feb 26 16:22:26 2018 -0800"
+  },
+  "committer": {
+    "name": "Clay Murphy",
+    "email": "claym@google.com",
+    "time": "Mon Feb 26 18:38:53 2018 -0800"
+  },
+  "message": "Docs: Changes to source.android.com\n\n  - 187099260 Update wording around package level inheritance rules. by Android Partner Docs \u003cnoreply@android.com\u003e\n  - 187049276 Devsite localized content from translation request d5454d... by Android Partner Docs \u003cnoreply@android.com\u003e\n  - 187034078 Updated broken links to debian files by Christina Nguyen \u003ccqn@google.com\u003e\n  - 186828031 Document the current abort stack, where we\u0027ve shaved off ... by Android Partner Docs \u003cnoreply@android.com\u003e\n  - 186781359 Devsite localized content from translation request 38d16c... by Android Partner Docs \u003cnoreply@android.com\u003e\n  - 186765463 Change update_engine log file location and add info about... by Christina Nguyen \u003ccqn@google.com\u003e\n  - 186680947 Add paragraph about building on Linux by Android Partner Docs \u003cnoreply@android.com\u003e\n  - 186481923 Devsite localized content from translation request 70c39d... by Android Partner Docs \u003cnoreply@android.com\u003e\n  - 186476322 Correct typo (Github \u003e GitHub) by Danielle Roberts \u003cdaroberts@google.com\u003e\n\nPiperOrigin-RevId: 187099260\nChange-Id: I9dc6de150efa78fc5c186249cee6121bedb25419\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fbfd60fad4cfdf0e81ffdf933ea2388f2934f4e0",
+      "old_mode": 33188,
+      "old_path": "en/devices/architecture/hidl/versioning.html",
+      "new_id": "13bce259eb14ed2fff7c139b7de07f3c327f6a69",
+      "new_mode": 33188,
+      "new_path": "en/devices/architecture/hidl/versioning.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "2fbaba4bb5e463509b2c272490800b1a27e44d20",
+      "old_mode": 33188,
+      "old_path": "en/devices/tech/debug/ftrace.html",
+      "new_id": "c4f8bbcdf7a6bf079a0e2c7c23a8f7f4e2451f0e",
+      "new_mode": 33188,
+      "new_path": "en/devices/tech/debug/ftrace.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "00f72cd05b31ce0b4fac0ab90ec3c0c515b939fe",
+      "old_mode": 33188,
+      "old_path": "en/devices/tech/debug/native-crash.html",
+      "new_id": "686af0705e1527a4669d4c9e8bdd29cd20aa9f7e",
+      "new_mode": 33188,
+      "new_path": "en/devices/tech/debug/native-crash.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "c1b708566993da8b22509a1cfd79373a651fa1ae",
+      "old_mode": 33188,
+      "old_path": "en/devices/tech/ota/ab/index.html",
+      "new_id": "48a9fea57b37deb66d7da726cbe1e763ec5066a0",
+      "new_mode": 33188,
+      "new_path": "en/devices/tech/ota/ab/index.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "aa857f4d939b6c504f7cff23cc389e2e0cb458ca",
+      "old_mode": 33188,
+      "old_path": "en/setup/initializing.html",
+      "new_id": "518a1d98a450d1861eaa12b9e074c23dfce59018",
+      "new_mode": 33188,
+      "new_path": "en/setup/initializing.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "69a60a27020d6a015055e51994ef823ac7609d2a",
+      "old_mode": 33188,
+      "old_path": "en/setup/requirements.html",
+      "new_id": "e95cbb201d96af7d065b6c69fe42f0cd583dbcc8",
+      "new_mode": 33188,
+      "new_path": "en/setup/requirements.html"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "3d1f034deab6103e4960b8f7aab30c856667474e",
+      "new_mode": 33188,
+      "new_path": "zh-cn/compatibility/android-cdd.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "65976fa1a49b79f9f9582024f509c8e927e17d46",
+      "old_mode": 33188,
+      "old_path": "zh-cn/license.html",
+      "new_id": "8f5a6484c3dc98be3b8e287232cd37afa3635dd5",
+      "new_mode": 33188,
+      "new_path": "zh-cn/license.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "0be759e1606c3e7077bf18acea084e426aef404b",
+      "old_mode": 33188,
+      "old_path": "zh-cn/security/bulletin/2017-06-01.html",
+      "new_id": "a111472bafb68bbf49b5fe1c30ce4b54ca2a5636",
+      "new_mode": 33188,
+      "new_path": "zh-cn/security/bulletin/2017-06-01.html"
+    }
+  ]
+}

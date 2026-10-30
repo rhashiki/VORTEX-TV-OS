@@ -1,0 +1,1214 @@
+[
+  {
+    "path": "libexec/gcc/x86_64-linux/4.8/liblto_plugin.so",
+    "link_target": "liblto_plugin.so.0.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/libexec/gcc/x86_64-linux/4.8/liblto_plugin.so.0.0.0"
+  },
+  {
+    "path": "libexec/gcc/x86_64-linux/4.8/liblto_plugin.so.0",
+    "link_target": "liblto_plugin.so.0.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/libexec/gcc/x86_64-linux/4.8/liblto_plugin.so.0.0.0"
+  },
+  {
+    "path": "sysroot/usr/include/ncurses.h",
+    "link_target": "curses.h",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/include/curses.h"
+  },
+  {
+    "path": "sysroot/usr/include/stdatomic.h",
+    "link_target": "../../../../../../../../bionic/libc/include/stdatomic.h",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/bionic/libc/include/stdatomic.h"
+  },
+  {
+    "path": "sysroot/usr/lib/ld-linux-x86-64.so.2",
+    "link_target": "ld-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/ld-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libBrokenLocale.so",
+    "link_target": "libBrokenLocale.so.1",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libBrokenLocale-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libBrokenLocale.so.1",
+    "link_target": "libBrokenLocale-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libBrokenLocale-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libGL.so",
+    "link_target": "libGL.so",
+    "resolution": "preserved_upstream_self_reference",
+    "resolved_target": null
+  },
+  {
+    "path": "sysroot/usr/lib/libX11.so",
+    "link_target": "libX11.so.6.3.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libX11.so.6.3.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libX11.so.6",
+    "link_target": "libX11.so.6.3.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libX11.so.6.3.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libXau.so.6",
+    "link_target": "libXau.so.6.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libXau.so.6.0.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libXdamage.so.1",
+    "link_target": "libXdamage.so.1.1.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libXdamage.so.1.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libXdmcp.so.6",
+    "link_target": "libXdmcp.so.6.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libXdmcp.so.6.0.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libXext.so",
+    "link_target": "libXext.so.6.4.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libXext.so.6.4.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libXext.so.6",
+    "link_target": "libXext.so.6.4.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libXext.so.6.4.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libXfixes.so",
+    "link_target": "libXfixes.so.3.1.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libXfixes.so.3.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libXfixes.so.3",
+    "link_target": "libXfixes.so.3.1.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libXfixes.so.3.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libXi.so",
+    "link_target": "libXi.so.6.1.0",
+    "resolution": "preserved_upstream_dangling_reference",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libXi.so.6.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libXxf86vm.so.1",
+    "link_target": "libXxf86vm.so.1.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libXxf86vm.so.1.0.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libacl.a",
+    "link_target": "libacl.a",
+    "resolution": "preserved_upstream_self_reference",
+    "resolved_target": null
+  },
+  {
+    "path": "sysroot/usr/lib/libacl.so",
+    "link_target": "libacl.so.1",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libacl.so.1.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libacl.so.1",
+    "link_target": "libacl.so.1.1.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libacl.so.1.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libanl.so",
+    "link_target": "libanl.so.1",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libanl-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libanl.so.1",
+    "link_target": "libanl-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libanl-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libasound.so",
+    "link_target": "libasound.so.2.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libasound.so.2.0.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libasound.so.2",
+    "link_target": "libasound.so.2.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libasound.so.2.0.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libattr.so",
+    "link_target": "libattr.so",
+    "resolution": "preserved_upstream_self_reference",
+    "resolved_target": null
+  },
+  {
+    "path": "sysroot/usr/lib/libattr.so.1",
+    "link_target": "libattr.so.1.1.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libattr.so.1.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libaudiofile.so",
+    "link_target": "libaudiofile.so.1.0.0",
+    "resolution": "preserved_upstream_dangling_reference",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libaudiofile.so.1.0.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libc.so.6",
+    "link_target": "libc-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libc-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libcap.so",
+    "link_target": "libcap.so.2",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libcap.so.2.22"
+  },
+  {
+    "path": "sysroot/usr/lib/libcap.so.2",
+    "link_target": "libcap.so.2.22",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libcap.so.2.22"
+  },
+  {
+    "path": "sysroot/usr/lib/libcidn.so",
+    "link_target": "libcidn.so.1",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libcidn-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libcidn.so.1",
+    "link_target": "libcidn-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libcidn-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libcrypt.so",
+    "link_target": "libcrypt.so.1",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libcrypt-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libcrypt.so.1",
+    "link_target": "libcrypt-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libcrypt-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libcurses.a",
+    "link_target": "libncurses.a",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libncurses.a"
+  },
+  {
+    "path": "sysroot/usr/lib/libcurses.so",
+    "link_target": "libncurses.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libncurses.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libdl.so",
+    "link_target": "libdl.so.2",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libdl-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libdl.so.2",
+    "link_target": "libdl-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libdl-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libdrm.so.2",
+    "link_target": "libdrm.so.2.4.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libdrm.so.2.4.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libesd.so",
+    "link_target": "libesd.so.0.2.39",
+    "resolution": "preserved_upstream_dangling_reference",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libesd.so.0.2.39"
+  },
+  {
+    "path": "sysroot/usr/lib/libform.so",
+    "link_target": "libform.so.5",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libform.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib/libform.so.5",
+    "link_target": "libform.so.5.9",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libform.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib/libm.so",
+    "link_target": "libm.so.6",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libm-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libm.so.6",
+    "link_target": "libm-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libm-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libmenu.so",
+    "link_target": "libmenu.so.5",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libmenu.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib/libmenu.so.5",
+    "link_target": "libmenu.so.5.9",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libmenu.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib/libncurses.so.5",
+    "link_target": "libncurses.so.5.9",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libncurses.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib/libnsl.so",
+    "link_target": "libnsl.so.1",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnsl-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libnsl.so.1",
+    "link_target": "libnsl-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnsl-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_compat.so",
+    "link_target": "libnss_compat.so.2",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_compat-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_compat.so.2",
+    "link_target": "libnss_compat-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_compat-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_db.so",
+    "link_target": "libnss_db.so.2",
+    "resolution": "preserved_upstream_dangling_reference",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_db.so.2"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_dns.so",
+    "link_target": "libnss_dns.so.2",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_dns-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_dns.so.2",
+    "link_target": "libnss_dns-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_dns-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_files.so",
+    "link_target": "libnss_files.so.2",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_files-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_files.so.2",
+    "link_target": "libnss_files-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_files-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_hesiod.so",
+    "link_target": "libnss_hesiod.so.2",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_hesiod-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_hesiod.so.2",
+    "link_target": "libnss_hesiod-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_hesiod-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_nis.so",
+    "link_target": "libnss_nis.so.2",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_nis-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_nis.so.2",
+    "link_target": "libnss_nis-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_nis-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_nisplus.so",
+    "link_target": "libnss_nisplus.so.2",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_nisplus-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libnss_nisplus.so.2",
+    "link_target": "libnss_nisplus-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libnss_nisplus-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libpanel.so",
+    "link_target": "libpanel.so.5",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libpanel.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib/libpanel.so.5",
+    "link_target": "libpanel.so.5.9",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libpanel.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib/libpthread.so.0",
+    "link_target": "libpthread-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libpthread-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libpulse-mainloop-glib.so",
+    "link_target": "libpulse-mainloop-glib.so.0.0.4",
+    "resolution": "preserved_upstream_dangling_reference",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libpulse-mainloop-glib.so.0.0.4"
+  },
+  {
+    "path": "sysroot/usr/lib/libpulse-simple.so",
+    "link_target": "libpulse-simple.so.0.0.3",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libpulse-simple.so.0.0.3"
+  },
+  {
+    "path": "sysroot/usr/lib/libpulse-simple.so.0",
+    "link_target": "libpulse-simple.so.0.0.3",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libpulse-simple.so.0.0.3"
+  },
+  {
+    "path": "sysroot/usr/lib/libpulse.so",
+    "link_target": "libpulse.so.0.13.5",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libpulse.so.0.13.5"
+  },
+  {
+    "path": "sysroot/usr/lib/libpulse.so.0",
+    "link_target": "libpulse.so.0.13.5",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libpulse.so.0.13.5"
+  },
+  {
+    "path": "sysroot/usr/lib/libresolv.so",
+    "link_target": "libresolv.so.2",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libresolv-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libresolv.so.2",
+    "link_target": "libresolv-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libresolv-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/librt.so",
+    "link_target": "librt.so.1",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/librt-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/librt.so.1",
+    "link_target": "librt-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/librt-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libtermcap.a",
+    "link_target": "libtinfo.a",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libtinfo.a"
+  },
+  {
+    "path": "sysroot/usr/lib/libthread_db.so",
+    "link_target": "libthread_db.so.1",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libthread_db-1.0.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libthread_db.so.1",
+    "link_target": "libthread_db-1.0.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libthread_db-1.0.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libtic.so",
+    "link_target": "libtic.so.5",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libtic.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib/libtic.so.5",
+    "link_target": "libtic.so.5.9",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libtic.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib/libtinfo.so",
+    "link_target": "libtinfo.so.5",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libtinfo.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib/libtinfo.so.5",
+    "link_target": "libtinfo.so.5.9",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libtinfo.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib/libutil.so",
+    "link_target": "libutil.so.1",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libutil-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libutil.so.1",
+    "link_target": "libutil-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libutil-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib/libxcb.so",
+    "link_target": "libxcb.so.1.1.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libxcb.so.1.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libxcb.so.1",
+    "link_target": "libxcb.so.1.1.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libxcb.so.1.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib/libz.so",
+    "link_target": "libz.so.1.2.3.4",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libz.so.1.2.3.4"
+  },
+  {
+    "path": "sysroot/usr/lib/libz.so.1",
+    "link_target": "libz.so.1.2.3.4",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/libz.so.1.2.3.4"
+  },
+  {
+    "path": "sysroot/usr/lib/mesa/libGL.so",
+    "link_target": "libGL.so.1",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/mesa/libGL.so.1.2"
+  },
+  {
+    "path": "sysroot/usr/lib/mesa/libGL.so.1",
+    "link_target": "libGL.so.1.2",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib/mesa/libGL.so.1.2"
+  },
+  {
+    "path": "sysroot/usr/lib32/ld-linux.so.2",
+    "link_target": "ld-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/ld-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libBrokenLocale.so",
+    "link_target": "libBrokenLocale.so.1",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libBrokenLocale-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libBrokenLocale.so.1",
+    "link_target": "libBrokenLocale-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libBrokenLocale-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libGL.so",
+    "link_target": "libGL.so",
+    "resolution": "preserved_upstream_self_reference",
+    "resolved_target": null
+  },
+  {
+    "path": "sysroot/usr/lib32/libX11.so",
+    "link_target": "libX11.so.6.3.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libX11.so.6.3.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libX11.so.6",
+    "link_target": "libX11.so.6.3.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libX11.so.6.3.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libXau.so.6",
+    "link_target": "libXau.so.6.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libXau.so.6.0.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libXdamage.so.1",
+    "link_target": "libXdamage.so.1.1.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libXdamage.so.1.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libXdmcp.so.6",
+    "link_target": "libXdmcp.so.6.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libXdmcp.so.6.0.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libXext.so",
+    "link_target": "libXext.so.6.4.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libXext.so.6.4.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libXext.so.6",
+    "link_target": "libXext.so.6.4.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libXext.so.6.4.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libXfixes.so",
+    "link_target": "libXfixes.so.3.1.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libXfixes.so.3.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libXfixes.so.3",
+    "link_target": "libXfixes.so.3.1.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libXfixes.so.3.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libXi.so",
+    "link_target": "libXi.so.6.1.0",
+    "resolution": "preserved_upstream_dangling_reference",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libXi.so.6.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libXxf86vm.so.1",
+    "link_target": "libXxf86vm.so.1.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libXxf86vm.so.1.0.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libacl.a",
+    "link_target": "libacl.a",
+    "resolution": "preserved_upstream_self_reference",
+    "resolved_target": null
+  },
+  {
+    "path": "sysroot/usr/lib32/libacl.so",
+    "link_target": "libacl.so.1",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libacl.so.1.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libacl.so.1",
+    "link_target": "libacl.so.1.1.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libacl.so.1.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libanl.so",
+    "link_target": "libanl.so.1",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libanl-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libanl.so.1",
+    "link_target": "libanl-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libanl-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libasound.so",
+    "link_target": "libasound.so.2.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libasound.so.2.0.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libasound.so.2",
+    "link_target": "libasound.so.2.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libasound.so.2.0.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libattr.so",
+    "link_target": "libattr.so",
+    "resolution": "preserved_upstream_self_reference",
+    "resolved_target": null
+  },
+  {
+    "path": "sysroot/usr/lib32/libattr.so.1",
+    "link_target": "libattr.so.1.1.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libattr.so.1.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libaudiofile.so",
+    "link_target": "libaudiofile.so.1.0.0",
+    "resolution": "preserved_upstream_dangling_reference",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libaudiofile.so.1.0.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libc.so.6",
+    "link_target": "libc-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libc-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libcap.so",
+    "link_target": "libcap.so.2",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libcap.so.2.22"
+  },
+  {
+    "path": "sysroot/usr/lib32/libcap.so.2",
+    "link_target": "libcap.so.2.22",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libcap.so.2.22"
+  },
+  {
+    "path": "sysroot/usr/lib32/libcidn.so",
+    "link_target": "libcidn.so.1",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libcidn-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libcidn.so.1",
+    "link_target": "libcidn-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libcidn-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libcrypt.so",
+    "link_target": "libcrypt.so.1",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libcrypt-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libcrypt.so.1",
+    "link_target": "libcrypt-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libcrypt-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libcurses.a",
+    "link_target": "libncurses.a",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libncurses.a"
+  },
+  {
+    "path": "sysroot/usr/lib32/libcurses.so",
+    "link_target": "libncurses.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libncurses.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libdl.so",
+    "link_target": "libdl.so.2",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libdl-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libdl.so.2",
+    "link_target": "libdl-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libdl-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libdrm.so.2",
+    "link_target": "libdrm.so.2.4.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libdrm.so.2.4.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libesd.so",
+    "link_target": "libesd.so.0.2.39",
+    "resolution": "preserved_upstream_dangling_reference",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libesd.so.0.2.39"
+  },
+  {
+    "path": "sysroot/usr/lib32/libform.so",
+    "link_target": "libform.so.5",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libform.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib32/libform.so.5",
+    "link_target": "libform.so.5.9",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libform.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib32/libm.so",
+    "link_target": "libm.so.6",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libm-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libm.so.6",
+    "link_target": "libm-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libm-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libmenu.so",
+    "link_target": "libmenu.so.5",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libmenu.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib32/libmenu.so.5",
+    "link_target": "libmenu.so.5.9",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libmenu.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib32/libncurses.so.5",
+    "link_target": "libncurses.so.5.9",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libncurses.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnsl.so",
+    "link_target": "libnsl.so.1",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnsl-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnsl.so.1",
+    "link_target": "libnsl-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnsl-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_compat.so",
+    "link_target": "libnss_compat.so.2",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_compat-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_compat.so.2",
+    "link_target": "libnss_compat-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_compat-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_db.so",
+    "link_target": "libnss_db.so.2",
+    "resolution": "preserved_upstream_dangling_reference",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_db.so.2"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_dns.so",
+    "link_target": "libnss_dns.so.2",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_dns-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_dns.so.2",
+    "link_target": "libnss_dns-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_dns-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_files.so",
+    "link_target": "libnss_files.so.2",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_files-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_files.so.2",
+    "link_target": "libnss_files-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_files-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_hesiod.so",
+    "link_target": "libnss_hesiod.so.2",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_hesiod-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_hesiod.so.2",
+    "link_target": "libnss_hesiod-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_hesiod-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_nis.so",
+    "link_target": "libnss_nis.so.2",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_nis-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_nis.so.2",
+    "link_target": "libnss_nis-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_nis-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_nisplus.so",
+    "link_target": "libnss_nisplus.so.2",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_nisplus-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libnss_nisplus.so.2",
+    "link_target": "libnss_nisplus-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libnss_nisplus-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libpanel.so",
+    "link_target": "libpanel.so.5",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libpanel.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib32/libpanel.so.5",
+    "link_target": "libpanel.so.5.9",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libpanel.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib32/libpthread.so.0",
+    "link_target": "libpthread-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libpthread-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libpulse-mainloop-glib.so",
+    "link_target": "libpulse-mainloop-glib.so.0.0.4",
+    "resolution": "preserved_upstream_dangling_reference",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libpulse-mainloop-glib.so.0.0.4"
+  },
+  {
+    "path": "sysroot/usr/lib32/libpulse-simple.so",
+    "link_target": "libpulse-simple.so.0.0.3",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libpulse-simple.so.0.0.3"
+  },
+  {
+    "path": "sysroot/usr/lib32/libpulse-simple.so.0",
+    "link_target": "libpulse-simple.so.0.0.3",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libpulse-simple.so.0.0.3"
+  },
+  {
+    "path": "sysroot/usr/lib32/libpulse.so",
+    "link_target": "libpulse.so.0.13.5",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libpulse.so.0.13.5"
+  },
+  {
+    "path": "sysroot/usr/lib32/libpulse.so.0",
+    "link_target": "libpulse.so.0.13.5",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libpulse.so.0.13.5"
+  },
+  {
+    "path": "sysroot/usr/lib32/libresolv.so",
+    "link_target": "libresolv.so.2",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libresolv-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libresolv.so.2",
+    "link_target": "libresolv-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libresolv-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/librt.so",
+    "link_target": "librt.so.1",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/librt-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/librt.so.1",
+    "link_target": "librt-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/librt-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libtermcap.a",
+    "link_target": "libtinfo.a",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libtinfo.a"
+  },
+  {
+    "path": "sysroot/usr/lib32/libthread_db.so",
+    "link_target": "libthread_db.so.1",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libthread_db-1.0.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libthread_db.so.1",
+    "link_target": "libthread_db-1.0.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libthread_db-1.0.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libtic.so",
+    "link_target": "libtic.so.5",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libtic.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib32/libtic.so.5",
+    "link_target": "libtic.so.5.9",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libtic.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib32/libtinfo.so",
+    "link_target": "libtinfo.so.5",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libtinfo.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib32/libtinfo.so.5",
+    "link_target": "libtinfo.so.5.9",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libtinfo.so.5.9"
+  },
+  {
+    "path": "sysroot/usr/lib32/libutil.so",
+    "link_target": "libutil.so.1",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libutil-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libutil.so.1",
+    "link_target": "libutil-2.15.so",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libutil-2.15.so"
+  },
+  {
+    "path": "sysroot/usr/lib32/libxcb.so",
+    "link_target": "libxcb.so.1.1.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libxcb.so.1.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libxcb.so.1",
+    "link_target": "libxcb.so.1.1.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libxcb.so.1.1.0"
+  },
+  {
+    "path": "sysroot/usr/lib32/libz.so",
+    "link_target": "libz.so.1.2.3.4",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libz.so.1.2.3.4"
+  },
+  {
+    "path": "sysroot/usr/lib32/libz.so.1",
+    "link_target": "libz.so.1.2.3.4",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/libz.so.1.2.3.4"
+  },
+  {
+    "path": "sysroot/usr/lib32/mesa/libGL.so",
+    "link_target": "libGL.so.1",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/mesa/libGL.so.1.2"
+  },
+  {
+    "path": "sysroot/usr/lib32/mesa/libGL.so.1",
+    "link_target": "libGL.so.1.2",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot/usr/lib32/mesa/libGL.so.1.2"
+  },
+  {
+    "path": "x86_64-linux/lib32/libasan.so",
+    "link_target": "libasan.so.0.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib32/libasan.so.0.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib32/libasan.so.0",
+    "link_target": "libasan.so.0.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib32/libasan.so.0.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib32/libatomic.so",
+    "link_target": "libatomic.so.1.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib32/libatomic.so.1.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib32/libatomic.so.1",
+    "link_target": "libatomic.so.1.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib32/libatomic.so.1.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib32/libgcc_s.so",
+    "link_target": "libgcc_s.so.1",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib32/libgcc_s.so.1"
+  },
+  {
+    "path": "x86_64-linux/lib32/libitm.so",
+    "link_target": "libitm.so.1.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib32/libitm.so.1.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib32/libitm.so.1",
+    "link_target": "libitm.so.1.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib32/libitm.so.1.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib32/libssp.so",
+    "link_target": "libssp.so.0.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib32/libssp.so.0.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib32/libssp.so.0",
+    "link_target": "libssp.so.0.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib32/libssp.so.0.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib32/libstdc++.so",
+    "link_target": "libstdc++.so.6.0.19",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib32/libstdc++.so.6.0.19"
+  },
+  {
+    "path": "x86_64-linux/lib32/libstdc++.so.6",
+    "link_target": "libstdc++.so.6.0.19",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib32/libstdc++.so.6.0.19"
+  },
+  {
+    "path": "x86_64-linux/lib64/libasan.so",
+    "link_target": "libasan.so.0.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libasan.so.0.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib64/libasan.so.0",
+    "link_target": "libasan.so.0.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libasan.so.0.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib64/libatomic.so",
+    "link_target": "libatomic.so.1.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libatomic.so.1.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib64/libatomic.so.1",
+    "link_target": "libatomic.so.1.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libatomic.so.1.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib64/libgcc_s.so",
+    "link_target": "libgcc_s.so.1",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libgcc_s.so.1"
+  },
+  {
+    "path": "x86_64-linux/lib64/libitm.so",
+    "link_target": "libitm.so.1.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libitm.so.1.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib64/libitm.so.1",
+    "link_target": "libitm.so.1.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libitm.so.1.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib64/libssp.so",
+    "link_target": "libssp.so.0.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libssp.so.0.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib64/libssp.so.0",
+    "link_target": "libssp.so.0.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libssp.so.0.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib64/libstdc++.so",
+    "link_target": "libstdc++.so.6.0.19",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libstdc++.so.6.0.19"
+  },
+  {
+    "path": "x86_64-linux/lib64/libstdc++.so.6",
+    "link_target": "libstdc++.so.6.0.19",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libstdc++.so.6.0.19"
+  },
+  {
+    "path": "x86_64-linux/lib64/libtsan.so",
+    "link_target": "libtsan.so.0.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libtsan.so.0.0.0"
+  },
+  {
+    "path": "x86_64-linux/lib64/libtsan.so.0",
+    "link_target": "libtsan.so.0.0.0",
+    "resolution": "resolved_within_mirror",
+    "resolved_target": "/workspace/build01-full-next/host-toolchain/tree/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/libtsan.so.0.0.0"
+  }
+]

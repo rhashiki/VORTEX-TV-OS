@@ -1,0 +1,581 @@
+
+Symbol table '.dynsym' contains 578 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_finalize@LIBC (2)
+     2: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_atexit@LIBC (2)
+     3: 00000000     0 FUNC    GLOBAL DEFAULT  UND __register_atfork@LIBC (2)
+     4: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memclr@LIBC_N (3)
+     5: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memclr8@LIBC_N (3)
+     6: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memcpy@LIBC_N (3)
+     7: 00000000     0 FUNC    GLOBAL DEFAULT  UND __android_log_print
+     8: 00000000     0 FUNC    GLOBAL DEFAULT  UND __errno@LIBC (2)
+     9: 00000000     0 FUNC    GLOBAL DEFAULT  UND __fread_chk@LIBC_N (3)
+    10: 00000000     0 FUNC    GLOBAL DEFAULT  UND __fwrite_chk@LIBC_N (3)
+    11: 00000000     0 FUNC    GLOBAL DEFAULT  UND __stack_chk_fail@LIBC (2)
+    12: 00000000     0 OBJECT  GLOBAL DEFAULT  UND __stack_chk_guard@LIBC (2)
+    13: 00000000     0 FUNC    GLOBAL DEFAULT  UND __strcat_chk@LIBC (2)
+    14: 00000000     0 FUNC    GLOBAL DEFAULT  UND atoi@LIBC (2)
+    15: 00000000     0 FUNC    GLOBAL DEFAULT  UND calloc@LIBC (2)
+    16: 00000000     0 FUNC    GLOBAL DEFAULT  UND close@LIBC (2)
+    17: 00000000     0 FUNC    GLOBAL DEFAULT  UND create_resampler
+    18: 00000000     0 FUNC    GLOBAL DEFAULT  UND fclose@LIBC (2)
+    19: 00000000     0 FUNC    GLOBAL DEFAULT  UND fflush@LIBC (2)
+    20: 00000000     0 FUNC    GLOBAL DEFAULT  UND fopen@LIBC (2)
+    21: 00000000     0 FUNC    GLOBAL DEFAULT  UND free@LIBC (2)
+    22: 00000000     0 FUNC    GLOBAL DEFAULT  UND malloc@LIBC (2)
+    23: 00000000     0 FUNC    GLOBAL DEFAULT  UND pcm_close
+    24: 00000000     0 FUNC    GLOBAL DEFAULT  UND pcm_frames_to_bytes
+    25: 00000000     0 FUNC    GLOBAL DEFAULT  UND pcm_get_buffer_size
+    26: 00000000     0 FUNC    GLOBAL DEFAULT  UND pcm_get_error
+    27: 00000000     0 FUNC    GLOBAL DEFAULT  UND pcm_get_htimestamp
+    28: 00000000     0 FUNC    GLOBAL DEFAULT  UND pcm_is_ready
+    29: 00000000     0 FUNC    GLOBAL DEFAULT  UND pcm_open
+    30: 00000000     0 FUNC    GLOBAL DEFAULT  UND pcm_read
+    31: 00000000     0 FUNC    GLOBAL DEFAULT  UND pcm_start
+    32: 00000000     0 FUNC    GLOBAL DEFAULT  UND pcm_stop
+    33: 00000000     0 FUNC    GLOBAL DEFAULT  UND pcm_write
+    34: 00000000     0 FUNC    GLOBAL DEFAULT  UND property_get
+    35: 00000000     0 FUNC    GLOBAL DEFAULT  UND property_set
+    36: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_create@LIBC (2)
+    37: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_join@LIBC (2)
+    38: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_lock@LIBC (2)
+    39: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_unlock@LIBC (2)
+    40: 00000000     0 FUNC    GLOBAL DEFAULT  UND release_resampler
+    41: 00000000     0 FUNC    GLOBAL DEFAULT  UND str_parms_add_str
+    42: 00000000     0 FUNC    GLOBAL DEFAULT  UND str_parms_create
+    43: 00000000     0 FUNC    GLOBAL DEFAULT  UND str_parms_create_str
+    44: 00000000     0 FUNC    GLOBAL DEFAULT  UND str_parms_destroy
+    45: 00000000     0 FUNC    GLOBAL DEFAULT  UND str_parms_get_str
+    46: 00000000     0 FUNC    GLOBAL DEFAULT  UND str_parms_to_str
+    47: 00000000     0 FUNC    GLOBAL DEFAULT  UND strchr@LIBC (2)
+    48: 00000000     0 FUNC    GLOBAL DEFAULT  UND strcmp@LIBC (2)
+    49: 00000000     0 FUNC    GLOBAL DEFAULT  UND strdup@LIBC (2)
+    50: 00000000     0 FUNC    GLOBAL DEFAULT  UND strlen@LIBC (2)
+    51: 00000000     0 FUNC    GLOBAL DEFAULT  UND strstr@LIBC (2)
+    52: 00000000     0 FUNC    GLOBAL DEFAULT  UND system@LIBC (2)
+    53: 00000000     0 FUNC    GLOBAL DEFAULT  UND usleep@LIBC (2)
+    54: 00000000     0 FUNC    GLOBAL DEFAULT  UND abort@LIBC (2)
+    55: 00000000     0 FUNC    GLOBAL DEFAULT  UND __gnu_Unwind_Find_exidx@LIBC_N (3)
+    56: 00000000     0 FUNC    GLOBAL DEFAULT  UND __snprintf_chk@LIBC (2)
+    57: 00000000     0 FUNC    GLOBAL DEFAULT  UND dladdr@LIBC (4)
+    58: 00000000     0 FUNC    GLOBAL DEFAULT  UND raise@LIBC (2)
+    59: 00000000     0 FUNC    GLOBAL DEFAULT  UND log@LIBC (5)
+    60: 00000000     0 FUNC    GLOBAL DEFAULT  UND pow@LIBC (5)
+    61: 00000000     0 FUNC    GLOBAL DEFAULT  UND strncmp@LIBC (2)
+    62: 00000000     0 FUNC    GLOBAL DEFAULT  UND __sprintf_chk@LIBC (2)
+    63: 00000000     0 FUNC    GLOBAL DEFAULT  UND ioctl@LIBC (2)
+    64: 00000000     0 FUNC    GLOBAL DEFAULT  UND open@LIBC (2)
+    65: 00000000     0 FUNC    GLOBAL DEFAULT  UND printf@LIBC (2)
+    66: 00000000     0 FUNC    GLOBAL DEFAULT  UND putchar@LIBC (2)
+    67: 00000000     0 FUNC    GLOBAL DEFAULT  UND puts@LIBC (2)
+    68: 00000000     0 FUNC    GLOBAL DEFAULT  UND __poll_chk@LIBC (2)
+    69: 00000000     0 FUNC    GLOBAL DEFAULT  UND uevent_get_fd
+    70: 00000000     0 FUNC    GLOBAL DEFAULT  UND uevent_init
+    71: 00000000     0 FUNC    GLOBAL DEFAULT  UND uevent_next_event
+    72: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memclr4@LIBC_N (3)
+    73: 00000000     0 FUNC    GLOBAL DEFAULT  UND cos@LIBC (5)
+    74: 00000000     0 FUNC    GLOBAL DEFAULT  UND exp@LIBC (5)
+    75: 00000000     0 FUNC    GLOBAL DEFAULT  UND floor@LIBC (5)
+    76: 00000000     0 FUNC    GLOBAL DEFAULT  UND floorf@LIBC (5)
+    77: 00000000     0 FUNC    GLOBAL DEFAULT  UND fprintf@LIBC (2)
+    78: 00000000     0 FUNC    GLOBAL DEFAULT  UND sqrt@LIBC (5)
+    79: 00000000     0 FUNC    GLOBAL DEFAULT  UND sqrtf@LIBC (5)
+    80: 00000000     0 OBJECT  GLOBAL DEFAULT  UND stderr@LIBC (2)
+    81: 00000000     0 FUNC    GLOBAL DEFAULT  UND atan@LIBC (5)
+    82: 00000000     0 FUNC    GLOBAL DEFAULT  UND sin@LIBC (5)
+    83: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_speaker_voip_controls
+    84: 000273b0   192 OBJECT  GLOBAL DEFAULT   17 rk616_earpiece_ringtone_controls
+    85: 000277f0   192 OBJECT  GLOBAL DEFAULT   17 rk616_speaker_headphone_normal_controls
+    86: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 wm8960_bluetooth_normal_controls
+    87: 00020d80   220 FUNC    GLOBAL DEFAULT   12 __divsi3
+    88: 00026920    32 OBJECT  GLOBAL DEFAULT   17 default_speaker_incall_controls
+    89: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5616_speaker_incall_controls
+    90: 00026950    32 OBJECT  GLOBAL DEFAULT   17 default_speaker_voip_controls
+    91: 000301e0   128 OBJECT  GLOBAL DEFAULT   17 es8396_main_mic_capture_controls
+    92: 0002e4c0   704 OBJECT  GLOBAL DEFAULT   17 rt3224_headset_incall_controls
+    93: 00020e7c   412 FUNC    GLOBAL DEFAULT   12 __aeabi_frsub
+    94: 00021b2c    36 FUNC    GLOBAL DEFAULT   12 __aeabi_cfrcmple
+    95: 0002d0a0   560 OBJECT  GLOBAL DEFAULT   17 rt3224_earpiece_ringtone_controls
+    96: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt3224_voip_off_controls
+    97: 00021518    40 FUNC    GLOBAL DEFAULT   12 __floatsidf
+    98: 00012c35   568 FUNC    GLOBAL DEFAULT   12 mixer_ctl_set_int_double
+    99: 000301a0    64 OBJECT  GLOBAL DEFAULT   17 es8396_headphone_normal_controls
+   100: 000318f0    16 OBJECT  GLOBAL DEFAULT   17 hdmi_analog_speaker_normal_controls
+   101: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 hdmi_analog_bluetooth_normal_controls
+   102: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rk616_headset_voip_controls
+   103: 0002d2d0   592 OBJECT  GLOBAL DEFAULT   17 rt3224_earpiece_voip_controls
+   104: 00032004     4 OBJECT  GLOBAL DEFAULT   20 PCM_CARD_SPDIF
+   105: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_earpiece_incall_controls
+   106: 00012871   328 FUNC    GLOBAL DEFAULT   12 mixer_dump
+   107: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 cx2072_headphone_ringtone_controls
+   108: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 wm8960_headset_incall_controls
+   109: 00021040   140 FUNC    GLOBAL DEFAULT   12 __floatundisf
+   110: 000139b0  5548 FUNC    GLOBAL DEFAULT   12 speex_preprocess_run
+   111: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 cx2072_voip_off_controls
+   112: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_headphone_incall_controls
+   113: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 hdmi_analog_bluetooth_sco_mic_capture_controls
+   114: 00021ac8   100 FUNC    GLOBAL DEFAULT   12 __eqsf2
+   115: 0000eab9    70 FUNC    GLOBAL DEFAULT   12 getOutputRouteFromDevice
+   116: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_headset_ringtone_controls
+   117: 00012329   156 FUNC    GLOBAL DEFAULT   12 mixer_close_legacy
+   118: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 wm8960_voip_off_controls
+   119: 00026888    16 OBJECT  GLOBAL DEFAULT   17 bluetooth_sco
+   120: 00026b00    16 OBJECT  GLOBAL DEFAULT   17 default_bluetooth_sco_mic_capture_controls
+   121: 0002e080   544 OBJECT  GLOBAL DEFAULT   17 rt3224_headphone_voip_controls
+   122: 00021158   108 FUNC    GLOBAL DEFAULT   12 __fixunssfdi
+   123: 0002e780   528 OBJECT  GLOBAL DEFAULT   17 rt3224_headset_ringtone_controls
+   124: 0002a020   576 OBJECT  GLOBAL DEFAULT   17 rt3261_headphone_voip_controls
+   125: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 wm8960_earpiece_normal_controls
+   126: 0000ecb9   112 FUNC    GLOBAL DEFAULT   12 in_dump
+   127: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 hdmi_analog_speaker_headphone_ringtone_controls
+   128: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5616_earpiece_incall_controls
+   129: 0001ef0c   540 FUNC    GLOBAL DEFAULT   12 speex_echo_playback
+   130: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 wm8960_headphone_voip_controls
+   131: 00030760   208 OBJECT  GLOBAL DEFAULT   17 rt5651_speaker_ringtone_controls
+   132: 00021860   516 FUNC    GLOBAL DEFAULT   12 __aeabi_ddiv
+   133: 00030ce0   240 OBJECT  GLOBAL DEFAULT   17 rt5651_headset_normal_controls
+   134: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5651_incall_off_controls
+   135: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_headset_normal_controls
+   136: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 cx2072_earpiece_incall_controls
+   137: 00029dc0   608 OBJECT  GLOBAL DEFAULT   17 rt3261_speaker_headphone_ringtone_controls
+   138: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 cx2072_bluetooth_normal_controls
+   139: 00027730   192 OBJECT  GLOBAL DEFAULT   17 rk616_headphone_ringtone_controls
+   140: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 hdmi_analog_earpiece_incall_controls
+   141: 00031940   544 OBJECT  GLOBAL DEFAULT   17 hdmi_analog_config_table
+   142: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 cx2072_headset_voip_controls
+   143: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5616_bluetooth_incall_controls
+   144: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 cx2072_bluetooth_voip_controls
+   145: 00030fb0   144 OBJECT  GLOBAL DEFAULT   17 rt5651_hands_free_mic_capture_controls
+   146: 00030a10   240 OBJECT  GLOBAL DEFAULT   17 rt5651_headphone_normal_controls
+   147: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5651_speaker_incall_controls
+   148: 00021158   108 FUNC    GLOBAL DEFAULT   12 __aeabi_f2ulz
+   149: 00026ab0    16 OBJECT  GLOBAL DEFAULT   17 default_bluetooth_normal_controls
+   150: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5651_earpiece_ringtone_controls
+   151: 0002f100   272 OBJECT  GLOBAL DEFAULT   17 rt3224_bluetooth_sco_mic_capture_controls
+   152: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt3261_bluetooth_normal_controls
+   153: 00029b60   608 OBJECT  GLOBAL DEFAULT   17 rt3261_speaker_headphone_normal_controls
+   154: 0002f960   176 OBJECT  GLOBAL DEFAULT   17 wm8960_headset_ringtone_controls
+   155: 00016438   104 FUNC    GLOBAL DEFAULT   12 filterbank_compute_psd16
+   156: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 cx2072_speaker_headphone_normal_controls
+   157: 00031650    16 OBJECT  GLOBAL DEFAULT   17 cx2072_speaker_normal_controls
+   158: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5616_earpiece_voip_controls
+   159: 0001bee4   236 FUNC    GLOBAL DEFAULT   12 speex_echo_state_destroy
+   160: 00021e5c    28 FUNC    GLOBAL DEFAULT   12 __ashldi3
+   161: 000320f0    44 OBJECT  GLOBAL DEFAULT   20 pcm_config_deep
+   162: 0002b410    32 OBJECT  GLOBAL DEFAULT   17 rt3261_capture_off_controls
+   163: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 wm8960_speaker_voip_controls
+   164: 00026ad0    16 OBJECT  GLOBAL DEFAULT   17 default_bluetooth_voip_controls
+   165: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5616_bluetooth_voip_controls
+   166: 000168cc   388 FUNC    GLOBAL DEFAULT   12 spx_fft
+   167: 00016fb0   684 FUNC    GLOBAL DEFAULT   12 spx_drft_backward
+   168: 00021580   116 FUNC    GLOBAL DEFAULT   12 __floatundidf
+   169: 00021b3c    20 FUNC    GLOBAL DEFAULT   12 __aeabi_cfcmple
+   170: 00033860     0 NOTYPE  GLOBAL DEFAULT  ABS _end
+   171: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5616_earpiece_ringtone_controls
+   172: 00021110    16 FUNC    WEAK   DEFAULT   12 __aeabi_idiv0
+   173: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_incall_off_controls
+   174: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 hdmi_analog_headset_ringtone_controls
+   175: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rk616_bluetooth_sco_mic_capture_controls
+   176: 00027a30   512 OBJECT  GLOBAL DEFAULT   17 rk616_headset_incall_controls
+   177: 0002bcd0    16 OBJECT  GLOBAL DEFAULT   17 rt5616_playback_off_controls
+   178: 00026af0    16 OBJECT  GLOBAL DEFAULT   17 default_hands_free_mic_capture_controls
+   179: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_speaker_ringtone_controls
+   180: 00021580   116 FUNC    GLOBAL DEFAULT   12 __aeabi_ul2d
+   181: 00026910    16 OBJECT  GLOBAL DEFAULT   17 default_speaker_normal_controls
+   182: 0002b7e0   272 OBJECT  GLOBAL DEFAULT   17 rt5616_speaker_normal_controls
+   183: 0002f220    32 OBJECT  GLOBAL DEFAULT   17 rt3224_capture_off_controls
+   184: 0002e2a0   544 OBJECT  GLOBAL DEFAULT   17 rt3224_headset_normal_controls
+   185: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5616_speaker_headphone_normal_controls
+   186: 00021040   140 FUNC    GLOBAL DEFAULT   12 __aeabi_ul2f
+   187: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8396_playback_off_controls
+   188: 00021e40    28 FUNC    GLOBAL DEFAULT   12 __lshrdi3
+   189: 0002cb60   592 OBJECT  GLOBAL DEFAULT   17 rt3224_speaker_voip_controls
+   190: 00021ac8   100 FUNC    GLOBAL DEFAULT   12 __nesf2
+   191: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 hdmi_analog_incall_off_controls
+   192: 0002cdb0   752 OBJECT  GLOBAL DEFAULT   17 rt3224_earpiece_incall_controls
+   193: 0002d740   688 OBJECT  GLOBAL DEFAULT   17 rt3224_headphone_incall_controls
+   194: 0000e815   204 FUNC    GLOBAL DEFAULT   12 sethbrchnsta
+   195: 0002a260   576 OBJECT  GLOBAL DEFAULT   17 rt3261_headset_normal_controls
+   196: 00026a20    16 OBJECT  GLOBAL DEFAULT   17 default_speaker_headphone_ringtone_controls
+   197: 00031410    16 OBJECT  GLOBAL DEFAULT   17 es8316_main_mic_capture_controls
+   198: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_earpiece_normal_controls
+   199: 0002b5c0   544 OBJECT  GLOBAL DEFAULT   17 rt3261_config_table
+   200: 00012015   256 FUNC    GLOBAL DEFAULT   12 set_controls
+   201: 0000ea29   118 FUNC    GLOBAL DEFAULT   12 get_output_device_id
+   202: 0002f8b0   176 OBJECT  GLOBAL DEFAULT   17 wm8960_headset_normal_controls
+   203: 0002c010   128 OBJECT  GLOBAL DEFAULT   17 rt5640_speaker_normal_controls
+   204: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_headphone_normal_controls
+   205: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rk616_headphone_voip_controls
+   206: 0002efe0   144 OBJECT  GLOBAL DEFAULT   17 rt3224_main_mic_capture_controls
+   207: 00028af0   592 OBJECT  GLOBAL DEFAULT   17 rt3261_speaker_voip_controls
+   208: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5616_incall_off_controls
+   209: 00032290     8 OBJECT  GLOBAL DEFAULT   21 direct_mode
+   210: 000316c0    16 OBJECT  GLOBAL DEFAULT   17 cx2072_bluetooth_sco_mic_capture_controls
+   211: 000267f8    16 OBJECT  GLOBAL DEFAULT   17 camcorder_speaker
+   212: 000168b4    24 FUNC    GLOBAL DEFAULT   12 spx_fft_destroy
+   213: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_speaker_headphone_normal_controls
+   214: 00016b28   392 FUNC    GLOBAL DEFAULT   12 spx_fft_float
+   215: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 cx2072_headphone_incall_controls
+   216: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 cx2072_headset_ringtone_controls
+   217: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_playback_off_controls
+   218: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5616_earpiece_normal_controls
+   219: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5616_voip_off_controls
+   220: 000267e8    16 OBJECT  GLOBAL DEFAULT   17 media_headset
+   221: 00012e6d    16 FUNC    GLOBAL DEFAULT   12 mixer_ctl_set_int
+   222: 00020e88   400 FUNC    GLOBAL DEFAULT   12 __aeabi_fadd
+   223: 00021050   124 FUNC    GLOBAL DEFAULT   12 __floatdisf
+   224: 00013189   128 FUNC    GLOBAL DEFAULT   12 audio_hdmi_thread
+   225: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 wm8960_headphone_incall_controls
+   226: 0000e5b1   204 FUNC    GLOBAL DEFAULT   12 set44100chnsta
+   227: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_speaker_incall_controls
+   228: 00033850     4 OBJECT  GLOBAL DEFAULT   21 mMixerPlayback
+   229: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 hdmi_analog_earpiece_voip_controls
+   230: 00032150    44 OBJECT  GLOBAL DEFAULT   20 pcm_config_direct
+   231: 00012e7d    82 FUNC    GLOBAL DEFAULT   12 mixer_get_ctl_minmax
+   232: 0002a780   560 OBJECT  GLOBAL DEFAULT   17 rt3261_headset_ringtone_controls
+   233: 00016cb0   224 FUNC    GLOBAL DEFAULT   12 spx_ifft_float
+   234: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 hdmi_analog_earpiece_normal_controls
+   235: 0002fa10   352 OBJECT  GLOBAL DEFAULT   17 wm8960_main_mic_capture_controls
+   236: 00026848    16 OBJECT  GLOBAL DEFAULT   17 communication_speaker
+   237: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 hdmi_analog_headphone_incall_controls
+   238: 00026a10    16 OBJECT  GLOBAL DEFAULT   17 default_speaker_headphone_normal_controls
+   239: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5616_bluetooth_normal_controls
+   240: 0001581c   672 FUNC    GLOBAL DEFAULT   12 speex_preprocess_estimate_update
+   241: 00027cf0   160 OBJECT  GLOBAL DEFAULT   17 rk616_bluetooth_incall_controls
+   242: 00020d80     0 FUNC    GLOBAL DEFAULT   12 __aeabi_idiv
+   243: 00021a64    84 FUNC    GLOBAL DEFAULT   12 __fixunsdfsi
+   244: 00031930    16 OBJECT  GLOBAL DEFAULT   17 hdmi_analog_hands_free_mic_capture_controls
+   245: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_earpiece_ringtone_controls
+   246: 0002c930   560 OBJECT  GLOBAL DEFAULT   17 rt3224_speaker_ringtone_controls
+   247: 00032008     4 OBJECT  GLOBAL DEFAULT   20 PCM_BT
+   248: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5651_playback_off_controls
+   249: 00032284     0 NOTYPE  GLOBAL DEFAULT  ABS _edata
+   250: 00021594    96 FUNC    GLOBAL DEFAULT   12 __aeabi_l2d
+   251: 00021b3c    20 FUNC    GLOBAL DEFAULT   12 __aeabi_cfcmpeq
+   252: 00033854     4 OBJECT  GLOBAL DEFAULT   21 pre_mixer
+   253: 00021050   124 FUNC    GLOBAL DEFAULT   12 __aeabi_l2f
+   254: 000300d0   208 OBJECT  GLOBAL DEFAULT   17 es8396_speaker_incall_controls
+   255: 00027970   192 OBJECT  GLOBAL DEFAULT   17 rk616_headset_normal_controls
+   256: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 cx2072_incall_off_controls
+   257: 0002c640   752 OBJECT  GLOBAL DEFAULT   17 rt3224_speaker_incall_controls
+   258: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5616_headset_voip_controls
+   259: 00021a64    84 FUNC    GLOBAL DEFAULT   12 __aeabi_d2uiz
+   260: 0000eaa1    24 FUNC    GLOBAL DEFAULT   12 get_input_source_id
+   261: 000269a0    16 OBJECT  GLOBAL DEFAULT   17 default_earpiece_ringtone_controls
+   262: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 hdmi_analog_speaker_voip_controls
+   263: 00021b78    20 FUNC    GLOBAL DEFAULT   12 __aeabi_fcmple
+   264: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt3224_earpiece_normal_controls
+   265: 0002d520   544 OBJECT  GLOBAL DEFAULT   17 rt3224_headphone_normal_controls
+   266: 000285a0   800 OBJECT  GLOBAL DEFAULT   17 rt3261_speaker_incall_controls
+   267: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 cx2072_earpiece_ringtone_controls
+   268: 000129b9    74 FUNC    GLOBAL DEFAULT   12 mixer_get_control
+   269: 00031420    16 OBJECT  GLOBAL DEFAULT   17 es8316_hands_free_mic_capture_controls
+   270: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 wm8960_speaker_incall_controls
+   271: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 hdmi_analog_speaker_headphone_normal_controls
+   272: 00012a03    16 FUNC    GLOBAL DEFAULT   12 mixer_get_nth_control
+   273: 00021594    96 FUNC    GLOBAL DEFAULT   12 __floatdidf
+   274: 00026b10    16 OBJECT  GLOBAL DEFAULT   17 default_playback_off_controls
+   275: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 wm8960_speaker_headphone_ringtone_controls
+   276: 0002f6a0   176 OBJECT  GLOBAL DEFAULT   17 wm8960_speaker_ringtone_controls
+   277: 00021ab8   116 FUNC    GLOBAL DEFAULT   12 __gtsf2
+   278: 00031680    32 OBJECT  GLOBAL DEFAULT   17 cx2072_main_mic_capture_controls
+   279: 000269e0    32 OBJECT  GLOBAL DEFAULT   17 default_headphone_incall_controls
+   280: 0000eb8d   188 FUNC    GLOBAL DEFAULT   12 getRouteFromDevice
+   281: 000121c9   352 FUNC    GLOBAL DEFAULT   12 route_pcm_open
+   282: 0002fcd0   144 OBJECT  GLOBAL DEFAULT   17 wm8960_playback_off_controls
+   283: 00026a80    16 OBJECT  GLOBAL DEFAULT   17 default_headset_ringtone_controls
+   284: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 hdmi_analog_headset_incall_controls
+   285: 00029660   720 OBJECT  GLOBAL DEFAULT   17 rt3261_headphone_incall_controls
+   286: 0001265d   532 FUNC    GLOBAL DEFAULT   12 mixer_ctl_print
+   287: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 cx2072_earpiece_normal_controls
+   288: 0002f800   176 OBJECT  GLOBAL DEFAULT   17 wm8960_headphone_ringtone_controls
+   289: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5651_bluetooth_voip_controls
+   290: 000165e4   112 FUNC    GLOBAL DEFAULT   12 filterbank_compute_psd
+   291: 00021b64    20 FUNC    GLOBAL DEFAULT   12 __aeabi_fcmplt
+   292: 00026b50   544 OBJECT  GLOBAL DEFAULT   17 default_config_table
+   293: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_bluetooth_voip_controls
+   294: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 hdmi_analog_speaker_ringtone_controls
+   295: 00021ac0   108 FUNC    GLOBAL DEFAULT   12 __ltsf2
+   296: 0002fd60   336 OBJECT  GLOBAL DEFAULT   17 wm8960_capture_off_controls
+   297: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_headset_voip_controls
+   298: 0002b030   160 OBJECT  GLOBAL DEFAULT   17 rt3261_main_mic_capture_controls
+   299: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5616_headphone_incall_controls
+   300: 00012a15   116 FUNC    GLOBAL DEFAULT   12 mixer_ctl_set_val
+   301: 00029290   400 OBJECT  GLOBAL DEFAULT   17 rt3261_earpiece_voip_controls
+   302: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5651_speaker_headphone_ringtone_controls
+   303: 00030690   208 OBJECT  GLOBAL DEFAULT   17 rt5651_speaker_normal_controls
+   304: 0002feb0   544 OBJECT  GLOBAL DEFAULT   17 wm8960_config_table
+   305: 00026878    16 OBJECT  GLOBAL DEFAULT   17 speaker_and_headphones
+   306: 00026a90    32 OBJECT  GLOBAL DEFAULT   17 default_headset_voip_controls
+   307: 0002f210    16 OBJECT  GLOBAL DEFAULT   17 rt3224_playback_off_controls
+   308: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5616_headset_ringtone_controls
+   309: 0002f750   176 OBJECT  GLOBAL DEFAULT   17 wm8960_headphone_normal_controls
+   310: 0002b430   400 OBJECT  GLOBAL DEFAULT   17 rt3261_incall_off_controls
+   311: 000311e0    16 OBJECT  GLOBAL DEFAULT   17 rt5651_hdmiin_off_controls
+   312: 00021d34   268 FUNC    GLOBAL DEFAULT   12 __udivdi3
+   313: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 hdmi_analog_earpiece_ringtone_controls
+   314: 00031920    16 OBJECT  GLOBAL DEFAULT   17 hdmi_analog_main_mic_capture_controls
+   315: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 hdmi_analog_headphone_voip_controls
+   316: 0000e3b9    96 FUNC    GLOBAL DEFAULT   12 initchnsta
+   317: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 hdmi_analog_headphone_ringtone_controls
+   318: 000316a0    32 OBJECT  GLOBAL DEFAULT   17 cx2072_hands_free_mic_capture_controls
+   319: 000269b0    32 OBJECT  GLOBAL DEFAULT   17 default_earpiece_voip_controls
+   320: 00031900    16 OBJECT  GLOBAL DEFAULT   17 hdmi_analog_headphone_normal_controls
+   321: 0002b280   400 OBJECT  GLOBAL DEFAULT   17 rt3261_playback_off_controls
+   322: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rk616_bluetooth_normal_controls
+   323: 000164a0   324 FUNC    GLOBAL DEFAULT   12 filterbank_compute_bank
+   324: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt3261_voip_off_controls
+   325: 00021540    64 FUNC    GLOBAL DEFAULT   12 __aeabi_f2d
+   326: 000267d8    16 OBJECT  GLOBAL DEFAULT   17 media_headphones
+   327: 00027fc0   112 OBJECT  GLOBAL DEFAULT   17 rk616_capture_off_controls
+   328: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rk616_speaker_voip_controls
+   329: 00012a89   272 FUNC    GLOBAL DEFAULT   12 mixer_ctl_set
+   330: 0000e931    62 FUNC    GLOBAL DEFAULT   12 isCurIEC958SamplerateSupport
+   331: 00026838    16 OBJECT  GLOBAL DEFAULT   17 voice_rec_headset
+   332: 0003385c     4 OBJECT  GLOBAL DEFAULT   21 route_table
+   333: 0002edd0   528 OBJECT  GLOBAL DEFAULT   17 rt3224_bluetooth_voip_controls
+   334: 00016654   568 FUNC    GLOBAL DEFAULT   12 filterbank_psy_smooth
+   335: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 cx2072_speaker_ringtone_controls
+   336: 00030ec0   240 OBJECT  GLOBAL DEFAULT   17 rt5651_headset_voip_controls
+   337: 00032270    20 OBJECT  GLOBAL DEFAULT   20 volume_controls_name_table
+   338: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8396_speaker_normal_controls
+   339: 00026e30   512 OBJECT  GLOBAL DEFAULT   17 rk616_speaker_incall_controls
+   340: 0002c1b0    32 OBJECT  GLOBAL DEFAULT   17 rt5640_capture_off_controls
+   341: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_bluetooth_sco_mic_capture_controls
+   342: 00011cdd    52 FUNC    GLOBAL DEFAULT   12 route_set_input_source
+   343: 0002f070   144 OBJECT  GLOBAL DEFAULT   17 rt3224_hands_free_mic_capture_controls
+   344: 0002ae20   528 OBJECT  GLOBAL DEFAULT   17 rt3261_bluetooth_voip_controls
+   345: 00026b30    16 OBJECT  GLOBAL DEFAULT   17 default_incall_off_controls
+   346: 0000e419   204 FUNC    GLOBAL DEFAULT   12 set176400chnsta
+   347: 00026940    16 OBJECT  GLOBAL DEFAULT   17 default_speaker_ringtone_controls
+   348: 00012b99   156 FUNC    GLOBAL DEFAULT   12 mixer_ctl_select
+   349: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 wm8960_bluetooth_voip_controls
+   350: 00021860   516 FUNC    GLOBAL DEFAULT   12 __divdf3
+   351: 00021b50    20 FUNC    GLOBAL DEFAULT   12 __aeabi_fcmpeq
+   352: 00028350   592 OBJECT  GLOBAL DEFAULT   17 rt3261_speaker_normal_controls
+   353: 000288c0   560 OBJECT  GLOBAL DEFAULT   17 rt3261_speaker_ringtone_controls
+   354: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5616_speaker_headphone_ringtone_controls
+   355: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 wm8960_earpiece_ringtone_controls
+   356: 00031660    16 OBJECT  GLOBAL DEFAULT   17 cx2072_headphone_normal_controls
+   357: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5651_bluetooth_incall_controls
+   358: 0002f5f0   176 OBJECT  GLOBAL DEFAULT   17 wm8960_speaker_normal_controls
+   359: 0001f128     4 FUNC    GLOBAL DEFAULT   12 speex_echo_cancel
+   360: 000215f4   620 FUNC    GLOBAL DEFAULT   12 __muldf3
+   361: 00026ae0    16 OBJECT  GLOBAL DEFAULT   17 default_main_mic_capture_controls
+   362: 0002c190    32 OBJECT  GLOBAL DEFAULT   17 rt5640_playback_off_controls
+   363: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 wm8960_bluetooth_sco_mic_capture_controls
+   364: 00026b40    16 OBJECT  GLOBAL DEFAULT   17 default_voip_off_controls
+   365: 000210cc     0 FUNC    GLOBAL DEFAULT   12 __aeabi_ldivmod
+   366: 000269d0    16 OBJECT  GLOBAL DEFAULT   17 default_headphone_normal_controls
+   367: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_earpiece_voip_controls
+   368: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_speaker_headphone_ringtone_controls
+   369: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5651_speaker_headphone_normal_controls
+   370: 0001635c    60 FUNC    GLOBAL DEFAULT   12 filterbank_destroy
+   371: 0000e971   184 FUNC    GLOBAL DEFAULT   12 dumpchnsta
+   372: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_speaker_normal_controls
+   373: 0002fb70   352 OBJECT  GLOBAL DEFAULT   17 wm8960_hands_free_mic_capture_controls
+   374: 00026b20    16 OBJECT  GLOBAL DEFAULT   17 default_capture_off_controls
+   375: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_headphone_ringtone_controls
+   376: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 hdmi_analog_headset_normal_controls
+   377: 00029420   576 OBJECT  GLOBAL DEFAULT   17 rt3261_headphone_normal_controls
+   378: 0002c1d0   544 OBJECT  GLOBAL DEFAULT   17 rt5640_config_table
+   379: 00032288     4 OBJECT  GLOBAL DEFAULT   21 PCM_CARD
+   380: 00026a00    16 OBJECT  GLOBAL DEFAULT   17 default_headphone_ringtone_controls
+   381: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 wm8960_headset_voip_controls
+   382: 0002bb10   224 OBJECT  GLOBAL DEFAULT   17 rt5616_main_mic_capture_controls
+   383: 00021e5c    28 FUNC    GLOBAL DEFAULT   12 __aeabi_llsl
+   384: 00031430   544 OBJECT  GLOBAL DEFAULT   17 es8316_config_table
+   385: 00021540    64 FUNC    GLOBAL DEFAULT   12 __extendsfdf2
+   386: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 cx2072_speaker_headphone_ringtone_controls
+   387: 00012115   180 FUNC    GLOBAL DEFAULT   12 route_set_controls
+   388: 00011d11   492 FUNC    GLOBAL DEFAULT   12 route_set_voice_volume
+   389: 00028d40   800 OBJECT  GLOBAL DEFAULT   17 rt3261_earpiece_incall_controls
+   390: 00032298     4 OBJECT  GLOBAL DEFAULT   21 hdmi_uevent_t
+   391: 00026980    32 OBJECT  GLOBAL DEFAULT   17 default_earpiece_incall_controls
+   392: 000139a8     4 FUNC    GLOBAL DEFAULT   12 speex_preprocess
+   393: 00021248   684 FUNC    GLOBAL DEFAULT   12 __adddf3
+   394: 00021e40    28 FUNC    GLOBAL DEFAULT   12 __aeabi_llsr
+   395: 00027c30   192 OBJECT  GLOBAL DEFAULT   17 rk616_headset_ringtone_controls
+   396: 0002123c     0 FUNC    GLOBAL DEFAULT   12 __aeabi_drsub
+   397: 0002e990   544 OBJECT  GLOBAL DEFAULT   17 rt3224_headset_voip_controls
+   398: 00032068    44 OBJECT  GLOBAL DEFAULT   20 pcm_config_in_low_latency
+   399: 0003384c     4 OBJECT  GLOBAL DEFAULT   21 mMixerCapture
+   400: 000302e0   128 OBJECT  GLOBAL DEFAULT   17 es8396_capture_off_controls
+   401: 0001688c    40 FUNC    GLOBAL DEFAULT   12 spx_fft_init
+   402: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_bluetooth_incall_controls
+   403: 00012ed1   224 FUNC    GLOBAL DEFAULT   12 mixer_tlv_get_dB_range
+   404: 0002a9b0   576 OBJECT  GLOBAL DEFAULT   17 rt3261_headset_voip_controls
+   405: 00021244   688 FUNC    GLOBAL DEFAULT   12 __aeabi_dsub
+   406: 00026898   120 OBJECT  GLOBAL DEFAULT   17 route_configs
+   407: 0002c3f0   592 OBJECT  GLOBAL DEFAULT   17 rt3224_speaker_normal_controls
+   408: 0000e4e5   204 FUNC    GLOBAL DEFAULT   12 set32000chnsta
+   409: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 hdmi_analog_voip_off_controls
+   410: 00011bfd    18 FUNC    GLOBAL DEFAULT   12 route_uninit
+   411: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rk616_bluetooth_voip_controls
+   412: 00032010    44 OBJECT  GLOBAL DEFAULT   20 pcm_config
+   413: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 cx2072_headset_incall_controls
+   414: 000271b0   512 OBJECT  GLOBAL DEFAULT   17 rk616_earpiece_incall_controls
+   415: 00027e50   224 OBJECT  GLOBAL DEFAULT   17 rk616_hands_free_mic_capture_controls
+   416: 000310d0   272 OBJECT  GLOBAL DEFAULT   17 rt5651_hdmiin_normal_controls
+   417: 00032120    44 OBJECT  GLOBAL DEFAULT   20 pcm_config_hdmi_multi
+   418: 00026d70   192 OBJECT  GLOBAL DEFAULT   17 rk616_speaker_normal_controls
+   419: 00017528    56 FUNC    GLOBAL DEFAULT   12 spx_drft_clear
+   420: 0000ec49   112 FUNC    GLOBAL DEFAULT   12 out_dump
+   421: 00026a60    32 OBJECT  GLOBAL DEFAULT   17 default_headset_incall_controls
+   422: 0002bbf0   224 OBJECT  GLOBAL DEFAULT   17 rt5616_hands_free_mic_capture_controls
+   423: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5616_headset_incall_controls
+   424: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5616_speaker_ringtone_controls
+   425: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5651_bluetooth_sco_mic_capture_controls
+   426: 00021018    40 FUNC    GLOBAL DEFAULT   12 __floatunsisf
+   427: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5651_earpiece_incall_controls
+   428: 0002b0d0   160 OBJECT  GLOBAL DEFAULT   17 rt3261_hands_free_mic_capture_controls
+   429: 0002bdf0   544 OBJECT  GLOBAL DEFAULT   17 rt5616_config_table
+   430: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 cx2072_headphone_voip_controls
+   431: 0001725c   716 FUNC    GLOBAL DEFAULT   12 spx_drft_init
+   432: 00032284     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
+   433: 00013208  1740 FUNC    GLOBAL DEFAULT   12 speex_preprocess_state_init
+   434: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5651_bluetooth_normal_controls
+   435: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 cx2072_speaker_voip_controls
+   436: 00020e88   400 FUNC    GLOBAL DEFAULT   12 __addsf3
+   437: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5616_headphone_ringtone_controls
+   438: 0002b8f0   272 OBJECT  GLOBAL DEFAULT   17 rt5616_headphone_normal_controls
+   439: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 cx2072_capture_off_controls
+   440: 00026a30    32 OBJECT  GLOBAL DEFAULT   17 default_headphone_voip_controls
+   441: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 hdmi_analog_playback_off_controls
+   442: 00027530   512 OBJECT  GLOBAL DEFAULT   17 rk616_headphone_incall_controls
+   443: 0002d9f0   528 OBJECT  GLOBAL DEFAULT   17 rt3224_headphone_ringtone_controls
+   444: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5616_headphone_voip_controls
+   445: 00021b8c    20 FUNC    GLOBAL DEFAULT   12 __aeabi_fcmpge
+   446: 000267c8    16 OBJECT  GLOBAL DEFAULT   17 media_speaker
+   447: 00011c11   152 FUNC    GLOBAL DEFAULT   12 route_pcm_close
+   448: 0001bae4  1024 FUNC    GLOBAL DEFAULT   12 speex_echo_state_reset
+   449: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 hdmi_analog_speaker_incall_controls
+   450: 00021120    56 FUNC    GLOBAL DEFAULT   12 __aeabi_f2lz
+   451: 0002de40   576 OBJECT  GLOBAL DEFAULT   17 rt3224_speaker_headphone_ringtone_controls
+   452: 0003203c    44 OBJECT  GLOBAL DEFAULT   20 pcm_config_in
+   453: 00030360   272 OBJECT  GLOBAL DEFAULT   17 es8396_incall_off_controls
+   454: 0002bce0   272 OBJECT  GLOBAL DEFAULT   17 rt5616_capture_off_controls
+   455: 00030b00   240 OBJECT  GLOBAL DEFAULT   17 rt5651_headphone_ringtone_controls
+   456: 0001bfd0   488 FUNC    GLOBAL DEFAULT   12 speex_echo_capture
+   457: 0002b170   272 OBJECT  GLOBAL DEFAULT   17 rt3261_bluetooth_sco_mic_capture_controls
+   458: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5616_bluetooth_sco_mic_capture_controls
+   459: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5651_voip_off_controls
+   460: 000214f4    36 FUNC    GLOBAL DEFAULT   12 __aeabi_ui2d
+   461: 00021ab8   116 FUNC    GLOBAL DEFAULT   12 __gesf2
+   462: 000320c0    44 OBJECT  GLOBAL DEFAULT   20 pcm_config_hfp
+   463: 000130a1   228 FUNC    GLOBAL DEFAULT   12 rk_check_hdmi_uevents
+   464: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt3261_earpiece_normal_controls
+   465: 00021018    40 FUNC    GLOBAL DEFAULT   12 __aeabi_ui2f
+   466: 0002f3d0   544 OBJECT  GLOBAL DEFAULT   17 rt3224_config_table
+   467: 00026970    16 OBJECT  GLOBAL DEFAULT   17 default_earpiece_normal_controls
+   468: 0002ebb0   544 OBJECT  GLOBAL DEFAULT   17 rt3224_bluetooth_incall_controls
+   469: 00021244   688 FUNC    GLOBAL DEFAULT   12 __subdf3
+   470: 00026828    16 OBJECT  GLOBAL DEFAULT   17 voice_rec_headphones
+   471: 00030470   544 OBJECT  GLOBAL DEFAULT   17 es8396_config_table
+   472: 00021110    16 FUNC    WEAK   DEFAULT   12 __aeabi_ldiv0
+   473: 00021ac0   108 FUNC    GLOBAL DEFAULT   12 __lesf2
+   474: 00016398   160 FUNC    GLOBAL DEFAULT   12 filterbank_compute_bank32
+   475: 00021ba0    20 FUNC    GLOBAL DEFAULT   12 __aeabi_fcmpgt
+   476: 000336b4   384 OBJECT  GLOBAL DEFAULT   21 channel_status
+   477: 00012fb1   240 FUNC    GLOBAL DEFAULT   12 mixer_get_dB_range
+   478: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rk616_earpiece_voip_controls
+   479: 0001b510  1492 FUNC    GLOBAL DEFAULT   12 speex_echo_state_init_mc
+   480: 000214f4    36 FUNC    GLOBAL DEFAULT   12 __floatunsidf
+   481: 00015ac0  1352 FUNC    GLOBAL DEFAULT   12 speex_preprocess_ctl
+   482: 00031910    16 OBJECT  GLOBAL DEFAULT   17 hdmi_analog_hdmi_normal_controls
+   483: 0002c110   128 OBJECT  GLOBAL DEFAULT   17 rt5640_main_mic_capture_controls
+   484: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5651_headset_incall_controls
+   485: 00016008   852 FUNC    GLOBAL DEFAULT   12 filterbank_new
+   486: 00026808    16 OBJECT  GLOBAL DEFAULT   17 camcorder_headphones
+   487: 00013185     4 FUNC    GLOBAL DEFAULT   12 rk_handle_uevents
+   488: 0000eb1d   112 FUNC    GLOBAL DEFAULT   12 getInputRouteFromDevice
+   489: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_voip_off_controls
+   490: 0001f4d0   640 FUNC    GLOBAL DEFAULT   12 speex_echo_ctl
+   491: 0000eb01    28 FUNC    GLOBAL DEFAULT   12 getVoiceRouteFromDevice
+   492: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 cx2072_bluetooth_incall_controls
+   493: 00021ac8   100 FUNC    GLOBAL DEFAULT   12 __cmpsf2
+   494: 0000e749   204 FUNC    GLOBAL DEFAULT   12 setddpchnsta
+   495: 00031670    16 OBJECT  GLOBAL DEFAULT   17 cx2072_headset_normal_controls
+   496: 0002f240   400 OBJECT  GLOBAL DEFAULT   17 rt3224_incall_off_controls
+   497: 000270f0   192 OBJECT  GLOBAL DEFAULT   17 rk616_earpiece_normal_controls
+   498: 00029060   560 OBJECT  GLOBAL DEFAULT   17 rt3261_earpiece_ringtone_controls
+   499: 00032180   128 OBJECT  GLOBAL DEFAULT   20 HMI
+   500: 000215f4   620 FUNC    GLOBAL DEFAULT   12 __aeabi_dmul
+   501: 00026818    16 OBJECT  GLOBAL DEFAULT   17 voice_rec_speaker
+   502: 00028130   544 OBJECT  GLOBAL DEFAULT   17 rk616_config_table
+   503: 00011a99   356 FUNC    GLOBAL DEFAULT   12 route_init
+   504: 000278b0   192 OBJECT  GLOBAL DEFAULT   17 rk616_speaker_headphone_ringtone_controls
+   505: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 wm8960_bluetooth_incall_controls
+   506: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rk616_voip_off_controls
+   507: 00030dd0   240 OBJECT  GLOBAL DEFAULT   17 rt5651_headset_ringtone_controls
+   508: 0000e67d   204 FUNC    GLOBAL DEFAULT   12 setnlpcmchnsta
+   509: 00026a50    16 OBJECT  GLOBAL DEFAULT   17 default_headset_normal_controls
+   510: 0002ba00   272 OBJECT  GLOBAL DEFAULT   17 rt5616_headset_normal_controls
+   511: 00027030   192 OBJECT  GLOBAL DEFAULT   17 rk616_speaker_ringtone_controls
+   512: 00033858     4 OBJECT  GLOBAL DEFAULT   21 prop_pcm
+   513: 00033834    24 OBJECT  GLOBAL DEFAULT   21 mPcm
+   514: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_capture_off_controls
+   515: 00027f30   144 OBJECT  GLOBAL DEFAULT   17 rk616_playback_off_controls
+   516: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 hdmi_analog_bluetooth_incall_controls
+   517: 000267b0    24 OBJECT  GLOBAL DEFAULT   17 out_channels_name_to_enum_table
+   518: 00016d90   544 FUNC    GLOBAL DEFAULT   12 spx_drft_forward
+   519: 0000e8e1    80 FUNC    GLOBAL DEFAULT   12 setChanSta
+   520: 00027d90   192 OBJECT  GLOBAL DEFAULT   17 rk616_main_mic_capture_controls
+   521: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5651_earpiece_voip_controls
+   522: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 wm8960_speaker_headphone_normal_controls
+   523: 00020e84   404 FUNC    GLOBAL DEFAULT   12 __subsf3
+   524: 00011efd   280 FUNC    GLOBAL DEFAULT   12 get_route_config
+   525: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 hdmi_analog_bluetooth_voip_controls
+   526: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 wm8960_incall_off_controls
+   527: 00021200    60 FUNC    GLOBAL DEFAULT   12 __gnu_uldivmod_helper
+   528: 00027470   192 OBJECT  GLOBAL DEFAULT   17 rk616_headphone_normal_controls
+   529: 00021120    56 FUNC    GLOBAL DEFAULT   12 __fixsfdi
+   530: 0002dc00   576 OBJECT  GLOBAL DEFAULT   17 rt3224_speaker_headphone_normal_controls
+   531: 00020e5c    32 FUNC    GLOBAL DEFAULT   12 __aeabi_idivmod
+   532: 00021bb4   384 FUNC    GLOBAL DEFAULT   12 __divdi3
+   533: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 hdmi_analog_headset_voip_controls
+   534: 0002a4a0   736 OBJECT  GLOBAL DEFAULT   17 rt3261_headset_incall_controls
+   535: 00021020    32 FUNC    GLOBAL DEFAULT   12 __floatsisf
+   536: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 cx2072_earpiece_voip_controls
+   537: 00030260   128 OBJECT  GLOBAL DEFAULT   17 es8396_hands_free_mic_capture_controls
+   538: 00021518    40 FUNC    GLOBAL DEFAULT   12 __aeabi_i2d
+   539: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 wm8960_earpiece_incall_controls
+   540: 00028030   256 OBJECT  GLOBAL DEFAULT   17 rk616_incall_off_controls
+   541: 00021020    32 FUNC    GLOBAL DEFAULT   12 __aeabi_i2f
+   542: 000138d4   212 FUNC    GLOBAL DEFAULT   12 speex_preprocess_state_destroy
+   543: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_bluetooth_normal_controls
+   544: 00032200   112 OBJECT  GLOBAL DEFAULT   20 sound_card_config_list
+   545: 00020e84   404 FUNC    GLOBAL DEFAULT   12 __aeabi_fsub
+   546: 00032094    44 OBJECT  GLOBAL DEFAULT   20 pcm_config_sco
+   547: 00016a50   216 FUNC    GLOBAL DEFAULT   12 spx_ifft
+   548: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5616_speaker_voip_controls
+   549: 0001c1c0 11596 FUNC    GLOBAL DEFAULT   12 speex_echo_cancellation
+   550: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 hdmi_analog_capture_off_controls
+   551: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt3224_bluetooth_normal_controls
+   552: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_headset_incall_controls
+   553: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 wm8960_earpiece_voip_controls
+   554: 000211c4    60 FUNC    GLOBAL DEFAULT   12 __gnu_ldivmod_helper
+   555: 0002c090   128 OBJECT  GLOBAL DEFAULT   17 rt5640_headphone_normal_controls
+   556: 00026868    16 OBJECT  GLOBAL DEFAULT   17 communication_headset
+   557: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5651_capture_off_controls
+   558: 00030830   208 OBJECT  GLOBAL DEFAULT   17 rt5651_speaker_voip_controls
+   559: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 cx2072_playback_off_controls
+   560: 0001f290   568 FUNC    GLOBAL DEFAULT   12 speex_echo_get_residual
+   561: 000123c5   664 FUNC    GLOBAL DEFAULT   12 mixer_open_legacy
+   562: 00029930   560 OBJECT  GLOBAL DEFAULT   17 rt3261_headphone_ringtone_controls
+   563: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 rt5651_headphone_incall_controls
+   564: 00026ac0    16 OBJECT  GLOBAL DEFAULT   17 default_bluetooth_incall_controls
+   565: 0003228c     4 OBJECT  GLOBAL DEFAULT   21 PCM_CARD_HDMI
+   566: 000316d0   544 OBJECT  GLOBAL DEFAULT   17 cx2072_config_table
+   567: 0002abf0   560 OBJECT  GLOBAL DEFAULT   17 rt3261_bluetooth_incall_controls
+   568: 00030bf0   240 OBJECT  GLOBAL DEFAULT   17 rt5651_headphone_voip_controls
+   569: 00021248   684 FUNC    GLOBAL DEFAULT   12 __aeabi_dadd
+   570: 00026858    16 OBJECT  GLOBAL DEFAULT   17 communication_headphones
+   571: 00030900   272 OBJECT  GLOBAL DEFAULT   17 rt5651_earpiece_normal_controls
+   572: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 cx2072_speaker_incall_controls
+   573: 000252f0     0 OBJECT  GLOBAL DEFAULT   15 es8316_headphone_voip_controls
+   574: 00031040   144 OBJECT  GLOBAL DEFAULT   17 rt5651_main_mic_capture_controls
+   575: 0001b4f8    12 FUNC    GLOBAL DEFAULT   12 speex_echo_state_init
+   576: 000311f0   544 OBJECT  GLOBAL DEFAULT   17 rt5651_config_table
+   577: 00011ca9    52 FUNC    GLOBAL DEFAULT   12 is_playback_route

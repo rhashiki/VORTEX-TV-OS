@@ -1,0 +1,1039 @@
+{
+  "scope": "genuine Android.mk recovery/static-platform source compilation experiment",
+  "status": "compiled_recovery_executable_with_vendor_static_inputs",
+  "counts": {
+    "compiler_dependency_rules_with_objects": 1582,
+    "primary_objects_including_combined_crt": 1584,
+    "source_static_archive_modules": 54,
+    "source_bionic_dsos": 3,
+    "vendor_archive_inputs_named_by_link": 4,
+    "recovery_main_objects": 16,
+    "ui_host_checks": 20
+  },
+  "ui_archive_in_full_recovery": "not selected by aosp_arm baseline; independently compiled/tested only",
+  "artifacts": [
+    {
+      "path": "static/libadbd.a",
+      "bytes": 3968400,
+      "sha256": "6b13aa079f4d3ac29b46b142a28934d8c799aee17c4859c74807a5e5c9f8a23e",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 14
+      }
+    },
+    {
+      "path": "static/libadf.a",
+      "bytes": 69434,
+      "sha256": "c4bb86b0c9af0985a87c5b08ca0c508117b2bee7446eda4e0e7aca0bec2e29c3",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 1
+      }
+    },
+    {
+      "path": "static/libapplypatch.a",
+      "bytes": 808764,
+      "sha256": "e60d51a98f80901e52039e490cf92fa5bc16f5227f1c350a1b414ee0540d4ae6",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 5
+      }
+    },
+    {
+      "path": "static/libbase.a",
+      "bytes": 1250060,
+      "sha256": "5a7edb7bb5bee4ac02d317d199ed1e9d3e71ede85b19530585955e1e4e02f318",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 7
+      }
+    },
+    {
+      "path": "static/libbatterymonitor.a",
+      "bytes": 149558,
+      "sha256": "9d56263c303acee1ec7acb51b218fa579ff9d6ab170e7e7a68ed66ff2c99efe0",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 1
+      }
+    },
+    {
+      "path": "static/libbootloader_message.a",
+      "bytes": 205856,
+      "sha256": "8c50761ae1677ff928fae27f69898326d80ee9eb8cb4ada1fe30f29630fa53ae",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 1
+      }
+    },
+    {
+      "path": "static/libc++_static.a",
+      "bytes": 8346972,
+      "sha256": "7450e64dd5da21bd21264b82b089ee0d21ed170340be59222d533a0b8422e530",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 45
+      }
+    },
+    {
+      "path": "static/libc++abi.a",
+      "bytes": 2298982,
+      "sha256": "2695e5abf70d291252425f642331c692410fa796e543892e55d039d6ec9925c5",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 18
+      }
+    },
+    {
+      "path": "static/libc_aeabi.a",
+      "bytes": 32580,
+      "sha256": "ac9fe85e4716467d5641283c1fc8cea600808413070d51322c3b32ce5887b79f",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 1
+      }
+    },
+    {
+      "path": "static/libc_bionic.a",
+      "bytes": 141278,
+      "sha256": "b49cadd811d3419008a05baa1b55cf1be63c804680bd00579134f64296a157aa",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 31
+      }
+    },
+    {
+      "path": "static/libc_bionic_ndk.a",
+      "bytes": 1368288,
+      "sha256": "54a3a540ac58554d3410ca12acb12a0b67da3d22b563b5bd2aa4461847b40482",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 146
+      }
+    },
+    {
+      "path": "static/libc_common.a",
+      "bytes": 5964416,
+      "sha256": "45ad06e0fed89cd46355093de69b029d4f06171f5743816b2f172338c64501a5",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 758
+      }
+    },
+    {
+      "path": "static/libc_cxa.a",
+      "bytes": 19976,
+      "sha256": "b26dbe9814d4ba65db5c823b297ce160d3251c867f75d362666f35e92206e690",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 3
+      }
+    },
+    {
+      "path": "static/libc_dns.a",
+      "bytes": 878144,
+      "sha256": "bb4d5b9b8e8bce5bdd225da0c27732eb7dd6db4e57a716157777387f36e09a3a",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 29
+      }
+    },
+    {
+      "path": "static/libc_freebsd.a",
+      "bytes": 176300,
+      "sha256": "cd33bf15b28d9f7778eac4db86b8a63be68d6960ae3979870090094fae68a9fe",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 31
+      }
+    },
+    {
+      "path": "static/libc_gdtoa.a",
+      "bytes": 253608,
+      "sha256": "d9d1160c15d5e11906581dd8af12b49655cfb345cdc88b4676de1abf67e4e939",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 18
+      }
+    },
+    {
+      "path": "static/libc_init_static.a",
+      "bytes": 10728,
+      "sha256": "3a4e6fba9679f20eefea2ab3e23dd288a413d247264247dcf2c7a01effb97ff3",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 1
+      }
+    },
+    {
+      "path": "static/libc.a",
+      "bytes": 8413292,
+      "sha256": "cf80233a2cd82fbca583295a0fee98d0a2391ba624d58c939efefad08f44c72e",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 789
+      }
+    },
+    {
+      "path": "static/libc_malloc.a",
+      "bytes": 5778,
+      "sha256": "9f5985054fa05c6ba96badcb7f71dc1f8874e1e431159167672d7ef360c68c77",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 1
+      }
+    },
+    {
+      "path": "static/libc_netbsd.a",
+      "bytes": 347208,
+      "sha256": "b3f464ca9f2a950f16fe146e66db5656693cecaaab23e471663d717b91827c84",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 34
+      }
+    },
+    {
+      "path": "static/libc_openbsd.a",
+      "bytes": 75172,
+      "sha256": "f6583728c9e164cf59b820b32129fbf1507918f984dde0eb6f21a83c9245d534",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 11
+      }
+    },
+    {
+      "path": "static/libc_openbsd_ndk.a",
+      "bytes": 1187232,
+      "sha256": "bfd403843a821ac9700508270b2ae68192ca3a5b095335c847ae4c2b46b92d58",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 163
+      }
+    },
+    {
+      "path": "static/libc_pthread.a",
+      "bytes": 350410,
+      "sha256": "8f6b79828ea63ac58e2335d58f71f13630cb9c25a7a4a2e39cb02f24c1709edd",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 23
+      }
+    },
+    {
+      "path": "static/libc_stack_protector.a",
+      "bytes": 15236,
+      "sha256": "1635fbd49c68050d3f957fe1357bc26f966750b2cb099e3d77c52409b2476f3d",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 2
+      }
+    },
+    {
+      "path": "static/libc_syscalls.a",
+      "bytes": 416276,
+      "sha256": "8f20a4efc3924eea4f792d239792747767448b6951a73faee56e9bf1d078afde",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 204
+      }
+    },
+    {
+      "path": "static/libc_tzcode.a",
+      "bytes": 195328,
+      "sha256": "762ad0c29b627fc72f0689448824009b6d222a4f14a77a52d39888e1f638c042",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 6
+      }
+    },
+    {
+      "path": "static/libcompiler_rt-extras.a",
+      "bytes": 3898,
+      "sha256": "d5dd05f164da84ec52ad90ae41dbd23cb45c3840fc8c50975039ffa4d138ddb8",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 1
+      }
+    },
+    {
+      "path": "static/libcrypto_static.a",
+      "bytes": 7514288,
+      "sha256": "012446dcf05a2cd9e1fa5f0918a578b88f1f98756b7a8870bec293a923702168",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 280
+      }
+    },
+    {
+      "path": "static/libcutils.a",
+      "bytes": 403966,
+      "sha256": "50f83b5d64e738c4583da8647fcbddc34dfe92a9bbf09e726408899b078085ac",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 37
+      }
+    },
+    {
+      "path": "static/libdl.a",
+      "bytes": 15716,
+      "sha256": "608c4d335e18ac0c6268d5d842cdd95bf4d336ca0d248aee0753b92c4bef2d0e",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 1
+      }
+    },
+    {
+      "path": "static/libdrm.a",
+      "bytes": 364242,
+      "sha256": "1b4e3cd2ebf1d647c5eb3cb4190630db05816ce0d0923c9e5a990f827f21de15",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 5
+      }
+    },
+    {
+      "path": "static/libedify.a",
+      "bytes": 277762,
+      "sha256": "07edb4f210935d977c66d577fc6050789e5bae02bda5ddedc611f712a26f0f77",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 3
+      }
+    },
+    {
+      "path": "static/libext4_utils_static.a",
+      "bytes": 889374,
+      "sha256": "fa568cc632a00f56d04b0915151dce7e672745d310275ccb99368d5b59510721",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 14
+      }
+    },
+    {
+      "path": "static/libfs_mgr.a",
+      "bytes": 303558,
+      "sha256": "ad396584583768b8a8ba1aee21124b789b045f8d541eda543f5d11c5fdb6e152",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 5
+      }
+    },
+    {
+      "path": "static/libfusesideload.a",
+      "bytes": 27342,
+      "sha256": "43b43f24e510b20ee5bb161e1d14cc497b574728f7c955a2ac4a32818d82b2eb",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 1
+      }
+    },
+    {
+      "path": "static/libhealthd.default.a",
+      "bytes": 70942,
+      "sha256": "64c21bfe7348ec8cf4144ac9116d2d812eb724885cd13cfab8be0801c5e48bb4",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 1
+      }
+    },
+    {
+      "path": "static/libjemalloc.a",
+      "bytes": 2394950,
+      "sha256": "19d2e64b1181d02c2f82bf1dba4dfb0b081734c163dc08e5c88ef909a121d890",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 26
+      }
+    },
+    {
+      "path": "static/liblog.a",
+      "bytes": 424200,
+      "sha256": "9f8904009fbdfcbbfa650a87625bf73cea08d7d6f2ab2bdf405f4dfe594062e5",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 16
+      }
+    },
+    {
+      "path": "static/libm.a",
+      "bytes": 1397006,
+      "sha256": "04cbffc2214e23b37ae084c835b1d4ef60e0d6f61ef4ecc38b67be55fa728e00",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 174
+      }
+    },
+    {
+      "path": "static/libminadbd.a",
+      "bytes": 4212794,
+      "sha256": "46d293a6c73119964d1ef37e057fb36a54bb8272ff42195c371e1b766754e220",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 17
+      }
+    },
+    {
+      "path": "static/libminui.a",
+      "bytes": 618560,
+      "sha256": "e9022bbd584689cff2ea06790839284533ee03ddba70a07a84f63181c6e94c9a",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 12
+      }
+    },
+    {
+      "path": "static/libminzip.a",
+      "bytes": 118752,
+      "sha256": "100ffe960899994e0189e72302937aa4e5590f4c66e5c3b29be2fd18e3dee403",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 5
+      }
+    },
+    {
+      "path": "static/libmtdutils.a",
+      "bytes": 67902,
+      "sha256": "d596fdbdc213511192a1b97e6f5636c2f745ebdd4d84615cf55cc458d10913bf",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 3
+      }
+    },
+    {
+      "path": "static/libotafault.a",
+      "bytes": 3504514,
+      "sha256": "e89286316b357b183a2a1f6379340aa37850bd185982b694bedcfc1d48092bb5",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 88
+      }
+    },
+    {
+      "path": "static/libpackagelistparser.a",
+      "bytes": 12346,
+      "sha256": "de61da5e4334a482143a49619f2065882a2ed5145c82e9b410042ab4e2196773",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 1
+      }
+    },
+    {
+      "path": "static/libpcre.a",
+      "bytes": 477444,
+      "sha256": "e847d062bc4068a059627721dad2ea8febab5eaf69a4a493d763ac2e3b148cd8",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 21
+      }
+    },
+    {
+      "path": "static/libpng.a",
+      "bytes": 1151342,
+      "sha256": "5e676cfbc6a1dc4be2a9da6d44dcd6020c57147436ac1d38f730a6ea204a083e",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 18
+      }
+    },
+    {
+      "path": "static/librecovery_ui_aosp_arm.a",
+      "bytes": 20068,
+      "sha256": "6a5bd67db89ba1677488370513ca0ee083f92e23b27107e1115e64a32e14c803",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 1
+      }
+    },
+    {
+      "path": "static/librk_emmcutils.a",
+      "bytes": 15374,
+      "sha256": "62c4ff13cb7da447d5ec8ebd8542f8acc4c31365ef462a3eaf569588298ef7f9",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 1
+      }
+    },
+    {
+      "path": "static/libselinux.a",
+      "bytes": 1124580,
+      "sha256": "08dfabf40cad28cca990c7936d4c7a49357ea7efd58cb4154c22431365fb62f6",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 59
+      }
+    },
+    {
+      "path": "static/libsparse_static.a",
+      "bytes": 152034,
+      "sha256": "f33bfc702b28e0a0b47cc8c16a01f7a0bf51de3c64e0ba9bf1837f25a64a18da",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 6
+      }
+    },
+    {
+      "path": "static/libunwind_llvm.a",
+      "bytes": 172822,
+      "sha256": "2857fda9981591f1bbc27a176d66afbde34c7fc7499a421d627cb70f3d39a2ac",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 7
+      }
+    },
+    {
+      "path": "static/libutils.a",
+      "bytes": 1310166,
+      "sha256": "7e912d645cc05d36fa59765bcf4756591d6eb1b4c54a6573fb6070994c5748d6",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 25
+      }
+    },
+    {
+      "path": "static/libz.a",
+      "bytes": 509238,
+      "sha256": "d0d31ae3098b9b26bf016916eb45de6d062b1cfb5047138fcb9520326570a7d9",
+      "kind": "source-built static module archive",
+      "inspection": {
+        "format": "GNU ar",
+        "elf32_arm_members": 15
+      }
+    },
+    {
+      "path": "shared/libc.so",
+      "bytes": 697952,
+      "sha256": "45aaba04bbeea0cd15d2809748b394e74c4248c4ad3bd479428f8d88ebef3a81",
+      "kind": "source-built Bionic shared module",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 3
+      }
+    },
+    {
+      "path": "shared/libdl.so",
+      "bytes": 13652,
+      "sha256": "dd3e9269e81bcff5aac34f7237fb186950cdd9869619b8e29e746b521f35b86f",
+      "kind": "source-built Bionic shared module",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 3
+      }
+    },
+    {
+      "path": "shared/libm.so",
+      "bytes": 137048,
+      "sha256": "79c2055323dedb9ac176c45f391bfffee2ff7d44358b3c5a89ced52dee35fa72",
+      "kind": "source-built Bionic shared module",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 3
+      }
+    },
+    {
+      "path": "recovery-main/adb_install.o",
+      "bytes": 25880,
+      "sha256": "604f130e511ac13eb0a618dc6a236f7d5d2ad2ef816d4d070647b4f7511007f4",
+      "kind": "compiled main translation unit; not linked executable",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 1
+      }
+    },
+    {
+      "path": "recovery-main/asn1_decoder.o",
+      "bytes": 17396,
+      "sha256": "5e401bb8e8914f7a2604503a67f5a6d1ce2466eecaa17e605396b85d26a7d254",
+      "kind": "compiled main translation unit; not linked executable",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 1
+      }
+    },
+    {
+      "path": "recovery-main/default_device.o",
+      "bytes": 8400,
+      "sha256": "b1b5bba3c6d0019deb99ea375efccac0f8e3f65aa65469ab36f6f55ea7b8bea8",
+      "kind": "compiled main translation unit; not linked executable",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 1
+      }
+    },
+    {
+      "path": "recovery-main/device.o",
+      "bytes": 11480,
+      "sha256": "6d0ac3fbe7fbad611831203048ff1e33ba641d1dd0b4bc6d943f1325c7d6a043",
+      "kind": "compiled main translation unit; not linked executable",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 1
+      }
+    },
+    {
+      "path": "recovery-main/fuse_sdcard_provider.o",
+      "bytes": 11228,
+      "sha256": "e784cbdbe7dc1cc39867ea346019998f8bd7db288d2fc47f0e9768b4ac34db94",
+      "kind": "compiled main translation unit; not linked executable",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 1
+      }
+    },
+    {
+      "path": "recovery-main/install.o",
+      "bytes": 443936,
+      "sha256": "b9076ff28b1c538c64d5353285b0a44da1fed81bcab361a2359494ebf89a58ee",
+      "kind": "compiled main translation unit; not linked executable",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 1
+      }
+    },
+    {
+      "path": "recovery-main/recovery.o",
+      "bytes": 552548,
+      "sha256": "8c209c29cc84922862b4afc7e898fb8a923c46da6f5da67120e75cbf4bb8e9a3",
+      "kind": "compiled main translation unit; not linked executable",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 1
+      }
+    },
+    {
+      "path": "recovery-main/rkimage.o",
+      "bytes": 224896,
+      "sha256": "a3aac99c3c3a424ea8d3ece63b7223a466c99093d21810bdeac2486e9d31e3a3",
+      "kind": "compiled main translation unit; not linked executable",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 1
+      }
+    },
+    {
+      "path": "recovery-main/rktools.o",
+      "bytes": 82148,
+      "sha256": "f1fdf79c12e95baf81f39fe6a8f3b63f36de89d15d1ea5b4aaa4752701c7fa61",
+      "kind": "compiled main translation unit; not linked executable",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 1
+      }
+    },
+    {
+      "path": "recovery-main/roots.o",
+      "bytes": 30952,
+      "sha256": "f153d16c22dbb54191f7284eb2f896eba4037a9f64fef2bb353e766ebb3261f7",
+      "kind": "compiled main translation unit; not linked executable",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 1
+      }
+    },
+    {
+      "path": "recovery-main/screen_ui.o",
+      "bytes": 381356,
+      "sha256": "a9541c8e301a5af8f71a9b77f6fc4fda0663e7b9b454ce8e1936357977f9290b",
+      "kind": "compiled main translation unit; not linked executable",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 1
+      }
+    },
+    {
+      "path": "recovery-main/sdboot.o",
+      "bytes": 347528,
+      "sha256": "aecf497fb9f54216e3373194c272dd13523d31806688c9d08c039f8cacccbb05",
+      "kind": "compiled main translation unit; not linked executable",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 1
+      }
+    },
+    {
+      "path": "recovery-main/ui.o",
+      "bytes": 183964,
+      "sha256": "964943d814941e43821d56d1a8c97fa8ca5fd6387f1195eef7ae639359ca3ae5",
+      "kind": "compiled main translation unit; not linked executable",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 1
+      }
+    },
+    {
+      "path": "recovery-main/verifier.o",
+      "bytes": 233524,
+      "sha256": "cda90e78a90ff81cd31c583c931759da329037ff7b7153b552b3282e34ddef9c",
+      "kind": "compiled main translation unit; not linked executable",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 1
+      }
+    },
+    {
+      "path": "recovery-main/wear_touch.o",
+      "bytes": 17008,
+      "sha256": "04210c40e4aa219395ad71a4800d1ce3e94c48aaa565dab73ad809e014d2d36a",
+      "kind": "compiled main translation unit; not linked executable",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 1
+      }
+    },
+    {
+      "path": "recovery-main/wear_ui.o",
+      "bytes": 200276,
+      "sha256": "fafb5b74e3ec6240121d62bc25563cba16a9a0d7a3dcd7135a5c9672a680a382",
+      "kind": "compiled main translation unit; not linked executable",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 1
+      }
+    },
+    {
+      "path": "crt/crtbegin_so.o",
+      "bytes": 1652,
+      "sha256": "b07dc01789d9147146ebe46c53b7a9398c98bbf966ffe84396e0329493f5ec02",
+      "kind": "source-built CRT input or combined relocatable object",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 1
+      }
+    },
+    {
+      "path": "crt/crtbegin_so1.o",
+      "bytes": 1640,
+      "sha256": "41a019077012423f48f4483d114eb987ddeac0f813efb20205aa95cfe1a5d7d1",
+      "kind": "source-built CRT input or combined relocatable object",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 1
+      }
+    },
+    {
+      "path": "crt/crtbegin_static.o",
+      "bytes": 1956,
+      "sha256": "b8f92e881ed37097fffe599c5469ac0bb681e4f953e0134047211f4de195444b",
+      "kind": "source-built CRT input or combined relocatable object",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 1
+      }
+    },
+    {
+      "path": "crt/crtbegin_static1.o",
+      "bytes": 1976,
+      "sha256": "6622c0d4ec19c30e848e99c0a302e5c6e8746c44eff5dd4bc4a1f57a72e6af44",
+      "kind": "source-built CRT input or combined relocatable object",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 1
+      }
+    },
+    {
+      "path": "crt/crtbrand.o",
+      "bytes": 760,
+      "sha256": "10e3c3733b98ea5c125ab61bfd0654623a5dfe4efe7529bc0274070fe4a23a63",
+      "kind": "source-built CRT input or combined relocatable object",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 1
+      }
+    },
+    {
+      "path": "crt/crtend_android.o",
+      "bytes": 884,
+      "sha256": "ebd1a194d68d3fe7ce52280f4f34d6160bea23bf742e5f6c3db95678835082b9",
+      "kind": "source-built CRT input or combined relocatable object",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 1
+      }
+    },
+    {
+      "path": "crt/crtend_so.o",
+      "bytes": 620,
+      "sha256": "f0c4f254eecc2ecd8a6a704d20332c51382921c62e8815c0a6b3b617765f17ae",
+      "kind": "source-built CRT input or combined relocatable object",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 1
+      }
+    },
+    {
+      "path": "recovery/recovery",
+      "bytes": 956040,
+      "sha256": "5e2c3639b15a51728b24f8400dd2539c2ace87647fca41527698129ce543928c",
+      "kind": "compiled recovery ELF with source modules and pinned vendor static inputs; not recovery.img",
+      "inspection": {
+        "class": "ELF32",
+        "machine": "ARM",
+        "type": 2
+      }
+    },
+    {
+      "path": "licenses/01-NOTICE",
+      "bytes": 268163,
+      "sha256": "7e50997c1c5ada7064f67e38691dbdb38b78b9f150d24fafecfa2787eb01e72f",
+      "kind": "upstream source license notice",
+      "inspection": "original upstream license bytes; legacy text encodings retained"
+    },
+    {
+      "path": "licenses/02-NOTICE",
+      "bytes": 55572,
+      "sha256": "b706aa24a5cf03a98b2af54f0d776862e8ebbdc722a56ba23520bfeaec57989f",
+      "kind": "upstream source license notice",
+      "inspection": "original upstream license bytes; legacy text encodings retained"
+    },
+    {
+      "path": "licenses/03-NOTICE",
+      "bytes": 17680,
+      "sha256": "5f28c11f8b1b3f97b9d42c74b85371ebf4127f241b799279bcecd69f7ee542dc",
+      "kind": "upstream source license notice",
+      "inspection": "original upstream license bytes; legacy text encodings retained"
+    },
+    {
+      "path": "licenses/05-LICENSE",
+      "bytes": 4945,
+      "sha256": "bade5d8cc9bb2461ebf7b18471ed194f79815d2f982d3fff088f3751b6248973",
+      "kind": "upstream source license notice",
+      "inspection": "original upstream license bytes; legacy text encodings retained"
+    },
+    {
+      "path": "licenses/06-NOTICE",
+      "bytes": 6279,
+      "sha256": "257fe1b542f846557d0fc938f4206d6c9a6334e2b571fa020e51f96377537120",
+      "kind": "upstream source license notice",
+      "inspection": "original upstream license bytes; legacy text encodings retained"
+    },
+    {
+      "path": "licenses/07-COPYING",
+      "bytes": 1703,
+      "sha256": "5e49cb5013479e951cea2b6120ad2ff3c547463f11435c182bee7d6f391f2133",
+      "kind": "upstream source license notice",
+      "inspection": "original upstream license bytes; legacy text encodings retained"
+    },
+    {
+      "path": "licenses/08-NOTICE",
+      "bytes": 3493,
+      "sha256": "02f1756aae5637e3ef51bb9437d98fb826a50bf3dd1602b2c4595bdc1ea7bcd1",
+      "kind": "upstream source license notice",
+      "inspection": "original upstream license bytes; legacy text encodings retained"
+    },
+    {
+      "path": "licenses/09-NOTICE",
+      "bytes": 3499,
+      "sha256": "10072aa5e7cde74c6b19f554552a6e78f3c0404a966f83041b2cbcf746622b4f",
+      "kind": "upstream source license notice",
+      "inspection": "original upstream license bytes; legacy text encodings retained"
+    },
+    {
+      "path": "licenses/10-NOTICE",
+      "bytes": 1034,
+      "sha256": "86657b4c0fe868d7cbd977cb04c63b6c667e08fa51595a7bc846ad4bed8fc364",
+      "kind": "upstream source license notice",
+      "inspection": "original upstream license bytes; legacy text encodings retained"
+    },
+    {
+      "path": "licenses/11-NOTICE",
+      "bytes": 983,
+      "sha256": "60c2c920b6af058e3b9659a19e2e667985c9ac193d426309925077a511f32a45",
+      "kind": "upstream source license notice",
+      "inspection": "original upstream license bytes; legacy text encodings retained"
+    },
+    {
+      "path": "licenses/13-NOTICE",
+      "bytes": 26426,
+      "sha256": "ebc385a0b1d477be5177ed6d9129557aa59a3ad0f26ebe7dd97ee942a0fb68ee",
+      "kind": "upstream source license notice",
+      "inspection": "original upstream license bytes; legacy text encodings retained"
+    },
+    {
+      "path": "licenses/14-NOTICE",
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+      "kind": "upstream source license notice",
+      "inspection": "original upstream license bytes; legacy text encodings retained"
+    },
+    {
+      "path": "licenses/15-NOTICE",
+      "bytes": 3099,
+      "sha256": "8b24d29b44fd2c822d84fc8b0f7e4051fcdc551bfa328b79aec771963594f528",
+      "kind": "upstream source license notice",
+      "inspection": "original upstream license bytes; legacy text encodings retained"
+    },
+    {
+      "path": "licenses/16-LICENSE",
+      "bytes": 1901,
+      "sha256": "4919cfb14a73cd64fcef67b107613970cf1659a09aa675dba31314f373bc7204",
+      "kind": "upstream source license notice",
+      "inspection": "original upstream license bytes; legacy text encodings retained"
+    },
+    {
+      "path": "licenses/17-LICENSE.TXT",
+      "bytes": 4289,
+      "sha256": "83477b0ebd9c4b7e97d236994f1142b072588eaf59556f0cdc5c7684537931aa",
+      "kind": "upstream source license notice",
+      "inspection": "original upstream license bytes; legacy text encodings retained"
+    },
+    {
+      "path": "licenses/18-NOTICE",
+      "bytes": 4289,
+      "sha256": "ea8dc0b8122a4b33e9aaa87eb39842e4b8eb25056e0abe54d4815412664f195f",
+      "kind": "upstream source license notice",
+      "inspection": "original upstream license bytes; legacy text encodings retained"
+    },
+    {
+      "path": "licenses/20-NOTICE",
+      "bytes": 849,
+      "sha256": "b71befc71cd206e875c6e46def1a08c7850ae96b52910375be5d71ef633a872d",
+      "kind": "upstream source license notice",
+      "inspection": "original upstream license bytes; legacy text encodings retained"
+    }
+  ],
+  "raw_logs_outside_git": [
+    {
+      "path": "attempt-21-real-vold-headers.log",
+      "bytes": 3555155,
+      "sha256": "66c1315bba43ec8660a2ef13c8c5254c606e3d475f9b57fff655b43900949fd3",
+      "zip_path": "raw-logs/recovery/attempt-21-real-vold-headers.log",
+      "last_errors": [
+        "make: *** No rule to make target '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/liblogwrap_intermediates/export_includes', needed by '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libext4_utils_static_intermediates/import_includes'.  Stop."
+      ],
+      "versioned_raw_log": false
+    },
+    {
+      "path": "attempt-30-official-ndk9-crypto.log",
+      "bytes": 1085050,
+      "sha256": "32f6b8e341145f2a98c8375c18ee2f6b343fce50e17ce9e6d4749a14e1480a45",
+      "zip_path": "raw-logs/recovery/attempt-30-official-ndk9-crypto.log",
+      "last_errors": [
+        "make: *** No rule to make target '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libpcre_intermediates/export_includes', needed by '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libselinux_intermediates/import_includes'.  Stop."
+      ],
+      "versioned_raw_log": false
+    },
+    {
+      "path": "attempt-31-real-pcre-source.log",
+      "bytes": 249772,
+      "sha256": "405a8c74ded11d7fdc9985c1bb66809948a51b20eaf8f156844995817c9dcd93",
+      "zip_path": "raw-logs/recovery/attempt-31-real-pcre-source.log",
+      "last_errors": [
+        "make: *** No rule to make target '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libbz_intermediates/export_includes', needed by '/workspace/build01-full-next/recovery/out/target/product/generic/obj/STATIC_LIBRARIES/libapplypatch_intermediates/import_includes'.  Stop."
+      ],
+      "versioned_raw_log": false
+    },
+    {
+      "path": "attempt-32-real-bzip2-source.log",
+      "bytes": 264145,
+      "sha256": "7ceff43728472987b5d713e3768b878666fc0dd965f2ead4a34eed3eaca8ed81",
+      "zip_path": "raw-logs/recovery/attempt-32-real-bzip2-source.log",
+      "last_errors": [],
+      "versioned_raw_log": false
+    },
+    {
+      "path": "recovery-link.map",
+      "bytes": 5312268,
+      "sha256": "e532827675ae5b5b1d6fb04a19fa1682c904804ec2b9821f8ed0d479c53fa19b",
+      "zip_path": "raw-logs/recovery/recovery-link.map",
+      "versioned_raw_log": false
+    }
+  ],
+  "recovery_executable": {
+    "path": "/workspace/build01-full-next/recovery/out/target/product/generic/recovery/root/sbin/recovery",
+    "bytes": 956040,
+    "sha256": "5e2c3639b15a51728b24f8400dd2539c2ace87647fca41527698129ce543928c"
+  },
+  "recovery_image": "not_built",
+  "hardware_or_pid1_execution": "not_performed",
+  "vendor_prebuilt_modules_excluded": [
+    "libcrc32",
+    "libext2_uuid",
+    "librkrsa",
+    "librkupdate"
+  ],
+  "limits": [
+    "No recovery executable or image was run; no device commands, mounts, format or flash were executed.",
+    "Raw recovery source contains writable update/format functionality, including fw_update and IDBlock paths. It is not a read-only diagnostic component.",
+    "Libraries, objects and complete recovery have static ELF inspection only; no recovery invocation, Android boot, storage driver behavior or R329Q_V8.0 compatibility is proven.",
+    "Compiler-rule counts exclude WHOLE-extracted duplicate objects; combined CRT relocatable outputs without dependency rules are not new source translation units.",
+    "Four vendor prebuilt archive files are excluded as standalone artifacts. Three have allocated contributions in the linked executable; source/right/backend closure is not established. See vendor-link-map-review.json."
+  ]
+}

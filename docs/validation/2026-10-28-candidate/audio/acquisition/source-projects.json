@@ -1,0 +1,57 @@
+[
+  {
+    "name": "tinyalsa",
+    "repository": "https://android.googlesource.com/platform/external/tinyalsa",
+    "revision": "90fb75ab8790f2243cd691aab9357657ebad914e",
+    "tag": "android-7.1.2_r6",
+    "path": "external/tinyalsa"
+  },
+  {
+    "name": "speex",
+    "repository": "https://android.googlesource.com/platform/external/speex",
+    "revision": "468d5f08801712615c39321b1f22f04c63b1277d",
+    "tag": "android-7.1.2_r6",
+    "path": "external/speex"
+  },
+  {
+    "name": "system-media",
+    "repository": "https://android.googlesource.com/platform/system/media",
+    "revision": "e12085b0c596a85192fb124a0d5f8c652b55a3ef",
+    "tag": "android-7.1.2_r6",
+    "path": "system/media"
+  },
+  {
+    "name": "expat",
+    "repository": "https://android.googlesource.com/platform/external/expat",
+    "revision": "7f23da12fcc8eb92a20ed4c2b758447c4fa77efb",
+    "tag": "android-7.1.2_r6",
+    "path": "external/expat"
+  },
+  {
+    "name": "tinyalsa-rockchip",
+    "repository": "https://github.com/rockchip-android/external-tinyalsa",
+    "revision": "472b5e3fc1660660e0e9a3fa4cd5f752643920f2",
+    "path": "external/tinyalsa",
+    "replaces": "AOSP r6 tinyalsa lacks the vendor pcm_config.flag used by pinned audio HAL"
+  },
+  {
+    "name": "frameworks-av",
+    "repository": "https://github.com/rockchip-android/frameworks-av",
+    "revision": "ac031469f276a02febe6874d1445413b148c6cb7",
+    "path": "frameworks/av",
+    "sparse_paths": [
+      "include",
+      "media/libnbaio",
+      "media/libmedia"
+    ]
+  },
+  {
+    "name": "frameworks-native-headers",
+    "repository": "https://github.com/rockchip-android/frameworks-native",
+    "revision": "00c3ec97785c0d42f801083c8fc2fc26d3ce4e2d",
+    "path": "acquisition/frameworks-native",
+    "sparse_paths": [
+      "include"
+    ]
+  }
+]

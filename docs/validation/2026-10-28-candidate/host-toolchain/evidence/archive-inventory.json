@@ -1,0 +1,12 @@
+{
+  "repository": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8",
+  "revision": "73ca99196723f810dad42390d154654354f57c16",
+  "tag": "android-7.1.2_r6",
+  "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/+archive/73ca99196723f810dad42390d154654354f57c16.tar.gz",
+  "archive_bytes": 82641853,
+  "archive_sha256": "78ef70ce6a6af1b0f07cb63430bea28102aaa294075b61dcd7817f577087c541",
+  "regular_payload_bytes": 240883563,
+  "members": 3706,
+  "combined_archive_and_payload_bytes": 323525416,
+  "budget_bytes": 419430400
+}

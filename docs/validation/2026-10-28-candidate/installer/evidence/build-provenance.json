@@ -1,0 +1,43 @@
+{
+  "target": "Linux ARM32 EABI5 hard-float ARMv7-A VFPv3-D16; not Android Bionic",
+  "toolchain_git_revision": "dd4df7dff4f1df65d78939a958b760a79e3650a1",
+  "gcc_version": "arm-linux-gnueabihf-gcc (Linaro GCC 6.3-2017.05) 6.3.1 20170404",
+  "inputs": {
+    "compiler": {
+      "path": "/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-gcc",
+      "size_bytes": 907504,
+      "sha256": "5b0fb9369c3b6a4645765ba1e85db16426ea761b6aa0272157fa4b077c8576bf"
+    },
+    "linker": {
+      "path": "/workspace/build01-sd/kernel-work/toolchain/bin/arm-linux-gnueabihf-ld",
+      "size_bytes": 1341888,
+      "sha256": "f9dab33212986139e9678fb01894181e373b0dfc794e456f22b7dc65b1f0be5a"
+    },
+    "libgcc": {
+      "path": "/workspace/build01-sd/kernel-work/toolchain/bin/../lib/gcc/arm-linux-gnueabihf/6.3.1/libgcc.a",
+      "size_bytes": 22716690,
+      "sha256": "690d713a9d30bd9606c562a4850e9639bf4c9d59be40db45bb038f502ec7fdae"
+    },
+    "musl_archive": {
+      "path": "/workspace/build01-full-next/installer/musl/lib/libc.a",
+      "size_bytes": 2145852,
+      "sha256": "27379aae43544a0a596306c467be188209ab15f2964d2b4ce40b8f84a1140259"
+    },
+    "musl_gcc_wrapper": {
+      "path": "/workspace/build01-full-next/installer/musl/bin/musl-gcc",
+      "size_bytes": 178,
+      "sha256": "108e1c713b3b243c80cc3a2144c25afffb65a757980ffea9df0aec61010b449a"
+    }
+  },
+  "command_recipe": "build_component.sh",
+  "kernel_magic_header": {
+    "path": "/workspace/build01-sd-next/kernel-sd/source/include/uapi/linux/magic.h",
+    "sha256": "f4a38a297a07b8d9a27d9ebcb16636ebedd5b52d72b263572ce0c9fa8d9bc816"
+  },
+  "libc_old_kernel_limit": "musl fstatat.c contains statx ENOSYS fallback, but no Linux3.10 kernel execution is claimed",
+  "source_archive_integrity": {
+    "source_archive_files_checked": 2697,
+    "changed_original_source_files": [],
+    "scope": "source bytes only; generated object/config/header outputs are extra files, not source modifications"
+  }
+}

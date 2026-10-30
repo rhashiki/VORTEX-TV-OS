@@ -1,0 +1,179 @@
+
+Symbol table '.dynsym' contains 176 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_finalize@LIBC (2)
+     2: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_atexit@LIBC (2)
+     3: 00000000     0 FUNC    GLOBAL DEFAULT  UND __register_atfork@LIBC (2)
+     4: 00000000     0 FUNC    GLOBAL DEFAULT  UND __gnu_Unwind_Find_exidx@LIBC_N (3)
+     5: 00000000     0 FUNC    GLOBAL DEFAULT  UND dladdr@LIBC (4)
+     6: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memclr8@LIBC_N (3)
+     7: 00000000     0 FUNC    GLOBAL DEFAULT  UND __snprintf_chk@LIBC (2)
+     8: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android7RefBase10onFirstRefEv
+     9: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android7RefBase13onLastWeakRefEPKv
+    10: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android7RefBase15onLastStrongRefEPKv
+    11: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android7RefBase20onIncStrongAttemptedEjPKv
+    12: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android7RefBaseC2Ev
+    13: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android7RefBaseD2Ev
+    14: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZdlPv
+    15: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memcpy@LIBC_N (3)
+    16: 00000000     0 FUNC    GLOBAL DEFAULT  UND __stack_chk_fail@LIBC (2)
+    17: 00000000     0 OBJECT  GLOBAL DEFAULT  UND __stack_chk_guard@LIBC (2)
+    18: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_pure_virtual
+    19: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memcpy8@LIBC_N (3)
+    20: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memset8@LIBC_N (3)
+    21: 00000000     0 FUNC    GLOBAL DEFAULT  UND __android_log_print
+    22: 00000000     0 FUNC    GLOBAL DEFAULT  UND clock_gettime@LIBC (2)
+    23: 00000000     0 FUNC    GLOBAL DEFAULT  UND free@LIBC (2)
+    24: 00000000     0 FUNC    GLOBAL DEFAULT  UND malloc@LIBC (2)
+    25: 00000000     0 FUNC    GLOBAL DEFAULT  UND nanosleep@LIBC (2)
+    26: 00000000     0 FUNC    GLOBAL DEFAULT  UND roundup
+    27: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNK7android7RefBase9decStrongEPKv
+    28: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNK7android7RefBase9incStrongEPKv
+    29: 00000000     0 FUNC    GLOBAL DEFAULT  UND calloc@LIBC (2)
+    30: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android7String812appendFormatEPKcz
+    31: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android7String85clearEv
+    32: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android7String8C1Ev
+    33: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZN7android7String8D1Ev
+    34: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNK7android7IMemory7pointerEv
+    35: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNK7android7String86lengthEv
+    36: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZdaPv
+    37: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Znaj
+    38: 00000000     0 FUNC    GLOBAL DEFAULT  UND __strlen_chk@LIBC (2)
+    39: 00000000     0 FUNC    GLOBAL DEFAULT  UND __vsnprintf_chk@LIBC (2)
+    40: 00000000     0 FUNC    GLOBAL DEFAULT  UND dprintf@LIBC (2)
+    41: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_destroy@LIBC (2)
+    42: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_init@LIBC (2)
+    43: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_lock@LIBC (2)
+    44: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_unlock@LIBC (2)
+    45: 00000000     0 FUNC    GLOBAL DEFAULT  UND abort@LIBC (2)
+    46: 00000000     0 FUNC    GLOBAL DEFAULT  UND fprintf@LIBC (2)
+    47: 00000000     0 OBJECT  GLOBAL DEFAULT  UND stderr@LIBC (2)
+    48: 00004141    70 FUNC    GLOBAL DEFAULT   12 _ZN7android19AudioStreamInSource4readEPvj
+    49: 00003e39    14 FUNC    GLOBAL DEFAULT   12 _ZN7android19AudioStreamInSourceD0Ev
+    50: 00003e35     4 FUNC    GLOBAL DEFAULT   12 _ZN7android14MonoPipeReaderD1Ev
+    51: 00004e4d   180 FUNC    GLOBAL DEFAULT   12 _ZN7android25SourceAudioBufferProviderC2ERKNS_2spINS_12NBAIO_SourceEEE
+    52: 00009b84    68 OBJECT  GLOBAL DEFAULT   17 _ZTVN7android10PipeReaderE
+    53: 00004a35    76 FUNC    GLOBAL DEFAULT   12 _ZN7android14MonoPipeReaderC2EPNS_8MonoPipeE
+    54: 00004fdb    18 FUNC    GLOBAL DEFAULT   12 _ZNK7android25SourceAudioBufferProvider11framesReadyEv
+    55: 00005089    88 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog6WriterC1EjRKNS_2spINS_7IMemoryEEE
+    56: 000045e1    36 FUNC    GLOBAL DEFAULT   12 _ZN7android8MonoPipeD1Ev
+    57: 00004a81    30 FUNC    GLOBAL DEFAULT   12 _ZN7android14MonoPipeReader15availableToReadEv
+    58: 00004d29    52 FUNC    GLOBAL DEFAULT   12 _ZN7android10PipeReaderD0Ev
+    59: 00003e35     4 FUNC    GLOBAL DEFAULT   12 _ZN7android18AudioStreamOutSinkD1Ev
+    60: 0000444d   126 FUNC    GLOBAL DEFAULT   12 _ZN7android10NBAIO_Port9negotiateEPKNS_12NBAIO_FormatEjPS1_Rj
+    61: 00004509   216 FUNC    GLOBAL DEFAULT   12 _ZN7android8MonoPipeC1EjRKNS_12NBAIO_FormatEb
+    62: 00005585    80 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog6ReaderC2EjRKNS_2spINS_7IMemoryEEE
+    63: 00005029    40 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog6WriterC2Ev
+    64: 00003c4d   142 FUNC    GLOBAL DEFAULT   12 _ZN7android25AudioBufferProviderSource4readEPvj
+    65: 000042e5   180 FUNC    GLOBAL DEFAULT   12 _ZN7android10NBAIO_Sink8writeViaEPFiPvS1_jEjS1_j
+    66: 00004f01    40 FUNC    GLOBAL DEFAULT   12 _ZN7android25SourceAudioBufferProviderD1Ev
+    67: 00003e49   220 FUNC    GLOBAL DEFAULT   12 _ZN7android18AudioStreamOutSink9negotiateEPKNS_12NBAIO_FormatEjPS1_Rj
+    68: 00004c89   120 FUNC    GLOBAL DEFAULT   12 _ZN7android10PipeReaderC2ERNS_4PipeE
+    69: 00003b9d    88 FUNC    GLOBAL DEFAULT   12 _ZN7android25AudioBufferProviderSourceC2EPNS_19AudioBufferProviderERKNS_12NBAIO_FormatE
+    70: 0000419d    32 FUNC    GLOBAL DEFAULT   12 _ZN7android17Format_sampleRateERKNS_12NBAIO_FormatE
+    71: 00003ddd    88 FUNC    GLOBAL DEFAULT   12 _ZN7android18AudioStreamOutSinkC2EP16audio_stream_out
+    72: 00004b4d   128 FUNC    GLOBAL DEFAULT   12 _ZN7android4PipeC1EjRKNS_12NBAIO_FormatEPv
+    73: 00009980    68 OBJECT  GLOBAL DEFAULT   17 _ZTVN7android18AudioStreamOutSinkE
+    74: 00005391    52 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog12LockedWriterC2Ev
+    75: 00003b9d    88 FUNC    GLOBAL DEFAULT   12 _ZN7android25AudioBufferProviderSourceC1EPNS_19AudioBufferProviderERKNS_12NBAIO_FormatE
+    76: 00004b4d   128 FUNC    GLOBAL DEFAULT   12 _ZN7android4PipeC2EjRKNS_12NBAIO_FormatEPv
+    77: 00004905     6 FUNC    GLOBAL DEFAULT   12 _ZN7android8MonoPipe8shutdownEb
+    78: 00004f37   122 FUNC    GLOBAL DEFAULT   12 _ZN7android25SourceAudioBufferProvider13getNextBufferEPNS_19AudioBufferProvider6BufferE
+    79: 00004911   144 FUNC    GLOBAL DEFAULT   12 _ZN7android8MonoPipe12getTimestampERNS_17ExtendedTimestampE
+    80: 00009c28    60 OBJECT  GLOBAL DEFAULT   17 _ZTVN7android5NBLog12LockedWriterE
+    81: 00009c64    32 OBJECT  WEAK   DEFAULT   17 _ZTVN7android5NBLog6ReaderE
+    82: 00003e35     4 FUNC    GLOBAL DEFAULT   12 _ZN7android19AudioStreamInSourceD1Ev
+    83: 00003e35     4 FUNC    GLOBAL DEFAULT   12 _ZN7android14MonoPipeReaderD2Ev
+    84: 00004a35    76 FUNC    GLOBAL DEFAULT   12 _ZN7android14MonoPipeReaderC1EPNS_8MonoPipeE
+    85: 000041bd    30 FUNC    GLOBAL DEFAULT   12 _ZN7android14Format_isValidERKNS_12NBAIO_FormatE
+    86: 00003fcd   100 FUNC    GLOBAL DEFAULT   12 _ZN7android19AudioStreamInSourceC1EP15audio_stream_in
+    87: 00005555    48 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog6ReaderC1EjPKv
+    88: 0000516d    76 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog6Writer4logfEPKcz
+    89: 00005503    26 FUNC    GLOBAL DEFAULT   12 _ZNK7android5NBLog12LockedWriter9isEnabledEv
+    90: 00009b40    68 OBJECT  GLOBAL DEFAULT   17 _ZTVN7android4PipeE
+    91: 00009a08    40 OBJECT  GLOBAL DEFAULT   17 _ZTVN7android10NBAIO_PortE
+    92: 00004111    48 FUNC    GLOBAL DEFAULT   12 _ZN7android19AudioStreamInSource13framesOverrunEv
+    93: 00009ab8    68 OBJECT  GLOBAL DEFAULT   17 _ZTVN7android8MonoPipeE
+    94: 000054bb    30 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog12LockedWriter12logTimestampEv
+    95: 0000a004     0 NOTYPE  GLOBAL DEFAULT  ABS _edata
+    96: 00003ddd    88 FUNC    GLOBAL DEFAULT   12 _ZN7android18AudioStreamOutSinkC1EP16audio_stream_out
+    97: 000045e1    36 FUNC    GLOBAL DEFAULT   12 _ZN7android8MonoPipeD2Ev
+    98: 00004d01    40 FUNC    GLOBAL DEFAULT   12 _ZN7android10PipeReaderD1Ev
+    99: 0000527d   242 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog6Writer3logEPKNS0_5EntryEb
+   100: 000050e1    44 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog6Writer3logEPKc
+   101: 00003e35     4 FUNC    GLOBAL DEFAULT   12 _ZN7android18AudioStreamOutSinkD2Ev
+   102: 00003f25    54 FUNC    GLOBAL DEFAULT   12 _ZN7android18AudioStreamOutSink5writeEPKvj
+   103: 00004f01    40 FUNC    GLOBAL DEFAULT   12 _ZN7android25SourceAudioBufferProviderD2Ev
+   104: 00005415    34 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog12LockedWriter3logEPKc
+   105: 000058f1   100 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog6Reader8dumpLineERKNS_7String8ERS2_
+   106: 00004901     4 FUNC    GLOBAL DEFAULT   12 _ZN7android8MonoPipe12setAvgFramesEj
+   107: 00005215    88 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog6Writer12logTimestampEv
+   108: 00004c89   120 FUNC    GLOBAL DEFAULT   12 _ZN7android10PipeReaderC1ERNS_4PipeE
+   109: 00005373    30 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog6Writer10setEnabledEb
+   110: 00005089    88 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog6WriterC2EjRKNS_2spINS_7IMemoryEEE
+   111: 0000536f     4 FUNC    GLOBAL DEFAULT   12 _ZNK7android5NBLog6Writer9isEnabledEv
+   112: 00009a30    68 OBJECT  GLOBAL DEFAULT   17 _ZTVN7android10NBAIO_SinkE
+   113: 00004bf5    14 FUNC    GLOBAL DEFAULT   12 _ZN7android4PipeD0Ev
+   114: 00004d5d    96 FUNC    GLOBAL DEFAULT   12 _ZN7android10PipeReader15availableToReadEv
+   115: 0000510d    96 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog6Writer3logENS0_5EventEPKvj
+   116: 000044cb    48 FUNC    GLOBAL DEFAULT   12 _ZN7android14Format_isEqualERKNS_12NBAIO_FormatES2_
+   117: 00003e35     4 FUNC    GLOBAL DEFAULT   12 _ZN7android19AudioStreamInSourceD2Ev
+   118: 0000551d    56 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog12LockedWriter10setEnabledEb
+   119: 00003c21    14 FUNC    GLOBAL DEFAULT   12 _ZN7android25AudioBufferProviderSourceD0Ev
+   120: 00005585    80 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog6ReaderC1EjRKNS_2spINS_7IMemoryEEE
+   121: 00009afc    68 OBJECT  GLOBAL DEFAULT   17 _ZTVN7android14MonoPipeReaderE
+   122: 00005439    88 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog12LockedWriter4logfEPKcz
+   123: 0000a004     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
+   124: 00005955    40 FUNC    GLOBAL DEFAULT   12 _ZNK7android5NBLog6Reader9isIMemoryERKNS_2spINS_7IMemoryEEE
+   125: 00004b25    40 FUNC    GLOBAL DEFAULT   12 _ZN7android14MonoPipeReader11onTimestampERKNS_17ExtendedTimestampE
+   126: 00003c2f    30 FUNC    GLOBAL DEFAULT   12 _ZN7android25AudioBufferProviderSource15availableToReadEv
+   127: 00004d01    40 FUNC    GLOBAL DEFAULT   12 _ZN7android10PipeReaderD2Ev
+   128: 00004199     4 FUNC    GLOBAL DEFAULT   12 _ZN7android16Format_frameSizeERKNS_12NBAIO_FormatE
+   129: 000054d9    42 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog12LockedWriter12logTimestampERK8timespec
+   130: 0000a005     0 NOTYPE  GLOBAL DEFAULT  ABS _end
+   131: 00004fb1    42 FUNC    GLOBAL DEFAULT   12 _ZN7android25SourceAudioBufferProvider13releaseBufferEPNS_19AudioBufferProvider6BufferE
+   132: 00004c03   128 FUNC    GLOBAL DEFAULT   12 _ZN7android4Pipe5writeEPKvj
+   133: 0000462d    30 FUNC    GLOBAL DEFAULT   12 _ZNK7android8MonoPipe16availableToWriteEv
+   134: 00009bec    60 OBJECT  GLOBAL DEFAULT   17 _ZTVN7android5NBLog6WriterE
+   135: 00009a74    68 OBJECT  GLOBAL DEFAULT   17 _ZTVN7android12NBAIO_SourceE
+   136: 0000464d   692 FUNC    GLOBAL DEFAULT   12 _ZN7android8MonoPipe5writeEPKvj
+   137: 000055d5   796 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog6Reader4dumpEij
+   138: 00004399   180 FUNC    GLOBAL DEFAULT   12 _ZN7android12NBAIO_Source7readViaEPFiPvPKvjEjS1_j
+   139: 00004bcd    40 FUNC    GLOBAL DEFAULT   12 _ZN7android4PipeD1Ev
+   140: 00005491    42 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog12LockedWriter5logvfEPKcSt9__va_list
+   141: 00004031   224 FUNC    GLOBAL DEFAULT   12 _ZN7android19AudioStreamInSource9negotiateEPKNS_12NBAIO_FormatEjPS1_Rj
+   142: 000041db    32 FUNC    GLOBAL DEFAULT   12 _ZN7android19Format_channelCountERKNS_12NBAIO_FormatE
+   143: 00003bf5    44 FUNC    GLOBAL DEFAULT   12 _ZN7android25AudioBufferProviderSourceD1Ev
+   144: 00003fcd   100 FUNC    GLOBAL DEFAULT   12 _ZN7android19AudioStreamInSourceC2EP15audio_stream_in
+   145: 0000490b     6 FUNC    GLOBAL DEFAULT   12 _ZN7android8MonoPipe10isShutdownEv
+   146: 00004ff5    40 FUNC    GLOBAL DEFAULT   12 _ZNK7android5NBLog5Entry6readAtEj
+   147: 0000501d    10 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog8Timeline10sharedSizeEj
+   148: 00003dcd     6 FUNC    GLOBAL DEFAULT   12 _ZNK7android25SourceAudioBufferProvider14framesReleasedEv
+   149: 000053c5    80 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog12LockedWriterC2EjPv
+   150: 00003e39    14 FUNC    GLOBAL DEFAULT   12 _ZN7android14MonoPipeReaderD0Ev
+   151: 000053c5    80 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog12LockedWriterC1EjPv
+   152: 000074a0    16 OBJECT  GLOBAL DEFAULT   14 _ZN7android14Format_InvalidE
+   153: 00003f5d   100 FUNC    GLOBAL DEFAULT   12 _ZN7android18AudioStreamOutSink12getTimestampERNS_17ExtendedTimestampE
+   154: 00009bc8    36 OBJECT  GLOBAL DEFAULT   17 _ZTVN7android25SourceAudioBufferProviderE
+   155: 00005051    56 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog6WriterC2EjPv
+   156: 00005051    56 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog6WriterC1EjPv
+   157: 00003cdb   208 FUNC    GLOBAL DEFAULT   12 _ZN7android25AudioBufferProviderSource7readViaEPFiPvPKvjEjS1_j
+   158: 000051b9    92 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog6Writer5logvfEPKcSt9__va_list
+   159: 00004605    40 FUNC    GLOBAL DEFAULT   12 _ZN7android8MonoPipeD0Ev
+   160: 00004bcd    40 FUNC    GLOBAL DEFAULT   12 _ZN7android4PipeD2Ev
+   161: 0000993c    68 OBJECT  GLOBAL DEFAULT   17 _ZTVN7android25AudioBufferProviderSourceE
+   162: 00003e39    14 FUNC    GLOBAL DEFAULT   12 _ZN7android18AudioStreamOutSinkD0Ev
+   163: 00004a9f   134 FUNC    GLOBAL DEFAULT   12 _ZN7android14MonoPipeReader4readEPvj
+   164: 00004dbd   132 FUNC    GLOBAL DEFAULT   12 _ZN7android10PipeReader4readEPvj
+   165: 0000526d    16 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog6Writer12logTimestampERK8timespec
+   166: 00005029    40 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog6WriterC1Ev
+   167: 00004509   216 FUNC    GLOBAL DEFAULT   12 _ZN7android8MonoPipeC2EjRKNS_12NBAIO_FormatEb
+   168: 00004fed     8 FUNC    GLOBAL DEFAULT   12 _ZN7android25SourceAudioBufferProvider11onTimestampERKNS_17ExtendedTimestampE
+   169: 00004f29    14 FUNC    GLOBAL DEFAULT   12 _ZN7android25SourceAudioBufferProviderD0Ev
+   170: 00004e4d   180 FUNC    GLOBAL DEFAULT   12 _ZN7android25SourceAudioBufferProviderC1ERKNS_2spINS_12NBAIO_SourceEEE
+   171: 00003bf5    44 FUNC    GLOBAL DEFAULT   12 _ZN7android25AudioBufferProviderSourceD2Ev
+   172: 00005555    48 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog6ReaderC2EjPKv
+   173: 000099c4    68 OBJECT  GLOBAL DEFAULT   17 _ZTVN7android19AudioStreamInSourceE
+   174: 00005391    52 FUNC    GLOBAL DEFAULT   12 _ZN7android5NBLog12LockedWriterC1Ev
+   175: 000041fd   232 FUNC    GLOBAL DEFAULT   12 _ZN7android16Format_from_SR_CEjj14audio_format_t

@@ -1,0 +1,2 @@
+./tools/install.sh -D -m 644 lib/musl-gcc.specs /workspace/build01-full-next/installer/musl/lib/musl-gcc.specs
+./tools/install.sh -D obj/musl-gcc /workspace/build01-full-next/installer/musl/bin/musl-gcc

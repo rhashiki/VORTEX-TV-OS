@@ -1,0 +1,7 @@
+including device/rockchip/rk322x/vendorsetup.sh
+build/core/product_config.mk:239: *** _nic.PRODUCTS.[[device/vortex/vortex_rk322x_sd_box/vortex_rk322x_sd_box.mk]]: "frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk" does not exist.  Stop.
+
+** Don't have a product spec for: 'vortex_rk322x_sd_box'
+** Do you have the right repo manifest?
+
+LUNCH_STATUS=1
